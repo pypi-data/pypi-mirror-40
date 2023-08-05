@@ -1,0 +1,5 @@
+setuptools
+requests
+fake_useragent
+requests_html
+PyYAML
