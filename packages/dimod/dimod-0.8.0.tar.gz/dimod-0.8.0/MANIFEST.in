@@ -1,0 +1,2 @@
+recursive-include dimod/serialization *.json
+recursive-include dimod/roof_duality *.cpp *.pyx *.hpp
