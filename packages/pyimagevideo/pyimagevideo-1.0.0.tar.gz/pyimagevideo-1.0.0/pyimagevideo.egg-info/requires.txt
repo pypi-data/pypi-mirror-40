@@ -1,0 +1,16 @@
+numpy
+imageio>=2.3
+
+[io]
+h5py
+scipy
+morecvutils
+scikit-image
+matplotlib>=2.2
+
+[tests]
+pytest
+pytest-cov
+coveralls
+flake8
+mypy
