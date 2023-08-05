@@ -1,0 +1,3 @@
+[console_scripts]
+autoiperf3 = autoiperf3.__main__:main
+
