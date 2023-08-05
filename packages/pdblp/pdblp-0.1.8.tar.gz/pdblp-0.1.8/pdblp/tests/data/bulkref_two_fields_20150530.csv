@@ -1,0 +1,247 @@
+ticker,field,name,value,position
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,BON15,0
+BCOM Index,INDX_MWEIGHT,Percentage Weight,2.81,0
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,C N15,1
+BCOM Index,INDX_MWEIGHT,Percentage Weight,6.38,1
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,CLN15,2
+BCOM Index,INDX_MWEIGHT,Percentage Weight,9.57,2
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,COU15,3
+BCOM Index,INDX_MWEIGHT,Percentage Weight,9.08,3
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,CTN15,4
+BCOM Index,INDX_MWEIGHT,Percentage Weight,1.6,4
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,GCQ15,5
+BCOM Index,INDX_MWEIGHT,Percentage Weight,11.62,5
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,HGN15,6
+BCOM Index,INDX_MWEIGHT,Percentage Weight,7.4,6
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,HON15,7
+BCOM Index,INDX_MWEIGHT,Percentage Weight,4.35,7
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,KCN15,8
+BCOM Index,INDX_MWEIGHT,Percentage Weight,1.58,8
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,KWN15,9
+BCOM Index,INDX_MWEIGHT,Percentage Weight,0.94,9
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,LAN15,10
+BCOM Index,INDX_MWEIGHT,Percentage Weight,4.4,10
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,LCQ15,11
+BCOM Index,INDX_MWEIGHT,Percentage Weight,3.01,11
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,LHN15,12
+BCOM Index,INDX_MWEIGHT,Percentage Weight,2.03,12
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,LNN15,13
+BCOM Index,INDX_MWEIGHT,Percentage Weight,1.71,13
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,LXN15,14
+BCOM Index,INDX_MWEIGHT,Percentage Weight,2.45,14
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,NGN15,15
+BCOM Index,INDX_MWEIGHT,Percentage Weight,8.01,15
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,S N15,16
+BCOM Index,INDX_MWEIGHT,Percentage Weight,4.99,16
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,SBN15,17
+BCOM Index,INDX_MWEIGHT,Percentage Weight,3.22,17
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,SIN15,18
+BCOM Index,INDX_MWEIGHT,Percentage Weight,4.29,18
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,SMN15,19
+BCOM Index,INDX_MWEIGHT,Percentage Weight,2.35,19
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,W N15,20
+BCOM Index,INDX_MWEIGHT,Percentage Weight,2.72,20
+BCOM Index,INDX_MWEIGHT,Member Ticker and Exchange Code,XBN15,21
+BCOM Index,INDX_MWEIGHT,Percentage Weight,5.5,21
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,AAPL UW,0
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,0
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,ABBV UN,1
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,1
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,ABT UN,2
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,2
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,ACN UN,3
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,3
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,AGN UN,4
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,4
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,AIG UN,5
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,5
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,ALL UN,6
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,6
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,AMGN UW,7
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,7
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,AMZN UW,8
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,8
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,APC UN,9
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,9
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,AXP UN,10
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,10
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,BA UN,11
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,11
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,BAC UN,12
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,12
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,BAX UN,13
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,13
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,BIIB UW,14
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,14
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,BK UN,15
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,15
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,BMY UN,16
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,16
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,BRK/B UN,17
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,17
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,C UN,18
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,18
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,CAT UN,19
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,19
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,CELG UW,20
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,20
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,CL UN,21
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,21
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,CMCSA UW,22
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,22
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,COF UN,23
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,23
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,COP UN,24
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,24
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,COST UW,25
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,25
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,CSCO UW,26
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,26
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,CVS UN,27
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,27
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,CVX UN,28
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,28
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,DD UN,29
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,29
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,DIS UN,30
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,30
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,DOW UN,31
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,31
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,DVN UN,32
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,32
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,EBAY UW,33
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,33
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,EMC UN,34
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,34
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,EMR UN,35
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,35
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,EXC UN,36
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,36
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,F UN,37
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,37
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,FB UW,38
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,38
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,FDX UN,39
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,39
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,FOXA UW,40
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,40
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,GD UN,41
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,41
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,GE UN,42
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,42
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,GILD UW,43
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,43
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,GM UN,44
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,44
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,GOOG UW,45
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,45
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,GOOGL UW,46
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,46
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,GS UN,47
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,47
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,HAL UN,48
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,48
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,HD UN,49
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,49
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,HON UN,50
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,50
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,HPQ UN,51
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,51
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,IBM UN,52
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,52
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,INTC UW,53
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,53
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,JNJ UN,54
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,54
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,JPM UN,55
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,55
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,KMI UN,56
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,56
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,KO UN,57
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,57
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,LLY UN,58
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,58
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,LMT UN,59
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,59
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,LOW UN,60
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,60
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,MA UN,61
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,61
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,MCD UN,62
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,62
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,MDLZ UW,63
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,63
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,MDT UN,64
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,64
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,MET UN,65
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,65
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,MMM UN,66
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,66
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,MO UN,67
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,67
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,MON UN,68
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,68
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,MRK UN,69
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,69
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,MS UN,70
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,70
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,MSFT UW,71
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,71
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,NKE UN,72
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,72
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,NSC UN,73
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,73
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,ORCL UN,74
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,74
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,OXY UN,75
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,75
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,PEP UN,76
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,76
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,PFE UN,77
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,77
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,PG UN,78
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,78
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,PM UN,79
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,79
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,QCOM UW,80
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,80
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,RTN UN,81
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,81
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,SBUX UW,82
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,82
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,SLB UN,83
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,83
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,SO UN,84
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,84
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,SPG UN,85
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,85
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,T UN,86
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,86
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,TGT UN,87
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,87
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,TWX UN,88
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,88
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,TXN UW,89
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,89
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,UNH UN,90
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,90
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,UNP UN,91
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,91
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,UPS UN,92
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,92
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,USB UN,93
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,93
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,UTX UN,94
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,94
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,V UN,95
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,95
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,VZ UN,96
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,96
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,WBA UW,97
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,97
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,WFC UN,98
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,98
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,WMT UN,99
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,99
+OEX Index,INDX_MWEIGHT,Member Ticker and Exchange Code,XOM UN,100
+OEX Index,INDX_MWEIGHT,Percentage Weight,-2.4245362661989844e-14,100
