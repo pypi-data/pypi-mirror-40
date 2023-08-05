@@ -1,0 +1,9 @@
+qcgpu/__init__.py,sha256=bBdqZhbFtc0kwNFkkGUR58tyUtAG_dHtXs7qI4twuIY,102
+qcgpu/backend.py,sha256=ueFY8EzThbj_60y8zkWfZuJzCTva9aJ0NkANZYYyjjw,12353
+qcgpu/gate.py,sha256=dqhYrZeKMRWA9oMdnpDFVXbhVjUFo-kS0YjCzp279Aw,1612
+qcgpu/state.py,sha256=Ms6vbgJ2bGCNCam66ynOOI9qsBTpNGQ1aPXCkV8qMEk,6603
+qcgpu-0.1.0.dist-info/LICENSE,sha256=PFWuAA1zeNsChmtP-GJ9PciDE2cPeL-s_3kbLYS5Q6A,1067
+qcgpu-0.1.0.dist-info/METADATA,sha256=dnvmB0B3jj9Jsjm75dKTMwm10iWF5sKi9hj67Mkq4pU,1728
+qcgpu-0.1.0.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+qcgpu-0.1.0.dist-info/top_level.txt,sha256=FA3GLAQXDON_52rhmA00I3a12tmd2kd8PnZdUp_1duA,6
+qcgpu-0.1.0.dist-info/RECORD,,
