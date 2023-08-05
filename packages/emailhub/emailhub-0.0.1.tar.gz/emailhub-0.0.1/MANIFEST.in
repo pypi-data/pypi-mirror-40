@@ -1,0 +1,4 @@
+include README.rst LICENSE
+recursive-include emailhub *
+recursive-exclude emailhub *.pyc
+recursive-exclude tests

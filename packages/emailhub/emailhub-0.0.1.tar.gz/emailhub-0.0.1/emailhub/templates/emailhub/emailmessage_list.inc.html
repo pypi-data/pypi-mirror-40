@@ -1,0 +1,10 @@
+<ul class="collection">
+  {% for object in object_list %}
+  <li class="collection-item">
+    <span class="badge" data-badge-caption="{{ object.date_sent }}"></span>
+    <a href="{% if request.user.is_superuser and object.is_draft %}{{ object.get_update_url }}{% else %}{{ object.get_absolute_url }}{% endif %}">
+      <b>{{ object.subject }}</b>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

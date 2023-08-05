@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: emailhub
+Version: 0.0.1
+Summary: Yet another email management app for django
+Home-page: https://github.com/h3/django-emailhub
+Author: Maxime Haineault
+Author-email: haineault@gmail.com
+License: MIT
+Description: django-emailhub
+        ===============
+        
+        .. image:: https://gitlab.com/h3/django-emailhub/badges/master/build.svg
+            :target: https://gitlab.com/h3/django-emailhub/pipelines
+        
+        .. image:: https://readthedocs.org/projects/django-emailhub/badge/?version=latest
+            :target: https://django-emailhub.readthedocs.io/en/latest/?badge=latest
+        
+        .. image:: https://badge.fury.io/py/emailhub.svg
+            :target: https://pypi.org/project/emailhub/
+        
+        
+        `Django EmailHub <http://django-emailhub.readthedocs.io/en/latest/>`_ is an
+        application that bring advanced email functionnalities to Django such as
+        templates, draft state, batch sending and archiving.
+        
+        **Note**: This is a work in progress and in early development stage.
+        
+        
+        Supported Python/Django versions
+        --------------------------------
+        
+        * django: **1.8, 1.9, 1.10, 1.11**
+        * python: **2.7, 3.4, 3.5**, 3.6**
+        
+        **Note**: Work in progress, expect backward incompatible changes.
+        
+        
+        Links
+        -----
+        
+        * `EmailHub Documentation <http://django-emailhub.readthedocs.io/en/latest/>`_
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: tests
+Provides-Extra: docs

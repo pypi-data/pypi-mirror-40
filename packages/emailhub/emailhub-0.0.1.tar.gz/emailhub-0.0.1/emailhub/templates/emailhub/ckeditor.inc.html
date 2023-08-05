@@ -1,0 +1,20 @@
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{# To generate a toolbar config head to: /static/emailhub/ckeditor/samples/toolbarconfigurator/index.html#basic #}
+<script src="{% static "emailhub/ckeditor/ckeditor.js" %}"></script>
+<script src="{% static "emailhub/js/jquery.emailhubEditor.js" %}"></script>
+<link href="{% static "emailhub/ckeditor/skins/minimalist/editor.css" %}" rel="stylesheet">
+<script>
+(function($) {
+  $(function(){
+    $('#emailhub-emailmessage-editor').emailhubEditor({
+      language: '{{ LANGUAGE_CODE|lower }}',
+      messages: {
+        save_error: '{% trans "An error occured while saving document, please check the console." %}',
+        html_changed_confirm: '{% trans "The HTML version has changed, but not the text version. Are you sure you want to save this message ?" %}',
+        text_changed_confirm: '{% trans "The text version has changed, but not the HTML version. Are you sure you want to save this message ?" %}'
+      }
+    });
+  });
+}(jQuery));
+</script>
