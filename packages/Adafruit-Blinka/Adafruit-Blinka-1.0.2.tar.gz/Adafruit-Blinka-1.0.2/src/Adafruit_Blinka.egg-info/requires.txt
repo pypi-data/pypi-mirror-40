@@ -1,0 +1,6 @@
+Adafruit-PlatformDetect
+spidev
+
+[:platform_machine == "armv7l" or platform_machine == "armv6l"]
+RPi.GPIO
+rpi_ws281x>=4.0.0
