@@ -1,0 +1,13 @@
+README.md
+setup.py
+statepub/main.py
+statepub/publish.py
+statepub/state.py
+statepub.egg-info/PKG-INFO
+statepub.egg-info/SOURCES.txt
+statepub.egg-info/dependency_links.txt
+statepub.egg-info/entry_points.txt
+statepub.egg-info/not-zip-safe
+statepub.egg-info/requires.txt
+statepub.egg-info/top_level.txt
+statepub/scripts/publishstatus.py
