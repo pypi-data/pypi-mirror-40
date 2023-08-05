@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: scb-tools
+Version: 0.0.0
+Summary: Tools for creating and managing imports from the SCB open API using scb_import.
+Home-page: https://github.com/tsvenson/scb_tools
+Author: Thomas Svenson
+Author-email: thomas@tsvenson.com
+License: MIT
+Description: SCB Tools
+        =========
+        
+        Tools for creating and managing imports from the SCB open API using `scb_import <https://github.com/tsvenson/scb_import>`_.
+        
+        Developed on Linux and is work in progress.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Database
+Classifier: Topic :: Internet
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
