@@ -1,0 +1,28 @@
+{# clinician_contact_request_submit.html #}
+{% extends "base.html" %}
+
+{% comment %}
+    template parameters:
+        form: Form
+{% endcomment %}
+
+{% block content %}
+
+    <h1>Submit patient contact request</h1>
+
+    <div>Using database: <b>{{ db_description }}</b></div>
+
+    <p>You can request that one or more of your patients is included in a study.
+       You will receive an email about this (for each patient you submit)
+       but you do not need to act on it as we already have your affirmative
+       response.</p>
+
+    <form action="{% url 'clinician_contact_request' %}" method="post">
+        {% csrf_token %}
+        <table class="formtable">
+            {{ form }}
+        </table>
+        <input type="submit" value="Submit" />
+    </form>
+
+{% endblock %}
