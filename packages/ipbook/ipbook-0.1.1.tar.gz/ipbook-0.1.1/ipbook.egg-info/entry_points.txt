@@ -1,0 +1,3 @@
+[console_scripts]
+ipbook = ipbook.__main__:main
+
