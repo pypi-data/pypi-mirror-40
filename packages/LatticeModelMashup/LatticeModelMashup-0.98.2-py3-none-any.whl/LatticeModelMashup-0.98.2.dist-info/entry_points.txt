@@ -1,0 +1,3 @@
+[console_scripts]
+latticeMash = latticeModelMashup.__init__:main
+
