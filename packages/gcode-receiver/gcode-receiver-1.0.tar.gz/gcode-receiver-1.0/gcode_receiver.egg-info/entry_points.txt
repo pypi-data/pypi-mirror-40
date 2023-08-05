@@ -1,0 +1,3 @@
+[console_scripts]
+gcode-receiver = gcode_receiver.cmdline:main
+
