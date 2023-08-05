@@ -1,0 +1,43 @@
+[invoice]
+category = 'document'
+taskrunner = 'make'
+root = '/Users/dominic/business/invoices/open'
+
+   [invoice.makefile]
+   template = 'documents/invoice/makefile'
+   path = 'makefile'
+
+[mkdocs]
+category = 'web' 
+server = 'mkdocs serve'
+local_url = 'http://127.0.0.1:8000'
+
+[bolt]
+category = 'web'
+mamp = true
+taskrunner = 'grunt'
+
+   [bolt.project_config]
+   path = '.project.toml'
+   template = 'misc/project/bolt.yml'
+
+[harp]
+category = 'web'
+local_url = 'http://localhost:9000'
+taskrunner = 'grunt'
+
+   [harp.reset]
+   path = 'public/styles/_reset.styl'
+   template = 'web/stylus/_reset.styl'
+
+   [harp.index]
+   path = 'public/index.jade'
+   template = 'web/jade/index.jade'
+
+   [harp.gruntfile]
+   path = 'gruntfile.coffee'
+   template = 'web/harp/gruntfile.coffee'
+
+   [harp.packagejson]
+   path = 'package.json'
+   template = 'web/harp/package.json'

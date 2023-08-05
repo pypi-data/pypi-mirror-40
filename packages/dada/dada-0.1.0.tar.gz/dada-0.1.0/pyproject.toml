@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dada"
+version = "0.1.0"
+description = "Dada – a CLI project manager"
+authors = ["Dominic Looser <dominic.looser@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers = ['Development Status :: 2 - Pre-Alpha']
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.0"
+pick = "^0.6.4"
+toml = "^0.10.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+dada = 'dada.scripts.dada:cli'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
