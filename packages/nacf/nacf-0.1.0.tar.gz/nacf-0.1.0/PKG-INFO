@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nacf
+Version: 0.1.0
+Summary: Nasy Crawler Framework -- Never had such a pure crawler.
+Home-page: https://github.com/nasyxx/nacf
+Author: Nasy
+Author-email: nasyxx+nacf@gmail.com
+Keywords: crawler
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Utilities
+Requires-Dist: requests_html (>=0.9.0,<0.10.0)
+Project-URL: Repository, https://github.com/nasyxx/nacf
