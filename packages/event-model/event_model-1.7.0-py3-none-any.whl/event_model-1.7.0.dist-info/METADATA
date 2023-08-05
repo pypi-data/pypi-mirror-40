@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: event-model
+Version: 1.7.0
+Summary: Data model for event-based data collection and analysis
+Home-page: UNKNOWN
+Author: Brookhaven National Laboratory
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: jsonschema
+
+UNKNOWN
+
+
