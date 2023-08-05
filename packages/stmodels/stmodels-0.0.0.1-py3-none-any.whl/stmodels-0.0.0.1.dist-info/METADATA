@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: stmodels
+Version: 0.0.0.1
+Summary: Run Outliers Detection, etc.
+Home-page: https://github.com/flownait/stmodels
+Author: Steven Zheng
+Author-email: tianwolf@msn.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# stmodels
+
+This is a models for some common business analytics processing
+[Link](https://github.com/flownait/stmodels)
+
+
