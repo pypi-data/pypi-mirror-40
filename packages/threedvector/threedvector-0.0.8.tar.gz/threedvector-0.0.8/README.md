@@ -1,0 +1,54 @@
+# threedvector Package
+
+threedvector is a package providing common methods for working with 3D vectors in both Spherical and Cartesian coordinates.
+
+Vectors are stored in Spherical format but can be created in both Spherical and Cartesian formats.
+
+## Methods
+
+### ___init__(radius_x=0, theta_y=0, phi_z=0, coords="spherical")_
+Default Vector creation is in the Spherical coordinate system with `radius_x` representing the length of the vector, `theta_y` the angle theta and  `phi_z` the angle phi.  A Vector can be created using Cartesian coordinates when `coords` is set to "cartesian".  In this case `radius_x` represents the `x` coordinate, `theta_y` the `y` coordinate and  `phi_z` the `z` coordinate.
+
+### _to_spherical([x, y, z])_
+Returns a Vector object based on `[x, y, z]` Cartesian cooridates.
+
+### _to_cartesian()_
+Returns a list in the form of `[x, y, z]` representing the corresponding Cartesian coordinates for a vector.
+
+### _is_same(s_vector)_
+Compares the length as well as angles theta and phi of vector and `s_vector` to determine equality.  This is different to '=' which only checks for equality of the vector length.
+
+### _dot(s_vector)_
+Returns the resultant scalar dot product of a vector with `s_vector`.
+
+### _cross(s_vector)_
+Returns  `Vector` resulting from the cross product of a vector with `s_vector`.
+
+### _angle(s_vector)_
+Returns the in-plane angle between a vector and `s_vector`.
+
+### _magnitude()_
+Returns the length of a vector.
+
+### _unit()_
+Returns the corresponding unit vector of a vector.
+
+### _addition_ and _subtraction_
+Returns resulting Vector.  Normal addition and subtraction is done through Cartesian addition and subtraction operations.
+
+### _multplication_
+Multiplication is implemented as scalar multiplication only.  For dot and cross products the corresponding methods should be used.
+
+### _comparison_
+All comparison operators returns comparison with length of vectors only.
+
+## Atributes
+
+### _radius_
+Returns the length of a vector
+
+### _theta_
+Returns the angle theta of a vector in degrees
+
+### _phi_
+Returns the ancle phi of a vector in degrees
