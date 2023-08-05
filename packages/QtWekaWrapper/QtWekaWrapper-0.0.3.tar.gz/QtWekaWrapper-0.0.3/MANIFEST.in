@@ -1,0 +1,11 @@
+include *.bat
+include *.txt
+include LICENSE
+include Makefile
+include tox.ini
+recursive-include QtWekaWrapper *.arff
+recursive-include QtWekaWrapper *.py
+recursive-include QtWekaWrapper *.pyw
+recursive-include examples *.arff
+recursive-include source *.py
+recursive-include source *.rst

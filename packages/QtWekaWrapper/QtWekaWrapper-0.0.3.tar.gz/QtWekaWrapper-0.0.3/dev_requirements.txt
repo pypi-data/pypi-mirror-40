@@ -1,0 +1,5 @@
+PyQt5
+six>=1.11.0
+python-dateutil>=2.6.1
+pytest
+Sphinx==1.4.2
