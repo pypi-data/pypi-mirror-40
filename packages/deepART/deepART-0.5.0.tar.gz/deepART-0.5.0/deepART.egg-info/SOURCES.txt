@@ -1,0 +1,16 @@
+README.rst
+setup.py
+deepART/__init__.py
+deepART.egg-info/PKG-INFO
+deepART.egg-info/SOURCES.txt
+deepART.egg-info/dependency_links.txt
+deepART.egg-info/not-zip-safe
+deepART.egg-info/requires.txt
+deepART.egg-info/top_level.txt
+deepART/dataset/__init__.py
+deepART/dataset/gen_dataset.py
+deepART/metrics/__init__.py
+deepART/nlp/__init__.py
+deepART/nlp/chunker/__init__.py
+deepART/nlp/cooc_vec/__init__.py
+deepART/torch/__init__.py
