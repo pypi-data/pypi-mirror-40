@@ -1,0 +1,11 @@
+bookkeep/__init__.py,sha256=8ZZCeckQSEmYKQ1QEGCR-FKaHeUsxeLvVPUPDIpUCHM,342
+bookkeep/my_units_defs.txt,sha256=Ynwz3HoHbyvGoagX1ELJ8RIBzX_S-r-Jl-IBcCkXCoE,301
+bookkeep/read_only_book.py,sha256=Rc3ogSZ5ARYs9VhlPdfVXF3m2_bo8YxqJrt5TLjUQuA,866
+bookkeep/smart_book.py,sha256=SjzyQmZde9s8OBph4kh-lq9k-H7YQkl9ZLdgX5DxshI,16784
+bookkeep/unit_manager.py,sha256=qjOY-LZfMt8rEsIaq4908RFfvTn2d9hXSFBKv-05dXg,3226
+bookkeep/unit_registry.py,sha256=1rdvv4R8Hl0abP_Q2zFuWTqTalb4IAzQgC4IQIw0ejI,888
+bookkeep/utils.py,sha256=hDAY1JwVT3jq7pKjl_6oqBHaDIOaguEo24lwIHwk-rw,262
+bookkeep-0.1.dist-info/METADATA,sha256=nq6-6e35iF3rgpZY2pYwLd0TTsdKP2lcjeLedbm8OjU,3445
+bookkeep-0.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+bookkeep-0.1.dist-info/top_level.txt,sha256=OQel7ROwoFY33nPzLQSotQOOU39TjQ9twk387H2SCTU,9
+bookkeep-0.1.dist-info/RECORD,,
