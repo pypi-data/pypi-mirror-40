@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: cs.obj
+Version: 20190103
+Summary: Convenience facilities for objects.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: Convenience facilities for objects.
+        
+        Presents:
+        * flavour, for deciding whether an object resembles a mapping or sequence.
+        * O, an object subclass with a nice __str__ and convenient __init__.
+        * Some O_* functions for working with objects, particularly O subclasses.
+        * Proxy, a very simple minded object proxy intended to aid debugging.
+        
+        ## Function `copy(obj, *a, **kw)`
+        
+        Convenient function to shallow copy an object with simple modifications.
+        
+        Performs a shallow copy of `self` using copy.copy.
+        
+        Treat all positional parameters as attribute names, and
+        replace those attributes with shallow copies of the original
+        attribute.
+        
+        Treat all keyword arguments as (attribute,value) tuples and
+        replace those attributes with the supplied values.
+        
+        ## Function `flavour(obj)`
+        
+        Return constants indicating the ``flavour'' of an object:
+        * `T_MAP`: DictType, DictionaryType, objects with an __keys__ or keys attribute.
+        * `T_SEQ`: TupleType, ListType, objects with an __iter__ attribute.
+        * `T_SCALAR`: Anything else.
+        
+        ## Class `O`
+        
+        A bare object subclass to allow storing arbitrary attributes.
+        
+        It also has a nice default `__str__`
+        and `__eq__` and `__ne__` based on the `O_attrs` of the object.
+        
+        ## Function `O_attritems(o)`
+        
+        Generator yielding `(attr,value)` for relevant attributes of `o`.
+        
+        ## Function `O_attrs(o)`
+        
+        Yield attribute names from `o` which are pertinent to `O_str`.
+        
+        Note: this calls `getattr(o,attr)` to inspect it in order to
+        prune callables.
+        
+        ## Function `O_merge(o, _conflict=None, _overwrite=False, **kw)`
+        
+        Merge key:value pairs from a mapping into an O as attributes.
+        
+        Ignore keys that do not start with a letter.
+        New attributes or attributes whose values compare equal are
+        merged in. Unequal values are passed to:
+        
+            _conflict(o, attr, old_value, new_value)
+        
+        to resolve the conflict. If _conflict is omitted or None
+        then the new value overwrites the old if _overwrite is true.
+        
+        ## Function `O_str(o, no_recurse=False, seen=None)`
+        
+        Return a `str` representation of the object `o`.
+        
+        Parameters:
+        * `o`: the object to describe.
+        * `no_recurse`: if true, do not recurse into the object's structure.
+          Default: `False`.
+        * `seen`: a set of previously sighted objects
+          to prevent recursion loops.
+        
+        ## Function `obj_as_dict(o, attr_prefix=None, attr_match=None)`
+        
+        Return a dictionary with keys mapping to `o` attributes.
+        
+        ## Class `Proxy`
+        
+        An extremely simple proxy object
+        that passes all unmatched attribute accesses to the proxied object.
+        
+        Note that setattr and delattr work directly on the proxy, not the proxied object.
+        
+        ## Class `TrackedClassMixin`
+        
+        A mixin to track all instances of a particular class.
+        
+        This is aimed at checking the global state of objects of a
+        particular type, particularly states like counters. The
+        tracking is attached to the class itself.
+        
+        The class to be tracked includes this mixin as a superclass and calls:
+        
+            TrackedClassMixin.__init__(class_to_track)
+        
+        from its __init__ method. Note that `class_to_track` is
+        typically the class name itself, not `type(self)` which would
+        track the specific subclass. At some relevant point one can call:
+        
+            self.tcm_dump(class_to_track[, file])
+        
+        `class_to_track` needs a `tcm_get_state` method to return the
+        salient information, such as this from cs.resources.MultiOpenMixin:
+        
+            def tcm_get_state(self):
+                return {'opened': self.opened, 'opens': self._opens}
+        
+        See cs.resources.MultiOpenMixin for example use.
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
