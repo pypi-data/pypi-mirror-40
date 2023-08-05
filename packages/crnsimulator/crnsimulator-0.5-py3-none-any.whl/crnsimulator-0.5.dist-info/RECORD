@@ -1,0 +1,10 @@
+crnsimulator/__init__.py,sha256=9pIqe1TLUM3ggfXUKboOKpdjcDTAqzANvFJpLNUPM_E,395
+crnsimulator/crn_parser.py,sha256=yLbJKBd3T5793MSOfdD5C60UJkEt-PsR8CTQEPz9qIE,6510
+crnsimulator/odelib_template.py,sha256=uOemtVMQq49WRo5SmH99uwoXQrqbbtZG-QdIuBaKWSQ,8692
+crnsimulator/reactiongraph.py,sha256=TaDoDSLcZWifaydzyb1Ujbltjusd72v7pvP_9Hebeng,5695
+crnsimulator/solver.py,sha256=vTwxdVGe4llCVqKDdAa1NpoCJsAh61Z1RgfM06dDD9c,4457
+crnsimulator-0.5.data/scripts/crnsimulator,sha256=9UyUeUUgFBLZnMN_7_EBaphFRg4nJvf9nQJCk_1J-C0,4787
+crnsimulator-0.5.dist-info/METADATA,sha256=V4orCM9umgXIcFCeAi-p2F1dPEqBGF1yfFCaYNI7aX4,763
+crnsimulator-0.5.dist-info/RECORD,,
+crnsimulator-0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+crnsimulator-0.5.dist-info/top_level.txt,sha256=JFdL32wJJC2WdjyhNRW8Gf_3tzvPc2ylng4_mEqKZ-o,13
