@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: error-solver
+Version: 1.0.1
+Summary: Estimates propagation error tolerances for systems of equations.
+Home-page: https://github.com/mpewsey/error_solver
+Author: Matt Pewsey
+License: BSD 3-Clause License
+Description: # Error Solver
+        
+        ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/error_solver.svg)
+        ![PyPI](https://img.shields.io/pypi/v/error_solver.svg)
+        [![Build Status](https://travis-ci.com/mpewsey/error_solver.svg?branch=master)](https://travis-ci.com/mpewsey/error_solver)
+        [![Documentation Status](https://readthedocs.org/projects/error-solver/badge/?version=latest)](https://error-solver.readthedocs.io/en/latest/?badge=latest)
+        [![codecov](https://codecov.io/gh/mpewsey/error_solver/branch/master/graph/badge.svg)](https://codecov.io/gh/mpewsey/error_solver)
+        
+        ## About
+        
+        This package contains classes for estimating the propagation error tolerances
+        for a system of equations.
+        
+        ## Installation
+        
+        This package may be installed via pip:
+        
+        ```
+        pip install error_solver
+        ```
+        
+        The above installation only install the dependencies required for the
+        `ErrorSolverPy` class. To also install the dependencies necessary for the
+        `ErrorSolver` class, use the following command instead:
+        
+        ```
+        pip install error_solver[all]
+        ```
+        
+Keywords: error-estimation,measurement-tolerances,error-tolerances
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: docs
+Provides-Extra: test

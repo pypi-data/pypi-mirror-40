@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+error_solver/__init__.py
+error_solver/_base_error_solver.py
+error_solver/error_solver.py
+error_solver/error_solver_py.py
+error_solver/error_solver_py_test.py
+error_solver/error_solver_test.py
+error_solver.egg-info/PKG-INFO
+error_solver.egg-info/SOURCES.txt
+error_solver.egg-info/dependency_links.txt
+error_solver.egg-info/requires.txt
+error_solver.egg-info/top_level.txt
