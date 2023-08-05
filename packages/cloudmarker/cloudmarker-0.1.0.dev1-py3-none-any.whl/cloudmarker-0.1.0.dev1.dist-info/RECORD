@@ -1,0 +1,17 @@
+cloudmarker/__init__.py,sha256=GGyqWhTSGsMIlLd80EUIrZpNvTlmKM1QY7mkcvHydyA,138
+cloudmarker/__main__.py,sha256=P2aVhbbacrznGBx2BKvPHw4suK5cTUPH2xQuza68ygk,84
+cloudmarker/manager.py,sha256=jUcrC7TzeU7D0VKDjxQniMoyJxCSh5qmdPVbP_Rqlvs,5009
+cloudmarker/util.py,sha256=uXpN3LA6_6rkSrM9quPqmIVdA73Fw9A-sv5a0WVRPqE,4564
+cloudmarker/workers.py,sha256=uCTEKuoolvMiU3JlCsDq-H4cAzZMGn4eQeg0sTOYkRk,3763
+cloudmarker/checks/__init__.py,sha256=FSoa7FdmZsiYdPW1ApQaXV7ibUeabNatDC_BnOBX088,423
+cloudmarker/checks/mockcheck.py,sha256=yEfNf9-UqaA-NILpStFr4I7nFxmxaMWKlk2f70THPxs,1844
+cloudmarker/clouds/__init__.py,sha256=wH7W4m9QN3Y9gf4wfd1Rx6GxqXnnf10QJbex0fSeqhY,283
+cloudmarker/clouds/mockcloud.py,sha256=SpMeMxymhPeBwmWch3omiCal54AONyAayLoHb-gY1dw,2975
+cloudmarker/stores/__init__.py,sha256=XaJ9L-oQaSkVtO8RsV-XMNymiwEwL06SqPFLmQJ_yhk,385
+cloudmarker/stores/filestore.py,sha256=5WWI_lr1M1zoMGxezzX_3LaxpB__KG3Yy-HLKndN730,3000
+cloudmarker-0.1.0.dev1.dist-info/LICENSE.rst,sha256=RwxlDhxSiXo4wawTQxFoWICuOzj1FqiUVsumxKRLo7k,1126
+cloudmarker-0.1.0.dev1.dist-info/METADATA,sha256=PjLpvVwkneXMEUN85CmN_RvRSfnNBR7QaQntezffCHo,1943
+cloudmarker-0.1.0.dev1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+cloudmarker-0.1.0.dev1.dist-info/entry_points.txt,sha256=yz9D-cxlF9Axn62Lhu12gKvqEHjyjTw9uZkt7K8vaAA,58
+cloudmarker-0.1.0.dev1.dist-info/top_level.txt,sha256=lZoZ2WUiPBsIDqrsErBWVNbRLYwG4Mwku3x_xXAXR6A,12
+cloudmarker-0.1.0.dev1.dist-info/RECORD,,
