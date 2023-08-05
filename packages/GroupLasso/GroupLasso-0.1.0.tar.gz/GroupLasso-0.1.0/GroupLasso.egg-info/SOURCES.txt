@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+GroupLasso.egg-info/PKG-INFO
+GroupLasso.egg-info/SOURCES.txt
+GroupLasso.egg-info/dependency_links.txt
+GroupLasso.egg-info/requires.txt
+GroupLasso.egg-info/top_level.txt
+grouplasso/__init__.py
+grouplasso/_numba.py
+grouplasso/model.py
+grouplasso/util.py
