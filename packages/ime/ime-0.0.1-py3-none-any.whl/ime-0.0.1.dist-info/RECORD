@@ -1,0 +1,11 @@
+ime/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ime/config.py,sha256=wEofqt1Mh3BTmyum7yYfqaD9ZspJhtnBbTFeKUuFDgo,71
+ime/engine.py,sha256=iCQfgfUVMsjhbYb6uxLjCitEmDMQGKxaRyEPZR6zoqk,635
+ime/trie.py,sha256=SsY25nysDeG1v4Zh9sQcWSaLb4CESnDKrOndE9IsFNM,2643
+ime/utils.py,sha256=HmZg2eXDHSISIlZFSlppVAEMgEVdykso3bqJgX6GKxE,756
+ime-0.0.1.dist-info/METADATA,sha256=rvlnD6yjZsiqWWH_BK2ue-fMeesAzvW8uOOjWxoQ858,1324
+ime-0.0.1.dist-info/RECORD,,
+ime-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+ime-0.0.1.dist-info/top_level.txt,sha256=6hyobdh3g64FMwiEJR4UOk7d1iH_Ej0ePP-LYVy7w8Y,10
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_trie.py,sha256=LruhRU5OmTUj4bmIcNj_7ll14-slS7LZ1r-RAGKvbYU,643
