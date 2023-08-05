@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: webtest-asgi
+Version: 1.0.1
+Summary: webtest-asgi provides integration of WebTest with ASGI applications
+Home-page: https://github.com/sloria/webtest-asgi
+Author: Steven Loria
+Author-email: sloria1@gmail.com
+License: MIT
+Keywords: webtest-asgi webtest testing asgi wsgi asyncio
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: webtest
+Requires-Dist: starlette (>=0.9.0)
+Requires-Dist: requests
+Requires-Dist: python-multipart
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 (==3.6.0) ; extra == 'dev'
+Requires-Dist: flake8-bugbear (==18.8.0) ; extra == 'dev'
+Requires-Dist: pre-commit (==1.13.0) ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: flake8 (==3.6.0) ; extra == 'lint'
+Requires-Dist: flake8-bugbear (==18.8.0) ; extra == 'lint'
+Requires-Dist: pre-commit (==1.13.0) ; extra == 'lint'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+************
+webtest-asgi
+************
+
+.. image:: https://badgen.net/pypi/v/webtest-asgi
+  :alt: pypi badge
+  :target: https://badge.fury.io/py/webtest-asgi
+
+.. image:: https://badgen.net/travis/sloria/webtest-asgi/master
+  :alt: travis-ci status
+  :target: https://travis-ci.org/sloria/webtest-asgi
+
+.. image:: https://badgen.net/badge/code%20style/black/000
+   :target: https://github.com/ambv/black
+   :alt: Code style: Black
+
+webtest-asgi provides integration of `WebTest <https://docs.pylonsproject.org/projects/webtest/>`_ with  `ASGI <https://asgi.readthedocs.io/>`_ applications.
+
+Installation
+============
+::
+
+    pip install webtest-asgi
+
+
+Usage
+=====
+
+You can use webtest-asgi with any ASGI application. Here is example usage with `Starlette <https://github.com/encode/starlette>`_.
+
+.. code-block:: python
+
+    from starlette.applications import Starlette
+    from starlette.responses import JSONResponse
+    from webtest_asgi import TestApp as WebTestApp
+
+    app = Starlette()
+
+
+    @app.route("/")
+    async def homepage(request):
+        return JSONResponse({"hello": "world"})
+
+
+    @pytest.fixture()
+    def testapp():
+        return WebTestApp(app)
+
+
+    def test_get_homepage(testapp):
+        assert testapp.get("/").json == {"hello": "world"}
+
+
+Project Links
+=============
+
+- PyPI: https://pypi.python.org/pypi/webtest-asgi
+- Issues: https://github.com/sloria/webtest-asgi/issues
+
+License
+=======
+
+MIT licensed. See the bundled `LICENSE <https://github.com/sloria/webtest-asgi/blob/master/LICENSE>`_ file for more details.
+
+
