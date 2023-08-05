@@ -1,0 +1,12 @@
+README.rst
+requirements.txt
+setup.py
+nzconf/__init__.py
+nzconf/__version__.py
+nzconf/file.py
+nzconf.egg-info/PKG-INFO
+nzconf.egg-info/SOURCES.txt
+nzconf.egg-info/dependency_links.txt
+nzconf.egg-info/entry_points.txt
+nzconf.egg-info/requires.txt
+nzconf.egg-info/top_level.txt
