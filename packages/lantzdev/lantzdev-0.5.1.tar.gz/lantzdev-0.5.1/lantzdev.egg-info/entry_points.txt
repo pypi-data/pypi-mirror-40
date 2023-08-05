@@ -1,0 +1,3 @@
+[console_scripts]
+lantz = lantz.__main__:main
+

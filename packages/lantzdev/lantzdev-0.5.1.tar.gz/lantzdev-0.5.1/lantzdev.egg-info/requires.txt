@@ -1,0 +1,13 @@
+lantz-core>=0.5.dev1
+lantz-drivers>=0.5.dev1
+lantz-sims>=0.5.dev1
+
+[full]
+lantz-qt>=0.5.dev1
+lantz-ino>=0.5.dev1
+
+[ino]
+lantz-ino>=0.5.dev1
+
+[qt]
+lantz-qt>=0.5.dev1
