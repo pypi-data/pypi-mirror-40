@@ -1,0 +1,3 @@
+[console_scripts]
+get_pbmr = get_pbmr.get_pbmr:get_mutation_rate_graph
+
