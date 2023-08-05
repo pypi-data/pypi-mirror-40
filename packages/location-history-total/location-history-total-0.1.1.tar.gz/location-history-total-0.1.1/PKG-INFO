@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: location-history-total
+Version: 0.1.1
+Summary: Given a Takeout of Google Location History, generate a CSV of work history.
+Home-page: https://github.com/traherom/location-history-total
+Author: Ryan Morehart
+Author-email: ryan@moreharts.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Project-URL: Repository, https://github.com/traherom/location-history-total
