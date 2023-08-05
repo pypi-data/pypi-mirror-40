@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: simhandler
+Version: 0.0.9.2
+Summary: Intelligent simulation handler for power system load flow simulations
+Home-page: https://github.com/mbardwell/intelligent-simulation-handler
+Author: Mike Bardwell
+Author-email: bardwell@ualberta.ca
+License: GPL
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: h5py
+Requires-Dist: tensorflow
+Requires-Dist: keras
+Requires-Dist: pypsa
+
+
+# intelligent-simulation-handler
+
+### What is this repository for? ###
+
+* Software development of an intelligent simulation handler for power system load flow simulations
+* Project completed as partial requirement of attaining MSc at the University of Alberta  
+
+### How do I get set up? ###
+
+* *pip install simhandler*
+* To run the basic 3 node example:
+  1. Download [3node.json](https://github.com/mbardwell/intelligent-simulation-handler/tree/master/simhandler/data/network_configurations) file and put it under *simhandler\data\network_configurations* as *3node.json*
+    *For example, C:\Users\mikey\Anaconda3\envs\microgrid_workcomp\Lib\site-packages\simhandler\data\network_configurations\3node.json
+  2. In a Python 3 terminal:
+    *from simhandler.intelligentsimulationhandler import IntelligentSimulationHandler as ish
+    *ish('./data/network_configurations/3node.json')
+
+### Contribution guidelines ###
+
+* Follow PEP8 guidelines with the following exception: use lowercaseUppercase function naming instead of snake_case
+
+### Questions? ###
+
+* If you find a bug or want a feature. Create an issue
+* Otherwise, send emails with title 'Intelligent Simulation Handler - *Question/Comment*' to bardwell@ualberta.ca
+
+
