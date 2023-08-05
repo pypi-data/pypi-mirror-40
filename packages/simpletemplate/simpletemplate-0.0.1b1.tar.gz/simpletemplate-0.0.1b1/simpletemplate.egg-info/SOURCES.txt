@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+simpletemplate/__init__.py
+simpletemplate.egg-info/PKG-INFO
+simpletemplate.egg-info/SOURCES.txt
+simpletemplate.egg-info/dependency_links.txt
+simpletemplate.egg-info/top_level.txt
+test/test.py
