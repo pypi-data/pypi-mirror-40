@@ -1,0 +1,3 @@
+[console_scripts]
+folderstats = folderstats.__main__:main
+
