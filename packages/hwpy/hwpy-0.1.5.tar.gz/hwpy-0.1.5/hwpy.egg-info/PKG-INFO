@@ -1,0 +1,36 @@
+Metadata-Version: 1.1
+Name: hwpy
+Version: 0.1.5
+Summary: Show Linux Hardware Info
+Home-page: https://github.com/starsliao/hwpy
+Author: Stars Liao
+Author-email: starsliao@163.com
+License: MIT Licence
+Description: ### install
+        ```
+        pip install hwpy
+        ```
+        
+        ### usage
+        #### python -m hwpy
+        
+        ##### from hwpy import info
+        ##### info.main()
+        ##### info.hwlist
+        
+        ```
+        info.cpu
+        info.net    
+        info.disk
+        info.part   
+        info.host
+        info.mem
+        ```
+        
+Keywords: pip,hwinfo,Hardware
+Platform: any
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
