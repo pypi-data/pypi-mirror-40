@@ -1,0 +1,4 @@
+PyQt5==5.11.2
+hidapi
+matplotlib
+numpy
