@@ -1,0 +1,15 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_equipped.py,sha256=B6g0cC4nxfeL9U5lBVgLD8em53D3F3hCbP2n873wqIg,1413
+test/test_workerpool.py,sha256=uFb0ESeeo6tvbYLZbmVgZj41E-NkGKZsIN3lW6Nwm1c,2265
+workerpool/QueueWrapper.py,sha256=EOCzhD4fEOhVG8Yd1v8dlUPj8VRivsaUihcZCOTQQpU,574
+workerpool/__init__.py,sha256=M6XF5Yzi8MHykU2Dej86Jh_YIXGYmlcSQ6IxNmADQMk,886
+workerpool/exceptions.py,sha256=EWGibBUXwCnBu8GTdT6eP3dIhYU7hM1knwTZaUKd92U,357
+workerpool/jobs.py,sha256=piXZpoPGqY2JtFbS2aBLtciI6NxdezlgdE_DDGMaups,1390
+workerpool/pools.py,sha256=pnT2vx7XcoBrn4uBaSobMmz2pWnJLA0pJqsalP8HkWo,3480
+workerpool/workers.py,sha256=Ekfc5sV-4DVQ0jJizRbaZmpFZJtL6WuTCN6EKnfhWlQ,2183
+workerpool3-0.9.5.dist-info/LICENSE,sha256=xF0ZjkqaRTXPsFUqZCNCFbzKrlnNmEafMmIqWXRr8GQ,1128
+workerpool3-0.9.5.dist-info/METADATA,sha256=UCn_LVrOxOuS1VdG06uuWRJv5QNt-Ur5xDkLqiNuHCk,1031
+workerpool3-0.9.5.dist-info/WHEEL,sha256=CihQvCnsGZQBGAHLEUMf0IdA4fRduS_NBUTMgCTtvPM,110
+workerpool3-0.9.5.dist-info/entry_points.txt,sha256=FjKvgvGyIyqokCxiGIVCvaGmkWcXwEXZ8W6zk1mtvZQ,37
+workerpool3-0.9.5.dist-info/top_level.txt,sha256=brAlNyUYoGcVauRv98ramGSMMFWj2inytq3iogEzSmI,16
+workerpool3-0.9.5.dist-info/RECORD,,
