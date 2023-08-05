@@ -1,0 +1,11 @@
+README.md
+setup.py
+zato_connection_registry/__init__.py
+zato_connection_registry/cli.py
+zato_connection_registry/registry.py
+zato_connection_registry.egg-info/PKG-INFO
+zato_connection_registry.egg-info/SOURCES.txt
+zato_connection_registry.egg-info/dependency_links.txt
+zato_connection_registry.egg-info/entry_points.txt
+zato_connection_registry.egg-info/requires.txt
+zato_connection_registry.egg-info/top_level.txt
