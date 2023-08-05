@@ -1,0 +1,3 @@
+[console_scripts]
+sshush = sshush.command_line:main
+
