@@ -1,0 +1,17 @@
+sudo: false
+language: python
+python:
+  - 3.6
+  - 3.7-dev
+
+before_install:
+  - pip install codecov coverage
+
+script:
+  coverage run ./tests.py
+
+after_success:
+  - codecov
+
+notifications:
+  email: false
