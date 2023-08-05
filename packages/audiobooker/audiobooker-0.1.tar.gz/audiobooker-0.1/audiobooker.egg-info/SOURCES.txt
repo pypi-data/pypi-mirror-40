@@ -1,0 +1,9 @@
+setup.py
+audiobooker/__init__.py
+audiobooker.egg-info/PKG-INFO
+audiobooker.egg-info/SOURCES.txt
+audiobooker.egg-info/dependency_links.txt
+audiobooker.egg-info/requires.txt
+audiobooker.egg-info/top_level.txt
+audiobooker/scrappers/__init__.py
+audiobooker/scrappers/librivox.py
