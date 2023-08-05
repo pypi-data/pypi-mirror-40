@@ -1,0 +1,60 @@
+Metadata-Version: 1.1
+Name: itpe
+Version: 2019.1
+Summary: Scripts for generating the master post for ITPE (the Informal Twitter Podfic Exchange)
+Home-page: https://github.com/alexwlchan/itpe
+Author: Alex Chan
+Author-email: alex@alexwlchan.net
+License: MIT
+Description: ITPE
+        ====
+        
+        Scripts for generating the masterpost HTML for ITPE (the Informal Twitter
+        Podfic Exchange).
+        
+        Installation
+        ------------
+        
+        You need to install Python first.  You can download Python:
+        
+        *  from the `official Python website <https://www.python.org/downloads/>`_
+        *  using `conda <https://conda.io/docs/user-guide/install/index.html#id4>`_
+        
+        There are other ways to install Python, but these are probably the easiest
+        if you don't already have a working Python installation.
+        
+        You may be asked "Python 2.7 or Python 3"?  Either should be fine -- these
+        scripts should work with any version of Python that you can install in 2018.
+        
+        Once you have Python, install the scripts by running:
+        
+        .. code-block:: console
+        
+           pip install itpe
+        
+        Usage
+        -----
+        
+        Once the scripts are installed, run ``itpe --help`` to get a usage message.
+        
+        Support
+        -------
+        
+        If you are having issues, contact Alex Chan
+        (`alex@alexwlchan.net <mailto:alex@alexwlchan.net>`_).
+        
+        License
+        -------
+        
+        These scripts are licensed under the MIT license.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
