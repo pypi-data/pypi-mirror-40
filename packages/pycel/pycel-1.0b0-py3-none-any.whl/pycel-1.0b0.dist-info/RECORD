@@ -1,0 +1,13 @@
+pycel/__init__.py,sha256=ozV1MW7AjS88Wxc5UdCZHXf7rziRdR-5fSBpd_rRX4I,139
+pycel/addin.py,sha256=lpm8T4rlE5LyzeZZAgQlFVfBgsH72V66-m88brNBfjo,1711
+pycel/excelcompiler.py,sha256=Z43i7MdvXy-xqzp9LyJWhuNI6gl3bDsSTdXNV7fLerM,28398
+pycel/excelformula.py,sha256=Dm--5CE_kEjPr2D711g3MQY2-HAPnDouGZkD-rWhkO8,28325
+pycel/excellib.py,sha256=DYJtPy4NMiwR6ir_g8cpRmDbVa7qvv_SqkGjgRpK1VU,17458
+pycel/excelutil.py,sha256=yUPhqxP0-yFc-MQ8jD7QfcLbDEjqJ7ZRAOxHX2IdZPI,29997
+pycel/excelwrapper.py,sha256=kNFCclycs8g0MAHlH3M59u5iO79Jd_i96GniAmVBDlQ,5741
+pycel/version.py,sha256=CPF72va3oFnPWPMFKpdo7tLkWHI9w2v_Rq-3LKFTUQA,296
+pycel-1.0b0.dist-info/LICENSE.txt,sha256=s9Hq5_Uk_J3dSFYqRlLv0rzYSOOLA_BeOIvM6UPnPfI,35819
+pycel-1.0b0.dist-info/METADATA,sha256=hORLkAyZaUlqVnDvPWb_QWQ4GszYU25rgMIM0N_mIBU,6612
+pycel-1.0b0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+pycel-1.0b0.dist-info/top_level.txt,sha256=QCWHsbcAkOgBgUQm5DsTG8hmRm4ODCIa34iFVFs3Jsk,6
+pycel-1.0b0.dist-info/RECORD,,
