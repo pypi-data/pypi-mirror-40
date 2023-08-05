@@ -1,0 +1,50 @@
+Metadata-Version: 1.1
+Name: eebrightbox
+Version: 0.0.1
+Summary: Connector for EE BrightBox routers.
+Home-page: https://github.com/krygal/eebrightbox
+Author: Krystian Galutowski
+Author-email: k.galutowski@gmail.com
+License: UNKNOWN
+Description: EEBrightBox (unstable)
+        ======================
+        
+        Connector for EE BrightBox routers.
+        
+        .. image:: https://travis-ci.org/krygal/eebrightbox.svg?branch=master
+            :target: https://travis-ci.org/krygal/eebrightbox
+        .. image:: https://img.shields.io/badge/license-MIT-blue.svg
+           :target: ./LICENSE
+           :alt: MIT licensed
+        
+        Example
+        -------
+        
+        .. code:: python
+        
+            from eebrightbox import EEBrightbox
+        
+            config = {
+                'version': 2,
+                'password': 'admin_password'
+            }
+        
+            with EEBrightbox(config) as ee:
+                active_devices = ee.get_active_devices()
+                ssids = ee.get_ssids()
+        
+        
+        License
+        -------
+        
+        See LICENSE file
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
