@@ -1,0 +1,11 @@
+requests
+pandas
+xarray
+matplotlib
+lxml
+grequests
+gevent==1.3a1
+siphon
+dask
+netCDF4
+progressbar2
