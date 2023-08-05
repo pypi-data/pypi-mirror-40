@@ -1,0 +1,63 @@
+# Smurves
+
+### The triple-random constrainable curve generator for smooth function perturbation
+
+Smurves is a tool for random smooth curve generation that allows for several constraints to be put on the generation process. If offers a more constrainable alternative to using, for example, Gaussian processes for that purpose. The method is based on Newtonian [projectile motion](https://en.wikipedia.org/wiki/Projectile_motion) and takes its inspiration from Brandon Sanderson's book series [The Stormlight Archive](https://brandonsanderson.com/books/the-stormlight-archive/) and the books' magic system called "surgebinding". More specifically, this approach makes note of the parts that deal with the change in direction and magnitude of gravity for an in-flight object, which provided the initial concept.
+
+With this idea in mind, Smurves generates smooth curves by randomly sampling the gravitational force, as well as locations and the number of gradient sign changes, for one projectile per curve path and making sure that all constraints are adhered to, with velocity and flight angle being retained after gravitational direction switches.
+
+In essence, the code's inner workings can be imagined as firing a bullet at either zero angle or a random angle, from a specified or random point at either the left or the right side of the x-axis interval, depending on the user preferences. At a random number of random points, gravity gets turned upside down with a new random magnitude while the bullet continues its flight, all subject to the constraints set by the user for the properties of the required curves.
+
+The motivation for this approach was to find a novel way* of generating utterly random curves with certain constraints to smoothly perturbate functions, for example the [matter power spectrum](https://en.wikipedia.org/wiki/Matter_power_spectrum) in cosmology. A more detailed description of the methodology, as well as the first application of the tool to scientific inquiry, can be found in [this paper](https://arxiv.org/abs/1812.09786) on the viability of type SN Ia supernova data to test the standard model of cosmology.
+
+<sub><sup>* Because it's from a novel. This documentation comes fully equipped with bad jokes.</sup></sub>
+
+### Installation
+
+Smurves can be installed via [PyPI](https://pypi.org/), with a single command in the terminal:
+
+```
+pip install smurves
+```
+
+Alternatively, the file `smurves.py` can be downloaded from the folder `smurves` in this repository and used locally by placing the file into the working directory for a given project. An installation via the terminal is, however, highly recommended, as the installation process will check for the package requirements and automatically update or install any missing dependencies, thus sparing the user the effort of troubleshooting and installing them themselves.
+
+### Quickstart guide
+
+The descriptions and example usage below provide a quick tutorial on Smurves. In addition, the `examples.ipynb` Jupyter Notebook in the `examples` folder in this repository show the use of the tool for various constraints and with explanations for each parameter set, and with the code necessary to plot the curves.
+
+In addition to the number of curves and interval constraints for both x-axis and y-axis beyond which the curves shouldn't stray, the tool requires the number of measurement points amd the maximum number of directional changes per curve.
+
+Six optional parameters include the placement of a point in which the curves should converge, the choice of a logarithmic scale for the x-axis, the choice to launch the curve trajectories at random instead of zero angles, the choice to let the curves converge on the right instead of the left side if a convergence point is provided, the percentiles along the x-axis before and which no directional gravity changes should be implemented, and the placing of a threshold point before which no deviation from the convergence point's x-axis value should take place. These parameters are described in the table below.
+
+<br></br>
+
+| Variables                    | Explanations                                    | Default    |
+|:-----------------------------|:------------------------------------------------|:-----------|
+| n_curves                     | The number of curves you want to generate       |            |
+| x_interval                   | The allowed x-axis interval for the curves      |            |
+| y_interval                   | The allowed y-axis interval for the curves      |            |
+| n_measure                    | The number of equally-spaced measurement points |            |
+| direction_maximum            | The maximum number of allowed gradient changes  |            |
+| convergence_point (optional) | The left-side point of convergence for curves   |            |
+| log_scale (optional)         | Whether measurements should be on a log-scale   | False      |
+| random_launch (optional)     | Whether the first launch angle should be random | False      |
+| right_convergence (optional) | Whether convergence should be on the right side | False      |
+| change_range (optional)      | The x-axis percentiles before and after which no <br> gradient changes should take place for curves | [0.1, 0.9] |
+| change_spacing (optional)    | The minimum space in measurement points between <br> the different points of a gravitational force change | None |
+|change_ratio (optional)       | The multiplier for the last partial trajectory to get <br> the upper limit for the next partial trajectory's force | None |
+| start_force (optional)       | The point of the first deviation from unity     | None       |
+
+<br></br>
+
+After the installation via [PyPI](https://pypi.org), or using the `smurves.py` file locally, an exemplary call without optional parameters looks like this:
+
+```python
+from smurves import surgebinder
+
+curves = surgebinder(n_curves = 10,
+                     x_interval = [0.1, 10.0],
+                     y_interval = [0.0, 1.0],
+                     n_measure = 100,
+                     direction_maximum = 1)
+```
