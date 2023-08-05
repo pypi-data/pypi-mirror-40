@@ -1,0 +1,7 @@
+setup.py
+bamlib/__init__.py
+bamlib/bamfuncs.py
+thebamlib.egg-info/PKG-INFO
+thebamlib.egg-info/SOURCES.txt
+thebamlib.egg-info/dependency_links.txt
+thebamlib.egg-info/top_level.txt
