@@ -1,0 +1,10 @@
+autoarchive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoarchive/admin.py,sha256=EYzbJfy3WdaCKXp6RMNb1zQjEyKNIB77GpQLZMXDeNE,466
+autoarchive/apps.py,sha256=z0o5x87HlvQgExxoBEnOEu_-fGRYhpVF_SKOtP2PBdE,162
+autoarchive/models.py,sha256=d_4Fnl6xMp5JPryksjdDV9Z9HQmBjuP-j3lGnehR8PE,4200
+autoarchive/tasks.py,sha256=n9j8Sx9ijSay6cgTwRCLPz1YkJNLKqGKXZfc2aNjpms,879
+django_autoarchive-0.0.3.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+django_autoarchive-0.0.3.dist-info/METADATA,sha256=RrnL5t1cTk9lMwU9Cc_U8T7ZJNu4_3qnzE6AlqAe-L0,786
+django_autoarchive-0.0.3.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+django_autoarchive-0.0.3.dist-info/top_level.txt,sha256=F7XeqreAtb-R2giJifgbXlWdzCKB-kHF-YQqCVIpS8c,12
+django_autoarchive-0.0.3.dist-info/RECORD,,
