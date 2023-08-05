@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+dextract/__init__.py
+dextract/layers.py
+dextract/linear.py
+dextract/sequential.py
+dextract.egg-info/PKG-INFO
+dextract.egg-info/SOURCES.txt
+dextract.egg-info/dependency_links.txt
+dextract.egg-info/not-zip-safe
+dextract.egg-info/top_level.txt
