@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: django-commander
+Version: 0.1.0
+Summary: Run Django manage.py command from the web
+Home-page: https://github.com/vtbassmatt/django-commander
+Author: Matt Cooper
+Author-email: vtbassmatt@gmail.com
+License: UNKNOWN
+Description: # Django Commander
+        
+        Run Django `manage.py` commands from the web.
+        This is mainly useful in situations where you can't easily SSH into your host.
+        For example, if you use [azf-wsgi](https://github.com/vtbassmatt/azf-wsgi) to run Django on Azure Functions.
+        
+        ## Configuration
+        
+        1. Add `commander` to your `INSTALLED_APPS`.
+        2. Add `COMMANDER_KEY` to your settings. This should be a reasonably secure key, which you'll use in lieu of real authentication 😱
+        3. `from commander import commander_urls` and add `path('commander/', commander_urls),` to your URLconf.
+        4. Navigate to `http://yourserver/yourapp/commander/?key={COMMANDER_KEY}`.
+        5. Do whatever config you need to do.
+        6. Change `COMMANDER_KEY` explicitly to `None` to disable management 😌
+        
+        ## Contributing
+        
+        Contributions welcome. Be kind to one another.
+        
+        To develop locally, first make a virtualenv.
+        Then cd into `dev/` and `pip install -e ../src`.
+        Then `pip install django` and off you go.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

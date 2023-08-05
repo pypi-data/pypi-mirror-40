@@ -1,0 +1,16 @@
+<h1>{{ command_name }}</h1>
+{% if command_results %}
+<pre>
+{{ command_results }}
+</pre>
+{% endif %}
+<form method="post">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Run"/>
+</form>
+<hr/>
+<pre>
+{{ command_usage }}
+</pre>
+<p><a href="{% url 'commander:list' %}?key={{ key }}">Return to command list</a></p>
