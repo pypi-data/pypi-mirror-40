@@ -1,0 +1,12 @@
+battleship/__init__.py,sha256=adORBI9GhRuDBnCwj8ifk913Ch5iU4QNGVp9SSVpHyk,184
+battleship/__main__.py,sha256=pb9TKvkfVZwb3ZQilYGN6MLDzUJlsosogapcp8DHDnA,72
+battleship/battleship.py,sha256=TyZrZalQn_-z6vN1ZXQBACBpPLYOeio9gz74YlKgrl8,5461
+battleship/exceptions.py,sha256=IkM1b7hlWo7wCUG1CKPvxw84JrWn6-BJgindoJQDSTE,46
+battleship/main.py,sha256=Py6vObrV4m7QH4rwuirOOzlApZ_xmaQCzdvmi_KmSaQ,3152
+battleship/version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+py_battleship-0.1.0.dist-info/LICENSE,sha256=QpXsBqYk4CNf134dmIl0lCOnwNC1KDpmIJ6OsWSUdHg,1090
+py_battleship-0.1.0.dist-info/METADATA,sha256=9K1MyxXI1uSd2-mb22YEN5yJn5xHrmF18wCohmr6kdc,2248
+py_battleship-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+py_battleship-0.1.0.dist-info/entry_points.txt,sha256=2BG-kFAiIH33cbF6JqA3vttsP4Z1TLrbFl3w2hDSkYI,77
+py_battleship-0.1.0.dist-info/top_level.txt,sha256=TJo8gwFnmhJN6ZdNkci660eBiU_O7YCvwEBR7Z9LEc4,11
+py_battleship-0.1.0.dist-info/RECORD,,
