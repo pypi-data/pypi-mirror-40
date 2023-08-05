@@ -1,0 +1,8 @@
+click
+lxml
+tornado
+
+[dev]
+black
+flake8
+pre-commit
