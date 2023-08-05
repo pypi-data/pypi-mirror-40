@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: wagtailsurveys
+Version: 0.2.0
+Summary: A module for Wagtail that provides functionality of polls and surveys.
+Home-page: https://github.com/torchbox/wagtailsurveys
+Author: Mikalai Radchuk
+Author-email: mikalai.radchuk@torchbox.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 1
+Classifier: Framework :: Wagtail :: 2
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Requires-Dist: Django (<1.12,>=1.8.1)
+Requires-Dist: wagtail (<=2.3,>=1.4)
+Requires-Dist: Unidecode (>=0.04.14)
+Provides-Extra: testing
+Requires-Dist: mock (>=1.0.0) ; extra == 'testing'
+Requires-Dist: coverage (>=3.7.0) ; extra == 'testing'
+Requires-Dist: flake8 (>=2.2.0) ; extra == 'testing'
+
+See https://github.com/torchbox/wagtailsurveys for details
+
+
