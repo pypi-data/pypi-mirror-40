@@ -1,0 +1,5 @@
+python-plugin-sdk
+python-glanceclient
+python-neutronclient
+python-novaclient
+requests

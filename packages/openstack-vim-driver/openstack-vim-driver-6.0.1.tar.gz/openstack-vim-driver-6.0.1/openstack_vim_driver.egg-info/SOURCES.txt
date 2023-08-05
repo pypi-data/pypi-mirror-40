@@ -1,0 +1,13 @@
+MANIFEST.in
+openstack-vim-driver
+setup.py
+openstack_vim_driver/__init__.py
+openstack_vim_driver/openstack_vim_driver.py
+openstack_vim_driver.egg-info/PKG-INFO
+openstack_vim_driver.egg-info/SOURCES.txt
+openstack_vim_driver.egg-info/dependency_links.txt
+openstack_vim_driver.egg-info/requires.txt
+openstack_vim_driver.egg-info/top_level.txt
+openstack_vim_driver/etc/configuration.ini
+tests/__init__.py
+tests/test_vim_driver.py
