@@ -1,0 +1,3 @@
+[console_scripts]
+background_mask = background_mask:_main
+
