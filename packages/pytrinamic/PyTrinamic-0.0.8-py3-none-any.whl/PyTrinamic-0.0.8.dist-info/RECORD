@@ -1,0 +1,16 @@
+PyTrinamic/TMCL.py,sha256=YIEdkQdtEVOB5hrhXNdexDmoFeTZkZXNeCvJlZBWP6M,4302
+PyTrinamic/__init__.py,sha256=_O9rqtqUacR3arEDgP78hUvuAXY26fV8lF0KFo0jG7k,459
+PyTrinamic/ICs/TMC4671/TMC4671_Mask_Shift.py,sha256=eSrTy6KUkeq3R1otpQLkOHXrcFniDyMrN2-aLsPkvtI,84454
+PyTrinamic/ICs/TMC4671/TMC4671_Register.py,sha256=OAk2xNpgRS0A2M5y8hcmmRqLdKbIaw2DkVSCoZMCAsc,6247
+PyTrinamic/connections/SerialInterface.py,sha256=rB4xf3NMb6kfWPWRZtPHoDFDO83GiLzcp3vVnkNuLx0,2721
+PyTrinamic/evalboards/TMC4671_Eval.py,sha256=kWH8rEZicMCC4oO6aaexM8nFsahYF3HtrxXfPeXwxio,749
+PyTrinamic/examples/evalboards/TMC4671_Eval_BLDC_ABN_encoder.py,sha256=g8VHQx4N4yA1PeeCda1pDo8E02DAhqXKkWP3949oTPw,3206
+PyTrinamic/examples/evalboards/TMC4671_Eval_BLDC_open_loop.py,sha256=byiojw6U2MFzhf3VZtKPmfLIDondCBcQEXwtz7WvTDE,2481
+PyTrinamic/examples/modules/TMCM-0010-OPC_config_check.py,sha256=VbSv7mJWMM_LnKwU8N143MdC4qlhLtBEsmIyWF6uxeg,456
+PyTrinamic/examples/modules/TMCM-0010-OPC_config_update.py,sha256=z3xNnjiVDiIi2QPIME9OTyp_vN4YJ4kdhTZgsH_De6Y,757
+PyTrinamic/modules/TMCM_0010_OPC.py,sha256=WadBKXENnLyi_YR4da8uK9sveJHIMZpVhW10GG9WcMw,954
+PyTrinamic-0.0.8.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+PyTrinamic-0.0.8.dist-info/METADATA,sha256=KWaHJ_LxNnijvsiMShVifHVHZsi2247QeDJjZ_wOrlY,516
+PyTrinamic-0.0.8.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+PyTrinamic-0.0.8.dist-info/top_level.txt,sha256=nRSL4tOOF9zLMcbGINbQQ0urHDhtN3piESujPSRxaxc,431
+PyTrinamic-0.0.8.dist-info/RECORD,,

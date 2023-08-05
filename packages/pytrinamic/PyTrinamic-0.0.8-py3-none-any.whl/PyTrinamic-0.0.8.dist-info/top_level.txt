@@ -1,0 +1,10 @@
+PyTrinamic
+PyTrinamic/ICs/TMC4671/TMC4671_Mask_Shift
+PyTrinamic/ICs/TMC4671/TMC4671_Register
+PyTrinamic/connections/SerialInterface
+PyTrinamic/evalboards/TMC4671_Eval
+PyTrinamic/examples/evalboards/TMC4671_Eval_BLDC_ABN_encoder
+PyTrinamic/examples/evalboards/TMC4671_Eval_BLDC_open_loop
+PyTrinamic/examples/modules/TMCM-0010-OPC_config_check
+PyTrinamic/examples/modules/TMCM-0010-OPC_config_update
+PyTrinamic/modules/TMCM_0010_OPC
