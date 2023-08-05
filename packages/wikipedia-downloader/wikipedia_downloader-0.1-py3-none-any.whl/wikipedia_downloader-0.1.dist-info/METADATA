@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: wikipedia-downloader
+Version: 0.1
+Summary: Download Wikipedia data dumps
+Home-page: https://github.com/riccardobucco/wikipedia_downloader
+Author: Riccardo Bucco
+Author-email: riccardobucco@gmail.com
+License: UNKNOWN
+Keywords: wikipedia dump download
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Wikipedia downloader
+*wikipedia_downloader* is a Python module that makes it easy to download Wikipedia data dumps.
+## Installation
+To install *wikipedia_downloader*, simply run:
+```
+pip install wikipedia_downloader
+```
+## Documentation
+### Functions
+- wikipedia_downloader.**download_sql_dump**(*language*, *file*, *dump=latest*, *target_dir="."*)
+
+  Downloads and decompresses a Wikipedia SQL dump.
+
+  Arguments:
+  - *language*: Wikipedia name (language code).
+  - *file*: File name.
+  - *dump*: Dump version.
+  - *target_dir*: Target directory.
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
