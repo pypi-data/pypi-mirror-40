@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: drf-url-token-auth
+Version: 0.1
+Summary: Authentication scheme for django rest framework that allow to use token in a url
+Home-page: https://github.com/develatio/drf-url-token-auth/
+Author: Develatio Technologies S.L.
+Author-email: contacto@develat.io
+License: MIT
+Description: # drf-url-token-auth
+        
+        Simple token based authentication using rest_framework.
+        Clients should authenticate by passing the token key in the "?token="
+        HTTP parameter. The token parametter can be configured.
+        
+        ## Quick start
+        
+        1. Add "gitlab_webhook" to INSTALLED_APPS:
+        
+        ```
+        INSTALLED_APPS = {
+            ...
+            "drf_url_token_auth"
+        }
+        ```
+        
+        2. Modify rest framework settings:
+        
+        ```
+        REST_FRAMEWORK = {
+            'DEFAULT_AUTHENTICATION_CLASSES': (
+                'drf_url_token_auth.authentication.UrlTokenAuthentication',
+            )
+        }
+        ```
+        
+        3. Optionally, configure url parameter name (default: token)
+        
+        ```
+        DRF_URL_TOKEN_AUTH = {
+            'PARAM_NAME': 'token'
+        }
+        ```
+        
+        _Dev notes_:
+        build package: python setup.py sdist
+        install: pip install --user drf-url-token-auth/dist/drf-url-token-auth-01.tar.gz
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
