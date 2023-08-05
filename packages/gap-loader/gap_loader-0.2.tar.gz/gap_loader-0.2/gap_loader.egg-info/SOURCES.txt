@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+example/example.py
+example/mycode.gap
+gap_loader/__init__.py
+gap_loader.egg-info/PKG-INFO
+gap_loader.egg-info/SOURCES.txt
+gap_loader.egg-info/dependency_links.txt
+gap_loader.egg-info/not-zip-safe
+gap_loader.egg-info/requires.txt
+gap_loader.egg-info/top_level.txt
