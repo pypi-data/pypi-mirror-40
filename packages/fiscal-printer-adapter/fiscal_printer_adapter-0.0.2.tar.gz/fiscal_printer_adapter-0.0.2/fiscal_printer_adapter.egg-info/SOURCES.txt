@@ -1,0 +1,7 @@
+setup.py
+fiscal_printer_adapter.egg-info/PKG-INFO
+fiscal_printer_adapter.egg-info/SOURCES.txt
+fiscal_printer_adapter.egg-info/dependency_links.txt
+fiscal_printer_adapter.egg-info/top_level.txt
+scripts/__init__.py
+scripts/transport.py
