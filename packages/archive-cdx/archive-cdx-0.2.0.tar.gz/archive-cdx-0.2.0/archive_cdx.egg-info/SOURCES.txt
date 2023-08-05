@@ -1,0 +1,10 @@
+README.md
+README.rst
+setup.py
+archive_cdx.egg-info/PKG-INFO
+archive_cdx.egg-info/SOURCES.txt
+archive_cdx.egg-info/dependency_links.txt
+archive_cdx.egg-info/requires.txt
+archive_cdx.egg-info/top_level.txt
+archivecdx/__init__.py
+archivecdx/grab.py
