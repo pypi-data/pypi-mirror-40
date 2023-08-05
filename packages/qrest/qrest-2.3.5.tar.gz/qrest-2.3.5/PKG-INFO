@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: qrest
+Version: 2.3.5
+Summary: A generic python REST client
+Home-page: https://bitbucket.org/nhm_bioinformatics/qrest/
+Author: Joris Benschop (BASF Vegetable Seeds)
+Author-email: joris.benschop@gmail.com
+Maintainer: Joris Benschop
+Maintainer-email: joris.benschop@gmail.com
+License: GPLv3
+Description: The Python REST client project
+        ==========================
+        
+        A Python project for sending requests to REST APIs.
+        
+        ---------------------------------------------------------------
+        
+Keywords: REST API client
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: test
+Provides-Extra: dev
