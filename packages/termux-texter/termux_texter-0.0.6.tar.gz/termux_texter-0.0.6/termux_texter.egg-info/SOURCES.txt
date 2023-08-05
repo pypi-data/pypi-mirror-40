@@ -1,0 +1,11 @@
+README.md
+setup.py
+termux_texter.egg-info/PKG-INFO
+termux_texter.egg-info/SOURCES.txt
+termux_texter.egg-info/dependency_links.txt
+termux_texter.egg-info/entry_points.txt
+termux_texter.egg-info/requires.txt
+termux_texter.egg-info/top_level.txt
+termuxtexter/__init__.py
+termuxtexter/app.py
+termuxtexter/main.py

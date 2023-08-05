@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: termux-texter
+Version: 0.0.6
+Summary: Easily send text messages using Flask and termux
+Home-page: UNKNOWN
+Author: Robert Wendt
+Author-email: 
+License: UNKNOWN
+Description: # Termux Tester
+        
+        schedule text messages to send when you want them to by running a flask webserver off of your cellphone using termux
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
