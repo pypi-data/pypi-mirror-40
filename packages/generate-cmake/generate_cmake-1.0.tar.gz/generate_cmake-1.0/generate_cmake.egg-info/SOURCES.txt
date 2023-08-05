@@ -1,0 +1,8 @@
+pymake
+setup.py
+generate_cmake.egg-info/PKG-INFO
+generate_cmake.egg-info/SOURCES.txt
+generate_cmake.egg-info/dependency_links.txt
+generate_cmake.egg-info/requires.txt
+generate_cmake.egg-info/top_level.txt
+generate_cmake.egg-info/zip-safe
