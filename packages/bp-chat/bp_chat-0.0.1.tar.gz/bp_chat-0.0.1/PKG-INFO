@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bp_chat
+Version: 0.0.1
+Summary: BP Chat gui application
+Home-page: https://github.com/compasrumobile/bp-chat
+Author: CompasBP
+Author-email: compas.ru.mobile@gmail.com
+License: UNKNOWN
+Description: # bp-chat
+        BP Chat gui application project
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
