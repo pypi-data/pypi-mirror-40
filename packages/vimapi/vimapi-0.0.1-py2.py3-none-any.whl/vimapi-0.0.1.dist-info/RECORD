@@ -1,0 +1,11 @@
+vimapi/__init__.py,sha256=X-slvgj8vCPoZ4UZAyu_PwfmvyuOZg0a80yjutVdTgU,467
+vimapi/extended_vim.py,sha256=MnZ0FdHe5bq2bkwYcFevujKy66Ld0-rCKWvcD-3kqrI,555
+vimapi/mock_vim.py,sha256=0jU8GT-jlV5fFy6iHFVM7pwO8oJ4w_IX6v1jhZfVAf0,310
+vimapi/pyvimplugin.py,sha256=p7dH775EvfXRaQDaO-TuwIqoYuaPcf5zB8TkxR5KkRU,6885
+vimapi/vimapi.py,sha256=T3KUgzR1usyrwQQR3MIJkO-_sHlxJDgREj9XcEy1DIg,6930
+vimapi-0.0.1.dist-info/AUTHORS.md,sha256=cvLMBFvQmrRLHUlxD2wY7a-iNEtXKnnh7UW6q5vijNE,138
+vimapi-0.0.1.dist-info/LICENSE,sha256=prCwz67uyoGNdPoDwYXVrAKIrhA7vXIkelPulAs2skA,1074
+vimapi-0.0.1.dist-info/METADATA,sha256=Uj4fuBMfUORsCDRZilHu8e0lejvHBNhbIhT5Cxy9Nto,1535
+vimapi-0.0.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+vimapi-0.0.1.dist-info/top_level.txt,sha256=nQWIpsk7i05nMTHBdGhMvBkPUmHlMMFhxj_sHBBCxXI,7
+vimapi-0.0.1.dist-info/RECORD,,
