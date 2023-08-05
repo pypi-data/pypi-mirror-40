@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+btrdb.egg-info/PKG-INFO
+btrdb.egg-info/SOURCES.txt
+btrdb.egg-info/dependency_links.txt
+btrdb.egg-info/requires.txt
+btrdb.egg-info/top_level.txt
+btrdb4/__init__.py
+btrdb4/btrdb_pb2.py
+btrdb4/btrdb_pb2_grpc.py
+btrdb4/endpoint.py
+btrdb4/utils.py
+btrdb4/grpcinterface/btrdb.proto

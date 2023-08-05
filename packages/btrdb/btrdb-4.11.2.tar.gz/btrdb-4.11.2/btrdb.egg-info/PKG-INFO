@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: btrdb
+Version: 4.11.2
+Summary: Bindings to interact with the Berkeley Tree Database using gRPC
+Home-page: https://github.com/BTrDB/btrdb4-python
+Author: Sam Kumar, Michael P Andersen
+Author-email: samkumar99@gmail.com, michael@steelcode.com
+License: UNKNOWN
+Download-URL: https://github.com/SoftwareDefinedBuildings/btrdb4-python/tarball/0.0.1
+Description: UNKNOWN
+Keywords: btrdb,berkeley,timeseries,database,bindingsgRPC
+Platform: UNKNOWN
