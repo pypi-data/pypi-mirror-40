@@ -1,0 +1,10 @@
+polly>=0.0.2
+numpy
+pandas
+rumps
+flask
+Flask-Bootstrap
+flask-nav
+Flask-WTF
+Werkzeug
+WTForms
