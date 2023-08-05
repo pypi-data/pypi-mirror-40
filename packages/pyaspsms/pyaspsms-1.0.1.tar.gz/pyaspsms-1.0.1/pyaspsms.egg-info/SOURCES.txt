@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyaspsms/__init__.py
+pyaspsms/pyaspsms.py
+pyaspsms.egg-info/PKG-INFO
+pyaspsms.egg-info/SOURCES.txt
+pyaspsms.egg-info/dependency_links.txt
+pyaspsms.egg-info/entry_points.txt
+pyaspsms.egg-info/top_level.txt
+pyaspsms.egg-info/zip-safe
