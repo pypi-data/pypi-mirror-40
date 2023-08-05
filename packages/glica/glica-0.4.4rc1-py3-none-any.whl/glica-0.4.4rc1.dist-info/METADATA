@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: glica
+Version: 0.4.4rc1
+Summary: GitLab Instant Changelog Assurance (GLICA) for ensuring up-to-date CHANGELOG.md files!
+Home-page: https://gitlab.com/halfbakedstudio/tools/glica
+Author: Tian Hao Wang
+Author-email: dev@paced.me
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Please refer to the repository's README.md file for the longer description.
+
+
