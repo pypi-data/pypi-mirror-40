@@ -1,0 +1,105 @@
+Metadata-Version: 1.1
+Name: road_agent
+Version: 0.0.2
+Summary: Object-oriented framework for modeling of mobile agents.
+Home-page: http://gitlab.com/rgarcia-herrera/road-agent
+Author: Rodrigo Garcia
+Author-email: rgarcia@iecologia.unam.mx
+License: GPLv3
+Description: ==========
+        Road Agent
+        ==========
+        
+        A Python framework for modeling mobile agents.
+        
+        .. image:: doc/frames.png
+        
+        
+        Read the `full documentation`__.
+        
+        .. __: https://road-agent.readthedocs.io/
+        
+        .. image:: https://readthedocs.org/projects/road-agent/badge/?version=latest
+        
+        
+        Installation
+        ============
+        
+        Install library using pip::
+        
+          $ pip install road-agent
+        
+        
+        
+        Install dependency: BRouter
+        ___________________________
+        
+        
+        Agents use `BRouter`__ for routing. Here's how to install a local server.
+        
+        .. __: http://brouter.de/brouter/
+        
+        BRouters needs data files for its routing algorithm. Download `data
+        files`__ (rd5) into segments4 dir. You may copy-paste these steps to
+        download them all, but beware: it's about 5.2 gigabytes:  ::
+        
+          mkdir -p ~/opt/brouter/segments4
+          cd ~/opt/brouter/segments4
+          wget https://gitlab.com/rgarcia-herrera/road-agent/raw/master/get_segments.sh
+          wget https://gitlab.com/rgarcia-herrera/road-agent/raw/master/segments.txt
+          chmod +x get_segments.sh
+          ./get_segments.sh
+           
+        
+        .. __: http://brouter.de/brouter/segments4/
+        
+        
+        Download and unzip BRouter (replace ~/opt/ with your preferred install
+        dir and 1_4_11 with latest version)::
+        
+          cd ~/opt/brouter
+          wget http://brouter.de/brouter_bin/brouter_1_4_11.zip
+          unzip brouter_1_4_11.zip
+          chmod +x ./standalone/server.sh
+           
+        
+        Run server.sh to start BRouter server.
+        
+        
+        Create a simulation
+        ===================
+        
+        To create a simulation one must extend the Agent class::
+          
+          from LatLon import LatLon, Latitude, Longitude
+          from road_agent import Agent
+        
+          # extend Agent class to code behaviours specific to your mobile agent
+          class Bike(Agent):
+              pass
+               
+        
+          point = LatLon(Latitude(19.40141579973),
+                         Longitude(-99.1043955014))
+        
+          dest = LatLon(Latitude(19.44658420026),
+                        Longitude(-99.15200449858))
+        
+          # create bike instance
+          b = Bike(point=point, dest=dest)
+        
+          # download from route server
+          b.update_route()
+        
+          # traverse agent's route, step by step
+          for t in range(len(b.route)):
+              b.step()
+          
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
