@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: energy-tools
+Version: 0.1.1
+Summary: Modest collection of electrical energy calculation tools.
+Home-page: https://gitlab.com/miek770/energy-tools
+Author: Michel Lavoie
+Author-email: lavoie.michel@gmail.com
+License: MIT
+Description: 
+        # energy-tools
+        
+        Modest collection of electrical energy calculation tools.
+        
+        **Note**: *This repo is currently being translated to English and under heavy alterations to make it suitable for PyPi. Major changes are to be expected.*
+        
+        ## Installation
+        
+        ### Requirements
+        
+        Basic requirements:
+        
+        - [Python 3.6+](http://www.python.org/download/releases/);
+        - numpy.
+        
+        Development requirements:
+        
+        - pre-commit;
+        - pytest;
+        - twine.
+        
+        ### Installation energy-tools
+        
+        #### With pip
+        
+        1. Open a command prompt (e.g. Start > cmd on windows systems);
+        2. Install energy-tools by running:
+        
+        ```
+        pip install energy-tools
+        ```
+        
+        #### Without pip
+        
+        If you don’t have internet access on your system or don’t want to use pip for some other reason, energy-tools can also be installed without using pip:
+        
+        1. Download and unzip the current energy-tools distribution from PyPi under “Download files”.
+        2. Open a command prompt (e.g. Start > cmd on Windows) and navigate to the folder that contains the setup.py file with the command cd <folder> :
+        
+            cd %path_to_energy-tools%\energy-tools-x.x.x\
+        
+        
+        Install energy-tools by running :
+        
+            python setup.py install
+        
+        #### Development version
+        
+        To install the latest development version of energy-tools from GitLab, simply follow these steps:
+        
+        1. Download and install git.
+        2. Open a git shell and navigate to the directory where you want to keep your energy-tools files.
+        3. Run the following git command:
+        
+            git clone https://gitlab.com/miek770/energy-tools.git
+        
+        4. Navigate inside the repository and check out the develop branch:
+        
+            cd energy-tools
+            git checkout develop
+        
+        5. Install [Black](https://github.com/ambv/black#version-control-integration) using pre-commit:
+        
+            pre-commit install
+        
+        5. Set your Python path to the outer energy-tools folder (/energy-tools, NOT energy-tools/energy-tools).
+        6. If necessary, install missing dependencies via pip install (see Development requirements above).
+        
+        ## Test your installation
+        
+        To test your installed development version, run pytest from the energy-tools' base directory:
+        
+            pytest
+        
+        ## Contributing
+        
+        If you wish to contribute, please follow the development version instructions above and refer to the project's [contribution guide](https://gitlab.com/miek770/energy_tools/blob/master/CONTRIBUTING.md).
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
