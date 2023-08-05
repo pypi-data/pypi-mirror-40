@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: uniswap-python
+Version: 0.0.0
+Summary: An unofficial python wrapper for the Uniswap exchange
+Home-page: https://github.com/shanefontaine/uniswap-python
+Author: Shane Fontaine
+Author-email: shane6fontaine@gmail.com
+License: MIT
+Description: ## uniswap-python
+        
+Keywords: uniswap,uniswap-exchange,uniswap-api,orderbook,dex,trade,ethereum,ETH,client,api,wrapper,exchange,crypto,currency,trading,trading-api,decentralized-exchange
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
