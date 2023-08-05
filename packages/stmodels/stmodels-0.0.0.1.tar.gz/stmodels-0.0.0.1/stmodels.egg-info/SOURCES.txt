@@ -1,0 +1,8 @@
+README.md
+setup.py
+stmodels/__init__.py
+stmodels/stmodels.py
+stmodels.egg-info/PKG-INFO
+stmodels.egg-info/SOURCES.txt
+stmodels.egg-info/dependency_links.txt
+stmodels.egg-info/top_level.txt
