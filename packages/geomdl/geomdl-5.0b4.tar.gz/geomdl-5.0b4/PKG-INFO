@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: geomdl
+Version: 5.0b4
+Summary: Object-oriented B-Spline and NURBS evaluation library
+Home-page: https://github.com/orbingol/NURBS-Python
+Author: Onur Rauf Bingol
+Author-email: nurbs-python@googlegroups.com
+License: MIT
+Project-URL: Documentation, http://nurbs-python.readthedocs.io/
+Project-URL: Source, https://github.com/orbingol/NURBS-Python
+Project-URL: Tracker, https://github.com/orbingol/NURBS-Python/issues
+Description: NURBS-Python (geomdl)
+        ^^^^^^^^^^^^^^^^^^^^^
+        
+        |DOI|_ |PYPIDL|_ |ANACONDA|_
+        
+        |RTD|_ |TRAVISCI|_ |APPVEYOR|_ |CODECOV|_
+        
+        |WAFFLEIO|_
+        
+        Introduction
+        ============
+        
+        NURBS-Python (geomdl) is a pure Python, object-oriented B-Spline and NURBS library. It is compatible with Python
+        versions 2.7.x, 3.4.x and later.
+        
+        Further Reading
+        ===============
+        
+        * Documentation: https://nurbs-python.readthedocs.io/
+        * Examples: https://github.com/orbingol/NURBS-Python_Examples
+        * Wiki: https://github.com/orbingol/NURBS-Python/wiki
+        * Development: https://github.com/orbingol/NURBS-Python
+        
+        License
+        =======
+        
+        NURBS-Python is licensed under the MIT License.
+        
+        
+        .. |DOI| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.815010.svg
+        .. _DOI: https://doi.org/10.5281/zenodo.815010
+        
+        .. |RTD| image:: https://readthedocs.org/projects/nurbs-python/badge/?version=latest
+        .. _RTD: https://nurbs-python.readthedocs.io/en/latest/?badge=latest
+        
+        .. |WAFFLEIO| image:: https://badge.waffle.io/orbingol/NURBS-Python.svg?columns=all
+        .. _WAFFLEIO: https://waffle.io/orbingol/NURBS-Python
+        
+        .. |TRAVISCI| image:: https://travis-ci.org/orbingol/NURBS-Python.svg?branch=master
+        .. _TRAVISCI: https://travis-ci.org/orbingol/NURBS-Python
+        
+        .. |APPVEYOR| image:: https://ci.appveyor.com/api/projects/status/github/orbingol/nurbs-python?branch=master&svg=true
+        .. _APPVEYOR: https://ci.appveyor.com/project/orbingol/nurbs-python
+        
+        .. |PYPIDL| image:: https://img.shields.io/pypi/dm/geomdl.svg
+        .. _PYPIDL: https://pypi.org/project/geomdl/
+        
+        .. |ANACONDA| image:: https://anaconda.org/orbingol/geomdl/badges/version.svg
+        .. _ANACONDA: https://anaconda.org/orbingol/geomdl
+        
+        .. |CODECOV| image:: https://codecov.io/gh/orbingol/NURBS-Python/branch/master/graph/badge.svg
+        .. _CODECOV: https://codecov.io/gh/orbingol/NURBS-Python
+        
+Keywords: NURBS B-Spline curve surface CAD modeling visualization surface-generator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: visualization
