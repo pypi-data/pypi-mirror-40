@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+ips_util/__init__.py
+ips_util/__main__.py
+ips_util/patch.py
+ips_util.egg-info/PKG-INFO
+ips_util.egg-info/SOURCES.txt
+ips_util.egg-info/dependency_links.txt
+ips_util.egg-info/entry_points.txt
+ips_util.egg-info/not-zip-safe
+ips_util.egg-info/top_level.txt
