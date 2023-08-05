@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: libcaes-python
+Version: 20190102
+Summary: Python bindings module for libcaes
+Home-page: https://github.com/libyal/libcaes/
+Author: Joachim Metz
+Author-email: joachim.metz@gmail.com
+License: GNU Lesser General Public License v3 or later (LGPLv3+)
+Description: Python bindings module for libcaes
+Platform: UNKNOWN

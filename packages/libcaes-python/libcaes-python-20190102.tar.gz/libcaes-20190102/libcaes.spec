@@ -1,0 +1,98 @@
+Name: libcaes
+Version: 20190102
+Release: 1
+Summary: Library to support cross-platform AES encryption
+Group: System Environment/Libraries
+License: LGPL
+Source: %{name}-%{version}.tar.gz
+URL: https://github.com/libyal/libcaes
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+Requires:  openssl
+BuildRequires: gcc  openssl-devel
+
+%description -n libcaes
+Library to support cross-platform AES encryption
+
+%package -n libcaes-devel
+Summary: Header files and libraries for developing applications for libcaes
+Group: Development/Libraries
+Requires: libcaes = %{version}-%{release}
+
+%description -n libcaes-devel
+Header files and libraries for developing applications for libcaes.
+
+%package -n libcaes-python2
+Obsoletes: libcaes-python < %{version}
+Provides: libcaes-python = %{version}
+Summary: Python 2 bindings for libcaes
+Group: System Environment/Libraries
+Requires: libcaes = %{version}-%{release} python2
+BuildRequires: python2-devel
+
+%description -n libcaes-python2
+Python 2 bindings for libcaes
+
+%package -n libcaes-python3
+Summary: Python 3 bindings for libcaes
+Group: System Environment/Libraries
+Requires: libcaes = %{version}-%{release} python3
+BuildRequires: python3-devel
+
+%description -n libcaes-python3
+Python 3 bindings for libcaes
+
+%prep
+%setup -q
+
+%build
+%configure --prefix=/usr --libdir=%{_libdir} --mandir=%{_mandir} --enable-python2 --enable-python3
+make %{?_smp_mflags}
+
+%install
+rm -rf %{buildroot}
+%make_install
+
+%clean
+rm -rf %{buildroot}
+
+%post -p /sbin/ldconfig
+
+%postun -p /sbin/ldconfig
+
+%files -n libcaes
+%defattr(644,root,root,755)
+%license COPYING
+%doc AUTHORS README
+%attr(755,root,root) %{_libdir}/*.so.*
+
+%files -n libcaes-devel
+%defattr(644,root,root,755)
+%license COPYING
+%doc AUTHORS README
+%{_libdir}/*.a
+%{_libdir}/*.la
+%{_libdir}/*.so
+%{_libdir}/pkgconfig/libcaes.pc
+%{_includedir}/*
+%{_mandir}/man3/*
+
+%files -n libcaes-python2
+%defattr(644,root,root,755)
+%license COPYING
+%doc AUTHORS README
+%{_libdir}/python2*/site-packages/*.a
+%{_libdir}/python2*/site-packages/*.la
+%{_libdir}/python2*/site-packages/*.so
+
+%files -n libcaes-python3
+%defattr(644,root,root,755)
+%license COPYING
+%doc AUTHORS README
+%{_libdir}/python3*/site-packages/*.a
+%{_libdir}/python3*/site-packages/*.la
+%{_libdir}/python3*/site-packages/*.so
+
+%changelog
+* Wed Jan  2 2019 Joachim Metz <joachim.metz@gmail.com> 20190102-1
+- Auto-generated
+
