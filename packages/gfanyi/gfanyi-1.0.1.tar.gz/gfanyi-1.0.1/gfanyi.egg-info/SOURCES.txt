@@ -1,0 +1,8 @@
+setup.py
+gfanyi/__init__.py
+gfanyi/__version__.py
+gfanyi/fanyi.py
+gfanyi.egg-info/PKG-INFO
+gfanyi.egg-info/SOURCES.txt
+gfanyi.egg-info/dependency_links.txt
+gfanyi.egg-info/top_level.txt
