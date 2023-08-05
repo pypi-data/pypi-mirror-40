@@ -1,0 +1,3 @@
+[console_scripts]
+giticket = giticket.giticket:main
+
