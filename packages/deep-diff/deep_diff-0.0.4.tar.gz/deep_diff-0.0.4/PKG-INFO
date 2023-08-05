@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: deep_diff
+Version: 0.0.4
+Summary: a tool to diff dict list set data
+Home-page: https://github.com/ider-zh/diff
+Author: ider
+Author-email: 326737833@qq.com
+License: BSD 3-Clause license
+Description: a tool to diff dict list set data output like the npm package [deep_diff](https://www.npmjs.com/package/deep-diff)
+        
+        # USAGE
+        ```
+        pip install deep_diff
+        from deep_diff import diff
+        diff({'a':1},{'b':1})
+        ```
+        ``` json
+        [ { kind: 'E',
+            path: [ 'name' ],
+            lhs: 'my object',
+            rhs: 'updated object' },
+          { kind: 'E',
+            path: [ 'details', 'with', 2 ],
+            lhs: 'elements',
+            rhs: 'more' },
+          { kind: 'A',
+            path: [ 'details', 'with' ],
+            index: 3,
+            item: { kind: 'N', rhs: 'elements' } },
+          { kind: 'A',
+            path: [ 'details', 'with' ],
+            index: 4,
+            item: { kind: 'N', rhs: { than: 'before' } } } ]
+        ```
+        
+        ### Differences
+        
+        Differences are reported as one or more change records. Change records have the following structure:
+        
+        * `kind` - indicates the kind of change; will be one of the following:
+          * `N` - indicates a newly added property/element
+          * `D` - indicates a property/element was deleted
+          * `E` - indicates a property/element was edited
+          * `A` - indicates a change occurred within an array
+        * `path` - the property path (from the left-hand-side root)
+        * `lhs` - the value on the left-hand-side of the comparison (undefined if kind == 'N')
+        * `rhs` - the value on the right-hand-side of the comparison (undefined if kind == 'D')
+        * `index` - when kind == 'A', indicates the array index where the change occurred
+        * `item` - when kind == 'A', contains a nested change record indicating the change that occurred at the array index
+        
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
