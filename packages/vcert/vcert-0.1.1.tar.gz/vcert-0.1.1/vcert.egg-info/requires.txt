@@ -1,0 +1,9 @@
+certbuilder
+certvalidator
+csrbuilder
+oscrypto
+python-dateutil
+requests
+
+[:python_version < "3.4"]
+enum34
