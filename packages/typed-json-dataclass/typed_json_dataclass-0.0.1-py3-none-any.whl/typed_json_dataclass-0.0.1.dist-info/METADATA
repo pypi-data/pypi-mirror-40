@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: typed-json-dataclass
+Version: 0.0.1
+Summary: Make your dataclasses automatically validate their types
+Home-page: http://github.com/abatilo/typed_json_dataclass/
+Author: Aaron Batilo
+Author-email: aaronbatilo@gmail.com
+Maintainer: Aaron Batilo
+Maintainer-email: aaronbatilo@gmail.com
+License: MIT
+Keywords: sanic swagger openapi attrs cattrs
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: ==3.7.*
+Description-Content-Type: text/markdown
+
+# typed_json_dataclass
+
+Nothing here yet.
+
+
