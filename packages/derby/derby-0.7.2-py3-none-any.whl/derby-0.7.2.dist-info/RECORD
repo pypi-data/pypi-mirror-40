@@ -1,0 +1,11 @@
+derby/__init__.py,sha256=GEKCe5xBuiTSRGYg-ON3g3V3S03hP6No4HePscjDvCo,268
+derby/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+derby/dice.py,sha256=TBDQrYCqXwBFoBPI_ngojaInqITtfcf3vK1w14mI97E,785
+derby/expr.py,sha256=XCbp4vAaQEiWcMsxAB25ewBlLedQ74C9-kkUhMg6lx0,915
+derby/grammar.py,sha256=0SnM19Fc8u-ClQpuKBaSrz0EnnbwZTNIfc7imWjOgZE,530
+derby/parser.py,sha256=2j-fQNHMZtmTH4OFpaIkDGoIlDvzdQGmAOV25yzpd8M,597
+derby-0.7.2.dist-info/LICENSE,sha256=NsetcqHi4KU-vDCOMseJ9K432NUu-MhMbSuHu4xAMYo,1092
+derby-0.7.2.dist-info/METADATA,sha256=xCobqYqdfzv2amboDLmZYkBKaEJh6rJPwamFa5MzXj4,1016
+derby-0.7.2.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+derby-0.7.2.dist-info/top_level.txt,sha256=P8-JtaELy-g_Z09_bFmydEad71I6xHLWJ1jzgSmC3EM,6
+derby-0.7.2.dist-info/RECORD,,
