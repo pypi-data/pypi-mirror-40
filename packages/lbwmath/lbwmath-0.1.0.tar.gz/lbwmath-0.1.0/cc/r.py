@@ -1,0 +1,2 @@
+def rr():
+    print("t")
