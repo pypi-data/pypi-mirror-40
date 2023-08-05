@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: errs
+Version: 0.1.1
+Summary: Type-safe error handling for Python.
+Home-page: https://github.com/nicksettje/errs
+Author: Nick Frederick Settje
+Author-email: nsettje@alumni.stanford.edu
+License: MIT license
+Keywords: errs
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+====
+errs
+====
+
+
+.. image:: https://img.shields.io/pypi/v/errs.svg
+        :target: https://pypi.python.org/pypi/errs
+
+.. image:: https://img.shields.io/travis/nicksettje/errs.svg
+        :target: https://travis-ci.org/nicksettje/errs
+
+.. image:: https://codecov.io/gh/nicksettje/errs/branch/master/graph/badge.svg
+        :target: https://codecov.io/gh/nicksettje/errs
+
+.. image:: https://readthedocs.org/projects/errs/badge/?version=latest
+        :target: https://errs.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/nicksettje/errs/shield.svg
+     :target: https://pyup.io/repos/github/nicksettje/errs/
+     :alt: Updates
+
+
+
+Type-safe error handling for Python.
+
+
+* Free software: MIT license
+* Documentation: https://errs.readthedocs.io.
+
+Installation
+------------
+`pip install errs`
+
+Usage
+-----
+The `@errs` decorator marks any function or method that raises an `Exception`. Rather than handling the `Exception` explicitly, we collect the result of the function and then check whether an error occurred. 
+
+This leads to code that is more explicit about error handling as well as resilient to the raising of unforeseen exceptions. This style is similar to error handling in Go.
+
+Additionally, all exceptions wrapped by `@errs` will be logged to the default Python logger on the error level. This provides a powerful abstraction where runtime behaviors are logged and separated from current application state.
+
+.. code-block:: python
+
+        from errs import errs
+
+        @errs
+        def raises(): #type: () -> int
+            raise Exception('this will get logged')
+            return 0
+
+        def check_error(): #type: () -> None
+            out, err = raises()
+            print('Error: {err}'.format(err.check()))
+
+        if __name__ == '__main__':
+            check_error() #prints Error: True
+
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2018-12-30)
+------------------
+
+* First release on PyPI.
+
+
