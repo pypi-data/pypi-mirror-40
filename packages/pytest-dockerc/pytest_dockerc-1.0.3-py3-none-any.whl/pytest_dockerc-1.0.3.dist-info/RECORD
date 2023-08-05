@@ -1,0 +1,10 @@
+pytest_dockerc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_dockerc/fixtures.py,sha256=lj2v3mknhP8iOH-vuYxUvLLSQR2M8NZR-7vxAqeb6lc,4100
+pytest_dockerc/plugin.py,sha256=B2AXqcW_4R6dtIvPnYG7Rd_7Y6NvaM5eJDaOdBF-7vc,1373
+pytest_dockerc-1.0.3.dist-info/AUTHORS,sha256=Tv83Ut0K6dbCY7T9J6eHSJ31TMJoCKoS8v2hfaQ9GjM,51
+pytest_dockerc-1.0.3.dist-info/LICENSE,sha256=mtEWszYxbZTc4wU2QvBptCWO8QDxdg5vXdPagpiLNdw,1084
+pytest_dockerc-1.0.3.dist-info/METADATA,sha256=5Eaan1wp2Z6SGNwoPFOxHromweL_HdIDh10snjUAaiI,4082
+pytest_dockerc-1.0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pytest_dockerc-1.0.3.dist-info/entry_points.txt,sha256=uddoEaacxstp9vc42sWHedrSXVHTR3zfoBaBGgbu1JI,44
+pytest_dockerc-1.0.3.dist-info/top_level.txt,sha256=UEch238TtgIBFCQ0X3CUCoo0O7eLepk2UliwwaduCRc,15
+pytest_dockerc-1.0.3.dist-info/RECORD,,
