@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include repeat_queries/static *
+recursive-include repeat_queries/templates *
