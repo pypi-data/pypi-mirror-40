@@ -1,0 +1,4 @@
+[console_scripts]
+commit = commit_helper.__main__:main
+commit-helper-testing = commit_helper.__main__:main
+
