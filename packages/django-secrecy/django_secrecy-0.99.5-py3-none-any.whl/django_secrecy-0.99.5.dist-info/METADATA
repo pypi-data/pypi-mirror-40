@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: django-secrecy
+Version: 0.99.5
+Summary: Django secret project variables
+Home-page: https://github.com/Cyxapic/django-secrecy
+Author: Artem Sukharenko
+Author-email: truecyxapic@yandex.ru
+License: MIT
+Keywords: SECRET_KEY,Project settings
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+Django Secrecy
+==============
+-----------------
+- python 3.6+
+- Django 2+
+-----------------
+Secrecy is a simple app which create settings structure:
+- settings:
+    - prodacion.py
+    - development.py
+    - secrets.json; JSON file with "secret project variables"
+
+Quick start
+-----------
+1. pip install django-secrecy
+2. From your project root dir `./generator <project_name>` - to create settings structure.
+3. Run `python manage.py secrecy` - to rewrite JSON with new secrets variables.
+
+## Extra params
+- if you need extra params use `python manage.py secrecy --add`.
+- add in settings <NEW_SECRET> = secrets.<NEW_SECRET>
+- Params <name> always bee UPPER.
+
+## From repo without development.py
+- to create basic developmet.py use `./generator <project_name> --dev`
+- if you don't have settings `./generator <project_name> --dev`
+ same effect `./generator <project_name>`
+
+## TODO
+- REFACTORING :D
+
+

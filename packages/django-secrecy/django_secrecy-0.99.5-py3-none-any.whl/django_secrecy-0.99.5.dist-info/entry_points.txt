@@ -1,0 +1,3 @@
+[console_scripts]
+generator = django_secrecy.main:main
+
