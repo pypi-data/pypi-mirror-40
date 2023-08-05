@@ -1,0 +1,3 @@
+[console_scripts]
+yapf-junit = yapfjunit.cli:yapf_junit
+
