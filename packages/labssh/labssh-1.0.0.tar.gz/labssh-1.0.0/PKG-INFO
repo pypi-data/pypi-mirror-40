@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: labssh
+Version: 1.0.0
+Summary: A script which can directly login the lab's server without knowing the IP.
+Home-page: https://github.com/LogicJake/some-scripts/tree/master/ssh-for-lab
+Author: LogicJake
+Author-email: chenyangshi1996@gamil.com
+License: MIT
+Description: ## ssh-for-lab  
+        A script which can directly login the lab's server without knowing the IP.   
+        ### HOW TO USE  
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
