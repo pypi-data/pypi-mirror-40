@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: rlagent
+Version: 0.1.4
+Summary: rlagent: Reinforcement learning framework in tensorflow, compatible with OpenAI Gym like environments.
+Home-page: https://github.com/YunjaeChoi/rlagent
+Author: Yunjae Choi
+Author-email: yunjae.choi1000@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy (>=1.14.0)
+Requires-Dist: gym (>=0.10.3)
+Requires-Dist: pybullet (>=1.9.7)
+Requires-Dist: mpi4py (>=3.0.0)
+
+UNKNOWN
+
+
