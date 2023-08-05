@@ -1,0 +1,15 @@
+pywekaclassifiers/__init__.py,sha256=4BqIpm-CKmpgzbYxym5ue0oZwxvliADqBYBYxOqfhUE,64
+pywekaclassifiers/arff.py,sha256=mqpcEgfEdmjD0tNQQqVTnhBMMEskpBM7ucCGWGvjO5M,29024
+pywekaclassifiers/classifiers.py,sha256=EF49dA58UNg6SJmytbqi2vPd4_OxoNSp5uoJl385lsM,27734
+pywekaclassifiers/tests.py,sha256=m9W0a0qELGDClS1Cu_74LejzzYdJV__oSmJgXJYR7iI,11337
+pywekaclassifiers/fixtures/abalone-query-bad.arff,sha256=Fuymnk3wedHekI-rzr-EX_yswjKAqWGi5-VrVIst_M8,239
+pywekaclassifiers/fixtures/abalone-query.arff,sha256=L4eN92Ii6ORg60hRSI1qR9PTCkHEub4ttNhGfCBJKao,355
+pywekaclassifiers/fixtures/abalone-train.arff,sha256=xJZ2vNnxxtGtS7Pu1S6i-heiAReaYz4VyLjWnJFQ2oA,2458
+pywekaclassifiers/fixtures/abalone.arff,sha256=heDYMW1ApbdEqz7jqdBPRio3tdair3ha2adJp-WXqxM,197762
+pywekaclassifiers/fixtures/updateable-train-1.arff,sha256=82yt54Sde3vqlx1O4s5OIuJ6ZYO4Ltjr0b47wlo8pE8,126
+pywekaclassifiers/fixtures/updateable-train-2.arff,sha256=RPcP_HCTyHdKFL8XASfCf02wRb1Kd0y5le7FGB7TDHw,126
+pywekaclassifiers-0.0.3.dist-info/LICENSE,sha256=94RWllFRcXZHUJ54Oy-8u3KE1y2e3xvoH4hIqPLdqjw,1099
+pywekaclassifiers-0.0.3.dist-info/METADATA,sha256=LG1K2lHSrv0bVAWlKhxnL6bV9X1Bm2o8PVDzgU7v5as,2781
+pywekaclassifiers-0.0.3.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+pywekaclassifiers-0.0.3.dist-info/top_level.txt,sha256=1PgpGZ90-0r2ylXy6dWtv3mODuUDbyU42meNh6Bfvds,18
+pywekaclassifiers-0.0.3.dist-info/RECORD,,
