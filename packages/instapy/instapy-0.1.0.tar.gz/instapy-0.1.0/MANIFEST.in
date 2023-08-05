@@ -1,0 +1,14 @@
+# Include documentations
+include *.md
+
+# Include license files
+include LICENSE
+
+# Include requirements
+include requirements.txt
+
+# Include assets
+recursive-include assets *
+
+# Include icons
+recursive-include icons *
