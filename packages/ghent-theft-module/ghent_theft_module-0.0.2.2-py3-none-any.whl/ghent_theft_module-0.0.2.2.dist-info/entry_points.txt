@@ -1,0 +1,3 @@
+[console_scripts]
+ghent-theft-module = ghent_theft_module.cli:main
+
