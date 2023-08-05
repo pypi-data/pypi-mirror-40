@@ -1,0 +1,161 @@
+Metadata-Version: 2.1
+Name: demosys-py
+Version: 2.0.4
+Summary: Modern OpenGL 3.3+ Framework inspired by Django
+Home-page: https://github.com/Contraz/demosys-py
+Author: Einar Forselv
+Author-email: eforselv@gmail.com
+Maintainer: Einar Forselv
+Maintainer-email: eforselv@gmail.com
+License: UNKNOWN
+Keywords: opengl,framework,demoscene
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Environment :: MacOS X
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Description-Content-Type: text/markdown
+Requires-Dist: moderngl (==5.4.2)
+Requires-Dist: pyrr (==0.10.0)
+Requires-Dist: Pillow (==5.3.0)
+Requires-Dist: pyrocket (==0.2.8)
+Requires-Dist: PyWavefront (==1.0.2)
+Requires-Dist: PyQt5 (==5.11.3)
+Provides-Extra: glfw
+Requires-Dist: glfw (==1.7.0) ; extra == 'glfw'
+Provides-Extra: pyglet
+Requires-Dist: pyglet (==1.3.2) ; extra == 'pyglet'
+Provides-Extra: python-vlc
+Requires-Dist: python-vlc (==3.0.102) ; extra == 'python-vlc'
+
+[![pypi](https://badge.fury.io/py/demosys-py.svg)](https://pypi.python.org/pypi/demosys-py) [![travis](https://travis-ci.org/Contraz/demosys-py.svg?branch=master)](https://travis-ci.org/Contraz/demosys-py) [![Documentation Status](https://readthedocs.org/projects/demosys-py/badge/?version=latest&nop)](https://demosys-py.readthedocs.io/en/latest/?badge=latest)
+
+demosys-py
+==========
+
+A Python 3 cross platform OpenGL 3.3+ core framework based on [ModernGL](https://github.com/cprogrammer1994/ModernGL)
+
+![screenshot1](https://camo.githubusercontent.com/32ce052715e574ae4e6fc60384b5070cbc9aaa27/68747470733a2f2f6f626a656374732e7a657474612e696f3a383434332f76312f415554485f30366532646265613565383234363230623230623437303139373332333237372f636f6e7472617a2e6e6f2d7374617469632f6766782f70726f64756374696f6e732f53696d4c696665332e706e67) ![screenshot2](https://camo.githubusercontent.com/653387f2f7f144b29b6fb9c891a17482b089e02d/68747470733a2f2f6f626a656374732e7a657474612e696f3a383434332f76312f415554485f30366532646265613565383234363230623230623437303139373332333237372f636f6e7472617a2e6e6f2d7374617469632f6766782f70726f64756374696f6e732f53696d4c696665322e706e67)
+
+---
+
+Originally made for for non-interactive real time graphics combined with music
+("real time music videos", see [demoscene](https://en.wikipedia.org/wiki/Demoscene))
+but can of course be used almost any purpose.
+
+Made for people who enjoy playing around with modern OpenGL without spending lots of
+time creating all the tooling to get things up and running. Using [ModernGL](https://github.com/cprogrammer1994/ModernGL)
+also makes working with OpenGL a breeze accomplishing a lot with very few lines of code.
+
+A high priority for this project is also to help improving [ModernGL](https://github.com/cprogrammer1994/ModernGL).
+
+* [Documentation](http://demosys-py.readthedocs.io/)
+* [ModernGL Documentation](https://moderngl.readthedocs.io)
+* [Examples](https://github.com/Contraz/demosys-py/tree/master/examples)
+* [Effect Templates](https://github.com/Contraz/demosys-py/tree/master/demosys/effect_templates)
+* [demosys-py on Github](https://github.com/Contraz/demosys-py)
+* [demosys-py on PyPi](https://pypi.python.org/pypi/demosys-py)
+
+Creating a project with a spinning cube can be done in less than a minute.
+
+```bash
+pip install demosys-py
+demosys-admin createproject myproject
+demosys-admin createeffect myproject/cube
+```
+
+Now run the effect
+
+```bash
+python manage.py runeffect myproject.cube
+```
+
+Features
+--------
+
+* A simple effect system based on python packages
+* Supports most modern OpenGL features through [ModernGL](https://github.com/cprogrammer1994/ModernGL)
+* Resource loading system for shader programs, textures, scenes and misc data
+* Loading GLTF 2.0 and wavefront obj files/scenes
+* Supports the rocket sync-tracker system to create interesting keyframe data (Using [pyrocket](https://github.com/Contraz/pyrocket))
+* Runtime re-loading shader programs (press R)
+* Supports headless rendering and various visible windows such as pyGLFW, PyQt5 and Pyglet.
+* Management commands for creting new projects and effects including the ability to make custom commands
+* A highly pluggable framework with customizable timers, resource loaders, timelines and more
+* A geometry module for quick creation of common mesh/VAO types
+* Experimental audio playback support
+
+Requirements
+------------
+
+In order to use the framework it's an advantage to know the following:
+
+* Basic or intermediate Python
+* Basic glsl
+* Basic matrix math
+
+If you are missing any of these requirements the framework can definitely be used to learn. 0 lines of code are needed to generate a project with a spinning cube and you can star poking at things.
+
+Local Development
+-----------------
+
+Installing the project in development mode (in a virtualenv):
+
+```bash
+python setup.py develop
+# PyQt5 doesn't support develop and have to manually be force-reinstalled installed after
+pip install -I PyQt5
+```
+
+Running tests:
+
+```bash
+# All tests
+pip install -r requirements-test.txt
+python manage.py test
+
+# Single tests module
+python manage.py test tests/test_effect.py
+```
+
+Building docs:
+
+```bash
+pip install -r docs/requirements.txt
+python setup.py build_sphinx
+```
+
+Contributors
+------------
+
+* [Einar Forselv](https://github.com/einarf)
+* [Arttu Tamminen](https://github.com/helgrima)
+* [binaryf](https://github.com/binaryf)
+
+Dependencies
+------------
+
+* [ModernGL](https://github.com/cprogrammer1994/ModernGL) PyOpenGL replacement
+* [PIL/Pillow](https://github.com/python-pillow/Pillow) for texture loading
+* [Pyrrr](https://github.com/adamlwgriffiths/Pyrr) for math (uses numpy)
+* [PyQt5](https://pypi.org/project/PyQt5/) is default for window/context creation (works out of the box on most platforms)
+
+Optional:
+
+* [pyGLFW](https://github.com/FlorianRhiem/pyGLFW) for window/context creation
+* [pyglet](https://bitbucket.org/pyglet/pyglet/wiki/Home) for window/context creation (Does not work on OS X)
+* [pygame](https://www.pygame.org) using the mixer module for music
+* [python-vlc](https://github.com/oaubert/python-vlc) for audio playback
+
+Mentions
+--------
+
+Also consider supporting [Read the Docs](https://readthedocs.org/sustainability/) by becoming a
+gold member though a one time ($5 or more) donation for an ad-free experience.
+
+
