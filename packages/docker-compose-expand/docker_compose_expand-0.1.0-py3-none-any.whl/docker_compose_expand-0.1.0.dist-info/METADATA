@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: docker-compose-expand
+Version: 0.1.0
+Summary: Expand your docker-compose.yml file
+Home-page: https://github.com/f9n/docker-compose-expand
+License: GPL-3.0
+Author: Fatih Sarhan
+Author-email: f9n@protonmail.com
+Requires-Python: >=3.4,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: jinja2 (>=2.10,<3.0)
+Requires-Dist: oyaml (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/f9n/docker-compose-expand
+Description-Content-Type: text/markdown
+
+# Docker Compose Expand
+
+Expand your docker-compose.yml file with this tool.
+
+# Install
+
+```bash
+$ pip3 install --user docker-compose-expand
+```
+
+# Usage
+
+Your services in `docker-compose.yml` file.
+
+```yaml
+version: "3"
+services:
+  api:
+    image: ef9n/supervisord:0.1.0
+    restart: on-failure
+    ports:
+      - "9001:9001"
+
+  products:
+    image: ef9n/supervisord:0.1.0
+    restart: on-failure
+    ports:
+      - "9002:9001"
+
+  analysis:
+    image: ef9n/supervisord:0.1.0
+    restart: on-failure
+    ports:
+      - "9003:9001"
+
+  monitoring:
+    image: ef9n/supervisord:0.1.0
+    restart: on-failure
+    ports:
+      - "9004:9001"
+```
+
+Instead of using the `docker-compose` tool, define the same services in the `docker-compose-expand.yml` file and use the `docker-compose-expand` tool that generates the `docker-compose.yml` file for your expandable services.
+
+- You can define variables in `loop` field or `vars` field.
+
+- In the `loop` field, you can refer to a variable which is in the `vars` field.
+
+### Loop Field
+
+```yaml
+version: "3"
+services:
+  api:
+    image: ef9n/supervisord:0.1.0
+    restart: on-failure
+    ports:
+      - "9001:9001"
+
+expand:
+  vars:
+  services:
+    - name: "{{ name }}"
+      service:
+        image: ef9n/supervisord:0.1.0
+        restart: on-failure
+        volumes:
+          - "/tmp/{{ name }}/:/opt/{{name}}/"
+        ports:
+          - "{{ port }}:9001"
+      loop:
+        - name: products
+          port: 9002
+        - name: analysis
+          port: 9003
+        - name: monitoring
+          port: 9004
+```
+
+### Vars Field
+
+```yaml
+# Vars Field
+version: "3"
+services:
+  api:
+    image: ef9n/supervisord:0.1.0
+    restart: on-failure
+    ports:
+      - "9001:9001"
+
+expand:
+  vars:
+    supervisors:
+      - name: products
+        port: 9002
+      - name: analysis
+        port: 9003
+      - name: monitoring
+        port: 9004
+  services:
+    - name: "{{ name }}"
+      service:
+        image: ef9n/supervisord:0.1.0
+        restart: on-failure
+        volumes:
+          - "/tmp/{{ name }}/:/opt/{{name}}/"
+        ports:
+          - "{{ port }}:9001"
+      loop: "{{ supervisors }}"
+```
+
+# Examples
+
+Look up the [examples](https://github.com/f9n/docker-compose-expand/tree/master/examples) directory.
+
+# Credits
+
+- [Docker Compose](https://github.com/docker/compose)
+- [Ansible Yaml Standard](https://github.com/ansible/ansible)
+

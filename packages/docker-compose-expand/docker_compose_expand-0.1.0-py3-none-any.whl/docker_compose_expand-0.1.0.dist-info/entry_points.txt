@@ -1,0 +1,3 @@
+[console_scripts]
+docker-compose-expand=docker_compose_expand.cli:main
+
