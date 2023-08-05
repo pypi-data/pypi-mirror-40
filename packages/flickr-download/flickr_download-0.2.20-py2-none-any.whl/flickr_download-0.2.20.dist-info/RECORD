@@ -1,0 +1,10 @@
+flickr_download/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flickr_download/filename_handlers.py,sha256=smXaH9JmZQ5TFM_8nqwe7DYhkuZFXitF_U_DbLtaO7Q,3319
+flickr_download/flick_download.py,sha256=bSqKXzlIr93vXp7zLISBstenjHtfovoOIKfCuNuEChQ,14290
+flickr_download/utils.py,sha256=xchlOHKq-E7gf0lSQzkbrJTnOnjwq8hF7KrjzmbS18A,1541
+flickr_download-0.2.20.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+flickr_download-0.2.20.dist-info/METADATA,sha256=LlWOBQKuQ4sbq0rl1Z165RQjE44zO6YzrsM2exohGUA,3461
+flickr_download-0.2.20.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+flickr_download-0.2.20.dist-info/entry_points.txt,sha256=OKjOqbZFLS0x5aEYm_TJDLTFaNqItR0_n1uCmrLGk8A,73
+flickr_download-0.2.20.dist-info/top_level.txt,sha256=nPxaU2njCORPVQgFaeTVtcgX3bGXTLesjxmJhRjx70Q,16
+flickr_download-0.2.20.dist-info/RECORD,,
