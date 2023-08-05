@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: django-allauth-steemconnect
+Version: 0.1.2
+Summary: Steemconnect provider for django-allauth.
+Home-page: https://github.com/ohing504/django-allauth-steemconnect
+Author: Youngsup Oh
+Author-email: ohing504@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: django
+Requires-Dist: django-allauth
+
+# django-allauth-steemconnect
+
+Steemconnect provider for django-allauth.
+
+## Installation
+
+```shell
+pip install django-allauth-steemconnect
+```
+
+## Quick start
+
+1. Add "django_allauth_steemconnect" to your INSTALLED_APPS setting like this::
+
+```python
+    INSTALLED_APPS = [
+        ...
+        'allauth',
+        'allauth.account',
+        'allauth.socialaccount',
+        'django_allauth_steemconnect.providers.steemconnect',
+    ]
+```
+
+2. Include the polls URLconf in your project urls.py like this::
+
+```python
+    path('accounts/', include('allauth.urls')),
+```
+
+3. Run `python manage.py migrate` to create the allauth models.
+
+4. Start the development server and visit http://127.0.0.1:8000/admin/
+   to create a social app (you'll need the Admin app enabled).
+
+

@@ -1,0 +1,1 @@
+name = "django-allauth-steemconnect"
