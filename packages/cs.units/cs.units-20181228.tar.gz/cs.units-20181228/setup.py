@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+from setuptools import setup
+setup(
+  name = 'cs.units',
+  description = 'unit suffixes for nonnegative integers; parsing and transcription',
+  author = 'Cameron Simpson',
+  author_email = 'cs@cskk.id.au',
+  version = '20181228',
+  url = 'https://bitbucket.org/cameron_simpson/css/commits/all',
+  classifiers = ['Programming Language :: Python', 'Programming Language :: Python :: 2', 'Programming Language :: Python :: 3', 'Development Status :: 4 - Beta', 'Intended Audience :: Developers', 'Operating System :: OS Independent', 'Topic :: Software Development :: Libraries :: Python Modules', 'License :: OSI Approved :: GNU General Public License v3 (GPLv3)'],
+  install_requires = [],
+  keywords = ['python2', 'python3'],
+  long_description = "Functions for decomposing nonnegative integers according to various unit scales.\n\nPresupplied scales:\n* `BINARY_BYTES_SCALE`: Units of (B)ytes, KiB, MiB, GiB etc.\n* `DECIMAL_BYTES_SCALE`: Units of (B)ytes, KB, MB, GB etc.\n* `DECIMAL_SCALE`: Unit prefixes K, M, G etc.\n* `TIME_SCALE`: Units of (s)econds, (m)inutes, (h)ours, (d)ays and (w)eeks.\n\n## Function `combine(components, scale)`\n\nCombine a sequence of value components as from `human()` into an integer.\n\n## Function `geek_bytes(n)`\n\nDecompose a nonnegative integer `n` into counts by unit\nfrom `BINARY_BYTES_SCALE`.\n\n## Function `human(n, scale)`\n\nDecompose a nonnegative integer `n` into counts by unit from `scale`.\n\nParameters:\n* `n`: a nonnegative integer.\n* `scale`: a sequence of `(factor,unit)` where factor is the\n  size factor to the follow scale and `unit` is the designator\n  of the unit.\n\n## Function `human_bytes(n)`\n\nDecompose a nonnegative integer `n` into counts by unit\nfrom `DECIMAL_BYTES_SCALE`.\n\n## Function `human_time(n, scale=None)`\n\nDecompose a nonnegative integer `n` into counts by unit\nfrom `TIME_SCALE`.\n\n## Function `multiparse(s, scales, offset=0)`\n\nParse an integer followed by an optional scale and return computed value.\nReturns the parsed value and the new offset.\n\nParameters:\n* `s`: the string to parse.\n* `scales`: an iterable of scale arrays of (factor, unit_name).\n* `offset`: starting position for parse.\n\n## Function `parse(s, scale, offset=0)`\n\nParse an integer followed by an optional scale and return computed value.\nReturns the parsed value and the new offset.\n\nParameters:\n* `s`: the string to parse.\n* `scale`: a scale array of (factor, unit_name).\n* `offset`: starting position for parse.\n\n## Function `transcribe(n, scale, max_parts=None, skip_zero=False, sep='')`\n\nTranscribe a nonnegative integer `n` against `scale`.\n\nParameters:\n* `n`: a nonnegative integer.\n* `scale`: a sequence of (factor, unit) where factor is the\n  size factor to the follow scale and `unit` is the designator\n  of the unit.\n* `max_parts`: the maximum number of components to transcribe.\n* `skip_zero`: omit components of value 0.\n* `sep`: separator between words, default: `''`.\n\n## Function `transcribe_bytes_geek(n, max_parts=1, **kw)`\n\nTranscribe a nonnegative integer `n` against `BINARY_BYTES_SCALE`.\n\n## Function `transcribe_bytes_human(n, max_parts=1, **kw)`\n\nTranscribe a nonnegative integer `n` against `DECIMAL_BYTES_SCALE`.\n\n## Function `transcribe_time(n, max_parts=3, **kw)`\n\nTranscribe a nonnegative integer `n` against `TIME_SCALE`.",
+  long_description_content_type = 'text/markdown',
+  package_dir = {'': 'lib/python'},
+  py_modules = ['cs.units'],
+)
