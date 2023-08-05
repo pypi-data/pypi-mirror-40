@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: drf-body-token
+Version: 0.1.0
+Summary: REST authentication class to get token from HTTP body
+Home-page: 
+Author: Nguyễn Hồng Quân
+Author-email: ng.hong.quan@gmail.com
+Requires-Python: >=3.4,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Django (>=2.0,<3.0)
+Requires-Dist: djangorestframework (>=3.0,<4.0)
