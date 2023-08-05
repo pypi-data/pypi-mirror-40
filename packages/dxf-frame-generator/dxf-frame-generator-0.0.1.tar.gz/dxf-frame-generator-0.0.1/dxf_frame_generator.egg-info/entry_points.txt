@@ -1,0 +1,3 @@
+[console_scripts]
+dxf-frame-generator = dxf_frame_generator:run
+
