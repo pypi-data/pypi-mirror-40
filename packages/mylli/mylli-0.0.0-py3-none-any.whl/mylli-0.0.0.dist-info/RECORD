@@ -1,0 +1,14 @@
+mylli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mylli/__main__.py,sha256=pTa0drh-9DRzZi9FCOgGPKis0i0AcNNXayY4YVanjX8,2580
+mylli/cache.py,sha256=E0aRqm9YRyNHeie0_pXJTkc8iddXgkCaYrDcQzJQsEg,112
+mylli/engineapi.py,sha256=PIUxBGGbs_2q9cJSc48ebY5yTOX91Pr6MTGtDr5dlII,690
+mylli/engineapis.py,sha256=PIUxBGGbs_2q9cJSc48ebY5yTOX91Pr6MTGtDr5dlII,690
+mylli/mailing_list.xo,sha256=DM0Q8gORUKRLPyBtuDPRuXTTdt-i34MfsHmFyrsznho,38
+mylli/model.py,sha256=CUCCo5wnY591UKJyDNqOPVG7ozmrr6Up24S_EP4_t2g,3600
+mylli-0.0.0.dist-info/DESCRIPTION.rst,sha256=GKBTLYI0qdToFKI29hgEqhCslXGPRIHqHgz6VHtfBhU,275
+mylli-0.0.0.dist-info/METADATA,sha256=9qimKgTGkPy8UXjRxeAcWZ1yCzEv2Lvs8Q9a2fSg7-g,668
+mylli-0.0.0.dist-info/RECORD,,
+mylli-0.0.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+mylli-0.0.0.dist-info/entry_points.txt,sha256=1YxA9XMOe5-6s5VNiVrpPLrYtuisRceuqYRQbx6cBOo,47
+mylli-0.0.0.dist-info/metadata.json,sha256=pBchuDzqzPLl7s7M_RlaZkyOXXYzTddEuoCy5DntH-M,763
+mylli-0.0.0.dist-info/top_level.txt,sha256=a3W2Y1paj3PHXJKPmeOCAEfp6VDDWADqRSrylVqLPmc,6
