@@ -1,0 +1,3 @@
+[console_scripts]
+x256-img = x256_img:_cli_init
+
