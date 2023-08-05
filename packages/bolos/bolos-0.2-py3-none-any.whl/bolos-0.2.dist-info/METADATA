@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bolos
+Version: 0.2
+Summary: A library to solve the Boltzmann equation
+Home-page: https://github.com/aluque/bolos
+Author: Alejandro Luque
+Author-email: aluque@iaa.es
+License: LGPLv2
+Keywords: physics plasma boltzmann
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+
