@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+myPackage/__init__.py
+myPackage/somePython.py
+myPackage/packageData/sampleData.dat
+python_sample_package.egg-info/PKG-INFO
+python_sample_package.egg-info/SOURCES.txt
+python_sample_package.egg-info/dependency_links.txt
+python_sample_package.egg-info/requires.txt
+python_sample_package.egg-info/top_level.txt
