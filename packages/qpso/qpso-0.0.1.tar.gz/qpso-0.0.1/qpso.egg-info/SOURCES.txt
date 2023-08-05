@@ -1,0 +1,9 @@
+README.md
+setup.py
+qpso/__init__.py
+qpso/qpso.py
+qpso.egg-info/PKG-INFO
+qpso.egg-info/SOURCES.txt
+qpso.egg-info/dependency_links.txt
+qpso.egg-info/requires.txt
+qpso.egg-info/top_level.txt
