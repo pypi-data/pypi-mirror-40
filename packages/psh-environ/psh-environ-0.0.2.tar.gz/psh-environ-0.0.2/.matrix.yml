@@ -1,0 +1,46 @@
+---
+environments:
+  - label: '{python}-{cover}'
+    matrix:
+      python:
+        $ref: '#/matrix/python'
+      cover:
+        $ref: '#/matrix/cover'
+  - label: check-{python}
+    matrix:
+      python:
+        $ref: '#/matrix/check-python'
+    cover: false
+    deps:
+      - bandit
+      - black
+      - flake8
+      - flake8-bugbear
+      - flake8-builtins
+      - flake8-comprehensions
+      - isort
+
+matrix:
+  check-python:
+    - alias: py36
+      value: "3.6"
+    - alias: py37
+      value: "3.7"
+  python:
+    - alias: py27
+      value: "2.7"
+    - alias: py34
+      value: "3.4"
+    - alias: py35
+      value: "3.5"
+    - alias: py36
+      value: "3.6"
+    - alias: py37
+      value: "3.7"
+  cover:
+    - alias: cover
+      value: true
+    - alias: nocov
+      value: false
+  deps: []
+  environment_variables: []
