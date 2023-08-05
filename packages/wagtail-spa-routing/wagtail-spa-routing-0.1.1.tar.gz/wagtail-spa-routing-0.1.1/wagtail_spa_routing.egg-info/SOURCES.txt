@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+wagtail_spa/__init__.py
+wagtail_spa/apps.py
+wagtail_spa/settings.py
+wagtail_spa/urls.py
+wagtail_spa/views.py
+wagtail_spa_routing.egg-info/PKG-INFO
+wagtail_spa_routing.egg-info/SOURCES.txt
+wagtail_spa_routing.egg-info/dependency_links.txt
+wagtail_spa_routing.egg-info/requires.txt
+wagtail_spa_routing.egg-info/top_level.txt
