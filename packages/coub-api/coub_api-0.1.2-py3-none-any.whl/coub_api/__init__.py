@@ -1,0 +1,5 @@
+__version__ = "0.1.2"
+
+from coub_api.api import CoubApi
+
+__all__ = ("CoubApi",)
