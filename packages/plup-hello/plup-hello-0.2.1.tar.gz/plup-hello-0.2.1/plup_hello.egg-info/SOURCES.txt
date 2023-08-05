@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+myapp/__init__.py
+plup_hello.egg-info/PKG-INFO
+plup_hello.egg-info/SOURCES.txt
+plup_hello.egg-info/dependency_links.txt
+plup_hello.egg-info/entry_points.txt
+plup_hello.egg-info/top_level.txt
