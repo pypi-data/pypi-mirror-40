@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: pyhasse.acm
+Version: 0.2.3
+Summary: PyHasse module: pyhasse.acm
+Home-page: https://pyhasse.org
+Author: Rainer Bruggemann
+Author-email: rainer.bruggemann@pyhasse.org
+License: MIT license
+Description: ===================
+        Module: pyhasse.acm
+        ===================
+        
+        * Free software: MIT license
+        * Documentation: https://pyhasse.org
+        
+        
+        Features
+        --------
+        
+        Calculate:
+        
+        - antichain matrix (ACM)
+        - rowsum of ACM
+        - colsum of ACM
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2018-06-10)
+        ------------------
+        
+        * First version
+        
+Keywords: acm
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
