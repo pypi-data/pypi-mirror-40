@@ -1,0 +1,9 @@
+README.md
+setup.py
+ethfinex/__init__.py
+ethfinex/public_client.py
+ethfinex_python.egg-info/PKG-INFO
+ethfinex_python.egg-info/SOURCES.txt
+ethfinex_python.egg-info/dependency_links.txt
+ethfinex_python.egg-info/requires.txt
+ethfinex_python.egg-info/top_level.txt
