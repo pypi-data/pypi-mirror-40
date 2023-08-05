@@ -1,0 +1,9 @@
+README.rst
+setup.py
+gimmebio/cli.py
+gimmebio.egg-info/PKG-INFO
+gimmebio.egg-info/SOURCES.txt
+gimmebio.egg-info/dependency_links.txt
+gimmebio.egg-info/entry_points.txt
+gimmebio.egg-info/requires.txt
+gimmebio.egg-info/top_level.txt
