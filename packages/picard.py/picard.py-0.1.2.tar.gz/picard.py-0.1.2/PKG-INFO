@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: picard.py
+Version: 0.1.2
+Summary: Make it so.
+Home-page: https://github.com/thejohnfreeman/picard
+Author: John Freeman
+Author-email: jfreeman08@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: aws
+Requires-Dist: boto3 (>=1.9,<2.0); extra == "aws"
+Requires-Dist: typing_extensions (>=3.6,<4.0)
+Project-URL: Documentation, https://picard.readthedocs.io
+Project-URL: Repository, https://github.com/thejohnfreeman/picard
