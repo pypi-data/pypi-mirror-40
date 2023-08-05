@@ -1,0 +1,9 @@
+README.md
+setup.py
+coffer_mac/__init__.py
+coffer_mac/api.py
+coffer_mac.egg-info/PKG-INFO
+coffer_mac.egg-info/SOURCES.txt
+coffer_mac.egg-info/dependency_links.txt
+coffer_mac.egg-info/requires.txt
+coffer_mac.egg-info/top_level.txt

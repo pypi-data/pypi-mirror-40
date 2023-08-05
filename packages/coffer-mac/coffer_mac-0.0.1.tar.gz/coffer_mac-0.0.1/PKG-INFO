@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: coffer_mac
+Version: 0.0.1
+Summary: Tiny Python API for performing MAC address lookups using Coffer.
+Home-page: https://github.com/vesche/coffer_mac
+Author: Austin Jackson
+Author-email: vesche@protonmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Security
