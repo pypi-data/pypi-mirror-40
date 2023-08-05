@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: cs.clockutils
+Version: 20190101
+Summary: implementation of PEP0418 with the "Choosing the clock from a list of constraints" get_clock() and get_clocks() functions
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: A framework to present system clocks by feature, intended to avoid
+        the library-as-policy pitfalls of the discussion around PEP 418.
+        
+        My 2c:
+        * http://www.gossamer-threads.com/lists/python/dev/977474#977474
+        * http://www.gossamer-threads.com/lists/python/dev/977495#977495
+        or:
+        * http://www.mail-archive.com/python-dev@python.org/msg66174.html
+        * http://www.mail-archive.com/python-dev@python.org/msg66179.html
+        
+        - Cameron Simpson <cs@cskk.id.au> 02apr2012
+        
+        ## Class `BaseClock`
+        
+        A BaseClock is the private base class of clock objects.
+        
+        A clock has the following mandatory attributes:
+        * `.flags`: Feature flags describing the clock.
+        
+        A clock may have the following optional attributes:
+        * `.epoch`:
+          If present, the offset from time.time()'s epoch of this
+          clock's epoch(). Not all clocks have epochs; some measure
+          elapsed time from an unknown point and only the  difference
+          in two measurements is useful.
+        * `.resolution`:
+          The resolution of the underlying clock facility's
+          reporting units. The clock can never be more precise than
+          this value. The actual accuracy of the reported time may
+          vary with adjustments and the real accuracy of the
+          underlying OS clock facility (which in turn may be
+          dependent on the precision of some hardware clock).
+        
+        A clock must also supply the following methods:
+        * `.now()`: Report the current time in seconds, a float.
+        
+        ## Class `ClockEntry`
+        
+        MRO: `builtins.tuple`  
+        ClockEntry(flags, factory)
+        
+        ## Class `ClockFlags`
+        
+        MRO: `builtins.int`  
+        An int with human friendly str() and repr() for clock flags.
+        
+        The flag names are:
+        * `HIGHRES`: clock with the highest resolution.
+        * `MONOTONIC`: clock does not go backwards.
+        * `STEADY`: clock with high *stability*
+          and relatively high *accuracy* and *precision*.
+        * `ADJUSTED`: clock whose value may be changed
+          to the correct time.
+        * `WALLCLOCK`: what the clock on the wall shows.
+        * `RUNTIME`: clock based on the process running time.
+        * `SYNTHETIC`: clock computed from other clocks,
+          such as a monotonic clock computed from other
+          nonmonotonic clocks.
+        
+        ## Function `get_clock(flags=0, clocklist=None)`
+        
+        Return a clock based on the supplied `flags`.
+        The returned clock shall have all the requested flags.
+        If no clock matches, return None.
+        
+        ## Function `get_clocks(flags=0, clocklist=None)`
+        
+        Yield all clocks matching the supplied `flags`.
+        The returned clocks shall have all the requested flags.
+        
+        ## Function `highres()`
+        
+        Return the current time according to the default high resolution clock.
+        
+        ## Function `highres_clock(other_flags=0)`
+        
+        Return a high resolution clock, preferably steady.
+        
+        ## Function `monotonic()`
+        
+        Return the current time according to the default monotonic clock.
+        
+        ## Function `monotonic_clock(other_flags=0)`
+        
+        Return a monotonic clock, preferably high resolution.
+        
+        ## Function `steady()`
+        
+        Return the current time according to the default steady clock.
+        
+        ## Function `steady_clock(other_flags=0)`
+        
+        Return a steady clock, preferably high resolution.
+        
+        ## Class `SyntheticMonotonic`
+        
+        MRO: `BaseClock`  
+        An example synthetic clock.
+        
+        This class comes after time.time() because I think synthetic
+        clocks should be less desired - they tend to have side
+        effects; but perhaps offered anyway because they can offer
+        flag combinations not always presented by the system clocks.
+        
+        A simple synthetic monotonic clock may skew with respect to other
+        instances.
+        Steven D'Aprano wrote a better one.
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
