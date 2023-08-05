@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+README.rst
+gitkeep.py
+setup.py
+gitkeep2.egg-info/PKG-INFO
+gitkeep2.egg-info/SOURCES.txt
+gitkeep2.egg-info/dependency_links.txt
+gitkeep2.egg-info/entry_points.txt
+gitkeep2.egg-info/top_level.txt
