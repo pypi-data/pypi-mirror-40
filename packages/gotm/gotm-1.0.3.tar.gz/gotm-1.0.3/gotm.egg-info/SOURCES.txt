@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+gotm/__init__.py
+gotm/draox.py
+gotm/xandor.py
+gotm.egg-info/PKG-INFO
+gotm.egg-info/SOURCES.txt
+gotm.egg-info/dependency_links.txt
+gotm.egg-info/requires.txt
+gotm.egg-info/top_level.txt
+gotm/offenders/__init__.py
+gotm/offenders/one_zero_too_far.py

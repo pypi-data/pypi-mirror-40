@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: gotm
+Version: 1.0.3
+Summary: Guardians of the Memory defend Windows against its many foes, including imageio.volread().
+Home-page: https://github.com/Fafa87/GuardiansOfTheMemory
+Author: Filip Mroz
+Author-email: fafafft@gmail.com
+License: MIT
+Description: Guardians of the memory stand between you and very dark and grim times, where life is lost, despair spreads like a disease and basically you have to redo all unsaved work.
+Keywords: freeze,memory,paging,kill,recover
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
