@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+yRest.egg-info/PKG-INFO
+yRest.egg-info/SOURCES.txt
+yRest.egg-info/dependency_links.txt
+yRest.egg-info/requires.txt
+yRest.egg-info/top_level.txt
