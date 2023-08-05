@@ -1,0 +1,9 @@
+PySide2>=5.12
+appdirs
+nod>=1.1
+requests
+networkx
+bitstruct
+pytest
+pytest-cov
+pytest-qt
