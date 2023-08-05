@@ -1,0 +1,3 @@
+[console_scripts]
+oen = docker_odoo_env.command_line:main
+

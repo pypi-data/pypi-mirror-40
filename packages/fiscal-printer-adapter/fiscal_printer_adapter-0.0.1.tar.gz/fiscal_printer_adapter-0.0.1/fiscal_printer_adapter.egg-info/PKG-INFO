@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: fiscal-printer-adapter
+Version: 0.0.1
+Summary: A small tool to manage Dockerized Odoo
+Home-page: https://github.com/jobiols/docker_odoo_env
+Author: jeo Software
+Author-email: jorge.obiols@gmail.com
+License: UNKNOWN
+Description: FISCAL PRINTER ADAPTER [![Build Status](https://travis-ci.org/jobiols/fiscal_printer_adapter.svg?branch=master)](https://travis-ci.org/jobiols/fiscal_printer_adapter) [![codecov](https://codecov.io/gh/jobiols/fiscal_printer_adapter/branch/master/graph/badge.svg)](https://codecov.io/gh/jobiols/fiscal_printer_adapter) [![CodeFactor](https://www.codefactor.io/repository/github/jobiols/fiscal_printer_adapter/badge)](https://www.codefactor.io/repository/github/jobiols/fiscal_printer_adapter) 
+        ----------------------
+        
+        Este es un adaptador para impresoras fiscales
+        Objetivos:
+        
+        - Proveer una interfase uniforme entre marcas y modelos de impresoras fiscales
+        - Permitir conectar impresoras a la maquina local via puerto serie o a una maquina remota via websocket donde
+        residira un servicio que redirecciona los datos a un puerto serie.
+        - implementar una arquitectura simple que permita agregar facilmente nuevas marcas y modelos de impresoras
+        
+        
+        **Ejemplo**
+        
+            # create a Fiscal Printer Adapter with brand and model
+            fpa = FPA('epson', 'TMU220')
+            
+            # open serial connection in local computer to fiscal printer
+            fpa.open('COM1', 9600)
+            
+            # open serial connection in remote computer to fiscal printer
+            fpa.open('COM1', 9600, host='192.168.1.54', port=34144)
+        
+Keywords: odoo docker environment
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Testing :: Unit
+Classifier: Topic :: System :: Software Distribution
