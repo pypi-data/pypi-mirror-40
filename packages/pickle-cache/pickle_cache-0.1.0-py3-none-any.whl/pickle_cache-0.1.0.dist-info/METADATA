@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pickle-cache
+Version: 0.1.0
+Summary: Persistent caching of Python values through pickle
+Home-page: http://github.com/scanner-research/pickle-cache
+Author: Will Crichton
+Author-email: wcrichto@cs.stanford.edu
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: python-constraint
+
+UNKNOWN
+
+
