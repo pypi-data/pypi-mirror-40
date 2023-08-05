@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+src/downy/__init__.py
+src/downy/download.py
+src/downy.egg-info/PKG-INFO
+src/downy.egg-info/SOURCES.txt
+src/downy.egg-info/dependency_links.txt
+src/downy.egg-info/entry_points.txt
+src/downy.egg-info/not-zip-safe
+src/downy.egg-info/requires.txt
+src/downy.egg-info/top_level.txt
