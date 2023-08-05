@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ccr
+Version: 1.0.7
+Summary: command line tool for executing programs with input test file with 40+ languages support
+Home-page: https://github.com/jigarWala/ccr
+Author: Jigar Wala
+Author-email: jigar.wala@somaiya.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
