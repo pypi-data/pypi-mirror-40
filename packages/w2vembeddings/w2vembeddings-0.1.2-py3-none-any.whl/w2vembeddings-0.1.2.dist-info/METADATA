@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: w2vembeddings
+Version: 0.1.2
+Summary: This package is main for translate word into vector for nlp embedding. maybe chinese maybe english, any language you want to use is ok.  This is main for those who will use word2vec in local from txt files. In particular, this implementation primarily helps to construct a separate word vector matrix for embedding in local NLP tasks. 
+Home-page: https://github.com/lg-1/w2vembeddings
+Author: LG
+Author-email: ourantech@163.com
+License: MIT
+Keywords: text nlp machine-learning chinese word2vec
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: tqdm
+Requires-Dist: requests
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: nose; extra == 'test'
+
+UNKNOWN
+
+
