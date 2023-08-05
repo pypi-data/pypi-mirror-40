@@ -1,0 +1,89 @@
+connect from localhost at ('1.2.3.4', 1234)
+
+hello from spamrelay
+
+user
+batman
+sent mail from
+<spam@adv.com>
+()
+
+rcpt to
+<victim@lamb.com>
+()
+
+Subject: flexfax: ILOVEYOU
+
+X-Mailer: Internet Mail Service (5.5.2650.21)
+
+Temp file:
+/tmp/tmpxMmBVt.defang
+
+connect from somehost at ('1.2.3.4', 1234)
+
+hello from spamrelay
+
+mail from
+<spam@adv.com>
+()
+
+rcpt to
+<victim@lamb.com>
+()
+
+X-Mailer: Mozilla 4.76 [en] (X11; U; Linux 2.2.16-3 i586)
+
+Subject: Re: P.B.S kids
+
+eom
+
+mail from
+<spam@adv.com>
+()
+
+rcpt to
+<victim@lamb.com>
+()
+
+Temp file:
+/tmp/tmp8AyqXi.defang
+
+mail from
+<spam@adv.com>
+()
+
+rcpt to
+<victim@lamb.com>
+()
+
+Subject: MAEU XSS025786 - ORDER 1251 - CONTAINER MAEU 6053725
+
+X-Mailer: Lotus Notes Release 5.07a  May 14, 2001
+
+chgheader: content-type[0]=
+
+chgheader: content-disposition[0]=
+
+chgheader: content-transfer-encoding[0]=
+
+addheader: Content-Type=text/plain; name=WARNING.TXT
+
+Temp file:
+/tmp/tmpoIIQYn.defang
+
+connect from somehost at ('1.2.3.4', 1234)
+
+hello from spamrelay
+
+mail from
+<spam@adv.com>
+()
+
+rcpt to
+<victim@lamb.com>
+()
+
+Subject: Just another "Crappy Day in Paradise" here @ the Ranch
+
+eom
+
