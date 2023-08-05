@@ -1,0 +1,9 @@
+[chat_archive.backends]
+gtalk = chat_archive.backends.gtalk
+hangouts = chat_archive.backends.hangouts
+slack = chat_archive.backends.slack
+telegram = chat_archive.backends.telegram
+
+[console_scripts]
+chat-archive = chat_archive.cli:main
+
