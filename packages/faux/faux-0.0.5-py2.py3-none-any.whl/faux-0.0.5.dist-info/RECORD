@@ -1,0 +1,13 @@
+faux/__init__.py,sha256=X6MNkWxhniQ3A59b6l0t5MVTBK5K6hEmqmYTPuNi2mc,214
+faux/__main__.py,sha256=Rjpht-xqzIC0rUYH6rIxckaWG2tZl8RPrHXDW9kpiLY,3011
+faux/client.py,sha256=8hcu32DjwpYkBGonIfOKvOvdUz2qC8D9gJOwrvP6gIM,2318
+faux/models.py,sha256=h_KKkAq6cPojYoMKgi8xAwkgywSrWfozCF2aqIZDjas,1658
+faux/server.py,sha256=wj_1NfqXAuS0i9XO8GQs7Z3UXiJdgIrV_osHlw502HY,4955
+faux/utils.py,sha256=WMNpSu1PrGz1FMUd9wXAOsBlZAjdRh_qQjkMOg9xiz0,1274
+faux-0.0.5.dist-info/DESCRIPTION.rst,sha256=W1R3DJBv_K23_IVPRJsjKXztlvn3EVTcv-sVD3S17sA,4189
+faux-0.0.5.dist-info/METADATA,sha256=0Ct_SjvZZbOZ-GyMk5fUlRdqgAajP13ugFL7GXExFNw,4956
+faux-0.0.5.dist-info/RECORD,,
+faux-0.0.5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+faux-0.0.5.dist-info/entry_points.txt,sha256=83rP4JOYVN5AUeZb1Wi7GjKktC-CRRQPkJigDteb4qA,45
+faux-0.0.5.dist-info/metadata.json,sha256=BGgdxSHZxe-DsDr2g3LdNLKjwn1zY6LPy1js5hSccnk,1136
+faux-0.0.5.dist-info/top_level.txt,sha256=ftnRC3q-6ghDBS5k98pQANIt13AX58uOQokyV8KwI5o,5
