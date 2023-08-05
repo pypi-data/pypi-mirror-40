@@ -1,0 +1,7 @@
+{% regroup commands|dictsort:"module" by module as commands_by_module %}
+{% for module, module_commands in commands_by_module %}
+<h1>{{ module }}</h1>
+{% for command in module_commands %}
+<div><a href="{% url 'commander:run' command.command %}?key={{ key }}">{{ command.command }}</a></div>
+{% endfor %}
+{% endfor %}

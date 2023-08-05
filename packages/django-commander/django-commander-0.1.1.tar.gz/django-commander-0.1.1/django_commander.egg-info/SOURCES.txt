@@ -1,0 +1,16 @@
+setup.py
+commander/__init__.py
+commander/apps.py
+commander/commands.py
+commander/forms.py
+commander/protection.py
+commander/tests.py
+commander/urls.py
+commander/views.py
+commander/management/commands/setrandompassword.py
+commander/templates/command_details.html
+commander/templates/command_list.html
+django_commander.egg-info/PKG-INFO
+django_commander.egg-info/SOURCES.txt
+django_commander.egg-info/dependency_links.txt
+django_commander.egg-info/top_level.txt
