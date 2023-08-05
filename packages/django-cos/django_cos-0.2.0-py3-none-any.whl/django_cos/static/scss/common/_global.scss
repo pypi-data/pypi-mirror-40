@@ -1,0 +1,8 @@
+.equal-height {
+  @include bp(tablet) {
+    > .equal-height__item {
+      display: flex;
+    }
+  }
+}
+
