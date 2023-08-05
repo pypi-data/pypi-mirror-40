@@ -1,0 +1,38 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="bise.diazotheme">
+
+    <include package="z3c.jbot" file="meta.zcml" />
+
+    <include package=".tiles" />
+    <include package=".browser" />
+    <include file="upgrades.zcml"/>
+
+    <!-- <cmf:registerDirectory name="bise_diazotheme_custom"/> -->
+    <plone:static directory="static" type="theme" name="bise.diazotheme" />
+
+    <genericsetup:registerProfile
+        name="default"
+        title="bise.diazotheme"
+        directory="profiles/default"
+        description='Extension profile for the "Bise Diazo Theme" Plone theme.'
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <browser:jbot directory="template-overrides" layer=".interfaces.IBiseDiazoLayer" />
+
+    <interface
+        interface=".interfaces.IBiseDiazoLayer"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="BiseDiazoTheme"
+        />
+
+    <subscriber handler=".events.disable_diazo_for_templates" />
+
+</configure>

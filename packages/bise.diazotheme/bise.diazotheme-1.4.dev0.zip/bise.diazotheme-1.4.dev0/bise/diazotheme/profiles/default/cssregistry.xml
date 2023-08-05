@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<object name="portal_css">
+
+    <!-- columns.css is deco grid but conflict with bootstrap grid -->
+    <!-- mobile.css conflict because it needs sunburst's viewport -->
+
+    <stylesheet id="columns.css" enabled="0" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
+    <stylesheet id="mobile.css" enabled="0" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
+    <stylesheet id="public.css" enabled="0" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
+    <stylesheet id="bise.theme.css" enabled="0" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
+
+    <stylesheet id="++theme++bise.diazotheme/css/fixes.css" enabled="1" />
+
+</object>

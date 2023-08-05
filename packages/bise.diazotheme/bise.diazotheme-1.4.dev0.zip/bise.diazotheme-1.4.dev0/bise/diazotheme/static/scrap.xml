@@ -1,0 +1,39 @@
+
+<!-- <replace css:theme-children="#highlights-slider" css:content-children="#highlights-slider-content" /> -->
+        <!-- NOTE: this method is not ok-->
+        <!-- <xsl:copy&#45;of css:select="#portal&#45;column&#45;content" /> -->
+        <!-- button in catalogue -->
+        <!-- <rules css:if&#45;theme&#45;children=".ondesktop"> -->
+          <!--    <drop css:content&#45;children=".section" /> -->
+          <!--    <append css:content&#45;children='.section' css:theme=".section&#45;wrapper" method="raw" /> -->
+          <!--  -->
+          <!-- </rules> -->
+        <!--  <rules css:if&#45;content=".ondesktop"> -->
+          <!--    <drop css:content&#45;children=".section" /> -->
+          <!--    <append css:content&#45;children='.section' css:theme=".section&#45;wrapper" method="raw" /> -->
+          <!-- </rules> -->
+
+        <!--  <strip attributes=".col-md-push-3" css:theme=".col-md-9" /> -->
+        <!-- <replace css:theme-children="div.col-md-9" css:content=" " />        -->
+        <!-- <replace css:content=".article" css:theme=".article-wide" /> -->
+        <!--    <append css:content="#portal-column-content" css:theme=".article-wide" /> -->
+        <!--    <replace css:theme=".article" >
+                <div class=".article-wide" css:content="#portal-column-content"> </div>
+        </replace> -->
+    <!-- <after css:theme-children="head">
+            <script src="http://requirejs.org/docs/release/2.1.14/minified/require.js" type="text/javascript" data-main="cat-client/catalogue"></script>
+        </after> -->
+  <!-- <after css:theme-children="head">
+    <script data-main="++theme++bise.diazotheme/js/appzz.js" src="http://requirejs.org/docs/release/2.1.14/minified/require.js" />
+    </after>
+     -->
+
+  <!-- <merge attribute="class" css:theme=".menu-primary-list" css:content=".nav-menu" /> -->
+  <!-- <append css:content="#navmenu-primary-list" css:theme=".nav-menu" /> -->
+  <!-- <drop css:content="#portal-breadcrumbs" /> -->
+  <!-- TODO: use xslt transformation to get this right -->
+  <!--     <replace css:theme-children=".footer-logos" css:content="#editable-footer a" /> -->
+
+  <!-- TODO: enable back this, disabled during development
+    <drop css:content="#viewlet-social-like" />-->
+

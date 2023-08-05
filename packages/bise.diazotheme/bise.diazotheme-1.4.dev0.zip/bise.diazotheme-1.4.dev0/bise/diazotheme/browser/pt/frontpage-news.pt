@@ -1,0 +1,21 @@
+<div class="news card">
+  <div class="news-right">
+    <h3>News Europe</h3>
+    <div class="news-europe" tal:define="collection nocall:context/newseurope">
+      <div tal:replace="structure python: view.render_listing(collection)" />
+      <div>
+        <a href="" tal:attributes="href collection/absolute_url">More European News</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-left">
+    <h3>News World</h3>
+    <div class="news-world" tal:define="collection nocall:context/newsworld">
+      <div tal:replace="structure python: view.render_listing(collection)" />
+      <div>
+        <a href="" tal:attributes="href collection/absolute_url">More World News</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+Changelog
+=========
+
+1.4-dev - (unreleased)
+------------------
+* dummy release
+  [iulianpetchesi #100969]
+
+1.3 - (2018-12-27)
+------------------
+* Task: Removed google analytics code for bise
+  [iulianpetchesi #100969]
+
+1.2 - (2018-10-26)
+------------------
+* Bug fix: Check for content and screentimeAnalytics before activation
+  [olimpiurob #96812]
+* Task: Added matomo code for bise
+  [iulianpetchesi #99202]
+* Bug fix: avoid double search icon on IOS devices
+  [ichim-david refs #90214]
+* Change: html template cleanups
+  [ichim-david refs #95380]
+* Change: load theme css from portal_css when applied to plone site
+  [ichim-david refs #95380]
+* Change: removed canonical from theme when applied to plone site
+  [ichim-david refs #95380]
+* Change: fixed links for favicons for 16x and 32x
+  [ichim-david refs #95380]
+- Feature: added page to detect linked "foreign" images
+  [tiberich #92205]
+- Bug fix: don't break portlet manager when all portlets are blocked
+  [tiberich, krisztina]
+- Fix country highlight when changing countries from country factsheets dropdown
+  [krisztina #85826]
+- Added overlay over images so that the links work in the pdf version
+  [iulianpetchesi #85140]
+- Added links to footer
+  [iulianpetchesi #85140]
+- Added pdf cover & styling
+  [iulianpetchesi #85140]
+- Prevent unwanted slicing of content at pdf export
+  [iulianpetchesi #85140]
+- Improve pdf styling
+  [iulianpetchesi #85140]
+
+1.1 - (2017-06-08)
+------------------
+- Improve styling of mtr pages
+  [mihaim]
+
+1.0dev (unreleased)
+-------------------
+- Added script to enable screentimeAnalytics from eea.jquery
+  [iulianpetchesi #85252]
+- Fixed diazo rule for base tag
+  [iulianpetchesi #81711]
+- Improve styling of country checkout actions
+  [tiberich]
+- Initial release
+

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html class="page-homepage">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BISE</title>
+    <meta name="description" content="The Biodiversity Information System for Europe (BISE) is a single entry point for data and information on biodiversity supporting the implementation of the EU strategy and the Aichi targets in Europe.
+">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="canonical" href="http://biodiversity.europa.eu/homepage.html">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel=icon href='/++theme++bise.diazotheme/img/favicon-16x16' sizes="16x16" type="image/png">
+    <link rel=icon href='/++theme++bise.diazotheme/img/favicon-32x32' sizes="32x32" type="image/png">
+    <link rel=icon href='/++theme++bise.diazotheme/img/favicon.ico' type="image/vnd.microsoft.icon">
+</head>
+
+<body>
+    <div id="site">
+        <div id="site-admin">
+            <!-- this is where the edit bar will end up -->
+        </div>
+        <header id="site-header">
+            <nav id="navbar">
+                <div class="navmenu-head">
+                    <div class="nav-container">
+                        <a href="/" title="BISE Homepage" class="navbrand">
+                            <img src="./img/bise-logo.png" class="navbrand-logo" alt="BISE Logo" />
+                            <span class="navbrand-title">Biodiversity Information<br> System for Europe</span>
+                        </a>
+                        <div class="navbar-descriptor">
+                            <div class="navbar-descriptor-inner">
+                                <p class="navbar-descriptor-copy"><strong>BISE</strong> is a single entry point for data and information on biodiversity supporting the implementation of the <strong>EU strategy</strong> and the <strong>Aichi targets</strong> in Europe. </p>
+                                <div class="navbar-descriptor-cta">
+                                    <a href="#">Learn More <strong>About BISE</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navmenu-trigger">
+                            <span id="navmenu-open" class="navmenu-head-button" data-toggle="navmenu" data-target="#navmenu-body">
+          Menu
+          <span class="fa fa-bars"></span>
+                            </span>
+                            <span id="navmenu-close" class="hidden" class="navmenu-head-button" data-toggle="navmenu" data-target="#navmenu-body">
+          Close
+          <span class="fa fa-close"></span>
+                            </span>
+                        </div>
+                        <div class="search-and-login">
+                            <div class="login-wrapper">
+                            </div>
+                            <div class="search-wrapper">
+                                <div class="search-form">
+                                    <form class="navsearch" method="GET">
+                                        <input type="search" id="navsearch-input" name='q' placeholder="Search" />
+                                        <span class="navsearch-addon"> <button type="submit" id="navsearch-submit" class=" no-events"><i class="fa fa-search"></i></button>
+                      </span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="navmenu-body" class="navmenu-body">
+                    <div class="nav-container">
+                        <nav class="nav-menu">
+                            <ul id="navmenu-items" class="menu-primary-list">
+                                <li id="navitem-topics" class="navmenu-item">
+                                    <div id="navitem-topics" class="navitem">
+                                        <div class="navitem-header">
+                                            <a href="" class="navitem-title">Topics</a>
+                                            <button type='button' class="btn" id="navitem-toggle" data-toggle="navmenu" data-target=".navgroup" title="Toggle submenu">
+                                                <span class="sr-only">Toggle submenu</span>
+                                                <span class="fa fa-angle-down"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="backdrop"></div>
+            </nav>
+        </header>
+        <div id="site-body">
+            <div id="highlights-slider">
+                <div class="highlight-photos">
+                    <img class="current-slide" src="./img/bise-highlights/photo-highlights-targets.jpg">
+                    <img src="./img/bise-highlights/photo-highlights-maes.jpg">
+                    <img src="./img/bise-highlights/photo-highlights-chm.jpg">
+
+
+
+                </div>
+                <div class="page-container">
+                    <header class="slider-header">
+                        <h2 class="slider-title">BISE Highlights </h2>
+                        <small class="slider-counter">1/3</small>
+                    </header>
+                    <div class="highlights">
+                        <div class="highlight">
+                            <h3 class="highlight-title">Towards the 2020 biodiversity targets</h3>
+                            <p class="highlight-description">BISE is contributing to the improvement of the knowledge and evidence base for the European Union's enviromental policy</p>
+                        </div>
+                        <div class="highlight">
+                            <h3 class="highlight-title">Mapping and Assessment of Ecosystems and their Services (MAES)</h3>
+                            <p class="highlight-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                        </div>
+                        <div class="highlight">
+                            <h3 class="highlight-title">BISE - CHMs network of Europe</h3>
+                            <p class="highlight-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                    <div id="slider-nav">
+                        <button class="slider-prev">
+                            &larr; Previous
+                        </button>
+                        <button class="slider-next">
+                            Next &rarr;
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <style>
+            #highlights-slider {
+                position: relative;
+                overflow: hidden;
+                color: #fff;
+                padding-top: 120px;
+                padding-bottom: 30px;
+                border-bottom: solid #41b664;
+                background-color: #41b664;
+            }
+            
+            .highlight-photos {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                overflow: hidden;
+                z-index: 0;
+            }
+            
+            .highlight-photos img {
+                /*display: block;*/
+                position: absolute;
+                z-index: 100;
+                top: 0;
+                left: 0;
+                display: none;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .highlight-photos img.current-slide {
+                display: block!important;
+                z-index: 50;
+            }
+            
+            .slider-header {
+                overflow: hidden;
+                font-size: large;
+                margin-bottom: 1em;
+                opacity: .8;
+            }
+            
+            .slider-header,
+            .highlights,
+            #slider-nav {
+                position: relative;
+                z-index: 150;
+            }
+            
+            .slider-title {
+                display: inline-block;
+                margin: 0;
+                font: inherit;
+                color: inherit;
+                line-height: inherit;
+            }
+            
+            .slider-prev,
+            .slider-next {
+                display: inline-block;
+                border: 0;
+                background: transparent;
+                font: inherit;
+                color: inherit;
+                opacity: .8;
+                cursor: pointer;
+                user-select: none;
+            }
+            
+            .slider-prev {
+                margin-right: 1em;
+            }
+            
+            .slider-prev:hover,
+            .slider-next:hover {
+                opacity: 1;
+            }
+            
+            .highlights {
+                margin: -10px;
+                cursor: pointer;
+            }
+            
+            .highlight {
+                box-sizing: border-box;
+                padding: 10px;
+                color: #fff;
+                outline: none;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, .9);
+            }
+            
+            .highlight-photo {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                overflow: hidden;
+                z-index: -1;
+            }
+            
+            .highlight-photo img {
+                height: 100%;
+                width: auto;
+                display: block;
+            }
+            
+            .highlight-title {
+                font-family: 'Roboto', sans-serif;
+                font-size: 30px;
+                line-height: 35px;
+                color: inherit;
+            }
+            
+            .highlight-title a {
+                color: inherit;
+            }
+            
+            .highlight-description {
+                font-size: larger;
+                line-height: 1.2;
+            }
+            
+            @media (max-width: 800px) {
+                #highlights-slider {
+                    text-align: center;
+                }
+                .highlight {
+                    padding: 2rem;
+                }
+            }
+            
+            @media (max-width: 680px) {
+                .highlight-photos img {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+            
+            @media (min-width: 800px) {
+                #highlights-slider {
+                    padding-top: 190px;
+                    padding-bottom: 30px;
+                }
+                .highlights {
+                    width: 60%;
+                }
+                .highlight {
+                    min-height: 180px;
+                }
+            }
+            
+            @media (min-width: 1200px) {
+                #highlights-slider {
+                    padding-top: 240px;
+                    padding-bottom: 60px;
+                }
+                .highlight {
+                    min-height: 220px;
+                }
+                .highlight-title {
+                    font-size: 42px;
+                    line-height: 50px;
+                }
+            }
+            </style>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+            <script>
+            (function() {
+
+                jQuery.extend(jQuery.easing, {
+                    'easeOutQuint': function(x, t, b, c, d) {
+                        return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
+                    }
+                });
+
+                var $hlSlider = $('#highlights-slider').find('.highlights').slick({
+                    autoplaySpeed: 5000,
+                    speed: 1000,
+                    easing: 'easeOutQuint',
+                    adaptiveHeight: false,
+                    nextArrow: null,
+                    prevArrow: null,
+                    useCSS: false
+                });
+                var $hlSliderCounter = $('#highlights-slider').find('.slider-counter');
+                var $hlSliderNav = $('#slider-nav');
+
+                $('.highlight').each(function() {
+                    url = $(this).find('a').attr('href');
+                    $(this).click(function() {
+                        window.location = url;
+                    });
+                })
+
+                var i;
+
+                var updateBackgroundPhoto = function(current, next, count) {
+
+                    var dir = next - current;
+                    console.log(current, next, count);
+                    if (next == 0 && current == count - 1) {
+                        dir = 1;
+                        console.log('from left');
+                    }
+                    if (next == count - 1 && current == 0) {
+                        dir = -1;
+                        console.log('from right');
+                    }
+
+                    $currentImg = $('.highlight-photos img:nth-child(' + (current + 1) + ')');
+                    $nextImg = $('.highlight-photos img:nth-child(' + (next + 1) + ')');
+                    $nextImg.css({
+                        'display': 'block',
+                        'left': dir * 100 + '%'
+                    }).animate({
+                        'left': 0
+                    }, 1000, 'easeOutQuint', function() {
+                        $currentImg.removeClass('current-slide').css({
+                            'display': 'none'
+                        });
+                        $nextImg.addClass('current-slide');
+                    })
+                };
+
+                $hlSlider.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+                    i = (nextSlide ? nextSlide : 0) + 1;
+                    $hlSliderCounter.text(i + '/' + slick.slideCount);
+
+                    updateBackgroundPhoto(currentSlide, nextSlide, slick.slideCount);
+                });
+
+                $hlSliderNav.find('.slider-prev').click(function() {
+                    $hlSlider.slick('slickPrev');
+                });
+
+                $hlSliderNav.find('.slider-next').click(function() {
+                    $hlSlider.slick('slickNext');
+                });
+            }())
+            </script>
+            <script>
+$(document).ready(function() {
+// set the date we're counting down to
+var target_date = new Date("Jan 2, 2021").getTime();
+ 
+// variables for time units
+var days;
+ 
+// get tag element
+var countdown = document.getElementById("countdown");
+ 
+// update the tag with id "countdown" every 1 second
+
+ 
+    // find the amount of "seconds" between now and target
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+
+
+    // do some time calculations
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+        
+
+
+    // format countdown string + set tag value
+    countdown.innerHTML = days;  
+ });
+            </script>
+
+
+            <div class="page">
+                <div class="page-header">
+                    <div class="page-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="site-footer">
+            <!-- <h4 class="footer-title">BISE</h4> -->
+            <div class="page-container">
+                <div class="footerbrand">
+                    <a href="/" title="BISE Homepage" class="navbrand-logo"> <img src="./img/bise-logo.png" class="logo-big" alt="BISE Logo" /><span class="navbrand-title">Biodiversity Information<br> System for Europe</span>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>The Biodiversity Information System for Europe (BISE) is a single entry point for data and information on biodiversity supporting the implementation of the EU strategy and the Aichi targets in Europe.
+                        </p>
+                        <nav class="nav">
+                            <ul class="nav-list-inline">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About BISE</a></li>
+                                <li><a href="">Sitemap</a></li>
+                                <li><a href="">Contact us</a></li>
+                                <li><a href="">Log in</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="footer-logos">
+                            <ul class="list-footer-logos">
+                                <li><a href="http://europa.eu/"><span>EU</span><img src="./img/logo-eu.png" alt="EU flag" height="48" width="auto"></a></li>
+                                <li><a href="http://www.eea.europa.eu/"><span>EEA</span><img src="./img/logo-eea.png" alt="EEA Logo" height="60" width="auto"></a></li>
+                                <li><a href="https://www.chm-cbd.net/"><span>CHM</span><img src="./img/logo-chm.png" alt="CHM Logo" height="66" width="auto"></a></li>
+                                <li><a href="https://www.cbd.int/2011-2020/"><span>UN Decade on Biodiversity</span><img src="./img/logo-undb.png" alt="United Nations Decade on Biodiversity Logo" height="48" width="auto"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

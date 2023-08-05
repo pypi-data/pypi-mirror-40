@@ -1,0 +1,590 @@
+/* Generic fixes */
+
+
+.documentByLine {
+  margin-bottom: 2em;
+}
+
+
+/* Edit bar fixes */
+
+#edit-bar {
+  min-height: 2.5em;
+  margin-bottom: 0em;
+  border-radius: 0;
+  /*max-width: 64em;*/
+}
+
+#edit-bar ul {
+  margin: 0em;
+  /*padding-left: 0.3em;*/
+}
+
+#contentActionMenus dl.actionMenu a {
+  background: none!important;
+}
+
+#contentActionMenus {
+  background: inherit;
+  top: inherit;
+}
+
+dl.actionMenu {
+  margin-left: 0em;
+}
+
+
+/* Fix /countries */
+
+.portletStaticText ul {
+  margin-left: 0em;
+  padding-left: 0em;
+}
+
+.portletStaticText li {
+  list-style-type: none;
+}
+
+
+/* Fix main navigation menu */
+
+#portal-globalnav li {
+  display: inline-block;
+}
+
+
+/* Fix cover layout buttons */
+
+.btn-inverse {
+  background-color: #363636 !important;
+}
+
+/* Fix tile edit height */
+
+.tile-content .ploneSkin iframe {
+  min-height: 150px !important;
+}
+
+.tile-content .mceLayout {min-height: 150px;}
+
+/* Fix warning message*/
+
+dl.portalMessage dd {
+  padding: 0;
+  line-height: 30px;
+}
+
+.portalMessage {
+    margin: 1em 0;
+    border: 1px solid #41b764;
+    background: white;
+    clear: both;
+    border-radius: 3px;
+    overflow: hidden;
+    line-height: 30px;
+}
+.portalMessage strong {
+    background-color: #41b764;
+    font-weight: bold;
+    float: left;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.75em;
+    color: white;
+    line-height: 1.25em;
+}
+
+/* Frontpage fixes */
+
+@media (min-width: 960px) {
+  .page-homepage .page-header .col-md-4,
+  .page-homepage .page-header .col-md-8 {
+    float: left !important;
+  }
+}
+
+#edit-bar {
+  max-width: 100%;
+  z-index: 999;
+  position: relative;
+  background: transparent!important;
+  margin: 0;
+  border: 0!important;
+  font-size: .9rem;
+}
+
+#content-views li.selected a {
+    margin-top: .2rem;
+    }
+
+
+#content-views {
+  background-color: inherit;
+}
+
+#contentActionMenus dl.actionMenu.activated dd {
+  border-bottom: none;
+}
+
+#contentActionMenus dl.actionMenu a,
+#contentActionMenus dl.actionMenu.activated dd {
+  background-color: black;
+}
+
+#content span.tile-type-name {
+  position: absolute;
+}
+#document-action-download_pdf { display: none !important; }
+
+
+/* strategyPlan.css */
+
+#strategyPlan {
+  width: 100%;
+  height: auto!important;
+  min-width: 930px;
+  margin-left: 0;
+  overflow: hidden;
+}
+
+#strategyPlan a:after {
+  content: none;
+}
+
+#strategyPlan .targetDiv.expanded {
+  width: 100%;
+}
+
+#strategyPlan .targetId {
+  width: auto;
+}
+
+.mtrAssesment {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mtrMemberState {
+  height: auto!important;
+}
+
+/* remove heading color on assmnt. tables */
+.review h1,
+.overview h1 {
+  color: inherit;
+}
+
+
+/* External link */
+
+
+/* 1. Negative margin prevents it from becoming an orphan
+   (the only one to break line) */
+
+/*.externalLink:after {
+  content: url("/external-link.png");
+  display: inline-block;
+  width: 12px;
+  height: 11px;
+  margin-left: 3px;
+}*/
+
+#navbar .externalLink:after {
+  margin-right: -12px;
+  /* 1 */
+}
+
+
+/* maesGallery.css */
+#map-section {
+  height: auto!important;
+  max-width: none;
+}
+
+#mainMap {
+  border: 0;
+  box-sizing: border-box;
+}
+
+.study .externalLink:after {
+  content: none;
+}
+
+#gallery {
+  padding: 0;
+  background: #f5f5f5;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+}
+
+.owl-wrapper-outer {
+  /*padding: 1rem;*/
+  margin-left: 0;
+}
+
+.owl-theme .owl-controls .owl-page span {   background: white!important;
+}
+
+.owl-carousel .owl-item {
+  width: auto!important;
+  padding: 1rem;
+}
+
+.study {
+  width: 205px;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 3px -1px rgba(0,0,0,.2);
+}
+.study:hover {
+  border-color: #1f8cc9;
+  box-shadow: 0 1px 3px -1px rgba(0,0,0,.4);
+}
+
+.study a {
+  display: block;
+  overflow: hidden;
+}
+
+.study div {
+  color: #748284;
+  line-height: 1.2;
+  min-height: 2.4em;
+  margin: 0;
+}
+.study img {
+  max-width: 100%!important;
+  height: auto!important;
+  max-height: auto!important;
+  width: 100%!important;
+  border: none!important;
+}
+
+#owl-example {
+  overflow: visible;
+}
+#owl-example .owl-controls .owl-buttons .owl-next,
+#owl-example .owl-controls .owl-buttons .owl-prev {
+  top: 50%;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  box-sizing: content-box;
+  padding: 10px!important;
+  height: 10px;
+  width: 10px;
+  margin-top: -15px;
+  line-height: 10px;
+  font-size: 10px;
+  background: #fff;
+  border-radius: 0;
+  opacity: .75;
+}
+#owl-example .owl-controls .owl-buttons .owl-next i:before,
+#owl-example .owl-controls .owl-buttons .owl-prev i:before {
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  background: transparent;
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  border: 5px solid transparent;
+  position: relative;
+}
+#owl-example .owl-controls .owl-buttons .owl-next i:before {
+  left: 3px;
+  border-left-color: #444;
+}
+#owl-example .owl-controls .owl-buttons .owl-prev i:before {
+  right: 3px;
+  border-right-color: #444;
+}
+
+#owl-example .owl-controls .owl-buttons .owl-next {
+  right: -10px;
+}
+#owl-example .owl-controls .owl-buttons .owl-prev {
+  left: -10px;
+}
+
+.owl-pagination {
+  display: none;
+}
+.owl-theme .owl-controls {
+  margin: 0;
+}
+
+
+/* full-width-style.css */
+#center_content {
+  /* width: 900px; */
+  width: auto;
+}
+/* the only 2 rules in full-width-style.css */
+/*table.datatable {
+    width: 99% !important;
+}*/
+
+/* bap_style.css */
+.bap-action-holder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #444;
+}
+.compare-form-holder {
+  border: 1px solid #e5dfd1;
+  border-radius: 4px;
+  background: transparent;
+  padding: 1.5rem;
+  box-shadow: none;
+  width: auto;
+}
+
+.compare-form-holder p {
+  font: inherit;
+  padding: 0;
+  border: 0;
+  margin-top: 0;
+}
+
+#compare-form {
+  float: none!important;
+  border-top: 1px solid #e5dfd1;
+  padding-top: 1.5rem;
+}
+
+#compare-form:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#compare-form .field {
+  margin: 0;
+  float: none;
+}
+
+#compare-form .field label {
+  cursor: pointer;
+}
+#compare-form .field input,
+#compare-form .field select  {
+  display: block;
+  width: 100%;
+}
+
+#compare-form .field input[type="submit"] {
+  display: inline-block;
+  padding: 0.4em 0.6em;
+  border: 1px solid;
+  font-weight: 700;
+  border-color: transparent;
+  border-radius: .25em;
+  background-color: #1f8cc9;
+  background-repeat: no-repeat;
+  color: #fff !important;
+}
+/*#compare-form .field input[type="submit"]:hover {
+  background-color: #d8d8d8;
+}*/
+
+
+@media (max-width: 799px) {
+  #compare-form .field {
+    margin-bottom: 1rem;
+  }
+  .card__expander .fa {
+    left: 24px !important;
+  }
+}
+@media (min-width: 800px) {
+  #compare-form {
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+  }
+  #compare-form .field {
+    float: left;
+    clear: none;
+    width: 25%;
+    padding: 0 .75rem;
+    box-sizing: border-box;
+  }
+}
+
+
+
+.cleaner {
+  display: none;
+}
+
+.bap-action {
+  box-shadow: none;
+  border: 1px solid #e5dfd1;
+}
+/* cifChart.css */
+#cifChart {
+  z-index: 10;
+  min-width: 600px;
+  width: 100%!important;
+}
+/* search page */
+#search-results-bar {
+  z-index: 10;
+}
+
+
+
+
+
+
+
+
+/* I dont't even know where this comes from */
+/* but it need to overriden */
+/*
+
+  * h1, h2, h3, h4, h5, h6, pre, code {
+    font-size: 1em;
+  }
+
+*/
+
+h1  { font-size: 2rem!important; }
+h2  { font-size: 1.8rem!important; }
+h3  { font-size: 1.6rem!important; }
+h4  { font-size: 1.4rem!important; }
+h5  { font-size: 120%!important; }
+h6  { font-size: 1em!important; }
+pre, code {
+    font-size: inherit!important;
+}
+
+
+
+
+
+/* tinymce */
+.mceEditor {
+  display: block;
+}
+.ploneSkin .mceToolbar > div {
+  width: auto!important;
+  max-width: 100%!important;
+}
+.ploneSkin table.mceLayout td.mceToolbar {
+  height: auto!important;
+  padding-bottom: .5em!important;
+}
+
+/* tinymce in overlay */
+// .overlay .mceEditor {
+//   margin-left: -2rem;
+//   margin-right: -2rem;
+// }
+.overlay .ploneSkin .mceIframeContainer,
+.overlay .ploneSkin table.mceLayout td.mceStatusbar {
+  border: 0!important;
+  padding: 1rem 2rem;
+  border-top: 1px solid #e5dfd1!important;
+}
+.overlay .ploneSkin table.mceLayout td.mceStatusbar {
+  border-top: 0!important;
+  border-bottom: 1px solid #e5dfd1!important;
+  padding-top: 0;
+}
+
+/* formControls in overflow */
+.overlay .formControls {
+  margin: 0;
+}
+#content form ul {
+    margin-left: 0em;
+}
+
+
+#collage .collage-row .row_1,
+#collage .collage-row .row_2 {
+  border-color: transparent;
+}
+
+#collage .collage-row .portletItem {
+  margin-left: 0;
+}
+
+
+#collage .collage-row  .portletHeader.titleless {
+  background: none;
+}
+
+.portlet-collection-news-national-chms .portletHeader {
+  background: none;
+}
+
+
+#strategyPlan {
+  display: flex;
+  justify-content: center;
+}
+
+.goTo {
+    float: right;
+    padding: .5rem;
+    border-radius: 6px;
+    color: white;
+    margin-bottom: .5rem;
+}
+
+.goTo * {
+  color: white;
+}
+
+.goTo img {
+  float: right;
+  margin-left: 8px!important;
+  filter: invert(1);
+
+}
+
+.targetsBack {
+  padding-bottom: 39px;
+}
+
+#strategyPlan .targetDiv {
+  margin-top: 17px;
+}
+
+
+.strategyPlan2 {
+  display: block!important;
+}
+
+.strategyPlan2 .targetDiv {
+  margin-top: 0!important;
+}
+
+
+.strategyPlan1 .targetsBack > *{
+    margin-top: 7px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+.strategyPlan1 .targetDiv {
+  width: 178px;
+
+}
+
+
+.strategyPlan1 .targetId > :first-child + div + div {
+  font-size: 14px!important;
+  padding: .3rem;
+}
+
+#form-widgets-IRelatedItems-relatedItems-input-fields {
+  display: block !important;
+}
+
+.singlerow-title {
+  font-weight: 600 !important;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+    default_skin="bise.diazotheme">
+
+    <object name="bise_diazotheme_custom"
+        meta_type="Filesystem Directory View"
+        directory="bise.diazotheme:skins/bise_diazotheme_custom"/>
+
+    <skin-path name="bise.diazotheme" based-on="BISETheme">
+        <layer name="bise_diazotheme_custom" insert-after="custom"/>
+    </skin-path>
+
+</object>

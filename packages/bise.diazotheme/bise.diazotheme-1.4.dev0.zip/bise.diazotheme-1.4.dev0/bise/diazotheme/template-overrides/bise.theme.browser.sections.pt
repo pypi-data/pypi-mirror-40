@@ -1,0 +1,40 @@
+<tal:sections tal:define="portal_tabs view/portal_tabs"
+     tal:condition="portal_tabs"
+     i18n:domain="plone">
+    <p class="hiddenStructure" i18n:translate="heading_sections">Navigation</p>
+
+        <ul id="navmenu-items" tal:define="selected_tab python:view.selected_portal_tab">
+        <tal:tabs tal:repeat="tab python:portal_tabs[:7]">
+
+          <li
+            tal:define="tid tab/id; name tab/name; navsection tab/navmenucode" tal:attributes="id string:navitem-$tid" 
+            id="navitem-topics"  class="navmenu-item" tal:condition="python:name!='Home'">
+
+              <div class="navitem-header" tal:attributes="id string:portaltab-${tid};">
+              <a href="" class="noevents"
+                  tal:content="tab/name"
+                  tal:attributes="href tab/url;
+                  title tab/description|nothing;">
+                  Tab Name
+              </a>
+
+              <button type='button' id="navitem-toggle" class="btn" data-toggle="navmenu" data-target=".navgroup"
+              title="Toggle submenu">
+                  <span class="sr-only">Toggle submenu</span>
+                  <span class="fa fa-angle-down"></span>
+              </button>
+
+              </div>
+
+              <div class="navgroups-body">
+                <div class="navgroups" tal:condition="navsection">
+                    <div class="dr-item" tal:replace="structure navsection" />
+                </div>
+             </div>
+          </li>
+         
+        </tal:tabs>
+        </ul>
+         
+    <div id="backdrop"></div>
+</tal:sections>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    css:if-content="#visual-portal-wrapper">
+
+    <!-- Homepage -->
+    <rules css:if-content=".tile-frontpage">
+        <theme href="homepage.html" />
+        <drop css:theme="div#content" />
+
+       <!-- <replace css:theme-children="#highlights-slider" css:content-children="#highlights-slider-content" /> -->
+        <drop css:content="#highlights-slider-content" />
+
+        <replace css:theme-children="#site-body .page">
+            <div class="page-container">
+                <xsl:copy>
+                    <xsl:apply-templates css:select="#portal-column-content"/>
+                </xsl:copy>
+                <!-- NOTE: this method is not ok
+                <xsl:copy-of css:select="#portal-column-content" />-->
+            </div>
+            <drop css:theme="#portal-breadcrumbs"/>
+        </replace>
+
+    </rules>
+
+
+<!-- button in catalogue -->
+    <!--
+    <rules css:if-theme-children=".ondesktop">
+       <drop css:content-children=".section" />
+       <append css:content-children='.section' css:theme=".section-wrapper" method="raw" />
+
+    </rules>
+     <rules css:if-content=".ondesktop">
+       <drop css:content-children=".section" />
+       <append css:content-children='.section' css:theme=".section-wrapper" method="raw" />
+    </rules> -->
+
+    <!-- full width on edit pages -->
+    <rules css:if-content=".template-edit">
+        <theme href="edit.html" />
+    </rules>
+
+    <!-- full width on edit pages -->
+    <rules css:if-content="#content-core form">
+        <theme href="edit.html" />
+    </rules>
+
+    <rules if="$have_left_portlets">
+      <!-- <theme href="folder.html" /> -->
+      <!-- we want full width on edit pages -->
+      <rules css:if-not-content=".template-edit">
+        <rules css:if-not-content="#content-core form">
+          <rules css:if-not-content=".template-manage-portlets">
+            <drop css:theme="main.asidefalse" />
+            <append css:content-children="#portal-column-one" css:theme="aside" />
+            <append css:content-children="#portal-column-two" css:theme="aside" />
+          </rules>
+        </rules>
+      </rules>
+    </rules>
+
+      <rules css:if-content=".template-manage-portlets">
+        <drop css:theme="main.asidefalse" />
+        <append css:content-children="#portal-column-one" css:theme="aside" />
+        <append css:content-children="#portal-column-two" css:theme="aside" />
+      </rules>
+
+      <rules if="not($have_left_portlets)">
+        <rules css:if-not-content=".template-manage-portlets">
+          <drop css:theme="main.asidetrue" />
+          <drop css:theme="aside" />
+          <strip css:theme=".col-md-push-3" />
+        </rules>
+
+        <!--  <strip attributes=".col-md-push-3" css:theme=".col-md-9" /> -->
+        <!-- <replace css:theme-children="div.col-md-9" css:content=" " />        -->
+        <!-- <replace css:content=".article" css:theme=".article-wide" /> -->
+        <!--    <append css:content="#portal-column-content" css:theme=".article-wide" /> -->
+        <!-- <replace css:theme=".article" > -->
+          <!--   <div class=".article&#45;wide" css:content="#portal&#45;column&#45;content"> </div> -->
+          <!-- </replace> -->
+
+      </rules>
+
+    <rules css:if-content="#catalogue-app">
+        <theme href="catalogue.html" />
+        <replace css:theme-children="#site-body main"
+                 css:content-children="#portal-column-content"/>
+        <!-- <after css:theme-children="head">
+            <script src="http://requirejs.org/docs/release/2.1.14/minified/require.js" type="text/javascript" data-main="cat-client/catalogue"></script>
+        </after> -->
+    </rules>
+
+    <!-- Regular pages: -->
+    <rules if="$is_inside_page">
+        <theme href="folder.html" />
+    </rules>
+
+    <!-- Fallback theme -->
+    <theme href="folder.html" />
+
+    <append css:theme="main .article"
+            css:content-children="#portal-column-content"/>
+
+    <!-- =============[ Head ]============= -->
+    <copy css:content="html" css:theme="html" attributes="lang dir" />
+    <drop css:theme="head script" />
+    <after css:content="head style, head link, head script, head meta" css:theme-children="head" />
+    <replace css:content="head title" css:theme="head title" />
+    <drop css:theme="head link[rel='canonical']" />
+    <drop css:theme="head link[rel='stylesheet']" />
+    <drop css:content="head link[rel='shortcut icon']" />
+    <drop css:content="head link[rel='apple-touch-icon']" />
+    <!-- <copy css:content="head base" css:theme="head base" /> -->
+
+    <!-- Base tag -->
+    <before theme="/html/head/title" content="/html/head/base"/>
+
+    <!-- <after css:theme-children="head">
+    <script data-main="++theme++bise.diazotheme/js/appzz.js" src="http://requirejs.org/docs/release/2.1.14/minified/require.js" />
+    </after>
+     -->
+
+    <!-- ===========[ Content ]============= -->
+    <merge attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+
+    <!-- Site header -->
+    <!-- Main navigation menu -->
+    <replace css:theme="#navmenu-items" css:content="#navmenu-items" />
+    <!-- <merge attribute="class" css:theme=".menu-primary-list" css:content=".nav-menu" /> -->
+
+    <append css:content="#portal-personaltools" css:theme=".login-wrapper" />
+    <!-- <append css:content="#navmenu-primary-list" css:theme=".nav-menu" /> -->
+
+    <!-- <drop css:content="#portal-breadcrumbs" /> -->
+    <prepend css:theme=".page-body .page-container"
+             css:content="#portal-breadcrumbs" />
+
+             <prepend css:theme=".article"
+                       css:content="#viewlet-below-content-title #viewlet-social-like" />
+
+    <!-- Site search form -->
+    <merge attributes="action" css:theme=".navsearch" css:content="#searchbar-options form" />
+
+    <!-- Plone edit bar -->
+    <replace css:content="#edit-bar" css:theme="#edit-bar" method="raw"/>
+    <drop css:content="#edit-bar" />
+
+    <!-- Footer work -->
+    <replace css:theme-children="#site-footer nav" css:content="#personalbar-options" />
+
+    <!-- TODO: use xslt transformation to get this right -->
+    <!--     <replace css:theme-children=".footer-logos" css:content="#editable-footer a" /> -->
+
+    <!-- TODO: enable back this, disabled during development
+    <drop css:content="#viewlet-social-like" />-->
+
+</rules>
+

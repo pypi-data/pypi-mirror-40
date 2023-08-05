@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+
+    <javascript id="collective.js.jqueryui.custom.min.js" enabled="1" />
+    <javascript id="++theme++bise.diazotheme/js/navbar.js" enabled="1" />
+    <javascript id="++theme++bise.diazotheme/js/override-pdf-overlay.js" enabled="1" />
+    <javascript id="++theme++bise.diazotheme/js/activate-screentime.js" enabled="1" />
+
+</object>

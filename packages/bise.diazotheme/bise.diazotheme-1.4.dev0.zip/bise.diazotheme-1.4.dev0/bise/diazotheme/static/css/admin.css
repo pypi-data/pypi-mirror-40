@@ -1,0 +1,14 @@
+/* Plone edit bar */
+#plone-contentmenu-workflow .actionMenuContent
+#portal-personaltools .actionMenuContent {
+  list-style: none;
+  padding-left: 0;
+}
+
+#portal-personaltools .actionMenuContent {
+  min-width: auto;
+  border-radius: 5px;
+  top: 110%;
+}
+
+/* Plone edit forms */

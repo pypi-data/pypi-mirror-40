@@ -1,0 +1,122 @@
+<nav id="navbar">
+  <div class="container">
+
+
+
+  </div>
+
+
+
+
+  <div class="nav-container">
+    <div class="navmenu-head">
+
+      <img src="http://biodiversity.europa.eu/BiseLogo.png" class="logo-big" alt="BISE Logo"> 
+
+        <span class="navmenu-head-logo">BISE</span>   
+           <span id="navmenu-open" class="navmenu-head-button" data-toggle="navmenu" data-target="#navmenu-dropdown">Menu <i class="fa fa-angle-down"></i>
+           </span>
+           <span id="navmenu-close" class="close" class="navmenu-head-button" data-toggle="navmenu" data-target="#navmenu-dropdown">Close <i class="fa fa-angle-up"></i>
+           </span>
+    </div>
+
+
+
+
+    <div id="navmenu-dropdown" class="navmenu-body">
+      <!--> Search <-->
+      <div class="search-and-login">
+
+        <div class="search-wrapper">
+          <div class="search-form">
+            <div class="search">
+              <input type="text" id="input-search" />
+              <span> <button>Search</button>
+                      </span>
+            </div>
+          </div>
+        </div>
+       
+        
+      </div>
+      <nav class="nav-menu">
+        <ul id="navmenu-primary-list">
+
+
+          <li class="submenu-item-wrapper">
+            <div class="submenu">
+              <div class="submenu-item">
+                <a href="#" class="name">Topics</a>
+
+                <i class="fa fa-angle-down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown"></i>
+              </div>
+              <div id="submenu-dropdown" class="submenu-dr-wrapper">
+                <div class="submenu-dr">
+
+                  <div class="dr-item">
+                    <h6 class="title">
+                      SATUS
+                    </h6>
+                    <ul class="dr-list">
+                      <a href="#">
+                        <li class="dr-list-item">Ecosystem and habitats</li>
+                      </a>
+                    </ul>
+                  </div>   
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="submenu-item-wrapper">
+            <div class="submenu">
+              <div id="submenu-item-about" class="submenu-item">
+                <a href="#" class="name">About</a>
+
+                <i class="fa fa-angle-down" class="submenu-button"></i>
+  </div>
+                <div id="submenu-dropdown7" class="submenu-dr-wrapper open">
+                  <div class="submenu-dr">
+
+    
+
+                 
+                    <div class="dr-item">
+                      
+                      <ul class="dr-list">
+                        <li class="dr-list-item">The Biodiversity Information System for Europe (BISE) is a single entry point for data and information on biodiversity supporting the implementation of the EU strategy and the Aichi targets in Europe.</li>
+                        <h6 class="title">
+                       <a href="#">   <button type="button" class="btn" class="dr-list-learnmore">Learn more about BISE</button> </a>
+                      </h6>
+                      </ul>
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+        </ul>
+         </nav>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+  </div>
+<div id="backdrop"></div>
+</nav>
