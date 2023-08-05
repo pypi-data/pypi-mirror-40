@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.json
+setup.py
+anthpy/__init__.py
+anthpy/strings.py
+anthpy/version.py
+anthpy.egg-info/PKG-INFO
+anthpy.egg-info/SOURCES.txt
+anthpy.egg-info/dependency_links.txt
+anthpy.egg-info/entry_points.txt
+anthpy.egg-info/not-zip-safe
+anthpy.egg-info/requires.txt
+anthpy.egg-info/top_level.txt
+anthpy/tools/__init__.py
+test/test_strings.py

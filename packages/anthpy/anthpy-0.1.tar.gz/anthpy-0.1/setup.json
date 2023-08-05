@@ -1,0 +1,14 @@
+{
+    "package_info": {
+        "friendly_name": "anthpy",
+        "module_name": "anthpy",
+        "description": "Anthony's python utils",
+        "url": "https://github.com/aagnone3/anthpy",
+        "author": "Anthony Agnone",
+        "author_email": "anthonyagnone@gmail.com"
+    },
+    "entry_points": {
+        "console_scripts": [
+        ]
+    }
+}
