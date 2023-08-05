@@ -1,0 +1,9 @@
+numpy
+attrs
+evfuncs
+koumura
+
+[dev]
+sphinx
+ipython
+coverage
