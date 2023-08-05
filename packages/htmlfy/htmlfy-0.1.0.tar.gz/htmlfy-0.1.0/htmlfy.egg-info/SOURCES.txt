@@ -1,0 +1,8 @@
+README.md
+setup.py
+htmlfy/__init__.py
+htmlfy/minifier.py
+htmlfy.egg-info/PKG-INFO
+htmlfy.egg-info/SOURCES.txt
+htmlfy.egg-info/dependency_links.txt
+htmlfy.egg-info/top_level.txt
