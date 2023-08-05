@@ -1,0 +1,556 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Reference &mdash; intake_spark 0.0.0+3.gadf091e.dirty documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="intake_spark 0.0.0+3.gadf091e.dirty documentation" href="index.html"/>
+        <link rel="prev" title="Quickstart" href="quickstart.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> intake_spark
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.0+3.gadf091e.dirty
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul class="simple">
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">intake_spark</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>API Reference</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#intake_spark.spark_sources.SparkRDD" title="intake_spark.spark_sources.SparkRDD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">intake_spark.spark_sources.SparkRDD</span></code></a>(args[,&nbsp;…])</td>
+<td>A reference to an RDD definition in Spark</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#intake_spark.spark_sources.SparkDataFrame" title="intake_spark.spark_sources.SparkDataFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">intake_spark.spark_sources.SparkDataFrame</span></code></a>(args)</td>
+<td>A reference to a DataFrame definition in Spark</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#intake_spark.spark_cat.SparkTablesCatalog" title="intake_spark.spark_cat.SparkTablesCatalog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">intake_spark.spark_cat.SparkTablesCatalog</span></code></a>([…])</td>
+<td>Intake automatically-generate catalog for tables stored in Spark</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="intake_spark.spark_sources.SparkRDD">
+<em class="property">class </em><code class="descclassname">intake_spark.spark_sources.</code><code class="descname">SparkRDD</code><span class="sig-paren">(</span><em>args</em>, <em>context_kwargs=None</em>, <em>metadata=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/intake_spark/spark_sources.html#SparkRDD"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#intake_spark.spark_sources.SparkRDD" title="Permalink to this definition">¶</a></dt>
+<dd><p>A reference to an RDD definition in Spark</p>
+<p>RDDs are list-of-things objects, evaluated lazily in Spark.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">args</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;textFile&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;text.*.files&#39;</span><span class="p">,</span> <span class="p">)),</span>
+<span class="gp">... </span>        <span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nb">len</span><span class="p">,))]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;master&#39;</span><span class="p">:</span> <span class="s1">&#39;spark://master.node:7077&#39;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">source</span> <span class="o">=</span> <span class="n">SparkRDD</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The output of <cite>source.to_spark()</cite> is an RDD object holding the lengths of
+the lines of the input files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>cache_dirs</strong></dt>
+<dd></dd>
+<dt><strong>datashape</strong></dt>
+<dd></dd>
+<dt><strong>description</strong></dt>
+<dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">hvplot</span></code></dt>
+<dd><p class="first last">Returns a hvPlot object to provide a high-level plotting API.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot</span></code></dt>
+<dd><p class="first last">Returns a hvPlot object to provide a high-level plotting API.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">plots</span></code></dt>
+<dd><p class="first last">List custom associated quick-plots</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code>()</td>
+<td>Close open resources corresponding to this data source.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">discover</span></code>()</td>
+<td>Open resource and populate the source attributes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#intake_spark.spark_sources.SparkRDD.read" title="intake_spark.spark_sources.SparkRDD.read"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read</span></code></a>()</td>
+<td>Materialise the whole RDD into a list of objects</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_chunked</span></code>()</td>
+<td>Return iterator over container fragments of data source</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#intake_spark.spark_sources.SparkRDD.read_partition" title="intake_spark.spark_sources.SparkRDD.read_partition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_partition</span></code></a>(i)</td>
+<td>Returns one of the partitions of the RDD as a list of objects</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_dask</span></code>()</td>
+<td>Return a dask container for this data source</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#intake_spark.spark_sources.SparkRDD.to_spark" title="intake_spark.spark_sources.SparkRDD.to_spark"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_spark</span></code></a>()</td>
+<td>Return the spark object for this data, an RDD</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">yaml</span></code>([with_plugin])</td>
+<td>Return YAML representation of this data-source</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="63%" />
+<col width="37%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>set_cache_dir</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="intake_spark.spark_sources.SparkRDD.read">
+<code class="descname">read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/intake_spark/spark_sources.html#SparkRDD.read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#intake_spark.spark_sources.SparkRDD.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Materialise the whole RDD into a list of objects</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="intake_spark.spark_sources.SparkRDD.read_partition">
+<code class="descname">read_partition</code><span class="sig-paren">(</span><em>i</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/intake_spark/spark_sources.html#SparkRDD.read_partition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#intake_spark.spark_sources.SparkRDD.read_partition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns one of the partitions of the RDD as a list of objects</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="intake_spark.spark_sources.SparkRDD.to_spark">
+<code class="descname">to_spark</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/intake_spark/spark_sources.html#SparkRDD.to_spark"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#intake_spark.spark_sources.SparkRDD.to_spark" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the spark object for this data, an RDD</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="intake_spark.spark_sources.SparkDataFrame">
+<em class="property">class </em><code class="descclassname">intake_spark.spark_sources.</code><code class="descname">SparkDataFrame</code><span class="sig-paren">(</span><em>args</em>, <em>context_kwargs=None</em>, <em>metadata=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/intake_spark/spark_sources.html#SparkDataFrame"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#intake_spark.spark_sources.SparkDataFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>A reference to a DataFrame definition in Spark</p>
+<p>DataFrames are tabular spark objects containing a heterogeneous set of
+columns and potentially a large number of rows. They are similar in concept
+to Pandas or Dask data-frames. The Spark variety produced by this driver
+will be a handle to a lazy object, where computation will be managed by
+Spark.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">args</span> <span class="o">=</span> <span class="p">[</span>
+<span class="gp">... </span>   <span class="p">(</span><span class="s1">&#39;read&#39;</span><span class="p">,</span> <span class="p">),</span>
+<span class="gp">... </span>   <span class="p">(</span><span class="s1">&#39;format&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;csv&#39;</span><span class="p">,</span> <span class="p">)),</span>
+<span class="gp">... </span>   <span class="p">(</span><span class="s1">&#39;option&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;header&#39;</span><span class="p">,</span> <span class="s1">&#39;true&#39;</span><span class="p">)),</span>
+<span class="gp">... </span>   <span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;data.*.csv&#39;</span><span class="p">,</span> <span class="p">))]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;master&#39;</span><span class="p">:</span> <span class="s1">&#39;spark://master.node:7077&#39;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">source</span> <span class="o">=</span> <span class="n">SparkDataFrame</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The output of <cite>source.to_spark()</cite> contains a spark object pointing to the
+parsed contents of the indicated CSV files</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>cache_dirs</strong></dt>
+<dd></dd>
+<dt><strong>datashape</strong></dt>
+<dd></dd>
+<dt><strong>description</strong></dt>
+<dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">hvplot</span></code></dt>
+<dd><p class="first last">Returns a hvPlot object to provide a high-level plotting API.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot</span></code></dt>
+<dd><p class="first last">Returns a hvPlot object to provide a high-level plotting API.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">plots</span></code></dt>
+<dd><p class="first last">List custom associated quick-plots</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code>()</td>
+<td>Close open resources corresponding to this data source.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">discover</span></code>()</td>
+<td>Open resource and populate the source attributes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#intake_spark.spark_sources.SparkDataFrame.read" title="intake_spark.spark_sources.SparkDataFrame.read"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read</span></code></a>()</td>
+<td>Read all of the data into an in-memory Pandas data-frame</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_chunked</span></code>()</td>
+<td>Return iterator over container fragments of data source</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#intake_spark.spark_sources.SparkDataFrame.read_partition" title="intake_spark.spark_sources.SparkDataFrame.read_partition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_partition</span></code></a>(i)</td>
+<td>Returns one partition of the data as a pandas data-frame</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_dask</span></code>()</td>
+<td>Return a dask container for this data source</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#intake_spark.spark_sources.SparkDataFrame.to_spark" title="intake_spark.spark_sources.SparkDataFrame.to_spark"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_spark</span></code></a>()</td>
+<td>Return the Spark object for this data, a DataFrame</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">yaml</span></code>([with_plugin])</td>
+<td>Return YAML representation of this data-source</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="63%" />
+<col width="37%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>set_cache_dir</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="intake_spark.spark_sources.SparkDataFrame.read">
+<code class="descname">read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/intake_spark/spark_sources.html#SparkDataFrame.read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#intake_spark.spark_sources.SparkDataFrame.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read all of the data into an in-memory Pandas data-frame</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="intake_spark.spark_sources.SparkDataFrame.read_partition">
+<code class="descname">read_partition</code><span class="sig-paren">(</span><em>i</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/intake_spark/spark_sources.html#SparkDataFrame.read_partition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#intake_spark.spark_sources.SparkDataFrame.read_partition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns one partition of the data as a pandas data-frame</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="intake_spark.spark_sources.SparkDataFrame.to_spark">
+<code class="descname">to_spark</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/intake_spark/spark_sources.html#SparkDataFrame.to_spark"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#intake_spark.spark_sources.SparkDataFrame.to_spark" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the Spark object for this data, a DataFrame</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="intake_spark.spark_cat.SparkTablesCatalog">
+<em class="property">class </em><code class="descclassname">intake_spark.spark_cat.</code><code class="descname">SparkTablesCatalog</code><span class="sig-paren">(</span><em>database=None</em>, <em>context_kwargs=None</em>, <em>metadata=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/intake_spark/spark_cat.html#SparkTablesCatalog"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#intake_spark.spark_cat.SparkTablesCatalog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Intake automatically-generate catalog for tables stored in Spark</p>
+<p>This driver will query Spark’s Catalog object for any tables, and
+create an entry for each which, when accessed, will instantiate
+SparkDataFrame sources. Commonly, these table definitions will come
+from Hive.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>cache_dirs</strong></dt>
+<dd></dd>
+<dt><strong>datashape</strong></dt>
+<dd></dd>
+<dt><strong>description</strong></dt>
+<dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">hvplot</span></code></dt>
+<dd><p class="first last">Returns a hvPlot object to provide a high-level plotting API.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot</span></code></dt>
+<dd><p class="first last">Returns a hvPlot object to provide a high-level plotting API.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">plots</span></code></dt>
+<dd><p class="first last">List custom associated quick-plots</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code>()</td>
+<td>Close open resources corresponding to this data source.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">discover</span></code>()</td>
+<td>Open resource and populate the source attributes.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">force_reload</span></code>()</td>
+<td>Imperative reload data now</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">read</span></code>()</td>
+<td>Load entire dataset into a container and return it</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_chunked</span></code>()</td>
+<td>Return iterator over container fragments of data source</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_partition</span></code>(i)</td>
+<td>Return a (offset_tuple, container) corresponding to i-th partition.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">reload</span></code>()</td>
+<td>Reload catalog if sufficient time has passed</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_dask</span></code>()</td>
+<td>Return a dask container for this data source</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_spark</span></code>()</td>
+<td>Provide an equivalent data object in Apache Spark</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">walk</span></code>([sofar,&nbsp;prefix,&nbsp;depth])</td>
+<td>Get all entries in this catalog and sub-catalogs</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">yaml</span></code>([with_plugin])</td>
+<td>Return YAML representation of this data-source</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="63%" />
+<col width="37%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>search</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>set_cache_dir</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral" title="Quickstart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Martin Durant.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.0+3.gadf091e.dirty',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
