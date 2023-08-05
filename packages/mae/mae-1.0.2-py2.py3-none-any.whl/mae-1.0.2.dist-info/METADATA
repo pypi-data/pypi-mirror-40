@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: mae
+Version: 1.0.2
+Summary: Mesos App Exporter for Prometheus
+Home-page: https://github.com/paambaati/mae
+Author: GP
+Author-email: me@httgp.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=2.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: six
+Requires-Dist: mock
+
+
+# 🔥 mae ![](https://travis-ci.org/paambaati/mae.svg?branch=master)
+`mae` collects Prometheus metrics from your Mesos apps.
+
+## Requirements
+
+`mae` requires Python (>= 2.7).
+
+## Installation
+
+```
+pip install mae
+```
+
+## Usage
+```
+$ mae --help
+
+usage: mae [-h] app_port slave_address slave_port
+
+positional arguments:
+  app_port       Port on which this exporter will run on
+  slave_address  Mesos slave address
+  slave_port     Mesos slave port
+```
+
+
