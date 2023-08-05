@@ -1,0 +1,10 @@
+README.md
+setup.py
+linkedindb/__init__.py
+linkedindb/api.py
+linkedindb.egg-info/PKG-INFO
+linkedindb.egg-info/SOURCES.txt
+linkedindb.egg-info/dependency_links.txt
+linkedindb.egg-info/not-zip-safe
+linkedindb.egg-info/requires.txt
+linkedindb.egg-info/top_level.txt
