@@ -1,0 +1,4 @@
+[console_scripts]
+ggnn = flatast.flatast2ggnn:main
+jira_crawler = flatast.jira_crawler:main
+
