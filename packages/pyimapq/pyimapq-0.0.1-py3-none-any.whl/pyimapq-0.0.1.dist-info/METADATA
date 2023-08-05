@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pyimapq
+Version: 0.0.1
+Summary: An IMAP queue package
+Home-page: https://github.com/vaultml/pyimapq
+Author: Nir Tzachar
+Author-email: nir.tzachar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pyimapq
+
+This package uses any IMAP server as a python queue, allowing processes in
+separate domains to communicate over EMAIL.
+
+All you need is an IMAP account, and you are good to go.
+
+Example usage:
+
+```python
+from pyimapq import PyImapQ
+
+
+mq = PyImapQ(user='my_user', password='very strong password')
+assert mq.connected
+
+def flt(subject):
+	return subject in ['a', 'list', 'of', 'subjects', 'to', 'accept']
+
+msgs = mq.get_unread_emails(flt, mark_as_read=True)
+
+# msgs will now hold the email itself. You can use mq.get_body(msg) to get the
+# body, or msg['Subject'], etc, to access the message meta data
+```
+
+
