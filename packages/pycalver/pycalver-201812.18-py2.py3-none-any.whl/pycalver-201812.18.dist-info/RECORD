@@ -1,0 +1,15 @@
+pycalver/__init__.py,sha256=V-N-nGErR5I6e9uKNZVTr9hV95dviF5lRoppqpm5cyA,454
+pycalver/__main__.py,sha256=RaaavVolBbdYgNYzRkgae5uDlo4L5zpoMkXbLBmNqRg,8387
+pycalver/config.py,sha256=I0rfxNy-Q3eKXnMBhyE0zAX0JyR-YVmT_Qk5g9I4Na0,10149
+pycalver/lex_id.py,sha256=_b6-3DuvlGGmSr72lvQxYUUdIslhrLPj9MlwpDu6lT0,4069
+pycalver/parse.py,sha256=FJhpLr8At05yhO5QFL83NysTHgN69GvYPnOFIlmfAI0,2663
+pycalver/rewrite.py,sha256=IN5h6dEUCvnKPX8vqDkkId9J_SfzOqCPWwuXt5K8FDU,5333
+pycalver/vcs.py,sha256=8iOzvNDryRqh2E7XKwzLIyYwt1B1NyGakNWFjgFYzDY,5102
+pycalver/version.py,sha256=Wqydbb13ZM4D19vTOFz7aH2dX5kP8U7GWhYJa7epv2s,4510
+pycalver-201812.18.dist-info/LICENSE,sha256=zzC1L5_akRLXlZkFbZ2WsUOnIYqwCX_GEI-7eE3JA0I,1092
+pycalver-201812.18.dist-info/METADATA,sha256=urZDmFwsGdY7GqGLHdZAGtE9uPv13VFMb17Ub-PqMDc,24063
+pycalver-201812.18.dist-info/WHEEL,sha256=CihQvCnsGZQBGAHLEUMf0IdA4fRduS_NBUTMgCTtvPM,110
+pycalver-201812.18.dist-info/entry_points.txt,sha256=FVXJLklfvHm-1tLSDjgDMtjl2VFG1NAeuIhvGClibu8,70
+pycalver-201812.18.dist-info/top_level.txt,sha256=bWGHw0Ovq18zJkv3QdyBkouRzM1z2cmRulBvqYJDmYg,9
+pycalver-201812.18.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pycalver-201812.18.dist-info/RECORD,,
