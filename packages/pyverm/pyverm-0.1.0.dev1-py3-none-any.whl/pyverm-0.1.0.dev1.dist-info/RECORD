@@ -1,0 +1,16 @@
+pyverm/__init__.py,sha256=dQk9ekmcJRYRTP0xD4yt2CKsoaB3xhgrrpN0ldCh2Io,1887
+pyverm/__version__.py,sha256=NsfHTzr02xfZq60A2F0pL8E1faekgAhslnyy4h-Zfgs,1896
+pyverm/_classes.py,sha256=yEyk1czu1CrmLXSTT_uBEsFbzPd5uhV0yHwehMqYcU4,4746
+pyverm/_functions.py,sha256=ClX9E8eqkJrDNYFSm2nqW71eHVwQSDoHWYVPeXk1WlY,5560
+pyverm/_utils.py,sha256=EmvoLS_k85Y-jTk7HrztAJwp1R_IJb40ounwk9ZJOew,2642
+pyverm/api.py,sha256=7ofHy_j5nvwqQ7KP7YqA5UrZcHIpKiJvCS_rboQTuNI,3377
+pyverm/settings.py,sha256=Fsy8SEMtsVy_mdEpH62mGDYM8SFiYWGYnTN35C5eiC4,1699
+pyverm/transformation.py,sha256=Y4OOF1hBuIV2RwiG0n9d6gzJTx-EC9QgQZ-hLFtCVfE,8853
+pyverm/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyverm/tests/test__utils.py,sha256=HX4SEjSynNCxShfhH9RTfK1sUyqR0FuPK4l3zVdOJFQ,4623
+pyverm/tests/test_pyverm.py,sha256=8GKt3l-eKrjbI00oQWGsJi-kGgawfSM7oDJXoSB79-Y,4228
+pyverm-0.1.0.dev1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pyverm-0.1.0.dev1.dist-info/METADATA,sha256=uwmE2UqFM7b3tZGJB262OUu3tXplAE8iIeY_oHmmUnE,741
+pyverm-0.1.0.dev1.dist-info/WHEEL,sha256=P3qJ5yBP-M5n4VbrgU3eTDIHvegviaBxiqCi1ejHWOs,97
+pyverm-0.1.0.dev1.dist-info/top_level.txt,sha256=i2ecPy6BQ12F_hVuFKcqoW1tKf65-colk5sWu-YOaMY,7
+pyverm-0.1.0.dev1.dist-info/RECORD,,
