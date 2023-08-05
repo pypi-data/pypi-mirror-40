@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+bin/sbrowser
+bin/sbrowser.cmd
+sbrowser/__init__.py
+sbrowser/betbrowser.py
+sbrowser/browser.py
+sbrowser/fullscreen.py
+sbrowser/tool.py
+sbrowser.egg-info/PKG-INFO
+sbrowser.egg-info/SOURCES.txt
+sbrowser.egg-info/dependency_links.txt
+sbrowser.egg-info/not-zip-safe
+sbrowser.egg-info/requires.txt
+sbrowser.egg-info/top_level.txt
