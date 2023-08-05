@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: polymorphism
+Version: 0.1.0
+Summary: Ad hoc polymorphism for Python classes!
+Home-page: https://github.com/asduj/polymorphism
+Author: asduj
+Author-email: asduj@ya.ru
+Keywords: polymorphism,multiple dispatch,ad hoc
+Requires-Python: >=3.4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pytest-cov (>=2.6,<3.0)
+Project-URL: Repository, https://github.com/asduj/polymorphism
