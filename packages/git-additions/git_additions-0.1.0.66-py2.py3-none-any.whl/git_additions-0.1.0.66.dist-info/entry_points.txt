@@ -1,0 +1,6 @@
+[console_scripts]
+git-duration = git_additions.duration:runner
+git-logs = git_additions.logs:runner
+git-stats = git_additions.stats:runner
+git-users = git_additions.users:runner
+
