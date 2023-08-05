@@ -1,0 +1,8 @@
+click
+GitPython
+pyyaml
+pybitbucket
+
+[dev]
+flake8
+twine
