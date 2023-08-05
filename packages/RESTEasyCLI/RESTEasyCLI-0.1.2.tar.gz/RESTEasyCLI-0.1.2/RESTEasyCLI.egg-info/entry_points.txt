@@ -1,0 +1,13 @@
+[cliff.recli]
+delete = resteasycli.cmd.methods:DELETE
+get = resteasycli.cmd.methods:GET
+init = resteasycli.cmd.initialize:Init
+list = resteasycli.cmd.methods:LIST
+patch = resteasycli.cmd.methods:PATCH
+post = resteasycli.cmd.methods:POST
+put = resteasycli.cmd.methods:PUT
+show = resteasycli.cmd.methods:SHOW
+
+[console_scripts]
+recli = resteasycli.cmd.main:main
+
