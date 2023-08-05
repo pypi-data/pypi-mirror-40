@@ -1,0 +1,7 @@
+magichttp<2,>=1.0.0
+magicdict<2,>=1.0.2
+
+[test]
+pytest<4,>=3.6.0
+mypy<1,>=0.600
+flake8<4,>=3.5.0
