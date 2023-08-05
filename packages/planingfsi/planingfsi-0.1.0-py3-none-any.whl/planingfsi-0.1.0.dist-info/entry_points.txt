@@ -1,0 +1,4 @@
+[console_scripts]
+generateMesh=planingfsi:cli.mesh.main
+planingFSI=planingfsi:cli.planingfsi.main
+
