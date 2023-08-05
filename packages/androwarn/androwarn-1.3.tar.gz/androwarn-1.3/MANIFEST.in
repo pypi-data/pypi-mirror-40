@@ -1,0 +1,6 @@
+recursive-include androwarn/warn/report/report_template *
+recursive-include androwarn/_SampleApplication *
+recursive-include androwarn/_SampleReports *
+recursive-exclude androwarn/.git *
+
+global-exclude *.py[cod] __pycache__ *.so .directory _githash.py .git
