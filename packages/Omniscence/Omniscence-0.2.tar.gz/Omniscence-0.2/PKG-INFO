@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: Omniscence
+Version: 0.2
+Summary: A fully automated data-analysis library tool
+Home-page: https://github.com/SpyrosMouselinos/Omniscence.git
+Author: Spyridon Mouselinos
+Author-email: mouselinos.spur.kw@gmail.com
+License: MIT
+Download-URL: https://github.com/SpyrosMouselinos/Omniscence/archive/v_02.tar.gz
+Description: UNKNOWN
+Keywords: Big Data,Data Analysis,Data Engineering,Machine Learning,Neural Networks
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
