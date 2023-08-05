@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: token_utf8
+Version: 1.0
+Summary: utf8 csv word frequency analyzer
+Home-page: https://github.com/nolla123/char_utf8
+Author: Joseph wondarash, Naol Berhanu
+Author-email: naolberhanu6@gmail.com
+License: UNKNOWN
+Description: ['re', 'operator', 'csv']
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
