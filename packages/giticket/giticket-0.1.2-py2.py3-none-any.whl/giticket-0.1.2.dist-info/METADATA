@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: giticket
+Version: 0.1.2
+Summary: Auto add ticket info to your git commits.
+Home-page: https://github.com/milin/giticket
+Author: Milind Shakya
+Author-email: sh.milind@gmail.com
+License: MIT license
+Keywords: giticket
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pre-commit
+Requires-Dist: six
+
+========
+giticket
+========
+
+
+.. image:: https://img.shields.io/pypi/v/giticket.svg
+        :target: https://pypi.python.org/pypi/giticket
+
+.. image:: https://img.shields.io/travis/milin/giticket.svg
+        :target: https://travis-ci.org/milin/giticket
+
+.. image:: https://readthedocs.org/projects/giticket/badge/?version=latest
+        :target: https://giticket.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Auto add ticket info to your git commits.
+
+
+* Free software: MIT license
+* Documentation: https://giticket.readthedocs.io.
+
+
+Features
+--------
+
+It integrates with [pre-commit](https://pre-commit.com/)
+
+The following is a sample commit.
+
+```
+    repos:
+    - repo: https://github.com/milin/giticket
+      rev: 'master'
+      hooks:
+      - id: giticket
+```
+
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2019-01-02)
+------------------
+
+* First release on PyPI.
+
+
