@@ -1,0 +1,13 @@
+asgi_amqp/__init__.py,sha256=AbGddGSAvdBgvT9a4Z1VztNNlbFQytx-l-08cAhxAHA,188
+asgi_amqp/core.py,sha256=6Y60RZ0xHFQ2p7mN7pLunI2JNIqn3BzQ_-4T8_eGyVQ,7281
+asgi_amqp/models.py,sha256=UgAG7x-poc-8mudTs_MPF7fwtX8Ahkz8K2k_mj3DYvU,157
+asgi_amqp/migrations/0001_initial.py,sha256=kEeTsKBkTleQ2lS0m7Md5hLwW3Z5yLzcD9CQswj99tA,480
+asgi_amqp/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asgi_amqp/tests/__init__.py,sha256=aFFha9EMRbSI9c-B65xWN2hRvFpZhJysSChJuKKx8j0,63
+asgi_amqp-1.1.3.dist-info/DESCRIPTION.rst,sha256=jy11LfSd2tz2vcs81JBcuSLryEF_dKqan1LduHe3iPM,1144
+asgi_amqp-1.1.3.dist-info/METADATA,sha256=2oLMEYFKu68qZnvHJJ7Z7RidQD7Za0a1IGawhhh4Kog,2142
+asgi_amqp-1.1.3.dist-info/RECORD,,
+asgi_amqp-1.1.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+asgi_amqp-1.1.3.dist-info/metadata.json,sha256=8k6iFjhphXaQbLItpgshAWACmlR_f8xwNwGHYBxaX6g,1157
+asgi_amqp-1.1.3.dist-info/pbr.json,sha256=CNPaoSlpA_yxNdlwD9pA-_pBVZ4m7k703H9GxYEXAzE,47
+asgi_amqp-1.1.3.dist-info/top_level.txt,sha256=AvQmbMhalywBVV2wGlHQRLRmgqZCEpp59oEYGtS9BgY,10
