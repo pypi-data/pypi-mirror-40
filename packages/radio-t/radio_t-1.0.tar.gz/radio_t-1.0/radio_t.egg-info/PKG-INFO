@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: radio-t
+Version: 1.0
+Summary: Radio-T API Wrapper for Python.
+Home-page: https://github.com/ketsu8/radio-t-wrapper
+Author: ketsu8
+Author-email: ilya.breytburg@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/ketsu8/radio-t-wrapper/issues
+Project-URL: Source, https://github.com/ketsu8/radio-t-wrapper
+Description: UNKNOWN
+Keywords: radio-t python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
