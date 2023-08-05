@@ -1,0 +1,8 @@
+README.rst
+setup.py
+prettydataloader/__init__.py
+prettydataloader/main.py
+prettydataloader.egg-info/PKG-INFO
+prettydataloader.egg-info/SOURCES.txt
+prettydataloader.egg-info/dependency_links.txt
+prettydataloader.egg-info/top_level.txt
