@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: fa-py
+Version: 0.1
+Summary: The factor analysis library in python
+Home-page: https://github.com/ck090/FactorApy
+Author: Chandra Kanth N
+Author-email: canfindck@gmail.com
+License: MIT
+Description: # FactorApy
+        A Python package to for performing Factor analysis on any given data.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
