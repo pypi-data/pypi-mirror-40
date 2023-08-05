@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: planingfsi
+Version: 0.1.1
+Summary: Fluid-Structure Interaction for large deformation planing surfaces
+Home-page: https://bitbucket.org/mattkram/planingfsi
+Author: Matt Kramer
+Author-email: matthew.robert.kramer@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: matplotlib (>=3.0,<4.0)
+Requires-Dist: numpy (>=1.15,<2.0)
+Requires-Dist: scipy (>=1.2,<2.0)
+Requires-Dist: six (>=1.12,<2.0)
+Project-URL: Documentation, https://planingfsi.readthedocs.io
+Project-URL: Repository, https://bitbucket.org/mattkram/planingfsi
