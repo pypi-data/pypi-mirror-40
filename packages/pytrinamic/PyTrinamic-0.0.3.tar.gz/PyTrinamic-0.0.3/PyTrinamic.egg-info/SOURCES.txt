@@ -1,0 +1,10 @@
+README.md
+setup.py
+PyTrinamic/SerialInterface.py
+PyTrinamic/TMCL.py
+PyTrinamic/__init__.py
+PyTrinamic.egg-info/.gitignore
+PyTrinamic.egg-info/PKG-INFO
+PyTrinamic.egg-info/SOURCES.txt
+PyTrinamic.egg-info/dependency_links.txt
+PyTrinamic.egg-info/top_level.txt
