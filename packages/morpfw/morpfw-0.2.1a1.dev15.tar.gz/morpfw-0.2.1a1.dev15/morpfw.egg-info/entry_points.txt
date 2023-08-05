@@ -1,0 +1,6 @@
+[console_scripts]
+morpfw = morpfw.cli:run
+
+[morepath]
+scan = morpfw
+
