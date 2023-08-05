@@ -1,0 +1,15 @@
+nuclio/__init__.py,sha256=0hO6mqAMixlYppMH423ow5q1VMxPnts5F6Aiq4Fgpc8,915
+nuclio/__main__.py,sha256=EGtLhgxM-Rn_bBhBMhmPmC8BKyoEGhDOsriZ2PKNdmk,1272
+nuclio/deploy.py,sha256=HHc0eaDMLo0KALJCB4MUcdZaZ75A2FfNILbtAe9iftw,5313
+nuclio/event.py,sha256=AO-9DihYFbVD9lEe_NLWElJTscy4PqRAd2dYxPkoZ6I,571
+nuclio/export.py,sha256=i4l2LI4X3OsAzARS69YJIZN-mpLA68e8Gyp7S4oCMEE,8287
+nuclio/magic.py,sha256=kOWzqK8OJlRNMvjSAWuEuY7TrpChrt12aeLq5XqTQvQ,12212
+nuclio/request.py,sha256=nhPQvRo_lWQD5U5tO-0a5I1vL4U4JPC1pBpCUB7uqRI,1257
+nuclio/utils.py,sha256=b37Xhw3_gE0MvJyBx11zm-_96ps_D2EDOwpofoJYlGE,2703
+nuclio/templates/nuclio.tpl,sha256=BVGnHm-yIPQfzg6obu23eGMFDvBhHZ-wWn8Hu8Mqem0,284
+nuclio_jupyter-0.6.3.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+nuclio_jupyter-0.6.3.dist-info/METADATA,sha256=VL5OuF4M8nfsrCA-aJJOevlbeo0bjl020t4QPZj6sc8,4366
+nuclio_jupyter-0.6.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+nuclio_jupyter-0.6.3.dist-info/entry_points.txt,sha256=-Dde77INiaQOuqNABAMuoLcCAVcr6AF2srJh210H4hc,110
+nuclio_jupyter-0.6.3.dist-info/top_level.txt,sha256=xH_PrJDXo9P_qJMqLZQZlkMCYFZQlWKtE9lcDNaigJk,7
+nuclio_jupyter-0.6.3.dist-info/RECORD,,
