@@ -1,0 +1,13 @@
+README.md
+setup.py
+xrandr_extend/__init__.py
+xrandr_extend/cmd.py
+xrandr_extend/config.py
+xrandr_extend/default.cfg
+xrandr_extend/main.py
+xrandr_extend.egg-info/PKG-INFO
+xrandr_extend.egg-info/SOURCES.txt
+xrandr_extend.egg-info/dependency_links.txt
+xrandr_extend.egg-info/entry_points.txt
+xrandr_extend.egg-info/requires.txt
+xrandr_extend.egg-info/top_level.txt
