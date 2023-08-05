@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pend
+Version: 1.0.1
+Summary: Pendulum wrapper for short name.
+Home-page: https://github.com/joyongjin/pend
+Author: Jo Yongjin
+Author-email: wnrhd114@gmail.com
+License: MIT
+Description: 
+        pend
+        --------------------------------
+        
+        This is wrapper of pendulum.
+        
+        :code:`Pendulum` is too long and a hassle to type. But :code:`pend` is easy. That's just it.
+        
+        * `pendulum repository`_
+        * `pendulum site`_
+        
+        .. _pendulum repository: https://github.com/sdispater/pendulum
+        .. _pendulum site: https://pendulum.eustace.io/
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
