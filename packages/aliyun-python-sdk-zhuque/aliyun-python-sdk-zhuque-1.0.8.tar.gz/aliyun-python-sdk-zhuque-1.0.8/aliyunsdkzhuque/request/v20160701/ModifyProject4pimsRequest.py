@@ -1,0 +1,48 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+#
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+from aliyunsdkcore.request import RpcRequest
+class ModifyProject4pimsRequest(RpcRequest):
+
+	def __init__(self):
+		RpcRequest.__init__(self, 'Zhuque', '2016-07-01', 'ModifyProject4pims')
+
+	def get_Hack(self):
+		return self.get_query_params().get('Hack')
+
+	def set_Hack(self,Hack):
+		self.add_query_param('Hack',Hack)
+
+	def get_VersionId(self):
+		return self.get_query_params().get('VersionId')
+
+	def set_VersionId(self,VersionId):
+		self.add_query_param('VersionId',VersionId)
+
+	def get_ProjectId(self):
+		return self.get_query_params().get('ProjectId')
+
+	def set_ProjectId(self,ProjectId):
+		self.add_query_param('ProjectId',ProjectId)
+
+	def get_Status(self):
+		return self.get_query_params().get('Status')
+
+	def set_Status(self,Status):
+		self.add_query_param('Status',Status)
