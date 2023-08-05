@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cppa:CPP xmlns:cppa="http://docs.oasis-open.org/ebcore/ns/cppa/v3.0"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:dsig11="http://www.w3.org/2009/xmldsig11#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://docs.oasis-open.org/ebxmlcppa/cppa-3.0 ../../../cppa3-xsd/cppa3.xsd">
+    <cppa:ProfileInfo>
+        <cppa:ProfileIdentifier>Acpp</cppa:ProfileIdentifier>
+        <cppa:ActivationDate>1998-01-01T00:00:00</cppa:ActivationDate>
+        <cppa:PhaseIn>P7D</cppa:PhaseIn>
+    </cppa:ProfileInfo>
+    <cppa:PartyInfo>
+        <cppa:PartyName xml:lang="en">Party A</cppa:PartyName>
+        <cppa:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">A</cppa:PartyId>
+    </cppa:PartyInfo>
+    <cppa:ServiceSpecification>
+        <cppa:PartyRole name="Buyer"/>
+        <cppa:CounterPartyRole name="Seller"/>
+        <cppa:ServiceBinding>
+            <cppa:Service>OrderingBilling</cppa:Service>
+            <cppa:ActionBinding id="BiiTrns001_S" action="SubmitOrder" sendOrReceive="send">
+                <cppa:ChannelId>ch1</cppa:ChannelId>
+            </cppa:ActionBinding>
+        </cppa:ServiceBinding>
+    </cppa:ServiceSpecification>
+    <cppa:ebMS3Channel id="ch1" transport="tr1">
+        <cppa:Description xml:lang="en">Outbound ebMS3 channel
+            Signing and encryption.  MessageFragment is included in signature.
+            AS4 reliable messaging with signed synchronous non-repudiation receipts.
+        </cppa:Description>
+        <cppa:SOAPVersion>1.2</cppa:SOAPVersion>
+        <cppa:WSSecurityBinding>
+            <cppa:WSSVersion>1.1</cppa:WSSVersion>
+            <cppa:Signature>
+                <cppa:SignatureAlgorithm>https://www.w3.org/2001/04/xmldsig-more#rsa-sha256</cppa:SignatureAlgorithm>
+                <cppa:DigestAlgorithm>http://www.w3.org/2001/04/xmlenc#sha256</cppa:DigestAlgorithm>
+                <cppa:SignElements>
+                    <cppa:Expression>{http://www.w3.org/2003/05/soap-envelope}Body</cppa:Expression>
+                    <cppa:Expression>{http://www.w3.org/2003/05/soap-envelope}Header/{http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/}Messaging</cppa:Expression>
+                    <cppa:Expression>{http://docs.oasis-open.org/ebxml-msg/ns/v3.0/mf/2010/04/}MessageFragment</cppa:Expression>
+                </cppa:SignElements>
+                <cppa:SignAttachments>true</cppa:SignAttachments>
+            </cppa:Signature>
+            <cppa:Encryption>
+                <cppa:KeyEncryption>
+                    <cppa:EncryptionAlgorithm> http://www.w3.org/2009/xmlenc11#rsa-oaep</cppa:EncryptionAlgorithm>
+                    <cppa:MaskGenerationFunction>http://www.w3.org/2009/xmlenc11#mgf1sha256</cppa:MaskGenerationFunction>
+                    <cppa:DigestAlgorithm>http://www.w3.org/2001/04/xmlenc#sha256</cppa:DigestAlgorithm>
+                </cppa:KeyEncryption>
+                <cppa:EncryptionAlgorithm>http://www.w3.org/2009/xmlenc11#aes128-gcm</cppa:EncryptionAlgorithm>
+                <cppa:EncryptAttachments>true</cppa:EncryptAttachments>
+            </cppa:Encryption>
+        </cppa:WSSecurityBinding>
+        <cppa:AS4ReceptionAwareness >
+            <cppa:DuplicateHandling>
+                <cppa:DuplicateElimination>true</cppa:DuplicateElimination>
+            </cppa:DuplicateHandling>
+            <cppa:RetryHandling>
+                <cppa:Retries>4</cppa:Retries>
+                <cppa:RetryInterval>PT1H</cppa:RetryInterval>
+            </cppa:RetryHandling>
+        </cppa:AS4ReceptionAwareness>
+        <cppa:ErrorHandling>
+            <cppa:ReceiverErrorsReportChannelId>sync_signal_inboud_channel</cppa:ReceiverErrorsReportChannelId>
+        </cppa:ErrorHandling>
+        <cppa:ReceiptHandling>
+            <cppa:ReceiptFormat>NonRepudiationInformation</cppa:ReceiptFormat>
+            <cppa:ReceiptChannelId>sync_signal_inboud_channel</cppa:ReceiptChannelId>
+        </cppa:ReceiptHandling>
+        <cppa:Compression>
+            <cppa:CompressionAlgorithm>application/gzip</cppa:CompressionAlgorithm>
+        </cppa:Compression>
+        <cppa:Splitting >
+            <cppa:SourceChannelId>source_ch_a</cppa:SourceChannelId>
+        </cppa:Splitting>
+    </cppa:ebMS3Channel>
+    <cppa:ebMS3Channel id="source_ch_a">
+        <cppa:Description xml:lang="en">Channel for underlying source message in split / join. 
+            No WS-Security, asynchronous reception awareness receipts.
+        </cppa:Description>
+        <cppa:SOAPVersion>1.2</cppa:SOAPVersion>
+        <cppa:ReceiptHandling>
+            <cppa:ReceiptFormat>UserMessage</cppa:ReceiptFormat>
+            <cppa:ReceiptChannelId>inbound_async_ebms3_signals</cppa:ReceiptChannelId>
+        </cppa:ReceiptHandling>
+    </cppa:ebMS3Channel>
+    <cppa:ebMS3Channel id="sync_signal_inboud_channel" asResponse="true">
+        <cppa:Description xml:lang="en">Inbound signed synchronous ebMS3 signals</cppa:Description>
+        <cppa:WSSecurityBinding>
+            <cppa:WSSVersion>1.1</cppa:WSSVersion>
+            <cppa:Signature>
+                <cppa:SignatureAlgorithm>https://www.w3.org/2001/04/xmldsig-more#rsa-sha256</cppa:SignatureAlgorithm>
+                <cppa:DigestAlgorithm>http://www.w3.org/2001/04/xmlenc#sha256</cppa:DigestAlgorithm>
+                <cppa:SignElements>
+                    <cppa:Expression>{http://www.w3.org/2003/05/soap-envelope}Body</cppa:Expression>
+                    <cppa:Expression>{http://www.w3.org/2003/05/soap-envelope}Header/{http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/}Messaging</cppa:Expression>
+                </cppa:SignElements>
+            </cppa:Signature>
+        </cppa:WSSecurityBinding>
+    </cppa:ebMS3Channel>
+    <cppa:ebMS3Channel id="inbound_async_ebms3_signals" transport="tr2">
+        <cppa:Description xml:lang="en">Channel for inbound ebMS3 signals</cppa:Description>
+        <cppa:WSSecurityBinding>
+            <cppa:WSSVersion>1.1</cppa:WSSVersion>
+            <cppa:Signature>
+                <cppa:SignatureAlgorithm>https://www.w3.org/2001/04/xmldsig-more#rsa-sha256</cppa:SignatureAlgorithm>
+                <cppa:DigestAlgorithm>http://www.w3.org/2001/04/xmlenc#sha256</cppa:DigestAlgorithm>
+                <cppa:SignElements>
+                    <cppa:Expression>{http://www.w3.org/2003/05/soap-envelope}Body</cppa:Expression>
+                    <cppa:Expression>{http://www.w3.org/2003/05/soap-envelope}Header/{http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/}Messaging</cppa:Expression>
+                </cppa:SignElements>
+            </cppa:Signature>
+        </cppa:WSSecurityBinding>
+    </cppa:ebMS3Channel>
+    <cppa:HTTPTransport id="tr1">
+        <cppa:Description xml:lang="en">Transport from A</cppa:Description>
+        <cppa:ClientIPv4>1.2.3.4</cppa:ClientIPv4>
+    </cppa:HTTPTransport>
+    <cppa:HTTPTransport id="tr2">
+        <cppa:Description xml:lang="en">Transport to A</cppa:Description>
+        <cppa:Endpoint>https://a.example.com/msh</cppa:Endpoint>
+    </cppa:HTTPTransport>
+</cppa:CPP>

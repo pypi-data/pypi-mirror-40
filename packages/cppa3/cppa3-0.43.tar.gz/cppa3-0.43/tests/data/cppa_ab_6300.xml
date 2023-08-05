@@ -1,0 +1,91 @@
+<cppa:CPA xmlns:cppa="http://docs.oasis-open.org/ebcore/ns/cppa/v3.0" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:dsig11="http://www.w3.org/2009/xmldsig11#" xmlns:xkms="http://www.w3.org/2002/03/xkms#">
+  <cppa:AgreementInfo>
+    <cppa:AgreementIdentifier>Acpp_Bcpp</cppa:AgreementIdentifier>
+    <cppa:Description xml:lang="en">Agreement formed from Acpp and Bcpp at 2018-12-26T12:46:05.625208</cppa:Description>
+    <cppa:ProfileIdentifier>Acpp</cppa:ProfileIdentifier>
+    <cppa:ProfileIdentifier>Bcpp</cppa:ProfileIdentifier>
+    <cppa:ActivationDate>2019-01-05T12:46:05.625252</cppa:ActivationDate>
+    <cppa:ExpirationDate>2021-01-01T00:00:00</cppa:ExpirationDate>
+  </cppa:AgreementInfo>
+  <cppa:PartyInfo>
+    <cppa:PartyName xml:lang="en">Party A</cppa:PartyName>
+    <cppa:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">A</cppa:PartyId>
+    <cppa:Certificate id="party_a_signing_certificate">
+      <ds:KeyInfo>
+        <ds:KeyName>A's cert</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509Certificate>QSBwYXJ0eSBzaWduaW5nIGxlYWYgY2VydGlmaWNhdGU=</ds:X509Certificate>
+          <ds:X509Certificate>cm9vdGNlcnRjb250ZW50</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </cppa:Certificate>
+    <!--Suppressed unreferenced trust anchor set a_party_trust_anchors-->
+  </cppa:PartyInfo>
+  <cppa:CounterPartyInfo>
+    <cppa:PartyName xml:lang="en">Party B</cppa:PartyName>
+    <cppa:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">B</cppa:PartyId>
+    <cppa:Certificate id="bsigningcert">
+      <ds:KeyInfo>
+        <ds:KeyName>B signing cert</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509Certificate>QiBzaWduaW5nIGxlYWYgY2VydGlmaWNhdGU=</ds:X509Certificate>
+          <ds:X509Certificate>cm9vdGNlcnRjb250ZW50</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </cppa:Certificate>
+    <!--Suppressed unreferenced trust anchor set b_trust_anchors-->
+  </cppa:CounterPartyInfo>
+  <cppa:ServiceSpecification>
+    <cppa:PartyRole name="http://docs.oasis-open.org/ebcore/ns/cppa/v3.0/roles/requester"/>
+    <cppa:CounterPartyRole name="http://docs.oasis-open.org/ebcore/ns/cppa/v3.0/roles/responder"/>
+    <cppa:ServiceBinding>
+      <cppa:Service>http://docs.oasis-open.org/ebcore/ns/AgreementRegistration/v1.0</cppa:Service>
+      <cppa:ActionBinding action="RegisterAgreement" id="ab_1_s" sendOrReceive="send">
+        <cppa:ChannelId>_J34Q</cppa:ChannelId>
+        <cppa:PayloadProfileId>_DO6T</cppa:PayloadProfileId>
+      </cppa:ActionBinding>
+      <cppa:ActionBinding action="ConfirmRegistration" id="ab_2_r" sendOrReceive="receive" replyTo="ab_1_s">
+        <cppa:ChannelId>_3EUT</cppa:ChannelId>
+        <cppa:PayloadProfileId>_OSSA</cppa:PayloadProfileId>
+      </cppa:ActionBinding>
+      <cppa:ActionBinding action="RejectRegistration" id="ab_3_r" sendOrReceive="receive" replyTo="ab_1_s">
+        <cppa:ChannelId>_3EUT</cppa:ChannelId>
+        <cppa:PayloadProfileId>_ZDSC</cppa:PayloadProfileId>
+      </cppa:ActionBinding>
+    </cppa:ServiceBinding>
+  </cppa:ServiceSpecification>
+  <cppa:DelegationChannel id="_J34Q">
+    <cppa:Description xml:lang="en">Another Outbound channel</cppa:Description>
+    <cppa:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">THREE_CORNER_MODEL</cppa:PartyId>
+    <cppa:CounterPartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">THREE_CORNER_MODEL</cppa:CounterPartyId>
+  </cppa:DelegationChannel>
+  <cppa:DelegationChannel id="_3EUT">
+    <cppa:Description xml:lang="en">Another Inound channel</cppa:Description>
+    <cppa:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">THREE_CORNER_MODEL</cppa:PartyId>
+    <cppa:CounterPartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">THREE_CORNER_MODEL</cppa:CounterPartyId>
+  </cppa:DelegationChannel>
+  <cppa:PayloadProfile id="_DO6T">
+    <cppa:PayloadPart minOccurs="1" maxOccurs="1">
+      <cppa:PartName>businessdocument</cppa:PartName>
+      <cppa:Schema element="CPA" namespace="http://docs.oasis-open.org/ebcore/ns/cppa/v3.0"/>
+      <cppa:Signature>
+        <cppa:SigningCertificateRef certId="party_a_signing_certificate"/>
+      </cppa:Signature>
+    </cppa:PayloadPart>
+  </cppa:PayloadProfile>
+  <cppa:PayloadProfile id="_OSSA">
+    <cppa:PayloadPart minOccurs="1" maxOccurs="1">
+      <cppa:PartName>businessdocument</cppa:PartName>
+      <cppa:Schema element="CPA" namespace="http://docs.oasis-open.org/ebcore/ns/cppa/v3.0"/>
+      <cppa:Signature>
+        <cppa:SigningCertificateRef certId="bsigningcert"/>
+      </cppa:Signature>
+    </cppa:PayloadPart>
+  </cppa:PayloadProfile>
+  <cppa:PayloadProfile id="_ZDSC">
+    <cppa:PayloadPart minOccurs="1" maxOccurs="1">
+      <cppa:PartName>businessdocument</cppa:PartName>
+      <cppa:Schema element="Exception" namespace="http://docs.oasis-open.org/ebcore/ns/exception/v3.0"/>
+    </cppa:PayloadPart>
+  </cppa:PayloadProfile>
+</cppa:CPA>

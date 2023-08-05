@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cppa:CPP xmlns:cppa="http://docs.oasis-open.org/ebcore/ns/cppa/v3.0"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:dsig11="http://www.w3.org/2009/xmldsig11#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://docs.oasis-open.org/ebxmlcppa/cppa-3.0 ../../../cppa3-xsd/cppa3.xsd">
+    <cppa:ProfileInfo>
+        <cppa:ProfileIdentifier>Acpp</cppa:ProfileIdentifier>
+        <cppa:ActivationDate>2014-01-01T00:00:00</cppa:ActivationDate>
+        <cppa:ExpirationDate>2021-01-01T00:00:00</cppa:ExpirationDate>
+        <cppa:PhaseIn>P10D</cppa:PhaseIn>
+    </cppa:ProfileInfo>
+    <cppa:PartyInfo>
+        <cppa:PartyName xml:lang="en">Party A</cppa:PartyName>
+        <cppa:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">A</cppa:PartyId>
+        <cppa:Certificate id="party_a_signing_certificate">
+            <ds:KeyInfo>
+                <ds:KeyName>A's cert</ds:KeyName>
+                <ds:X509Data>
+                    <ds:X509Certificate>QSBwYXJ0eSBzaWduaW5nIGxlYWYgY2VydGlmaWNhdGU=</ds:X509Certificate>
+                    <ds:X509Certificate>cm9vdGNlcnRjb250ZW50</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </cppa:Certificate>
+        <cppa:TrustAnchorSet id="a_party_trust_anchors">
+            <cppa:Certificate>
+                <ds:KeyInfo>
+                    <ds:KeyName>Root CA Certificate trusted by B</ds:KeyName>
+                    <ds:X509Data>
+                        <ds:X509Certificate>cm9vdGNlcnRjb250ZW50</ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </cppa:Certificate>
+        </cppa:TrustAnchorSet>
+    </cppa:PartyInfo>
+
+    <cppa:ServiceSpecification>
+        <cppa:PartyRole
+            name="http://docs.oasis-open.org/ebcore/ns/cppa/v3.0/roles/requester"/>
+        <cppa:CounterPartyRole
+            name="http://docs.oasis-open.org/ebcore/ns/cppa/v3.0/roles/responder"/>
+        <cppa:ServiceBinding>
+            <cppa:Description xml:lang="en">The CPPA3 Agreement Registration service, in initiating mode</cppa:Description>
+            <cppa:Service>http://docs.oasis-open.org/ebcore/ns/AgreementRegistration/v1.0</cppa:Service>
+            <cppa:ActionBinding id="ab_1_s"
+                action="RegisterAgreement"
+                sendOrReceive="send" >
+                <cppa:ChannelId>ch1</cppa:ChannelId>
+                <cppa:ChannelId>ch2</cppa:ChannelId>
+                <cppa:PayloadProfileId>pp_cppa3_cpa_proposed</cppa:PayloadProfileId>                
+            </cppa:ActionBinding>
+            <cppa:ActionBinding id="ab_2_r" action="ConfirmRegistration" sendOrReceive="receive" replyTo="ab_1_s">
+                <cppa:ChannelId>ch3</cppa:ChannelId>
+                <cppa:ChannelId>ch4</cppa:ChannelId>
+                <cppa:PayloadProfileId>pp_cppa3_cpa_accepted</cppa:PayloadProfileId>                
+            </cppa:ActionBinding>
+            <cppa:ActionBinding id="ab_3_r" action="RejectRegistration" sendOrReceive="receive"  replyTo="ab_1_s">
+                <cppa:ChannelId>ch3</cppa:ChannelId>
+                <cppa:ChannelId>ch4</cppa:ChannelId>
+                <cppa:PayloadProfileId>pp_cppa3_exception</cppa:PayloadProfileId>                
+            </cppa:ActionBinding>
+        </cppa:ServiceBinding>
+    </cppa:ServiceSpecification>
+    
+    <cppa:DelegationChannel id="ch1">
+        <cppa:Description xml:lang="en">Outbound channel</cppa:Description>
+        <cppa:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">C_NO_MATCH_1</cppa:PartyId>
+    </cppa:DelegationChannel>
+    <cppa:DelegationChannel id="ch2">
+        <cppa:Description xml:lang="en">Another Outbound channel</cppa:Description>
+        <cppa:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">THREE_CORNER_MODEL</cppa:PartyId>
+    </cppa:DelegationChannel>
+    
+    <cppa:DelegationChannel id="ch3">
+        <cppa:Description xml:lang="en">Inbound channel</cppa:Description>
+        <cppa:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">C_NO_MATCH_1</cppa:PartyId>
+    </cppa:DelegationChannel>
+    <cppa:DelegationChannel id="ch4">
+        <cppa:Description xml:lang="en">Another Inound channel</cppa:Description>
+        <cppa:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">THREE_CORNER_MODEL</cppa:PartyId>
+    </cppa:DelegationChannel>
+    
+    <cppa:PayloadProfile id="pp_cppa3_cpa_proposed">
+        <cppa:Description xml:lang="en">A version 3.0 CPPA3 CPA document</cppa:Description>
+        <cppa:PayloadPart minOccurs="1" maxOccurs="1">
+            <cppa:PartName>businessdocument</cppa:PartName>
+            <cppa:Schema element="CPA" namespace="http://docs.oasis-open.org/ebcore/ns/cppa/v3.0" />
+            <cppa:Signature>
+                <cppa:SigningCertificateRef certId="party_a_signing_certificate"/>
+            </cppa:Signature>
+        </cppa:PayloadPart>
+    </cppa:PayloadProfile>
+    
+    <cppa:PayloadProfile id="pp_cppa3_cpa_accepted">
+        <cppa:Description xml:lang="en">A version 3.0 CPPA3 CPA document</cppa:Description>
+        <cppa:PayloadPart minOccurs="1" maxOccurs="1">
+            <cppa:PartName>businessdocument</cppa:PartName>
+            <cppa:Schema element="CPA" namespace="http://docs.oasis-open.org/ebcore/ns/cppa/v3.0" />
+            <cppa:Signature>
+                <cppa:SigningTrustAnchorSetRef certId="a_party_trust_anchors"/>
+            </cppa:Signature>
+        </cppa:PayloadPart>
+    </cppa:PayloadProfile>
+    
+    <cppa:PayloadProfile id="pp_cppa3_exception">
+        <cppa:Description xml:lang="en">An exception document reporting registration is not accepted</cppa:Description>
+        <cppa:PayloadPart minOccurs="1" maxOccurs="1">
+            <cppa:PartName>businessdocument</cppa:PartName>
+            <cppa:Schema element="Exception" namespace="http://docs.oasis-open.org/ebcore/ns/exception/v3.0" />
+        </cppa:PayloadPart>
+    </cppa:PayloadProfile>
+    
+    
+</cppa:CPP>
