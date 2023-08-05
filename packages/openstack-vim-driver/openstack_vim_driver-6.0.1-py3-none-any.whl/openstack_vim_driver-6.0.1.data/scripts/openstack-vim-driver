@@ -1,0 +1,4 @@
+#!python
+import openstack_vim_driver.openstack_vim_driver
+
+openstack_vim_driver.openstack_vim_driver.main()
