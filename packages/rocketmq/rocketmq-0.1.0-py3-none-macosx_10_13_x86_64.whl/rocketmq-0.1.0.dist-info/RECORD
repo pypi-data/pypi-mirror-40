@@ -1,0 +1,8 @@
+rocketmq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rocketmq/client.py,sha256=M2G2i8jmkjo7SDbbsXADANfe1mAb6n1osr-7t16suCc,8003
+rocketmq/ffi.py,sha256=vAydPt9lgFU-wqrbLNBaUWGLZbAAUZosc-jqwYwj77E,9468
+rocketmq/librocketmq.dylib,sha256=jmFLgnceBWRQM7hzbZ63_M7KGcR7OU0DU1fZEgquMDI,3644508
+rocketmq-0.1.0.dist-info/METADATA,sha256=GdsLtGML90xHkoKIMI5YqB-HurYc6IiD59XT1B0NnQE,2344
+rocketmq-0.1.0.dist-info/RECORD,,
+rocketmq-0.1.0.dist-info/WHEEL,sha256=mEXqJZt0EAbyd-UYVhafFTBpBGHsU5c0BVSN1kn1iS8,109
+rocketmq-0.1.0.dist-info/top_level.txt,sha256=DEMfb18lKnMBTlPPhPdDoBC9Ha-3ZjNUn3JT16VaZwM,9
