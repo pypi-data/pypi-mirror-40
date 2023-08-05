@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simple_sql_formatter
+Version: 1
+Summary: Simple SQL Formatter
+Home-page: https://github.com/natansilva/sql_formatter
+Author: Natan Anael
+Author-email: natan.anael@gmail.com
+License: UNKNOWN
+Description: # SQL Formatter
+        
+        [![Build Status](https://travis-ci.com/natansilva/sql_formatter.svg?branch=master)](https://travis-ci.com/natansilva/sql_formatter) [![Codecov Status](https://codecov.io/gh/natansilva/sql_formatter/branch/master/graphs/badge.svg)](https://codecov.io/gh/natansilva/sql_formatter/)
+        
+        Um simples formatador de SQL feito em Python
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

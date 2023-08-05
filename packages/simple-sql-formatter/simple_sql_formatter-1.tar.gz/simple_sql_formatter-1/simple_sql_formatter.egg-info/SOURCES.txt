@@ -1,0 +1,16 @@
+README.md
+setup.py
+formatter/__init__.py
+formatter/clauses.py
+formatter/formatter.py
+formatter/functions.py
+formatter/identation.py
+simple_sql_formatter.egg-info/PKG-INFO
+simple_sql_formatter.egg-info/SOURCES.txt
+simple_sql_formatter.egg-info/dependency_links.txt
+simple_sql_formatter.egg-info/top_level.txt
+tests/__init__.py
+tests/test_clauses.py
+tests/test_formatter.py
+tests/test_functions.py
+tests/test_identation.py
