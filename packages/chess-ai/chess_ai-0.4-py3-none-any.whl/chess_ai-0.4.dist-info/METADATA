@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: chess-ai
+Version: 0.4
+Summary: Provides Chess API and AI
+Home-page: http://github.com/thkim1011/chess-ai
+Author: Tae Hyung Kim
+Author-email: thkim1011@berkeley.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# Chess AI
+
+Provides a very basic chess game and AI.
+
+# Very Quick Tutorial
+
+To construct a new chess board, use the Board class.
+
+    >>> board = Board();
+
+To show the board, print board.
+
+    >>> print(board)
+
+To locate a position, use locate().
+
+    >>> locate("a3")
+    a3
+
+To get a piece, call the get_piece method.
+
+    >>> board.get_piece(locate("a1"))
+    Rook("white") at a1
+
+
+
