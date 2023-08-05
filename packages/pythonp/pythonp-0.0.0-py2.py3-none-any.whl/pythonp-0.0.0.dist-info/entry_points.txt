@@ -1,0 +1,3 @@
+[console_scripts]
+pythonp = pythonp.__main__:main
+
