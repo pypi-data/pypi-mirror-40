@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pythonp/__init__.py
+pythonp/__main__.py
+pythonp.egg-info/PKG-INFO
+pythonp.egg-info/SOURCES.txt
+pythonp.egg-info/dependency_links.txt
+pythonp.egg-info/entry_points.txt
+pythonp.egg-info/top_level.txt
