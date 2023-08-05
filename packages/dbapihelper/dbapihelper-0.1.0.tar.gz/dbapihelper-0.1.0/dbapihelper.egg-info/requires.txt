@@ -1,0 +1,16 @@
+six
+
+[cli]
+pygments
+prompt_toolkit>=2
+tabulate
+
+[dev]
+coverage
+flake8
+nose
+pipreqs
+pytest>=2.8
+pytest-cov
+requests_mock
+twine
