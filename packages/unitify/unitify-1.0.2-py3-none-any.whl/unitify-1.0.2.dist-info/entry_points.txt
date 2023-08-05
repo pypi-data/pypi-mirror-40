@@ -1,0 +1,3 @@
+[console_scripts]
+unitify = unitify.__main__:main
+
