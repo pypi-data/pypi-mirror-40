@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sacred-tui
+Version: 0.1.0
+Summary: Python library for ASCII art import and TUI development
+Home-page: https://github.com/justaboredkid/sacred
+Author: justaboredkid
+Author-email: 29010153+justaboredkid@users.noreply.github.com
+License: GNU GPLv3
+Platform: UNKNOWN
+Requires-Dist: blessed
+
+UNKNOWN
+
+
