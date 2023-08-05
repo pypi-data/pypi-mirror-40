@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+conll/__init__.py
+conll.egg-info/PKG-INFO
+conll.egg-info/SOURCES.txt
+conll.egg-info/dependency_links.txt
+conll.egg-info/entry_points.txt
+conll.egg-info/requires.txt
+conll.egg-info/top_level.txt

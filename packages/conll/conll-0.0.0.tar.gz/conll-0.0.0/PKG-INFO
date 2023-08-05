@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: conll
+Version: 0.0.0
+Summary: Conll
+Home-page: https://github.com/blester125/conll
+Author: blester125
+Author-email: blester125@gmail.com
+License: MIT
+Download-URL: https://github.com/blester125/conll/archive/0.0.0.tar.gz
+Description: # Conll
+        
+        <!---[<img src="https://travis-ci.com/blester125/conll.svg?branch=master" alt="Build Status">](https://travis-ci.com/blester125/conll)--->
+        
+        Library to read and process CONLL files.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
