@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: BAM-Lib
+Version: 0.0.1
+Summary: a library for interacting with a fake microservice I've created
+Home-page: https://github.com/blarmon/BAM-Lib
+Author: Chris Siegel
+Author-email: c.siegel1991@gmail.com
+License: UNKNOWN
+Description: # BAM-Lib
+        A python library that makes it easy to utilize the bank-account-microservice microservice.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
