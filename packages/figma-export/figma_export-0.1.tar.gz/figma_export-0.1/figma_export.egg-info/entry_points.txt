@@ -1,0 +1,3 @@
+[console_scripts]
+figma_export = figma_export.__main__:main
+
