@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: gameserver-response-parser
+Version: 0.1.3
+Summary: a library to parse the responses of gameservers
+Home-page: https://github.com/991jo/gameserver_response_parser
+Author: 992jo
+Author-email: UNKNOWN
+License: WTF
+Description: Gameserver Response Parser
+        ==========================
+        
+        ** this is work in progress **
+        
+        This is a python packaga which can parse several formats of responses for query
+        of different gameservers.
+        
+        E.g. this can parse the response of the A2S_Info query a SRCDS gameserver sends.
+        
+        
+        
+Platform: UNKNOWN
