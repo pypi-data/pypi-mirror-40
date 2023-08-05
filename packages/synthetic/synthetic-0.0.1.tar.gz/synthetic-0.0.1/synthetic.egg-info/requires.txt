@@ -1,0 +1,10 @@
+numpy
+python-igraph
+pyemd
+progressbar2
+termcolor
+jupyter
+
+[dev]
+sphinx
+sphinx_rtd_theme
