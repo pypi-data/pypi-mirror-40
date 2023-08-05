@@ -1,0 +1,3 @@
+[console_scripts]
+dumbpm = dumbpm.cmd:main
+
