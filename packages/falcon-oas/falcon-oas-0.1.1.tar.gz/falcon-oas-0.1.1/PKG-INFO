@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: falcon-oas
+Version: 0.1.1
+Summary: OpenAPI 3 support for Falcon
+Home-page: https://github.com/grktsh/falcon-oas
+License: UNKNOWN
+Description: # falcon-oas
+        
+        [![PyPI](https://img.shields.io/pypi/v/falcon-oas.svg)](https://pypi.org/project/falcon-oas)
+        [![Travis](https://img.shields.io/travis/grktsh/falcon-oas/master.svg)](https://travis-ci.org/grktsh/falcon-oas)
+        [![Codecov](https://img.shields.io/codecov/c/github/grktsh/falcon-oas/master.svg)](https://codecov.io/gh/grktsh/falcon-oas)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: format
