@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: django-starterkit
+Version: 1.0.4
+Summary: Library with reusable code for every django project you work with.
+Home-page: https://github.com/mikasoftware/django-starterkit
+Author: Bartlomiej Mika
+Author-email: bart@mikasoftware.com
+License: BSD 3-Clause License
+Keywords: library starter helper
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Requires-Dist: django (>=2.0)
+Requires-Dist: djangorestframework (>=3.7.7)
+
+# django-starterkit
+## Build Status
+[![Build Status](https://travis-ci.org/MikaSoftware/django-starterkit.svg?branch=master)](https://travis-ci.org/MikaSoftware/django-starterkit)
+[![PyPI version fury.io](https://badge.fury.io/py/django-starterkit.svg)](https://pypi.python.org/pypi/django-starterkit)
+[![Coverage Status](https://coveralls.io/repos/github/MikaSoftware/django-starterkit/badge.svg?branch=master)](https://coveralls.io/github/MikaSoftware/django-starterkit?branch=master)
+
+## About
+Library with reusable code for every django project you work with, includes django rest framework.
+
+
