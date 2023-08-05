@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nzproxy
+Version: 1b0.dev0
+Summary: Proxies for python objects
+Home-page: UNKNOWN
+Author: Clement
+Author-email: neze+pypi@melix.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst
+
+|pipeline| |coverage| |rtd|
+
+.. |pipeline| image:: https://framagit.org/1ohmatr/sw/py/template/badges/master/pipeline.svg
+
+.. |coverage| image:: https://framagit.org/1ohmatr/sw/py/template/badges/master/coverage.svg
+
+.. |rtd| image:: https://readthedocs.org/projects/pypknz/badge/?version=latest
+
+Template for python packages
+
+
