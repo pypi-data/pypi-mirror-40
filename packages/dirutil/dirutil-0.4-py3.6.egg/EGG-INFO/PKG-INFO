@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: dirutil
+Version: 0.4
+Summary: High level directory utilities
+Home-page: https://github.com/ddolzhenko/dirutil
+Author: Dmitri Dolzhenko
+Author-email: d.dolzhenko@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/ddolzhenko/dirutil/archive/v0.4.tar.gz
+Description: UNKNOWN
+Keywords: dir,directory,workdir,tempdir
+Platform: UNKNOWN
