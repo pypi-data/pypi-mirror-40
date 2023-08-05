@@ -1,0 +1,17 @@
+wampyre/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wampyre/opcodes.py,sha256=tONWHEK9XvfOVloJV2sqD5GKTEnbwGEE3ZcpbvMtiis,368
+wampyre/pattern.py,sha256=QLAFv_CBa_022Kix_7Pbp_LCMM98RLVaP9Mzah3PgrE,1866
+wampyre/realm.py,sha256=CGksWgCc6rz6X1brEc82X5mE5OBFm49EImM4oIlLb7E,7596
+wampyre/session.py,sha256=YME8UEPNoMI7mj5KeJDVhYpxJWyZ5revn3SvUx2ET_E,7105
+wampyre/utils.py,sha256=8urj0zuufTsKxXYDJi2QOfV2DEqttczfKMZBLlb9dcw,72
+wampyre/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wampyre/tests/test_pattern.py,sha256=jwxTOQi7UXLfnYwvxRRV32cNdOmU450X6OqIlHuv09c,1574
+wampyre/tests/test_session.py,sha256=cBfwRyRlk73FRyJcD_yfBX30H1VZDJ7QLa6lM5uhF58,14938
+wampyre/transports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wampyre/transports/autowamp.py,sha256=LGZ7GnfcUhEEv6K8Z1C8vwP0tJWIfItUcUfK4e863ng,2599
+wampyre/transports/base.py,sha256=XdpyXIxdK8DxXT49cdgTlmZk2w16VUeC3ANg3e5OaL0,583
+wampyre/transports/django.py,sha256=MVjq4F1mO63OjEUaoWgkzX1CHKQ4BSviUukfIAElCp8,1375
+wampyre-1.0.2.dist-info/METADATA,sha256=hxEC642z0MAnYTJSBkePlIML-GkcGz7fZGqeuiaHHjI,664
+wampyre-1.0.2.dist-info/RECORD,,
+wampyre-1.0.2.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+wampyre-1.0.2.dist-info/top_level.txt,sha256=7t8WYJUpgbCuK5baMKtIHI8dLKFY6AYYsPtgo6sr2-g,8
