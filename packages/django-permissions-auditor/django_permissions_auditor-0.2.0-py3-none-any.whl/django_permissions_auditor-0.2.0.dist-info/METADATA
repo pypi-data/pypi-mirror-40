@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: django-permissions-auditor
+Version: 0.2.0
+Summary: django-permissions-auditor is a tool to audit access control on your django app.
+Home-page: UNKNOWN
+Author: AAC Engineering
+Author-email: UNKNOWN
+License: MIT
+Keywords: django,admin,permissions,audit,auditor
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.1
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management :: Link Checking
+Requires-Dist: django (>=2.1setuptools)
+
+django-permissions-auditor
+==========================
+
+Automatically parse Django views in your project and pull out the permissions required to view them. Easily extensible to work with custom permission schemes.
+
+
