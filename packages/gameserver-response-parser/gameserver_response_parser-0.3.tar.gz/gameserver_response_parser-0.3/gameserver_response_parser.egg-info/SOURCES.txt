@@ -1,0 +1,14 @@
+CHANGELOG.md
+MANIFEST.in
+README.rst
+setup.py
+gameserver_response_parser/Gamespy2Parser.py
+gameserver_response_parser/GamespyParser.py
+gameserver_response_parser/Quake3Parser.py
+gameserver_response_parser/SRCDSParser.py
+gameserver_response_parser/__init__.py
+gameserver_response_parser/parse.py
+gameserver_response_parser.egg-info/PKG-INFO
+gameserver_response_parser.egg-info/SOURCES.txt
+gameserver_response_parser.egg-info/dependency_links.txt
+gameserver_response_parser.egg-info/top_level.txt
