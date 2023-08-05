@@ -1,0 +1,15 @@
+from distutils.core import setup
+setup(name = 'StarPattern',
+  packages = ['StarPattern'],
+  version = '0.2',
+  license='MIT',
+  description = 'Start Pattern',
+  author = 'EslamiSepehr',
+  author_email = 'eslamisepehr@gmail.com',
+  url = 'https://github.com/eslamisepehr',
+  keywords = ['StarPattern', 'Star','Alphabet', 'Pattern'],
+  classifiers=['License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',],)
