@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: beewars
+Version: 0.1.0
+Summary: BeeWars (Game)
+Home-page: https://github.com/poyynt/beewars/
+Author: Parsa Torbati
+Author-email: parsa@programmer.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+Requires-Dist: numpy
+
+# BeeWars 
+
+## A simple to learn, hard to master game.
+
+[Github(Disabled)](https://github.com/poyynt/beewars/)  
+[PyPI](https://pypi.org/project/beewars)
+
+### To execute:  
+Run `beewars` in a shell.  
+
+*Game tutorial will be added soon.*
+
+
