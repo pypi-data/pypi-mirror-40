@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: FastCoinExchange
+Version: 1.0.18
+Summary: FastCoinExchange Python is a wrapper under the fastcoinexchange.com API for python developers.
+Home-page: https://github.com/fastcoinexchange/fastcoinexchange-python
+Author: Alexander Yudkin
+Author-email: san4ezy@gmail.com
+Maintainer: Olexandr Shalakhin
+Maintainer-email: olexandr@shalakhin.com
+License: The MIT License (MIT)
+Description: UNKNOWN
+Keywords: coin,exchange
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
