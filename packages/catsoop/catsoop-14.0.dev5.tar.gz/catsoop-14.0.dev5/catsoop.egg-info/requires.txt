@@ -1,0 +1,14 @@
+bs4
+cheroot
+cryptography
+filelock
+lxml
+markdown<3,>2
+mpmath
+oauthlib
+ply
+pylti
+python-jose
+uuid
+uwsgi
+websockets
