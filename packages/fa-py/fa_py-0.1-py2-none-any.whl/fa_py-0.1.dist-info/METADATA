@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: fa-py
+Version: 0.1
+Summary: The factor analysis library in python
+Home-page: https://github.com/ck090/FactorApy
+Author: Chandra Kanth N
+Author-email: canfindck@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: matplotlib (==3.0.1)
+Requires-Dist: numpy (==1.15.3)
+Requires-Dist: pandas (==0.23.4)
+Requires-Dist: scipy (==1.1.0)
+Requires-Dist: seaborn (==0.9.0)
+Requires-Dist: setuptools (==39.0.1)
+
+# FactorApy
+A Python package to for performing Factor analysis on any given data.
+
