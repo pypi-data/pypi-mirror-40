@@ -1,0 +1,9 @@
+README.md
+setup.py
+socket_chatroom/__init__.py
+socket_chatroom/chatroom.py
+socket_chatroom/user1.py
+socket_chatroom.egg-info/PKG-INFO
+socket_chatroom.egg-info/SOURCES.txt
+socket_chatroom.egg-info/dependency_links.txt
+socket_chatroom.egg-info/top_level.txt
