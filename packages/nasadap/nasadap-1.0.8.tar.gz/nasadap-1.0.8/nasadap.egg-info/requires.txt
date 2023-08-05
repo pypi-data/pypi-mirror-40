@@ -1,0 +1,6 @@
+xarray
+pydap
+lxml
+requests
+dask
+netCDF4
