@@ -1,0 +1,11 @@
+setup.py
+Rsql/Rmysql.py
+Rsql/__init__.py
+Rsql/test.py
+Rsql.egg-info/PKG-INFO
+Rsql.egg-info/SOURCES.txt
+Rsql.egg-info/dependency_links.txt
+Rsql.egg-info/namespace_packages.txt
+Rsql.egg-info/not-zip-safe
+Rsql.egg-info/requires.txt
+Rsql.egg-info/top_level.txt
