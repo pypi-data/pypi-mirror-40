@@ -1,0 +1,11 @@
+fonetika/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fonetika/base.py,sha256=UQwfQVGg0u4DnGzbTprnYpCDHhngXLl6OV8g0yCeRvk,435
+fonetika/distance.py,sha256=d-WJC_Iz_bZqtYXQzBwRNDZFpnxLWQ2PpI0V9YTX570,1759
+fonetika/metaphone.py,sha256=acKvXIjYkv9y1Z9oentBUUfEegQWHmBL11fUaN36MdY,3085
+fonetika/soundex.py,sha256=Dpbn3t1C_sK8Xg3mc-HbRwaDC3nmQ3UK1UVFXIfG5Bo,8070
+fonetika-1.1.1.dist-info/DESCRIPTION.rst,sha256=t5cYVY_xWBNFlE3OGlKoqXrW4l3IuDzwBCR9EaKgYTs,1316
+fonetika-1.1.1.dist-info/METADATA,sha256=PZ6OKsAhgaOd2-mz2lEMgbMQ9JATbBUPzH1eqVMcHE4,1925
+fonetika-1.1.1.dist-info/RECORD,,
+fonetika-1.1.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+fonetika-1.1.1.dist-info/metadata.json,sha256=ujJ3a2c4wkSgySpSJQMY1hs5HJ-Xvn5dZcPAgWNBvW0,796
+fonetika-1.1.1.dist-info/top_level.txt,sha256=HIrTn7rYgxdqFuEI8S_4krtAMpBVoTKKzevFR9NEpUk,9
