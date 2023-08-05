@@ -1,0 +1,11 @@
+MANIFEST.in
+README
+TODO
+setup.py
+./pyjavaproperties3.py
+./pyjavaproperties3_test.py
+pyjavaproperties3.egg-info/PKG-INFO
+pyjavaproperties3.egg-info/SOURCES.txt
+pyjavaproperties3.egg-info/dependency_links.txt
+pyjavaproperties3.egg-info/top_level.txt
+testdata/complex.properties
