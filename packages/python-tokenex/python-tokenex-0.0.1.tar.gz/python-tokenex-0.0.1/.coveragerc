@@ -1,0 +1,19 @@
+[report]
+omit =
+    {envdir}/*
+    */tests/*
+
+exclude_lines =
+    if __name__ == .__main__.:
+    log
+    LOG
+    except
+    return
+    pragma: no cover
+    raise
+
+fail_under = 80
+
+[run]
+source =
+    tokenex

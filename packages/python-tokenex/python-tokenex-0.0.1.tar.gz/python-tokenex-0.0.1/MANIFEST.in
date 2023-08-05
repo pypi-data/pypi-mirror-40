@@ -1,0 +1,4 @@
+include requirements.txt README.md
+recursive-include tokenex *.py
+global-exclude *.pyc __pycache__
+prune tokenex/tests
