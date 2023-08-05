@@ -1,0 +1,98 @@
+Metadata-Version: 1.0
+Name: single-factor-model
+Version: 0.1.8
+Summary: factor model
+Home-page: UNKNOWN
+Author: Yili Peng
+Author-email: yili_peng@outlook.com
+License: UNKNOWN
+Description: This programme is built for back-testing factors.
+        
+        Dependencies
+        ------------
+        
+        -  python 3.5
+        -  pandas 0.23.0
+        -  numba 0.38.0
+        -  empyrical 0.5.0
+        -  pickle
+        -  multiprocessing
+        
+        Example
+        -------
+        
+        Data Box: pre-process
+        =====================
+        
+        .. code:: bash
+        
+           from single_factor_model import data_box
+           db=data_box()\
+           .load_indestry(ind)\
+           .load_indexWeight(ind_weight)\
+           .load_suspend(sus)\
+           .load_adjPrice(price)\
+           .add_factor('factor0',factor0)\
+           .add_factor('factor1',factor1)\
+           .set_lag(freq='d',day_lag=1)\
+           .compile_data()
+           # freq can be 'd' or 'm', for detail please refer to db.set_lag doc. 
+        
+        Where ``price,ind,ind_weight,sus,factor0,factor1`` are all dataframes
+        with index as date (yyyymmdd,int) and column as tickers. You can save
+        and load this data box object by ``db.save('path')`` and
+        ``db.load('path')``.
+        
+        Back Test
+        =========
+        
+        .. code:: bash
+        
+           from single_factor_model import run_back_test
+        
+        single process
+        
+        .. code:: bash
+        
+           Value=run_back_test(data_box=db,back_end=None,n=5,weight_path=None)
+        
+        multi process
+        
+        .. code:: bash
+        
+           Value=run_back_test(data_box=db,back_end='loky',n=5,weight_path=None,verbose=50)
+        
+        or
+        
+        .. code:: bash
+        
+           with __name__=='__main__':
+               Value=run_back_test(data_box=db,back_end='multiprocessing',n=5,weight_path=None)
+        
+        To check detailed position of each portfolio each day, just assign
+        ``weight_path``.
+        
+        Summary and Plot
+        ================
+        
+        summary by month
+        
+        .. code:: bash
+        
+           from single_factor_model import summary
+           S=summary(Value)
+        
+        summary whole time period only
+        
+        .. code:: bash
+        
+           from single_factor_model import summary_total
+           S=summary_total(Value)
+        
+        plot
+        
+        .. code:: bash
+        
+           run_plot(Value,show=True)
+        
+Platform: UNKNOWN
