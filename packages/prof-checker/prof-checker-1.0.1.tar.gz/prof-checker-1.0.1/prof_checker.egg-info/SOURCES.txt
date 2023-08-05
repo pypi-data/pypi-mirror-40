@@ -1,0 +1,11 @@
+README.md
+prof_checker.py
+setup.py
+prof_checker.egg-info/PKG-INFO
+prof_checker.egg-info/SOURCES.txt
+prof_checker.egg-info/dependency_links.txt
+prof_checker.egg-info/entry_points.txt
+prof_checker.egg-info/requires.txt
+prof_checker.egg-info/top_level.txt
+tests/__init__.py
+tests/test_prof_checker.py

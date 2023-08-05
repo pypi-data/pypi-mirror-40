@@ -1,0 +1,51 @@
+# pro-checker
+
+[![Build Status](https://travis-ci.com/ozychhi/prof-checker.svg?branch=master)](https://travis-ci.com/ozychhi/prof-checker)
+
+
+## Prof-checker
+
+This is wrapper over [profanity-check](https://github.com/vzhou842/profanity-check/) by [vzhou842](https://github.com/vzhou842)
+
+`prof-checker` is meant to work the same way as other python linters work. Depending on how big your codebase
+is, it might take quite a bit of time to run this. I would not recommend running it on every PR.
+
+
+## Installation
+
+```
+$ pip install prof-checker
+```
+
+## Rough benchmarks
+
+As this is wrapper around `profanity-check` the performance greatly depends on the package. These benchmarks
+are only rought estimates.
+
+| Files | LoC | Time (ms)
+| --------|-------------------|---------------------
+| 500 | 250K | 7230
+| 22 | 4.3K | 1200
+| 70 | 20.6K | 1510
+
+## Usage
+
+For help
+```
+prof_checker -h
+```
+
+To check `test.py`:
+```
+prof_checker test.py
+```
+
+To check all files in directory:
+```
+find . -name \*.py | xargs prof_checker
+```
+
+To override threshold:
+```
+prof_checker -P 0.5 test.py
+```
