@@ -1,0 +1,11 @@
+pandas
+six
+
+[image]
+pillow
+
+[numpy]
+numpy
+
+[torch]
+torch
