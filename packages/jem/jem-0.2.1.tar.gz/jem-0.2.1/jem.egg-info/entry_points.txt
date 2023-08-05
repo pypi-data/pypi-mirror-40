@@ -1,0 +1,5 @@
+[console_scripts]
+coil_correction = jem.cli:coil_correction
+riff = jem.cli:compute_riff
+signal_mask = jem.cli:signal_mask
+
