@@ -1,0 +1,20 @@
+# Packages
+# For colour
+colorful
+
+# For server requests
+requests
+
+# Parsing YAML config
+pyyaml
+
+# Async tasks
+# gevent
+aiofiles
+aiohttp
+
+# For systemd service
+pystache
+
+# Keyboard locking
+evdev
