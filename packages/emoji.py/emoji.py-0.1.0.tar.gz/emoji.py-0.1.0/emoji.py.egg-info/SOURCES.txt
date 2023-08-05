@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+emoji.py
+setup.py
+emoji.py.egg-info/PKG-INFO
+emoji.py.egg-info/SOURCES.txt
+emoji.py.egg-info/dependency_links.txt
+emoji.py.egg-info/entry_points.txt
+emoji.py.egg-info/not-zip-safe
+emoji.py.egg-info/requires.txt
+emoji.py.egg-info/top_level.txt
+emojilib/__init__.py
+emojilib/emojis.json

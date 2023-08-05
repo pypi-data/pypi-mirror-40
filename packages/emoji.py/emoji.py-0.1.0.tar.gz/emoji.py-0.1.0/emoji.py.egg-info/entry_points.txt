@@ -1,0 +1,3 @@
+[console_scripts]
+emoji = emoji:command_line_runner
+
