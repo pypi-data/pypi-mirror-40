@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: yikai-tools
+Version: 1.0.1
+Summary: python modules.
+Home-page: https://github.com/happyshi0402/yikai_tools.git
+Author: Wang Shifeng
+Author-email: wsf121116@163.com
+License: MIT
+Description: yikai_tools
+        =========
+        常用python代码工具的封装
+        
+        按照文件夹对应功能划分
+        # 现在提供代码如下：
+        1. webhook数据处理的相关工具代码
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
