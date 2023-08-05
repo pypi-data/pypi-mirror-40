@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+ipbook/__init__.py
+ipbook/__main__.py
+ipbook.egg-info/PKG-INFO
+ipbook.egg-info/SOURCES.txt
+ipbook.egg-info/dependency_links.txt
+ipbook.egg-info/entry_points.txt
+ipbook.egg-info/top_level.txt
+ipbook/data/ip_addrs.json
