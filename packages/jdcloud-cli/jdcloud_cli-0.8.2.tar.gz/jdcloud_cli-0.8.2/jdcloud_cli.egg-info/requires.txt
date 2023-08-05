@@ -1,0 +1,8 @@
+websocket-client
+configparser
+requests
+argcomplete
+argparse
+jdcloud_sdk==1.3.0
+pyyaml
+jinja2
