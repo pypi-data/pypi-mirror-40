@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+brewdog/__init__.py
+brewdog/api.py
+brewdog/const.py
+brewdog.egg-info/PKG-INFO
+brewdog.egg-info/SOURCES.txt
+brewdog.egg-info/dependency_links.txt
+brewdog.egg-info/requires.txt
+brewdog.egg-info/top_level.txt
