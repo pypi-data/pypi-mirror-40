@@ -1,0 +1,57 @@
+version: 1
+disable_existing_loggers: true
+formatters:
+  simpleExample:
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  simple:
+    format: '%(asctime)s; %(levelname)-8s; %(name)s; %(module)s; %(funcName)s; %(message)s'
+  personal:
+    format: '%(asctime)s; %(levelname)-8s; %(name)s; %(module)s; %(funcName)s; %(threadName)s; %(thread)d; %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: simple
+    stream: ext://sys.stdout
+  file:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: personal
+    filename: logger.log
+    encoding: utf8
+    mode: a
+  rotatesize:
+    class: logging.handlers.RotatingFileHandler
+    formatter: personal
+    filename: logger.log
+    level: DEBUG
+    maxBytes: 10485760 # 10MB
+    backupCount: 7
+    encoding: utf8
+    mode: a
+  rotatesemanal:
+    class: logging.handlers.TimedRotatingFileHandler
+    formatter: personal
+    level: NOTSET
+    filename: logger.log
+    when: W6
+    interval: 1
+    backupCount: 7
+    encoding: utf8
+  rotatediario:
+    class: logging.handlers.TimedRotatingFileHandler
+    formatter: personal
+    level: NOTSET
+    filename: logger.log
+    when: midnight
+    interval: 1
+    backupCount: 7
+    encoding: utf8
+loggers:
+  sampleLogger:
+    level: DEBUG
+    handlers: [console]
+    propagate: no
+root:
+  level: DEBUG
+  handlers: [console, rotatesize]
