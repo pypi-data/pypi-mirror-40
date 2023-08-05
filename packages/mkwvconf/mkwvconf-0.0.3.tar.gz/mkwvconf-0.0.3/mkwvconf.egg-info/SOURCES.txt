@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+mkwvconf.py
+setup.py
+version.txt
+mkwvconf.egg-info/PKG-INFO
+mkwvconf.egg-info/SOURCES.txt
+mkwvconf.egg-info/dependency_links.txt
+mkwvconf.egg-info/top_level.txt
