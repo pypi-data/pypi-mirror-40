@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+sankeyfy/__init__.py
+sankeyfy.egg-info/PKG-INFO
+sankeyfy.egg-info/SOURCES.txt
+sankeyfy.egg-info/dependency_links.txt
+sankeyfy.egg-info/not-zip-safe
+sankeyfy.egg-info/requires.txt
+sankeyfy.egg-info/top_level.txt
+test/test_script.py
