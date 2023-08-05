@@ -1,0 +1,59 @@
+# qtdigest
+
+python implementation of Dunning's T-Digest, inspired by [nodejs tdigest](https://github.com/welch/tdigest)
+
+## Install
+
+```sh
+pip install qtdigest
+```
+
+## Usage
+
+```python
+from qtdigest import Tdigest
+
+t = Tdigest()
+for i in xrange(1000):
+    t.push(random())
+P90 = t.percentile(0.9)
+print 'P90 = ', P90
+```
+
+## API
+
+### Tdigest(delta=0.01, K=25, CX=1.1)
+
+* `delta`: the compression factor, the max fraction of mass that can be owned by one centroid (bigger, up to 1.0, means more compression).
+
+* `K`: a size threshold that triggers recompression as the TDigest grows during input
+
+* `CX`: specifies how often to update cached cumulative totals used for quantile estimation during ingest.
+
+* `return`: Tdigest instance
+
+### Instance of Tdigest
+* `push(x, n)`: add data with value x and weight n
+
+* `size()`: return the count of centroids
+
+* `toList()`: return the list of all centroids data
+
+* `percentile(p)`: return the percentage of p(0..1)
+
+* `serialize()`: serialize tdigest instance to string, ie: `0.01~25~2~0.00064~0.0013~2~20`
+
+* `simpleSerialize()`: simply serialize tdigest instance to string, ie: `0.00064~2~0.0013~20`
+
+* `deserialize(serialized_str)`: deserialize the serialized string to tdigest instance. it is a classmethod, so can be called by `Tdigest.deserialize(serialized_str)`
+
+## Performance
+
+platform： MacBook Pro (2.6 GHz Intel Core i5)
+
+|data size (push times)|cost time|
+|--|--|
+|1K|0.07s|
+|10K|0.2s|
+|100K|1.7s|
+|1M|17s|
