@@ -1,0 +1,3 @@
+[console_scripts]
+vaspwiki = vaspwiki.vaspwiki_command:vaspwiki_command
+

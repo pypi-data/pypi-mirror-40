@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+vaspwiki/__init__.py
+vaspwiki/vaspwiki.py
+vaspwiki/vaspwiki_command.py
+vaspwiki/version.py
+vaspwiki.egg-info/PKG-INFO
+vaspwiki.egg-info/SOURCES.txt
+vaspwiki.egg-info/dependency_links.txt
+vaspwiki.egg-info/entry_points.txt
+vaspwiki.egg-info/not-zip-safe
+vaspwiki.egg-info/top_level.txt
+vaspwiki/tests/__init__.py
+vaspwiki/tests/test_me.py
