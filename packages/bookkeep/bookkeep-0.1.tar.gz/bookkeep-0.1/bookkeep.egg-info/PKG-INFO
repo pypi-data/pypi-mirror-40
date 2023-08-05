@@ -1,0 +1,106 @@
+Metadata-Version: 1.1
+Name: bookkeep
+Version: 0.1
+Summary: bookeep keeps track of units, bounds, and immutable items.
+Home-page: https://github.com/yoelcortes/Bookkeeping
+Author: Yoel Cortes-Pena
+Author-email: yoelcortes@gmail.com
+License: MIT
+Download-URL: https://github.com/yoelcortes/Bookkeeping.git
+Description: ===========
+        bookkeep 
+        ===========
+        
+        .. image:: http://img.shields.io/pypi/v/thermo.svg?style=flat
+           :target: https://pypi.python.org/pypi/bookkeep
+           :alt: Version_status
+        .. image:: http://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat
+           :target: https://bookkeep.readthedocs.io/en/latest/
+           :alt: Documentation
+        .. image:: http://img.shields.io/travis/yoelcortes/bookkeep/master.svg?style=flat
+           :target: https://travis-ci.org/yoelcortes/bookkeep
+           :alt: Build_status
+        .. image:: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+           :target: https://github.com/yoelcortes/bookkeep/blob/master/LICENSE.txt
+           :alt: license
+        .. image:: https://img.shields.io/coveralls/yoelcortes/bookkeep.svg
+           :target: https://coveralls.io/github/yoelcortes/bookkeep
+           :alt: Coverage
+        .. image:: https://img.shields.io/pypi/pyversions/thermo.svg
+           :target: https://pypi.python.org/pypi/bookkeep
+           :alt: Supported_versions
+        .. image:: https://badges.gitter.im/yoelcortes/bookkeep.svg
+           :alt: Join the chat at https://gitter.im/yoelcortes/bookkeep
+           :target: https://gitter.im/yoelcortes/bookkeep
+        .. image:: http://img.shields.io/appveyor/ci/yoelcortes/bookkeep.svg
+           :target: https://ci.appveyor.com/project/yoelcortes/bookkeep/branch/master
+           :alt: Build_status
+        .. image:: https://zenodo.org/badge/62404647.svg
+           :alt: Zendo
+           :target: https://zenodo.org/badge/latestdoi/62404647
+        
+        
+        .. contents::
+        
+        What is bookkeep?
+        --------------------
+        
+        bookkeep is a python package created by Yoel Cortes-Pena for keeping track of units of measure, measurment bounds, and immutable items. The package mainly features the SmartBook, a dictionary subclass that incorporates `pint Quantity objects  <https://pint.readthedocs.io/en/latest/>`__ for managing units of measure.
+        
+        Installation
+        ------------
+        
+        Get the latest version of thermo from
+        https://pypi.python.org/pypi/bookkeep/
+        
+        If you have an installation of Python with pip, simple install it with:
+        
+            $ pip install bookkeeping
+        
+        To get the git version, run:
+        
+            $ git clone git://github.com/yoelcortes/bookkeep
+        
+        Documentation
+        -------------
+        
+        bookkeep's documentation is available on the web:
+        
+            http://bookkeep.readthedocs.io/
+        
+        Latest source code
+        ------------------
+        
+        The latest development version of thermo's sources can be obtained at
+        
+            https://github.com/yoelcortes/bookkeep
+        
+        
+        Bug reports
+        -----------
+        
+        To report bugs, please use the thermo's Bug Tracker at:
+        
+            https://github.com/yoelcortes/bookkeep
+        
+        
+        License information
+        -------------------
+        
+        See ``LICENSE.txt`` for information on the terms & conditions for usage
+        of this software, and a DISCLAIMER OF ALL WARRANTIES.
+        
+        Although not required by the thermo license, if it is convenient for you,
+        please cite thermo if used in your work. Please also consider contributing
+        any changes you make back, and benefit the community.
+        
+        
+        Citation
+        --------
+        
+        To cite bookkeep in publications use::
+        
+            Yoel Cortes-Pena (2018). bookkeep: an easy way to track quantities
+            https://github.com/yoelcortes/bookkeep
+        
+Platform: Windows
