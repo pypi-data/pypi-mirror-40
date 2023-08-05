@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+dirutil/__init__.py
+dirutil/checksum.py
+dirutil/dirutil.py
+dirutil.egg-info/PKG-INFO
+dirutil.egg-info/SOURCES.txt
+dirutil.egg-info/dependency_links.txt
+dirutil.egg-info/top_level.txt
