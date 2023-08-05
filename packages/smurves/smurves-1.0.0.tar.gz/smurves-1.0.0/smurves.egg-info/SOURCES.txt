@@ -1,0 +1,9 @@
+README.md
+setup.py
+smurves/__init__.py
+smurves/smurves.py
+smurves.egg-info/PKG-INFO
+smurves.egg-info/SOURCES.txt
+smurves.egg-info/dependency_links.txt
+smurves.egg-info/requires.txt
+smurves.egg-info/top_level.txt
