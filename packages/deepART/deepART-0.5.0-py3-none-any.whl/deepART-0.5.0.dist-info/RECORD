@@ -1,0 +1,13 @@
+deepART/__init__.py,sha256=iuDJT_vyLqliaL2KArVv0MDdAJs6WGuYblLGDMEA5Gs,290
+deepART/dataset/__init__.py,sha256=GKve3MiEt32djA2qMYkKBFyjR7Oook0kfvCHtfO4sOY,55
+deepART/dataset/gen_dataset.py,sha256=NR-8SaHKNWf1o49NTlp8VNj8-HRNZ-tPxPyQKIBUuhw,6824
+deepART/metrics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepART/nlp/__init__.py,sha256=KKazsuuUo_Xa0jEqEBxPcvrz1uucb7B1KDkYYLdx4vU,23
+deepART/nlp/chunker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepART/nlp/cooc_vec/__init__.py,sha256=YTsu7_HzUf64n2G6Jt51Zc2fqcpdHPGT7w9Y04ffWLQ,27
+deepART/torch/__init__.py,sha256=XIY2H5d6khT5v_FYGCcXsW-0QeYr5oz4C4BVS4JY6wo,22
+deepART-0.5.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+deepART-0.5.0.dist-info/METADATA,sha256=kbdiV9p_mGJym-67lGyf5E0XI3qZbUo9XqKbe9g77MQ,484
+deepART-0.5.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+deepART-0.5.0.dist-info/top_level.txt,sha256=19D6eiJvcuVtzbKem_1a0HQ7Z3P_VSvQDkv0m7D4jLk,8
+deepART-0.5.0.dist-info/RECORD,,
