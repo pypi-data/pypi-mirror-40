@@ -1,0 +1,15 @@
+allennlp_runmodel/__init__.py,sha256=GcqU3k1WGQxpfvrsRrvE9HddfD0rvseolmVA5VTqBZc,90
+allennlp_runmodel/__main__.py,sha256=j7VbpmzwlsLMFlHQP3fcOTFRp10BHRJA3qTkjxruWyg,119
+allennlp_runmodel/_version.py,sha256=kM8B9tWJzEXX_FdC_0hAClVs4ogvKSGQIOPv8fS6glo,116
+allennlp_runmodel/globvars.py,sha256=lJoIOkXePegOlpNJ6A6l7gWaFXMSRYdY7rWebtNZWoo,224
+allennlp_runmodel/version.py,sha256=hZSaRX_FUgisuUxxtDjD6eAtUemd28LHjp_sUE7M9P8,203
+allennlp_runmodel/webservice.py,sha256=QfnWP3rVrMqf4TG4gN6_VF5tOadAw-kCxjWmD_SSJJs,1447
+allennlp_runmodel/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+allennlp_runmodel/commands/run.py,sha256=mTVlTf_4HVJPkvYmCqlxU29BwYXSl4WjhndLDXe1D-U,9680
+allennlp_runmodel-0.2.1.dist-info/AUTHORS.md,sha256=GJ30tfYzt1Nf9OfbxjxE9vhE0Vm1NaToMHvyqCMGsus,51
+allennlp_runmodel-0.2.1.dist-info/METADATA,sha256=CGqBFMcjHnZYK7C0mHa3Jtz3NN05N5_b9E0VGKF-IHs,4165
+allennlp_runmodel-0.2.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+allennlp_runmodel-0.2.1.dist-info/entry_points.txt,sha256=HT1lAril_Uel1O23OLsarasFkKsUAPoFDbfDlu_OoVY,74
+allennlp_runmodel-0.2.1.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+allennlp_runmodel-0.2.1.dist-info/top_level.txt,sha256=y1X4mK-Y8YdhrwaOOWj6BsgXUuV9cnFlvcbKQKhEfZM,18
+allennlp_runmodel-0.2.1.dist-info/RECORD,,
