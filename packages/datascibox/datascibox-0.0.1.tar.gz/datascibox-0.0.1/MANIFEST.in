@@ -1,0 +1,14 @@
+include README.md
+include requirements.txt
+# added by check_manifest.py
+include *.lock
+include *.md
+include *.sh
+include Pipfile
+recursive-include dist *.gz
+recursive-include dist *.whl
+recursive-include docs *.bat
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs Makefile
+recursive-include tests *.py
