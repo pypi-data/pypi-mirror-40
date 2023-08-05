@@ -1,0 +1,10 @@
+README.md
+setup.py
+autojira/__init__.py
+autojira/autojira.py
+autojira.egg-info/PKG-INFO
+autojira.egg-info/SOURCES.txt
+autojira.egg-info/dependency_links.txt
+autojira.egg-info/not-zip-safe
+autojira.egg-info/requires.txt
+autojira.egg-info/top_level.txt
