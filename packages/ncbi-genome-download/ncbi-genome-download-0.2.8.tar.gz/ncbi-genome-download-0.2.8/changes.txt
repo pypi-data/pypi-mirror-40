@@ -1,0 +1,20 @@
+This is mainly a bugfix release fixing a UnicodeEncodeError when writing to a
+--metadata-table file with non-ASCII entries like in record GCF_000234725.1.
+
+Thanks to @danudwary and @jananiravi for the error reports.
+
+Also thanks to Tessa Pierce and Joe Healey for their contributions.
+
+Detailed changes:
+
+Joe Healey (1):
+      update readme with conda install
+
+Kai Blin (3):
+      config: Change a tab indent to spaces
+      core: Open metatable file with utf-8 encoding
+      Bump version number to 0.2.8
+
+Tessa Pierce (1):
+      add support for rm (repeat masked) eukaryotic genomes
+
