@@ -1,0 +1,4 @@
+[console_scripts]
+wow2text = wowlint.wow2text:main
+wowlint = wowlint.command:main
+
