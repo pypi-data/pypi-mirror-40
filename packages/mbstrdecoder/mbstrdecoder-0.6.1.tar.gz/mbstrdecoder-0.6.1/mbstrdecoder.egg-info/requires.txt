@@ -1,0 +1,16 @@
+setuptools>=38.3.0
+
+[all]
+chardet>=3.0.4
+
+[build]
+wheel
+
+[release]
+releasecmd>=0.0.12
+
+[test]
+pytest-cov
+pytest
+six
+tox
