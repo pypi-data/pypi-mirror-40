@@ -1,0 +1,10 @@
+clusterOp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/hashCodeGen.py,sha256=MJFK8NyqmxtqoHJx06ggtkFX86yVycPE7AMOtF6i29Q,542
+utils/localMan.py,sha256=odRwPkofiW8aW0emaC5LQexApR4KY-ZHJBPc62rNZ_I,1161
+utils/mailMan.py,sha256=gAByiX_dSrqLnoNdp_oc_c-xDZ4Rwe4EYXeJ4fgC7Dw,343
+utils/slgcodes.py,sha256=SkpWjp-lHp0YQFeQSULp8qILL1pXMiSIHIo8oPgbHBc,589
+salaga-0.0.1a1.dist-info/METADATA,sha256=NY6Ys84KMXW7hEodd2eIZP5WcXrMTBpkGwidBvRm9Ug,629
+salaga-0.0.1a1.dist-info/WHEEL,sha256=YO0P_oFqt6DWX0LhbH7jsyzb3BUtoq2kERtqGsXDJHs,92
+salaga-0.0.1a1.dist-info/top_level.txt,sha256=VcLm6TMW1aUDZZI_CvhqisW6lUf4miSTh1d7_kqgxKw,16
+salaga-0.0.1a1.dist-info/RECORD,,
