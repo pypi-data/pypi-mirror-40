@@ -1,0 +1,13 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+canonical_domain/__init__.py
+canonical_domain/middleware.py
+django_canonical_domain.egg-info/PKG-INFO
+django_canonical_domain.egg-info/SOURCES.txt
+django_canonical_domain.egg-info/dependency_links.txt
+django_canonical_domain.egg-info/not-zip-safe
+django_canonical_domain.egg-info/top_level.txt
