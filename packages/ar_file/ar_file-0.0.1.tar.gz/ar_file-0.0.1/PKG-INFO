@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: ar_file
+Version: 0.0.1
+Summary: Unix archive file library
+Home-page: https://github.com/nirenjan/ar_file
+Author: Nirenjan Krishnan
+Author-email: nirenjan@gmail.com
+License: UNKNOWN
+Description: =======
+        ar_file
+        =======
+        -------------------------
+        Unix archive file handler
+        -------------------------
+        
+        ar_file is a Python package to create, read, write and append to `AR archive
+        files`_
+        
+        It is inspired by the tarfile_ and zipfile_ modules, which are part of Python's
+        standard library.
+        
+        .. _AR archive files: https://en.wikipedia.org/wiki/Ar_(Unix)
+        .. _tarfile: https://docs.python.org/3/library/tarfile.html
+        .. _zipfile: https://docs.python.org/3/library/zipfile.html
+        
+        ar_file is capable of reading the System V/GNU format only. Future releases
+        will add support for BSD and Solaris 64-bit formats.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Classifier: Operating System :: OS Independent

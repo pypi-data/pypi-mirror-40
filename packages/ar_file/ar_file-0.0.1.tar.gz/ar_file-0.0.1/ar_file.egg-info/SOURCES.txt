@@ -1,0 +1,7 @@
+README.rst
+setup.py
+ar_file/__init__.py
+ar_file.egg-info/PKG-INFO
+ar_file.egg-info/SOURCES.txt
+ar_file.egg-info/dependency_links.txt
+ar_file.egg-info/top_level.txt
