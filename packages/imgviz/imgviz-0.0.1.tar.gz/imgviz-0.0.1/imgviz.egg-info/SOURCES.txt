@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+imgviz/__init__.py
+imgviz/colorize.py
+imgviz.egg-info/PKG-INFO
+imgviz.egg-info/SOURCES.txt
+imgviz.egg-info/dependency_links.txt
+imgviz.egg-info/top_level.txt
