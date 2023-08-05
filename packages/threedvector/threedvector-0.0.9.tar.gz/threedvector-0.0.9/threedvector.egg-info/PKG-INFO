@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: threedvector
+Version: 0.0.9
+Summary: A package to work with 3D vectors in Spherical and Cartesian coordinates.
+Home-page: https://gitlab.com/gpaul.nel/threedvector
+Author: Paul Nel
+Author-email: gpaul.nel@gmail.com
+License: UNKNOWN
+Description: # threedvector Package
+        
+        threedvector is a package providing common methods for working with 3D vectors in both Spherical and Cartesian coordinates.
+        
+        Vectors are stored in Spherical format but can be created in both Spherical and Cartesian formats.
+        
+        ## Methods
+        
+        ### ___init__(radius_x=0, theta_y=0, phi_z=0, coords="spherical")_
+        Default Vector creation is in the Spherical coordinate system where `coords` is set to "spherical".  `radius_x` represents the length of the vector, `theta_y` the polar angle, theta and  `phi_z` the azimuthal angle, phi.  
+        
+        A Vector can be created using Cartesian coordinates with `coords` set to "cartesian" instead of "sperical".  In this case `radius_x` represents the `x` coordinate, `theta_y` the `y` coordinate and  `phi_z` the `z` coordinate.
+        
+        ### _to_spherical([x, y, z])_
+        Returns a Vector object based on `[x, y, z]` Cartesian cooridates.
+        
+        ### _to_cartesian()_
+        Returns a list in the form of `[x, y, z]` representing the corresponding Cartesian coordinates for a vector.
+        
+        ### _is_same(s_vector)_
+        Compares the length as well as angles theta and phi of vector and `s_vector` to determine equality.  This is different to '=' which only checks for equality of the vector length.
+        
+        ### _dot(s_vector)_
+        Returns the resultant scalar dot product of a vector with `s_vector`.
+        
+        ### _cross(s_vector)_
+        Returns  `Vector` resulting from the cross product of a vector with `s_vector`.
+        
+        ### _angle(s_vector)_
+        Returns the in-plane angle in degrees between a vector and `s_vector`.
+        
+        ### _magnitude()_
+        Returns the length of a vector.
+        
+        ### _unit()_
+        Returns the corresponding unit vector of a vector.
+        
+        ### _addition_ and _subtraction_
+        Returns resulting Vector.  Normal addition and subtraction is done through Cartesian addition and subtraction operations.
+        
+        ### _multplication_
+        Multiplication is implemented as scalar multiplication only.  For dot and cross products the corresponding methods should be used.
+        
+        ### _comparison_
+        All comparison operators returns comparison with length of vectors only.
+        
+        ## Atributes
+        
+        ### _radius_
+        Returns the length of a vector
+        
+        ### _theta_
+        Returns the angle theta of a vector in degrees
+        
+        ### _phi_
+        Returns the ancle phi of a vector in degrees
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
