@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: jaraco.path
+Version: 2.0
+Summary: miscellaneous path functions
+Home-page: https://github.com/jaraco/jaraco.path
+Author: Jason R. Coombs
+Author-email: jaraco@jaraco.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
+Requires-Dist: six
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: jaraco.packaging (>=3.2) ; extra == 'docs'
+Requires-Dist: rst.linker (>=1.9) ; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: pytest (!=3.7.3,>=3.5) ; extra == 'testing'
+Requires-Dist: pytest-checkdocs ; extra == 'testing'
+Requires-Dist: pytest-flake8 ; extra == 'testing'
+Requires-Dist: pyobjc ; (sys_platform == "darwin") and extra == 'testing'
+
+.. image:: https://img.shields.io/pypi/v/jaraco.path.svg
+   :target: https://pypi.org/project/jaraco.path
+
+.. image:: https://img.shields.io/pypi/pyversions/jaraco.path.svg
+
+.. image:: https://img.shields.io/travis/jaraco/jaraco.path/master.svg
+   :target: https://travis-ci.org/jaraco/jaraco.path
+
+.. .. image:: https://img.shields.io/appveyor/ci/jaraco/skeleton/master.svg
+..    :target: https://ci.appveyor.com/project/jaraco/skeleton/branch/master
+
+.. image:: https://img.shields.io/travis/jaraco/jaraco.path/master.svg
+   :target: https://travis-ci.org/jaraco/jaraco.path
+
+Hidden File Detection
+---------------------
+
+``jaraco.path`` provides cross platform hidden file detection::
+
+    from jaraco import path
+    if path.is_hidden('/'):
+        print("Your root is hidden")
+
+    hidden_dirs = filter(is_hidden, os.listdir('.'))
+
+
