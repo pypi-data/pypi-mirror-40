@@ -1,0 +1,3 @@
+[console_scripts]
+awsudo=awsudo:awsudo.main
+
