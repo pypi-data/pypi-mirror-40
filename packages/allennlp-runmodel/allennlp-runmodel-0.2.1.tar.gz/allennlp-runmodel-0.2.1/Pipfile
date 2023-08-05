@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+allennlp = "*"
+aiohttp = "*"
+click = "*"
+PyYAML = "*"
+
+[dev-packages]
+"autopep8" = "*"
+pylint = "*"
+rope="*"
+wheel = "*"
+twine = "*"
+
+[requires]
+python_version = "3.6"
