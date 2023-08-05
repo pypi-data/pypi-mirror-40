@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: exalt
+Version: 0.1.2
+Summary: Namespace promotion done right!
+Home-page: None
+Author: Philip Trauner
+Author-email: philip.trauner@arztpraxis.io
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
