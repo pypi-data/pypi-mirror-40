@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+addonupdater/__init__.py
+addonupdater/cli.py
+addonupdater/updater.py
+addonupdater.egg-info/PKG-INFO
+addonupdater.egg-info/SOURCES.txt
+addonupdater.egg-info/dependency_links.txt
+addonupdater.egg-info/entry_points.txt
+addonupdater.egg-info/requires.txt
+addonupdater.egg-info/top_level.txt
