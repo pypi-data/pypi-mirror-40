@@ -1,0 +1,11 @@
+README.md
+setup.py
+baa/__init__.py
+baa/baa.py
+baa/mail_template
+baa/template.py
+baa.egg-info/PKG-INFO
+baa.egg-info/SOURCES.txt
+baa.egg-info/dependency_links.txt
+baa.egg-info/not-zip-safe
+baa.egg-info/top_level.txt
