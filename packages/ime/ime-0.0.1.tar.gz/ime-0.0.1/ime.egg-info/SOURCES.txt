@@ -1,0 +1,14 @@
+README.md
+setup.py
+ime/__init__.py
+ime/config.py
+ime/engine.py
+ime/trie.py
+ime/utils.py
+ime.egg-info/PKG-INFO
+ime.egg-info/SOURCES.txt
+ime.egg-info/dependency_links.txt
+ime.egg-info/requires.txt
+ime.egg-info/top_level.txt
+tests/__init__.py
+tests/test_trie.py
