@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: phoenix-letter
+Version: 0.1.0
+Summary: CLI to move messages from a AWS SQS Queue to another
+Home-page: https://github.com/renanvieira/phoenix-letter
+Author: Renan Vieira
+Author-email: me@renanvieira.net
+License: MIT
+Description: UNKNOWN
+Keywords: AWS,SQS,Queue,DLQ,Dead,Letter,Queue
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7
