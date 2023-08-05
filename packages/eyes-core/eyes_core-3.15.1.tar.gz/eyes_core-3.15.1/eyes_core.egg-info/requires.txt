@@ -1,0 +1,6 @@
+attrs>=18
+Pillow>=5.0.0
+requests>=2.1.0
+
+[:python_version <= "3.4"]
+typing>=3.5.2
