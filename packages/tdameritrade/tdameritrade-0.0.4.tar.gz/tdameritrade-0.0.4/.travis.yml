@@ -1,0 +1,21 @@
+language: python
+cache: pip
+
+python:
+  - "3.6"
+
+install:
+    - pip install -r requirements.txt
+    - pip install nose flake8 pylint codecov
+
+script: make test
+
+after_success:
+    - codecov --token ce4cddf7-dad5-4d08-8e93-ae8cd7d98507
+
+branches:
+  only:
+  - master
+
+notifications:
+  email: false
