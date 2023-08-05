@@ -1,0 +1,3 @@
+[console_scripts]
+ckan-cloud-operator = ckan_cloud_operator.cli:main
+
