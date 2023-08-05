@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+squabble/__init__.py
+squabble/__main__.py
+squabble/cli.py
+squabble/config.py
+squabble/lint.py
+squabble/reporter.py
+squabble/rule.py
+squabble.egg-info/PKG-INFO
+squabble.egg-info/SOURCES.txt
+squabble.egg-info/dependency_links.txt
+squabble.egg-info/entry_points.txt
+squabble.egg-info/requires.txt
+squabble.egg-info/top_level.txt

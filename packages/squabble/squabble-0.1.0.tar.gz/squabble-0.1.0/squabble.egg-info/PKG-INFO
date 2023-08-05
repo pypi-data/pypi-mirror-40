@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: squabble
+Version: 0.1.0
+Summary: An extensible linter for SQL
+Home-page: https://github.com/erik/squabble
+Author: Erik Price
+License: GPLv3+
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: SQL
+Requires-Python: >=3.5
