@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/kep_simgen/__init__.py
+src/kep_simgen/kepware_real_to_simulation.py
+src/kepsimgen.egg-info/PKG-INFO
+src/kepsimgen.egg-info/SOURCES.txt
+src/kepsimgen.egg-info/dependency_links.txt
+src/kepsimgen.egg-info/entry_points.txt
+src/kepsimgen.egg-info/requires.txt
+src/kepsimgen.egg-info/top_level.txt
