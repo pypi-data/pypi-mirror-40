@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "features_react/index": true
+  }
+}
