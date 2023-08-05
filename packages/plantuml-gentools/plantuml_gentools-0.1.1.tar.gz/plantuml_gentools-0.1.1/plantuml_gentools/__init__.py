@@ -1,0 +1,211 @@
+import sys
+import plantuml
+import traceback
+
+# Pending points
+# - Alings grid options
+
+
+id = 0
+class Object():
+
+    def __init__(self, type="together", name="", color="", top_margin=1, bottom_margin=1, left_margin=10, right_margin=10, include_in=None):
+        global id
+        id += 1
+
+        self.id = "ID_%i" % id
+        self.type = type
+        self.name = name
+        self.color = color
+        self.invert_draw_dir = True
+        self.top_margin = top_margin 
+        self.bottom_margin = bottom_margin 
+        self.left_margin = left_margin 
+        self.right_margin = right_margin
+
+        self.include_list = []
+        self.included = None
+
+        self.connection_list = []
+
+        if include_in is not None:
+            include_in.Include(self)
+
+    def Include(self, include_objs):
+        if type(include_objs) == list:
+            for obj in include_objs:
+                if obj.included is not None:
+                    obj.included.include_list.remove(obj)
+                self.include_list.append(obj)
+                obj.included = self
+        else:
+            if include_objs.included is not None:
+                include_objs.included.include_list.remove(include_objs)
+            self.include_list.append(include_objs)
+            include_objs.included = self
+
+    def Connect(self, connect_objs, color="", style="-", dir=1, lengh=0, l_conn="<", r_conn=">", invert=False, hidden = False):
+
+        while dir > 3:
+            dir -= 4
+
+        if dir <= 0:
+            dir_code="right"
+        elif dir == 1:
+            dir_code="down"
+        elif dir == 2:
+            dir_code="left"
+            #dir_code="right"
+            #invert = not invert
+        elif dir == 3:
+            dir_code="up"
+            #dir_code="down"
+            #invert = not invert
+
+        sep="-"
+        for i in range(0,lengh):
+            sep+="-"
+
+
+        if hidden:
+            connector = "-[hidden]%s%s" % (dir_code, sep)
+        else:
+            connector="%s-%s%s%s" % (l_conn, dir_code, sep, r_conn)
+            connector=connector.replace("-", style)
+        
+        if type(connect_objs) == list:
+            for obj in connect_objs:
+                self.connection_list.append([obj, connector, color, invert])
+        else:
+            self.connection_list.append([connect_objs, connector, color, invert])
+
+    def GenObjectCode(self):
+        code_line = ""
+
+        top_margin=""
+        for i in range(0,self.top_margin):
+            top_margin+="\\n"
+        bottom_margin=""
+        for i in range(0,self.bottom_margin):
+            bottom_margin+="\\n"
+        left_margin=""
+        for i in range(0,self.left_margin):
+            left_margin+=" "
+        right_margin=""
+        for i in range(0,self.right_margin):
+            right_margin+=" "
+
+        name = self.name
+
+        name= name.replace("\n", "\\n")
+        name = name.replace("\\n", ("%s\\n%s") % (right_margin, left_margin))
+        name = "%s%s%s%s%s" % (top_margin, left_margin, name, right_margin, bottom_margin)
+
+
+        if self.name != "":
+            code_line = ("%s \"%s\" as %s") % (self.type, name, self.id)
+        else:
+            code_line = ("%s %s") % (self.type, self.id)
+
+        if self.color != "":
+            if self.color.startswith("#"):
+                code_line += (" %s") %(self.color)
+            else:
+                code_line += (" #%s") %(self.color)
+
+        return code_line
+
+    def GenContainerCode(self):
+        def CodeIterate(obj, used_object, indent=""):
+            code = ""
+            if obj in used_object:
+                print(("Object %s re-used") % (obj.id))
+                return code
+
+            used_object.append(obj)
+
+            code +="%s%s" % (indent, obj.GenObjectCode())
+            if len(obj.include_list) > 0:
+                code+="{\n"
+                for include_obj in obj.include_list:
+                    code+=CodeIterate(include_obj, used_object, (("%s\t") % (indent)))
+                code+="%s}" % indent
+            code+="\n"
+            return code
+
+        def GenConnetionCode(main_obj, objects_list = None):
+            code = ""
+            for obj, connector, color, invert in main_obj.connection_list:
+                if color != "":
+                    if not color.startswith("#"):
+                        color = ("#%s") %(color)
+                if objects_list is not None:
+                    if not obj in objects_list:
+                        continue
+                if not invert:
+                    code += (("%s %s %s %s\n") % (main_obj.id, connector, obj.id, color))
+                else:
+                    code += (("%s %s %s %s\n") % (obj.id, connector, main_obj.id, color))
+            return code
+
+        code=""
+
+        code +="@startuml\n"
+
+        if self.name != "":
+            code +="title %s\n" % self.name
+
+        if self.invert_draw_dir:
+            code += "left to right direction\n"
+
+        used_object = []
+        code+=CodeIterate(self, used_object)
+        code+="\n"
+
+        for obj in used_object:
+            code += GenConnetionCode(obj, used_object)
+
+        code += "\n"
+
+        code += "@enduml\n"
+
+
+        code += "\n\n"
+        code += "'>=============\n"
+        code += "'> SCRIPT CODE \n"
+        code += "'>=============\n"
+        code += "\n"
+        try:
+            stack = traceback.extract_stack()
+            script_file = stack[0][0]
+
+            with open(script_file, "r") as file:
+                for line in file:
+                    code += "'> %s" % line
+
+        except:
+            pass
+
+
+        return code
+
+    def GenContainerURL(self, format="png", print_URL=False, print_code=False):
+        code = self.GenContainerCode()
+
+        url = "http://www.plantuml.com/plantuml/" + format + "/" + plantuml.deflate_and_encode(code)
+        if self.name != "":
+            url = ("![%s](%s)") % (self.name, url)
+        else:
+            url = ("![image](%s)") % (url)
+
+        if print_code:
+            print(code)
+        if print_URL:
+            print(url)
+
+        return url
+
+    def SaveContainerPlantUML(self, file_name="out"):
+        f = open(("%s.puml" % (file_name)), 'w+')
+        f.write(self.GenContainerCode())
+        f.close()
