@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: tornado_cookiejar
+Version: 0.1.1
+Summary: Cookiejar with AsyncHTTPClient support on tornado
+Home-page: https://github.com/hw20686832/tornado_cookiejar
+Author: David Wong
+Author-email: stef-hw@163.com
+License: UNKNOWN
+Download-URL: https://github.com/hw20686832/tornado_cookiejar/archive/v0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: tornado,cookiejar,cookie
+Platform: UNKNOWN
