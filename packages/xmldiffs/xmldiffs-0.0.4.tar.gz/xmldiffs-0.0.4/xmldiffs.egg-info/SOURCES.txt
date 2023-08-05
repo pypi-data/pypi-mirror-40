@@ -1,0 +1,9 @@
+README.md
+setup.py
+xmldiffs/__init__.py
+xmldiffs/command_line.py
+xmldiffs.egg-info/PKG-INFO
+xmldiffs.egg-info/SOURCES.txt
+xmldiffs.egg-info/dependency_links.txt
+xmldiffs.egg-info/entry_points.txt
+xmldiffs.egg-info/top_level.txt
