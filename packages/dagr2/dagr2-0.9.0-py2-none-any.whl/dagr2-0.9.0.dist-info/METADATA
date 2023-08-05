@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: dagr2
+Version: 0.9.0
+Summary: a deviantArt image downloader script written in Python
+Home-page: UNKNOWN
+Author: Rubin
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: MechanicalSoup (>=0.10.0)
+Requires-Dist: plyer
+Requires-Dist: colorama
+Requires-Dist: pyfiglet
+Requires-Dist: progress
+
+UNKNOWN
+
+
