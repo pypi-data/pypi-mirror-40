@@ -1,0 +1,10 @@
+README.md
+setup.py
+airtablemock/__init__.py
+airtablemock/__init__.pyi
+airtablemock/py.typed
+airtablemock.egg-info/PKG-INFO
+airtablemock.egg-info/SOURCES.txt
+airtablemock.egg-info/dependency_links.txt
+airtablemock.egg-info/requires.txt
+airtablemock.egg-info/top_level.txt
