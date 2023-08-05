@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: cs.serialise
+Version: 20190103
+Summary: Some serialising functions, now mostly a thin wrapper for the cs.binary functions.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: Some serialising functions, now mostly a thin wrapper for the cs.binary functions.
+        
+        ## Function `get_bs(data, offset=0)`
+        
+        Read an extensible byte serialised unsigned int from `data` at `offset`.
+        Return value and new offset.
+        
+        Continuation octets have their high bit set.
+        The value is big-endian.
+        
+        If you just have a bytes instance, this is the go. If you're
+        reading from a stream you're better off with `cs.binary.BSUint`.
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
