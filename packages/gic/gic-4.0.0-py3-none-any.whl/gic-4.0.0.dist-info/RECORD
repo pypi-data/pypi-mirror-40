@@ -1,0 +1,10 @@
+gic/__init__.py,sha256=eULSXECXzi2xLiHtqphn16Sx_mwRqMwK0qGNx-gXwrU,124
+gic/cli.py,sha256=TCgvI33Hw8vEa6QCMaWa8nAN-HrfFhwVxFJpL-IWrk4,1819
+gic/compress.py,sha256=BzLD9P-bv169alJ0Y-nsmGevaI-Ddr3vxzhxCsVKxSQ,1756
+gic/main.py,sha256=zW9hsrGJtFTC_G_Vjj8KOMoLCuIHV6J_DsKEHhMXSSU,2922
+gic-4.0.0.dist-info/LICENSE,sha256=5vaWDkK_ir0UdcvbJvnodk2ZW0Y4Z4NU2-4KnpWxeiw,20118
+gic-4.0.0.dist-info/METADATA,sha256=uXEhTdAmtuYQ7KB-SQ8_LzaegIn4yGbHYiy-L-ckpO8,1878
+gic-4.0.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+gic-4.0.0.dist-info/entry_points.txt,sha256=6C4FXaJphxoeoaWY2twV7fPFAnsanNIz0Hp3cNFK5q4,60
+gic-4.0.0.dist-info/top_level.txt,sha256=gC9okjk22bywV7aUJWsU1oh-TcrkX8JHaQhCMR-UR4U,4
+gic-4.0.0.dist-info/RECORD,,
