@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bin/tvsleep
+tvsleep/__init__.py
+tvsleep/tvsleep.py
+tvsleep.egg-info/PKG-INFO
+tvsleep.egg-info/SOURCES.txt
+tvsleep.egg-info/dependency_links.txt
+tvsleep.egg-info/not-zip-safe
+tvsleep.egg-info/top_level.txt
