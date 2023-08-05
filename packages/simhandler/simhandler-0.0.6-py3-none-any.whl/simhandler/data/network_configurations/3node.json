@@ -1,0 +1,48 @@
+{
+  "lookup_table": "para_model_2018-12-24_11-26-29.555832",
+  "connections": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "start_datetime": "2016-04-01 0:0:0",
+  "profiles": [
+    {
+      "id": "example1",
+      "logic_type": "binary",
+      "storage": false,
+      "generation": true,
+      "load": true
+    },
+    {
+      "id": "example2",
+      "logic_type": "binary",
+      "storage": false,
+      "generation": false,
+      "load": true
+    },
+    {
+      "id": "example3",
+      "logic_type": "binary",
+      "storage": false,
+      "generation": false,
+      "load": true
+    }
+  ],
+  "study": {
+    "description": "binary2-m4y16-super-load"
+  },
+  "profile_path": "./"
+}
