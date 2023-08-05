@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: awsjar
+Version: 0.0.5
+Summary: Jar saves the state of your AWS Lambda functions
+Home-page: https://github.com/ysawa0/awsjar
+Author: Yuki Sawa
+Author-email: yukisawa@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Requires-Dist: boto3 (>=1.7.4)
+
+UNKNOWN
+
+

@@ -1,0 +1,9 @@
+awsjar/__init__.py,sha256=56M_39qxv3QUoz_1Ue5kabD7ihYe4SCBtua1gOFzEMc,145
+awsjar/bucket.py,sha256=gsj_YQScEb2TVGxwtnIiJntMyJQJcPqXkNxZiBd5_Pc,1727
+awsjar/exceptions.py,sha256=OsLFJdme6CbX29UG0LRU_GcZJf-CSyeymODJm4g6GAg,40
+awsjar/jar.py,sha256=XrEcDuENLgdxtqAxVR1kt3n1YMRE7YdCYu3U_HRfZPA,2249
+awsjar/utils.py,sha256=cCjQ-JNsfwJOtmkinecoLMCpzIltEEDbqPZRL8ECyeY,629
+awsjar-0.0.5.dist-info/METADATA,sha256=8mlIl4A3XilbUSgMBlKOnMAenAKMG4v_gvZnqGGGMJg,525
+awsjar-0.0.5.dist-info/RECORD,,
+awsjar-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+awsjar-0.0.5.dist-info/top_level.txt,sha256=lZ41J_BlTR4bz9xIU7nDUQRQj615LavM2305EILdmQo,7
