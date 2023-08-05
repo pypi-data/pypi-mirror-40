@@ -1,0 +1,17 @@
+README.rst
+setup.cfg
+setup.py
+rest_client/__init__.py
+rest_client/auth.py
+rest_client/conf.py
+rest_client/exception.py
+rest_client/resources.py
+rest_client/utils.py
+rest_client/validator.py
+test/test_resources.py
+test/test_rest_client.py
+universal_rest_client.egg-info/PKG-INFO
+universal_rest_client.egg-info/SOURCES.txt
+universal_rest_client.egg-info/dependency_links.txt
+universal_rest_client.egg-info/requires.txt
+universal_rest_client.egg-info/top_level.txt
