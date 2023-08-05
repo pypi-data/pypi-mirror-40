@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gel/__init__.py
+gel/gelcd.py
+gel/gelfista.py
+gel/gelpaths.py
+torchgel.egg-info/PKG-INFO
+torchgel.egg-info/SOURCES.txt
+torchgel.egg-info/dependency_links.txt
+torchgel.egg-info/requires.txt
+torchgel.egg-info/top_level.txt
