@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+transitleastsquares/__init__.py
+transitleastsquares.egg-info/PKG-INFO
+transitleastsquares.egg-info/SOURCES.txt
+transitleastsquares.egg-info/dependency_links.txt
+transitleastsquares.egg-info/requires.txt
+transitleastsquares.egg-info/top_level.txt
