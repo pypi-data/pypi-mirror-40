@@ -1,0 +1,5 @@
+version: "3.6"
+
+services:
+  http:
+    image: nginx:1.15-alpine
