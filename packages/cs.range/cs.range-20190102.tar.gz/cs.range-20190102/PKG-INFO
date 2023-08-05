@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: cs.range
+Version: 20190102
+Summary: a Range class implementing compact integer ranges with a set-like API, and associated functions
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: A Range is an object resembling a set but optimised for contiguous
+        ranges of int members.
+        
+        ## Function `overlap(span1, span2)`
+        
+        Return a list `[start,end]` denoting the overlap of two spans.
+        
+        Example:
+        
+            >>> overlap([1,9], [5,13])
+            [5, 9]
+        
+        ## Class `Range`
+        
+        A collection of ints that collates adjacent ints.
+        
+        The interface is as for a `set` with additional methods:
+        * `spans()`: return an iterable of `Spans`, with `.start`
+          included in each `Span` and `.end` just beyond
+        
+        Additionally, the update/remove/etc methods have a secondary
+        calling signature: `(start,end)`, which is the same as passing
+        in `Range(start,end)` but much more efficient.
+        
+        ## Class `Span`
+        
+        MRO: `Span`, `builtins.tuple`  
+        A namedtuple with `.start` and `.end` attributes.
+        
+        ## Function `spans(items)`
+        
+        Return an iterable of `Spans` for all contiguous sequences in
+        `items`.
+        
+        Example:
+        
+            >>> list(spans([1,2,3,7,8,11,5]))
+            [1:4, 7:9, 11:12, 5:6]
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
