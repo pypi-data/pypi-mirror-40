@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+VERSION.txt
+setup.py
+ckan_cloud_operator/DeisCkanInstance.py
+ckan_cloud_operator/__init__.py
+ckan_cloud_operator/cli.py
+ckan_cloud_operator/datastore_permissions.py
+ckan_cloud_operator/kubectl.py
+ckan_cloud_operator.egg-info/PKG-INFO
+ckan_cloud_operator.egg-info/SOURCES.txt
+ckan_cloud_operator.egg-info/dependency_links.txt
+ckan_cloud_operator.egg-info/entry_points.txt
+ckan_cloud_operator.egg-info/requires.txt
+ckan_cloud_operator.egg-info/top_level.txt
