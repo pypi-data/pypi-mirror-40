@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: directory-proxy
+Version: 0.1.0
+Summary: Proxy
+Home-page: https://github.com/uktrade/directory-proxy
+Author: Department for International Trade
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: django (<2.0a1,>=1.11.15)
+Requires-Dist: django-revproxy (<1.0.0,>=0.9.15)
+Requires-Dist: django-environ (<1.0.0,>=0.4.5)
+Requires-Dist: gunicorn (<20.0.0,>=19.9.0)
+Requires-Dist: raven (<7.0.0,>=6.10.0)
+Requires-Dist: sigauth (<5.0.0,>=4.0.1)
+Requires-Dist: directory-components (<4.0.0,>=3.5.0)
+Provides-Extra: test
+Requires-Dist: pytest (==4.0.2) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.6.0) ; extra == 'test'
+Requires-Dist: pytest-sugar (==0.9.2) ; extra == 'test'
+Requires-Dist: pytest-django (==3.4.4) ; extra == 'test'
+Requires-Dist: flake8 (==3.6.0) ; extra == 'test'
+Requires-Dist: codecov (==2.0.15) ; extra == 'test'
+Requires-Dist: requests-mock (==1.5.2) ; extra == 'test'
+Requires-Dist: twine (<2.0.0,>=1.11.0) ; extra == 'test'
+Requires-Dist: wheel (<1.0.0,>=0.31.0) ; extra == 'test'
+Requires-Dist: setuptools (<39.0.0,>=38.6.0) ; extra == 'test'
+
+# directory-proxy
+
+[![code-climate-image]][code-climate]
+[![circle-ci-image]][circle-ci]
+[![codecov-image]][codecov]
+
+Proxy for rejecting non-whitelisted IP addresses.
+
+---
+
+Proxy sets a [Hawk](https://github.com/hueniverse/hawk) signature header that the upstream service can check, rejecting requests that do not have a valid signature.
+
+## Installation
+
+`pip install directory-proxy`
+
+## Usage
+
+Proxy can be ran as a standalone service or as a WSGI worker running alongside the upstream service.
+
+### WSGI worker
+
+The proxy can be run on the same box as the upstream service. Install proxy on the same box as the upstream service then run the WSGI worker:
+
+```sh
+DJANGO_SETTINGS_MODULE=directory_proxy.conf.settings \
+gunicorn directory_proxy.conf.wsgi --bind 0.0.0.0:$UPSTREAM_PORT
+```
+
+### Standalone service
+
+If you're unable to run the WSGI worker on the same box as the upstream service then the proxy can be ran as a standlone service.
+
+
+### Configuration
+
+Set the following environment variables to configure the proxy:
+
+| Environment variable                  | Details                                 |
+| ------------------------------------- | --------------------------------------- |
+| IP_RESTRICTOR_ALLOWED_ADMIN_IPS       | Allow IP addresses. Command delimited   |
+| IP_RESTRICTOR_ALLOWED_ADMIN_IP_RANGES | Allow IP ranges. Command delimited      |
+| IP_RESTRICTOR_SKIP_CHECK_ENABLED      | Skip IP check. Check cookie instead     |
+| IP_RESTRICTOR_SKIP_CHECK_SECRET       | Shared secret for checking cookie       |
+| UPSTREAM_DOMAIN                       | Domain of upstream service              |
+| UPSTREAM_SIGNATURE_SECRET             | Hawk shared secret for upstream request |
+| UPSTREAM_SIGNATURE_SENDER_ID          | Hawk sender ID for upstream request     |
+
+
+## Local installation
+
+    $ git clone https://github.com/uktrade/directory-proxy
+    $ cd directory-proxy
+
+## Debugging
+
+### Setup debug environment
+
+    $ make debug
+
+### Run debug webserver
+
+    $ make debug_webserver
+
+### Run debug tests
+
+    $ make debug_test
+
+
+[code-climate-image]: https://codeclimate.com/github/uktrade/directory-proxy/badges/issue_count.svg
+[code-climate]: https://codeclimate.com/github/uktrade/directory-proxy
+
+[circle-ci-image]: https://circleci.com/gh/uktrade/directory-proxy/tree/master.svg?style=svg
+[circle-ci]: https://circleci.com/gh/uktrade/directory-proxy/tree/master
+
+[codecov-image]: https://codecov.io/gh/uktrade/directory-proxy/branch/master/graph/badge.svg
+[codecov]: https://codecov.io/gh/uktrade/directory-proxy
+
+
