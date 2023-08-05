@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: veripupil
+Version: 0.0.2
+Summary: Python classes for optimizing models against veri
+Home-page: http://github.com/bgokden/modeloptimizer
+Author: Berk Gokden
+Author-email: berkgokden@gmail.com
+License: MIT
+Description: # modeloptimizer
+        A python library that automatically optimises ml models
+        
+Keywords: veri service python client ml keras tensorflow
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

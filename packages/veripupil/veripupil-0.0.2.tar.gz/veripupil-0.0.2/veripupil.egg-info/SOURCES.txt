@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+veripupil/__init__.py
+veripupil/hyperparameters.py
+veripupil/hyperparameters_test.py
+veripupil/trainer.py
+veripupil.egg-info/PKG-INFO
+veripupil.egg-info/SOURCES.txt
+veripupil.egg-info/dependency_links.txt
+veripupil.egg-info/requires.txt
+veripupil.egg-info/top_level.txt
