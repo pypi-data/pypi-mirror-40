@@ -1,0 +1,43 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+### Changed
+### Added
+
+## 0.0.6 - 2018-12-27
+### Changed
+- Removed superuser_required decorator, now using user_passes_test
+### Aded
+- Added setting DJINFO_USER_TEST
+
+## 0.0.5 - 2018-12-27
+### Changed
+- Fixed JSON decode for Python 2.7
+- Fixed settings masking inside dictionaries
+### Added
+- JSON view tests
+- JSON view documentation
+
+## 0.0.4 - 2018-12-26
+### Changed
+- Fixed typos
+
+## 0.0.3 - 2018-12-26
+### Added
+- Backported TestClient.force_login for django 1.8
+- Fixed unit tests
+
+## 0.0.2 - 2018-12-26
+### Added
+- Unit tests
+- Superuser decorator
+### Changed
+- View is not accessible only to superusers
+
+## 0.0.1 - 2018-12-26
+### Added
+- Initial release
