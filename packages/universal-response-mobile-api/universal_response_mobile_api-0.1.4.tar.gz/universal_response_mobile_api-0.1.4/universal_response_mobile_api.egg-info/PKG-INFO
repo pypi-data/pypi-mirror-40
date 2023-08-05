@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: universal-response-mobile-api
+Version: 0.1.4
+Summary: Add universal response for your API
+Home-page: https://bitbucket.org/anmv/universal-response-mobile-api
+Author: Damir Dautov, Alexandr Makarenko, Anton Medvedev
+Author-email: exorciste.2007@gmail.com
+License: MIT
+Description: Library for django rest framework
+        
+        **Install**
+        
+        pip install universal-response-mobile-api
+        
+        **Use**
+        
+        import universal_response_mobile_api as u_mobile_api
+        
+        **1. Decorator**
+         
+        Add your Django project, for default behavior: 
+        
+        file: `settings.py`
+         
+             import universal_response_mobile_api as u_mobile_api
+        
+            'DEFAULT_RENDERER_CLASSES': (
+                    'u_mobile_api.StructuredJsonRenderer',
+                ),
+        
+        or use as decorator for rest-api.
+        
+        
+        **2. Errors handler**
+        
+        Add your Django project:
+        
+        file: `settings.py`
+        
+            import universal_response_mobile_api as u_mobile_api
+        
+            REST_FRAMEWORK = {
+                ...
+                'EXCEPTION_HANDLER': 'u_mobile_api.custom_exception_handler',
+                ...
+            }
+        
+        
+        
+Keywords: api mobile response
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
