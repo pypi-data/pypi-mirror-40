@@ -1,0 +1,62 @@
+% This is an artificial data set described in Breiman et al. (1984,p.238) 
+% (with variance 1 instead of 2).  
+% 
+% Generate the values of the 10 attributes independently
+% using the following probabilities:
+%
+% P(X_1 = -1) = P(X_1 = 1) = 1/2
+% P(X_m = -1) = P(X_m = 0) = P(X_m = 1) = 1/3, m=2,...,10
+%
+% Obtain the value of the target variable Y using the rule:
+%
+% if X_1 = 1 set Y = 3 + 3X_2 + 2X_3 + X_4 + sigma(0,1)
+% if X_1 = -1 set Y = -3 + 3X_5 + 2X_6 + X_7 + sigma(0,1)
+%
+% Characteristics: 40768 cases, 11 continuous attributes
+% Source: collection of regression datasets by Luis Torgo (ltorgo@ncc.up.pt) at
+% http://www.ncc.up.pt/~ltorgo/Regression/DataSets.html
+% Original source: Breiman et al. (1984, p.238).
+
+@relation 2dplanes
+@attribute  x1  real
+@attribute  x2  real
+@attribute  x3  real
+@attribute  x4  real
+@attribute  x5  real
+@attribute  x6  real
+@attribute  x7  real
+@attribute  x8  real
+@attribute  x9  real
+@attribute  x10  real
+@attribute  y  real
+
+@data
+
+1,1,1,1,-1,0,1,0,-1,1,7.73906
+-1,0,-1,-1,1,1,1,0,-1,0,3.95676
+1,0,1,1,-1,-1,0,1,1,1,4.71592
+1,0,0,1,0,-1,1,1,1,-1,5.02863
+-1,0,-1,-1,-1,-1,-1,1,1,-1,-11.5748
+1,1,1,-1,-1,-1,-1,1,-1,-1,6.87817
+1,-1,0,0,-1,0,0,0,0,0,-1.94303
+1,-1,0,-1,1,1,1,-1,1,0,-1.42592
+-1,0,-1,-1,-1,1,0,1,-1,1,-3.65451
+-1,1,-1,0,1,0,-1,0,-1,1,-1.49176
+1,0,1,1,-1,1,-1,0,0,0,6.88843
+-1,1,1,0,1,-1,-1,-1,1,-1,-4.06112
+1,-1,0,0,1,0,0,-1,0,-1,0.180616
+1,0,0,1,1,-1,0,1,1,0,3.28521
+-1,0,1,-1,-1,-1,1,-1,0,1,-8.00197
+1,1,-1,1,-1,0,1,0,0,0,4.75477
+1,0,-1,-1,1,-1,-1,-1,-1,0,-2.08087
+-1,0,0,1,1,-1,0,1,-1,-1,-1.27886
+-1,-1,1,-1,-1,0,0,1,1,-1,-4.91547
+-1,1,-1,0,0,-1,-1,1,-1,-1,-4.61146
+-1,1,1,0,-1,-1,-1,-1,1,0,-10.802
+-1,-1,-1,0,-1,-1,1,-1,0,-1,-7.47398
+-1,1,0,1,-1,-1,0,-1,0,-1,-8.6021
+-1,-1,1,1,-1,-1,0,1,1,0,-7.60897
+1,0,-1,1,1,1,1,1,0,0,1.8357
+1,1,0,1,0,0,0,1,0,0,5.92239
+-1,-1,1,-1,-1,1,-1,-1,1,-1,-4.84776
+-1,0,-1,-1,1,1,-1,1,0,1,-0.754753
