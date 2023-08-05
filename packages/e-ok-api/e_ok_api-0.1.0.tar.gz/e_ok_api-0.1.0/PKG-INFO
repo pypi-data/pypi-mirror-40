@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: e_ok_api
+Version: 0.1.0
+Summary: Unofficial API wrapper for Liantis e-OK
+Home-page: https://github.com/dotEsuS/e_ok_api
+Author: dotEsuS
+Author-email: 
+License: GNU General Public License v3
+Description: # e_ok_api
+        
+        Unofficial API wrapper for Liantis e-OK
+        
+        * Free software: GNU General Public License v3
+        
+        
+Keywords: e_ok_api
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
