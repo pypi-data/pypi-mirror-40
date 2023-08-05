@@ -1,0 +1,4 @@
+[console_scripts]
+bbscrape = bbscrape.__main__:main
+bbsim = bbsim.__main__:main
+
