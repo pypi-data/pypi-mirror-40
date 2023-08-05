@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: caver
+Version: 0.0.6
+Summary: Multi-label Text Classification Toolkit
+Home-page: https://github.com/guokr/Caver
+Author: Guokr Inc.
+Author-email: jinyang.zhou@guokr.com
+License: UNKNOWN
+Description: # Caver: a toolkit for multilabel text classification.
+        
+        [中文版](./README_zh.md)
+        
+        ---
+        
+        Rising a torch in the cave to see the words on the wall. This is the `Caver`.
+        
+        [Documents](https://guokr.github.io/Caver)
+        
+        ## Requirements
+        
+        * PyTorch
+        * tqdm
+        * torchtext
+        * scipy
+        * numpy
+        * Python3
+        
+        ## How to train on your onw dataset
+        
+        ```python
+        
+        python3 train.py --input_data_dir {path to your origin dataset} --output_data_dir {path to store the preprocessed dataset} --train_filename train.tsv --valid_filename valid.tsv --checkpoint_dir {path to save the checkpoints} --model {fastText/CNN/LSTM} --batch_size {16, you can modify this for you own} --epoch {10}
+        
+        ```
+        
+        ## Did you guys have some pre-trained models
+        
+        Yes 
+        
+        ## How to setup the models for inference
+        
+        Basicly just setup the model and target labels, you can check examples in server.py and ensemble.py
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
