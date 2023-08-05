@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: soundmixture
+Version: 0.9
+Summary: generating mixture of noise and non-noise sound files
+Home-page: https://github.com/aakazemaa/permutation/tree/sound
+Author: Kazem Ardekanian
+Author-email: kazem.ardekanian@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pydub
+Requires-Dist: scipy
+
+This is commandline utility for generating mixed audio and noise files.
+It is required to have valid audio files and the same number of noise files
+in two different directories. For simplicity we name audio files with an increasing sequenced of integers (as shown below)
+A utility create_noise_files.py creates noise files. However, valid audio wav files needs to
+be provided.
+
+How to install:
+
+>pip install soundmixture
+
+>gensound --help
+usage: gensound [-h] noisedir audiodir mixeddir SNR
+
+Generate mixed audio noise files
+
+positional arguments:
+  noisedir    spcefiy where the noise files are located
+  audiodir    spcefiy where the audio files are located
+  mixeddir    spcefiy where the output dir for mixed files audio/noise are
+              located
+  SNR         spcefiy SNR level
+
+optional arguments:
+  -h, --help  show this help message and exit
+
+
+example:
+>gensound soundmixture/data/noise/ soundmixture/data/audio/ ./out -40
+
+output:
+audio/noise mixed files are:
+./data/mixedaudZorro/mixed_1.wav
+./data/mixedaudZorro/mixed_10.wav
+./data/mixedaudZorro/mixed_2.wav
+./data/mixedaudZorro/mixed_3.wav
+./data/mixedaudZorro/mixed_4.wav
+./data/mixedaudZorro/mixed_5.wav
+./data/mixedaudZorro/mixed_6.wav
+./data/mixedaudZorro/mixed_7.wav
+./data/mixedaudZorro/mixed_8.wav
+./data/mixedaudZorro/mixed_9.wav
+
+
+Input noise files are located at:
+ls -1 data/noise/
+noise1.wav
+noise10.wav
+noise2.wav
+noise3.wav
+noise4.wav
+noise5.wav
+noise6.wav
+noise7.wav
+noise8.wav
+noise9.wav
+
+Input audio files are located at:
+ls -1 data/audio/
+1.wav
+10.wav
+2.wav
+3.wav
+4.wav
+5.wav
+6.wav
+7.wav
+8.wav
+9.wav
+
+Note: a set of sample noise and audio files can be found in the data directory of where the package is installed: pip show soundmixture
+
+
