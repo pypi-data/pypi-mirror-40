@@ -1,0 +1,6 @@
+pyshtools
+fluidpythran>=0.1.4
+fluiddyn
+
+[:python_version < "3.8"]
+cached_property
