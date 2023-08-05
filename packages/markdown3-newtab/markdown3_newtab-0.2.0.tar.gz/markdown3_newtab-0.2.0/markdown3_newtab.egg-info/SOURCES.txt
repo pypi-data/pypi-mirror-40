@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+markdown3_newtab/__init__.py
+markdown3_newtab.egg-info/PKG-INFO
+markdown3_newtab.egg-info/SOURCES.txt
+markdown3_newtab.egg-info/dependency_links.txt
+markdown3_newtab.egg-info/top_level.txt
