@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Lunas
+Version: 0.1.0
+Summary: A dataset processing pipeline and iterator for machine learning with minimal dependencies.
+Home-page: http://pypi.python.org/pypi/Lunas/
+Author: Seann Zhang
+Author-email: pluiefox@live.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Requires-Dist: overrides
+Requires-Dist: setuptools
+Requires-Dist: numpy
+Requires-Dist: typing
+
+UNKNOWN
+
+
