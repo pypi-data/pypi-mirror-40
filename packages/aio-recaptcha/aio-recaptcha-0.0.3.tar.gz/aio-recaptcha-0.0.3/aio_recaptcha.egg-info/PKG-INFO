@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: aio-recaptcha
+Version: 0.0.3
+Summary: Recaptcha v2 and v3
+Home-page: https://github.com/omarryhan/aio-recaptcha
+Author: Omar Ryhan
+Author-email: omarryhan@gmail.com
+License: MIT
+Description: # Recaptcha V2 & V3
+        
+        ## Install
+        
+            $ pip install --user aio-recaptcha
+        
+        ## Usage
+        
+            def render_captcha():
+                render(recaptcha.html(site_key='your_site_key') + recaptcha.js())
+        
+            def verify_captcha(response_received_from_form):
+                try:
+                    await recaptcha.verify(client_secret, response_recieved_from_form)
+        
+                except recaptcha.RecaptchaError:
+                    return 'No! Only hoomans!'
+        
+                else:
+                    return 'Hello hooman!'
+        
+        ## API:
+        
+            js()
+            html()
+            coro verify()
+            exc RecaptchaError
+        
+        ## Test
+        
+        Run:
+        
+            $ /aio-recaptcha/test.sh
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
