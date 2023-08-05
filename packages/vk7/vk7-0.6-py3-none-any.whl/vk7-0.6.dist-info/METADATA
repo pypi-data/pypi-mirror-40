@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: vk7
+Version: 0.6
+Summary: Framework for extract data from vk.com (russian social network).
+Home-page: https://github.com/pash4paul/vk7
+Author: Pavel Fomin
+Author-email: pash4paul@gmail.com
+License: UNKNOWN
+Keywords: api data osint social vk.com
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests (==2.18.4)
+
+================================================================
+Framework for extract data from vk.com (russian social network).
+================================================================
+
+This is a framework for extract data from vk.com (russian social network).
+The goal is to give helpful interface for work with api and extracting data.
+
+Quickstart
+==========
+
+Install
+-------
+
+.. code:: bash
+
+    pip install vk7
+
+Usage
+-----
+
+.. code:: python
+
+    >>> from vk7 import Vk
+    >>>
+    >>> vk = VK('username', 'password', 'client_id')
+    >>> vk.users.get(user_ids='1,2')
+    {'response': [{'id': 1, 'first_name': 'Павел', 'last_name': 'Дуров'}, {'id': 2, 'first_name': 'Александра', 'last_name': 'Владимирова'}]}
+
+    >>>
+    >>> items = vk.groups.getMembers(group_id=1, fields='bdate,sex')
+    >>> item = next(items)
+    >>> item
+    {'id': 5, 'first_name': 'Илья', 'last_name': 'Перекопский', 'sex': 2, 'bdate': '18.11'}
+
+See https://vk.com/dev/methods for detailed API guide.
+
+
