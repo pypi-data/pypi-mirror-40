@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: perplex
+Version: 0.0.1
+Summary: Perpetual Plex in the Cloud
+Home-page: https://github.com/ofek/perplex
+Author: Ofek Lev
+Author-email: ofekmeister@gmail.com
+License: Apache-2.0/MIT
+Description: # perplex
+        
+        [![Latest PyPI version](https://img.shields.io/pypi/v/perplex.svg)](https://pypi.org/project/perplex)
+        [![Travis CI](https://img.shields.io/travis/ofek/perplex/master.svg)](https://travis-ci.org/ofek/perplex)
+        [![Supported Python versions](https://img.shields.io/pypi/pyversions/perplex.svg)](https://pypi.org/project/perplex)
+        [![License](https://img.shields.io/pypi/l/perplex.svg)](https://choosealicense.com/licenses)
+        
+        -----
+        
+        **Table of Contents**
+        
+        - [Installation](#installation)
+        - [License](#license)
+        
+        ## Installation
+        
+        perplex is distributed on [PyPI](https://pypi.org) as a universal
+        wheel and is available on Linux/macOS and Windows and supports
+        Python 3.5+ and PyPy.
+        
+        ```bash
+        $ pip install perplex
+        ```
+        
+        ## License
+        
+        perplex is distributed under the terms of both
+        
+        - [Apache License, Version 2.0](https://choosealicense.com/licenses/apache-2.0)
+        - [MIT License](https://choosealicense.com/licenses/mit)
+        
+        at your option.
+        
+Keywords: plex kubernetes cloud storage filesystem
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Multimedia
+Classifier: Topic :: System :: Archiving :: Mirroring
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

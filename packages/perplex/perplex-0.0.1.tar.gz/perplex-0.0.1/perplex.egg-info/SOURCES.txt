@@ -1,0 +1,14 @@
+LICENSE-APACHE
+LICENSE-MIT
+MANIFEST.in
+README.md
+setup.py
+perplex/__init__.py
+perplex/__main__.py
+perplex/cli.py
+perplex.egg-info/PKG-INFO
+perplex.egg-info/SOURCES.txt
+perplex.egg-info/dependency_links.txt
+perplex.egg-info/entry_points.txt
+perplex.egg-info/requires.txt
+perplex.egg-info/top_level.txt

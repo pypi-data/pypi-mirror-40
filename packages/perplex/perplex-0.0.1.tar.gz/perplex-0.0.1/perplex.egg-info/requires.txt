@@ -1,0 +1,7 @@
+appdirs
+atomicwrites
+click
+colorama
+docker-compose>=1.23.1
+pyperclip>=1.7.0
+PyYAML>=3.13
