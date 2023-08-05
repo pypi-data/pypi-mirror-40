@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: pypermacc
+Version: 0.1.1
+Summary: Python wrapper around the perma.cc API
+Home-page: https://github.com/Te-k/pypermacc
+Author: Tek
+Author-email: tek@randhome.io
+License: MIT
+Keywords: archive
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# pypermacc
+
+Python3 wrapper for the perma.cc API (partial implementation, pull requests welcome)
+
+## Installation
+
+Install from pypi : `pip install pypermacc`
+
+Install from the source code :
+```
+git clone https://github.com/Te-k/pypermacc.git
+cd pypermaa
+pip install .
+```
+
+## Usage
+
+**Without private key:**
+```py
+from pypermacc import Permacc
+perm = Permacc()
+
+# Download public archives
+archives = p.public_archives()
+
+# Get detail on the first one
+details = p.archive_detail(archives['objects'][0]['guid'])
+
+# Download warc file
+warc = p.archive_download(archives['object'][0]['guid'])
+```
+
+**With a private key**
+```py
+from pypermacc import Permacc
+perm = Permacc(KEY)
+
+# Save a webpage
+saved = pp.archive_create('https://perma.cc/') # Inception
+```
+
+## License
+
+This code is publised under the MIT license
+
+
