@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: pyxtools
+Version: 0.1.0
+Summary: simple tool for Python3.6
+Home-page: https://github.com/frkhit/pyxtools
+Author: frkhit
+Author-email: frkhit@gmail.com
+License: MIT
+Description: Pyxtools provide simple tools for python3.6(+).
+        
+        Links:
+        
+        * `Github <https://github.com/frkhit/pyxtools>`_
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
