@@ -1,0 +1,3 @@
+[console_scripts]
+ccr = ccr.cli:start
+
