@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pydantic-openapi
+Version: 0.1.2
+Summary: Generate OpenAPI schema from pydantic models
+Home-page: None
+Author: Yury Blagoveshchenskiy
+Author-email: yurathestorm@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: inflection
+Requires-Dist: pydantic (>=0.16,<0.17)
