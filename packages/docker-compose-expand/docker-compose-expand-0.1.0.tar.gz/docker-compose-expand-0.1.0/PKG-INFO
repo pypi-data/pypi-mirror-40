@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: docker-compose-expand
+Version: 0.1.0
+Summary: Expand your docker-compose.yml file
+Home-page: https://github.com/f9n/docker-compose-expand
+Author: Fatih Sarhan
+Author-email: f9n@protonmail.com
+Requires-Python: >=3.4,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: jinja2 (>=2.10,<3.0)
+Requires-Dist: oyaml (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/f9n/docker-compose-expand
