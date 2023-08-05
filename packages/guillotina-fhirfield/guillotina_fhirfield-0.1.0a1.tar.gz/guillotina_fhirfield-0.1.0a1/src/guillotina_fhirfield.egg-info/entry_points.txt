@@ -1,0 +1,3 @@
+[console_scripts]
+guillotina_fhirfield = guillotina_fhirfield.cli:main
+
