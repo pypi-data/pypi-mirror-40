@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include docs/CONTRIBUTING.md
+recursive-include docs *.rst
+recursive-include snakescale/wrappers Snakefile
+recursive-include snakescale/wrappers *.yaml wrapper.py
+recursive-include snakescale/wrappers *.bed *.genome
