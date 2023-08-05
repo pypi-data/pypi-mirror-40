@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: carrot-mc
+Version: 0.3
+Summary: Command-line Minecraft mod manager
+Home-page: https://github.com/Misza13/carrot
+Author: Misza
+Author-email: misza@misza.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Topic :: Games/Entertainment
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+Carrot is a command-line interface for managing Minecraft mods in an MC instance.
+
+It uses an API that indexes all mods and files on CurseForge.
+
