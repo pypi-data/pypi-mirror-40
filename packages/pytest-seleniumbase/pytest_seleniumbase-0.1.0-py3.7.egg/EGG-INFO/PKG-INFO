@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: pytest-seleniumbase
+Version: 0.1.0
+Summary: Reliable Browser Automation & Testing Framework
+Home-page: https://github.com/seleniumbase/SeleniumBase
+Author: Michael Mintz
+Author-email: mdmintz@gmail.com
+Maintainer: Michael Mintz
+License: MIT
+Description: Reliable Browser Automation & Testing Framework
+Platform: Windows
+Platform: Linux
+Platform: Unix
+Platform: Mac OS-X
