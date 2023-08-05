@@ -1,0 +1,7 @@
+-   id: {entry}
+    name: {name}
+    entry: {entry}
+    language: {language}
+    '{match_key}': {match_val}
+    args: {args}
+    additional_dependencies: {additional_dependencies}
