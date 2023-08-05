@@ -1,0 +1,12 @@
+README.md
+setup.py
+awsjar/__init__.py
+awsjar/bucket.py
+awsjar/exceptions.py
+awsjar/jar.py
+awsjar/utils.py
+awsjar.egg-info/PKG-INFO
+awsjar.egg-info/SOURCES.txt
+awsjar.egg-info/dependency_links.txt
+awsjar.egg-info/requires.txt
+awsjar.egg-info/top_level.txt
