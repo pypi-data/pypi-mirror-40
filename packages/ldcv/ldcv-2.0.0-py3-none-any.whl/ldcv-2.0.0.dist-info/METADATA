@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: ldcv
+Version: 2.0.0
+Summary: LangMan Console Version
+Home-page: https://github.com/leetking/ldcv
+License: GPL-3.0
+Author: leetking
+Author-email: li_tking@163.com
+Requires-Python: >=3.0,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Dist: lxml (>=4.2,<5.0)
+Project-URL: Repository, https://github.com/leetking/ldcv
+Description-Content-Type: text/x-rst
+
+============
+ldcv |Build|
+============
+
+A console version LongMan_ dictionary.
+
+
+Usage
+-----
+
+.. code-block:: text
+
+   usage: ldcv [-h] [-f] [-j] [--cache CACHE] [-c CONFIG]
+               [--color {always,auto,never}]
+               [words [words ...]]
+
+   LongMan Console Version
+
+   positional arguments:
+     words                 words or quoted phrases to lookup
+
+   optional arguments:
+     -h, --help            show this help message and exit
+     -f, --full            print verbose explanations. Default to print first
+                           three explanations
+     -j, --json            dump the explanation with JSON style
+     --cache CACHE         specify a word list file then cache words from it to
+                           <cachefile>
+     -c CONFIG, --config CONFIG
+                           specify a config file
+     --color {always,auto,never}
+                           colorize the output. Default to "auto" or can be
+                           "never" or "always"
+
+
+Installation
+------------
+
+.. code-block:: shell
+
+   $ pip install ldcv
+
+
+Enviroment or dependences
+-------------------------
+
+- Python (3.x)
+- lxml_
+
+
+Thanks
+------
+
+- ydcv_
+
+.. _LongMan: https://www.ldoceonline.com/
+.. _ydcv: https://github.com/felixonmars/ydcv
+.. _lxml: https://lxml.de/
+.. |Build| image:: https://img.shields.io/badge/build_with-poetry-pink.svg?style=flat-square&logo=appveyor
+   :target: https://github.com/sdispater/poetry
+
