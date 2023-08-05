@@ -1,0 +1,7 @@
+[console_scripts]
+align = ggnn.align:main
+fast-pickle = ggnn.fast_pickle:main
+main_ggnn = ggnn.ggnn:main
+maps = ggnn.maps:main
+swap = ggnn.swap:main
+
