@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: python-olm-harmonyqt
+Version: 0.1
+Summary: python CFFI bindings for the olm cryptographic ratchet library - development fork
+Home-page: https://github.com/poljar/python-olm
+Author: Damir Jelić
+Author-email: poljar@termina.org.uk
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
