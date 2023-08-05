@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: counterer
+Version: 0.0.1
+Summary: Simple counter
+Home-page: https://github.com/meain/counterer
+Author: Abin Simon
+Author-email: abinsimon10@gmail.com
+License: UNKNOWN
+Description: # Traffic
+        
+        Gives you the current traffic stats on your system.
+        
+        > Shows average speed at the exit.
+        
+        ![gif](https://i.imgur.com/gtrfbxC.gif)
+        
+        ## Installation
+        
+        ```
+        pip3 install webtraffic
+        ```
+        
+        ## Usage
+        
+        Just run:
+        
+        ```
+        traffic
+        ```
+        
+Keywords: counter,python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
