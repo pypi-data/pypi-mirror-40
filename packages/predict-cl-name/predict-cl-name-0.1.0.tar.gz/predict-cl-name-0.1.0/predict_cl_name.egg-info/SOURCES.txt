@@ -1,0 +1,13 @@
+README.md
+setup.py
+predict-cl-name/__init__.py
+predict-cl-name/data_transfer_split.py
+predict-cl-name/get_train_data.py
+predict-cl-name/merge.py
+predict-cl-name/predict_person_company_name.py
+predict-cl-name/train_model.py
+predict_cl_name.egg-info/PKG-INFO
+predict_cl_name.egg-info/SOURCES.txt
+predict_cl_name.egg-info/dependency_links.txt
+predict_cl_name.egg-info/requires.txt
+predict_cl_name.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: predict-cl-name
+Version: 0.1.0
+Summary: An feature extraction algorithm
+Home-page: https://gitlab.kingdomai.com/wangqiang/person_company_name_classification/tree/wangqiang/predict-cl-name
+Author: it-wqll
+Author-email: wangqiang6480@163.com
+License: MIT Licence
+Description: An feature extraction algorithm, improve the FastICA
+Keywords: pip,predict-cl-name,featureextraction
+Platform: any
