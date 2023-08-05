@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: cs.socketutils
+Version: 20181228
+Summary: some utilities for network sockets
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: Utility functions and classes for sockets.
+        
+        ## Function `bind_next_port(sock, host, base_port)`
+        
+        Bind the socket `sock` to the first free `(host,port)`; return the port.
+        
+        Parameters:
+        * `sock`: open socket.
+        * `host`: target host address.
+        * `base_port`: the first port number to try.
+        
+        ## Class `OpenSocket`
+        
+        A file-like object for stream sockets, which uses os.shutdown on close.
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Networking
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
