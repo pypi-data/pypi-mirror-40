@@ -1,0 +1,13 @@
+README.md
+setup.py
+jiagu/__init__.py
+jiagu/__main__.py
+jiagu/analyze.py
+jiagu/bilstm_crf.py
+jiagu.egg-info/PKG-INFO
+jiagu.egg-info/SOURCES.txt
+jiagu.egg-info/dependency_links.txt
+jiagu.egg-info/top_level.txt
+jiagu/model/cws.model
+jiagu/model/ner.model
+jiagu/model/pos.model
