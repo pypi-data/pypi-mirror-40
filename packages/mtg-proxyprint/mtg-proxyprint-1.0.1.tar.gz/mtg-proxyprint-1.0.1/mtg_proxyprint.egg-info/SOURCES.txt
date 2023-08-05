@@ -1,0 +1,10 @@
+README.txt
+setup.py
+mtg_proxyprint.egg-info/PKG-INFO
+mtg_proxyprint.egg-info/SOURCES.txt
+mtg_proxyprint.egg-info/dependency_links.txt
+mtg_proxyprint.egg-info/entry_points.txt
+mtg_proxyprint.egg-info/requires.txt
+mtg_proxyprint.egg-info/top_level.txt
+proxyprint/__init__.py
+proxyprint/print_proxy.py
