@@ -1,0 +1,17 @@
+{{ project_name }}
+{{ '=' * (project_name|length) }}
+
+**{{ project_name }}** is .....
+
+The :file:`settings.ini` file contains options
+for running the Flask app, like the DEBUG flag:
+
+.. literalinclude:: ../../{{ module_name }}/settings.ini
+   :language: ini
+
+Blueprint are imported from :mod:`{{ module_name }}.endpoints` and one
+Blueprint and endpoint example was provided in :file:`{{ module_name }}/endpoints/main.py`:
+
+.. literalinclude:: ../../{{ module_name }}/endpoints/main.py
+   :name: main.py
+   :emphasize-lines: 15
