@@ -1,0 +1,6 @@
+[console_scripts]
+lantz-sims = lantz.sims.__main__:main
+
+[lantz_subcommands]
+sims = lantz.sims.__main__:main
+
