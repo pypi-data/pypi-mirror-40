@@ -1,0 +1,13 @@
+psycopg2
+jsonschema
+pytest
+Flask
+flask_oauthlib
+bcrypt
+SQLAlchemy
+redis==2.10.6
+elasticsearch
+boto3
+PrettyTable
+jinja2==2.10
+flask-cors
