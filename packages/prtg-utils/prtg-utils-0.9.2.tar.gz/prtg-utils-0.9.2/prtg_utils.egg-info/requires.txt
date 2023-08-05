@@ -1,0 +1,7 @@
+requests==2.20.0
+
+[dev]
+check-manifest
+
+[test]
+coverage
