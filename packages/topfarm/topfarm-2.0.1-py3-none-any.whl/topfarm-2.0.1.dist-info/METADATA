@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: topfarm
+Version: 2.0.1
+Summary: Topfarm - Wind farm optimization using OpenMDAO
+Home-page: https://gitlab.windenergy.dtu.dk/TOPFARM/topfarm2
+Author: DTU Wind Energy
+Author-email: dave@dtu.dk
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: openmdao (==2.3.1)
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: scipy
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+
+[![pipeline status](https://gitlab.windenergy.dtu.dk/TOPFARM/TopFarm2/badges/master/pipeline.svg)](https://gitlab.windenergy.dtu.dk/TOPFARM/TopFarm2/commits/master)
+[![coverage report](https://gitlab.windenergy.dtu.dk/TOPFARM/TopFarm2/badges/master/coverage.svg)](https://gitlab.windenergy.dtu.dk/TOPFARM/TopFarm2/commits/master)
+
+
+Welcome to TOPFARM
+------------------
+
+This is the plant-level optimization tool that is being developed by DTU Wind
+Energy.
+
+# Installation Guide, Examples, and Documentation
+
+Please refer to the 
+[TOPFARM documentation](https://topfarm.pages.windenergy.dtu.dk/TopFarm2).
+
