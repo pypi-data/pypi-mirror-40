@@ -1,0 +1,17 @@
+attrs>=17.1
+feedparser>=5
+requests
+
+[cli]
+click>=5
+
+[enclosure-tags]
+requests
+mutagen
+
+[plugins]
+setuptools>=40
+
+[web-app]
+flask>=0.10
+humanize

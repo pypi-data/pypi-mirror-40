@@ -1,0 +1,3 @@
+-e .[cli,web-app]
+sphinx_rtd_theme
+sphinx-click
