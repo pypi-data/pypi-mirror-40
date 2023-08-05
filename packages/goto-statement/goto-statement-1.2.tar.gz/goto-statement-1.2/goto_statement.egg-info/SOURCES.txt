@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+goto.py
+setup.cfg
+setup.py
+test_goto.py
+tox.ini
+goto_statement.egg-info/PKG-INFO
+goto_statement.egg-info/SOURCES.txt
+goto_statement.egg-info/dependency_links.txt
+goto_statement.egg-info/top_level.txt
