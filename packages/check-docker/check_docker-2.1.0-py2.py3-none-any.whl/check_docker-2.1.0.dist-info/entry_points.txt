@@ -1,0 +1,4 @@
+[console_scripts]
+check_docker=check_docker.check_docker:main
+check_swarm=check_docker.check_swarm:main
+
