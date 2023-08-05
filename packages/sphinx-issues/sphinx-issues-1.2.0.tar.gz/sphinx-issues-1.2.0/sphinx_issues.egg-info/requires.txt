@@ -1,0 +1,26 @@
+sphinx
+
+[dev]
+pytest
+flake8==3.6.0
+pre-commit==1.13.0
+tox
+
+[dev:python_version < "3.0"]
+mock
+
+[dev:python_version >= "3.5"]
+flake8-bugbear==18.8.0
+
+[lint]
+flake8==3.6.0
+pre-commit==1.13.0
+
+[lint:python_version >= "3.5"]
+flake8-bugbear==18.8.0
+
+[tests]
+pytest
+
+[tests:python_version < "3.0"]
+mock
