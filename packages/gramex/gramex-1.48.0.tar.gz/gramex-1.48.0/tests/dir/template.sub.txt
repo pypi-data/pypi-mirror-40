@@ -1,0 +1,6 @@
+{% set x = 'Hello' %}
+{% set y = 'world' %}
+{% include 'subdir/template.txt' %}
+
+{# handler is available in template, with a .path attribute #}
+{% set assert(handler.path) %}
