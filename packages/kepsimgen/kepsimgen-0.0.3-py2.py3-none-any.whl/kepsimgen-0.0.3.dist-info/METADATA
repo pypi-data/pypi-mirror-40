@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: kepsimgen
+Version: 0.0.3
+Summary: CLI tool that converts Kepware projects into simulation projects
+Home-page: https://github.com/jmbeach/kep-simgen
+Author: jmbeach
+Author-email: jaredbeachdesign@gmail.com
+License: UNKNOWN
+Requires-Dist: keppy
+
+kep-simgen
+
+
