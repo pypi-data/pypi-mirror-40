@@ -1,0 +1,3 @@
+[console_scripts]
+diary = jobdiary.__main__:main
+
