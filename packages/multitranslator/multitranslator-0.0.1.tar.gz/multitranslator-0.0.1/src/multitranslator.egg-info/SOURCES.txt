@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/multitranslator/__init__.py
+src/multitranslator/__version__.py
+src/multitranslator.egg-info/PKG-INFO
+src/multitranslator.egg-info/SOURCES.txt
+src/multitranslator.egg-info/dependency_links.txt
+src/multitranslator.egg-info/not-zip-safe
+src/multitranslator.egg-info/requires.txt
+src/multitranslator.egg-info/top_level.txt
+src/multitranslator/translators/__init__.py
+src/multitranslator/translators/cambridge.py
+src/multitranslator/translators/fastdict.py
+src/multitranslator/translators/multi.py
+src/multitranslator/translators/translator.py

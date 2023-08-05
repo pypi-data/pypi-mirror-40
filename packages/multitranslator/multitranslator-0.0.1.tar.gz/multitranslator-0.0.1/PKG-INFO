@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: multitranslator
+Version: 0.0.1
+Summary: Multi translation engine for Python
+Home-page: https://github.com/GreatBahram/multitranslator
+Author: Bahram Aghaei
+Author-email: aghaee.bahram@gmail.com
+License: GNU General Public License v3.0
+Description: # MultiTranslator
+        Multi Translator python package, for fun.
+        
+        -----------------------------------
+        ##  Installation
+        ```bash
+        pip install multitranslator
+        ```
+        
+        ## Usage
+        it's very easy and joyable.
+        
+        ```python
+        from multitranslator.translators import Cambridge, MultiTranslator
+        
+        cambridge = Cambridge()
+        
+        cambridge.translate('home')
+        
+        print(cambridge.to_dict())
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
