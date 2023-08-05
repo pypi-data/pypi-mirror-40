@@ -1,0 +1,13 @@
+[console_scripts]
+redo = redo.cmd_redo:main
+redo-always = redo.cmd_always:main
+redo-ifchange = redo.cmd_ifchange:main
+redo-ifcreate = redo.cmd_ifcreate:main
+redo-log = redo.cmd_log:main
+redo-ood = redo.cmd_ood:main
+redo-sources = redo.cmd_sources:main
+redo-stamp = redo.cmd_stamp:main
+redo-targets = redo.cmd_targets:main
+redo-unlocked = redo.cmd_unlocked:main
+redo-whichdo = redo.cmd_whichdo:main
+
