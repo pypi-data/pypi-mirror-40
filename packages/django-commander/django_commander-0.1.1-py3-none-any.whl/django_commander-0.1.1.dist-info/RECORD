@@ -1,0 +1,15 @@
+commander/__init__.py,sha256=acFijPQaOuIa19J_LWr3WynwPdnpeAf3-2YC126ipf8,88
+commander/apps.py,sha256=n3QRodZ5ZyzulqVKHjQz3d6Jg0e9y9wrRMt3wr3ylMU,937
+commander/commands.py,sha256=wmTQCumLCh6B9qCZURA1WxG0uZRmRAALUaL7EDMZSKY,1929
+commander/forms.py,sha256=qdCcrTwrvwpPlzUo-5OVCflAZRk3BNs6qf-t2e3_kpc,158
+commander/protection.py,sha256=3yt4UDqon_AERigicTId9rrFX1FBdHprm-teswh7rbY,995
+commander/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+commander/urls.py,sha256=8dHBFK9TF9jL7gf3_MjzjZCEVZCoPVVrU58qp50DW98,217
+commander/views.py,sha256=6wrIaKpqyADPiIJSs9kRPbPdw6Ysn5MbDV34V1x1nkM,1344
+commander/management/commands/setrandompassword.py,sha256=NB7FN_j6mZ7NAb8EaaZ_aoBEAwJtqxAMEhKJCADgG58,1539
+commander/templates/command_details.html,sha256=7zAiRO6bTQkSfefyTXS77XgdvZ3KXn0F0L98728mxts,321
+commander/templates/command_list.html,sha256=78USXsdZYoMF1ulR0PsIz_vY2l0T7Nfgr4STG3tcAEE,316
+django_commander-0.1.1.dist-info/METADATA,sha256=t168ZWpj6wj-qGlucrGFLh9gnKlPxjmoAwZSigNYI9Q,1480
+django_commander-0.1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+django_commander-0.1.1.dist-info/top_level.txt,sha256=yzxJHOjo0OlXGxCp1O7xGnGWEZ3lyYItg09pL9UsLUE,10
+django_commander-0.1.1.dist-info/RECORD,,
