@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: correly
+Version: 0.0.1
+Summary: mqtt timescale bridge
+Home-page: https://www.github.com/lordspacehog/correly
+Author: Alex Swhehla
+Author-email: alex.swehla@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
