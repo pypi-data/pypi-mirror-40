@@ -1,0 +1,17 @@
+name: docs
+channels:
+  - jrmadsen
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - cmake
+  - git
+  - pip
+  - setuptools
+  - openssl
+  - curl
+  - sphinx
+  - recommonmark
+  - pylint
+  - pyctest
