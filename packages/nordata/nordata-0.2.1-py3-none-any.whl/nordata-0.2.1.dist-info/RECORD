@@ -1,0 +1,8 @@
+nordata/__init__.py,sha256=e2bLFCG7z5cPjNiWTFTrnOBj6MzpaR4oseKkwm54sMg,488
+nordata/_boto.py,sha256=3d58bk9QGcDEPh3qmyk3E3T12aqbM0a5XzFBgUzUzl4,1766
+nordata/_redshift.py,sha256=IUc7aLbZklqafLtGsypt5INS0XIfZlx4CoZF63dX86A,6019
+nordata/_s3.py,sha256=c7r6rnSAEAD_ol7dWp3hnf6-9-6YIqMwd5O2HsUa8g0,13122
+nordata-0.2.1.dist-info/LICENSE,sha256=ieEKJ-VczfHpbzAARBk5cBwN-Qfu4_jjKLNpnH1JyAg,9161
+nordata-0.2.1.dist-info/WHEEL,sha256=MP1UiX4AXjPa4mWvCuy-oUiZT3GZDnthv7K0OSicOP0,81
+nordata-0.2.1.dist-info/METADATA,sha256=SB7IDo70A8tRoFCi27UVUCzjtLHUGOHsiZVr0l_k0I4,12465
+nordata-0.2.1.dist-info/RECORD,,
