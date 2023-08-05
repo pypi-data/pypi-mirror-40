@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: isupdated
+Version: 0.1.1
+Summary: Check if github repository release is updated.
+Home-page: https://github.com/chroming/isupdated
+Author: chroming
+License: UNKNOWN
+Description: 
+        ## Usage
+        
+        ```Python
+        
+        from isupdated import is_updated
+        
+        is_updated('https://github.com/chroming/pdfdir', 'v0.2.1')
+        
+        # If you want return download link when has update
+        
+        is_updated('https://github.com/chroming/pdfdir', 'v0.2.1', with_dl=True)
+        
+        # If the version string is split with character "|"
+        
+        is_updated('https://github.com/chroming/pdfdir', 'v0|2|1', split='|')
+        
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

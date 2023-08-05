@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+isupdated.py
+setup.py
+isupdated.egg-info/PKG-INFO
+isupdated.egg-info/SOURCES.txt
+isupdated.egg-info/dependency_links.txt
+isupdated.egg-info/requires.txt
+isupdated.egg-info/top_level.txt
