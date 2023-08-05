@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: wix-elk-logger
+Version: 1.0.1
+Summary: Extension for standard python logger
+Home-page: https://github.com/wix-private/wix_elk_logger
+Author: Alex Shemshurenko
+Author-email: alexshe@wix.com
+License: Type license() to see the full license text
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.5.*
+Description-Content-Type: text/markdown
+Requires-Dist: logging2
+Requires-Dist: logmatic-python
+
+================
+ wix-elk-logger
+================
+
+Adds josn formatter logger with predefined fields
+
+Requirements
+============
+
+* Python 3.6 over 
+
+Features
+========
+
+* ToDo: Rewrite me.
+
+Setup
+=====
+
+::
+
+  $ python -m pip install --user wix-elk-logger
+
+
+
+
+
+
