@@ -1,0 +1,13 @@
+holes/__init__.py,sha256=H1Gry6WUS7YcF46WxcqGc4J5D5JErCeM60Db2awDFM8,95
+holes/_version.py,sha256=Pm4UMR3xp4RlS1UeBOcm3a4ECye9KfyMcxfao6zDpHw,518
+holes/ret.py,sha256=BTvHYJRNncEi9Mzj0Q7y0sm0XcmzII5sF5fmQJI08k0,2118
+holes/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+holes/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+holes/tests/test_examples.py,sha256=Q1_NJeEuA1jp8i_9l51ADRmc6I8ii2xEWp7v7TFJPPA,539
+holes-0.1.0.dist-info/AUTHORS.rst,sha256=k1FOouYuUwfhcX6TauyCEsEAJoo3TFEd5lIqsvbrqzU,185
+holes-0.1.0.dist-info/LICENSE,sha256=gwH_mGQ384sfkTv1BQZw_8YAFbC6eCvh4_9IHxoq_4o,1573
+holes-0.1.0.dist-info/METADATA,sha256=rgAbdXcxYXOEhQI_wlHq5DQlVz-86_Rp3LwI_TZP7ww,902
+holes-0.1.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+holes-0.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+holes-0.1.0.dist-info/top_level.txt,sha256=qUF8OR7DeELlSxSUFX0druldhnFOL0sV2qqyDgy2VcA,6
+holes-0.1.0.dist-info/RECORD,,
