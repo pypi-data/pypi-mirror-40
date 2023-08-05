@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: python3-SmartSchema
+Version: 0.1.1
+Summary: Progressive update for schema
+Home-page: UNKNOWN
+Author: Jaiswal-ruhil
+Author-email: cschultz@example.com
+License: MIT
+Description: Mark *italic text* with one asterisk, **bold text** with two.
+        For ``monospaced text``, use two "backquotes" instead.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
