@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: aplpy
+Version: 2.0rc1
+Summary: The Astronomical Plotting Library in Python
+Home-page: http://aplpy.github.io
+Author: Thomas Robitaille and Eli Bressert
+Author-email: thomas.robitaille@gmail.com, elibre@users.sourceforge.net
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Provides-Extra: all
+Provides-Extra: docs
+Requires-Dist: numpy
+Requires-Dist: astropy (>=3.1)
+Requires-Dist: matplotlib (>=2.0)
+Requires-Dist: reproject (>=0.4)
+Provides-Extra: all
+Requires-Dist: pyregion (>=2.0); extra == 'all'
+Requires-Dist: pillow (>=4.0); extra == 'all'
+Requires-Dist: pyavm (>=0.9.4); extra == 'all'
+Provides-Extra: docs
+Requires-Dist: sphinx-astropy; extra == 'docs'
+
+The Astronomical Plotting Library in Python
+
+
