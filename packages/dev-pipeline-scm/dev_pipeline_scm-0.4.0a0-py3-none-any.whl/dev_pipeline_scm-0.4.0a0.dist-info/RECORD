@@ -1,0 +1,10 @@
+dev_pipeline_scm-0.4.0a0.dist-info/DESCRIPTION.rst,sha256=7BCamZLH4_vmSqOeu0N5mMFTHSxgxvblp1yk8FTd8yo,1358
+dev_pipeline_scm-0.4.0a0.dist-info/METADATA,sha256=PSfD3mApUuziOG-4VTTrqHbBsdCHzE4kCP8IBHdEBiU,2041
+dev_pipeline_scm-0.4.0a0.dist-info/RECORD,,
+dev_pipeline_scm-0.4.0a0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+dev_pipeline_scm-0.4.0a0.dist-info/entry_points.txt,sha256=EseX5X93aw3IE1luyfSNTaLR3hE-yztqjjo4lNDqTHo,356
+dev_pipeline_scm-0.4.0a0.dist-info/metadata.json,sha256=KSXMyyg9g7_RFoG2eszkVEKU0xWOc2_u_mJ0tCmOWeo,1236
+dev_pipeline_scm-0.4.0a0.dist-info/top_level.txt,sha256=xC7XrQiqGZrfCcTB_wCQgsHrq6Ore7HBsol_JzGbVhQ,16
+devpipeline_scm/__init__.py,sha256=bG-5knv-5Uc-9q4pQlRhIb3iVy020QAhJ0Sb3-5bo6k,3036
+devpipeline_scm/checkout.py,sha256=mASLt_j7sQegZImagpMujPyLbnKRDvpLa7hLry8tbyI,1670
+devpipeline_scm/scm.py,sha256=gdFwul-m50niFGaHwlPOpjNAhm8MWS6iCUSBwzpcI4o,1516
