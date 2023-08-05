@@ -1,0 +1,4 @@
+cubicweb>=3.22.0
+cubicweb-wireit>=0.3.0
+six>=1.4.0
+cubicweb-file>=1.11.0

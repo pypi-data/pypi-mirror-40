@@ -1,0 +1,72 @@
+cubicweb-processing (0.9.0-1) unstable; urgency=medium
+
+  * new upstream release
+
+ -- Samuel Trégouët <samuel.tregouet@logilab.fr>  Fri, 21 Dec 2018 17:48:08 +0100
+
+cubicweb-processing (0.8.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Denis Laxalde <denis.laxalde@logilab.fr>  Thu, 12 Oct 2017 10:46:39 +0200
+
+cubicweb-processing (0.7.0-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Samuel Trégouët <samuel.tregouet@logilab.fr>  Thu, 18 Feb 2016 12:13:59 +0100
+
+cubicweb-processing (0.6.1-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Denis Laxalde <denis.laxalde@logilab.fr>  Thu, 10 Jul 2014 10:54:28 +0100
+
+cubicweb-processing (0.6.0-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Florent Cayre <florent.cayre@logilab.fr>  Sun, 09 Mar 2014 22:08:47 +0100
+
+cubicweb-processing (0.5.0-3) unstable; urgency=low
+
+  * Add a watch file.
+
+ -- Julien Cristau <julien.cristau@logilab.fr>  Mon, 25 Nov 2013 10:15:08 +0100
+
+cubicweb-processing (0.5.0-2) unstable; urgency=low
+
+  * added missing wireit dependency
+  * bumped cubicweb-file revision to 1.11.0
+
+ -- Florent Cayre <florent.cayre@logilab.fr>  Sun, 24 Nov 2013 23:33:48 +0100
+
+cubicweb-processing (0.5.0-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Sylvain Thénault <sylvain.thenault@logilab.fr>  Thu, 01 Aug 2013 10:28:26 +0200
+
+cubicweb-processing (0.4.0-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Aurélien Campéas <aurelien.campeas@logilab.fr>  Mon, 14 Jan 2013 18:52:00 +0100
+
+cubicweb-processing (0.3.0-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Florent Cayre <florent.cayre@logilab.fr>  Tue, 16 Oct 2012 15:30:00 +0100
+
+cubicweb-processing (0.2.3-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Florent Cayre <florent.cayre@logilab.fr>  Fri, 5 Jul 2012 16:41:00 +0100
+
+cubicweb-processing (0.1.1-1) unstable; urgency=low
+
+  * initial release
+
+ -- Julien Cristau <julien.cristau@logilab.fr>  Fri, 26 Apr 2013 14:57:52 +0200

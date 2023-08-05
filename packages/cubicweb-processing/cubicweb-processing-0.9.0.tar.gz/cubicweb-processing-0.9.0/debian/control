@@ -1,0 +1,25 @@
+Source: cubicweb-processing
+Section: web
+Priority: optional
+Maintainer: LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+Build-Depends:
+ debhelper (>= 9),
+ python (>= 2.6.5),
+ dh-python,
+Standards-Version: 3.9.6
+
+Package: cubicweb-processing
+Architecture: all
+Depends:
+ ${python:Depends},
+ ${misc:Depends},
+ cubicweb-common (>= 3.22.0),
+ cubicweb-file (>= 1.11.0),
+ cubicweb-wireit (>= 0.3.0)
+Description: cube that describes simple data processing workflows
+ CubicWeb is a semantic web application framework.
+ .
+ cube that describes simple data processing workflows
+ .
+ This package will install all the components you need to run the
+ cubicweb-processing application (cube :)..
