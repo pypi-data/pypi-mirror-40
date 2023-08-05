@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: starttls_policy_cli
+Version: 0.0.0.dev20190103
+Summary: Policy API for STARTTLS Preload
+Home-page: https://github.com/EFForg/starttls-everywhere
+Author: Sydney Li
+Author-email: sydney@eff.org
+License: Apache License 2.0
+Description: # starttls-policy Python package
+        
+        ## Package API
+        
+        ## Run CLI
+        Since this is a developer alpha, we recommend using `virtualenv` and `pip` to
+        install and run `starttls-policy`. To get set up:
+        ```
+        virtualenv --no-site-packages --setuptools venv --python python2.7
+        source ./venv/bin/activate
+        pip install starttls-policy
+        ```
+        
+        #### Manually updating the policy list
+        The below will fetch the remote policy list from `https://dl.eff.org/starttls-everywhere/policy.json` and verify the corresponding signature:
+        ```
+        starttls-policy --update-only [--policy-dir /path/to/dir]
+        ```
+        
+        #### Generating a configuration file
+        `starttls-policy --generate <MTA> [--policy-dir /path/to/dir]` will generate a configuration file corresponding to the TLS policy list and provide instructions for installing the file.
+        
+        We currently only support Postfix, but contributions are welcome!
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Topic :: Communications :: Email :: Mail Transport Agents
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Provides-Extra: dev

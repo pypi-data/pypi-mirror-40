@@ -1,0 +1,3 @@
+[console_scripts]
+starttls-policy-cli = starttls_policy_cli.main:main
+
