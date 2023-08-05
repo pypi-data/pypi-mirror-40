@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+daynextprev/__init__.py
+daynextprev.egg-info/PKG-INFO
+daynextprev.egg-info/SOURCES.txt
+daynextprev.egg-info/dependency_links.txt
+daynextprev.egg-info/top_level.txt
