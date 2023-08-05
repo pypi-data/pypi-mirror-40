@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+setup.cfg
+setup.py
+py_irsend/__init__.py
+py_irsend/irsend.py
+py_irsend.egg-info/PKG-INFO
+py_irsend.egg-info/SOURCES.txt
+py_irsend.egg-info/dependency_links.txt
+py_irsend.egg-info/top_level.txt
