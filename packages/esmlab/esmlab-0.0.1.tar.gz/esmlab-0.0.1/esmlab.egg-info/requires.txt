@@ -1,0 +1,5 @@
+pandas>=0.23.0
+dask
+xarray
+netcdf4
+cftime
