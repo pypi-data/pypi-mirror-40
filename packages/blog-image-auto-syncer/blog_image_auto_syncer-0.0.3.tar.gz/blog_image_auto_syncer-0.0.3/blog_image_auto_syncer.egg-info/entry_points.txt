@@ -1,0 +1,3 @@
+[blog_image_auto_syncer.registered_commands]
+check = blog_image_auto_syncer.commands.test:main
+
