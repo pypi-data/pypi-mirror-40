@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: autojira
+Version: 0.2
+Summary: A wrapper library on top of JIRA rest client to automate few jira workflow
+Home-page: https://github.com/ramo/autojira
+Author: Ramachandran Rajagopal
+Author-email: ramo.phoenix7@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
