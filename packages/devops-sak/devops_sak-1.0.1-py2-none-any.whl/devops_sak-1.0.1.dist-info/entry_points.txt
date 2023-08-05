@@ -1,0 +1,4 @@
+[console_scripts]
+dnsquery = devops_sak.dnsquery:main
+lanreporter = devops_sak.lanreporter:main
+
