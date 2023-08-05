@@ -1,0 +1,20 @@
+[cliff.recli]
+delete = resteasycli.cmd.requests:DELETE
+get = resteasycli.cmd.requests:GET
+init = resteasycli.cmd.initialize:Init
+list = resteasycli.cmd.requests:List
+list-endpoints = resteasycli.cmd.workspace:ListEndpoints
+list-saved = resteasycli.cmd.workspace:ListSavedRequests
+list-sites = resteasycli.cmd.workspace:ListSites
+patch = resteasycli.cmd.requests:PATCH
+post = resteasycli.cmd.requests:POST
+put = resteasycli.cmd.requests:PUT
+redo = resteasycli.cmd.requests:ReDoQueryFromSavedRequests
+redo-list = resteasycli.cmd.requests:ReDoListFromSavedRequest
+redo-show = resteasycli.cmd.requests:ReDoShowFromSavedRequest
+show = resteasycli.cmd.requests:Show
+show-saved = resteasycli.cmd.workspace:ShowSavedRequest
+
+[console_scripts]
+recli = resteasycli.cmd.main:main
+
