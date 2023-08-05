@@ -1,0 +1,3 @@
+[console_scripts]
+idnits = idnits.run:main
+
