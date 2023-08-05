@@ -1,0 +1,3 @@
+[console_scripts]
+woe_iv = woe_iv.cli:main
+
