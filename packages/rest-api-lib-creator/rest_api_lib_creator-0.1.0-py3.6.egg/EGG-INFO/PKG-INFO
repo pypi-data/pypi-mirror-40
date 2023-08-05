@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: rest-api-lib-creator
+Version: 0.1.0
+Summary: Boilerplate-free way for creating libs for REST APIs
+Home-page: https://github.com/filwaitman/rest-api-lib-creator
+Author: Filipe Waitman
+Author-email: filwaitman@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/filwaitman/rest-api-lib-creator/tarball/0.1.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

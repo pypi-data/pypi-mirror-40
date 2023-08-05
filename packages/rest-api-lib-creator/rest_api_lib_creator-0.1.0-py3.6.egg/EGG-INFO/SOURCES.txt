@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+requirements.txt
+requirements_test.txt
+setup.cfg
+setup.py
+rest_api_lib_creator/__init__.py
+rest_api_lib_creator/core.py
+rest_api_lib_creator/mixins.py
+rest_api_lib_creator/utils.py
+rest_api_lib_creator.egg-info/PKG-INFO
+rest_api_lib_creator.egg-info/SOURCES.txt
+rest_api_lib_creator.egg-info/dependency_links.txt
+rest_api_lib_creator.egg-info/requires.txt
+rest_api_lib_creator.egg-info/top_level.txt
+tests/__init__.py
+tests/test_utils.py
