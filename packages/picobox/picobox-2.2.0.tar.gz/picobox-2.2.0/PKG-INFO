@@ -1,0 +1,104 @@
+Metadata-Version: 1.1
+Name: picobox
+Version: 2.2.0
+Summary: Dependency injection framework designed with Python in mind.
+Home-page: https://github.com/ikalnytskyi/picobox
+Author: Ihor Kalnytskyi
+Author-email: ihor@kalnytskyi.com
+License: MIT
+Project-URL: Source, https://github.com/ikalnytskyi/picobox
+Project-URL: Documentation, https://picobox.readthedocs.io
+Project-URL: Bugs, https://github.com/ikalnytskyi/picobox/issues
+Description: Picobox
+        =======
+        
+        .. image:: https://img.shields.io/pypi/v/picobox.svg
+           :target: https://pypi.python.org/pypi/picobox
+        
+        .. image:: https://travis-ci.com/ikalnytskyi/picobox.svg?branch=master
+           :target: https://travis-ci.com/ikalnytskyi/picobox.svg?branch=master
+        
+        .. image:: https://codecov.io/gh/ikalnytskyi/picobox/branch/master/graph/badge.svg
+           :target: https://codecov.io/gh/ikalnytskyi/picobox
+        
+        .. image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
+           :target: https://saythanks.io/to/ikalnytskyi
+        
+        Picobox is opinionated dependency injection framework designed to be clean,
+        pragmatic and with Python in mind. No complex graphs, no implicit injections,
+        no type bindings – just picoboxes, and explicit demands!
+        
+        
+        Why?
+        ----
+        
+        Because we usually want to decouple our code and Python lack of clean and
+        pragmatic solutions (even third parties).
+        
+        
+        Features
+        --------
+        
+        * Support both values and factories.
+        * Support scopes (e.g. singleton, threadlocal, contextvars).
+        * Push boxes on stack, and use the top one to access values.
+        * Thread-safe.
+        * Lightweight (~213 LOC including scopes).
+        * Zero dependencies (on python3).
+        * Pure Python.
+        
+        
+        
+        Quickstart
+        ----------
+        
+        First
+        
+        .. code:: bash
+        
+            $ [sudo] python -m pip install picobox
+        
+        and then
+        
+        .. code:: python
+        
+            import picobox
+            import requests
+        
+            @picobox.pass_('conf')
+            @picobox.pass_('requests', as_='session')
+            def get_resource(uri, session, conf):
+                return session.get(conf['base_uri'] + uri)
+        
+            box = picobox.Box()
+            box.put('conf', {'base_uri': 'http://example.com'})
+            box.put('requests', factory=requests.Session, scope=picobox.threadlocal)
+        
+            with picobox.push(box):
+                get_resource('/resource', requests.Session(), {})
+                get_resource('/resource', requests.Session())
+                get_resource('/resource')
+        
+        
+        Links
+        -----
+        
+        * Documentation: https://picobox.readthedocs.io
+        * Source: https://github.com/ikalnytskyi/picobox
+        * Bugs: https://github.com/ikalnytskyi/picobox/issues
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
