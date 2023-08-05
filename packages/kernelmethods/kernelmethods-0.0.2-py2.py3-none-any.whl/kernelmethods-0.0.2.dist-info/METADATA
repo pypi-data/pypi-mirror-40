@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: kernelmethods
+Version: 0.0.2
+Summary: kernel methods and classes
+Home-page: https://github.com/raamana/kernelmethods
+Author: Pradeep Reddy Raamana
+Author-email: raamana@gmail.com
+License: Apache Software License 2.0
+Keywords: kernelmethods
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+=============
+kernelmethods
+=============
+
+
+.. image:: https://img.shields.io/pypi/v/kernelmethods.svg
+        :target: https://pypi.python.org/pypi/kernelmethods
+
+.. image:: https://img.shields.io/travis/raamana/kernelmethods.svg
+        :target: https://travis-ci.org/raamana/kernelmethods
+
+.. image:: https://readthedocs.org/projects/kernelmethods/badge/?version=latest
+        :target: https://kernelmethods.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+kernel methods and classes
+
+
+
+Features
+--------
+
+* TODO
+
+
+
+
+
+
+
+
+
+
+=======
+History
+=======
+
+0.0.1 (2018-12-26)
+------------------
+
+* First release on PyPI.
+
+
