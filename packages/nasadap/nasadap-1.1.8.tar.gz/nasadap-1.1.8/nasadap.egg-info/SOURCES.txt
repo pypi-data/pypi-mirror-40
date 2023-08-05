@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+nasadap/__init__.py
+nasadap/agg.py
+nasadap/core.py
+nasadap/util.py
+nasadap.egg-info/PKG-INFO
+nasadap.egg-info/SOURCES.txt
+nasadap.egg-info/dependency_links.txt
+nasadap.egg-info/requires.txt
+nasadap.egg-info/top_level.txt
+nasadap/tests/__init__.py
+nasadap/tests/test_trmm_gpm.py
