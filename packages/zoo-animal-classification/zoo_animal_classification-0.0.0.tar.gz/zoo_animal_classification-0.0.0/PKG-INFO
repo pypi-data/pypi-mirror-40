@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: zoo_animal_classification
+Version: 0.0.0
+Summary: classification of zoo animals using machine learning models
+Home-page: https://github.com/yijiaceline/CSF-project.git
+Author: Xinyu Zhang, Yijia Chen, Xiaochi Ge
+Author-email: mandy_zhang512@gwu.edu
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: # CSF-project
+        This package contains different models for prediction of zoo animals based on a given set of features. 
+Keywords: decision tree,classification,multiclass,zoo,animals
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
