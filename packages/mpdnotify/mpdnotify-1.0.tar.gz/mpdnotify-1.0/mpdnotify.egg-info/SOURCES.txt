@@ -1,0 +1,12 @@
+README.md
+setup.py
+mpdnotify/__init__.py
+mpdnotify/cli.py
+mpdnotify/config.py
+mpdnotify/notify.py
+mpdnotify.egg-info/PKG-INFO
+mpdnotify.egg-info/SOURCES.txt
+mpdnotify.egg-info/dependency_links.txt
+mpdnotify.egg-info/entry_points.txt
+mpdnotify.egg-info/requires.txt
+mpdnotify.egg-info/top_level.txt
