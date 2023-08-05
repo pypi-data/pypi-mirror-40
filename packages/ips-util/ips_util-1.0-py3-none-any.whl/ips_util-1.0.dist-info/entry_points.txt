@@ -1,0 +1,3 @@
+[console_scripts]
+ips_util = ips_util.__main__:main
+
