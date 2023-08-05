@@ -1,0 +1,3 @@
+[console_scripts]
+isempty = dpshell.empty_check:main
+
