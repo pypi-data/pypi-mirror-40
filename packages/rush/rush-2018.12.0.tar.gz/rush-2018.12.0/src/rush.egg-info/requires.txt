@@ -1,0 +1,5 @@
+attrs>=18.1.0
+
+[redis]
+redis
+rfc3986>=1.2.0
