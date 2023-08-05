@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyteams
+Version: 1.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/sergiotocalini/pyteams
+Author: Sergio Tocalini Joerg
+Author-email: sergiotocalini@gmail.com
+License: GNU GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Dist: requests
+
+UNKNOWN
+
+
