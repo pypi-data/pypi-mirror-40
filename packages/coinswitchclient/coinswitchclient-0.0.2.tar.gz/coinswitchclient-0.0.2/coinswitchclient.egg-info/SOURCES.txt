@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+coinswitch_client/APIClient.py
+coinswitch_client/TransactionManager.py
+coinswitch_client/__init__.py
+coinswitchclient.egg-info/PKG-INFO
+coinswitchclient.egg-info/SOURCES.txt
+coinswitchclient.egg-info/dependency_links.txt
+coinswitchclient.egg-info/requires.txt
+coinswitchclient.egg-info/top_level.txt
