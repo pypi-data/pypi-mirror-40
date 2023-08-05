@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+phoenix_letter.egg-info/PKG-INFO
+phoenix_letter.egg-info/SOURCES.txt
+phoenix_letter.egg-info/dependency_links.txt
+phoenix_letter.egg-info/entry_points.txt
+phoenix_letter.egg-info/not-zip-safe
+phoenix_letter.egg-info/requires.txt
+phoenix_letter.egg-info/top_level.txt
+src/phoenix_letter/__init__.py
+src/phoenix_letter/main.py
+src/phoenix_letter/version.py
