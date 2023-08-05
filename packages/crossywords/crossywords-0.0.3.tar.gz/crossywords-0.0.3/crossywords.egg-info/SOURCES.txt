@@ -1,0 +1,9 @@
+README.md
+setup.py
+crossywords/__init__.py
+crossywords/algorithm.py
+crossywords/main.py
+crossywords.egg-info/PKG-INFO
+crossywords.egg-info/SOURCES.txt
+crossywords.egg-info/dependency_links.txt
+crossywords.egg-info/top_level.txt
