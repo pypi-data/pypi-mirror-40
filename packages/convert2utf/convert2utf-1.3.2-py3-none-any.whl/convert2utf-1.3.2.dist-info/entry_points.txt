@@ -1,0 +1,3 @@
+[console_scripts]
+cvt2utf = cvt2utf.main:cli
+
