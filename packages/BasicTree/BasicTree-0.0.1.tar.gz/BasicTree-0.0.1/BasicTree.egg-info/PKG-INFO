@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: BasicTree
+Version: 0.0.1
+Summary: A basic tree library, useful for testing different searching methods
+Home-page: https://github.com/And1210/BasicTree
+Author: Andrew Farley
+Author-email: amf7crazy@gmail.com
+License: UNKNOWN
+Description: # BasicTree
+        
+        A basic tree library used to test out different searchs (such as depth-first or breadth-first).
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
