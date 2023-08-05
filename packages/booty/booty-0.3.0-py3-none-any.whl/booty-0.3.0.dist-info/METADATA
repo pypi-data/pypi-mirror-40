@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: booty
+Version: 0.3.0
+Summary: Bootloader application
+Home-page: https://github.com/slightlynybbled/booty
+Author: Jason R. Jones
+Author-email: slightlynybbled@gmail.com
+License: MIT
+Keywords: bootloader pic24 dspic
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Natural Language :: English
+Requires-Dist: click (>=6.7)
+Requires-Dist: intelhex (>=2.1)
+Requires-Dist: pyserial (>=3.3)
+
+====================
+Purpose
+====================
+
+This code base is for creating a bootloader to be utilized for programming microcontroller flash
+memory.  This program takes a hex file as the input and will parse that hex file and send it to
+the microcontroller bootloader over a serial UART (commonly referred to as a "serial port" or
+"COM port").
+
+The companion project to this is the `bootypic <http://github.com/slightlynybbled/bootypic>`_ project.
+Hopefully, more will follow.  GUI provided at `bootycontrol <http://github.com/slightlynybbled/bootycontrol>`_.
+
+Please see the `documentation <https://booty.readthedocs.io/en/latest/index.html>`_ for further guidance!
+
+
