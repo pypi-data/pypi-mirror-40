@@ -1,0 +1,12 @@
+tensordata/__init__.py,sha256=dCmhkUBP1iJhC0Q3so_CV2peIcj3uOTH6ikavtlvggI,35
+tensordata/cv/__init__.py,sha256=3w96H-NDWHdwFZ2te-ZowKloC9JeGtPcGvtBbf5sThE,243
+tensordata/cv/_cifar.py,sha256=qdPzHNXYglxPGhvtSgVx4WROUfqXZi5vrhSK99-xfMc,5689
+tensordata/cv/_mnist.py,sha256=xbSkStYs4SCGqoK6FZxTrVtJOAHlOI-UZ1n3bX6whP4,6248
+tensordata/cv/_mnist_kuzushiji.py,sha256=4BI4Fj9E8z_mRkZVCuZ-Sr4l32x_1eedlwhh9NJhTzk,5762
+tensordata/cv/_mnist_tibetan.py,sha256=5dMwgDGgzzV0sXgjhSIri0KkXXfmpTywibQMZLOIdIo,2498
+tensordata/dm/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tensordata/nlp/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tensordata-0.0.1.dist-info/METADATA,sha256=m922fHgc18CqQ2BYbjl6Y6hxFcEK4md8GF28i6zocoU,1357
+tensordata-0.0.1.dist-info/RECORD,,
+tensordata-0.0.1.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+tensordata-0.0.1.dist-info/top_level.txt,sha256=ZjaFQBEWnjpJwczEEMLMmh02y7IV06yvg-RCxqgQTt4,11
