@@ -1,0 +1,13 @@
+Doraemon/__init__.py,sha256=r3Qbu1CRVRamGpEQI4KNZXbgehtZ9W3yAOeEw-UnJ1I,186
+Doraemon/OnlineSearch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Doraemon/OnlineSearch/google_KG.py,sha256=i2iu_7m6JLAsPeWa-n5C2U-WeosISsI7w42YNgcyczQ,5842
+Doraemon/OnlineSearch/google_translator.py,sha256=Gy0zmd4E7aJ5AlRniM41v2jBExyxEchSQXAwFHkZhtM,12221
+Doraemon/Requests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Doraemon/Requests/chrome_dora.py,sha256=1QLBJqFJ-mHyff9rgi9HXnZHBb6L_fm0gJzYz7lkpqs,1573
+Doraemon/Requests/requests_dora.py,sha256=C3Ynx7byoRpZu95v8VkiTN_LJKggUaIfR_NhE8g7Ees,3911
+Doraemon/Requests/settings.py,sha256=FCEDWa2_riYN2LvpX6oJnGA2t1BC1XRFAVOFmvRefGk,2488
+Doraemon-0.7.dist-info/LICENSE.txt,sha256=Z_R0qA8dBa_UBMGgM1fEedm0wV7CBqwIBaBEOu4iT5w,1077
+Doraemon-0.7.dist-info/METADATA,sha256=o4YnnLrqQwaHHrZZv_Wgh2alzMbYJSQL_hytsMNEBVs,4932
+Doraemon-0.7.dist-info/WHEEL,sha256=GP9ACJkAJDyZNf-YPXDAJ8MdtRSNk4H2JK7vR-x05CE,116
+Doraemon-0.7.dist-info/top_level.txt,sha256=NldgApRUSCo-TCrzYMBmJ7omXWOEhV7hcsGKX33N6OI,9
+Doraemon-0.7.dist-info/RECORD,,
