@@ -1,0 +1,12 @@
+README.md
+setup.py
+dumbpm/__init__.py
+dumbpm/cmd.py
+dumbpm/parse.py
+dumbpm/prio.py
+dumbpm.egg-info/PKG-INFO
+dumbpm.egg-info/SOURCES.txt
+dumbpm.egg-info/dependency_links.txt
+dumbpm.egg-info/entry_points.txt
+dumbpm.egg-info/requires.txt
+dumbpm.egg-info/top_level.txt
