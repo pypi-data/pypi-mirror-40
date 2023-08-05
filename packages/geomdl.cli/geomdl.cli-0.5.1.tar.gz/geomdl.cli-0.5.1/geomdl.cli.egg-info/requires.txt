@@ -1,0 +1,5 @@
+geomdl>=5.0b1
+matplotlib
+Jinja2>=2.10
+ruamel.yaml>=0.15
+libconf
