@@ -1,0 +1,3 @@
+[console_scripts]
+polt = polt.cli.commands.main:cli
+
