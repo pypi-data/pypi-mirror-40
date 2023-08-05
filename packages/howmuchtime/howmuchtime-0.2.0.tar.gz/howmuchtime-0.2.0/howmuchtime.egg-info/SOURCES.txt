@@ -1,0 +1,9 @@
+README.rst
+setup.py
+howmuchtime/__init__.py
+howmuchtime/hmt.py
+howmuchtime.egg-info/PKG-INFO
+howmuchtime.egg-info/SOURCES.txt
+howmuchtime.egg-info/dependency_links.txt
+howmuchtime.egg-info/entry_points.txt
+howmuchtime.egg-info/top_level.txt
