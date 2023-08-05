@@ -1,0 +1,8 @@
+README.md
+setup.py
+sora/__init__.py
+sora/_sora.py
+sora.egg-info/PKG-INFO
+sora.egg-info/SOURCES.txt
+sora.egg-info/dependency_links.txt
+sora.egg-info/top_level.txt
