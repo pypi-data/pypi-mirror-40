@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: overlay
+Version: 1.0.0
+Summary: A package that creates and manipulates screen overlays.
+Home-page: https://github.com/davidmaamoaix/Overlay
+Author: David Ma
+Author-email: davidma@davidma.cn
+License: MIT
+Description: # Overlay
+        A package that creates and manipulates screen overlays.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
