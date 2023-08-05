@@ -1,0 +1,8 @@
+falcon<=2.0.0,>=1.1.0
+bravado_core<=6.0.0,>=4.6.0
+
+[tests]
+pytest
+pytest-cov
+pytest-flake8
+webtest
