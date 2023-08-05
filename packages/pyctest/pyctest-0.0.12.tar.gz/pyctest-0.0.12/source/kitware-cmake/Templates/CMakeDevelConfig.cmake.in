@@ -1,0 +1,73 @@
+
+#include(${CMAKE_CURRENT_LIST_DIR}/@PROJECT_NAME@ConfigVersion.cmake)
+
+@PACKAGE_INIT@
+
+#------------------------------------------------------------------------------#
+#   Settings
+#------------------------------------------------------------------------------#
+set(CMAKE_PROJECT_LIBRARIES @_CMAKE_LIBRARIES@)
+set(CTEST_PROJECT_LIBRARIES @_CTEST_LIBRARIES@)
+set(CPACK_PROJECT_LIBRARIES @_CPACK_LIBRARIES@)
+set(PROJECT_LIBRARIES       @_INSTALL_LIBRARIES@)
+
+#------------------------------------------------------------------------------#
+#   Determine install tree or build tree
+#------------------------------------------------------------------------------#
+if("${CMAKE_SOURCE_DIR}" STREQUAL "@CMAKE_SOURCE_DIR@")
+    set(_CMakeDevel_INSTALL_TREE OFF)    # in the build tree
+else()
+    set(_CMakeDevel_INSTALL_TREE ON)    # in the install tree
+endif()
+
+#------------------------------------------------------------------------------#
+#   Import
+#------------------------------------------------------------------------------#
+if(_CMakeDevel_INSTALL_TREE)
+
+    include(${CMAKE_CURRENT_LIST_DIR}/CMakeDevelDepends.cmake)
+
+    #--------------------------------------------------------------------------#
+    #   try to get imported location
+    #--------------------------------------------------------------------------#
+
+    string(TOUPPER "${CMAKE_BUILD_TYPE}" _BUILD_TYPE)
+    if("${CMAKE_BUILD_TYPE}" MATCHES "${CMAKE_CONFIGURATION_TYPES}")
+        set(IMPORTED_LOCATION_BUILD IMPORTED_LOCATION_${_BUILD_TYPE})
+    else("${CMAKE_BUILD_TYPE}" MATCHES "${CMAKE_CONFIGURATION_TYPES}")
+        set(IMPORTED_LOCATION_BUILD )
+    endif("${CMAKE_BUILD_TYPE}" MATCHES "${CMAKE_CONFIGURATION_TYPES}")
+
+    foreach(_LIB ${PROJECT_LIBRARIES})
+        foreach(_LOC
+            IMPORTED_LOCATION
+            ${IMPORTED_LOCATION_BUILD}
+            IMPORTED_LOCATION_RELEASE
+            IMPORTED_LOCATION_RELWITHDEBINFO
+            IMPORTED_LOCATION_DEBUG
+            IMPORTED_LOCATION_MINSIZEREL)
+            if(NOT _${_LIB}_LOCATION)
+                get_target_property(_${_LIB}_LOCATION ${_LIB} ${_LOC})
+            endif()
+        endforeach()
+    endforeach()
+
+else()
+
+    set_property(TARGET CMakeLib
+        PROPERTY IMPORTED_LOCATION "${CMAKE_BINARY_DIR}/CMakeLibBuild.cmake")
+    set_property(TARGET CTestLib
+        PROPERTY IMPORTED_LOCATION "${CMAKE_BINARY_DIR}/CTestLibBuild.cmake")
+    set_property(TARGET CPackLib
+        PROPERTY IMPORTED_LOCATION "${CMAKE_BINARY_DIR}/CPackLibBuild.cmake")
+
+endif()
+
+#------------------------------------------------------------------------------#
+#   find_package variables
+#------------------------------------------------------------------------------#
+include(FindPackageHandleStandardArgs)
+# handle the QUIETLY and REQUIRED arguments and set @PROJECT_NAME@_FOUND to TRUE
+# if all listed variables are TRUE
+find_package_handle_standard_args(CMakeDevel DEFAULT_MSG
+    CMakeLib CTestLib CPackLib)
