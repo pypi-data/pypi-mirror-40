@@ -1,0 +1,6 @@
+-r base.txt
+
+pytest==4.0.2
+pytest-django==3.4.4
+pytest-cov==2.6.0
+coveralls==1.5.1
