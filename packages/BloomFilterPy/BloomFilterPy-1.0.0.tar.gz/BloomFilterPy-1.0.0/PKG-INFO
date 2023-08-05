@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: BloomFilterPy
+Version: 1.0.0
+Summary: Scalable bloom filter using different backends written in Python
+Home-page: https://github.com/nitxiodev/python-bloomfilter
+Author: nitxiodev
+Author-email: smnitxio@gmail.com
+License: UNKNOWN
+Description: # python-bloomfilter
+        Scalable bloom filter using different backends written in Python
+        
+        Work in progress.... (TODO: installation guide)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
