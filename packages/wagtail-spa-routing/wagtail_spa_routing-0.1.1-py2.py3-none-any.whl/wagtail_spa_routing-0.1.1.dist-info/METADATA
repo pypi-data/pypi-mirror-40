@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: wagtail-spa-routing
+Version: 0.1.1
+Summary: Wagtail SPA routing tools
+Home-page: https://github.com/jetstyle/wagtail-spa-routing
+Author: Anton Vakhmin
+Author-email: html.ru@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: django
+Requires-Dist: wagtail
+Requires-Dist: djangorestframework
+
+# Установка
+
+```
+pip install wagtail-spa-routing
+```
+
+# Подключение
+
+Добавить в `INSTALLED_APPS`:
+
+```
+'wagtail_spa.apps.WagtailSpaConfig',
+```
+
+Подключить роуты в `urls.py`:
+
+```
+path('api/wagtail-spa/', include('wagtail_spa.urls', namespace='wagtail_spa')),
+```
+
+Для добавления возможности возврата драфтового объекта, использовать `RetrieveDraftMixin`, который основан на `rest_framework.mixins.RetrieveModelMixin` и предполагает что вид возвращает объект методом `get_object`.
+
+
