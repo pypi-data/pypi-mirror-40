@@ -1,0 +1,11 @@
+is_git_repo_clean/__init__.py,sha256=8woNaIv4mmoMMkKnuq-JimXrj_h7rVjcZ-8YXIvUgzA,107
+is_git_repo_clean/check.py,sha256=ia11zws4ryk_r30pqRg85c6zZHSrM7IUoRgC0z3hnXo,3946
+is_git_repo_clean/cli.py,sha256=HlvQiIfKgwMQtxQf9NB_rkoUUMtTLl9jc1wRm8GRglg,2929
+is_git_repo_clean/meta.py,sha256=sEAhGxRzEBE5t0VjAcJ-336II62pGIQ0eLrs42I-sGU,18
+is_git_repo_clean/script.py,sha256=W33_BCVsys4xYVUTMkRrcDtpn51ePDwFfvoQCpaDS1c,249
+is_git_repo_clean/utils.py,sha256=UPKkScKIoiBjMScq59HtCQ16Lds-jzbvfqzuN-2VlgQ,1233
+license.txt,sha256=udvqQEGd1ixNoOrGdR4OAm_piFdW5hbtx8J01ck7WCY,623
+is_git_repo_clean-0.3.1.dist-info/entry_points.txt,sha256=RywiChovYMkfzvsRCF5Q7xfbEphL48pP9eYh6EuvtCU,62
+is_git_repo_clean-0.3.1.dist-info/WHEEL,sha256=OyjuYVC9vVJqb-Aqln3fyrroYJ4WrcSwx2msO2AokVc,85
+is_git_repo_clean-0.3.1.dist-info/METADATA,sha256=brtZBhaRcmUPrXosNcYFGwzwMxdOCBn3cBFBovud49Q,2744
+is_git_repo_clean-0.3.1.dist-info/RECORD,,
