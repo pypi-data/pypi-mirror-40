@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pylogbeat.py
+setup.cfg
+setup.py
+pylogbeat.egg-info/PKG-INFO
+pylogbeat.egg-info/SOURCES.txt
+pylogbeat.egg-info/dependency_links.txt
+pylogbeat.egg-info/requires.txt
+pylogbeat.egg-info/top_level.txt
