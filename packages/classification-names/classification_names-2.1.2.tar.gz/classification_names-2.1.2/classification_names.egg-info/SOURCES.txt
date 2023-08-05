@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+classification_names/__init__.py
+classification_names/classifier.pickle
+classification_names/count_vect.pickle
+classification_names/predict_person_company_name.py
+classification_names/train_message.py
+classification_names.egg-info/PKG-INFO
+classification_names.egg-info/SOURCES.txt
+classification_names.egg-info/dependency_links.txt
+classification_names.egg-info/requires.txt
+classification_names.egg-info/top_level.txt
