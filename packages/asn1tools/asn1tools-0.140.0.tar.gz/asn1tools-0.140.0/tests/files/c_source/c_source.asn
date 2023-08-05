@@ -1,0 +1,104 @@
+CSource DEFINITIONS AUTOMATIC TAGS ::=
+
+BEGIN
+
+A ::= SEQUENCE {
+    a INTEGER (-128..127),
+    b INTEGER (-32768..32767),
+    c INTEGER (-2147483648..2147483647),
+    d INTEGER (-9223372036854775808..9223372036854775807),
+    e INTEGER (0..255),
+    f INTEGER (0..65535),
+    g INTEGER (0..4294967295),
+    h INTEGER (0..18446744073709551615),
+    i BOOLEAN,
+    j OCTET STRING (SIZE(11))
+}
+
+B ::= CHOICE {
+    a INTEGER (-128..127),
+    b A,
+    c NULL
+}
+
+C ::= SEQUENCE (SIZE(0..2)) OF B
+
+D ::= SEQUENCE (SIZE(1..10)) OF SEQUENCE {
+    a SEQUENCE {
+        b CHOICE {
+            c INTEGER (0..1),
+            d BOOLEAN
+        },
+        e SEQUENCE (SIZE(3..4)) OF NULL,
+        f NULL
+    },
+    g SEQUENCE {
+        h ENUMERATED {
+            i, j, k
+        },
+        l OCTET STRING (SIZE(1..2))
+    },
+    m SEQUENCE {
+        n BOOLEAN OPTIONAL,
+        o INTEGER (-2..4) DEFAULT 3,
+        p SEQUENCE {
+            q OCTET STRING (SIZE(5)),
+            r BOOLEAN OPTIONAL
+        } OPTIONAL
+    }
+}
+
+E ::= SEQUENCE {
+    a CHOICE {
+        b CHOICE {
+            c BOOLEAN
+        }
+    }
+}
+
+F ::= SEQUENCE (SIZE (1..2)) OF SEQUENCE (SIZE (1)) OF BOOLEAN
+
+G ::= SEQUENCE {
+    a BOOLEAN OPTIONAL,
+    b BOOLEAN OPTIONAL,
+    c BOOLEAN OPTIONAL,
+    d BOOLEAN OPTIONAL,
+    e BOOLEAN OPTIONAL,
+    f BOOLEAN OPTIONAL,
+    g BOOLEAN OPTIONAL,
+    h BOOLEAN OPTIONAL,
+    i BOOLEAN OPTIONAL
+}
+
+H ::= NULL
+
+I ::= OCTET STRING (SIZE(24))
+
+J ::= OCTET STRING (SIZE(22..23))
+
+K ::= ENUMERATED {
+    a
+}
+
+L ::= OCTET STRING (SIZE(0..500))
+
+M ::= SEQUENCE {
+    a K,
+    b N
+}
+
+N ::= SEQUENCE {
+    a K,
+    b A,
+    c O
+}
+
+O ::= SEQUENCE (SIZE(1..260)) OF BOOLEAN
+
+P ::= SEQUENCE {
+    a A,
+    b M,
+    c F
+}
+
+END
