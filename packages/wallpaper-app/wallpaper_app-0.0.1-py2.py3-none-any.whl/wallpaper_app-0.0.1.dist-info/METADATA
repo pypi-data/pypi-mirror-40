@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: wallpaper-app
+Version: 0.0.1
+Summary: A macOS statusbar app for wallpaper switching
+Home-page: https://github.com/kpj/wallpaper_app
+License: MIT
+Author: kpj
+Author-email: kpjkpjkpjkpjkpjkpj@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pync (>=2.0,<3.0)
+Requires-Dist: requests (>=2.21,<3.0)
+Requires-Dist: rumps (>=0.2.2,<0.3.0)
+Project-URL: Repository, https://github.com/kpj/wallpaper_app
+Description-Content-Type: text/markdown
+
+# wallpaper_app
+
+
+## Installation
+
+```bash
+$ pip install wallpaper_app
+```
+
+
+## Usage
+
+Executing
+
+```bash
+$ wallpaper_app
+```
+
+will spawn a statusbar app with controls.
+

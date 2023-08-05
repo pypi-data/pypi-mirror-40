@@ -1,0 +1,3 @@
+[console_scripts]
+wallpaper_app=wallpaper_app:launch_app
+
