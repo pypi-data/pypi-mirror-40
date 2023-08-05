@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: pystag
+Version: 0.0.3
+Summary: Tag local music using spotify api
+Home-page: https://github.com/meain/stag
+Author: Abin Simon
+Author-email: abinsimon10@gmail.com
+License: UNKNOWN
+Description: # stag
+        
+        **Spotify tagger**
+        
+        Tag your local music using spotify api.
+        
+        ![gif](https://i.imgur.com/5uYTIyJ.gif)
+        
+        > Adds proper `title`, `album` and `artist` and renames file to `title`.
+        
+        
+        ## Installation
+        
+        ```
+        pip3 install pystag
+        ```
+        
+        ## Usage
+        
+        You need to set 3 environment variables for `stag`
+        
+        - `SPOTIFY_CLIENT_ID`
+        - `SPOTIFY_CLIENT_SECRET`
+        - `SPOTIFY_USERNAME`
+        
+        Once this is set you can just run `stag` in the folder with the songs.
+        
+        
+        ## Requirements
+        
+        - `eyed3` ( tag songs )
+        - `spotipy` ( spotify api client )
+        
+Keywords: spotify,music,tagging
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Multimedia :: Sound/Audio :: Editors
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
