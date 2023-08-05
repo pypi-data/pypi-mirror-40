@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: enczipstream
+Version: 1.1.5
+Summary: Zipfile generator with password support
+Home-page: https://github.com/quarkslab/python-zipstream
+Author: Allan Lei, Jonathan Koch, irma-dev
+Author-email: allanlei@helveticode.com, devthat@mailbox.org, irma-dev@quarkslab.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: zip streaming encryption password
+Platform: UNKNOWN

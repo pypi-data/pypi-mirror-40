@@ -1,0 +1,9 @@
+setup.py
+enczipstream/__init__.py
+enczipstream/compat.py
+enczipstream/zipencrypt2.py
+enczipstream/zipencrypt3.py
+enczipstream.egg-info/PKG-INFO
+enczipstream.egg-info/SOURCES.txt
+enczipstream.egg-info/dependency_links.txt
+enczipstream.egg-info/top_level.txt
