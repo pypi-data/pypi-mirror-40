@@ -1,0 +1,12 @@
+annict/__init__.py,sha256=lj74aE22iyvk9nGpJfdzCuy8lvjTLuY43ToSQrULNGQ,222
+annict/api.py,sha256=qxAdH3InwQ2JKU075CRzAO2i8EZ8aaSDK7BB7m1bjow,21407
+annict/auth.py,sha256=xvUS2hotzTOf3wdxuBJgk3keZyIs3uWX_-AYZ9gHIYs,2097
+annict/cursors.py,sha256=KMivlgsCiPdign9PfbdwNJerEGbbEvD3qj3OrPC1hE8,1041
+annict/models.py,sha256=6PAGquHgmM-3zyiQHbjEcfbfyh7rkIznhrmbcJRleYI,12994
+annict/parsers.py,sha256=D3iRMU-yPUKXZBmwp7-vdkZtgVMeMZiL0hxD55KBSik,510
+annict/services.py,sha256=dYsJjo1MZl5J6cxT_-i2a0qLOEP6aVORaOpJhlPCQnw,2323
+annict/utils.py,sha256=OujH9DuwT8lXu93zKT7ANBex6UlgParhIV3k2xsn8OY,420
+annict-0.7.0.dist-info/LICENSE,sha256=MRT9Uxprz7OiD_dIPSpEQai0myfqOuodAGz0V97XtrA,1060
+annict-0.7.0.dist-info/WHEEL,sha256=OyjuYVC9vVJqb-Aqln3fyrroYJ4WrcSwx2msO2AokVc,85
+annict-0.7.0.dist-info/METADATA,sha256=bQ13hzbUZXV4uMQFxD9IWxS2Wn8Ez35cnMeoRj30pBk,3880
+annict-0.7.0.dist-info/RECORD,,
