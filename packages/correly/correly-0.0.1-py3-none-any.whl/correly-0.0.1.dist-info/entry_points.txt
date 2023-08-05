@@ -1,0 +1,3 @@
+[console_scripts]
+correly = correly.__main__:main
+
