@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gcode-receiver
+Version: 1.0.2
+Summary: A very-dumb Gcode receiver for an integration test.
+Home-page: https://github.com/coddingtonbeear/gcode-receiver
+Author: Adam Coddington
+Author-email: me@adamcoddington.net
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: typing (<4.0,>=3.6.6)
+Requires-Dist: six
+
+UNKNOWN
+
+
