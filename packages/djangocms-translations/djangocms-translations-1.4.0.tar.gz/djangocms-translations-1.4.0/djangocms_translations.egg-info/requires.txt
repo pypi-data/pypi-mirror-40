@@ -1,0 +1,8 @@
+django-cms>=3.5
+django-appconf<2,>=1.0
+django-extended-choices
+djangocms-transfer
+pygments
+yurl
+requests
+celery<4.0,>=3.0
