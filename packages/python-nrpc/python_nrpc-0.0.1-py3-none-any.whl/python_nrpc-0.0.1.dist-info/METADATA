@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: python-nrpc
+Version: 0.0.1
+Summary: A python code generator and lib for Nats RPC
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: protobuf
+Requires-Dist: mako
+Requires-Dist: asyncio-nats-client
+
+# Python NRPC
+
+A python code generator and lib for Nats RPC.
+
+See https://github.com/nats-rpc/nrpc for more information on NRPC itself.
+
+This package provides a protoc plugin to generate python code from
+.proto files, respecting the nrpc specifications.
+
+
