@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: file-cache
+Version: 0.1.1
+Summary: Cache dataframe with local file
+Home-page: https://github.com/Flyfoxs/file_cache
+Author: Felix Li
+Author-email: lilao@163.com
+License: MIT
+Keywords: pandas cache python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
