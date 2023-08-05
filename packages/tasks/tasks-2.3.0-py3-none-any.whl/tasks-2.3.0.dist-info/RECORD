@@ -1,0 +1,17 @@
+tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tasks/color.py,sha256=VDCJCWik3nTh8wIrlj3Dw5RuQsRu3kkDmZTEJVBtkJs,797
+tasks/commands.py,sha256=tfGcbdpJS8S2Q95A5oG3JlU_HTaJKU_2pSb-SdbhV9g,510
+tasks/events.py,sha256=GMp835KUPBALluwllhkiWIc13BDHEVbauS8tf3CV7YU,1587
+tasks/func.py,sha256=fG-WZI3mkFGLSHN5ZXB47kYLbX0CE0AWTWizT0Nb1_0,852
+tasks/main.py,sha256=rdvjvUY75fb6E0Syf0PUU0uMTprKg5Wa-4Elv_rm2Ic,2669
+tasks/model.py,sha256=EL9wCOBvfsVdRwDAIvysiqTcxwr1-AOvlAwp1uKPBaQ,1738
+tasks/parse.py,sha256=8vvvWkjGMwMAe6uuvmFoRjAMWNP0BtnRw0-7zGM7v8Y,6499
+tasks/update.py,sha256=TypFxXq-kgS1C9DIXTQ_sV_6Y1odBdSn7Fw5Funo9U8,4435
+tasks/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tasks/test/test_update.py,sha256=cnBYdO8GNfFI9AXXKzTpsTTcZWaTW8FuoWdZCr6hkf4,389
+tasks-2.3.0.data/scripts/tasks-i3status,sha256=Rc4HXl0UaBeL99SrI9eJpAM0ec5A5_dMUUTsylTuL_A,96
+tasks-2.3.0.dist-info/METADATA,sha256=KJ1rzznzWgXz1ejvXPdAZCU6_Pp36D_2WdajCWRgkQE,1655
+tasks-2.3.0.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+tasks-2.3.0.dist-info/entry_points.txt,sha256=-K9n_IemDd-Hx31ZAlF7JwatjEz-k1V9XhZkfx7Bi4s,42
+tasks-2.3.0.dist-info/top_level.txt,sha256=pmoOA8PX_0fqDNJOqBhUzZrBxf7VnayEQtBYI66Xiro,6
+tasks-2.3.0.dist-info/RECORD,,
