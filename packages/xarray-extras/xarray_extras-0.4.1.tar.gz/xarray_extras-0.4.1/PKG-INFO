@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: xarray_extras
+Version: 0.4.1
+Summary: Advanced / experimental algorithms for xarray
+Home-page: https://github.com/crusaderky/xarray_extras
+Author: Guido Imperiale
+Author-email: guido.imperiale@gmail.com
+License: Apache
+Description: 
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
