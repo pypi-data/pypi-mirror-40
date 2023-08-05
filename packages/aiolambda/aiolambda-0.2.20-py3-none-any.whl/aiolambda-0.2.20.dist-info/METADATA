@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: aiolambda
+Version: 0.2.20
+Summary: Python async microservices fasts!
+Home-page: http://github.com/pando85/aiolambda
+Author: Pando85
+Author-email: pand855@gmail.com
+License: GPLv3+
+Keywords: aiolambda asyncio aiohttp asyncpg aio-pika
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Requires-Dist: asyncpg (==0.18.2)
+Requires-Dist: cchardet (==2.1.4)
+Requires-Dist: passlib (==1.7.1)
+Requires-Dist: uvloop (==0.11.3)
+Requires-Dist: aio-pika (==4.9.1)
+Requires-Dist: docopt (==0.6.2)
+Requires-Dist: Jinja2 (==2.10)
+Requires-Dist: pathlib (==1.0.1)
+Requires-Dist: connexion (==2.2.0)
+Requires-Dist: toolz (==0.9.0)
+
+# aiolambda [![Build Status](https://travis-ci.org/pando85/aiolambda.svg?branch=master)](https://travis-ci.org/pando85/aiolambda) [![License](https://img.shields.io/github/license/pando85/aiolambda.svg)](https://github.com/pando85/aiolambda/blob/master/LICENSE) [![Documentation Status](https://readthedocs.org/projects/aiolambda/badge/?version=latest)](https://aiolambda.readthedocs.io/en/latest/?badge=latest)
+
+Python async microservices fasts and functional!
+
+## Technologies
+
+### Python libraries
+
+#### core
+
+- [connexion](https://github.com/zalando/connexion):
+    Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support
+- [aiohttp](https://github.com/aio-libs/aiohttp):
+    Asynchronous HTTP client/server framework for asyncio and Python
+
+#### Databases
+
+- [asyncpg](https://github.com/MagicStack/asyncpg):
+    A fast PostgreSQL Database Client Library for Python/asyncio.
+
+#### AMPQ
+
+- [aio-pika](https://github.com/mosquito/aio-pika):
+    Wrapper for the PIKA for asyncio and humans.
+
+### Software
+
+#### Containers
+
+- [Docker](https://www.docker.com/)
+
+#### Continuous Integration
+
+- [travis-ci](https://travis-ci.org/)
+
+
