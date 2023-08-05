@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: repulsiveruby
+Version: 2.1.2
+Summary: RepulsiveRuby: A game made with Pygame
+Home-page: https://github.com/wq2012/RepulsiveRuby
+Author: Quan Wang
+Author-email: quanrpi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# RepulsiveRuby [![Build Status](https://travis-ci.org/wq2012/RepulsiveRuby.svg?branch=master)](https://travis-ci.org/wq2012/RepulsiveRuby)
+
+This is a game I made with Python and Pygame in 2011.
+
+All sounds and images are created by me.
+
+To start the game, run:
+
+```
+python repulsiveruby
+```
+
+[![Youtube Demo Screenshot](resources/youtube_demo_screenshot.png)](https://www.youtube.com/watch?v=_84BQWzlzKo)
+
+
