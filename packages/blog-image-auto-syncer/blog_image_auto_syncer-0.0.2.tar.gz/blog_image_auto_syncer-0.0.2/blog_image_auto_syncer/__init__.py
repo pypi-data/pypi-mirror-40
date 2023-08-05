@@ -1,0 +1,1 @@
+name = "blog_image_auto_syncer"
