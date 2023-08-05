@@ -1,0 +1,87 @@
+Metadata-Version: 1.1
+Name: spark-etl-python
+Version: 0.1.5
+Summary: A Python package that provides helpers for cleaning, deduplication, enrichment, etc. in Spark
+Home-page: https://github.com/flavianh/spark_etl_python
+Author: Flavian Hautbois
+Author-email: flavianh@sicara.com
+License: MIT license
+Description: ================
+        Spark ETL Python
+        ================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/spark_etl_python.svg
+                :target: https://pypi.python.org/pypi/spark_etl_python
+        
+        .. image:: https://img.shields.io/travis/flavianh/spark_etl_python.svg
+                :target: https://travis-ci.org/flavianh/spark_etl_python
+        
+        .. image:: https://readthedocs.org/projects/spark-etl-python/badge/?version=latest
+                :target: https://spark-etl-python.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        .. image:: https://pyup.io/repos/github/flavianh/spark_etl_python/shield.svg
+             :target: https://pyup.io/repos/github/flavianh/spark_etl_python/
+             :alt: Updates
+        
+        
+        
+        A Python package that provides helpers for cleaning, deduplication, enrichment, etc. in Spark
+        
+        
+        * Free software: MIT license
+        * Documentation: https://spark-etl-python.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        
+        Develop
+        -------
+        
+        In order to be able to develop on this package:
+        
+        1. Create a virtual environment
+        2. Install pip-tools: `pip install pip-tools`
+        3. Run `pip-sync requirements_dev.txt requirements.txt`
+        
+        To update dependencies, add them to `requirements.in` (if they are needed to run the package) or `requirements_dev.in`.
+        Then run `pip-compile requirements.in` or `pip-compile requirements_dev.in`.
+        
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2018-10-19)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: spark_etl_python
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
