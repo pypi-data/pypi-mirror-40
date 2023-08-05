@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: postimpressionism
+Version: 0.0.32
+Summary: An Art Exploration Package based on Modernist Avant-garde as a Post-Production of Digital Contemporary Art;
+Home-page: https://github.com/AkiraDemenech/Postimpressionism
+Author: Akira Demenech
+Author-email: akira.demenech@gmail.com
+License: MIT License
+Keywords: art image postproduction postimpressionism
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pillow
+
+# Postimpressionism
+The Fauvist Filter [pink],
+Dada pixel organizator [dada],
+Strip antidiagonal      [strip]
+and other artististic Python image processing functions
+at Postimpressionism.py
+
+//    For more (very) simple Art applications, see more:
+https://akirademenech.github.io/artec/techart.html
+
