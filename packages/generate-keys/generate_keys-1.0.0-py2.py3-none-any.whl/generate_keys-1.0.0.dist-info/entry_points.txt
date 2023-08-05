@@ -1,0 +1,3 @@
+[console_scripts]
+generate_keys = generate_keys:main
+
