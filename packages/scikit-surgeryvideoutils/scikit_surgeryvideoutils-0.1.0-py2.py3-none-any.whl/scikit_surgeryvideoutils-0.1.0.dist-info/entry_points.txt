@@ -1,0 +1,4 @@
+[console_scripts]
+sksurgerycharucotest = sksurgeryvideoutils.ui.sksurgerycharucotest_command_line:main
+sksurgeryvideolag = sksurgeryvideoutils.ui.sksurgeryvideolag_command_line:main
+

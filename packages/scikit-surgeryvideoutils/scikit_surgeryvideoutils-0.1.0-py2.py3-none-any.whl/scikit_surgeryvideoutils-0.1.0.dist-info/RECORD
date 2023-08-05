@@ -1,0 +1,16 @@
+scikit_surgeryvideoutils-0.1.0.dist-info/DESCRIPTION.rst,sha256=85GjwVEV_GDw5eCz0ukb5Ds-9eG8hlBqdVypsdfEouM,3385
+scikit_surgeryvideoutils-0.1.0.dist-info/METADATA,sha256=950ARGsZTsV4iX0wLYGJ8x4jIE-PfJ27vOCozg3l_74,4470
+scikit_surgeryvideoutils-0.1.0.dist-info/RECORD,,
+scikit_surgeryvideoutils-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+scikit_surgeryvideoutils-0.1.0.dist-info/entry_points.txt,sha256=7lY_mWs6CFSiS0ba3YeQCxo0kXC_JNQJJH_o5BQzs-U,183
+scikit_surgeryvideoutils-0.1.0.dist-info/metadata.json,sha256=OIvxBz3IxF9A4sk2jP4FqW-17ovGswy5xh7agqit7gQ,1611
+scikit_surgeryvideoutils-0.1.0.dist-info/top_level.txt,sha256=HWIQEqRNhriLd5JnsgBiaktrqvQEcBnOVi4dBvNrbOM,20
+sksurgeryvideoutils/__init__.py,sha256=btSf-vSJO9SsdGdf-fQonEv-at4ZsXlRgrjB9kK6qAo,139
+sksurgeryvideoutils/_version.py,sha256=msT0OmhJepBE3EFHslWMO4uszN9HYipwL0WlfPuKiYQ,18470
+sksurgeryvideoutils/ui/__init__.py,sha256=4achA2j3PMM53fThUS_UiTe85WNEB2fCcaUPFxJKlYk,47
+sksurgeryvideoutils/ui/sksurgerycharucotest_command_line.py,sha256=EukHAS0OXfTpYYeo405G5UX5bt6uiqLyfPwFcqirNaM,2095
+sksurgeryvideoutils/ui/sksurgerycharucotest_demo.py,sha256=A3lrNP2IKjpyOA28LYAfsVATcb5x2JaTx4bpRFQxDgw,4545
+sksurgeryvideoutils/ui/sksurgeryvideolag_command_line.py,sha256=hfniyJZKKvtHeOnp5dKWI4lFoLUIlWv5JePVWlM4vTc,2298
+sksurgeryvideoutils/ui/sksurgeryvideolag_demo.py,sha256=h1zFfECWUIxjDBd96wqwJWROGSfUaTV_tRCgD1cQkys,5243
+sksurgeryvideoutils/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sksurgeryvideoutils/utils/image_utils.py,sha256=K2pObPRhkZbP1OXA8xdvfNFkrhnn_aBd5ZhZbFQ91b0,1021
