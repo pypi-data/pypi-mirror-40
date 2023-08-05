@@ -1,0 +1,3 @@
+[console_scripts]
+stash-pr-stats = stash_pr_stats.stash_pr_stats:main
+
