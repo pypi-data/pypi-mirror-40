@@ -1,0 +1,9 @@
+
+[dev]
+check-manifest
+
+[test]
+coverage
+pytest
+pytest-benchmark
+hypothesis
