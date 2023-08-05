@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 64 of /Users/t/dev/spacegraphcats/snakeconf/Snakefile:
+Missing input files for rule bcalm_cdbg:
+SRR1976948.abundtrim.fq.gz

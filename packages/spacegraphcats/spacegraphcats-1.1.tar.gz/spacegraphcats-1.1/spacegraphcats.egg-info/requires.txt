@@ -1,0 +1,11 @@
+Cython
+mypy
+screed
+pytest
+numpy
+pandas
+snakemake
+sortedcontainers
+sourmash
+khmer
+bbhash

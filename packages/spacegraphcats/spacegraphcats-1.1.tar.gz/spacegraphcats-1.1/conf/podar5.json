@@ -1,0 +1,10 @@
+{
+    "catlas_base": "podar5",
+    "input_sequences": ["podar-ref/0.fa", "podar-ref/1.fa", "podar-ref/2.fa", "podar-ref/3.fa", "podar-ref/4.fa"],
+    "ksize": 31,
+    "radius": 1,
+
+    "searchquick": ["data/2.fa.gz"],
+
+    "search": ["podar-ref/0.fa"]
+}

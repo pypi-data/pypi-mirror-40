@@ -1,0 +1,15 @@
+{
+    "catlas_base": "twofoo-untrimmed",
+    "input_sequences": ["2.fa.pe.mapped.fa.gz",
+                        "2.fa.se.mapped.fa.gz",
+                        "63.fa.pe.mapped.fa.gz",
+                        "63.fa.se.mapped.fa.gz"],
+    "ksize": 31,
+    "radius": 1,
+
+    "searchquick": ["data/63.fa.gz"],
+
+    "search": ["data/2.fa.gz", "data/47.fa.gz", "data/63.fa.gz"],
+
+    "shadow_ratio_maxsize": 1000
+}

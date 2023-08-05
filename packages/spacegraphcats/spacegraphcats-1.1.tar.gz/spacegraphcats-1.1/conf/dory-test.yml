@@ -1,0 +1,14 @@
+catlas_base: dory
+ksize: 21
+keep_graph_pendants: true
+radius: 1
+
+input_sequences:
+- data/dory-subset.fa
+
+searchquick:
+- data/dory-head.fa
+
+search:
+- data/dory-head.fa
+
