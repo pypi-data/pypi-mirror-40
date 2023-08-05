@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: nrdpy
+Version: 0.9.1
+Summary: A library for submitting passive checks to Nagios NRDP endpoints
+Home-page: https://github.com/AlexForster/nrdpy
+Author: Alex Forster
+Author-email: alex@alexforster.com
+Maintainer: Alex Forster
+Maintainer-email: alex@alexforster.com
+License: 3-Clause ("New") BSD license
+Description: UNKNOWN
+Platform: UNKNOWN
