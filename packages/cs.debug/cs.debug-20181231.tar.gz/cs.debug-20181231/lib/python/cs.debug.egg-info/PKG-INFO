@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: cs.debug
+Version: 20181231
+Summary: Assorted debugging facilities.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: Assorted debugging facilities.
+        
+        * Lock, RLock, Thread: wrappers for threading facilties; simply import from here instead of there
+        
+        * thread_dump, stack_dump: dump thread and stack state
+        
+        * @DEBUG: decorator to wrap functions in timing and value debuggers
+        
+        * @trace: decorator to report call and return from functions
+        
+        * @trace_caller: decorator to report caller of function
+        
+        * TracingObject: subclass of cs.obj.Proxy that reports attribute use
+        
+        ## Function `DEBUG(f, force=False)`
+        
+        Decorator to wrap functions in timing and value debuggers.
+        
+        ## Function `debug_object_shell(o, prompt=None)`
+        
+        Interactive prompt for inspecting variables.
+        
+        ## Class `DebuggingLock`
+        
+        MRO: `DebugWrapper`, `cs.obj.O`  
+        Wrapper class for threading.Lock to trace creation and use.
+        cs.threads.Lock() returns on of these in debug mode or a raw
+        threading.Lock otherwise.
+        
+        ## Class `DebuggingRLock`
+        
+        MRO: `DebugWrapper`, `cs.obj.O`  
+        Wrapper class for threading.RLock to trace creation and use.
+        cs.threads.RLock() returns on of these in debug mode or a raw
+        threading.RLock otherwise.
+        
+        ## Class `DebugShell`
+        
+        MRO: `cmd.Cmd`  
+        An interactive prompt for python statements, attached to /dev/tty by default.
+        
+        ## Class `DebugWrapper`
+        
+        MRO: `cs.obj.O`  
+        Base class for classes presenting debugging wrappers.
+        
+        ## Function `DF(func, *a, **kw)`
+        
+        Wrapper for a function call to debug its use.
+        Requires rewriting the call from f(*a, *kw) to DF(f, *a, **kw).
+        Alternatively one could rewrite as DEBUG(f)(*a, **kw).
+        
+        ## Function `Lock()`
+        
+        Factory function: if cs.logutils.logging_level <= logging.DEBUG
+        then return a DebuggingLock, otherwise a threading.Lock.
+        
+        ## Function `openfiles(substr=None, pid=None)`
+        
+        Run lsof(8) against process `pid` returning paths of open files whose paths contain `substr`.
+        `substr`: default substring to select by; default returns all paths.
+        `pid`: process to examine; default from os.getpid().
+        
+        ## Function `RLock()`
+        
+        Factory function: if cs.logutils.logging_level <= logging.DEBUG
+        then return a DebuggingRLock, otherwise a threading.RLock.
+        
+        ## Function `selftest(module_name, defaultTest=None, argv=None)`
+        
+        Called by my unit tests.
+        
+        ## Function `stack_dump(stack=None, limit=None, logger=None, log_level=None)`
+        
+        Dump a stack trace to a logger.
+        `stack`: a stack list as returned by traceback.extract_stack.
+                 If missing or None, use the result of traceback.extract_stack().
+        `limit`: a limit to the number of stack entries to dump.
+                 If missing or None, dump all entries.
+        `logger`: a logger.Logger ducktype or the name of a logger.
+                 If missing or None, obtain a logger from logging.getLogger().
+        `log_level`: the logging level for the dump.
+                 If missing or None, use cs.logutils.logging_level.
+        
+        ## Function `thread_dump(Ts=None, fp=None)`
+        
+        Write thread identifiers and stack traces to the file `fp`.
+        `Ts`: the Threads to dump; if unspecified use threading.enumerate().
+        `fp`: the file to which to write; if unspecified use sys.stderr.
+        
+        ## Class `TimingOutLock`
+        
+        A Lock replacement which times out, used for locating deadlock points.
+        
+        ## Function `trace(func)`
+        
+        Decorator to report the call and return of a function.
+        
+        ## Function `trace_caller(func)`
+        
+        Decorator to report the caller of a function when called.
+        
+        ## Class `TraceSuite`
+        
+        Context manager to trace start and end of a code suite.
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
