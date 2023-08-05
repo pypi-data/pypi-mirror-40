@@ -1,0 +1,6 @@
+
+[saveableimage]
+PIL
+
+[saveablendarray]
+numpy
