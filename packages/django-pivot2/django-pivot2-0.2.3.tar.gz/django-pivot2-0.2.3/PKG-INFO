@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: django-pivot2
+Version: 0.2.3
+Summary: Easily browse your Django models
+Home-page: https://github.com/cloudspectatordevelopment/django-pivot
+Author: Anthony Monthe (2uluPro)
+Author-email: amonthe@cloudspectator.com
+License: BSD
+Description: ============
+        django-pivot
+        ============
+        
+        django-pivot is a wrapper around numpy, pandas and django-pandas letting
+        you easily manipulate pivot tables on your queryset.
+        
+Keywords: django,web,data,html
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Environment :: Console
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
