@@ -1,0 +1,470 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Containerised Benji &mdash; Benji Backup 0.1.0+dirty documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/asciinema/asciinema-player.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="For Backy² Users" href="backy2.html" />
+    <link rel="prev" title="Data Layout" href="datalayout.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Benji Backup
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#ubuntu-16-04">Ubuntu 16.04</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#centos-7">CentOS 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#redhat-enterprise-linux-7">Redhat Enterprise Linux 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#common-to-all-distributions">Common to All Distributions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#some-vocabulary">Some Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#backup">Backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#deep-scrub-and-scrub">Deep Scrub and Scrub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#restore">Restore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#version-removal-and-cleanup">Version Removal and Cleanup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#benji-yaml">benji.yaml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#configuration-file-location">Configuration File Location</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#multiple-instance-installations">Multiple Instance Installations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="backup.html">Backup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#simple-backup">Simple backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#versions">Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#differential-backup">Differential Backup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="backup.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#specifying-a-block-size">Specifying a Block Size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#tag-backups">Tag Backups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#export-metadata">Export Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#the-hints-file">The Hints File</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scrub.html">Scrub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scrub.html#reasons-for-scrubbing">Reasons for Scrubbing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scrub.html#scrubbing-methods">Scrubbing Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="scrub.html#consistency-and-checksum">Consistency and Checksum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scrub.html#using-the-backup-source">Using the Backup Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scrub.html#consistency-only">Consistency Only</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="scrub.html#batch-scrubbing">Batch scrubbing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scrub.html#scrubbing-failures">Scrubbing Failures</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="restore.html">Restore</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="restore.html#full-restore">Full Restore</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="restore.html#with-unavailable-metadata-backend">With Unavailable Metadata Backend</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="restore.html#nbd-server">NBD Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="restore.html#read-only-mount">Read-Only Mount</a></li>
+<li class="toctree-l3"><a class="reference internal" href="restore.html#read-write-mount">Read-Write Mount</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="restore.html#restore-of-invalid-versions">Restore of Invalid Versions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="enforce.html">Retention Policy Enforcement</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enforce.html#policy-specification">Policy Specification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cleanup.html">Cleanup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cleanup.html#removing-old-versions">Removing old versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cleanup.html#id1">Cleanup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cleanup.html#fast-cleanup">Fast Cleanup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cleanup.html#full-cleanup">Full Cleanup</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="administration.html">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="administration.html#secure-your-metadata">Secure your Metadata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="administration.html#metadata-redundancy">Metadata Redundancy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration.html#database-high-availability">Database High-Availability</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="administration.html#secure-your-block-data">Secure your block data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration.html#monitoring">Monitoring</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="administration.html#tips-tricks">Tips &amp; tricks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration.html#machine-output">Machine output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration.html#debugging">Debugging</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="datalayout.html">Data Layout</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="datalayout.html#meta-backend">Meta Backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datalayout.html#data-backend">Data Backend</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Containerised Benji</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#images">Images</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#benji">benji</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#benji-rook">benji-rook</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#helm-charts">Helm Charts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">benji-rook</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="backy2.html">For Backy² Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="support.html#issue-tracker">Issue Tracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="support.html#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="support.html#security">Security</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Benji Backup</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Containerised Benji</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/container.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="containerised-benji">
+<span id="container"></span><h1>Containerised Benji<a class="headerlink" href="#containerised-benji" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="images">
+<h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="benji">
+<h3>benji<a class="headerlink" href="#benji" title="Permalink to this headline">¶</a></h3>
+<p>This image is based on the Debian 9 (Slim Stretch) variant of
+<a class="reference external" href="https://hub.docker.com/_/python/">library/python</a>. It includes
+Benji and its dependencies. Ceph support as well kubectl for Kubernetes
+integration are also present.</p>
+<p>The Benji configuration should be put into <code class="docutils literal notranslate"><span class="pre">/etc/benji/benji.yaml</span></code>.
+Either by inheriting from this image and overwriting it or by mounting
+it directly into the container. By default a minimal test configuration
+is provided by the image.</p>
+<p>The default Docker entry point is just <code class="docutils literal notranslate"><span class="pre">/bin/bash</span></code>.</p>
+<p>The first use case for this image is to simply test Benji:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run --interactive --tty --rm elementalnet/benji
+</pre></div>
+</div>
+<p>After that you can directly proceed with step 1 of the instructions
+in section <a class="reference internal" href="quickstart.html#quickstart"><span class="std std-ref">Quick Start</span></a>.</p>
+<p>The second use case would be to get some real work done without
+directly installing Benji on the host. A series of scripts to
+facilitate the calling of Benji are provided under <code class="docutils literal notranslate"><span class="pre">/scripts</span></code>
+inside of the container. They can also be found in the <code class="docutils literal notranslate"><span class="pre">scripts</span></code>
+directory of the source distribution. For an example of how to
+use these scripts please see <code class="docutils literal notranslate"><span class="pre">images/benji-rook/scripts/backup.sh</span></code>.</p>
+</div>
+<div class="section" id="benji-rook">
+<h3>benji-rook<a class="headerlink" href="#benji-rook" title="Permalink to this headline">¶</a></h3>
+<p>This image is based on the <a class="reference external" href="https://rook.io/docs/rook/master/toolbox.html">Rook Toolbox</a>
+image and additionally includes Benji of course and all of its dependencies.
+<code class="docutils literal notranslate"><span class="pre">/usr/local/bin/toolbox.sh</span></code> is still run in the background to update and
+create <code class="docutils literal notranslate"><span class="pre">/etc/ceph/ceph.conf</span></code> so that a direct access to the Ceph RBD images
+is possible. It also includes <code class="docutils literal notranslate"><span class="pre">kubectl</span></code> which is used to find RBD volumes
+to include in the backup from PersistentVolumeClaim resources.</p>
+<p>A container from this image can be parametrised with three enviroment variables:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="32%" />
+<col width="28%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Default</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>BACKUP_SCHEDULE</td>
+<td>0 33 0 * * *</td>
+<td>Backup interval as a Go cron expression</td>
+</tr>
+<tr class="row-odd"><td>BACKUP_RETENTION</td>
+<td>latest3,hours24,days30,months3</td>
+<td>Retention policy like with <code class="docutils literal notranslate"><span class="pre">benji</span> <span class="pre">enforce</span></code></td>
+</tr>
+<tr class="row-even"><td>BACKUP_SELECTOR</td>
+<td>nomatch==matchnot</td>
+<td>Kubernetes label selector applied to PVCs</td>
+</tr>
+<tr class="row-odd"><td>DEEP_SCRUBBING_ENABLED</td>
+<td>1</td>
+<td>Enable batch deep scrubbing</td>
+</tr>
+<tr class="row-even"><td>DEEP_SCRUBBING_VERSIONS_PERCENTAGE</td>
+<td>6</td>
+<td>Percentage of versions to check</td>
+</tr>
+<tr class="row-odd"><td>DEEP_SCRUBBING_BLOCKS_PERCENTAGE</td>
+<td>50</td>
+<td>Percentage of blocks to check</td>
+</tr>
+<tr class="row-even"><td>SCRUBBING_ENABLED</td>
+<td>0</td>
+<td>Enable batch scrubbing</td>
+</tr>
+<tr class="row-odd"><td>SCRUBBING_VERSIONS_PERCENTAGE</td>
+<td>6</td>
+<td>Percentage of versions to check</td>
+</tr>
+<tr class="row-even"><td>SCRUBBING_BLOCKS_PERCENTAGE</td>
+<td>50</td>
+<td>Percentage of blocks to check</td>
+</tr>
+<tr class="row-odd"><td>PROM_PUSH_GATEWAY</td>
+<td>:9091</td>
+<td>Address of Prometheus push gateway</td>
+</tr>
+</tbody>
+</table>
+<p>The BACKUP_SCHEDULE environment variable determines how often the actual backup
+scripts is called. This is a <a class="reference external" href="https://godoc.org/github.com/robfig/cron">Go cron expression</a>.
+There currently is no support for more advanced scheduling options.</p>
+<p>The backup scripts first  searches for PersistemtVolumeClaims matching the
+BACKUP_SELECTOR. By default there should be no matching PVCs, so you must
+specify a different BACKUP_SELECTOR to get any backups. You can either use
+an existing label or you can augment your PVCs with a new one. If you
+specify an empty string as the BACKUP_SELECTOR all PVCs will be backed up.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">See <a class="reference external" href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors">https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors</a>
+for possible ways to construct your selector.</p>
+</div>
+<p>After each volume backup <code class="docutils literal notranslate"><span class="pre">benji</span> <span class="pre">enforce</span></code> is called for the volume with
+the retention policy specified in BACKUP_RETENTION. Currently the same
+retention policy is applied to all PVCs. BACKUP_RETENTION and BACKUP_SCHEDULE
+have to be considered together.</p>
+<p>The next step is to call <code class="docutils literal notranslate"><span class="pre">benji</span> <span class="pre">cleanup</span></code> to remove blocks on the
+data backend and free the space of deleted <em>versions</em>.</p>
+<p>The two last steps are deep scrubbing and scrubbing of <em>versions</em> if enabled.
+A random sample of <em>versions</em> is picked according to the configured
+DEEP_SCRUBBING_VERSIONS_PERCENTAGE (or SCRUBBING_VERSIONS_PERCENTAGE
+respectively). Of these <em>versions</em> a randomly sampled selection of blocks
+will be checked. The number of blocks checked from each <em>version</em> is
+determined by DEEP_SCRUBBING_BLOCKS_PERCENTAGE (or SCRUBBING_BLOCKS_PERCENTAGE
+in the case of metadata only scrubbing).</p>
+<p>At the end a number of different <a class="reference external" href="https://prometheus.io/">Prometheus</a> is pushed
+to the configured <a class="reference external" href="https://github.com/prometheus/pushgateway">pushgateway</a>.</p>
+<p>The backup script uses Ceph’s and Benji’s differential backup features if
+possible. Normally only the initial backup is a full backup. RBD snapshots
+names are generated with a prefix of <em>b-</em>.</p>
+</div>
+</div>
+<div class="section" id="helm-charts">
+<h2>Helm Charts<a class="headerlink" href="#helm-charts" title="Permalink to this headline">¶</a></h2>
+<p>Helm charts are the preferred way to deploy Benji’s Docker images.</p>
+<div class="section" id="id1">
+<h3>benji-rook<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Benji includes a Helm chart to use the Docker image of the same name. It consists
+of a Deployment and supporting resources and assumes that you have RBAC in place.
+The deployment is composed a two containers: One running the benji-rook Docker image
+and another one running a <a class="reference external" href="https://prometheus.io/">Prometheus</a>
+<a class="reference external" href="https://github.com/prometheus/pushgateway">pushgateway</a>. These can be scraped
+by a Prometheus server and the Pod generated by the Deployment has annotations
+so that it can be detected automatically:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>annotations:
+  prometheus.io/port: <span class="s2">&quot;{{ .Values.pushgateway.port }}&quot;</span>
+  prometheus.io/scrape: <span class="s2">&quot;true&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The deployed resources create a service account which has the right to <em>get</em>,
+<em>list</em> and <em>watch</em> all PersistentVolume and PersistentVolumeClaim resources in all
+namespaces.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="backy2.html" class="btn btn-neutral float-right" title="For Backy² Users" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="datalayout.html" class="btn btn-neutral" title="Data Layout" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017-2019, Lars Fenneberg, Daniel Kraft
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/asciinema/asciinema-player.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ 
+
+
+</body>
+</html>

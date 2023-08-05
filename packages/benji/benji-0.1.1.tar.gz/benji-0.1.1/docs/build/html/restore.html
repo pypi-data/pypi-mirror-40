@@ -1,0 +1,569 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Restore &mdash; Benji Backup 0.1.0+dirty documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/asciinema/asciinema-player.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Retention Policy Enforcement" href="enforce.html" />
+    <link rel="prev" title="Scrub" href="scrub.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Benji Backup
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#ubuntu-16-04">Ubuntu 16.04</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#centos-7">CentOS 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#redhat-enterprise-linux-7">Redhat Enterprise Linux 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#common-to-all-distributions">Common to All Distributions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#some-vocabulary">Some Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#backup">Backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#deep-scrub-and-scrub">Deep Scrub and Scrub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#restore">Restore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#version-removal-and-cleanup">Version Removal and Cleanup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#benji-yaml">benji.yaml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#configuration-file-location">Configuration File Location</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#multiple-instance-installations">Multiple Instance Installations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="backup.html">Backup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#simple-backup">Simple backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#versions">Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#differential-backup">Differential Backup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="backup.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#specifying-a-block-size">Specifying a Block Size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#tag-backups">Tag Backups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#export-metadata">Export Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backup.html#the-hints-file">The Hints File</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scrub.html">Scrub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scrub.html#reasons-for-scrubbing">Reasons for Scrubbing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scrub.html#scrubbing-methods">Scrubbing Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="scrub.html#consistency-and-checksum">Consistency and Checksum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scrub.html#using-the-backup-source">Using the Backup Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scrub.html#consistency-only">Consistency Only</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="scrub.html#batch-scrubbing">Batch scrubbing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scrub.html#scrubbing-failures">Scrubbing Failures</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Restore</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#full-restore">Full Restore</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#with-unavailable-metadata-backend">With Unavailable Metadata Backend</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#nbd-server">NBD Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#read-only-mount">Read-Only Mount</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#read-write-mount">Read-Write Mount</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#restore-of-invalid-versions">Restore of Invalid Versions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="enforce.html">Retention Policy Enforcement</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enforce.html#policy-specification">Policy Specification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cleanup.html">Cleanup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cleanup.html#removing-old-versions">Removing old versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cleanup.html#id1">Cleanup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cleanup.html#fast-cleanup">Fast Cleanup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cleanup.html#full-cleanup">Full Cleanup</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="administration.html">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="administration.html#secure-your-metadata">Secure your Metadata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="administration.html#metadata-redundancy">Metadata Redundancy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration.html#database-high-availability">Database High-Availability</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="administration.html#secure-your-block-data">Secure your block data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administration.html#monitoring">Monitoring</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="administration.html#tips-tricks">Tips &amp; tricks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration.html#machine-output">Machine output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="administration.html#debugging">Debugging</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="datalayout.html">Data Layout</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="datalayout.html#meta-backend">Meta Backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datalayout.html#data-backend">Data Backend</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="container.html">Containerised Benji</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="container.html#images">Images</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="container.html#benji">benji</a></li>
+<li class="toctree-l3"><a class="reference internal" href="container.html#benji-rook">benji-rook</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="container.html#helm-charts">Helm Charts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="container.html#id1">benji-rook</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="backy2.html">For Backy² Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="support.html#issue-tracker">Issue Tracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="support.html#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="support.html#security">Security</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Benji Backup</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Restore</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/restore.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="restore">
+<span id="id1"></span><h1>Restore<a class="headerlink" href="#restore" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ benji restore --help
+usage: benji restore [-h] [-s] [-f] [-d] version_uid destination
+
+positional arguments:
+  version_uid           Version UID to restore
+  destination           Destination URL
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s, --sparse          Restore only existing blocks
+  -f, --force           Overwrite an existing file, device or image
+  -d, --database-backend-less
+                        Restore without requiring the database backend
+</pre></div>
+</div>
+<p>There are two possible restore options with Benji.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you determined which <em>version</em> you want to restore it is a
+good idea to protect this <em>version</em> to prevent any accidental
+or automatic removal by any retention policy enforcement that you
+might have configure.</p>
+</div>
+<div class="section" id="full-restore">
+<h2>Full Restore<a class="headerlink" href="#full-restore" title="Permalink to this headline">¶</a></h2>
+<p>A full restore either saves the image into a file (i.e. an image file),
+to a device (e.g. /dev/hda) or to a Ceph RBD volume.</p>
+<p>The target is specified by the URI scheme. Examples:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ benji restore &lt;version_uid&gt; file:///var/lib/vms/myvm.img
+$ benji restore -f &lt;version_uid&gt; file:///dev/hdm
+$ benji restore &lt;version_uid&gt; rbd://pool/myvm_restore
+</pre></div>
+</div>
+<p>If the target already exists, i.e.</p>
+<ul class="simple">
+<li>it is a device file</li>
+<li>the Ceph RBD volume exists</li>
+<li>the image file exists</li>
+</ul>
+<p>you need to <code class="docutils literal notranslate"><span class="pre">--force</span></code> the restore. Without <code class="docutils literal notranslate"><span class="pre">--force</span></code> Benji will throw
+an error and give you a hint:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ benji restore V1  file://RESTORE
+    INFO: $ benji restore V1 file://RESTORE
+   ERROR: Restore target RESTORE already exists. Force the restore <span class="k">if</span> you want to overwrite it.
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When restoring to a Ceph RBD volume, Benji will create this RBD
+volume for you if it does not exist.</p>
+</div>
+<p>If the restore target is full of zeros (or holes will read as zeros which is normally
+the case), you can use the <code class="docutils literal notranslate"><span class="pre">-s</span></code> or <code class="docutils literal notranslate"><span class="pre">--sparse</span></code> option for faster restores.
+With <code class="docutils literal notranslate"><span class="pre">-s</span></code> Benji will not write (i.e. skip) empty blocks or blocks that contain
+only zeros. This will also normally lead to less space usage on the restore target.</p>
+<p>Usually you can use <code class="docutils literal notranslate"><span class="pre">-s</span></code> if your restore target is</p>
+<ul class="simple">
+<li>a new/non-existing Ceph RBD volume</li>
+<li>a new/non-existing image file (Benji will then create a sparse file)</li>
+</ul>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">If you use <code class="docutils literal notranslate"><span class="pre">-s</span></code> on existing images, devices or files, restoreed
+blocks which are sparse will not be written, so whatever random data was
+in there before the restore will remain.</p>
+</div>
+<div class="section" id="with-unavailable-metadata-backend">
+<span id="metadata-backend-less"></span><h3>With Unavailable Metadata Backend<a class="headerlink" href="#with-unavailable-metadata-backend" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">benji</span> <span class="pre">restore</span></code> also supports a mode (<code class="docutils literal notranslate"><span class="pre">-M</span></code> or <code class="docutils literal notranslate"><span class="pre">--metadata-backend-less</span></code>)
+where it doesn’t require its database backend to be up und running. In this mode
+Benji will import the backup of the <em>version’s</em> metadata from the <em>data backend</em>
+into an ad-hoc in-memory database and then restore the image normally. This is
+for failure scenarios where the database is unavailable and you still need to
+restore a <em>version</em>. But because of the database unavailability you can’t just
+execute <code class="docutils literal notranslate"><span class="pre">benji</span> <span class="pre">ls</span></code> to determine the right <em>version</em> to restore, you need to
+generate some reports beforehand and save them somewhere to be able to chose
+the right <em>version</em>!</p>
+</div>
+</div>
+<div class="section" id="nbd-server">
+<h2>NBD Server<a class="headerlink" href="#nbd-server" title="Permalink to this headline">¶</a></h2>
+<p>Benji comes with its own NBD server which when started exports all known <em>versions</em>.
+These <em>versions</em> can then be mounted on any Linux host. The requirements on the
+Linux host are:</p>
+<ul class="simple">
+<li>loaded <code class="docutils literal notranslate"><span class="pre">nbd</span></code> kernel module (<code class="docutils literal notranslate"><span class="pre">modprobe</span> <span class="pre">nbd</span></code> as root)</li>
+<li>installed <code class="docutils literal notranslate"><span class="pre">nbd-client</span></code> program (RPM package <code class="docutils literal notranslate"><span class="pre">nbd</span></code> on RHEL/CentOS7/Fedora)</li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">nbd-client</span></code> contacts Benji’s NBD server and connects an exported <em>version</em> to
+a NBD block device (<code class="docutils literal notranslate"><span class="pre">/dev/nbd*</span></code>) on the Linux host. After that your image data is
+available as a block device. If the image contains a filesystem it can be mounted
+normally. You can then search for the relevant files and restore them.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ benji nbd --help
+usage: benji nbd [-h] [-a BIND_ADDRESS] [-p BIND_PORT] [-r]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -a BIND_ADDRESS, --bind-address BIND_ADDRESS
+                        Bind to the specified IP address (default: 127.0.0.1)
+  -p BIND_PORT, --bind-port BIND_PORT
+                        Bind to the specified port (default: 10809)
+  -r, --read-only       NBD device is read-only (default: False)
+</pre></div>
+</div>
+<div class="section" id="read-only-mount">
+<h3>Read-Only Mount<a class="headerlink" href="#read-only-mount" title="Permalink to this headline">¶</a></h3>
+<p>This command will run the NBD server in read-only mode and wait for incoming connections:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ benji nbd -r
+    INFO: Starting to serve nbd on <span class="m">127</span>.0.0.1:10809
+</pre></div>
+</div>
+<p>You can then create a new NBD block device (as root):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># modprobe nbd</span>
+<span class="c1"># nbd-client -N V0000000001 127.0.0.1 -p 10809 /dev/nbd0</span>
+Negotiation: ..size <span class="o">=</span> 10MB
+<span class="nv">bs</span><span class="o">=</span><span class="m">1024</span>, <span class="nv">sz</span><span class="o">=</span><span class="m">10485760</span> bytes
+
+<span class="c1"># partprobe might throw a few WARNINGs because we&#39;re read-only</span>
+partprobe /dev/nbd0
+mount -o ro,norecovery /dev/nbd0p1 /mnt
+</pre></div>
+</div>
+<p>If the image directly contains a filesystem you can skip the partprobe command
+and mount the <code class="docutils literal notranslate"><span class="pre">/dev/nbd0</span></code> device directly. The <code class="docutils literal notranslate"><span class="pre">norecovery</span></code> mount option
+is required as Benji  blocks all writes because of the <code class="docutils literal notranslate"><span class="pre">-r</span></code> option.</p>
+<p>When the NBD server receives an incoming connection it will output something
+like this:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span> INFO: Incoming connection from <span class="m">127</span>.0.0.1:33714
+DEBUG: <span class="o">[</span><span class="m">127</span>.0.0.1:33714<span class="o">]</span>: <span class="nv">opt</span><span class="o">=</span><span class="m">7</span>, <span class="nv">len</span><span class="o">=</span><span class="m">17</span>, <span class="nv">data</span><span class="o">=</span>b<span class="s1">&#39;\x00\x00\x00\x0bV0000000001\x00\x00&#39;</span>
+DEBUG: <span class="o">[</span><span class="m">127</span>.0.0.1:33714<span class="o">]</span>: <span class="nv">opt</span><span class="o">=</span><span class="m">1</span>, <span class="nv">len</span><span class="o">=</span><span class="m">11</span>, <span class="nv">data</span><span class="o">=</span>b<span class="s1">&#39;V0000000001&#39;</span>
+ INFO: <span class="o">[</span><span class="m">127</span>.0.0.1:33714<span class="o">]</span> Negotiated export: V0000000001
+ INFO: nbd is <span class="nb">read</span> only.
+</pre></div>
+</div>
+<p>When you’re done:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>umount /mnt
+nbd-client -d /dev/nbd0
+</pre></div>
+</div>
+<p>In the other console, benji will tell you that nbd has disconnected:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>INFO: <span class="o">[</span><span class="m">127</span>.0.0.1:38316<span class="o">]</span> disconnecting
+</pre></div>
+</div>
+<p>You can then either reconnect or press <code class="docutils literal notranslate"><span class="pre">ctrl+c</span></code> to end Benji’s NBD server.</p>
+<p>You may also mount the volume from another server. Benji by default binds the
+NBD server to 127.0.0.1 (i.e. localhost). For this server to be reachable from
+the outside bind to 0.0.0.0:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>benji nbd -a <span class="m">0</span>.0.0.0 -r
+</pre></div>
+</div>
+<p>You can also chose an appropriate port with the <code class="docutils literal notranslate"><span class="pre">-p</span></code> option.</p>
+</div>
+<div class="section" id="read-write-mount">
+<h3>Read-Write Mount<a class="headerlink" href="#read-write-mount" title="Permalink to this headline">¶</a></h3>
+<p>In addition to providing read-only access, Benji also allows read-write access
+in a safe way. This means, the backup <strong>will not be modified</strong>.
+The command sequence is mostly the same (but note the missing <code class="docutils literal notranslate"><span class="pre">-r</span></code>):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ benji nbd
+    INFO: Starting to serve nbd on <span class="m">127</span>.0.0.1:10809
+</pre></div>
+</div>
+<p>Of course you can then mount the volume read/write and fix all potential
+filesystem errors or database files or you can modify data in any way you want:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># modprobe nbd</span>
+<span class="c1"># nbd-client -N V0000000001 127.0.0.1 -p 10809 /dev/nbd0</span>
+Negotiation: ..size <span class="o">=</span> 10MB
+<span class="nv">bs</span><span class="o">=</span><span class="m">1024</span>, <span class="nv">sz</span><span class="o">=</span><span class="m">10485760</span> bytes
+
+<span class="c1"># partprobe /dev/nbd0</span>
+<span class="c1"># mount /dev/nbd0p1 /mnt</span>
+<span class="c1"># echo &#39;test&#39; &gt; /mnt/tmp/test  # example!</span>
+</pre></div>
+</div>
+<p>Any writes to the device will initiate a copy-on-write (COW) of the
+original blocks to a new version that Benji will dynamically create for you.</p>
+<p>After you disconnect from the nbd-client via:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>umount /mnt
+nbd-client -d /dev/nbd0
+</pre></div>
+</div>
+<p>Benji will start to finalise the COW version. Depending on how many changes
+have been done to the original image this will take some time!</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>INFO: <span class="o">[</span><span class="m">127</span>.0.0.1:46526<span class="o">]</span> disconnecting
+INFO: Fixating version V0000000002 with <span class="m">1024</span> blocks, please wait!
+INFO: Fixation <span class="k">done</span>. Deleting temporary data, please wait!
+INFO: Finished.
+</pre></div>
+</div>
+<p>You can then safely press <code class="docutils literal notranslate"><span class="pre">ctrl+c</span></code> in order to end the NBD server.</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">If you <code class="docutils literal notranslate"><span class="pre">ctrl+c</span></code> before the last “INFO: Finished.” is reported,
+your copy-on-write clone will not be written completely and thus be invalid.
+However, the original backup <em>version</em> <strong>will be untouched in any case</strong>.</p>
+</div>
+<p>You can see the created COW <em>version</em> with <code class="docutils literal notranslate"><span class="pre">benji</span> <span class="pre">ls</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ benji ls
+    INFO: $ benji ls
++---------------------+-------------+------+-----------------------------------------+----------+------------+-------+-----------+------+
+<span class="p">|</span>         date        <span class="p">|</span>     uid     <span class="p">|</span> name <span class="p">|</span> snapshot_name                           <span class="p">|</span>     size <span class="p">|</span> block_size <span class="p">|</span> valid <span class="p">|</span> protected <span class="p">|</span> tags <span class="p">|</span>
++---------------------+-------------+------+-----------------------------------------+----------+------------+-------+-----------+------+
+<span class="p">|</span> <span class="m">2018</span>-06-10T01:00:43 <span class="p">|</span> V0000000001 <span class="p">|</span> <span class="nb">test</span> <span class="p">|</span>                                         <span class="p">|</span> <span class="m">41943040</span> <span class="p">|</span>    <span class="m">4194304</span> <span class="p">|</span>  True <span class="p">|</span>   False   <span class="p">|</span>      <span class="p">|</span>
+<span class="p">|</span> <span class="m">2018</span>-06-10T01:01:16 <span class="p">|</span> V0000000002 <span class="p">|</span> <span class="nb">test</span> <span class="p">|</span> nbd-cow-V0000000001-2018-06-10T01:01:16 <span class="p">|</span> <span class="m">41943040</span> <span class="p">|</span>    <span class="m">4194304</span> <span class="p">|</span>  True <span class="p">|</span>    True   <span class="p">|</span>      <span class="p">|</span>
++---------------------+-------------+------+-----------------------------------------+----------+------------+-------+-----------+------+
+</pre></div>
+</div>
+<p>The name will be the same as the original <em>version</em>. The snapshot_name will start
+with the prefix <em>nbd-cow-</em> followed by the <em>version</em> UID followed by a timestamp.</p>
+<p>The COW <em>version</em> will automatically be marked as protected by Benji to prevent
+removal by any automatic retention policy enforcement that you might have
+configured. This makes sure that your repair work won’t be destroyed. You will
+have to unprotect the <em>version</em> manually when it is no longer needed. After
+that you can remove it normally or wait for your retention policy enforcement
+to clean it up.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can of course also restore the COW <em>version</em> like any other
+<em>version</em> with <code class="docutils literal notranslate"><span class="pre">benji</span> <span class="pre">retore</span></code>.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You may safely delete the original <em>version</em> and the COW <em>version</em>
+independently of each other.</p>
+</div>
+</div>
+</div>
+<div class="section" id="restore-of-invalid-versions">
+<h2>Restore of Invalid Versions<a class="headerlink" href="#restore-of-invalid-versions" title="Permalink to this headline">¶</a></h2>
+<p>During a restore Benji will compare each restored block’s checksum to the
+stored checksum in the database backend <strong>no matter if the block has been
+marked as invalid previously</strong>. If it encounters a difference, the block
+and all versions containing this block will be marked as invalid and a
+warning will be given:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ERROR: Checksum mismatch during restore <span class="k">for</span> block <span class="m">9</span> <span class="o">(</span>UID <span class="m">1</span>-a<span class="o">)</span> <span class="o">(</span>is: e36cee7fd34ae637... should-be: dea186672147e1e3..., block.valid: True<span class="o">)</span>. Block restored is invalid.
+ INFO: Marked block invalid <span class="o">(</span>UID <span class="m">1</span>-a, Checksum dea186672147e1e3. Affected versions: V0000000001, V0000000002
+ INFO: Marked version invalid <span class="o">(</span>UID V0000000001<span class="o">)</span>
+ INFO: Marked version invalid <span class="o">(</span>UID V0000000002<span class="o">)</span>
+</pre></div>
+</div>
+<p>Even when encountering such an error, Benji will continue to restore.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The philosophy behind this is that restores should always succeed, even if there
+is data corruption. Often invalid data is in irrelevant places or can be fixed later.
+You get as much of your data back as possible!</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="enforce.html" class="btn btn-neutral float-right" title="Retention Policy Enforcement" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="scrub.html" class="btn btn-neutral" title="Scrub" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017-2019, Lars Fenneberg, Daniel Kraft
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/asciinema/asciinema-player.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ 
+
+
+</body>
+</html>

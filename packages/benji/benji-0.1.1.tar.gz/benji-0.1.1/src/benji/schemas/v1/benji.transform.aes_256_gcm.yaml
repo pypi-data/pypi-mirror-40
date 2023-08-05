@@ -1,0 +1,45 @@
+parents:
+  - benji.io.base-v1
+configuration:
+  required: True
+  schema:
+    masterKey:
+      type: binary
+      empty: False
+      required: True
+      minlength: 32
+      maxlength: 32
+      excludes:
+        - kdfSalt
+        - kdfIterations
+        - password
+    kdfSalt:
+      type: binary
+      empty: False
+      required: True
+      minlength: 8
+      excludes:
+        - masterKey
+      dependencies:
+        - kdfIterations
+        - password
+    kdfIterations:
+      type: integer
+      empty: False
+      required: True
+      min: 1000
+      excludes:
+        - masterKey
+      dependencies:
+        - kdfSalt
+        - password
+    password:
+      type: string
+      empty: False
+      required: True
+      minlength: 8
+      excludes:
+        - masterKey
+      dependencies:
+        - kdfSalt
+        - kdfIterations
