@@ -1,0 +1,190 @@
+
+Move rebuild_flag from ExcelEngine into pycel?
+
+--- To Release ---
+  
+How do you do a "release" on github
+
+> python setup.py sdist bdist_wheel
+
+Get docs onto readthedocs
+
+--- Table for Now -- 
+
+requires.io:
+.. image:: https://requires.io/github/stephenrauch/pycel/requirements.svg?branch=master
+    :target: https://requires.io/github/stephenrauch/pycel/requirements/?branch=master
+    :alt: Requirements Status
+
+Github badges
+https://shields.io/#/
+
+codecov.io add badges to PRs?
+
+Make to_file() take defined inputs and outputs and always trim?
+
+Document contributing (tox and pytest)
+
+--- Cleanup Items for version 1.1 ---
+
+
+Look at formatting the code with: https://pypi.org/project/autopep8/#use-as-a-module
+
+Look at the diff of various branches in network vs the branch point to look for improvement ideas
+
+Read through pull requests and issues on pycel.
+
+--- End 2 End Testing ---
+
+Mimic test cases from Formulas Library
+
+Look at scraping MS Excel docs for funcs and their signatures and examples
+
+--- Notes around setup.py, requirements.txt -> pyproject.toml ---
+setuptools and setup.py are really by convention (pip defaults to setuptools/setup.py)
+
+pipenv - Newer tool for APP requirements management (not libraires)
+poetry - 1 year old, works with apps/libs and does good dependency resolution
+flit - Roughly same age as pipenv (setup tools?)
+hatch - Looks nice but also does not look super actively developed, also library only
+
+flit vs poetry?
+pipenv vs poetry? 
+
+Output to pypi should be a wheel file.  Is poetry better at wheels?
+
+pep518 - pyproject.toml (specify build dependencies, plus other vendor stuff)
+pep517 - pyproject.toml (build tool api needed)
+
+pipfile.lock?  poetry??
+
+--- Optimization ---
+
+Need a better way to propogate errors.
+Test define isNA() function
+  
+--- Can we just inherit from openpyxl spreadsheet?
+
+How to deal with values vs formulas?
+Don't need values if we can recalc. But would require supporting all formulas
+Amend the reader to get the values if we don;t understand a specific formula
+Declare error if a value set and we try to eval trhough an unknown formula
+
+
+--- Answers ---
+Could we do common subexpression elimination in the trim, and replace cell_eval to a constant with the constant?
+Yes but, this remove a level of visibilty that is proving useful for debug.  Maybe the trim is a optimization?
+
+How does the recursion through the cells work? (Ans. build_eval_context)
+
+Can we have generated python leave off the sheet when it matches refering cell containing formula?
+No, this would make it harder to cut search by hand the next address?
+
+Can we just generate a python program?  No benefit since we need to compile the code after AST manipulation so that we
+can insert operand massaging.  No, just marshal the lambdas.
+
+Leave the /src directory for better tox testing:
+https://docs.pytest.org/en/latest/goodpractices.html?highlight=src#tests-outside-application-code
+
+--- NOTES ON ERRORS ---
+
+VALUE #:
+This error means that you used an incorrect type of data as a formula input. For example, you might have entered a range in a function that takes a parameter of the type of a cell, or in the form where you have to refer to the number of text, instead of the number. For example, in the formula A1 / A2, the value in the cell A2 is a text.
+*? NAME #:
+This error occurs when you write the wrong name in the formulas, use the text values ??used in the formula in the "Do not leave" column or leave the empty parentheses associated with the function.
+
+!NUM#: This is a problem with one of the numbers in your formula. For example, the number is very large or very small.
+
+!DIV/0#: This error indicates that you have divided some formulas from zero. The amount of one of the cells you used in your formula may be zero or missing. Excel does not count the cells in the calculation of zero, and if you divide some numbers into them, this error will be displayed.
+
+!REF# : This error means that you are referring to the cell in the formulas that are not there. This error usually occurs when you delete cells or, for example, copy the formula that is written in relative terms and refers to cell A3, copy the A4 cell of that cell into another A2 cell.
+
+!N/A#: This error is usually shown when the value you want is not found. For example, you do not have the required value in a LOOKUP function in any of the range cells that you defined for the function.
+
+!NULL#: This error indicates that you used the distance from the formula where you should use the math symptoms. For example, instead of the formula = A1 + A2 + A3, you mistakenly entered the value = A1 + A2 A3. One of the other reasons why this formula is displayed is that you have somewhere in the formula to specify a range between the two cells of the sign.
+
+
+
+Microsoft Excel worksheet cell contents are evaluated into one of four basic data types:
+
+Numbers
+
+Boolean TRUE or FALSE
+
+Strings
+
+Errors
+
+Mixed-type arrays of these types can also be entered into formulas as arguments to functions or as values spanning more than one cell in an array formula.
+
+When a user (or a command macro) enters something into a cell, Excel tries to interpret the input and displays an error message if it cannot. If the input starts with a string prefix (a single quotation mark) Excel places all the input characters in the cell as provided, with no modification. (The string prefix is not displayed.) If the input begins with =, +, or -, Excel tries to interpret the input as a formula. If the syntax is incorrect or evaluation is stopped, an error is displayed, and the cell is put in edit mode. Otherwise, Excel tries to identify, convert, and evaluate operators and function names and their arguments.
+
+Operands are evaluated from left to right before the operator is applied. Functions are evaluated starting with the highest-precedence operators and innermost (most nested). If function arguments or operands cannot be converted to the types expected, evaluation fails and results in a #VALUE! error. When a token (that is not a literal value) is not recognized as a function or defined name or label, evaluation fails and results in a #NAME? error.
+
+If the input does not start with any of these things, Excel checks against known patterns of input such as dates, times, currency amounts, percentages, or numbers, and interprets accordingly. This is done in a locale-specific way. If none of these interpretations makes sense, Excel reverts to considering the input as a string and places it in the cell unchanged.
+
+Excel supports other data types, the most visible of which is a range reference. Excel converts references to the values of the referred-to cells when evaluating arguments for operators and functions that do not take reference arguments, or when the expression in a cell formula reduces to a reference.
+
+Excel exposes the ability to reduce any valid character string to one of the basic four worksheet data types with the XLM function EVALUATE and its C API equivalent xlfEvaluate. This function provides, among other things, a simple way to evaluate named ranges in DLL code. This function differs from the behavior described earlier only in that instead of displaying error messages or enabling cell editing, it returns a #VALUE! error if the expression evaluation fails.
+
+Numbers
+All worksheet numbers in Excel are represented internally as 8-byte double-precision floating point, including all integers. However, the implementation of these numbers in Excel is not fully IEEE compliant, as shown in the following table.
+
+Type	Maximum	Minimum
+IEEE 8-byte double 
+1.7976931348623157E+308 
+2.2250738585072014E-308 
+Worksheet (returned by function or paste value) 
+1.7976931348623157E+308 
+2.22507385850721E-308 
+Worksheet (manual input) 
+9.99999999999999E+307 
+2.22507385850721E-308 
+IEEE subnormal numbers (that is, numbers in the range 2.2250738585072009E-308 to 4.9406564584124654E-324) are not supported in Excel worksheets but are supported by VBA Doubles.
+
+If a DLL function returns IEEE +/- infinity or an invalid double, Excel converts it to #NUM!. All subnormal numbers and numbers smaller than the minimum positive normal in Excel are converted to positive zero. IEEE negative zero is supported, that is, it can be returned by a DLL function and is displayed as -0. (The < operator does not check for negative zero, and so =A1<0 evaluates to TRUE if A1 contains negative zero).
+
+Note that certain number formats have narrower limits than these, for example, dates and times. Integer division is, in fact, floating point division and might, in extreme cases, yield a non-integer result where the precise result should be an integer.
+
+Long Unicode Strings
+All strings the user sees in Excel have for many versions now been stored internally as Unicode strings. Unicode worksheet strings can be up to 32,767 (215 - 1) characters in length and can contain any valid Unicode character.
+
+When the C API was first introduced, worksheet strings were byte strings limited in length to 255 characters, and the C API reflected these limitations. With Excel 2007, the C API is updated to handle Excel long Unicode strings. This means that DLL functions registered in the right way can accept Unicode arguments and return Unicode strings.
+
+ Note
+
+Byte strings are still fully supported in the C API for backward compatibility; however they still have the same 255-character limit.
+
+Returning Errors
+Excel evaluates cells to errors where it cannot convert function or operator arguments to the correct type, or if it does not recognize a function or defined name. Both of these scenarios were described earlier. When the built-in worksheet functions and operators fail, they also result in errors that inform the user of the type of failure. You should have your own add-in functions return errors that are consistent with the behavior in Excel.
+
+#NULL!
+The #NULL! error is returned by some XLM information functions. For example, calling GET.DOCUMENT(78), or the equivalent C API function xlfGetDocument with argument 78, when there are no printers installed results in this error being returned. It can also be returned by some functions when, for example, they evaluate an empty string.
+
+You might want to return this error from your add-in function when none of the other errors seems appropriate.
+
+#DIV/0!
+The Excel division operator returns the #DIV/0! error when the denominator evaluates to zero or a number is too small to be represented as non-zero by Excel. Some functions that by definition involve a division can also return this error. For example, AVERAGE returns this error if none of the inputs can be converted to numbers.
+
+You should only consider returning this error from your add-in function to indicate that a division by zero was detected.
+
+#VALUE!
+Excel returns the #VALUE! error if a function or operator argument cannot be converted to the required type. In the case of function arguments that cannot be converted, for example =LN("X"), Excel does not call the function code. This is an important point to remember when writing and debugging your own add-in functions.
+
+Some functions return this error if an argument cannot be converted within the function code. For example, DATEVALUE("30-Feb-2007") fails with this error despite the argument being of the right type. In this case, it is the function that is returning the error from within its code. Some functions return this error even though the value types and ranges are allowable, for example FIND("a","xyz") returns this error.
+
+You should consider returning this error from your add-in function to indicate that the arguments are of the wrong type, could not be converted to the right type, or are out of range, although you should consider returning #NUM! for numerical arguments out of range. You should also consider returning this error when range or array arguments are the wrong shape or size.
+
+#REF!
+Excel generates the #REF! error within an expression when it is copied to a location where the resulting relative reference goes out of bounds. For example, if the cell B2 contains the formula =A1, copying this to cell B1 results in a formula =#REF!. This error is also generated in formulas that contain a reference that is overwritten in a cut-and-paste operation or is deleted in a row, column, or worksheet deletion. Some functions that can return references can return this error, for example, OFFSET(A1,-1,-1). Worksheet names whose definitions contain references that become invalid are evaluated to this error.
+
+If your add-in function takes reference arguments, you should consider returning this error if the references are invalid, or if you are passed a reference error. The section on XLOPER/XLOPER12s in Memory Management in Excel describes how to create functions that can accept and return reference arguments.
+
+#NAME?
+Excel generates the #NAME? error when an expression contains a token that is not recognized as a function or defined name. If your add-in function tries to access a defined name and it is not defined, you should consider returning this error.
+
+#NUM!
+Many of the built-in numerical and mathematical functions in Excel return the #NUM! error when a numerical input is out of the permitted range, for example, LN(0). You should consider returning this error from your add-in function to indicate that a numerical input was invalid or out of range.
+
+#N/A
+The #N/A error is often returned to signify a successful or meaningful result is not available. For example, MATCH with the third argument zero returns this error if an exact match cannot be found. This error can also be generated using the function NA and specifically detected with the function ISNA. It is therefore a commonly used error in worksheets to indicate a range of application-specific conditions.
