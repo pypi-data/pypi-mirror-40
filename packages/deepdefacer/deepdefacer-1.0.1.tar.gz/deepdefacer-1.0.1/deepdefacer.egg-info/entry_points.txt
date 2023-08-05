@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    deepdefacer=deepdefacer.defacer:deface_3D_MRI
+    
