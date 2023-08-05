@@ -1,0 +1,7 @@
+README.md
+setup.py
+lumodule.egg-info/PKG-INFO
+lumodule.egg-info/SOURCES.txt
+lumodule.egg-info/dependency_links.txt
+lumodule.egg-info/top_level.txt
+lumodule_pkg/__init__.py
