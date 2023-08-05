@@ -1,0 +1,11 @@
+README.md
+setup.py
+characterizethis/__init__.py
+characterizethis/ct.py
+characterizethis/version.py
+characterizethis.egg-info/PKG-INFO
+characterizethis.egg-info/SOURCES.txt
+characterizethis.egg-info/dependency_links.txt
+characterizethis.egg-info/entry_points.txt
+characterizethis.egg-info/requires.txt
+characterizethis.egg-info/top_level.txt
