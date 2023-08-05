@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: iterablepythonwrapper
+Version: 1.1
+Summary: Python Client for the Iterable API
+Home-page: https://github.com/carter-j-h/iterable-python-wrapper
+Author: Carter Hickingbotham
+Author-email: carterhickingbotham@gmail.com
+License: MIT
+Description: 
+        Iterable Python is a Python client that wraps the Iterable Api.
+        Originally developed by Carter Hickingbotham.  Current version is 1.1
+        
+Keywords: Iterable,API,Wrapper,Client,Python
+Platform: UNKNOWN
