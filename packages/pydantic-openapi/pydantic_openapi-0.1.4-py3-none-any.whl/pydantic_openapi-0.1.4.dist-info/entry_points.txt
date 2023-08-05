@@ -1,0 +1,3 @@
+[console_scripts]
+openapigen=pydantic_openapi.command_line:main
+
