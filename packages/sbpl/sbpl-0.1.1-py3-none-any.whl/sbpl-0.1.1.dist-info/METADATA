@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sbpl
+Version: 0.1.1
+Summary: SBPL module for remote printing
+Home-page: https://github.com/kanryu/sbpl
+Author: KATO Kanryu
+Author-email: k.kanryu@gmail.com
+License: MIT
+Keywords: sbpl printing socket freetype
+Platform: UNKNOWN
+Classifier: Topic :: Printing
+Requires-Dist: freetype-py (>=2.0.0)
+
+UNKNOWN
+
+
