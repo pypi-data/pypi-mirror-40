@@ -1,0 +1,3 @@
+[console_scripts]
+tranquilizer = tranquilizer.__main__:main
+
