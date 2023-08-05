@@ -1,0 +1,5 @@
+[console_scripts]
+alerts = macapi.alerts.alerts:main
+cluster = macapi.cluster.cluster:main
+ipwhitelist = macapi.ipwhitelist.ipwhitelist:main
+
