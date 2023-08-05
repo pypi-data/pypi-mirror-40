@@ -1,0 +1,17 @@
+zencad/__init__.py,sha256=4cyHdR2ncyIbk-K90fo5V_X9YI3RO8z4KfaZHDenjUw,4217
+zencad/boolean.py,sha256=ciCnLmU6F4-SpXcMcuneKs9fQ0K_NTkEWUiBKuMPkdo,218
+zencad/geom.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zencad/industrial-robot.svg,sha256=Sr-HVYf1cuHI8VCQpc2rzZ-JQUGu-t9PuIFnZYAaZ4c,3166
+zencad/lazy.py,sha256=JPpm0BIdkxjqwX6035z-wMxtgQGtUBCA0HXOa7Tmii8,362
+zencad/metric_nut.py,sha256=Who40UdtmSYTEgAH2OhyHUBfpo1v70GrwzNC_KI4o00,843
+zencad/nut.py,sha256=lNz3zi0crBDx7Apx1iRP-hQSHVVnVxKXy7nW6RaPHjg,200
+zencad/scene.py,sha256=0hXJZKHR5F-ROc903adJb7rGD0ZzZhvNg7MKiFkIE5k,444
+zencad/shower.py,sha256=6tmJKNEc6X7t2oxlyVvCyAIsXjOBiv7QvMJh3XGk3D4,15190
+zencad/transform.py,sha256=7DkK2P35bzYicZXtCW62mUROD1tdL6h8SeJS_mLLe5w,2129
+zencad/util.py,sha256=ieYsY4cgKKIn-_XqgqyOweOpZUig6HfXIOQTH6s9MCk,734
+zencad/visual.py,sha256=0cCO-WHryUF4fmMMce8CNr4OXlWgDcO0iN_a743bkQ0,1208
+zencad-0.11.3.data/scripts/zencad,sha256=YG4rSF111gPJ4_5rF3zF8CNPTu9QAY_A8j2UUBoWuCs,67
+zencad-0.11.3.dist-info/METADATA,sha256=F_CyfdYijLUIBneT-HUKyq4ph461SwLhA9KPaoD_3xE,1188
+zencad-0.11.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+zencad-0.11.3.dist-info/top_level.txt,sha256=6Yhn4zHoaYDISEA2_pRMWtxkBIxItfn1XRBZa5oA-xg,7
+zencad-0.11.3.dist-info/RECORD,,
