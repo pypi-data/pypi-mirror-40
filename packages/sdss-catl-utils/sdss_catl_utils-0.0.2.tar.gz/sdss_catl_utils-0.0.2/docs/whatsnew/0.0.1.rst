@@ -1,0 +1,9 @@
+***********************************
+What's new in SDSS_Catl_Utils 0.0.1
+***********************************
+
+This was the initial version of ``SDSS_Catl_Utils`` released on
+December 11, 2018.
+
+``SDSS_Catl_Utils`` 0.0.1 integrated functions and submodules under
+a single ``SDSS_Catl_Utils`` package with a unified installer.
