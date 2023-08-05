@@ -1,0 +1,13 @@
+README.md
+setup.py
+test/__init__.py
+test/test.py
+w2vembeddings/__init__.py
+w2vembeddings/embedding.py
+w2vembeddings/managedb.py
+w2vembeddings/w2vemb.py
+w2vembeddings.egg-info/PKG-INFO
+w2vembeddings.egg-info/SOURCES.txt
+w2vembeddings.egg-info/dependency_links.txt
+w2vembeddings.egg-info/requires.txt
+w2vembeddings.egg-info/top_level.txt
