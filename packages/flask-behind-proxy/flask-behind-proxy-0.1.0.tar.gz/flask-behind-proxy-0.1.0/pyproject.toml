@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "flask-behind-proxy"
+version = "0.1.0"
+description = "Flask middleware to fix HTTPS redirection behind reverse proxy."
+authors = ["Nguyễn Hồng Quân <ng.hong.quan@gmail.com>"]
+license = "MIT"
+homepage = "https://bitbucket.org/hongquan/flask-behind-proxy/"
+repository = "https://hongquan@bitbucket.org/hongquan/flask-behind-proxy.git"
+readme = "README.rst"
+classifiers = [
+    'Framework :: Flask',
+    'Environment :: Web Environment',
+    'Programming Language :: Python :: 3 :: Only',
+    'Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware',
+]
+
+[tool.poetry.dependencies]
+python = "^3.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+pytest-flask = "^0.14.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

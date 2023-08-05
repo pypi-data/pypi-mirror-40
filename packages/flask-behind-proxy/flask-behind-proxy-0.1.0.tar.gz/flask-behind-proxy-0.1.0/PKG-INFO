@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: flask-behind-proxy
+Version: 0.1.0
+Summary: Flask middleware to fix HTTPS redirection behind reverse proxy.
+Home-page: https://bitbucket.org/hongquan/flask-behind-proxy/
+Author: Nguyễn Hồng Quân
+Author-email: ng.hong.quan@gmail.com
+Requires-Python: >=3.4,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware
+Project-URL: Repository, https://hongquan@bitbucket.org/hongquan/flask-behind-proxy.git
