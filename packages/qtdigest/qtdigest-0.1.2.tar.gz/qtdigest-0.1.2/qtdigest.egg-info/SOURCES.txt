@@ -1,0 +1,9 @@
+README.md
+setup.py
+qtdigest/__init__.py
+qtdigest.egg-info/PKG-INFO
+qtdigest.egg-info/SOURCES.txt
+qtdigest.egg-info/dependency_links.txt
+qtdigest.egg-info/requires.txt
+qtdigest.egg-info/top_level.txt
+qtdigest/../README.md
