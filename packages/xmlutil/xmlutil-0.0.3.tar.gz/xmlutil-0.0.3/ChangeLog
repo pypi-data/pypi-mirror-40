@@ -1,0 +1,60 @@
+CHANGES
+=======
+
+0.0.3
+-----
+
+* Travis deploy fix
+
+0.0.2
+-----
+
+* Travis deploy fix
+
+0.0.1
+-----
+
+* Goals/non-goals
+* Described XPath usage
+* Basic documentation and setup.py/cfg added
+* travis config update
+* travis config update
+* travis config update
+* python3 support
+* added iterfind()
+* Create LICENSE
+* Delete LICENSE
+* added \_\_invert\_\_
+* repr() simple elements as their value
+* All str and int non-magic functions support
+* str strip & split
+* str upper and lower
+* str len
+* str contains
+* Bool ops on integers and strings
+* hash
+* str.replace implemented
+* Non-zero test
+* startswith() and endswith()
+* Comparison with None
+* String concatenation
+* Re-written w/o xStr/xInt
+* Support saving arbitrary attributes on returned XMLStruct instances
+* Support long ints
+* Apply autoint to tag attributes as well
+* Allow access to tag attributes with '.xxx'
+* Setting text content implemented
+* Empty elements support
+* Added setattr
+* Equality checks
+* Added dumps()
+* Added dict creation by key
+* Added read from file
+* Auto-conversion to int and string
+* Find callable added
+* List behavior implemented
+* Added travis badge
+* Added \_\_repr\_\_
+* Added .travis.yml
+* initial commit
+* Initial commit
