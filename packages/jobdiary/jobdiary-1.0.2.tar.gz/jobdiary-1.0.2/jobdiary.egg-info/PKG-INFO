@@ -1,0 +1,64 @@
+Metadata-Version: 1.1
+Name: jobdiary
+Version: 1.0.2
+Summary: A funny and easy to use job diary
+Home-page: https://github.com/fbarresi/JobDiary
+Author: Federico Barresi
+Author-email: fede.barresi@gmail.com
+License: MIT
+Description: *************************
+        JobDiary
+        *************************
+        
+        a funny and easy to use job diary to trace your activities and export reports
+        
+        Installation
+        ========
+        
+        You may install this package in two ways:
+        
+        - Compile from code ::
+        
+            git clone https://github.com/fbarresi/JobDiary.git
+            cd JobDiary
+            python setup.py install
+        
+        - Pypi ::
+        
+            pip install jobdiary
+        
+        Usage
+        ========
+        
+        Just type in the console::
+        
+            diary --help
+        
+        Thanks
+        ========
+        
+        This project depends on TinyDB_ and Huepy_.
+        
+        .. _TinyDB: https://github.com/msiemens/tinydb
+        .. _Huepy: https://github.com/s0md3v/hue
+        
+        
+        Contribute
+        ========
+        
+        Whould you like to contribute to this project? YES, PLEASE!
+        
+        Just fork this repository and submit your pull request.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Terminals
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
