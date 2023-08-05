@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: holes
+Version: 0.1.0
+Summary: Python package for doing science.
+Home-page: https://github.com/DouglasCAllan/holes
+Author: Douglas Allan
+Author-email: physics.dance@gmail.com
+License: BSD (3-clause)
+Description: ===============================
+        holes
+        ===============================
+        
+        .. image:: https://img.shields.io/travis/DouglasCAllan/holes.svg
+                :target: https://travis-ci.org/DouglasCAllan/holes
+        
+        .. image:: https://img.shields.io/pypi/v/holes.svg
+                :target: https://pypi.python.org/pypi/holes
+        
+        
+        Python package for doing science.
+        
+        * Free software: 3-clause BSD license
+        * Documentation: (COMING SOON!) https://DouglasCAllan.github.io/holes.
+        
+        Features
+        --------
+        
+        * TODO
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
