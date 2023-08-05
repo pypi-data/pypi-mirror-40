@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: vulcan-api
+Version: 0.1.2
+Summary: API for Vulcan e-journal
+Home-page: https://github.com/kapi2289/vulcan-api
+License: MIT
+Keywords: Vulcan UONETPlus Dzienniczek API
+Author: Kacper Ziubryniewicz
+Author-email: kapi2289@gmail.com
+Requires-Python: >=3.0, <4.0
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Polish
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests
+Requires-Dist: pyopenssl
+Requires-Dist: pytest; extra == "test"
+Project-URL: Documentation, https://vulcan-api.readthedocs.io/
+Provides-Extra: .none
+Provides-Extra: test
+
+Vulcan API
+##########
+
+.. image:: https://img.shields.io/pypi/l/vulcan-api.svg
+    :target: https://github.com/kapi2289/vulcan-api/blob/master/LICENSE
+    :alt: MIT License
+
+.. image:: https://img.shields.io/pypi/v/vulcan-api.svg
+    :target: https://pypi.org/project/vulcan-api/
+    :alt: v0.1.2
+
+.. image:: https://img.shields.io/pypi/pyversions/vulcan-api.svg
+    :target: https://pypi.org/project/vulcan-api/
+    :alt: Supported Python versions: 3
+
+Opis
+^^^^
+Nieoficjalne API do dzienniczka elektronicznego UONET+ od firmy `Vulcan <https://vulcan.edu.pl/>`__. Działa na podstawie aplikacji mobilnej, więc możesz je
+zarejestrować jako urządzenie mobilne na stronie.
+
+.. image:: docs/source/_static/zarejestrowane.png
+
+Instalacja
+^^^^^^^^^^
+Możesz zainstalować ``vulcan-api`` za pomocą ``pip``
+
+.. code:: console
+
+    $ pip install vulcan-api
+
+lub ręcznie przy użyciu `flit`
+
+.. code:: console
+
+    $ pip install flit
+    $ git clone https://github.com/kapi2289/vulcan-api.git
+    $ cd vulcan-api
+    $ python -m flit install
+
+Dokumentacja
+^^^^^^^^^^^^
+Dokumentacja znajduje się pod adresem https://vulcan-api.readthedocs.io/.
+
