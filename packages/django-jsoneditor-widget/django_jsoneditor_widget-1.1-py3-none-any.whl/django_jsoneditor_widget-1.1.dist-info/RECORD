@@ -1,0 +1,13 @@
+jsoneditor/__init__.py,sha256=C043zuDf1Iaqm2Z7AzEgmKXGynk4yB-oTTvsL2jRGJA,18
+jsoneditor/admin.py,sha256=Axwo6aITjNGtswXYrdyOT9QbH1fWg3jcQqzMOy7FO4o,369
+jsoneditor/forms.py,sha256=k4oIIL0rC0LxU9a2yX1xmgaL7fzNG93yBtVtXoa2IO4,312
+jsoneditor/static/jsoneditor/jsoneditor.js.map,sha256=uH1YvKGtHXdJTd9ATdNhfH3TCMBLoBnrdnQWGnTdmOk,1302700
+jsoneditor/static/jsoneditor/jsoneditor.min.css,sha256=WlGacygikQ6aS2l2d7jv3-KyeeJ3E9pN388BYXRG3Xk,33100
+jsoneditor/static/jsoneditor/jsoneditor.min.js,sha256=_qYQgVE1KbY3VvaNmrS42czlO8svPKf0nqwWzM1FguE,776238
+jsoneditor/static/jsoneditor/img/jsoneditor-icons.svg,sha256=4aYNsnZBkua1V5sJBobf8iFLoZyBcOkZHhklvkdHqzI,31011
+jsoneditor/templates/jsoneditor/jsoneditor.html,sha256=ynJq5p8CNW-HO_2E6Qda9-X-Hkm2IqfSu1zunj-xwQc,615
+django_jsoneditor_widget-1.1.dist-info/LICENSE,sha256=pF5FXj4B_H4yxgQQ6Mp5HTXd8oarDbns0bVijdWjVqw,1069
+django_jsoneditor_widget-1.1.dist-info/METADATA,sha256=soPoRtp1FP_6YBsoy18klGATnKXWaxqdzWQs3nKMSuI,1395
+django_jsoneditor_widget-1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+django_jsoneditor_widget-1.1.dist-info/top_level.txt,sha256=OkxZRLczWd5YYViwxTpflI5z8wAHNy-nIf-87Jfb0nE,11
+django_jsoneditor_widget-1.1.dist-info/RECORD,,
