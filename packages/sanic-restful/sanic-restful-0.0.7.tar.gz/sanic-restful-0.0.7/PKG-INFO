@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: sanic-restful
+Version: 0.0.7
+Summary: Simple framework for creating REST APIs,Likely Flask-Restful
+Home-page: https://github.com/CoCongV/sanic-restful
+Author: CoCong
+Author-email: cong.lv.yx@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: BSD License
