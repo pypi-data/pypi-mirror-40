@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: giig
+Version: 0.1
+Summary: CLI for gitignore.io
+Home-page: https://github.com/lagerfeuer/gitignore
+Author: Lukas Deutz
+Author-email: lukas.deutz@mailfence.com
+License: MIT
+Description: # gitignore
+        Python 3 gitignore fetcher based on [gitignore.io](http://gitignore.io)
+        
+Keywords: gitignore git cli
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
