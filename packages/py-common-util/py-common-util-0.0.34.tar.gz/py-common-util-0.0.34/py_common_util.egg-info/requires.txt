@@ -1,0 +1,13 @@
+torch>=0.4.1
+torchvision>=0.2.1
+allennlp>=0.6.0
+requests>=2.18.4
+tushare>=1.0.5
+BeautifulSoup4==4.6.0
+pymysql
+sqlalchemy
+xlrd
+cvxpy>=1.0.3
+nltk>=3.3
+jieba==0.39
+gensim>=3.6.0
