@@ -1,0 +1,12 @@
+six>=1.11.0
+
+[build]
+wheel
+
+[release]
+releasecmd>=0.0.12
+
+[test]
+pytest-cov
+pytest
+tox
