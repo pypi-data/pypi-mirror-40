@@ -1,0 +1,15 @@
+winbrew/__init__.py,sha256=SS61v5pE5ERywrKTCKtviT3matx27BEtemkJZd3ksyo,234
+winbrew/config.py,sha256=QebCMPuoVRpTQXhrpeG01yQqOXpMfAis7AQgxTtlw4U,733
+winbrew/execute.py,sha256=D1u0ubaLF8-j4O_UWDAB6dWXYxu2-CnYUCMdjqjdWbA,10097
+winbrew/execute.py.bak,sha256=_84FUsFlQXHTATfMhojjSR2Nbxy2D_8p64da7ttACRQ,10087
+winbrew/formula.py,sha256=okYZ3iaMne3tjLFhFxFRUqyCygwjlrGVzU1yBrgcMrE,14423
+winbrew/formula.py.bak,sha256=w0khspwZ-20h76Xgr4I6yw9YJbvDs43z7kWZAaz0Vng,14348
+winbrew/manifest.py,sha256=U-2GrqlcXsoDqd7_-mvQ5wWQsMDsedFQS8YlDoGFtr8,2619
+winbrew/util.py,sha256=Jv3vDHTuEkT3zo8GclJriSDsonotpR0lUemRw3xQrQg,987
+winbrew-1.2.3.dist-info/LICENSE,sha256=FQm9l9WC60q6m9sZ1YG_2jLGQRslWK3-Tc06IB2NZwk,1099
+winbrew-1.2.3.dist-info/METADATA,sha256=OTpSPBGp_P1B_f0ABi_T21Tim0Ezqu4NarVWYdiBbJI,327
+winbrew-1.2.3.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+winbrew-1.2.3.dist-info/entry_points.txt,sha256=TwEuwpizxAouBSHUY2KA2zf0TFCSRItX6MuQiNwJ9W0,78
+winbrew-1.2.3.dist-info/pbr.json,sha256=kVdSLu4YTRbM85UAbylU34vh-rysipbRPY81uNcBnDQ,47
+winbrew-1.2.3.dist-info/top_level.txt,sha256=xMJ53_QEZ2btJd4aonJk0DEL0V0Qnisiun2-MsCeYfc,8
+winbrew-1.2.3.dist-info/RECORD,,

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: winbrew
+Version: 1.2.3
+Summary: Native package installer for Windows, a la Homebrew
+Home-page: http://github.com/mfichman/winbrew
+Author: Matt Fichman
+Author-email: matt.fichman@gmail.com
+License: MIT
+Keywords: installer,windows,package
+Platform: UNKNOWN
+Requires-Dist: patch (<2,>=1.16)
+
+UNKNOWN
+
+
