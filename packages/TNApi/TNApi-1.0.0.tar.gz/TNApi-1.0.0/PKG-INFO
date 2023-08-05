@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: TNApi
+Version: 1.0.0
+Summary: Textnow API
+Home-page: https://github.com/katant/TNApi
+Author: Katant
+Author-email: katant.savelev@yandex.ru
+License: UNKNOWN
+Description: # TNApi
+        Textnow API, written in Python
+        
+        ## Installation
+        1. Install from pip:
+        ```bash
+        pip3 install TNApi
+        ```
+        
+        2. Install from sources:
+        ```bash
+        git clone https://github.com/katant/TNApi.git
+        cd TNApi
+        python3 setup.py install
+        ```
+        
+        ## Usage
+        Example code to login:
+        ```python
+        from TNApi import TNApi
+        
+        api = TNApi("email@example.com", "12345679")
+        api.login()
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
