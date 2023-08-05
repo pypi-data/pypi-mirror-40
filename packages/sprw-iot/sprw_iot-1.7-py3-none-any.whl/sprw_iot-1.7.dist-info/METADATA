@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sprw-iot
+Version: 1.7
+Summary: Python Library for SPRW IoT
+Home-page: UNKNOWN
+Author: Developer SPRW
+Author-email: developer@sproboticworks.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Keywords: sprw,iot,io,client,sprw-iot
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: boto3
+Requires-Dist: pygame (==1.9.3)
+Requires-Dist: easydict
+Requires-Dist: requests
+Requires-Dist: parsedatetime
+Requires-Dist: pytz
+Requires-Dist: requests-futures
+
+A Python Library for communicating with SPRW IoT Server.
+
+
