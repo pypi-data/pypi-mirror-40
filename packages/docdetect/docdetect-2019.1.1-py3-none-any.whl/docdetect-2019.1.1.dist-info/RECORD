@@ -1,0 +1,13 @@
+docdetect/__init__.py,sha256=aTzP_555BIgaGiNASxCaifR5UYeLyPcj76Icgm6ltZE,276
+docdetect/canny_edges.py,sha256=rKHDJN3Oc07Z-xYB5UaCEvBwDZYzPSkccuWhS2sv6QI,958
+docdetect/hough_lines.py,sha256=QRfkli1hpGA8ev_-tlBHVyblRIz_mhSfxP9ta10iWV8,911
+docdetect/intersections.py,sha256=BlmxVozXo5jJFaDAb4eRujsLQOz2IBfngLfGb4Yb_ms,1533
+docdetect/line_utils.py,sha256=e2trNdgHqMX04iK6phX9axm_aYo4u2zhJmnzUZTOJ1E,191
+docdetect/processor.py,sha256=msp-VRctqOVqMKZmVZUdHKpGJzsSCBELD_AvzNOGxrQ,835
+docdetect/quadrilaterals.py,sha256=VaNaWc6wnFIKgHl71LFzH2OxuaVCtFjf2a51detHwKE,1383
+docdetect-2019.1.1.dist-info/LICENSE,sha256=LgI6WTkRFVjjFwyT-XI7fO06d6uyAoOMZ7AMWMw-euc,1067
+docdetect-2019.1.1.dist-info/METADATA,sha256=c1XupPqs5xFMuusMJoUzVPNsI_KFI6RWyvYfx2d-xdk,1989
+docdetect-2019.1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+docdetect-2019.1.1.dist-info/top_level.txt,sha256=SigIH1U3KtNfdsL5toUO_FLQWDZ9GfEuWEZvTnC9EFc,10
+docdetect-2019.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+docdetect-2019.1.1.dist-info/RECORD,,
