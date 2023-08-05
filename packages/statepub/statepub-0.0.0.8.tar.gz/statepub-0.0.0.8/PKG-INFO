@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: statepub
+Version: 0.0.0.8
+Summary: A program for publishing the current state of a computing machine to the MQTT network
+Home-page: https://github.com/the16thpythonist/statepub
+Author: Jonas Teufel
+Author-email: jonseb1998@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=3.5
