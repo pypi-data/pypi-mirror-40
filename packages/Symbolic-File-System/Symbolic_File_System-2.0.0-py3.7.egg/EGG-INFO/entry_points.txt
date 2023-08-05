@@ -1,0 +1,3 @@
+[console_scripts]
+sfs = sfs.cli:exec_cli
+
