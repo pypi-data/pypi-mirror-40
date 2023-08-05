@@ -1,0 +1,5 @@
+include README.rst LICENSE CHANGELOG
+recursive-include djinfo *
+recursive-include docs *.rst *.py Makefile
+recursive-exclude tests
+global-exclude *.py[co]
