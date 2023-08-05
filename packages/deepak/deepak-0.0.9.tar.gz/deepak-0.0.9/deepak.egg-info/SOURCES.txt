@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+deepak/__init__.py
+deepak.egg-info/PKG-INFO
+deepak.egg-info/SOURCES.txt
+deepak.egg-info/dependency_links.txt
+deepak.egg-info/not-zip-safe
+deepak.egg-info/top_level.txt
