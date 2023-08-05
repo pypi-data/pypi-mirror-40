@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: alpha2aleph
+Version: 0.3.1
+Summary: GPLv3/Python3/CLI script to convert something like 'mlḵ' in 'כלמ'
+Home-page: https://github.com/suizokukan/alpha2aleph
+Author: Xavier Faure (suizokukan / 94.23.197.37)
+Author-email: suizokukan@orange.fr
+License: GPL-3.0
+Description: =======
+        alpha2aleph
+        =======
+        alpha2aleph by suizokukan (suizokukan AT orange DOT fr)
+        
+        Note : this Python3 project can't be used with python2.
+        
+        project's purpose
+        =================
+        A GPLv3/Python3/CLI project to convert something like 'mlḵ' in 'כלמ'.
+        
+        installation
+        ============
+        $ pip3 install alpha2aleph
+        
+        more
+        ====
+        see README.md file ("how to use" section)
+        see https://github.com/suizokukan/alpha2aleph
+        
+Keywords: text hebrew translitteration
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3

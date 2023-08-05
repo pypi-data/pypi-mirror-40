@@ -1,0 +1,3 @@
+[console_scripts]
+alpha2aleph = alpha2aleph.main:entrypoint
+
