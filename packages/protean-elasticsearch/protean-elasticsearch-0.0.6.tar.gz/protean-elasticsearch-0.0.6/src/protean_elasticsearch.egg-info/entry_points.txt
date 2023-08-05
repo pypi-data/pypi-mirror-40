@@ -1,0 +1,3 @@
+[console_scripts]
+protean-elasticsearch = protean_elasticsearch.cli:main
+

@@ -1,0 +1,4 @@
+click==7.0
+elasticsearch>=6.1.0
+elasticsearch_dsl==6.1.0
+-r requirements/dev.txt
