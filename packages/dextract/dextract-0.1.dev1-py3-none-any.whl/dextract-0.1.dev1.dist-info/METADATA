@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dextract
+Version: 0.1.dev1
+Summary: Layered extractor of data
+Home-page: http://github.com/csehdz/dextract
+Author: cseHdz
+Author-email: carlos.hdz@me.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: os
+Requires-Dist: copy
+Requires-Dist: xlrd
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pyexcel
+Requires-Dist: pyexcel-xls
+Requires-Dist: pyexcel-xlsx
+Requires-Dist: statistics
+Requires-Dist: collections
+Requires-Dist: multiprocessing
+Requires-Dist: gc
+Requires-Dist: csv
+
+UNKNOWN
+
+
