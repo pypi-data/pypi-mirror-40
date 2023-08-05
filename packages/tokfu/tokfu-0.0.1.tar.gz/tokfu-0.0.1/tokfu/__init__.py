@@ -1,0 +1,1 @@
+from tokfu.corpus import *
