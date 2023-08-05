@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dailify/cli.py
+dailify.egg-info/PKG-INFO
+dailify.egg-info/SOURCES.txt
+dailify.egg-info/dependency_links.txt
+dailify.egg-info/entry_points.txt
+dailify.egg-info/top_level.txt
