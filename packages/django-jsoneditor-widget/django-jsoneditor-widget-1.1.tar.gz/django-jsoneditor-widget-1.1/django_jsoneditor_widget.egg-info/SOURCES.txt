@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_jsoneditor_widget.egg-info/PKG-INFO
+django_jsoneditor_widget.egg-info/SOURCES.txt
+django_jsoneditor_widget.egg-info/dependency_links.txt
+django_jsoneditor_widget.egg-info/top_level.txt
+jsoneditor/__init__.py
+jsoneditor/admin.py
+jsoneditor/forms.py
