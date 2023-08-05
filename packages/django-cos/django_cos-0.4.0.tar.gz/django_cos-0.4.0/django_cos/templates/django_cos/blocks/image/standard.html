@@ -1,0 +1,39 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+{% image self.image width-300 as w300_image %}
+{% image self.image width-600 as w600_image %}
+{% image self.image width-900 as w900_image %}
+{% image self.image max-1000x1000 as self_image %}
+
+{% if self.url %}
+  <a href="{{ self.url }}"
+     {% if self.new_window %}
+     	target="_blank"
+     {% endif %}
+     {% if settings.django_cos.AnalyticsSettings.ga_track_button_clicks %}
+	    onclick="ga('send', 'event', '{{self.settings.ga_tracking_event_category|default:'ImageLink'}}', 'click', '{{self.settings.ga_tracking_event_label|default:self.alt_text}}');"
+	 {% endif %}
+     {% if self.external_link %}rel="external"{% endif %}>
+{% endif %}
+	{% if self.caption %}
+		<figure>
+	{% endif %}
+			<img
+			  {% if self.lazy_load %}
+			  	data-sizes="auto"
+			  	src="{{ self_image.url }}"
+				srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					data-srcset="{{ w300_image.url }} 300w, {{ w600_image.url }} 600w, {{ w900_image.url }} 900w"
+				class="lazyload {{ self.settings.custom_css_class }}"
+			  {% else %}
+			  	src="{{ self_image.url }}"
+			 	class="{{ self.settings.custom_css_class }}"
+			  {% endif %}
+			  {% if self.custom_css_id %}id="{{ self.settings.custom_css_id }}"{% endif %}
+			  alt="{% firstof self.image.alt_text self.image.title %}">
+	{% if self.caption %}
+			<figcaption>{% include_block self.caption %}</figcaption>
+		</figure>
+	{% endif %}
+{% if self.url %}
+  </a>
+{% endif %}
