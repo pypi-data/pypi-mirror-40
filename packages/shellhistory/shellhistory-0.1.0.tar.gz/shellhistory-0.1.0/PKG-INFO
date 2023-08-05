@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: shellhistory
+Version: 0.1.0
+Summary:  Visualize your shell usage with Highcharts!
+Home-page: https://github.com/pawamoy/shell-history
+Author: Timothée Mazzucotelli
+Author-email: pawamoy@pm.me
+Keywords: shell,bash,zsh,history,analysis,visualization
+Requires-Python: >=3.6,<3.7
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: Flask-Admin (>=1.5,<2.0)
+Requires-Dist: flask (>=1.0,<2.0)
+Requires-Dist: python-dateutil (>=2.7,<3.0)
+Requires-Dist: sqlalchemy (>=1.2,<2.0)
+Project-URL: Repository, https://github.com/pawamoy/shell-history
