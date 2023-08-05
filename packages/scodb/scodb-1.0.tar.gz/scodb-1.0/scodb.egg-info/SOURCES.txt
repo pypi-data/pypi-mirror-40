@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+scodb/__init__.py
+scodb/api.py
+scodb/exceptions.py
+scodb.egg-info/PKG-INFO
+scodb.egg-info/SOURCES.txt
+scodb.egg-info/dependency_links.txt
+scodb.egg-info/not-zip-safe
+scodb.egg-info/requires.txt
+scodb.egg-info/top_level.txt

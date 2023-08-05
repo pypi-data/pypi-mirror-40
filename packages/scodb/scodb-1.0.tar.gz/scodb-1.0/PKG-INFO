@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: scodb
+Version: 1.0
+Summary: Conector escrito em python para API do SCODB.
+Home-page: https://github.com/Otoru/scodb
+Author: Vitor Hugo de O. Vargas
+Author-email: vitor.hov@gmail.com
+License: MIT
+Description: Scodb
+        -----
+        
+        Para utilizadar o conector, você pode seguir o exemplo::
+        
+            >>> from pprint import pprint
+            >>> import scodb
+            >>> api = scodb.ScodbConnector(url, user, password)
+            >>> data = api.member('103238')
+            >>> pprint(data)
+        
+        Métodos disponíveis:
+        - member: Busca um membro com base na CID.
+        - authenticate: Dado um usuário e senha, valida estes dados no SISDM.
+        - chapter: Busca informações de um Capítulo com base em seu número.
+        - convent: Busca informações de um Convento com base em seu número.
+        - council: Informando o tipo de entidade e seu número, retorna uma coleção com as informações dos membros do Conselho Consultivo.
+Keywords: Demolay,SCODB
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
