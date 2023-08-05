@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+from gityamldb import GitYamlDB
+import sys
+import argparse
+
+root_parser = argparse.ArgumentParser()
+root_parser.add_argument('repo_path')
+root_parser.add_argument('name')
+root_parser.add_argument('email')
+root_parser.add_argument('--commit', action='store_true')
+
+
+args = root_parser.parse_args()
+
+
+db = GitYamlDB(args.repo_path)
+db.reformate_all(args.name, args.email, commit=args.commit)
