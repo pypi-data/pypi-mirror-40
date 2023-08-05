@@ -1,0 +1,8 @@
+setup.py
+sofunny/__init__.py
+sofunny/text.py
+sofunny.egg-info/PKG-INFO
+sofunny.egg-info/SOURCES.txt
+sofunny.egg-info/dependency_links.txt
+sofunny.egg-info/not-zip-safe
+sofunny.egg-info/top_level.txt
