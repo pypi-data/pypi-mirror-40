@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+requirements.txt
+setup.py
+rimp.egg-info/PKG-INFO
+rimp.egg-info/SOURCES.txt
+rimp.egg-info/dependency_links.txt
+rimp.egg-info/top_level.txt
