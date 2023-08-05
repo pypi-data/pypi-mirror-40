@@ -1,0 +1,10 @@
+tfextras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tfextras/device.py,sha256=b3AImGt1J79v-w_JrDW6zTEk27dZTfjyPhxHccG5jM0,860
+tfextras/graph.py,sha256=AdIiZeRmFM-HflVQoYH8XsxOukkPwWAlfz34XnK84qk,126
+tfextras/io.py,sha256=UycvSWaOGoOTEGtNm7k-SsEgUh2EzP3F43q2lhPUve4,2373
+tfextras/ops.py,sha256=41AIzcIFeFWYVH-abFO6qznTahqzcSPHGfkBXK1RM1U,57
+tfextras/train.py,sha256=3gIK6Cc9hqtmn5cPEa2LGiSY9DyfTPvenldXYbk8fVI,4003
+tfextras-0.0.1.dist-info/METADATA,sha256=Em4fpgjwJI_F8XbNASmW2jN2dy8O-dQRaKxAeSQkDn4,693
+tfextras-0.0.1.dist-info/RECORD,,
+tfextras-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+tfextras-0.0.1.dist-info/top_level.txt,sha256=z4oqSGMPfsEO4U4I9NRQfR3xpT49BMbaZw9XCbvCDIY,9
