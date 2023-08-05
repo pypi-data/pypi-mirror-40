@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pricegrabber
+Version: 0.0.1
+Summary: Package to scrape prices from various websites
+Home-page: https://github.com/tinloaf/pricegrabber
+Author: Lukas Barth
+Author-email: mail@tinloaf.de
+License: MIT
+Description: PriceGrabber
+        ============
+        
+        This is a Python package to retrieve prices for specific products from all sorts of websites, such as Amazon, Aliexpress, or price comparison websites.
+        
+        New websites can be supported by means of a simple configuration entry. Currently supported sites include:
+        
+        * Geizhals.{de, at}
+        * Amazon.{de, com, co.uk, probably all)
+        * Idealo.de
+        * Aliexpress.com
+        
+        Usage
+        -----
+        
+        Usage is pretty simple. Mostly you should be able to put in an URL to the site of a product you're interested in, and you should get out a price (or a list of prices). Here is an Example for an AliExpress product:
+        
+        ```python
+        >>> from pricegrabber import Grabber
+        >>> cfg = {"url": "https://de.aliexpress.com/store/product/Cherry-cherry-shaft-shaft-mx-mechanical-keyboard-shaft-switch-black-shaft-tea-shaft-white-shaft-green/2230037_32682571027.html?spm=a2g0x.12010612.8148356.2.75987786TNUZUO"}
+        >>> g = Grabber(cfg)
+        >>> g.grab()
+        [(8.9, '$')]
+        ```
+        
+        So in this case we know that the pack of Cherry MX key switches from AliExpress costs $8,90. Note that a list is returned. Some sites may report multiple prices instead of just one.
+        
+Keywords: library prices scraping
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
