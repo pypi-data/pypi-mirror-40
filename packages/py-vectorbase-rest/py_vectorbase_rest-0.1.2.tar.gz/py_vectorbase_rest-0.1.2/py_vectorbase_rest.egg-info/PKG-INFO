@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: py-vectorbase-rest
+Version: 0.1.2
+Summary: Adaptation of pyEnsemblRest to work with VectorBase by default.
+Home-page: https://gitlab.com/RomainFeron/py_vectorbase_rest
+Author: Romain Feron
+Author-email: romain.feron.91@gmail.com
+License: GPLv3
+Description: 
+        # py_vectorbase_rest
+        
+        Adaptation of [pyEnsemblRest](https://github.com/gawbul/pyEnsemblRest) to work with VectorBase by default.
+        Offers bindings to VectorBase's Rest API, which is compatible with [ENSEMBL's Rest API](https://rest.ensembl.org/).
+        
+        ## Installation
+        
+        ### Get the latest release with pip
+        
+        ```bash
+        pip3 install py-vectorbase-rest
+        ```
+        
+        ### Get the latest version from GitLab
+        
+        ```bash
+        git clone git@gitlab.com:RomainFeron/py_vectorbase_rest.git
+        sudo python3 setup.py install
+        ```
+        
+        ## Usage
+        
+        Usage is the same as [pyEnsemblRest](https://github.com/gawbul/pyEnsemblRest#usage), with the `EnsemblRest` class replaced by `VectorBaseRest`.
+        A minimal example is provided in `example.py`.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
