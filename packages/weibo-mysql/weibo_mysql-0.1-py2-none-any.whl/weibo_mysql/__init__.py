@@ -1,0 +1,1 @@
+name = 'weibo_mysql'
