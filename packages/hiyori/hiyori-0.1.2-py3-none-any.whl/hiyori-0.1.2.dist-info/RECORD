@@ -1,0 +1,14 @@
+hiyori/__init__.py,sha256=trCZR4kVeiwDeTz8BuV9JweuYqNscvtiYNcfI6X2gog,1282
+hiyori/_version.py,sha256=9DeZZ_yWZWSUegG6zPmmg_Evd1SaRZUONEUGJFtFBP8,859
+hiyori/bodies.py,sha256=9H1BqpPiRPaDeDpMgzYwE57EskgAfn5ofe_0ytnpdl8,3559
+hiyori/connection.py,sha256=JLVIN6-35xavunfLhMmLQmvoIxp5YRPI0j4UZQSaJRQ,6016
+hiyori/constants.py,sha256=yUzXi1wDrrhbUK3zIqERtgrccF-hXQOL1yrXFmoqzMY,880
+hiyori/exceptions.py,sha256=-E--hgGTaACcXQNW6SyGlvloBYjKCUMrcGi0invBAwA,2877
+hiyori/http_client.py,sha256=HggxbXTQdklLK-B1QRZOu8JfPyznZZmRxNZ76K6REsI,25371
+hiyori/messages.py,sha256=Q7hVVcDbBRaxMbK3fKtlWW2zri71U4BzZNEBNmLFxEE,6978
+hiyori/multipart.py,sha256=AKzmAWIfRJ_iPuifOpOzgvcgZUSLJog3_HZKcgMnJaY,6170
+hiyori-0.1.2.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+hiyori-0.1.2.dist-info/METADATA,sha256=RFRI-w6ONaYIiNw2aN9wTAoDmxK7S6PAT-CuEFO3OGM,2214
+hiyori-0.1.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+hiyori-0.1.2.dist-info/top_level.txt,sha256=f6OglbDKdEAyLGQnqgjM6EWk8BiO2tGbeKNTU2Gukmg,7
+hiyori-0.1.2.dist-info/RECORD,,
