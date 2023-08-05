@@ -1,0 +1,33 @@
+Metadata-Version: 1.0
+Name: Neveregiveup
+Version: 2.0.1
+Summary: test pkg private
+Home-page: http://localhost:8090/simple
+Author: huyahao
+Author-email: 1509232028@qq.com
+License: LICENSE.txt
+Description: Attack of the Ocrs
+        ==================
+        
+        Introduction
+        ------------
+        This is a command line fantasy war game!
+        
+        Documentation
+        -------------
+        Documentation can be found...
+        
+        Example Usag
+        ------------
+        Here is an example to import the modules from this package.
+        
+        ..code::python
+        
+        from wargame.attackoftheocrs import AttackOfTheOcrs
+        game=AttackOfTheOcrs()
+        game.play()
+        
+        LICENSE
+        -------
+        See LICENSE.txt file.
+Platform: UNKNOWN
