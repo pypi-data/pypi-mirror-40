@@ -1,0 +1,36 @@
+CHANGES
+=======
+
+* helps if you update tempated files too
+* update pypi password... again
+* update pypi password
+* update pypi password
+* release dev builds
+* release only after test builds
+
+v0.0.1
+------
+
+* Bump version: 0.0.0 → 0.0.1
+* unify verbose options
+* configure bandit
+* add tests for getenv
+* remove requests that snuck in
+* getenv
+* Don't call coverage from codacy step
+* badges
+* remove unused def
+* fix travis secrets
+* fix condition
+* update test for py27
+* use simplejson
+* add tests
+* update ci files
+* ignore bandit B702
+* B506
+* invert travis-ci order
+* update check commands
+* add build matrix
+* update pipfile
+* add colander as a requirement
+* initial commit
