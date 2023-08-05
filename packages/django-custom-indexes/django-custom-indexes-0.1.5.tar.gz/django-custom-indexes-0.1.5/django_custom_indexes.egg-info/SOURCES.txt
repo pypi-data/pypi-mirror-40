@@ -1,0 +1,11 @@
+setup.py
+django_custom_indexes/__init__.py
+django_custom_indexes/model_fields.py
+django_custom_indexes.egg-info/PKG-INFO
+django_custom_indexes.egg-info/SOURCES.txt
+django_custom_indexes.egg-info/dependency_links.txt
+django_custom_indexes.egg-info/top_level.txt
+django_custom_indexes/backends/__init__.py
+django_custom_indexes/backends/postgresql_psycopg2/__init__.py
+django_custom_indexes/backends/postgresql_psycopg2/base.py
+django_custom_indexes/backends/postgresql_psycopg2/schema.py
