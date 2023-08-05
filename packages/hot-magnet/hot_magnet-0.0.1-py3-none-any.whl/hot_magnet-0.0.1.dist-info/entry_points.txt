@@ -1,0 +1,3 @@
+[console_scripts]
+hot-magnet = hot_magnet:main
+
