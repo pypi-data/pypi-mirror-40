@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gotran
+Version: 2019.0.0
+Summary: 
+      A declarative language describing ordinary differential equations.      
+Home-page: UNKNOWN
+Author: Henrik Finsberg
+Author-email: henriknf@simula.no
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: sympy (<=0.7.7)
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: six
+Requires-Dist: future
+Requires-Dist: modelparameters
+Requires-Dist: instant
+
+UNKNOWN
+
+
