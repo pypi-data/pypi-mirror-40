@@ -1,0 +1,3 @@
+[console_scripts]
+xt-crypto-signals = xtcryptosignals.tasks.ticker:main
+
