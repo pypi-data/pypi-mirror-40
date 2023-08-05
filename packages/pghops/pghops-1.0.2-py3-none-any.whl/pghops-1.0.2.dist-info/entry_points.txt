@@ -1,0 +1,4 @@
+[console_scripts]
+create_indexes = pghops.main.create_indexes:main
+pghops = pghops.main.pghops:main
+
