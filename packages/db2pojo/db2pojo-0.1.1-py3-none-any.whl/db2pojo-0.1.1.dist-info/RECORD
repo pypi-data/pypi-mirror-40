@@ -1,0 +1,11 @@
+db2pojo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db2pojo/cli.py,sha256=1DRO4vpzfunAfI3lufGReNP4epxeSxBjLeliOB17vFo,2858
+db2pojo/model.py,sha256=Dc59HvGwQw4bbLV5OFk7dIb2Ft5xaCsGqzch-oHfag8,705
+db2pojo/mysql.py,sha256=-X1CThC5nTLFb__YCNrHfh8EyKLDNjKi2KJXSRnNO38,1915
+db2pojo/pojo.py,sha256=HOHL3Nb66Qb6Az4D49R3NzMxElOdNp8HApXkIgphjdc,5681
+db2pojo/util.py,sha256=FDA6Ki_dojSSqe78V3yModcL8qLasRCLkRBkQuIkQck,324
+db2pojo-0.1.1.dist-info/METADATA,sha256=Nf-5BR7WvesgzqORd-dodhOgdlLNqjsrXOjm9Yufzuw,309
+db2pojo-0.1.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+db2pojo-0.1.1.dist-info/entry_points.txt,sha256=8XFJhERc_7AJ9cavhmlCyMjQqjTtnm4OMlr4N97K72I,53
+db2pojo-0.1.1.dist-info/top_level.txt,sha256=z8o4aZVtmC6rMHIREPqCfOh1f0EuaoSHHOZWPl4-e8g,8
+db2pojo-0.1.1.dist-info/RECORD,,
