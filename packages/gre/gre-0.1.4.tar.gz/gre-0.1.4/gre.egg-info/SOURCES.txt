@@ -1,0 +1,11 @@
+README.md
+setup.py
+gre/__init__.py
+gre/main.py
+gre/vocab.py
+gre.egg-info/PKG-INFO
+gre.egg-info/SOURCES.txt
+gre.egg-info/dependency_links.txt
+gre.egg-info/entry_points.txt
+gre.egg-info/requires.txt
+gre.egg-info/top_level.txt
