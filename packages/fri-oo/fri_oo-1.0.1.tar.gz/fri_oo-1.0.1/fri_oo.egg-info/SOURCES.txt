@@ -1,0 +1,15 @@
+setup.py
+fri_oo/__init__.py
+fri_oo/alg_tools_1d.py
+fri_oo/alg_tools_2d.py
+fri_oo/fri_curve.py
+fri_oo/irr_four_samp.py
+fri_oo/irr_time_samp.py
+fri_oo/plotter.py
+fri_oo/simulation.py
+fri_oo.egg-info/PKG-INFO
+fri_oo.egg-info/SOURCES.txt
+fri_oo.egg-info/dependency_links.txt
+fri_oo.egg-info/not-zip-safe
+fri_oo.egg-info/requires.txt
+fri_oo.egg-info/top_level.txt
