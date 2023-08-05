@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: kommando
+Version: 0.8.2a0
+Summary: A very extensible command parser for discord.py [rewrite]
+Home-page: https://github.com/Naranbataar/Kommando.py
+Author: Andre Augusto
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: AsyncIO
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6.0
+Requires-Dist: discord.py (>=1.0.0a)
+
+# Kommando.py
+A very extensible command parser for discord.py [rewrite]
+
+## Requirements
+* Python 3.6+
+* `discord.py` library [rewrite]
+
+## F.A.Q
+
+#### When i should use it instead of ext.commands?
+When you need things ext.commands can't do, when its to hard to make a workaround,
+or you just wanna make very custom commands, etc
+
+#### When i shouldn't use it?
+When you are still learning python, when you need stability (still a pre-release),
+or when you are to uptight to try something new
+
+#### When you will release some documentation?
+Soon!
+
+#### What are the main advantages?
+- Custom methods, control of the entire command parsing
+- Extensions, modular and total customization of your Bot, with
+partial reloads and custom states at runtime
+- Live Objects, inteligent use of callbacks
+- Long-lived (or even permanent) paginators
+- Multiple tasks for client events
+- Easy translations and customized behaviours
+- Brand-new features
+
+#### Soo why the custom Oni ordered an HellBox?
+For Hellpy someone
+
+#### Why this is still here? I mean, the bots aren't called onis anymore, the hellboxes are now contexts, and the project was never called Hellpy
+Historical Reasons
+
+
