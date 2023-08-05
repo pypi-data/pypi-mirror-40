@@ -1,0 +1,3 @@
+[console_scripts]
+gitticket = giticket.__main__:main
+
