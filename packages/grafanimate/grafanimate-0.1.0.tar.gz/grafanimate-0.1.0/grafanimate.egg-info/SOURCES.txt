@@ -1,0 +1,14 @@
+README.rst
+setup.py
+grafanimate/__init__.py
+grafanimate/commands.py
+grafanimate/core.py
+grafanimate/marionette.py
+grafanimate/util.py
+grafanimate.egg-info/PKG-INFO
+grafanimate.egg-info/SOURCES.txt
+grafanimate.egg-info/dependency_links.txt
+grafanimate.egg-info/entry_points.txt
+grafanimate.egg-info/not-zip-safe
+grafanimate.egg-info/requires.txt
+grafanimate.egg-info/top_level.txt
