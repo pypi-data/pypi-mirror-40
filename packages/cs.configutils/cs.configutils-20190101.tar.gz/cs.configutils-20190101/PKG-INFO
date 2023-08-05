@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: cs.configutils
+Version: 20190101
+Summary: utility functions for .ini style configuration files
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: Utility functions and classes for configuration files.
+        
+        ## Class `ConfigSectionWatcher`
+        
+        MRO: `collections.abc.Mapping`, `collections.abc.Collection`, `collections.abc.Sized`, `collections.abc.Iterable`, `collections.abc.Container`  
+        A class for monitoring a particular clause in a config file.
+        
+        ## Class `ConfigWatcher`
+        
+        MRO: `collections.abc.Mapping`, `collections.abc.Collection`, `collections.abc.Sized`, `collections.abc.Iterable`, `collections.abc.Container`  
+        A monitor for a windows style .ini file.
+        The current SafeConfigParser object is presented as the .config property.
+        
+        ## Function `load_config(config_path, parser=None)`
+        
+        Load a configuration from the named `config_path`.
+        
+        If `parser` is missing or None, use SafeConfigParser (just
+        ConfigParser in Python 3).
+        Return the parser.
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
