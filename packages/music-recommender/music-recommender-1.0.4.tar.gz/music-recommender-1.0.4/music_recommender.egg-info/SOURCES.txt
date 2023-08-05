@@ -1,0 +1,10 @@
+README.rst
+setup.py
+music_recommender.egg-info/PKG-INFO
+music_recommender.egg-info/SOURCES.txt
+music_recommender.egg-info/dependency_links.txt
+music_recommender.egg-info/not-zip-safe
+music_recommender.egg-info/requires.txt
+music_recommender.egg-info/top_level.txt
+recommender/__init__.py
+recommender/api.py
