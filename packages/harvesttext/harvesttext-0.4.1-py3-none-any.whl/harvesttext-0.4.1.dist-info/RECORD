@@ -1,0 +1,17 @@
+harvesttext/__init__.py,sha256=LWt-QVqyTQLRnGALYbAJ2aCAzAQYDfU0b8eTI7s-pEw,362
+harvesttext/harvesttext.py,sha256=3fdg9Vq8kv30FO7F5Pjlhk1D7O-6Ihl6S2eltvbORdY,28500
+harvesttext/match_patterns.py,sha256=KVKoTPz_qL6e7W95XTzTWS5BOcUOFjyNkG7N28B_bz8,671
+harvesttext/resources.py,sha256=L1f8OpSbTijEM0ptFAoscRBvjG1fkB_dG0KDKwAfvFw,3142
+harvesttext/sent_dict.py,sha256=1eQTqyh7d1V77CxwBnJUuMzcdqKoiWvk-QxXst7DqMQ,5774
+harvesttext/word_discoverer.py,sha256=M76vNXooC2WnHXJ2V55M34FDsc9JvTbM9HtWtQ8_6cY,10169
+harvesttext/resources/THUOCL.json,sha256=1jP6oXe9iwKuSJJAE6-A0JcUKi-lg_HP3S_xr2Zqhik,2617887
+harvesttext/resources/qh_sent_dict.json,sha256=tjdKqP3mM4mvdMvGHz8P2o4hnBTlYsBA8RruvWmCsgg,174693
+harvesttext/resources/sanguo_docs.json,sha256=ca8tZcy_2YfF2Z1TugiB9UZhL2CYZBGkp2Q_fTQ9a5A,3577339
+harvesttext/resources/sanguo_entity_dict.json,sha256=hAt_381P8_MN7yDk5vmFPIdCNotzISzVwihmy8R5y2s,373296
+harvesttext/resources/百度停用词列表.json,sha256=mSQMoTafFd4dsENJnUhWbH6M1L4DoIz5SVXby5RX4M4,18178
+harvesttext-0.4.1.dist-info/DESCRIPTION.rst,sha256=x1yTqnpUvU97l_HSRAYpoRvjoN1sqDZ1_3AdosylsGI,16197
+harvesttext-0.4.1.dist-info/METADATA,sha256=D-a94dWQgVjlqETnxJP4-ZVli1y9VBXWdL2iTMcjsdY,16884
+harvesttext-0.4.1.dist-info/RECORD,,
+harvesttext-0.4.1.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+harvesttext-0.4.1.dist-info/metadata.json,sha256=1XcbYGQCNLNBjHo8FkSLzWPEPCEFKaEx8wqV-z3tlTQ,886
+harvesttext-0.4.1.dist-info/top_level.txt,sha256=tETdPfwBStG1NpC3piKYsly9ehsub2wxMylxO-13GGc,12
