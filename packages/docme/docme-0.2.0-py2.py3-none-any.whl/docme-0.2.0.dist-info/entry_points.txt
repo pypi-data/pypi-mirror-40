@@ -1,0 +1,3 @@
+[console_scripts]
+docme = docme.cli:main
+
