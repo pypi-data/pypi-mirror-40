@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ads-api
+Version: 0.1.7.3
+Summary: major marketing platform python api
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas (==0.23.4)
+Requires-Dist: matplotlib (==2.1.2)
+Requires-Dist: bingads (==11.5.8)
+Requires-Dist: googleads (==14.1.0)
+Requires-Dist: SQLAlchemy (==1.2.3)
+Requires-Dist: psycopg2 (==2.7.4)
+Requires-Dist: azure-storage (==0.36.0)
+
+UNKNOWN
+
+
