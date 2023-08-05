@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+WallPoppy.egg-info/PKG-INFO
+WallPoppy.egg-info/SOURCES.txt
+WallPoppy.egg-info/dependency_links.txt
+WallPoppy.egg-info/entry_points.txt
+WallPoppy.egg-info/requires.txt
+WallPoppy.egg-info/top_level.txt
+WallPoppy.egg-info/zip-safe
+Wallpoppy/__init__.py
+Wallpoppy/__main__.py
+Wallpoppy/bg.py

@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: WallPoppy
+Version: 0.1.0
+Summary: Simple wallpaper daemon using feh
+Home-page: https://github.com/hattshire/wallpoppy
+Author: Oliver Hattshire
+Author-email: Ohattsh@hashbang.sh
+License: Unlicense
+Description: UNKNOWN
+Keywords: dbus wallpaper daemon pictures desktop
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Utilities
