@@ -1,0 +1,12 @@
+README.md
+setup.py
+BingWallpaper.egg-info/PKG-INFO
+BingWallpaper.egg-info/SOURCES.txt
+BingWallpaper.egg-info/dependency_links.txt
+BingWallpaper.egg-info/entry_points.txt
+BingWallpaper.egg-info/not-zip-safe
+BingWallpaper.egg-info/requires.txt
+BingWallpaper.egg-info/top_level.txt
+wallpaper/__init__.py
+wallpaper/main.py
+wallpaper/wallpaper.py
