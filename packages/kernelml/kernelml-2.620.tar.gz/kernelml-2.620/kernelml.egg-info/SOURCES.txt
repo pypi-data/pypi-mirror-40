@@ -1,0 +1,11 @@
+MANIFEST.in
+kernelml-README.md
+kernelml.c
+setup.py
+hdr_estimator/__init__.py
+hdr_estimator/hdr_estimator.py
+kernelml.egg-info/PKG-INFO
+kernelml.egg-info/SOURCES.txt
+kernelml.egg-info/dependency_links.txt
+kernelml.egg-info/requires.txt
+kernelml.egg-info/top_level.txt
