@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: bloodhound
+Version: 0.6.0
+Summary: Python based ingestor for BloodHound
+Home-page: https://github.com/fox-it/bloodhound.py
+Author: Dirk-jan Mollema
+Author-email: dirkjan.mollema@fox-it.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: dnspython
+Requires-Dist: impacket (>=0.9.17)
+Requires-Dist: ldap3 (>=2.5.0)
+Requires-Dist: pyasn1 (>=0.4)
+
+UNKNOWN
+
+
