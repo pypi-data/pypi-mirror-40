@@ -1,0 +1,4 @@
+include README.rst
+include sample/example_1.py
+include sample/example_2.py
+include sample/example_3.py
