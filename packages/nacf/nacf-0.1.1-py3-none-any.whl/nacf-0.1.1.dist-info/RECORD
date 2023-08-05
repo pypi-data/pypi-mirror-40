@@ -1,0 +1,10 @@
+CHANGELOG,sha256=qR_R5_LETy3UHeZ5x7Tk-dZtTjVmLa5t1KCoWi8JRi8,261
+README.org,sha256=5s_gyvnrDozIlUFXvA-6W6yJnxgcG820h0pB9WJFlWI,1421
+nacf/__init__.py,sha256=piUAUjq1fU4tacwFZYLvXpt2l4MSITRijjauNxFra-Y,1336
+nacf/models.py,sha256=z3kPkq_a0nI4mHp_kuK4S_QAly7u0-i5mrVseNe-pwU,12864
+nacf/tools.py,sha256=MpHjLKiqQt5X6T5eIdRo6LoexdaA1MJipT5FiPbuOSw,1719
+nacf/types.py,sha256=3SU3dDRACXQezUPRJb64TKfG1U7AECTjtUzTlIoteBY,1964
+poetry.lock,sha256=Qxx0Sr-14FxolJ_BHsAjsjzTgM_mVYPtb-FlQORko-c,13391
+nacf-0.1.1.dist-info/WHEEL,sha256=OyjuYVC9vVJqb-Aqln3fyrroYJ4WrcSwx2msO2AokVc,85
+nacf-0.1.1.dist-info/METADATA,sha256=4gqpkfqvQStmd6nnAzSzAgpqcluJJPO4OBkqT1avlvs,3501
+nacf-0.1.1.dist-info/RECORD,,
