@@ -1,0 +1,8 @@
+scoping_resolver/__init__.py,sha256=Dw_AZsX5dkQO-eGuB4LP_ruHAcOSkX30Q4ZyS6LVIeA,11233
+scoping_resolver-0.0.4.dist-info/METADATA,sha256=FQvZTKL45YifXhTFUx3gvpDML4NPHazIphJw-6t9nRE,3917
+scoping_resolver-0.0.4.dist-info/RECORD,,
+scoping_resolver-0.0.4.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+scoping_resolver-0.0.4.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+scoping_resolver-0.0.4.dist-info/top_level.txt,sha256=PTQPARzkhBii6-52LZ5ZOH-4kaX68NoO5GxUXBOSwu8,22
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_simple.py,sha256=VCBRi9umTTlnwMCDWnnZIS5jKmi7a4lhfaL4y4_lNVU,667
