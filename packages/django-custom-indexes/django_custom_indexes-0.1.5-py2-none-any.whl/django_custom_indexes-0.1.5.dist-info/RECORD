@@ -1,0 +1,12 @@
+django_custom_indexes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_custom_indexes/model_fields.py,sha256=s_WzxaR8DJOuwEUD7GEAAxA85eVe30zM518Rx_PEfpg,4316
+django_custom_indexes/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_custom_indexes/backends/postgresql_psycopg2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_custom_indexes/backends/postgresql_psycopg2/base.py,sha256=CL2cEJska-eP-r826IQIeTFJtOt4lhRT3ImwCce4Dr8,617
+django_custom_indexes/backends/postgresql_psycopg2/schema.py,sha256=cpE-mqV4ddmi2uqTbco3h9VtvyFWng6Kyw7KUGhHq6Q,3011
+django_custom_indexes-0.1.5.dist-info/DESCRIPTION.rst,sha256=ckVjIFIWzUEDZa_t2Y8pwmyopEqsm-_jwVzz5w71p-M,2525
+django_custom_indexes-0.1.5.dist-info/METADATA,sha256=3TvSzLTpDmbj2O5IIndwFjBFnkEUTC5-tOIWSZqNvr0,3352
+django_custom_indexes-0.1.5.dist-info/RECORD,,
+django_custom_indexes-0.1.5.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+django_custom_indexes-0.1.5.dist-info/metadata.json,sha256=W7-hwcLVP2AWbRn7sEpOJ6jqNYWTwfEIdE0vKV_3ANU,927
+django_custom_indexes-0.1.5.dist-info/top_level.txt,sha256=Dyqj02sm5eyLNksTvsDx0E8q9C0PeoseQv6nHbtzFPo,22
