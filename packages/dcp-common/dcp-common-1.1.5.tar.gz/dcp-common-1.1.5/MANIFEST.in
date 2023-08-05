@@ -1,0 +1,4 @@
+include MANIFEST.in
+include VERSION
+include requirements.txt
+recursive-include dcp_common *
