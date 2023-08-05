@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: awsudo-py
+Version: 0.1.1
+Summary: A sudo-like tool to configure AWS environment variables and call programs
+Home-page: https://github.com/chdsbd/awsudo-py
+Author: Christopher Dignam
+Author-email: chris@dignam.xyz
+Keywords: aws,awscli
+Requires-Python: >=3.6,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Systems Administration
+Requires-Dist: boto3 (>=1.9,<2.0)
+Requires-Dist: botocore (>=1.12,<2.0)
+Project-URL: Repository, https://github.com/chdsbd/awsudo-py
