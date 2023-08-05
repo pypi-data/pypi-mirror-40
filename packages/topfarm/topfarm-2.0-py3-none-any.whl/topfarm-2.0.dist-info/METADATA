@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: topfarm
+Version: 2.0
+Summary: Topfarm - Wind farm optimization using OpenMDAO
+Home-page: https://gitlab.windenergy.dtu.dk/TOPFARM/topfarm2
+Author: DTU Wind Energy
+Author-email: dave@dtu.dk
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: openmdao (==2.3.1)
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: scipy
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+
+UNKNOWN
+
+
