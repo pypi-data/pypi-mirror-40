@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: BaiduFace
+Version: 1.3
+Summary: Call baidu face recognition recommendation system
+Home-page: UNKNOWN
+Author: wcy
+Author-email: 1208640961@qq.com
+License: UNKNOWN
+Description: # 本接口调用百度人脸识别实现推荐
+        >1. 首先  `from bdface.facebaidu import FaceApi`
+        >2. 接着
+        >>```python
+        >>faceApi = FaceApi(start_referral, 5)
+        >>faceApi.start()
+        >>```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
