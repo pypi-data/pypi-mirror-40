@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+last.fm_memories.egg-info/PKG-INFO
+last.fm_memories.egg-info/SOURCES.txt
+last.fm_memories.egg-info/dependency_links.txt
+last.fm_memories.egg-info/entry_points.txt
+last.fm_memories.egg-info/requires.txt
+last.fm_memories.egg-info/top_level.txt
+lastfm_memories/__init__.py
+lastfm_memories/cli.py
+lastfm_memories/query.py
