@@ -1,0 +1,17 @@
+numpy
+psutil
+torch
+torchvision
+tqdm
+mock
+scipy
+setuptools
+nvidia_ml_py3
+sphinx_rtd_theme
+pandas
+Pillow
+imageio
+scikit_learn
+tensorboardX
+imageio
+nvidia_ml_py3
