@@ -1,0 +1,20 @@
+Changelog
+---------
+
+0.3.0
+-----
+
+* Add Gettext/internationalization support
+
+0.2.0
+-----
+
+* Bug Fixes
+* Improve better UI
+* Fix layout
+* Change to use letters instead of only numbers
+
+0.1.0 (2019-01-01)
+------------------
+
+* initial release
