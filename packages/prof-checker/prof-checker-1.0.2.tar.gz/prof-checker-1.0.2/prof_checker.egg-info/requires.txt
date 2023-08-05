@@ -1,0 +1,7 @@
+profanity-check
+click>=6.5
+
+[dev]
+pytest
+tox
+black
