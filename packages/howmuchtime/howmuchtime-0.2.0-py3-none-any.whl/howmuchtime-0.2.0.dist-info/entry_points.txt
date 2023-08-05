@@ -1,0 +1,3 @@
+[console_scripts]
+hmt = howmuchtime.hmt:cli
+
