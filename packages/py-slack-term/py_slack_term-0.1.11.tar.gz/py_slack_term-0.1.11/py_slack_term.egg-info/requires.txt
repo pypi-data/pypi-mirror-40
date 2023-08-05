@@ -1,0 +1,4 @@
+slackclient
+npyscreen
+pyyaml
+websocket-client==0.48.0

@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        slack-term=py_slack_term.main:main
+    
