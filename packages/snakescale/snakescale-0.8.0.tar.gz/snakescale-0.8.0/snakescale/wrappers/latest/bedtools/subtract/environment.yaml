@@ -1,0 +1,6 @@
+channels:
+  - bioconda
+dependencies:
+  - bedtools
+  - pip:
+    - snakescale>=0.7.0
