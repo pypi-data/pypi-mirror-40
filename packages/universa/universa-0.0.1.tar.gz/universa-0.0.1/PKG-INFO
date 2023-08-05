@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: universa
+Version: 0.0.1
+Summary: Python package to access Universa API from python.
+Home-page: https://github.com/vkovrigin/universa
+Author: Vadim Kovrigin
+Author-email: kovrigin.dev@gmail.com
+License: UNKNOWN
+Description: # universa
+        Python package to access Universa API from python.
+        
+Keywords: Universa
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
