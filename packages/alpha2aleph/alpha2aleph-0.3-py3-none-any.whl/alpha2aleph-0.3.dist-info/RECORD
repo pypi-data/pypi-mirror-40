@@ -1,0 +1,17 @@
+alpha2aleph/cfgini.py,sha256=kM5OuWcoz8zDcezW5FC3l9geWuiLMjdhJGBeBP37EW0,3785
+alpha2aleph/cmdline.py,sha256=AdXVDn-4yRwnB3L4osFXdiJhuYZh0o-dIgdtR_1TRxE,5314
+alpha2aleph/fb1d_fb4f.py,sha256=TCIekF4T-Z9Na7DeaJ1F7Nh8AbzjwvtROqyRfDWDyIQ,8364
+alpha2aleph/glob.py,sha256=mjAZ1Yby6TzOzI2K6kvqJ0-o_Ew8-19N7pfoQO7Y43U,2026
+alpha2aleph/globalsrtl.py,sha256=3hBUg41grsSHpckirQ0iGZ5zz8Fd2watcTxmOM7xQ2U,1666
+alpha2aleph/improve_rtlalphatext.py,sha256=58KKcoVCPD2IVb22l6sNr2kNu_I7ZXByjPmenV1c5Vs,2171
+alpha2aleph/logger.py,sha256=jROtCkJylaErCG-lM0umiUbgYEW6oiJJRpXcoh0mL6s,2386
+alpha2aleph/main.py,sha256=iMfl-setIo_emj4aQaCDh4Skd2Ghj4goGFweDEovoJ0,35235
+alpha2aleph/regex.py,sha256=Ke43UFcZ09tCqHSKLo6iCTRDqolHzLMeK5lW_EWCIRE,2349
+alpha2aleph/utils.py,sha256=Semf1PWmkuyPzcvlYe5TKOAY_O61I0Vchwwqm5u3AMs,5179
+alpha2aleph-0.3.dist-info/DESCRIPTION.rst,sha256=oVaoIvBK7sKxJ8UxG9a5Bg-pwiNnquSjjKmcLh3Hkcg,408
+alpha2aleph-0.3.dist-info/METADATA,sha256=pb4v7B7VuwSbX3_3j5XTjiZk4u6y6jPMhrYkQDepd2s,1000
+alpha2aleph-0.3.dist-info/RECORD,,
+alpha2aleph-0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+alpha2aleph-0.3.dist-info/entry_points.txt,sha256=TFtPMs6rINzgKsirzQho6H29b9H7wlMdrxZVj1IT5oo,61
+alpha2aleph-0.3.dist-info/metadata.json,sha256=Srl4SRV4vW-jtnGrsDuU4FN6E65uivhfkWH4YXS4eDQ,950
+alpha2aleph-0.3.dist-info/top_level.txt,sha256=zffFZmQ4c3CTH5GKRLzhrLvhoG6wlVwOr0n2KZTuLDU,12
