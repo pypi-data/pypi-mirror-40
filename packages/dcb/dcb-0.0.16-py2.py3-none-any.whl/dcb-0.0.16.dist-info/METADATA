@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: dcb
+Version: 0.0.16
+Summary: CLI for building, tagging, and publishing Docker containers
+Home-page: http://github.com/andrewrothstein/dcb
+Author: Andrew Rothstein
+Author-email: andrew.rothstein@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: jinja2
+
+UNKNOWN
+
+
