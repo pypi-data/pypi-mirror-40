@@ -1,0 +1,41 @@
+{
+ "paused": false,
+ "biConnector": {
+  "enabled": false,
+  "readPreference": "secondary"
+ },
+ "name": "", 
+ "providerBackupEnabled": false,
+ "autoScaling": {
+  "diskGBEnabled": true
+ },
+ "mongoDBVersion": "3.6.8",
+ "clusterType": "REPLICASET",
+ "providerSettings": {
+  "instanceSizeName": "M30",
+  "providerName": "GCP"
+ },
+ "diskSizeGB": 40.0,
+ "numShards": 1,
+ "backupEnabled": true,
+ "mongoDBMajorVersion": "3.6",
+ "replicationSpecs": [
+  {
+   "regionsConfig": {
+    "US_EAST_4": {
+     "priority": 6,
+     "electableNodes": 1,
+     "readOnlyNodes": 0
+    },
+    "CENTRAL_US": {
+     "priority": 7,
+     "electableNodes": 2,
+     "readOnlyNodes": 0
+    }
+   },
+   "numShards": 1,
+   "id": "5b50c1a096e8211ff6bb3b75",
+   "zoneName": "Zone 1"
+  }
+ ]
+}
