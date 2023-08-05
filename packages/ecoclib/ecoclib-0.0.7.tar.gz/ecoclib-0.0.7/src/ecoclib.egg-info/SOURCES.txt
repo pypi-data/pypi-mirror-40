@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+Pipfile
+Pipfile.lock
+README.md
+setup.py
+src/ecoclib.py
+src/ecoclib.egg-info/PKG-INFO
+src/ecoclib.egg-info/SOURCES.txt
+src/ecoclib.egg-info/dependency_links.txt
+src/ecoclib.egg-info/requires.txt
+src/ecoclib.egg-info/top_level.txt

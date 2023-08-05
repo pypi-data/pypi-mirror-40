@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ecoclib
+Version: 0.0.7
+Summary: Error Correcting Output code with flexibile learning methods for multi-class classification
+Home-page: https://github.com/pkgprateek/ecoclib
+Author: Prateek Kumar Goel
+Author-email: pkgprateek@gmail.com
+License: UNKNOWN
+Description: # ECOC Library with flexbile choise for learning methods
+        Install and open the package description, it will guide you with the details and use.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
