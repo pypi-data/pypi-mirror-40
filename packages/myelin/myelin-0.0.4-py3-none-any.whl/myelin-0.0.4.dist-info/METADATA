@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: myelin
+Version: 0.0.4
+Summary: Myelin utility package
+Home-page: https://bitbucket.org/myelinproj/myelin-metric/
+Author: Myelin
+Author-email: jamborta@gmail.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests (>=2.19.1)
+Requires-Dist: kubernetes (==7.0.0)
+
+UNKNOWN
+
+
