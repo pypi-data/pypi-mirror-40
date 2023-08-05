@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+changelog.rst
+setup.cfg
+setup.py
+src/Flask_Admin_Toggle_Control.egg-info/PKG-INFO
+src/Flask_Admin_Toggle_Control.egg-info/SOURCES.txt
+src/Flask_Admin_Toggle_Control.egg-info/dependency_links.txt
+src/Flask_Admin_Toggle_Control.egg-info/requires.txt
+src/Flask_Admin_Toggle_Control.egg-info/top_level.txt
+src/flask_admin_toggle_control/__init__.py
+src/flask_admin_toggle_control/helpers.py
+src/flask_admin_toggle_control/view.py
+src/flask_admin_toggle_control/widget.py
+src/flask_admin_toggle_control/static/toggle-control.js
