@@ -1,0 +1,12 @@
+dxlmarclient/__init__.py,sha256=DP4ntX3RFOds0b8Q-srK9VKw2ywkiaCyUCnwv9WfehE,701
+dxlmarclient/_version.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+dxlmarclient/client.py,sha256=uB_BGSJnP-J-kGoTE8dGojX5-AozevZFTsCTRSLbYZ0,21231
+dxlmarclient/constants.py,sha256=oEuQPLTyEx43y36PZ2j_sBnlsRTzLJdx7Vm93d-XRZQ,5261
+dxlmarclient/_config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dxlmarclient/_config/sample/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dxlmarclient/_config/sample/dxlclient.config,sha256=FWL1F62uTKh_GL1ngzADHugZ_JXtItMZ6Hog9n59Oig,266
+dxlmarclient-0.2.1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+dxlmarclient-0.2.1.dist-info/METADATA,sha256=sfcG52PkT-p-08xfO3skx1RSFpTTM1fPAjKlpBTGMZw,2528
+dxlmarclient-0.2.1.dist-info/WHEEL,sha256=CihQvCnsGZQBGAHLEUMf0IdA4fRduS_NBUTMgCTtvPM,110
+dxlmarclient-0.2.1.dist-info/top_level.txt,sha256=mqImPCbbSjqLYH-r3wFhg1_l9-zh63WxJSnsLJ4uKMY,13
+dxlmarclient-0.2.1.dist-info/RECORD,,
