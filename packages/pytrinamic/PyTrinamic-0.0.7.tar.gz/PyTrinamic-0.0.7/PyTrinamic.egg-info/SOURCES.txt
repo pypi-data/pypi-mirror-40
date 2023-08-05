@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+PyTrinamic/TMCL.py
+PyTrinamic/__init__.py
+PyTrinamic.egg-info/PKG-INFO
+PyTrinamic.egg-info/SOURCES.txt
+PyTrinamic.egg-info/dependency_links.txt
+PyTrinamic.egg-info/top_level.txt
+PyTrinamic/connections/SerialInterface.py
+PyTrinamic/examples/TMCM-0010-OPC_config_check.py
+PyTrinamic/examples/TMCM-0010-OPC_config_update.py
+PyTrinamic/modules/TMCM_0010_OPC.py
+PyTrinamic/connections/SerialInterface.py
+PyTrinamic/examples/TMCM-0010-OPC_config_check.py
+PyTrinamic/examples/TMCM-0010-OPC_config_update.py
+PyTrinamic/modules/TMCM_0010_OPC.py
