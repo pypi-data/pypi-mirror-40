@@ -1,0 +1,3 @@
+[console_scripts]
+stdin_to_cloudwatch = stdin_to_cloudwatch.__main__:main
+
