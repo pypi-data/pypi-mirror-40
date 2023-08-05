@@ -1,0 +1,10 @@
+README.md
+setup.py
+beewars/__init__.py
+beewars/main.py
+beewars.egg-info/PKG-INFO
+beewars.egg-info/SOURCES.txt
+beewars.egg-info/dependency_links.txt
+beewars.egg-info/entry_points.txt
+beewars.egg-info/requires.txt
+beewars.egg-info/top_level.txt
