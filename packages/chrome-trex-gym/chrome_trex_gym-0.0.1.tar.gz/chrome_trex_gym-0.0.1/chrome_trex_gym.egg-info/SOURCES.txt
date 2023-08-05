@@ -1,0 +1,10 @@
+README.md
+setup.py
+chrome_trex_gym/DinoGame.py
+chrome_trex_gym/__init__.py
+chrome_trex_gym.egg-info/PKG-INFO
+chrome_trex_gym.egg-info/SOURCES.txt
+chrome_trex_gym.egg-info/dependency_links.txt
+chrome_trex_gym.egg-info/top_level.txt
+chrome_trex_gym/envs/ChromeTrexEnv.py
+chrome_trex_gym/envs/__init__.py
