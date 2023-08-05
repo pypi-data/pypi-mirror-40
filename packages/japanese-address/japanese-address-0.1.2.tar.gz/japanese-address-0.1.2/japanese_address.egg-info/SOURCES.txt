@@ -1,0 +1,12 @@
+README.md
+setup.py
+japanese_address/__init__.py
+japanese_address.egg-info/PKG-INFO
+japanese_address.egg-info/SOURCES.txt
+japanese_address.egg-info/dependency_links.txt
+japanese_address.egg-info/requires.txt
+japanese_address.egg-info/top_level.txt
+japanese_address/data/cities.html
+japanese_address/data/prefs.dat
+japanese_address/data/towns.html
+japanese_address/data/wards.html
