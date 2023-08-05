@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ltspice
+Version: 0.1
+Summary: ltspice python analysis tool
+Home-page: UNKNOWN
+Author: Donghoon Park
+Author-email: donghun94@gmail.com
+License: UNKNOWN
+Keywords: ltspice
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: numpy
+
+UNKNOWN
+
+
