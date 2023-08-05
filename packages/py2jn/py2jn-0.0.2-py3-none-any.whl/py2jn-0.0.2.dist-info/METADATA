@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: py2jn
+Version: 0.0.2
+Summary: py2jn: convert Python script to Jupyter Notebook
+Home-page: https://github.com/bwohlberg/py2jn
+Author: Siu Kwan Lam
+Maintainer: Brendt Wohlberg
+Maintainer-email: brendt@ieee.org
+License: BSD
+Keywords: Jupyter Notebook
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Dist: nbformat
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: pytest-runner; extra == 'tests'
+
+
+py2jn is a small utility for converting Python scripts into Jupyter
+Notebooks and convert module-level multiline (triple quote) string
+literals into markdown cells.
+
+
