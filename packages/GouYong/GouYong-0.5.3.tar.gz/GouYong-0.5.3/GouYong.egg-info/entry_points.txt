@@ -1,0 +1,3 @@
+[gui_scripts]
+GouYong = GouYong.src.window:main
+
