@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: dpshell
+Version: 0.0.0
+Summary: A Python command line tool to deal with file information extraction. 
+Home-page: https://github.com/Listen180/pyshell
+Author: Sen LEI
+Author-email: sen.lei@outlook.com
+License: BSD 3-clause
+Description: DP Shell
+        ========
+        
+        This is a python command line toolkit that helps to deal with file information extraction. 
+        
+Keywords: python package pypi shell file info extraction
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent

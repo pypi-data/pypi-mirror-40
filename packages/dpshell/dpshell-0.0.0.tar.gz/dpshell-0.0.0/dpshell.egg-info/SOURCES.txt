@@ -1,0 +1,9 @@
+README.rst
+setup.py
+dpshell/__init__.py
+dpshell/empty_check.py
+dpshell.egg-info/PKG-INFO
+dpshell.egg-info/SOURCES.txt
+dpshell.egg-info/dependency_links.txt
+dpshell.egg-info/entry_points.txt
+dpshell.egg-info/top_level.txt
