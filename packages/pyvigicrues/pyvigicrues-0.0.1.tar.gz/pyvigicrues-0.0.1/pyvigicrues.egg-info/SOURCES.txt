@@ -1,0 +1,11 @@
+README.rst
+setup.py
+pyvigicrues/__init__.py
+pyvigicrues/__main__.py
+pyvigicrues/client.py
+pyvigicrues.egg-info/PKG-INFO
+pyvigicrues.egg-info/SOURCES.txt
+pyvigicrues.egg-info/dependency_links.txt
+pyvigicrues.egg-info/entry_points.txt
+pyvigicrues.egg-info/requires.txt
+pyvigicrues.egg-info/top_level.txt

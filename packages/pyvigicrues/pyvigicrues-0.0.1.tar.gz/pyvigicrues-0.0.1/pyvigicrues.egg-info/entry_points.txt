@@ -1,0 +1,3 @@
+[console_scripts]
+pyvigicrues = pyvigicrues.__main__:main
+
