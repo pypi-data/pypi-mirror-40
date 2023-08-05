@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: insteonterminal
+Version: 0.0.2
+Summary: A utility for interacting with insteon modems
+Home-page: https://github.com/pfrommerd/insteon-terminal
+Author: Daniel Pfrommer
+License: UNKNOWN
+Project-URL: Source, https://github.com/pfrommerd/insteon-terminal/
+Description: [![Build Status](https://travis-ci.org/pfrommerd/insteon-terminal.svg?branch=experimental)](https://travis-ci.org/pfrommerd/insteon-terminal)
+        # Insteon Terminal
+        
+Keywords: insteon
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
