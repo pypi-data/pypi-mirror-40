@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+lang_trans/__init__.py
+lang_trans/arabic.py
+lang_trans/japanese.py
+lang_trans.egg-info/PKG-INFO
+lang_trans.egg-info/SOURCES.txt
+lang_trans.egg-info/dependency_links.txt
+lang_trans.egg-info/top_level.txt
