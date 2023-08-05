@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: supy
+Version: 2018.12.30
+Summary: the SUEWS model that speaks python
+Home-page: https://github.com/sunt05/SuPy
+Author: Ting Sun
+Author-email: ting.sun@reading.ac.uk
+License: GPL-V3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: ~=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.15.2)
+Requires-Dist: pandas (>=0.23.4)
+Requires-Dist: scipy
+Requires-Dist: f90nml
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: supy-driver (>=2018b18)
+
+# SuPy
+
+[![Build Status](https://dev.azure.com/sunt05/SUEWS/_apis/build/status/sunt05.SuPy?branchName=master)](https://dev.azure.com/sunt05/SUEWS/_build/latest?definitionId=11?branchName=master)
+
+[![Documentation Status](https://readthedocs.org/projects/supy/badge/?version=latest)](https://supy.readthedocs.io/en/latest/?badge=latest)
+
+[**SU**EWS](https://suews-docs.readthedocs.io) that speaks **Py**thon
+
+## Installation
+
+SuPy requires `python` 3.5+ and can be installed with `pip` in command line prompt:
+
+```shell
+python3 -m pip install supy --upgrade
+```
+
+## Quickstart
+
+Once installed, `supy` can be quickly started to get [SUEWS](https://suews-docs.readthedocs.io) simulations done:
+
+```python
+import supy as sp
+
+# load sample data
+df_state_init, df_forcing = sp.load_SampleData()
+
+# run supy/SUEWS simulation
+df_output, df_state_end = sp.run_supy(df_forcing, df_state_init)
+
+# plot results
+res_plot = df_output.SUEWS.loc[1, ['QN', 'QF', 'QS', 'QE', 'QH']]
+res_plot.loc['2012 6 4':'2012 6 6'].resample('30T').mean().plot()
+```
+
+The above code will produce a plot of surface energy balance components as follows:
+
+![sample plot](https://github.com/sunt05/SuPy/raw/master/sample_plot.png)
+
+## Tutorial
+
+Please check out [more SuPy tutorials here!](https://supy.readthedocs.io/en/latest/tutorial/tutorial.html)
+
+
