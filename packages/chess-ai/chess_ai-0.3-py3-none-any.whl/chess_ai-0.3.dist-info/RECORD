@@ -1,0 +1,11 @@
+chess/__init__.py,sha256=9yLBi7AJjfoFXZB3o4JEo0d8p5zcPo70PWho4Bm1Dhk,100
+chess/ai.py,sha256=_FkhAvhaiueD_LrVqrhJ8J_VORoXcp8xdqKcrEr6Big,1415
+chess/chess.py,sha256=0V4B22PvEZyMFLTsa3dDWbdBJWolnguXbz7R_K0FhUo,35932
+chess/game.py,sha256=saWI4aTVcs2-Tbu8ch1Y6y_O1-fhKzvaUVJgzekGqnA,2654
+chess/heuristic.py,sha256=IhObHqkHj-W3gaLCCaaJlekazj-r5fbWcJgYy48mteo,3104
+chess/utils.py,sha256=fcopENUAMlZ7KZYDUsXB46BQk1PYS-o-NWU2oEOhaLE,615
+chess_ai-0.3.dist-info/LICENSE,sha256=-LVFb3jw_c0gaP4hBRIzAAJAMBV2dES1Ya3RCVRE2TI,1071
+chess_ai-0.3.dist-info/METADATA,sha256=sf-iRyjgrx9hIxUndPfuexte8E7R0E0X1jv4c-iNbHs,699
+chess_ai-0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+chess_ai-0.3.dist-info/top_level.txt,sha256=KQh_dmhsO-MtGPgCihpBa-q5XF6tGfA9_MKDXETuyss,6
+chess_ai-0.3.dist-info/RECORD,,
