@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: Rsql
+Version: 0.5
+Summary: Rsql
+Home-page: UNKNOWN
+Author: Raf
+Author-email: UNKNOWN
+License: MIT
+Description: This package will allow you to create clean SQL queries in your python app like FLask... Instant speed and simple api. For now it works only with mysql
+Keywords: sql,clear SQL,flask SQL,sql like PDO
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
