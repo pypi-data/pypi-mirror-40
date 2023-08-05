@@ -1,0 +1,3 @@
+[console_scripts]
+last.fm-memories = lastfm_memories.cli:main
+
