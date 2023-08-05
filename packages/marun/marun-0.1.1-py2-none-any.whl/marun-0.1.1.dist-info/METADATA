@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: marun
+Version: 0.1.1
+Summary: get an artifact and dependencies (java jar files) from maven repositories, like pip in python.
+Home-page: https://github.com/nishemon/marun
+Author: Shinya Takai
+Author-email: shtk@cccis.jp
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: java,maven,deploy,ivy,repository,package,artifact,run
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Java
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=2.7, <3
+
+# marun - Maven Artifact Runner
+* deploying jar files and their dependencies from maven repositories
+* run easily
+
+Marun is a tool to install and run Java programs from maven repositories.
+It has no capability to compile, archive and do other build commands unlike Apache Maven or Gradle, but it can read pom.xml and resolve dependencies using Apache Ivy.
+
+## usage
+1. install marun
+```
+> sudo pip install marun
+```
+
+2. install a jar (example: jruby)
+```
+> sudo marun install org.jruby:jruby-core:1.7.+
+```
+
+3. run
+```
+> sudo marun run jruby.Main -v
+```
+
+## configuration
+It is expected that you have some private maven repositories.
+You can use Amazon S3(e.g. [aws-maven](https://github.com/spring-projects/aws-maven)), [Nexus](http://www.sonatype.org/nexus/), [Artifactory](https://www.jfrog.com/artifactory/) or a http server for your private repository.
+
+```
+#/etc/marun.conf
+...
+repositories=yours,jcenter
+
+[repository:yours]
+baseurl=http://...
+
+...
+```
+
+## requirements
+* Java8
+* Python 2.7
+
+
+
