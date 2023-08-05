@@ -1,0 +1,68 @@
+Expr(Node)
+
+SyntaxTree(Node)
+    n_expr: Optional[Expr]
+    t_eof: Optional[Token]
+
+Pattern(Node)
+
+VariablePattern(Pattern)
+    t_identifier: Optional[Token]
+
+Parameter(Node)
+    n_pattern: Optional[Pattern]
+    t_comma: Optional[Token]
+
+ParameterList(Node)
+    t_lparen: Optional[Token]
+    parameters: Optional[List[Parameter]]
+    t_rparen: Optional[Token]
+
+LetExpr(Expr)
+    t_let: Optional[Token]
+    n_pattern: Optional[Pattern]
+
+    # Only present if the `let`-expr is a function declaration. If present,
+    # `n_pattern` is expected to be a `VariablePattern`.
+    n_parameter_list: Optional[ParameterList]
+
+    t_equals: Optional[Token]
+    n_value: Optional[Expr]
+    t_in: Optional[Token]
+    n_body: Optional[Expr]
+
+IfExpr(Expr)
+    t_if: Optional[Token]
+    n_if_expr: Optional[Expr]
+    t_then: Optional[Token]
+    n_then_expr: Optional[Expr]
+
+    # The `else` case is optional.
+    t_else: Optional[Token]
+    n_else_expr: Optional[Expr]
+
+    t_endif: Optional[Token]
+
+IdentifierExpr(Expr)
+    t_identifier: Optional[Token]
+
+IntLiteralExpr(Expr)
+    t_int_literal: Optional[Token]
+
+BinaryExpr(Expr)
+    n_lhs: Optional[Expr]
+    t_operator: Optional[Token]
+    n_rhs: Optional[Expr]
+
+Argument(Node)
+    n_expr: Optional[Expr]
+    t_comma: Optional[Token]
+
+ArgumentList(Node)
+    t_lparen: Optional[Token]
+    arguments: Optional[List[Argument]]
+    t_rparen: Optional[Token]
+
+FunctionCallExpr(Expr)
+    n_callee: Optional[Expr]
+    n_argument_list: Optional[ArgumentList]
