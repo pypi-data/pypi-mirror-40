@@ -1,0 +1,8 @@
+python-binance
+redis==2.10.6
+celery
+marshmallow
+mongoengine
+requests
+switcheo
+click
