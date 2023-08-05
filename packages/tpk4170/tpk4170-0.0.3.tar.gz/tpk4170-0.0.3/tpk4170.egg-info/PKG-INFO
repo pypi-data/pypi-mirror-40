@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: tpk4170
+Version: 0.0.3
+Summary: Python modules for the course TPK4170 Robotics at NTNU 
+Home-page: UNKNOWN
+Author: Lars Tingelstad
+Author-email: lars.tingelstad@ntnu.no
+License: UNKNOWN
+Download-URL: https://github.com/tingelst/tpk4170-robotics/archive/master.zip
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
