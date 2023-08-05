@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: msspec
+Version: 0.0.1
+Summary: A simple module for basic mass-spectra operations.
+Home-page: https://github.com/MatteoLacki/massspectrum
+Author: Mateusz Krzysztof Łącki
+Author-email: matteo.lacki@gmail.com
+License: UNKNOWN
+Description: A simple module for basic mass-spectra opertations.
+Keywords: Analitical Chemistry,Mass Spectrometry
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6

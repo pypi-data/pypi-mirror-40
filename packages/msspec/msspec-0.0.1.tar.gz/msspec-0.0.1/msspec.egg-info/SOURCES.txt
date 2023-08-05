@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+msspec/__init__.py
+msspec/spectrum.py
+msspec.egg-info/PKG-INFO
+msspec.egg-info/SOURCES.txt
+msspec.egg-info/dependency_links.txt
+msspec.egg-info/requires.txt
+msspec.egg-info/top_level.txt
