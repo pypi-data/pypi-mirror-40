@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+docs/pdoc_prep.m.html
+docs/pdoc_run.m.html
+src/pdoc_prep/__init__.py
+src/pdoc_prep/pdoc_prep.py
+src/pdoc_prep/pdoc_run
+src/pdoc_prep/test_doc.py
+src/pdoc_prep/test_pdoc_prep.py
+src/pdoc_prep.egg-info/PKG-INFO
+src/pdoc_prep.egg-info/SOURCES.txt
+src/pdoc_prep.egg-info/dependency_links.txt
+src/pdoc_prep.egg-info/requires.txt
+src/pdoc_prep.egg-info/top_level.txt
