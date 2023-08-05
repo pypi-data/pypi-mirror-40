@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: hwpy
+Version: 0.3.7
+Summary: Get linux server hardware information. 获取Linux服务器硬件明细。
+Home-page: https://github.com/starsliao/hwpy
+Author: Stars Liao
+Author-email: starsliao@163.com
+License: MIT Licence
+Description: # install(python2.7 and python3.6)
+        
+        #### lastest psutil maybe required
+        ```
+        # yum install -y gcc python-devel dmidecode
+        # pip install -U setuptools 
+        # pip install -U psutil
+        ```
+        
+        ```
+        # pip install hwpy
+        ```
+        
+        # usage
+        ```
+        # python -m hwpy
+        ```
+        ```
+        from hwpy import info
+        info.main()
+        info.hwlist
+        ```
+        ```
+        info.cpu
+        info.net    
+        info.disk
+        info.part   
+        info.host
+        info.mem
+        ```
+        
+Keywords: pip,hwpy,Hardware,硬件检测
+Platform: any
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
