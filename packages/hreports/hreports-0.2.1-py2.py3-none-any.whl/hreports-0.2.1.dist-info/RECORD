@@ -1,0 +1,13 @@
+hreports/__init__.py,sha256=TOyV5-CvbGT6d4SxfH6P1GocAGG4N4iQYYiKBRyvAcs,155
+hreports/cli.py,sha256=fC6Wb8nlGE7OjcD4EYNkqXSachCUXE5fQjTqnmTH1yw,6167
+hreports/config.py,sha256=Dth9Z362R4fN8ytpQ7JI70ECdDIGXVLcPEAkDTWulrE,3855
+hreports/hreports.py,sha256=bPG_XpZ6GQUOWGDva6W4EQVrcGQanmBU1gjYIihdMVQ,9012
+hreports/template_filters.py,sha256=8pbcA3Cy4XED-zEa898dq823P4m7gAmhh3TVjVH93tI,5440
+hreports/templates/invoice_de.tpl,sha256=spyYeMF89yPAMszjJGMPKHgFipk9KQsCx2x3VA1VPG0,1746
+hreports-0.2.1.dist-info/DESCRIPTION.rst,sha256=eay8amvoo8qnarkk0QG_neE6gH0tcKNbAbdkiR8zk-M,6204
+hreports-0.2.1.dist-info/METADATA,sha256=u8yCCdkqWtV_93587Y5biAmnyANUS8RFiZnHSd--IoM,7020
+hreports-0.2.1.dist-info/RECORD,,
+hreports-0.2.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+hreports-0.2.1.dist-info/entry_points.txt,sha256=BXtYXKhdVLM9IMlZJeNrIGtdJrME_MPe5sc2Fe2PSZg,48
+hreports-0.2.1.dist-info/metadata.json,sha256=lnEkhIJ4_RZbHqqJVihC_TVUfzujCTJJ3DcbS9jSUH8,1140
+hreports-0.2.1.dist-info/top_level.txt,sha256=C4uGCI0XLnHU45is1ILObDVA58faUONJyDiQyKrzxJ8,9
