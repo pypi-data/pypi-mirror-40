@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: jaraco.office
+Version: 2.0
+Summary: Utility library for working with MS Office documents
+Home-page: https://github.com/jaraco/jaraco.office
+Author: Jason R. Coombs
+Author-email: jaraco@jaraco.com
+License: UNKNOWN
+Description: .. image:: https://img.shields.io/pypi/v/jaraco.office.svg
+           :target: https://pypi.org/project/jaraco.office
+        
+        .. image:: https://img.shields.io/pypi/pyversions/jaraco.office.svg
+        
+        .. image:: https://img.shields.io/travis/jaraco/jaraco.office/master.svg
+           :target: https://travis-ci.org/jaraco/jaraco.office
+        
+        .. .. image:: https://img.shields.io/appveyor/ci/jaraco/skeleton/master.svg
+        ..    :target: https://ci.appveyor.com/project/jaraco/skeleton/branch/master
+        
+        .. image:: https://readthedocs.org/projects/jaracooffice/badge/?version=latest
+           :target: http://jaracooffice.readthedocs.io/en/latest/?badge=latest
+        
+        ``jaraco.office`` provides facilities for working with Microsoft Offic
+        applications (Word, Excel, etc) using the Win32 APIs. For cross-platform
+        libraries that work directly with Office 2007 OpenOffice formats, see
+        `ParadocX <https://github.com/yougov/paradocx>`_ and related packages.
+        
+Keywords: excel office word
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=2.7
+Provides-Extra: testing
+Provides-Extra: docs
