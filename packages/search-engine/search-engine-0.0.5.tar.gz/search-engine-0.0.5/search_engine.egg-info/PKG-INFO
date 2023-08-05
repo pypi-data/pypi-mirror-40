@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: search-engine
+Version: 0.0.5
+Summary: fetch search engine result
+Home-page: https://github.com/myvyang/search_engine
+Author: myvyang
+Author-email: myvyang@gmail.com
+License: MIT Licence
+Description: fetch search engine result
+Keywords: search,myvyang
+Platform: any
