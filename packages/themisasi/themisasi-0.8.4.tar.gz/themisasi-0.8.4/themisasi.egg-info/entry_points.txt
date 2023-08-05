@@ -1,0 +1,5 @@
+[console_scripts]
+DownloadThemis = DownloadThemis:main
+PlotThemis = PlotThemis:main
+PlotThemisPixels = PlotThemisPixels:main
+
