@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: hwpy
+Version: 0.1.0
+Summary: hwpy
+Home-page: https://github.com/starsliao/hwpy
+Author: Stars Liao
+Author-email: starsliao@163.com
+License: MIT Licence
+Description: Show Linux Hardware Info
+Keywords: pip,hwinfo,Hardware
+Platform: any
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
