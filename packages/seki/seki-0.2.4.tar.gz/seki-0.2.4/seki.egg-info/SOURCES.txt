@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+seki/__init__.py
+seki/__main__.py
+seki/__version__.py
+seki/cli.py
+seki/conf.py
+seki.egg-info/PKG-INFO
+seki.egg-info/SOURCES.txt
+seki.egg-info/dependency_links.txt
+seki.egg-info/entry_points.txt
+seki.egg-info/requires.txt
+seki.egg-info/top_level.txt
