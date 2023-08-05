@@ -1,0 +1,10 @@
+README.md
+setup.py
+i3ipct/__init__.py
+i3ipct/find.py
+i3ipct/focus.py
+i3ipct.egg-info/PKG-INFO
+i3ipct.egg-info/SOURCES.txt
+i3ipct.egg-info/dependency_links.txt
+i3ipct.egg-info/requires.txt
+i3ipct.egg-info/top_level.txt
