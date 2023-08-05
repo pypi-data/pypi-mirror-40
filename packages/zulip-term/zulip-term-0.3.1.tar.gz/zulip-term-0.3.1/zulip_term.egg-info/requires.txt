@@ -1,0 +1,19 @@
+urwid==2.0.1
+zulip==0.4.7
+emoji==0.5.0
+urwid_readline==0.8
+beautifulsoup4==4.6.0
+lxml==4.2.3
+mypy_extensions>=0.4
+
+[:python_version < "3.5"]
+typing==3.6.4
+
+[dev]
+pytest==3.4.2
+pytest-cov==2.5.1
+pytest-mock==1.7.1
+pytest-pep8==1.0.6
+mypy==0.641
+pudb==2017.1.4
+snakeviz==0.4.2
