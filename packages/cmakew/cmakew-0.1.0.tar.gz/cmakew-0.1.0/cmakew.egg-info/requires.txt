@@ -1,0 +1,10 @@
+logbook<2.0.0,>=1.1.0
+six
+subprocrunner<1.0.0,>=0.15.6
+typepy<1.0.0,>=0.3.2
+
+[build]
+wheel
+
+[release]
+releasecmd<0.1.0,>=0.0.12
