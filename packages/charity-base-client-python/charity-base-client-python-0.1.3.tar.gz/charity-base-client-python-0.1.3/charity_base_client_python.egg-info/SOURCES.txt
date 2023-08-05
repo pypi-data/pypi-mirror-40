@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+charity_base_client_python.egg-info/PKG-INFO
+charity_base_client_python.egg-info/SOURCES.txt
+charity_base_client_python.egg-info/dependency_links.txt
+charity_base_client_python.egg-info/requires.txt
+charity_base_client_python.egg-info/top_level.txt
+charitybase/__init__.py
+charitybase/clients.py
+charitybase/core.py
+charitybase/helpers.py
