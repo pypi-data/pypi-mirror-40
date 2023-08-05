@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "wallpaper_app"
+version = "0.0.1"
+description = "A macOS statusbar app for wallpaper switching"
+
+authors = ["kpj <kpjkpjkpjkpjkpjkpj@gmail.com>"]
+license = "MIT"
+
+readme = "README.md"
+
+repository = "https://github.com/kpj/wallpaper_app"
+
+
+[tool.poetry.dependencies]
+requests = "^2.21"
+pync = "^2.0"
+rumps = "^0.2.2"
+
+
+[tool.poetry.scripts]
+wallpaper_app = 'wallpaper_app:launch_app'
