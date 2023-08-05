@@ -1,0 +1,4 @@
+[console_scripts]
+delete-all-airflow-connnections = airflow_plugin_config_storage.cli:run_delete_all_connections
+load-airflow-conf-env-var = airflow_plugin_config_storage.cli:run_env_var
+
