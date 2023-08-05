@@ -1,0 +1,14 @@
+berserk/__init__.py,sha256=t6TDz-VZZ1jBYkt6BFxVVgESpOS4LgziPcEQuzErTgg,691
+berserk/clients.py,sha256=cuQ7qJZehg9Jep94jwRMtychtZSgNHtjbIZtojQ2yx4,17833
+berserk/enums.py,sha256=WEhneBcyAXrOg7AtVk2e2JGgr0N8HQSn8oKH18v5FtM,14053
+berserk/formats.py,sha256=IbWhQAOO6txX6O9QNepk3U-IL3Ho63aeWJiYNz_WtlM,4252
+berserk/models.py,sha256=_7QQUuB86t_zWm3AU4W8sN-UzmBGCFso218-7zBJeoI,1517
+berserk/session.py,sha256=pLHlm-2kWZpmWBvZmD6p0VU_-DDNxSFFL2p8sEE72wM,2071
+berserk/utils.py,sha256=AO6Ov04Wdw9AjkpEE8tMCGI_ITZ4J9F-u1LWo1Sh0TU,656
+berserk-0.3.1.dist-info/DESCRIPTION.rst,sha256=rsyN8ouwfeQ6vZX7A0dzxASGyGhnQirHMpHvR4mp-Tk,3445
+berserk-0.3.1.dist-info/METADATA,sha256=9E6p68TxtwtWtKUYG6wyt2A2X54PDymlZCJ4OLAV0So,4092
+berserk-0.3.1.dist-info/RECORD,,
+berserk-0.3.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+berserk-0.3.1.dist-info/metadata.json,sha256=mS8BCWe2kNf9E4thZFBrRU5tXqh7LJEf-7tr3CIJCDw,872
+berserk-0.3.1.dist-info/top_level.txt,sha256=sLSZ5ky1VsHfwBNmyCUfwgzdD5DZBda3ddaQltLM8wM,8
+berserk-0.3.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
