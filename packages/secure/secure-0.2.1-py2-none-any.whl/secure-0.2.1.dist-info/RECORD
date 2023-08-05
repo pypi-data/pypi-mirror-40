@@ -1,0 +1,12 @@
+secure/__init__.py,sha256=K0kNy26Vm6A-1V5lST3ily6yVsNLUbiqk6AZDFm2nJI,20
+secure/__version__.py,sha256=nWLARLSipDz6mxAjg7WwcTN2JeNFXWUP_-ZhqNHTakI,63
+secure/cookie.py,sha256=72dBb9blv0uCJCUIkXutcCHFyKhHR2lCbT_jlpk6HgQ,1746
+secure/core.py,sha256=Kzv0tVqYC1l3DmW3tQxKXO4XCRcDNosw4u5ZnXsXvt4,133
+secure/framework_cookie.py,sha256=KhhLaxGsxHsfMAErwW2rgMmkawgxtQAUL4kfLDbF-Ro,6522
+secure/framework_headers.py,sha256=rXEHcUuzJR-D_ZEODXvgz41qW437gPu-oL_-AbPnjyA,5008
+secure/headers.py,sha256=CZw2OOXRwkPXlRX_ovOLN3kUaHA4Xm7i_zoBA-2oYYU,6932
+secure/policies.py,sha256=oplLmSm7Yc-0COBxbXBZTAUCKTNdAHIAogjC83XiJO0,10658
+secure-0.2.1.dist-info/METADATA,sha256=WAu_EhdODO0CIzC9SGUNHuAfjyJ4AYblgto9T5MOUGI,3254
+secure-0.2.1.dist-info/RECORD,,
+secure-0.2.1.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+secure-0.2.1.dist-info/top_level.txt,sha256=ZPhZDcHBU6dWlBiXPmJ1UBNVG894tiTtTG92YAWlWjY,7
