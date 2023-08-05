@@ -1,0 +1,99 @@
+Metadata-Version: 1.2
+Name: whatsonpypi
+Version: 0.1.1
+Summary: CLI tool to find package info on PyPI
+Home-page: https://github.com/viseshrp/whatsonpypi
+Author: Visesh Prasad
+Author-email: viseshrprasad@gmail.com
+License: MIT license
+Description: ===========
+        whatsonpypi
+        ===========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/whatsonpypi.svg
+                :target: https://pypi.python.org/pypi/whatsonpypi
+        
+        .. image:: https://img.shields.io/travis/viseshrp/whatsonpypi.svg
+                :target: https://travis-ci.org/viseshrp/whatsonpypi
+        
+        .. image:: https://readthedocs.org/projects/whatsonpypi/badge/?version=latest
+                :target: https://whatsonpypi.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        .. image:: https://pepy.tech/badge/whatsonpypi
+                :target: https://pepy.tech/project/whatsonpypi
+                :alt: Downloads
+        
+        
+        CLI tool to find package info on PyPI
+        
+        
+        * GitHub: https://github.com/viseshrp/whatsonpypi
+        * PyPI: https://pypi.python.org/pypi/whatsonpypi
+        * Free software: MIT license
+        * Documentation: https://whatsonpypi.readthedocs.io.
+        
+        
+        Installation
+        ------------
+        .. code-block:: bash
+        
+            pip install whatsonpypi
+        
+        
+        Requirements
+        ------------
+        
+        #. Python 3.6+
+        
+        
+        Features
+        --------
+        
+        * Find the latest version of a package on PyPI
+        
+        Examples:
+        
+        .. code-block:: bash
+        
+            $ whatsonpypi django
+            2.1.4
+        
+        * More to come ..
+        
+        
+        Credits
+        -------
+        
+        * Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template for getting me started.
+        
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.1 (2019-01-02)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: whatsonpypi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
