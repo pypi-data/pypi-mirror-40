@@ -1,0 +1,3 @@
+[console_scripts]
+spyonweb = spyonweb.cli:main
+
