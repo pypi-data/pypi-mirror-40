@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+deepdefacer/__init__.py
+deepdefacer/defacer.py
+deepdefacer/defacer_utils.py
+deepdefacer/model.hdf5
+deepdefacer.egg-info/PKG-INFO
+deepdefacer.egg-info/SOURCES.txt
+deepdefacer.egg-info/dependency_links.txt
+deepdefacer.egg-info/entry_points.txt
+deepdefacer.egg-info/requires.txt
+deepdefacer.egg-info/top_level.txt
