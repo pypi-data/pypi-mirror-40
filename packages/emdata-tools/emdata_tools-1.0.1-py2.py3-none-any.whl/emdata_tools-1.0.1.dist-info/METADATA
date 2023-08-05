@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: emdata-tools
+Version: 1.0.1
+Summary: Something useful in my python apps.
+Home-page: UNKNOWN
+Author: Cyrushiker
+Author-email: gyl@1mdata.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+
+# emdata-tools
+
+Something useful in my python apps.
+
+### eureka useage
+
+```python
+from emdata_tools import EurekaClient
+
+eureka = EurekaClient('em-eureka-app', 8088,
+                      eureka_url='http://localhost:8761/')
+eureka.start()
+```
+
