@@ -1,0 +1,16 @@
+CHANGELOG.md
+COPYING
+MANIFEST.in
+README.rst
+setup.py
+PTableUnicode.egg-info/PKG-INFO
+PTableUnicode.egg-info/SOURCES.txt
+PTableUnicode.egg-info/dependency_links.txt
+PTableUnicode.egg-info/entry_points.txt
+PTableUnicode.egg-info/not-zip-safe
+PTableUnicode.egg-info/top_level.txt
+prettytable/__init__.py
+prettytable/_compact.py
+prettytable/cli.py
+prettytable/factory.py
+prettytable/prettytable.py
