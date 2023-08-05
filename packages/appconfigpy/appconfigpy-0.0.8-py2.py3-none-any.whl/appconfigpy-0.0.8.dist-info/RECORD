@@ -1,0 +1,14 @@
+appconfigpy/__init__.py,sha256=YveVn7Ryphpg9_CZTfQE4h7i0ctHUPUGUBfqKAVqFOM,384
+appconfigpy/__version__.py,sha256=ijDw33NVx0LGvNWZFpCL5mlEHMdZvtE9pyU5uHeO-FE,284
+appconfigpy/_config.py,sha256=jAwsowhwMTutjVOvXsh5qxC_GDSAfDs62wD1B9rRxGo,5705
+appconfigpy/_const.py,sha256=0FzawXqR0PHlofFGqQs1Yd1AvkOSqmBBPldjia2crHM,177
+appconfigpy/_logger.py,sha256=8DwbhNhG5m-DS3seDy7uUOCzy6t2ZRuHKjuxV5lchMc,851
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/common.py,sha256=Hvg5QBRQgEOueSTU6hSZH9avavVd9WBjDmYtPOyJcGI,735
+examples/configure.py,sha256=xmBU0VZfnT2HdUu9hbDFkv7kMc-bpXb-VxQmC8yraNM,324
+examples/load.py,sha256=1OmupcpKW-Du-jlErSQPSKWlNgKF9i3Jmv3BceUGdwk,405
+appconfigpy-0.0.8.dist-info/LICENSE,sha256=y84qwU3YG2oRVQKQNFEqMEUFaSzGO2JVOJFs-TvujKI,1095
+appconfigpy-0.0.8.dist-info/METADATA,sha256=f95GpN1-epZ_RMzZcQMwx_4H2ud5d6J9EXXzwJHV-pE,4017
+appconfigpy-0.0.8.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+appconfigpy-0.0.8.dist-info/top_level.txt,sha256=UPKR1HXk7pFoSh8yrlF3fvjmLIF_KMmlgTf8ySpVAtY,21
+appconfigpy-0.0.8.dist-info/RECORD,,
