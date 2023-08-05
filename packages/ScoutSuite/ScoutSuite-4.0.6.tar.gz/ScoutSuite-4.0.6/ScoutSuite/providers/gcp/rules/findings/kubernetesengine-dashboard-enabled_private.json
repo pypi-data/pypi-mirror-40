@@ -1,0 +1,9 @@
+{
+  "dashboard_name": "Clusters",
+  "description": "Cluster with dashboard enabled",
+  "path": "kubernetesengine.clusters.id",
+  "conditions": [ "and",
+    [ "kubernetesengine.clusters.id.dashboard_status", "equal", "Enabled" ]
+  ],
+  "id_suffix": "dashboard_status"
+}
