@@ -1,0 +1,3 @@
+[console_scripts]
+oapigen = src.command_line:main
+

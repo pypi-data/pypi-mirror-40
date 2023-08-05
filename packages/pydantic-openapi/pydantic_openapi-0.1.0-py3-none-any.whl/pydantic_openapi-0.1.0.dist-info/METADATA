@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pydantic-openapi
+Version: 0.1.0
+Summary: Generate OpenAPI schema from pydantic models
+Home-page: https://github.com/yurathestorm/pydantic-openapi
+Author: Yury Blagoveshchenskiy
+Author-email: yurathestorm@gmail.com
+License: GNU
+Platform: UNKNOWN
+Requires-Dist: pydantic
+
+UNKNOWN
+
+
