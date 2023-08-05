@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nzconf
+Version: 1b0.post4
+Summary: Configuration files manager
+Home-page: UNKNOWN
+Author: Clement
+Author-email: neze+pypi@melix.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Description-Content-Type: text/x-rst
+Requires-Dist: pathlib2
+
+|pipeline| |coverage| |rtd|
+
+.. |pipeline| image:: https://framagit.org/1ohmatr/sw/py/nzconf/badges/master/pipeline.svg
+
+.. |coverage| image:: https://framagit.org/1ohmatr/sw/py/nzconf/badges/master/coverage.svg
+
+.. |rtd| image:: https://readthedocs.org/projects/nzconf/badge/?version=latest
+
+Manager for configuration files
+
+
