@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: proxy-ext
+Version: 1.1.3
+Summary: A Python proxy extension.
+Home-page: https://github.com/neoctobers/py_proxy_ext
+Author: @neoctobers
+Author-email: neoctobers@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: list-ext
+Requires-Dist: file-ext
+Requires-Dist: requests[socks]
+Requires-Dist: xprint
+
+# A Python proxy extension
+
+[![PyPi Version](http://img.shields.io/pypi/v/proxy-ext.svg)](https://pypi.python.org/pypi/proxy-ext/)
+
+[>> Read the docs <<](https://neoctobers.readthedocs.io/en/latest/repo/py_proxy_ext.html)
+
+
+
