@@ -1,0 +1,14 @@
+odoo/addons/contract_variable_qty_timesheet/README.rst,sha256=jRH-RM0lMwzZuxGw1j_kM-sy3FmknjBlvzahK4PMv_8,1941
+odoo/addons/contract_variable_qty_timesheet/__init__.py,sha256=FNlMPDojEQpwvHZlf1L1FiQCxOYOu7R3lMKD6aozhvU,65
+odoo/addons/contract_variable_qty_timesheet/__manifest__.py,sha256=zpVxnE9RbxmN6Ovj-0tcCmxM7cGE0gJcDZ-a1Ebene8,605
+odoo/addons/contract_variable_qty_timesheet/data/contract_line_qty_formula_data.xml,sha256=bLC5ijZ7vbNg7vEqx-HSCdGpivR0JxGa6_pIMvgZN3w,1672
+odoo/addons/contract_variable_qty_timesheet/i18n/contract_variable_qty_timesheet.pot,sha256=lDXkEEeHDNQbcPJVR509vXJKWh2-cWCMll9t81qltT4,972
+odoo/addons/contract_variable_qty_timesheet/i18n/es.po,sha256=3IaOAFtq03wGrv5G7fRDiXz13sBlibzVRqL9LtGGiQ8,1261
+odoo/addons/contract_variable_qty_timesheet/i18n/fr.po,sha256=uFFPk15P3ciUMXxhfgbO5PUMD2thtpK56htV1OYdMeg,1332
+odoo/addons/contract_variable_qty_timesheet/i18n/it.po,sha256=c_RzAyn9Ej4Dm_5ou-62eCGQEVpqkFFbf7_cczoSuak,1039
+odoo/addons/contract_variable_qty_timesheet/i18n/zh.po,sha256=AQQDm0jBRcDeziRFIUA1m5RxN1lbnLZe6CUYiKeUnRU,1295
+odoo/addons/contract_variable_qty_timesheet/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo11_addon_contract_variable_qty_timesheet-11.0.1.0.0.99.dev4.dist-info/METADATA,sha256=0l4pEQDkHLM9xaKLAkzQE5ATnaJT8dnW_6VeoYyO-UY,2558
+odoo11_addon_contract_variable_qty_timesheet-11.0.1.0.0.99.dev4.dist-info/RECORD,,
+odoo11_addon_contract_variable_qty_timesheet-11.0.1.0.0.99.dev4.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+odoo11_addon_contract_variable_qty_timesheet-11.0.1.0.0.99.dev4.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
