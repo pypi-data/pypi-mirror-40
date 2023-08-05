@@ -1,0 +1,24 @@
+Source: cubicweb-wireit
+Section: web
+Priority: optional
+Maintainer: LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+Build-Depends:
+ debhelper (>= 9),
+ python (>= 2.6.5),
+ dh-python,
+Standards-Version: 3.9.6
+
+Package: cubicweb-wireit
+Architecture: all
+Depends:
+ ${python:Depends},
+ ${misc:Depends},
+ cubicweb-common (>= 3.16.0),
+ cubicweb-file,
+Description: WireIt workflow store for the CubicWeb framework
+ CubicWeb is a semantic web application framework.
+ .
+ WireIt workflow store for the CubicWeb framework
+ .
+ This package will install all the components you need to run the
+ cubicweb-wireit application (cube :)..
