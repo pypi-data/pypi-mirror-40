@@ -1,0 +1,6 @@
+mock
+pyflakes
+pycodestyle
+tox
+cryptography
+pynacl
