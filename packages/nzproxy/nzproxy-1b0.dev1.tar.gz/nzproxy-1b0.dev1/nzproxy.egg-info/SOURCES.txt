@@ -1,0 +1,10 @@
+README.rst
+requirements.txt
+setup.py
+nzproxy/__init__.py
+nzproxy/__version__.py
+nzproxy.egg-info/PKG-INFO
+nzproxy.egg-info/SOURCES.txt
+nzproxy.egg-info/dependency_links.txt
+nzproxy.egg-info/entry_points.txt
+nzproxy.egg-info/top_level.txt
