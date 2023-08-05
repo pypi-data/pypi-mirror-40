@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+{% block sidebar %}
+{% endblock sidebar %}
+{% block content %}
+
+        <div class="container">
+            <div class="row">
+                <h1>{% trans "Сообщить о возврате" %}</h1>
+                <div class="col-md-12 border">
+                    <form method="post" action="" class="form-signin" enctype="multipart/form-data">
+
+                        {% csrf_token %}
+
+                        <div class="col">
+                                <div class="col-md-7">
+                                {{ form.row_num|as_crispy_field }}
+                            </div>
+                            <div class="col-md-7">
+                                {{ form.description|as_crispy_field }}
+                            </div>
+
+
+                            <div class="col-md-7">
+                                {{ form.invoice_qty|as_crispy_field }}
+                            </div>
+                            <div class="col-md-7">
+                                {{ form.return_qty|as_crispy_field }}
+                            </div>
+
+                            <div class="col-md-7">
+                                {{ form.comment|as_crispy_field }}
+                            </div>
+                             <div class="col-md-7">
+                                {{ form.tracking_number|as_crispy_field }}
+                            </div>
+                             <div class="col-md-7">
+                                {{ form.reason_for_the_return|as_crispy_field }}
+                            </div>
+                              <div class="col-md-7">
+                                {{ form.ship|as_crispy_field }}
+                            </div>
+                        </div>
+                        <input type="file" name="sentFile" multiple/>
+                        <input type="submit" class="btn btn-primary col-md-4 offset-md-3 mt-4"></input>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
