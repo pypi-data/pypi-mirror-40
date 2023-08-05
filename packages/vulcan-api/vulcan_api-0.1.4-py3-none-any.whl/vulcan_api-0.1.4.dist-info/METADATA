@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: vulcan-api
+Version: 0.1.4
+Summary: Nieoficjalne API do dzienniczka elektronicznego UONET+
+Home-page: https://github.com/kapi2289/vulcan-api
+Author: Kacper Ziubryniewicz
+Author-email: kapi2289@gmail.com
+License: MIT
+Project-URL: Documentation, https://vulcan-api.readthedocs.io/
+Keywords: Vulcan,UONET+,Dzienniczek+,API,e-dziennik
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Polish
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,<4.0
+Description-Content-Type: text/x-rst
+Requires-Dist: requests
+Requires-Dist: pyopenssl
+
+Vulcan API
+##########
+
+.. image:: https://img.shields.io/pypi/l/vulcan-api.svg
+    :target: https://github.com/kapi2289/vulcan-api/blob/master/LICENSE
+    :alt: MIT License
+
+.. image:: https://img.shields.io/pypi/v/vulcan-api.svg
+    :target: https://pypi.org/project/vulcan-api/
+    :alt: v0.1.4
+
+.. image:: https://img.shields.io/pypi/pyversions/vulcan-api.svg
+    :target: https://pypi.org/project/vulcan-api/
+    :alt: Supported Python versions: 3.4, 3.5, 3.6, 3.7
+
+Opis
+^^^^
+Nieoficjalne API do dzienniczka elektronicznego UONET+ od firmy `Vulcan <https://vulcan.edu.pl/>`__. Działa na podstawie aplikacji mobilnej, więc możesz je
+zarejestrować jako urządzenie mobilne na stronie.
+
+.. image:: https://raw.githubusercontent.com/kapi2289/vulcan-api/master/docs/source/_static/zarejestrowane.png
+
+Instalacja
+^^^^^^^^^^
+Możesz zainstalować ``vulcan-api`` za pomocą ``pip``
+
+.. code:: console
+
+    $ pip install vulcan-api
+
+lub
+
+.. code:: console
+
+    $ git clone https://github.com/kapi2289/vulcan-api.git
+    $ cd vulcan-api
+    $ pip install .
+
+Dokumentacja
+^^^^^^^^^^^^
+Dokumentacja znajduje się pod adresem https://vulcan-api.readthedocs.io/.
+
+
