@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: django-use-email-as-username
+Version: 1.0.1
+Summary: A Django app to use email as username for user authentication.
+Home-page: https://github.com/jmfederico/django-use-email-as-username
+Author: Federico Jaramillo Martínez
+Author-email: federicojaramillom@gmail.com
+Keywords: django,email,auth,username
+Requires-Python: >=3.4,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: django (>=1.11)
+Project-URL: Repository, https://github.com/jmfederico/django-use-email-as-username
