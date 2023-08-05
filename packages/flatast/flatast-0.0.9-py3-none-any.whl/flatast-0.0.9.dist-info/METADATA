@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: flatast
+Version: 0.0.9
+Summary: The FlatAST serialization format for Python
+Home-page: https://bitbucket.org/yijunyu/fast
+Author: Yijun Yu
+Author-email: y.yu@open.ac.uk
+License: Apache 2.0
+Platform: UNKNOWN
+Requires: flatbuffers
+Requires: protobuf
+Requires: urllib3
+Requires: bs4
+Requires: lxml
+Requires-Dist: flatbuffers
+Requires-Dist: protobuf
+Requires-Dist: urllib3
+Requires-Dist: bs4
+Requires-Dist: lxml
+
+Python runtime library for flat ASTserialization format.
+
+
