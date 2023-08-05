@@ -1,0 +1,3 @@
+[console_scripts]
+pingboard = pingboard.__init__:main
+
