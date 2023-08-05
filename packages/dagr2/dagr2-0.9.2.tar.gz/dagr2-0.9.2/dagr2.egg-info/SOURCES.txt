@@ -1,0 +1,9 @@
+README.md
+dagr_settings.ini.sample
+setup.py
+dagr2/dagr2.py
+dagr2.egg-info/PKG-INFO
+dagr2.egg-info/SOURCES.txt
+dagr2.egg-info/dependency_links.txt
+dagr2.egg-info/requires.txt
+dagr2.egg-info/top_level.txt
