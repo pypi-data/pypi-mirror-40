@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+seamlessf5/__init__.py
+seamlessf5/albacore_hooks.py
+seamlessf5/single2multi_hooks.py
+seamlessf5.egg-info/PKG-INFO
+seamlessf5.egg-info/SOURCES.txt
+seamlessf5.egg-info/dependency_links.txt
+seamlessf5.egg-info/entry_points.txt
+seamlessf5.egg-info/requires.txt
+seamlessf5.egg-info/top_level.txt

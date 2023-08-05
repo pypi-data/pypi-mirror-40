@@ -1,0 +1,3 @@
+h5py>=2.9.0
+ont-fast5-api>=1.0.1
+progressbar33>=2.4
