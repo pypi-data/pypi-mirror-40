@@ -1,0 +1,3 @@
+[console_scripts]
+gdrive-deploy = gdrive_deploy.__main__:main
+
