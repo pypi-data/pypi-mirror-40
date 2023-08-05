@@ -1,0 +1,9 @@
+README.md
+setup.py
+arma_scipy/__init__.py
+arma_scipy/fit.py
+arma_scipy.egg-info/PKG-INFO
+arma_scipy.egg-info/SOURCES.txt
+arma_scipy.egg-info/dependency_links.txt
+arma_scipy.egg-info/requires.txt
+arma_scipy.egg-info/top_level.txt
