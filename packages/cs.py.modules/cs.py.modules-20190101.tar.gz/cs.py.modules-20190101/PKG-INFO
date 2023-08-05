@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cs.py.modules
+Version: 20190101
+Summary: module/import related stuff
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: Convenience functions related to modules and importing.
+        
+        ## Function `import_module_name(module_name, name, path=None, lock=None)`
+        
+        Import `module_name` and return the value of `name` within it.
+        
+        Parameters:
+        * `module_name`: the module name to import.
+        * `name`: the name within the module whose value is returned;
+          if `name` is None, return the module itself.
+        * `path`: an array of paths to use as sys.path during the import.
+        * `lock`: a lock to hold during the import (recommended).
+        
+        ## Function `module_attributes(M)`
+        
+        Generator yielding the names and values of attributes from a module
+        which were defined in the module.
+        
+        ## Function `module_files(M)`
+        
+        Generator yielding .py pathnames involved in a module.
+        
+        ## Function `module_names(M)`
+        
+        Return a list of the names of attributes from a module which were
+        defined in the module.
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
