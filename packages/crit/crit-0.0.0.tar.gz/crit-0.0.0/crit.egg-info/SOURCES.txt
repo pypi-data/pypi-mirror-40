@@ -1,0 +1,8 @@
+README.rst
+setup.py
+bin/__init__.py
+bin/crit.py
+crit.egg-info/PKG-INFO
+crit.egg-info/SOURCES.txt
+crit.egg-info/dependency_links.txt
+crit.egg-info/top_level.txt
