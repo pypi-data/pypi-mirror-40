@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-06 13:56+0200\n"
+"PO-Revision-Date: 2018-03-07 02:33-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: admin.py:37
+msgid "Meta"
+msgstr "Méta"
+
+#: admin.py:81 admin.py:104 templates/emailhub/emailmessage_update.html:68
+msgid "Text"
+msgstr "Texte"
+
+#: admin.py:86 admin.py:109 templates/emailhub/emailmessage_update.html:67
+msgid "HTML"
+msgstr "HTML"
+
+#: management/commands/emailhub.py:81
+msgid "Unsent"
+msgstr "Non envoyé"
+
+#: management/commands/emailhub.py:82
+msgid "Drafts"
+msgstr "Brouillons"
+
+#: management/commands/emailhub.py:83
+msgid "Is sent"
+msgstr "Envoyé"
+
+#: management/commands/emailhub.py:84
+msgid "Errors"
+msgstr "Erreurs"
+
+#: management/commands/emailhub.py:88 models.py:472 models.py:498
+msgid "Slug"
+msgstr "Slug"
+
+#: management/commands/emailhub.py:90
+msgid "Title"
+msgstr "Titre"
+
+#: models.py:54 templates/emailhub/emailmessage_update.html:47
+msgid "Draft"
+msgstr "Brouillon"
+
+#: models.py:55
+msgid "Pending"
+msgstr "En attente"
+
+#: models.py:56
+msgid "Locked"
+msgstr "Vérouillé"
+
+#: models.py:57
+msgid "Sent"
+msgstr "Envoyé"
+
+#: models.py:58
+msgid "Error"
+msgstr "Erreur"
+
+#: models.py:61 models.py:500
+msgid "Subject"
+msgstr "Sujet"
+
+#: models.py:62
+msgid "Body (text)"
+msgstr "Contenu (texte)"
+
+#: models.py:63
+msgid "Body (HTML)"
+msgstr "Contenu (HTML)"
+
+#: models.py:64 templates/emailhub/emailmessage_update.html:56
+msgid "From"
+msgstr "De"
+
+#: models.py:65
+msgid "Date created"
+msgstr "Date de création"
+
+#: models.py:66
+msgid "Date modified"
+msgstr "Date de modification"
+
+#: models.py:67
+msgid "Date sent"
+msgstr "Date envoyé"
+
+#: models.py:68
+msgid "State"
+msgstr "État"
+
+#: models.py:69
+msgid "Send retries"
+msgstr "Tentatives d'envoi"
+
+#: models.py:70
+msgid "Send error message"
+msgstr "Message d'erreur"
+
+#: models.py:72
+msgid "Send error code"
+msgstr "Code d'erreur"
+
+#: models.py:74
+msgid "From template"
+msgstr "Depuis le template"
+
+#: models.py:411
+msgid "Email message"
+msgstr "Message Courriel"
+
+#: models.py:412
+msgid "Email messages"
+msgstr "Messages Courriel"
+
+#: models.py:442 templates/emailhub/emailmessage_update.html:54
+msgid "To"
+msgstr "À"
+
+#: models.py:443
+msgid "C.C."
+msgstr "C.C."
+
+#: models.py:444
+msgid "B.C.C."
+msgstr "B.C.C."
+
+#: models.py:445
+msgid "Reply-To"
+msgstr "Répondre à"
+
+#: models.py:451
+msgid "Recipient type"
+msgstr "Type de destinataire"
+
+#: models.py:452
+msgid "Recipient email address"
+msgstr "Adresse courriel du destinataire"
+
+#: models.py:465
+msgid "Email recipient"
+msgstr "Destinataire du courriel"
+
+#: models.py:466
+msgid "Email recipients"
+msgstr "Destinataires"
+
+#: models.py:474 models.py:496
+msgid "Language"
+msgstr "Langue"
+
+#: models.py:476 models.py:501
+msgid "Text content"
+msgstr "Contenu text"
+
+#: models.py:477 models.py:502
+msgid "HTML content"
+msgstr "Contenu HTML"
+
+#: models.py:484
+msgid "Email signature"
+msgstr "Signature courriel"
+
+#: models.py:485
+msgid "Email signatures"
+msgstr "Signatures courriel"
+
+#: models.py:493
+msgid "No signature"
+msgstr "Aucune signature"
+
+#: models.py:494
+msgid "Default"
+msgstr "Défaut"
+
+#: models.py:504
+msgid "Email from"
+msgstr "Courriel d'envoi"
+
+#: models.py:505
+msgid "Will be sent from \"{}\" if left blank."
+msgstr "Sera envoyé depuis \"{}\" si laissé vide."
+
+#: models.py:507
+msgid "Is active"
+msgstr "Est actif"
+
+#: models.py:509
+msgid "Auto send"
+msgstr "Envoi automatique"
+
+#: models.py:510
+msgid "If checked, email will be sent without going through a \"draft\" state."
+msgstr ""
+"Si coché, les courriels seront envoyés sans passé par l'état \"brouillon\"."
+
+#: models.py:519
+msgid "Email template"
+msgstr "Gabarit courriel"
+
+#: models.py:520
+msgid "Email templates"
+msgstr "Gabarits courriel"
+
+#: runtests/settings.py:32
+msgid "English"
+msgstr "Anglais"
+
+#: runtests/settings.py:33
+msgid "French"
+msgstr "Français"
+
+#: templates/emailhub/ckeditor.inc.html:13
+msgid "An error occured while saving document, please check the console."
+msgstr "Un erreur est survenu lors de la sauvegarde, consulter la console."
+
+#: templates/emailhub/ckeditor.inc.html:14
+msgid ""
+"The HTML version has changed, but not the text version. Are you sure you "
+"want to save this message ?"
+msgstr ""
+"La version HTML à changée, mais pas la version texte. Êtes-vous certain de "
+"vouloir sauvegarder ce message ?"
+
+#: templates/emailhub/ckeditor.inc.html:15
+msgid ""
+"The text version has changed, but not the HTML version. Are you sure you "
+"want to save this message ?"
+msgstr ""
+"La version texte à changée, mais pas la version HTML. Êtes-vous certain de "
+"vouloir sauvegarder ce message ?"
+
+#: templates/emailhub/emailmessage_list.html:8
+msgid "Inbox"
+msgstr "Boite de réception"
+
+#: templates/emailhub/emailmessage_update.html:18
+msgid "Prev"
+msgstr "Préc."
+
+#: templates/emailhub/emailmessage_update.html:22
+msgid "Next"
+msgstr "Envoyer"
+
+#: templates/emailhub/emailmessage_update.html:28
+msgid "Delete"
+msgstr "Supprimer"
+
+#: templates/emailhub/emailmessage_update.html:32
+msgid "Save"
+msgstr "Sauvegardé"
+
+#: templates/emailhub/emailmessage_update.html:36
+msgid "Send"
+msgstr "Envoyer"
+
+#: templates/emailhub/emailmessage_update.html:36
+msgid "Are you sure you want to send this message ?"
+msgstr "Êtes-vous certain de vouloir supprimer ce message?"
+
+#: templates/emailhub/emailmessage_update.html:41
+msgid "Open in admin"
+msgstr "Ouvrir dans l'admin"
+
+#: templates/emailhub/emailmessage_update.html:48
+msgid "Modified, don't forget to save!"
+msgstr "Modifié, n'oubliez pas de sauvegardé!"
+
+#: views.py:74
+msgid "Sending message"
+msgstr "Envoi du Message en cours"
+
+#: views.py:81
+msgid "Message deleted"
+msgstr "Message supprimé"
+
+#: views.py:86
+msgid "Message saved"
+msgstr "Message sauvegardé"
