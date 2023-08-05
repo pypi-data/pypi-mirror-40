@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: python3-SmartSchema
+Version: 1.1.0
+Summary: Progressive update for schema
+Home-page: https://pypi.org/project/python3-SmartSchema/
+Author: Jaiswal-ruhil
+Author-email: ruhiljaiswal@gmail.com
+License: MIT
+Description: Python3-SmartSchema
+        +++++++++++++++++++
+        
+        Cyclic dependancy handler
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
