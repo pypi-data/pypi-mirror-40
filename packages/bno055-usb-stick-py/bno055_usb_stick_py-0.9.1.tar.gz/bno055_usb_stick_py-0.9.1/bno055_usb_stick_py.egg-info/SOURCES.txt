@@ -1,0 +1,13 @@
+README.md
+setup.py
+bno055_usb_stick_py/97-ttyacm.rules
+bno055_usb_stick_py/__init__.py
+bno055_usb_stick_py/bno055.json
+bno055_usb_stick_py/bno055.py
+bno055_usb_stick_py/bno055_usb_stick.py
+bno055_usb_stick_py/disable_modem_manager_bno_usb_stick.py
+bno055_usb_stick_py.egg-info/PKG-INFO
+bno055_usb_stick_py.egg-info/SOURCES.txt
+bno055_usb_stick_py.egg-info/dependency_links.txt
+bno055_usb_stick_py.egg-info/requires.txt
+bno055_usb_stick_py.egg-info/top_level.txt
