@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: flom
+Version: 0.2
+Summary: flom: Motion exchange format
+Home-page: UNKNOWN
+Author: coord.e
+Author-email: me@coord-e.com
+License: UNKNOWN
+Description: # flom-py
+        
+        [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FDeepL2%2Fflom-py.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FDeepL2%2Fflom-py?ref=badge_shield)
+        
+        
+        Python binding of [flom](DeepL2/flom)
+        
+        ## License
+        [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FDeepL2%2Fflom-py.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FDeepL2%2Fflom-py?ref=badge_large)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C++
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
