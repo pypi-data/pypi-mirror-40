@@ -1,0 +1,11 @@
+oreopy/__init__.py,sha256=3iKMlxoe8MfSZmF8hWM_Ns9aCJrvqoX9Te1om2li88U,16
+oreopy/fields/__init__.py,sha256=AlB-h3idymOBUeKnNJOKQovFEjh5zZpsRiMu7xOtkZU,100
+oreopy/fields/integer_field.py,sha256=8y7FmxRtWsTry8WU_bPfRrHxFlKA3OZWbs__1dqRnwc,73
+oreopy/fields/text_field.py,sha256=gI0LJ7ibd93b28AqUHWONU5szON0qpnSYYMdP7k8ZCQ,67
+oreopy/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oreopy/models/base.py,sha256=JI1D70n1TU1aaZsu3RI_tIIC-0tyk8pbHmn4EfcByAE,2240
+oreopy-0.0.3.dist-info/LICENSE,sha256=0LbcPHOWQIvA-axv2fNM4fnQMXRTpBzqLFWllwH0U8c,1064
+oreopy-0.0.3.dist-info/METADATA,sha256=XtOXPyTLHSxm4gwD0QeY6syZTaBTad0omGdeMyR9kB0,1326
+oreopy-0.0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+oreopy-0.0.3.dist-info/top_level.txt,sha256=YJPSFAcp3uLZnQX8VyY6H4oRUmrmcmbGGkeRSrvGjS0,7
+oreopy-0.0.3.dist-info/RECORD,,
