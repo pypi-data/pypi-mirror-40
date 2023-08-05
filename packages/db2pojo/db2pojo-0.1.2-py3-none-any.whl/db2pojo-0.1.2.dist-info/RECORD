@@ -1,0 +1,11 @@
+db2pojo/__init__.py,sha256=TWY2HHBr7soKzDojVTmRRRQj8LWtiK2CcaOJolf0kU0,23
+db2pojo/cli.py,sha256=ZE20_wRiXQEOjJbIVaIcbSjxFEFD_0XNoEE4CkobePY,3261
+db2pojo/model.py,sha256=Dc59HvGwQw4bbLV5OFk7dIb2Ft5xaCsGqzch-oHfag8,705
+db2pojo/mysql.py,sha256=-X1CThC5nTLFb__YCNrHfh8EyKLDNjKi2KJXSRnNO38,1915
+db2pojo/pojo.py,sha256=HOHL3Nb66Qb6Az4D49R3NzMxElOdNp8HApXkIgphjdc,5681
+db2pojo/util.py,sha256=FDA6Ki_dojSSqe78V3yModcL8qLasRCLkRBkQuIkQck,324
+db2pojo-0.1.2.dist-info/METADATA,sha256=l_YVofVLkR1kWL5Maopl5e6fk-8WolcpuizyBAAR-Ug,309
+db2pojo-0.1.2.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+db2pojo-0.1.2.dist-info/entry_points.txt,sha256=f39cUsmi6PVMzuu9KowWjNqbo92MwxsrzNzhJBVniGM,46
+db2pojo-0.1.2.dist-info/top_level.txt,sha256=z8o4aZVtmC6rMHIREPqCfOh1f0EuaoSHHOZWPl4-e8g,8
+db2pojo-0.1.2.dist-info/RECORD,,

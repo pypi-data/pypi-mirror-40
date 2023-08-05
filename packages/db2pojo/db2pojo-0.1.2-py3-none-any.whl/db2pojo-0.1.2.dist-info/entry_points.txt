@@ -1,0 +1,3 @@
+[console_scripts]
+db2pojo = db2pojo.cli:main
+

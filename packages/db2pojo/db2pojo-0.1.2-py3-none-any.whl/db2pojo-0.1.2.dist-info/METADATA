@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: db2pojo
+Version: 0.1.2
+Summary: plain old java object generate tool from mysql database schema
+Home-page: https://github.com/fomuon/db2pojo
+Author: Lee,Yongkyu
+Author-email: fomuon@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: pymysql
+
+UNKNOWN
+
+
