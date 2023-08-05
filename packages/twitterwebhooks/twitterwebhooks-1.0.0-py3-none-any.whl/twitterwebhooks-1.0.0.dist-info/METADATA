@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: twitterwebhooks
+Version: 1.0.0
+Summary: Python Twitter Webhooks
+Home-page: http://github.com/roach/python-twitter-webhooks
+Author: @roach
+Author-email: roach@roach.wtf
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: pyee
+Requires-Dist: requests
+
+UNKNOWN
+
+
