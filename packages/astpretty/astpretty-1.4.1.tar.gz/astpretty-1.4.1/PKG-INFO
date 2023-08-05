@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: astpretty
+Version: 1.4.1
+Summary: Pretty print the output of python stdlib `ast.parse`.
+Home-page: https://github.com/asottile/astpretty
+Author: Anthony Sottile
+Author-email: asottile@umich.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Provides-Extra: typed
