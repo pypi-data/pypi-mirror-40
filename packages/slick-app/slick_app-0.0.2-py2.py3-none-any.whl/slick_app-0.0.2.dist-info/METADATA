@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: slick-app
+Version: 0.0.2
+Summary: Easy to use secure file sending & chatting
+Home-page: https://github.com/joshbuddy/slick
+Author: joshbuddy
+Author-email: joshbuddy@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: aiofile (==1.5.1)
+Requires-Dist: aiofiles (==0.4.0)
+Requires-Dist: aiohttp (==3.5.0)
+Requires-Dist: aiohttp-socks (==0.2.1)
+Requires-Dist: aiozeroconf (==0.1.8)
+Requires-Dist: altgraph (==0.16.1)
+Requires-Dist: ansicolors (==1.1.8)
+Requires-Dist: appdirs (==1.4.3)
+Requires-Dist: asn1crypto (==0.24.0)
+Requires-Dist: async-timeout (==3.0.1)
+Requires-Dist: attrs (==18.2.0)
+Requires-Dist: black (==18.9b0)
+Requires-Dist: certifi (==2018.10.15)
+Requires-Dist: cffi (==1.7.0)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: Click (==7.0)
+Requires-Dist: crypto (==1.4.1)
+Requires-Dist: cryptography (==2.4.2)
+Requires-Dist: filetype (==1.0.1)
+Requires-Dist: future (==0.17.1)
+Requires-Dist: humanize (==0.5.1)
+Requires-Dist: idna (==2.7)
+Requires-Dist: ifaddr (==0.1.4)
+Requires-Dist: ipaddress (==1.0.22)
+Requires-Dist: macholib (==1.11)
+Requires-Dist: multidict (==4.4.2)
+Requires-Dist: Naked (==0.1.31)
+Requires-Dist: names (==0.3.0)
+Requires-Dist: netifaces (==0.10.7)
+Requires-Dist: ordered-set (==3.0.2)
+Requires-Dist: pefile (==2018.8.8)
+Requires-Dist: prompt-toolkit (==2.0.5)
+Requires-Dist: pycparser (==2.19)
+Requires-Dist: PyNaCl (==1.3.0)
+Requires-Dist: python-libmagic (==0.4.0)
+Requires-Dist: PyYAML (==3.13)
+Requires-Dist: requests (==2.20.0)
+Requires-Dist: shellescape (==3.4.1)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: stem (==1.6.0)
+Requires-Dist: toml (==0.10.0)
+Requires-Dist: tqdm (==4.28.1)
+Requires-Dist: typed-bencode (==0.0.1)
+Requires-Dist: urllib3 (==1.24)
+Requires-Dist: wcwidth (==0.1.7)
+Requires-Dist: yarl (==1.2.6)
+
+
+# Slick
+
+**Easy to use secure file sending**
+
+Slick makes it easy to send files or chat between two people. It is end-to-end encrypted, and uses HTTPS as its transport.
+
+## Installation
+
+Using python 3.7, run:
+
+`pip install slick-app`
+
+## Usage
+
+To start slick, run `sk`. Running `/help` you'll get:
+
+```
+/list           -- show active friends and nearby people
+/add  [subject] -- add a person
+/talk [subject] -- talk to someone
+/end            -- stop talking to someone
+/quit           -- quit the program
+/send           -- send a file
+/get            -- get a file
+/info
+```
+
+### Adding a friend
+
+To add a friend, use the `/add` command. They will need to approve the request on their side by adding you back.
+
+### Interacting with a friend
+
+To interact with a specific friend, use `/talk [name]`
+
+### Chatting
+
+Once you're interacting with a friend, anything you type without a leading slash will be interpretted as chatting.
+
+### Sending a file
+
+To send a file, use `/send`
+
+### Receiving a file
+
+To receive a file, use `/get #`
+
+## Design
+
+Slick uses multicast DNS to broadcast a) a digest of the certificate used by HTTPS b) a tor service to facilitate the initial key exchange.
+
