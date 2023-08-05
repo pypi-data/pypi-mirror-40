@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: flask-protector-app
+Version: 1.0.5
+Summary: A Flask app to wrap other Flask apps, providing a login layer
+Home-page: http://github.com/starryexpanse/flask-protector-app
+Author: Philip Peterson
+Author-email: pc.peterso@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Requires-Dist: flask (>=1.0.2)
+Requires-Dist: jinja2
+
+UNKNOWN
+
+
