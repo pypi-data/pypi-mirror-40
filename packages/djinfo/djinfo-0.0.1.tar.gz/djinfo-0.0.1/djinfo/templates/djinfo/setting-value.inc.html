@@ -1,0 +1,30 @@
+{% load djinfo_tags %}
+{# LISTS #}
+{% if value|is_list or value|is_set or value|is_tuple %}
+<ul>
+  {% for subval in value %}
+  <li class="value {{ subval|type_name }}">
+    {% include "djinfo/setting-value.inc.html" with value=subval only %}
+  </li>
+  {% endfor %}
+</ul>
+{# DICTS #}
+{% elif value|is_dict %}
+{% if value.keys|length == 0 %}
+{},
+{% else %}
+<dl>
+  {% for subkey, subval in value.items %}
+  <dt>{{ subkey }}</dt>
+  <dd class="value {{ subval|type_name }}">
+    {% include "djinfo/setting-value.inc.html" with value=subval only %}
+  </dd>
+  {% endfor %}
+</dl>
+{% endif %}
+{# LINKS #}
+{% elif value|is_link %}
+<a href="{{ value }}" target="_blank" class="value {{ value|type_name }}">{{ value }}</a>
+{% else %}
+{{ value }}
+{% endif %}

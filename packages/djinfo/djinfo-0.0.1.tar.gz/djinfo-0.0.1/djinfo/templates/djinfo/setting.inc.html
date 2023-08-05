@@ -1,0 +1,7 @@
+{% load djinfo_tags %}
+<tr id="{{ id }}" class="{% if key|is_default:value %}default {% endif %}{% if key|is_core %}core{% endif %}">
+  <th>{{ key }}</th>
+  <td class="value {{ value|type_name }}">
+    {% include "djinfo/setting-value.inc.html" with value=value %}
+  </td>
+</tr>
