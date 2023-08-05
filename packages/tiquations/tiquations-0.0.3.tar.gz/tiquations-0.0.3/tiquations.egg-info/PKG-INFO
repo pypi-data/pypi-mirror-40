@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tiquations
+Version: 0.0.3
+Summary: A package that solves important formulas for physics and mathematics.
+Home-page: UNKNOWN
+Author: Tinos Psomadakis
+Author-email: tinosps@gmail.com
+License: UNKNOWN
+Description: # Tiquations package
+        
+        A simple package that contatins important equations for mathematics and physics.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
