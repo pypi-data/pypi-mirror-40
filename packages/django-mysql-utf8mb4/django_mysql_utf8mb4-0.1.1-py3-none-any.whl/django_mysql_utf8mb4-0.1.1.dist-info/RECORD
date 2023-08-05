@@ -1,0 +1,17 @@
+django_mysql_utf8mb4/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mysql_utf8mb4/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_mysql_utf8mb4/apps.py,sha256=tF_ig6mxNs3I8ccXhAnA8Nfm97LtgVSS451mELXbHdg,113
+django_mysql_utf8mb4/checks.py,sha256=RPUZ8vms1MuPf-f0ycFz3QCgIRA-o7OdWFDZkmTqp98,4168
+django_mysql_utf8mb4/migrate.py,sha256=Z1Un2t0Ezis72ayp-fqYatMKz-spid3IBJbMs83tbWg,1203
+django_mysql_utf8mb4/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_mysql_utf8mb4/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_mysql_utf8mb4/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_mysql_utf8mb4/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mysql_utf8mb4/commands/migrate_collation.py,sha256=DQb21O55LI3OvsUL-xftQR92fF_NZBG9PULiPbzrdk8,1399
+django_mysql_utf8mb4/migrations/0001_utf8mb4.py,sha256=XuhhQdo9V9y-uqethIZha1cZT3qZOkrRIa96sSoaQEc,853
+django_mysql_utf8mb4/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mysql_utf8mb4-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+django_mysql_utf8mb4-0.1.1.dist-info/METADATA,sha256=Xp8HxnVLnu73R01Mz1D4BDYlKmANwuu2zZi15Ewa6y4,855
+django_mysql_utf8mb4-0.1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+django_mysql_utf8mb4-0.1.1.dist-info/top_level.txt,sha256=qLKmcmtEyEho-qM0pGbBQeaWU6vZrA1IufhSfw_LpyU,21
+django_mysql_utf8mb4-0.1.1.dist-info/RECORD,,
