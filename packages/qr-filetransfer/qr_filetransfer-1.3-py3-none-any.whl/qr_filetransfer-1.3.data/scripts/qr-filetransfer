@@ -1,0 +1,175 @@
+#!python
+
+import qrcode
+import http.server
+import socketserver
+import random
+import os
+import socket
+import sys
+from shutil import make_archive, rmtree, copy2
+import pathlib
+import signal
+import platform
+import argparse
+
+
+MacOS = "Darwin"
+Linux = "Linux"
+Windows = "Windows"
+operating_system = platform.system()
+
+
+def FileTransferServerHandlerClass(file_name):
+
+    class FileTransferServerHandler(http.server.SimpleHTTPRequestHandler):
+        _file_name = file_name
+
+        def do_GET(self):
+            # the self.path will start by '/', we truncate it.
+            request_path = self.path[1:]
+            if request_path != self._file_name:
+                # access denied
+                self.send_response(403)
+                self.send_header("Content-type", "text/html")
+                self.end_headers()
+            else:
+                super().do_GET()
+
+    return FileTransferServerHandler
+
+def get_ssid():
+
+    if operating_system == MacOS:
+        ssid = os.popen("/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'").read().strip()
+        return ssid
+
+    elif operating_system == "Linux":
+       ssid = os.popen("iwgetid -r").read().strip()
+       return ssid
+
+    else:
+        # List interface information and extract the SSID from Profile
+        # note that if WiFi is not connected, Profile line will not be found and nothing will be returned.
+        interface_info = os.popen("netsh wlan show interfaces").read()
+        for line in interface_info.splitlines():
+            if line.strip().startswith("Profile"):
+                ssid = line.split(':')[1].strip()
+                return ssid
+
+
+def get_local_ip():
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        return s.getsockname()[0]
+    except OSError:
+        print("Network is unreachable")
+        sys.exit()
+
+
+def random_port():
+    return random.randint(1024, 65535)
+
+
+def print_qr_code(address):
+    qr = qrcode.QRCode(version=1,
+                error_correction=qrcode.constants.ERROR_CORRECT_L,
+                box_size=10,
+                border=4,)
+    qr.add_data(address)
+    qr.make()
+
+    if operating_system != Windows:
+        # According to gomercin on GitHub, print_tty
+        # prints out gibberish.
+        # print_tty() shows a better looking QR code.
+        # So thats why I am using print_tty() instead
+        # of print_ascii() for all operating systems
+        qr.print_tty()
+
+    else:
+        qr.print_ascii()
+
+
+def start_server(fname, debug):
+    PORT = random_port()
+    LOCAL_IP = get_local_ip()
+    SSID = get_ssid()
+
+    if not os.path.exists(fname):
+        print("No such file or directory")
+        return
+
+    # Variable to mark zip for deletion, if the user uses a folder as an argument
+    delete_zip = 0
+    abs_path = os.path.normpath(os.path.abspath(fname))
+    file_dir = os.path.dirname(abs_path)
+    fname = os.path.basename(abs_path)
+
+    # change to directory which contains file
+    os.chdir(file_dir)
+
+    # Checking if given file name or path is a directory
+    if os.path.isdir(fname):
+        zip_name = pathlib.PurePosixPath(fname).name
+
+        try:
+            # Zips the directory
+            path_to_zip = make_archive(zip_name, "zip", fname)
+            fname = os.path.basename(path_to_zip)
+            delete_zip = fname
+        except PermissionError:
+            print("Permission denied")
+            sys.exit()
+
+    # Tweaking fname to make a perfect url
+    fname = fname.replace(" ", "%20")
+
+    handler = FileTransferServerHandlerClass(fname)
+    httpd = socketserver.TCPServer(("", PORT), handler)
+
+    # This is the url to be encoded into the QR code
+    address = "http://" + str(LOCAL_IP) + ":" + str(PORT) + "/" + fname
+
+    print("Scan the following QR code to start downloading.\nMake sure that your smartphone is connected to \033[1;94m{}\033[0m".format(SSID))
+    
+    # There are many times where I just need to visit the url
+    # and cant bother scaning the QR code everytime when debugging
+    if debug:
+    	print(address)
+
+    print_qr_code(address)
+
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        pass
+
+    # If the user sent a directory, a zip was created
+    # this deletes the first created zip
+    if delete_zip != 0:
+        os.remove(delete_zip)
+    # Just being nice and not messing up your bash prompt :)
+    print()
+
+    sys.exit()
+
+
+def main():
+    if operating_system != Windows:
+        # SIGSTP does not work in Windows
+        # This disables CTRL+Z while the script is running
+        signal.signal(signal.SIGTSTP, signal.SIG_IGN)
+
+    parser = argparse.ArgumentParser(description = "Transfer files over WiFi from your computer to your smartphone from the terminal")
+    
+    parser.add_argument('file', action="store", help="file the you want to transfer")
+    parser.add_argument('-debug', '--debug', action="store_true", help="show the encoded url")
+
+    args = parser.parse_args()
+
+    start_server(fname=args.file, debug=args.debug)
+
+if __name__=="__main__":
+	main()
