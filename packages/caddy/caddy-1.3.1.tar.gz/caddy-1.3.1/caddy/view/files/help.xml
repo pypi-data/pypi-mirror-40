@@ -1,0 +1,92 @@
+<Article>
+   <Section>
+      <Headline1>Caddy help</Headline1>
+      <Text>Caddy is a simple version of CAD (computer aided design) tool. It can be controlled using either a graphical user interface or a command line interface. Both enable the user to draw several basic shapes and list, move or remove them. Caddy supports drawing polylines, rectangles and circles. It is also possible to open a new file, or save and load older files. Saved representation is simply a list of commands necessary to draw corresponding shapes on the canvas. The coordinate system honors technical drawing coordinates with [0, 0] in the bottom left corner and [width, height] in top right corner.</Text>
+   </Section>
+   <Section>
+      <Headline2>Command line interface</Headline2>
+      <Text>At the bottom of the application there is a command line panel. It contains a command input area where a user can type Caddy Language commands to execute one of the possible actions. Above the input, there is a panel with a history of executed commands and with any additional command output or error messages in case there was a problem.</Text>
+      <Section>
+         <Headline3>Command line datatypes</Headline3>
+         <Text>Caddy Language includes:</Text>
+         <Text>- Strings, which can be included anywhere they are expected (save and load commands, especially) without any quoting</Text>
+         <Text>- Integers</Text>
+         <Text>- Points, which can be absolute (eg. [10,20]) or relative (e.g. [+10,-20]). Relative point is calculated from the coordinates of its predecessor or from [0,0] if it does not have any preceding point</Text>
+      </Section>
+      <Section>
+         <Headline3>Caddy Language commands</Headline3>
+         <Bold>Line</Bold>
+         <Text>- draw a new line connecting given points (there must be at least two point given)</Text>
+         <Code>line &lt;POINTS&gt;</Code>
+         <Bold>Rectangle</Bold>
+         <Text>- draw a new rectangle with given top-left and bottom-right corners</Text>
+         <Code>rect &lt;POINT&gt; &lt;POINT&gt;</Code>
+         <Text>- draw a new rectangle with given top-left corner, width and height</Text>
+         <Code>rect &lt;POINT&gt; &lt;NUM&gt; &lt;NUM&gt;</Code>
+         <Bold>Circle</Bold>
+         <Text>- draw a new circle with given center and radius</Text>
+         <Code>circle &lt;POINT&gt; &lt;NAT&gt;</Code>
+         <Text>- draw a new circle with given left-most and right-most points</Text>
+         <Code>circle &lt;POINT&gt; &lt;POINT&gt;</Code>
+         <Bold>Save</Bold>
+         <Text>- save the drawing to the file with given filename</Text>
+         <Code>save &lt;STRING&gt;</Code>
+         <Bold>Load</Bold>
+         <Text>- load a drawing from the file with given filename</Text>
+         <Code>load &lt;STRING&gt;</Code>
+         <Bold>Remove</Bold>
+         <Text>- remove all the shapes that intersect with given point</Text>
+         <Code>remove &lt;POINT&gt;</Code>
+         <Bold>Move</Bold>
+         <Text>- move all the shapes that intersect with given point to a new point</Text>
+         <Code>move &lt;POINT&gt; &lt;POINT&gt;</Code>
+         <Bold>Clear</Bold>
+         <Text>- remove all the shapes</Text>
+         <Code>clear</Code>
+         <Bold>List</Bold>
+         <Text>- list all the shapes that intersect with given point with the form of an action that could be used to draw them</Text>
+         <Code>ls &lt;POINT&gt;</Code>
+         <Bold>Quit</Bold>
+         <Text>- quit the application</Text>
+         <Code>quit</Code>
+      </Section>
+   </Section>
+   <Section>
+      <Headline2>Mouse interface</Headline2>
+      <Text>All the actions can be also invoked by using a mouse, either by selecting an appropriate menu item or by clicking on a toolbar icon. Some actions require additional information which is provided mostly by clicking at the canvas. Current state of user interface is shown below the drawing canvas on status-bar. Executing any action through mouse interface will result in corresponding command written in command line history.</Text>
+      <Section>
+         <Headline3>Toolbar</Headline3>
+         <Text>Icons in the toolbar represent following action respectively:</Text>
+         <Bold>Cursor</Bold>
+         <Text>- interrupt any action by clicking on the icon</Text>
+         <Bold>Move</Bold>
+         <Text>- move all shapes intersecting with the given point to a new point by clicking on the icon and selecting two points on the canvas</Text>
+         <Bold>Remove</Bold>
+         <Text>- remove all shapes intersecting with the given point by clicking on the icon and selecting point on the canvas</Text>
+         <Bold>List</Bold>
+         <Text>- list all shapes intersecting with the given point by clicking on the icon and selecting point on the canvas</Text>
+         <Bold>Line</Bold>
+         <Text>- draw a line connecting given points by clicking on the icon and selecting points on the canvas, action is finished by clicking on the line icon again or by clicking on the cursor icon</Text>
+         <Bold>Rectangle</Bold>
+         <Text>- draw a rectangle with two given corners by clicking on the icon and selecting two points on the canvas</Text>
+         <Bold>Circle</Bold>
+         <Text>- draw a circle with given center and radius by clicking on the icon and selecting two points on the canvas - the center and any point on the circle</Text>
+      </Section>
+      <Section>
+         <Headline3>File menu</Headline3>
+         <Bold>New</Bold>
+         <Text>- open a new file upon confirmation</Text>
+         <Bold>Load</Bold>
+         <Text>- load a new file selected in a file picker</Text>
+         <Bold>Save as</Bold>
+         <Text>- save the drawing to a file selected in a file picker</Text>
+         <Bold>Exit</Bold>
+         <Text>- close the application upon confirmation</Text>
+      </Section>
+      <Section>
+         <Headline3>Help menu</Headline3>
+         <Bold>Display help</Bold>
+         <Text>- open help</Text>
+      </Section>
+   </Section>
+</Article>
