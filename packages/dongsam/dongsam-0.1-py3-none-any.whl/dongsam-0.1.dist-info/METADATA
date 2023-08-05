@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: dongsam
+Version: 0.1
+Summary: Python Utils Pacakage
+Home-page: https://github.com/dongsam/dongsam
+Author: Dongsam Byun
+Author-email: dongsamb@gmail.com
+License: Apache
+Project-URL: Source Code, https://github.com/dongsam/dongsam
+Keywords: dongsam
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*
+Provides-Extra: dev
+Requires-Dist: pytest (>=3) ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: pallets-sphinx-themes ; extra == 'dev'
+Requires-Dist: sphinxcontrib-log-cabinet ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: pallets-sphinx-themes ; extra == 'docs'
+Requires-Dist: sphinxcontrib-log-cabinet ; extra == 'docs'
+Provides-Extra: dotenv
+Requires-Dist: python-dotenv ; extra == 'dotenv'
+
+# dongsam
+Python Utils Pacakage
+
+# Instal
+```bash
+```
+
+# Test
+```bash
+pipenv install -d
+pipenv shell 
+pip install .
+python -m pytest tests
+```
+
+
+
