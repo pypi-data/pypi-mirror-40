@@ -1,0 +1,9 @@
+README.md
+setup.py
+checkword/__init__.py
+checkword/main.py
+checkword/processor.py
+checkword.egg-info/PKG-INFO
+checkword.egg-info/SOURCES.txt
+checkword.egg-info/dependency_links.txt
+checkword.egg-info/top_level.txt

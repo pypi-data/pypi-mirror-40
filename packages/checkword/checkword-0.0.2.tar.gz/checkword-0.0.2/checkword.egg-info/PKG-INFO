@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: checkword
+Version: 0.0.2
+Summary: Package for checking text for existance of blacklisted or whitelisted words
+Home-page: https://github.com/alexb007/checkword
+Author: Bakhrom Rakhmonov
+Author-email: alex960126@gmail.com
+License: UNKNOWN
+Description: # checkword
+        Simple module for check if the text contains blacklisted or whitelisted words
+        
+        ##Installation
+        ```
+        pip install checkword
+        ```
+        
+        ## Usage
+        ```python
+        import checkword
+        
+        # add some bad words to blacklist
+        checkword.add_bad_words(['some', 'bad', 'words', 'like', 'sheet'])
+        
+        # and good words
+        checkword.add_good_words(['Festival', 'Event', 'Holiday'])
+        
+        print(checkword.blacklisted('My some text to check for bad words'))
+        # True
+        
+        print(checkword.whitelisted('Another text to check for good words'))
+        # False
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
