@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: music-recommender
+Version: 1.0.0
+Summary: A Python client for the Spotify Recommendations API.
+Home-page: https://github.com/AnthonyBloomer/recommender
+Author: Anthony Bloomer
+Author-email: ant0@protonmail.ch
+License: MIT
+Description: recommender
+        ===========
+        
+        Python client for the `Spotify Recommendations
+        API <https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/>`__.
+        
+        Example:
+        
+        .. code:: python
+        
+        
+           recommender = Recommender()
+           recommender.artists = 'Johnny Cash'
+           recommender.genres = [
+               'country',
+               'party'
+           ]
+           recommender.tunable_track_attributes = {
+               'danceability': 1.0
+           }
+        
+           recommendations = recommender.find_recommendations()
+           for recommendation in recommendations['tracks']:
+               print("%s - %s" % (recommendation['album']['name'], recommendation['album']['artists'][0]['name']))
+        
+        
+Keywords: spotify,api,music recommendations,music recommender
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
