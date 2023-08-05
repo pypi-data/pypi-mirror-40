@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tj
+Version: 1.4
+Summary: A very simple short module containing useful functions
+Home-page: UNKNOWN
+Author: Tushar Jain
+Author-email: tusharlock10@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: autopy
+
+A module that have powerful and simple functions. Read README.txt for more info
+
+
