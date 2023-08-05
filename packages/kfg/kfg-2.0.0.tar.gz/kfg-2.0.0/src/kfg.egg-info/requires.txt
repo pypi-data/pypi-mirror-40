@@ -1,0 +1,6 @@
+pyyaml
+
+[test]
+hypothesis
+pytest
+tox
