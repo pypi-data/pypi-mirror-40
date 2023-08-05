@@ -1,0 +1,11 @@
+fec_reader/__init__.py,sha256=sLeLLwoasGLKBCXBmAoG7sTyM1qDWbxI9sSGS8h_Sdo,66
+fec_reader/conf.py,sha256=BXaBNoFO4QlyPsJqi-zHzQaYzv1vX8NCuzcnBoKtcDQ,404
+fec_reader/db.py,sha256=4TupNDKIIgfMy-SR1r7vNNVmqxffQFh8v33OIP00UqM,1622
+fec_reader/fec.db,sha256=7xhqSk7cv6ACVvKA8swdkYmaOVfWuFRQB59NmJ4lR5k,36864
+fec_reader/get.py,sha256=H88UiTzS0yNPrzrxy03oWT2voncE_eA8kkoJLcYaOHg,2320
+fec_reader/util.py,sha256=bpYM34lP5cWf8-FpqQ_jxGhnlAkkPWnOL7KDWbHauec,1917
+fec_reader-2.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+fec_reader-2.0.1.dist-info/METADATA,sha256=-Gl3C3OWmiyDetl08Nbq2uYLKK7v-SbJzCOlea-NrtE,2097
+fec_reader-2.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+fec_reader-2.0.1.dist-info/top_level.txt,sha256=2bobdMhONExdscU6Ui4Er4lJKRQUT677DTdNuShF1hI,11
+fec_reader-2.0.1.dist-info/RECORD,,
