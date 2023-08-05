@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: libowei
+Version: 0.0.2
+Summary: 
+            libowei是本人开发的python第三方库.主要服务于民科(不黑)数学家,追求不严格但实用的工科数学(区别于逻辑严谨的理科数学).
+            首先必须承认,数学是逻辑严谨的科学,但是数学也有自身的历史进程,数学成果最终要落地应用.
+            数学追求严谨,应用追求效率.
+            在今天这个信息泛滥的时代,身为开发者,眼光比技术重要.
+            我见过太多的数学老顽固(爱称,无恶意)，固执地着眼于小，为细枝末节的所谓“严谨”不惜吹毛求疵，纠缠不休.而当面临真正变革时，又坐井观天，守旧拒新，或畏畏缩缩，裹足不前。
+            所以在pypi发布了这个项目,坚持Pythonic精神,实用优先,坚持不严格但实用的设计理念,提供简单高效/可视化的数学工具.
+            在2019年,我会继续抽空完善这个pip项目.
+            
+Home-page: UNKNOWN
+Author: libowei
+Author-email: 913911037@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
