@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: e-ok-api
+Version: 0.1.1
+Summary: Unofficial API wrapper for Liantis e-OK
+Home-page: https://github.com/dotEsuS/e_ok_api
+Author: dotEsuS
+Author-email: 
+License: GNU General Public License v3
+Keywords: e_ok_api
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: demjson
+Requires-Dist: requests
+Requires-Dist: lxml
+
+e_ok_api
+========
+
+[![PyPI version shields.io](https://img.shields.io/pypi/v/e_ok_api.svg)](https://pypi.python.org/pypi/e_ok_api/)
+[![Travis - CI ](https://img.shields.io/travis/dotEsuS/e_ok_api.svg)](https://travis-ci.org/dotEsuS/e_ok_api)
+
+Unofficial API wrapper for Liantis [e-OK](https://www.e-ok.be/).
+
+Usage
+=====
+
+```bash
+pip install e-ok-api
+```	
+
+Examples
+--------
+```python
+y = TimeEOK()
+y.login('Username', 'Password')
+my_user_id = y.get_userid()
+print(y.get_remaining_workhours(my_user_id))
+```
+
+
