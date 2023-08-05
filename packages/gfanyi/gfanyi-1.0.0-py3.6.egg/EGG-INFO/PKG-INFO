@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: gfanyi
+Version: 1.0.0
+Summary: G翻译
+Home-page: https://github.com/xujinjie151/gfanyi
+Author: xujinjie151
+Author-email: xujinjie151@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: requests
+Requires: execjs
+Requires: html
