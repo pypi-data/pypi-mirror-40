@@ -1,0 +1,5 @@
+numpy
+glue-core>=0.14
+qtpy
+astropy
+pywwt>=0.4
