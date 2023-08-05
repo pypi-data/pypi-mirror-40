@@ -1,0 +1,12 @@
+d6tstack/__init__.py,sha256=AJi_gtmp5sNjOJ4CH0UoTQv1zeUEf-wNbp6kkf3ABRM,130
+d6tstack/combine_csv.py,sha256=OLL8eTKL9nTfCiyDNeE_VSa-qiL-ajcFD8D6BQyVMGE,24803
+d6tstack/convert_xls.py,sha256=2BNtZAqvO7ghv_rmvbyaApRJpEIIjU9O1EE2RDW-pnE,15655
+d6tstack/helpers.py,sha256=QNwTluT9vj9DPncVf7828fIh3s4mCLZB1hdGxtYfUOc,3274
+d6tstack/pyftp_final.py,sha256=T9BMARRvCDeQ4ILkqSVQb4XkqJFNi2vRFpgcQWY20aI,2066
+d6tstack/sniffer.py,sha256=_KXGelCGL-FB8crAECTZvuQJGIu8xOxwTp43Wh8RU8A,6925
+d6tstack/sync.py,sha256=CtHydfauHB5JApIAhcJj7fsxAFgsagns30c3JN6NXvo,6430
+d6tstack/utils.py,sha256=_jxCtEUrwXCE872gLZ_Zb4f73x7clckU2SYv02n32Sw,6461
+d6tstack-0.1.5.dist-info/METADATA,sha256=dQDQPG862f8fxg1_z6LvMLY4D3nrri12ExAL6atuLi4,864
+d6tstack-0.1.5.dist-info/RECORD,,
+d6tstack-0.1.5.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+d6tstack-0.1.5.dist-info/top_level.txt,sha256=AFApD9EGlErhDiQXaDv6B7SJHRBkOKWxv0ITGbVPtYk,9
