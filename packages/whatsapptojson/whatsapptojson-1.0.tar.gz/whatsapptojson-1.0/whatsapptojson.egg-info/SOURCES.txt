@@ -1,0 +1,10 @@
+README.md
+setup.py
+whatsapptojson/__init__.py
+whatsapptojson/constants.py
+whatsapptojson/helper.py
+whatsapptojson/whatsapptojson.py
+whatsapptojson.egg-info/PKG-INFO
+whatsapptojson.egg-info/SOURCES.txt
+whatsapptojson.egg-info/dependency_links.txt
+whatsapptojson.egg-info/top_level.txt
