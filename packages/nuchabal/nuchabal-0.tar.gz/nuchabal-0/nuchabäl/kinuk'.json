@@ -1,0 +1,101 @@
+{
+  "Français": {
+    "runuk'": "fr",
+    "rumajaju": "fr",
+    "glottolog": "stan1290",
+    "ajilanïk": "latin"
+  },
+  "Español": {
+    "runuk'": "es",
+    "rumajaju": "fr",
+    "glottolog": "stan1288",
+    "ajilanïk": "latin"
+  },
+  "Nederlands": {
+    "runuk'": "nl",
+    "rumajaju": "nl",
+    "glottolog": "dutc1256",
+    "ajilanïk": "latin"
+  },
+  "தமிழ்": {
+    "runuk'": "த",
+    "glottolog": "tami1289",
+    "rumajaju": "ta"
+  },
+  "ਪੰਜਾਬੀ": {
+    "runuk'": "ਪੰ",
+    "glottolog": "west2386",
+    "rumajaju": "pa"
+  },
+  "हिंदी": {
+    "runuk'": "हिं",
+    "glottolog": "",
+    "rumajaju": "hi",
+    "ajilanïk": "देव"
+  },
+  "ગુજરાતી": {
+    "runuk'": "ગુ",
+    "glottolog": "guja1252",
+    "rumajaju": "gu"
+  },
+  "اردو": {
+    "runuk'": "ار",
+    "glottolog": "urdu1245",
+    "rumajaju": "ur",
+    "ajilanïk": "ار"
+  },
+  "فارسی": {
+    "runuk'": "فا",
+    "glottolog": "west2369",
+    "rumajaju": "fa",
+    "ajilanïk": "ار"
+  },
+  "پنجابی": {
+    "runuk'": "پن",
+    "glottolog": "panj1256",
+    "rumajaju": "pnb",
+    "ajilanïk": "ار"
+  },
+  "मराठी": {
+    "runuk'": "म",
+    "glottolog": "mara1378",
+    "rumajaju": "mr",
+    "ajilanïk": "देव"
+  },
+  "नेपाली": {
+    "runuk'": "ने",
+    "glottolog": "nepa1254",
+    "rumajaju": "ne",
+    "ajilanïk": "देव"
+  },
+  "Kaqchikel": {
+    "runuk'": "kaq",
+    "glottolog": "kaqc1270",
+    "rumajaju": "caq",
+    "ajilanïk": ["latin", "mayab'"]
+  },
+  "K'iche'": {
+    "runuk'": "k'i",
+    "glottolog": "kich1262",
+    "rumajaju": "quc",
+    "ajilanïk": ["latin", "mayab'"]
+  },
+  "Tz'utujil": {
+    "runuk'": "tz'u",
+    "glottolog": "tzut1248",
+    "rumajaju": "tzj",
+    "ajilanïk": ["latin", "mayab'"]
+  },
+  "汉语": {
+    "runuk'": "汉",
+    "glottolog": "sini1245",
+    "rumajaju": "zh",
+    "ajilanïk": "汉"
+  },
+  "日本語": {
+    "runuk'": "日本",
+    "glottolog": "nucl1643",
+    "rumajaju": "ja",
+    "ajilanïk": "汉"
+  }
+}
