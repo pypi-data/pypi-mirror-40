@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+_version.py
+setup.cfg
+setup.py
+simple-httpfs.py
+versioneer.py
+simple_httpfs.egg-info/PKG-INFO
+simple_httpfs.egg-info/SOURCES.txt
+simple_httpfs.egg-info/dependency_links.txt
+simple_httpfs.egg-info/requires.txt
+simple_httpfs.egg-info/top_level.txt
