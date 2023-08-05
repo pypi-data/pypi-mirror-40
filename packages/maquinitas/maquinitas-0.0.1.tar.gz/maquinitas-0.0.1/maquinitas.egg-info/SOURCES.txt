@@ -1,0 +1,8 @@
+README.md
+setup.py
+maquinitas/__init__.py
+maquinitas.egg-info/PKG-INFO
+maquinitas.egg-info/SOURCES.txt
+maquinitas.egg-info/dependency_links.txt
+maquinitas.egg-info/top_level.txt
+test/test-maquinitas.py
