@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: spectrum-client
+Version: 0.2.4
+Summary: CA Spectrum Web Services API wrapper.
+Home-page: https://github.com/orgito/spectrum-client
+Author: Renato Orgito
+Author-email: orgito@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/orgito/spectrum-client/issues
+Project-URL: Source, https://github.com/orgito/spectrum-client
+Keywords: spectrum-client network monitoring spectrum
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Networking :: Monitoring
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# spectrum-client
+
+[![image](https://img.shields.io/pypi/v/spectrum-client.svg?style=flat-square)](https://pypi.org/project/spectrum-client)
+[![image](https://img.shields.io/pypi/pyversions/spectrum-client.svg?style=flat-square)](https://pypi.org/project/spectrum-client)
+[![image](https://img.shields.io/pypi/l/spectrum-client.svg?style=flat-square)](https://pypi.org/project/spectrum-client)
+
+---
+
+CA Spectrum Web Services API wrapper
+
+## Instalation
+spectrum-client is distributed on PyPI and is available on Linux/macOS and Windows and supports Python 2.7, 3.4+.
+
+``` bash
+pip install -U spectrum-client
+```
+
+## Usage
+
+``` python
+from spectrum_client import Spectrum
+
+oc = Spectrum('http://oneclick.mydomain:8080', 'myuser', 'secret')
+
+# Update a model attribute
+oc.update_attribute(0x210afa, 0x10024, 'MySNMPSecret')
+
+# Update multiple attributes
+notes = 'Some notes'
+updates = [(0x11564, notes), (0x12db9, 'JKL002'), (0x1295d, False)]
+oc.update_attributes(mh, updates)
+
+# Get a list of devices by name, using regex, restricting the search to landscape 0x200000
+oc.devices_by_name('^SW00', 0x200000)
+
+# Get a lis tof devices by specific attribute from all landscapes
+oc.devices_by_attr(0x12db9, 'XYZ001')
+
+# Get a list of devices by multipe matching filters
+oc.devices_by_filters([(attr1, 'equals', value1), (attr2, 'has-pcre', '^foo.*bar')], landscape)
+
+# Put a model in maintenance mode
+oc.set_maintenance(model_handle, True)
+
+# Remove a model from maintenance mode
+oc.set_maintenance(model_handle, False)
+```
+
+If not provided, server and credentials will be read from the environment variables `SPECTRUM_URL`, `SPECTRUM_USERNAME`, `SPECTRUM_PASSWORD`.
+
