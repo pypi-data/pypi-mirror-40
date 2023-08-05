@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: caffe2-for-lambda
+Version: 0.0.1
+Summary: add links to readme
+Home-page: https://github.com/shibatanaoto/caffe2-for-lambda
+Author: shibatanaoto
+Author-email: shibata@queue-inc.com
+License: MIT
+Keywords: lambda
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.18.0)
+
+
+
+
