@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: gap_loader
+Version: 0.1
+Summary: Import hook for GAP files in SAGE math.
+Home-page: http://github.com/jorants/gap-loader
+Author: Joran van Apeldoorn (Control-K)
+Author-email: jorants@gmail.com
+License: MIT
+Description: # Gap loader
+        
+        Import hook for GAP files in SAGE math.
+        This package only works in SAGE math, not plain python.
+        To use it, simply import it and then import any gap file as if it where python.
+        
+        ```
+        import gap_loader
+        import some_gap_file
+        
+        some_gap_file.some_function()
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
