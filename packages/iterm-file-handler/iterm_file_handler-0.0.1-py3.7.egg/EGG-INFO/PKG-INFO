@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: iterm-file-handler
+Version: 0.0.1
+Summary: Handle default app for file in iterm
+Home-page: https://github.com/pr4bh4sh/iterm-file-handler
+Author: pr4bh4sh
+License: UNKNOWN
+Description: # Iterm File Handler
+        
+        ## Install
+        
+        1. Clone and run below command
+            `python3 setup.py install`
+        
+        2. Install using pip
+            `pip install iterm_file_handler`
+        
+        ## Uses
+        
+        1. Add `/usr/local/bin/itfh "\1" "\2" "\5"` in iterm setting as below
+        
+        2. CMD + Click on the file path displayed in iterm
+        
+        3. Profit
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
