@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+capricorn/Vocab.py
+capricorn/VocabularyProcessor.py
+capricorn/__init__.py
+capricorn/__version__.py
+capricorn.egg-info/PKG-INFO
+capricorn.egg-info/SOURCES.txt
+capricorn.egg-info/dependency_links.txt
+capricorn.egg-info/top_level.txt
