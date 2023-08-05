@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: email-scrapper
+Version: 0.4.1
+Summary: An email parser for store orders.
+Home-page: https://github.com/javatechy/dokr
+Author: Lucas
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: pdfminer.six
+Requires-Dist: chardet
+Requires-Dist: beautifulsoup4
+
+**Email scraping software**
+
+Parses emails and extracts Order number, Items and calculates unit prices and displays it in a excel file.
+
+
+Supports:
+
+    Amazon.ca 
+    BestBuy.ca 
+    EBGames.ca 
+    Lego.ca
+
