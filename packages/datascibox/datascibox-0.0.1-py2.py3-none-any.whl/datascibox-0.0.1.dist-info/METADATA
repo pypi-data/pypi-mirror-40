@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: datascibox
+Version: 0.0.1
+Summary: A  box of data science utilities for Python
+Home-page: https://github.com/barisozmen/datascibox
+Author: Baris Ozmen
+Author-email: hbaristr@gmail.com
+License: GNU General Public License v2 (GPL-2.0)
+Download-URL: https://github.com/barisozmen/datascibox/tarball/0.0.1
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: nose
+Requires-Dist: coverage
+Requires-Dist: pypi-publisher
+
+datascibox
+===============================
+
+version number: 0.0.1
+author: Baris Ozmen
+
+Overview
+--------
+
+A  box of data science utilities for Python
+
+Installation / Usage
+--------------------
+
+To install use pip:
+
+    $ pip install datascibox
+
+
+Or clone the repo:
+
+    $ git clone https://github.com/barisozmen/datascibox.git
+    $ python setup.py install
+
+Contributing
+------------
+
+TBD
+
+Example
+-------
+
+TBD
+
+
