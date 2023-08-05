@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sservice
+Version: 0.2.0
+Summary: Systemd Service Wrapper
+Home-page: https://github.com/Sanji-IO/sservice
+Author: Sanji Team
+Author-email: sanji@moxa.com
+License: UNKNOWN
+Description: # Systemd Service Wrapper
+        
+        ## Install
+        
+        `pip install sservice`
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
