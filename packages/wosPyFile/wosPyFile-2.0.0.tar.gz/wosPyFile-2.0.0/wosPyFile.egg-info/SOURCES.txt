@@ -1,0 +1,8 @@
+README.md
+setup.py
+wosPyFile/__init__.py
+wosPyFile/pyFile.py
+wosPyFile.egg-info/PKG-INFO
+wosPyFile.egg-info/SOURCES.txt
+wosPyFile.egg-info/dependency_links.txt
+wosPyFile.egg-info/top_level.txt

@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: wosPyFile
+Version: 2.0.0
+Summary: Simple package for file reading
+Home-page: https://github.com/WellingtonOSilva/pyFile
+Author: Wellington Silva
+Author-email: wellington@wosilva.com
+License: UNKNOWN
+Description: # PyFile
+        
+        PyFile is a simple library which provides you some funcionalities for file reading and writing.
+        
+        # Install
+        
+            from wosPyFile import pyFile
+        
+        # Files
+        
+        PyFile is effective on simple text files, let's see some examples:
+        
+        ## Reading
+        
+        ###  Read all
+        This will return all lines
+        
+            pyFile.read("file.txt")
+        
+        
+        ###  Read with conditions
+         This will return only lines that begins with the list elements
+          
+            pyFile.read("file.txt", ["AAA", "BBB", "CCC"])
+        
+        ## Extracting data from lines
+        Let's assume that we have a variable called **line** with the value bellow
+        		
+        
+        > **ABC1234567**
+        
+        To extract data from this line, you can use pyFile.getLineData(), the second parameter is responsible to split the line in list elements
+        
+        	   pyFile.getLineData(line, [3,10])
+        	  	  
+        Output:
+        
+        > ["ABC", "1234567]
+        
+        
+        ## Matrix
+        
+        If you have a defined range you can use pyFile.generateMatrix()
+        
+            data = []
+            collumns = 240
+            size = 2
+            matrix = pyFile.generateMatriz(collumns, len(lines), size)
+            for index, line in  enumerate(lines):
+        	    pyFile.getLineData(line, matrix[index])
+        	
+        
+        >A list element will be generated according with the interval defined in **size**
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
