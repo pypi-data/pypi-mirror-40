@@ -1,0 +1,13 @@
+munch
+python-dotenv
+python-frontmatter
+pyyaml
+records
+responder
+starlette<0.9
+
+[mysql]
+PyMySQL
+
+[pg]
+psycopg2
