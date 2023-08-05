@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: annict
+Version: 0.7.0
+Summary: Annict API for python
+Home-page: https://annict.jp/userland/projects/7
+Author: kk6
+Author-email: hiro.ashiya@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: arrow (>=0.12.1,<0.13.0)
+Requires-Dist: furl (>=2.0,<3.0)
+Requires-Dist: rauth (>=0.7.3,<0.8.0)
+Requires-Dist: requests (>=2.21,<3.0)
+Requires-Dist: requests-cache (>=0.4.13,<0.5.0)
+Project-URL: Documentation, https://pythonhosted.org/annict/
+Project-URL: Repository, https://github.com/kk6/python-annict
