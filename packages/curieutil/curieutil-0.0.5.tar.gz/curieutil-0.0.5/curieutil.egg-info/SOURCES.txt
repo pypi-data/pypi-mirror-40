@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+curieutil.egg-info/PKG-INFO
+curieutil.egg-info/SOURCES.txt
+curieutil.egg-info/dependency_links.txt
+curieutil.egg-info/requires.txt
+curieutil.egg-info/top_level.txt
+src/curieutil.py
+src/trie.py
+src/trienode.py
