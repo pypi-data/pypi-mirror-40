@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: coinmarketcap-with-cache
+Version: 5.1.0
+Summary: Forked from https://github.com/barnumbirr/coinmarketcap
+Home-page: https://github.com/neoctobers/py_coinmarketcap_with_cache
+Author: neoctobers
+Author-email: neoctobers@gmail.com
+License: Apache v2.0 License
+Project-URL: Bug Reports, https://github.com/barnumbirr/coinmarketcap/issues
+Project-URL: Buy me a coffee, https://github.com/barnumbirr/coinmarketcap#buy-me-a-coffee
+Requires-Dist: requests (>=2.18.4)
+Requires-Dist: requests-cache (>=0.4.13)
+
+## Temporarily exist before pull request.
+
+
