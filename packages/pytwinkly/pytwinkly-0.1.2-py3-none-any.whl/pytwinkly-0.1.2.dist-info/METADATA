@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pytwinkly
+Version: 0.1.2
+Summary: A package for integrating with twinkly lights
+Home-page: https://github.com/scottjones4k/pytwinkly
+Author: Scott Jones
+Author-email: scott.jones4k@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# pyTwinkly
+
+This is a package providing simple integration with twinkly lights
+
