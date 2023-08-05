@@ -1,0 +1,13 @@
+multitranslator/__init__.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+multitranslator/__version__.py,sha256=N5c0ATytUnDy6lL1m0QH5pil2BnDGjRDqlI1ccjw4TY,289
+multitranslator/exceptions.py,sha256=HIp5afro8s0fUInojHB386Anu6nDaUU6bNMmzomnN5A,424
+multitranslator/translators/__init__.py,sha256=VPWrkjd1GgoubyKAcerDZkDcHI83vRI1g6geOL4oebw,170
+multitranslator/translators/cambridge.py,sha256=8ckDlTxUDXDg5wwujywQT3yrixohq39UylVdupqzUjw,1836
+multitranslator/translators/fastdict.py,sha256=E1Wrv3azyNIVzs0w1G-KoSlCWYKJRpNkidVj8DbYWJ8,969
+multitranslator/translators/multi.py,sha256=h1HxLM2qZ5IWY6Lxz8e-ojU_BysYcrMdkstb4e9wL-8,569
+multitranslator/translators/translator.py,sha256=q-IatSBHEnqjXJub2BUyyvIbsOCdRbwzzmeDx5TOtVY,953
+multitranslator-0.0.2.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+multitranslator-0.0.2.dist-info/METADATA,sha256=5F7lxx5w03-T-QhCuOrIl0irObZsMoPj04hH55rhrPQ,1544
+multitranslator-0.0.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+multitranslator-0.0.2.dist-info/top_level.txt,sha256=Ap4QMUuw8YHKvQ5NCT1khzIV9EPgC5eAne-1zFYTH4w,16
+multitranslator-0.0.2.dist-info/RECORD,,
