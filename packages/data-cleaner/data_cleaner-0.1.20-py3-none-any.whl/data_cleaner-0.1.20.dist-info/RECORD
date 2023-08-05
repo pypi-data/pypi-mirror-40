@@ -1,0 +1,11 @@
+data_cleaner-0.1.20.dist-info/RECORD,,
+data_cleaner-0.1.20.dist-info/metadata.json,sha256=1_0FH7ODFHgFoBYWQ0OXyW3UhjJGjCtCVfpWC4L0rLM,1118
+data_cleaner-0.1.20.dist-info/WHEEL,sha256=qK8Mpl9y5Qz-qUHrFMuDoXuIrLvgocmQMEUa8iWG73I,92
+data_cleaner-0.1.20.dist-info/DESCRIPTION.rst,sha256=x0VNlVHJ6VD1VZeVuhifhtNtRUd9H4VdAwAfpJvfrNg,27624
+data_cleaner-0.1.20.dist-info/top_level.txt,sha256=XxSHENeGPN6wanFeu6BCXGgSsjhPoLDipCFWT7qyZ30,13
+data_cleaner-0.1.20.dist-info/METADATA,sha256=tGBvskomlcrckwK190jGG1Pr4NeqPVel6Kfp0wD-tCk,28673
+data_cleaner/fingerprint_keyer.py,sha256=-cqNJRNUBjmRZEwlsqyel-ZMPO8vcGzZjTOvvBvUSRA,3659
+data_cleaner/__init__.py,sha256=PfKTsHb0MClI3kRL6JTdtPb-xRU3xkKFIXZW7-ecjFw,200
+data_cleaner/georef_api.py,sha256=UPKqxqCXNDiukwkpfKl60QiIXui_S5y4hLZyUEppQnI,2425
+data_cleaner/data_cleaner.py,sha256=ilZmm04CnuPwCLiwkJ5LgHdf_qZQuJsKuea3sS_EWq8,35323
+data_cleaner/capitalizer.py,sha256=kpPZSUwqJS9RNN__VM-guH5yfB7zf8ImykaNWHZiA1s,1583
