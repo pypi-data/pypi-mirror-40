@@ -1,0 +1,6 @@
+djangorestframework
+pillow
+django-private-storage
+django-taggit
+django-taggit-serializer
+django-filter
