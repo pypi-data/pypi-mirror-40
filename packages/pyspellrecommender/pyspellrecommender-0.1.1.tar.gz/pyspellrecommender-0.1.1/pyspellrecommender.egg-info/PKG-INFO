@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyspellrecommender
+Version: 0.1.1
+Summary: A spelling checker package
+Home-page: https://github.com/karkipy/pyspellrecommender
+Author: Aashish Karki
+Author-email: aashish.y2z@gmail.com
+License: UNKNOWN
+Description: ## SPELLCHECKER
+        
+        ### Installation
+        ```python
+          pip install pyspellrecommender
+        ```
+        
+        ### Usage
+        
+        ```python
+          form pyspellrecommender import SpellRecommender
+        
+          sp = SpellRecommender()
+          sp.recommend('randam')
+        ```
+        
+        ### Output
+        
+        <img width="1076" alt="screen shot 2019-01-03 at 4 23 25 pm" src="https://user-images.githubusercontent.com/12614476/50633609-08d04280-0f74-11e9-821e-a25f6812e625.png">
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
