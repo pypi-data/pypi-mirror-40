@@ -1,0 +1,4 @@
+[console_scripts]
+shellhistory-location=shellhistory.cli:location
+shellhistory-web=shellhistory.cli:web
+
