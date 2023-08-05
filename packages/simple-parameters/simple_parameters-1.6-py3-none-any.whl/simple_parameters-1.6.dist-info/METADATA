@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: simple-parameters
+Version: 1.6
+Summary: Simple command line parameter parser
+Home-page: https://github.com/crazybusy/simple_parameters
+Author: crazybusy
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+
+Allows to create json file with details of the parameters available on the command line for any application. It then handles the user parsing of these parameters by setting the required flags which you can directly consume in your application
+
+

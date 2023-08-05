@@ -1,0 +1,13 @@
+{
+"version": "1.6",
+"description": "Simple command line parameter parser",
+"long_description":"Allows to create json file with details of the parameters available on the command line for any application. It then handles the user parsing of these parameters by setting the required flags which you can directly consume in your application",
+"author":"crazybusy",
+"deps":[""],
+"parameters":
+[
+{"short": "-f", "long":"--file", "type":"string", 
+	"help": "Use this filename and show the parameters defined as help file"}
+]
+
+}
