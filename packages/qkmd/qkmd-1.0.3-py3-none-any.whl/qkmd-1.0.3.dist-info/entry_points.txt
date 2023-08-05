@@ -1,0 +1,3 @@
+[console_scripts]
+qkmd = qkmd.qkmd:command_runner
+
