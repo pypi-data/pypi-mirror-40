@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+pywarp/__init__.py
+pywarp/attestation.py
+pywarp/backends.py
+pywarp/cose.py
+pywarp/credentials.py
+pywarp.egg-info/PKG-INFO
+pywarp.egg-info/SOURCES.txt
+pywarp.egg-info/dependency_links.txt
+pywarp.egg-info/requires.txt
+pywarp.egg-info/top_level.txt
+pywarp/fido/__init__.py
+pywarp/fido/metadata.py
+pywarp/util/__init__.py

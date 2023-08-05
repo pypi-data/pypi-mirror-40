@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: pywarp
+Version: 0.0.2
+Summary: Python WebAuthn Relying Party library
+Home-page: https://github.com/kislyuk/pywarp
+Author: Andrey Kislyuk
+Author-email: kislyuk@gmail.com
+License: Apache Software License
+Description: PyWARP: Python Web Authentication Relying Party library
+        =======================================================
+        
+        *PyWARP* is an implementation of the W3C `WebAuthn <https://www.w3.org/TR/webauthn/>`_ standard's Relying Party
+        component in Python. The WebAuthn standard is used to provide advanced authentication security for two-factor,
+        multifactor and passwordless authentication models through the use of dedicated hardware security keys such as
+        `Yubico YubiKey <https://www.yubico.com/>`_ and
+        `Google Titan <https://store.google.com/us/product/titan_security_key_kit>`_.
+        
+        Compared to legacy two-factor standards like HOTP (`RFC 4226 <https://tools.ietf.org/html/rfc4226>`_) and TOTP
+        (`RFC 6238 <https://tools.ietf.org/html/rfc6238>`_), the
+        `FIDO U2F <https://en.wikipedia.org/wiki/Universal_2nd_Factor>`_ profile of WebAuthn uses asymmetric cryptography to
+        avoid using a shared secret design, which strengthens your authentication solution against server-side attacks. Hardware
+        U2F also sequesters the client secret in a dedicated single-purpose device, which strengthens your clients against
+        client-side attacks. And by automating scoping of credentials to relying party IDs (application origin/domain names),
+        U2F adds protection against phishing attacks.
+        
+        *PyWARP* implements the **Relying Party** component of WebAuthn. A Relying Party is a server-side application that uses
+        WebAuthn APIs in the browser to authenticate its users.
+        
+        To see an example of PyWARP in action, check the ``examples`` directory. Two demos are included: an
+        `AWS Chalice <https://github.com/aws/chalice>`_ app and a `Flask <https://github.com/pallets/flask>`_ app.
+        
+        In addition to reading the `WebAuthn standard <https://www.w3.org/TR/webauthn/>`_, we recommend that implementers read
+        the `OWASP Authentication Cheat Sheet <https://www.owasp.org/index.php/Authentication_Cheat_Sheet>`_ and
+        `NIST SP 800-63-3: Digital Authentication Guideline <https://pages.nist.gov/800-63-3/>`_ for a high level overview of
+        authentication best practices.
+        
+        Installation
+        ------------
+        ::
+        
+            pip install pywarp
+        
+        Synopsis
+        --------
+        
+        .. code-block:: python
+        
+            from pywarp import TODO
+        
+            TODO
+        
+        .. admonition:: Warning
+        
+         Warning warning.
+        
+        Storage backends
+        """"""""""""""""
+        
+        .. code-block:: python
+        
+            TODO
+        
+        See the `API documentation <https://pywarp.readthedocs.io>`_ for more.
+        
+        Authors
+        -------
+        * Andrey Kislyuk
+        
+        Links
+        -----
+        * `Project home page (GitHub) <https://github.com/pyauth/pywarp>`_
+        * `Documentation (Read the Docs) <https://pywarp.readthedocs.io/en/latest/>`_
+        * `Package distribution (PyPI) <https://pypi.python.org/pypi/pywarp>`_
+        * `Change log <https://github.com/pyauth/pywarp/blob/master/Changes.rst>`_
+        
+        Bugs
+        ----
+        Please report bugs, issues, feature requests, etc. on `GitHub <https://github.com/pyauth/pywarp/issues>`_.
+        
+        License
+        -------
+        Licensed under the terms of the `Apache License, Version 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_.
+        
+        .. image:: https://img.shields.io/travis/pyauth/pywarp.svg
+                :target: https://travis-ci.org/pyauth/pywarp
+        .. image:: https://codecov.io/github/pyauth/pywarp/coverage.svg?branch=master
+                :target: https://codecov.io/github/pyauth/pywarp?branch=master
+        .. image:: https://img.shields.io/pypi/v/pywarp.svg
+                :target: https://pypi.python.org/pypi/pywarp
+        .. image:: https://img.shields.io/pypi/l/pywarp.svg
+                :target: https://pypi.python.org/pypi/pywarp
+        .. image:: https://readthedocs.org/projects/pywarp/badge/?version=latest
+                :target: https://pywarp.readthedocs.io/
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: test

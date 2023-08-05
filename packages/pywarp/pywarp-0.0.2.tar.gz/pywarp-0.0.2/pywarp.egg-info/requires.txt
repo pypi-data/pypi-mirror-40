@@ -1,0 +1,9 @@
+pyjwt<2,>=1.5.3
+cbor2
+cryptography<3,>=2.1.4
+requests<3,>=2.18.4
+
+[test]
+coverage
+flake8
+wheel
