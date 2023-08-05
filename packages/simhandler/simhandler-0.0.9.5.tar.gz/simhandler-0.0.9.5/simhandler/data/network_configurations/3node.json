@@ -1,0 +1,48 @@
+{
+  "start_datetime": "2016-04-01 0:0:0",
+  "study": {
+    "description": "binary2-m4y16-super-load"
+  },
+  "profile_path": "./",
+  "connections": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "lookup_table": "para_model_2018-12-24_14-18-39.934156",
+  "profiles": [
+    {
+      "id": "example1",
+      "generation": true,
+      "logic_type": "binary",
+      "storage": false,
+      "load": true
+    },
+    {
+      "id": "example2",
+      "generation": false,
+      "logic_type": "binary",
+      "storage": false,
+      "load": true
+    },
+    {
+      "id": "example3",
+      "generation": false,
+      "logic_type": "binary",
+      "storage": false,
+      "load": true
+    }
+  ]
+}
