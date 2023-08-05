@@ -1,0 +1,6 @@
+[console_scripts]
+lantz-ino = lantz.ino.__main__:main
+
+[lantz_subcommands]
+ino = lantz.ino.__main__:main
+
