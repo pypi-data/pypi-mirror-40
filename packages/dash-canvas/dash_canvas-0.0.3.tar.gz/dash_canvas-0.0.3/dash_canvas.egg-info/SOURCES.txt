@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+dash_canvas/AlternativeCanvas.py
+dash_canvas/DashCanvas.py
+dash_canvas/SketchFieldDemo.py
+dash_canvas/__init__.py
+dash_canvas/_imports_.py
+dash_canvas/dash_canvas.dev.js
+dash_canvas/dash_canvas.min.js
+dash_canvas/metadata.json
+dash_canvas/package.json
+dash_canvas.egg-info/PKG-INFO
+dash_canvas.egg-info/SOURCES.txt
+dash_canvas.egg-info/dependency_links.txt
+dash_canvas.egg-info/requires.txt
+dash_canvas.egg-info/top_level.txt
