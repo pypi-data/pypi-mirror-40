@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+jovian/__init__.py
+jovian/cli.py
+jovian.egg-info/PKG-INFO
+jovian.egg-info/SOURCES.txt
+jovian.egg-info/dependency_links.txt
+jovian.egg-info/entry_points.txt
+jovian.egg-info/top_level.txt
