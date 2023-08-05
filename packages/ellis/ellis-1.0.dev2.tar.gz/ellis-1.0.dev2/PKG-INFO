@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ellis
+Version: 1.0.dev2
+Summary: Ellis monitors systemd-journald and triggers actions.
+Home-page: http://github.com/Frzk/Ellis
+Author: François KUBLER
+Author-email: francois+ellis@kubler.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Monitoring
