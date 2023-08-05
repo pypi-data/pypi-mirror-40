@@ -1,0 +1,15 @@
+README.md
+setup.py
+trask/__init__.py
+trask/__main__.py
+trask/functions.py
+trask/phase1.py
+trask/phase2.py
+trask/phase3.py
+trask/schema
+trask/types.py
+trask.egg-info/PKG-INFO
+trask.egg-info/SOURCES.txt
+trask.egg-info/dependency_links.txt
+trask.egg-info/requires.txt
+trask.egg-info/top_level.txt
