@@ -1,0 +1,16 @@
+AUTHORS
+ChangeLog
+LICENSE
+README.rst
+setup.cfg
+setup.py
+cloud_init_seed/__init__.py
+cloud_init_seed.egg-info/PKG-INFO
+cloud_init_seed.egg-info/SOURCES.txt
+cloud_init_seed.egg-info/dependency_links.txt
+cloud_init_seed.egg-info/entry_points.txt
+cloud_init_seed.egg-info/not-zip-safe
+cloud_init_seed.egg-info/pbr.json
+cloud_init_seed.egg-info/top_level.txt
+cloud_init_seed/tests/fixtures/meta_data_1
+cloud_init_seed/tests/fixtures/user_data1

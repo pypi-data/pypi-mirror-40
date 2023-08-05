@@ -1,0 +1,17 @@
+CHANGES
+=======
+
+0.3.0
+-----
+
+* Rename ciseed to cloud-init-seed
+
+0.2.0
+-----
+
+* Remove version from setup.cfg
+* Add .gitignore
+* Add support for genisoimage
+* Fix user-data syntax
+* Add LICENSE file
+* Initial version of cloud-init-seed

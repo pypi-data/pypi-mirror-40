@@ -1,0 +1,3 @@
+[console_scripts]
+cloud-init-seed = cloud_init_seed:main
+
