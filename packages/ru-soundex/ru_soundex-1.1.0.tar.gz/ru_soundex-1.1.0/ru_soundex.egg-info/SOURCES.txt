@@ -1,0 +1,10 @@
+README.md
+setup.py
+ru_soundex/__init__.py
+ru_soundex/distance.py
+ru_soundex/soundex.py
+ru_soundex.egg-info/PKG-INFO
+ru_soundex.egg-info/SOURCES.txt
+ru_soundex.egg-info/dependency_links.txt
+ru_soundex.egg-info/requires.txt
+ru_soundex.egg-info/top_level.txt
