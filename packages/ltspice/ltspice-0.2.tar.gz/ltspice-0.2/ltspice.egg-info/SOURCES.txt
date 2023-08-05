@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+ltspice.egg-info/PKG-INFO
+ltspice.egg-info/SOURCES.txt
+ltspice.egg-info/dependency_links.txt
+ltspice.egg-info/not-zip-safe
+ltspice.egg-info/requires.txt
+ltspice.egg-info/top_level.txt
