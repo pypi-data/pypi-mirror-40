@@ -1,0 +1,15 @@
+README.md
+setup.py
+wellfit/__init__.py
+wellfit/__version__.py
+wellfit/fit.py
+wellfit/model.py
+wellfit/planet.py
+wellfit/star.py
+wellfit/utils.py
+wellfit/wellfit.py
+wellfit.egg-info/PKG-INFO
+wellfit.egg-info/SOURCES.txt
+wellfit.egg-info/dependency_links.txt
+wellfit.egg-info/requires.txt
+wellfit.egg-info/top_level.txt

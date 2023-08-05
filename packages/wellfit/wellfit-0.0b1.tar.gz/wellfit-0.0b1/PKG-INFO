@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: wellfit
+Version: 0.0b1
+Summary: A wellfit package to fit wells well.
+Home-page: UNKNOWN
+Author: Christina Hedges
+Author-email: christina.l.hedges@nasa.gov
+License: MIT
+Description: # WellFit
+        
+        Transit modeling with [`starry`](https://rodluger.github.io/starry/) and [`celerite`](https://celerite.readthedocs.io/en/stable/), capitalizing on gradients. Under development.
+        
+        ### notebooks
+        
+        This folder contains a few notebooks about fitting different transit models that we've collected over the year. They are there for inspiration and for basic examples. They will be deleted before the stable release of wellfit.
+        
+        ### Installation
+        
+        While `wellfit` is under development, you can install it by running the following in a terminal
+        
+        ```
+        git clone https://github.com/christinahedges/wellfit.git
+        cd wellfit
+        pip install -e .
+        ```
+        
+        This will install in "development" mode, so you can edit the wellfit code and your changes will automatically run.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
