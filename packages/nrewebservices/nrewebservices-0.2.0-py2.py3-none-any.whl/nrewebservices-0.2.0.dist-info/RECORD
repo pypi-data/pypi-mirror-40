@@ -1,0 +1,13 @@
+nrewebservices/__init__.py,sha256=AclBZLnyIQIRdFv_16lRi_aZAOIaDlkVpEF3Qei3EIQ,117
+nrewebservices/__release__.py,sha256=Eacw3_t_E-4ucWKUQ__21NwImFcFD2aSKml7Ap4FmCg,18
+nrewebservices/__version__.py,sha256=ID0RD5etcwwASKEbCV-052KXPekeN5cTR64_gM0SiP0,16
+nrewebservices/common/__init__.py,sha256=MmOIHjztJqWWZhLut7s3yOcTtrWn6gKjx5R14HjuKPQ,217
+nrewebservices/common/soap.py,sha256=RNVgWJSJrT37MKMdrMKLv_CO0jEpDkx14hbbsQ0U2WQ,1394
+nrewebservices/ldbws/__init__.py,sha256=zadanHAsSkISQpRD0RQNIxRGz_GqY3gHvVAPvMaeCBE,307
+nrewebservices/ldbws/responses.py,sha256=CEDFxNK865f2XkHdBLY9gjYpxA9fZWvKuQTRG34z5O4,40895
+nrewebservices/ldbws/webservice.py,sha256=UFRA3bGzgcZ_tiQsR-JR1i9lSPqiEGjR9DJma1XW1Bw,23016
+nrewebservices-0.2.0.dist-info/LICENSE,sha256=ETYaRub1KZdorZMh6RfgSXSjDQw0vVJSatZHQdFm4ic,1391
+nrewebservices-0.2.0.dist-info/METADATA,sha256=BfORfVYHXInbXXOh01v4_mpDCvU8U8db6JzrPdWeuNo,2891
+nrewebservices-0.2.0.dist-info/WHEEL,sha256=CihQvCnsGZQBGAHLEUMf0IdA4fRduS_NBUTMgCTtvPM,110
+nrewebservices-0.2.0.dist-info/top_level.txt,sha256=-KQIwAQugf9jv6GMmXOGGlEcuQtRzqAOvPXyzehPOdU,15
+nrewebservices-0.2.0.dist-info/RECORD,,
