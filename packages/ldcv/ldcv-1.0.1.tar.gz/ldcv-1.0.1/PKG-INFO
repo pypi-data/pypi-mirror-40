@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ldcv
+Version: 1.0.1
+Summary: LangMan Console Version
+Home-page: https://github.com/leetking/ldcv
+Author: leetking
+Author-email: li_tking@163.com
+Requires-Python: >=3.0,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: lxml (>=4.2,<5.0)
+Project-URL: Repository, https://github.com/leetking/ldcv
