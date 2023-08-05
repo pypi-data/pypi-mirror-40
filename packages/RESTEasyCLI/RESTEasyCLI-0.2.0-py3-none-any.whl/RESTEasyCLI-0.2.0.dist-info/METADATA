@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: RESTEasyCLI
+Version: 0.2.0
+Summary: Handy REST API client on your terminal
+Home-page: https://github.com/rapidstack/RESTEasyCLI
+Author: Arijit Basu
+Author-email: sayanarijit@gmail.com
+License: MIT
+Download-URL: https://github.com/rapidstack/RESTEasyCLI/archive/0.2.0.tar.gz
+Keywords: REST API client CLI tool
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Description-Content-Type: text/markdown
+Requires-Dist: cliff (==2.14.0)
+Requires-Dist: PyYAML (==3.13)
+Requires-Dist: RESTEasy (==1.0.5)
+
+# RESTEasyCLI
+
+[![PyPI version](https://img.shields.io/pypi/v/RESTEasyCLI.svg)](https://pypi.org/project/RESTEasyCLI)
+[![Build Status](https://travis-ci.org/rapidstack/RESTEasyCLI.svg?branch=master)](https://travis-ci.org/rapidstack/RESTEasyCLI)
+
+Handy REST API client on your terminal
+
+[![asciicast](https://asciinema.org/a/219065.svg)](https://asciinema.org/a/219065)
+
+- [RESTEasyCLI](#resteasycli)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Help menu](#help-menu)
+    - [Initialize workspace](#initialize-workspace)
+    - [Do CRUD requests](#do-crud-requests)
+    - [Special formatting of data](#special-formatting-of-data)
+      - [List](#list)
+      - [Show](#show)
+    - [Re-do a saved request](#re-do-a-saved-request)
+    - [Most importantly fake a retuest](#most-importantly-fake-a-retuest)
+  - [External packages used](#external-packages-used)
+
+## Installation
+
+```bash
+pip install resteasycli
+
+# OR
+
+pipenv install resteasycli
+```
+
+## Usage
+
+### Help menu
+```bash
+recli help
+```
+
+### Initialize workspace
+```bash
+mkdir myworkspace
+cd myworkspace
+recli init
+# Few template files should be generated namely: auth.yml  headers.yml  saved.yml  sites.yml
+```
+
+### Do CRUD requests
+
+```bash
+recli get testing/todos
+recli post testing/todos --kwargs title=abcd userId=10
+recli put testing/todos/1 --kwargs title=abcd
+recli patch testing/todo1 --kwargs title=xyz
+recli delete testing/todos/1
+```
+
+### Special formatting of data
+
+#### List
+
+```bash
+recli list testing/todos
+```
+
+#### Show
+
+```bash
+recli show testing/todos
+```
+
+### Re-do a saved request
+
+```bash
+recli redo remind_shopping
+recli redo-list remind_shopping -m GET -k
+```
+
+### Most importantly fake a retuest
+
+```bash
+recli redo-show remind_shopping -m GET -k --fake
+```
+
+## External packages used
+
+- [cliff](https://github.com/openstack/cliff)
+- [RESTEasy](https://github.com/rapidstack/RESTEasy)
+  - [requests](https://github.com/requests/requests)
+
+
