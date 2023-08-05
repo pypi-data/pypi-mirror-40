@@ -1,0 +1,16 @@
+README.md
+setup.py
+chess/__init__.py
+chess/ai.py
+chess/chess.py
+chess/game.py
+chess/heuristic.py
+chess/utils.py
+chess_ai.egg-info/PKG-INFO
+chess_ai.egg-info/SOURCES.txt
+chess_ai.egg-info/dependency_links.txt
+chess_ai.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
+tests/test_ai.py
+tests/test_chess.py
