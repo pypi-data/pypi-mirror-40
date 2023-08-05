@@ -1,0 +1,12 @@
+rest_client/__init__.py,sha256=RmuOwem2-L6Ze4cSf67UksxchjlAEiDaaos90aIf5ls,5098
+rest_client/auth.py,sha256=a9BDjPUot5RC9fols_IpC5mxzyNhrPGiLibyiq1IdG0,22683
+rest_client/conf.py,sha256=blPBzzPttdmS__5Y2JEWcbGJLBbdi7HViMU7ZxGeBIU,18019
+rest_client/exception.py,sha256=VEHXgYnE2QZURBMwPOkgPxSHIpxjiVRGodZ4gbi7p6k,3315
+rest_client/resources.py,sha256=JUNWFbDnojlJTHcMf2YrU7n-bDdV-sHxDU0G2El0-RM,16236
+rest_client/utils.py,sha256=Oqagczhc-2OaTWZsajENZg_F-i9jWXamaTnabRI7yv0,613
+rest_client/validator.py,sha256=fYEiNgLVqsmQ2_2WM1_kNjmduaEXQd9R4MbFIT4ijOc,15853
+qrest-2.3.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+qrest-2.3.5.dist-info/METADATA,sha256=j9U_BpZzM2NFAA9_kuhDwwdOIyIVKNNVwnHQ2DuL_E4,1349
+qrest-2.3.5.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+qrest-2.3.5.dist-info/top_level.txt,sha256=Xtt7a6hxIYqhODURaKH0LlQhRJ4VXsrKocFdkzTKfKg,12
+qrest-2.3.5.dist-info/RECORD,,
