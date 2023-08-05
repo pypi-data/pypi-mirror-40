@@ -1,0 +1,3 @@
+[console_scripts]
+rnaseqhs = rnaseqhs.command_line:main
+
