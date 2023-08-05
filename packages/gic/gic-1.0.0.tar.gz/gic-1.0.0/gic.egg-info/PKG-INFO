@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gic
+Version: 1.0.0
+Summary: Group Image Compressor (GIC)
+Home-page: https://github.com/poyynt
+Author: Parsa Torbati
+Author-email: parsa@programmer.net
+License: UNKNOWN
+Description: An image compressor that compresses all images in the working directory.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
