@@ -1,0 +1,17 @@
+HISTORY.rst
+MANIFEST.in
+README.md
+kerashistoryplot.png
+setup.cfg
+setup.py
+kerashistoryplot/__init__.py
+kerashistoryplot/callbacks.py
+kerashistoryplot/data.py
+kerashistoryplot/plot.py
+kerashistoryplot.egg-info/PKG-INFO
+kerashistoryplot.egg-info/SOURCES.txt
+kerashistoryplot.egg-info/dependency_links.txt
+kerashistoryplot.egg-info/entry_points.txt
+kerashistoryplot.egg-info/not-zip-safe
+kerashistoryplot.egg-info/requires.txt
+kerashistoryplot.egg-info/top_level.txt
