@@ -1,0 +1,10 @@
+srmap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+srmap/actor.py,sha256=6AiHHElsWkl9kDK0CPYu7qdTjaJzl7e4rPQhNgAFy4A,1999
+srmap/level.py,sha256=OQvIvXWmoQ7ikHjB-IvQtFOPmOhCOa4ziQnJEjjaZNc,6208
+srmap/property.py,sha256=mzg4MW8ghvLNDtMilD9qKGPrsdv6J8fE0tKXDakOHlM,111
+srmap/tilemap.py,sha256=Psw71rSOoKtyUWVgOni3PA_FN6lmrP4EsA1OKfZWPfY,1169
+srmap-0.0.2.dist-info/LICENSE,sha256=_-8lLITvIgjF6x3i7WiQmq9ug1WosnRDGi3gMad83fw,1078
+srmap-0.0.2.dist-info/METADATA,sha256=O0LzNjEO4Yf1xmM4CDDcnP4N8bxivexQTFy74Lokltc,973
+srmap-0.0.2.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+srmap-0.0.2.dist-info/top_level.txt,sha256=lP4wBX2kByA_UM3hMPZtfOc2DD7k1PHj96xXQPA5Esw,6
+srmap-0.0.2.dist-info/RECORD,,
