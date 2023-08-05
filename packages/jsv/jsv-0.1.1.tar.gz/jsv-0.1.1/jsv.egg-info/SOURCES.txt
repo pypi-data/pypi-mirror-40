@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+jsv/__init__.py
+jsv/__version__.py
+jsv/template.py
+jsv/template_io.py
+jsv.egg-info/PKG-INFO
+jsv.egg-info/SOURCES.txt
+jsv.egg-info/dependency_links.txt
+jsv.egg-info/top_level.txt
+jsv.egg-info/zip-safe
+test/test_io.py
+test/test_template.py
