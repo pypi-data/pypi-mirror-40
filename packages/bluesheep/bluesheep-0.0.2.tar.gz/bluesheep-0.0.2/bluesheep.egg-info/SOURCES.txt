@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bluesheep/__init__.py
+bluesheep.egg-info/PKG-INFO
+bluesheep.egg-info/SOURCES.txt
+bluesheep.egg-info/dependency_links.txt
+bluesheep.egg-info/not-zip-safe
+bluesheep.egg-info/top_level.txt
