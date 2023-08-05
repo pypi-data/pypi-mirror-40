@@ -1,0 +1,23 @@
+A tool to assist you in managing the assets used in your Godot projects.
+
+## How To Install
+Please see the [Quick Setup] guide in the [Wiki](https://gitlab.com/godot-stuff/gs-project-manager/wikis/home).
+
+## How To Use
+The Wiki has more examples, but in general this is what you do.
+```base
+> gspm new test-project
+Project test-project has been created
+
+> cd test-project 
+> gspm Install
+Project assets have been Installed.
+
+> gspm edit 
+
+> gspm run 
+
+```
+
+## How To Contribute
+
