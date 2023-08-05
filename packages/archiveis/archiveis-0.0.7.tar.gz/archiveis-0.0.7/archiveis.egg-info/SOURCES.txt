@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+archiveis/__init__.py
+archiveis/api.py
+archiveis.egg-info/PKG-INFO
+archiveis.egg-info/SOURCES.txt
+archiveis.egg-info/dependency_links.txt
+archiveis.egg-info/entry_points.txt
+archiveis.egg-info/requires.txt
+archiveis.egg-info/top_level.txt
