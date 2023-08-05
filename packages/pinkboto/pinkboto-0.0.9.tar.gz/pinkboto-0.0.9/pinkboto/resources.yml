@@ -1,0 +1,160 @@
+# EC2Reservatio
+
+ec2_instance:
+  client: ec2
+  list:
+    method: describe_instances
+    property: Reservations.Instances
+
+ec2_image:
+  client: ec2
+  list:
+    method: describe_images
+    parameters:
+      - ExecutableUsers
+      - Filters
+      - ImageIds
+      - Owners
+      - DryRun
+    property: Images
+
+ec2_security_group:
+  client: ec2
+  list:
+    method: describe_security_groups
+    parameters:
+      - Filters
+      - GroupIds
+      - GroupNames
+      - DryRun
+    property: SecurityGroups
+    key: GroupName
+    pagination_field: NextToken
+    pagination_method_parameter: NextToken
+
+ec2_network_interface:
+  client: ec2
+  list:
+    method: describe_network_interfaces
+    parameters:
+      - Filters
+      - DryRun
+      - NetworkInterfaceIds
+    property: NetworkInterfaces
+    key: NetworkInterfaceId
+    pagination_field: NextToken
+    pagination_method_parameter: NextToken
+
+# RDS
+
+rds_instance:
+  client: rds
+  list:
+    method: describe_db_instances
+    property: DBInstances
+
+# Cloudwatch
+
+cloudwatch_metric_alarm:
+  client: cloudwatch
+  list:
+    method: describe_alarms
+    property: MetricAlarms
+    key: AlarmName
+    pagination_field: NextToken
+    pagination_method_parameter: NextToken
+  resource:
+    method: Alarm
+  delete:
+    method: delete
+
+cloudwatch_alarms_history:
+  client: cloudwatch
+  list:
+    method: describe_alarm_history
+    parameters:
+      - AlarmName
+      - HistoryItemType
+      - StartDate
+      - EndDate
+    pagination_method_parameter: NextToken
+    pagination_field: NextToken
+    property: AlarmHistoryItems
+
+# Cloudwatch Logs
+
+cloudwatch_log_groups:
+  client: logs
+  list:
+    method: describe_log_groups
+    property: logGroups
+    pagination_field: nextToken
+    pagination_method_parameter: nextToken
+    parameters:
+      - logGroupNamePrefix
+
+cloudwatch_log_streams:
+  client: logs
+  list:
+    method: describe_log_streams
+    parameters:
+      - logGroupName
+      - logStreamNamePrefix
+      - orderBy
+      - descending
+    pagination_method_parameter: nextToken
+    pagination_field: nextToken
+    property: logStreams
+
+cloudwatch_log_events:
+  client: logs
+  list:
+    method: get_log_events
+    parameters:
+      - logGroupName
+      - logStreamName
+      - startTime
+      - endTime
+      - startFromHead
+    pagination_method_parameter: nextToken
+    pagination_field: nextForwardToken
+    property: events
+
+cloudwatch_export_tasks:
+  client: logs
+  list:
+    method: describe_export_tasks
+    parameters:
+      - taskId
+      - statusCode
+      - limit
+    pagination_method_parameter: nextToken
+    pagination_field: nextToken
+    property: exportTasks
+
+# Route 53
+
+route53_record:
+  client: route53
+  list:
+    method: list_resource_record_sets
+    property: ResourceRecordSets
+    parameters:
+      - HostedZoneId
+      - StartRecordName
+      - StartRecordType
+      - StartRecordIdentifier
+      - MaxItems
+    pagination_field: NextRecordName
+    pagination_method_parameter: StartRecordName
+
+
+iam_user:
+  client: iam
+  list:
+    method: list_users
+    parameters:
+      - PathPrefix
+      - Marker
+      - MaxItems
+    property: Users
