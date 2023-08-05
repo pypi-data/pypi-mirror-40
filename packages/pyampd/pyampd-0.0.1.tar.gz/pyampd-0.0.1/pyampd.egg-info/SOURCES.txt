@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyampd/__init__.py
+pyampd/ampd.py
+pyampd.egg-info/PKG-INFO
+pyampd.egg-info/SOURCES.txt
+pyampd.egg-info/dependency_links.txt
+pyampd.egg-info/entry_points.txt
+pyampd.egg-info/requires.txt
+pyampd.egg-info/top_level.txt
