@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: qibuild
+Version: 3.12
+Summary: The Meta Build Framework
+Home-page: http://doc.aldebaran.com/qibuild
+Author: SoftBank Robotics
+Author-email: qibuild-dev@aldebaran-robotics.com
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: six (>=1.11)
+Requires-Dist: sphinx (<=1.3.1)
+Requires-Dist: sphinx-intl (<=0.9.5)
+Requires-Dist: tabulate (>=0.8)
+Requires-Dist: virtualenv (>=16)
+
+UNKNOWN
+
+
