@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: scrapy-scylla-proxies
+Version: 0.1.4.0
+Summary: Scrapy-Scylla Proxies: random proxy middleware for Scrapy
+Home-page: https://github.com/kevinglasson/scrapy-scylla-proxies.git
+Author: Kevin Glasson
+Author-email: kevinglasson+scrapyscylla@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
