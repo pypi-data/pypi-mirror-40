@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: yata
+Version: 0.0.1
+Summary: Data loader for deep learning
+Home-page: https://github.com/yxonic/ydata
+Author: Yu Yin
+Author-email: yxonic@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: image
+Provides-Extra: torch
+Provides-Extra: numpy
+Requires-Dist: pandas
+Requires-Dist: six
+Provides-Extra: image
+Requires-Dist: pillow; extra == 'image'
+Provides-Extra: numpy
+Requires-Dist: numpy; extra == 'numpy'
+Provides-Extra: torch
+Requires-Dist: torch; extra == 'torch'
+
+UNKNOWN
+
+
