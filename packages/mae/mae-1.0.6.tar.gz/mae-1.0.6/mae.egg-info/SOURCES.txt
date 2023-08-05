@@ -1,0 +1,11 @@
+README.md
+setup.py
+mae/__init__.py
+mae/cli.py
+mae/mae.py
+mae.egg-info/PKG-INFO
+mae.egg-info/SOURCES.txt
+mae.egg-info/dependency_links.txt
+mae.egg-info/entry_points.txt
+mae.egg-info/requires.txt
+mae.egg-info/top_level.txt
