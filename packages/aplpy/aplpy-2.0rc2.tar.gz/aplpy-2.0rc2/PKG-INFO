@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aplpy
+Version: 2.0rc2
+Summary: The Astronomical Plotting Library in Python
+Home-page: http://aplpy.github.io
+Author: Thomas Robitaille and Eli Bressert
+Author-email: thomas.robitaille@gmail.com, elibre@users.sourceforge.net
+License: MIT
+Description: The Astronomical Plotting Library in Python
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Provides-Extra: docs
+Provides-Extra: all
+Provides-Extra: test
