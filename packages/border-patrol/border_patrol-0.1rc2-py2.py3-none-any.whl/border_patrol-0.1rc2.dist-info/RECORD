@@ -1,0 +1,12 @@
+border_patrol/__init__.py,sha256=faoXNXbTWp4Xg_Aqqjb1UNc3uwypRpbM1EqqmRmZBPE,5115
+border_patrol/with_log_debug.py,sha256=lavf4EKKFRU5CkhQKEv67w_ZlP2RD3NSlyLZsjRGHbo,93
+border_patrol/with_log_error.py,sha256=qAZODZ5e18UbKQSm0ZB9u5OXxEDD0Hf_ZyIpNsFwy8I,93
+border_patrol/with_log_info.py,sha256=-q5iNnSG_5jK3IG1ueM_Kpw4xIez1eTSamdEQSZiPyA,92
+border_patrol/with_log_warning.py,sha256=ZwCYFpOo2t-noO5y2DunXqj7cJT_f3tTh25ZJCx8v_k,95
+border_patrol/with_print.py,sha256=zwa-McPN_oLWbA2MoGMPnpizk6hCRcOUnNN2dvsbK00,70
+border_patrol-0.1rc2.dist-info/AUTHORS.rst,sha256=HqF5QBv4I7DQ8xcRLr7XXeQ7h2wxlG2SeXKL1l8rKE0,119
+border_patrol-0.1rc2.dist-info/LICENSE.txt,sha256=Wdg4lZqfMFh5nu-JRES79xgTOF4PEXBFWuaDBNj4ToQ,1082
+border_patrol-0.1rc2.dist-info/METADATA,sha256=TqT_o7BprE7p_L5D6CQARZNKQh5ft4LNOb61b7-Co30,4076
+border_patrol-0.1rc2.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+border_patrol-0.1rc2.dist-info/top_level.txt,sha256=iT4Nrwu3OBu-fyImpbkV_xLxah-vj6Dhy8uji0o954Q,14
+border_patrol-0.1rc2.dist-info/RECORD,,
