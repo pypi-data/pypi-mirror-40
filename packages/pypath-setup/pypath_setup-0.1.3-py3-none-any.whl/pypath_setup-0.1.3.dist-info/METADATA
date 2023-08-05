@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pypath-setup
+Version: 0.1.3
+Summary: Start processes by setting PYTHONPATH to point to some virtualenv
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Paul Maréchal
+Author-email: marechap.info@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
