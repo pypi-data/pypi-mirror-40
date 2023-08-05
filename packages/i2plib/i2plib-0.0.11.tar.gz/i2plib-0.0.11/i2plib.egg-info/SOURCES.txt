@@ -1,0 +1,14 @@
+README.rst
+setup.py
+i2plib/__init__.py
+i2plib/__version__.py
+i2plib/aiosam.py
+i2plib/exceptions.py
+i2plib/sam.py
+i2plib/tunnel.py
+i2plib/utils.py
+i2plib.egg-info/PKG-INFO
+i2plib.egg-info/SOURCES.txt
+i2plib.egg-info/dependency_links.txt
+i2plib.egg-info/top_level.txt
+test/test_address.py
