@@ -1,0 +1,11 @@
+plane/__init__.py,sha256=LPNcNQXtSWr7wPkikWRTl045NWnoPaBvrBVOtuN3QSI,415
+plane/func.py,sha256=wBbLB1u3-vHrJp1l12cwXl3vaQc6_WU4ht-7JU40uAo,2233
+plane/main.py,sha256=wBbLB1u3-vHrJp1l12cwXl3vaQc6_WU4ht-7JU40uAo,2233
+plane/pattern.py,sha256=c9Ggl1GIKaEA5xVMqS3LANOL-IOEQLyGL58NOnf6uLo,4829
+plane/pipeline.py,sha256=yZnmscjprwqVkb92uhtYk6JuWVqfRGkiqfWqZ6MvB2s,1779
+plane/plane.py,sha256=bP2CPXOjVJFkfzUKzBpJBRQSM8eoKClRnVRgygEkOKY,3443
+plane/punctuation.py,sha256=IG6DqHlJ-zYY_DlHwMYrq9BywzprvLLKw2Ffzb09yF8,845
+plane-0.1.4.dist-info/METADATA,sha256=kluoqnmCpH_HAWKdaaY_yIOFCzQIuytwC64cL08yJvE,4165
+plane-0.1.4.dist-info/RECORD,,
+plane-0.1.4.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+plane-0.1.4.dist-info/top_level.txt,sha256=F6NlRhRKo9lhGZucwldfimYyXWvC2_rmUqyi-GKLz2g,6
