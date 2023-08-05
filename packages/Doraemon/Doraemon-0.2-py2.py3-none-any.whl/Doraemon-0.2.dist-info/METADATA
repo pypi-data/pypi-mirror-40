@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: Doraemon
+Version: 0.2
+Summary: A toolkit of Doraemon
+Home-page: https://github.com/131250208/Doraemon
+Author: Andy Wong
+Author-email: wychengpublic@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+Requires-Dist: requests
+
+
+
+Doraemon is a toolkit including frequently used code. It is still in development...
+# Installation
+```bash
+pip install Doraemon
+```
+
+# Features
+
+# Example
+
+# Note
+
+
