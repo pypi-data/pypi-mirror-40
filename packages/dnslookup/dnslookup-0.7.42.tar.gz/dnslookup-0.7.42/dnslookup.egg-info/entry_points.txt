@@ -1,0 +1,3 @@
+[console_scripts]
+dnslookup = dnslookup.__main__:main
+
