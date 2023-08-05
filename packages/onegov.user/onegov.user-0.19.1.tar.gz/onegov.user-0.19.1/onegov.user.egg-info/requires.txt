@@ -1,0 +1,14 @@
+click
+furl
+itsdangerous
+onegov.core>=0.50.0
+onegov.form
+sqlalchemy
+
+[test]
+coverage
+freezegun
+more.itsdangerous
+onegov_testing
+pyyaml
+webtest
