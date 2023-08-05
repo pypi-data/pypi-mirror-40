@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+jobdiary/__init__.py
+jobdiary/__main__.py
+jobdiary/core.py
+jobdiary/texts.py
+jobdiary.egg-info/PKG-INFO
+jobdiary.egg-info/SOURCES.txt
+jobdiary.egg-info/dependency_links.txt
+jobdiary.egg-info/requires.txt
+jobdiary.egg-info/top_level.txt
