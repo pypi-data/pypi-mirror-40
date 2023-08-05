@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.10.0)
+
+if (CMAKE_CL_64 OR ${CMAKE_GENERATOR} MATCHES "Win64")
+    #64bit
+    set(BUILD_CPU_ARCHITECTURE x64)
+else()
+    #32it
+    set(BUILD_CPU_ARCHITECTURE x86)
+endif()
+set(PLATFORM "linux")
+
+MESSAGE(STATUS "BUILD_CPU_ARCHITECTURE = ${BUILD_CPU_ARCHITECTURE}")
+MESSAGE(STATUS "PLATFORM = ${PLATFORM}")
+
+function(__build_project)
+endfunction()
+
+add_definitions(-DPLATFORM_LINUX=1)
+
+set(STATIC_LIBRARY_SUFFIX "so")
+set(RUNTIME_LIBRARY_SUFFIX "a")
+set(LINK_LIBRARY_SUFFIX "so")
