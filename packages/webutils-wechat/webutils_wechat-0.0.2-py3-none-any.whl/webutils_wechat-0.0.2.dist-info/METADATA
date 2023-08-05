@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: webutils-wechat
+Version: 0.0.2
+Summary: Simple utils for Restful-web-wechat
+Home-page: https://gitee.com/xxmeng/webutils-wechat
+Author: SimonQ
+Author-email: simonq.mq@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: flask (==1.0.2)
+Requires-Dist: flask-restplus (==0.12.1)
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: redis (==2.10.6)
+Requires-Dist: msgpack (==0.5.6)
+
+Simple utils for Restful-web-wechat
+
+
