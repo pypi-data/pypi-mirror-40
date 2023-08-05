@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyteams/__init__.py
+pyteams/main.py
+pyteams/webhooks.py
+pyteams.egg-info/PKG-INFO
+pyteams.egg-info/SOURCES.txt
+pyteams.egg-info/dependency_links.txt
+pyteams.egg-info/entry_points.txt
+pyteams.egg-info/requires.txt
+pyteams.egg-info/top_level.txt
+pyteams.egg-info/zip-safe
