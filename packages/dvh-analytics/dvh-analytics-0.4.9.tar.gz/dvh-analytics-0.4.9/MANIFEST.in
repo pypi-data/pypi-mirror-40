@@ -1,0 +1,14 @@
+include install_notes.md
+include LICENSE
+include CHANGELOG.md
+include README.md
+include setup.py
+include *.pdf
+recursive-include dvh/dvh_bokeh_models/ *
+include dvh/preferences/create_tables.sql
+include dvh/preferences/institutional.roi
+include dvh/preferences/physician_BBM.roi
+include dvh/static/images/logo.jpg
+include dvh/templates/index.html
+recursive-include dvh/tools/ *
+include dvh/*.py
