@@ -1,0 +1,11 @@
+-r requirements.txt
+setuptools
+mock
+tox
+pytest
+pytest-cov
+vcrpy
+pycrypto
+coveralls
+tox-travis
+pbr
