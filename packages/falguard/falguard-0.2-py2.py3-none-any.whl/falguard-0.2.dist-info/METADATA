@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: falguard
+Version: 0.2
+Summary: Falcon requests validation against OpenAPI (Swagger) schema
+Home-page: https://github.com/gwaramadze/falguard
+Author: Remy Gwaramadze
+Author-email: remy@gwaramadze.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: falcon (<=2.0.0,>=1.1.0)
+Requires-Dist: bravado-core (<=6.0.0,>=4.6.0)
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-flake8 ; extra == 'tests'
+Requires-Dist: webtest ; extra == 'tests'
+
+Falguard |Build Status|
+=======================
+
+Falguard is a Python library that provides request validation helpers for
+`Falcon <https://falconframework.org/>`_ web framework. Falguard relies on Yelp's `bravado-core <https://github.com/Yelp/bravado-core>`_ library.
+
+Features
+--------
+* Validation of `OpenAPI (Swagger) <http://swagger.io/specification/>`_ schema
+* Error serialization compliant with `JSON:API <http://jsonapi.org/format/#error-objects>`_ specification
+* Validator may be used either as a hook or a middleware component
+
+Installation
+------------
+.. code:: bash
+
+    $ pip install falguard
+
+Usage
+-----
+Instantiate Validator with the path to OpenAPI specification...
+
+.. code:: python
+
+    import falguard
+
+    validator = falguard.Validator('spec.json')
+
+
+...and use it as the hook on the responder...
+
+.. code:: python
+
+    class Resource:
+
+        @falcon.before(validator)
+        def on_get(self, request, response, **validated):
+            pass
+
+
+...or the hook on the whole resource...
+
+.. code:: python
+
+    @falcon.before(validator)
+    class Resource:
+        pass
+
+
+...or globally, as the middleware component.
+
+.. code:: python
+
+    import falcon
+
+    api = falcon.API(middleware=validator)
+
+
+All validated parameters (path, query, body) are injected back to the responder
+so it MUST accept relevant number of arguments, eg.
+
+.. code:: python
+
+    class Resource:
+
+        def on_put(self, request, response, resource_id, data):
+            pass
+
+        def on_post(self, request, response, **validated):
+            pass
+
+.. |Build Status| image:: https://travis-ci.org/gwaramadze/falguard.svg
+   :target: https://travis-ci.org/gwaramadze/falguard
+
