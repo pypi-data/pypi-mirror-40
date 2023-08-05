@@ -1,0 +1,14 @@
+click
+click-plugins
+pyperclip
+
+[dev]
+bumpversion
+
+[test]
+pytest
+coverage
+codecov
+
+[test:python_version < "3.3"]
+mock
