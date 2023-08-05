@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: koni
+Version: 0.1.0
+Summary: Koni Machine Learning Environment
+Home-page: http://github.com/koni-ml/koni
+Author: Markus Ecker
+Author-email: markus.ecker@gmail.com
+License: MIT
+Description: # Koni
+Keywords: ai deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
