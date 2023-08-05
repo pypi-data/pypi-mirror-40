@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: rmux
+Version: 0.0.0
+Summary: remux allows you to run your local project on multiple remote machines in paparallel
+Home-page: http://www.openstack.org/
+Author: Sorin Sbarnea
+Author-email: sorin.sbarnea@gmail.com
+License: UNKNOWN
+Description: ===============================
+        rmux
+        ===============================
+        
+        ``rmux`` allows you to run your local project on multiple remote machines in
+        parallel.
+        
+        The command names comes from remote-tmux as it allows to multiplex commands
+        on multiple remote machienes, syncronized.
+        
+        The original purpose was to allow testing local changes to a project on other
+        platforms, like running tox on another distribution.
+        
+        To use it you need to define the list of remote hosts like:
+        ```
+        export HOSTS="node1 node2"
+        ```
+        If you fail to define the ``HOSTS`` variable the tool will default to localhost
+        but it will still use its logic of doing a rsync and running commands using
+        tmux and ssh.
+        
+        * Free software: Apache license
+        * Source: https://github.com/pycontribs/rmux
+        * Bugs: https://github.com/pycontribs/rmux
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
