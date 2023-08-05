@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-exclude swagger_ui/static/
+include swagger_ui/static/swagger-ui/dist/swagger-ui-bundle.js
+include swagger_ui/static/swagger-ui/dist/swagger-ui-standalone-preset.js
+recursive-include swagger_ui/templates *
