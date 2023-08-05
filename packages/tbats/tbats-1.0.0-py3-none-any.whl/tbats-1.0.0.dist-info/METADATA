@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tbats
+Version: 1.0.0
+Summary: BATS and TBATS for time series forecasting
+Home-page: https://github.com/intive-DataScience/tbats
+Author: Grzegorz Skorupa (intive)
+Author-email: grzegorz.skorupa@intive.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pmdarima
+Requires-Dist: sklearn
+Provides-Extra: dev
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: rpy2 ; extra == 'dev'
+
+UNKNOWN
+
+
