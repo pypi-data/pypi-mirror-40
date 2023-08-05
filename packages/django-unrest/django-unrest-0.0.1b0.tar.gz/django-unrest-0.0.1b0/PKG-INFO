@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: django-unrest
+Version: 0.0.1b0
+Summary: A collection of tools for django
+Home-page: https://github.com/chriscauley/django-unrest
+Author: Chris Cauley
+Author-email: chris@lablackey.com
+License: MIT
+Description: UNKNOWN
+Keywords: utils,django
+Platform: UNKNOWN

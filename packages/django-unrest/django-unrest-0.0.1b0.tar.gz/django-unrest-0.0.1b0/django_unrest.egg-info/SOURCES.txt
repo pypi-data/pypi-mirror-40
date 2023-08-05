@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.cfg
+setup.py
+django_unrest.egg-info/PKG-INFO
+django_unrest.egg-info/SOURCES.txt
+django_unrest.egg-info/dependency_links.txt
+django_unrest.egg-info/top_level.txt
+unrest/__init__.py
+unrest/admin.py
+unrest/apps.py
+unrest/managers.py
+unrest/models.py
+unrest/tests.py
+unrest/views.py
