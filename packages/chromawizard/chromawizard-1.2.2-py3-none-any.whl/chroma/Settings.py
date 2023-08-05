@@ -1,0 +1,5 @@
+__version__ = "1.2.2"
+__date__ = "2016-09-30"
+__updated__ = "2019-01-03"
+__author__ = "Norbert Auer"
+__email__ = "norbert.auer@boku.ac.at"
