@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pywubi
+Version: 0.0.1
+Summary: 汉字五笔转换模块/工具.
+Home-page: https://github.com/sfyc23/python-wubi
+Author: sfyc23
+Author-email: sfyc23@gmail.com
+License: MIT
+Keywords: wubi,五笔
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+
+汉字五笔转换工具（Python 版）
+=============================
+
+
