@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: {{ created }}
+
+====== {{ title }} ======
+
+{%- if (tags is defined) and tags %}
+
+Tags: {{ tags }}
+{%- endif %}
+
+{{ content }}
