@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "benji.fullname" . }}
+data:
+  benji.yaml: |
+{{ .Values.benji.configuration | indent 4 }}
+  crontab: |
+{{ .Values.benji.crontab | indent 4 }}
