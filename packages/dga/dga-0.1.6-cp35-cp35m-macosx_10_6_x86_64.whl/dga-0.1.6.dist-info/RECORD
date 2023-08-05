@@ -1,0 +1,11 @@
+dga/__init__.py,sha256=6f6wmQxwavilFR5EyqkwrCVn0cYlSaCckUHK5v_w4LI,176
+dga/_gene.cpython-35m-darwin.so,sha256=zcXB7QsxLxi42iIoG9dxwPtFSCxSPHIEvjss1s86Kbo,36456
+dga/_gene.pyx,sha256=p4P9gSn4F2W7B6dfxJYASEsdQMWukr_GumBK9rVs5hg,403
+dga/dga.py,sha256=-bMaAaw8Xlumgwk4h2I8dlSv4ocLpeyAc7WxoFL4Tcg,7993
+dga/gene.py,sha256=VxXM_XNgcBEUNtBFnkgEE5ldjdYlHOVW4CFqxM1kWes,1795
+dga/release.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+dga/tests/test_gene.py,sha256=BK0fw5BLpk6KoqojrJAK2ov3YrHAvBQbrG3QC-Ttn1I,1305
+dga-0.1.6.dist-info/METADATA,sha256=fgzI2FZU5nJ4FdDW5Ryg6JdeTFgyz_hHEohHmBNd4L8,412
+dga-0.1.6.dist-info/RECORD,,
+dga-0.1.6.dist-info/WHEEL,sha256=Wb7Hz5f1ZPX9lyp7AsMYi4emWBp_M3B2HGQFW5I027E,110
+dga-0.1.6.dist-info/top_level.txt,sha256=RbriNATBqvCPUwti4RxHc-297DLabKR0BPdUjbNJM40,4
