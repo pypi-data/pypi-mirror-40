@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: cs.tty
+Version: 20190101
+Summary: Functions related to terminals.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: Functions related to terminals.
+        
+        ## Function `setupterm(*args)`
+        
+        Run curses.setupterm, needed to be able to use the status line.
+        Uses a global flag to avoid doing this twice.
+        
+        ## Function `statusline(text, fd=None, reverse=False, xpos=None, ypos=None)`
+        
+        Update the status line.
+        
+        ## Function `statusline_bs(text, reverse=False, xpos=None, ypos=None)`
+        
+        Return a byte string to update the status line.
+        
+        ## Function `ttysize(fd)`
+        
+        Return a (rows, columns) tuple for the specified file descriptor.
+        
+        If the window size cannot be determined, None will be returned
+        for either or both of rows and columns.
+        
+        This function relies on the UNIX `stty` command.
+        
+        ## Class `WinSize`
+        
+        MRO: `builtins.tuple`  
+        WinSize(rows, columns)
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Terminals
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
