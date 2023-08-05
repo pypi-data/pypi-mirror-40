@@ -1,0 +1,12 @@
+requests
+click
+colorama
+pick
+google-api-python-client
+oauth2client
+prettytable
+httplib2
+pyfiglet
+
+[:platform_system == "Windows"]
+windows-curses
