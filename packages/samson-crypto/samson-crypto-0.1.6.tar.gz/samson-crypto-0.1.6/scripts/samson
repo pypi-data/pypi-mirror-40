@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ $# -eq 0 ]]; then
+    pypy3 -c "import samson" > /dev/null
+    if [[ $? -eq 0 ]]; then
+        pypy3 `which samson-py`
+    else
+        samson-py
+    fi
+else
+    samson-py "$@"
+fi
