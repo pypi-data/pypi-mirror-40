@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: blog-image-auto-syncer
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/vanjor/blog_image_auto_syncer
+Author: vanjor
+Author-email: vanjor2008@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# BlogImageAutoSyncer
+Automatic download all images in your blog and sync to Github target project
+
+
