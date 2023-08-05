@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: swel
+Version: 0.0.1
+Summary: SWEL
+Home-page: https://github.com/noah-de/swel
+Author: Noah Spahn
+Author-email: noah.de@gmail.com
+License: Apache License, Version 2.0
+Download-URL: http://pypi.python.org/pypi/swel/
+Keywords: NOAA,NBDC,oceanography,earth science,waves
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: beautifulsoup4
+Requires-Dist: future
+Requires-Dist: requests
+Requires-Dist: configparser
+
+A python utility
+
+
