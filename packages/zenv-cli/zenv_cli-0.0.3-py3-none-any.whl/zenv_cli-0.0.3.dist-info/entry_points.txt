@@ -1,0 +1,4 @@
+[console_scripts]
+ze=zenv.cli:call
+zenv=zenv.cli:cli
+
