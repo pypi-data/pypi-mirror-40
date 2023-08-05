@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: NuO
+Version: 0.1.5
+Summary: Static website templating engine, Generates HTML pages using .nuo template files and data in JSON files.
+Home-page: https://github.com/akshitgrover/NuO
+Author: Akshit Grover
+Author-email: akshit.grover2016@gmail.com
+License: LICENSE
+Description: ===
+        NuO
+        ===
+        .. image:: https://travis-ci.org/akshitgrover/NuO.svg?branch=master
+            :target: https://travis-ci.org/akshitgrover/NuO
+        .. image:: http://hits.dwyl.io/akshitgrover/NuO.svg
+            :target: http://hits.dwyl.io/akshitgrover/NuO
+        
+        Static website templating engine, Generates HTML pages using .nuo template files and data in JSON files.
+        
+        Installation
+        ============
+        ::
+        
+            `pip install nuo`
+        
+Keywords: static html website parser nuo
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
