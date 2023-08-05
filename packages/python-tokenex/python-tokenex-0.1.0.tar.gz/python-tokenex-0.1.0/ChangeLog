@@ -1,0 +1,39 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* Updated README
+* Corrected TokenEx branding, added exception class
+* Readme file update
+
+0.0.2
+-----
+
+* Put stages in travis config
+* Put stages in travis config
+* Fix travis config
+
+0.0.1
+-----
+
+* Got packaging working
+* Typo in readme
+* Working on coveralls config
+* Working on coveralls config
+* Working on coveralls config
+* Working on coveralls config
+* Working on coveralls config
+* Working on coveralls config
+* Working on coveralls config
+* Working on coveralls config
+* Working on travis configs
+* Working on travis configs
+* Working on travis configs
+* Working on travis configs
+* Working on travis configs
+* Added tokenize\_encrypted tests
+* Added tokenize\_encrypted tests
+* Added Unit Tests and VCRpy Update script
+* Initial Commit

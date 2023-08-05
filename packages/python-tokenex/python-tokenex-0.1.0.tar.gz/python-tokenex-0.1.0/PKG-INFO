@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: python-tokenex
+Version: 0.1.0
+Summary: Python Module and CLI for interacting with TokenEx services
+Home-page: https://github.com/tablethotels/python-tokenex
+Author: Tablet, Inc
+Author-email: ops@tablethotels.com
+License: MIT License
+Description: Python Module and CLI for interacting with TokenEx services
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
