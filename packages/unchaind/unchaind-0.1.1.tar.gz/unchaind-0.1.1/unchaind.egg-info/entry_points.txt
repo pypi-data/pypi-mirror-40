@@ -1,0 +1,3 @@
+[console_scripts]
+unchaind = unchaind.command:main
+
