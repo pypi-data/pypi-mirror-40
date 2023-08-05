@@ -1,0 +1,4 @@
+
+            [console_scripts]
+            django_cos=django_cos.bin.django_cos:main
+    
