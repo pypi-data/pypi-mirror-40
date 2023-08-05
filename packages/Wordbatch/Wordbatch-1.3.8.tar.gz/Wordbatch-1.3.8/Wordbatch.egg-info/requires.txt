@@ -1,0 +1,15 @@
+cython
+scikit-learn
+python-Levenshtein
+py-lz4framed
+randomgen
+numpy
+scipy
+pandas
+dill
+
+[dev]
+nltk
+textblob
+keras
+pyspark
