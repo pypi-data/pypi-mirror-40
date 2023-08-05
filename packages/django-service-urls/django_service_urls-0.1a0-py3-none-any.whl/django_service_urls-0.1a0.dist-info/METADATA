@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: django-service-urls
+Version: 0.1a0
+Summary: setting helper for django to represent databases, caches and email settings via a single string
+Home-page: https://bitbucket.org/rsalmaso/django-service-urls/
+Author: Raffaele Salmaso
+Author-email: raffele@salmaso.org
+License: BSD
+Download-URL: https://bitbucket.org/rsalmaso/django-service-urls/get/0.1a0.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# django-service-urls
+
+`django-service-urls` is a setting helper for django to represent databases, caches and email settings via a single string.
+
+This work is based on [dj-database-url](https://github.com/kennethreitz/dj-database-url) and [https://github.com/django/django/pull/8562](https://github.com/django/django/pull/8562).
+
+
