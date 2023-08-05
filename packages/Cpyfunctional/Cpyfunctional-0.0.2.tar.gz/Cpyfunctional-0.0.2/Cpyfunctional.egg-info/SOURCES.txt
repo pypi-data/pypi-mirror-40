@@ -1,0 +1,11 @@
+README.rst
+setup.py
+Cpyfunctional.egg-info/PKG-INFO
+Cpyfunctional.egg-info/SOURCES.txt
+Cpyfunctional.egg-info/dependency_links.txt
+Cpyfunctional.egg-info/not-zip-safe
+Cpyfunctional.egg-info/requires.txt
+Cpyfunctional.egg-info/top_level.txt
+cpyfunctional/__init__.py
+cpyfunctional/core.py
+cpyfunctional/cpyfunctional.py
