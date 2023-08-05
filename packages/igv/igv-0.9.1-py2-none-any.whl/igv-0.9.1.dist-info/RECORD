@@ -1,0 +1,10 @@
+igv/__init__.py,sha256=Mbjq7IHKUyTbqesEIq_8F8a3SwEb0iTBvolZJn9jBUA,505
+igv/browser.py,sha256=Vn3tfKuzvVzrNn5Vvo1OCrBAJcHnxwuxgcPmOLJg0S8,4456
+igv/comm.py,sha256=tjDFPD4_EmBDlyaXblF1BtiCq3XSLOWNToD1ZJRTv84,246
+igv/static/extension.js,sha256=rm4ozuxp9I-7bZMw7vB-vRyqwhtwO85y6ZuQOWfVnsY,4196
+igv/static/igvjs/igv.min.js,sha256=YMGMEvx7ZXuuPGB_Y4Onn2BHZOy5sFRIgsECWykYmnM,2556123
+igv-0.9.1.dist-info/LICENSE.md,sha256=DfkjtuRWWtWSgA0_Wjbb8XgXPvPCywK1lCLGYbLSSPw,1140
+igv-0.9.1.dist-info/METADATA,sha256=6bZjmEQmMaktnFcHHs463LQBPsv8NUYPGB8qYiyNAYQ,4842
+igv-0.9.1.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+igv-0.9.1.dist-info/top_level.txt,sha256=DbFdx-JTB0kzkQWtYDLXfIXfEIC-7Hi6WSzGb-c72dc,4
+igv-0.9.1.dist-info/RECORD,,
