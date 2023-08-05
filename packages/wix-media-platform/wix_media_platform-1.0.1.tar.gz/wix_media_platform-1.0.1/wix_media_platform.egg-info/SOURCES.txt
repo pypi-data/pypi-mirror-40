@@ -1,0 +1,9 @@
+README.md
+setup.py
+media_platform/__init__.py
+media_platform/media_platform_client.py
+wix_media_platform.egg-info/PKG-INFO
+wix_media_platform.egg-info/SOURCES.txt
+wix_media_platform.egg-info/dependency_links.txt
+wix_media_platform.egg-info/requires.txt
+wix_media_platform.egg-info/top_level.txt
