@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lbcapi3
+Version: 1.0.0
+Summary: Make API calls to LocalBitcoins API in python3
+Home-page: https://github.com/6ones/lbcapi3
+Author: Chidindu Ogbonna
+Author-email: UNKNOWN
+License: MIT License
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
