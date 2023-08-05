@@ -1,0 +1,40 @@
+import logging
+try:
+    from rest_framework.authtoken.models import Token
+    token_auth = True
+except:
+    token_auth = False
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
+
+
+def default_auth(private_file):
+    logger.critical(private_file.request.META['HTTP_AUTHORIZATION'])
+    parent = private_file.parent_object
+    user = private_file.request.user
+    logger.critical(user.is_authenticated)
+    if not user.is_authenticated and token_auth:
+        token_header = private_file.request.META.get(
+            'HTTP_AUTHORIZATION', False)
+        if token_header:
+            token_string = token_header.split(' ')[-1].strip()
+            logger.critical(token_string)
+            try:
+                token = Token.objects.get(key=token_string)
+                user = token.user
+            except:
+                pass
+    if parent.published:
+        return True
+    if not user.is_authenticated:
+        return False
+    if user == parent.owner:
+        return True
+    if parent.shared_with.filter(pk=user.pk).exists():
+        return True
+    if parent.collection:
+        if parent.collection.owner == user:
+            return True
+        if parent.collection.shared_with.filter(pk=user.pk).exists():
+            return True
+    return False
