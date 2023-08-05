@@ -1,0 +1,12 @@
+dbapihelper/__init__.py,sha256=XnwHXg-Od5oV9sNctxpZrxV6rZ_HN5sMlZHvVuulDog,865
+dbapihelper/__version__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+dbapihelper/connection.py,sha256=kZ2KDaOPhvOALyAXi2apPVdfImwfepZXt6eAb3GKwlI,1319
+dbapihelper/console.py,sha256=QjeMvtY-kUVQT3VOao7gBgmRC7xbdYZXzo4iTVhloXQ,1410
+dbapihelper/cursor.py,sha256=6A5lEloqHujea6ryE5PA6vC-P1XPUzYCWyLGjCe40M4,4142
+dbapihelper/exceptions.py,sha256=SpgRbLSGtoCo6TmWqcu3uZMNl4CaTTSr-Iiugo_a1kY,589
+dbapihelper/utils.py,sha256=zT769s6OG8RIPL0xdnbjwBGXUF07EH-MVXh18B5ATdw,1223
+dbapihelper-0.1.0.dist-info/LICENSE,sha256=j5tj5zoJnFv96z6exx4n94Bb3aSmFEaGxhwnrO7Pdq0,1071
+dbapihelper-0.1.0.dist-info/METADATA,sha256=YDMA2iZ0bQbnPgdvYI8kJZJNNyg0xw76wS7TvPtSyuw,1133
+dbapihelper-0.1.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+dbapihelper-0.1.0.dist-info/top_level.txt,sha256=r2fTLSuQqTS9W0n-kS1qib_3MXpy-sG0NJ95JcqbPqw,12
+dbapihelper-0.1.0.dist-info/RECORD,,
