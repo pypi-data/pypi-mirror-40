@@ -1,0 +1,15 @@
+filabel/__init__.py,sha256=PpiaRdy6aom8OpcPDowZXAH0OTATXNSzN2hrGyGLD3E,159
+filabel/__main__.py,sha256=dNS3M1aheeYzce5KCZzTYWxfmXoTxKu_9Iiol37-4XU,35
+filabel/cli.py,sha256=_e3JDSo-GAyJ435xPHpfgLVhAprhn2idY_j1HADhTLM,5328
+filabel/logic.py,sha256=wPLL9BHf2Zqu5NgZUQWl3D7JfMXk_y1zQRYAIkEJMc0,11776
+filabel/utils.py,sha256=BDS_cAlCnghWUoLLGi5pu7rraMe0Qs84LSWNGeiEvXg,315
+filabel/web.py,sha256=szVSIuteY_YdMreHY11a-otMDXmX3aMjYxqMH9CFJ_g,5400
+filabel/static/style.css,sha256=WTBJABhKArZ5zklDsLjJnbMYoW8Osm2YA_myKgK1vTw,54
+filabel/templates/infopage.html,sha256=HUUl9tzx44Ru8QPGM9ckMqUBxZEcahfRAXphJ4wtKDs,2026
+filabel/templates/layout.html,sha256=cp_2bWa3-L8XRXtAnl43J1i-T9HHYXzmfDHpD05JgWo,1666
+filabel_marekreimer-0.6.dist-info/LICENSE,sha256=uYp2PdGtxlSt50HWByDct-Vz44Qp4EL-_yA4Ue3nJOk,1087
+filabel_marekreimer-0.6.dist-info/METADATA,sha256=iUOJxrFPJf5DjOlMmh2sWtBRo9yoECpWIxtG2P9-g7A,2197
+filabel_marekreimer-0.6.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+filabel_marekreimer-0.6.dist-info/entry_points.txt,sha256=ETuK0fN2Pbtk6T-WtQt63W2NqWPfGLR08cZx2SL1sJU,41
+filabel_marekreimer-0.6.dist-info/top_level.txt,sha256=PDrTZ-wiqkvCxSWoKD35XkaIvVmMtJaycnrfDKYNThs,8
+filabel_marekreimer-0.6.dist-info/RECORD,,
