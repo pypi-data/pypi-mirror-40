@@ -1,0 +1,5 @@
+Eve>=0.4
+arrow>=0.4.2
+ciso8601<2,>=1.0.2
+elasticsearch<3.0.0,>=2.0.0
+pytz>=2015.4
