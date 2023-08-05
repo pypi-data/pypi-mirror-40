@@ -1,0 +1,5 @@
+nbformat
+
+[tests]
+pytest
+pytest-runner
