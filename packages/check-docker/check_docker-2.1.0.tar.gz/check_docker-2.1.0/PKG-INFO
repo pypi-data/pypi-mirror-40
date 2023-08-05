@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: check-docker
+Version: 2.1.0
+Summary: Nagios/NRPE compatible plugins for checking Docker based services
+Home-page: https://github.com/timdaman/check_docker
+Author: Tim Laurence
+Author-email: timdaman@gmail.com
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Networking
+Project-URL: Repository, https://github.com/timdaman/check_docker
