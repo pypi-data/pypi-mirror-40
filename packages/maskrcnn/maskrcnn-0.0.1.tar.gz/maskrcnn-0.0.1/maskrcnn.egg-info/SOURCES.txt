@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+maskrcnn/__init__.py
+maskrcnn.egg-info/PKG-INFO
+maskrcnn.egg-info/SOURCES.txt
+maskrcnn.egg-info/dependency_links.txt
+maskrcnn.egg-info/top_level.txt
