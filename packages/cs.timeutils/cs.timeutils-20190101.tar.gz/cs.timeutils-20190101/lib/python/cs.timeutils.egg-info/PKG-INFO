@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cs.timeutils
+Version: 20190101
+Summary: convenience routines for times and timing
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: Convenience routines for timing.
+        
+        ## Function `ISOtime(gmtime)`
+        
+        Produce an ISO8601 timestamp string from a UNIX time.
+        
+        ## Function `sleep(delay)`
+        
+        time.sleep() sometimes sleeps significantly less that requested.
+        This function calls time.sleep() until at least `delay` seconds have
+        elapsed, trying to be precise.
+        
+        ## Function `time_from_ISO(isodate, islocaltime=False)`
+        
+        Parse an ISO8601 date string and return seconds since the epoch.
+        If islocaltime is true convert using localtime(tm) otherwise use
+        gmtime(tm).
+        
+        ## Function `time_func(func, *args, **kw)`
+        
+        Run the supplied function and arguments.
+        Return a the elapsed time in seconds and the function's own return value.
+        
+        ## Function `tm_from_ISO(isodate)`
+        
+        Parse an ISO8601 date string and return a struct_time.
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
