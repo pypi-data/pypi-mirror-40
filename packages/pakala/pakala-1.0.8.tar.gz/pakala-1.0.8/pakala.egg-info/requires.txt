@@ -1,0 +1,7 @@
+py-evm
+claripy
+web3
+coloredlogs
+
+[test]
+mock
