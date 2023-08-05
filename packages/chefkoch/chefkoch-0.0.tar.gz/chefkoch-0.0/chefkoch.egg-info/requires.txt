@@ -1,0 +1,3 @@
+dask>=1.0.0
+six
+dask-jobqueue>=0.4.1

@@ -1,0 +1,16 @@
+.version
+LICENSE
+MANIFEST.in
+README.md
+makefile
+setup.cfg
+setup.py
+chefkoch/__init__.py
+chefkoch/version.py
+chefkoch.egg-info/PKG-INFO
+chefkoch.egg-info/SOURCES.txt
+chefkoch.egg-info/dependency_links.txt
+chefkoch.egg-info/requires.txt
+chefkoch.egg-info/top_level.txt
+doc/conf.py
+doc/index.rst
