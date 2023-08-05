@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: db_sheet
+Version: 0.1.1
+Summary: db_sheet: Using Google Spreadsheets as Database.
+Home-page: https://github.com/chowmean/DBSheet
+Author: chowmean
+Author-email: gaurav.dev.iiitm@gmail.com
+License: UNKNOWN
+Description: 
+                    db_sheet: Using Google Spreadsheets as Database.
+                
+Keywords: DBSheet, db_sheet, google spreadsheets. excel
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
