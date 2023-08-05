@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: redblackpy
+Version: 0.1.3.0
+Summary: Data structures based on red-black trees.
+Home-page: https://intuitionengineeringteam.github.io/RedBlackPy/
+Author: Solodskikh Kirill
+Author-email: hypo@intuition.engineering
+Maintainer: Intuition
+Maintainer-email: dev@intuition.engineering
+License: Apache License 2.0
+Download-URL: https://github.com/IntuitionEngineeringTeam/RedBlackPy/archive/master.zip
+Description: RedBlackPy is a light Python library that provides data structures        aimed to fast insertion, removal and self sorting to manipulating ordered data in efficient way.       The core part of the library had been written on C++ and then was wrapped in Cython.        Hope that many would find the primary data structures of this library very handy in working        with time series. One of the main feature of this structures is an access by arbitrary        key using interpolation, what makes processing of multiple non synchronized time series very simple.       All data structures based on red black trees.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
