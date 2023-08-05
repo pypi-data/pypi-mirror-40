@@ -1,0 +1,7 @@
+autopy==0.51
+requests==2.20.0
+selenium==3.11.0
+clipboard==0.0.4
+rarfile==3.0
+Pillow==3.4.2
+pyscreenshot==0.4.2
