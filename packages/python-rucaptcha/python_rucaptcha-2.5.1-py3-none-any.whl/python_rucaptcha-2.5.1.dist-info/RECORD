@@ -1,0 +1,17 @@
+python_rucaptcha/CallbackClient.py,sha256=nTupw6StMprBfABZnHcZtc99rsXlmAp-2Z-cN6UHkMU,8695
+python_rucaptcha/FunCaptcha.py,sha256=LJmbLNlFJWfjXbNDWSjju44HGc9xi8bzNLGpmzwuKHM,13257
+python_rucaptcha/ImageCaptcha.py,sha256=DovoKqCDF68UDq5-gbSDstBQx0TiB_BCBal30IuMT34,35029
+python_rucaptcha/KeyCaptcha.py,sha256=dAMlkX0Gs1kdb98GIuGkSO2KVgeG3gvsORaxSB99b7w,14986
+python_rucaptcha/ReCaptchaV2.py,sha256=8aTGCyq0ZTW4DWqkNWD2dYzJY6q5Y8GFtiNO2GwKrPk,15342
+python_rucaptcha/ReCaptchaV3.py,sha256=s_kzMMdDT2xA9bWbxHcPqPQGvQ33fcijr5YAQjHV89w,16762
+python_rucaptcha/RotateCaptcha.py,sha256=dzhiuL9aS2vGUXXa4mgdoUoM1p5mvLq0G5WFnBLM4HA,6677
+python_rucaptcha/RuCaptchaControl.py,sha256=PcmO68BNLmHXz4AixvsyytTNva_4rQPcMuZskcUMtU8,9659
+python_rucaptcha/TextCaptcha.py,sha256=jkpUhrdemr52OT1v5g4XT1MO15A25E0nPcUqcyGs8qw,12866
+python_rucaptcha/config.py,sha256=tidJg6Zgzff0_FPvB-AMJs0F8oB5_Xf_6gp80AxDUV4,1962
+python_rucaptcha/errors.py,sha256=QSFjcB9HsxiCjFI7JufCdtTpOY_MSVD3SBzxi8hLyP0,23934
+python_rucaptcha/result_handler.py,sha256=EcflkO-yIOf9Pmu3QE0wHD_2MmaOMTZD4Qa-PpZU5Js,5064
+python_rucaptcha-2.5.1.dist-info/LICENSE,sha256=dql8h4yceoMhuzlcK0TT_i-NgTFNIZsgE47Q4t3dUYI,34520
+python_rucaptcha-2.5.1.dist-info/METADATA,sha256=DiIZB8ylsAjwXI-daL6xRIjRH2K1j1hcrpy5KfgoVRU,564
+python_rucaptcha-2.5.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+python_rucaptcha-2.5.1.dist-info/top_level.txt,sha256=Eu_atEB79Y7jCsfXPcXF5N8OLt6kKVbvhuRsI1BmSWM,17
+python_rucaptcha-2.5.1.dist-info/RECORD,,
