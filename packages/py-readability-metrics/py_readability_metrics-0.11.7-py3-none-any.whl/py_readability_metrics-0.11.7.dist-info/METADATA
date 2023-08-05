@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: py-readability-metrics
+Version: 0.11.7
+Summary: Calculate readability scores. e.g. Flesch, Flesch-Kincaid, and more
+Home-page: https://github.com/cdimascio/py-readability-metrics
+Author: Carmine DiMAscio
+Author-email: cdimascio@gmail.com
+License: MIT
+Keywords: readability metrics text difficulty grade level
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: nltk
+
+# py-readabilitiy
+
+## Install
+
+coming soon...
+
+## Usage
+
+```python
+ r = Readability(text)
+ r.flesch_kincaid()
+ r.flesch()
+```
+
+## Contributing
+
+[see contributing](CONTRIBUTING.md)
+
+## License
+
+[MIT](LICENSE)
+
+
