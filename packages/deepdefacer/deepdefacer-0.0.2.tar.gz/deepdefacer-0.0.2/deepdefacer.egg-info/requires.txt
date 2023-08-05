@@ -1,0 +1,5 @@
+numpy
+keras==2.2.2
+tensorflow-gpu==1.8.0
+nilearn
+nibabel
