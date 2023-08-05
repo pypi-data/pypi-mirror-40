@@ -1,0 +1,30 @@
+Metadata-Version: 1.0
+Name: DockerDeploy
+Version: 19.10
+Summary: Docker deployment framework
+Home-page: https://github.com/lijiacaigit/docker_deploy_command
+Author: Lijiacai
+Author-email: 1050518702@qq.com
+License: MIT License
+Description: 
+        	安装部署工具
+        			pip install DockerDeploy
+        	安装docker
+        			deploy --docker-install
+        	卸载docker
+        			deploy --docker-uninstall
+        	重启docker
+        			deploy --docker-restart
+        	启动docker
+        			deploy --docker-start
+        	终止docker
+        			deploy --docker-stop
+        	查看docker基础命令
+        			deoploy --docker-command
+        	创建一个部署项目
+        			deploy --make-project 
+        				e.g deploy --make-project test
+        	查看帮助
+        			deply --help
+Keywords: docker,deploy,dockerdeploy,DockerDeploy
+Platform: any
