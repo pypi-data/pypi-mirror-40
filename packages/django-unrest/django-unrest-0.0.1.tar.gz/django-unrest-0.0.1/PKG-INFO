@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: django-unrest
+Version: 0.0.1
+Summary: A collection of tools for django
+Home-page: https://github.com/chriscauley/django-unrest
+Author: Chris Cauley
+Author-email: chris@lablackey.com
+License: GPL
+Description: Django Unrest
+        =======
+        
+        A library for quickly turning django forms into an API.
+        
+Keywords: utils,django
+Platform: UNKNOWN
