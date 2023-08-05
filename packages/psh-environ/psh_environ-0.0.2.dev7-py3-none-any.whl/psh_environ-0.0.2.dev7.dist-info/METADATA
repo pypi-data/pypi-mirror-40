@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: psh-environ
+Version: 0.0.2.dev7
+Summary: Provide environment hooks for Platform.sh projects.
+Home-page: https://github.com/demosdemon/psh-environ
+Author: Brandon LeBlanc
+Author-email: projects+psh-environ@leblanc.codes
+License: MIT
+Project-URL: Documentation, https://github.com/demosdemon/psh-environ/wiki
+Project-URL: Bug Tracker, https://github.com/demosdemon/psh-environ/issues
+Project-URL: Source Code, https://github.com/demosdemon/psh-environ#README
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: simplejson
+
+Provide environment hooks for Platform.sh projects.
+
+
