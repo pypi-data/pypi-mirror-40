@@ -1,0 +1,18 @@
+{% load wagtailcore_tags wagtailimages_tags django_cos_tags %}
+
+{% generate_random_id as gallery_id %}
+
+<section class="{{self.settings.custom_css_class}}"
+    {% if self.custom_css_id %}id="{{self.settings.custom_css_id}}"{% endif %}>
+    <div class="row">
+        {% for image in self.images %}
+            {# insert a break every 4 columns #}
+            {% cycle '' '' '' '' '<div class="w-100"></div>' %}
+            <div class="col-sm my-3">
+                <a href="#" class="lightbox-preview" data-toggle="lightbox" data-gallery="gallery-{{ gallery_id }}">
+                    {% include_block image.image %}
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</section>

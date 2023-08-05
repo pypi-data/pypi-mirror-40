@@ -1,0 +1,5 @@
+{% if format == 'amp' %}
+	{% include 'django_cos/blocks/image/amp.html' %}
+{% else %}
+	{% include 'django_cos/blocks/image/standard.html' %}
+{% endif %}

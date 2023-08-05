@@ -1,0 +1,4 @@
+include LICENSE *.md *.rst *.txt
+graft django_cos
+global-exclude __pycache__
+global-exclude *.py[co]
