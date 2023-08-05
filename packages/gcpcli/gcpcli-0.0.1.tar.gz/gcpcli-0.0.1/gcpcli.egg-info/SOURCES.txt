@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+gcpcli.egg-info/PKG-INFO
+gcpcli.egg-info/SOURCES.txt
+gcpcli.egg-info/dependency_links.txt
+gcpcli.egg-info/entry_points.txt
+gcpcli.egg-info/requires.txt
+gcpcli.egg-info/top_level.txt
+test/test.py
