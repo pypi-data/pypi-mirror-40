@@ -1,0 +1,14 @@
+README.md
+setup.py
+potara/__init__.py
+potara/document.py
+potara/similaritymeasures.py
+potara/summarizer.py
+potara/takahe.py
+potara.egg-info/PKG-INFO
+potara.egg-info/SOURCES.txt
+potara.egg-info/dependency_links.txt
+potara.egg-info/requires.txt
+potara.egg-info/top_level.txt
+tests/__init__.py
+tests/test_all.py
