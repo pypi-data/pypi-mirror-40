@@ -1,0 +1,17 @@
+dfqueue/__init__.py,sha256=CU9BfHP65sBlYVIJr8q-T8LtHNFFfif9jKxm473ZsNM,344
+dfqueue/__meta__.py,sha256=ENaJL0Tuj3AyFNNCjyzPotmLVkdeniP1njuy382Omg8,421
+dfqueue/core/__init__.py,sha256=Fp0SD_59Wg_EaGAedBdcdGOF6LSM1mvpN3XwzR9F6Bw,16
+dfqueue/core/dfqueue.py,sha256=qT1gj0Xi90mRhrB8YFgzi0SmtNmW9w3orfVEN_16Qws,28788
+dfqueue/tests/__init__.py,sha256=Fp0SD_59Wg_EaGAedBdcdGOF6LSM1mvpN3XwzR9F6Bw,16
+dfqueue/tests/test_assign_dataframe.py,sha256=h_xlnOJ3BC13SD9MzR1Os8dXuL5gUS6fRiFrIJtiPT8,3480
+dfqueue/tests/test_list_queue_names.py,sha256=-B6DlSezEFhEfVkZchz9d6JwuaKjNodijTIp882I4dE,1144
+dfqueue/tests/test_queue_handler.py,sha256=DaDr7kT0-8m4YMGu7nX9fXJfP6ejDBj9XX1MQBmLHio,5617
+dfqueue/tests/test_queue_info_provider.py,sha256=1NvcyFCZpidv6aOeVhgO0vYwV4I5uh92GYzwsAjHego,4857
+dfqueue/tests/scenarios/__init__.py,sha256=VI26Mk7MCNidfsdbDu4bkzZrYtxeSvlIB9_NCKqapuI,1000
+dfqueue/tests/scenarios/test_parallel.py,sha256=0AR9UPy3LXOIVnC8gRkUAyMmlfsIb7X2kv7VjVbvsTs,5513
+dfqueue/tests/scenarios/test_sequential.py,sha256=aubUz1h64LFkdph6vF5IGYN8N5L0YYKxotPol87_HPs,17370
+dfqueue-1.0.dist-info/LICENSE,sha256=YpUXFt3Dt1H3I3gMlw4YpV2ylZ2ewrDmeINU8WJpkPc,1063
+dfqueue-1.0.dist-info/METADATA,sha256=UlEPAkxbvLG2ZxgL_rZoREUHnM641fIWNR1Gep61Hg8,18772
+dfqueue-1.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+dfqueue-1.0.dist-info/top_level.txt,sha256=k0gBKUtrN7RrJ9UX03wahJimjgKa2X8z2jBHKLxRPsQ,8
+dfqueue-1.0.dist-info/RECORD,,
