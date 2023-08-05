@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+json_serializer/Serializer.py
+json_serializer/__init__.py
+json_serializer.egg-info/PKG-INFO
+json_serializer.egg-info/SOURCES.txt
+json_serializer.egg-info/dependency_links.txt
+json_serializer.egg-info/not-zip-safe
+json_serializer.egg-info/top_level.txt
