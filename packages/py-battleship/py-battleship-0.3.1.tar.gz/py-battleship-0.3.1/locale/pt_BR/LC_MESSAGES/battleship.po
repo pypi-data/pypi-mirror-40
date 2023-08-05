@@ -1,0 +1,113 @@
+# Portuguese translations for PACKAGE package
+# Traduções em português brasileiro para o pacote PACKAGE.
+# Copyright (C) 2019 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-01 20:28-0200\n"
+"PO-Revision-Date: 2019-01-01 20:28-0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: battleship/main.py:19 battleship/main.py:65
+msgid ""
+"\n"
+"Points: "
+msgstr ""
+"\n"
+"Pontos: "
+
+#: battleship/main.py:20 battleship/main.py:66
+msgid "Shots Available: "
+msgstr "Tiros disponiveis: "
+
+#: battleship/main.py:21 battleship/main.py:67
+msgid "Time elapsed: "
+msgstr "Tempo decorrido: "
+
+#: battleship/main.py:47
+msgid "Labels"
+msgstr "Legenda"
+
+#: battleship/main.py:50
+msgid "<{}> \t Initials: {} \t| Size: {} \t| Hits: {} | sunk: {}"
+msgstr "<{}> \t Siglas: {} \t| Tamanho: {} \t| Acertos: {} | Afundado: {}"
+
+#: battleship/main.py:71
+msgid "\t\t\t You Destroy a {}"
+msgstr "\t\t\t Você destruiu um {}"
+
+#: battleship/main.py:73
+msgid "\t\t\t You Hit a {}"
+msgstr "\t\t\t Você acertou um {}"
+
+#: battleship/main.py:76
+msgid "Press Enter to continue..."
+msgstr "Aperte Enter para continuar"
+
+#: battleship/main.py:107
+msgid "Press CTRL+C to exit ..."
+msgstr "Aperte CTRL+C para sair ..."
+
+#: battleship/main.py:108
+msgid ""
+"Choose your coordinates. Ex: a1, b15: c10 \n"
+"\n"
+"Coordinates: "
+msgstr ""
+"Escolha a sua coordenada. Ex: a1, b15: c10 \n"
+"\n"
+"Coordenada: "
+
+#: battleship/main.py:129 battleship/main.py:128
+msgid ""
+"\n"
+"\n"
+"\n"
+"\t\t\tYou can only use letters with numbers. Ex: a1, c10, etc..."
+msgstr ""
+"\n"
+"\n"
+"\n"
+"\t\t\tVocê só pode usar letras com numeros. Ex: a1, c10, etc..."
+
+#: battleship/battleship.py:74
+msgid "carrier"
+msgstr "porta aviões"
+
+#: battleship/battleship.py:75
+msgid "battleship"
+msgstr "encouraçado"
+
+#: battleship/battleship.py:76
+msgid "cruiser"
+msgstr "cruzador"
+
+#: battleship/battleship.py:77
+msgid "destroyer"
+msgstr "destroyer"
+
+#: battleship/battleship.py:78
+msgid "submarine"
+msgstr "submarino"
+
+#: battleship/battleship.py:79
+msgid "frigate"
+msgstr "fragata"
+
+#: battleship/main.py:93
+msgid "yes"
+msgstr ""
+
+#: battleship/main.py:93
+msgid "no"
+msgstr ""
