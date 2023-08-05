@@ -1,0 +1,9 @@
+src/__init__.py,sha256=_IPZQhpKGTP55OX_jBQRi5NsXHD6BxZaNse_5jFv1WQ,112
+src/command_line.py,sha256=oNENB8HiFVCIVYPt8TkCkD7jC3gwnv9SeOyhgL9OeqQ,2188
+src/openapi_generator.py,sha256=kBTWJ8uGVK3xMxheT3HzkgrxQIjMBSgk9eeTS15j8lE,1503
+pydantic_openapi-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pydantic_openapi-0.1.1.dist-info/METADATA,sha256=k1y5TNW3-BwQDTWXq8Dw_-Mz26QADWwU8yJ7AvL7f3g,308
+pydantic_openapi-0.1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pydantic_openapi-0.1.1.dist-info/entry_points.txt,sha256=xh1TakFzxpJZXZHgF-kTtfHzDboyyq4w6vpcS9z0b64,51
+pydantic_openapi-0.1.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+pydantic_openapi-0.1.1.dist-info/RECORD,,
