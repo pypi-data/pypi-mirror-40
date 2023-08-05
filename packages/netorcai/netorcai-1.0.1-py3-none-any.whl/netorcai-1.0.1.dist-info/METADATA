@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: netorcai
+Version: 1.0.1
+Summary: Python version of the netorcai client library
+Home-page: https://github.com/netorcai/netorcai-client-python/
+Author: Millian Poquet
+Author-email: millian.poquet@gmail.com
+License: LGPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
