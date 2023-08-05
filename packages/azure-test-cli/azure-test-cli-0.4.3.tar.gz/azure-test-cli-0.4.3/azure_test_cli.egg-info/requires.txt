@@ -1,0 +1,6 @@
+click
+asyncio>=3.4.3
+azure-eventhub>=1.2.0
+azure-servicebus>=1.2.0
+azure-storage-blob>=1.2.0
+bleach>=2.1.0
