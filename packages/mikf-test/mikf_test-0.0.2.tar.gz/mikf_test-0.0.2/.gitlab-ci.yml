@@ -1,0 +1,28 @@
+image: dtuwindenergy/v52:latest
+
+# test_v52:  
+#   stage:  
+#     test
+#   script:
+#   - python -m pytest
+#   tags: 
+#   - python
+  
+pypi:
+  stage:  
+    deploy
+#   only:
+#     - tags
+  script:
+    - python3 -m pip install -U setuptools wheel
+    - python3 setup.py sdist bdist_wheel
+    - python3 -m pip install -U twine
+    # - twine upload --repository-url https://test.pypi.org/legacy/ dist/* -u $TWINE_USERNAME -p $TWINE_PASSWORD # for testing purposes
+    - twine upload dist/* -u $TWINE_USERNAME -p $TWINE_PASSWORD
+    #- pip install -U twine
+    #- pip install -e . --upgrade
+    #- python setup.py bdist_wheel -d dist
+    # - python setup.py sdist -d upload
+    #- twine upload --repository-url https://test.pypi.org/legacy/ dist/* -p TWINE_PASSWORD
+  tags:  
+    - python

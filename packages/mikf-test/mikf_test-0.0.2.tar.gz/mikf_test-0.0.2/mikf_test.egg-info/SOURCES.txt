@@ -1,0 +1,15 @@
+.gitlab-ci.yml
+.pypirc
+LICENSE
+README.md
+data
+setup.py
+mikf_test/.gitkeep
+mikf_test/__init__.py
+mikf_test.egg-info/PKG-INFO
+mikf_test.egg-info/SOURCES.txt
+mikf_test.egg-info/dependency_links.txt
+mikf_test.egg-info/top_level.txt
+test/.gitkeep
+test/__init__.py
+test/test_1.py
