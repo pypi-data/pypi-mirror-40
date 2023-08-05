@@ -1,0 +1,3 @@
+[console_scripts]
+proxyprint = proxyprint.print_proxy:main
+
