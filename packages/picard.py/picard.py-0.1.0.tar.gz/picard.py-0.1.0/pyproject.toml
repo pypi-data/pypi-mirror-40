@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "picard.py"
+version = "0.1.0"
+description = "Make it so."
+authors = ["John Freeman <jfreeman08@gmail.com>"]
+packages = [{ include = 'picard' }]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+typing_extensions = "^3.6"
+boto3 = {version = "^1.9",optional = true}
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+# A bug in pylint falsely diagnoses typing.Collection as unsubscriptable.
+# Once we update this dependency with a fix, remove the pylint disabling
+# comments sprinkled through the code on uses of typing.Collection.
+# https://github.com/PyCQA/pylint/issues/2377
+pylint = "^2.2"
+mypy = "^0.650.0"
+pydocstyle = "^3.0"
+pytest-asyncio = "^0.9.0"
+pytest-cov = "^2.6"
+sphinx = "^1.8"
+sphinx-autobuild = "^0.7.1"
+sphinx_rtd_theme = "^0.4.2"
+toml = "^0.10.0"
+
+[tool.poetry.extras]
+aws = ["boto3"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
