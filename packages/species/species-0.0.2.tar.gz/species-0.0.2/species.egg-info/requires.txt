@@ -1,0 +1,11 @@
+configparser
+h5py
+numpy
+scipy
+astropy
+astroquery
+matplotlib
+emcee
+corner
+progress
+urllib3
