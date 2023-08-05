@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: BloomFilterPy
+Version: 1.0.1
+Summary: Scalable bloom filter using different backends written in Python
+Home-page: https://github.com/nitxiodev/python-bloomfilter
+Author: nitxiodev
+Author-email: smnitxio@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: redis (==2.10.6)
+Requires-Dist: psutil (==5.4.8)
+Requires-Dist: mock (==2.0.0)
+Requires-Dist: mmh3 (==2.5.1)
+Requires-Dist: bitarray (==0.8.3)
+Requires-Dist: numpy (==1.15.4)
+Requires-Dist: PyHamcrest (==1.9.0)
+Requires-Dist: mockredispy (==2.9.3)
+
+# python-bloomfilter
+Scalable bloom filter using different backends written in Python
+
+Work in progress.... (TODO: installation guide, fixing unit test with redis)
+
+
