@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: file-ext
+Version: 1.3.1
+Summary: A Python file extension.
+Home-page: https://github.com/neoctobers/py_file_ext
+Author: @neoctobers
+Author-email: neoctobers@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: xprint
+
+# A Python file extension
+
+[![PyPi Version](http://img.shields.io/pypi/v/file-ext.svg)](https://pypi.python.org/pypi/file-ext/)
+
+[>> Read the docs <<](https://neoctobers.readthedocs.io/en/latest/repo/py_file_ext.html)
+
+
+
