@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ntier-aiohttp
+Version: 0.0.2
+Summary: Adapt N-Tier to aiohttp
+Home-page: https://gitlab.com/tcucco/ntier-aiohttp
+Author: Trey Cucco
+Author-email: fcucco@gmail.com
+License: MIT
+Download-URL: https://gitlab.com/tcucco/ntier-aiohttp/-/archive/master/ntier-aiohttp-master.tar.gz
+Description: # Connector for N-Tier to aiohttp
+        
+        N-Tier is a framework agnostic library for building out N-Tier web applications. This module
+        defines methods for adapting N-Tier to the aiohttp web framework.
+        
+        ## Running tests:
+        
+        `python -m tests`
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
