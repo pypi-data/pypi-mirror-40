@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: upysm
+Version: 0.3.1
+Summary: Versatile and flexible Python State Machine library - Micropython Port
+Home-page: https://github.com/pgularski/pysm
+Author: Piotr Gularski
+Author-email: piotr.gularski@gmail.com
+License: MIT
+Description: # upysm
+        Versatile and flexible Python State Machine library - Micropython Port
+        
+Keywords: finite state machine automaton fsm hsm pda micropython
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
