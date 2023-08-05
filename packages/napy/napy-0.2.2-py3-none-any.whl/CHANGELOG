@@ -1,0 +1,15 @@
+* 0.2.2 <2018-12-29 Sat>
+
++ Fix :: now flatten will not flat dict any more.
+
+* 0.2.1 <2018-12-22 Sat>
+
+Add a new tool flatten
+
+* 0.1.1 <2018-12-17 Mon>
+
+Use README.md instead of README.org
+
+* 0.1.0 <2018-12-16 Sun>
+
+The beginning of everything
