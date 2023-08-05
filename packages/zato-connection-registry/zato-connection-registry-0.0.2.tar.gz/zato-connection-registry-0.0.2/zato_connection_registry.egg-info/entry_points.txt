@@ -1,0 +1,3 @@
+[console_scripts]
+zato_connection_registry = zato_connection_registry.cli:main
+

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: zato-connection-registry
+Version: 0.0.2
+Summary: Load/Backup/Restore your Zato connections
+Home-page: https://github.com/emre/zato-connection-registry
+Author: emre yilmaz
+Author-email: mail@emreyilmaz.me
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
