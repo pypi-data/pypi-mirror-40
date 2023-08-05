@@ -1,0 +1,10 @@
+README.md
+setup.py
+charint/__init__.py
+charint/chars.py
+charint/chars2num.py
+charint/num2chars.py
+charint.egg-info/PKG-INFO
+charint.egg-info/SOURCES.txt
+charint.egg-info/dependency_links.txt
+charint.egg-info/top_level.txt
