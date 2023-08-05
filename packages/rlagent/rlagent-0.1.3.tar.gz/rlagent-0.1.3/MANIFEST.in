@@ -1,0 +1,2 @@
+recursive-include train *.py
+recursive-include tutorial *.ipynb
