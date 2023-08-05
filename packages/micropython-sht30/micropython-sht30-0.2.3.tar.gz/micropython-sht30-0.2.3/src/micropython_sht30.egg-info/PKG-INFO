@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: micropython-sht30
+Version: 0.2.3
+Summary: SHT30 sensor driver for micropython: IC2 bus
+Home-page: UNKNOWN
+Author: Roberto Sánchez
+Author-email: matt@schinckel.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Other OS
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Home Automation
