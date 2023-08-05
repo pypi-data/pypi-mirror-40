@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: xmas
+Version: 2018.1
+Summary: A cat, sitting on a wall, near a Xmas tree, is gazing starry picturesque night.
+Home-page: None
+Author: Nasy
+Author-email: nasyxx+git@gmail.com
+Requires-Python: >=3.5.6,<4.0.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
