@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: mac-agents
+Version: 2018.12.26
+Summary: LaunchAgents + python
+Home-page: https://github.com/looking-for-a-job/mac-agents.py
+License: UNKNOWN
+Keywords: LaunchAgents launchd plist
+Platform: UNKNOWN
+Classifier: License :: Public Domain
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+Requires-Dist: Django
+Requires-Dist: click
+Requires-Dist: mac-colors
+Requires-Dist: public
+Requires-Dist: setuptools
+
+[![](https://img.shields.io/badge/OS-MacOS-blue.svg?longCache=True)]()
+[![](https://img.shields.io/pypi/pyversions/mac-agents.svg?longCache=True)](https://pypi.org/project/mac-agents/)
+
+#### Install
+```bash
+$ [sudo] pip install mac-agents
+```
+
+#### Classes
+`mac_agents.Agent` - launchd.plist generator. Capital letter attrs/props as launchd.plist keys
+
+method|`__doc__`
+-|-
+`create()`|create launchd.plist file and `StandardOutPath`, `StandardErrorPath` logs
+`load()`|`launchctl load` plist file
+`read()`|return a dictionary with plist file data
+`rm()`|remove plist file (if exist)
+`unload()`|`launchctl unload` plist file
+`update(**kwargs)`|update plist file data
+`write(data)`|write a dictionary to a plist file
+
+@property|`__doc__`
+-|-
+`Label`|path.to.file.py
+`ProgramArguments`|['bash','-l','-c','python $script $plist']
+`StandardErrorPath`|`~/Library/Logs/LaunchAgents/$Label/err.log`
+`StandardOutPath`|`~/Library/Logs/LaunchAgents/$Label/out.log`
+`WorkingDirectory`|script file dirname
+`path`|plist path - `file.py.plist`
+`script`|script path - class module file
+
+`mac_agents.db.Agent` - LaunchAgent class. fields: `path`, `Label`
+
+method|`__doc__`
+-|-
+`load()`|launchctl load plist
+`lock(key)`|add Lock object for this agent
+`unload()`|launchctl unload plist
+`unlock(key)`|remove Lock object for this agent
+
+`mac_agents.db.Lock` - LaunchAgent Lock class. fields: `agent` (ForeignKey), `key`, `created_at` `updated_at`
+
+#### Functions
+function|`__doc__`
+-|-
+`mac_agents.create(path)`|create launchd.plist from python file and return plist path
+`mac_agents.jobs()`|return list of launchctl Job objects (`pid`, `status`, `label`)
+`mac_agents.read(path)`|return a dictionary with plist file data
+`mac_agents.tag(path='~/Library/LaunchAgents')`|set Finder tags. `red` - status, `orange` - stderr, `gray` - unloaded
+`mac_agents.update(path, **kwargs)`|update plist file data
+`mac_agents.write(path, data)`|write data dictionary to a plist file
+`mac_agents.db.init(path='~/Library/LaunchAgents')`|create db.Agent objects
+
+#### CLI
+usage|`__doc__`
+-|-
+`python -m mac_agents.create path ...`|generate launchd.plist from python file(s)
+`python -m mac_agents.tag [path]`|set Finder tags. `red` - status, `orange` - stderr, `gray` - unloaded
+
+#### Examples
+`~/Library/LaunchAgents/file.py`
+```python
+import mac_agents
+
+class Agent(mac_agents.Agent):
+    StartInterval = 5  # capital letter
+
+    def run(self):
+        pass
+
+if __name__ == "__main__":
+    Agent().run()
+```
+
+```bash
+$ find ~/Library/LaunchAgents -name "*.py" | xargs python -m mac_agents.create "$@"
+$ find ~/Library/LaunchAgents -name "*.plist" | xargs launchctl load # or launchctl unload
+$ launchctl list | grep .py$ | awk '{print $3}' | xargs -I '{}' launchctl remove {}
+$ find ~/Library/LaunchAgents -name "*.py.plist" -exec rm {} +
+```
+
+##### django models
+
+`site-packages/mac_agents_settings.py` required
+
+```python
+import os
+
+SECRET_KEY = "I_LOVE_CATS"
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'mac-agents',
+        'USER': os.environ["USER"],
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+```
+
+```bash
+$ bash -l django-project/create.sh  # create tables. look at django-project/ in github repo
+```
+
+```python
+>>> import mac_agents.db
+>>> mac_agents.db.init()  # create db.Agent objects
+>>> mac_agents.db.Agent.objects.all()
+```
+
+#### Links
++   [launchd.plist](https://www.real-world-systems.com/docs/launchd.plist.5.html)
+
+<p align="center"><a href="https://pypi.org/project/readme-md/">readme-md</a> - README.md generator</p>
+
