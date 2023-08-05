@@ -1,0 +1,9 @@
+README.md
+setup.py
+typy/__init__.py
+typy/type_decorator.py
+typy/typy.py
+typy.egg-info/PKG-INFO
+typy.egg-info/SOURCES.txt
+typy.egg-info/dependency_links.txt
+typy.egg-info/top_level.txt
