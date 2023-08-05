@@ -1,0 +1,3 @@
+[console_scripts]
+mednsktest = mednsktest.cli:main
+
