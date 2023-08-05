@@ -1,0 +1,73 @@
+import requests
+import json
+import os
+
+
+class Autorun:
+
+    def __init__(self):
+        self.ENVIRONMENT = json.loads(os.getenv("CLUSTER_CONFIG")).get("environment")
+        self.kong_api = json.loads(os.getenv("CLUSTER_CONFIG")).get("kong-admin-url")
+        print("Detected environment:", self.ENVIRONMENT)
+        print("Using " + str(self.kong_api) + "as api-gateway")
+
+    def post_deployment(self):
+        ENVIRONMENT = json.loads(os.getenv("CLUSTER_CONFIG")).get("environment")
+        KONG_ADMIN = json.loads(os.getenv("CLUSTER_CONFIG")).get("kong-admin-url")
+        print("Detected environment:", ENVIRONMENT)
+
+        request = requests.get(self.kong_api)
+        if request.status_code == 200:
+            self.add_service("Deployment-Service", "http://openshift-deployment-pipeline.planblick.svc:8000")
+            self.add_route(service_name="Deployment-Service", path="/deployment")
+        else:
+            print("Kong-API not available:", str(self.kong_api))
+
+    def add_service(self, service_name, service_url):
+        payload = {
+            "name": service_name,
+            "url": service_url
+        }
+        headers = {
+            'Content-Type': "application/json",
+            'cache-control': "no-cache",
+        }
+        url = self.kong_api + "/services"
+        response = requests.request("GET", url, headers=headers)
+
+        services = response.json()
+        for service in services.get("data", []):
+            if service_name == service.get("name"):
+                print("Service already exists")
+                return
+
+        self.post(api_path="/services", payload=payload, headers=headers)
+
+    def add_route(self, service_name, path):
+        payload = {
+            "paths": [path]
+        }
+        headers = {
+            'Content-Type': "application/json",
+            'cache-control': "no-cache",
+        }
+
+        url = self.kong_api + "/services/" + service_name + "/routes/"
+
+        response = requests.request("GET", url, headers=headers)
+
+        routes = response.json()
+        for route in routes.get("data", []):
+            if path in route.get("paths"):
+                print("Path already exists")
+                return
+
+        self.post(api_path="/services/" + service_name + "/routes", payload=payload, headers=headers)
+
+    def post(self, api_path, payload, headers):
+        if type(payload) == dict:
+            payload = json.dumps(payload)
+
+        url = self.kong_api + api_path
+        response = requests.request("POST", url, data=payload, headers=headers)
+        print(response.text)
