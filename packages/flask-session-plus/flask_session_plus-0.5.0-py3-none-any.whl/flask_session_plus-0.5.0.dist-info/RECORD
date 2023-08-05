@@ -1,0 +1,13 @@
+flask_session_plus/__init__.py,sha256=la7i7kEACXbz6nufOkUu6bac_40bEVNsL-rnwKZj69g,48
+flask_session_plus/backends.py,sha256=xMaFBnLrAK3PFYtzAeKwMTWvVwUZu3UrarUVlm1LAbg,12340
+flask_session_plus/core.py,sha256=kfDtiT37CzrC1DNW_5vliSNY2L77urZi1vZNjUQhcvQ,4758
+flask_session_plus/session.py,sha256=rXDCzSD5DhMh4OpmvLF8TjxZGquVIqz5pdb976QV47w,6429
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/auth.py,sha256=0YwIs0Tk1HPVGDLUlF1p4bC4o8PEvYWGS_V7Gi81MKk,3458
+test/flask_app.py,sha256=KGVfP5foZBdptAz7hEubv-8ro4pgjs0lKCQgl5wwKqM,1954
+test/models.py,sha256=TweyK0DdZlekBn1UI8wIxSskvV1B-adedKisaFstF3A,4399
+flask_session_plus-0.5.0.dist-info/LICENSE,sha256=QXzOoHi9QXZno1yV_TwU0CQvJPy58GI4kJMbgUs-Qv4,1097
+flask_session_plus-0.5.0.dist-info/METADATA,sha256=em2mmZCBWhd5P-BdClZenmYD4YfVktLgfkSzvnXfDMk,3977
+flask_session_plus-0.5.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+flask_session_plus-0.5.0.dist-info/top_level.txt,sha256=g5xrLvF7ccMr7BV5wBdDPZ_IRnyVH6Hys7XtX-MMJpw,24
+flask_session_plus-0.5.0.dist-info/RECORD,,
