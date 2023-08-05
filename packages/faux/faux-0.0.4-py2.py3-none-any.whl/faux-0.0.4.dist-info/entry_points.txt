@@ -1,0 +1,3 @@
+[console_scripts]
+faux = faux.__main__:main
+
