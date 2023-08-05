@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: kunteksto
+Version: 2.1.0
+Summary: The tool to translate your CSV data files into RDF, XML and JSON with full semantics and syntactic validation.
+Home-page: https://datainsights.tech/
+Author: Timothy W. Cook
+Author-email: tim@datainsights.tech
+License: UNKNOWN
+Download-URL: https://github.com/DataInsightsInc/Kunteksto/archive/2.1.0.tar.gz
+Keywords: context rdf xml machine learning data-centric semantic interoperability semantics
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Legal Industry
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Religion
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: agraph-python
+Requires-Dist: basexclient
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: lxml
+Requires-Dist: shortuuid
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: ujson
+Requires-Dist: xmltodict
+Requires-Dist: cuid
+Requires-Dist: flask
+Requires-Dist: flask-admin
+Requires-Dist: flask-sqlalchemy
+Requires-Dist: flask-babelex
+Requires-Dist: sqlalchemy-utils
+Requires-Dist: python-dotenv
+
+# Kunteksto
+
+=======================================================
+
+**Kunteksto** is a tool for helping domain experts, data creators and data users translate their simple CSV formatted data files into semantically enhanced formats. This provides a path for existing data to be used in conjunction with the emerging *data-centric, model first* approach in analysis, general artificial intelligence and decision support systems. This approach opens the door for the change to a *data-centric* world as opposed to the *application-centric* one we have now. This new approach enables automatic interoperability avoiding the data quality issues created through data cleaning and massaging. 
+
+The importance of this capability and improved data quality is discussed in foundational S3Model https://datainsights.tech/S3Model documentation and references. However, detailed understanding of S3Model is not required to understand and use the power of Kunteksto. Addtional information on the data-centric movement can be found in the References below. 
+
+What is 'Context' for your data?
+
+It is the combination of ontological, temporal and spatial semantics that describes the deeper meaning of your data allowing you to share 'information' instead of just 'data'.
+
+# Installation
+
+See the instructions in the documentation or online at https://datainsights.tech/Kunteksto/index.html
+
+# References
+
+The limits of deep learning https://blog.keras.io/the-limitations-of-deep-learning.html 
+
+The future of deep learning https://blog.keras.io/the-future-of-deep-learning.html
+
+
+# Development
+
+- Install Anaconda (Python 3.7+)
+- Open a terminal.
+- Clone the repository.
+- Create the development virtual environment: $ conda env create -f Kunteksto/dev_environment.yml
+- Activate the environment according to the instructions displayed in the terminal.
+- Change to the Kunteksto directory: $ cd Kunteksto/kunteksto
+- Run the Kunteksto dev server: $ ./kunteksto.sh
+- In a browser go to: http://127.0.0.1:7659/ 
+
+When making changes and testing locally you should;
+build the package: $ python3 setup.py sdist bdist_wheel
+Then perform a local install: $ pip install e .
+
+
+
