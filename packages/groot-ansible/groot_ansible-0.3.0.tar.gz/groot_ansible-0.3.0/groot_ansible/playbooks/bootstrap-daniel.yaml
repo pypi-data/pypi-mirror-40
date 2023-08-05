@@ -1,0 +1,14 @@
+#
+# Playbook with personal customisations to the basic development environment.
+#
+---
+- import_playbook: bootstrap-pc.yaml
+
+- name: Groot Workstation
+  hosts:
+    - localhost
+
+  roles:
+  - role: ros  # make sure to do this before triggering snorriheim (needs python-vcstool)
+  - role: snorriheim
+  - role: groot/workstation
