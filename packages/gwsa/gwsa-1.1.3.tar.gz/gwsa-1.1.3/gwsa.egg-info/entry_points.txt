@@ -1,0 +1,3 @@
+[console_scripts]
+gwsa = gwsa.__main__:main
+

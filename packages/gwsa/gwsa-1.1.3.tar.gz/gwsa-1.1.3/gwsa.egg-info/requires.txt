@@ -1,0 +1,7 @@
+gitpython
+blessed
+
+[dev]
+tox
+cmarkgfm
+twine
