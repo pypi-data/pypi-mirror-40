@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+DataStructures/AbstractDataStructures.py
+DataStructures/Errors.py
+DataStructures/TreeDataStructures.py
+DataStructures/__init__.py
+pythonic_data_structures.egg-info/PKG-INFO
+pythonic_data_structures.egg-info/SOURCES.txt
+pythonic_data_structures.egg-info/dependency_links.txt
+pythonic_data_structures.egg-info/top_level.txt
