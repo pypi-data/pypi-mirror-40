@@ -1,0 +1,9 @@
+evalcache/__init__.py,sha256=J6D3UMcSzW2-MVc6dzTiSaWFak_f6kyfUSql6KEhUHE,256
+evalcache/dircache.py,sha256=9XKDkCzidwKun7HpFqE4MJa-4KjNH9Xy8UwNofwAhS0,1243
+evalcache/funcarg.py,sha256=rnnw_929PWvCNwpWcX1VQAxPilnXboXj53VncLnKddc,342
+evalcache/lazy.py,sha256=Z6lxDOTtNvU_Wy9ac8Fq2qrLuKaTxAWD-otiiMYHUZM,19255
+evalcache/lazyfile.py,sha256=UwKEomAtVJZjFXJnrTsTqa_Ml7T7DCKMDuIyzA7dGfs,2245
+evalcache-1.6.3.dist-info/METADATA,sha256=V7ibIuQaIN6BxGoclnVUwdASUywuKJ1gbRJgGKIcBZU,3522
+evalcache-1.6.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+evalcache-1.6.3.dist-info/top_level.txt,sha256=KnkH7_TFp0aIabrRgcovCWli-eYTVp-z9zeBUb_BhT8,10
+evalcache-1.6.3.dist-info/RECORD,,
