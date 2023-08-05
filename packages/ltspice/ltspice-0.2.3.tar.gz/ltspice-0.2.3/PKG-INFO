@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: ltspice
+Version: 0.2.3
+Summary: DESC
+Home-page: UNKNOWN
+Author: DonghoonPark
+Author-email: donghun94@snu.ac.kr
+License: MIT
+Download-URL: https://pypi.org/project/ltspice
+Description: UNKNOWN
+Keywords: ltspice,multi point simulation
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
