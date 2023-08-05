@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+setup.py
+dewpoint/__init__.py
+dewpoint/aws.py
+dewpoint.egg-info/PKG-INFO
+dewpoint.egg-info/SOURCES.txt
+dewpoint.egg-info/dependency_links.txt
+dewpoint.egg-info/top_level.txt
+examples/aws_product_advertising.py
+examples/ec2.py
