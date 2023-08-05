@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ghent_theft_module/cli.py
+ghent_theft_module.egg-info/PKG-INFO
+ghent_theft_module.egg-info/SOURCES.txt
+ghent_theft_module.egg-info/dependency_links.txt
+ghent_theft_module.egg-info/entry_points.txt
+ghent_theft_module.egg-info/top_level.txt
