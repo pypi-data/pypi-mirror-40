@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: rich-text-diff
+Version: 0.0.5
+Summary: support rich text diff
+Home-page: https://github.com/c1ay/rich_text_diff
+Author: liukai
+Author-email: liukai@zhihu.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: readme
+Platform: UNKNOWN
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*
