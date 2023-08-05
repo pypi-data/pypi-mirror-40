@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pydg.py
+requirements.txt
+setup.py
+pydg.egg-info/PKG-INFO
+pydg.egg-info/SOURCES.txt
+pydg.egg-info/dependency_links.txt
+pydg.egg-info/not-zip-safe
+pydg.egg-info/top_level.txt
