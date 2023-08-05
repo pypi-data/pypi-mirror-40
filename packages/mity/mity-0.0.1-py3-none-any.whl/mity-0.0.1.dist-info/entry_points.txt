@@ -1,0 +1,3 @@
+[console_scripts]
+mity=mity.mity:main
+
