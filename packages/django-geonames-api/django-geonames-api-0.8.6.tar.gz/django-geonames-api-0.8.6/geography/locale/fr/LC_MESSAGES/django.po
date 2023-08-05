@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-28 08:14+0000\n"
+"PO-Revision-Date: 2018-12-28 09:02+0100\n"
+"Last-Translator: Nicolas Pieuchot <n.pieuchot@zero-gachis.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2\n"
+
+#: geography/models/address.py:9
+msgid "address"
+msgstr "adresse"
+
+#: geography/models/address.py:10
+msgid "addresses"
+msgstr "adresses"
+
+#: geography/models/address.py:12
+msgid "number"
+msgstr "numéro"
+
+#: geography/models/address.py:14
+msgid "street name"
+msgstr "rue"
+
+#: geography/models/address.py:19
+msgid "complements"
+msgstr "complément d'adresse"
+
+#: geography/models/address.py:26 geography/models/city.py:91
+msgid "city"
+msgstr "ville"
+
+#: geography/models/city.py:12
+msgid "Place name"
+msgstr "Nom de la ville"
+
+#: geography/models/city.py:13
+msgid "Shortname"
+msgstr "Nom raccourci"
+
+#: geography/models/city.py:14
+msgid "Postal code"
+msgstr "Code postal"
+
+#: geography/models/city.py:15
+msgid "Latitude"
+msgstr "Latitude"
+
+#: geography/models/city.py:16
+msgid "Longitude"
+msgstr "Longitude"
+
+#: geography/models/city.py:18
+msgid "Precision"
+msgstr "Précision"
+
+#: geography/models/city.py:28 geography/models/conurbation.py:16
+#: geography/models/department.py:16 geography/models/region.py:20
+msgid "state"
+msgstr "région"
+
+#: geography/models/city.py:35 geography/models/conurbation.py:21
+#: geography/models/department.py:25
+msgid "department"
+msgstr "département"
+
+#: geography/models/city.py:42 geography/models/conurbation.py:30
+msgid "conurbation"
+msgstr "agglomération"
+
+#: geography/models/city.py:49 geography/models/timezone.py:76
+msgid "timezone"
+msgstr "fuseau horaire"
+
+#: geography/models/city.py:92
+msgid "cities"
+msgstr "villes"
+
+#: geography/models/conurbation.py:11 geography/models/country.py:32
+#: geography/models/department.py:11 geography/models/region.py:11
+msgid "country"
+msgstr "pays"
+
+#: geography/models/conurbation.py:23
+msgid "Community name"
+msgstr "Agglomération"
+
+#: geography/models/conurbation.py:24
+msgid "Community code"
+msgstr "Code agglomération"
+
+#: geography/models/country.py:9
+msgid "Country name"
+msgstr "Pays"
+
+#: geography/models/country.py:14 geography/models/timezone.py:13
+msgid "Country code 2"
+msgstr "Code pays (2 lettres)"
+
+#: geography/models/country.py:16
+msgid "Country code 3"
+msgstr "Code pays (3 lettres)"
+
+#: geography/models/country.py:22
+msgid "Country number"
+msgstr "Numéro de pays"
+
+#: geography/models/country.py:33
+msgid "countries"
+msgstr "pays"
+
+#: geography/models/department.py:18
+msgid "County name"
+msgstr "Département"
+
+#: geography/models/department.py:19
+msgid "County code"
+msgstr "Code département"
+
+#: geography/models/region.py:13
+msgid "State name"
+msgstr "Région"
+
+#: geography/models/region.py:14
+msgid "State code"
+msgstr "Code région"
+
+#: geography/models/timezone.py:15
+msgid "Name"
+msgstr "Nom"
+
+#: geography/models/timezone.py:21
+msgid "Offset from GMT"
+msgstr "Décalage de GMT"
+
+#: geography/models/timezone.py:77
+msgid "timezones"
+msgstr "fuseaux horaires"
