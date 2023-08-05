@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xmldiffs
+Version: 0.0.4
+Summary: Compare two XML files
+Home-page: https://github.com/CallmeNezha/xmldiffs
+Author: ZIJIAN JIANG
+Author-email: jiangzijian77@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# xmldiffs
+Compare two XML files, with some customized options.
+
+
