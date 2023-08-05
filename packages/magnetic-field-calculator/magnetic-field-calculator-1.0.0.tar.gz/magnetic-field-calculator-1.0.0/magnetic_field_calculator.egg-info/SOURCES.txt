@@ -1,0 +1,10 @@
+README.md
+setup.py
+magnetic_field_calculator/__init__.py
+magnetic_field_calculator/__main__.py
+magnetic_field_calculator.egg-info/PKG-INFO
+magnetic_field_calculator.egg-info/SOURCES.txt
+magnetic_field_calculator.egg-info/dependency_links.txt
+magnetic_field_calculator.egg-info/entry_points.txt
+magnetic_field_calculator.egg-info/requires.txt
+magnetic_field_calculator.egg-info/top_level.txt
