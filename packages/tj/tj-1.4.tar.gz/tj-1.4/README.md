@@ -1,0 +1,1 @@
+"A very simple short module containing useful functions"
