@@ -1,0 +1,6 @@
+future
+pycondor>=0.5
+configargparse
+jinja2
+ligo-gracedb
+gwdatafind
