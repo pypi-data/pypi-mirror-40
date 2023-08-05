@@ -1,0 +1,10 @@
+README.md
+setup.py
+ftscursor/__init__.py
+ftscursor/example_script.py
+ftscursor/ftscursor.py
+ftscursor.egg-info/PKG-INFO
+ftscursor.egg-info/SOURCES.txt
+ftscursor.egg-info/dependency_links.txt
+ftscursor.egg-info/entry_points.txt
+ftscursor.egg-info/top_level.txt
