@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+file/__init__.py
+file/file.py
+xintool.egg-info/PKG-INFO
+xintool.egg-info/SOURCES.txt
+xintool.egg-info/dependency_links.txt
+xintool.egg-info/top_level.txt
