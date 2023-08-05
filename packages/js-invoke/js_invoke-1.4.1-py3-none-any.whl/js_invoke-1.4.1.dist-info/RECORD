@@ -1,0 +1,12 @@
+js_invoke/__init__.py,sha256=VhvLsr_tqrUf57FxKu8E_qpn_v9KervPvy__iXSgdKM,379
+js_invoke/core.py,sha256=Ok19IOdTcB2V6S3XXa1PfRmUHFpczfxxQ6aMtGGzwTg,1147
+js_invoke/fpm.py,sha256=KOOGrTQAeRaEp4HPo_5M9I8sBJcamIaxiMnn-EllIjk,898
+js_invoke/package.py,sha256=38naHmooPrWzlz7I55s73cqy2i9D7dBQHvsv1GZhTU4,2536
+js_invoke/push.py,sha256=ANMWs5dOk42i4LFvnWzkHVoKnTg9F0JPi4ZL6nm3fOc,1324
+js_invoke/python.py,sha256=vZY6sx0XjGIuT-VZ4-W4OJ7p2SjNJCXkyg_D23KJxQ8,4238
+js_invoke/scm.py,sha256=UmDcE69qOxYTzmSzhmz6CwF07Pgva6R95ablZ4dlOWY,1916
+js_invoke-1.4.1.dist-info/LICENSE.rst,sha256=ShggAe9ABamQCVBRIyJLqkg0sV_EMNegOAZDIMG_1gc,1075
+js_invoke-1.4.1.dist-info/METADATA,sha256=ThPwLZfnXaRFZUeGNEo9lZFVQgjAJBwkiGG4VY7LqVY,2067
+js_invoke-1.4.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+js_invoke-1.4.1.dist-info/top_level.txt,sha256=6gv_5bXJjlyns0TIu3AOw5nJsOpIUFJEmZtp7JjuMzE,10
+js_invoke-1.4.1.dist-info/RECORD,,
