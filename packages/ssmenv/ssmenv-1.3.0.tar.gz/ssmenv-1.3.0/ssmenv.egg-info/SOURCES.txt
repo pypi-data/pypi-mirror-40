@@ -1,0 +1,12 @@
+MANIFEST.in
+Pipfile.lock
+README.md
+setup.py
+ssmenv/__init__.py
+ssmenv.egg-info/PKG-INFO
+ssmenv.egg-info/SOURCES.txt
+ssmenv.egg-info/dependency_links.txt
+ssmenv.egg-info/not-zip-safe
+ssmenv.egg-info/top_level.txt
+test/__init__.py
+test/test_ssm.py
