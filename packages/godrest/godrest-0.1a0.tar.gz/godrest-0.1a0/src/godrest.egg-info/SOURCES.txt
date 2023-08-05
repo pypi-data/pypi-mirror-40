@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/godrest/__init__.py
+src/godrest.egg-info/PKG-INFO
+src/godrest.egg-info/SOURCES.txt
+src/godrest.egg-info/dependency_links.txt
+src/godrest.egg-info/not-zip-safe
+src/godrest.egg-info/top_level.txt
