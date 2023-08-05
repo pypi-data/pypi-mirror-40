@@ -1,0 +1,3 @@
+[console_scripts]
+gridopt = gridopt.scripts.gridopt:main
+
