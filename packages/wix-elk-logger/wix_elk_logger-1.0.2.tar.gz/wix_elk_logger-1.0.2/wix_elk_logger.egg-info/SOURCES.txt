@@ -1,0 +1,15 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+pytest.ini
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+wix_elk_logger/__init__.py
+wix_elk_logger/elk_logger.py
+wix_elk_logger.egg-info/PKG-INFO
+wix_elk_logger.egg-info/SOURCES.txt
+wix_elk_logger.egg-info/dependency_links.txt
+wix_elk_logger.egg-info/requires.txt
+wix_elk_logger.egg-info/top_level.txt
