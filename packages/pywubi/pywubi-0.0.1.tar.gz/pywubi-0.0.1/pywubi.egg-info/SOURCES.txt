@@ -1,0 +1,12 @@
+README.md
+setup.py
+pywubi/__init__.py
+pywubi/__version__.py
+pywubi/constants.py
+pywubi/core.py
+pywubi/utlis.py
+pywubi/wubi_dict.py
+pywubi.egg-info/PKG-INFO
+pywubi.egg-info/SOURCES.txt
+pywubi.egg-info/dependency_links.txt
+pywubi.egg-info/top_level.txt
