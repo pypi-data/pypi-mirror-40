@@ -1,0 +1,10 @@
+sketcher/__init__.py,sha256=ZdIOiIghgux0kGR9kyeNJNyVvWRVNKrBeZJAHLI6FdY,1723
+sketcher/backend.py,sha256=aLu5mpUDetZIbHlQndwe8bBVi7lsaI3ip9Lw7kJ1Pyw,127
+sketcher/backend_base.py,sha256=NP2OqfHhKMadSVkf7iHbR29B_C2NomB9dBFFfoNDBWs,1171
+sketcher/backend_tk.py,sha256=qZddEFJKJrgE7TNNwfdKm-WbcGidZ4svC1IE83cS5jE,2149
+sketcher/common.py,sha256=Nhn40wb0k1OBLV5rtggev_sfNyJbSBe0bOFHn9jFyUQ,1025
+sketcher-0.0.1.dist-info/LICENSE,sha256=M6a2lPN0pRHW6lt-xZ3nT26DSyXS_0eLRulZUd3JHT0,1106
+sketcher-0.0.1.dist-info/METADATA,sha256=DsQ6i1W2dqcgtCLEl-0AC_L1_DKRf5eW7Lp47LyXexk,2199
+sketcher-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+sketcher-0.0.1.dist-info/top_level.txt,sha256=PL0JkiUkTUPzcHT0MsVuMO6tyvSdya0XdXVS5-WsTW8,9
+sketcher-0.0.1.dist-info/RECORD,,
