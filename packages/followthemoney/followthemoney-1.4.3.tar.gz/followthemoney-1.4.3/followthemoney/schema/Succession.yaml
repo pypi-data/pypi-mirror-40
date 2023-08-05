@@ -1,0 +1,25 @@
+Succession:
+  label: "Succession"
+  plural: "Successions"
+  description: "Two entities that legally succeed each other."
+  extends: Interest
+  matchable: false
+  featured:
+    - predecessor
+    - successor
+    - date
+  properties:
+    predecessor:
+      label: "Predecessor"
+      type: entity
+      schema: LegalEntity
+      reverse:
+        name: successors
+        label: "Successors" 
+    successor:
+      label: "Successor"
+      type: entity
+      schema: LegalEntity
+      reverse:
+        name: predecessors
+        label: "Predecessors"

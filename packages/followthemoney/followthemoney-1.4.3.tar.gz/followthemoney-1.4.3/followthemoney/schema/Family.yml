@@ -1,0 +1,18 @@
+Family:
+  label: "Family"
+  description: "Family relationship between two people"
+  extends: Relationship
+  matchable: false
+  featured:
+    - person
+    - relative
+    - relationship
+  properties:
+    relative:
+      label: "Relative"
+      type: entity
+      schema: Person
+      reverse:
+        name: familyRelative
+        label: "Relatives"
+      description: "The relative of the subject person."

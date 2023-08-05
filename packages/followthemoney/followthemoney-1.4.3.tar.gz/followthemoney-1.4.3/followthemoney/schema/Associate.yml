@@ -1,0 +1,18 @@
+Associate:
+  label: "Associate"
+  description: "Non-family association between two people"
+  extends: Relationship
+  matchable: false
+  featured:
+    - person
+    - associate
+    - relationship
+  properties:
+    associate:
+      label: "Associate"
+      description: "An associate of the subject person."
+      type: entity
+      schema: Person
+      reverse:
+        name: associates
+        label: "Associates"
