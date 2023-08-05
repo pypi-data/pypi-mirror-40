@@ -1,0 +1,11 @@
+README.rst
+setup.py
+desir/__init__.py
+desir/commands.json
+desir/desir.py
+desir/desir3.py
+desir/sugar.py
+desir.egg-info/PKG-INFO
+desir.egg-info/SOURCES.txt
+desir.egg-info/dependency_links.txt
+desir.egg-info/top_level.txt
