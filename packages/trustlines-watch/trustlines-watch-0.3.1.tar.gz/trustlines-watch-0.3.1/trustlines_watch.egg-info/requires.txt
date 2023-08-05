@@ -1,0 +1,4 @@
+requests
+bernhard
+click
+psycopg2<2.8,>=2.7
