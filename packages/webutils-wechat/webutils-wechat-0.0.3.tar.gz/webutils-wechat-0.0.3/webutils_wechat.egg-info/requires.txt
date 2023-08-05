@@ -1,0 +1,6 @@
+flask==1.0.2
+flask_restplus==0.12.1
+requests==2.21.0
+redis==2.10.6
+msgpack==0.5.6
+cryptography==2.3.1
