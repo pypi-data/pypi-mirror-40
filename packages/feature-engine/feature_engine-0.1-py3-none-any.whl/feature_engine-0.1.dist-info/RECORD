@@ -1,0 +1,12 @@
+feature_engine/__init__.py,sha256=h3DAeprqnua1qERud9kE1g7zpi6Lb4BBLd0nVNaUhWY,25
+feature_engine/base_transformers.py,sha256=kMvSgXU2BWOAjtTkg5dz5rqm_6fEmIhlT3OJEX1hTpg,6655
+feature_engine/categorical_encoders.py,sha256=UcfS7fOZqEkt52KqCjqJY0ozB5P3UgyfDwjxp4nBT8k,24427
+feature_engine/discretisers.py,sha256=WYcJdZlUrgnkdV_cUtH06pGPmziATT55Tbudk-QceyU,11380
+feature_engine/missing_data_imputers.py,sha256=tThKdQs3hGEPqbYAXNrF46OrYp2Dy8vdZvHBR7e0-H0,20417
+feature_engine/outlier_removers.py,sha256=Yeq1sX9HTRsaw_sBY6DeLKZO-bO7gK56jj7tYlTlPGE,7179
+feature_engine/variable_transformers.py,sha256=akRB4RvOJtfCF6TjtOy4MWheP6bwK7JyPCrgC4cQ8WU,9355
+feature_engine-0.1.dist-info/LICENSE.md,sha256=WVdimaORDh2hSRodG9cIzhsxuCvgCrOoQx_qKODkKek,1485
+feature_engine-0.1.dist-info/METADATA,sha256=XP80vKZVNQXyXgJDsNo7eaVtuPDUCg6Mb70CeutEst8,2846
+feature_engine-0.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+feature_engine-0.1.dist-info/top_level.txt,sha256=9jbwBU2qIFURSjwtC_W8qBLR7Wwag3nFa9LdqsVPUlk,15
+feature_engine-0.1.dist-info/RECORD,,
