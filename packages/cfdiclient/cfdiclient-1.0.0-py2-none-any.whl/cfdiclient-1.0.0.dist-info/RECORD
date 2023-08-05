@@ -1,0 +1,11 @@
+cfdiclient/__init__.py,sha256=miD0A9l-Jn36IwUCD6JixhJBij5QMXcvGbQbTEpyQvw,313
+cfdiclient/autenticacion.py,sha256=LZJr5wlmEGjQqXsU0XEprTIeo5GQACZN7eDHvzasxZ4,5881
+cfdiclient/descargamasiva.py,sha256=WWFVfQOIGI17uMCcGYvLpQDV9Jzk3W3dbfMP47Qlwgk,5237
+cfdiclient/fiel.py,sha256=qh0fT2deSlf_Z-qCmtQYT2bSWTIRVdQb0D71i8ROXy4,1639
+cfdiclient/solicitadescarga.py,sha256=ZdN-yskHtkCgiOYvHxkPU2Cy0jkvgStZ9ve6Vz6yNZQ,5673
+cfdiclient/verificasolicituddescarga.py,sha256=VKGR6z0J3nnHOJpMC9zGmitb3YN92OOK9we9X5IDENg,5484
+cfdiclient-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cfdiclient-1.0.0.dist-info/METADATA,sha256=BnysiLmtGpehxN2Kth0BpvkzkMiSGnvVJjAXEBkVFdM,3891
+cfdiclient-1.0.0.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+cfdiclient-1.0.0.dist-info/top_level.txt,sha256=KZ_ig93eSNujwVIm98KBrccJUiM4paGHs_94-tPRFUg,11
+cfdiclient-1.0.0.dist-info/RECORD,,
