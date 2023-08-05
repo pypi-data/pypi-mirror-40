@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: zvbot
+Version: 0.0.9
+Summary: Create a virtual server for Bot Messenger Facebook with a personal account
+Home-page: https://github.com/zevtyardt/zvbot
+Author: noval wahyu ramadhan
+Author-email: xnver404@gmail.com
+License: MIT
+Description: see more https://github.com/zevtyardt/zvbot/blob/master/README.md
+Keywords: zvbot
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
