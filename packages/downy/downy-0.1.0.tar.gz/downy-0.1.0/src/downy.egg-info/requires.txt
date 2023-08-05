@@ -1,0 +1,15 @@
+requests
+threading
+psutil
+
+[dev]
+coverage
+pytest-cov
+pycodestyle
+sphinx
+alabaster
+nbsphinx
+ipython>=5.0
+jupyter-client
+ipykernel
+ipywidgets
