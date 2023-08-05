@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: flutterdebugger
+Version: 0.3
+Summary: debug flutter in host app
+Home-page: https://github.com/SquarePants1991/flutterdebugger
+Author: ocean wang
+Author-email: tomcat1991@126.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
