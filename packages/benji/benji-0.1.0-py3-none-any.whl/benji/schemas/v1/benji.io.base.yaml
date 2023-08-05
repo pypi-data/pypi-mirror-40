@@ -1,0 +1,10 @@
+configuration:
+  type: dict
+  nullable: True
+  required: True
+  schema:
+    simultaneousReads:
+      type: integer
+      empty: False
+      min: 1
+      default: 1
