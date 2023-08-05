@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: beancount-commerzbank
+Version: 0.1.2
+Summary: Beancount Importer for Commerzbank CSV exports
+Home-page: https://github.com/siddhantgoel/beancount-commerzbank
+Author: Siddhant Goel
+Author-email: me@sgoel.org
+License: MIT
+Keywords: beancount,cli-accounting,finance
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5.0
+Requires-Dist: beancount
+
+Beancount Commerzbank Importer
+==============================
+
+:code:`beancount-commerzbank` provides an Importer for converting CSV exports of
+Commerzbank_ account summaries to the Beancount_ format.
+
+.. image:: https://img.shields.io/pypi/v/beancount-commerzbank.svg
+    :target: https://pypi.python.org/pypi/beancount-commerzbank
+
+.. image:: https://travis-ci.org/siddhantgoel/beancount-commerzbank.svg?branch=stable
+    :target: https://travis-ci.org/siddhantgoel/beancount-commerzbank
+
+Installation
+------------
+
+.. code-block:: bash
+
+    $ pip install beancount-commerzbank
+
+In case you prefer installing from the Github repository, please note that
+:code:`master` is the development branch so :code:`stable` is what you should be
+installing from.
+
+Usage
+-----
+
+.. code-block:: python
+
+    from beancount_commerzbank import ECImporter
+
+    CONFIG = [
+        ECImporter(
+            IBAN_NUMBER, 'Assets:Commerzbank:EC', currency='EUR',
+            numeric_locale='de_DE.UTF-8', file_encoding='utf-8-sig'
+        ),
+    ]
+
+.. _Beancount: http://furius.ca/beancount/
+.. _Commerzbank: https://www.commerzbank.de/
+
+
