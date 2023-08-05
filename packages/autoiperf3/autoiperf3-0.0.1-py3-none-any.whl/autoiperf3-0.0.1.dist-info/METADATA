@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: autoiperf3
+Version: 0.0.1
+Summary: Jump to a remote server, start up iperf3, and collect connection data
+Home-page: https://github.com/Taywee/autoiperf3
+Author: Taylor C. Richberger
+Author-email: taywee@gmx.com
+License: GPLv3+
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Dist: paramiko
+Requires-Dist: strictyaml
+
+UNKNOWN
+
+
