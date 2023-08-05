@@ -1,0 +1,10 @@
+README.md
+git-zipfix
+setup.py
+zipfix/__init__.py
+zipfix/merge.py
+zipfix/odb.py
+zipfix.egg-info/PKG-INFO
+zipfix.egg-info/SOURCES.txt
+zipfix.egg-info/dependency_links.txt
+zipfix.egg-info/top_level.txt

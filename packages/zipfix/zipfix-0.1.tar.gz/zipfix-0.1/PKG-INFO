@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: zipfix
+Version: 0.1
+Summary: Quickly apply fixups to local git commits
+Home-page: https://github.com/mystor/git-zipfix
+Author: Nika Layzell
+Author-email: nika@thelayzells.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/mystor/git-zipfix/issues/
+Project-URL: Source Code, https://github.com/mystor/git-zipfix/
+Description: UNKNOWN
+Keywords: git zipfix
+Platform: UNKNOWN
