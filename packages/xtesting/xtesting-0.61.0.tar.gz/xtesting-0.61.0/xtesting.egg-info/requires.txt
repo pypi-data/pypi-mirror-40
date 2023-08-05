@@ -1,0 +1,12 @@
+pbr!=2.1.0
+stevedore
+PyYAML
+enum34
+requests
+robotframework>=3.0
+mock
+PrettyTable<0.8
+six
+python-subunit
+os-testr
+junitxml
