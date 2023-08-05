@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django-political-map
+Version: 1.1
+Summary: Django application to store geolocalized places and organize them according to political hierarchy.
+Home-page: https://github.com/20tab/django-political-map.git
+Author: Gabriel Giaccari, 20tab S.r.l.
+Author-email: info@20tab.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
