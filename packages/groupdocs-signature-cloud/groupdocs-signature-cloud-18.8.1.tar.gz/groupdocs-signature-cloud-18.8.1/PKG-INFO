@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: groupdocs-signature-cloud
+Version: 18.8.1
+Summary: GroupDocs.Signature Cloud SDK for Python allows you to use GroupDocs.Signature APIs in your Python applications
+Home-page: https://github.com/groupdocs_signature_cloud/groupdocs_signature_cloud-python
+Author: GroupDocs Signature
+Author-email: groupdocs.cloud@asposeptyltd.com
+License: UNKNOWN
+Description: 
+            This repository contains GroupDocs Signature Cloud SDK for Python source code. This SDK allows you to work with GroupDocs Signature Cloud REST APIs in your Python applications quickly and easily, with zero initial cost.
+            
+Keywords: groupdocs,signature,cloud,python,sdk
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
