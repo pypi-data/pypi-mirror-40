@@ -1,0 +1,17 @@
+readability/__init__.py,sha256=DbIzqbv_emqEQ-DHfhBI6aH3K0nQ2q1XRndBxllbJ6Y,285
+readability/readability.py,sha256=ocaht1eK_I_mtHxlOpwYKAMhjgAJx98oVwtruk2FmJs,618
+readability/exceptions/__init__.py,sha256=uJq_bTU8t8ST8yZpd1ImcUDJz-r7_Hu0QqVTvvcPvzY,48
+readability/scorers/__init__.py,sha256=6VLKXXb0eWbDualnR6m6qg2ttpWdg1-c8RcHS0Aj39Q,106
+readability/scorers/flesch.py,sha256=rbV_yl1iTkVew1zeySXixSqVvTaEKlxRogHYBnnMFFE,2006
+readability/scorers/flesch_kincaid.py,sha256=2hTqoh83cQzXucksvW8HaRua3PbG8Io5YAqKjYQbjpk,877
+readability/scorers/gunning_fog.py,sha256=MxOIlQ4RieSX1KhnIhC0P5Xm5gsT0-S8dcYj5k0txnE,1195
+readability/text/__init__.py,sha256=RrRhSRl3LZEcus8ZIDD1BxKxx-9oU8oirXZgspu0Soo,31
+readability/text/analyzer.py,sha256=RDcNyi0jUSc4KIH3A10wrdAyXHRzI7Ok67c6zUBXg_Q,2356
+readability/text/syllables.py,sha256=NNiYKV95ivMdj-Oyg3Gwzxfx4NP74dDsg5lCQOBWQ5A,375
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_readability.py,sha256=BRYQEeocJLG5w9u-WYmVsf5vz2iZ5iTQKWDYZ-u9m0M,1541
+py_readability_metrics-0.11.8.dist-info/LICENSE,sha256=BjL0TUkLvMX8sHBBiFyVECxFEDyXP2c-KHjjnIRarKQ,1096
+py_readability_metrics-0.11.8.dist-info/METADATA,sha256=hX2gCKNNTMk-IocRijowD7sU3ufVJWRN7ZnLGyIFICQ,1304
+py_readability_metrics-0.11.8.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+py_readability_metrics-0.11.8.dist-info/top_level.txt,sha256=xFp74kSeWnjS4m52gjzBl-ilLP8z0aA2mUwj-OZ572o,17
+py_readability_metrics-0.11.8.dist-info/RECORD,,
