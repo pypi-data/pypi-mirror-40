@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: actontext
+Version: 0.2.2
+Summary: This module provides functions to load COM DLL on Windows machine, to avoid registering it in Windows registry.
+Home-page: https://github.com/mettizik/pyactontext
+Author: Mokych Andrey
+Author-email: mokych.apriorit@gmail.com
+License: MIT
+Download-URL: https://github.com/mettizik/pyactontext/archive/v0.2.2.tar.gz
+Description: # actontext
+        
+        This module provides functions to load COM DLL on Windows machine, to avoid registering it in Windows registry.
+        You can find more about how it can be done in articles on web:
+        - [Registration-Free Activation of COM Components: A Walkthrough](https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/ms973913(v=msdn.10));
+        - [Create side-by-side registrationless COM manifest with VS](https://weblog.west-wind.com/posts/2011/Oct/09/An-easy-way-to-create-Side-by-Side-registrationless-COM-Manifests-with-Visual-Studio);
+        - etc. just Google it
+        
+        Possibly the main use case for package could be lightweight testing of COM objects, created from built in-proc COM servers
+        
+Keywords: COM,ATL,side-by-side,activation context
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
