@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lumodule
+Version: 0.0.1
+Summary: Personal Logging Module
+Home-page: https://github.com/
+Author: Cain Straffield
+Author-email: CainStraffield@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Personal Logging Module
+
+
