@@ -1,0 +1,4 @@
+[console_scripts]
+probe = bin.probe:cli
+store = bin.store:cli
+
