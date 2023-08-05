@@ -1,0 +1,88 @@
+{% extends "emailhub/base.html" %}
+{% load i18n %}
+
+{% block extrahead %}{{ block.super }}
+{% include "emailhub/ckeditor.inc.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+  <div class="row">
+    <div class="col s12">
+      <div id="emailhub-emailmessage-editor" class="card">
+        <div class="card-title">
+          <div class="title-actions">
+            {# PREV #}
+            {% if object.get_previous_by_created or object.get_next_by_created %}
+              {% if object.get_previous_by_created and object.get_previous_by_created.customer %}
+              <a href="{{ object.get_previous_by_created.get_absolute_url }}" class="btn" data-turbolinks="false"><i class="material-icons left">chevron_left</i> {% trans "Prev" %}</a>
+              {% endif %}
+              {# NEXT #}
+              {% if object.get_next_by_created and object.get_next_by_created.customer %}
+              <a href="{{ object.get_next_by_created.get_absolute_url }}" class="btn" data-turbolinks="false"><i class="material-icons right">chevron_right</i> {% trans "Next" %}</a>
+              {% endif %}
+            {% endif %}
+            {# SAVE #}
+            {% if object.is_draft %}
+            {# DELETTE #}
+            <a href="{% url "emailhub:emailmessage_process" pk=object.pk action="delete" %}" id="emailhub-emailmessage-delete" class="btn tooltip red" data-tooltip="{% trans "Delete" %}" data-turbolinks="false">
+              <i class="material-icons">delete_forever</i>
+            </a>
+            {# SAVE #}
+            <a href="{% url "emailhub:emailmessage_process" pk=object.pk action="save" %}" id="emailhub-emailmessage-save" class="btn tooltip blue disabled" data-tooltip="{% trans "Save" %}" data-turbolinks="false">
+              <i class="material-icons">save</i>
+            </a>
+            {# SEND #}
+            <a href="{% url "emailhub:emailmessage_process" pk=object.pk action="send" %}" id="emailhub-emailmessage-send" class="btn tooltip green" data-tooltip="{% trans "Send" %}" data-turbolinks="false" data-confirm="{% trans "Are you sure you want to send this message ?" %}">
+              <i class="material-icons">send</i>
+            </a>
+            {% endif %}
+            {# ADMIN #}
+            <a href="{% url "admin:emailhub_emailmessage_change" object.pk as admin_url %}" id="emailhub-emailmessage-admin" class="btn tooltip" data-tooltip="{% trans "Open in admin" %}" data-turbolinks="false">
+              <i class="material-icons">settings</i>
+            </a>
+          </div>
+          <h5>
+            <i class="material-icons blue-text">email</i> <span class="blue-text">{{ object.subject }}</span>
+            <span class="badge white-text blue">{% trans "Draft" %}</span>
+            <span class="badge white-text orange message-modified hide">{% trans "Modified, don't forget to save!" %}</span>
+          </h5>
+        </div>
+        <div class="card-content">
+          <hr>
+          <div class="email-meta">
+            <strong>{% trans "To" %}</strong> {{ object.to_email|urlize }}
+            &ndash;
+            <strong>{% trans "From" %}</strong> {{ object.from_email }}
+          </div>
+          <hr>
+          {% if object.send_error %}
+          <div class="alert alert-error">
+            {{ object.send_error }}
+          </div>
+          {% endif %}
+
+          <ul class="tabs messaging-tabs">
+            {#<li class="tab"><a href="#tab-preview">{% trans "Preview" %}</a></li>#}
+            <li class="tab html"><a href="#tab-html">{% trans "HTML" %}</a></li>
+            <li class="tab text"><a href="#tab-text">{% trans "Text" %}</a></li>
+          </ul>
+          <br>
+          {% comment %}
+          <div id="tab-preview" class="messaging-editor-tab">
+            {{ object.body_html|safe }}
+          </div>
+          {% endcomment %}
+          <div id="tab-html" class="messaging-editor-tab">
+            <textarea id="emailhub-emailmessage-body-html">{{ object.body_html }}</textarea>
+          </div>
+          <div id="tab-text" class="messaging-editor-tab">
+            <textarea id="emailhub-emailmessage-body-text">{{ object.body_text }}</textarea>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

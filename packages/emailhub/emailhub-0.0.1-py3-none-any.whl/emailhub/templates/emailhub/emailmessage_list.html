@@ -1,0 +1,14 @@
+{% extends "emailhub/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="content">
+  <div class="row">
+    <div class="col s12">
+      <h1>{% trans "Inbox" %}</h1>
+      {% include "emailhub/emailmessage_list.inc.html" %}
+      {% include "emailhub/pagination.inc.html" %}
+    </div>
+  </div>
+</div>
+{% endblock %}
