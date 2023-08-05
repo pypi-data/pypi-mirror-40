@@ -1,0 +1,3 @@
+[console_scripts]
+github_contributor_matcher = github_contributor_matcher.contributor_matcher:main
+

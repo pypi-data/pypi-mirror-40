@@ -1,0 +1,10 @@
+README.md
+setup.py
+Github_Contributor_Matcher.egg-info/PKG-INFO
+Github_Contributor_Matcher.egg-info/SOURCES.txt
+Github_Contributor_Matcher.egg-info/dependency_links.txt
+Github_Contributor_Matcher.egg-info/entry_points.txt
+Github_Contributor_Matcher.egg-info/requires.txt
+Github_Contributor_Matcher.egg-info/top_level.txt
+github_contributor_matcher/__init__.py
+github_contributor_matcher/contributor_matcher.py
