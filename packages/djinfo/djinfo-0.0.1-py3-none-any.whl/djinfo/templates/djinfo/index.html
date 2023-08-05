@@ -1,0 +1,84 @@
+{% load static i18n djinfo_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="ROBOTS" content="ALL" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/s/img/icon-touch.e4872c4da341.png">
+    <link rel="icon" sizes="192x192" href="/s/img/icon-touch.e4872c4da341.png">
+    <link rel="shortcut icon" href="/s/img/favicon.6dbf28c0650e.ico">
+    <meta name="msapplication-TileColor" content="#113228">
+    <meta name="msapplication-TileImage" content="/s/img/icon-tile.b01ac0ef9f67.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static "djinfo/css/djinfo.css" %}" type="text/css" />
+    <title>Django {{ version }} | djinfo</title>
+  </head>
+  <body id="generic" class="">
+    <div role="banner" id="top">
+      <div class="container">
+        <a class="logo" href="#">Django</a>
+        <p class="meta">v{{ django.version }}</p>
+      </div>
+    </div>
+    <div class="group django-settings">
+      <div class="copy-banner">
+        <div class="container toggle" data-target="#django-settings">
+          <h1>
+            <i class="fas fa-angle-down"></i>
+            <a name="settings">Settings</a>
+          </h1>
+        </div>
+      </div>
+      <table id="django-settings" class="python" cellpadding="0" cellspacing="0">
+        <tr><th class="subtitle" colspan="2"><h2>{% trans "Core" %}</h2></th></tr>
+        {% for k, v in settings.items %}
+        {% if k|is_core %}{% include "djinfo/setting.inc.html" with key=k value=v id="settings-core" %}{% endif %}
+        {% endfor %}
+        <tr><th class="subtitle" colspan="2"><h2>{% trans "Third party" %}</h2></th></tr>
+        {% for k, v in settings.items %}
+        {% if not k|is_core %}{% include "djinfo/setting.inc.html" with key=k value=v id="settings-other" %}{% endif %}
+        {% endfor %}
+      </table>
+    </div>
+    <div class="system">
+      <div class="copy-banner">
+        <div class="container toggle" data-target="#system">
+          <h1>
+            <i class="fas fa-angle-down"></i>
+            <a name="system">System</a>
+          </h1>
+        </div>
+      </div>
+      <table id="system" cellpadding="0" cellspacing="0">
+        <tr><th class="subtitle" colspan="2"><h2>{% trans "Environment" %}</h2></th></tr>
+        {% for k, v in environment.items %}
+        {% if not k|is_core %}{% include "djinfo/setting.inc.html" with key=k value=v %}{% endif %}
+        {% endfor %}
+        {#<tr><th class="subtitle" colspan="2"><h2>{% trans "Resources" %}</h2></th></tr>#}
+      </table>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(function() {
+    $('.toggle').bind('click', function(e){
+      var tgt = $($(this).data('target'));
+      if (tgt.is(':visible')) {
+        $(this).find('.fa-angle-down').removeClass('fa-angle-down').addClass('fa-angle-up');
+        $(this).addClass('close').removeClass('open');
+        tgt.slideUp();
+      }
+      else {
+        $(this).find('.fa-angle-up').removeClass('fa-angle-up').addClass('fa-angle-down');
+        $(this).addClass('open').removeClass('closed');
+        tgt.slideDown();
+      }
+    });
+  });
+  </script>
+</html>
