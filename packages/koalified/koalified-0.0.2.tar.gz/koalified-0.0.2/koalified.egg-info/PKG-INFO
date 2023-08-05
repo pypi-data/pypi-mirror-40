@@ -1,0 +1,64 @@
+Metadata-Version: 1.1
+Name: koalified
+Version: 0.0.2
+Summary: For when truth is a little fuzzy.
+Home-page: https://github.com/domaintools/koalified_python
+Author: DomainTools
+Author-email: timothy@domaintools.com
+License: MIT
+Description: |koalified|
+        ===========
+        
+        `PyPI version <http://badge.fury.io/py/koalified>`__ `Build
+        Status <https://travis-ci.org/timothycrosley/koalified>`__ `Coverage
+        Status <https://coveralls.io/github/timothycrosley/koalified?branch=master>`__
+        `License <https://pypi.python.org/pypi/koalified/>`__ `Join the chat at
+        https://gitter.im/domaintools/koalified_python <https://gitter.im/timothycrosley/koalified?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge>`__
+        
+        For when truth is a little fuzzy.
+        
+        `koalified
+        Example <https://github.com/domaintools/koalified_python/blob/develop/examples/example.py>`__
+        
+        Installing koalified
+        ====================
+        
+        Installing koalified is as simple as:
+        
+        .. code:: bash
+        
+           pip3 install koalified --upgrade
+        
+        Ideally, within a virtual environment.
+        
+        Why koalified?
+        ==============
+        
+        Koalified was built to help solve the case where the source of data
+        can’t be fully trusted but needs to be stored. It allows specifying what
+        should be, what can be, and what must be, in one concise schema
+        definition.
+        
+        --------------
+        
+        Thanks and I hope you find koalified helpful!
+        
+        ~Timothy Crosley
+        
+        .. |koalified| image:: https://raw.github.com/domaintools/koalified_python/develop/artwork/logo.png
+        
+        
+Keywords: Python,Python3
+Platform: UNKNOWN
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
