@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: unitify
+Version: 1.0.3
+Summary: Replaces all nouns in a text with the word "unit"
+Home-page: https://github.com/flipflop97/unitify
+Author: Philip Goto
+Author-email: philip.goto@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: spacy
+
+UNKNOWN
+
+
