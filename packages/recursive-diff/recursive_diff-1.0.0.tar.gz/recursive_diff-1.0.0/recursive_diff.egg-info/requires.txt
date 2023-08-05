@@ -1,0 +1,3 @@
+numpy>=1.13
+pandas>=0.21
+xarray>=0.10.1
