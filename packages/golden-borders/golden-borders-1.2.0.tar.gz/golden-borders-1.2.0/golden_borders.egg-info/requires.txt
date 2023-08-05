@@ -1,0 +1,10 @@
+click
+mpmath
+
+[dev]
+flake8
+flake8-docstrings
+flake8-import-order
+flake8-bugbear
+black
+isort
