@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: signac-flow
+Version: 0.6.4
+Summary: Simple workflow management for signac projects.
+Home-page: https://bitbucket.org/glotzer/signac-flow
+Author: Carl Simon Adorf
+Author-email: csadorf@umich.edu
+License: UNKNOWN
+Keywords: workflow management signac framework database
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, <4
+Description-Content-Type: text/markdown
+Requires-Dist: signac (>=0.6)
+Requires-Dist: jinja2
+Requires-Dist: cloudpickle
+Requires-Dist: enum34 ; python_version < "3.4"
+Provides-Extra: templating
+Requires-Dist: jinja2 (>=2.8) ; extra == 'templating'
+
+# README
+
+[![Anaconda-Server Badge](https://anaconda.org/conda-forge/signac-flow/badges/version.svg)](https://anaconda.org/conda-forge/signac-flow)
+[![PyPi](https://img.shields.io/pypi/v/signac-flow.svg)](https://img.shields.io/pypi/v/signac-flow.svg)
+[![conda-forge-downloads](https://img.shields.io/conda/dn/conda-forge/signac-flow.svg)](https://anaconda.org/conda-forge/signac-flow)
+[![RTD](https://readthedocs.org/projects/signac-flow/badge/?version=latest)](https://signac-flow.readthedocs.io)
+
+## About
+
+The **signac-flow** tool provides the basic components to set up simple to complex workflows for projects as part of the [signac framework](https://www.signac.io).
+That includes the definition of data pipelines, execution of data space operations and the submission of operations to high-performance super computers.
+
+## Maintainers
+
+  * Carl Simon Adorf (csadorf@umich.edu)
+  * Vyas Ramasubramani (vramasub@umich.edu)
+  * Bradley D. Dice (bdice@umich.edu)
+
+## Installation
+
+The recommendend installation method for **signac-flow** is through **conda** or **pip**.
+The software is tested for Python versions 2.7 and 3.4+ and is built for all major platforms.
+
+This package is available via the [conda-forge](https://conda-forge.org/) conda channel:
+
+`conda install -c conda-forge signac-flow`
+
+or pip:
+
+`pip install --user signac-flow`
+
+## Documentation
+
+The framework documentation is hosted at [https://docs.signac.io](https://docs.signac.io).
+
+The API reference for this package is hosted at [https://docs.signac.io/projects/flow/](https://docs.signac.io/projects/flow/).
+
+## Acknowledgment
+
+When using **signac** as part of your work towards a publication, we would really appreciate that you acknowledge **signac** appropriately.
+We have prepared examples on how to do that [here](https://docs.signac.io/en/latest/acknowledge.html).
+**Thank you very much!**
+
+## Testing
+
+You can test this package by executing
+
+    $ python -m unittest discover tests/
+
+within the repository root directory.
+
+
