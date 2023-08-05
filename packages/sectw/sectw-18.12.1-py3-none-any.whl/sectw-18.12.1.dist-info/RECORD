@@ -1,0 +1,14 @@
+sectw/2017-11-14.csv,sha256=IMFPh8fqD-1A11-SrAZANExR9S2QUgp6WLQ2JJOB8NY,2665445
+sectw/2018-08-14.csv,sha256=z4LKfDbFF-ueqFDgxNriuYkEsHgCRPp7aw1VmH3v_C4,2055665
+sectw/__init__.py,sha256=JI8pYFqss8aQgaKc1lzLLwHBU3tmjqtELDk3xZVcSBk,451
+sectw/api.py,sha256=Ldt262xZFxwCo2qBwzzWkvwRd_Wkknl5X7rAqrO83K4,2789
+sectw/builder.py,sha256=qLA5YkOqeGDqQgl64j1U56HDOtpX7tjHOTd5tHtsrbQ,1688
+sectw/util.py,sha256=Ua5QvOYsqsbBP5y1Iwe2gxvNAAoHneQvw8zbnUkdsOc,9658
+sectw/database/__init__.py,sha256=nSNl_4YEHJsEvmWfc0dVP32b6igH7uubzk7Bq3_VALc,168
+sectw/database/config.py,sha256=x45K2UcvE5J3efJACs8gqzclllrLcY32ry27zKbeXcA,651
+sectw/database/model.py,sha256=Xo4dqlDvBJv0srNUF7rzVC3lt6q5P6OQ2-gJkvIQWEk,3932
+sectw-18.12.1.dist-info/LICENSE.txt,sha256=r1vC-XZgXWpHeJyRcjaJydLvKXQDJ17NUytj5Bf6ztc,1054
+sectw-18.12.1.dist-info/METADATA,sha256=Mv4_O6t1zFdrrDmgZF7UQu4H30qZObhb8s-59lAJbBU,961
+sectw-18.12.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+sectw-18.12.1.dist-info/top_level.txt,sha256=XKYD4nXBG90IFhf3Xs87tDEHtRtAQBDxtKM0HXsJITo,6
+sectw-18.12.1.dist-info/RECORD,,
