@@ -1,0 +1,2 @@
+recursive-include comecut/json *
+recursive-include comecut/user_dict *
