@@ -1,0 +1,4 @@
+numpy>=1.13
+pandas>=0.21
+pshell>=1.0
+xarray>=0.10.9
