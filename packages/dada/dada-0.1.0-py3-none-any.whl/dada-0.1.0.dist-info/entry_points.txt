@@ -1,0 +1,3 @@
+[console_scripts]
+dada=dada.scripts.dada:cli
+

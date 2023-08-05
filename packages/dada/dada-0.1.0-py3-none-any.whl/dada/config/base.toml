@@ -1,0 +1,28 @@
+edit-command = 'code'
+config-edit-command = 'nvim'
+browser = 'google chrome'
+pdf-viewer = 'skim'
+
+kind-keys = [
+    'category'
+]
+
+keys = [
+    'title',
+    'shortcut',
+    'kind',
+    'development-url',
+    # command
+    'build-command',
+    'serve-command',
+    'edit-command',
+    # path
+    'path',
+    'code-path',
+    'web-path',
+    'staging-path',
+    'edit-path',
+]
+
+      
+

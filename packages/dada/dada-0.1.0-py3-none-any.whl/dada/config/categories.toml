@@ -1,0 +1,5 @@
+[web]
+taskrunner = 'grunt'
+
+[document]
+taskrunner = 'make'
