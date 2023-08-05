@@ -1,0 +1,11 @@
+README.md
+hot_magnet.py
+setup.py
+handler/__init__.py
+handler/magnet_handler.py
+hot_magnet.egg-info/PKG-INFO
+hot_magnet.egg-info/SOURCES.txt
+hot_magnet.egg-info/dependency_links.txt
+hot_magnet.egg-info/entry_points.txt
+hot_magnet.egg-info/requires.txt
+hot_magnet.egg-info/top_level.txt
