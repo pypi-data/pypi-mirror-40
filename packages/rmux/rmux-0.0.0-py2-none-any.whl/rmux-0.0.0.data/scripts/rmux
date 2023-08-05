@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# Shortcut for creating templated new shell scripts
+set -euo pipefail
+: ${HOSTS:=localhost}
+: ${XPANES_OPT:=-ss}
+red=`tput setaf 1`
+green=`tput setaf 2`
+reset=`tput sgr0`
+
+if [ "${HOSTS}" == "localhost" ]; then
+    &>2 echo "Warning: using localhost fallback, define HOSTS as a space separated list"
+fi
+
+which xpanes >/dev/null || {
+    >&2 echo "FATAL: xpanes not found, please install it. https://github.com/greymd/tmux-xpanes#installation"
+    exit 2
+}
+
+# detect current project based on .git presence
+PROJECT_ROOT=$(git rev-parse --show-toplevel 2>/dev/null || true)
+PROJECT_NAME=$(basename "$PROJECT_ROOT")
+REMOTE_DIR=.cache/.rmux/$PROJECT_NAME
+if [[ "$PROJECT_ROOT" != "" ]]; then
+    echo INFO: Found ${green}$PROJECT_NAME${reset} project on ${green}$PROJECT_ROOT${reset}
+    # generate smart exclude list, based on .gitignore when possible.
+    # See https://stackoverflow.com/a/15373763/99834
+    (
+        cd $PROJECT_ROOT
+        git ls-files --exclude-standard -oi --directory >.git/ignores.tmp
+
+                # if os.path.isfile('.gitignore'):
+            # self.rsync_params += \
+            #     '--include .git --exclude-from=.git/ignores.tmp '
+    )
+    for HOST in $HOSTS; do
+        set -x
+        ssh $HOST mkdir -p $REMOTE_DIR
+        rsync -ah --no-o --no-g --include .git --exclude-from=.git/ignores.tmp $PROJECT_ROOT/ $HOST:$REMOTE_DIR/
+    done
+fi
+
+if [ "$#" -eq 0 ]; then
+    >&2 echo "INFO: No command specified, just starting ssh sessions"
+    COMMAND=""
+else
+    COMMAND="$*; cd $REMOTE_DIR; bash -l"
+    XPANES_OPT='-ss'
+fi
+
+xpanes $XPANES_OPT -t -c "ssh -t -o StrictHostKeyChecking=no -o ForwardX11=no {} \"$COMMAND\"" $HOSTS
