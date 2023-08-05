@@ -1,0 +1,11 @@
+jugri/__init__.py,sha256=Kiez4_9qs3g-piSHUB-hMp716fUF_nKKYPumLAATidM,1162
+jugri/_version.py,sha256=p4vvF7_8p09OiDQ23-sEMDj4qk8k-a7G63V70J5CNUk,497
+jugri/pandify.py,sha256=vmcafWFw5RCp8Mts6-mNkFXVd8vJxYeq_-JLNB7KnbM,3671
+jugri/xify.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jugri/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jugri/tests/test_pandify.py,sha256=ROboeIRwDh-4WFBJSBuQDmaxwnx-mqYORwtz8wnOCOw,5790
+jugri/tests/test_xify.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jugri-0.5.0.dist-info/METADATA,sha256=bk6-ODsDOcMgpdtUMEV2UXCnPxtzdDtQrNiSfpMhTQw,1519
+jugri-0.5.0.dist-info/RECORD,,
+jugri-0.5.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+jugri-0.5.0.dist-info/top_level.txt,sha256=rvS3x3Yt1LvNv0g2qplJNB-Ibzni4s8Mm-yrhyBn2Os,6
