@@ -1,0 +1,3 @@
+[pytest11]
+fixture-marker = pytest_fixture_marker
+

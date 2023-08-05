@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+pytest_fixture_marker.py
+setup.py
+pytest_fixture_marker.egg-info/PKG-INFO
+pytest_fixture_marker.egg-info/SOURCES.txt
+pytest_fixture_marker.egg-info/dependency_links.txt
+pytest_fixture_marker.egg-info/entry_points.txt
+pytest_fixture_marker.egg-info/requires.txt
+pytest_fixture_marker.egg-info/top_level.txt
