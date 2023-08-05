@@ -1,0 +1,37 @@
+Metadata-Version: 2.0
+Name: microdaemon
+Version: 0.0.7
+Summary: A small framework for python services
+Home-page: https://github.com/chiara-paci/microdaemon
+Author: Chiara Paci
+Author-email: chiara.paci@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning 
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+
+Microdaemon
+===========
+
+Framework for python services.
+
+Microdaemon  is a  python library  providing bricks  to build  little,
+modular daemons with multithreading logic.
+
+Features:
+
+* easy daemonize function;
+* enhanced json configuration syntax;
+* builtin browser-like behaviour for interacting with websites, with or without API, and with html parsing;
+* threading support:
+  * channels for threading communication;
+  * advanced threading logic;
+* wsgi interface support, with predefined pages for rapid development.
+
+
+
+
