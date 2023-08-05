@@ -1,0 +1,11 @@
+DataProperty>=0.37.0
+dominate>=2.3.4
+enum34;python_version<"3.4"
+ipaddress;python_version<"3.3"
+logbook
+mbstrdecoder[all]
+msgfy>=0.0.4
+pathvalidate>=0.22.0
+six
+tabledata>=0.0.26
+typepy[datetime]
