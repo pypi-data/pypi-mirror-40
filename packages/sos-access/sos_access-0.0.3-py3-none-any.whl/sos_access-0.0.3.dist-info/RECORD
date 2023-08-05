@@ -1,0 +1,12 @@
+sos_access/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sos_access/client.py,sha256=lbNtiSNU07dATrtdAGzw6tIlsi8CvNpL2bZEfPdAEho,14972
+sos_access/decorators.py,sha256=zIquO0gTCW8VEjvuF0xJVRm8hPbTSbnG_QVtbShNPwI,1530
+sos_access/exceptions.py,sha256=hffWGLNubhXjyYeyiyFe7M03F9or_7JrzgzCBaiLwOc,1668
+sos_access/schemas.py,sha256=Yr-e5U3iuqwykt_NL9GIrL0HVIaRgJQg16DBOwv37ks,14103
+sos_access/test.py,sha256=ZD9oTaYWj4bQP1xSaxXQnPH-cEANQKRJkjfOXTGmwpM,1413
+sos_access/test_secure.py,sha256=xTqhBN3bKUF1kQ9iyqKApLMb3SarlJmAp6-XUUP2XuM,830
+sos_access-0.0.3.dist-info/LICENSE,sha256=DrRC-PfZnplB2VrIAySNParGrsnH9wf4zqfzpR37SbA,1542
+sos_access-0.0.3.dist-info/METADATA,sha256=8E0gsLyNON7APD_Fh0rjNsdLGCELigVnScT0mT8yGFE,1340
+sos_access-0.0.3.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+sos_access-0.0.3.dist-info/top_level.txt,sha256=HrfGNxDEGBQuKIakst22n0ii7FRkiD24uPivMVcjV6I,11
+sos_access-0.0.3.dist-info/RECORD,,
