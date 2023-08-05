@@ -1,0 +1,14 @@
+gemma_zds_client-0.9.1.dist-info/METADATA,sha256=CcMdgiFUeXI1zG23YkEHdlhT4VOdlmuiAxg2VDB-les,5558
+gemma_zds_client-0.9.1.dist-info/RECORD,,
+gemma_zds_client-0.9.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+gemma_zds_client-0.9.1.dist-info/top_level.txt,sha256=gdG14tHTftVav8gYkytwG-d-wJmIX-L1BQV_g0lcOQ0,11
+zds_client/__init__.py,sha256=FHwxyiOcc49TNojmDvbU-nrmeO4yLq1q4K49e9aIh0c,317
+zds_client/auth.py,sha256=APNQxzr6i6LUzc731wj2u6b7yjEzDCHucHa4jzDy-mg,1927
+zds_client/client.py,sha256=0sPuFJWIkd8RjxaomAT2ZJ6CyvL7Ad48H3I1Ojp_Ui8,9302
+zds_client/config.py,sha256=wH-Q62axG_U2l5K796Dlv4lmAiMcPvnoceah6wNOj5k,1533
+zds_client/log.py,sha256=qvY7ncDFVeaIf4SQ_ipbtUc6qekTSMKI00XcfuS2Ka0,1081
+zds_client/oas.py,sha256=IDzFKKr2-0O1xPMGEIjcqAgwromRep_8dGAbF6hxWL0,1455
+zds_client/registry.py,sha256=yLAGN-RgIw4ttZWAqzF_KsFzzBZRh3PIAc_fgg5Vjjo,625
+zds_client/schema.py,sha256=E29UHv5TkRgDVPlCMHSnk6jj66sP0NOKiENOuI9C3ck,7037
+zds_client/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zds_client/tests/mocks.py,sha256=2S-YImubIPY1kZtj0mG8ywxPeg0sHOHtRkS1BxynxvU,1473
