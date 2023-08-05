@@ -1,0 +1,5 @@
+[console_scripts]
+meow = meow.app:run_all
+meow_gui = meow.front:start_gui
+meow_server = meow.meow_server:start_server
+

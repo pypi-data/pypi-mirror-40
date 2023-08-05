@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: MeowApp
+Version: 2.0.0
+Summary: Application Manager For Gnome Desktop
+Home-page: https://gitlab.com/pnmougel/meow2
+Author: Pierre-Nicolas Mougel
+Author-email: pnmougel@gmail.com
+License: MIT
+Description: Allows to edit desktop files
+Keywords: applications desktop
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
