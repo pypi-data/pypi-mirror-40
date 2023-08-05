@@ -1,0 +1,3 @@
+[console_scripts]
+awsudo=awsudo_py.awsudo:main
+
