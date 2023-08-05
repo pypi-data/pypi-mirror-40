@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: Doraemon
+Version: 0.3
+Summary: A toolkit of Doraemon
+Home-page: https://github.com/131250208/Doraemon
+Author: Andy Wong
+Author-email: wychengpublic@163.com
+License: MIT
+Description: 
+        
+        Doraemon is a toolkit including frequently used code. It is still in development...
+        # Installation
+        ```bash
+        pip install Doraemon
+        ```
+        
+        # Checklist
+        1. Google Knowledge Graph
+        2. Google Translator
+        3. Robust Requests
+        4. User-friendly Chrome
+        
+        # Example
+        ##1. Google Knowledge Graph
+        ```python
+        from Doraemon.OnlineSearch import google_KG
+        
+        def get_proxies():
+            proxy_str = "127.0.0.1:1080"
+            proxies = {"http": "http://%s" % proxy_str,
+                       "https": "http://%s" % proxy_str, }
+            return proxies
+        
+        res = google_KG.get_entity("alibaba", get_proxies_fun=get_proxies)
+        print(res)
+        ```
+        
+        ##2. Google Translator
+        ```python
+        from Doraemon.OnlineSearch import google_translator
+        
+        def get_proxies():
+            proxy_str = "127.0.0.1:1080"
+            proxies = {"http": "http://%s" % proxy_str,
+                       "https": "http://%s" % proxy_str, }
+            return proxies
+        
+        ori_text = "中华民国"
+        res1 = google_translator.trans(ori_text, tl="zh-TW", get_proxies_fun=get_proxies)
+        long_text = ori_text * 2500 
+        res2 = google_translator.trans_long(long_text, )# if len(text) > 5000
+        
+        print(res1)
+        print(res2)
+        
+        ```
+        
+        ##3. Robust Requests
+        ```python
+        from Doraemon.Requests import requests_dora
+        url = "https://www.baidu.com"
+        
+        headers = requests_dora.get_default_headers()
+        headers["User-Agent"] = requests_dora.get_random_user_agent()
+        
+        def get_proxies():
+            proxy_str = "127.0.0.1:1080"
+            proxies = {"http": "http://%s" % proxy_str,
+                       "https": "http://%s" % proxy_str, }
+            return proxies
+        
+        # max_times, get_proxies_fun, and invoked_by is optional, other parameters are the same as the requests.get() and requests.post()
+        res1 = requests_dora.try_best_2_get(url, max_times=5, get_proxies_fun=get_proxies, invoked_by="parent_fun_name") 
+        res2 = requests_dora.try_best_2_post(url, max_times=5, get_proxies_fun=get_proxies)
+        print(res1.status_code)
+        print(res2.status_code)
+        ```
+        
+        ##4. User-friendly Chrome
+        ```python
+        from Doraemon.Requests import chrome_dora
+        
+        proxy = "127.0.0.1:1080"
+        baidu_url = "https://www.baidu.com"
+        # no_images: do not load images(response more quickly)
+        # headless: make the chrome invisible
+        # proxy: set if you need
+        # they are all optional
+        chrome = chrome_dora.MyChrome(headless=False, proxy="127.0.0.1:1080", no_images=True) 
+        chrome.get(baidu_url)
+        print(chrome.page_source)
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
