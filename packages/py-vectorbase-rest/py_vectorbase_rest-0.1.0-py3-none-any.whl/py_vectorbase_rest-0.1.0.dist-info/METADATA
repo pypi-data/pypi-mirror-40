@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: py-vectorbase-rest
+Version: 0.1.0
+Summary: Adaptation of pyEnsemblRest to work with VectorBase by default.
+Home-page: https://gitlab.com/evogenlab/py_vectorbase_rest
+Author: Romain Feron
+Author-email: romain.feron.91@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+
+# py_vectorbase_rest
+
+Adaptation of [pyEnsemblRest](https://github.com/gawbul/pyEnsemblRest) to work with VectorBase by default.
+
+## Installation
+```bash
+git clone git@gitlab.com:evogenlab/py_vectorbase_rest.git
+sudo python3 setup.py install
+```
+
+
