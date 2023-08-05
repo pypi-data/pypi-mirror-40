@@ -1,0 +1,3 @@
+[cubicweb.cubes]
+subprocess = cubicweb_subprocess
+

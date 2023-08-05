@@ -1,0 +1,24 @@
+Source: cubicweb-subprocess
+Section: web
+Priority: optional
+Maintainer: LOGILAB S.A. <contact@logilab.fr>
+Build-Depends:
+ debhelper (>= 9),
+ python (>= 2.6.5),
+Standards-Version: 3.9.6
+XS-Python-Version: >= 2.6
+
+Package: cubicweb-subprocess
+Architecture: all
+Depends:
+ cubicweb-common (>= 3.19.1),
+ cubicweb-file (>= 1.16.0),
+ ${python:Depends},
+ ${misc:Depends},
+Description: This cube helps to manage and monitor subprocesses.
+ CubicWeb is a semantic web application framework.
+ .
+ This cube helps to manage and monitor subprocesses.
+ .
+ This package will install all the components you need to run the
+ cubicweb-subprocess application (cube :)..

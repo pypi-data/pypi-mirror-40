@@ -1,0 +1,53 @@
+cubicweb-subprocess (0.4.0-1) unstable; urgency=medium
+
+  * new upstream release
+
+ -- Samuel Trégouët <samuel.tregouet@logilab.fr>  Fri, 21 Dec 2018 17:51:29 +0100
+
+cubicweb-subprocess (0.3.0-1) unstable; urgency=medium
+
+  * new upstream release
+
+ -- David Douard <david.douard@logilab.fr>  Tue, 09 Feb 2016 16:44:12 +0100
+
+cubicweb-subprocess (0.2.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alain Leufroy <alain.leufroy@logilab.fr>  Fri, 19 Jun 2015 11:36:07 +0200
+
+cubicweb-subprocess (0.2.1-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Aurelien Campeas <aurelien.campeas@logilab.fr>  Tue, 25 Nov 2014 15:42:40 +0100
+
+cubicweb-subprocess (0.2.0-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Aurelien Campeas <aurelien.campeas@logilab.fr>  Mon, 13 Oct 2014 17:00:43 +0200
+
+cubicweb-subprocess (0.1.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Rémi Cardona <remi.cardona@logilab.fr>  Wed, 16 Jul 2014 11:01:51 +0200
+
+cubicweb-subprocess (0.1.1-2) unstable; urgency=low
+
+  * Add missing dep on cubicweb-file.
+
+ -- Rémi Cardona <remi.cardona@logilab.fr>  Wed, 09 Jul 2014 12:09:35 +0200
+
+cubicweb-subprocess (0.1.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Alain Leufroy <alain.leufroy@logilab.fr>  Fri, 04 Jul 2014 18:37:08 +0200
+
+cubicweb-subprocess (0.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Rémi Cardona <remi.cardona@logilab.fr>  Fri, 04 Jul 2014 15:05:54 +0200
