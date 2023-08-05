@@ -1,0 +1,174 @@
+/* vi: set filetype=css: */
+
+
+/* General style */
+
+QWidget, QMessageBox{
+    background-color: black;
+    color:            rgb(200, 200, 200);
+    font-size:        16px;
+}
+
+QMainWindow::separator {
+    background: rgba(0, 0, 0, 0);
+    width:      4px;
+    height:     4px
+
+}
+
+/* :selected acts like :hover for QMenu */
+QMainWindow::separator:hover, QMenu::item:selected, QToolButton:hover,
+QPushButton:hover {
+    background: rgb(40, 40, 40);
+}
+
+QMenu::item:pressed, QToolButton:pressed, QPushButton:pressed {
+    background: rgb(40, 50, 70);
+}
+
+QPushButton:disabled, QMenu::item:disabled {
+    color: rgb(100, 100, 100);
+}
+
+TitleBar {
+    padding: 2px 4px;
+}
+
+
+/* To organize */
+
+
+QPushButton {
+    border:  0;
+    padding: 4px;
+}
+
+Chat SendBox {
+    background: rgb(5, 5, 5);
+    padding:    11px;
+    margin:     0px;
+}
+
+HomePage, HomePage QLabel, Chat MessageDisplay {
+    background: rgb(10, 10, 10);
+}
+
+HomePage QLabel {
+    color: rgb(160, 160, 160);
+}
+
+QLineEdit, QPlainTextEdit, QTextEdit, QComboBox {
+    background: rgb(20, 20, 20);
+}
+
+QCheckBox::indicator:unchecked {  /* TODO: improve */
+    border: 1px solid rgb(80, 80, 80);
+}
+
+
+/* Accounts / Room */
+
+/* branch, item = arrow, columns parts of a row*/
+
+QTreeView {
+    /* the annoying blue rectangle */
+    selection-background-color: transparent;
+}
+
+QTreeView::item {
+    padding: 2px 4px;
+}
+
+QTreeView::item:enabled:hover {
+    background: rgb(40, 40, 40)
+}
+
+QTreeView::branch:selected, QTreeView::item:selected {
+    background: rgb(20, 20, 20)
+}
+
+/* account rows */
+QTreeView::item:has-children {
+    color: rgb(0, 165, 220);
+}
+
+
+/* Actions bar */
+
+QToolButton {
+    min-height: 16px;
+    max-height: 32px;
+    padding:    4px;
+    border:     0;
+    margin:     0;
+}
+
+QToolButton[is-expand-button=true] {
+    padding: 2px;
+}
+
+ActionsBar QToolButton::menu-indicator {
+    image: none;
+}
+
+
+/* Dialogs */
+
+QDialog, QDialog QLabel, QDialog QCheckBox, QDialog BlankLine {
+    background: rgb(10, 10, 10);
+}
+
+QDialog BlankLine {
+    min-height: 16px;
+}
+
+QDialog InfoLine {
+    background:          black;
+    color:               rgb(0, 165, 220);
+    padding:             11px;
+    qproperty-alignment: "AlignCenter | AlignVCenter";
+
+}
+
+QDialog InfoLine[error=true] {
+    color: rgb(210, 35, 110);
+}
+
+
+/* Tabs */
+
+QTabBar {
+    background:         rgb(20, 20, 20);
+    qproperty-drawBase: 0; /* Remove bottom white line */
+}
+
+QTabBar::tab {
+    background: rgb(20, 20, 20);
+    border:     0;
+    padding:    8px;
+}
+
+QTabBar::tab:selected {
+    background: rgb(10, 10, 10);
+}
+
+
+/* Scrollbar */
+
+QScrollBar {
+    background: rgb(10, 10, 10);
+}
+
+QScrollBar:vertical   { width:  8px; }
+QScrollBar:horizontal { height: 8px; }
+
+QScrollBar::handle {
+    background:    black;
+    border:        1px solid rgb(80, 80, 80);
+    border-radius: 4px;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    width:  0;
+    height: 0;
+}
