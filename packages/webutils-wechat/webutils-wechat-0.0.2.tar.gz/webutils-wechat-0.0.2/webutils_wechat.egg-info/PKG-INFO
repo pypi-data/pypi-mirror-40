@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: webutils-wechat
+Version: 0.0.2
+Summary: Simple utils for Restful-web-wechat
+Home-page: https://gitee.com/xxmeng/webutils-wechat
+Author: SimonQ
+Author-email: simonq.mq@gmail.com
+License: UNKNOWN
+Description: Simple utils for Restful-web-wechat
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
