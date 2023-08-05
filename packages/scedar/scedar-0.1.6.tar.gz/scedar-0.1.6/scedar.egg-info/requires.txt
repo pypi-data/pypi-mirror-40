@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+pandas
+seaborn
+sklearn
+xgboost
+networkx
+fa2
+umap-learn==0.3.0
