@@ -1,0 +1,9 @@
+README.md
+setup.py
+sacred/__init__.py
+sacred_tui.egg-info/PKG-INFO
+sacred_tui.egg-info/SOURCES.txt
+sacred_tui.egg-info/dependency_links.txt
+sacred_tui.egg-info/not-zip-safe
+sacred_tui.egg-info/requires.txt
+sacred_tui.egg-info/top_level.txt
