@@ -1,0 +1,89 @@
+Metadata-Version: 1.1
+Name: discord_config
+Version: 0.0.2
+Summary: Easy config module for Discord bots
+Home-page: https://github.com/nowakcasimir/discord-config
+Author: Casimir Nowak
+Author-email: nowakcasimir@outlook.com
+License: MIT
+Description-Content-Type: text/x-rst
+Description: discord-config
+        ==============
+        
+        ``discord-config`` is a Python library to help saving and loading configuration files.
+        
+        Warning: Still in development, so use with care!
+        
+        Installation
+        ------------
+        
+        discord-config is available on PyPI under ``discord_config``:
+        
+        .. code-block:: bash
+        
+            $ pip install -U discord_config
+        
+        Or for the latest development version:
+        
+        .. code-block:: bash
+        
+            $ pip install -U git+https://github.com/nowakcasimir/discord-config.git#egg=discord_config
+        
+        Basic Example
+        -------------
+        
+        .. code-block:: python3
+        
+            from discord_config import Settings
+        
+            # (settings will be saved by default to settings.json, if it is not defined)
+            settings = Settings()
+        
+            print (settings)
+            print (settings.token) #> "...yourtoken..."
+            print (settings.server_id) #> "123123123"
+        
+            settings.clear() # Clears the settings
+        
+            # You can define arbitrary settings to Settings object defaults
+            settings = Settings(defaults = {
+                "token": "...yourtoken...",
+                "botname": "MyDiscordBot",
+                "joinservers": False,
+                "idleTimer": 100
+            })
+        
+            print (settings)
+            print (settings.token) #> "...yourtoken..."
+            print (settings.botname) #> "...MyDiscordBot..."
+            print (settings.joinservers) #> False
+            print (settings.idleTimer) #> 100
+        
+            # Defaults were overwritten
+            try:
+                print (settings.server_id)
+            except Exception as e:
+                 #> AttributeError: 'Settings' object has no attribute 'server_id'
+                pass
+        
+            settings.set('id', 'broker')
+        
+            print (settings.id) #> 100
+        
+            settings.save() # outputs settings.json by default
+        
+            settings = Settings() # Now it loads settings.json
+        
+            print (settings)
+        
+            settings.clear()
+        
+        Documentation
+        -------------
+        
+        See the documentation at https://discord-rnn.neocities.org/.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

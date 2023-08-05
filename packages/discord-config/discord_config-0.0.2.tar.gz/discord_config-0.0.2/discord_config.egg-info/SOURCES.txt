@@ -1,0 +1,9 @@
+README.rst
+setup.py
+discord_config/__init__.py
+discord_config/dw.py
+discord_config.egg-info/PKG-INFO
+discord_config.egg-info/SOURCES.txt
+discord_config.egg-info/dependency_links.txt
+discord_config.egg-info/requires.txt
+discord_config.egg-info/top_level.txt
