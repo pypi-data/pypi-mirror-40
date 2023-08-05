@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: webtraffic
+Version: 0.1.6
+Summary: See web traffic info python
+Home-page: https://github.com/meain/traffic
+Author: Abin Simon
+Author-email: abinsimon10@gmail.com
+License: UNKNOWN
+Keywords: speed,web,download,upload
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+
+# Traffic
+
+Gives you the current traffic stats on your system.
+
+> Shows average speed at the exit.
+
+![gif](https://i.imgur.com/gtrfbxC.gif)
+
+## Installation
+
+```
+pip3 install webtraffic
+```
+
+## Usage
+
+Just run:
+
+```
+traffic
+```
+
+
