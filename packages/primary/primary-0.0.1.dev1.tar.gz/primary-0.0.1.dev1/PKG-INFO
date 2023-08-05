@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: primary
+Version: 0.0.1.dev1
+Summary: Client for Primary's trading/market-data/etc. APIs (http://api.primary.com.ar/).
+Home-page: https://github.com/mvillalba/python-primary
+Author: Martín Raúl Villalba
+Author-email: martin@martinvillalba.com
+License: MIT
+Description: Primary API Python Client
+        ===
+        
+        Python client for Primary's trading/market-data/etc. APIs (http://api.primary.com.ar/).
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Description-Content-Type: text/markdown

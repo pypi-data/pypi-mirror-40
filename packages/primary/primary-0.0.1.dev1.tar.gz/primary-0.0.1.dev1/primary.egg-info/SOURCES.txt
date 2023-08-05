@@ -1,0 +1,15 @@
+DEVELOP.md
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+primary/__init__.py
+primary/main.py
+primary.egg-info/PKG-INFO
+primary.egg-info/SOURCES.txt
+primary.egg-info/dependency_links.txt
+primary.egg-info/entry_points.txt
+primary.egg-info/requires.txt
+primary.egg-info/top_level.txt
