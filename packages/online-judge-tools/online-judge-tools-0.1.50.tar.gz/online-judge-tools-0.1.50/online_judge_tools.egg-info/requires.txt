@@ -1,0 +1,11 @@
+requests
+lxml
+beautifulsoup4
+colorama
+sympy
+appdirs
+
+[docs]
+sphinx
+sphinx_rtd_theme
+sphinx-autodoc-typehints
