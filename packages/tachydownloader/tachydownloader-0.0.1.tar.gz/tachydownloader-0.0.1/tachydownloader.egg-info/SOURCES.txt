@@ -1,0 +1,11 @@
+README.md
+setup.py
+tachydownloader.egg-info/PKG-INFO
+tachydownloader.egg-info/SOURCES.txt
+tachydownloader.egg-info/dependency_links.txt
+tachydownloader.egg-info/entry_points.txt
+tachydownloader.egg-info/top_level.txt
+tachyon/__init__.py
+tachyon/__main__.py
+tachyon/tachyon.py
+tachyon/tools.py
