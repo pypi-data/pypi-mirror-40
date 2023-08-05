@@ -1,0 +1,4 @@
+sympy<=0.7.7
+numpy>=1.5
+six
+pint
