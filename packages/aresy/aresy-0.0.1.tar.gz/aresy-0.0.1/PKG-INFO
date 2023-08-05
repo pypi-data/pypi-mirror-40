@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aresy
+Version: 0.0.1
+Summary: A industrial-length data science toolkits
+Home-page: https://github.com/tangzhy/aresy
+Author: Zhengyang Tang
+Author-email: zytang7@126.com
+License: UNKNOWN
+Description: # aresy
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
