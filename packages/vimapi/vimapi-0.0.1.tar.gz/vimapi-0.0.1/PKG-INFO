@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: vimapi
+Version: 0.0.1
+Summary: Vim API to control and configure the vim editor using python.
+Home-page: https://github.com/julien-h/vimapi
+Author: Julien Harbulot
+Author-email: web@julienh.fr
+License: MIT license
+Description: # Vim API
+        
+        [![](https://img.shields.io/pypi/v/vimapi.svg)](https://pypi.python.org/pypi/vimapi)
+        [![](https://img.shields.io/travis/julien-h/vimapi.svg)](https://travis-ci.org/julien-h/vimapi)
+        [![](https://readthedocs.org/projects/vimapi/badge/?version=latest)](https://vimapi.readthedocs.io/en/latest/?badge=latest)
+        [![](https://pyup.io/repos/github/julien-h/vimapi/shield.svg)](https://pyup.io/repos/github/julien-h/vimapi/)
+        
+        
+        Vim API to control and configure the vim editor using python.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://vimapi.readthedocs.io.
+        
+        
+        # History
+        
+        ## 0.0.1 (2018-12-30)
+        
+        * First release on PyPI.
+        
+Keywords: vimapi vim plugin neovim api vim-api pyfile py3file pyvim vimpy
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
