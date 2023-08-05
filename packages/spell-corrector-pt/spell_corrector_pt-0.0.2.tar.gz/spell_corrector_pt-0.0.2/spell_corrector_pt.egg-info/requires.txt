@@ -1,0 +1,12 @@
+atomicwrites
+attrs
+joblib
+more-itertools
+numpy
+pluggy
+py
+pytest
+scikit-learn
+scipy
+six
+sklearn
