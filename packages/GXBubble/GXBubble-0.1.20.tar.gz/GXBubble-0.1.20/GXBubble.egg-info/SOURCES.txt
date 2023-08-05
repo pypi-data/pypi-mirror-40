@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+GXBubble.egg-info/PKG-INFO
+GXBubble.egg-info/SOURCES.txt
+GXBubble.egg-info/dependency_links.txt
+GXBubble.egg-info/not-zip-safe
+GXBubble.egg-info/top_level.txt
+gxbubble/__init__.py
+gxbubble/sh.py
+gxbubble/tail.py
+gxbubble/task.py
+gxbubble/unity.py
