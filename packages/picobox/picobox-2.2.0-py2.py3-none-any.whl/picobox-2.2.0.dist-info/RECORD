@@ -1,0 +1,12 @@
+picobox/__init__.py,sha256=VG43xrBjaIDFR2KMof_gBT2khbot4CNRBshlaG7Npi0,485
+picobox/_box.py,sha256=rS8xdZ88RVVrhUGznDNaRYPnAS2nq1JM8SbBnKMIll4,9733
+picobox/_compat.py,sha256=V_2xHPyaHc7voUH0Nc113iUJA3ANr6DKSaPoPXlo9RE,936
+picobox/_scopes.py,sha256=HWH-mdcye0JYlFPFxVRnCqkbYyWLwgzZBJqakUrdiLU,2745
+picobox/_stack.py,sha256=LyrTEPS1FMVRIrQZSRHu7wQ2eBv852CQ-aNOiTDQ9ag,7991
+picobox/contrib/__init__.py,sha256=Uyvf68eKi81DlHnVClCAGrui9xv6juphwFaHWAI3b8Y,43
+picobox/contrib/flaskscopes.py,sha256=42mYrvnHCfUiW4Zv_qe4fSO0U2FIwmQqsUSaMgtRIWQ,1975
+picobox-2.2.0.dist-info/LICENSE,sha256=SLvl17ZyA_uzXpAKPVR5V37n2hTeHliuxyym1eGn9KM,1059
+picobox-2.2.0.dist-info/METADATA,sha256=Fv_rAZUXyzA34x5MK-mWzHVclNx6JqsleqWhQ8WtM1A,3193
+picobox-2.2.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+picobox-2.2.0.dist-info/top_level.txt,sha256=VQrq4g6wKa9Oj3dioVrGXDFITH1tsRHfaZCxMXOLBfM,8
+picobox-2.2.0.dist-info/RECORD,,
