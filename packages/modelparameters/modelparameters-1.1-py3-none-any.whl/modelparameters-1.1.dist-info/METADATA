@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: modelparameters
+Version: 1.1
+Summary: 
+Requires-Dist: sympy (<=0.7.7)
+Requires-Dist: numpy (>=1.5)
+Requires-Dist: six
+Requires-Dist: pint
+
+A module providing parameter structure for physical modeling
+      
+Home-page: UNKNOWN
+Author: Johan Hake 
+Author-email: hake.dev@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
