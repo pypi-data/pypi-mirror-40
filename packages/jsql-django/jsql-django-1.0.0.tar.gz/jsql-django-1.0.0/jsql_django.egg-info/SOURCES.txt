@@ -1,0 +1,11 @@
+README.md
+setup.py
+jsql/__init__.py
+jsql/connector/__init__.py
+jsql/executor/__init__.py
+jsql/view/__init__.py
+jsql_django.egg-info/PKG-INFO
+jsql_django.egg-info/SOURCES.txt
+jsql_django.egg-info/dependency_links.txt
+jsql_django.egg-info/requires.txt
+jsql_django.egg-info/top_level.txt
