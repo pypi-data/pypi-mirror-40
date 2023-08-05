@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: mixpy
+Version: 0.0.0
+Summary: Python3 MIX Simulator
+Home-page: https://github.com/mitchwagner/mixpy
+Author: Mitch Wagner
+Author-email: mitchell.j.wagner@gmail.com
+License: UNKNOWN
+Description: Open-source MIX simulator, written in Python 3
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
