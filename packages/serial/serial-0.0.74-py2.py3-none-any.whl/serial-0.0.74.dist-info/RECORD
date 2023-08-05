@@ -1,0 +1,14 @@
+serial/__init__.py,sha256=tm4bZBRkNmx3MPa50B3iQhrW_uo5jH88kBQJ1qqBQVY,956
+serial/errors.py,sha256=R06fM1oktcCWhkPUOtfITQYjgxPByxX_ovX_UCXtmmM,5276
+serial/hooks.py,sha256=i0DeKjq6fJT_RmbTtFWwb0ocAdM-X2uYoqU6W2Y7MH0,9136
+serial/marshal.py,sha256=13GgjJxtYMVUcfqh1ci_-sHKk3CtGlZeS2XhzByIzls,20968
+serial/meta.py,sha256=3wu_g-ix8PHcGGA03WiL1ZxNn7fjtKuC-k2xJ1sPafY,27069
+serial/model.py,sha256=3fkndYJpN_t74hLYXaebjZDYJq3SIVlUxfmBYPDEtlw,42223
+serial/properties.py,sha256=3UwLdgktJcovoKk2Lrkr9IWN71LaSPDRu4SqKoxmAjw,30001
+serial/request.py,sha256=mew5U2Rbt77bo0GCp3Xu3VKdKUZK2twdpZcsJ0yvtqo,14280
+serial/test.py,sha256=Rzbr6lOyistS2bwA2-8_fxm1xbPfrS9Z_RC_3zkM4HQ,9389
+serial/utilities.py,sha256=Gp8yyL7e8EJNgGnZhEsv0ormP5m7zuzeK-4a0oKljBA,13322
+serial-0.0.74.dist-info/METADATA,sha256=5mGjKD_ZrYCptA2uqg0Uw9_7pO8dkQPorBAPuuYGh0E,839
+serial-0.0.74.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+serial-0.0.74.dist-info/top_level.txt,sha256=FSjfWHWw-VjPiEqOhttbiP-F8OHn-liixq1wKL2fWOA,7
+serial-0.0.74.dist-info/RECORD,,
