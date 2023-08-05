@@ -1,0 +1,8 @@
+setup.py
+azf_wsgi/__init__.py
+azf_wsgi/wsgi_adapter.py
+azf_wsgi.egg-info/PKG-INFO
+azf_wsgi.egg-info/SOURCES.txt
+azf_wsgi.egg-info/dependency_links.txt
+azf_wsgi.egg-info/requires.txt
+azf_wsgi.egg-info/top_level.txt
