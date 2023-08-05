@@ -1,0 +1,31 @@
+include *.bat
+include *.txt
+include LICENSE
+include Makefile
+include tox.ini
+recursive-include build *.arff
+recursive-include build *.buildinfo
+recursive-include build *.css
+recursive-include build *.doctree
+recursive-include build *.gif
+recursive-include build *.html
+recursive-include build *.inv
+recursive-include build *.js
+recursive-include build *.nojekyll
+recursive-include build *.pickle
+recursive-include build *.png
+recursive-include build *.py
+recursive-include build *.txt
+recursive-include source *.buildinfo
+recursive-include source *.css
+recursive-include source *.doctree
+recursive-include source *.gif
+recursive-include source *.html
+recursive-include source *.inv
+recursive-include source *.js
+recursive-include source *.nojekyll
+recursive-include source *.pickle
+recursive-include source *.png
+recursive-include source *.py
+recursive-include source *.rst
+recursive-include source *.txt
