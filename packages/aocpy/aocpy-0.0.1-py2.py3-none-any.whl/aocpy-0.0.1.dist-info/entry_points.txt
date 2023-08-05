@@ -1,0 +1,3 @@
+[console_scripts]
+aocpy = aocpy.cli:cli
+
