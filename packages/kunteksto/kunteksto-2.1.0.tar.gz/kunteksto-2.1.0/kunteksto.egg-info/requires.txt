@@ -1,0 +1,17 @@
+agraph-python
+basexclient
+click
+requests
+lxml
+shortuuid
+sphinx
+sphinx-rtd-theme
+ujson
+xmltodict
+cuid
+flask
+flask-admin
+flask-sqlalchemy
+flask-babelex
+sqlalchemy-utils
+python-dotenv
