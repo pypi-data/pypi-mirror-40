@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+version_helper.py
+morphops/__init__.py
+morphops/io.py
+morphops/lmk_util.py
+morphops/procrustes.py
+morphops.egg-info/PKG-INFO
+morphops.egg-info/SOURCES.txt
+morphops.egg-info/dependency_links.txt
+morphops.egg-info/requires.txt
+morphops.egg-info/top_level.txt
