@@ -1,0 +1,8 @@
+rchitect>=0.2.2
+lineedit>=0.1.1
+
+[test]
+pytest
+pyte
+pexpect
+ptyprocess
