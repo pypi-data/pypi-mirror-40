@@ -1,0 +1,15 @@
+six
+chardet
+requests
+selenium
+beautifulsoup4
+attrs
+timeout_decorator
+fake-useragent
+diskcache
+sqlalchemy_mate
+pymongo_mate
+mongoengine_mate
+mongomock_mate
+atomicwrites
+loggerFactory
