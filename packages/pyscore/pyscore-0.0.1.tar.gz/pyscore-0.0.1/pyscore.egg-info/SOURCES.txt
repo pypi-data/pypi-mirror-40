@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyscore/__init__.py
+pyscore/underscore.py
+pyscore.egg-info/PKG-INFO
+pyscore.egg-info/SOURCES.txt
+pyscore.egg-info/dependency_links.txt
+pyscore.egg-info/top_level.txt
