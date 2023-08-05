@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mooshimeter
+Version: 0.1.0
+Summary: UNOFFICIAL! This package is a fork from the original mooshimeter python API
+Home-page: https://github.com/spyoungtech/Mooshimeter-PythonAPI
+Author: James Whong
+Author-email: hello@moosh.im
+Maintainer: Spencer Young
+Maintainer-email: spencer.young@spyoung.com
+License: GPLv3
+Platform: UNKNOWN
+Requires-Dist: pyserial
+
+UNKNOWN
+
+
