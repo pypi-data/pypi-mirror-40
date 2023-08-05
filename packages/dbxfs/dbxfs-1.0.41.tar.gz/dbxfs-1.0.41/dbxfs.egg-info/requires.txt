@@ -1,0 +1,11 @@
+dropbox>=3.38
+appdirs<2,>=1.4
+userspacefs<2,>=1.0.13
+block_tracing<2,>=1.0.1
+privy<7,>=6.0
+keyring>=15.1.0
+keyrings.alt<4,>=3.1
+sentry_sdk<1,>=0.3
+
+[safefs]
+safefs
