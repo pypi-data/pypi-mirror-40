@@ -1,0 +1,10 @@
+README.md
+setup.py
+pikli/__init__.py
+pikli/command.py
+pikli/core.py
+pikli/flag.py
+pikli.egg-info/PKG-INFO
+pikli.egg-info/SOURCES.txt
+pikli.egg-info/dependency_links.txt
+pikli.egg-info/top_level.txt
