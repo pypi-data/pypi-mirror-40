@@ -1,0 +1,15 @@
+README.md
+setup.py
+livelossplot/__init__.py
+livelossplot/core.py
+livelossplot/generic_keras.py
+livelossplot/generic_plot.py
+livelossplot/keras.py
+livelossplot/pytoune.py
+livelossplot/tf_keras.py
+livelossplot.egg-info/PKG-INFO
+livelossplot.egg-info/SOURCES.txt
+livelossplot.egg-info/dependency_links.txt
+livelossplot.egg-info/not-zip-safe
+livelossplot.egg-info/requires.txt
+livelossplot.egg-info/top_level.txt
