@@ -1,0 +1,10 @@
+setup.py
+yata/__init__.py
+yata/fields.py
+yata/loaders.py
+yata/util.py
+yata.egg-info/PKG-INFO
+yata.egg-info/SOURCES.txt
+yata.egg-info/dependency_links.txt
+yata.egg-info/requires.txt
+yata.egg-info/top_level.txt
