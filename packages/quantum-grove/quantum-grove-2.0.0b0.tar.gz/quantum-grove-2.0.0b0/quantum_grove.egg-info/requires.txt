@@ -1,0 +1,13 @@
+numpy
+scipy
+pyquil>=2.0.0
+funcsigs
+mock
+networkx
+matplotlib
+
+[tomography]
+cython
+cvxpy
+scs
+qutip
