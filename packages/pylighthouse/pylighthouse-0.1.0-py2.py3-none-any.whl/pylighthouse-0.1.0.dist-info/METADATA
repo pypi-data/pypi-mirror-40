@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: pylighthouse
+Version: 0.1.0
+Summary: Helps workloads find safe harbor.
+Home-page: https://github.com/djhaskin987/pylighthouse
+Author: Daniel Jay Haskin
+Author-email: djhaskin987@gmail.com
+License: Apache Software License 2.0
+Keywords: pylighthouse
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+============
+pylighthouse
+============
+
+
+.. image:: https://img.shields.io/pypi/v/pylighthouse.svg
+        :target: https://pypi.python.org/pypi/pylighthouse
+
+.. image:: https://img.shields.io/travis/djhaskin987/pylighthouse.svg
+        :target: https://travis-ci.org/djhaskin987/pylighthouse
+
+.. image:: https://readthedocs.org/projects/pylighthouse/badge/?version=latest
+        :target: https://pylighthouse.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+Helps workloads find safe harbor.
+
+* Free software: Apache Software License 2.0
+* Documentation: https://pylighthouse.readthedocs.io.
+
+Features
+--------
+
+* Scheduling-as-a-library, in pure python
+* Schedule workloads onto nodes
+* Flexible definition of requirements needed by workloads and resources offered
+  by nodes
+* Tag nodes simply by adding a zero-quantity resource
+* "Taints and Tolerations"-like behavior supported through the use of
+  Wards and Immunitites
+* Anti-affinity-group-like behavior supported through the use of
+  Aversion Groups
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+.. _pylighthouse Changelog:
+
+=========
+Changelog
+=========
+
+All notable changes to this project will be documented here.
+
+The format is based on `Keep a Changelog`_
+and this project adheres to `Semantic Versioning`_.
+
+.. _Semantic Versioning: http://semver.org/spec/v2.0.0.html
+.. _Keep a Changelog: http://keepachangelog.com/en/1.0.0/
+
+
+`Unreleased`_
+-------------
+
+Added
++++++
+
+Changed
++++++++
+
+Fixed
++++++
+
+`v0.1.0`_
+-------------
+
+Added
++++++
+- Node class
+- Workload class
+- Distributor base class
+- PrioritizedDistributor class
+- RoundRobinDistributor class
+- BinPackDistributor class
+- distributor classes have a method called ``attempt_attach_workloads``,
+  the primary use case of this library
+
+Changed
++++++++
+
+Fixed
++++++
+
+.. _Unreleased: https://github.com/djhaskin987/pylighthouse/compare/v0.1.0...HEAD
+.. _0.1.0: https://github.com/djhaskin987/pylighthouse/compare/36c7152a4a8f534e86cbcb3c80845eb14275821c..v0.1.0
+
+
+
