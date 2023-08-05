@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: NeuralNetworkPY
+Version: 0.0.1
+Summary: An easy-to-use Neural Network library I'm building from scratch.
+Home-page: https://github.com/And1210/NeuralNetworkPY
+Author: Andrew Farley
+Author-email: amf7crazy@gmail.com
+License: UNKNOWN
+Description: # NeuralNetworkPY
+        A basic neural network library built from scratch in python. Only dependency is numpy.
+        
+        
+        ## Save File Format
+        *line 1:* inputNum 
+        
+        *line 2:* hiddenNum 
+        
+        *line 3:* outputNum 
+        
+        *line 4:* learningRate 
+        
+        *line 5:* number of layers (layerNum) 
+        
+        *line 6:* layer[0] Weights 
+        
+        *line 7:* layer[0] Bias 
+        
+        *.........* 
+        
+        *line (5+2xlayerNum-1):* layer[layerNum-1] Weights 
+        
+        *line (5+2xlayerNum):* layer[layerNum-1] Bias 
+        
+        
+        
+        ## Dev Notes
+        I am currently working on building a Convolutional Neural Network from scratch modelled after the Neural Network created here. The code that is being worked on can be found here as well.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
