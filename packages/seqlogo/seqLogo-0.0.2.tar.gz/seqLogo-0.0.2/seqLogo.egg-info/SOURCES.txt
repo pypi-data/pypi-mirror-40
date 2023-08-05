@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+./seqLogo/__init__.py
+./seqLogo/core.py
+./seqLogo/seqLogo.py
+./seqLogo/utils.py
+seqLogo.egg-info/PKG-INFO
+seqLogo.egg-info/SOURCES.txt
+seqLogo.egg-info/dependency_links.txt
+seqLogo.egg-info/not-zip-safe
+seqLogo.egg-info/requires.txt
+seqLogo.egg-info/top_level.txt
