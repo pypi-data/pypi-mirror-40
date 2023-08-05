@@ -1,0 +1,5 @@
+logbook
+mbstrdecoder[all]>=0.6.1
+six
+tabledata>=0.0.26
+typepy>=0.3.1
