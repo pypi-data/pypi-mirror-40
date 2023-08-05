@@ -1,0 +1,3 @@
+[console_scripts]
+inkscape_layer_export = inkscape_layer_export:main
+

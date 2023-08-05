@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+inkscape_layer_export/__init__.py
+inkscape_layer_export/core.py
+inkscape_layer_export/release.py
+inkscape_layer_export.egg-info/PKG-INFO
+inkscape_layer_export.egg-info/SOURCES.txt
+inkscape_layer_export.egg-info/dependency_links.txt
+inkscape_layer_export.egg-info/entry_points.txt
+inkscape_layer_export.egg-info/requires.txt
+inkscape_layer_export.egg-info/top_level.txt

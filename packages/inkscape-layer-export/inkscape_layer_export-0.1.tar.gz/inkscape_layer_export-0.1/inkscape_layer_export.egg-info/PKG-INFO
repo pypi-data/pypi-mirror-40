@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: inkscape-layer-export
+Version: 0.1
+Summary: Script for generating multiple pdfs from an svg-file according to special layer names
+Home-page: https://github.com/cknoll/imagedirpreview
+Author: Carsten Knoll
+Author-email: UNKNOWN
+License: GPLv3
+Description: 
+            Script for generating multiple pdfs from an svg-file according to special layer names like (containing frame numbers)
+            
+Keywords: svg,pdf,animation,helper script
+Platform: UNKNOWN
