@@ -1,0 +1,8 @@
+README.md
+setup.py
+BaiduFace.egg-info/PKG-INFO
+BaiduFace.egg-info/SOURCES.txt
+BaiduFace.egg-info/dependency_links.txt
+BaiduFace.egg-info/top_level.txt
+src/__init__.py
+src/facebaidu.py
