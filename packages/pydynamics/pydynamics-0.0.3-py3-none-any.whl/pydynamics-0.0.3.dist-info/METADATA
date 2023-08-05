@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pydynamics
+Version: 0.0.3
+Summary: Talk to On-Prem Dynamics CRM
+Home-page: https://github.com/dangoscomb/pydynamics
+Author: Dan Goscomb
+Author-email: dan@flowplex.co.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: requests
+
+# PyDynamics
+
+Client and Query Builder for On-Premise Microsoft Dynamics CRM.
+
