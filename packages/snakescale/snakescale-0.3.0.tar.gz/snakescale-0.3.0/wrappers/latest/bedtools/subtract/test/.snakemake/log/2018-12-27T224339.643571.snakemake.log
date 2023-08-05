@@ -1,0 +1,32 @@
+Building DAG of jobs...
+File path file:///Users/cvalentine/repositories/snakescale/wrappers/latest/bedtools/subtract/environment.yaml contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Using shell: /usr/local/bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	bedtools_subtract
+	1
+
+[Thu Dec 27 22:43:39 2018]
+rule bedtools_subtract:
+    input: data/a.bed, data/b.bed
+    output: data/result.bed
+    jobid: 0
+
+/Users/cvalentine/repositories/snakescale/.tox/py36/bin/python /Users/cvalentine/repositories/snakescale/wrappers/latest/bedtools/subtract/test/.snakemake/scripts/tmpm2y1t827.wrapper.py
+Activating conda environment: /Users/cvalentine/repositories/snakescale/wrappers/latest/bedtools/subtract/test/.snakemake/conda/9cd13ae7
+[Thu Dec 27 22:43:40 2018]
+Error in rule bedtools_subtract:
+    jobid: 0
+    output: data/result.bed
+    conda-env: /Users/cvalentine/repositories/snakescale/wrappers/latest/bedtools/subtract/test/.snakemake/conda/9cd13ae7
+
+RuleException:
+CalledProcessError in line 9 of /Users/cvalentine/repositories/snakescale/wrappers/latest/bedtools/subtract/test/Snakefile:
+Command 'source activate /Users/cvalentine/repositories/snakescale/wrappers/latest/bedtools/subtract/test/.snakemake/conda/9cd13ae7; set -euo pipefail;  /Users/cvalentine/repositories/snakescale/.tox/py36/bin/python /Users/cvalentine/repositories/snakescale/wrappers/latest/bedtools/subtract/test/.snakemake/scripts/tmpm2y1t827.wrapper.py ' returned non-zero exit status 1.
+  File "/Users/cvalentine/repositories/snakescale/wrappers/latest/bedtools/subtract/test/Snakefile", line 9, in __rule_bedtools_subtract
+  File "/usr/local/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /Users/cvalentine/repositories/snakescale/wrappers/latest/bedtools/subtract/test/.snakemake/log/2018-12-27T224339.643571.snakemake.log

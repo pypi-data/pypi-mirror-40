@@ -1,0 +1,6 @@
+==> 2018-12-27 22:40:02 <==
+# cmd: /usr/local/anaconda3/bin/conda-env create --file /Users/cvalentine/repositories/snakescale/wrappers/latest/bedtools/subtract/test/.snakemake/conda/9cd13ae7.yaml --prefix /Users/cvalentine/repositories/snakescale/wrappers/latest/bedtools/subtract/test/.snakemake/conda/9cd13ae7
+# conda version: 4.5.12
++bioconda::bedtools-2.27.1-ha92aebf_2
++conda-forge::zlib-1.2.11-h470a237_3
+# update specs: ['bedtools==2.27.1']
