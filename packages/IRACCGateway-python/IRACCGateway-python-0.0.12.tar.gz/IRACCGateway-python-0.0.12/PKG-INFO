@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: IRACCGateway-python
+Version: 0.0.12
+Summary: Driver for IRACCGateway(Daikin Specified Version)
+Home-page: https://github.com/yangziy/IRACCGateway-python
+Author: yangziy
+Author-email: yangziy@outlook.com
+License: UNKNOWN
+Description: # Introduction
+        
+        An unofficial driver for IRACC Gateway (Daikin Specified Version)
+        
+        Note that the Daikin specified version have WIFI as the only External Interface, and have ***no*** RS485,RS232,etc.
+        
+        
+        
+        The driver is tested on the IRACC Gateway connected to Daikin VRV-N (RQZQ10AAYN) with **16** AC units. **It may not behave well for different unit numbers** because the protocol is only partially known.
+        
+        
+        
+        Feel free to [contact](mailto:yangziy@outlook.com) if bugs detected.
+        
+        
+        
+        # Usage
+        
+        Install via
+        
+        ```shell
+        pip install IRACCGateway-python
+        ```
+        
+        
+        
+        Then consult *test.py* inside the package.
+        
+        
+        
+        # Special Thanks
+        
+        Kind [IRACC reseller on Taobao](https://item.taobao.com/item.htm?spm=a230r.1.14.1.6e776978lt8r5i&id=540472456531&ns=1&abbucket=11#detail), who offered some technical documents, given that I didn't buy the device from him.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
