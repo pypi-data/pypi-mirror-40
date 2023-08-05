@@ -1,0 +1,30 @@
+CHANGES
+=======
+
+1.0.4
+-----
+
+* Assure the rmux does not exit when no arguments are given
+* remove debug (-x)
+* Fixed broken newlines
+
+1.0.3
+-----
+
+* Fixed display of gif blockbuster movie on PYPI description
+
+1.0.2
+-----
+
+* Fixed --version
+
+1.0.1
+-----
+
+* Fixed package metadata
+
+1.0.0
+-----
+
+* Allow execution of web script
+* rmux is born
