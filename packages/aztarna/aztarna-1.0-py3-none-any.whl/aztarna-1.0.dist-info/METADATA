@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: aztarna
+Version: 1.0
+Summary: A footprinting tool for ROS and SROS systems
+Home-page: https://www.aliasrobotics.com/research/aztarna.htm
+Author: Alias Robotics
+Author-email: contact@aliasrobotics.com
+License: GPLv3
+Project-URL: Source Code, https://github.com/aliasrobotics/aztarna
+Keywords: network,footprinting,ros,sros,ics,industrialrouters
+Platform: UNKNOWN
+Requires-Dist: aiohttp (==3.4.2)
+Requires-Dist: aiohttp-xmlrpc (==0.7.4)
+Requires-Dist: alabaster (==0.7.11)
+Requires-Dist: argcomplete (==1.9.4)
+Requires-Dist: asn1crypto (==0.24.0)
+Requires-Dist: async-timeout (==3.0.0)
+Requires-Dist: attrs (==18.2.0)
+Requires-Dist: Babel (==2.6.0)
+Requires-Dist: certifi (==2018.8.24)
+Requires-Dist: cffi (==1.11.5)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: Click (==7.0)
+Requires-Dist: click-plugins (==1.0.4)
+Requires-Dist: colorama (==0.4.1)
+Requires-Dist: cryptography (==2.3.1)
+Requires-Dist: dnspython (==1.15.0)
+Requires-Dist: docutils (==0.14)
+Requires-Dist: idna (==2.7)
+Requires-Dist: idna-ssl (==1.1.0)
+Requires-Dist: imagesize (==1.1.0)
+Requires-Dist: ipwhois (==1.0.0)
+Requires-Dist: Jinja2 (==2.10)
+Requires-Dist: lxml (==4.2.4)
+Requires-Dist: MarkupSafe (==1.0)
+Requires-Dist: multidict (==4.3.1)
+Requires-Dist: packaging (==17.1)
+Requires-Dist: pycparser (==2.18)
+Requires-Dist: Pygments (==2.2.0)
+Requires-Dist: pyparsing (==2.2.0)
+Requires-Dist: pytz (==2018.5)
+Requires-Dist: requests (==2.20.1)
+Requires-Dist: scapy (==2.4.0)
+Requires-Dist: shodan (==1.10.4)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: snowballstemmer (==1.2.1)
+Requires-Dist: Sphinx (==1.7.9)
+Requires-Dist: sphinxcontrib-websupport (==1.1.0)
+Requires-Dist: urllib3 (==1.23)
+Requires-Dist: uvloop (==0.11.2)
+Requires-Dist: XlsxWriter (==1.1.2)
+Requires-Dist: yarl (==1.2.6)
+
+Aztarna, a footprinting tool for robots. 
+Provides researchers a way for researching internet connected ROS, SROS robots, as well as industrial routers.
+
+Alias Robotics supports original robot manufacturers assessing their security and improving their quality of software.
+By no means we encourage or promote the unauthorized tampering with running robotic systems.
+This can cause serious human harm and material damages.
+
+
