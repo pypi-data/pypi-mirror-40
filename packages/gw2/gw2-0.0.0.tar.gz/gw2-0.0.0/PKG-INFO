@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: gw2
+Version: 0.0.0
+Summary: Guild Wars 2 API client for Python.
+Home-page: https://github.com/marella/python-gw2
+Author: Ravindra Marella
+Author-email: mv.ravindra007@gmail.com
+License: MIT
+Project-URL: Documentation, https://marella.github.io/python-gw2/
+Project-URL: Source Code, https://github.com/marella/python-gw2
+Project-URL: Bug Tracker, https://github.com/marella/python-gw2/issues
+Description: Guild Wars 2 API client for Python.
+        
+        ## Installation
+        
+        ```sh
+        pip install <name>
+        ```
+        
+        It is recommended to use a [virtual environment].
+        
+        ## Usage
+        
+        ```py
+        import gw2
+        
+        client = gw2.Client()
+        
+        client.get('achievements/daily')
+        
+        client.get('account', token='API-KEY')
+        ```
+        
+        ## License
+        
+        [MIT][license]
+        
+        [license]: /LICENSE
+        [virtual environment]: https://docs.python.org/3/library/venv.html
+        
+Keywords: gw2 guild-wars-2 api client
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
