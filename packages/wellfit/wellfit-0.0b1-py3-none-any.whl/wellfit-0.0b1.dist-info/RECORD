@@ -1,0 +1,12 @@
+wellfit/__init__.py,sha256=gFXzBtEyxE_8lNGDgt_B1AsoV8RSfJKo-bduIxHdSfU,250
+wellfit/__version__.py,sha256=xnL65O_84h82N29plK2sjT_BvAc2AnJZnU6C0Y6VnTE,156
+wellfit/fit.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wellfit/model.py,sha256=-5azCjCwCX75iljXR8Hvxa-7S0mtpzdLcTSM8zJzmyM,20567
+wellfit/planet.py,sha256=FEbgCkFTRLf0v4DUJ0Q-CYwe8u5R95b-omfDS7WxbAE,11526
+wellfit/star.py,sha256=xw8QShhaMAFQnUJpVXunW8ephuOae_W5nwiyvT5ifPQ,5624
+wellfit/utils.py,sha256=cKM6_HNQLhKvXXp7laZDaPif6RUfuuFXM9enqqPu8sU,2948
+wellfit/wellfit.py,sha256=11_y3pNhHSw5a2_neEtImXhZxFsXKZD5EeCp5_yYzCo,724
+wellfit-0.0b1.dist-info/METADATA,sha256=VNMj57Gt8ZNqd2mKjaLK54YnjXt4ETFdaM-E44JIMDA,1484
+wellfit-0.0b1.dist-info/RECORD,,
+wellfit-0.0b1.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+wellfit-0.0b1.dist-info/top_level.txt,sha256=qNw2dYfLLMTrbfd9V-JMDFBKGkblag9uslLRya3Qylk,8
