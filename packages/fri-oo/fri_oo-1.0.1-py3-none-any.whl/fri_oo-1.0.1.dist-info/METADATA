@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fri-oo
+Version: 1.0.1
+Summary: FRI algorithm implementation
+Home-page: https://c4science.ch/source/FRIsOO.git
+Author: Leo Serena
+Author-email: leo.serena@epfl.ch
+License: EPFL
+Platform: UNKNOWN
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: joblib
+
+UNKNOWN
+
+
