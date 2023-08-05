@@ -1,0 +1,122 @@
+Metadata-Version: 1.1
+Name: rnaseqhs
+Version: 0.3
+Summary: Tool for analysis of RNA-seq data.
+Home-page: https://upload.pypi.org/legacy/
+Author: Zhi Zhang
+Author-email: zzjerryzhang@gmail.com
+License: MIT
+Download-URL: https://git-r3lab.uni.lu/zhi.zhang/rnaseqhs/raw/master/rnaseqhs/dist/rnaseqhs-0.2.tar.gz
+Description: rnaseqhs
+        =========
+        
+        overview
+        ---------
+        rnaseqhs can do bioinformatics analysis for RNA_seq data and generate clean BAM/SAM result from HISAT2, GTF result from Stringtie and featureCounts result. 
+        
+        rnaseqhs is available under the terms of the MIT license (see the file ``LICENSE``)
+        
+        pre-requirements
+        -----------------
+        1. 'gzip','fastx_trimmer','fastqc','cutadapt','fastq_quality_filter','hisat2','stringtie','samtools (v1.3.1)','bedtools (v2.19.1)' in $PATH.
+        2.  hisat2 built genome index, transcriptome index, and gtf.
+        
+        Installation
+        -------------
+        1. tar zxvf rnaseqhs-<version>.tar.gz
+        2. cd rnaseqhs-<version>
+        3. python setup.py install --user
+        
+        Usage
+        ------
+        1. use it as module in python console ::
+        
+            >>>import rnaseqhs
+        
+            >>>rnaseqhs.rnaseqhs.main(<Arguments>)
+        
+        Arguments are ::
+            >>>rnaseqhs.rnaseqhs.main(NDIR,OUTDIR,PHRED,QCCHECK,TRIM,LASTKEEP,RMADAPT, LADAPTER, RADAPTER
+                        ,OVERLAP,MINLEN,REMOVEN,NCUTOFF,FILTQ
+                        ,MINQ,PMINQ,QCSTAT,MAPPING,HISAT2INDEX,ORIENTATIONS
+                        ,RNASTRANDNESS,GTF,RAWCOVER,GENOMEBED,WINDOWSIZE])
+        
+        2. use it as command line in bash ::
+        
+            <installed-path>/rnaseqhsb <options>
+        
+        Options are ::
+        usage: rnaseqhs [-h] [-i INDIR] [-o OUTDIR] [-P PHRED] [-Q QCCHECK] [-T TRIM]
+                        [-l LASTKEEP] [-r RMADAPT] [-L LADAPTER] [-R RADAPTER]
+                        [-O OVERLAP] [-m MINLEN] [-N REMOVEN] [-c NCUTOFF] [-F FILTQ]
+                        [--minQ MINQ] [--pminQ PMINQ] [-q QCSTAT] [-M MAPPING]
+                        [--hisat2index HISAT2INDEX] [--orientations ORIENTATIONS]
+                        [--rnastrandness RNASTRANDNESS] [--gtf GTF]
+                        [--drawCover DRAWCOVER] [--genomebed GENOMEBED]
+                        [--windowsize WINDOWSIZE]
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          -i INDIR, --indir INDIR
+                                fastq files path
+          -o OUTDIR, --outdir OUTDIR
+                                output path
+          -P PHRED, --phred PHRED
+                                phred score used in platform [33]
+          -Q QCCHECK, --qccheck QCCHECK
+                                do quality check [true]
+          -T TRIM, --trim TRIM  trim given fastq short reads as --lastkeep defined
+          -l LASTKEEP, --lastkeep LASTKEEP
+                                with "trim" option, last bases to keep
+          -r RMADAPT, --rmadapt RMADAPT
+                                remove adapter [true]
+          -L LADAPTER, --ladapter LADAPTER
+                                left adapter [AGATCGGAAGAGC]
+          -R RADAPTER, --radapter RADAPTER
+                                right adapter [AGATCGGAAGAGC]
+          -O OVERLAP, --overlap OVERLAP
+                                If the overlap between the read and adapter is shorter
+                                than the overlap length, the read will NOT be
+                                modified. [6]
+          -m MINLEN, --minlen MINLEN
+                                Discard trimmed reads that are shorter than "minlen"
+                                [75]
+          -N REMOVEN, --removeN REMOVEN
+                                remove "N" bases [true]
+          -c NCUTOFF, --Ncutoff NCUTOFF
+                                with "removeN" option, N cutoff [0.1]
+          -F FILTQ, --filtQ FILTQ
+                                Filters sequences based on quality [true]
+          --minQ MINQ           Minimum quality score to keep [20]
+          --pminQ PMINQ         Minimum percent of bases [80]
+          -q QCSTAT, --qcStat QCSTAT
+                                generate QC statistic plot for seq
+          -M MAPPING, --mapping MAPPING
+                                read mapping [true]
+          --hisat2index HISAT2INDEX
+                                hisat2 index
+          --orientations ORIENTATIONS
+                                orientations
+          --rnastrandness RNASTRANDNESS
+                                rna strandness
+          --gtf GTF             gtf file for annotation
+          --drawCover DRAWCOVER
+                                coverage of genome region [true]
+          --genomebed GENOMEBED
+                                coverage genome bed file
+          --windowsize WINDOWSIZE
+                                coverage window size [500000]
+                                
+        Links
+        -----
+        
+        * `Project homepage <https://git-r3lab.uni.lu/zhi.zhang/rnaseqhs>`_
+        * `Github page <https://git-r3lab.uni.lu/zhi.zhang/rnaseqhs>`_
+            written by Zhi Zhang.
+        
+Keywords: rnaseq main
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics

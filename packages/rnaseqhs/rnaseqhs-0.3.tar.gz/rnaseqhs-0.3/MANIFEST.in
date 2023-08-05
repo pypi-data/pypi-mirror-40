@@ -1,0 +1,17 @@
+include CITATION
+include LICENSE
+include PKG-INFO
+include MANIFEST.in
+include README.rst
+include rnaseqhs/tests/test_data/in/*
+include rnaseqhs/tests/test_data/in2/*
+exclude rnaseqhs/tests/test_data/out/*
+exclude rnaseqhs/tests/test_data/out2/*
+include rnaseqhs/tests/*.py
+include rnaseqhs/genome/refrence/HISAT2Index/*
+include rnaseqhs/genome/*
+include rnaseqhs/ReadMap.R
+include rnaseqhs/rmN.py
+include rnaseqhs/sortCover2.py
+include rnaseqhs/Q20_1.py
+include rnaseqhs/*.py
