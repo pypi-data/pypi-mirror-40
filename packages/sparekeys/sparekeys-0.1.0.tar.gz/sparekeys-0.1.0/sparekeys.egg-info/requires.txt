@@ -1,0 +1,7 @@
+inform
+shlib
+setuptools
+toml
+appdirs
+docopt
+python-gnupg>=0.4.3

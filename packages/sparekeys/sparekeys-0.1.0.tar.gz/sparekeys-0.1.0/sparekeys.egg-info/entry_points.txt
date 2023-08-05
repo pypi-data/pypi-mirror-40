@@ -1,0 +1,16 @@
+[console_scripts]
+sparekeys = sparekeys:main
+
+[sparekeys.archive]
+avendesora = sparekeys:archive_avendesora
+emborg = sparekeys:archive_emborg
+file = sparekeys:archive_file
+
+[sparekeys.auth]
+avendesora = sparekeys:auth_avendesora
+getpass = sparekeys:auth_getpass
+
+[sparekeys.publish]
+mount = sparekeys:publish_mount
+scp = sparekeys:publish_scp
+

@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+docs/Makefile
+docs/conf.py
+docs/index.rst
+sparekeys/__init__.py
+sparekeys/main.py
+sparekeys.egg-info/PKG-INFO
+sparekeys.egg-info/SOURCES.txt
+sparekeys.egg-info/dependency_links.txt
+sparekeys.egg-info/entry_points.txt
+sparekeys.egg-info/requires.txt
+sparekeys.egg-info/top_level.txt
+tests/.coveragerc
