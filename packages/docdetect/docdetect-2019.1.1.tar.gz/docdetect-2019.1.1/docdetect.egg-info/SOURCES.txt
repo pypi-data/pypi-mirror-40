@@ -1,0 +1,15 @@
+README.md
+setup.py
+docdetect/__init__.py
+docdetect/canny_edges.py
+docdetect/hough_lines.py
+docdetect/intersections.py
+docdetect/line_utils.py
+docdetect/processor.py
+docdetect/quadrilaterals.py
+docdetect.egg-info/PKG-INFO
+docdetect.egg-info/SOURCES.txt
+docdetect.egg-info/dependency_links.txt
+docdetect.egg-info/requires.txt
+docdetect.egg-info/top_level.txt
+docdetect.egg-info/zip-safe
