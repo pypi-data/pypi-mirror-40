@@ -1,0 +1,14 @@
+crowsetta/__init__.py,sha256=LF9U2_NCAPD5mXKfo1eblD-pVKomSy5vjmlCIYXTMbE,182
+crowsetta/classes.py,sha256=yMfpTywJnpqVSeeZ9L99WO19WydFJ6X1LL_UFM11ngw,13225
+crowsetta/config.ini,sha256=vHqKLs0VzYhYfnP_eOsGc1_fkJNGmsjh9r72lxS09SY,196
+crowsetta/csv.py,sha256=x54SAjY9bbegLRpIYbn8Sl4sjXjBS6xC8J2nLy2zsoA,6229
+crowsetta/data.py,sha256=Ux0XO1cCmQWlQu92nVep048b_PXiv5YomofQ-cw47is,17536
+crowsetta/koumura.py,sha256=edNRSGc9CPFmT3RvibTbIeS2nU5BXbqgfAEX3oAXfCI,5141
+crowsetta/notmat.py,sha256=pNO76AXCTV6Re7MeP0L4HS3fn5bdkjZvOs3cUwGG9iE,11104
+crowsetta/transcriber.py,sha256=9-u0zuEy1TKJawMvqjryPFw_g3_6dmrPedYt65E5rmc,14448
+crowsetta/validation.py,sha256=cpW8DmkO_bOkjedGCfi-mzIwskip21sFh7z7MdwzXRk,2221
+crowsetta-0.2.0a4.dist-info/LICENSE,sha256=Z1Pw_IV6Ooy6MXaIa92Tzan0AqENw2TV5_zOcQX8ewo,1515
+crowsetta-0.2.0a4.dist-info/METADATA,sha256=94xmpAu5lPCEeiDCIHeFlB-h1CI5vwH7J-zTaA7AJxQ,5262
+crowsetta-0.2.0a4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+crowsetta-0.2.0a4.dist-info/top_level.txt,sha256=CyKU5A-ZDdcCkoqVDQBDhl2Hq8w1aJFAZw2Jy5SBfn8,10
+crowsetta-0.2.0a4.dist-info/RECORD,,
