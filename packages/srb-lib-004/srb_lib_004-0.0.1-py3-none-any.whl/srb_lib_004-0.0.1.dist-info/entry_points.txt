@@ -1,0 +1,3 @@
+[console_scripts]
+srb_lib_004 = srb_lib_004.main:main
+
