@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: microdb
+Version: 0.0.4
+Summary: In-memory, Hash-mapping, Disk-writable, Thread-safe database.
+Home-page: https://github.com/umihico/microdb
+Author: umihico
+Author-email: umihico@users.noreply.github.com
+License: MIT
+Description: UNKNOWN
+Keywords: database
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
