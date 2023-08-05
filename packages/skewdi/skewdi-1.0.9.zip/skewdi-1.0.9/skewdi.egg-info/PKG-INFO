@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: skewdi
+Version: 1.0.9
+Summary: Fetch Website Content
+Home-page: UNKNOWN
+Author: Sam
+Author-email: samprits5@gmail.com
+License: MIT
+Description: # Python Web Scrapping Tool
+        
+        This is a simple module written on the top of BeautifulSoup Module.
+        
+        Simply install it by using :
+        
+        # pip install skewdi
+        
+        ##How to Use : 
+        
+        Do Something like this--
+        
+        #from skewdi import skewdi
+        
+        #skewdi.fetchAnchor("http://passYourURL.com")
+        
+        It will return all the hyperlinks in that perticular Webpage!
+        
+        #skewdi.fetchPara("http://passYourURL.com")
+        
+        It will return all the paragraph tags of the Webpage!
+        
+        
+        More Functions are comming!
+        
+        #skewdi.author()
+        
+        Written By - Samprit (sam123)
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
