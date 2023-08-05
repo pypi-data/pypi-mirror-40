@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>textblob-de README &mdash; textblob-de 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tutorial: Quickstart" href="quickstart.html" />
+    <link rel="prev" title="textblob-de" href="index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> textblob-de
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">textblob-de README</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-upgrading">Installing/Upgrading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#access-to-pattern-api-in-python3">Access to <code class="docutils literal notranslate"><span class="pre">pattern</span></code> API in Python3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation-and-api-reference">Documentation and API Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#todo">TODO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#license">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#thanks">Thanks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Tutorial: Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage.html">Advanced Usage: Overriding Models and the Blobber Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API Reference</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_info.html"><code class="docutils literal notranslate"><span class="pre">make</span></code> command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_makefile.html">Project <code class="docutils literal notranslate"><span class="pre">Makefile</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_makefile.html">Documentation <code class="docutils literal notranslate"><span class="pre">Makefile</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">textblob-de</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>textblob-de README</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="textblob-de-readme">
+<h1>textblob-de README<a class="headerlink" href="#textblob-de-readme" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/textblob-de/"><img alt="textblob_de - latest PyPI version" src="https://img.shields.io/pypi/v/textblob-de.svg" /></a>
+<a class="reference external image-reference" href="https://travis-ci.org/markuskiller/textblob-de"><img alt="Travis-CI" src="https://travis-ci.org/markuskiller/textblob-de.png?branch=dev" /></a>
+<a class="reference external image-reference" href="http://textblob-de.readthedocs.org/en/latest/"><img alt="Documentation Status" src="https://readthedocs.org/projects/textblob-de/badge/?version=latest" /></a>
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/textblob-de/"><img alt="Number of PyPI downloads" src="https://img.shields.io/pypi/dm/textblob-de.svg" /></a>
+<a class="reference external image-reference" href="http://choosealicense.com/licenses/mit/"><img alt="LICENSE info" src="https://img.shields.io/github/license/markuskiller/textblob-de.svg" /></a>
+<p>German language support for <a class="reference external" href="http://textblob.readthedocs.org/en/dev/">TextBlob</a> by Steven Loria.</p>
+<p>This python package is being developed as a <code class="docutils literal notranslate"><span class="pre">TextBlob</span></code> <strong>Language Extension</strong>.
+See <a class="reference external" href="https://textblob.readthedocs.org/en/dev/contributing.html">Extension Guidelines</a> for details.</p>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>NEW:</strong> Works with Python3.7</li>
+<li>All directly accessible <code class="docutils literal notranslate"><span class="pre">textblob_de</span></code> classes (e.g. <code class="docutils literal notranslate"><span class="pre">Sentence()</span></code> or <code class="docutils literal notranslate"><span class="pre">Word()</span></code>) are initialized with default models for German</li>
+<li>Properties or methods that do not yet work for German raise a <code class="docutils literal notranslate"><span class="pre">NotImplementedError</span></code></li>
+<li>German sentence boundary detection and tokenization (<code class="docutils literal notranslate"><span class="pre">NLTKPunktTokenizer</span></code>)</li>
+<li>Consistent use of specified tokenizer for all tools (<code class="docutils literal notranslate"><span class="pre">NLTKPunktTokenizer</span></code> or <code class="docutils literal notranslate"><span class="pre">PatternTokenizer</span></code>)</li>
+<li>Part-of-speech tagging (<code class="docutils literal notranslate"><span class="pre">PatternTagger</span></code>) with keyword <code class="docutils literal notranslate"><span class="pre">include_punc=True</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>)</li>
+<li>Tagset conversion in <code class="docutils literal notranslate"><span class="pre">PatternTagger</span></code> with keyword <code class="docutils literal notranslate"><span class="pre">tagset='penn'|'universal'|'stts'</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">penn</span></code>)</li>
+<li>Parsing (<code class="docutils literal notranslate"><span class="pre">PatternParser</span></code>) with all <code class="docutils literal notranslate"><span class="pre">pattern</span></code> keywords, plus <code class="docutils literal notranslate"><span class="pre">pprint=True</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>)</li>
+<li>Noun Phrase Extraction (<code class="docutils literal notranslate"><span class="pre">PatternParserNPExtractor</span></code>)</li>
+<li>Lemmatization (<code class="docutils literal notranslate"><span class="pre">PatternParserLemmatizer</span></code>)</li>
+<li>Polarity detection (<code class="docutils literal notranslate"><span class="pre">PatternAnalyzer</span></code>) - Still <strong>EXPERIMENTAL</strong>, does not yet have information on subjectivity</li>
+<li>Full <code class="docutils literal notranslate"><span class="pre">pattern.text.de</span></code> API support on Python3</li>
+<li>Supports Python 2 and 3</li>
+<li>See <a class="reference external" href="http://langui.ch/nlp/python/textblob-de-dev/">working features overview</a> for details</li>
+</ul>
+</div>
+<div class="section" id="installing-upgrading">
+<h2>Installing/Upgrading<a class="headerlink" href="#installing-upgrading" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -U textblob-de
+$ python -m textblob.download_corpora
+</pre></div>
+</div>
+<p>Or the latest development release (apparently this does not always work on Windows see
+<a class="reference external" href="https://github.com/pypa/pip/pull/1745">issues #1744/5</a> for details):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -U git+https://github.com/markuskiller/textblob-de.git@dev
+$ python -m textblob.download_corpora
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">TextBlob</span></code> will be installed/upgraded automatically when running
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code>. The second line (<code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">textblob.download_corpora</span></code>)
+downloads/updates nltk corpora and language models used in <code class="docutils literal notranslate"><span class="pre">TextBlob</span></code>.</p>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">textblob_de</span> <span class="kn">import</span> <span class="n">TextBlobDE</span> <span class="k">as</span> <span class="n">TextBlob</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;Heute ist der 3. Mai 2014 und Dr. Meier feiert seinen 43. Geburtstag.</span>
+<span class="go">Ich muss unbedingt daran denken, Mehl, usw. für einen Kuchen einzukaufen. Aber leider</span>
+<span class="go">habe ich nur noch EUR 3.50 in meiner Brieftasche.&#39;&#39;&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span><span class="o">.</span><span class="n">sentences</span>
+<span class="go">[Sentence(&quot;Heute ist der 3. Mai 2014 und Dr. Meier feiert seinen 43. Geburtstag.&quot;),</span>
+<span class="go"> Sentence(&quot;Ich muss unbedingt daran denken, Mehl, usw. für einen Kuchen einzukaufen.&quot;),</span>
+<span class="go"> Sentence(&quot;Aber leider habe ich nur noch EUR 3.50 in meiner Brieftasche.&quot;)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span><span class="o">.</span><span class="n">tokens</span>
+<span class="go">WordList([&#39;Heute&#39;, &#39;ist&#39;, &#39;der&#39;, &#39;3.&#39;, &#39;Mai&#39;, ...]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span><span class="o">.</span><span class="n">tags</span>
+<span class="go">[(&#39;Heute&#39;, &#39;RB&#39;), (&#39;ist&#39;, &#39;VB&#39;), (&#39;der&#39;, &#39;DT&#39;), (&#39;3.&#39;, &#39;LS&#39;), (&#39;Mai&#39;, &#39;NN&#39;),</span>
+<span class="go">(&#39;2014&#39;, &#39;CD&#39;), ...]</span>
+<span class="go"># Default: Only noun_phrases that consist of two or more meaningful parts are displayed.</span>
+<span class="go"># Not perfect, but a start (relies heavily on parser accuracy)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span><span class="o">.</span><span class="n">noun_phrases</span>
+<span class="go">WordList([&#39;Mai 2014&#39;, &#39;Dr. Meier&#39;, &#39;seinen 43. Geburtstag&#39;, &#39;Kuchen einzukaufen&#39;,</span>
+<span class="go">&#39;meiner Brieftasche&#39;])</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="s2">&quot;Das Auto ist sehr schön.&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span><span class="o">.</span><span class="n">parse</span><span class="p">()</span>
+<span class="go">&#39;Das/DT/B-NP/O Auto/NN/I-NP/O ist/VB/B-VP/O sehr/RB/B-ADJP/O schön/JJ/I-ADJP/O&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">textblob_de</span> <span class="kn">import</span> <span class="n">PatternParser</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span> <span class="o">=</span> <span class="n">TextBlobDE</span><span class="p">(</span><span class="s2">&quot;Das ist ein schönes Auto.&quot;</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="n">PatternParser</span><span class="p">(</span><span class="n">pprint</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">lemmata</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span><span class="o">.</span><span class="n">parse</span><span class="p">()</span>
+<span class="go">      WORD   TAG    CHUNK   ROLE   ID     PNP    LEMMA</span>
+
+<span class="go">       Das   DT     -       -      -      -      das</span>
+<span class="go">       ist   VB     VP      -      -      -      sein</span>
+<span class="go">       ein   DT     NP      -      -      -      ein</span>
+<span class="go">   schönes   JJ     NP ^    -      -      -      schön</span>
+<span class="go">      Auto   NN     NP ^    -      -      -      auto</span>
+<span class="go">         .   .      -       -      -      -      .</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">textblob_de</span> <span class="kn">import</span> <span class="n">PatternTagger</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">pos_tagger</span><span class="o">=</span><span class="n">PatternTagger</span><span class="p">(</span><span class="n">include_punc</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+<span class="go">[(&#39;Das&#39;, &#39;DT&#39;), (&#39;Auto&#39;, &#39;NN&#39;), (&#39;ist&#39;, &#39;VB&#39;), (&#39;sehr&#39;, &#39;RB&#39;), (&#39;schön&#39;, &#39;JJ&#39;), (&#39;.&#39;, &#39;.&#39;)]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="s2">&quot;Das Auto ist sehr schön.&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span><span class="o">.</span><span class="n">sentiment</span>
+<span class="go">Sentiment(polarity=1.0, subjectivity=0.0)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="s2">&quot;Das ist ein hässliches Auto.&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span><span class="o">.</span><span class="n">sentiment</span>
+<span class="go">Sentiment(polarity=-1.0, subjectivity=0.0)</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><strong>WORK IN PROGRESS:</strong> The German polarity lexicon contains only uninflected
+forms and there are no subjectivity scores yet. As of version 0.2.3, lemmatized
+word forms are submitted to the <code class="docutils literal notranslate"><span class="pre">PatternAnalyzer</span></code>, increasing the accuracy
+of polarity values. New in version 0.2.7: return type of <code class="docutils literal notranslate"><span class="pre">.sentiment</span></code> is now
+adapted to the main <a class="reference external" href="http://textblob.readthedocs.org/en/dev/">TextBlob</a> library (<code class="docutils literal notranslate"><span class="pre">:rtype:</span> <span class="pre">namedtuple</span></code>).</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">blob</span><span class="o">.</span><span class="n">words</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">()</span>
+<span class="go">WordList([&#39;das&#39;, &#39;sein&#39;, &#39;ein&#39;, &#39;hässlich&#39;, &#39;Auto&#39;])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">textblob_de.lemmatizers</span> <span class="kn">import</span> <span class="n">PatternParserLemmatizer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_lemmatizer</span> <span class="o">=</span> <span class="n">PatternParserLemmatizer</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_lemmatizer</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="s2">&quot;Das ist ein hässliches Auto.&quot;</span><span class="p">)</span>
+<span class="go">[(&#39;das&#39;, &#39;DT&#39;), (&#39;sein&#39;, &#39;VB&#39;), (&#39;ein&#39;, &#39;DT&#39;), (&#39;hässlich&#39;, &#39;JJ&#39;), (&#39;Auto&#39;, &#39;NN&#39;)]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Make sure that you use unicode strings on Python2 if your input contains
+non-ascii characters (e.g. <code class="docutils literal notranslate"><span class="pre">word</span> <span class="pre">=</span> <span class="pre">u&quot;schön&quot;</span></code>).</p>
+</div>
+</div>
+<div class="section" id="access-to-pattern-api-in-python3">
+<h2>Access to <code class="docutils literal notranslate"><span class="pre">pattern</span></code> API in Python3<a class="headerlink" href="#access-to-pattern-api-in-python3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">textblob_de.packages</span> <span class="kn">import</span> <span class="n">pattern_de</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">attributive</span><span class="p">(</span><span class="s2">&quot;neugierig&quot;</span><span class="p">,</span> <span class="n">gender</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">FEMALE</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">INDIRECT</span><span class="p">,</span> <span class="n">article</span><span class="o">=</span><span class="s2">&quot;die&quot;</span><span class="p">))</span>
+<span class="go">neugierigen</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Alternatively, the path to <code class="docutils literal notranslate"><span class="pre">textblob_de/ext</span></code> can be added to the <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code>, which allows
+the use of <code class="docutils literal notranslate"><span class="pre">pattern.de</span></code> in almost the same way as described in its
+<a class="reference external" href="http://www.clips.ua.ac.be/pages/pattern-de">Documentation</a>.
+The only difference is that you will have to prepend an underscore:
+<code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">_pattern.de</span> <span class="pre">import</span> <span class="pre">...</span></code>. This is a precautionary measure in case the <code class="docutils literal notranslate"><span class="pre">pattern</span></code>
+library gets native Python3 support in the future.</p>
+</div>
+</div>
+<div class="section" id="documentation-and-api-reference">
+<h2>Documentation and API Reference<a class="headerlink" href="#documentation-and-api-reference" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://textblob-de.readthedocs.org/en/latest">http://textblob-de.readthedocs.org/en/latest</a></li>
+</ul>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Python &gt;= 2.6 or &gt;= 3.3</li>
+</ul>
+</div>
+<div class="section" id="todo">
+<h2>TODO<a class="headerlink" href="#todo" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://textblob-de.readthedocs.org/en/latest/extensions.html">Planned Extensions</a></li>
+<li>Additional PoS tagging options, e.g. NLTK tagging (<code class="docutils literal notranslate"><span class="pre">NLTKTagger</span></code>)</li>
+<li>Improve noun phrase extraction (e.g. based on <code class="docutils literal notranslate"><span class="pre">RFTagger</span></code> output)</li>
+<li>Improve sentiment analysis (find suitable subjectivity scores)</li>
+<li>Improve functionality of <code class="docutils literal notranslate"><span class="pre">Sentence()</span></code> and <code class="docutils literal notranslate"><span class="pre">Word()</span></code> objects</li>
+<li>Adapt more tests from the main <a class="reference external" href="http://textblob.readthedocs.org/en/dev/">TextBlob</a> library (esp. for <code class="docutils literal notranslate"><span class="pre">TextBlobDE()</span></code> in <code class="docutils literal notranslate"><span class="pre">test_blob.py</span></code>)</li>
+</ul>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>MIT licensed. See the bundled <a class="reference external" href="https://github.com/markuskiller/textblob-de/blob/master/LICENSE">LICENSE</a> file for more details.</p>
+</div>
+<div class="section" id="thanks">
+<h2>Thanks<a class="headerlink" href="#thanks" title="Permalink to this headline">¶</a></h2>
+<p>Coded with Wing IDE (free open source developer license)</p>
+<a class="reference external image-reference" href="https://wingware.com/store/free"><img alt="Python IDE for Python - wingware.com" src="https://wingware.com/images/wingware-logo-180x58.png" /></a>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="quickstart.html" class="btn btn-neutral float-right" title="Tutorial: Quickstart" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="textblob-de" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Markus Killer (http://langui.ch)
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

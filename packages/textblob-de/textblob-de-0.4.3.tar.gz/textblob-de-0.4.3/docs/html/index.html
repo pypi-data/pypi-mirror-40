@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>textblob-de &mdash; textblob-de 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="textblob-de README" href="readme.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> textblob-de
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">textblob-de README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Tutorial: Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage.html">Advanced Usage: Overriding Models and the Blobber Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API Reference</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_info.html"><code class="docutils literal notranslate"><span class="pre">make</span></code> command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_makefile.html">Project <code class="docutils literal notranslate"><span class="pre">Makefile</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_makefile.html">Documentation <code class="docutils literal notranslate"><span class="pre">Makefile</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">textblob-de</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>textblob-de</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="textblob-de">
+<h1>textblob-de<a class="headerlink" href="#textblob-de" title="Permalink to this headline">¶</a></h1>
+<p>Release 0.4.3 (<a class="reference internal" href="changelog.html#changelog"><span class="std std-ref">Changelog</span></a>)</p>
+<p><a class="reference external" href="http://textblob.readthedocs.org/">TextBlob</a> is a Python (2 and 3) library for processing textual data.
+It is being developed by <a class="reference external" href="http://stevenloria.com/">Steven Loria</a>. It provides a simple API for diving into
+common natural language processing (NLP) tasks such as part-of-speech tagging,
+noun phrase extraction, sentiment analysis, classification,
+translation, and more.</p>
+<p><strong>`textblob-de`</strong> is the <strong>German language extension</strong> for <a class="reference external" href="http://textblob.readthedocs.org/">TextBlob</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">textblob_de</span> <span class="kn">import</span> <span class="n">TextBlobDE</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">&quot;Der Blob&quot; macht in seiner unbekümmert-naiven Weise einfach nur Spass.</span>
+<span class="s1">Er hat eben den gewissen Charme, bei dem auch die eher hölzerne Regie und</span>
+<span class="s1">das konfuse Drehbuch nicht weiter stören.</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="n">blob</span> <span class="o">=</span> <span class="n">TextBlobDE</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="n">blob</span><span class="o">.</span><span class="n">tags</span>           <span class="c1"># [(&#39;Der&#39;, &#39;DT&#39;), (&#39;Blob&#39;, &#39;NN&#39;), (&#39;macht&#39;, &#39;VB&#39;),</span>
+                    <span class="c1">#  (&#39;in&#39;, &#39;IN&#39;), (&#39;seiner&#39;, &#39;PRP$&#39;), ...]</span>
+
+<span class="n">blob</span><span class="o">.</span><span class="n">noun_phrases</span>   <span class="c1"># WordList([&#39;Der Blob&#39;, &#39;seiner unbekümmert-naiven Weise&#39;,</span>
+                    <span class="c1">#           &#39;den gewissen Charme&#39;, &#39;hölzerne Regie&#39;,</span>
+                    <span class="c1">#           &#39;konfuse Drehbuch&#39;])</span>
+
+
+<span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">blob</span><span class="o">.</span><span class="n">sentences</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="o">.</span><span class="n">sentiment</span><span class="o">.</span><span class="n">polarity</span><span class="p">)</span>
+<span class="c1"># 1.0</span>
+<span class="c1"># 0.0</span>
+
+<span class="n">blob</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">to</span><span class="o">=</span><span class="s2">&quot;es&quot;</span><span class="p">)</span>  <span class="c1"># &#39;&quot; The Blob &quot; hace a su manera ingenua...&#39;</span>
+</pre></div>
+</div>
+<p>For a complete overview of <cite>TextBlob</cite> ‘s features, see documentation of
+the main <a class="reference external" href="http://textblob.readthedocs.org/">TextBlob</a> library.</p>
+<p>The docs of the German language extension focus on additions/differences to
+<a class="reference external" href="http://textblob.readthedocs.org/">TextBlob</a> and provide a detailed API reference.</p>
+</div>
+<div class="section" id="guide">
+<h1>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">textblob-de README</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#installing-upgrading">Installing/Upgrading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#access-to-pattern-api-in-python3">Access to <code class="docutils literal notranslate"><span class="pre">pattern</span></code> API in Python3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#documentation-and-api-reference">Documentation and API Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#todo">TODO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#license">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#thanks">Thanks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Tutorial: Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage.html">Advanced Usage: Overriding Models and the Blobber Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#module-textblob_de.blob">Blob Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#module-textblob_de.base">Base Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#module-textblob_de.tokenizers">Tokenizers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#module-textblob_de.taggers">POS Taggers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#module-textblob_de.np_extractors">Noun Phrase Extractors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#module-textblob_de.sentiments">Sentiment Analyzers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#module-textblob_de.parsers">Parsers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#module-textblob.classifiers">Classifiers (from TextBlob main package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#blobber">Blobber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#module-textblob.formats">File Formats (from TextBlob main package)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#module-textblob.exceptions">Exceptions (from TextBlob main package)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="project-info">
+<h1>Project info<a class="headerlink" href="#project-info" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_info.html"><code class="docutils literal notranslate"><span class="pre">make</span></code> command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_makefile.html">Project <code class="docutils literal notranslate"><span class="pre">Makefile</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_makefile.html">Documentation <code class="docutils literal notranslate"><span class="pre">Makefile</span></code></a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="readme.html" class="btn btn-neutral float-right" title="textblob-de README" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Markus Killer (http://langui.ch)
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>make command &mdash; textblob-de 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Project Makefile" href="project_makefile.html" />
+    <link rel="prev" title="Contributing guidelines" href="contributing.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> textblob-de
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">textblob-de README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Tutorial: Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage.html">Advanced Usage: Overriding Models and the Blobber Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API Reference</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing guidelines</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">make</span></code> command</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-make-on-windows">Using <code class="docutils literal notranslate"><span class="pre">make</span></code> on Windows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#windows-powershell"><code class="docutils literal notranslate"><span class="pre">Windows</span> <span class="pre">PowerShell</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#windows-cmd-exe">Windows <code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="project_makefile.html">Project <code class="docutils literal notranslate"><span class="pre">Makefile</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_makefile.html">Documentation <code class="docutils literal notranslate"><span class="pre">Makefile</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">textblob-de</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li><code class="docutils literal notranslate"><span class="pre">make</span></code> command</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/make_info.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="make-command">
+<h1><code class="docutils literal notranslate"><span class="pre">make</span></code> command<a class="headerlink" href="#make-command" title="Permalink to this headline">¶</a></h1>
+<p>This project adopts the <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> approach, proposed by Jeff Knupp in his
+blog post <a class="reference external" href="http://www.jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/">Open Sourcing a Python Project the Right Way </a>.</p>
+<p>On Linux/OSX the <code class="docutils literal notranslate"><span class="pre">make</span></code> command should work out-of-the-box:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make help
+</pre></div>
+</div>
+<p>Shows all available tasks.</p>
+<div class="section" id="using-make-on-windows">
+<h2>Using <code class="docutils literal notranslate"><span class="pre">make</span></code> on Windows<a class="headerlink" href="#using-make-on-windows" title="Permalink to this headline">¶</a></h2>
+<p>The two <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> s in this project should work on all three major platforms.
+On Windows, <code class="docutils literal notranslate"><span class="pre">make.exe</span></code> included in the <a class="reference external" href="http://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download">MinGW/msys</a>
+distribution has been successfully tested. Once <code class="docutils literal notranslate"><span class="pre">msys</span></code> is installed
+on a Windows system, the <code class="docutils literal notranslate"><span class="pre">path/to/msys/1.0/bin</span></code> needs to be added to
+the <code class="docutils literal notranslate"><span class="pre">PATH</span></code> environment variable.</p>
+<p>A good place to update the <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable are the <code class="docutils literal notranslate"><span class="pre">Activate.ps1</span></code> or
+<code class="docutils literal notranslate"><span class="pre">activate.bat</span></code> scripts of a virtual python build environment, created using
+<code class="docutils literal notranslate"><span class="pre">virtualenv</span></code> (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">virtualenv</span></code>) or <code class="docutils literal notranslate"><span class="pre">pyvenv</span></code> (added to Python3.3’s standard
+library).</p>
+<div class="section" id="windows-powershell">
+<h3><code class="docutils literal notranslate"><span class="pre">Windows</span> <span class="pre">PowerShell</span></code><a class="headerlink" href="#windows-powershell" title="Permalink to this headline">¶</a></h3>
+<p>Add the following line at the end of <code class="docutils literal notranslate"><span class="pre">path\to\virtual\python\env\Scripts\Activate.ps1</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Add msys binaries to PATH
+$env:PATH = &quot;path\to\MinGW\msys\1.0\bin;$env:PATH&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="windows-cmd-exe">
+<h3>Windows <code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code><a class="headerlink" href="#windows-cmd-exe" title="Permalink to this headline">¶</a></h3>
+<p>Add the following line at the end of <code class="docutils literal notranslate"><span class="pre">path\to\virtual\python\env\Scripts\activate.bat</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add msys binaries to PATH</span>
+<span class="nb">set</span> <span class="s2">&quot;PATH=path</span><span class="se">\t</span><span class="s2">o\MinGW\msys</span><span class="se">\1</span><span class="s2">.0</span><span class="se">\b</span><span class="s2">in;%PATH%&quot;</span>
+</pre></div>
+</div>
+<p>Now the <code class="docutils literal notranslate"><span class="pre">make</span></code> command should work as documented in <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">make</span> <span class="pre">help</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="project_makefile.html" class="btn btn-neutral float-right" title="Project Makefile" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="contributing.html" class="btn btn-neutral" title="Contributing guidelines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Markus Killer (http://langui.ch)
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

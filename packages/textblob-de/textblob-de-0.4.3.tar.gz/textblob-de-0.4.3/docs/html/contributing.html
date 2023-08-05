@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contributing guidelines &mdash; textblob-de 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="make command" href="make_info.html" />
+    <link rel="prev" title="LICENSE" href="license.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> textblob-de
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">textblob-de README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Tutorial: Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage.html">Advanced Usage: Overriding Models and the Blobber Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extensions.html">Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API Reference</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">LICENSE</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing guidelines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#in-general">In General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#in-particular">In Particular</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#questions-feature-requests-bug-reports-and-feedback">Questions, Feature Requests, Bug Reports, and Feedback…</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setting-up-for-local-development">Setting Up for Local Development</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="make_info.html"><code class="docutils literal notranslate"><span class="pre">make</span></code> command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_makefile.html">Project <code class="docutils literal notranslate"><span class="pre">Makefile</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_makefile.html">Documentation <code class="docutils literal notranslate"><span class="pre">Makefile</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">textblob-de</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Contributing guidelines</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/contributing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="contributing-guidelines">
+<h1>Contributing guidelines<a class="headerlink" href="#contributing-guidelines" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="in-general">
+<h2>In General<a class="headerlink" href="#in-general" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.python.org/dev/peps/pep-0008/">PEP 8</a>, when sensible.</li>
+<li>Test ruthlessly. Write docs for new features.</li>
+<li>Even more important than Test-Driven Development–<em>Human-Driven Development</em>.</li>
+</ul>
+</div>
+<div class="section" id="in-particular">
+<h2>In Particular<a class="headerlink" href="#in-particular" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="questions-feature-requests-bug-reports-and-feedback">
+<h3>Questions, Feature Requests, Bug Reports, and Feedback…<a class="headerlink" href="#questions-feature-requests-bug-reports-and-feedback" title="Permalink to this headline">¶</a></h3>
+<p>…should all be reported on the <a class="reference external" href="https://github.com/markuskiller/textblob-de/issues?state=open">Github Issue Tracker</a>.</p>
+</div>
+<div class="section" id="setting-up-for-local-development">
+<h3>Setting Up for Local Development<a class="headerlink" href="#setting-up-for-local-development" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Fork textblob-de on Github.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/markuskiller/textblob-de.git
+$ cd textblob-de
+</pre></div>
+</div>
+</li>
+<li><p class="first">(recommended) Create and activate virtual python environment.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -U virtualenv
+$ virtualenv tb-de
+$ &lt;activate virtual environment&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">Install development requirements and run <code class="docutils literal notranslate"><span class="pre">setup.py</span> <span class="pre">develop</span></code>.
+(see <a class="reference external" href="project_makefile.html">Makefile help</a> for overview of available
+<code class="docutils literal notranslate"><span class="pre">make</span></code> targets):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make develop
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="make_info.html" class="btn btn-neutral float-right" title="make command" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="license.html" class="btn btn-neutral" title="LICENSE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Markus Killer (http://langui.ch)
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
