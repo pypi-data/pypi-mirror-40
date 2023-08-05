@@ -1,0 +1,3 @@
+[console_scripts]
+itfh = iterm_file_handler.iterm_file_handler:main
+
