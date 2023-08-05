@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        gbrain=gb.gbrain:cli
+    
