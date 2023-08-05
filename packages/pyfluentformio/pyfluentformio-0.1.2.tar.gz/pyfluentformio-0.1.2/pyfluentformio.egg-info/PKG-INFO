@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pyfluentformio
+Version: 0.1.2
+Summary: Fluent wrapper for creating requests to Form.io
+Home-page: https://github.com/Goat-Lab/pyfluentformio
+Author: Tomas Castro
+Author-email: tomas.castro@goatlab.io
+License: MIT
+Download-URL: https://github.com/Goat-Lab/pyfluentformio/archive/v0.1.2.tar.gz
+Description: # pyfluentformio
+        
+        Python version of FluentJS. Allows users to perform GET and POST requests to Form.io resources and forms. It also allows the use of filters and method chaining.
+        
+        ## Usage
+        
+        ```python
+        from pyfluentformio import Fluent
+        
+        connector = Fluent(baseUrl = 'FORMIO BASE URL', resourcePath='FORMIO RESOURCE PATH', token='FORMIO API TOKEN')
+        
+        connector.get()
+        ```
+        
+        ## License
+        
+        MIT
+        
+Keywords: fluent,form.io,formio
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
