@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: cs.deco
+Version: 20181227
+Summary: Assorted decorator functions.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: Assorted decorator functions.
+        
+        ## Function `decorator(deco, *da, **dkw)`
+        
+        Wrapper for decorator functions to support optional keyword arguments.
+        
+        Examples:
+        
+            @decorator
+            def dec(func, **dkw):
+              ...
+            @dec
+            def func1(...):
+              ...
+            @dec(foo='bah')
+            def func2(...):
+              ...
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
