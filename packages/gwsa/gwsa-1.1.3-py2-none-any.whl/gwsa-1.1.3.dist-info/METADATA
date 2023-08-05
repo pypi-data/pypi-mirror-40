@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: gwsa
+Version: 1.1.3
+Summary: git workspace automation
+Home-page: https://gitlab.com/aanatoly/gwsa
+Author: Anatoly Asviyan
+Author-email: aanatoly@gmail.com
+License: GPLv2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Version Control
+Description-Content-Type: text/markdown
+Requires-Dist: gitpython
+Requires-Dist: blessed
+Provides-Extra: dev
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: cmarkgfm ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+## gwsa - git work space automation
+
+Runs common git commands on every git repo in a workspace
+
+## Usage
+### status
+This command shows
+
+ * status of repo: dirty or clean, 
+ * if rebase, merge or cherry-pick is in progress
+ * commit difference with remote: ahead + behind commits
+ * status of remote: gone or ok
+ * if forced push happend
+
+![status](https://gitlab.com/aanatoly/gwsa/raw/master/doc/01-status.png)
+
+### fetch
+![fetch](https://gitlab.com/aanatoly/gwsa/raw/master/doc/02-fetch.png)
+
+### rebase
+Rebase local tracking branches. In case of a conflict, it aborts rebase.
+
+![rebase](https://gitlab.com/aanatoly/gwsa/raw/master/doc/03-rebase.png)
+
+## Installation
+```bash
+pip install gwsa
+```
+
+## Development
+```bash
+[[ -d venv ]] || virtualenv venv; . venv/bin/activate
+make clean
+make build
+make test
+make install
+deactivate
+```
+
+## Credits
+This project was inspired by [gws](https://github.com/StreakyCobra/gws) by Fabien Dubosson. <br>The reason for writing my own is a language. I prefer python over bash: better syntax, a lot of libraries, and easy install with `pip`
+
+

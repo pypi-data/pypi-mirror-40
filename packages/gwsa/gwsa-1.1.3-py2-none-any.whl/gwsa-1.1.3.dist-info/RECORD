@@ -1,0 +1,16 @@
+gwsa/__init__.py,sha256=Aqc5ughTmo0C2d0KurJR7f9V8tK-nlUc7hde_CVOP20,179
+gwsa/__main__.py,sha256=lRcnSjKq0iupFZApyF2MKcVgzUEuj-Nkmt5K238IR_Q,2265
+gwsa/base.py,sha256=Nkw6twGkPj9IKmA94ih7-pzZvYpNdGE3TEQUvK_Fwxw,3196
+gwsa/fetch.py,sha256=jn-bo8QNz8ODUM27ri6tA7g06VutxorypMkW4W-IOD8,2455
+gwsa/rebase.py,sha256=kMKR_LjUVC1KibbloZgK1TMeffIWAhWNK1VcliKgXko,2181
+gwsa/status.py,sha256=uQtQMFnXHyqOnfmdpOaY5ut7UiB47aqjrbKBwnkWJ9c,5385
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/misc.py,sha256=mN3RmFkwT0rslpOsZsJa9qx51sFiPihewhp1MwNaqMg,1056
+tests/test_fetch.py,sha256=2VMsrV0CbGMUIyheieB56fD3U2c2-C44HBIypV3yEdk,2483
+tests/test_status.py,sha256=rCwJb5ys57OS2bkKJLa8u5oEqHm9IkmQ0W5jOPFd_-Q,6420
+gwsa-1.1.3.dist-info/LICENSE,sha256=pdbKqBAL_SBG1hRjxfTzbHX4DRDkgYhXgU9jHTR2j54,18040
+gwsa-1.1.3.dist-info/METADATA,sha256=tOjm69BZPuajddO1i5jg5FvHM_xVzhIV9nO3e1N6fZ4,1869
+gwsa-1.1.3.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+gwsa-1.1.3.dist-info/entry_points.txt,sha256=eYKmwyBVbG1kY9ek-dm44bXfPu99rqtXnA9xEpRUAkI,45
+gwsa-1.1.3.dist-info/top_level.txt,sha256=xTFty__YIRCC0ZsR8KRzBr_hDFPyJ3WIZKlPJn0DRIc,11
+gwsa-1.1.3.dist-info/RECORD,,
