@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: django-rebel
+Version: 0.0.1
+Summary: Mailgun Backend for Django
+Home-page: https://gitlab.com/socivy/django-rebel
+Author: Socivy Developers
+Author-email: info@socivy.com
+License: MIT
+Description: ## Django Rebel
+        
+        Install
+        ```
+        pip install django-rebel
+        ```
+Keywords: mail mailgun django
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Provides-Extra: test
