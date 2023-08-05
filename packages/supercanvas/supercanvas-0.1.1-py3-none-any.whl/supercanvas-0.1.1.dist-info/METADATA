@@ -1,0 +1,163 @@
+Metadata-Version: 2.1
+Name: supercanvas
+Version: 0.1.1
+Summary: tkinter simplified (and augmented) canvas
+Home-page: https://twitter.com/davidequantique
+Author: David COBAC
+Author-email: david.cobac@gmail.com
+License: CC-BY-NC-SA
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+This package provides a `supercanvas` widget based on the original
+`tkinter` canvas.  It provides a fast useable canvas with a usual
+cartesian coordinate system.
+
+### class object
+
+``` python3
+
+>>> from supercanvas import *
+
+```
+
+Once package importation completed, you have to create a
+supercanvas the usual way.
+
+``` python3
+
+r = tkinter.Tk()
+c = supercanvas(r, bg="white", width=800, height=600)
+
+```
+
+
+### origin and units
+
+By default, origin is located at `supercanvas`'s center and units
+are both 1 pixel (and axes are drawn in french style with
+arrows). You can change this with `setOrigin` and `setUnit`
+methods:
+
+
+ ``` python3
+
+c.setUnit(80, 100)
+c.setOrigin(50, 200)
+
+```
+
+
+### supercanvas items
+
+`supercanvas` provides, for the moment, two items to draw `Point`
+and `Line`:
+
+
+* `drawPoint` method create a point at the desired coords.
+
+``` python3
+
+f = lambda x:x**2
+x = 3
+c.drawPoint(x, f(x), fill="red", outline="red")
+
+```
+
+It's based on `create_oval` so you can pass each option related to
+`Oval` object.
+
+* `drawLine` method create a line with a list of coords.
+
+``` python3
+
+c.drawLine([(-2, 2), (-1, 0), (0, 3)], fill="blue", width=3)
+
+```
+
+`drawLine` also supports a flat list of coords:
+
+``` python3
+
+c.drawLine([-2, 2, -1, 0, 0, 3], fill="blue", width=3)
+
+```
+
+gives the same line.
+
+### grab/release background
+
+You can move the whole `supercanvas` content in grabing /
+realeasing the background. It will refresh coords.
+
+### `supercanvas` options
+
+* `axes`
+
+passing `axes=False` to `supercanvas` options disable axes, default
+is `True`. For the moment, you cannot change axes style...
+
+* `ticks`
+
+passing `ticks=False` to `supercanvas` options disable ticks, default is `True`. For the moment, ticks are 1-unit separated...
+
+* `follow` 
+
+passing `follow=False` to `supercanvas` options disable cursor follow with coords, default is `True`.
+
+
+### full example
+
+``` python3
+
+from supercanvas import *
+import math
+r = tkinter.Tk()
+
+c = supercanvas(r, bg="white", width=800, height=600, ticks=False)
+c.setUnit(100, 100)
+
+f=lambda x:math.cos(x)
+g=lambda x:math.sin(x)
+
+p = .1
+a, b = -3, 3
+x = a
+listePointsF = []
+listePointsG = []
+for i in range(int(1 + (b - a) / p)):
+    # creating points 
+    c.drawPoint(x, f(x), fill="red", outline="red")
+    # two lists
+    # function f with tuples
+    listePointsF += (x, f(x))
+    # function g with flat list
+    listePointsG += [x]+[g(x)]
+    x += p
+
+# drawings of the two curves
+c.drawLine(listePointsF, fill="green")
+c.drawLine(listePointsG, fill="blue", width=3)
+
+# balancing canvas on the root
+c.pack(expand=True)
+
+# q to quit
+r.bind("<q>", quit)
+tkinter.mainloop()
+
+```
+
+### further
+
+Much much more!
+
+
+### about
+
+supercanvas is rather an attempt to publish on the `PyPi` packages
+index than a fully completed python project, I do not recommend
+supercanvas usage for professionnal use. You have to consider this
+package as an experiment.
+
+
