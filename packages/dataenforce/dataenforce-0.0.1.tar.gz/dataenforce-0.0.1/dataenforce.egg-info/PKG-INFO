@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: dataenforce
+Version: 0.0.1
+Summary: Enforce columns & data types of pandas DataFramese
+Home-page: https://github.com/CedricFR/dataenforce
+Author: Cedric Canovas
+Author-email: dev@canovas.me
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: # dataenforce
+        Python package to enforce columns &amp; data types of pandas DataFrames
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
