@@ -1,0 +1,13 @@
+dagging/__init__.py,sha256=rVQ8JR561JpULzty2KwQgtaXzP_DM7JnxW-lm0qPcf8,164
+dagging/_dagging.py,sha256=sfVJRVgTlf_JG71kwFOFynmlMm5SWK8cklHnrCAGYLU,10366
+dagging/_version.py,sha256=iE0Ps4HgCQsoiEvEWe62WPOhEa6nxQRF2npBj-HET2E,518
+dagging/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dagging/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dagging/tests/test_dagging.py,sha256=mtH9KgHiS4SRZUjoDrkmD4-B9F6CzrpCLOlO9wTJR2g,383
+dagging-0.2.0.dist-info/DESCRIPTION.rst,sha256=-ZrJ8hCb3wLMGoijoGqminms75kNXVE2oQEzba-H4-E,1502
+dagging-0.2.0.dist-info/METADATA,sha256=kKJTIHuvX20oLVuukXIvUCHiCMeZZX2r5rmwuKvS8hY,2202
+dagging-0.2.0.dist-info/RECORD,,
+dagging-0.2.0.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+dagging-0.2.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+dagging-0.2.0.dist-info/metadata.json,sha256=tJF46bojNHGxXO-Y_n9iUjwiL2_j0s8KzYlZv34K7jc,932
+dagging-0.2.0.dist-info/top_level.txt,sha256=bEt49Ekx80JdMRU0LUktpN1tpk3p_mYb4RNmeVXIW2Y,8
