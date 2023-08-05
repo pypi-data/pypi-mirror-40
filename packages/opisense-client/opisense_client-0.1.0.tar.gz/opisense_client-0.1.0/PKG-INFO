@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: opisense_client
+Version: 0.1.0
+Summary: Package to interract with the Opisense API
+Home-page: https://github.com/opinum/opisense_client/
+Author: Opinum
+Author-email: support@opinum.com
+License: UNKNOWN
+Description: # opisense_client
+        
+        This package provides some functions to interact with the Opisense API. 
+        
+        Mors info about Opisense at www.opisense.com
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
