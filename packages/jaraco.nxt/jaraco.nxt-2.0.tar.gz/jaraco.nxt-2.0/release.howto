@@ -1,0 +1,7 @@
+How to make a release:
+
+- Tag the commit with the version to be released
+- send the distribution to pypi python setup.py release
+
+- announce release on python-announce-list@python.org
+- announce release on mindstorms community list (forums.nxtasy.org)
