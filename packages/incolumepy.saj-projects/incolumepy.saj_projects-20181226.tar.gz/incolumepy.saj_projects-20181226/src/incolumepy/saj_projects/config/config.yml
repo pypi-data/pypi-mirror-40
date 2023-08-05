@@ -1,0 +1,12 @@
+linux:
+  system: 'linux'
+  str_version: '%Y%m%d'
+  dir_teste: ''
+mac:
+  system: 'mac'
+  str_version: '%Y%m%d'
+  dir_teste: ''
+windows:
+  system: 'windows'
+  str_version: '%Y%m%d'
+  dir_teste: ''
