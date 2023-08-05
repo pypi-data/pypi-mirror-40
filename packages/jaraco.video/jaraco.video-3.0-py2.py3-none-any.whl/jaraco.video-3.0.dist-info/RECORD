@@ -1,0 +1,15 @@
+jaraco/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+jaraco/video/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jaraco/video/capture.py,sha256=wNyFJiGRUGFPJYDLtS1c1zssSq_lNIKBpa1APQbmC1g,11261
+jaraco/video/util.py,sha256=dyQs_61aePAFvBRN1tcg1iU_VOrwkeLpBk9l72vQPG0,430
+jaraco/video/api/__init__.py,sha256=tyyyv8PouP0Wq6Ms3nC3Y_dvhPNkxHwV8sW_JFH8-sY,773
+jaraco/video/api/objects.py,sha256=_hZ5DXP4t7aUURlz0bk4ETL1itAtockkLJl0Jvj6r9s,3864
+jaraco/video/api/DirectShow/DexterLib.idl,sha256=Ckzp_HRyZU80-Gkq_JTaHmGbRIm382zbpR-abRzuqR0,50989
+jaraco/video/api/DirectShow/DexterLib.tlb,sha256=W4wrZ-IQ5PVulgD0gjXjTTFW8GbxiJl0xWFoU-ii-1Q,49028
+jaraco/video/api/DirectShow/DirectShow.tlb,sha256=kZ94fiDc1ic2OxlWlaWvadd6-94BuD1Lb15tkQh9eSQ,143740
+jaraco.video-3.0.dist-info/LICENSE,sha256=pV4v_ptEmY5iHVHYwJS-0JrMS1I27nPX3zlaM7o8GP0,1050
+jaraco.video-3.0.dist-info/METADATA,sha256=nOWNIq1rJ01tsI_rAwzIII-tYx-cQtxE1YzuPKz6ezk,2354
+jaraco.video-3.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+jaraco.video-3.0.dist-info/entry_points.txt,sha256=uBNq2unaZZo75HUMU-oXC72zH8E4Y34jU4KkpyHke28,64
+jaraco.video-3.0.dist-info/top_level.txt,sha256=0JnN3LfXH4LIRfXL-QFOGCJzQWZO3ELx4R1d_louoQM,7
+jaraco.video-3.0.dist-info/RECORD,,
