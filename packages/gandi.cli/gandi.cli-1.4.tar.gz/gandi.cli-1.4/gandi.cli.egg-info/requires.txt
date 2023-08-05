@@ -1,0 +1,11 @@
+setuptools
+pyyaml
+click>=7.0
+requests
+IPy
+
+[test]
+pytest
+pytest-cov
+tox
+mock
