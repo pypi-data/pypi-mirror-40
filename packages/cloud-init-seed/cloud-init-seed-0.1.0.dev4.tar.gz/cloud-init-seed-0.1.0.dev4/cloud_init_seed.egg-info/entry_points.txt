@@ -1,0 +1,3 @@
+[console_scripts]
+ciseed = cloud_init_seed:main
+

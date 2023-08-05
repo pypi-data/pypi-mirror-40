@@ -1,0 +1,8 @@
+CHANGES
+=======
+
+* Add .gitignore
+* Add support for genisoimage
+* Fix user-data syntax
+* Add LICENSE file
+* Initial version of cloud-init-seed
