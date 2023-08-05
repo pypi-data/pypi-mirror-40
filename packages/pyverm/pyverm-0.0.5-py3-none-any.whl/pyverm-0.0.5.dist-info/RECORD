@@ -1,0 +1,14 @@
+pyverm/__init__.py,sha256=icBDkubo5GSk4u5vTDdcI3oZLeDGHGd1gx4HVZcpuIE,1941
+pyverm/__version__.py,sha256=vH8uRGHbwvkELVW-QU6CzLl7hIZj395_vsD7UKwr0Uo,1859
+pyverm/_classes.py,sha256=MbX6ffnkOYgJD1jNczG58IqAGKeiIXxW5YjKo6DqZMU,4370
+pyverm/_functions.py,sha256=ClX9E8eqkJrDNYFSm2nqW71eHVwQSDoHWYVPeXk1WlY,5560
+pyverm/_utils.py,sha256=uYP8CAH_1kPeAnLWnjdYLFNZxpHC6rz-mTzOlyC-vRQ,1670
+pyverm/api.py,sha256=7ofHy_j5nvwqQ7KP7YqA5UrZcHIpKiJvCS_rboQTuNI,3377
+pyverm/settings.py,sha256=Fsy8SEMtsVy_mdEpH62mGDYM8SFiYWGYnTN35C5eiC4,1699
+pyverm/transformation.py,sha256=Y4OOF1hBuIV2RwiG0n9d6gzJTx-EC9QgQZ-hLFtCVfE,8853
+pyverm/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyverm-0.0.5.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pyverm-0.0.5.dist-info/METADATA,sha256=S8RJZpRQ7MmbUPwcrHfCOALONh7b314yATM53cAVLZQ,667
+pyverm-0.0.5.dist-info/WHEEL,sha256=P3qJ5yBP-M5n4VbrgU3eTDIHvegviaBxiqCi1ejHWOs,97
+pyverm-0.0.5.dist-info/top_level.txt,sha256=i2ecPy6BQ12F_hVuFKcqoW1tKf65-colk5sWu-YOaMY,7
+pyverm-0.0.5.dist-info/RECORD,,
