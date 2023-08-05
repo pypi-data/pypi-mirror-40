@@ -1,0 +1,84 @@
+System requirements
+-------------------
+
+ViTables 3.0.0 has been tested against the latest versions of Python (2 and 3),
+PyTables and PyQt. You can try other versions at your own risk :).
+
+Installation on a conda environment
+-----------------------------------
+
+Using conda you should be able to run vitables on any system, let it
+be linux, mac or windows. The following are instructions for linux-like
+systems.
+
+Install conda:
+  http://www.conda.io
+
+Clone vitables...
+```sh
+  git clone git@github.com:uvemas/ViTables.git
+  cd ViTables
+```
+...or download it
+```sh
+  wget https://github.com/uvemas/ViTables/archive/master.tar.gz
+  tar xzvf master.tar.gz
+  rm -f master.tar.gz
+  cd ViTables-master
+```
+
+You can use the provided ```environment.yml``` file to create a new
+environment with the minimal dependencies needed to run vitables:
+```sh
+  conda env create -n vitables -f environment.yml
+```
+
+Activate the environment whenever you want to run vitables
+```sh
+  source activate vitables
+  vitables [whatever.h5]
+```
+
+Installation on Windows and Mac OS X platforms
+----------------------------------------------
+Currently there are no graphical installers available for these platforms. You
+have to install ViTables from the command line, using one of the methods
+described in the Linux section.
+
+Installation on Linux platforms
+-------------------------------
+
+The Python setuptools are used to build and install ViTables. You can install
+the package from PyPI issuing the command::
+
+  $ pip install vitables
+
+This should install the ViTables wheel. If you experience problems installing
+the binary package you can install from sources (provided your system fulfills
+the requirements listed in the above section). Just download the tarball from
+PyPI, uncompress it, change to the distribution directory and execute (as root)
+
+ $ python setup.py install
+
+If you are doing this on a MacOS X platform, please make sure that the
+DYLD_LIBRARY_PATH environment variable has been setup properly.
+
+By default ViTables will be installed in the system-protected area where
+your system installs third party Python packages so you will need superuser
+privileges. If you prefer to install the package in a different location
+(for instance, your home directory) so that the installation can be done by
+non privileged users, you can do it using the --prefix (or --home) tag
+
+ $ python setup.py install --prefix=/home/myuser/mystuff
+
+Please, remember that installing Python modules in non-standard locations
+makes it necessary to setup properly the PYTHONPATH environment variable so
+that the Python interpreter can find the new modules.
+
+If you need further customizations, please have a look to the output of the
+command
+
+ $python setup.py install --help
+
+to see all the available options. Complete information about them can be
+found in the Distutils documentation.
