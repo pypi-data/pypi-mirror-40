@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+SmartSchema/SmartSchema.py
+SmartSchema/__init__.py
+python3_SmartSchema.egg-info/PKG-INFO
+python3_SmartSchema.egg-info/SOURCES.txt
+python3_SmartSchema.egg-info/dependency_links.txt
+python3_SmartSchema.egg-info/top_level.txt
+python3_SmartSchema.egg-info/version.txt
+test/test1.py
