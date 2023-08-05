@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/tsresolve/__init__.py
+src/tsresolve/constants.py
+src/tsresolve/event_parser.py
+src/tsresolve/test_ts.py
+src/tsresolve/time_stamp_resolver.py
+src/tsresolve.egg-info/PKG-INFO
+src/tsresolve.egg-info/SOURCES.txt
+src/tsresolve.egg-info/dependency_links.txt
+src/tsresolve.egg-info/not-zip-safe
+src/tsresolve.egg-info/requires.txt
+src/tsresolve.egg-info/top_level.txt
