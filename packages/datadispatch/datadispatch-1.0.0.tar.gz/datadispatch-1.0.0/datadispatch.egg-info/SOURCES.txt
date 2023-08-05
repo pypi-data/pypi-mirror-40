@@ -1,0 +1,9 @@
+README.md
+setup.py
+datadispatch/__init__.py
+datadispatch.egg-info/PKG-INFO
+datadispatch.egg-info/SOURCES.txt
+datadispatch.egg-info/dependency_links.txt
+datadispatch.egg-info/top_level.txt
+datadispatch/test/__init__.py
+datadispatch/test/test_datadispatch.py
