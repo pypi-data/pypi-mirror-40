@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: sage3reader
+Version: 0.2.0
+Summary: A python reader for SAGE III and SAGE III ISS L2 solar binary files
+Home-page: http://arg.usask.ca
+Author: Chris Roth
+Author-email: chris.roth@usask.ca
+License: MIT
+Description: UNKNOWN
+Keywords: sage sageiii reader l2 binary solar
+Platform: UNKNOWN
+Requires-Python: >=3.6
