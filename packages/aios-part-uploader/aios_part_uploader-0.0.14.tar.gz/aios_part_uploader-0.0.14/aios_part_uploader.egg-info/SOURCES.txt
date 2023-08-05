@@ -1,0 +1,10 @@
+README.md
+setup.py
+aios_part_uploader/__init__.py
+aios_part_uploader/dataset.py
+aios_part_uploader/exceptions.py
+aios_part_uploader/nfs.py
+aios_part_uploader.egg-info/PKG-INFO
+aios_part_uploader.egg-info/SOURCES.txt
+aios_part_uploader.egg-info/dependency_links.txt
+aios_part_uploader.egg-info/top_level.txt
