@@ -1,0 +1,14 @@
+textblob_ar/__init__.py,sha256=-2I9EZsYXqBScGbeB1lW9xGBMIuQR2XBncGE8xYkBdA,246
+textblob_ar/blob.py,sha256=nV19TaiDE52HnVgeiW34F_3piVawUh73y_6KcV9pZQ0,2620
+textblob_ar/correction.py,sha256=e1Ir-5AJ2Y6gJdTqV3Xkj4N09L4FMc6cqXuXamawnMw,1837
+textblob_ar/pos_tagger.py,sha256=ygvkuVt3A3NQdWJADW-tNPpxk-VfQnuXLO0ewl-7QJ8,919
+textblob_ar/sentiment.py,sha256=lPhGRueTvUG6gt0um7TCb2NKJaN0ewMDhzpQW2JaKVM,848
+textblob_ar/similarity.py,sha256=shj4bmc9bcP5lqlC9LfONWaAlb-mWJp7kWyI-snRT1U,1291
+textblob_ar/tokenizer.py,sha256=5LYx56s7odq652j7PzU1t_XPd-y_6oCEQt1rnoXM8fo,569
+textblob_ar/utils.py,sha256=OypLDvtmVZni1vLpd6BjTdwGRi83PC_y7Yi-9_Lug7U,860
+textblob_ar_mk-0.0.2.dist-info/DESCRIPTION.rst,sha256=8Wzt8B-rr8ZeWI37hXuiM7pcEZs1KkYEfyMUw7Zfj_U,1579
+textblob_ar_mk-0.0.2.dist-info/METADATA,sha256=CMwCeRr-5DdhOsyA0WxAlOycxh60mHm7F1f64Z79BRs,1882
+textblob_ar_mk-0.0.2.dist-info/RECORD,,
+textblob_ar_mk-0.0.2.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+textblob_ar_mk-0.0.2.dist-info/metadata.json,sha256=xZKibbU29zZxpFYOxT7Mvk4siz8dmoRRXJWY5KKZ8iw,586
+textblob_ar_mk-0.0.2.dist-info/top_level.txt,sha256=8yZARf4IZyxiT7sC_w_Q_x7Yaiwp-drNZDVm1pya1ag,12
