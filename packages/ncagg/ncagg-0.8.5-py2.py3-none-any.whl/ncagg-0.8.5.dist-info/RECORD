@@ -1,0 +1,12 @@
+ncagg/__init__.py,sha256=KKhqFPynKFNc63uoMaOOsRxKbGFMfUOr4Qer7J67jCI,72
+ncagg/__main__.py,sha256=D2AYEG813n93eaC7YLDkD_BKi2BSMYl9Kl0RuB6kJAk,27
+ncagg/aggregator.py,sha256=TcYpltNx674uMDPFHlzS-L1ZnFr56vujPKJubzhJhkk,17451
+ncagg/aggrelist.py,sha256=ncfbUfmRHElpk2tgR9VzMDiNjZJ9ES1Oy_QWKIvbCP8,26025
+ncagg/attributes.py,sha256=Lw_93qJ0yyCyGVgvGIEpB7eUiLZG1vsz7Tn1VT4TX3I,11795
+ncagg/cli.py,sha256=ydliysxyCojMpf-6WTBF7tXL3vDLIUP7ZQWdSQfGczU,8085
+ncagg/config.py,sha256=DckfFpuHdYJFvCs2KvDGMqC0nJTzwpBjL07V3LcbCes,13438
+ncagg-0.8.5.dist-info/METADATA,sha256=JKf2_94Nfh_GOJXKqqTm9lfbZnKBNRaMuGZYTExh8d0,20133
+ncagg-0.8.5.dist-info/RECORD,,
+ncagg-0.8.5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+ncagg-0.8.5.dist-info/entry_points.txt,sha256=xFUQNGslRcOvRy6jYHNhj4iISajdVn7FPTxhyWAMhTI,59
+ncagg-0.8.5.dist-info/top_level.txt,sha256=JSeELqO4UZVuu9GihZMepQluq9aCzki2otfSMboEerQ,6
