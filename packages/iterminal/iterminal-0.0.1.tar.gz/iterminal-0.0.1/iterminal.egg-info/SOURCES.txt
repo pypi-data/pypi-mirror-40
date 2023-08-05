@@ -1,0 +1,17 @@
+README.md
+setup.py
+iterminal/__init__.py
+iterminal/__main__.py
+iterminal/commands.py
+iterminal/component.py
+iterminal/console.py
+iterminal/interpreter.py
+iterminal/shell.py
+iterminal.egg-info/PKG-INFO
+iterminal.egg-info/SOURCES.txt
+iterminal.egg-info/dependency_links.txt
+iterminal.egg-info/requires.txt
+iterminal.egg-info/top_level.txt
+iterminal/web/__init__.py
+iterminal/web/jqconsole.py
+iterminal/web/webusb.py
