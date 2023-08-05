@@ -1,0 +1,6 @@
+.idea/
+.tox/
+.vscode/
+__pycache__/
+dist/
+*.pyc

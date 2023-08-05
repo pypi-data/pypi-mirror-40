@@ -1,0 +1,46 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "mity"
+dist-name = "mity"
+author = "Hamza Sheikh"
+author-email = "code@codeghar.com"
+home-page = "https://aikchar.me/blog/what-is-mity.html"
+description-file = "README.md"
+requires-python = "~=3.7"
+requires = [
+    "invoke",
+    "knack",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest",
+]
+doc = [
+    "sphinx",
+]
+
+[tool.flit.scripts]
+mity = "mity.mity:main"
+
+# https://tox.readthedocs.io/en/latest/example/basic.html#pyproject-toml-tox-legacy-ini
+# https://tox.readthedocs.io/en/latest/example/package.html
+# https://github.com/tox-dev/tox/issues/232
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+envlist = py37
+toxworkdir = {env:TOX_WORK_DIR:.tox}
+
+[testenv]
+deps = pytest
+commands = pytest --basetemp={envtmpdir} tests/
+"""
