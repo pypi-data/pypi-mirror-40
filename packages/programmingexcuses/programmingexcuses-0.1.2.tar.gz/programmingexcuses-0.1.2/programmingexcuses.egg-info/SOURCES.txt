@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+README.rst
+setup.py
+programmingexcuses/__init__.py
+programmingexcuses/programmingexcuses.py
+programmingexcuses.egg-info/PKG-INFO
+programmingexcuses.egg-info/SOURCES.txt
+programmingexcuses.egg-info/dependency_links.txt
+programmingexcuses.egg-info/requires.txt
+programmingexcuses.egg-info/top_level.txt
+script/programmingexcuse
