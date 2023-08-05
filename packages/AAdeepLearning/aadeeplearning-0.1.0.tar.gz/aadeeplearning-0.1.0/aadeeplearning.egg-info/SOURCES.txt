@@ -1,0 +1,9 @@
+setup.py
+aadeeplearning/__init__.py
+aadeeplearning/cos_doubles.py
+aadeeplearning/setup_python.py
+aadeeplearning/test.py
+aadeeplearning.egg-info/PKG-INFO
+aadeeplearning.egg-info/SOURCES.txt
+aadeeplearning.egg-info/dependency_links.txt
+aadeeplearning.egg-info/top_level.txt
