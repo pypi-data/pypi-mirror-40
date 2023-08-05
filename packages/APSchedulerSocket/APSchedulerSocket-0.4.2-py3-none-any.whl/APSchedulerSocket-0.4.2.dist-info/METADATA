@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: APSchedulerSocket
+Version: 0.4.2
+Summary: The purpose of the application is to solve the problem of having a unique 'APScheduler' object for a multithreaded application. The project aims to easily implement a client-server architecture to control the scheduled processes. Another great advantage is that you can use the scheduler in distributed processes or servers.
+Home-page: UNKNOWN
+Author: Rodrigo Ristow
+Author-email: rodrigo@maxttor.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Dist: setuptools
+Requires-Dist: APScheduler
+Provides-Extra: development
+Requires-Dist: zest.releaser ; extra == 'development'
+Requires-Dist: check-manifest ; extra == 'development'
+Provides-Extra: test
+Requires-Dist: nose ; extra == 'test'
+Requires-Dist: nose-selecttests ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: unittest2 ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+
+The purpose of the application is to solve the problem of having a unique 'APScheduler' object for a multithreaded application. The project aims to easily implement a client-server architecture to control the scheduled processes. Another advantage is that you can use the scheduler in distributed processes or servers.
+
+INSTALL
+=======
+
+::
+
+    $ pip install APSchedulerSocket
+
+USAGE
+=====
+
+::
+
+    from apschedulersocket import schedulers
+    from datetime import datetime
+
+    def my_process():
+        print("Executing my process: Hello world!")
+
+    # Show the protocol messages
+    schedulers.DEBUG = True
+
+    # New SchedulerServer
+    scheduler = schedulers.SchedulerServer(daemon=False)
+
+    # Check if the server was not already started by another thread/process
+    if not scheduler.client.is_server_running():
+        scheduler.add_job(func=my_process,
+                          id="my_process",
+                          trigger='interval',
+                          next_run_time=datetime.now(),
+                          minutes=1)
+        # start the apscheduler and the server
+        print("Server started!")
+        scheduler.start()
+
+    print("Server state (1=running):",
+          scheduler.client.call(["BackgroundScheduler","state"]))
+
+    print("The next run time of my_process:",
+          scheduler.client.call(["my_process","next_run_time"]))
+
+    print("Pause the job:",
+          scheduler.client.call(["my_process","pause"]))
+
+    print("Next run time of paused my_process (None=paused):",
+          scheduler.client.call(["my_process","next_run_time"]))
+
+    print("Resume the job:",
+          scheduler.client.call(["my_process","resume"]))
+
+    print("Wrong message to server:",
+          scheduler.client.call(["Can you also cook?",]))
+
+    print("Shutdown!",
+          scheduler.client.call(["shutdown",]))
+
+
+DEVELOP
+=======
+
+::
+
+    $ git clone https://github.com/rristow/APSchedulerSocket APSchedulerSocket
+    $ cd APSchedulerSocket
+    $ make
+
+RUNNING TESTS
+=============
+
+::
+
+    $ make test
+    # TODO!Changelog
+=========
+
+
+0.1 (unreleased)
+----------------
+
+- Initial release.
+  [Rodrigo Ristow]
+APSchedulerSocket Copyright (c) 2012, Rodrigo Ristow
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. The name of the author may not be used to endorse or promote products
+   derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
