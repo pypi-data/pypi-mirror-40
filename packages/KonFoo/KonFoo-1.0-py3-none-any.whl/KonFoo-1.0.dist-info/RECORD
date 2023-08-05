@@ -1,0 +1,16 @@
+konfoo/__init__.py,sha256=EXm5n1r4Joyt_4W6tNpLWL7morX7YVEOBJPxS861dLg,8032
+konfoo/categories.py,sha256=p8VdzZXGCmelyTTbXF6hQv5DL3hcKzl6yaJFqbgNcxQ,5691
+konfoo/core.py,sha256=mgQFyrYX0EhwZfUgaNFTCnOx_yV-jn04b5lqvYFvquQ,271435
+konfoo/enums.py,sha256=itNATaPa1XfaICFBFQ6kfvxtvYVnehDyvFwqgLjVhR8,5922
+konfoo/exceptions.py,sha256=s8st7jidAjiLVLlkNjfp9twZe_nLSCeXy29s5v47wn4,7979
+konfoo/fields.py,sha256=nK5craHT5zmzeaG7qbZLN0GPhwzt4C1Pjw-_SL8Wp4s,11904
+konfoo/globals.py,sha256=4GWak6pYJYy9yG8p-KV_mHO0VK8CDtxlXW0mNJ0xI8o,1187
+konfoo/options.py,sha256=O6rda0wUJHC9UosdzuIlN6QCVgtZMCU65w7g_tq-AvU,2482
+konfoo/pointers.py,sha256=zdNBwsyyY3Tz_fDegvlNP0N1ijvQvWpMQ8QHoopXo-E,31732
+konfoo/providers.py,sha256=ca65_qQDioxosP8Wmfr9aF_6lF7YGRUwWu4mifqos2w,3989
+konfoo/utils.py,sha256=PUYtqvtUEbtzDzM3GYk5FOLmXP59jQqb453PXer_Mqc,7587
+KonFoo-1.0.dist-info/LICENSE,sha256=9K9JyduVkWoVFit_09bGA1cBmxG9egOZhjKraROG1DQ,1504
+KonFoo-1.0.dist-info/METADATA,sha256=rcaIg0HoffF4CHtRnsy15CkMcJMqNA3OsswDOBplHGA,6083
+KonFoo-1.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+KonFoo-1.0.dist-info/top_level.txt,sha256=tFD9_Yy2w9N48I2xUGDvO0RL5k93MzyXIpXJiFJkof0,7
+KonFoo-1.0.dist-info/RECORD,,
