@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: faux
+Version: 0.0.1
+Summary: Quick and easy server mocking.
+Home-page: https://github.com/bprinty/faux
+Author: bprinty
+Author-email: bprinty@gmail.com
+License: UNKNOWN
+Description: Faux
+        ===============================
+        
+        Quick and easy server mocking.
+        
+        
+        IN DEVELOPMENT: THIS REPO IS NOT YET FUNCTIONAL
+        
+        
+        Installation:
+        -------------
+        
+        .. note:: TODO
+        
+        
+        Installation:
+        -------------
+        
+        .. note:: TODO
+        
+        
+        Usage:
+        ------
+        
+        .. note:: TODO
+        
+        
+Keywords: faux
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
