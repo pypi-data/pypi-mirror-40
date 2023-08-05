@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: kaptain
+Version: 0.1.0a3
+Summary: A modern deploy tool
+Home-page: https://github.com/wangwenpei/kaptain
+Author: WANG WENPEI
+Author-email: stormxx@1024.engineer
+License: MIT
+Download-URL: https://github.com/wangwenpei/kaptain/tarball/master
+Description: UNKNOWN
+Keywords: captain,kubernetes,k8s
+Platform: UNKNOWN
