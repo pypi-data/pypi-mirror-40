@@ -1,0 +1,9 @@
+README.txt
+setup.py
+karkipytranslator/__init__.py
+karkipytranslator/main.py
+karkipytranslator/yandex.py
+karkipytranslator.egg-info/PKG-INFO
+karkipytranslator.egg-info/SOURCES.txt
+karkipytranslator.egg-info/dependency_links.txt
+karkipytranslator.egg-info/top_level.txt
