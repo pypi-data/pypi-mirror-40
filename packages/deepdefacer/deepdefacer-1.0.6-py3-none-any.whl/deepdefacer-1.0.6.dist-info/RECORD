@@ -1,0 +1,11 @@
+deepdefacer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepdefacer/defacer.py,sha256=sbBmDQ8FTKYWCHiYO0zF_X7T5dfwSnde-Ywk_Z0j_X8,3534
+deepdefacer/defacer_utils.py,sha256=auMO2fIAakIA7i4IV23rDga5lKKgRNNJy4vURJjKO3w,3230
+deepdefacer/model.hdf5,sha256=2SuebTzC_JNrSX1WMooJ5iG4JD6khY3nEuM4YuTV50c,5757336
+deepdefacer/model_variable.hdf5,sha256=2SuebTzC_JNrSX1WMooJ5iG4JD6khY3nEuM4YuTV50c,5757336
+deepdefacer-1.0.6.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+deepdefacer-1.0.6.dist-info/METADATA,sha256=Tadyt3mIHOH6ySt7TMdYy1R7qu4kf1XzFaDOoFKJPsY,807
+deepdefacer-1.0.6.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+deepdefacer-1.0.6.dist-info/entry_points.txt,sha256=F9JI_JdVcSR1DX9tFiDx4czpxWwdVBwC36WCXWF_fRo,77
+deepdefacer-1.0.6.dist-info/top_level.txt,sha256=TSYvjyfweAw2imlxDyDjUFtkTRsrZiBtlSUDVEveHSQ,12
+deepdefacer-1.0.6.dist-info/RECORD,,
