@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+nanotext/__init__.py
+nanotext/io.py
+nanotext/utils.py
+nanotext.egg-info/PKG-INFO
+nanotext.egg-info/SOURCES.txt
+nanotext.egg-info/dependency_links.txt
+nanotext.egg-info/top_level.txt
