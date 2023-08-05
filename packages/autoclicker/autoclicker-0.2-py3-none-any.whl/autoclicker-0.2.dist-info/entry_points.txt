@@ -1,0 +1,4 @@
+[console_scripts]
+aclk = autoclicker.main:autoclicker
+autoclicker = autoclicker.main:autoclicker
+
