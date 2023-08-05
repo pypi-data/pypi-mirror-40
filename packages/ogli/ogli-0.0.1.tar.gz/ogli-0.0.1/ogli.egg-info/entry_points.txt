@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        ogli = ogli.main:main
+    
