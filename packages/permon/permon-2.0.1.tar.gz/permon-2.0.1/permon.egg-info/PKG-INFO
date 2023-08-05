@@ -1,0 +1,45 @@
+Metadata-Version: 1.2
+Name: permon
+Version: 2.0.1
+Summary: A tool to monitor everything you want. Clean, simple, extensible and in one place.
+Home-page: https://github.com/bminixhofer/permon
+Author: Benjamin Minixhofer
+Author-email: bminixhofer@gmail.com
+License: MIT
+Description: 
+        # permon
+        
+        [![CircleCI](https://circleci.com/gh/bminixhofer/permon/tree/dev.svg?style=svg)](https://circleci.com/gh/bminixhofer/permon/tree/dev)
+        [![codecov](https://codecov.io/gh/bminixhofer/permon/branch/dev/graph/badge.svg)](https://codecov.io/gh/bminixhofer/permon)
+        [![Codacy Badge](https://api.codacy.com/project/badge/Grade/aeb0088ce100440f9077e1da6c6ca4f6)](https://www.codacy.com/app/bminixhofer/permon?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bminixhofer/permon&amp;utm_campaign=Badge_Grade)
+        
+        A tool to monitor everything you want. Clean, simple, extensible and in one place.
+        
+        See [permon's website](https://bminixhofer.github.io/permon) for a short overview.
+        
+        See the [user documentation](https://bminixhofer.github.io/permon/userdoc) for details.
+        
+        If you want to contribute or get an insight into how permon is structured, check out the [contributor documentation](https://bminixhofer.github.io/permon/contributordoc).
+        
+        ## Quickstart
+        
+        | Task | Command |
+        |---|---|
+        | Install permon | `pip install permon` |
+        | Run terminal frontend | `permon terminal` |
+        | Run native frontend | `permon native` |
+        | Run browser frontend | `permon browser` |
+        | Everything else | `permon --help` |
+        
+        ## License
+        
+        This project uses the MIT License - see the [LICENSE](LICENSE) file for details.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
