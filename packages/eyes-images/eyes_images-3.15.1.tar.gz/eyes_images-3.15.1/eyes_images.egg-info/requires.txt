@@ -1,0 +1,5 @@
+Pillow>=5.0.0
+multimethod>=0.7.1
+
+[:python_version <= "3.4"]
+typing>=3.5.2
