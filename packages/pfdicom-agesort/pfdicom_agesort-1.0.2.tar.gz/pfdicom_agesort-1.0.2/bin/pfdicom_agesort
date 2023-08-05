@@ -1,0 +1,488 @@
+#!/usr/bin/env python3
+#
+# (c) 2018 Fetal-Neonatal Neuroimaging & Developmental Science Center
+#                   Boston Children's Hospital
+#
+#              http://childrenshospital.org/FNNDSC/
+#                        dev@babyMRI.org
+#
+
+import sys, os
+sys.path.insert(1, os.path.join(os.path.dirname(__file__), '../pfdicom_agesort'))
+
+import  pfdicom_agesort
+from    argparse            import RawTextHelpFormatter
+from    argparse            import ArgumentParser
+import  pudb
+
+import  pfmisc
+from    pfmisc._colors      import Colors
+from    pfmisc              import other
+
+str_version = "1.0.2"
+str_desc    = Colors.CYAN + """
+
+
+
+        __    _ _                                                       _   
+       / _|  | (_)                                                     | |  
+ _ __ | |_ __| |_  ___ ___  _ __ ___    __ _  __ _  ___  ___  ___  _ __| |_ 
+| '_ \|  _/ _` | |/ __/ _ \| '_ ` _ \  / _` |/ _` |/ _ \/ __|/ _ \| '__| __|
+| |_) | || (_| | | (_| (_) | | | | | || (_| | (_| |  __/\__ \ (_) | |  | |_ 
+| .__/|_| \__,_|_|\___\___/|_| |_| |_| \__,_|\__, |\___||___/\___/|_|   \__|
+| |                                ______     __/ |                         
+|_|                               |______|   |___/                          
+
+
+
+                        Path-File DICOM age-based sort
+
+        Recursively walk down a directory tree organized in 
+
+            <MRN>/<study>/<series1>... <seriesN>
+
+        order and reconstruct into explicit
+
+            <YY>-yr/<MM>-mo/<MRN>-ex
+
+        structure.
+
+                             -- version """ + \
+             Colors.YELLOW + str_version + Colors.CYAN + """ --
+
+        'pfdicom_agesort' is a customizable and friendly DICOM directory analyzer
+        that organizes ChRIS-default directory data into a structure that is
+        explicitly age-based and suitable for browsing by the ReV viewer.
+
+        It is derived from 'pfdicom_tagExtract' and thus shares similar CLI
+        arguments.
+
+""" + Colors.NO_COLOUR
+
+def synopsis(ab_shortOnly = False):
+    scriptName = os.path.basename(sys.argv[0])
+    shortSynopsis =  """
+    NAME
+
+	    pfdicom_agesort 
+
+    SYNOPSIS
+
+        pfdicom_agesort                                             \\
+                     -I|--inputDir <inputDir>                       \\
+                    [-e|--extension <extension>]                    \\
+                     -O|--outputDir <outputDir>                     \\
+                    [--outputLeafDir <outputLeafDirFormat>]         \\
+                    [-F|--tagFile <tagFile>] |                      \\
+                    [-T|--tagList <tagList>] |                      \\
+                    [-m|--image <imageFile>]                        \\
+                    [-S|--symlinkDCMdata]
+                     -O|--outputDir <outputDir>                     \\
+                     -o|--output <outputFileStem>                   \\
+                    [-s|--imageScale <factor>[:<interpolation>]]    \\
+                    [-t|--outputFileType <outputFileType>           \\
+                    [--stage <stage>]                               \\
+                    [--infoJSON <infoJSONfile>]                     \\
+                    [--threads <numThreads>]                        \\
+                    [-x|--man]                                      \\
+                    [-y|--synopsis]                                 \\
+                    [--followLinks]                                 \\
+                    [--json]
+
+    BRIEF EXAMPLE                                         
+
+        pfdicom_agesort                                             \\
+                    -I /neuro/users/chris/data/mrn                  \\
+                    -O /neuro/users/chris/data/age                  \\
+                    --threads 0 --printElapsedTime                  \\
+                    -e dcm                                          \\
+                    -o '%_md5|6_PatientID-%PatientAge'              \\
+                    -m 'm:%_nospc|-_ProtocolName.jpg'               \\
+                    -s 3:none                                       \\
+                    --useIndexhtml                                  \\
+                    -t raw,json,html,dict,col,csv                   \\
+                    --followLinks                                   \\
+                    --symlinkDCMdata                                \\
+                    -v 3                                            \\
+                    --threads 0
+
+    """
+
+    description =  '''
+    DESCRIPTION
+
+        ``pfdicom_agesort`` repacks a ChRIS-default tree of MRI/DICOM
+        data to an explicit age-reflecting organization. The program 
+        performs a mulit-pass loop over the file tree space as
+        defined in the [--stage <stage>] flag below.
+
+        NOTE:
+        
+        * ``pfdicom_agesort`` is dervied from ``pfdicom_tagExtract``. 
+          Please consult the documentation for ``pfdicom_tagExtract`` 
+          for additional information.
+
+
+    ARGS
+
+        -I|--inputDir <inputDir>
+        Input DICOM directory to examine. By default, the first file in this
+        directory is examined for its tag information. There is an implicit
+        assumption that each <inputDir> contains a single DICOM series.
+
+        [-e|--extension <DICOMextension>]
+        An optional extension to filter the DICOM files of interest from the 
+        <inputDir>.
+
+        -O|--outputDir <outputDir>
+        The output root directory that will contain a tree structure identical
+        to the input directory, and each "leaf" node will contain the analysis
+        results.
+
+        In the case of `pfdicom_agesort`, this <outputDir> is the root of the
+        age sorted tree.
+
+        [--outputLeafDir <outputLeafDirFormat>]
+        If specified, will apply the <outputLeafDirFormat> to the output
+        directories containing data. This is useful to blanket describe
+        final output directories with some descriptive text, such as 
+        'anon' or 'preview'. 
+
+        This is a formatting spec, so 
+
+            --outputLeafDir 'preview-%s'
+
+        where %s is the original leaf directory node, will prefix each
+        final directory containing output with the text 'preview-' which
+        can be useful in describing some features of the output set.
+
+        [-F|--tagFile <tagFile>]
+        Read the tags, one-per-line in <tagFile>, and print the
+        corresponding tag information in the DICOM <inputFile>.
+
+        [-T|--tagList <tagList>]
+        Read the list of comma-separated tags in <tagList>, and print the
+        corresponding tag information parsed from the DICOM <inputFile>.
+
+        [-S|--symlinkDCMdata]
+        If true/specified, perform a symlink of the original DICOM data to
+        the final output directory tree. If false, a copy of the original
+        DICOM data is performed.
+
+        [-D|--doNotCleanUp]
+        If true, do not cleanup the original tag data tree created when
+        analysing the original DICOM tree structure.
+
+        [-m|--image <[<index>:]imageFile>]
+        If specified, also convert the <inputFile> to <imageFile>. If the
+        name is preceded by an index and colon, then convert this indexed 
+        file in the particular <inputDir>.
+
+        [-s|--imageScale <factor>[:<interpolation>]]
+        If an image conversion is specified, this flag will scale the image
+        by <factor> and use an interpolation <order>. This is useful in 
+        increasing the size of images for the html output.
+
+        Note that certain interpolation choices can result in a significant
+        slowdown!
+
+            interpolation order:
+            
+            'none', 'nearest', 'bilinear', 'bicubic', 'spline16',
+            'spline36', 'hanning', 'hamming', 'hermite', 'kaiser', 'quadric',
+            'catrom', 'gaussian', 'bessel', 'mitchell', 'sinc', 'lanczos'
+
+        -o|--outputFileStem <outputFileStem>
+        The output file stem to store data. This should *not* have a file
+        extension, or rather, any "." in the name are considered part of 
+        the stem and are *not* considered extensions.
+
+        [-t|--outputFileType <outputFileType>]
+        A comma specified list of output types. These can be:
+
+            o <type>    <ext>       <desc>
+            o raw       -raw.txt    the raw internal dcm structure to string
+            o json      .json       a json representation
+            o html      .html       an html representation with optional image
+            o dict      -dict.txt   a python dictionary
+            o col       -col.txt    a two-column text representation (tab sep)
+            o csv       .csv        a csv representation
+
+        Note that if not specified, a default type of 'raw' is assigned.
+
+        [--stage <stage>]
+        Stage to execute -- mostly for debugging purposes and useful if running a 
+        particular stage repeatedly.
+
+        [--infoJSON <infoJSONfile>]
+        The name of the study JSON file. 
+
+        Defaults to 'info.json'.
+
+        [--threads <numThreads>]
+        If specified, break the innermost analysis loop into <numThreads>
+        threads.
+
+        [-x|--man]
+        Show full help.
+
+        [-y|--synopsis]
+        Show brief help.
+
+        [--json]
+        If specified, output a JSON dump of final return.
+
+        [--followLinks]
+        If specified, follow symbolic links.
+
+        [-v|--verbosity <level>]
+        Set the app verbosity level. 
+
+            0: No internal output;
+            1: Run start / stop output notification;
+            2: As with level '1' but with simpleProgress bar in 'pftree';
+            3: As with level '2' but with list of input dirs/files in 'pftree';
+            5: As with level '3' but with explicit file logging for
+                    - read
+                    - analyze
+                    - write
+
+    EXAMPLES
+
+    Process a ChRIS tree containing DICOM files:
+
+        pfdicom_agesort                                             \\
+                    -I /neuro/users/chris/data/mrn                  \\
+                    -O /neuro/users/chris/data/age                  \\
+                    --threads 0 --printElapsedTime                  \\
+                    -e dcm                                          \\
+                    -o '%_md5|6_PatientID-%PatientAge'              \\
+                    -m 'm:%_nospc|-_ProtocolName.jpg'               \\
+                    -s 3:none                                       \\
+                    --useIndexhtml                                  \\
+                    -t raw,json,html,dict,col,csv                   \\
+                    --followLinks                                   \\
+                    --symlinkDCMdata                                \\
+                    -v 3                                            \\
+                    --threads 0
+
+    which will reorganize the file trees as shown, printing the 
+    final elapsed processing time.
+
+    '''
+    
+    if ab_shortOnly:
+        return shortSynopsis
+    else:
+        return shortSynopsis + description
+
+
+
+parser  = ArgumentParser(description = str_desc, formatter_class = RawTextHelpFormatter)
+
+parser.add_argument("-I", "--inputDir",
+                    help    = "input dir",
+                    dest    = 'inputDir')
+parser.add_argument("-i", "--inputFile",
+                    help    = "input file",
+                    dest    = 'inputFile',
+                    default = '')
+parser.add_argument("-e", "--extension",
+                    help    = "DICOM file extension",
+                    dest    = 'extension',
+                    default = '')
+parser.add_argument("-o", "--outputFileStem",
+                    help    = "output file",
+                    default = "tag",
+                    dest    = 'outputFileStem')
+parser.add_argument("-O", "--outputDir",
+                    help    = "output image directory",
+                    dest    = 'outputDir',
+                    default = '.')
+parser.add_argument("--stage",
+                    help    = "processing stage to execute",
+                    dest    = 'stage',
+                    default = 'all')
+parser.add_argument("-F", "--tagFile",
+                    help    = "file containing tags to parse",
+                    dest    = 'tagFile',
+                    default = '')
+parser.add_argument("-T", "--tagList",
+                    help    = "comma-separated tag list",
+                    dest    = 'tagList',
+                    default = '')
+parser.add_argument("-r",
+                    help    = "display raw tags",
+                    dest    = 'rawType',
+                    default = 'raw')
+parser.add_argument("-m", "--imageFile",
+                    help    = "image file to convert DICOM input",
+                    dest    = 'imageFile',
+                    default = '')
+parser.add_argument("-s", "--imageScale",
+                    help    = "scale images with factor and optional :interpolation",
+                    dest    = 'imageScale',
+                    default = '')
+parser.add_argument("-S", "--symlinkDCMdata",
+                    help    = "symlink original DCM data to output directory",
+                    dest    = 'symlinkDCMdata',
+                    action  = 'store_true',
+                    default = False)
+parser.add_argument("-D", "--doNotCleanUp",
+                    help    = "leave the original tag tree intact",
+                    dest    = 'doNotCleanUp',
+                    action  = 'store_true',
+                    default = False)
+parser.add_argument("-t", "--outputFileType",
+                    help    = "list of output report types",
+                    dest    = 'outputFileType',
+                    default = 'raw,json,html,dict,col,csv')
+parser.add_argument("--studyJSON",
+                    help    = "name of the JSON study descriptor file",
+                    dest    = 'studyJSON',
+                    default = 'study.json')
+parser.add_argument("--printElapsedTime",
+                    help    = "print program run time",
+                    dest    = 'printElapsedTime',
+                    action  = 'store_true',
+                    default = False)
+parser.add_argument("--useIndexhtml",
+                    help    = "force html file to be called 'index.html'",
+                    dest    = 'useIndexhtml',
+                    action  = 'store_true',
+                    default = False)
+parser.add_argument("--threads",
+                    help    = "number of threads for innermost loop processing",
+                    dest    = 'threads',
+                    default = "0")
+parser.add_argument("--outputLeafDir",
+                    help    = "formatting spec for output leaf directory",
+                    dest    = 'outputLeafDir',
+                    default = "")
+parser.add_argument("-x", "--man",
+                    help    = "man",
+                    dest    = 'man',
+                    action  = 'store_true',
+                    default = False)
+parser.add_argument("-y", "--synopsis",
+                    help    = "short synopsis",
+                    dest    = 'synopsis',
+                    action  = 'store_true',
+                    default = False)
+parser.add_argument("--json",
+                    help    = "output final return in json",
+                    dest    = 'json',
+                    action  = 'store_true',
+                    default = False)
+parser.add_argument("--followLinks",
+                    help    = "follow symbolic links",
+                    dest    = 'followLinks',
+                    action  = 'store_true',
+                    default = False)
+parser.add_argument("-v", "--verbosity",
+                    help    = "verbosity level for app",
+                    dest    = 'verbosity',
+                    default = "1")
+parser.add_argument('--version',
+                    help    = 'if specified, print version number',
+                    dest    = 'b_version',
+                    action  = 'store_true',
+                    default = False)
+
+args = parser.parse_args()
+
+if args.man or args.synopsis:
+    print(str_desc)
+    if args.man:
+        str_help     = synopsis(False)
+    else:
+        str_help     = synopsis(True)
+    print(str_help)
+    sys.exit(1)
+
+if args.b_version:
+    print("Version: %s" % str_version)
+    sys.exit(1)
+
+# pudb.set_trace()
+
+if args.printElapsedTime:
+    other.tic()
+
+# Per-stage target extensions
+lstr_stageExtenions = [ 
+    '.dcm', 
+    '-series.json', 
+    'study.json'
+]
+
+# Per stage pattern of input/output dirs, relative to original spec
+lstr_inputDir   = [
+    args.inputDir,
+    args.outputDir,
+    args.outputDir
+]
+
+lstr_outputDir  = [
+    args.outputDir,
+    args.outputDir,
+    args.outputDir
+]
+
+# Create the all the per stage objects
+l_pf_dicom          = []
+for (str_ext, str_inputDir, str_outputDir) in zip(lstr_stageExtenions, lstr_inputDir, lstr_outputDir):
+    l_pf_dicom.append(
+        pfdicom_agesort.pfdicom_agesort(
+                        inputDir            = str_inputDir,
+                        inputFile           = args.inputFile,
+                        extension           = str_ext,
+                        outputDir           = str_outputDir,
+                        outputFileStem      = args.outputFileStem,
+                        outputLeafDir       = args.outputLeafDir,
+                        useIndexhtml        = args.useIndexhtml,
+                        symlinkDCMdata      = args.symlinkDCMdata,
+                        doNotCleanUp        = args.doNotCleanUp,
+                        outputFileType      = args.outputFileType,
+                        tagFile             = args.tagFile,
+                        tagList             = args.tagList,
+                        imageFile           = args.imageFile,
+                        imageScale          = args.imageScale,
+                        studyJSON           = args.studyJSON,
+                        threads             = args.threads,
+                        followLinks         = args.followLinks,
+                        verbosity           = args.verbosity,
+                        json                = args.json
+        )
+    )
+
+# Per-stage named object processing handler
+lf_process          = [
+    l_pf_dicom[0].processDCM,
+    l_pf_dicom[1].processSeries,
+    l_pf_dicom[2].processStudy,
+]
+
+# Per-stage description
+lstr_stageDesc      = [
+    'DICOM analysis/tagExtract',
+    'series JSON analysis --> study JSON',
+    'study JSON --> new tree'
+]
+# pudb.set_trace()
+stage               = 1
+for (pf_obj, str_desc, f_process) in zip(l_pf_dicom, lstr_stageDesc, lf_process):
+    if args.stage == 'all' or int(args.stage) == stage:
+        d_ret       = pf_obj.run(
+                            func_process        = f_process,
+                            description         = str_desc,
+                            stage               = stage
+                        )
+        if args.printElapsedTime:
+            pf_obj.dp.qprint(
+                "Elapsed time from program start (now processed <%s>): %f seconds" %
+                (pf_obj.str_analysis, d_ret['runTime'])
+            )
+    stage += 1
+
+sys.exit(0)
