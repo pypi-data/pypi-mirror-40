@@ -1,0 +1,9 @@
+README.md
+setup.py
+audify/__init__.py
+audify.egg-info/PKG-INFO
+audify.egg-info/SOURCES.txt
+audify.egg-info/dependency_links.txt
+audify.egg-info/entry_points.txt
+audify.egg-info/requires.txt
+audify.egg-info/top_level.txt
