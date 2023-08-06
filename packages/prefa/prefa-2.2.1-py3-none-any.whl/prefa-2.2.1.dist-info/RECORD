@@ -1,0 +1,15 @@
+prefa/__init__.py,sha256=3J1hzHsrD2cUJSG6ZgemkKrSdnWu2dyxnuLtafRL1UU,122
+prefa/__version__.py,sha256=zTsK0eMsWhQM_J498JkPKagt-JSb3mUYRSG5GT1rn-4,352
+prefa/bintree.py,sha256=P5c3XuhtwxzL-hvDhUmXtEHENqbxiwJPIR5T0FzQzxY,5633
+prefa/dfa.py,sha256=6-3xkM9Q9wB-m7ibMv6fHjX5Gnwdu8Pa76A1-pvOEQc,12161
+prefa/ere.py,sha256=jjeTTqa86HlFw6ywV91_H2O3z4hCm6DDMe38e3HEedE,7254
+prefa/fa.py,sha256=OMIk3KgkEVQ_5p-cRWs2ESBAYWojQiltRB_ximz6SYg,8151
+prefa/nfa.py,sha256=3_toaOyVw-OM7YnrQK1bHPdcdwuDyUXifavo1QjYXRE,7309
+prefa/pgui.py,sha256=ShFZPXNc1IJiR6JT8oRxx3iZHJbeMKtCAtTYVGhcAgQ,7016
+prefa/re.py,sha256=jjeTTqa86HlFw6ywV91_H2O3z4hCm6DDMe38e3HEedE,7254
+prefa-2.2.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+prefa-2.2.1.dist-info/METADATA,sha256=RamiIAz5d0hJNtYV-9BGntAgiwUSC2J_Nz_Q7hU8g48,757
+prefa-2.2.1.dist-info/RECORD,,
+prefa-2.2.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+prefa-2.2.1.dist-info/metadata.json,sha256=GHxekLEJLc5_6C5dBxk-6jmy8DCXl9pp6pAZZ4hU3eQ,829
+prefa-2.2.1.dist-info/top_level.txt,sha256=-w4ygpbvnAbrd3nngkEQRE62MFeB3RDb5jh50Q0mUds,6
