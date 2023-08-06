@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: eri
+Version: 0.1.5
+Summary: Common functionality for data science at ERI
+Home-page: http://elderresearch.com/
+Author: Zach Lamberty
+Author-email: zach.lamberty@elderresearch.com
+License: MIT
+Keywords: data science
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Provides-Extra: test
+Requires-Dist: colorlog (>=2.7.0)
+Requires-Dist: jupyter (>=1.0.0)
+Requires-Dist: lxml (>=3.6.0)
+Requires-Dist: missingno (>=0.3.7)
+Requires-Dist: pandas (>=0.18.1)
+Requires-Dist: pyyaml (>=3.11)
+Requires-Dist: requests (>=2.10.0)
+Requires-Dist: seaborn (>=0.7.0)
+Provides-Extra: test
+Requires-Dist: nose; extra == 'test'
+
+# ERIPY
+
+This package contains commonly useful functions and modules for data science purposes at Elder Research, Inc.
+
+
+## Submodules
+
+What is provided here is simply a high-level discussion of what is avilable in `eri`. For detailed instructions, please refer to the sub-module-level `README` files, and, of course, the function documentation. If any of the above does not exist, please seek out the author and shame them mercilessly
+
+
+### `eri.clean`
+
+Useful functions for cleaning your data (usually assumes `pandas` data frames).
+
+
+### `eri.config`
+
+Shared configuration details.
+
+
+### `eri.html`
+
+HTML parsing and munging utilities.
+
+
+### `eri.validate`
+
+Useful functions for validating the data we have (often just logging useful facts about a particular dataframe).
+
+
+## Testing
+
+to test, install `pytest` and `coverage` and then run the following:
+
+``` python
+# run all tests
+coverage run -m pytest
+```
+
+``` python
+# print coverage statistics
+coverage report -m
+```
+
+## Deploying to `PyPi`
+
+I'm using `twine`. Instructions are [here](https://github.com/pypa/twine). to summarize, though:
+
+``` bash
+python setup.py sdist bdist_wheel
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+twine upload --skip-existing dist/*
+# may need to limit this to only the non-existent whl/tar
+twine upload --skip-existing -r eri dist/*
+```
+
+
