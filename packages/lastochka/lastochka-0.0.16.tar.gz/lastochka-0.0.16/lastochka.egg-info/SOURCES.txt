@@ -1,0 +1,13 @@
+README.md
+setup.py
+lastochka/__init__.py
+lastochka.egg-info/PKG-INFO
+lastochka.egg-info/SOURCES.txt
+lastochka.egg-info/dependency_links.txt
+lastochka.egg-info/not-zip-safe
+lastochka.egg-info/requires.txt
+lastochka.egg-info/top_level.txt
+lastochka/core/__init__.py
+lastochka/core/functions.py
+lastochka/core/main.py
+lastochka/core/optimizer.py
