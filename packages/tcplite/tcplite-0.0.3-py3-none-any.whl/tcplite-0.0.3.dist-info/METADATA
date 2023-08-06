@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tcplite
+Version: 0.0.3
+Summary: a lite, flexible and extendable tcp framework
+Home-page: https://github.com/Vincent0700/tcplite.git
+Author: Vincent
+Author-email: wang.yuanqiu007@gmail.com
+Maintainer: Vincent
+Maintainer-email: wang.yuanqiu007@gmail.com
+License: MIT License
+Platform: all
+Requires-Dist: attrs (==18.2.0)
+
+======================================================
+tcplite：a lite, flexible and extendable tcp framework
+======================================================
+
+Installation
+------------
+::
+
+    $ pip install tcplite
+
+
+
