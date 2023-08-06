@@ -1,0 +1,17 @@
+tensorflow>=1.7.0
+scikit-image==0.14.0
+scikit-learn==0.20.1
+opencv-python==3.4.3.18
+pandas==0.22.0
+requests==2.20.1
+matplotlib==2.2.2
+dask[distributed]==0.20.1
+bokeh==1.0.1
+keras==2.2.4
+centrosome==1.1.5
+plotnine==0.4.0
+papermill
+fcswrite
+tifffile
+fire
+seaborn
