@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+fsyncer/__init__.py
+fsyncer/__main__.py
+fsyncer/fsyncer.py
+fsyncer.egg-info/PKG-INFO
+fsyncer.egg-info/SOURCES.txt
+fsyncer.egg-info/dependency_links.txt
+fsyncer.egg-info/entry_points.txt
+fsyncer.egg-info/requires.txt
+fsyncer.egg-info/top_level.txt
+test/test_fsync.py
