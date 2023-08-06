@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: caver
+Version: 0.2
+Summary: Multi-label Text Classification Toolkit
+Home-page: https://github.com/guokr/Caver
+Author: Guokr Inc.
+Author-email: jinyang.zhou@guokr.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
