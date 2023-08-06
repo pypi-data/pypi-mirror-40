@@ -1,0 +1,8 @@
+PTable
+PyYAML
+SQLAlchemy
+blessings
+croniter
+inquirer
+readchar
+six
