@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: jsonconv
+Version: 0.0.1
+Summary: Simple library for converting some data structures to/from JSON
+Home-page: https://github.com/ctrl-q/jsonconv
+Author: ctrl-q
+Author-email: 
+License: GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.0.0
+Description-Content-Type: text/markdown
+
+
+Simple library for converting some data structures to/from JSON
+## Installation
+### Using pip (Recommended)
+`pip install jsonconv`
+### From source
+1. Clone this repository
+1. `python setup.py install`
+
+This module is still in *very* early stages.
+Please open an issue if you have encounter any bugs.
+
+
