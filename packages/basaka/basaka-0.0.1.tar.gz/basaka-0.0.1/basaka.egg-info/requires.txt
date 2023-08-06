@@ -1,0 +1,4 @@
+requests
+six
+tqdm
+tensorflow>=1.12.0

@@ -1,0 +1,7 @@
+__pycache__
+assets/*
+dataset
+models
+build
+dist
+*.egg-info
