@@ -1,0 +1,20 @@
+{% extends 'tracker/admin/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'tracker/css/main-rankings-app.css' %}">
+{% endblock %}
+
+{% block content %}
+<input type="hidden" value="{{secret}}" />
+{% if id %}
+  <input id="set-id" type="hidden" value="{{id}}" />
+{% endif %}
+<div id="app"></div>
+{% endblock %}
+
+{% block javascript %}
+{% if env != 'production' %}
+<script type="text/javascript" src="{% static 'tracker/js/main-rankings-app.js' %}"></script>
+{% endif %}
+{% endblock %}
