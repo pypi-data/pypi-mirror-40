@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pywasm
+Version: 0.3.0
+Summary: WebAssembly Interpreter by pure Python
+Home-page: https://github.com/mohanson/pywasm
+Author: mohanson
+Author-email: mohanson@outlook.com
+License: WTFPL
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,14 @@
+README.md
+setup.py
+pywasm/__init__.py
+pywasm/common.py
+pywasm/convention.py
+pywasm/execution.py
+pywasm/log.py
+pywasm/num.py
+pywasm/stack.py
+pywasm/structure.py
+pywasm.egg-info/PKG-INFO
+pywasm.egg-info/SOURCES.txt
+pywasm.egg-info/dependency_links.txt
+pywasm.egg-info/top_level.txt
