@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: realtimefunc
+Version: 0.0.1
+Summary: A decorator is used to update a function at runtime.
+Home-page: https://github.com/Graywd/realtimefunc
+Author: Graywd
+Author-email: nowreturnlong@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# realtimefunc
+A decorator is used to update a function at runtime.
+
+### usage
+```
+from /path/to/realtimefunc import realtimefunc
+
+@coroutine
+@realtimefunc
+def test():
+    # function body
+```
+
+### NOTE
+`super()` is not allowed while `super(kls, obj)` is ok.
+
+### TODO
+- [x] beautify stack info
+- [x] support log
+- [x] cache
+- [ ] support `super()`
+
+
