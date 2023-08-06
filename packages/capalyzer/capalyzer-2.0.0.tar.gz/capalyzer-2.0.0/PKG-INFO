@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: capalyzer
+Version: 2.0.0
+Summary: Parsing functionality for the metasub CAP
+Home-page: https://github.com/dcdanko/capalyzer
+Author: David C. Danko
+Author-email: dcdanko@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
