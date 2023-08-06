@@ -1,0 +1,2 @@
+recursive-include elink_sdk *.pyd
+recursive-include elink_sdk *.dll

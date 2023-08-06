@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+elink_sdk/__init__.py
+elink_sdk/elink.pyd
+elink_sdk/libeay32.dll
+elink_sdk/opencv_world341.dll
+elink_sdk/ssleay32.dll
+elink_sdk.egg-info/PKG-INFO
+elink_sdk.egg-info/SOURCES.txt
+elink_sdk.egg-info/dependency_links.txt
+elink_sdk.egg-info/top_level.txt
