@@ -1,0 +1,4 @@
+include requirements.txt
+include README.md
+graft src/sovereign/docs
+prune test
