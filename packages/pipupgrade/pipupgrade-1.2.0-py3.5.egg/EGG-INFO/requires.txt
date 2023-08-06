@@ -1,0 +1,16 @@
+
+[dev]
+pylint
+autopep8
+ipython
+twine
+bumpversion
+vulture
+safety
+pytest
+pytest-cov
+pytest-xdist
+pytest-sugar
+pytest-travis-fold
+tox-travis
+coveralls
