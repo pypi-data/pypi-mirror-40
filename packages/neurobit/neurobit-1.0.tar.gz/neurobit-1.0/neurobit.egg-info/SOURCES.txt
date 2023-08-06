@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+neurobit/__init__.py
+neurobit/convert.py
+neurobit/export.py
+neurobit/score.py
+neurobit.egg-info/PKG-INFO
+neurobit.egg-info/SOURCES.txt
+neurobit.egg-info/dependency_links.txt
+neurobit.egg-info/entry_points.txt
+neurobit.egg-info/not-zip-safe
+neurobit.egg-info/requires.txt
+neurobit.egg-info/top_level.txt
