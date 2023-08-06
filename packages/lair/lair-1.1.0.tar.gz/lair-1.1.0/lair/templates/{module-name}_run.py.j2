@@ -1,0 +1,14 @@
+import os
+import click
+from flask.cli import FlaskGroup
+from sql.app import create
+
+
+@click.group(cls=FlaskGroup, create_app=create)
+@click.option('--config-file', help='Config file', type=str, default=None)
+@click.option('--debug/--no-debug', help='Enable FLASK_DEBUG', default=False)
+def cli(config_file, debug):
+    os.environ['FLASK_DEBUG'] = '1' if debug else '0'
+    if config_file is not None:
+        os.environ['FLASK_SETTINGS'] = config_file
+

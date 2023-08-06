@@ -1,0 +1,5 @@
+[flask]
+{% if with_db %}
+SQLALCHEMY_DATABASE_URI = sqlite:////tmp/{{ module_name }}.db
+SQLALCHEMY_TRACK_MODIFICATIONS = true
+{% endif %}
