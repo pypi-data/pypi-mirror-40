@@ -1,0 +1,15 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+devel-requirements.txt
+requirements.txt
+setup.cfg
+setup.py
+snmpresponder.egg-info/PKG-INFO
+snmpresponder.egg-info/SOURCES.txt
+snmpresponder.egg-info/dependency_links.txt
+snmpresponder.egg-info/entry_points.txt
+snmpresponder.egg-info/requires.txt
+snmpresponder.egg-info/top_level.txt
+snmpresponder.egg-info/zip-safe
