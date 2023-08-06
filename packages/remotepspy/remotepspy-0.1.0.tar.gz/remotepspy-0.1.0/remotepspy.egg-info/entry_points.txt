@@ -1,0 +1,4 @@
+[console_scripts]
+RemotePSpy = remotepspy.__main__:run_winrm_etw
+RemotePSpy_powershell_prov = remotepspy.__main__:run_powershell_etw
+

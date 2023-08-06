@@ -1,0 +1,16 @@
+README.md
+setup.py
+remotepspy/__init__.py
+remotepspy/__main__.py
+remotepspy/etw.py
+remotepspy/psrp.py
+remotepspy/simple_command_tracer.py
+remotepspy/winrm.py
+remotepspy.egg-info/PKG-INFO
+remotepspy.egg-info/SOURCES.txt
+remotepspy.egg-info/dependency_links.txt
+remotepspy.egg-info/entry_points.txt
+remotepspy.egg-info/requires.txt
+remotepspy.egg-info/top_level.txt
+remotepspy/libwim_bin/32/libwim-15.dll
+remotepspy/libwim_bin/64/libwim-15.dll
