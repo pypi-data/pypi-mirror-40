@@ -1,0 +1,55 @@
+{
+    "Current": {
+        "Address": null, 
+        "ChangedSinceDate": null, 
+        "Department": null, 
+        "DevelopmentID": null, 
+        "EduPersonAffiliationAffiliate": false, 
+        "EduPersonAffiliationAlum": false, 
+        "EduPersonAffiliationEmployee": false, 
+        "EduPersonAffiliationFaculty": false, 
+        "EduPersonAffiliationMember": false, 
+        "EduPersonAffiliationStaff": false, 
+        "EduPersonAffiliationStudent": false, 
+        "Email": null, 
+        "EmployeeID": null, 
+        "FirstName": null, 
+        "HomeDepartment": null, 
+        "Href": "/identity/v2/person.json?uwregid=C689CB086A7C11D5A4AE0004AC494FFE&uwnetid=&employee_id=&student_number=&student_system_key=&development_id=&last_name=&first_name=&edupersonaffiliation_student=&edupersonaffiliation_staff=&edupersonaffiliation_faculty=&edupersonaffiliation_employee=&edupersonaffiliation_member=&edupersonaffiliation_alum=&edupersonaffiliation_affiliate=&changed_since_date=&phone_number=&mail_stop=&home_dept=&department=&address=&title=&email=&verbose=&page_size=10&page_start=1", 
+        "LastName": null, 
+        "MailStop": null, 
+        "PageSize": "10", 
+        "PageStart": "1", 
+        "PhoneNumber": null, 
+        "StudentNumber": null, 
+        "StudentSystemKey": null, 
+        "Title": null, 
+        "UWNetID": null, 
+        "UWRegID": "C689CB086A7C11D5A4AE0004AC494FFE", 
+        "Verbose": false
+    }, 
+    "Next": null, 
+    "PageSize": "10", 
+    "PageStart": "1", 
+    "Persons": [
+        {
+            "Href": "/identity/v2/person/C689CB086A7C11D5A4AE0004AC494FFE.json", 
+            "PersonFullURI": {
+                "DisplayName": "Brooke Miller", 
+                "Href": "/identity/v2/person/C689CB086A7C11D5A4AE0004AC494FFE/full.json", 
+                "RegisteredName": "S Brooke Miller", 
+                "UWNetID": "sbm", 
+                "UWRegID": "C689CB086A7C11D5A4AE0004AC494FFE"
+            }, 
+            "PersonURI": {
+                "DisplayName": "Brooke Miller", 
+                "Href": "/identity/v2/person/C689CB086A7C11D5A4AE0004AC494FFE.json", 
+                "RegisteredName": "S Brooke Miller", 
+                "UWNetID": "sbm", 
+                "UWRegID": "C689CB086A7C11D5A4AE0004AC494FFE"
+            }
+        }
+    ], 
+    "Previous": null, 
+    "TotalCount": 1
+}

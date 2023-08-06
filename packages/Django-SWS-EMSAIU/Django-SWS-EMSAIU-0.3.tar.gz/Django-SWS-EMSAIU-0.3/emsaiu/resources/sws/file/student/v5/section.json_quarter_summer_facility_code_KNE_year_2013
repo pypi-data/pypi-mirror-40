@@ -1,0 +1,60 @@
+{
+    "Current": {
+        "ChangedSinceDate": null, 
+        "CourseNumber": null, 
+        "CurriculumAbbreviation": null, 
+        "DeleteFlag": null, 
+        "FacilityCode": "KNE", 
+        "FutureTerms": 0, 
+        "Href": "/student/v5/section.json?year=2013&quarter=summer&future_terms=0&curriculum_abbreviation=&course_number=&reg_id=&search_by=&include_secondaries=&delete_flag=&changed_since_date=&transcriptable_course=yes&page_size=10&page_start=1&facility_code=KNE&room_number=&sln=", 
+        "IncludeSecondaries": false, 
+        "PageSize": "10", 
+        "PageStart": "1", 
+        "Quarter": "summer", 
+        "RegID": null, 
+        "RoomNumber": null, 
+        "SLN": null, 
+        "SearchBy": null, 
+        "TranscriptableCourse": "yes", 
+        "Year": "2013"
+    }, 
+    "Next": null, 
+    "PageSize": "10", 
+    "PageStart": "1", 
+    "Previous": null, 
+    "Sections": [
+        {
+            "CourseNumber": "121", 
+            "CurriculumAbbreviation": "PHYS", 
+            "Href": "/student/v5/course/2013,summer,PHYS,121/A.json", 
+            "Quarter": "summer", 
+            "SectionID": "A", 
+            "Year": 2013
+        }, 
+        {
+            "CourseNumber": "125", 
+            "CurriculumAbbreviation": "MATH", 
+            "Href": "/student/v5/course/2013,summer,MATH,125/G.json", 
+            "Quarter": "summer", 
+            "SectionID": "G", 
+            "Year": 2013
+        }, 
+        {
+            "CourseNumber": "100", 
+            "CurriculumAbbreviation": "TRAIN", 
+            "Href": "/student/v5/course/2013,summer,TRAIN,100/A.json", 
+            "Quarter": "summer", 
+            "SectionID": "A", 
+            "Year": 2013
+        },
+        {
+            "CourseNumber": "101", 
+            "CurriculumAbbreviation": "TRAIN", 
+            "Href": "/student/v5/course/2013,summer,TRAIN,101/A.json", 
+            "Quarter": "summer", 
+            "SectionID": "A", 
+            "Year": 2013
+        }
+    ], 
+    "TotalCount": 6
+}
