@@ -1,0 +1,119 @@
+- project:
+    templates:
+      - openstack-lower-constraints-jobs
+      - openstack-python-jobs
+      - openstack-python35-jobs
+      - openstack-python36-jobs
+      - periodic-stable-jobs
+      - publish-openstack-docs-pti
+      - check-requirements
+      - release-notes-jobs-python3
+    check:
+      jobs:
+        - openstack-tox-pylint:
+            voting: false
+        - sahara-tests-scenario:
+            required-projects:
+              - openstack/sahara-plugin-ambari
+              - openstack/sahara-plugin-cdh
+              - openstack/sahara-plugin-mapr
+              - openstack/sahara-plugin-spark
+              - openstack/sahara-plugin-storm
+              - openstack/sahara-plugin-vanilla
+        - sahara-tests-tempest:
+            required-projects:
+              - openstack/sahara-plugin-ambari
+              - openstack/sahara-plugin-cdh
+              - openstack/sahara-plugin-mapr
+              - openstack/sahara-plugin-spark
+              - openstack/sahara-plugin-storm
+              - openstack/sahara-plugin-vanilla
+        - openstack-tox-cover:
+            voting: false
+        - sahara-grenade:
+            voting: false
+    gate:
+      queue: sahara
+      jobs:
+        - sahara-tests-scenario:
+            required-projects:
+              - openstack/sahara-plugin-ambari
+              - openstack/sahara-plugin-cdh
+              - openstack/sahara-plugin-mapr
+              - openstack/sahara-plugin-spark
+              - openstack/sahara-plugin-storm
+              - openstack/sahara-plugin-vanilla
+        - sahara-tests-tempest:
+            required-projects:
+              - openstack/sahara-plugin-ambari
+              - openstack/sahara-plugin-cdh
+              - openstack/sahara-plugin-mapr
+              - openstack/sahara-plugin-spark
+              - openstack/sahara-plugin-storm
+              - openstack/sahara-plugin-vanilla
+        - sahara-grenade:
+            voting: false
+
+    experimental:
+      jobs:
+        - sahara-buildimages-ambari
+        - sahara-buildimages-cloudera
+        - sahara-buildimages-mapr
+        - sahara-tests-scenario-multinode-spark
+        - sahara-tests-scenario-py3
+
+- job:
+    name: sahara-grenade
+    parent: legacy-dsvm-base
+    run: playbooks/sahara-grenade/run.yaml
+    post-run: playbooks/sahara-grenade/post.yaml
+    timeout: 10800
+    required-projects:
+      - openstack-dev/grenade
+      - openstack-infra/devstack-gate
+      - openstack/sahara
+      - openstack/python-saharaclient
+      - openstack/heat
+      - openstack/heat-tempest-plugin
+      - openstack/python-heatclient
+      - openstack/sahara-tests
+    irrelevant-files:
+      - ^(test-|)requirements.txt$
+      - ^.*\.rst$
+      - ^doc/.*$
+      - ^sahara/locale/.*$
+      - ^sahara/tests/unit/.*$
+      - ^releasenotes/.*$
+      - ^tools/.*$
+      - ^tox.ini$
+
+- job:
+    name: sahara-buildimages-base
+    nodeset: centos-7
+    run: playbooks/buildimages/run.yaml
+    timeout: 7200
+    required-projects:
+      - openstack/sahara-plugin-ambari
+      - openstack/sahara-plugin-cdh
+      - openstack/sahara-plugin-mapr
+      - openstack/sahara-plugin-spark
+      - openstack/sahara-plugin-storm
+      - openstack/sahara-plugin-vanilla
+
+- job:
+    name: sahara-buildimages-ambari
+    parent: sahara-buildimages-base
+    vars:
+      sahara_plugin: ambari
+
+- job:
+    name: sahara-buildimages-cloudera
+    parent: sahara-buildimages-base
+    vars:
+      sahara_plugin: cloudera
+
+- job:
+    name: sahara-buildimages-mapr
+    parent: sahara-buildimages-base
+    vars:
+      sahara_plugin: mapr
