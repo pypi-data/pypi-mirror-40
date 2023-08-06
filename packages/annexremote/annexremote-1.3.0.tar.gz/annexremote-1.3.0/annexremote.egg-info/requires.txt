@@ -1,0 +1,6 @@
+future
+
+[test]
+coverage
+nose
+mock
