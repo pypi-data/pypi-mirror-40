@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: regexhunter
+Version: 1.2
+Summary: A small package allowing you to search for regex pre-formatted for you.
+Home-page: https://github.com/SevenOfHurt/RegexHunter/
+Author: Tom Moritz
+Author-email: tom.moritz@outlook.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+<h1>Regex Hunter</h1>
+
+This library is based on the re library.<br>
+You can find those methods:<br><br>
+
+sniff_emails(data)<br>
+sniff_phones(data, phone_format) with phone_format['fr', 'us', 'int', 'all']<br>
+sniff_cp_zip(data)<br><br>
+
+All of theses functions return an array of matching elements.
+
