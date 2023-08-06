@@ -1,0 +1,37 @@
+dist: xenial
+sudo: false
+language: python
+
+python:
+- 3.5
+- &latest_py3 3.7
+
+jobs:
+  fast_finish: true
+  include:
+  - stage: deploy
+    if: tag IS present
+    python: *latest_py3
+    before_script: skip
+    env:
+    - TWINE_USERNAME=jaraco
+    # TWINE_PASSWORD
+    - secure: ZNzWun6tDcNqe1oL0YX57TpzyFGoXA+AosLVBmMx91Fhp3Ty7GY1EVUZofNPVzgMkYR1Wz9Y+Zxa0rVPhni2tO8XzTsVBGSGNFyDgwczvYD7umOt4fv5dHQpDb3EYNkK9Mw23oXjQpyh/KwKNzmPr8q+7GwojZat+6g4CxWrM94x9BOJ4XZ3H9MiM6jAMOOoz3QccSFagz1Lb4Zs4l074tE/Z2b/TKh7oFm2HU4q82y+0xgmtBetqp6SxXV9fBRCMfRaKbEVILtkTBHOkBFpHQzRp8XwDPBC3cRC4iDMm/dGT2UcgN604g/GO1yy98FusVFqdzPT8n/SYbgmBYS0tksRsOHqiVKxWOr8tqgfV06FyEeowpwXX5p8Ai9+1XrtuePzUyzAOHZpk7b+Bs2ux2O7glJ5UCrF1/R5CpBEo8b74rqOxFgGMRSe5fQQH6fAzaFtYEVJ4xlCr5he9CaJYzY2ZUwo5NkYyQEIvkzJQ9NobGzpaEV2PVpnREj61dHj0vJYd0G8b82AH1d+hmaIaDJzSHWuoZwCCe89PYSnB4DQH/mctMMjDAKQ8jGSUczwwYquBK64fD2EbfPj7xzeXSyGsKq9tKXoevuTMcb4LETRiXLLAqNhdDh2/WDHCJ+L1P35mzRcdWnQ84avz+ZcWTF4xb34M0GtD2lPSbPWcbE=
+    - TOX_TESTENV_PASSENV="TWINE_USERNAME TWINE_PASSWORD"
+    script: tox -e release
+
+notifications:
+  slack:
+    secure: aePyoqjYFjdooYpJB5GE9IfmNuQVdHMR7vYg0dAQIDktW0O133UfeAdEbsOWY7IVNapCBNILrZKfxc94hBIM1tSKpCmU6NRmpL2uqVB5dK1BHsD2LWFf9RDk5NvtEbyCkgGya7UfU4FX2bY4DkHfv54CiuGtTsWLNDBVKpIEzc8V2evMyvMsKJbetigm/Ay71M0wBwctDyUn/rZHhu4HWTCkAr47z9mGxF0W6TG55FsyOY2C/mf9cah42v6w22vPCKOdyEq90FSWyAHq11jfc5oww2QUigq6V7ullt1CVSz+UMTs7UAQ8uPDH9eH26ckPIqzzT0dvbnsrRaKYx6V8MihIULuVRgPus4tx4N+NJQeGFidmo7ryLJOpeIb/CzxXCODj5EIKOgXxsxh6F9DMmkQsD/489vJpa3dke/oA+gG8edafA2uRUNDQcdMp+0NODOE1P6+gPsmXzEpohYq+rYkTfCvduVz1vHN4Zb4O05NZwcGJx0jUqlEnpxfATut+yB1ANDXHBknjbdkuUGtPRxkMRbn0nuGW3rdxkZ8Kwoc9NP0iBV2V6slUn+yMAOUjo06fiua3juNJNDM1yB1P2ElPfKiv/ePwLVr6OxSl9OEjE7UT8UlmSHCw6ACMftySVf56+Xkc8Lry/euEknRfFX/kLtAZucXt9/CO/3ENjI=
+
+cache: pip
+
+install:
+- pip install tox tox-venv
+
+before_script:
+  # Disable IPv6. Ref travis-ci/travis-ci#8361
+  - if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
+      sudo sh -c 'echo 0 > /proc/sys/net/ipv6/conf/all/disable_ipv6';
+    fi
+script: tox
