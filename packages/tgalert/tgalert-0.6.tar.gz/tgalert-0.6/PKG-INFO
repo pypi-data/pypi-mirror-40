@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: tgalert
+Version: 0.6
+Summary: Package for receiving Telegram notifications during code execution (i.e. training).
+Home-page: https://github.com/djd1283/tgalert.git
+Author: David Donahue
+Author-email: djd1283@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

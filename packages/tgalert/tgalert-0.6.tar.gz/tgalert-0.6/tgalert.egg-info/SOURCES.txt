@@ -1,0 +1,9 @@
+README.md
+setup.py
+tgalert/__init__.py
+tgalert/tg_alert.py
+tgalert.egg-info/PKG-INFO
+tgalert.egg-info/SOURCES.txt
+tgalert.egg-info/dependency_links.txt
+tgalert.egg-info/requires.txt
+tgalert.egg-info/top_level.txt
