@@ -1,0 +1,12 @@
+README.md
+setup.py
+depthgen/SDR_compute.py
+depthgen/__init__.py
+depthgen/demo.py
+depthgen/pytorch_DIW_scratch.py
+depthgen/rmse_error_main.py
+depthgen.egg-info/PKG-INFO
+depthgen.egg-info/SOURCES.txt
+depthgen.egg-info/dependency_links.txt
+depthgen.egg-info/not-zip-safe
+depthgen.egg-info/top_level.txt
