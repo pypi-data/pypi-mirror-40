@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+DiSwarm.egg-info/PKG-INFO
+DiSwarm.egg-info/SOURCES.txt
+DiSwarm.egg-info/dependency_links.txt
+DiSwarm.egg-info/requires.txt
+DiSwarm.egg-info/top_level.txt
