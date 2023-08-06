@@ -1,0 +1,7 @@
+README.md
+setup.py
+pypacktest/__init__.py
+pypacktest.egg-info/PKG-INFO
+pypacktest.egg-info/SOURCES.txt
+pypacktest.egg-info/dependency_links.txt
+pypacktest.egg-info/top_level.txt
