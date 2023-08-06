@@ -1,0 +1,4 @@
+[console_scripts]
+mk-html = toolkit.command:main
+ver-inc = toolkit.package_control:change_version
+
