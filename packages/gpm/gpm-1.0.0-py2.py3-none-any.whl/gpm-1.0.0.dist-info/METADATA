@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: gpm
+Version: 1.0.0
+Summary: A manager package for graph programming.
+Home-page: https://github.com/GraphProgramming/GraphProgramming
+Author: Michael Fuerst
+Author-email: mail@michaelfuerst.de
+License: MIT
+Download-URL: https://github.com/GraphProgramming/GraphProgramming/tarball/1.0.0
+Description-Content-Type: UNKNOWN
+Requires-Dist: autobahn[twisted]
+Requires-Dist: service-identity
+
+# GraphProgramming
+
+
