@@ -1,0 +1,16 @@
+MANIFEST.in
+README.ja.rst
+README.rst
+setup.cfg
+setup.py
+romaji/__init__.py
+romaji/filter.py
+romaji/mapping.py
+romaji/substring.py
+romaji/system.py
+romaji/transliteration.py
+romaji/transliterator.py
+romaji.egg-info/PKG-INFO
+romaji.egg-info/SOURCES.txt
+romaji.egg-info/dependency_links.txt
+romaji.egg-info/top_level.txt
