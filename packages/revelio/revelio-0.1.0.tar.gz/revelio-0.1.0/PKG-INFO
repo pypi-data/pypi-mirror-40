@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: revelio
+Version: 0.1.0
+Summary: Python library for interacting with the file system
+Home-page: https://github.com/idin/revelio
+Author: Idin K
+Author-email: py@idin.ca
+License: MIT
+Description: revelio
+        
+Platform: UNKNOWN
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
