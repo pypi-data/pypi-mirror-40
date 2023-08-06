@@ -1,0 +1,11 @@
+aiohttp_azure_logging/__init__.py,sha256=t0jG9fzsVnKVjPJK8lYtQ5fgflgenWGMBuNFDCTnOG4,113
+aiohttp_azure_logging/client.py,sha256=JC8khXCAIBywVc7TradAtleLQNTeaItkG4Izv9jxF_w,5841
+aiohttp_azure_logging/decorators.py,sha256=HNH_JU0aKNofY_kh3rqTEo4IKw7FZuZZQ4pc5xhRCbA,1549
+aiohttp_azure_logging/handler.py,sha256=XnPUnVfpUThGhc60rnuLejZGgz18KvbN1eNc6M--j_k,2667
+aiohttp_azure_logging/middleware.py,sha256=cCh_J5bmYe6l567xj1s_fUl-NwivLRGvLmOPgR05dis,1311
+aiohttp_azure_logging/setup.py,sha256=VptWyPuV_UKhKe-HZ5A_pTb6ujYWEEWzoIX4aRf2Tg0,504
+aiohttp_azure_logging/utils.py,sha256=hCEtKg2eIb62cdMavnDptZDMxxe0ejG5wBjoEO-1Fvk,581
+aiohttp_azure_logging-1.1.9.dist-info/METADATA,sha256=qiaPB9lc5UMiHQj7RRBJw16kbuG1RC4g_STwfobWFko,631
+aiohttp_azure_logging-1.1.9.dist-info/RECORD,,
+aiohttp_azure_logging-1.1.9.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+aiohttp_azure_logging-1.1.9.dist-info/top_level.txt,sha256=IwSdwtsri00MkHZ-VYMn3Z4Xeb5BO-uT6lVOKjzelpU,22
