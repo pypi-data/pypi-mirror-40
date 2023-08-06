@@ -1,0 +1,9 @@
+aiida_raspa/__init__.py,sha256=7G2FFe481Ql2tIzyTMV9P7OjFbJoHZrwi9FMy-3Gybs,686
+aiida_raspa/calculations/__init__.py,sha256=pgFsGk3YfnGysqddPZHfkgUl4P2ajA4Z5x0Lz39wwGs,13549
+aiida_raspa/parsers/__init__.py,sha256=emQERuF4aO5B5lyPq-pqUVL_lKQIFgm-yj-HRt3TF8Y,13075
+aiida_raspa/workflows/__init__.py,sha256=v393TBn87gHhKsr8OiI0ZiXTTuaeKuCJv_7Ho_71Bcs,6474
+aiida_raspa-0.3.1.dist-info/METADATA,sha256=n2pmRZQ6AfBKduxOwyooK_kMUWs9-jNnLbWIK7DLiDE,7244
+aiida_raspa-0.3.1.dist-info/RECORD,,
+aiida_raspa-0.3.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+aiida_raspa-0.3.1.dist-info/entry_points.txt,sha256=3PRRBZKNZrrDxm0vmXJzSK1_6YXKa8Tcn17Ep5qIOak,210
+aiida_raspa-0.3.1.dist-info/top_level.txt,sha256=F9-BydSVWwZG17NVZeFcTvK2bKe77SNu-seJeNLIPVs,12
