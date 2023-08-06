@@ -1,0 +1,3 @@
+[console_scripts]
+server-tools = scripts.server_tools:main
+
