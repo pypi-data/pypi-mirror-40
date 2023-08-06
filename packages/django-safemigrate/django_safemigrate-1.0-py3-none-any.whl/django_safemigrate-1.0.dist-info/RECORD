@@ -1,0 +1,9 @@
+django_safemigrate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_safemigrate/apps.py,sha256=VIZJaqNTaJpSY6uDSq4QAfOsYfSqM2keDJVEIB-2TZA,273
+django_safemigrate/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_safemigrate/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_safemigrate/management/commands/safemigrate.py,sha256=iWWOGfBi2buFAAHU3zD8iSgCHRZRgvEClXdKOMJZaRE,3740
+django_safemigrate-1.0.dist-info/LICENSE,sha256=UL1SsAOO-klKluL6Iw-3O2mpjIrXFuCXpEd7cLvqiYc,1071
+django_safemigrate-1.0.dist-info/WHEEL,sha256=kHdCpTJzhyw1N1frf4kV6yKKRXuffzPY8J9zMFxvyGg,84
+django_safemigrate-1.0.dist-info/METADATA,sha256=Qmz6MzwmoSXB1tQ49go6MXYxzjwFU0eKzlNSnXQzlI8,456
+django_safemigrate-1.0.dist-info/RECORD,,
