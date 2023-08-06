@@ -1,0 +1,4 @@
+﻿# -*- coding: utf-8 -*-
+import script 
+if __name__ == '__main__': 
+	script.getApp().run(host='0.0.0.0', port=7770) 
