@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mathml2latex
+Version: 0.0.1
+Summary: Convert MathML to LaTeX format
+Home-page: https://github.com/KiaismAgre/mathml2latex
+Author: KiaismAgre
+Author-email: KUBOKAWA.Takara@nims.go.jp
+License: MIT
+Keywords: mathml2latex mathml latex convert xml
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 (>=4.6.3)
+Requires-Dist: lxml (>=4.2.5)
+
+# MathML2LaTeX
+
+Underconstraction ¯\\_(ツ)_/¯
+
+
