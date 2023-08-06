@@ -1,0 +1,13 @@
+README.md
+setup.py
+stroke/__init__.py
+stroke.egg-info/PKG-INFO
+stroke.egg-info/SOURCES.txt
+stroke.egg-info/dependency_links.txt
+stroke.egg-info/top_level.txt
+stroke/line/__init__.py
+stroke/line/abstract.py
+stroke/parse/__init__.py
+stroke/parse/abstract.py
+stroke/search/__init__.py
+stroke/search/abstract.py

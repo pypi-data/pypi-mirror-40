@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: stroke
+Version: 0.0.0
+Summary: Utilities for & with strings.
+Home-page: https://github.com/Exahilosys/stroke
+Author: Exahilosys
+Author-email: exahilosys@gmail.com
+License: MIT
+Download-URL: https://github.com/Exahilosys/stroke/archive/v0.0.0.tar.gz
+Description: Utilities for & with strings.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
