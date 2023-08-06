@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: vr.events
+Version: 2.0.0
+Summary: Streaming event processing for Velociraptor
+Home-page: https://github.com/yougov/vr.events
+Author: Brent Tubbs
+Author-email: brent.tubbs@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
+Requires-Dist: vr.common (>=6)
+Requires-Dist: six
+Requires-Dist: redis (>=2.4.13)
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: jaraco.packaging (>=3.2) ; extra == 'docs'
+Requires-Dist: rst.linker (>=1.9) ; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: pytest (!=3.7.3,>=3.5) ; extra == 'testing'
+Requires-Dist: pytest-checkdocs ; extra == 'testing'
+Requires-Dist: pytest-flake8 ; extra == 'testing'
+Requires-Dist: backports.unittest-mock ; extra == 'testing'
+
+.. image:: https://img.shields.io/pypi/v/vr.events.svg
+   :target: https://pypi.org/project/vr.events
+
+.. image:: https://img.shields.io/pypi/pyversions/vr.events.svg
+
+.. image:: https://img.shields.io/travis/yougov/vr.events/master.svg
+   :target: https://travis-ci.org/yougov/vr.events
+
+.. .. image:: https://img.shields.io/appveyor/ci/jaraco/skeleton/master.svg
+..    :target: https://ci.appveyor.com/project/jaraco/skeleton/branch/master
+
+.. .. image:: https://readthedocs.org/projects/skeleton/badge/?version=latest
+..    :target: https://skeleton.readthedocs.io/en/latest/?badge=latest
+
+vr.events is a component of the `Velociraptor
+<https://github.com/yougov/velociraptor>`_ project.
+
+
