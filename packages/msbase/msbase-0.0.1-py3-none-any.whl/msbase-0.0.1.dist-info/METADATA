@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: msbase
+Version: 0.0.1
+Summary: Monad-Systems Base Library for Python
+Home-page: https://github.com/monad-systems/base.py
+Author: Zhen Zhang
+Author-email: hi@monad.systems
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# base.py
+
+
