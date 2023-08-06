@@ -1,0 +1,7 @@
+gherkin-official
+six
+
+[test]
+coveralls
+pytest
+pytest-cov
