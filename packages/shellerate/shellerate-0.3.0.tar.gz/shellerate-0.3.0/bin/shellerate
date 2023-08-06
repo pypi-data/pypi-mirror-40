@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+import logging
+from shellerate.bind_shellcode import *
+
+def main():
+  logging.basicConfig(format="%(asctime)s [%(levelname)8s] - %(message)s", level=logging.DEBUG)
+
+  b=BindShellcode(4444, 'x86', 'linux')
+  b.encode()
+  b.generate()
+  print("Shellcode: %s" % b.shellcode())
+
+  b=BindShellcode(4444, 'x86', 'linux')
+  b.egg_hunter()
+  b.generate()
+  sc = b.shellcode()
+
+  print("Egg Hunter: %s" % sc["egg_hunter_code"])
+  print("Shellcode: %s" % sc["egg_hunter_shellcode"])
+
+if __name__ == '__main__':
+  main()

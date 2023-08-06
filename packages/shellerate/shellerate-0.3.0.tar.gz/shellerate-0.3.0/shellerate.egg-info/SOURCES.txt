@@ -1,0 +1,11 @@
+README.md
+setup.py
+bin/shellerate
+shellerate/__init__.py
+shellerate/bind_shellcode.py
+shellerate/egg_hunter.py
+shellerate/encoder.py
+shellerate.egg-info/PKG-INFO
+shellerate.egg-info/SOURCES.txt
+shellerate.egg-info/dependency_links.txt
+shellerate.egg-info/top_level.txt
