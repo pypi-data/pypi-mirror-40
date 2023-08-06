@@ -1,0 +1,17 @@
+djangoldp_skill/__init__.py,sha256=zUcX8_8qN9MUYnv1xVH0zxa3kyhDmiWffUUIsaH4TiE,47
+djangoldp_skill/admin.py,sha256=BViUCIk5nBxmh3cvSUm6mCCQEgHeeW9YHhdwwe7RZ3I,87
+djangoldp_skill/apps.py,sha256=hwdJHaQt4RZ27pL237WW-oQiSALHEuMwTcCmc5FEWrA,103
+djangoldp_skill/factories.py,sha256=S8CTAFkKWkcGW9DN-bV5wIzmHWmRkqtSleYbGpWE6bo,392
+djangoldp_skill/models.py,sha256=CrAJsHdzAIhJ-9XiuEgz5g4_BuYFJIgAEeAPP5pdS3U,411
+djangoldp_skill/settings.py,sha256=j2-ZekT6dWkpoOeXSTV6vH6Y6FDGtPyFDVfBkiV_GuI,58
+djangoldp_skill/urls.py,sha256=s0EIAvdt6OqV4EbaQf5bYzOSetsNdaJjGJUIwf19-Xw,209
+djangoldp_skill/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_skill/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_skill/management/commands/mock_skill.py,sha256=SkLKaf9NOqVwVrkCBS2wo9C3DDq_K2yHCqvTz5TcHCE,888
+djangoldp_skill/migrations/0001_initial.py,sha256=afn3qAj-LwkI-BTB0kJ1Naj5vNoDUgv7QA5MNN4V4Vk,875
+djangoldp_skill/migrations/0002_auto_20190116_0919.py,sha256=zqjKsvRoxJj8BLou5qMwS4OU1wWwm2VVBJuYrr6fx-g,697
+djangoldp_skill/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_skill-0.0.7.dist-info/METADATA,sha256=xx7Wv1l0COadJG0fc6NKTn4r8LqaqzXNH7Z5LIHq0DY,377
+djangoldp_skill-0.0.7.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+djangoldp_skill-0.0.7.dist-info/top_level.txt,sha256=_uFIi4VZ10A5lfyakG2X8vVsszmVAfgl3caqepZXnkQ,16
+djangoldp_skill-0.0.7.dist-info/RECORD,,
