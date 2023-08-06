@@ -1,0 +1,10 @@
+fritz/__init__.py,sha256=8FSSpQYM2437OAExPGcu22ylSiB2JZmyVOy1nN0kif0,541
+fritz/client/__init__.py,sha256=6xPHbDhdi_BNX0qF78dimCzD-ilEyW7bbR6y40ngJyk,195
+fritz/client/api_client.py,sha256=uRrhBdiBSor3lzyvwc9ud8BhqPUmRgjulsVqdUnhFtg,6932
+fritz/keras/__init__.py,sha256=k1yUsw56lUZ4G9bKc_eUnHaCmyitE-3Z7DbLyYFFhAc,221
+fritz/keras/model_checkpoint.py,sha256=eLi3NVpA_q4zBIL24j6wrf_ISeweXG_BCglRzhmcaTc,8266
+fritz-0.2.0.dist-info/LICENSE,sha256=YnDRcwHxVE4vIURSY9DLHFlfdr8tGXArsx9_eOlRlFM,1062
+fritz-0.2.0.dist-info/METADATA,sha256=R-n_UXiHEEveMEnYRLZJOUPDtx9W3b_dJwdnGPu-Alo,365
+fritz-0.2.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+fritz-0.2.0.dist-info/top_level.txt,sha256=E7BAcCbkYh3rgFrWfrcu-XrzAXd8UqacmBK1Ap7cEzo,6
+fritz-0.2.0.dist-info/RECORD,,
