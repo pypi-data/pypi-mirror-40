@@ -1,0 +1,79 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Color Translation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-cytoflowgui.op_plugins.color_translation"></span><div class="section" id="color-translation">
+<h1>Color Translation</h1>
+<p>Translate measurements from one color’s scale to another, using a two-color
+or three-color control.</p>
+<p>To use, set up the <strong>Controls</strong> list with the channels to convert and the FCS
+files to compute the mapping.  Click <strong>Estimate</strong> and make sure to check that
+the diagnostic plots look good.</p>
+<dl class="object">
+<dt>
+<code class="descname">Add Control, Remove Control</code></dt>
+<dd><p>Add and remove controls to compute the channel mappings.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Use mixture model?</code></dt>
+<dd><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, try to model the <strong>from</strong> channel as a mixture of expressing
+cells and non-expressing cells (as you would get with a transient
+transfection), then weight the regression by the probability that the
+the cell is from the top (transfected) distribution.  Make sure you
+check the diagnostic plots to see that this worked!</p>
+</dd></dl>
+
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You cannot have any operations before this one which estimate model
+parameters based on experimental conditions.  (Eg, you can’t use a
+<strong>Density Gate</strong> to choose morphological parameters and set <em>by</em> to an
+experimental condition.)  If you need this functionality, you can access it
+using the Python module interface.</p>
+</div>
+<div class="figure">
+<img alt="_images/cytoflowgui-op_plugins-color_translation-1.png" src="_images/cytoflowgui-op_plugins-color_translation-1.png" />
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Autofluorescence correction</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-cytoflowgui.op_plugins.autofluorescence"></span><div class="section" id="autofluorescence-correction">
+<h1>Autofluorescence correction</h1>
+<p>Apply autofluorescence correction to a set of fluorescence channels.</p>
+<p>This module estimates the arithmetic median fluorescence from cells that are
+not fluorescent, then subtracts the median from the experimental data.</p>
+<p>Check the diagnostic plot to make sure that the sample is actually
+non-fluorescent, and that the module found the population median.</p>
+<dl class="object">
+<dt>
+<code class="descname">Channels</code></dt>
+<dd><p>The channels to correct</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Blank file</code></dt>
+<dd><p>The FCS file containing measurements of blank cells.</p>
+</dd></dl>
+
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You cannot have any operations before this one which estimate model
+parameters based on experimental conditions.  (Eg, you can’t use a
+<strong>Density Gate</strong> to choose morphological parameters and set <em>by</em> to an
+experimental condition.)  If you need this functionality, you can access it
+using the Python module interface.</p>
+</div>
+<div class="figure">
+<img alt="_images/cytoflowgui-op_plugins-autofluorescence-1.png" src="_images/cytoflowgui-op_plugins-autofluorescence-1.png" />
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

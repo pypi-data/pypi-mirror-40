@@ -1,0 +1,199 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TASBE Calibrated Flow Cytometry</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-cytoflowgui.tasbe_calibration"></span><div class="section" id="tasbe-calibrated-flow-cytometry">
+<h1>TASBE Calibrated Flow Cytometry</h1>
+<p>This module combines all of the other calibrated flow cytometry modules
+(autofluorescence, bleedthrough compensation, bead calibration, and channel
+translation) into one easy-use-interface.</p>
+<dl class="object">
+<dt>
+<code class="descname">Files</code></dt>
+<dd><p>Choose the files to calibrate</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">X Morpho Channel</code></dt>
+<dd><p>The X channel to select morphology</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">X Morpho Scale</code></dt>
+<dd><p>How to scale the X morpho channel?</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Y Morpho Channel</code></dt>
+<dd><p>The Y channel to select morphology</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Y Morpho Scale</code></dt>
+<dd><p>How to scale the Y morpho channel?</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Fluorescence channels</code></dt>
+<dd><p>Which channels are you calibrating?</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Autofluorescence</code></dt>
+<dd><dl class="object">
+<dt>
+<code class="descname">Blank File</code></dt>
+<dd><p>The FCS file with the blank (unstained or untransformed) cells, for
+autofluorescence correction.</p>
+</dd></dl>
+
+<div class="figure">
+<img alt="_images/cytoflowgui-tasbe_calibration-1.png" src="_images/cytoflowgui-tasbe_calibration-1.png" />
+</div>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Bleedthrough Correction</code></dt>
+<dd><p>A list of single-color controls to use in bleedthrough compensation.
+There’s one entry per channel to compensate.</p>
+<dl class="object">
+<dt>
+<code class="descname">Channel</code></dt>
+<dd></dd></dl>
+
+<p>The channel that this file is the single-color control for.</p>
+<dl class="object">
+<dt>
+<code class="descname">File</code></dt>
+<dd></dd></dl>
+
+<p>The FCS file containing the single-color control data.</p>
+<div class="figure">
+<img alt="_images/cytoflowgui-tasbe_calibration-2.png" src="_images/cytoflowgui-tasbe_calibration-2.png" />
+</div>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Bead Calibration</code></dt>
+<dd><p>The beads that you used for calibration.  Make sure to check the lot
+number as well!</p>
+<p>The FCS file containing the bead data.</p>
+<p>The unit (such as <em>MEFL</em>) to calibrate to.</p>
+<dl class="object">
+<dt>
+<code class="descname">Peak Quantile</code></dt>
+<dd></dd></dl>
+
+<p>The minimum quantile required to call a peak in the bead data.  Check
+the diagnostic plot: if you have peaks that aren’t getting called, decrease
+this.  If you have “noise” peaks that are getting called incorrectly,
+increase this.</p>
+<dl class="object">
+<dt>
+<code class="descname">Peak Threshold</code></dt>
+<dd></dd></dl>
+
+<p>The minumum brightness where the module will call a peak.</p>
+<dl class="object">
+<dt>
+<code class="descname">Peak Cutoff</code></dt>
+<dd></dd></dl>
+
+<p>The maximum brightness where the module will call a peak.  Use this to
+remove peaks that are saturating the detector.</p>
+<div class="figure">
+<img alt="_images/cytoflowgui-tasbe_calibration-3.png" src="_images/cytoflowgui-tasbe_calibration-3.png" />
+</div>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Color Translation</code></dt>
+<dd><dl class="object">
+<dt>
+<code class="descname">To Channel</code></dt>
+<dd></dd></dl>
+
+<p>Which channel should we rescale all the other channels to?</p>
+<dl class="object">
+<dt>
+<code class="descname">Use mixture model?</code></dt>
+<dd></dd></dl>
+
+<p>If this is set, the module will try to separate the data using a
+mixture-of-Gaussians, then only compute the translation using the higher
+population.  This is the kind of behavior that you see in a transient
+transfection in mammalian cells, for example.</p>
+<dl class="object">
+<dt>
+<code class="descname">Translation list</code></dt>
+<dd></dd></dl>
+
+<p>Each pair of channels must have a multi-color control from which to
+compute the scaling factor.</p>
+<div class="figure">
+<img alt="_images/cytoflowgui-tasbe_calibration-4.png" src="_images/cytoflowgui-tasbe_calibration-4.png" />
+</div>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Export</code></dt>
+<dd><p>Choose a directory to export to</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Quit</code></dt>
+<dd><p>Return to the main Cytoflow interface</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

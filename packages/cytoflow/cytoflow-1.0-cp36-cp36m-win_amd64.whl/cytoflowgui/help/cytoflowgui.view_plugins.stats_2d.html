@@ -1,0 +1,126 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>2D Statistics Plot</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-cytoflowgui.view_plugins.stats_2d"></span><div class="section" id="d-statistics-plot">
+<h1>2D Statistics Plot</h1>
+<p>Plot two statistics on a scatter plot.  A point (X,Y) is drawn for every
+pair of elements with the same value of <strong>Variable</strong>; the X value is from
+** X statistic** and the Y value is from <strong>Y statistic</strong>.</p>
+<dl class="object">
+<dt>
+<code class="descname">X Statistic</code></dt>
+<dd><p>Which statistic to plot on the X axis.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Y Statistic</code></dt>
+<dd><p>Which statistic to plot on the Y axis.  Must have the same indices as
+<strong>X Statistic</strong>.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">X Scale, Y Scale</code></dt>
+<dd><p>How to scale the X and Y axes.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Variable</code></dt>
+<dd><p>The statistic variable to put on the plot.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Horizontal Facet</code></dt>
+<dd><p>Make muliple plots, with each column representing a subset of the statistic
+with a different value for this variable.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Vertical Facet</code></dt>
+<dd><p>Make multiple plots, with each row representing a subset of the statistic
+with a different value for this variable.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Color Facet</code></dt>
+<dd><p>Make lines on the plot with different colors; each color represents a subset
+of the statistic with a different value for this variable.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Color Scale</code></dt>
+<dd><p>If <strong>Color Facet</strong> is a numeric variable, use this scale for the color
+bar.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">X Error Statistic</code></dt>
+<dd><p>A statistic to use to make error bars in the X direction.  Must have the
+same indices as the statistic in <strong>X Statistic</strong>.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Y Error Statistic</code></dt>
+<dd><p>A statistic to use to make error bars in the Y direction.  Must have the
+same indices as the statistic in <strong>Y Statistic</strong>.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Subset</code></dt>
+<dd><p>Plot only a subset of the statistic.</p>
+</dd></dl>
+
+<div class="figure">
+<img alt="_images/cytoflowgui-view_plugins-stats_2d-1.png" src="_images/cytoflowgui-view_plugins-stats_2d-1.png" />
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
