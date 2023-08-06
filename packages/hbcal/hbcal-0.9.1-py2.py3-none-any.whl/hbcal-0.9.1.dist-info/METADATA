@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hbcal
+Version: 0.9.1
+Summary: Hebrew Calendar Date Converter
+Home-page: https://github.com/markastern/hbcal
+Author: Mark Stern
+Author-email: markalexstern@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*
+Requires-Dist: future
+Requires-Dist: enum34
+
+UNKNOWN
+
+
