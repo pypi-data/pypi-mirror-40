@@ -1,0 +1,14 @@
+vinyldns/__init__.py,sha256=byYDz5xJtqDPOEjY6b6sgmBw925S7jvlWqXS9KqdvXo,722
+vinyldns/batch_change.py,sha256=dH-mTwHzC5fT6EHUHJjPtF-Wuj3hyhI33Wt0uDfVSAI,6496
+vinyldns/boto_request_signer.py,sha256=ts30LELB6OEcEjc9Nny27tSzVslUxnlzsgrNnjEqBcE,3575
+vinyldns/client.py,sha256=iyXnDHSh5q22WZ8USBK_v8lgqJla2p9ercoRgBskcG4,25091
+vinyldns/membership.py,sha256=3pCJ3r93cv1FDNXpEaIkgd0EAIL5S15KWcSsWG6vnn0,5730
+vinyldns/record.py,sha256=ECrmNA4XhhvH1ciYxa8p3KSca0gpv4wRdlYMgwPRWds,7619
+vinyldns/serdes.py,sha256=ndGIbHKJo-zuY2UhJ76pdNbdwSt30Wqzh9FOl0tFq9g,3858
+vinyldns/zone.py,sha256=nrhicwn6zEV43A4nyfTWvu_1nejfBg_BKA7H7ETT_Yw,5475
+vinyldns_python-0.8.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vinyldns_python-0.8.0.dist-info/METADATA,sha256=5KcJ-sADET4sGZm4GTS6t1xJtAOZKqHke9zpWI4J5gw,3394
+vinyldns_python-0.8.0.dist-info/NOTICE,sha256=64MJPJGlFJf9hAghcx43csjuxqxrSl7sx71a5qv43O8,678
+vinyldns_python-0.8.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+vinyldns_python-0.8.0.dist-info/top_level.txt,sha256=vG9wavQSnkFjYUSrH9KrWsd4opABow3_ixADv5M6sJY,9
+vinyldns_python-0.8.0.dist-info/RECORD,,
