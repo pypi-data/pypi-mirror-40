@@ -1,0 +1,15 @@
+setuptools>=38.3.0
+six<2.0.0,>=1.11.0
+
+[build]
+wheel
+
+[logging]
+Logbook<2.0.0,>=1.1.0
+
+[release]
+releasecmd<0.1.0,>=0.0.12
+
+[test]
+pytest
+tox
