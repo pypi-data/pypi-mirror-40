@@ -1,0 +1,12 @@
+multi_factor_model/__init__.py,sha256=yJWNiguWwT9YVONQ_dPpZQpNz-gMR-isbHPejoQtkkI,257
+multi_factor_model/cprint.py,sha256=1-5j5iEH83k04Sflbbi2Cbvg1CvUX16r0Bd5vYe-hrM,891
+multi_factor_model/evaluate.py,sha256=pyukG11xuSV8QItk4KjYwqWPqwWRcNTfig4usmdswGc,2278
+multi_factor_model/fit_model.py,sha256=iQEolwgFD01wli5pvqKfRsaurQoxb0rDY8grJgVqhNQ,7173
+multi_factor_model/prepare.py,sha256=eJ4Whxx0i9kFaV5i4n1DjwEcE-bPj6jOZXhWGcVVvK0,7545
+multi_factor_model/utilise.py,sha256=Aidwajo_mgOmyuCoOlrftvRkkVKS4ckm6HXzeHojtxs,2818
+multi_factor_model-0.0.0a4.dist-info/DESCRIPTION.rst,sha256=Dc_1lHh1e2vBQJ6ICDb1YyRfcjUnruxSh98TgybHtwI,3239
+multi_factor_model-0.0.0a4.dist-info/METADATA,sha256=U_vajgi1diWCqS2qrBHm-BQcJqU22Ag0d79tEhJTKoA,3434
+multi_factor_model-0.0.0a4.dist-info/RECORD,,
+multi_factor_model-0.0.0a4.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+multi_factor_model-0.0.0a4.dist-info/metadata.json,sha256=3FYm0OuQA03ZidPqtKJgNUilwDjQVaQdaG5bM2YyPWQ,322
+multi_factor_model-0.0.0a4.dist-info/top_level.txt,sha256=t1KUJuY530cCZ5UKYzqcxkwCPVdbCvBGHbdVFeEgJvQ,19
