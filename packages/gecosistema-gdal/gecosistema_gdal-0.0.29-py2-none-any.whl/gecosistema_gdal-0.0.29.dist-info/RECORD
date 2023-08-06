@@ -1,0 +1,8 @@
+gecosistema_gdal/__init__.py,sha256=VJjTF39yOmdrnwYZsquzmec__MTc9lqJnnqrFDOxiVI,1028
+gecosistema_gdal/gdal_utils.py,sha256=gXJMJlsKtv5jIiOBFGsPa_mAioc55Ua2JJCAfLFcpHo,11108
+gecosistema_gdal/ogr_utils.py,sha256=1aJNK-wkhzQgQsSBVMXyN56gJl5UvJRrzzY-eT7LdkA,3278
+gecosistema_gdal/taudem.py,sha256=qL1sSqPMr2n1xHmMKUcVn-LEr7ACJDuA51OzBQD5IrU,2366
+gecosistema_gdal-0.0.29.dist-info/METADATA,sha256=SaPeWcej17UmNnzs8iaoNB4muhHYEmJlkdMl9V9zV7Y,433
+gecosistema_gdal-0.0.29.dist-info/RECORD,,
+gecosistema_gdal-0.0.29.dist-info/WHEEL,sha256=oGGm_O4g839AJOrCbXq_ZxGrWdwSrjduga8Rn8cINEs,97
+gecosistema_gdal-0.0.29.dist-info/top_level.txt,sha256=wJeq2fy_N4dinmfxUJC3UkrI4Rpsrl1vZaCuh8WE97k,17
