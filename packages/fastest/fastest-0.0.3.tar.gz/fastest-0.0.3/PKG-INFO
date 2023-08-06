@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fastest
+Version: 0.0.3
+Summary: Automate tests via docstrings and more
+Home-page: None
+Author: AmreshVenugopal
+Author-email: amresh.venugopal@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
