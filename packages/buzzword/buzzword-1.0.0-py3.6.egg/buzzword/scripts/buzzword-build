@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+"""
+python script to make an hdf5 store of all corpora
+"""
+import sys
+from buzzword import cmd_line_to_kwargs, make_all
+colmax = cmd_line_to_kwargs(list(sys.argv))
+
+if colmax:
+    print('Column sizes defined: ', colmax)
+
+make_all(table=True, colmax=colmax)
+
+print('Done! You can now start buzzword with the `buzzword` command')
