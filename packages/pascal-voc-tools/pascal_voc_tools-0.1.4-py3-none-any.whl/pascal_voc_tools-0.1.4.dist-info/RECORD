@@ -1,0 +1,14 @@
+pascal_voc_tools/__init__.py,sha256=KPGncgIzTiLJXmdAfD8i5n38KrSXCFDC26pclwvk61k,270
+pascal_voc_tools/_version.py,sha256=VaLfzfQeD1l_7xWxtBay9_szosYXgcmyYcKpdhfEzVU,19
+pascal_voc_tools/datasetresize.py,sha256=UK03RgbaSagm3DKHG6mijAKYeQ0RV7rKUeZmq3qb_2A,5998
+pascal_voc_tools/datasplit.py,sha256=IqFQbpc3LYlRLUAwDn7_euHcjuEy-vsZ1wwDWo7-7Es,4737
+pascal_voc_tools/image_annotation_split.py,sha256=CEvhXsA2QqmvwyR1HPw9kKokKVCB36Gwx8VPnatkgcc,8608
+pascal_voc_tools/resize.py,sha256=z8RGlvs2bUQBqA2u-mGX5YYDvynYXI-0AC-aclOS3ys,6007
+pascal_voc_tools/xmlReader.py,sha256=QpY-rhohI0yGMuGCoUbzwFokJZNBCebHwQypzSou4Mc,4864
+pascal_voc_tools/xmlreader.py,sha256=v9fJ0TFkxTFo-GH1pL57YgNBF_HY1tG9L7hmJPwBpnk,5674
+pascal_voc_tools/xmlwriter.py,sha256=F4EYq6nR-2f1c8T6m5JtbhdcXoHShHsqr6Ek0_wX0-I,2420
+pascal_voc_tools-0.1.4.dist-info/LICENSE,sha256=HAE49CCfTEuwVNG7vVmPjMFqPWD-gu4Vs8Fq2fJKQ2U,1069
+pascal_voc_tools-0.1.4.dist-info/METADATA,sha256=4-seUOIVLORWcHoP8D4_oa4nZp_tdxRnaLg25BnFGaw,1435
+pascal_voc_tools-0.1.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pascal_voc_tools-0.1.4.dist-info/top_level.txt,sha256=anE9g2jrO_HedQlTn4URrSzs5u41ojFScA6VgZ5nqQs,17
+pascal_voc_tools-0.1.4.dist-info/RECORD,,
