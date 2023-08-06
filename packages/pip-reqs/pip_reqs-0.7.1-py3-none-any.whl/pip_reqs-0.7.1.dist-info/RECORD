@@ -1,0 +1,11 @@
+pip_reqs/__init__.py,sha256=tpzsyPFbBLjFARObAARJdL4Ee4S_6hs68J828HRO4tA,198
+pip_reqs/__main__.py,sha256=mBEFPLHgoyxxJdsM3a1LHoL7QRTWwOT-UjeNQX676XE,2195
+pip_reqs/client.py,sha256=MAykBRtvN-nVrOxNNYcbX-0_MmzSuGlttH--hr5AO7U,759
+pip_reqs/parser.py,sha256=TYGSfSd2vSHBthcraMHT1ypXNndgsTBTI9cCqlz_9Uk,3013
+pip_reqs-0.7.1.dist-info/DESCRIPTION.rst,sha256=vg8dXPcKdAGmbnoQta74gonw1m4dcpBKN6RBCi9qBGo,789
+pip_reqs-0.7.1.dist-info/METADATA,sha256=KgOoVj74djFi_0JVYVYychqw0C_PgTvtz-KqT3Jph6c,1431
+pip_reqs-0.7.1.dist-info/RECORD,,
+pip_reqs-0.7.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pip_reqs-0.7.1.dist-info/entry_points.txt,sha256=HUlnMPFUnqD3nwQNx-bYpPQ7EDecc-JC02-c_y3zXFk,52
+pip_reqs-0.7.1.dist-info/metadata.json,sha256=0VlbrMk10Z5Kg8bI2lBzJxasOUbG0PX_12Wj3meTo5M,934
+pip_reqs-0.7.1.dist-info/top_level.txt,sha256=6mvklBb0hgMREdDp4MHt84WVi_3DnwD2ViNax5uIPf8,9
