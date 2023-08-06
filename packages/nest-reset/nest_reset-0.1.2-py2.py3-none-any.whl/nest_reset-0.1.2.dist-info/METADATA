@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: nest-reset
+Version: 0.1.2
+Summary: Simple CLI tool to listen for changes in NEST thermostat and reset the temperature back
+Home-page: https://github.com/viseshrp/nest_reset
+Author: Visesh Prasad
+Author-email: viseshrprasad@gmail.com
+License: MIT license
+Keywords: nest_reset nest nest-reset
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7
+Requires-Dist: future (>=0.15.2)
+Requires-Dist: Click (>=6.0)
+Requires-Dist: python-nest (==4.0.5)
+
+==========
+nest_reset
+==========
+
+
+Simple CLI tool to listen for changes in NEST thermostat and reset the temperature back.
+
+Works only for one thermostat.
+
+* GitHub: https://github.com/viseshrp/nest_reset
+* Free software: MIT license
+
+
+Installation
+------------
+.. code-block:: bash
+
+    $ pip install nest-reset
+
+
+Requirements
+------------
+
+#. Python 2.7+
+#. Nest client ID and secret. See here_ for instructions.
+
+
+Features
+--------
+
+.. code-block:: bash
+
+    $ nest-reset 74
+    # starts monitoring your thermostat and resets the temp to 74F whenever it detects
+    # someone changing it
+
+
+Credits
+-------
+
+* Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template for getting me started.
+
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _here: https://github.com/jkoelker/python-nest
+
+
+=======
+History
+=======
+
+0.1.0 (2019-01-11)
+------------------
+
+* First release on PyPI.
+
+
