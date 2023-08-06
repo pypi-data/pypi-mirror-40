@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: guosen
+Version: 0.0.6
+Summary: A framework for developing Quantitative Trading programmes
+Home-page: UNKNOWN
+Author: zhangkai
+Author-email: 474918208@qq.com
+License: MIT
+Description: UNKNOWN
+Keywords: quant quantitative investment trading algotrading
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
