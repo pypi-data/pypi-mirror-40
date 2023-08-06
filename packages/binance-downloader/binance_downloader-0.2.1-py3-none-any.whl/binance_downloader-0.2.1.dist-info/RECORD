@@ -1,0 +1,12 @@
+binance_downloader/__init__.py,sha256=yp31c0UCs05QSF3zHhKcVMUmpUdBkJd7PtoY2KukZE4,1570
+binance_downloader/__main__.py,sha256=ATydrt1eGfLEqIN-CcuTKN0nqzYLgPX8s3cGczh32M4,1221
+binance_downloader/api.py,sha256=6LNMYu1Biw48VsVqnpBT14f37yH7onGirf22SRWfVNc,11259
+binance_downloader/binance_utils.py,sha256=0smjsdEvBlK2-BkC3Yf5Q9Ci-Ths_0I8JtTcm0CyECs,9746
+binance_downloader/cli.py,sha256=-CK5Ohh2D96QQaccyCklpVIdPWau3b0pKMH1uDi6ODU,3345
+binance_downloader/db.py,sha256=ySruefZcwIIV_ItqG_Z7wROoZTgH46wVdAL-I8sP9Jk,8998
+binance_downloader/util.py,sha256=OyR8BYzmtftuD7Z3zVLScDV85h0el-qxb676edcH6hw,4630
+binance_downloader-0.2.1.dist-info/entry_points.txt,sha256=pDhMymCyKzIjyqtfI3-1fiCRrdSX79lT8y6jRuqpMb4,61
+binance_downloader-0.2.1.dist-info/LICENSE,sha256=EVaJYqOUZsEsyLIl87iSdKck965zJiVNMqWVujfKHok,1102
+binance_downloader-0.2.1.dist-info/WHEEL,sha256=OyjuYVC9vVJqb-Aqln3fyrroYJ4WrcSwx2msO2AokVc,85
+binance_downloader-0.2.1.dist-info/METADATA,sha256=5S4Ca8bOOI4C8G_aNZoAb1wyBKpEje4BwL6WgqnTKXI,5353
+binance_downloader-0.2.1.dist-info/RECORD,,
