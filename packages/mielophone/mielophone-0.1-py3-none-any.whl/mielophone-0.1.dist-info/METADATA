@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mielophone
+Version: 0.1
+Summary: milo - Datum processing
+Home-page: https://github.com/RomanKharin/mielophone
+Author: Roman Kharin
+Author-email: romiq.kh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: requests
+Requires: peewee
+Description-Content-Type: text/markdown
+
+# mielophone
+Datum processing framework
+
+
