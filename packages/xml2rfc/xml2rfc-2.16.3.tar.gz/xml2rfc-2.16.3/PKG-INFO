@@ -1,0 +1,203 @@
+Metadata-Version: 1.2
+Name: xml2rfc
+Version: 2.16.3
+Summary: Xml2rfc generates RFCs and IETF drafts from document source in XML according to the dtd in RFC2629.
+Home-page: https://tools.ietf.org/tools/xml2rfc/trac/
+Author: Henrik Levkowetz, Josh Bothun
+Author-email: tools-discuss@ietf.org
+Maintainer: Henrik Levkowetz
+Maintainer-email: henrik@levkowetz.com
+License: Simplified BSD Licence
+Download-URL: https://pypi.python.org/pypi/xml2rfc
+Description: Introduction
+        ============
+        
+        The IETF_ uses a specific format for the standards and other documents it
+        publishes as RFCs_, and for the draft documents which are produced when
+        developing documents for publications.  There exists a number of different
+        tools to facilitate the formatting of drafts and RFCs according to the
+        existing rules, and this tool, **xml2rfc**, is one of them.  It takes as input
+        an xml file which contains the text and meta-information about author names
+        etc., and transforms it into suitably formatted output.  The input xml file
+        should follow the DTD given in RFC2629_ (or it's `inofficial successor`_).
+        
+        The current incarnation of **xml2rfc** provides output in the following
+        formats: Paginated and unpaginated ascii text, html, nroff, and expanded xml.
+        Only the paginated text format is currently (January 2013) accepable as draft
+        submissions to the IETF.
+        
+        .. _IETF: https://www.ietf.org/
+        .. _RFCs: https://www.rfc-editor.org/
+        .. _RFC2629: https://tools.ietf.org/html/rfc2629
+        .. _inofficial successor: https://tools.ietf.org/html/draft-mrose-writing-rfcs
+        
+        Installation
+        ============
+        
+        Installation of the python package is done as usual with 'pip install xml2rfc',
+        using appropriate switches and/or sudo.
+        
+        Installation of support libraries for the PDF-formatter
+        -------------------------------------------------------
+        
+        In order to generate PDFs, xml2rfc uses the WeasyPrint module, which
+        depends on external libaries that must be installed as native packages
+        on your platform, separately from the xml2rfc install.
+        
+        First, install the Cairo, Pango, and GDK-PixBuf library files on your
+        system.  See installation instructions on the WeasyPrint Docs:
+        
+            https://weasyprint.readthedocs.io/en/stable/install.html
+        
+        (Python 3 is not needed if your system Python is 2.7, though).
+        
+        (On some OS X systems with System Integrity Protection active, you may
+        need to create a symlink from your home directory to the library installation
+        directory (often /opt/local/lib):
+        
+            ln -s /opt/local/lib ~/lib
+        
+        in order for weasyprint to find the installed cairo and pango libraries.
+        Whether this is needed or not depends on whether you used macports or homebrew
+        to install cairo and pango, and the homebrew / macport version.)
+        
+        Next, install the pycairo and weasyprint python modules using pip.
+        Depending on your system, you may need to use 'sudo' or install in
+        user-specific directories, using the --user switch.  On OS X in
+        particular, you may also need to install a newer version of setuptools
+        using --user before weasyprint can be installed.  If you install with 
+        the --user switch, you may need to also set PYTHONPATH, e.g.,
+        
+            PYTHONPATH=/Users/henrik/Library/Python/2.7/lib/python/site-packages
+        
+        for Python 2.7.
+        
+        The basic pip commands (modify as needed according to the text above)
+        are:
+        
+            pip install 'pycairo>=1.18' 'weasyprint<=0.42.3'
+        
+        With these installed and available to xml2rfc, the --pdf switch will be
+        enabled.
+        
+        For PDF output, you also need to install the Noto font set.  Download the full
+        set from https://noto-website-2.storage.googleapis.com/pkgs/Noto-unhinted.zip,
+        and install as appropriate for your platform.
+        
+        Usage
+        =====
+        
+        xml2rfc accepts a single XML document as input and outputs to one or more conversion formats.
+        
+        **Basic Usage**: ``xml2rfc SOURCE [options] FORMATS...``
+        
+        Run ``xml2rfc --help`` for a full listing of command-line options.
+        
+        
+        Changelog
+        =========
+        
+        
+        Version 2.16.3 (13 Jan 2019)
+        ------------------------------------------------
+        
+        
+          This release fixes a number of bugs in the v3 output formats, found thanks
+          to review and testing done by the RFC Production Center (Alice, Sandy,
+          and Megan).  Thanks!
+        
+          * Added CSS styling to avoid page breaks inside dl entries (which implies
+            not breaking a reference entry) and inside author address entries.  Also
+            added styling to avoid line breaks in reference URLs.  This fixes a number
+            of line- and page-break issues in the PDF output.
+        
+          * When rendering a reference, don't run seriesInfo name and value together;
+            separate with a space.
+        
+          * Added a missing colon to the Figure and Table captions when caption text
+            has been specified.
+        
+          * Provided boilerplate templates as xml instead of as a text/plain blob
+            internally, in order to make boilerplate URLs render as links in formats
+            that supports it.
+        
+          * Added missing section numbers in the HTML output of reference sections.
+        
+          * Removed stripping of leading and trailing whitespace from <sourcecode>
+            content.
+        
+          * Added 'RFC NNNN: ' to the HTML document title for RFCs.
+        
+          * Added code to prevent line-breaking of reference tags containing dash
+            in the text format.
+        
+          * Fixed rendering of author names in authors' addressses section when the
+            <address> element does not have a <postal> child element.
+        
+          * Fixed an issue with missing whitespace in text rendering of references 
+            with reference tags of length 9.
+        
+          * Fixed an issue where TLP version 4.0 was used instead of 5.0 used by
+            preptool when inserting boilerplate text, causing the use of http://
+            instead of https:// URLs in modern document boilerplate.
+        
+          * Silenced some warnings that could occur during xml2rfc startup, triggered
+            by pdf lib imports when the available external libs have old versions.
+        
+          * Fixed a bug in preptool.check_attribute_values(), and added code to strip
+            leading and trailing whitespace for attribute values where whitespace is
+            not meaningful.  This will cause accidentally included leading and
+            trailing whitespace to be accepted (with a comment during the preptool
+            phase).
+        
+        
+        
+        
+        
+        
+        
+        Version 2.16.2 (08 Jan 2019)
+        ------------------------------------------------
+        
+        
+          * Added exception handling for a command in setup.py that may fail in 
+            some circumstances.
+        
+        
+        
+        
+        
+        
+        Version 2.16.1 (08 Jan 2019)
+        ------------------------------------------------
+        
+        
+        
+          This is a minor release. prompted mostly by a change in the BaseV3Writer
+          class in order to better be able to override logging when subclassing it.
+        
+          * Updated docker files.
+        
+          * Refactored some logging functionality.
+        
+          * Tweaked BaseV3Writer to make it possbile to override all error output.
+        
+          * Added a __str__ method for an exception class, and fixed an error case 
+            return value.
+        
+          * Tweaked the mkrelease script
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: License :: OSI Approved :: BSD License
