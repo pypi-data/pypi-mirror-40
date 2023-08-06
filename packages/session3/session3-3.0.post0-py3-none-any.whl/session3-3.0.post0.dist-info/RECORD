@@ -1,0 +1,17 @@
+session3/DictSession.py,sha256=IqTqrjhNJkUHB3KFlC4kRK6qnXTQ3KYTEOCo4QGTdl4,530
+session3/Session.py,sha256=q5qEAR6JYyanYCRtAzsakkxe1PO3LbSf8v5Dl_fOiHE,5946
+session3/SessionManager.py,sha256=KTQ5T6ya2fdI405HKR09EgZdmDZ7r_LL8Zxnz8Qk42k,8768
+session3/__init__.py,sha256=_imUocrW_5SsnBbIusmSVNNku8hMsHUrHu0sWVyAqMs,345
+session3/store/DirectorySessionStore.py,sha256=D_ip5Fe9cRQPJ6uZIb0UsxZlkNicGq0LQ2rLjUFAvFQ,6908
+session3/store/DurusSessionStore.py,sha256=PeFy9UOjegXAI3wOrpnOhVjX5Xdc6_A4ygGGVL5tUuQ,1568
+session3/store/MySQLSessionStore.py,sha256=o48cSolS5SzAkZVyEXvzly94Fojo8FZxUi8chk0i2L0,3246
+session3/store/PostgresSessionStore.py,sha256=Sl2zRC-0PGhMzWdiPO088xkjfUA9QNUE6ODIhNmWOQE,3290
+session3/store/SessionStore.py,sha256=Ki6MBduG2jostbM_hcrorJmStdRn3WNsEuLK7rg0aeg,2089
+session3/store/ShelveSessionStore.py,sha256=hbn_Gjd3T48Ouy4qtNnMb6qscjh_g1xRl6zxHX9Ai7U,1358
+session3/store/VolatileSessionStore.py,sha256=qHbRpaTfpVZqeEH6FTfCo2Rpk4Kzcj5miWK2v2x0aZM,1078
+session3/store/__init__.py,sha256=UvNbOQdSxspWKHOogIWJp_Szsz_oqqaiLTCqZu4OETs,65
+session3-3.0.post0.dist-info/LICENSE,sha256=swv8WlPZ2gl9ht7avhWAlvvfDWtjsgsctV_R05KAxlE,1063
+session3-3.0.post0.dist-info/METADATA,sha256=fvJzXG_tt_0me_4g5H_y_nY4H5NQ4g36Zz7LQ6vt1Ks,8206
+session3-3.0.post0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+session3-3.0.post0.dist-info/top_level.txt,sha256=8yE3XCIxPDQqecbuvva3ulRZwBn26W4YxxbARSaa288,9
+session3-3.0.post0.dist-info/RECORD,,
