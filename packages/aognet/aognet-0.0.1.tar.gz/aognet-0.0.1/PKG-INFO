@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: aognet
+Version: 0.0.1
+Summary: AOGNet
+Home-page: https://github.com/xilaili/AOGNet
+Author: Xilai Li, Tianfu Wu
+Author-email: lixilai0819@gmail.com
+License: UNKNOWN
+Description: aognet
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
