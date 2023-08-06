@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+extquerysets/__init__.py
+extquerysets/base.py
+extquerysets/decorators.py
+extquerysets.egg-info/PKG-INFO
+extquerysets.egg-info/SOURCES.txt
+extquerysets.egg-info/dependency_links.txt
+extquerysets.egg-info/requires.txt
+extquerysets.egg-info/top_level.txt
