@@ -1,0 +1,11 @@
+synology_srm/__init__.py,sha256=rurzexEpFCBGWYCe5Lv2qwA7brM3C83B3Q7nGt0FSko,67
+synology_srm/__version__.py,sha256=7RScd2FLKJvA6rnvrNL4wVMtYgYwr10SzId074ihXqY,88
+synology_srm/client.py,sha256=w52N0_w9YdQq_VA63pBxm2b8xtrjN1WtGa7Z3gq8ETc,649
+synology_srm/http.py,sha256=ciOtgKBtO7vbag7YNVZYd5fPlkBwsZ8Q-dqPqm-ULkA,4723
+synology_srm/api/__init__.py,sha256=2cjoAbabFTo5eeVRdtRfVINzPh2cN8iHpJ2OFS2JLhw,26
+synology_srm/api/mesh.py,sha256=oPb5qrlIxL3IMO1nD6SnRDPEZDCeXXcHc8agHK1dFyQ,449
+synology_srm-0.0.3.dist-info/LICENSE,sha256=4Dr8B5eNey1CqOrY_EOZU1BwruZIos5pDCung3l7J7s,1071
+synology_srm-0.0.3.dist-info/METADATA,sha256=Fs18RDs7ZIMyWtapLtbqX1wBI_YIEAATqGW3Cfwrhyk,2189
+synology_srm-0.0.3.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+synology_srm-0.0.3.dist-info/top_level.txt,sha256=Uy7k1520XKCyQ4DY9zPlpEUu_R8itXJla9Bg9FoJsRY,13
+synology_srm-0.0.3.dist-info/RECORD,,
