@@ -1,0 +1,11 @@
+README.rst
+setup.py
+keras_succ_reg_wrapper/__init__.py
+keras_succ_reg_wrapper/wrapper.py
+keras_succ_reg_wrapper.egg-info/PKG-INFO
+keras_succ_reg_wrapper.egg-info/SOURCES.txt
+keras_succ_reg_wrapper.egg-info/dependency_links.txt
+keras_succ_reg_wrapper.egg-info/requires.txt
+keras_succ_reg_wrapper.egg-info/top_level.txt
+tests/__init__.py
+tests/test_wrapper.py
