@@ -1,0 +1,10 @@
+rocketmq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rocketmq/client.py,sha256=TuqyjSpXXQo4UHqz9BsH89M-woqJulI8HIJ39YRMZQQ,10441
+rocketmq/exceptions.py,sha256=Z6Kz0NFUojg68Wz1LUCBSKZ5asHHEn6em9thPzN9g1A,1622
+rocketmq/ffi.py,sha256=_laYJ9GMDmb92d-8Udh97EGmcNn4j7MkrA6p-VT7YRc,10557
+rocketmq/librocketmq.dylib,sha256=MwEHTr6gac_sHUpfcCRFvTSUgDVhlw-nfzPzI7pfE5o,3695780
+rocketmq-0.3.2.dist-info/LICENSE,sha256=SC-C3tNBFGgnCGVwtUA4dDFBSfTwSN1OaLApQrh3kns,1078
+rocketmq-0.3.2.dist-info/METADATA,sha256=SoOw3w14tc5oioz_nSUVmcA7GmAnAAyLBAcfqaCWCEM,2469
+rocketmq-0.3.2.dist-info/WHEEL,sha256=0CR7uC-O-eZOaHm9I5d7BbGXhIbLoq084smqgGbabX8,143
+rocketmq-0.3.2.dist-info/top_level.txt,sha256=DEMfb18lKnMBTlPPhPdDoBC9Ha-3ZjNUn3JT16VaZwM,9
+rocketmq-0.3.2.dist-info/RECORD,,
