@@ -1,0 +1,12 @@
+README.md
+setup.py
+flask_ezmail/__init__.py
+flask_ezmail/connection.py
+flask_ezmail/mail.py
+flask_ezmail/message.py
+flask_ezmail/utils.py
+flask_ezmail.egg-info/PKG-INFO
+flask_ezmail.egg-info/SOURCES.txt
+flask_ezmail.egg-info/dependency_links.txt
+flask_ezmail.egg-info/requires.txt
+flask_ezmail.egg-info/top_level.txt
