@@ -1,0 +1,103 @@
+language: python
+cache: pip
+addons:
+  apt:
+    packages:
+      - gdb
+env:
+  global:
+    - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
+    - SEGFAULT_SIGNALS=all
+    - SETUPPY_CFLAGS=-DCYTHON_TRACE=1
+    - PYTEST_ADDOPTS=--benchmark-disable
+  matrix:
+    - TOXENV=check
+    - TOXENV=docs
+matrix:
+  include:
+{%- for env in tox_environments %}{{ '' }}
+    - python: '{{ env.split("-")[0] if env.startswith("pypy") else "{0[2]}.{0[3]}".format(env) }}'
+      env:
+        - TOXENV={{ env }}{% if "cover" in env %},report,coveralls,codecov{% endif %}
+{%- if "pypy" not in env and "cython-nocov" in env %}{{ '' }}
+        - WHEEL_MANYLINUX1=cp{{ env.split("-")[0][2:] }}
+        - WHEEL_PATH=wheelhouse
+{%- endif %}
+{%- if "py37" in env %}{{ '' }}
+      dist: xenial
+{%- endif %}
+{%- if "py37" in env or "py27" in env %}{{ '' }}
+    - os: osx
+      language: generic
+      cache:
+        directories:
+          - $HOME/Library/Caches/Homebrew
+          - $HOME/Library/Caches/pip
+      env:
+        - TOXENV={{ env }}
+        - SETUPPY_CFLAGS=
+{%- if "cython-nocov" in env %}{{ '' }}
+        - WHEEL_PATH=.tox/dist
+{%- endif %}
+{%- endif %}
+{%- endfor %}{{ '' }}
+before_install:
+  - python --version
+  - uname -a
+  - lsb_release -a || true
+  - sudo sysctl -w kernel.yama.ptrace_scope=0 || true
+  - |
+    if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
+      [[ $TOXENV =~ py3 ]] && brew upgrade python
+      [[ $TOXENV =~ py2 ]] && brew install python@2
+      export PATH="/usr/local/opt/python/libexec/bin:${PATH}"
+    fi
+install:
+  - pip install twine tox-wheel
+  - virtualenv --version
+  - easy_install --version
+  - pip --version
+  - tox --version
+  - |
+    (
+    set -eux
+    if [[ ${TRAVIS_PYTHON_VERSION:-} == "pypy" ]]; then
+      (cd $HOME
+       wget https://bitbucket.org/pypy/pypy/downloads/pypy2-v6.0.0-linux64.tar.bz2
+       tar xf pypy2-*.tar.bz2
+       pypy2-*/bin/pypy -m ensurepip
+       pypy2-*/bin/pypy -m pip install -U virtualenv)
+      export PATH=$(echo $HOME/pypy2-*/bin):$PATH
+      export TOXPYTHON=$(echo $HOME/pypy2-*/bin/pypy)
+    fi
+    if [[ ${TRAVIS_PYTHON_VERSION:-} == "pypy3" ]]; then
+      (cd $HOME
+       wget https://bitbucket.org/pypy/pypy/downloads/pypy3-v6.0.0-linux64.tar.bz2
+       tar xf pypy3-*.tar.bz2
+       pypy3-*/bin/pypy3 -m ensurepip
+       pypy3-*/bin/pypy3 -m pip install -U virtualenv)
+      export PATH=$(echo $HOME/pypy3-*/bin):$PATH
+      export TOXPYTHON=$(echo $HOME/pypy3-*/bin/pypy3)
+    fi
+    )
+script:
+  - |
+    (
+    set -eux
+    if [[ -n ${WHEEL_MANYLINUX1:-} ]]; then
+      docker run --rm --user $UID -itv $(pwd):/code ionelmc/manylinux $WHEEL_MANYLINUX1
+      tox --installpkg $WHEEL_PATH/*.whl -v
+    else
+      tox -v
+    fi
+    if [[ -n ${WHEEL_PATH:-} ]]; then
+      twine upload --repository-url https://test.pypi.org/legacy/ --skip-existing $WHEEL_PATH/*.whl
+    fi
+    )
+after_failure:
+  - more .tox/log/* | cat
+  - more .tox/*/log/* | cat
+notifications:
+  email:
+    on_success: never
+    on_failure: always
