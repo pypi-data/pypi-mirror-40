@@ -1,0 +1,16 @@
+setuptools>=40.6.3
+pip>=18.1
+wheel>=0.32.3
+packaging>=18.0
+attrs>=18.2.0
+netaddr>=0.7.19
+plpygis>=0.1.0
+psycopg2>=2.7.6.1
+simplejson>=3.16.0
+structlog>=18.2.0
+chatora.util>=0.1.1
+
+[dev]
+bumpversion>=0.5.3
+check-manifest>=0.37
+colorama>=0.4.1
