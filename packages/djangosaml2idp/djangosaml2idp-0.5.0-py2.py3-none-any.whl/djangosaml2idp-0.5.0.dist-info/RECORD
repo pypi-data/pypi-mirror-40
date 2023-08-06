@@ -1,0 +1,12 @@
+djangosaml2idp/__init__.py,sha256=0PaI2eSOCp5kkNcpKpUSbLHf66rL9xQzFpYyLGpEtyM,22
+djangosaml2idp/error_views.py,sha256=kR_0Wr2t4fyROfgpSXmvMMXB9c7d0p08YeQ54GK6ct0,641
+djangosaml2idp/processors.py,sha256=bzFTS9nv5s72E1ClevDXoYQl0rTYS-mzVTj2GPidIqw,1431
+djangosaml2idp/urls.py,sha256=gh9AJYMSLdpL92vB2nGvmNBFxtqXTl00DFynCFuGNoE,567
+djangosaml2idp/views.py,sha256=V6GmVBcJyAwTqlAIBXWanykaXjaQtIu-XzDZ6cLimhs,12775
+djangosaml2idp/templates/djangosaml2idp/error.html,sha256=BhVjSiAo4O4FuaV5G5gCRGEjApfqQPttcjPnVmJcSYg,501
+djangosaml2idp/templates/djangosaml2idp/login.html,sha256=dm3tatQgRmEYih1w3kwVfF_-6rb1W0EktvTckrq5q1g,613
+djangosaml2idp-0.5.0.dist-info/LICENSE.txt,sha256=lfX_TFtpx00lACRrKfMlCfLCu34QArXUFe2UjTDA13c,10762
+djangosaml2idp-0.5.0.dist-info/METADATA,sha256=MpXlJs-2bSwCzQsCc8r3XLa8vaWt4f-JIRDfYoTwO5w,11033
+djangosaml2idp-0.5.0.dist-info/RECORD,,
+djangosaml2idp-0.5.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+djangosaml2idp-0.5.0.dist-info/top_level.txt,sha256=htL8XM3CTIdB1f07OjSK9F_MX96M-wKDgjg4ltZJHfo,15
