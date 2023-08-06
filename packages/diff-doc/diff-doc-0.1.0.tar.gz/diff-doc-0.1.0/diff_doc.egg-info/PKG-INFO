@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: diff-doc
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: http://github.com/mwilliamson/diff-doc
+Author: Michael Williamson
+Author-email: mike@zwobble.org
+License: UNKNOWN
+Description: diff-doc
+        ========
+        
+        Installation
+        ------------
+        
+        ::
+        
+            pip install diff-doc
+        
+        Usage
+        -----
+        
+        To compile a source file:
+        
+            diff-doc compile README.src.rst > README.rst
+        
+        To convert a diff block starting on line 42 to a replace block:
+        
+            diff-doc convert-block README.src.rst 42 replace
+        
+        To convert a replace block starting on line 42 to a diff block:
+        
+            diff-doc convert-block README.src.rst 42 diff
+        
+Keywords: diff doc example tutorial
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

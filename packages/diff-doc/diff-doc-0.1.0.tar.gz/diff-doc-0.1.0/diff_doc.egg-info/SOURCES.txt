@@ -1,0 +1,13 @@
+README.rst
+setup.py
+diff_doc.egg-info/PKG-INFO
+diff_doc.egg-info/SOURCES.txt
+diff_doc.egg-info/dependency_links.txt
+diff_doc.egg-info/entry_points.txt
+diff_doc.egg-info/top_level.txt
+diffdoc/__init__.py
+diffdoc/cli.py
+diffdoc/compiler.py
+diffdoc/diff.py
+diffdoc/parser.py
+diffdoc/rst.py
