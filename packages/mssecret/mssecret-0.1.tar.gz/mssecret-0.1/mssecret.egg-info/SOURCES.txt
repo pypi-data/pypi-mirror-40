@@ -1,0 +1,8 @@
+README.rst
+setup.py
+mssecret/__init__.py
+mssecret.egg-info/PKG-INFO
+mssecret.egg-info/SOURCES.txt
+mssecret.egg-info/dependency_links.txt
+mssecret.egg-info/not-zip-safe
+mssecret.egg-info/top_level.txt
