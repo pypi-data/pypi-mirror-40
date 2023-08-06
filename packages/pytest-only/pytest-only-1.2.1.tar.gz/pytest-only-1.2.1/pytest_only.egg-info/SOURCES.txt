@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+pytest_only/__init__.py
+pytest_only/compat.py
+pytest_only/plugin.py
+pytest_only/version.py
+pytest_only.egg-info/PKG-INFO
+pytest_only.egg-info/SOURCES.txt
+pytest_only.egg-info/dependency_links.txt
+pytest_only.egg-info/entry_points.txt
+pytest_only.egg-info/requires.txt
+pytest_only.egg-info/top_level.txt
