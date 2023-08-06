@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: skidward
+Version: 0.0.1.dev47
+Summary: scheduler for python scripts
+Home-page: https://gitlab.adimian.com/open-source/skidward/
+Author: See AUTHORS
+Author-email: contact@adimian.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Flask (==1.0.2)
+Requires-Dist: Flask-Admin (==1.5.3)
+Requires-Dist: Flask-Security (==3.0.0)
+Requires-Dist: Flask-SQLAlchemy (==2.3.2)
+Requires-Dist: redis (==3.0.1)
+Requires-Dist: SQLAlchemy (==1.2.16)
+Requires-Dist: redis-log-handler (==0.0.1.dev9)
+
+# skidward
+
+Scheduler For Python Scripts
+
+
+
