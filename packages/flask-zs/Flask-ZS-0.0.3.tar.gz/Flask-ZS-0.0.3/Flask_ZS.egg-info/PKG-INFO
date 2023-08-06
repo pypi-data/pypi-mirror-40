@@ -1,0 +1,19 @@
+Metadata-Version: 1.0
+Name: Flask-ZS
+Version: 0.0.3
+Summary: A helpers for Flask.
+Home-page: https://github.com/codeif/Flask-ZS
+Author: codeif
+Author-email: me@codeif.com
+License: MIT
+Description: Helpers for Flask.
+        ====================
+        
+        安装
+        ----
+        
+        .. code-block:: sh
+        
+            pip install Flask-ZS
+        
+Platform: UNKNOWN
