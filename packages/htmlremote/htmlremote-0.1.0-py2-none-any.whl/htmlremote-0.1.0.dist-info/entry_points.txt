@@ -1,0 +1,6 @@
+[console_scripts]
+htmlremote = htmlremote.cmd_htmlremote:main_entrypoint
+
+[gui_scripts]
+
+
