@@ -1,0 +1,3 @@
+[pytest11]
+pytest_ignore_flaky = pytest_ignore_flaky
+
