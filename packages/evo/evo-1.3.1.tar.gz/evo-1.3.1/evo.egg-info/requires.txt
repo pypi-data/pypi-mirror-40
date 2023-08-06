@@ -1,0 +1,10 @@
+numpy
+matplotlib
+scipy
+pandas
+seaborn
+natsort
+argcomplete
+colorama>=0.3
+pygments
+enum34
