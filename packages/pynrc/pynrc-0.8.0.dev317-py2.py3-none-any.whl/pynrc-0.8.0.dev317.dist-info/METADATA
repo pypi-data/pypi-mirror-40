@@ -1,0 +1,181 @@
+Metadata-Version: 2.1
+Name: pynrc
+Version: 0.8.0.dev317
+Summary: JWST NIRCam ETC and Simulator
+Home-page: https://pynrc.readthedocs.io
+Author: Jarron Leisenring
+Author-email: jarronl@email.arizona.edu
+License: MIT license
+Keywords: jwst nircam etc simulator
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Click (>=6.0)
+Requires-Dist: numpy (>=1.13.0)
+Requires-Dist: matplotlib (>=2)
+Requires-Dist: scipy (>=0.16.0)
+Requires-Dist: pysynphot (>=0.9.7)
+Requires-Dist: poppy (>=0.7.0)
+Requires-Dist: webbpsf (>=0.7.0)
+
+=====
+pyNRC
+=====
+
+A JWST NIRCam ETC and Simulator
+===============================
+
+.. image:: https://img.shields.io/pypi/v/pynrc.svg
+        :target: https://pypi.python.org/pypi/pynrc
+
+.. image:: https://readthedocs.org/projects/pynrc/badge/?version=latest
+        :target: https://pynrc.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+*Authors:* Jarron Leisenring (UA)
+
+*Contributors:* Everett Schlawin (UA), Jonathan Fraine (STScI)
+
+**!!Under Development!!**
+
+pyNRC is a set of Python-based tools for planning observations with JWST NIRCam, 
+such as an ETC, a simple image slope simulator, and an enhanced data simulator.
+
+While special attention has been placed on NIRCam coronagraphic modes, 
+this package also works for a variety of NIRCam observing modes including:
+
+- direct imaging 
+- coronagraphic imaging
+- weak lens imaging
+- slitless grism spectroscopy
+- DHS observations (TBI)
+
+All PSFs are generated via WebbPSF (https://webbpsf.readthedocs.io) to reproduce 
+realistic JWST images and spectra.
+
+Documentation can be found at https://pynrc.readthedocs.io.
+
+**Note:** pyNRC enables more modes than are officially allowed by the Observatory,
+(ie., filter + coronagraphic combinations, subarray sizes, etc.). 
+Just because you can do something with pyNRC does not mean it will be supported.
+Check out https://jwst-docs.stsci.edu/display/JTI/NIRCam+Observing+Modes for more information.
+
+Similar to some of its dependencies, pyNRC requires a host of input data files in
+order to generate simulations. Due to the size of these files, they are not included
+with this source distribution. Please see the documentation for instructions on how to
+to download the required data files.
+
+
+Revision History
+================
+
+v0.8.0 (Jan 2019)
+-----------------
+
+- Release to work with WebbPSF 0.8.0.
+- Phasing out support for Python 2
+- Can use ``jwst_backgrounds`` (not required)
+- Add info on saturation limits in terms of surface brightness 
+- Include option to create grism 2nd order
+- Detector pixel timing bugs
+
+v0.7.0 (Jun 2018)
+-----------------
+
+- Did not make it out of development before WebbPSF 0.8.0 release.
+- Works with WebbPSF 0.7.0.
+
+  - Field-dependent WFE
+  - Image plane distortions
+
+- Implemented ``jwst_backgrounds`` (not required)
+
+
+v0.6.5 (Mar 2018)
+-----------------
+
+- Fixed a critical bug where the off-axis PSF size was incorrect
+  when performing WFE drift calculations.
+
+v0.6.4 (Mar 2018)
+-----------------
+
+- Off-axis PSFs now get drifted in the same way as their on-axis
+  counterparts.
+- Created an intermediate :mod:`~pynrc.nrc_hci` class to enable
+  offsets of WFE drifted PSFs.
+
+
+v0.6.3 (Mar 2018)
+-----------------
+
+- First PyPI release.
+- Effectively the same as 0.6.2, but better documentation of packaging and distributing.
+
+
+v0.6.2 (Mar 2018)
+-----------------
+
+- Implemented coronagraphic wedges, including arbitrary offsets along bar
+- Renamed ``obs_coronagraphy`` to :mod:`~pynrc.obs_hci`
+
+  - Faster modeling of off-axis PSFs
+  - Include coronagraphic features (e.g.: ND squares) in slope images
+  - Roll subtracted images include option to use Roll1-Roll2
+  - Fixed bug that was slowing down PSF convolution of disks
+
+- Can now generate docs directly from Jupyter notebooks using nbsphinx extension
+- Coronagraphic tutorials for docs
+- Create the ``source_spectrum`` class to fit spectra to observed photometry.
+
+v0.6.0 (Dec 2017)
+-----------------
+
+- Support for Python 3 (mostly ``map``, ``dict``, and index fixes)
+- Updated code comments for ``sphinx`` and ``readthedocs`` documentation
+- Create ``setup.py`` install file
+- Modify grism PSF shapes due to aperture shape
+- Detector frames times based on ASIC microcode build 10
+- Headers for DMS data
+- Three major changes to PSF coefficients
+
+  - coefficients based on module (SWA, SWB, LWA, LWB), rather than filter
+  - WFE drift coefficient relations
+  - field-dependent coefficient relation
+
+v0.5.0 (Feb 2017)
+-----------------
+
+- Initial GitHub release
+- Match version numbering to ``WebbPSF`` equivalent
+- ND Acquisition mode
+- Ramp settings optimizer
+- Can now simulate ramps with detector noise
+- Query Euclid's IPAC server for time/position-dependent Zodiacal emission
+- Added example Jupyter notebooks
+
+v0.1.2 (Jan 2017)
+-----------------
+- Observations subclass for coronagraphs and direct imaging
+
+v0.1.1 (Sep 2016)
+-----------------
+- Add support for LW slitless grism
+- Add support for extended sources
+
+v0.1.0 (Aug 2016)
+-----------------
+- Rewrite of ``SimNRC`` and rename ``pynrc``
+- Object oriented ``multiaccum``, ``DetectorOps``, and ``NIRCam`` classes
+- Create separate detector instances in ``NIRCam`` class
+
+
+-----------------------
+
+
