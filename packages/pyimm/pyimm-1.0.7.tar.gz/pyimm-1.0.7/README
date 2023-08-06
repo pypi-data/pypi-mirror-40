@@ -1,0 +1,12 @@
+The purpose of this code is to read IMM files created by X-ray Photo Correlation
+spectroscopy beamlines at the Advanced Photon Source at Argonne National 
+Laboratory.
+
+Test files have been omitted from the repository due to size issues.  Test Files
+can be found at:
+
+1.0.5  2017-06-30  Mostly fixes for first index issue.
+
+1.0.6dev1 2017-08-10  Change distribution to use find_packages,
+            Add MANIFEST.in to allow include of LICENSE file
+1.0.7  2019-01-18   Make changes to use this with Python 3.0.  Changes to print and with use of Long integers.

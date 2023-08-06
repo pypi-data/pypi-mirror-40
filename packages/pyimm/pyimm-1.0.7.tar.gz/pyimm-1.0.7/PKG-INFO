@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyimm
+Version: 1.0.7
+Summary: Python Program to read IMM data files from XPCS beamlines at the Advanced Photon Source
+Home-page: https://confluence.aps.anl.gov/
+Author: John Hammonds, Benjamin Pausma, Timothy Madden
+Author-email: JPHammonds@anl.gov
+License: See LICENSE File
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: any
