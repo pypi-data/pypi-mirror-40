@@ -1,0 +1,8 @@
+README.md
+setup.py
+laurentvoicerecognition/__init__.py
+laurentvoicerecognition/voice2text.py
+laurentvoicerecognition.egg-info/PKG-INFO
+laurentvoicerecognition.egg-info/SOURCES.txt
+laurentvoicerecognition.egg-info/dependency_links.txt
+laurentvoicerecognition.egg-info/top_level.txt
