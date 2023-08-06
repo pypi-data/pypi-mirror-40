@@ -1,0 +1,15 @@
+genie-3.1.1-py3.5-nspkg.pth,sha256=55hGpnePXkOAWbNjXAykyxJsVWn9MIFjxHxKb746fn4,352
+genie/base.cpython-35m-darwin.so,sha256=DLsuIXLx2gMvA8FmO7q5--InTqHPFI_leT4fjV4gEps,58496
+genie/decorator.cpython-35m-darwin.so,sha256=PxE8pTJQ8isqnogtYots4JqgA4WNYJlMRl16hr_j4dE,372312
+genie/info.cpython-35m-darwin.so,sha256=sX7r9an3wiZQ-dPYeNzTWW6ng4r_eCZCpW6jnQyrgww,19544
+genie/cli/__main__.cpython-35m-darwin.so,sha256=0Op8DySl6NCRxvGPJxTQl1pAQkxj5uQu1Vee7yPyaIw,44956
+genie/cli/core.cpython-35m-darwin.so,sha256=_4TjtAdby8UCECjvdTwRIVwDHA2VU7KXSDR166bW18k,26024
+genie/cli/commands/diff.cpython-35m-darwin.so,sha256=NcfQh2ayeXZJ6rMPSK02lCp790rUPyRalsDuowpHZhI,162464
+genie/cli/commands/learn.cpython-35m-darwin.so,sha256=4ui7dnoEU3sUTHGOfgloHv7MngZq4UVYET3MlEOsGRc,192052
+genie/cli/commands/unpickle.cpython-35m-darwin.so,sha256=MyfIleQAoim3wFQf9bWrS1l1mFOwDBcJg16VtcqWnms,68148
+genie-3.1.1.dist-info/METADATA,sha256=I7ve0455zNWAramyAjUqlWr6EOMUPut1JO7te5r1ec0,4058
+genie-3.1.1.dist-info/WHEEL,sha256=3OiwTPHo7WWZTNWnj-OW101F7mSG_y61mOpRN1hxQLc,111
+genie-3.1.1.dist-info/entry_points.txt,sha256=fxxTYDsqMcA7cl9YTlLMDh0EoAb7mnhYPKz2BO43c08,51
+genie-3.1.1.dist-info/namespace_packages.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie-3.1.1.dist-info/top_level.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie-3.1.1.dist-info/RECORD,,
