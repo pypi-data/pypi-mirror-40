@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: sphcpy
+Version: 0.0.5
+Summary: Wrappers and tools for reading and plotting p.XX data from SPHC
+Home-page: https://github.com/viper2642/sphcpy
+Author: David Pfefferle
+Author-email: david.pfefferle@uwa.edu.au
+License: GPL-3.0
+Keywords: plot SPH VTK
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Dist: numpy
+Requires-Dist: pyevtk
+
+SPHCpy
+------
+
+Wrapper and tools for reading and converting p.XX data from the SPHC code to VTK
+
+Usage:
+ >>> import sphcpy
+ >>> s=sphcpy.dataslice(0)
+ >>> s.ToVTK("casename")
+
+
+
+
+
