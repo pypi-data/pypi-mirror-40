@@ -1,0 +1,12 @@
+README.md
+setup.py
+feynLab_sensor_shield.egg-info/PKG-INFO
+feynLab_sensor_shield.egg-info/SOURCES.txt
+feynLab_sensor_shield.egg-info/dependency_links.txt
+feynLab_sensor_shield.egg-info/top_level.txt
+feynlab_sensor_shield/__init__.py
+feynlab_sensor_shield/apds9960.py
+feynlab_sensor_shield/bme280.py
+feynlab_sensor_shield/mma8491q.py
+feynlab_sensor_shield/relay_controller.py
+feynlab_sensor_shield/veml6075.py
