@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+magicfile/__init__.py
+magicfile/_libmagic_build.py
+magicfile/magic.mgc
+magicfile.egg-info/PKG-INFO
+magicfile.egg-info/SOURCES.txt
+magicfile.egg-info/dependency_links.txt
+magicfile.egg-info/requires.txt
+magicfile.egg-info/top_level.txt
+test/test.py
