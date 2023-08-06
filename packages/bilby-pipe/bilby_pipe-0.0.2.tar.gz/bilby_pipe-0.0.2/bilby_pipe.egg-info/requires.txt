@@ -1,0 +1,7 @@
+future
+pycondor>=0.5
+configargparse
+jinja2
+urllib3
+deepdish
+ligo-gracedb
