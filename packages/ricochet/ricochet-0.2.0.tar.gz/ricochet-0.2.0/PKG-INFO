@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ricochet
+Version: 0.2.0
+Summary: Simple Spring-inspired IoC framework for Python.
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: Component autowiring and other IoC goodies
+Keywords: python ioc spring inversion of control
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6.0
+Provides-Extra: test
+Provides-Extra: deploy
+Provides-Extra: docs
+Provides-Extra: sast
+Provides-Extra: develop
