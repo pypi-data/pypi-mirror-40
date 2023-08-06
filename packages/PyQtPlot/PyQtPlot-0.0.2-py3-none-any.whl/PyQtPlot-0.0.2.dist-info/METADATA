@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: PyQtPlot
+Version: 0.0.2
+Summary: PyQt native library for plotting data.
+Home-page: https://github.com/merdovash/PyQtPlot
+Author: Vlad Schekochikhin
+Author-email: vladschekochikhin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5
+
+github: [https://github.com/merdovash/PyQtPlot](https://github.com/merdovash/PyQtPlot)
+
+
