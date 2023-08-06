@@ -1,0 +1,9 @@
+numpy<1.16
+colorama
+astropy
+tensorflow
+tqdm
+matplotlib
+imageio
+scikit-image
+scipy
