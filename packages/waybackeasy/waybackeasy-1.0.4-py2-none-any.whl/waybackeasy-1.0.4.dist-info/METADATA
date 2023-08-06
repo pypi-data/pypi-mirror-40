@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: waybackeasy
+Version: 1.0.4
+Summary: The insanely simple way to interface with the Waybackmachine.
+Home-page: https://github.com/JohannesSeikowsky/waybackeasy
+Author: Johannes Seikowsky
+Author-email: jseikowsky@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=1.5.0)
+
+## Waybackeasy
+The insanely simple way to interface with the WayBackMachine.
+
+### Install
+```pip install waybackeasy```
+
+### Use
+```import waybackeasy```
+
+```waybackeasy.get("https://news.ycombinator.com", "27.05.2016")```
+
+returns html of news.ycombinator.com on the 27th of May, 2016 as recorded by the WB-machine.
+
+### Dateformat
+```dd.mm.yyyy```
+
+I'm planning to improve this and add more useful options in the future.
+
+### Contact
+
+For feedback, bug-reports or feature-requests, write me - joseikowsky@gmail.com
+
+
