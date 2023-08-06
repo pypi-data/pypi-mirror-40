@@ -1,0 +1,4 @@
+---
+- import_playbook: authorized-keys-playbook.yml
+  vars:
+    authorized_keys_globs: [ 'ssh_keys/*.pub', 'test_keys/*.pub' ]

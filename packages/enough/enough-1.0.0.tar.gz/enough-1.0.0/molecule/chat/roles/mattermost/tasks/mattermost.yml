@@ -1,0 +1,45 @@
+---
+- name: apt-get install git
+  apt:
+    name: git
+    state: present
+
+- name: chown debian /srv
+  file:
+    path: /srv
+    owner: debian
+
+- name: git clone https://github.com/mattermost/mattermost-docker.git
+  git:
+    repo: https://github.com/mattermost/mattermost-docker.git
+    force: yes
+    dest: /srv/mattermost
+  become: False
+
+- name: cleanup docker leftovers
+  shell: docker system prune --force
+  become: False
+
+- name: create mattermost directories
+  file:
+    dest: '/srv/mattermost/volumes/{{ item }}'
+    state: 'directory'
+    owner: 'debian'
+    group: 'debian'
+    mode: '0755'
+  loop:
+    - app
+    - app/mattermost
+    - app/mattermost/data
+    - app/mattermost/config
+    - app/mattermost/logs
+
+- name: Copy docker-compose-infrastructure.yml
+  template:
+    src: docker-compose-infrastructure.yml
+    dest: /srv/mattermost/docker-compose-infrastructure.yml
+    owner: debian
+    mode: "0600"
+  notify:
+    - recreate mattermost
+  become: False

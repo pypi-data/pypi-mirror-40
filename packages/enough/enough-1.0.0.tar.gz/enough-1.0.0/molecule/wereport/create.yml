@@ -1,0 +1,106 @@
+# adapted from molecule/cookiecutter/scenario/driver/openstack/{{cookiecutter.molecule_directory}}/{{cookiecutter.scenario_name}}/create.yml
+- name: Create
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  vars:
+    molecule_file: "{{ lookup('env', 'MOLECULE_FILE') }}"
+    molecule_instance_config: "{{ lookup('env', 'MOLECULE_INSTANCE_CONFIG') }}"
+    molecule_yml: "{{ lookup('file', molecule_file) | from_yaml }}"
+    hosts_orig: "{{ lookup('file', '../../hosts-base.yml') | from_yaml }}"
+  vars_files:
+    - ../../clouds.yml
+    - ../../private-key.yml
+  pre_tasks:
+    - name: firewall for ssh ports
+      include_role:
+        name: firewall
+      vars:
+        firewall_server: "{{ item.name }}"
+        firewall_clients: [ 0.0.0.0/0 ]
+        firewall_protocols: [ tcp ]
+        firewall_ports: |
+          [ 22 ] + [
+            {% if item.name in hosts_orig.all.hosts %}
+              {{ hosts_orig.all.hosts[item.name].ansible_port | default('') }}
+            {% endif %}
+          ]
+      loop: "{{ molecule_yml.platforms }}"
+
+  roles:
+    - { role: vm, state: present }
+  tasks:
+
+    - name: instance configuration for molecule
+      set_fact:
+        instance_conf: |
+          [
+            {% for s in server.results %}
+            {
+               'instance': '{{ s.openstack.name }}',
+               'address': '{{ s.openstack.accessIPv4 }}',
+               'identity_file': '{{ ssh_private_keyfile }}',
+               'port': '{% if s.openstack.name in hosts_orig.all.hosts and hosts_orig.all.hosts[s.openstack.name].ansible_port is defined %}{{ hosts_orig.all.hosts[s.openstack.name].ansible_port }}{% else %}22{% endif %}',
+               'user': '{% if s.openstack.name in hosts_orig.all.hosts and hosts_orig.all.hosts[s.openstack.name].ansible_user is defined %}{{ hosts_orig.all.hosts[s.openstack.name].ansible_user }}{% else %}debian{% endif %}',
+            },
+            {% endfor %}
+          ]
+
+    - name: hosts updates for inventory
+      set_fact:
+        hosts_updates: |
+          {
+           'all': {
+            'hosts': {
+             {% for s in server.results %}
+              '{{ s.openstack.name }}':
+                {
+                  'ansible_port': '{% if s.openstack.name in hosts_orig.all.hosts and hosts_orig.all.hosts[s.openstack.name].ansible_port is defined %}{{ hosts_orig.all.hosts[s.openstack.name].ansible_port }}{% else %}22{% endif %}',
+                  'ansible_host': '{{ s.openstack.accessIPv4 }}',
+                  'ansible_user': '{% if s.openstack.name in hosts_orig.all.hosts and hosts_orig.all.hosts[s.openstack.name].ansible_user is defined %}{{ hosts_orig.all.hosts[s.openstack.name].ansible_user }}{% else %}debian{% endif %}',
+                },
+             {% endfor %}
+            }
+           }
+          }
+
+    - name: set the default domain to enough.community
+      copy:
+        content: |
+          domain: enough.community
+        dest: "../../inventories/common/group_vars/all/domain.yml"
+
+    - block:
+
+      - name: generate subdomain
+        shell: date +%s | rev | base32 | tr -d =
+        register: cmd
+  
+      - set_fact:
+          domain: "{{ cmd.stdout|lower }}.test.enough.community"
+  
+      - name: create NS record in test zone (requires access to bind-host.{{ production_domain }})
+        command: |
+          ssh -o BatchMode=yes \
+              -o StrictHostKeyChecking=no \
+              subdomain@ns1.{{ production_domain }} {{ hosts_updates['all']['hosts']['bind-host']['ansible_host'] }} {{ domain }}
+
+      - name: save the test sub-domain
+        copy:
+          content: |
+            domain: {{ domain }}
+          dest: "../../inventories/common/group_vars/all/domain.yml"
+
+      when: hosts_updates['all']['hosts']['bind-host'] is defined and (letsencrypt_nginx_staging | default(false))
+    
+    - name: Dump instance config
+      copy:
+        # NOTE(retr0h): Workaround for Ansible 2.2.
+        #               https://github.com/ansible/ansible/issues/20885
+        content: "{{ instance_conf | to_json | from_json | molecule_to_yaml | molecule_header }}"
+        dest: "{{ molecule_instance_config }}"
+
+    - name: Dump hosts_conf
+      copy:
+        content: "{{ hosts_orig | combine(hosts_updates, recursive=True) | to_yaml }}"
+        dest: "../../inventories/01-hosts.yml"

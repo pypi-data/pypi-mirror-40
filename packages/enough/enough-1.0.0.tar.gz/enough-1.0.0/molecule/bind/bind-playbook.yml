@@ -1,0 +1,96 @@
+---
+- name: setup DNS server
+  hosts: bind-host
+  become: True
+
+  roles:
+    - role: bind
+      bind_zone_name: "test.{{ domain }}"
+
+      bind_zone:
+        - |
+          $ORIGIN test.{{ domain }}.
+          $TTL 1W
+
+          @ IN SOA test.{{ domain }}. hostmaster.{{ domain }}. (
+          {{ bind_timestamp.stdout }}
+          1D
+          1H
+          1W
+          1D )
+
+                     IN  NS     ns1.{{ domain }}.
+          @ 1800 IN A {{ ansible_host }}
+
+    - role: bind
+      bind_zone_name: "{{ domain }}"
+      bind_master:
+        - |
+          options {
+            directory "/var/cache/bind";
+            auth-nxdomain no;    # conform to RFC1035
+            listen-on-v6 { any; };
+            allow-query { any; };
+            recursion yes;
+            allow-transfer  {
+              217.70.177.40; # ns6.gandi.net
+              {% if 'external-host' in hostvars %}
+              {{ hostvars['external-host'].ansible_host }};
+              {% endif %}
+            };
+            include "/etc/bind/named.conf.allow-recursion";
+          };
+
+          include "/etc/bind/named.conf.default-zones";
+
+          zone "{{ domain }}" IN {
+            type master;
+            file "{{ domain }}";
+            notify yes;
+            allow-update { localhost; };
+          };
+
+          zone "test.{{ domain }}" IN {
+            type master;
+            file "test.{{ domain }}";
+            allow-update { localhost; };
+            allow-transfer { "none"; };
+          };
+
+      bind_zone:
+        - |
+          $ORIGIN {{ domain }}.
+          $TTL 1W
+
+          @ IN SOA ns1.{{ domain }}. hostmaster.{{ domain }}. (
+          {{ bind_timestamp.stdout }}
+          1D
+          1H
+          1W
+          1D )
+
+                     IN  NS     ns1.{{ domain }}.
+                     IN  NS     ns6.gandi.net.
+
+          {% if 'website-host' in hostvars and hostvars['website-host'].ansible_host is defined  %}@ 1800 IN A {{ hostvars['website-host'].ansible_host }}{% endif %}
+
+          ns1 1800 IN A {{ ansible_host }}
+
+          ansible 1800 IN A 51.68.80.10
+
+          www 1800 IN CNAME {{ domain }}.
+
+          {% if 'gitlab-host' in hostvars and hostvars['gitlab-host'].ansible_host is defined %}lab 1800 IN A {{ hostvars['gitlab-host']['ansible_host'] }}{% endif %}
+
+          test 1800 IN NS ns1.{{ domain }}.
+
+          imap 1800 IN CNAME access.mail.gandi.net.
+          pop 1800 IN CNAME access.mail.gandi.net.
+          smtp 1800 IN CNAME relay.mail.gandi.net.
+
+          @ 1800 IN MX 50 fb.mail.gandi.net.
+          @ 1800 IN MX 10 spool.mail.gandi.net.
+
+          @ IN CAA 0 issue "letsencrypt.org"
+
+    - role: nsupdate_user

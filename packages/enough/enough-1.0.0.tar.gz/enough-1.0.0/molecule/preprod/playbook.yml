@@ -1,0 +1,11 @@
+---
+- import_playbook: ../firewall/firewall-playbook.yml
+- import_playbook: ../icinga/test-icinga-playbook.yml
+- import_playbook: ../letsencrypt-nginx/letsencrypt-nginx-playbook.yml
+- import_playbook: ../../enough-community-playbook.yml
+
+- name: display domain name
+  hosts: localhost
+  tasks:
+    - debug:
+        var: domain

@@ -1,0 +1,7 @@
+---
+- name: setup backup
+  hosts: backup-host
+  become: true
+
+  roles:
+    - backup

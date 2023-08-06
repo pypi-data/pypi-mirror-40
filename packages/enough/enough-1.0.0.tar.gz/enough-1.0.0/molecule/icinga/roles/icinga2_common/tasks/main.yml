@@ -1,0 +1,19 @@
+---
+- name: retrieve the process user name
+  shell: awk -F= '"ICINGA2_USER" == $1 {print $2}' /usr/lib/icinga2/icinga2
+  register: command_output
+  changed_when: False
+
+- set_fact:
+    icinga_user: "{{ command_output.stdout }}"
+
+- name: install check_git
+  copy:
+    src: files/check_git
+    dest: /usr/lib/nagios/plugins/check_git
+    mode: 0755
+
+- name: install sudo file for check_git
+  template:
+    dest: /etc/sudoers.d/icinga2_check_git
+    src: templates/icinga2_check_git

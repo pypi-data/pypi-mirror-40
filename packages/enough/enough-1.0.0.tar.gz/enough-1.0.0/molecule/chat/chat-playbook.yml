@@ -1,0 +1,22 @@
+---
+- name: prepare chat environment
+  hosts: chat-host
+
+  roles:
+    - { role: ansible-role-docker }
+    - { role: docker }
+    - { role: mattermost }
+
+    - role: letsencrypt-nginx
+      vars:
+        letsencrypt_nginx_reverse_proxy: 127.0.0.1:8000
+        letsencrypt_nginx_fqdn: "{{ chat_vhost_fqdn }}"
+
+    - role: monitor_http_vhost
+      http_vhost_https: true
+      http_vhost_name: Chat
+      http_vhost_fqdn: "{{ chat_vhost_fqdn }}"
+      http_vhost_uri: "/"
+      http_vhost_string: "Mattermost"
+
+  become: True

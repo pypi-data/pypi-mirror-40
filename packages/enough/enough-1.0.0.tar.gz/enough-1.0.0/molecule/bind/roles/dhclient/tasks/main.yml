@@ -1,0 +1,8 @@
+---
+- name: setup dhclient.conf
+  template:
+    src: dhclient.conf.j2
+    dest: /etc/dhcp/dhclient.conf
+
+- name: restart all interfaces to reload dhclient.conf and update /etc/resolv.conf
+  shell: "ifdown -a ; ifup -a"

@@ -1,0 +1,10 @@
+[console_scripts]
+enough = enough.cmd:main
+
+[enough.cli]
+create = enough.cli.create:Create
+
+[enough.internal.cli]
+build_enough_image = enough.internal.cli.docker:Build
+install = enough.internal.cli.install:InstallScript
+
