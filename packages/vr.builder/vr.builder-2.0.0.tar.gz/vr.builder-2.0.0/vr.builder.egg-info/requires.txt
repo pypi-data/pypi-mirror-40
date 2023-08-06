@@ -1,0 +1,15 @@
+vr.runners>=4
+path.py>=7.1
+yg.lockfile
+more_itertools
+vr.common>=6
+
+[docs]
+sphinx
+jaraco.packaging>=3.2
+rst.linker>=1.9
+
+[testing]
+pytest!=3.7.3,>=3.5
+pytest-checkdocs
+pytest-flake8
