@@ -1,0 +1,6 @@
+PyYAML
+tabulate
+
+[testing]
+pytest
+flexmock
