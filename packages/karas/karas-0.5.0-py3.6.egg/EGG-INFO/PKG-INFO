@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: karas
+Version: 0.5.0
+Summary: trainer for pytorch
+Home-page: https://github.com/TuXiaokang/karas.git
+Author: Xiaokang Tu
+Author-email: xiaokang.tu@qq.com
+License: MIT Licence
+Description: A chainer-like trainer framework for pytorch users.
+Keywords: karas,pytorch
+Platform: any
