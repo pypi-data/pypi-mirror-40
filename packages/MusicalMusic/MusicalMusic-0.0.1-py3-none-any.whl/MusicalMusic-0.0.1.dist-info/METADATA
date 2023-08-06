@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: MusicalMusic
+Version: 0.0.1
+Summary: Retrieve Sheet music from Musescore!
+Home-page: https://github.com/frankye8998/MusicalMusic/
+Author: Frank Ye
+Author-email: frankfrankfrankyeyeye@gmail.com
+License: GPL 3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: requests
+Requires-Dist: bs4
+
+UNKNOWN
+
+
