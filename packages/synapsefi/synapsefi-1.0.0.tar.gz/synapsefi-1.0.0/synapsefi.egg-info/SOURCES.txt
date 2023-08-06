@@ -1,0 +1,17 @@
+README.md
+setup.py
+synapsefi/__init__.py
+synapsefi/client.py
+synapsefi/endpoints.py
+synapsefi/errors.py
+synapsefi/http_client.py
+synapsefi/node.py
+synapsefi/subnet.py
+synapsefi/subscription.py
+synapsefi/transaction.py
+synapsefi/user.py
+synapsefi.egg-info/PKG-INFO
+synapsefi.egg-info/SOURCES.txt
+synapsefi.egg-info/dependency_links.txt
+synapsefi.egg-info/requires.txt
+synapsefi.egg-info/top_level.txt
