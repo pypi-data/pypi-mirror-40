@@ -1,0 +1,4 @@
+alpinepkgs
+click
+PyGithub>=1.43.4
+requests
