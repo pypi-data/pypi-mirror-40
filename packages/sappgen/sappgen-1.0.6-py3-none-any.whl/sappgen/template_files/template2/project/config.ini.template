@@ -1,0 +1,3 @@
+[LOGS]
+log_file = logs/$APP_NAME.log
+log_level = DEBUG

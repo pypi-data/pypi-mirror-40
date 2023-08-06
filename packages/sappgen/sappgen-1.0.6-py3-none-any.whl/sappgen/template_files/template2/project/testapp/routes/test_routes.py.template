@@ -1,0 +1,24 @@
+"""
+- TestRoute1:     /test-route-1
+"""
+import logging
+from flask.views import MethodView
+from flask import jsonify, request
+
+
+class TestRoute1(MethodView):
+
+    def post(self):
+        req = request.json
+        return_code = 0
+        message = "success"
+
+        try:
+            logging.info("processing test-route-1")
+        except Exception:
+            logging.exception("An error occurred while adding email.")
+            return_code = -1
+            message = "error"
+
+        resp = {"return_code": return_code, "message": message}
+        return jsonify(resp)

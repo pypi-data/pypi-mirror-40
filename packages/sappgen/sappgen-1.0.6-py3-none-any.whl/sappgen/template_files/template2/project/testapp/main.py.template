@@ -1,0 +1,49 @@
+import logging
+from configparser import ConfigParser
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+from .util import set_root_logger
+from .routes import TestRoute1
+
+
+# ==================================================================================================
+
+config = ConfigParser()
+config.read("config.ini")
+
+set_root_logger(config["LOGS"]["log_level"], config["LOGS"]["log_file"])
+
+app = Flask("$APP_NAME::main")
+CORS(app)
+
+# ==================================================================================================
+
+
+@app.before_request
+def log_request():
+    logging.info("Headers: %s", str(request.headers))
+    logging.info("Body: %s", request.get_data())
+    logging.info(request)
+
+
+@app.route("/", methods=["GET"])
+def ping():
+    resp = {"return_code": 0, "message": "success"}
+    return jsonify(resp)
+
+
+@app.errorhandler(500)
+def server_error(e):
+    logging.exception("An error occurred during a request.")
+    return (
+        """
+    An internal error occurred: <pre>{}</pre>
+    See logs for full stacktrace.
+    """.format(
+            e
+        ),
+        500,
+    )
+
+
+app.add_url_rule("/test-route-1", view_func=TestRoute1.as_view("test-route-1"))
