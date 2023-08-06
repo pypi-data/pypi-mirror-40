@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: chatql
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/katsugeneration
+License: UNKNOWN
+Author: katsugeneration
+Author-email: katsu.generation.888@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: flask[server] (>=1.0,<2.0)
+Requires-Dist: graphene (>=2.1,<3.0)
+Requires-Dist: line-bot-sdk[line] (>=1.8,<2.0)
+Requires-Dist: mongoengine (>=0.16.3,<0.17.0)
+Project-URL: Repository, https://github.com/katsugeneration/chatql
+Description-Content-Type: text/markdown
+
+# ChatQL
+GraphQL based chat engine
+
+## Dependencies
+This module depend following system environment.
+
+- python >= 3.6
+- mongodb >= 4.0
+
+Following dependency python modules are installed when `pip install`.
+
+- graphene >= 2.1
+- mongoengine >= 0.16.3
+
+## Demo
+You clone this repository and run following commands.
+
+After, you can access GraphQL interface `POST localhost:8080/graphql`.
+
+Please check response by GraphQL tool (ex: [GraphiQL](https://electronjs.org/apps/graphiql)).
+```
+docker build ./demo -t chatql
+docker run -p 8080:5000 -it chatql
+```
+
+## TODO
+- Application Function
+    - [ ] Response Generator with Template Engine
+    - [ ] Extract Entity with Template Matching
+    - [ ] Non Text Query
+    - [ ] Intent Estimator with Machine Learning
+    - [ ] Extract Entity with Machine Learning
+- Document
+    - [ ] API Docs 
+    - [ ] Conditions Pattern Docs
+    - [ ] Response Docs
+
+## License
+MIT License.
