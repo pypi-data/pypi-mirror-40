@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: genie.webdriver
+Version: 2.0.0
+Summary: A collection of tools and base classes intended to simplify and standardize how automation engineers develop Selenium based libraries
+Home-page: http://wwwin-genie.cisco.com/
+Author: Cisco Systems Inc.
+Author-email: asg-genie-support@cisco.com
+License: Cisco Systems, Inc. Cisco Confidential
+Keywords: genie pyats test automation webdriver
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: dev
+Requires-Dist: selenium
+Provides-Extra: dev
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: restview; extra == 'dev'
+Requires-Dist: Sphinx; extra == 'dev'
+Requires-Dist: sphinxcontrib-napoleon; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme; extra == 'dev'
+
+A package containing a collection of tools and base classes intended to simplify and standardize how automation engineers develop Selenium based libraries.
+
+Also includes a pyATS connection class implementation that allows pyATS scripts to connect to web browsers through Selenium using the topology/YAML format.
+
+
