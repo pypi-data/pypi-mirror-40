@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: etiqa-pytractor
+Version: 0.2.1.1
+Summary: Pytractor fork (obsolete and no longer maintained) by Etiqa s.r.l.
+Home-page: https://github.com/kpodl/pytractor
+Author: Etiqa s.r.l.
+Author-email: fabio@etiqa.it
+License: Apache 2.0
+Keywords: selenium angular.js testing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: selenium (>=3.6.0)
+Requires-Dist: future (>=0.16.0)
+
+pytractor provides utilities for testing Angular.js applications with selenium for Python. Selenium webdrivers are extended with functionality for dealing with Angular.js applications.
+
+pytractor uses scripts provided by protractor (the javascript testing framework for Angular.js).
+
+

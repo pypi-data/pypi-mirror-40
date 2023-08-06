@@ -1,0 +1,11 @@
+# THIS FILE HAS BEEN MODIFIED BY ETIQA S.R.L.
+
+Software Credits
+
+This software is a fork of pytractor (https://github.com/kpodl/pytractor):
+pytractor is licensed under the the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
+
+This software contains parts of protractor:
+Protractor by Google Inc. https://github.com/angular/protractor
+Licensed Under: MIT License
+protractor is Copyright (c) 2010-2014 Google, Inc. and licensed under the MIT license. See the respective directory for a copy of the license.
