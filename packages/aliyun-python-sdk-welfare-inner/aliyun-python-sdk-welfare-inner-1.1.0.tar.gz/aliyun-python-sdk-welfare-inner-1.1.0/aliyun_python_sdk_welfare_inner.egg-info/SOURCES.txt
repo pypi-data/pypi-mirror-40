@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+aliyun_python_sdk_welfare_inner.egg-info/PKG-INFO
+aliyun_python_sdk_welfare_inner.egg-info/SOURCES.txt
+aliyun_python_sdk_welfare_inner.egg-info/dependency_links.txt
+aliyun_python_sdk_welfare_inner.egg-info/requires.txt
+aliyun_python_sdk_welfare_inner.egg-info/top_level.txt
+aliyunsdkwelfare_inner/__init__.py
+aliyunsdkwelfare_inner/request/__init__.py
+aliyunsdkwelfare_inner/request/v20180524/DoCheckResourceRequest.py
+aliyunsdkwelfare_inner/request/v20180524/DoLogicalDeleteResourceRequest.py
+aliyunsdkwelfare_inner/request/v20180524/DoPhysicalDeleteResourceRequest.py
+aliyunsdkwelfare_inner/request/v20180524/GetWelfareGeekInfoRequest.py
+aliyunsdkwelfare_inner/request/v20180524/__init__.py
