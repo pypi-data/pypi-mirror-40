@@ -1,0 +1,7 @@
+starlette
+uvicorn
+jinja2
+whitenoise
+requests
+parse
+websockets>=6.0
