@@ -1,0 +1,9 @@
+README.md
+setup.py
+openrpa/__init__.py
+openrpa/run.py
+openrpa.egg-info/PKG-INFO
+openrpa.egg-info/SOURCES.txt
+openrpa.egg-info/dependency_links.txt
+openrpa.egg-info/entry_points.txt
+openrpa.egg-info/top_level.txt

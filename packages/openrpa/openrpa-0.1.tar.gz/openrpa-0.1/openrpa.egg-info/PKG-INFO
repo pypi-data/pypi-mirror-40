@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: openrpa
+Version: 0.1
+Summary: OpenRPA
+Home-page: http://github.com/robocorp/openrpa
+Author: Orlof
+Author-email: orlof@users.noreply.github.com
+License: Apache License 2.0
+Description: # openrpa
+Keywords: python,robotframework,rpa
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
