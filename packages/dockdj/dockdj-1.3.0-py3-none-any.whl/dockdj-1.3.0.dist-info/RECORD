@@ -1,0 +1,15 @@
+dockdj/__init__.py,sha256=F5mW07pSyGrqDNY2Ehr-UpDzpBtN-FsYU0QGZWf6PJE,22
+dockdj/__main__.py,sha256=Xh-q0LxRTRxUyJCsEzoTlz0dvZHdHnoAQ-dzxauYqsw,1352
+dockdj/deploy.py,sha256=EBl_4g6Mqgwy0nY9y7BHaX2FVo8MhL9ePO0KhZcfRL4,5945
+dockdj/docker.txt,sha256=nyI3f_S_H7c6AEsmfb_47ZCtZpTe1pVyq7G2S4-p3aY,335
+dockdj/du_settings.py,sha256=hNvYGIztp5ojUNtqGUSot3qrqSlV64g8TJ-tBhwmQpM,61
+dockdj/init.py,sha256=ieHiW2GdFpHDZWNLb_0tXssT7119Klis8l2GukwE5w0,1113
+dockdj/logs.py,sha256=3am5w0gwGFjrSRXVbnoxvLX-q0ORkqAcQ0gQ_0Rkbxc,782
+dockdj/nginx.txt,sha256=N3x99Fg2OWNbduL0lJCtZAtwZiy8QoOjYotibjoAJR8,915
+dockdj/setup.py,sha256=tzXriN8cNpZjvJOJg6ts9ntksDYFLekNeEdV_auOOG8,1478
+dockdj/util.py,sha256=n146mumPoz9zi-_FtA7etOO89BEA2TZbOaMdtyuVWJU,649
+dockdj-1.3.0.dist-info/METADATA,sha256=lNKjg5UyT6e9bxWTdu_xdQ0HYDlXuuUk_Dyc9wD6olE,3432
+dockdj-1.3.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+dockdj-1.3.0.dist-info/entry_points.txt,sha256=5JKIy6Qz8nXX9rX9PtRmgczcvfHlEWT2QUcY-xZMQUw,49
+dockdj-1.3.0.dist-info/top_level.txt,sha256=I8P2WCO44egcrFhcuFFjjBoMM7XQ7L5NuP8szNCEesc,7
+dockdj-1.3.0.dist-info/RECORD,,
