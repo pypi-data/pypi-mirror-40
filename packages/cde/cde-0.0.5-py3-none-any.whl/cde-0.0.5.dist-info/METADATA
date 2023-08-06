@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cde
+Version: 0.0.5
+Summary: Framework for conditional density estimation
+Home-page: https://jonasrothfuss.github.io/Nonparametric_Density_Estimation
+Author: Jonas Rothfuss, Fabio Ferreira
+Author-email: jonas.rothfuss@gmx.de, fabioferreira@mailbox.org
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Keras
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tensorflow
+Requires-Dist: matplotlib
+Requires-Dist: edward
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Requires-Dist: pytest
+Requires-Dist: scikit-learn
+Requires-Dist: statsmodels
+Requires-Dist: pypmc
+
+UNKNOWN
+
+
