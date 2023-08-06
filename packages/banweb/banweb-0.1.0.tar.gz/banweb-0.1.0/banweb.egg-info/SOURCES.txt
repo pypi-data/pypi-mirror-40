@@ -1,0 +1,8 @@
+README.md
+setup.py
+banweb/__init__.py
+banweb.egg-info/PKG-INFO
+banweb.egg-info/SOURCES.txt
+banweb.egg-info/dependency_links.txt
+banweb.egg-info/requires.txt
+banweb.egg-info/top_level.txt
