@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Inline Source &mdash; Envoy Control Plane 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Service Broker source" href="service_broker.html" />
+    <link rel="prev" title="File Source" href="file.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Envoy Control Plane
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/stats.html">Statistics</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../internals.html">Internals</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../app.html">Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../config_loader.html">Configuration Loader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../discovery.html">Discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sources.html">Sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lib.html">Source abstract class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file.html">File Source</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Inline Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service_broker.html">Service Broker source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modifiers.html">Modifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modifiers/lib.html">Modifier abstract class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modifiers/micros.html">Micros modifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../decorators.html">Decorators</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Envoy Control Plane</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../internals.html">Internals</a> &raquo;</li>
+        
+          <li><a href="../sources.html">Sources</a> &raquo;</li>
+        
+      <li>Inline Source</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/internals/sources/inline.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="module-sovereign.sources.inline"></span><div class="section" id="inline-source">
+<h1>Inline Source<a class="headerlink" href="#inline-source" title="Permalink to this headline">¶</a></h1>
+<p>Example configuration (YAML):</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">sources</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">inline</span>
+    <span class="nt">config</span><span class="p">:</span>
+      <span class="nt">instances</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="nt">instance_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my_service</span>
+          <span class="nt">service_clusters</span><span class="p">:</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">P2</span>
+          <span class="nt">parameters</span><span class="p">:</span>
+            <span class="nt">upstream_address</span><span class="p">:</span>
+              <span class="p p-Indicator">-</span> <span class="nt">address</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">service.domain.com</span>
+                <span class="nt">region</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">us-east-1</span>
+          <span class="nt">plan_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">7d57270a-0348-58d3-829d-447a98fe98d5</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="sovereign.sources.inline.Inline">
+<em class="property">class </em><code class="descclassname">sovereign.sources.inline.</code><code class="descname">Inline</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#sovereign.sources.inline.Inline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="lib.html#sovereign.sources.lib.Source" title="sovereign.sources.lib.Source"><code class="xref py py-class docutils literal notranslate"><span class="pre">sovereign.sources.lib.Source</span></code></a></p>
+<dl class="method">
+<dt id="sovereign.sources.inline.Inline.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sovereign.sources.inline.Inline.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the data passed via configuration</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="service_broker.html" class="btn btn-neutral float-right" title="Service Broker source" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="file.html" class="btn btn-neutral" title="File Source" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vasilios Syrakis
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
