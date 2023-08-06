@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hbt
+Version: 5.0.3
+Summary: rbt wrapper
+Home-page: UNKNOWN
+Author: Bergkamp.Zhou
+Author-email: zxhmilu0811@gmail.com
+License: MIT Licence
+Keywords: pip,rbt
+Platform: any
+Requires-Dist: RBTools (>=0.7.9)
+Requires-Dist: jira (>=1.0.10)
+Requires-Dist: click (>=6.7)
+
+rbt wrapper for review board
+
+

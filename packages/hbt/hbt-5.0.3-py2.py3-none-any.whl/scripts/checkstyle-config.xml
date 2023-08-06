@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE module PUBLIC
+    "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+    "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+    <property name="severity" value="warning" />
+
+    <!-- 文件长度不超过2000行,default2000行 -->
+    <module name="FileLength" />
+    <module name="FileTabCharacter" />
+    <module name="SuppressWarningsFilter" />
+    <module name="TreeWalker">
+
+        <!-- Checks for whitespace                               -->
+        <!-- See http://checkstyle.sf.net/config_whitespace.html -->
+        <module name="Indentation">
+            <property name="arrayInitIndent" value="8" />
+            <property name="lineWrappingIndentation" value="8" />
+        </module>
+        <module name="GenericWhitespace" />
+        <module name="EmptyForIteratorPad" />
+        <module name="MethodParamPad" />
+        <module name="NoWhitespaceAfter" />
+        <module name="NoWhitespaceBefore" />
+        <module name="OperatorWrap" />
+        <module name="ParenPad" />
+        <module name="TypecastParenPad" />
+        <module name="WhitespaceAfter" />
+        <module name="WhitespaceAround" />
+
+        <!-- Checks for blocks. You know, those {}'s         -->
+        <!-- See http://checkstyle.sf.net/config_blocks.html -->
+        <!-- 检查左侧大括号 左侧大括号必须放在前一行代码的行尾 -->
+        <module name="LeftCurly">
+            <property name="severity" value="warning" />
+            <message key="line.previous" value="左侧大括号必须放在前一行代码的行尾，不计入到100个字符内" />
+        </module>
+
+        <!-- 对关键字else、try和catch的右侧大括号放置位置进行检查 -->
+        <module name="RightCurly">
+            <property name="severity" value="warning" />
+            <!--与下一语句放在同一行 -->
+            <property name="option" value="same" />
+        </module>
+        <module name="NeedBraces">
+            <property name="tokens" value="LITERAL_DO, LITERAL_IF, LITERAL_ELSE, LITERAL_FOR, LITERAL_WHILE" />
+        </module>
+
+        <!--注解设置-->
+        <module name="AnnotationUseStyle">
+            <!--注解的参数样式 忽略-->
+            <property name="elementStyle" value="ignore" />
+            <!--是否在数组元素后尾随逗号 忽略 -->
+            <property name="trailingArrayComma" value="ignore" />
+            <!--检查是否保留结束括号 忽略 -->
+            <property name="closingParens" value="ignore" />
+        </module>
+
+        <!-- 命名规范 -->
+        <!-- 类,接口的命名,匹配规则默认:(^[A-Z][a-zA-Z0-9]*$),必须以大写字母开始 -->
+        <module name="TypeName" />
+
+        <!-- 变量的检查 匹配规则 非static的member是 m开头，然后是大写字母 再是其他-->
+        <module name="MemberName">
+            <property name="format" value="^m[A-Z][a-zA-Z0-9]*$" />
+            <property name="applyToPublic" value="false" />
+        </module>
+        <!-- 方法名的检查 匹配规则默认^[a-z][a-zA-Z0-9]*$ 范围：方法名 命名为小写-->
+        <module name="MethodName" />
+        <!-- 方法的参数名 匹配规则默认^[a-z][a-zA-Z0-9]*$ 范围：方法中的参数名 命名为小写-->
+        <module name="ParameterName " />
+        <!-- 常量名的检查 匹配规则默认^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$ 范围：常量(static , final 字段) 命名为大写-->
+        <module name="ConstantName" />
+        <!-- static 非final的变量 -->
+        <module name="StaticVariableName">
+            <property name="format" value="^s[A-Z][a-zA-Z0-9]*$" />
+        </module>
+
+        <!-- 限制导入.*包的检查 -->
+        <module name="AvoidStarImport">
+            <!-- 实例；import java.util.*;.-->
+            <property name="allowClassImports" value="false" />
+            <!-- 实例 ；import static org.junit.Assert.*;-->
+            <property name="allowStaticMemberImports" value="true" />
+        </module>
+
+        <!-- 限制导入多余的包,例如java.lang.String -->
+        <module name="RedundantImport" />
+
+        <!-- 限制导入未使用过的类 -->
+        <module name="UnusedImports">
+            <property name="processJavadoc" value="true" />
+        </module>
+
+        <!--代码规范-->
+        <!-- 每行不超过120-->
+        <module name="LineLength">
+            <property name="max" value="120" />
+            <!--
+                Ignore Javadoc comments since references to other elements (@see
+                tag, etc.) may get rather long and should not be truncated.
+            -->
+            <property name="ignorePattern" value="^ *\* *[^ ]+$"/>
+        </module>
+
+        <!-- 即制方法和构造函数行数不超过多少行,默认160行(不包括空行) -->
+        <module name="MethodLength">
+            <property name="countEmpty" value="false" />
+            <property name="tokens" value="METHOD_DEF,CTOR_DEF" />
+            <property name="max" value="160" />
+        </module>
+
+        <!-- 不能出现大块空白区域 -->
+        <module name="GenericWhitespace" />
+
+        <!-- 检查是否有未初始化的循环变量 -->
+        <module name="EmptyForInitializerPad" />
+
+        <!-- 不许出现空语句 int a = 0; //正常 ; // 这里就是一个空的语句 -->
+        <module name="EmptyStatement" />
+
+        <!-- 不能容忍魔法数,范围 double，int 忽略0,1 -->
+        <module name="MagicNumber">
+            <property name="tokens" value="NUM_DOUBLE, NUM_FLOAT" />
+            <property name="ignoreNumbers" value="0,1" />
+            <property name="ignoreAnnotation" value="true" />
+        </module>
+
+        <!-- String的比较不能用!= 和 == -->
+        <module name="StringLiteralEquality" />
+
+        <!-- 限制for循环最多嵌套3层 -->
+        <module name="NestedForDepth">
+            <property name="max" value="3" />
+        </module>
+
+        <!-- if最多嵌套5层 -->
+        <module name="NestedIfDepth">
+            <property name="max" value="5" />
+        </module>
+
+        <!-- 同一行不能有多个声明 -->
+        <module name="MultipleVariableDeclarations" />
+
+        <!-- 检查数组声明风格 只能为java 例如: String[] args -->
+        <module name="ArrayTypeStyle" />
+
+        <!--避免 null.equals("sss")情况-->
+        <module name="EqualsAvoidNull" />
+
+        <!-- 异常抛出数量定义 -->
+        <module name="ThrowsCount">
+            <metadata name="net.sf.eclipsecs.core.comment" value="最大异常抛出个数" />
+            <property name="max" value="3" />
+        </module>
+
+        <!-- 参数个数定义 最多7个
+        <module name="ParameterNumber">
+            <property name="max" value="7" />
+        </module>
+        -->
+
+        <!--try catch 异常处理数量 1-->
+        <module name="NestedTryDepth ">
+            <property name="max" value="1" />
+        </module>
+
+        <module name="SuppressWarningsHolder" />
+    </module>
+
+</module>
