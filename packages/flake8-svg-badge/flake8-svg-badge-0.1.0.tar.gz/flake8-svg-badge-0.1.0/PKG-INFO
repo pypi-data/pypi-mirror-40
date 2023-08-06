@@ -1,0 +1,56 @@
+Metadata-Version: 1.1
+Name: flake8-svg-badge
+Version: 0.1.0
+Summary: Svg badge that shows % of problem-free code
+Home-page: https://github.com/ribozz/flake8-svg-badge
+Author: Alex Rudakov
+Author-email: ribozz@gmail.com
+License: MIT
+Description: =============================
+        flake8-svg-badge
+        =============================
+        
+        .. image:: https://badge.fury.io/py/flake8-svg-badge.png
+            :target: http://badge.fury.io/py/flake8-svg-badge
+        
+        .. image:: https://travis-ci.org/ribozz/flake8-svg-badge.png?branch=master
+            :target: https://travis-ci.org/ribozz/flake8-svg-badge
+        
+        Svg badge that shows % of problem-free code
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        
+        
+        
+        Documentation
+        -------------
+        
+        The full documentation is at http://flake8-svg-badge.rtfd.org.
+        
+        
+        
+        History
+        -------
+        
+        0.1.0 (2019-01-12)
+        ++++++++++++++++++
+        
+        * First release on PyPI.
+        
+Keywords: flake8-svg-badge
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
