@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: insta-scraper
+Version: 1.0.7
+Summary: A Python tool to download instagram photos/videos/stories.
+Home-page: UNKNOWN
+Author: Naveen Tummidi
+Author-email: naveentummidi0807@gmail.com
+License: MIT
+Project-URL: Funding, https://donate.pypi.org
+Keywords: instagram instagram-scraper
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: wget
+Requires-Dist: argparse
+
+# Instagram Photos/Videos downloader
+
+A python tool to download instagram user's photos/videos/stories.
+
+## Usage
+
+```
+insta-scraper -u YOUR_INSTAGRAM_USERNAME -f FRIEND'S_USERNAME
+```
+
+
