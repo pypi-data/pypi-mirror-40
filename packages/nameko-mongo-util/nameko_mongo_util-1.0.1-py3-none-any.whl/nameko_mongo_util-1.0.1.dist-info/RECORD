@@ -1,0 +1,7 @@
+nameko_mongo_util/__init__.py,sha256=seLYgY96f66cgGbOwRphh_QLWG-Ima6seFEcFcIXrRc,116
+nameko_mongo_util/mongo_provider.py,sha256=de3J17xWaq1qTSZsSRvuddB3DcQ7xiwokltv--WLYnc,1428
+nameko_mongo_util/mongo_util.py,sha256=F5ijyFwTvCJZNYQeqVaRo7apy-UEITctuU9jr3VE70E,8921
+nameko_mongo_util-1.0.1.dist-info/METADATA,sha256=9Wjditc8YCBDH9xOkq6eYrEKvuRmGFHXCghZ_QFOAqg,825
+nameko_mongo_util-1.0.1.dist-info/RECORD,,
+nameko_mongo_util-1.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+nameko_mongo_util-1.0.1.dist-info/top_level.txt,sha256=Zf7aVJuUmIUO9qVQfS5WZDFGrgR6ng_L7ljJeuRHXXU,18
