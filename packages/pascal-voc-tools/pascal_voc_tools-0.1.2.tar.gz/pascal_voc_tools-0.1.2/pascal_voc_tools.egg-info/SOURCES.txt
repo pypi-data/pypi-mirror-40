@@ -1,0 +1,12 @@
+README.md
+setup.py
+pascal_voc_tools/__init__.py
+pascal_voc_tools/datasplit.py
+pascal_voc_tools/resize.py
+pascal_voc_tools/xmlreader.py
+pascal_voc_tools/xmlwriter.py
+pascal_voc_tools.egg-info/PKG-INFO
+pascal_voc_tools.egg-info/SOURCES.txt
+pascal_voc_tools.egg-info/dependency_links.txt
+pascal_voc_tools.egg-info/requires.txt
+pascal_voc_tools.egg-info/top_level.txt
