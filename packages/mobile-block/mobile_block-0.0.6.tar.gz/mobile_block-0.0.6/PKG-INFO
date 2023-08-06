@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: mobile_block
+Version: 0.0.6
+Summary: MobileNet-style blocks for PyTorch
+Home-page: https://github.com/SF-Zhou/mobile-block
+Author: SF-Zhou
+Author-email: sfzhou.scut@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: MobileNet Block PyTorch
+Platform: UNKNOWN
