@@ -1,0 +1,3 @@
+[console_scripts]
+inside_out_proxy = inside_out_proxy.app:run
+
