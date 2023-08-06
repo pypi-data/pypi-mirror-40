@@ -1,0 +1,4 @@
+[console_scripts]
+prepuller = jupyterutils.prepuller:standalone
+scanrepo = jupyterutils.scanrepo:standalone
+
