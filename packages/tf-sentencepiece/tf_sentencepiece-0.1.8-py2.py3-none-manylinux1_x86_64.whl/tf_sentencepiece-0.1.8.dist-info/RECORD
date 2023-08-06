@@ -1,0 +1,12 @@
+tf_sentencepiece/__init__.py,sha256=F1v-SCqm1XiMiQOYu4mxmTG1JndYKGsilbk6BPyUXcI,169
+tf_sentencepiece/_sentencepiece_processor_ops.so.1.10.0,sha256=9gabIxj-bWgQs3eq0cfYwvJVIIWTZoa3kvTa4CrpBi8,918296
+tf_sentencepiece/_sentencepiece_processor_ops.so.1.11.0,sha256=A4uQazTOa3uKh5bizi7mx0qnTilVENCR3b2eIAOrrF4,918328
+tf_sentencepiece/_sentencepiece_processor_ops.so.1.12.0,sha256=QYk-4eazNTpvoCSMVyOk2cdkhk1WjWZGhSUjv7tZ7PI,922456
+tf_sentencepiece/_sentencepiece_processor_ops.so.1.7.0,sha256=7fa_kOSx8NKiJCpZQIrA5UkoqcI7i7MkA2Q4jrOn55E,918328
+tf_sentencepiece/_sentencepiece_processor_ops.so.1.8.0,sha256=PWD50SVAO7Gs30Cy7JfOB2cwU_2vr9TfX8yed3XWBiM,918328
+tf_sentencepiece/_sentencepiece_processor_ops.so.1.9.0,sha256=rKrZAdBJdYItouEZty2ltObnk_b_NHNp6S92Og_a8_k,918296
+tf_sentencepiece/sentencepiece_processor_ops.py,sha256=j4qSPvdBQJg_7EuPA9hOUvwQPXAXmXDKNDeT4HP50Mk,10609
+tf_sentencepiece-0.1.8.dist-info/METADATA,sha256=_FSLJO9OEGIQMoTzWBHWhpHYyE4p864___gQxCh1jmI,778
+tf_sentencepiece-0.1.8.dist-info/WHEEL,sha256=amWsVT_yWoDdMdHiOMVkM8Xb75BkkyCHF5aiRhnofGA,138
+tf_sentencepiece-0.1.8.dist-info/top_level.txt,sha256=ZE6VozkXvg6HvkG4yR3L8VfyH9Lo1DOA7w1pmJsSDvA,17
+tf_sentencepiece-0.1.8.dist-info/RECORD,,
