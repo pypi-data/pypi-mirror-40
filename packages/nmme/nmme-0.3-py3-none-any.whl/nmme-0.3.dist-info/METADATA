@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nmme
+Version: 0.3
+Summary: NMME pip install script
+Home-page: https://nemoest.com
+Author: Nemo Est
+Author-email: nemo_est@outlook.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
