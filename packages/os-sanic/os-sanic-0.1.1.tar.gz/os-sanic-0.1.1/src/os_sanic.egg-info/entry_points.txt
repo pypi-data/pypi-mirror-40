@@ -1,0 +1,3 @@
+[console_scripts]
+os-sanic = os_sanic.manage:main
+
