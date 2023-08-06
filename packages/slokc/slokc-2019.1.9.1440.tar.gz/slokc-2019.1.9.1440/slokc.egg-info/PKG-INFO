@@ -1,0 +1,62 @@
+Metadata-Version: 1.0
+Name: slokc
+Version: 2019.1.9.1440
+Summary: Kelvin Building automated Wi-Fi login program
+Home-page: https://github.com/wdbm/suck_lord_kelvin_cock
+Author: Will Breaden Madden
+Author-email: wbm@protonmail.ch
+License: GPLv3
+Description: suck\_lord\_kelvin\_cock
+        ========================
+        
+        This is an automated Wi-Fi login program for the Kelvin Building. It has
+        a store of some passcodes. Beyond this, it has a passcode command line
+        option.
+        
+        setup
+        =====
+        
+        .. code:: bash
+        
+            sudo pip install slokc
+        
+        To set up globally a Linux desktop launcher with icon, execute the
+        following:
+        
+        .. code:: bash
+        
+            sudo wget --content-disposition -N -P /usr/share/icons/ https://raw.githubusercontent.com/wdbm/suck_lord_kelvin_cock/master/slokc/static/cock.svg
+        
+            sudo wget --content-disposition -N -P /usr/share/applications/ https://raw.githubusercontent.com/wdbm/suck_lord_kelvin_cock/master/slokc/static/suck_lord_kelvin_cock.desktop
+        
+        usage
+        =====
+        
+        General usage using stored passcodes is as follows:
+        
+        .. code:: bash
+        
+            suck_lord_kelvin_cock
+        
+        Manual passcode specification can be made in a way like the following:
+        
+        .. code:: bash
+        
+            suck_lord_kelvin_cock --passcode="dfae91"
+        
+        A help message is accessible in the following way:
+        
+        .. code:: bash
+        
+            suck_lord_kelvin_cock --help
+        
+        .. figure:: https://i.imgur.com/yNKzPh7.png
+           :alt: 
+        
+        passcodes
+        =========
+        
+        A source for passcodes is here:
+        http://www.physics.gla.ac.uk/dept-only/wlesscodes/
+        
+Platform: UNKNOWN

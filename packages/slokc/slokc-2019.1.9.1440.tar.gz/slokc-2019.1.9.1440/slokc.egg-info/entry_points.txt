@@ -1,0 +1,3 @@
+[console_scripts]
+suck_lord_kelvin_cock = slokc.__init__:main
+
