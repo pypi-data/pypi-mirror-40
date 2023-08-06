@@ -1,0 +1,3 @@
+[console_scripts]
+pywmi-install = pywmi.install:main
+
