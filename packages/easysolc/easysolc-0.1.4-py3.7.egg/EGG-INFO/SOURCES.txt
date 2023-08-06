@@ -1,0 +1,9 @@
+README.md
+setup.py
+easysolc/__init__.py
+easysolc/easysolc.py
+easysolc.egg-info/PKG-INFO
+easysolc.egg-info/SOURCES.txt
+easysolc.egg-info/dependency_links.txt
+easysolc.egg-info/not-zip-safe
+easysolc.egg-info/top_level.txt
