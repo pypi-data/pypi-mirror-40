@@ -1,0 +1,4 @@
+[console_scripts]
+credit = kit.credit_pay:main
+mizlicai = mizlicai.mkit:main
+
