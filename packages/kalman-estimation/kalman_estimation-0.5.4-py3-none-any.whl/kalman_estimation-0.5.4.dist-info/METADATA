@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: kalman-estimation
+Version: 0.5.4
+Summary: Kalman filter based coefficient estimation toolbox.
+Home-page: https://github.com/AutuanLiu/Kalman-Filter
+Author: Autuan Liu
+Author-email: autuanliu@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: filterpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: yapf
+Requires-Dist: torch (>=1.0)
+
+# Kalman filter estimation
+
+```bash
+Email: autuanliu@163.com
+```
+[![Build Status](https://dev.azure.com/AutuanLiu/Kalman%20Filter/_apis/build/status/AutuanLiu.Kalman-Filter?branchName=master&jobName=Test&configuration=Python36)](https://dev.azure.com/AutuanLiu/Kalman%20Filter/_build/latest?definitionId=1?branchName=master)
+
+![](https://img.shields.io/pypi/dm/kalman-estimation.svg)
+![](https://img.shields.io/github/repo-size/badges/shields.svg)
+![](https://img.shields.io/github/license/AutuanLiu/Kalman-Filter.svg)
+![](https://img.shields.io/github/release/AutuanLiu/Kalman-Filter.svg)
+![](https://img.shields.io/pypi/v/kalman-estimation.svg)
+![](https://img.shields.io/pypi/pyversions/kalman-estimation.svg)
+
+[Chinese Docs](https://www.yuque.com/xk6dxn/drboi7)
+
+[Wiki](https://github.com/AutuanLiu/Kalman-Filter/wiki)
+
+[README](https://dev.azure.com/AutuanLiu/Kalman%20Filter/_wiki/wikis/Kalman-Filter.wiki?wikiVersion=GBwikiMaster&pagePath=%2FKalman%20filter%20estimation)
+
+
