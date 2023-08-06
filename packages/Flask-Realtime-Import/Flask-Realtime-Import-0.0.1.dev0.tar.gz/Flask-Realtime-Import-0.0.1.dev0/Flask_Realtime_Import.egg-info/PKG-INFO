@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: Flask-Realtime-Import
+Version: 0.0.1.dev0
+Summary: import the modules in every request
+Home-page: https://github.com/caimaoy/flask-realtime-import
+Author: caimaoy
+Author-email: i@caimaoy.com
+License: BSD
+Description: 
+        Flask-Realtime-Import
+        -------------
+        
+        import the modules in every request if you need
+        
+Keywords: flask,realtime,import
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
