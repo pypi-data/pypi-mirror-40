@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: prysm
+Version: 0.14.0
+Summary: A python optics module
+Home-page: https://github.com/brandondube/prysm
+Author: Brandon Dube
+Author-email: brandondube@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: mx
+Requires-Dist: h5py ; extra == 'mx'
+Provides-Extra: cpu_
+Requires-Dist: numba ; extra == 'cpu_'
+Provides-Extra: cuda
+Requires-Dist: cupy ; extra == 'cuda'
+Provides-Extra: deconv
+Requires-Dist: scikit-image ; extra == 'deconv'
+Provides-Extra: deluxe
+Requires-Dist: numba ; extra == 'deluxe'
+Requires-Dist: cupy ; extra == 'deluxe'
+Requires-Dist: h5py ; extra == 'deluxe'
+Requires-Dist: iamgeio ; extra == 'deluxe'
+Requires-Dist: pandas ; extra == 'deluxe'
+Requires-Dist: scikit-image ; extra == 'deluxe'
+Requires-Dist: matplotlib ; extra == 'deluxe'
+Provides-Extra: img
+Requires-Dist: imageio ; extra == 'img'
+Provides-Extra: mtf_
+Requires-Dist: pandas ; extra == 'mtf_'
+Provides-Extra: plotting
+Requires-Dist: matplotlib ; extra == 'plotting'
+
+Uses geometrical and fourier optics to model optical systems
+
+
