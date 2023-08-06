@@ -1,0 +1,4 @@
+jupyter_client
+IPython
+ipykernel
+pexpect>=4.0
