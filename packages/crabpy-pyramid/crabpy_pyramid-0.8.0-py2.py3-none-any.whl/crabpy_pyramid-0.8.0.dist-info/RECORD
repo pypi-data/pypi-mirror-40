@@ -1,0 +1,17 @@
+crabpy_pyramid/__init__.py,sha256=79ahNx7wrVwgb4VMum7j6iR9mQwgXPs5_fKH5KpCSu4,8649
+crabpy_pyramid/utils.py,sha256=nfHy_DTGwXgnt65SEOm4zcNLkEzaFFw21Vx-JDTX5xM,2735
+crabpy_pyramid/renderers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crabpy_pyramid/renderers/capakey.py,sha256=DkxzXEtVPNjcr07ji2i5QaaMzyac5JWYJPMoat6F4gQ,3701
+crabpy_pyramid/renderers/crab.py,sha256=eSmdybX0i-8wJHm75tQe60SIFIGxjZ1voIXozPvQ4fE,15346
+crabpy_pyramid/routes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crabpy_pyramid/routes/capakey.py,sha256=H2APcCXpPGOZISkA4_JPdxfSqpBnPGu14CRt4HaXJhg,1901
+crabpy_pyramid/routes/crab.py,sha256=T3tH7k0s01Tx1djolQw833vgGzvN0t66mUYpdrT4DSQ,4650
+crabpy_pyramid/views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crabpy_pyramid/views/capakey.py,sha256=sP2b_dglU5Tg1N5RJKj5h2cYJR0Qe_97Rw9zuf6tPrA,5519
+crabpy_pyramid/views/crab.py,sha256=sc1JPweeMLRp_jinmxSf__Ld39_GoF6UU95-teachIs,13344
+crabpy_pyramid-0.8.0.dist-info/LICENSE,sha256=Zu2OgeAzfcK5iQhg8-QKOeG9OT6J1GvbkmXqfu_mkRI,1089
+crabpy_pyramid-0.8.0.dist-info/METADATA,sha256=ZN1RX4ZTooovO5l5MpHPnUN6NeBDMneVTNQIdhoZQ-o,5547
+crabpy_pyramid-0.8.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+crabpy_pyramid-0.8.0.dist-info/entry_points.txt,sha256=Cv2On998VUmz-0dZ_eNTS_nnPd4oCgRCwdkxOr5dMqE,65
+crabpy_pyramid-0.8.0.dist-info/top_level.txt,sha256=dq7r0FiqIW-FpirKzc2Y8_0qtXKGNbO7vowpAcTO1gk,15
+crabpy_pyramid-0.8.0.dist-info/RECORD,,
