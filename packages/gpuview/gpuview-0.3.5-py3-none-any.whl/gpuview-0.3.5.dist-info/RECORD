@@ -1,0 +1,15 @@
+gpuview/__init__.py,sha256=6YtQNw_Ou760h6PFyGtr1rEba3OlfPiFmcnKOdriAE0,158
+gpuview/__main__.py,sha256=GwVqvs2chli3aE7PIIve7BhBcTiwkqu7aP51gCwTdxw,75
+gpuview/app.py,sha256=xGU0PlqiW-OHRPYFMZo8TJOtmjGQacqACaqIjVfNFzg,2009
+gpuview/core.py,sha256=PtslzpzbKeq7C80NTqQ8XJ_Kbfg-70WGrK4ucUDJzd8,5171
+gpuview/service.sh,sha256=Cu5Cddkrv__rpb07MDWwfcSguhPwy05xltu-OpHX2L0,697
+gpuview/test_gpuview.py,sha256=L18kZZv6zSajycf6GuTnmiOY-U5zMLuH4r_mNsYX-wg,827
+gpuview/utils.py,sha256=ktbWyRWLn-1BSCYqguLIFkW0kI8qcbKBXh6kPFt6dog,2826
+gpuview/views/index.tpl,sha256=yxAOwB7mTx-v_ItumKXReJfKYld_fUu0ZtkL130WphU,7335
+gpuview-0.3.5.dist-info/LICENSE,sha256=M1qwS6pTSAjT1g94hwJKph6GJl0GNScjfpp5phtzt_8,1093
+gpuview-0.3.5.dist-info/METADATA,sha256=dRof5-eotYfCH_VhxRFhJmd7SEZ0LEtIurYpsDMoyyg,5933
+gpuview-0.3.5.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+gpuview-0.3.5.dist-info/entry_points.txt,sha256=LhBJWJUL9XOx5TZR5aFIzrSOBfVaAcizNRAjwmxp6c4,46
+gpuview-0.3.5.dist-info/top_level.txt,sha256=dnr6XsaQdI1q-C4yCQxHkeVdff8Xb3A745C8N5oK9Dc,8
+gpuview-0.3.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+gpuview-0.3.5.dist-info/RECORD,,
