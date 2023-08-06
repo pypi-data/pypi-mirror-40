@@ -1,0 +1,8 @@
+future
+pycondor>=0.5
+configargparse
+ligo-gracedb
+gwdatafind
+urllib3
+deepdish
+pesummary
