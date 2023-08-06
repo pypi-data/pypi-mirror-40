@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pywemo
+Version: 0.4.35
+Summary: Lightweight Python module to discover and control WeMo devices
+Home-page: http://github.com/pavoni/pywemo
+Author: Greg Dowling
+Author-email: mail@gregdowling.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: netifaces (>=0.10.0)
+Requires-Dist: requests (>=2.0)
+Requires-Dist: six (>=1.10.0)
+
+UNKNOWN
+
+
