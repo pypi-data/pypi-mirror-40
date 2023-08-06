@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: production-request
+Version: 0.0.1
+Summary: Metric collector for production
+Home-page: https://github.com/anone.babay/production_request
+Author: Dmitriy Chernyshov
+Author-email: dechernyshov@bars.group
+License: BSD
+Download-URL: https://github.com/anone.babay/production_request/tarball/0.0.1
+Description: production_request
+        ===============================
+        
+        version number: 0.0.1
+        author: Dmitriy Chernyshov
+        
+        Описание
+        --------
+        
+        Позволяет логировать метрики запросов
+        (клиенсткое время, серверное время, время SQL) в production-средах
+        
+        
+        Установка
+        ---------
+        
+        Установка производится командой
+        -e git+https://stash.bars-open.ru/scm/budg/production_request.git@master#egg=production_request. 
+        При этом необходимо, чтобы при запуске *pip install* в качестве альтернативного 
+        index-url был указан http://pypi.bars-open.ru/simple/ 
+        
+        
+        Настройка
+        ---------
+        
+        Для подключения логирования необходимо:
+        
+        1. В качестве *DATABASE_ENGINE* указать *production_request.DatabaseWrapper*
+        2. Добавить *ProductionRequestLoggingMiddleware* в перечень *MIDDLEWARE*
+        3. Подключить к рабочему столу *production_request_client.js* и *xhr_interceptor.js*
+        4. Зарегистрировать *ProductionRequestPack* в контроллере
+        5. Выполнить в инициализации шаблона рабочего стола функцию *startLogging*. 
+        Данная функция принимает на вход URL action'а *action_save_client_log* из предыдущего пункта
+            
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3

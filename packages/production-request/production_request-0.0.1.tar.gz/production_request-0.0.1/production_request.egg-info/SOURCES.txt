@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+production_request/__init__.py
+production_request/actions.py
+production_request/base.py
+production_request/middleware.py
+production_request/settings.py
+production_request/utils.py
+production_request.egg-info/PKG-INFO
+production_request.egg-info/SOURCES.txt
+production_request.egg-info/dependency_links.txt
+production_request.egg-info/requires.txt
+production_request.egg-info/top_level.txt
