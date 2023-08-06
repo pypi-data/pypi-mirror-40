@@ -1,0 +1,6 @@
+
+[text-unidecode]
+text-unidecode==1.2
+
+[unidecode]
+Unidecode>=0.04.16

@@ -1,0 +1,13 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+permissive_slugify.egg-info/PKG-INFO
+permissive_slugify.egg-info/SOURCES.txt
+permissive_slugify.egg-info/dependency_links.txt
+permissive_slugify.egg-info/entry_points.txt
+permissive_slugify.egg-info/requires.txt
+permissive_slugify.egg-info/top_level.txt
+slugify/__init__.py
+slugify/slugify.py
