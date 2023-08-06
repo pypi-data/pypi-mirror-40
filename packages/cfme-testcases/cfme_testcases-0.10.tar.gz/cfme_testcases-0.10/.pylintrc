@@ -1,0 +1,9 @@
+[MASTER]
+extension-pkg-whitelist=lxml
+
+[MESSAGES CONTROL]
+disable=
+    fixme,
+    too-few-public-methods,
+    bad-continuation,
+    useless-object-inheritance,
