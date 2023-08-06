@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: imgsegmob
+Version: 0.0.1
+Summary: The collection with segmentation models
+Home-page: https://github.com/nerox8664/gluon2keras
+Author: Grigory Malivenko
+Author-email: nerox8664@gmail.com
+License: MIT
+Description: # imgsegmob
+        Image segmentation models collection
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

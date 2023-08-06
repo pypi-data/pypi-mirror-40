@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+imgsegmob/__init__.py
+imgsegmob.egg-info/PKG-INFO
+imgsegmob.egg-info/SOURCES.txt
+imgsegmob.egg-info/dependency_links.txt
+imgsegmob.egg-info/not-zip-safe
+imgsegmob.egg-info/top_level.txt
