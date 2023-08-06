@@ -1,0 +1,9 @@
+numpy
+netCDF4>=1.4.2
+pygeogrids
+pygeobase>=0.3.18
+pandas!=0.19.0
+
+[test]
+pytest-cov
+pytest

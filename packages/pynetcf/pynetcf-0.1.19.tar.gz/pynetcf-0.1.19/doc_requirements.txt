@@ -1,0 +1,5 @@
+mock
+numpydoc
+sphinx_rtd_theme
+pygeobase
+sphinx==1.5.6
