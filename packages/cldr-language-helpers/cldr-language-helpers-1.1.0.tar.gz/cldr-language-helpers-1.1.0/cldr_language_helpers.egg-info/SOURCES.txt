@@ -1,0 +1,14 @@
+README.md
+setup.py
+cldr_language_helpers/__init__.py
+cldr_language_helpers/annotator.py
+cldr_language_helpers/conf.py
+cldr_language_helpers.egg-info/PKG-INFO
+cldr_language_helpers.egg-info/SOURCES.txt
+cldr_language_helpers.egg-info/dependency_links.txt
+cldr_language_helpers.egg-info/requires.txt
+cldr_language_helpers.egg-info/top_level.txt
+cldr_language_helpers/data/language_alphabets.json
+cldr_language_helpers/data/language_alphabets_compressed.json
+cldr_language_helpers/data/languages.json
+cldr_language_helpers/data/uchar_to_lang_map.json
