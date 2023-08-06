@@ -1,0 +1,11 @@
+json_schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_schema/fields.py,sha256=hMxGLoVFCLZx-bSxXd7upOncCiqD5LXuMyc9Wz53BT4,1731
+json_schema/forms.py,sha256=xsS04fX2Z25tzFUVLIA55OYFGhZvfJZBmTbJN7Y4-qE,944
+json_schema/models.py,sha256=mmKjCP5kok9T46FXAz7gHJ2HBpSZYPnyKOFgO54OVZQ,142
+json_schema/widgets.py,sha256=XfP7FPB1n4HniOFPb1ozEH_vcu53qMZhP9lCQvDSHhg,4373
+json_schema/templates/json-schema-widget.html,sha256=Az_TzvBStSdPJJ6WrkmL34hntWXqlLbgEq9eIOVNneg,645
+django_jsonb_schema-0.7.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+django_jsonb_schema-0.7.0.dist-info/METADATA,sha256=QdxXsX0SduhBfsaqT0mXS21ce6w-HaXlttD0hcUq6Dk,3186
+django_jsonb_schema-0.7.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+django_jsonb_schema-0.7.0.dist-info/top_level.txt,sha256=IaNgw7oSo_Z-c2bErJrJHYnv5BC4FFj-qHkw4ZrjVTQ,12
+django_jsonb_schema-0.7.0.dist-info/RECORD,,
