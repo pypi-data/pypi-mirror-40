@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: paynspray
+Version: 0.1
+Summary: Provides access to functions pertaining to text generation, manipulation, & presentation
+Home-page: https://github.com/munshigroup/paynspray
+Author: The Munshi Group
+Author-email: support@munshigroup.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# paynspray
+
+The Pay 'n' Spray library provides access to functions pertaining to text generation, manipulation, & presentation.
+
+
