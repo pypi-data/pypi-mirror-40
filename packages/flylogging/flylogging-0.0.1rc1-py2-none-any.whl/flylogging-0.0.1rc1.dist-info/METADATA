@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flylogging
+Version: 0.0.1rc1
+Summary: Logging module to allow for live reloading of logging configuration
+Home-page: https://github.com/flywheel-io/python-logging
+Author: Flywheel
+Author-email: support@flywheel.io
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: gevent-inotifyx (==0.2)
+Requires-Dist: pyyaml (==3.13)
+
+UNKNOWN
+
+
