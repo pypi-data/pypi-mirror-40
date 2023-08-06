@@ -1,0 +1,16 @@
+gcpm/__init__.py,sha256=0QPs1uxXEv99vMithiwQ0TJvtbWKmLjMA7At2N5HIak,111
+gcpm/__main__.py,sha256=Iitu2IBkVA9OgeiN48SAtRr3DQBsuF32kS2ZTvSViQQ,158
+gcpm/__version__.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+gcpm/cli.py,sha256=nnmTGFgfJoQfDNtdikDdV4vJa9BccK83HupmJ6eCWfQ,1253
+gcpm/condor.py,sha256=VBc-LKtb0PhTxgtuZUDXxkBmKjpCLV4IlP2ykKOTgB4,2581
+gcpm/core.py,sha256=T5VNBWF7m5XzN8H9GfnG9-NiquXtZI1B7xCQpgXzJCQ,22244
+gcpm/files.py,sha256=f_UjEnecHp__UhqJPMfZ4DVNH36bHe2nyzu2Sxoej8Q,1542
+gcpm/gce.py,sha256=0i59xawZECSK4600NBmI5B4nFuvWcVZTa1z4H02-PYw,8043
+gcpm/gcs.py,sha256=NUq9oLcX5qKuF7yNgBZfccYOK9Wku5RyVqXvLnp-4LM,2276
+gcpm/service.py,sha256=3BcJYbwWh6vG8gJoObfrMAg5moQv-GxJpRZyCKI-_go,3257
+gcpm/utils.py,sha256=_8ZY9QIHwaXu3UxgTjEWtxz0XSN1x2qfgKA0juNBISE,2581
+gcpm-0.1.6.dist-info/entry_points.txt,sha256=Nbp0KwrrKguH78lWnHrGG0O6Mf3ZyULEl0vJiliZAoM,34
+gcpm-0.1.6.dist-info/LICENSE,sha256=TK_9lko4nTIqw902GSuj9vCaT9rBfdfM7dHvZmrnm4U,11377
+gcpm-0.1.6.dist-info/WHEEL,sha256=8bSsbOsfjCYuJ5fTC_9A5e8ObOgpeFXuhLBJSbnJo_c,89
+gcpm-0.1.6.dist-info/METADATA,sha256=_r6tr-t2tURi5bwenS85SBjmP5BYFCqvqyub243EwAk,5122
+gcpm-0.1.6.dist-info/RECORD,,
