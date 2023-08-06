@@ -1,0 +1,11 @@
+tshistory_alias/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tshistory_alias/cli.py,sha256=8lmDeisqCZxHKG18jwOYxjaitC9thR-mhuvanUN6zf4,7645
+tshistory_alias/db.py,sha256=lKUHkvAWjlOfh7UrcatxGIgmSxblhO2nTHl-8wmua_w,1534
+tshistory_alias/helpers.py,sha256=vSgdYnMvzyxgODiRETCC5QC81ssIJgOH-i_B7yP4Yn8,5838
+tshistory_alias/schema.py,sha256=2-id1QXXPscqTi5zKlwrjHJWH0F2T7a6VUpEGMWgk-Y,2938
+tshistory_alias/tsio.py,sha256=KrokaiufZCce-snXL7s7JAeoBAbMLnrcSFFSGVGwqF4,9816
+tshistory_alias-0.4.0.dist-info/METADATA,sha256=wqndAgvFQ0CKIguUamMoodTtedc8RvaXVpjO9GZ-UfU,705
+tshistory_alias-0.4.0.dist-info/RECORD,,
+tshistory_alias-0.4.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+tshistory_alias-0.4.0.dist-info/entry_points.txt,sha256=rWSK3afv1F9ykrzaKOzJTWU_TklM8wxFBT1HosN_XSo,567
+tshistory_alias-0.4.0.dist-info/top_level.txt,sha256=zyqFU2Z_gHSXbO_a4re_vHrs6Wt7mCWp-9lf3EuMJwk,16
