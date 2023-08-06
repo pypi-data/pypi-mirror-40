@@ -1,0 +1,12 @@
+README.md
+setup.py
+sshush/__init__.py
+sshush/command_line.py
+sshush/sshush.py
+sshush.egg-info/PKG-INFO
+sshush.egg-info/SOURCES.txt
+sshush.egg-info/dependency_links.txt
+sshush.egg-info/entry_points.txt
+sshush.egg-info/not-zip-safe
+sshush.egg-info/requires.txt
+sshush.egg-info/top_level.txt
