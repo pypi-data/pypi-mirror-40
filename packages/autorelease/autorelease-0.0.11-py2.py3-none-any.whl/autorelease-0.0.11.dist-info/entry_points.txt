@@ -1,0 +1,3 @@
+[console_scripts]
+autorelease-release = autorelease.scripts.release:main
+
