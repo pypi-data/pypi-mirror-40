@@ -1,0 +1,12 @@
+heprefs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+heprefs/__main__.py,sha256=-kjZ-4ELt6pZM6sj1dE9TJCjNo_ehz8xAmj5bwYzKgs,284
+heprefs/arxiv_article.py,sha256=V579QAfZYOpCOW9aEBaLxhmnOTFVrlrFN3ckPaemY_E,4303
+heprefs/cds_article.py,sha256=_H7shuGuOj8pRo-hRMbCLGGnyd1HMlTX0IId9JrbDWU,5486
+heprefs/heprefs.py,sha256=PC0LFfm5FEAJ5mZ-wtnxdGJ9mw8nX6fhe2BVSCu0Zt4,6050
+heprefs/inspire_article.py,sha256=9GkF18pvOSmtFW6PQIfOSfb_tDkNO6pEKbYIHw2C4r0,6169
+heprefs/invenio.py,sha256=S5wJDpsnFSHDPq1iBoB9qqA2NpkC6bVNEhVNzfDSNnE,5329
+heprefs-0.1.4.dist-info/entry_points.txt,sha256=aUr7F-rHK0bOz-rG4TU7m23kyzGfXWw62rSfQvWt6QM,56
+heprefs-0.1.4.dist-info/LICENSE,sha256=qWWYD0X2z0CGLvaw0gSAjgocZ4CUdWc2ovQ_7KPYFG4,1076
+heprefs-0.1.4.dist-info/WHEEL,sha256=8bSsbOsfjCYuJ5fTC_9A5e8ObOgpeFXuhLBJSbnJo_c,89
+heprefs-0.1.4.dist-info/METADATA,sha256=SK_bvTj96dnLIT0dN1n-iAe0Cmehfa61m-CQE34s1c4,5426
+heprefs-0.1.4.dist-info/RECORD,,
