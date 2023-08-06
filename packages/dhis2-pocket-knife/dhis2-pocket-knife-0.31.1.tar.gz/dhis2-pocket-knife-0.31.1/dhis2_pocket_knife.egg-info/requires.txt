@@ -1,0 +1,4 @@
+dhis2.py==1.5.1
+colorama==0.3.9
+unicodecsv>=0.14.1
+six
