@@ -1,0 +1,10 @@
+pydatadeck/__init__.py,sha256=D7Fm_RhHBv4-jnZDW0g6k_995X_S9m39z8NqPaVjFbc,36
+pydatadeck/datasource/__init__.py,sha256=D7Fm_RhHBv4-jnZDW0g6k_995X_S9m39z8NqPaVjFbc,36
+pydatadeck/datasource/errors.py,sha256=pqW_Lfkz_MEdx01sZ-Ty0op5ItwGaFENd3djJwaGc34,1654
+pydatadeck/datasource/operators.py,sha256=mhJVbfpc6nnIU_Fl7_4kiEE4p5EB5AOD3Ye44IBRVis,569
+pydatadeck/datasource/service_factory.py,sha256=CFsl9Ok5GZyLerAvMZsDpEVqlOo0xPqMJozwpj97t-Q,3698
+pydatadeck/datasource/translation.py,sha256=EdrTZ_2IqmXLS5g9ogjK0u9CAi5-ddE4ELRNLEctn-E,931
+pydatadeck-0.9.3.dist-info/METADATA,sha256=dxqYDi1OH3RcFJVOfP0BIEufyb4s7FZ2I_-FbRuchfI,437
+pydatadeck-0.9.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pydatadeck-0.9.3.dist-info/top_level.txt,sha256=lXUVrFYRonLnCimddzFbLPe0VNNum4_5-6iQ8uWJKB8,11
+pydatadeck-0.9.3.dist-info/RECORD,,
