@@ -1,0 +1,8 @@
+README.md
+setup.py
+BentoML.egg-info/PKG-INFO
+BentoML.egg-info/SOURCES.txt
+BentoML.egg-info/dependency_links.txt
+BentoML.egg-info/top_level.txt
+bentoml/__init__.py
+bentoml/version.py

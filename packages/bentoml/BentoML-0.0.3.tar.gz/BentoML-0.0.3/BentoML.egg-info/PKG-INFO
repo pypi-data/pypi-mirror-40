@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: BentoML
+Version: 0.0.3
+Summary: BentoML: models to go
+Home-page: https://github.com/atalaya-io/BentoML
+Author: atalaya.io
+Author-email: chaoyu@atalaya.io
+License: UNKNOWN
+Description: # BentoML
+        
+        Package your Machine Learning model for serving in production.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
