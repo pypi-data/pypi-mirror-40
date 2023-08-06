@@ -1,0 +1,7 @@
+
+[cov]
+pytest-cov
+codecov
+
+[test]
+pytest
