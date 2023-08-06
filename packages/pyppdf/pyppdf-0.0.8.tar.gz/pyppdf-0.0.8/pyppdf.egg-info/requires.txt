@@ -1,0 +1,4 @@
+certifi
+click
+litereval>=0.0.5
+pyppeteer>=0.0.25

@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+pyppdf/__init__.py
+pyppdf/_version.py
+pyppdf/pyppeteer_pdf.py
+pyppdf/replace_mathjax.py
+pyppdf.egg-info/PKG-INFO
+pyppdf.egg-info/SOURCES.txt
+pyppdf.egg-info/dependency_links.txt
+pyppdf.egg-info/entry_points.txt
+pyppdf.egg-info/requires.txt
+pyppdf.egg-info/top_level.txt
+pyppdf/patch_pyppeteer/__init__.py
+pyppdf/patch_pyppeteer/patch_pyppeteer.py
