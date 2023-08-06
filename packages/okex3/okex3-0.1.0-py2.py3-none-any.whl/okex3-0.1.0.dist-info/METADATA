@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: okex3
+Version: 0.1.0
+Summary: OKEX v3 api for python.
+Home-page: https://github.com/bopo/okex3_python
+Author: bopo.wang
+Author-email: ibopo@126.com
+License: MIT license
+Keywords: okex3
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: websocket
+Requires-Dist: requests
+
+OKEX V3 for Python 版本
+======================
+
+使用说明待续...
+
+- 重新整理代码结构
+
