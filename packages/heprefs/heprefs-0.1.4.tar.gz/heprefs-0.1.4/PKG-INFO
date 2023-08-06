@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: heprefs
+Version: 0.1.4
+Summary: A commandline helper tool for high-energy physics referencing.
+Home-page: https://github.com/misho104/heprefs
+Author: Sho Iwamoto (Misho)
+Author-email: webmaster@misho-web.com
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: arxiv (>=0.3.1,<0.4.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: feedparser (>=5.2,<6.0)
+Requires-Dist: typing (>=3.6,<4.0); python_version < "3.5"
+Project-URL: Repository, https://github.com/misho104/heprefs
