@@ -1,0 +1,3 @@
+[console_scripts]
+linesend = linesend.linesend:commandline
+
