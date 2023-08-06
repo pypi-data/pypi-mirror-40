@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: thesherlock
+Version: 0.2.6
+Summary: Sherlock the username detective
+Home-page: https://github.com/TheYahya/sherlock/
+Author: 
+Author-email: 
+License: MIT
+Description: 
+                This scrapes and finds matching usernames over multiple HTTP hosts
+            
+Keywords: sherlock finder username pypi
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

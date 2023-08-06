@@ -1,0 +1,16 @@
+README.md
+setup.py
+sherlock/__init__.py
+sherlock/__main__.py
+sherlock/data.py
+sherlock/log.py
+sherlock/service.py
+sherlock/sherlockdata.py
+sherlock/sherlockfinder.py
+sherlock/sherlocklog.py
+sherlock/sherlockservice.py
+thesherlock.egg-info/PKG-INFO
+thesherlock.egg-info/SOURCES.txt
+thesherlock.egg-info/dependency_links.txt
+thesherlock.egg-info/requires.txt
+thesherlock.egg-info/top_level.txt
