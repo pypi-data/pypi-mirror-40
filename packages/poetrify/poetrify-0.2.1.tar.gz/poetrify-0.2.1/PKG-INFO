@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: poetrify
+Version: 0.2.1
+Summary: Pipfile to pyproject.toml for Poetry
+Home-page: None
+Author: kk6
+Author-email: hiro.ashiya@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Dist: cleo (>=0.7.2,<0.8.0)
+Requires-Dist: licensename (>=0.4.2,<0.5.0)
+Requires-Dist: tomlkit (>=0.5.3,<0.6.0)
