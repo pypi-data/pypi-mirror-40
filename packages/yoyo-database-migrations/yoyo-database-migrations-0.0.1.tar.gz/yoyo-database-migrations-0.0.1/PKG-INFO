@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: yoyo-database-migrations
+Version: 0.0.1
+Summary: Database migrations with SQL
+Home-page: https://ollycope.com/software/yoyo/latest/
+Author: Oliver Cope
+Author-email: oliver@redgecko.org
+License: Apache
+Description: UNKNOWN
+Keywords: migrations migrate database alembic south
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: pyodbc
+Provides-Extra: mysql
+Provides-Extra: postgres

@@ -1,0 +1,12 @@
+text-unidecode
+iniherit
+tabulate==0.8.2
+
+[mysql]
+PyMySQL
+
+[postgres]
+psycopg2
+
+[pyodbc]
+pyodbc
