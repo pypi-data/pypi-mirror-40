@@ -1,0 +1,12 @@
+kommando/__init__.py,sha256=XwjEhXD9GCZIeIQp776Nc9CUT0_XLlyJ3tkukO-CeNs,183
+kommando/base.py,sha256=1ZaipCeUmXq-2oQHDPR22xXsp9uVgc1KG9x_xfpV3g4,5974
+kommando/loader.py,sha256=KjOCV9jraCW9L-Z15_q9vKNUCN6lmRKutBSFl5czZog,5849
+kommando/defaults/extensions.py,sha256=cEK9Rqux28vHsMfBkE0c4fqSihVrUdzXEXKN-3kn_wA,28925
+kommando/defaults/mentions.py,sha256=pJnXu7vdQ9NP1NHA-SoPM5x1MzwjFT59-ha1KhQ9Pfs,1919
+kommando/defaults/modifiers.py,sha256=pn2Gbq2nvGhrof7cucvbz6In1ZYIoctxHsflHQimkn4,7339
+kommando/defaults/templates.py,sha256=WfyYPRTkHTh4dgxkbY4TiMGCPpAKX9jernN9vEjJwjM,14318
+kommando/defaults/types.py,sha256=33qZR-_U8yTXWUTpUCrvVufvQjxB-QGbGPSpgxExLzE,4811
+kommando-1.0.1b0.dist-info/METADATA,sha256=AuT8iyogDvZZriews4vkaJg5wG4d8Zcj2bmAhMJQLRY,1915
+kommando-1.0.1b0.dist-info/RECORD,,
+kommando-1.0.1b0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+kommando-1.0.1b0.dist-info/top_level.txt,sha256=bEXeBSTlg2vHWSVCwVPRvW7i7t17Rgou2dy_gwyNz8I,9
