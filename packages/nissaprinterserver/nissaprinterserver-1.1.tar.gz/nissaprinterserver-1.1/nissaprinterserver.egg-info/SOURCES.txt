@@ -1,0 +1,10 @@
+setup.py
+nissaprinterserver/__init__.py
+nissaprinterserver/__main__.py
+nissaprinterserver/script.py
+nissaprinterserver.egg-info/PKG-INFO
+nissaprinterserver.egg-info/SOURCES.txt
+nissaprinterserver.egg-info/dependency_links.txt
+nissaprinterserver.egg-info/not-zip-safe
+nissaprinterserver.egg-info/requires.txt
+nissaprinterserver.egg-info/top_level.txt
