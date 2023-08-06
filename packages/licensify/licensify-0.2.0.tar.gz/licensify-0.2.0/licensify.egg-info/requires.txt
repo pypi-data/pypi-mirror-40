@@ -1,0 +1,12 @@
+
+[build]
+versioneer
+
+[publish]
+twine
+
+[test]
+pytest
+pytest-cov
+pylint
+tox
