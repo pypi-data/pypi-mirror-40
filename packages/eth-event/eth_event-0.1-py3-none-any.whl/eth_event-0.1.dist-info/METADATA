@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: eth-event
+Version: 0.1
+Summary: Ethereum event decoder and topic generator
+Home-page: https://github.com/iamdefinitelyahuman/eth-event
+Author: Benjamin Hauser
+Author-email: ben.hauser@hyperlink.capital
+License: MIT
+Download-URL: https://github.com/iamdefinitelyahuman/eth-event/archive/0.1.tar.gz
+Keywords: ethereum
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: eth-abi
+Requires-Dist: eth-hash
+Requires-Dist: hexbytes
+
+UNKNOWN
+
+
