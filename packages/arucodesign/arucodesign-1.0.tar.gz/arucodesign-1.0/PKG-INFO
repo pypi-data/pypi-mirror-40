@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: arucodesign
+Version: 1.0
+Summary: Aruco marker detection module, along with assist plugin of Adobe Illustrator to place Aruco markers on the CAD
+Home-page: UNKNOWN
+Author: Kenichi Nakahara
+Author-email: kenichi.nakahara.082@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.6.0

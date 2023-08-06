@@ -1,0 +1,3 @@
+include aruco_design/extendscript/*
+recursive-include aruco_design/extendscript/src *
+recursive-include aruco_design/extendscript/dist *
