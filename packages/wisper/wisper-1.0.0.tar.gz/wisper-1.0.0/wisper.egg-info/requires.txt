@@ -1,0 +1,6 @@
+boto3
+cryptography
+protobuf
+psutil
+requests
+werkzeug
