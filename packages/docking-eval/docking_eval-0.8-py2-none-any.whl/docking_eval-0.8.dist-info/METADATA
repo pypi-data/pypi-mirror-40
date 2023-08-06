@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: docking-eval
+Version: 0.8
+Summary: Evaluates docking poses based on the CAPRI criteria
+Home-page: https://github.com/capslockwizard/docking-eval
+Author: Justin Chan
+Author-email: capslockwizard@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: u-msgpack-python
+Requires-Dist: MDAnalysis
+Requires-Dist: drsip-common
+
+# Docking Eval
+
+Evaluates docking poses based on the CAPRI criteria
+
