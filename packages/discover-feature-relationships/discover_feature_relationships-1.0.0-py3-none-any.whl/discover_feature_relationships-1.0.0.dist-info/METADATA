@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: discover-feature-relationships
+Version: 1.0.0
+Summary: discover_feature_relationships tries to find column-to-column relationships in your dataframe using machine learning
+Home-page: https://github.com/ianozsvald/discover_feature_relationships
+Author: Ian Ozsvald
+Author-email: ian@ianozsvald.com
+Maintainer: Ian Ozsvald
+Maintainer-email: ian@ianozsvald.com
+License: MIT
+Platform: Any.
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free To Use But Restricted
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Description-Content-Type: text/markdown
+
+TODO
+
+
