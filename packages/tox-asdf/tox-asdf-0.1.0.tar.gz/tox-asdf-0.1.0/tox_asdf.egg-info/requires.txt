@@ -1,0 +1,11 @@
+tox>=2.0
+
+[test]
+mock>=2.0.0
+pytest>=4.0.0
+pytest-cov
+pytest-mock
+pytest-sugar
+flake8
+wheel
+pluggy>=0.7

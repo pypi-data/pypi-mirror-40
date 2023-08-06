@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+requirements/develop.pip
+requirements/install.pip
+tox_asdf/__init__.py
+tox_asdf/plugin.py
+tox_asdf.egg-info/PKG-INFO
+tox_asdf.egg-info/SOURCES.txt
+tox_asdf.egg-info/dependency_links.txt
+tox_asdf.egg-info/entry_points.txt
+tox_asdf.egg-info/not-zip-safe
+tox_asdf.egg-info/requires.txt
+tox_asdf.egg-info/top_level.txt
