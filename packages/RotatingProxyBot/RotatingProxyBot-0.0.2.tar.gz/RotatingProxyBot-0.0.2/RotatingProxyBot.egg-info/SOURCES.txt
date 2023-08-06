@@ -1,0 +1,11 @@
+README.md
+setup.py
+RotatingProxyBot/__init__.py
+RotatingProxyBot/bot.py
+RotatingProxyBot.egg-info/PKG-INFO
+RotatingProxyBot.egg-info/SOURCES.txt
+RotatingProxyBot.egg-info/dependency_links.txt
+RotatingProxyBot.egg-info/not-zip-safe
+RotatingProxyBot.egg-info/requires.txt
+RotatingProxyBot.egg-info/top_level.txt
+test/test_bot.py
