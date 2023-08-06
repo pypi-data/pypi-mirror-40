@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: MtTools
+Version: 0.1.2
+Summary: Tools for mathematical operations
+Home-page: https://github.com/KGB33/MathTools
+Author: Kelton Bassingthwaite
+Author-email: MtTools@bassingthwaite.org
+License: LICENSE.txt
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# MathTools
+
+MathTools is a library containing various algorithms, formulas, and profilers. 
+
+
+The goal of MathTools is to house optimized and thoroughly tested tools for math and science based programming. 
+
+Some examples include:
+- Matrix and Matrix operations
+- Solve system of linear equations
+- Distance Formula
+- Primality Tests
+- Sieve of Eratosthenes
+- Timer Decorator
+
+
+
+
