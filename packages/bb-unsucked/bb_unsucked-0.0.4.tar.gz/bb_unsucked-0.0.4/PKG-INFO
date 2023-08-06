@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: bb_unsucked
+Version: 0.0.4
+Summary: A solution to Blackboard misery for college students and professors
+Home-page: https://git-community.cs.odu.edu/jmcateer/blackboard-unsucked
+Author: Jeffrey McAteer
+Author-email: jeffrey.p.mcateer@outlook.com
+License: UNKNOWN
+Description: 
+        # Blackboard Unsucked
+        
+        _crummy name for a fix of crummy software_
+        
+        If you are a student or faculty at ODU I'm sure you're no stranger
+        to wasting 2-3 hours a day trying to find or post assignments via BlackBoard.
+        
+        I am concerned with the student's view, but I hope this experiment can
+        prove useful for professors as well. The goal is to wrap around existing
+        BlackBoard infrastructure and provide a CLI API to access all the important functions
+        which usually are trapped behind 4-5 links and a total 20-30 second browser load time.
+        
+        # Specific Goals
+        
+         - [x] Login to BB
+         - [x] List classes for the current semester only (hide irrelevant ones)
+         - [x] List all announcements
+         - [x] List assignments for a given class
+          - This will have to be sort of intelligent as professors put assignments in different places
+         - [ ] Submit files for assignments
+         - [ ] View/Post to discussion boards
+         - [ ] Caching and Daemon operation, to prevent having to hit the network for most data access
+        
+        
+        # Dependencies
+        
+        Python3 `requests`, and `BeautifulSoup`, both of which can be 
+        installed via `pip3`
+        
+        # Usage
+        
+        The fastest setup is to save a `.har` file of a recent Blackboard session someplace,
+        then run
+        
+        ```bash
+        # Install the package
+        pip3 install --user bb_unsucked
+        # Read authentication details from .har
+        python3 -m bb_unsucked build-cache downloads/my-session.har
+        # use the __main__.py program to list all of your classes
+        python3 -m bb_unsucked ls
+        ```
+        
+        ## in a script
+        
+        the file `demo_usage_in_script.py` has more examples, but the hello world is:
+        
+        ```python
+        import bb_unsucked
+        
+        bb = bb_unsucked.BBUnsucked()
+        
+        for my_class in bb.classes():
+          print(f"I am in {my_class.course_id}")
+        
+        ```
+        
+        ## authentication
+        
+        To perform the authentication step the most reliable method is to
+        save a `.har` file of a recent blackboard session. `bb_unsucked` is
+        capable of parsing authentication session cookies out of the file `recent_request.har`.
+        
+        ![how to save a .har from a browser](howto-save-har.jpg "Saving .HAR")
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
