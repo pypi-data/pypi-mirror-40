@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: taskprocessor
+Version: 0.0.1
+Summary: Distributed task processing
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pika (<1,>=0.12.0)
+Requires-Dist: dill (<1,>=0.2)
+
+UNKNOWN
+
+
