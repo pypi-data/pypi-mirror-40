@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: beatrice
+Version: 0.1.3a0
+Summary: A discord.py extension for storing files on discord servers 
+Home-page: https://github.com/Naranbataar/Beatrice
+Author: Andre Augusto
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: # Beatrice
+        A discord.py extension for storing files on discord servers
+        
+Platform: UNKNOWN
+Classifier: Framework :: AsyncIO
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6.0
