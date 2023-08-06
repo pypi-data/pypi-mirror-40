@@ -1,0 +1,11 @@
+libinfilect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libinfilect/aws.py,sha256=bE3QDaZs5l1ONOX4fiG3a0c4uTZ1knhMLF-hiAqYMRU,2411
+libinfilect/image.py,sha256=A4m-d4GxC1hk9e-GpRGGpQW9V9zC80VCFyA6IcrlyAs,148
+libinfilect/interface.py,sha256=fjseEumLoUGutu_vHbVvBQQEg_dbpuiACla0TtRZ_w8,3183
+libinfilect/misc.py,sha256=Au2Qg0ZOFkLSxFk2fBRqFDjSyd6NDkR6KNcQ2XSG57c,2068
+libinfilect/mongo.py,sha256=CeQUzIfP0VqnBboI6f-FTIVwsklta_BpEm1lJvlsFEs,1938
+libinfilect/tensorflow_utils.py,sha256=8W15Z0i6Nz8Kiwi0Pny7k7S_lwRv614sXrWJ2DskBoc,8389
+libinfilect-0.0.3.dist-info/METADATA,sha256=GUo8ZgdM_-CIejVonr_1IaX2CTSTdOryL5sqs9hnY1M,2173
+libinfilect-0.0.3.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+libinfilect-0.0.3.dist-info/top_level.txt,sha256=ZaUqiICZtkXoNgmW3JWorS9CwDFxGc6YBtt9Pq9wdzU,12
+libinfilect-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: libinfilect
+Version: 0.0.3
+Summary: Collection of frequently used utility functions
+Home-page: https://bitbucket.org/infilect-ml-dev/libinfilect/
+Author: Tushar Pawar
+Author-email: tushar@infilect.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# LibInfilect
+Utility library for internal usage @ Infilect
+
+## Installation
+
+Use `pip install --upgrade libinfilect` to install the latest version. 
+
+## Contribution
+Feel free to add your modules to this library so that it can be used by all team members and maximise code reusability. Make sure to follow these guidelines while contributing.
+
+- Document your code. Try to follow standard documentation practices mentioned [here](https://docs.python-guide.org/writing/documentation/). 
+- Test your code thoroughly.
+- Provide sample usage examples/quickstart guide in documentation. I have provided an example below for the interface module. 
+
+### Interface
+Interface repo that contains all the helper functions for creating interfaces between
+
+backend servers and frontend clients. This contains creation and maintenance of TCP sockets.
+
+If you are writing a server side module, you will use the Server class as follows.
+
+```
+from libinfilect import interface
+import json
+
+server_socket = interface.Server(ip='0.0.0.0',port=4242)
+server_socket.create_socket()
+
+while True:
+	query = server_socket.start_listening()
+	query = json.loads(query.decode('utf-8'))
+	result = do_your_machine_learning_thing_and_produce_results(query)
+	server_socket.respond(json.dumps(result))
+```
+##### The server socket will be automatically closed once server_socket object goes out of context
+
+If you are witing client side module, you will use the Client class as follows.  
+```
+from libinfilect import interface
+import json
+
+client_socket = interface.Client(ip='127.0.0.1',port=4242)
+results = client_socket.send_query_and_await_results(json.dumps({"query_key":"query_value"}))
+```
+##### This will take care of adding newline character for socket delimiter so no need to add extra newlines.
+
