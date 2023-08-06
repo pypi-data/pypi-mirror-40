@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: my_print_nester
+Version: 0.0.1
+Summary: A simple printer that print list of list
+Home-page: UNKNOWN
+Author: Muhammad Khalid
+Author-email: khalid41825@outlook.com
+License: UNKNOWN
+Description: # my_print_nester Package
+        
+        This is a simple my_print_nester package. You can use to print list of list item.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
