@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+mailupdater/Email.py
+mailupdater/EmailService.py
+mailupdater/__init__.py
+mailupdater/example.py
+mailupdater.egg-info/PKG-INFO
+mailupdater.egg-info/SOURCES.txt
+mailupdater.egg-info/dependency_links.txt
+mailupdater.egg-info/top_level.txt
+mailupdater/samples/car.png
+mailupdater/samples/horse.png
