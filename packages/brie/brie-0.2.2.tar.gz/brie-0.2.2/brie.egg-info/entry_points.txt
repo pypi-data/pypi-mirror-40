@@ -1,0 +1,4 @@
+[console_scripts]
+brie = brie.brie:main
+brie-diff = brie.brie_diff:main
+
