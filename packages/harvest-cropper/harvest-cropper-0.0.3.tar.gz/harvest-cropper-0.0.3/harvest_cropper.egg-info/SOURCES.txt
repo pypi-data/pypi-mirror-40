@@ -1,0 +1,11 @@
+README.md
+setup.py
+cropper/__init__.py
+cropper/cli.py
+cropper/harvest.py
+harvest_cropper.egg-info/PKG-INFO
+harvest_cropper.egg-info/SOURCES.txt
+harvest_cropper.egg-info/dependency_links.txt
+harvest_cropper.egg-info/entry_points.txt
+harvest_cropper.egg-info/requires.txt
+harvest_cropper.egg-info/top_level.txt
