@@ -1,0 +1,12 @@
+cgrates/__init__.py,sha256=uBzcANBYnIXt1LnIrEALVwcHSeJ-0IS85zAenitl_MM,120
+cgrates/models.py,sha256=Xv9xQBPh8gVBUtfhgE1rgr7itNpHTd60LmzfVUxDbtY,3805
+cgrates/schema.py,sha256=I2LIrajPFc9-TnFcAyNym_9PV7uap6H9vXAbZh9LHxo,1620
+cgrates/client/__init__.py,sha256=fOv22JA-YZ8yevYW-jAO5mm2BzYFjjnOgT_uZPpjbLM,328
+cgrates/client/apier_v1.py,sha256=ZNYgMqnPOW8d-lUY8S2gS47t6prChHQc0zbmIPYPyDo,14582
+cgrates/client/apier_v2.py,sha256=aCAmpvdU1UwTkmCoDvN-X7fK7ayHbPm3TRUg1-7gbeI,2110
+cgrates/client/base.py,sha256=fHgdygxX5komj9aUSIi3fz4dVgvmvM04SigjeoH1hPg,1148
+cgrates/client/cdrs_v1.py,sha256=Pk1jRJW-aQP3LNyj7cMCvjsQTRFYYiTVBnxUeAjOpUE,1092
+py_cgrates-0.0.5.dist-info/METADATA,sha256=2pPfe_E3Dxko2ioVGFfp_g6BlmYuH3XKiTWqeotPsSk,2725
+py_cgrates-0.0.5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+py_cgrates-0.0.5.dist-info/top_level.txt,sha256=KLh0QZRsvDPtvDtHELEg-RgojV7XFriR9SvprfRDXV8,8
+py_cgrates-0.0.5.dist-info/RECORD,,
