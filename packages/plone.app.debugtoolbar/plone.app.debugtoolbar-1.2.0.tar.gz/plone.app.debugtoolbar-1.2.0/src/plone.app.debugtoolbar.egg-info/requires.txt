@@ -1,0 +1,9 @@
+setuptools
+Products.CMFPlone
+zope.annotation
+plone.transformchain
+Paste
+six
+
+[test]
+plone.app.testing
