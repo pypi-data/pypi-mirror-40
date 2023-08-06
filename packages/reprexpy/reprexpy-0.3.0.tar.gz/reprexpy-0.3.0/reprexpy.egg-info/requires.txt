@@ -1,0 +1,11 @@
+pyperclip
+asttokens
+nbconvert
+nbformat
+matplotlib
+ipython
+pyimgur
+setuptools
+stdlib-list
+ipykernel
+tornado<=5.1.1
