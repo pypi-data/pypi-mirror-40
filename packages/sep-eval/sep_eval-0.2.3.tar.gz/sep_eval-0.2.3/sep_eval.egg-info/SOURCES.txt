@@ -1,0 +1,12 @@
+README.md
+setup.py
+sep_eval/__init__.py
+sep_eval/sep_eval.py
+sep_eval.egg-info/PKG-INFO
+sep_eval.egg-info/SOURCES.txt
+sep_eval.egg-info/dependency_links.txt
+sep_eval.egg-info/not-zip-safe
+sep_eval.egg-info/requires.txt
+sep_eval.egg-info/top_level.txt
+sep_eval/tests/__init__.py
+sep_eval/tests/test_sep_eval.py
