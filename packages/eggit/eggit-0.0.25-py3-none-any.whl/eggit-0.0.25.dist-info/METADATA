@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: eggit
+Version: 0.0.25
+Summary: a python lib
+Home-page: https://github.com/MyJoiT/eggit
+Author: JoiT
+Author-email: myjoit@outlook.com
+License: GPL3
+Keywords: eggit,lib,tool
+Platform: UNKNOWN
+
+Eggit Docs
+==============
+
+``Only support python3!``
+
+.. image:: https://assets.myjoit.com/images/logo/eggit-logo-256.png
+
+Concept
+^^^^^^^^
+
+A utils library for Python3, such as enums, string utils and so on.
+
+I want to kill that silly folder named utils in my projects!
+
+Let's go!
+
+Documents
+^^^^^^^^^
+
+Click here_.
+
+.. _here: https://eggit.readthedocs.io
+
+Contact
+^^^^^^^^
+
+- **Author**: JoiT_
+- **Email**: myjoit@outlook.com
+- **Instagram**: myjoit_
+
+.. _JoiT: https://www.cnblogs.com/JoiT
+.. _myjoit: https://www.instagram.com/myjoit
+
+
