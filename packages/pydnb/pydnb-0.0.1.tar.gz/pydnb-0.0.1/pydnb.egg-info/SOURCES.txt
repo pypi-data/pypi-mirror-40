@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+pydnb/VERSION
+pydnb/__init__.py
+pydnb/dnb.py
+pydnb/utils.py
+pydnb.egg-info/PKG-INFO
+pydnb.egg-info/SOURCES.txt
+pydnb.egg-info/dependency_links.txt
+pydnb.egg-info/requires.txt
+pydnb.egg-info/top_level.txt
