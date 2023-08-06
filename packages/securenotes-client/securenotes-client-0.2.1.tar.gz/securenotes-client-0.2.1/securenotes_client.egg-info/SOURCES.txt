@@ -1,0 +1,10 @@
+README.md
+setup.py
+securenotes_client/__init__.py
+securenotes_client/securenotes.py
+securenotes_client/securenotes_api.py
+securenotes_client.egg-info/PKG-INFO
+securenotes_client.egg-info/SOURCES.txt
+securenotes_client.egg-info/dependency_links.txt
+securenotes_client.egg-info/requires.txt
+securenotes_client.egg-info/top_level.txt
