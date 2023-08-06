@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: wutong_search
+Version: 0.1.4.1
+Summary: a search engine crwaler based on python, can be easily configed
+Home-page: https://github.com/wvinzh/WutongSearch
+Author: wvinzh
+Author-email: wvinzh@qq.com
+License: Apache Licence 2.0
+Description: UNKNOWN
+Keywords: search engine,crawler
+Platform: any
