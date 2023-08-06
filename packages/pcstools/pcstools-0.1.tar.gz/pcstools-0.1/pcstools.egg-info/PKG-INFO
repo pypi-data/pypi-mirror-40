@@ -1,0 +1,40 @@
+Metadata-Version: 1.2
+Name: pcstools
+Version: 0.1
+Summary: Tools for the course Proactive Computer Security at DIKU
+Home-page: https://github.com/DIKU-PCS/pcstools
+Author: Mathias Svensson
+Author-email: freaken@freaken.dk
+License: MIT
+Description: 
+        pcstools - exploit toolkit for the PCS course
+        =====================================
+        
+        `MIT License <http://choosealicense.com/licenses/mit/>`__
+        
+        pcstools is an exploit development library heavily inspired by
+        `https://pwntools.com/ <pwntools>`__. It is not a design goal to be
+        API-compatible with pwntools, but it is likely that we will be mostly
+        compatible.
+        
+        .. code:: python
+        
+           from pcstools import *
+        
+           r = remote('exploitme.example.com', 31337)
+           # EXPLOIT CODE GOES HERE
+           r.send(asm(shellcraft.sh()))
+           r.interactive()
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, <4
