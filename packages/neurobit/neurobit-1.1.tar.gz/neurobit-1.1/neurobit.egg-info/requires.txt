@@ -1,0 +1,6 @@
+pycfslib>=1.3
+pyedflib
+scipy
+numba
+click
+requests
