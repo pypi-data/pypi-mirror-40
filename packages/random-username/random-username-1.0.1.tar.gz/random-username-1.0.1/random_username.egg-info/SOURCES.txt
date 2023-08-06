@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+random_username/__init__.py
+random_username/__main__.py
+random_username/generate.py
+random_username.egg-info/PKG-INFO
+random_username.egg-info/SOURCES.txt
+random_username.egg-info/dependency_links.txt
+random_username.egg-info/entry_points.txt
+random_username.egg-info/top_level.txt
+random_username/data/adjectives.txt
+random_username/data/nouns.txt
