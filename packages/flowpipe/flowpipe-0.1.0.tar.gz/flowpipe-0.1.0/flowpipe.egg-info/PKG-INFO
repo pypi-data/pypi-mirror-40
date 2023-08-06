@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: flowpipe
+Version: 0.1.0
+Summary: Lightweight flow-based programming framework.
+Home-page: https://github.com/PaulSchweizer/flowpipe
+Author: Paul Schweizer
+Author-email: paulschweizer@gmx.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
