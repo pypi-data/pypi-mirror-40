@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: irc-parser-tests
+Version: 0.0.2
+Summary: A library of tests for various IRC protocol parsers
+Home-page: https://github.com/ircdocs/parser-tests
+Author: linuxdaemon
+Author-email: linuxdaemonirc@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: irc tests parser
+Platform: UNKNOWN
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
