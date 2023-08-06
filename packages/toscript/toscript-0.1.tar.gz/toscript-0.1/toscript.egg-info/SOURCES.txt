@@ -1,0 +1,9 @@
+setup.py
+bin/toscript-python
+toscript/__init__.py
+toscript/to.py
+toscript.egg-info/PKG-INFO
+toscript.egg-info/SOURCES.txt
+toscript.egg-info/dependency_links.txt
+toscript.egg-info/not-zip-safe
+toscript.egg-info/top_level.txt
