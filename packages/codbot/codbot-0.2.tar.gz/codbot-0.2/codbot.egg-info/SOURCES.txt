@@ -1,0 +1,8 @@
+setup.py
+codbot/__init__.py
+codbot/ec2.py
+codbot.egg-info/PKG-INFO
+codbot.egg-info/SOURCES.txt
+codbot.egg-info/dependency_links.txt
+codbot.egg-info/not-zip-safe
+codbot.egg-info/top_level.txt
