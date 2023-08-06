@@ -1,0 +1,9 @@
+README.md
+setup.py
+licensr/__init__.py
+licensr/licensr.py
+licensr.egg-info/PKG-INFO
+licensr.egg-info/SOURCES.txt
+licensr.egg-info/dependency_links.txt
+licensr.egg-info/entry_points.txt
+licensr.egg-info/top_level.txt
