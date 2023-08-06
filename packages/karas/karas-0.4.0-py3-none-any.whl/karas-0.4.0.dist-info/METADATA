@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: karas
+Version: 0.4.0
+Summary: trainer for pytorch
+Home-page: https://github.com/TuXiaokang/karas.git
+Author: Xiaokang Tu
+Author-email: xiaokang.tu@qq.com
+License: MIT Licence
+Keywords: karas,pytorch
+Platform: any
+Requires-Dist: six
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: tensorboard
+Requires-Dist: tensorboardx (<=1.5)
+
+A chainer-like trainer framework for pytorch users.
+
+
