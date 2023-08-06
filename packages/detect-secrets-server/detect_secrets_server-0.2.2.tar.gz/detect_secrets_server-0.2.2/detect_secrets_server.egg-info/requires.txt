@@ -1,0 +1,4 @@
+detect-secrets>=0.11.4
+pyyaml
+unidiff
+python-crontab
