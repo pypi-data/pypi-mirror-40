@@ -1,0 +1,31 @@
+# Cryptocurrency trading
+python-binance
+ccxt
+tulipy
+
+## Services
+notifiers
+
+# Reddit
+praw
+
+# Telegram
+python-telegram-bot
+
+# Twitter
+Python-Twitter
+
+# Web
+flask
+
+## Tools
+# Analysis tools
+newspaper3k
+pytrends
+vaderSentiment
+
+## Others
+psutil
+colorlog
+cryptography
+requests
