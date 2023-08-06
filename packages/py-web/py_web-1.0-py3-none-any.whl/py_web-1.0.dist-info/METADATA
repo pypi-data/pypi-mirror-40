@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: py-web
+Version: 1.0
+Summary: Py_web is used for testing purpose only.
+
+### Features
+
+- WIP
+
+### Requirements
+
+- None
+
+### Installation
+
+```sh
+$ pip install py_web
+```
+
+### License
+
+- Distributed under GNU General Public License
+
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
