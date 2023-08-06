@@ -1,0 +1,3 @@
+[console_scripts]
+foostache = foostache.cli:main
+
