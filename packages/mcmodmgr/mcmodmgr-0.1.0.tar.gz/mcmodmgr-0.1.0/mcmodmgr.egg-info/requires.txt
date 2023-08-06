@@ -1,0 +1,4 @@
+PyYaml>=3.13
+cssselect>=1.0.3
+lxml>=4.3.0
+requests>=2.21.0

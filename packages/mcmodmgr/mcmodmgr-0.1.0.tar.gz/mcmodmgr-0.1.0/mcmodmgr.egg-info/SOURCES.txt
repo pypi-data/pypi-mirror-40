@@ -1,0 +1,11 @@
+setup.py
+mcmodmgr/__init__.py
+mcmodmgr/_version.py
+mcmodmgr/command.py
+mcmodmgr/logging.py
+mcmodmgr.egg-info/PKG-INFO
+mcmodmgr.egg-info/SOURCES.txt
+mcmodmgr.egg-info/dependency_links.txt
+mcmodmgr.egg-info/entry_points.txt
+mcmodmgr.egg-info/requires.txt
+mcmodmgr.egg-info/top_level.txt
