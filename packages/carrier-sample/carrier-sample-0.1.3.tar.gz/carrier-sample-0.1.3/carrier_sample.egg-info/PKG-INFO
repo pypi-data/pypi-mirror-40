@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: carrier-sample
+Version: 0.1.3
+Summary: high speed acquisition card program for carrier && single && highlight
+Home-page: https://gitlab.com/KD-Group/carrier.sample
+Author: WingC
+Author-email: 1018957763@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: carrier sample
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Provides-Extra: test
