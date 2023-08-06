@@ -1,0 +1,3 @@
+[console_scripts]
+memecrypt = memecrypt:main
+
