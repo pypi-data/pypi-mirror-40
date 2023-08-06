@@ -1,0 +1,3 @@
+[console_scripts]
+lbp_print = lbp_print.cli:main
+
