@@ -1,0 +1,35 @@
+Overview
+========
+
+Provides functions to run HTTP requests.
+This package exposes the `com.ibm.streamsx.inet` toolkit as Python methods.
+
+This package is compatible with Streaming Analytics service on IBM Cloud:
+
+* `IBM Streaming Analytics <https://www.ibm.com/cloud/streaming-analytics>`_
+
+
+Sample
+======
+
+A simple example of a Streams application that emits http requests::
+
+    from streamsx.topology.topology import *
+    from streamsx.topology.schema import CommonSchema, StreamSchema
+    from streamsx.topology.context import submit
+    import streamsx.inet as inet
+
+    topo = Topology()
+    s = topo.source(['http://httpbin.org/get']).as_string()
+    result_http_get = inet.request_get(s)
+    result_http_get.print()
+
+    submit('STREAMING_ANALYTICS_SERVICE', topo)
+
+
+Documentation
+=============
+
+* `streamsx.inet package documentation <http://streamsxinet.readthedocs.io/en/pypackage/>`_
+
+
