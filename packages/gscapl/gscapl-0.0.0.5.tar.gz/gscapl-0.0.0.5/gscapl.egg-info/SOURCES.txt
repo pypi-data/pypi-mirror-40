@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+gscapl/__init__.py
+gscapl/gps.py
+gscapl/utils.py
+gscapl/weather.py
+gscapl.egg-info/PKG-INFO
+gscapl.egg-info/SOURCES.txt
+gscapl.egg-info/dependency_links.txt
+gscapl.egg-info/requires.txt
+gscapl.egg-info/top_level.txt
