@@ -1,0 +1,3 @@
+[tox]
+asdf = tox_asdf.plugin
+
