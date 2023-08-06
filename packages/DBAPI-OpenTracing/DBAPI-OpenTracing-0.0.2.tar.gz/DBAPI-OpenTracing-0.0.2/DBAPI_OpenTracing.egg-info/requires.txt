@@ -1,0 +1,13 @@
+opentracing<2.1,>=2.0
+wrapt
+
+[integration_tests]
+mock
+pytest
+docker
+psycopg2
+pymysql
+
+[unit_tests]
+mock
+pytest
