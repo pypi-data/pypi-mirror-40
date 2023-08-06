@@ -1,0 +1,20 @@
+EXTENSIONS = [
+    {
+        'name': '{{extension_name}}',
+        'extension_class': '.extension.{{extension_class}}',
+    },
+]
+
+VIEWS = [
+    {
+        'uri': '{{uri}}',
+        'view_class': '.view.{{view_class}}',
+    },
+]
+
+STATICS = [
+    {
+        'uri': '/static',
+        'file_or_directory': '.',
+    },
+]
