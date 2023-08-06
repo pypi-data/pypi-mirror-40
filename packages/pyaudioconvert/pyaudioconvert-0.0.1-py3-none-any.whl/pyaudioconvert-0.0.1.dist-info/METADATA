@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyaudioconvert
+Version: 0.0.1
+Summary: A small package to convert audio files
+Home-page: https://github.com/robmsmt/pyaudioconvert
+Author: Rob Smith
+Author-email: robmsmt@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pyaudioconvert
+
+Simple utility to convert audio from one form to another (via sox). We will use Sox until we find a fast and efficient way to convert reliably in python
+
+
+## Requirements
+ 0. At least py3x
+ 1. Have sox installed 
+
+
+## Install
+ 0. `pip install pyaudioconvert`
+
+
+
