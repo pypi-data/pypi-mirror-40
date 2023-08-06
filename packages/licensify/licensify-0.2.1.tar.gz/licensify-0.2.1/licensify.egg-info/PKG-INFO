@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: licensify
+Version: 0.2.1
+Summary: Utility to apply license headers to source code files
+Home-page: https://github.com/Simmovation/licensify
+Author: Simmovation Ltd
+Author-email: info@simmovation.tech
+License: BSD
+Description: # licensify
+        
+        Licensify is a tool for applying license headers to source code files.
+        
+        [![CircleCI](https://circleci.com/gh/Simmovation/licensify.svg?style=svg)](https://circleci.com/gh/Simmovation/licensify)
+        
+        ## Usage
+        
+        
+        ```
+        > python licensify --help
+        
+        usage: licensify [-h] [--directory DIRECTORY] [--files FILES]
+                         [--comment COMMENT] [--dry-run] [--check]
+                         license
+        
+        positional arguments:
+          license               A file containing the liense
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          --directory DIRECTORY
+                                The directory to apply licenses to
+          --files FILES         Glob to match files
+          --comment COMMENT     Comment string to prepend to header lines
+          --dry-run             Perform a dry run
+          --check               Return an error if any files need updating (implies
+                                dry run)
+        ```
+Platform: any
+Requires-Python: >=2.7,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,<4
+Description-Content-Type: text/markdown
+Provides-Extra: publish
+Provides-Extra: test
+Provides-Extra: build

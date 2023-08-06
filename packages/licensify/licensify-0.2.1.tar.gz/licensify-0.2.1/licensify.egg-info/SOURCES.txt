@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+licensify/__init__.py
+licensify/__main__.py
+licensify/_version.py
+licensify/apply_license.py
+licensify/errors.py
+licensify.egg-info/PKG-INFO
+licensify.egg-info/SOURCES.txt
+licensify.egg-info/dependency_links.txt
+licensify.egg-info/entry_points.txt
+licensify.egg-info/requires.txt
+licensify.egg-info/top_level.txt
