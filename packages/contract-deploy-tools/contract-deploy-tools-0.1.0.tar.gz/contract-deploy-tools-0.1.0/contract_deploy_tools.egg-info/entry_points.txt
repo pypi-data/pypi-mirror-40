@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    deploy-tools=deploy_tools.cli:main
+    
