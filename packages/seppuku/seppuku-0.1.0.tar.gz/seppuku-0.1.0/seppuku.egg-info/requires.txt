@@ -1,0 +1,13 @@
+redis
+flask
+flask-restful
+
+[dev]
+
+[docs]
+
+[test]
+pytest
+pytest-cov
+pytest-flask
+pytest-env

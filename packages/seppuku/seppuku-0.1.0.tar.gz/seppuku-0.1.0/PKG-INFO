@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: seppuku
+Version: 0.1.0
+Summary: REST API for writing and reading self-destructing messages with optional auto-expiry timers using a redis backend.
+Home-page: https://github.com/smomni/self-destructing-messages-api
+Author: Simo Tumelius
+Author-email: simo.tumelius@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: dev

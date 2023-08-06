@@ -1,0 +1,14 @@
+README.md
+serve_seppuku_api.py
+setup.py
+seppuku/__init__.py
+seppuku/api.py
+seppuku/message.py
+seppuku.egg-info/PKG-INFO
+seppuku.egg-info/SOURCES.txt
+seppuku.egg-info/dependency_links.txt
+seppuku.egg-info/entry_points.txt
+seppuku.egg-info/requires.txt
+seppuku.egg-info/top_level.txt
+test/test_api.py
+test/test_message.py
