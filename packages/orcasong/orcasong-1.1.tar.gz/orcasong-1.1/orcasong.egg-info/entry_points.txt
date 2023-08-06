@@ -1,0 +1,3 @@
+[console_scripts]
+make_nn_images = orcasong.make_nn_images:main
+
