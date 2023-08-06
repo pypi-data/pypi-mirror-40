@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: Synx
+Version: 0.0.2
+Summary: A framework for easy and simple creation of user interfaces for Python applications
+Home-page: https://eliezerodjao.com/desktop/portfolio.php?sent=synx
+Author: Eliezer Odjao
+Author-email: eliezerodjaoofficial@gmail.com
+License: Proprietary
+Project-URL: Source, https://eliezerodjao.com/desktop/portfolio.php?sent=synx
+Project-URL: Documentation, https://eliezerodjao.com/docs/Synx_User_Documentation.docx
+Description: 
+        # Synx Python GUI Framework
+        
+        For Python developers who want to build both simple and complex user application layouts, and are looking for something lightweight (in terms of byte size of the framework package) as well as having simple and easy to use syntax, Synx will be the go-to choice.
+        
+        Synx hopes to bring the simple, yet sophisticating nature of CSS for web development to the Python environment. Synx will be for people learning GUI development, simple user application developers, and larger and sophisticated application development. It will also be usable for any kind of user applications (games, messaging apps, news apps, anaalytical apps etc).
+        
+        |LINKS|  |
+        |--|--|
+        | Instagram | [Visit Instagram](https://www.instagram.com/synx.app/) |
+        |EULA| [Synx EULA](https://eliezerodjao.com/docs/Synx_EULA.txt) |
+        |Developer | [eliezerodjaoofficial@gmail.com](mailto:eliezerodjaoofficial@gmail.com)|
+        
+        
+        
+        
+        Please make sure you read the **End-User License Agreement (EULA)** for this project.
+        By using this software, you agree to the EULA.
+        
+Keywords: GUI graphical user interface UI UX
+Platform: UNKNOWN
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.3
+Description-Content-Type: text/markdown
