@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+pigpio_encoder/__init__.py
+pigpio_encoder/pigpio_encoder.py
+pigpio_encoder.egg-info/PKG-INFO
+pigpio_encoder.egg-info/SOURCES.txt
+pigpio_encoder.egg-info/dependency_links.txt
+pigpio_encoder.egg-info/not-zip-safe
+pigpio_encoder.egg-info/top_level.txt
