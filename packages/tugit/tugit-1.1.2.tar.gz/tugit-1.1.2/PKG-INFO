@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: tugit
+Version: 1.1.2
+Summary: Python library for installing packages directly from a git repository
+Home-page: https://github.com/idin/tugit.git
+Author: Idin
+Author-email: d@idin.net
+License: MIT
+Description: # TugIt
+        
+        **TugIt** is a Python library for installing packages directly from a git repository. 
+        
+        # How to Install
+        
+        To install TugIt just use: 
+        
+        ```bash
+        pip install tugit
+        ```
+        
+        # How to install a Python package hosted as a Git repo
+        
+        To use TugIt to install Python packages directly from a git repository use the Installer class:
+        
+        ```python
+        from tugit import Installer
+        installer = Installer()
+        installer.tug(package='tugit', url='https://github.com/idin/tugit.git') 
+        # optional arguments: 
+        #   ignore_if_installed (default: True)
+        #   echo (default: 1)
+        ```
+        
+        # How to get a list of installed packages
+        
+        ```python
+        print(installer.installed_packages)
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
