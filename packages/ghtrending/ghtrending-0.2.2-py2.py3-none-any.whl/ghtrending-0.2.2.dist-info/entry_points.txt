@@ -1,0 +1,3 @@
+[console_scripts]
+ghtrending = ghtrending.__main__:main
+
