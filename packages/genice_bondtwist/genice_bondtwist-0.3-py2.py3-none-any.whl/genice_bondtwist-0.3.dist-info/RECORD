@@ -1,0 +1,11 @@
+genice_bondtwist/__init__.py,sha256=FFksG-KdvpzoyuwwwXDXYQyPFvNV_orq6MrmlK6IK6Q,73
+genice_bondtwist/formats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genice_bondtwist/formats/bondtwist.py,sha256=79zdJQVVxYAU-o2O34K-xeMEOsw6olj3wsEVWLEUdfs,9187
+genice_bondtwist/formats/bondtwist2.py,sha256=e3mjzQjcLTGkqODTt2aQ3PkQHb5mF5EjOYF2Rqth7T4,3565
+genice_bondtwist/formats/bondtwist3.py,sha256=8-4cVYg-1IVj3-gUELad-wyioCuT4hIGZrf1nohPpP8,3464
+genice_bondtwist/formats/colorchart.py,sha256=5DGR3JkMqlZxlSF1-ijjy7PdWqIePsXLUOHHuUDb850,967
+genice_bondtwist-0.3.dist-info/METADATA,sha256=nwzuvHvbRq4roaznPaEFo3T2nBGe27cQ4P2nnCN6Q8M,1053
+genice_bondtwist-0.3.dist-info/RECORD,,
+genice_bondtwist-0.3.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+genice_bondtwist-0.3.dist-info/entry_points.txt,sha256=no9FVlQgFhIVszFEEC4f-bneV75qGHt92xv52nIkV-U,395
+genice_bondtwist-0.3.dist-info/top_level.txt,sha256=PMmd7JlfuEeV8W5B3-Ihs93WhsSBzx3M-Mxh7ITFi_w,17
