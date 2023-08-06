@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+djangoldp_skill/__init__.py
+djangoldp_skill/admin.py
+djangoldp_skill/apps.py
+djangoldp_skill/factories.py
+djangoldp_skill/models.py
+djangoldp_skill/urls.py
+djangoldp_skill.egg-info/PKG-INFO
+djangoldp_skill.egg-info/SOURCES.txt
+djangoldp_skill.egg-info/dependency_links.txt
+djangoldp_skill.egg-info/requires.txt
+djangoldp_skill.egg-info/top_level.txt
+djangoldp_skill/migrations/0001_initial.py
+djangoldp_skill/migrations/__init__.py
