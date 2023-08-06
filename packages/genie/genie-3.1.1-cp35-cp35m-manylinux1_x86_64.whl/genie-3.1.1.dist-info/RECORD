@@ -1,0 +1,15 @@
+genie-3.1.1-py3.5-nspkg.pth,sha256=h9oTUb5LE_2FqXSiu6TZnnXBniNRCjJ-m892Tw1Sru0,534
+genie/base.cpython-35m-x86_64-linux-gnu.so,sha256=-T29W8gdS2hi7tzcx0mFpvL5WjpKwnbXdyPRKtgT3hA,216952
+genie/decorator.cpython-35m-x86_64-linux-gnu.so,sha256=jcl-lIEEpyk_cADP0TP0wa9y-700hrig0jiE4oiMUyY,1390856
+genie/info.cpython-35m-x86_64-linux-gnu.so,sha256=TNT3EhfK1EyHSSjM72XTXCAWpSUCV2kKrAcwAgidjWc,51360
+genie/cli/__main__.cpython-35m-x86_64-linux-gnu.so,sha256=TnPPAJ0jGYc-hKuORJB8xrGW4q2qNnkpqVEN7M8XrCc,153320
+genie/cli/core.cpython-35m-x86_64-linux-gnu.so,sha256=HLOrnmFdLMz-IaDCJT3d0xioexlBiEEXKTElxfuOJ8U,72072
+genie/cli/commands/diff.cpython-35m-x86_64-linux-gnu.so,sha256=XDgAGs2NnF6DpvmKNFoqStOmxqHhDKsWV19oyQh6VXQ,720528
+genie/cli/commands/learn.cpython-35m-x86_64-linux-gnu.so,sha256=ikJfPfTaEk-7B0MKxdEQCQ9_ar8W_mmDQMTf3HzXu34,874296
+genie/cli/commands/unpickle.cpython-35m-x86_64-linux-gnu.so,sha256=M-bbslR9mRhapqBSlWZbq5XFx-6plFROJXqZl6wr4q0,250000
+genie-3.1.1.dist-info/METADATA,sha256=I7ve0455zNWAramyAjUqlWr6EOMUPut1JO7te5r1ec0,4058
+genie-3.1.1.dist-info/WHEEL,sha256=WCHTuNJ7HthgXb8clRjse3LqyJVW0ri3xSNaTEdrhHI,109
+genie-3.1.1.dist-info/entry_points.txt,sha256=fxxTYDsqMcA7cl9YTlLMDh0EoAb7mnhYPKz2BO43c08,51
+genie-3.1.1.dist-info/namespace_packages.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie-3.1.1.dist-info/top_level.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie-3.1.1.dist-info/RECORD,,
