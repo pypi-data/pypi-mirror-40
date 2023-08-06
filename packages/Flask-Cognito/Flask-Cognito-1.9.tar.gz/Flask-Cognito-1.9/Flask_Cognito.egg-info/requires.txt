@@ -1,0 +1,3 @@
+Flask
+cognitojwt[sync]>=1.1.0
+werkzeug
