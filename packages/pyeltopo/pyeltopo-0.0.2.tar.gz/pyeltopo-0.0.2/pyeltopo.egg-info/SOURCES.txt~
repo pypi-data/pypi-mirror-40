@@ -1,0 +1,17 @@
+.gitignore
+.gitmodules
+CMakeLists.txt
+LICENSE
+README.md
+setup.py
+extern/eigen
+extern/eltopo
+extern/pybind11
+include/eltopo.h
+pyeltopo.egg-info/PKG-INFO
+pyeltopo.egg-info/SOURCES.txt
+pyeltopo.egg-info/dependency_links.txt
+pyeltopo.egg-info/not-zip-safe
+pyeltopo.egg-info/top_level.txt
+src/eltopo.cpp
+src/main.cpp
