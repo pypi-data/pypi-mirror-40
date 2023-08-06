@@ -1,0 +1,4 @@
+[console_scripts]
+gyb = gyb:main
+line-directive = linedirective:main
+
