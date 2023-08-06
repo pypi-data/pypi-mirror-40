@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+keepasshttp/__init__.py
+keepasshttp/aes_256_cbc.py
+keepasshttp/keepass_http.py
+keepasshttp.egg-info/PKG-INFO
+keepasshttp.egg-info/SOURCES.txt
+keepasshttp.egg-info/dependency_links.txt
+keepasshttp.egg-info/requires.txt
+keepasshttp.egg-info/top_level.txt
