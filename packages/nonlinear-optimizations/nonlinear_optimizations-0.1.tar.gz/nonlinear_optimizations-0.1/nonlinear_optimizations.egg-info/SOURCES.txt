@@ -1,0 +1,9 @@
+setup.py
+nonlinear_optimizations/__init__.py
+nonlinear_optimizations.egg-info/PKG-INFO
+nonlinear_optimizations.egg-info/SOURCES.txt
+nonlinear_optimizations.egg-info/dependency_links.txt
+nonlinear_optimizations.egg-info/not-zip-safe
+nonlinear_optimizations.egg-info/top_level.txt
+nonlinear_optimizations/function/Function.py
+nonlinear_optimizations/function/__init__.py
