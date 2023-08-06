@@ -1,0 +1,16 @@
+pypistats/__init__.py,sha256=l_0Sgm-uXJCByM-yowBiWy1gy1QKV-IhFwGyXrFIjEg,8602
+pypistats/cli.py,sha256=0PfD8_tYHiQxZvjbBNnqI9GVtlwktDi_MZ_BIaOgWiQ,7001
+pypistats/version.py,sha256=MD46hOlTZuuZcuC_Luofc9CE1vN0JfepVN5E__MEW9M,39
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=_c581ZC5eQQirStmP9187WDUpXlzvB9rP4jsA065C5Q,3155
+tests/test_pypistats.py,sha256=ya90AORW3DBh1i-NmAAJ-9RtcQs5hbqRuiXxLQ34tVU,21003
+tests/test_pypistats_cache.py,sha256=KfTWRU-T9S8kfmlhepblf8u9AJbw36ZlK5vzLge2p64,3113
+tests/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/data/python_minor.py,sha256=Q1FJSRhzo7PaRVHKtMlxHcVtN6kXnDZW1Wp0keZI82c,93203
+pypistats-0.4.1.dist-info/LICENSE.txt,sha256=Te5jYvwlgUdZzViKSgUtrwKWNJehrneRxYm3aLMRGIQ,1074
+pypistats-0.4.1.dist-info/METADATA,sha256=xjnSgWz-9bSqkEvbjW3cJHjIEG2OAnBsPfET05uB-m4,7484
+pypistats-0.4.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+pypistats-0.4.1.dist-info/entry_points.txt,sha256=7yrY5m70pjcPxtq7j16JUA_H9ahshtmtDS30uHoRvR8,50
+pypistats-0.4.1.dist-info/top_level.txt,sha256=cormILUq0yUI3b4vfrzFQrMTo9DkQSWPBUCIhMfCGVs,16
+pypistats-0.4.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pypistats-0.4.1.dist-info/RECORD,,
