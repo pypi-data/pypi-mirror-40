@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: taskwarrior-jrnl-hook
+Version: 0.1.1
+Summary: A hook to add started task in taskwarrior to jrnl
+Home-page: https://github.com/Hatoris/taskwarrior_jrnl_hook
+Author: Florian Bernard
+Author-email: florianxbernard@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: taskw
+Requires-Dist: babel
+
+UNKNOWN
+
+
