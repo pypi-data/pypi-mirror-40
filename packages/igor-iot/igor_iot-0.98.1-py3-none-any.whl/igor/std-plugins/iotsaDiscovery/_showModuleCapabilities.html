@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<style>
+	table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+	}
+	</style>
+	<title>Iotsa Devices</title>
+</head>
+<body>
+	<h1>Iotsa Devices</h1>
+	{% set module = "capabilities" %}
+	{% if set %}
+		{% set modCapabilities = {} %}
+		{% set _ = modCapabilities.update(issuerKey=issuerKey) if issuerKey else None %}
+		{% set _ = modCapabilities.update(trustedIssuer=trustedIssuer) if trustedIssuer else None %}
+		{% set deviceStatus = pluginObject._getorset(device, module=module, protocol=protocol, credentials=credentials, port=port, noverify=noverify, includeConfig=True, token=token, **modCapabilities) %}
+	{% endif %}
+	{% set deviceStatus = pluginObject._getorset(device, module=module, protocol=protocol, credentials=credentials, port=port, noverify=noverify, includeConfig=True, token=token) %}
+	{% set device = deviceStatus.device %}
+	{% set module = deviceStatus.module %}
+	{% set status = deviceStatus.get(module, {}) %}
+	{% set message = deviceStatus.message %}	
+	{% if message %}
+		<h2>User Intervention Required</h2>
+		<p><b>Message:</b> {{message}}</p>
+		{% if message[:4] == '502 ' %}
+			<p>If the SSL certificate of iotsa device "{{device}}" is not trusted by this Igor please try to connect using the form at the bottom of the
+			<a href="_showDeviceList.html">iotsa device list</a> page and select the <em>Do not check SSL certificates</em> option.</p>
+		{% elif message[:4] == '401 ' %}
+			<p>To allow access to module "{{module}}" iotsa device "{{device}}" requires either a trusted capability (which Igor does not have yet) or
+			username/passord credentials. You can use the latter by selecting this device on the form at the bottom of 
+			<a href="_showDeviceList.html">iotsa device list</a> and providing them in the <em>credentials</em> field.</p>
+		{% endif %}
+	{% endif %}
+	
+
+	<h2>Status for device {{device}}, module {{module}}</h2>
+	<table>
+		<tr><th>Key</th><th>Value</th></tr>
+		{% for k, v in status.items() %}
+			<tr><td>{{k}}</td><td>{{v}}</td></tr>
+		{% endfor %}
+	</table>
+	
+	<h2>Install shared secret key for capabilities</h2>
+	
+	{% if deviceStatus.config.currentMode == 1 %}
+		{% set aud = device %}
+		{% set keylist = igor.access.getSecretKeysForAudience(aud=aud, token=token) %}
+		{% if keylist %}
+			<p>You can select the correct secret key shared between Igor and iotsa device "{{device}}":</p>
+			{% for iss, kkk in keylist %}
+				<form>
+					<input type="hidden" name="device" value="{{device}}">
+					<input type="hidden" name="module" value="{{module}}">
+					<input type="hidden" name="set" value="1">
+					<input type="hidden" name="issuerKey" value="{{kkk}}">
+					Key issued by:
+					<input type="text" name="trustedIssuer" value="{{iss}}" readonly>
+					<input type="submit" value="Set Shared Secret Key">
+				</form><br>
+			{% endfor %}
+		{% else %}
+			<p>This Igor does not know of any shared secret keys issued for iotsa device "{{device}}". You can create one on the
+			<a href="/capabilities.html">capabilities page</a>.</p>
+		{% endif %}
+		<p>Alternatively, you can set the shared secret key and the URL of the issuer of that key manually:</p>
+		<form>
+			<input type="hidden" name="device" value="{{device}}">
+			<input type="hidden" name="module" value="{{module}}">
+			<input type="hidden" name="set" value="1">
+			<table>
+				<tr>
+					<td>Issuer URL:</td>
+					<td><input type="text" name="trustedIssuer" value="{{igor.access.getSelfIssuer()}}"></td>
+				</tr>
+				<tr>
+					<td>Key data:</td>
+					<td><input type="text" name="issuerKey" value=""></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" value="Set Shared Secret Key">
+				</tr>
+			</table>
+		</form>
+	{% elif deviceStatus.config.requestedMode == 1 %}
+		<p>
+		You have requested configuration mode, but not rebooted {{device}} yet. Please do so within {{deviceStatus.config.requestedModeTimeout}} seconds and select
+		<a href="_showModuleButtons.html?device={{device}}&module={{module}}">refresh</a>
+		to reload this page.
+		</p>
+	{% else %}
+		<p>To change capability support {{device}} must be in configuration mode. You can request the device to go to configuration mode on the 
+		<a href="_showDevice.html?device={{device}}">device status page</a>.
+		</p>
+	{% endif %}
+	<hr>
+	<a href="_showDevice.html?device={{device}}">Return to {{device}} device status page.</a><br>
+	{% if returnTo %}
+		<a href="{{returnTo}}">Return to {{returnTo}}.</a><br>
+	{% endif %}
+	<a href="/plugin/{{pluginName}}/page/index.html">Return to iotsa device setup page.</a><br>
+	<a href="/">Return to Igor homepage</a>
+	
+
+</body>
+</html>

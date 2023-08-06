@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<data  xmlns:own="http://jackjansen.nl/igor/owner" xmlns:au="http://jackjansen.nl/igor/authentication">
+	<services>
+		<backup.desktop own:plugin="{plugin}"/>
+	</services>
+	<actions>
+		<action own:plugin="{plugin}">
+			<interval>36000</interval>
+			<url>/pluginscript/{plugin}/get?name=backup.desktop&amp;remoteHost=localhost</url>
+			<representing>services/backup.desktop</representing>
+			<aggregate>true</aggregate>
+			<au:needCapability>
+				<obj>/pluginscript/{plugin}</obj>
+				<get>child</get>
+			</au:needCapability>
+		</action>
+	</actions>
+	<plugindata>
+		<{plugin} own:plugin="{plugin}">
+			<au:needCapability>
+				<obj>/data/plugindata/{plugin}</obj>
+				<get>descendant-or-self</get>
+			</au:needCapability>
+		</{plugin}>
+	</plugindata>
+</data>

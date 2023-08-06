@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Igor System Health</title>
+	<style>
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	</style>
+</head>
+{% macro ago(path) -%}
+		{% set value = igor.database.getValue(path, token) %}
+		{% if value %}
+			{% set value = int(float(igor.database.getValue('igor_timestamp()-igor_timestamp('+path+')', token))) %}
+			{% if value < 60 %}
+				{{value}}s
+			{% else %}
+				{% set value = value // 60 %}
+				{% if value < 60 %}
+					{{value}}m
+				{% else %}
+					{% set value = value // 60 %}
+					{% if value < 60 %}
+						{{value}}h
+					{% else %}
+						{% set value = value // 24 %}
+						{% if value < 60 %}
+							{{value}}d
+						{% else %}
+							{% set value = value // 7 %}
+							{{value}}w
+						{% endif %}
+					{% endif %}
+				{% endif %}
+			{% endif %}
+		{% endif %}
+{%- endmacro %}
+{% macro muted(entry) -%}
+	{% set m = igor.database.getValue(entry, token) %}
+	{% if m %}
+		{{igor.database.getValue('igor_dateTime(' + entry + ')', token)}}
+	{% endif %}
+{%- endmacro %}
+<body>
+	<h1>Igor System Health</h1>
+	
+	<p>
+		Igor has been running since {{igor.database.getValue('igor_dateTime(/data/services/igor/startTime)', token)}},
+		and was rebooted {{igor.database.getValue('/data/services/igor/rebootCount', token)}} times during its lifetime.
+	</p>
+	
+	<h2>Exceptional conditions</h2>
+	
+	{% set messages = igor.database.getValues('/data/environment/systemHealth/messages/*', token) %}
+	{% if messages %}
+		<p>The following exceptional conditions (for services, sensors and actuators) are currently noted:</p>
+		<ul>
+			{% for xp, msg in messages %}
+				<li>{{msg}}</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p>Igor is currently not aware of any exceptional conditions (for services, sensors and actuators). </p>
+	{% endif %}
+		
+	<h2>Igor selfcheck status</h2>
+	
+	{% set functionalities = igor.database.getElements('/data/status/igor/*', 'get', token) %}
+	<table style="width:100%">
+		<tr>
+			<th>Functionality</th>
+			<th>Alive?</th>
+			<th>Last Attempt</th>
+			<th>Last Success</th>
+			<th>Last Failure</th>
+			<th>Current Error</th>
+			<th>Ignored until</th>
+			<th>Ignore for:</th>
+		</tr>
+		{% for s in functionalities %}
+			<tr>
+				<td>{{s.tagName}}</td>
+				<td>{{igor.database.getValue('/data/status/igor/' + s.tagName + '/alive', token)}}</td>
+				<td>{{ago('/data/status/igor/' + s.tagName + '/lastActivity')}}</td>
+				<td>{{ago('/data/status/igor/' + s.tagName + '/lastSuccess')}}</td>
+				<td>{{ago('/data/status/igor/' + s.tagName + '/lastFailure')}}</td>
+				
+				{% set msg = igor.database.getValue('/data/status/igor/' + s.tagName + '/errorMessage', token) %}
+				<td>{{msg}}</td>
+				<td>{{muted('/data/status/igor/' + s.tagName + '/ignoreErrorUntil')}}</td>
+				
+				{% if msg %}
+					<td>
+						<a href="/plugin/systemHealth?ignore=igor/{{s.tagName}}&duration=3600&returnTo=/systemHealth.html">1h</a> 
+						<a href="/plugin/systemHealth?ignore=igor/{{s.tagName}}&duration=86400&returnTo=/systemHealth.html">1d</a> 
+						<a href="/plugin/systemHealth?ignore=igor/{{s.tagName}}&duration=604800&returnTo=/systemHealth.html">1w</a> 
+						<a href="/plugin/systemHealth?ignore=igor/{{s.tagName}}&duration=2592000&returnTo=/systemHealth.html">1m</a>
+					</td>
+				{% else %}
+					<td></td>
+				{% endif %}
+			</tr>
+		{% endfor %}
+	</table>
+		
+	<h2>Service status</h2>
+	
+	{% set services = igor.database.getElements('/data/status/services/*', 'get', token) %}
+	<table style="width:100%">
+		<tr>
+			<th>Service</th>
+			<th>Alive?</th>
+			<th>Last Attempt</th>
+			<th>Last Success</th>
+			<th>Last Failure</th>
+			<th>Current Error</th>
+			<th>Ignored until</th>
+			<th>Ignore for:</th>
+		</tr>
+		{% for s in services %}
+			<tr>
+				<td>{{s.tagName}}</td>
+				<td>{{igor.database.getValue('/data/status/services/' + s.tagName + '/alive', token)}}</td>
+				
+				<td>{{ago('/data/status/services/' + s.tagName + '/lastActivity')}}</td>
+				<td>{{ago('/data/status/services/' + s.tagName + '/lastSuccess')}}</td>
+				<td>{{ago('/data/status/services/' + s.tagName + '/lastFailure')}}</td>
+
+				{% set msg = igor.database.getValue('/data/status/services/' + s.tagName + '/errorMessage', token) %}
+				<td>{{msg}}</td>
+				<td>{{muted('/data/status/services/' + s.tagName + '/ignoreErrorUntil')}}</td>
+
+				{% if msg %}
+					<td>
+						<a href="/plugin/systemHealth?ignore=services/{{s.tagName}}&duration=36000&returnTo=/systemHealth.html">1h</a> 
+						<a href="/plugin/systemHealth?ignore=services/{{s.tagName}}&duration=864000&returnTo=/systemHealth.html">1d</a> 
+						<a href="/plugin/systemHealth?ignore=services/{{s.tagName}}&duration=6048000&returnTo=/systemHealth.html">1w</a> 
+						<a href="/plugin/systemHealth?ignore=services/{{s.tagName}}&duration=25920000&returnTo=/systemHealth.html">1m</a>
+					</td>
+				{% else %}
+					<td></td>
+				{% endif %}
+			</tr>
+		{% endfor %}
+	</table>
+		
+		
+	<h2>Sensor status</h2>
+	
+	{% set sensors = igor.database.getElements('/data/status/sensors/*', 'get', token) %}
+	<table style="width:100%">
+		<tr>
+			<th>Sensor Class</th>
+			<th>Alive?</th>
+			<th>Last Activity</th>
+			<th>Last Success</th>
+			<th>Last Failure</th>
+			<th>Current Error</th>
+			<th>Ignored until</th>
+			<th>Ignore for:</th>
+		</tr>
+		{% for s in sensors %}
+			<tr>
+				<td>{{s.tagName}}</td>
+				<td>{{igor.database.getValue('/data/status/sensors/' + s.tagName + '/alive', token)}}</td>
+				
+				<td>{{ago('/data/status/sensors/' + s.tagName + '/lastActivity')}}</td>
+				<td>{{ago('/data/status/sensors/' + s.tagName + '/lastSuccess')}}</td>
+				<td>{{ago('/data/status/sensors/' + s.tagName + '/lastFailure')}}</td>
+
+				{% set msg = igor.database.getValue('/data/status/sensors/' + s.tagName + '/errorMessage', token) %}
+				<td>{{msg}}</td>
+				<td>{{muted('/data/status/sensors/' + s.tagName + '/ignoreErrorUntil')}}</td>
+
+				{% if msg %}
+					<td>
+						<a href="/plugin/systemHealth?ignore=sensors/{{s.tagName}}&duration=3600&returnTo=/systemHealth.html">1h</a> 
+						<a href="/plugin/systemHealth?ignore=sensors/{{s.tagName}}&duration=864000&returnTo=/systemHealth.html">1d</a> 
+						<a href="/plugin/systemHealth?ignore=sensors/{{s.tagName}}&duration=6048000&returnTo=/systemHealth.html">1w</a> 
+						<a href="/plugin/systemHealth?ignore=sensors/{{s.tagName}}&duration=25920000&returnTo=/systemHealth.html">1m</a>
+					</td>
+				{% else %}
+					<td></td>
+				{% endif %}
+			</tr>
+		{% endfor %}
+	</table>
+		
+	<h2>Device status</h2>
+	
+	{% set devices = igor.database.getElements('/data/status/devices/*', 'get', token) %}
+	<table style="width:100%">
+		<tr>
+			<th>Device</th>
+			<th>Alive?</th>
+			<th>Last Activity</th>
+			<th>Last Success</th>
+			<th>Last Failure</th>
+			<th>Current Error</th>
+			<th>Ignored until</th>
+			<th>Ignore for:</th>
+		</tr>
+		{% for s in devices %}
+			<tr>
+				<td>{{s.tagName}}</td>
+				<td>{{igor.database.getValue('/data/status/devices/' + s.tagName + '/alive', token)}}</td>
+
+				<td>{{ago('/data/status/devices/' + s.tagName + '/lastActivity')}}</td>
+				<td>{{ago('/data/status/devices/' + s.tagName + '/lastSuccess')}}</td>
+				<td>{{ago('/data/status/devices/' + s.tagName + '/lastFailure')}}</td>
+
+				{% set msg = igor.database.getValue('/data/status/devices/' + s.tagName + '/errorMessage', token) %}
+				<td>{{msg}}</td>
+				<td>{{muted('/data/status/devices/' + s.tagName + '/ignoreErrorUntil')}}</td>
+
+				{% if msg %}
+					<td>
+						<a href="/plugin/systemHealth?ignore=devices/{{s.tagName}}&duration=3600&returnTo=/systemHealth.html">1h</a> 
+						<a href="/plugin/systemHealth?ignore=devices/{{s.tagName}}&duration=86400&returnTo=/systemHealth.html">1d</a> 
+						<a href="/plugin/systemHealth?ignore=devices/{{s.tagName}}&duration=604800&returnTo=/systemHealth.html">1w</a> 
+						<a href="/plugin/systemHealth?ignore=devices/{{s.tagName}}&duration=2592000&returnTo=/systemHealth.html">1m</a>
+					</td>
+				{% else %}
+					<td></td>
+				{% endif %}
+			</tr>
+		{% endfor %}
+	</table>
+		
+
+</body>
+</html>

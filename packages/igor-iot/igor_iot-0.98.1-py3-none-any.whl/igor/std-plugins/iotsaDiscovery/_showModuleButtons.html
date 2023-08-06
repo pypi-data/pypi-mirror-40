@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<style>
+	table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+	}
+	</style>
+	<title>Iotsa Devices</title>
+</head>
+<body>
+	<h1>Iotsa Devices</h1>
+	{% set module = "buttons" %}
+	{% if set %}
+		{% set modButton = {} %}
+		{% set _ = modButton.update(url=new_url) if change_url else None %}
+		{% set _ = modButton.update(url=new_url_2) if change_url_2 else None %}
+		{% set _ = modButton.update(fingerprint=new_fingerprint) if change_fingerprint else None %}
+		{% set _ = modButton.update(fingerprint=new_fingerprint_2) if change_fingerprint_2 else None %}
+		{% set _ = modButton.update(token=new_token) if change_token else None %}
+		{% set _ = modButton.update(token=igor.access.externalRepresentation(token, new_token_2)) if change_token_2 else None %}
+		{% set _ = modButton.update(credentials=new_credentials) if change_credentials else None %}
+		{% set _ = modButton.update(onPress=not not new_onPress) if change_onPress else None %}
+		{% set _ = modButton.update(onRelease=not not new_onRelease) if change_onRelease else None %}
+		{% set error = pluginObject._setIndexed(device, module, index, modButton, protocol=protocol, credentials=credentials, port=port, noverify=noverify, token=token) %}
+		{% if error %}
+			<p><b>Error while changing button {{index}} settings:</b> {{error}}</p>
+		{% endif %}
+	{% endif %}
+	{% set deviceStatus = pluginObject._getorset(device, module=module, protocol=protocol, credentials=credentials, port=port, noverify=noverify, includeConfig=True, token=token) %}
+	{% set device = deviceStatus.device %}
+	{% set config = deviceStatus.get('config', {}) %}
+	{% set buttonStatus = deviceStatus.get(module, {}) %}
+	{% set buttons = buttonStatus.buttons %}
+	{% set message = deviceStatus.message %}
+	{% if message %}
+		<h2>User Intervention Required</h2>
+		<p><b>Message:</b> {{message}}</p>
+		{% if message[:4] == '502 ' %}
+			<p>If the SSL certificate of iotsa device "{{device}}" is not trusted by this Igor please try to connect using the form at the bottom of the
+			<a href="_showDeviceList.html">iotsa device list</a> page and select the <em>Do not check SSL certificates</em> option.</p>
+		{% elif message[:4] == '401 ' %}
+			<p>To allow access to module "{{module}}" iotsa device "{{device}}" requires either a trusted capability (which Igor does not have yet) or
+			username/passord credentials. You can use the latter by selecting this device on the form at the bottom of 
+			<a href="_showDeviceList.html">iotsa device list</a> and providing them in the <em>credentials</em> field.</p>
+		{% endif %}
+	{% endif %}
+	
+
+	<h2>Status for device {{device}}, module {{module}}</h2>
+	<table>
+		<tr>
+			<th>Button</th>
+			<th>Key</th>
+			<th>Value</th>
+		</tr>
+		{% for button in buttons %}
+			{% for k, v in button.items() %}
+				<tr>
+					{% if loop.first %}
+						<td rowspan="{{button|length}}">{{loop.index0}}</td>
+					{% endif %}
+					<td>{{k}}</td>
+					<td>{{v}}</td>
+				</tr>
+			{% endfor %}
+		{% endfor %}
+	</table>
+	
+	<h2>Changing button actions</h2>
+	
+	{% if config.currentMode == 1 %}
+		<p>Device {{device}} is in configuration mode, you have {{config.modeTimeout}} seconds to change button settings.</p>
+	{% elif config.requestedMode == 1 %}
+		<p>
+		You have requested configuration mode, but not rebooted {{device}} yet. Please do so within {{config.requestedModeTimeout}} seconds and select
+		<a href="_showModuleButtons.html?device={{device}}&module={{module}}">refresh</a>
+		to reload this page.
+		</p>
+	{% else %}
+		<p>To change button actions {{device}} must probably be in configuration mode. You can request the device to go to configuration mode on the 
+		<a href="_showDevice.html?device={{device}}">device status page</a>.
+		</p>
+	{% endif %}
+	{% for button in buttons %}
+		<h3>Modify button {{loop.index0}} configuration</h3>
+		<form>
+			<input type="hidden" name="device" value="{{device}}">
+			<input type="hidden" name="module" value="{{module}}">
+			<input type="hidden" name="set" value="1">
+			<input type="hidden" name="index" value="{{loop.index0}}">
+			<table>
+				<tr>
+					<th>Key</th>
+					<th>Change?</th>
+					<th>Value</th>
+					<th>Help</th>
+				</tr>
+				<tr>
+					<td rowspan="2">url</td>
+					<td><input type="checkbox" name="change_url" id="change_url_1_{{loop.index0}}"></td>
+					<td><input type="text" name="new_url" value="{{button.url}}" oninput="document.getElementById('change_url_1_{{loop.index0}}').checked=true"></td>
+					<td>URL to contact on button changes</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="change_url_2" id="change_url_2_{{loop.index0}}"></td>
+					<td>
+					<select name="new_url_2" onchange="document.getElementById('change_url_2_{{loop.index0}}').checked=true">
+						{% set igorPrefix=pluginObject._getIgorUrl(token=token) %}
+						<option value="">- select action -</option>
+						{% for actionName in pluginObject._getActionsForDevice(device, token=token) %}
+							<option value="{{igorPrefix}}/action/{{actionName}}">{{actionName}}</option>
+						{% endfor %}
+					</select>
+					</td>
+					<td>Igor action to trigger when button changes</td>
+				</tr>
+				<tr>
+					<td rowspan="2">fingerprint</td>
+					<td><input type="checkbox" name="change_fingerprint" id="change_fingerprint_1_{{loop.index0}}"></td>
+					<td><input type="text" name="new_fingerprint" value="{{button.fingerprint}}" oninput="document.getElementById('change_fingerprint_1_{{loop.index0}}').checked=true"></td>
+					<td>Certificate fingerprint to check when contacting URL (https only)</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="change_fingerprint_2" id="change_fingerprint_2_{{loop.index0}}"></td>
+					<td><input type="text" readonly name="new_fingerprint_2" value="{{pluginObject._getIgorFingerprint(token=token)}}" oninput="document.getElementById('change_fingerprint_2_{{loop.index0}}').checked=true"></td>
+					<td>Check that URL is served by this Igor (https only)</td>
+				</tr>
+				<tr>
+					<td rowspan="2">token</td>
+					<td><input type="checkbox" name="change_token" id="change_token_1_{{loop.index0}}"></td>
+					<td><input type="text" name="new_token" value="{{button.token}}" oninput="document.getElementById('change_token_1_{{loop.index0}}').checked=true"></td>
+					<td>Bearer token supplied when contacting URL</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="change_token_2" id="change_token_2_{{loop.index0}}"></td>
+					<td>
+					<select name="new_token_2" value="" onchange="document.getElementById('change_token_2_{{loop.index0}}').checked=true">
+						<option value="">- select token -</option>
+						{% for tokItem in pluginObject._getTokensForDevice(device, token=token) %}
+							<option value="{{tokItem[1]}}">{{tokItem[0]}}</option>
+						{% endfor %}
+					</select>
+					</td>
+					<td>Carry bearer token with Igor capability for action.</td>
+				</tr>
+				<tr>
+					<td>credentials</td>
+					<td><input type="checkbox" name="change_credentials" id="change_credentials_{{loop.index0}}"></td>
+					<td><input type="text" name="new_credentials" value="{{button.credentials}}" oninput="document.getElementById('change_credentials_{{loop.index0}}').checked=true"></td>
+					<td>Credentials supplied when contacting URL (username:password)</td>
+				</tr>
+				<tr>
+					<td>onPress</td>
+					<td><input type="checkbox" name="change_onPress" id="change_onPress_{{loop.index0}}"></td>
+					<td><input type="checkbox" name="new_onPress" {{"checked" if button.onPress else ""}} onchange="document.getElementById('change_onPress_{{loop.index0}}').checked=true"></td>
+					<td>Call URL when button is pressed</td>
+				</tr>
+				<tr>
+					<td>onRelease</td>
+					<td><input type="checkbox" name="change_onRelease" id="change_onRelease_{{loop.index0}}"></td>
+					<td><input type="checkbox" name="new_onRelease" {{"checked" if button.onRelease else ""}} onchange="document.getElementById('change_onRelease_{{loop.index0}}').checked=true"></td>
+					<td>Call URL when button is released</td>
+				</tr>
+				<tr>
+					<td colspan="3"><input type="submit" value="Modify button {{loop.index0}}"></td>
+				</tr>
+			</table>
+		</form>
+	{% endfor %}
+	<hr>
+	<a href="_showDevice.html?device={{device}}">Return to {{device}} device status page.</a><br>
+	{% if returnTo %}
+		<a href="{{returnTo}}">Return to {{returnTo}}.</a><br>
+	{% endif %}
+	<a href="/plugin/{{pluginName}}/page/index.html">Return to iotsa device setup page.</a><br>
+	<a href="/">Return to Igor homepage</a>
+	
+
+</body>
+</html>

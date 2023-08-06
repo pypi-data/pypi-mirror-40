@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<style>
+	table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+	}
+	</style>
+	<title>Iotsa Devices</title>
+</head>
+<body>
+	<h1>Iotsa Devices</h1>
+	{% set module = "users" %}
+	{% if set %}
+		{% set modUser = {} %}
+		{% set _ = modUser.update(username=new_username) if change_username else None %}
+		{% set _ = modUser.update(password=new_password) if change_password else None %}
+		{% set _ = modUser.update(rights=new_rights) if change_rights else None %}
+		{% set error = pluginObject._setIndexed(device, module, index, modUser, protocol=protocol, credentials=credentials, port=port, noverify=noverify, token=token) %}
+		{% if error %}
+			<p><b>Error while changing user {{index}} settings:</b> {{error}}</p>
+		{% endif %}
+	{% endif %}
+	{% set deviceStatus = pluginObject._getorset(device, module=module, protocol=protocol, credentials=credentials, port=port, noverify=noverify, includeConfig=True, token=token) %}
+	{% set device = deviceStatus.device %}
+	{% set config = deviceStatus.get('config', {}) %}
+	{% set userStatus = deviceStatus.get(module, {}) %}
+	{% set users = userStatus.users %}
+	{% set message = deviceStatus.message %}	
+	{% if message %}
+		<h2>User Intervention Required</h2>
+		<p><b>Message:</b> {{message}}</p>
+		{% if message[:4] == '502 ' %}
+			<p>If the SSL certificate of iotsa device "{{device}}" is not trusted by this Igor please try to connect using the form at the bottom of the
+			<a href="_showDeviceList.html">iotsa device list</a> page and select the <em>Do not check SSL certificates</em> option.</p>
+		{% elif message[:4] == '401 ' %}
+			<p>To allow access to module "users" iotsa device "{{device}}" requires
+			username/passord credentials. You can use the latter by selecting this device on the form at the bottom of 
+			<a href="_showDeviceList.html">iotsa device list</a> and providing them in the <em>credentials</em> field.</p>
+			<p>Note that for the <em>users</em> module capability-based access does not work, you must specify username/password credentials.</p>
+		{% endif %}
+	{% endif %}
+	
+
+	<h2>Status for device {{device}}, module {{module}}</h2>
+	<table>
+		<tr>
+			<th>#</th>
+			<th>Key</th>
+			<th>Value</th>
+		</tr>
+		{% for user in users %}
+			{% for k, v in user.items() %}
+				<tr>
+					{% if loop.first %}
+						<td rowspan="{{user|length}}">{{loop.index0}}</td>
+					{% endif %}
+					<td>{{k}}</td>
+					<td>{{v}}</td>
+				</tr>
+			{% endfor %}
+		{% endfor %}
+	</table>
+	
+	<h2>Changing users and passwords</h2>
+	
+	{% if config.currentMode == 1 %}
+		<p>Device {{device}} is in configuration mode, you have {{config.modeTimeout}} seconds to change user settings.</p>
+	{% elif config.requestedMode == 1 %}
+		<p>
+		You have requested configuration mode, but not rebooted {{device}} yet. Please do so within {{config.requestedModeTimeout}} seconds and select
+		<a href="_showModuleUsers.html?device={{device}}&module={{module}}">refresh</a>
+		to reload this page.
+		</p>
+	{% else %}
+		<p>To change usernames or passwords {{device}} must be in configuration mode. You can request the device to go to configuration mode on the 
+		<a href="_showDevice.html?device={{device}}">device status page</a>.
+		</p>
+	{% endif %}
+	{% for user in users %}
+		<h3>Modify user {{loop.index0}}</h3>
+		<form>
+			<input type="hidden" name="device" value="{{device}}">
+			<input type="hidden" name="module" value="{{module}}">
+			<input type="hidden" name="set" value="1">
+			<input type="hidden" name="index" value="{{loop.index0}}">
+			<table>
+				<tr>
+					<th>Key</th>
+					<th>Change?</th>
+					<th>Value</th>
+					<th>Help</th>
+				</tr>
+				<tr>
+					<td>username</td>
+					<td><input type="checkbox" name="change_username" id="change_username_{{loop.index0}}"></td>
+					<td><input type="text" name="new_username" value="{{user.username}}" oninput="document.getElementById('change_username_{{loop.index0}}').checked=true"></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>password</td>
+					<td><input type="checkbox" name="change_password" id="change_password_{{loop.index0}}"></td>
+					<td><input type="password" name="new_password" oninput="document.getElementById('change_password_{{loop.index0}}').checked=true"></td>
+					<td></td>
+				</tr>
+				{% if userStatus.multi %}
+					<tr>
+						<td>token</td>
+						<td><input type="checkbox" name="change_rights" id="change_rights_{{loop.index0}}"></td>
+						<td><input type="text" name="new_rights" value="{{user.rights}}" oninput="document.getElementById('change_rights_{{loop.index0}}').checked=true"></td>
+						<td>Slash-delimited list or *, for example <i>/users/config/</i></td>
+					</tr>
+				{% endif %}
+				<tr>
+					<td colspan="3"><input type="submit" value="Modify user {{loop.index0}}"></td>
+				</tr>
+			</table>
+		</form>
+	{% endfor %}
+	{% if userStatus.multi %}
+		<h3>Add new user</h3>
+		<form>
+			<input type="hidden" name="device" value="{{device}}">
+			<input type="hidden" name="module" value="{{module}}">
+			<input type="hidden" name="set" value="1">
+			<input type="hidden" name="index" value="post">
+			<table>
+				<tr>
+					<th>Key</th>
+					<th>Set?</th>
+					<th>Value</th>
+					<th>Help</th>
+				</tr>
+				<tr>
+					<td>username</td>
+					<td><input type="checkbox" name="change_username" id="change_username_new"></td>
+					<td><input type="text" name="new_username" value="" oninput="document.getElementById('change_username_new').checked=true"></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>password</td>
+					<td><input type="checkbox" name="change_password" id="change_password_new"></td>
+					<td><input type="password" name="new_password" oninput="document.getElementById('change_password_new').checked=true"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>token</td>
+					<td><input type="checkbox" name="change_rights" id="change_rights_new"></td>
+					<td><input type="text" name="new_rights" value="" oninput="document.getElementById('change_rights_new').checked=true"></td>
+					<td>Slash-delimited list or *, for example <i>/users/config/</i></td>
+				</tr>
+				<tr>
+					<td colspan="3"><input type="submit" value="Add user"></td>
+				</tr>
+			</table>
+		</form>
+	{% endif %}
+	<hr>
+	<a href="_showDevice.html?device={{device}}">Return to {{device}} device status page.</a><br>
+	{% if returnTo %}
+		<a href="{{returnTo}}">Return to {{returnTo}}.</a><br>
+	{% endif %}
+	<a href="/plugin/{{pluginName}}/page/index.html">Return to iotsa device setup page.</a><br>
+	<a href="/">Return to Igor homepage</a>
+	
+
+</body>
+</html>

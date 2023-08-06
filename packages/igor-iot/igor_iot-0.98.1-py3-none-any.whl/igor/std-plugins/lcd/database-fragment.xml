@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<data xmlns:own="http://jackjansen.nl/igor/owner" xmlns:au="http://jackjansen.nl/igor/authentication">
+	<devices>
+		<{plugin} own:plugin="{plugin}"/>
+	</devices>
+	<actions>
+		<action own:plugin="{plugin}">
+			<xpath>/data/environment/messages/*</xpath>
+			<url>/pluginscript/{plugin}/message?args={.}</url>
+			<representing>devices/{plugin}</representing>
+		</action>
+	</actions>
+	<plugindata>
+		<{plugin} own:plugin="{plugin}">
+			<au:needCapability>
+				<obj>/data/plugindata/{plugin}</obj>
+				<get>descendant-or-self</get>
+			</au:needCapability>
+			<au:mayNeedCapability>
+				<obj>/api</obj>
+				<get>descendant-or-self</get>
+				<put>descendant-or-self</put>
+				<aud>{plugin}.local</aud>
+			</au:mayNeedCapability>
+		</{plugin}>
+	</plugindata>
+</data>

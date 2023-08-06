@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<data xmlns:own="http://jackjansen.nl/igor/owner" xmlns:au="http://jackjansen.nl/igor/authentication">
+	<sensors>
+		<{plugin}rfid own:plugin="{plugin}"/>
+		<tags/>
+	</sensors>
+    <actions>
+    </actions>
+    <plugindata>
+        <{plugin} own:plugin="{plugin}">
+            <serial>/dev/tty.usbserial-A700ekiO</serial>
+            <baud>57600</baud>
+            <host/>
+			<action>
+				<name>_start</name>
+				<url>/pluginscript/iirfid/start?url={/data/devices/igor/url}/sensors/rfid/rfidtag%3F.METHOD%3DPOST%26rfidtag%3D%25s</url>
+			</action>
+			<action>
+				<name>_cleanup</name>
+				<method>DELETE</method>
+				<url>/data/sensors/rfid/rfidtag[position()&lt;last()]</url>
+			</action>
+			<action>
+				<name>_cleanup</name>
+				<method>DELETE</method>
+				<url>/data/sensors/tags/tag[position()&lt;last()]</url>
+			</action>
+			<au:needCapability>
+				<obj>/data/plugindata/{plugin}</obj>
+				<get>descendant-or-self</get>
+			</au:needCapability>
+			<au:needCapability>
+				<obj>/pluginscript/{plugin}</obj>
+				<get>descendant-or-self</get>
+			</au:needCapability>
+			<au:needCapability>
+				<obj>/data/sensors/{plugin}rfid</obj>
+				<get>descendant-or-self</get>
+				<put>descendant-or-self</put>
+			</au:needCapability>
+			<au:needCapability>
+				<obj>/data/sensors/tags</obj>
+				<get>descendant-or-self</get>
+				<put>descendant-or-self</put>
+			</au:needCapability>
+			<action>
+				<xpath>/data/sensors/{plugin}rfid/rfidtag</xpath>
+				<url>/data/sensors/tags/tag</url>
+				<representing>sensors/{plugin}</representing>
+				<method>POST</method>
+				<mimetype>text/plain</mimetype>
+				<data>{igor_ifelse(/data/plugindata/rfid/tag[id=string($originalContext)]/name,concat(&quot;unknown &quot;,string($originalContext)))}</data>
+			</action>
+        </{plugin}>
+        <rfid>
+            <tag>
+                <id>00:11:22:33</id>
+                <name>sampleTag</name>
+            </tag>
+        </rfid>
+    </plugindata>
+</data>

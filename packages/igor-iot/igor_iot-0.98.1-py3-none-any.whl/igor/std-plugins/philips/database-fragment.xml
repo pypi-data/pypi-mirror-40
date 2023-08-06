@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<data xmlns:own="http://jackjansen.nl/igor/owner" xmlns:au="http://jackjansen.nl/igor/authentication">
+	<devices>
+		<tv own:plugin="{plugin}"/>
+	</devices>
+	<plugindata>
+		<{plugin} own:plugin="{plugin}">
+			<action>
+				<xpath>/data/devices/tv/power</xpath>
+				<url>/pluginscript/philips/power?power={.}</url>
+				<representing>devices/tv</representing>
+			</action>
+			<action>
+				<xpath>/data/devices/tv/*[name()!='power']</xpath>
+				<url>/pluginscript/philips/push?{name()}={.}</url>
+				<representing>devices/tv</representing>
+			</action>
+			<action>
+				<interval>60</interval>
+				<url>/pluginscript/philips/pull</url>
+				<aggregate>true</aggregate>
+			</action>
+			<au:needCapability>
+				<obj>/data/plugindata/{plugin}</obj>
+				<get>descendant-or-self</get>
+			</au:needCapability>
+			<au:needCapability>
+				<obj>/plugin/{plugin}</obj>
+				<get>descendant-or-self</get>
+			</au:needCapability>
+		</{plugin}>
+	</plugindata>
+</data>
