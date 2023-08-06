@@ -1,0 +1,6 @@
+tornado>=5.0.2
+pyfrc<2020.0.0,>=2019.0.0
+wpilib<2020.0.0,>=2019.0.0
+robotpy-hal-sim<2020.0.0,>=2019.0.0
+pynetworktables>=2019.0.0
+pynetworktables2js>=2019.0.0
