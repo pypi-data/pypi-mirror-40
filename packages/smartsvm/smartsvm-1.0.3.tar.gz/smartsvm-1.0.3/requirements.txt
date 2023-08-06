@@ -1,0 +1,5 @@
+cython>=0.29
+networkx>=2.1
+scipy
+scikit-learn
+numpy

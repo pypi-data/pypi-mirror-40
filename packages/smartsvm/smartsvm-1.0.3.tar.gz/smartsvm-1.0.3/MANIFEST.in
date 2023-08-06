@@ -1,0 +1,6 @@
+include setup.py
+include README.rst
+include LICENSE
+recursive-include smartsvm *.py
+recursive-include src *.c
+recursive-include src *.pyx
