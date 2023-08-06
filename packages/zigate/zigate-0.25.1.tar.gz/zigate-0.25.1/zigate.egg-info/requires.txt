@@ -1,0 +1,9 @@
+pyserial
+pydispatcher
+bottle
+
+[dev]
+tox
+
+[mqtt]
+paho-mqtt
