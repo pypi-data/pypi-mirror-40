@@ -1,0 +1,398 @@
+#!/usr/bin/python
+
+# Copyright (C) 2017 github.com/shyal
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+# the Software, and to permit persons to whom the Software is furnished to do so,
+# subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+# FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+# COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+# IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+# CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+import sys
+import shelve
+import os
+
+from urwid import *
+
+import argparse
+
+parser = argparse.ArgumentParser(description='Vulcan is a terminal based flashcard application, for developers, that uses machine learning to schedule reviews.')
+parser.add_argument('-d','--database', help='Specify db path', default='~/.vulcan/vulcan.db' ,required=False)
+args = vars(parser.parse_args())
+
+# This enables to run in dev mode, as imports
+# can get confused once a package has been installed
+try:
+    import vulcan
+    import os
+    if "dev" in vulcan.__file__:
+        pass
+    else:
+        p = os.path.dirname(vulcan.__file__)
+        print(p)
+        sys.path.append(p)
+        sys.path.append(os.path.join(p, 'lib'))
+except:
+    pass
+
+from lib.store import Cards, Card, get_session
+
+session = get_session(args['database'])
+
+from lib.api import *
+import lib.context as ctx
+from functools import partial
+from collections import OrderedDict
+
+
+# prefs are useful, to remember which tag was last selected, for example
+prefs = shelve.open(os.path.expanduser("~/.vulcan/prefs"))
+
+def wrong_cb(given_answer, right_answer, lw):
+    lw.append(Text("wrong.. you wrote:"))
+    lw.append(Text(given_answer))
+    lw.append(Text("please remember:"))
+    lw.append(Text(right_answer))
+
+class VulcanModel(object):
+
+    def __init__(self):
+        self.refresh_tags()
+
+    def refresh_tags(self):
+        self.tags = OrderedDict()
+        for tag in sorted(Cards.tags()):
+            try:
+                self.tags[tag] = prefs.get("tag_"+tag, True)
+            except:
+                # shelve sucks
+                pass
+        self.init_algo()
+
+    @property
+    def current_tags(self):
+        return [k for k, v in self.tags.items() if v]
+
+    def init_algo(self):
+        self.algo = FlashcardAlgorithm(wdist_weight=1, tdist_weight=0, includeMuli=True, includePaused=False, tags=self.current_tags)
+
+    def draw_card(self):
+        self.algo.init()
+        card = self.algo.draw_card()
+        return card
+
+    def remove_card(self, card):
+        session.delete(card)
+        session.commit()
+
+    def add_card(self, question, answer, context, preamble, closing):
+        card = Card(question=question, answer=answer, last_answered=0, context=context, paused=False, multi=False, preamble=preamble, closing=closing)
+        session.add(card)
+        session.commit()
+        self.refresh_tags()
+
+    def pause_card(self, card):
+        card.paused = True
+        session.commit()
+
+class GraphModel:
+    def get_data(self, card):
+        ret = []
+        val = False
+        if card:
+            for i, h in enumerate(card.history):
+                val += int(h.success)
+                ret.append([i, val])
+        return ret
+
+class CardInput(WidgetWrap):
+
+    def __init__(self, lw, controller, *args, **kwargs):
+        self.lw = lw
+        self.controller = controller
+        self.card = None
+        super(CardInput, self).__init__(*args, **kwargs)
+
+
+class VulcanTerminal(Edit):
+
+    def __init__(self, lw, controller, *args, **kwargs):
+        self.lw = lw
+        self.controller = controller
+        self.card = None
+        super(VulcanTerminal, self).__init__(*args, **kwargs)
+        self.draw_card()
+
+    def draw_card(self):
+        new_card = self.controller.draw_card()
+        if new_card:
+            if self.card != new_card:
+                self.card = new_card
+                try:
+                    self.lw.remove(self)
+                except:
+                    pass
+                self.card_context = ctx.prompt(self.card)
+                if self.card_context.command:
+                    self.lw.append(Text(ctx.bash_prompt() + self.card_context.command))
+                self.lw.append(Text(self.card_context.render()))
+                self.lw.append(self)
+                self.lw.set_focus(len(self.lw) - 1)
+                self.set_caption(self.card_context.prompt)
+        else:
+            self.lw.append(Text("No Cards - press ctrl-n to insert a new one"))
+
+    def peek(self):
+        try:
+            self.lw.remove(self)
+        except:
+            pass
+        self.lw.append(Text(self.card.answer))
+        self.lw.append(self)
+        self.lw.set_focus(len(self.lw) - 1)
+        self.set_caption(self.card_context.prompt)
+
+    def keypress(self, size, key):
+        if key != 'enter':
+            return super(VulcanTerminal, self).keypress(size, key)
+        self.lw.append(Text(self.card_context.prompt + [self.edit_text]))
+        self.controller.reply(self.card.id, self.card.compare_answer(self.edit_text), self.edit_text, partial(wrong_cb, lw=self.lw))
+        self.draw_card()
+        self.set_edit_text('')
+        self.lw.set_focus(len(self.lw)-1)
+
+class EditCard(WidgetWrap):
+
+    def __init__(self, controller, card=None):
+        self.card = card
+        self.controller = controller
+        self.preamble = Edit(caption="Preamble:\n", multiline=True, edit_text=(card.preamble if card else ''))
+        self.question = Edit(caption="Question:\n", multiline=True, edit_text=(card.question if card else ''))
+        self.answer =   Edit(caption="Answer:\n", multiline=True, edit_text=(card.answer if card else ''))
+        self.tag = Edit(caption="Tag: ", edit_text=(card.context if card else ''))
+        ok = Button(label="OK")
+        cancel = Button(label="Cancel")
+        connect_signal(ok, 'click', self.ok_pressed)
+        connect_signal(cancel, 'click',
+            lambda button:controller.cancel_card_inserted())
+        lb = ListBox(SimpleListWalker([self.preamble, self.question, self.answer, self.tag, ok, cancel]))
+        super(EditCard, self).__init__(lb)
+
+    def ok_pressed(self, button):
+        if self.card:
+            self.card.question = self.question.edit_text
+            self.card.answer = self.answer.edit_text
+            self.card.preamble = self.preamble.edit_text
+            self.card.context = self.tag.edit_text
+            session.commit()
+            self.controller.cancel_card_inserted()
+        else:
+            self.controller.new_card_inserted(
+                question=self.question.edit_text,
+                answer=self.answer.edit_text,
+                preamble=self.preamble.edit_text,
+                tag=self.tag.edit_text)
+
+class VulcanView(WidgetWrap):
+    """
+    A class responsible for providing the application's interface and
+    graph display.
+    """
+    def __init__(self, controller):
+        self.controller = controller
+        self.mode_buttons = []
+        WidgetWrap.__init__(self, self.main_window())
+
+    def on_mode_button(self, button, state):
+        """Notify the controller of a new mode setting."""
+        self.controller.set_tag(button.get_label(), state)
+        self.terminal.draw_card()
+
+    def on_tag_change(self, m):
+        """Handle external mode change by updating radio buttons."""
+        for rb in self.mode_buttons:
+            if rb.get_label() == m:
+                rb.set_state(True, do_callback=False)
+                break
+
+    def exit_program(self, w=None):
+        prefs.close()
+        raise ExitMainLoop()
+
+    def refresh_tags(self):
+        self.mode_buttons[:] = []
+        for k, v in self.controller.get_tags():
+            self.mode_buttons.append(CheckBox(label=k, state=v, on_state_change=self.on_mode_button))
+
+    def bar_graph(self, smooth=False):
+        satt = None
+        if smooth:
+            satt = {(1,0): 'bg 1 smooth', (2,0): 'bg 2 smooth'}
+        w = BarGraph(['bg background','bg 1','bg 2'], satt=satt)
+        return w
+
+    def update_graph(self, force_update=False):
+        l = self.controller.get_graph_data()
+        if len(l) > 2:
+            self.graph.set_data(l, max([x[1] for x in l]) + 1)
+        else:
+            self.graph.set_data([], 0)
+        return True
+
+    def tag_controls(self):
+        self.refresh_tags()
+        lb = ListBox(SimpleListWalker(self.mode_buttons))
+        self.graph = self.bar_graph()
+        self.graph_wrap = WidgetWrap( self.graph )
+        self.update_graph()
+        p = Pile([
+            ('fixed', 1, ListBox([Text("Tags",align="center")])),
+            ('weight', 1, lb),
+            ('weight', 1, self.graph_wrap),
+            ('fixed', 1, ListBox([Button("Quit", self.exit_program)]))
+            ])
+        return p
+
+    def main_window(self):
+        lw = SimpleListWalker([])
+        self.terminal = AttrWrap(VulcanTerminal(lw=lw, controller=self.controller, multiline=True), 'editbx', 'editfc')
+        self.term = ListBox(lw)
+        self.vline = AttrWrap(SolidFill(u'\u2502'), 'line')
+        self.sidebar = self.tag_controls()
+
+        self.columns = Columns([
+            ('weight', 3, self.term),
+            ('fixed', 1, self.vline), ('weight', 1, self.sidebar)],
+            dividechars=1, focus_column=0)
+
+        if not prefs.get('show_tags', False):
+            self.columns.widget_list.pop()
+
+        return self.columns
+
+
+class VulcanController:
+    """
+    A class responsible for setting up the model and view and running
+    the application.
+    """
+    def __init__(self):
+        self.__model = VulcanModel()
+        self.graph_model = GraphModel()
+        self.view = VulcanView(controller=self)
+
+    def main(self):
+        palette = [
+            ('dark blue', 'dark blue', '', 'standout'),
+            ('dark green', 'dark green', '', 'standout'),
+            ('brown', 'brown', '', 'standout'),
+            ('bg 1',         'black',      'dark blue', 'standout'),
+            ('bg 1 smooth',  'dark blue',  'black'),
+            ('bg 2',         'black',      'dark cyan', 'standout'),
+            ('bg 2 smooth',  'dark cyan',  'black'),
+            ('bg 1 smooth',  'dark blue',  'black'),
+            ('bg background','light gray', 'black'),
+        ]
+
+        self.loop = MainLoop(widget=self.view, palette=palette, unhandled_input=self.unhandled_input)
+        self.loop.run()
+
+    def set_tag(self, tag, state):
+        prefs["tag_"+tag] = state
+        self.__model.tags[tag] = state
+        self.__model.init_algo()
+
+    def get_graph_data(self):
+        return self.graph_model.get_data(self.__card)
+
+    def draw_card(self):
+        self.__card = self.__model.draw_card()
+        if hasattr(self, 'view'):
+            self.view.update_graph()
+        return self.__card
+
+    def reply(self, *args, **kwargs):
+        self.__model.algo.reply(*args, **kwargs)
+
+    def get_tags(self):
+        return self.__model.tags.items()
+
+    def new_card_inserted(self, question, answer, tag='', preamble='', closing=''):
+        self.__model.add_card(question=question, answer=answer, context=tag, preamble=preamble, closing=closing)
+        self.view.sidebar = self.view.tag_controls()
+        self.view.columns.widget_list[0] = self.view.term
+        self.view.columns.widget_list.append(self.view.sidebar)
+        self.view.refresh_tags()
+        self.view.terminal.draw_card()
+
+
+    def card_edited(self):
+        self.view.columns.widget_list[0] = self.view.term
+        self.view.refresh_tags()
+        self.view.columns.widget_list.append(self.view.sidebar)
+
+    def cancel_card_inserted(self):
+        self.view.columns.widget_list.append(self.view.sidebar)
+        self.view.columns.widget_list[0] = self.view.term
+
+    def unhandled_input(self, key):
+        if key == 'ctrl t':
+            if prefs.get('show_tags', False):
+                self.view.columns.widget_list.pop()
+                prefs['show_tags'] = False
+            else:
+                self.view.columns.widget_list.append(self.view.sidebar)
+                prefs['show_tags'] = True
+        elif key == 'ctrl n':
+            self.view.columns.widget_list.pop()
+            self.view.columns.widget_list[0] = EditCard(self)
+        elif key == 'ctrl e':
+            self.view.columns.widget_list.pop()
+            self.view.columns.widget_list[0] = EditCard(self, card=self.__card)
+        elif key == 'ctrl p':
+            self.view.terminal.peek()
+        elif key == 'ctrl b':
+            self.__model.pause_card(self.__card)
+            self.view.terminal.card = None
+            self.__model.refresh_tags()
+            # TODO: let's not rebuild the sidebar..
+            self.view.sidebar = self.view.tag_controls()
+            self.view.columns.widget_list[2] = self.view.sidebar
+            self.view.terminal.draw_card()
+        elif key == 'ctrl d':
+            if self.view.terminal.card:
+                self.__model.remove_card(self.view.terminal.card)
+                self.view.terminal.card = None
+                self.__model.refresh_tags()
+                # TODO: let's not rebuild the sidebar..
+                self.view.sidebar = self.view.tag_controls()
+                self.view.columns.widget_list[2] = self.view.sidebar
+                self.view.terminal.draw_card()
+
+def main():
+    controller = VulcanController()
+    try:
+        controller.main()
+    except KeyboardInterrupt:
+        try:
+            controller.view.exit_program()
+        except ExitMainLoop:
+            print("Goodbye")
+            sys.exit(0)
+    except ExitMainLoop:
+        print("Goodbye")
+        sys.exit(0)
+
+if '__main__'==__name__:
+    main()
