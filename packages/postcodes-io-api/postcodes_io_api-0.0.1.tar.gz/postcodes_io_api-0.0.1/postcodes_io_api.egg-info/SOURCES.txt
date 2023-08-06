@@ -1,0 +1,11 @@
+README.md
+setup.py
+postcodes_io_api/__init__.py
+postcodes_io_api/api.py
+postcodes_io_api.egg-info/PKG-INFO
+postcodes_io_api.egg-info/SOURCES.txt
+postcodes_io_api.egg-info/dependency_links.txt
+postcodes_io_api.egg-info/not-zip-safe
+postcodes_io_api.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
