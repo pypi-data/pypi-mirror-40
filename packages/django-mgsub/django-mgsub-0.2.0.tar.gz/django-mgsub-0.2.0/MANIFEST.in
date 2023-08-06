@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+include versioneer.py
+include mgsub/_version.py
+recursive-include mgsub/static *
+recursive-include mgsub/templates *
