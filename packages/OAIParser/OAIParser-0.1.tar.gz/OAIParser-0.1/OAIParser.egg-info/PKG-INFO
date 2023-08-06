@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: OAIParser
+Version: 0.1
+Summary: An Open API parser for hydrus by HTTP-APIs
+Home-page: https://github.com/de-sh/OAIParser
+Author: Devdutt Shenoi
+Author-email: devdutt@outlook.in
+License: UNKNOWN
+Description: # OpenAPI Parser for HTTP-APIs/hydrus
+        
+        Use following line to add this package to your project as a dependency.
+        `-e git+git://github.com/de-sh/OAIParser.git#egg=OAIParser`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
