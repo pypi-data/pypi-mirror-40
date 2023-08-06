@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: keepasshttp
+Version: 1.0.0
+Summary: Python client for KeePassHTTP to interact with KeePass's credentials
+Home-page: https://github.com/cyrbil/python_keepass_http
+Author: Cyril DEMINGEON
+Author-email: 1126098+cyrbil@users.noreply.github.com
+License: License :: OSI Approved :: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Security
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome (==3.7.2)
+Requires-Dist: requests (==2.19.1)
+Requires-Dist: certifi (==2018.11.29)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.7)
+Requires-Dist: urllib3 (==1.23)
+Requires-Dist: six (==1.12.0)
+
+# KeePassHTTP
+
+[![pypi](https://img.shields.io/pypi/v/keepasshttp.svg)](https://pypi.org/project/keepasshttp/)
+[![python_versions](https://img.shields.io/pypi/pyversions/keepasshttp.svg)](https://pypi.org/project/keepasshttp/)
+[![license](https://img.shields.io/github/license/cyrbil/python_keepass_http.svg)](https://github.com/cyrbil/python_keepass_http/blob/master/LICENSE.txt)
+[![travis](https://img.shields.io/travis/cyrbil/python_keepass_http/master.svg)](https://travis-ci.org/cyrbil/python_keepass_http)
+[![codecov.io](https://codecov.io/github/cyrbil/python_keepass_http/coverage.svg?branch=master)](https://codecov.io/github/cyrbil/python_keepass_http)
+
+
+Python client for KeePassHTTP to interact with KeePass's credentials.
+
+
+## Install
+
+    pip install keepasshttp
+
+
+## Usage
+
+    import keepasshttp
+
+    # get single credential
+    credential = keepasshttp.get("my_credential_name_or_url")
+    print(credential.login)
+    print(credential.password)
+
+    # find all credentials's name
+    credentials = keepasshttp.list()
+
+    # fetch all partiall matching credentials
+    credentials = keepasshttp.search("my_credential_name_or_url")
+
+    # create a new keepasshttp entry
+    keepasshttp.create("login", "password", "url")
+
+    # update a keepasshttp entry
+    keepasshttp.update("login", "password", "url", "uuid")
+
+
+## Configuration
+
+This module will write to `~/.python_keepass_http` to save allowed AES key.
+To change this path, instanciate `KeePassHTTP` with a different file.
+
+    from keepasshttp import KeePassHTTP
+    kph = KeePassHTTP('./keepass_key')
+
+
+## Testing
+
+You can simply run the tests using:
+
+    python -m unittest discover
+
+`KeePassHTTP` calls are mocked, to run the tests against a real server, you need to:
+
+   - open `tests/test_database.kdbx` in `KeePass` password is `test`
+   - set `TEST_WITH_KEEPASS` environment variable
+   - run test normally
+
+
+## Coverage
+
+To run tests with coverage:
+
+    pip install pytest-cov
+    pytest --cov
+
