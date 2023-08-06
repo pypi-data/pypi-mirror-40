@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: brief
+Version: 0.0.1
+Summary: Text Summarizer
+Home-page: https://github.com/guokr/Anutshell
+Author: Guokr Inc.
+Author-email: jinyang.zhou@guokr.com
+License: UNKNOWN
+Description: # Anutshell
+        In a nutshell, this is a Text Summarizer
+        
+        A Text Summarizer based on Transformer and LSTM
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
