@@ -1,0 +1,3 @@
+[console_scripts]
+apoclypse = apoclypsebm.command:main
+
