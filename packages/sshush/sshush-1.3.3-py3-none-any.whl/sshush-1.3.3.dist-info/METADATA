@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sshush
+Version: 1.3.3
+Summary: SSH Config management tool
+Home-page: http://github.com/bencromwell/sshush
+Author: Ben Cromwell
+Author-email: placeholder@example.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pyaml
+
+UNKNOWN
+
+
