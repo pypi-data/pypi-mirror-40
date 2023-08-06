@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: django-formfieldstash
+Version: 0.0.3
+Summary: formfieldstash
+Home-page: http://github.com/bnzk/django-formfieldstash
+Author: Ben Stähli
+Author-email: bnzk@bnzk.ch
+License: BSD
+Description: 
+        .. image:: https://travis-ci.org/bnzk/django-formfieldstash.svg
+            :target: https://travis-ci.org/bnzk/django-formfieldstash
+        .. image:: https://img.shields.io/pypi/v/django-formfieldstash.svg
+            :target: https://pypi.python.org/pypi/django-formfieldstash/
+        .. image:: https://img.shields.io/pypi/l/django-formfieldstash.svg
+            :target: https://pypi.python.org/pypi/django-formfieldstash/
+        
+        show/hide modelform fields, depending on current value of a dropdown in the form. without page reload.
+        this is a pure javascript solution, using a modeladminmixin approach.
+        
+        Development and Docs on `<https://github.com/bnzk/django-formfieldstash/>`_
+        
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
