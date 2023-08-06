@@ -1,0 +1,3 @@
+[console_scripts]
+getup=getup.getup:main
+
