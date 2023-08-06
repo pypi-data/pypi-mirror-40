@@ -1,0 +1,8 @@
+# networks.yml
+---
+dev:
+  type: auto
+
+test:
+  type: http
+  url: http://localhost:8545
