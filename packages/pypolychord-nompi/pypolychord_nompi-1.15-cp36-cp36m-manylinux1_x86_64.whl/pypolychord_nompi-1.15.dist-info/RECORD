@@ -1,0 +1,11 @@
+_pypolychord.cpython-36m-x86_64-linux-gnu.so,sha256=inbboXg9wzL-jiP0gFtbRknULU8fjJOoVhQMvm6bgE8,235376
+pypolychord_nompi-1.15.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
+pypolychord_nompi-1.15.dist-info/top_level.txt,sha256=0Hm1rJ3Mq_UZPZPs1JZB0tG040OJ1nXArezlLTRItFU,25
+pypolychord_nompi-1.15.dist-info/METADATA,sha256=7kzbCp-cwM7T44fmJQ4f6A3r83MuM72sRm1bNU-0j0M,421
+pypolychord_nompi-1.15.dist-info/RECORD,,
+pypolychord/priors.py,sha256=mqGDMDnYGQM2BozycwEgLjJ3_VR6z-j4p3BjEeBHLGA,1082
+pypolychord/output.py,sha256=bfJv7WXCzPAi6qEjocmSmJuZcu8H5K00pnTihUUFcg8,4650
+pypolychord/settings.py,sha256=fdMvUS0nitf1E4QVQT-M4s-NP8VyhzU9LTMY3hCvRG0,6535
+pypolychord/__init__.py,sha256=ffbCvIN5bzyEk6wBEZvlmTh6BJk3xfdM41ImfSl_cAg,7054
+pypolychord/libs_pypolychord/libchord-2e84b8f9.so,sha256=IPFVgd7eVcG4uteor9Vx0UxEHMZJRzPgoWTfJ9WuiO8,600536
+pypolychord/libs_pypolychord/libgfortran-ed201abd.so.3.0.0,sha256=xkH_25s9lTuTrEf3fE8GZK68sYSPsIlP3SJ6Qze9aIM,1023960
