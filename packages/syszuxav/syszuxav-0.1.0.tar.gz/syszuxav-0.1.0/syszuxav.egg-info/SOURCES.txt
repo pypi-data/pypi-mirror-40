@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+syszuxav/__init__.py
+syszuxav/syszuxav.cpython-35m-x86_64-linux-gnu.so
+syszuxav/syszuxav.so
+syszuxav.egg-info/PKG-INFO
+syszuxav.egg-info/SOURCES.txt
+syszuxav.egg-info/dependency_links.txt
+syszuxav.egg-info/not-zip-safe
+syszuxav.egg-info/requires.txt
+syszuxav.egg-info/top_level.txt
