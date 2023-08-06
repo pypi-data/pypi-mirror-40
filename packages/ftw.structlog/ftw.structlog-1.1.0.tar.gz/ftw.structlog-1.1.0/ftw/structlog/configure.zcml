@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope">
+
+  <subscriber
+      for="ZPublisher.interfaces.IPubStart"
+      handler=".subscribers.handle_pub_start"
+      />
+
+  <subscriber
+      for="ZPublisher.interfaces.IPubSuccess"
+      handler=".subscribers.handle_pub_end"
+      />
+
+  <subscriber
+      for="ZPublisher.interfaces.IPubFailure"
+      handler=".subscribers.handle_pub_end"
+      />
+
+</configure>
