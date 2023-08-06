@@ -1,0 +1,4 @@
+prompt_toolkit>=2
+tabulate==0.8.2
+pygments>=2.2.0
+
