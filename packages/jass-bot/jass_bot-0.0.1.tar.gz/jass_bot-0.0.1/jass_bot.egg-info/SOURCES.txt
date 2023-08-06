@@ -1,0 +1,17 @@
+README.md
+setup.py
+cfr/__init__.py
+jass_bot.egg-info/PKG-INFO
+jass_bot.egg-info/SOURCES.txt
+jass_bot.egg-info/dependency_links.txt
+jass_bot.egg-info/requires.txt
+jass_bot.egg-info/top_level.txt
+mcts/__init__.py
+mcts/ismcts.py
+mcts/knockout_whist.py
+mcts/president.py
+rl/__init__.py
+rl/experiment.py
+rl/hyper_parameters.py
+rl/jass_policy.py
+rl/util.py
