@@ -1,0 +1,11 @@
+metasub_utils.bridges-0.2.0-py3.6-nspkg.pth,sha256=7S4yU8K33I518h63RpME9OxHc4ZF8eWeDAEGqrA4bYg,574
+metasub_utils/bridges/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metasub_utils/bridges/bridges.py,sha256=Xv-9Ztwq7F3N-GiN_vX6TcwnUGsHuo8A9y5ysCrQJfQ,2979
+metasub_utils/bridges/cli.py,sha256=wQNL3g2Pq17yqmv69WnxVG9BKjnDp6NqABLav8KolLc,1360
+metasub_utils/bridges/constants.py,sha256=R1rnaj9SCyY9DVFN7idCr4VsWy-of3QVl9Znp2EnVXo,276
+metasub_utils/bridges/utils.py,sha256=jsvTY7vvvl73ll_3ALkmOlL4G6V-3xbrRoAJYwfMaew,961
+metasub_utils.bridges-0.2.0.dist-info/METADATA,sha256=lvgSbCs8CcSOBWgxbyxxKd0tQSRcyq99Pn8pGiOgnBg,416
+metasub_utils.bridges-0.2.0.dist-info/RECORD,,
+metasub_utils.bridges-0.2.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+metasub_utils.bridges-0.2.0.dist-info/namespace_packages.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
+metasub_utils.bridges-0.2.0.dist-info/top_level.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
