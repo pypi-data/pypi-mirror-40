@@ -1,0 +1,4 @@
+aniso8601<5.0.0,>=4.0.0
+
+[relative]
+python-dateutil>=2.7.3
