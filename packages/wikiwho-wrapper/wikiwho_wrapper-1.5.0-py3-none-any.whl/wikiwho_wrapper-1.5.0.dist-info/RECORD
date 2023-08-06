@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_wikiwhowrapper.py,sha256=GGqXbFJGnd2uBd7r8huvxoNnofhUVZ26oyIP9xVwyFo,4989
+wikiwho_wrapper/__init__.py,sha256=UV8YrafcPr2UluQbAX6C1w9BxFc6DERAv5x3X5wRKD4,220
+wikiwho_wrapper/api.py,sha256=vxNvt7B2ojwaIOWyCq1TKpG_lo8TSyikFax8dVCvIx8,17625
+wikiwho_wrapper/views.py,sha256=dIYkCGprGtx7uMmOvz6oS6BY0h6e6H8jdUAbX0Tqzyw,20212
+wikiwho_wrapper/wikiwho.py,sha256=aXEXChwk7v0VgBP9vgUceFFb2MBLk93EfnLdVXEE_fQ,1944
+wikiwho_wrapper-1.5.0.dist-info/LICENSE,sha256=1uVAZDhQcLdxDzIcdkd9_yMxAjzStmUgcGU8-T_YK-I,1070
+wikiwho_wrapper-1.5.0.dist-info/METADATA,sha256=LPKCfIkK69SA-0ya8V6ttK7QfK7whZ5cU3Y7-88ytAQ,1886
+wikiwho_wrapper-1.5.0.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+wikiwho_wrapper-1.5.0.dist-info/top_level.txt,sha256=ZvQBAek9kobj83RIrg_8GjG1Do-TsNzqsoc7AdJdBik,22
+wikiwho_wrapper-1.5.0.dist-info/RECORD,,
