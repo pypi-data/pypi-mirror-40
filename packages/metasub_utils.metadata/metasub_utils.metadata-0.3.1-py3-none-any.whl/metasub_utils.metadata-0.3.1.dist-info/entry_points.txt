@@ -1,0 +1,3 @@
+[console_scripts]
+metasub-metadata = metasub_utils.metadata.cli:metadata
+

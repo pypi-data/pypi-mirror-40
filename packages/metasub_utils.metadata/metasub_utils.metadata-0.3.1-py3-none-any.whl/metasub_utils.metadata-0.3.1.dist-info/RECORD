@@ -1,0 +1,11 @@
+metasub_utils.metadata-0.3.1-py3.6-nspkg.pth,sha256=7S4yU8K33I518h63RpME9OxHc4ZF8eWeDAEGqrA4bYg,574
+metasub_utils/metadata/__init__.py,sha256=pi2n61X6mpr7p_F_UzhtPGB8QZSETipv2_Mp3y5xqs4,111
+metasub_utils/metadata/cli.py,sha256=fk9ztY3FEREmOr3AqT8r7glIy04lwoAv5z6gYoe-n3o,1179
+metasub_utils/metadata/constants.py,sha256=x7CVJrCyuvsCPmJ8T5tj_vMbV7pwdSM8XixxG93RZ5c,393
+metasub_utils/metadata/metadata.py,sha256=nFJUMPFCCBHQjPeTz7bQTqHeCspQBMMFPrYo_j58bHI,1250
+metasub_utils.metadata-0.3.1.dist-info/METADATA,sha256=23JVehuQmrUN5to9XF6UY4EUmJdpHu6HN6fXChbaiJg,388
+metasub_utils.metadata-0.3.1.dist-info/RECORD,,
+metasub_utils.metadata-0.3.1.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+metasub_utils.metadata-0.3.1.dist-info/entry_points.txt,sha256=Z8-_1_xb0kWYIjV4Zh9courBa1GAA_JPKjRAM56CYh8,74
+metasub_utils.metadata-0.3.1.dist-info/namespace_packages.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
+metasub_utils.metadata-0.3.1.dist-info/top_level.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
