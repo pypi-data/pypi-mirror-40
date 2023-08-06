@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: apiflash
+Version: 0.1
+Summary: The official python client of ApiFlash, website screenshot API.
+Home-page: https://github.com/ApiFlash/python-client
+Author: Timothée Jeannin
+Author-email: tjeannin@apiflash.com
+License: MIT
+Keywords: screenshots,urlbox,urlbox.io,phantom,phantomjs,screenshot,website,urlbox,headless,chrome,screenshotlayer,render,page,webkit,webkit2png,url2png,fullpage,fullheight
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: dev
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+UNKNOWN
+
+
