@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: videosplit
+Version: 0.3
+Summary: Utility to extract frames out of a video
+Home-page: UNKNOWN
+Author: Johan Cervantes
+License: UNKNOWN
+Description: Videosplit is a utility to extract frames from a given video.
+        It can extract:
+           - n number of frames (equally spaced throughout the video)
+           - relevant* frames
+           - frames separated by t seconds
+        
+        Example usage:
+        
+        
+        ```
+           from videosplit import VideoSplit
+           videosplit = VideoSplit()
+           frames = videosplit.get_relevant('input.mp4') # frames = [input01.jpg, input02.jpg, ...]
+           frames = videsplit.get_n_frames('input.mp4', 10) # frames = [input01.jpg,..., input10.jpg]
+           frames = videosplit.get_interval('input.mp4', 10) # one frame every 10 seconds
+        ```
+        Note:
+            The filenames of the jpg files are based on the name of the video file. Therefore, if you call more than one call on the same file, the jpg files may be overwritten. To solve this, specify an output name:
+        ```
+        
+           frames = videosplit.get_relevant("input.mp4", "tmp") # frames = [tmp01.jpg,...]
+        ```
+        *Currently, relevant frames are ex``tracted by finding the I-frames of the video (https://www.webopedia.com/TERM/I/I_frame.html). Frames could be extracted based on "scene-changes" but testing showed that it did not return relevant results (one frame out of a 9 minute video for example). 
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
