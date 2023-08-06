@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: desir
+Version: 0.64
+Summary: Python client for Redis key-value store
+Home-page: http://github.com/aallamaa/desir
+Author: Abdelkader ALLAM
+Author-email: abdelkader.allam@gmail.com
+Maintainer: Abdelkader ALLAM
+Maintainer-email: abdelkader.allam@gmail.com
+License: New BSD License
+Download-URL: http://www.xone-tech.com/desir/desir-0.64.tar.gz
+Description: Python client for Redis key-value store
+Keywords: Redis,key-value store
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
