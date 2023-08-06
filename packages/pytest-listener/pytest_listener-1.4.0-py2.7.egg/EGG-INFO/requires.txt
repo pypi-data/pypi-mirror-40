@@ -1,0 +1,5 @@
+six
+pytest<4.0.0
+pytest-server-fixtures
+
+[tests]
