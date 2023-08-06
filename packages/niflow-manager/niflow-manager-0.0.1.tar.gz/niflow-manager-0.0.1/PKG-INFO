@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: niflow-manager
+Version: 0.0.1
+Summary: nfm: niflow management tool
+Home-page: https://github.com/niflows/niflow-manager
+Author: Nipype Developers
+Author-email: neuroimaging@python.org
+License: Apache License, 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Provides-Extra: test
