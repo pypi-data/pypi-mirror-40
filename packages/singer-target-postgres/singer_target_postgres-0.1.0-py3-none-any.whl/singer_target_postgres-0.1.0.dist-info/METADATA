@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: singer-target-postgres
+Version: 0.1.0
+Summary: Singer.io target for loading data into postgres
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: arrow (==0.12.1)
+Requires-Dist: jsonschema (==2.6.0)
+Requires-Dist: psycopg2 (==2.7.4)
+Requires-Dist: psycopg2-binary (==2.7.4)
+Requires-Dist: singer-python (==5.0.12)
+
+UNKNOWN
+
+
