@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: nei
+Version: 0.0.2
+Summary: Notebook via Editor Interaction
+Home-page: UNKNOWN
+License: BSD
+Description: UNKNOWN
+Platform: Windows
+Platform: Mac OS X
+Platform: Linux
+Provides: nei
+Requires-Python: >=3.5
