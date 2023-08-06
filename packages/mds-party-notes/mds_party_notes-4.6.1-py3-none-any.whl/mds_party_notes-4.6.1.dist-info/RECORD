@@ -1,0 +1,16 @@
+mds_party_notes-4.6.1.dist-info/DESCRIPTION.rst,sha256=4EzApUOIK5KkWvy_3VvHaMBBhOSLhY0gKE1jqJp8-VI,340
+mds_party_notes-4.6.1.dist-info/METADATA,sha256=7kmb_o_gAYcD2_HAsWBU9c7AGpXQTIEsPEGZBZlpPBY,1580
+mds_party_notes-4.6.1.dist-info/RECORD,,
+mds_party_notes-4.6.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+mds_party_notes-4.6.1.dist-info/entry_points.txt,sha256=C0GlLNKHChZa0Uxo5BQ9i9YbC2UK1RNJtawRPbVKGJo,74
+mds_party_notes-4.6.1.dist-info/metadata.json,sha256=XpSlbo0Az9bxxsgtqPr2F6TWWXQRgX9Cg2MOhsgK-EM,1410
+mds_party_notes-4.6.1.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+trytond/modules/party_notes/README.rst,sha256=kAol-NTaHQFbZgu-NRQwjvksEoftUt4VPTWhNAB-iZg,338
+trytond/modules/party_notes/__init__.py,sha256=zFSqLcrtNoFaB0F2OHQv3fhVJrFmqWzFP1xPNeljGWY,152
+trytond/modules/party_notes/party.py,sha256=MDXLtQMBHxK2BzjGNJEeJfRyfNfT_ILhgbFgEeHtypQ,2410
+trytond/modules/party_notes/party.xml,sha256=6_0pVRL3sDCqNXk99F2CvFgzk4pW4DlEU2zhw3FgLks,548
+trytond/modules/party_notes/tryton.cfg,sha256=VscZg4rJz0ForsHulWpMisaM8aNeFQXX13O0_EpgMio,57
+trytond/modules/party_notes/locale/de.po,sha256=Fyes0gGQLDYyeGxU0S41hFyXoSMtLt1Dry2eD4EUs5I,280
+trytond/modules/party_notes/locale/en.po,sha256=LcldCKthFZiiPkEgYKT7pnQqr9Msq1afjKQR35xwmf4,274
+trytond/modules/party_notes/view/party_form.xml,sha256=GUI62hBMhndgSub3QarcyMCVZLq9916Qz_NwgqOpZic,197
+trytond/modules/party_notes/view/party_tree.xml,sha256=CO6v3pmo3Fr7lSMWBdrjaAOQXeza-1VObuj-JZ0ZeBI,159
