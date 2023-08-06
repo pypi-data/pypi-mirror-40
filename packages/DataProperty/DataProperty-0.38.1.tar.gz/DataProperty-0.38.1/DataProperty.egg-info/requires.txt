@@ -1,0 +1,31 @@
+setuptools>=38.3.0
+mbstrdecoder[all]<1.0.0,>=0.6.2
+typepy[datetime]<1.0.0,>=0.3.3
+
+[:python_version < "3.2"]
+futures
+
+[:python_version < "3.3"]
+ipaddress
+
+[:python_version < "3.4"]
+enum34
+
+[build]
+wheel
+
+[docs]
+path.py
+sphinx_rtd_theme
+Sphinx
+
+[logging]
+logbook<2.0.0,>=1.0.1
+
+[release]
+releasecmd<0.1.0,>=0.0.12
+
+[test]
+termcolor
+tox
+pytest
