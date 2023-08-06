@@ -1,0 +1,10 @@
+aliceplex/serialize/__init__.py,sha256=fpJ6kAUOKmYsYZ7ScBTiF7OhqN53ehQSNge01SWIA7Y,146
+aliceplex/serialize/base.py,sha256=jJHUZXzxMUV8C1pelH4ZWhcV4rAMFzYTvoYR7egHMWo,5590
+aliceplex/serialize/util.py,sha256=Ggr1a2sXdKpxLHhv9-m39hhyWgdmXWeo7S57c948LzI,2174
+aliceplex/serialize/xml.py,sha256=xFDL7C5j3UIZPRwBiIIKntcoLFBsbpI2kYTE3FQnrdc,3825
+aliceplex/serialize/yml.py,sha256=M_8iiGPfpccIxFB7BX3OVw5kFQfjUec_Ul3-bvIKsZg,3407
+aliceplex_serialize-2.0.0.dist-info/LICENSE,sha256=SL8r1lexVpGUPyT2Jg-hV_52XzHbnCzTp0SXaBuQxH8,11340
+aliceplex_serialize-2.0.0.dist-info/METADATA,sha256=JXQlk7HS-hutOejYOB0W-wi21Xe5wS-wOifTklELw7k,895
+aliceplex_serialize-2.0.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+aliceplex_serialize-2.0.0.dist-info/top_level.txt,sha256=zLQZP7sdPEp3gBruk0btDYwZUT1YUW5DXjjoiJORaX8,10
+aliceplex_serialize-2.0.0.dist-info/RECORD,,
