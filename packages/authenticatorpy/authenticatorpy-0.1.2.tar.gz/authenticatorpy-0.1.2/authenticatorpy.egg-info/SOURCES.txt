@@ -1,0 +1,13 @@
+COPYING
+LICENSE
+MANIFEST.in
+NOTICE
+README.rst
+setup.cfg
+setup.py
+authenticatorpy/__init__.py
+authenticatorpy/authenticator.py
+authenticatorpy.egg-info/PKG-INFO
+authenticatorpy.egg-info/SOURCES.txt
+authenticatorpy.egg-info/dependency_links.txt
+authenticatorpy.egg-info/top_level.txt
