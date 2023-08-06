@@ -1,0 +1,21 @@
+language: python
+python:
+  - 3.5
+  - 3.6
+install:
+  - pip install coveralls mypy==0.620 flake8==3.5.0 flake8-docstrings==1.1.0 pyyaml
+script:
+  - flake8
+  - mypy climatecontrol
+  - python setup.py test
+after_success:
+  - coveralls
+deploy:
+  provider: pypi
+  user: davis.kirkendall
+  password:
+    secure: gxdJaHGWJ7C/GrbLFQTQVFO8W0XCEBX3okMPPTApbjfyT3WAhjFsBvpXM/U5phmWh+wSMZn09+PZL5IVrXc2KywtS1dyowCLHF4WWphNy8uTLRrMOcy/OhbI0eUm1OzLdaiI5EFVOwowPX9HTjuQOo7Z6HRgf2N8a8F8f0cYkFrvRpQo+iTGMZb0qoi4Cfc1hKRpPmkuFaD645ZxPvpcJdV+rHQWt7mNyRQ54Lc3s0E2Caz5qGTSLeAPX8jArXUlneK7TCpSL4LYNtPUn7FlFpIYFpNUojnJczgnQncFoLYRQ8JiDTnmeLxssWwQqtZYKcnXsnFY+BpPrBe5pYmd98+qEI77jX2ldNcq40Bcpgh8k9jWCh7XzNUBCI4jl5SQ01k8si+Rha1yk0m3COt7C3e+/zzC4cSoFxgwyP97TRIxWOAl1o9znfWN0zkfHUIQPUKYZKM7kD9s8bstunFvr8UQxXaqs+6w+nGOMrdOS1pcqBo/qDI6uKFfT1KrnhDLjAc+l1m0nZsl81wlxta9eqkxJXPyLNcmwgzxDHmOoWn2JTl9hSQKlAXBs2FvWU9BykuZNyJCsRlAEN3HuaDBEflgevUkgDQlI00qHRXaqxwLhQZjxF+ZZQKQ4rNqL/QY4ovlgeO6IzzTMRUnhGlj2HwXBW0UAM6kyXoaLh5+LhI=
+  on:
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: daviskirk/climatecontrol
