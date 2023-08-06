@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flomutils
+Version: 0.1.0
+Summary: plot, analyze, and modify your flom motion
+Home-page: UNKNOWN
+License: MIT
+Author: coord.e
+Author-email: me@coord-e.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: fire (>=0.1.3,<0.2.0)
+Requires-Dist: flom (>=0.3.1,<0.4.0)
+Requires-Dist: matplotlib (>=3.0,<4.0)
+Requires-Dist: numpy (>=1.16,<2.0)

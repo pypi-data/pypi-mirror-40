@@ -1,0 +1,3 @@
+[console_scripts]
+flomutils=flomutils.__main__:main
+
