@@ -1,0 +1,2 @@
+include COPYING LICENSE-ZPL.txt README.rst CHANGELOG.rst tox.ini
+recursive-include zodbtools/test/testdata *.fs *.index *.ok
