@@ -1,0 +1,9 @@
+covariance_selection_algorithm/__init__.py,sha256=vSBm6mWCbsLXUSCO-kfm50WqY0Cch0QqIhreY5_CttU,33
+covariance_selection_algorithm/algorithm.py,sha256=Z3xIhMdJjYMKJZDU1mXui484uWibVoQOtotheCJ5LCA,3563
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/test_calculate.py,sha256=X4ntxMxCa1Fjnhp7U9MV46vzoFYvBcRFjth1CZgQeU8,1580
+dempsters_algorithm-0.0.1.dist-info/METADATA,sha256=S0cJMEgU-JE6DOSatBP_DXFvFFYvWQTpPMzhunD_4cg,480
+dempsters_algorithm-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+dempsters_algorithm-0.0.1.dist-info/top_level.txt,sha256=UegdJ8R_RPD2hLvd0b4biScnjdXsD-853vqS647Gn-E,37
+dempsters_algorithm-0.0.1.dist-info/RECORD,,
