@@ -1,0 +1,10 @@
+jf_agent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jf_agent/bb_download.py,sha256=dru9A6f69f7N-7vnAGd6q60yJ7GU7ickS10yuNog45A,7742
+jf_agent/jira_download.py,sha256=0O7CN5My7mbaE-HVgvGI39S3W63ge3ak5rd9tBIt2bg,11402
+jf_agent/main.py,sha256=Hd9T8DXCqvjE247kvRK9CAEhUWlxXQJrCudJz0biL1U,4970
+jf_agent-0.0.4.dist-info/LICENSE,sha256=Ej8Oc3I2XzUJ_jLEDM2aaH2Wfcy22LQyweh9OTpjlOc,1070
+jf_agent-0.0.4.dist-info/METADATA,sha256=eWqkbgpBJD6vKAQL_tnhkCFJt6FktD5buxINIIzUiTg,1343
+jf_agent-0.0.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+jf_agent-0.0.4.dist-info/entry_points.txt,sha256=VT22cts_jUMvoX18w130y5MXo2hHWIKZoknsvcphOB8,49
+jf_agent-0.0.4.dist-info/top_level.txt,sha256=AiWgo_qCgYAgEqGdjr330atUPDsU795rzEcMU6P3A-Y,9
+jf_agent-0.0.4.dist-info/RECORD,,
