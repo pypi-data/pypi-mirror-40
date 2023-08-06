@@ -1,0 +1,11 @@
+README.md
+setup.py
+django_encore.egg-info/PKG-INFO
+django_encore.egg-info/SOURCES.txt
+django_encore.egg-info/dependency_links.txt
+django_encore.egg-info/requires.txt
+django_encore.egg-info/top_level.txt
+encore/__init__.py
+encore/utils.py
+encore/templatetags/__init__.py
+encore/templatetags/encore.py
