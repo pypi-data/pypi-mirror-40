@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+aliceplex/scrap/__init__.py
+aliceplex/scrap/base.py
+aliceplex/scrap/contsant.py
+aliceplex/scrap/html.py
+aliceplex/scrap/json.py
+aliceplex/scrap/tvdb.py
+aliceplex/scrap/utils.py
+aliceplex/scrap/wiki.py
+aliceplex_scrap.egg-info/PKG-INFO
+aliceplex_scrap.egg-info/SOURCES.txt
+aliceplex_scrap.egg-info/dependency_links.txt
+aliceplex_scrap.egg-info/requires.txt
+aliceplex_scrap.egg-info/top_level.txt

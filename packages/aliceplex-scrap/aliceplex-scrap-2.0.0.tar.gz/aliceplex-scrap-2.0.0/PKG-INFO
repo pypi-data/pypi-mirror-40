@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: aliceplex-scrap
+Version: 2.0.0
+Summary: Scraper library for Plex
+Home-page: https://gitlab.com/alice-plex/scrap
+Author: Alice Plex
+License: UNKNOWN
+Description: # aliceplex-scrap
+        
+        aliceplex-scrap is a scrapper library for Plex.
+        
+        ## Install
+        
+        ```bash
+        pip install aliceplex-scrap
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
