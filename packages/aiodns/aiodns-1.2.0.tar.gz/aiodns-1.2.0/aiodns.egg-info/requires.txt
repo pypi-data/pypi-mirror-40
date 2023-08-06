@@ -1,0 +1,8 @@
+pycares>=1.0.0
+typing
+
+[:python_version<="3.2"]
+trollius
+
+[:python_version=="3.3"]
+asyncio
