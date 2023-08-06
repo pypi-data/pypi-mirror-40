@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Chromosome
+Version: 0.1.0
+Summary: Evolutionary Algorithm Framework in Python
+Home-page: https://www.github.com/twguest/Chromosome
+Author: Trey Guest
+Author-email: twguest@students.latrobe.edu.au
+License: LGPL
+Keywords: evolutionary algorithms,genetic algorithms,genetic programming,cma-es,ga,gp,es,pso,artificial intelligence,ai
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+
+# Chromosome
+
+
