@@ -1,0 +1,6 @@
+# Requirements for setup a development environment
+setuptools
+tox
+lxml
+xmlschema>=1.0.7
+-e .
