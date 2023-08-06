@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: ApiVoice
+Version: 1.0
+Summary: apiApeech sdk
+Home-page: https://github.com/fengxiaoyii/ApiSpeech.git
+Author: Lucas
+Author-email: 767402013@qq.com
+License: MIT Licence
+Description: UNKNOWN
+Platform: all
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
