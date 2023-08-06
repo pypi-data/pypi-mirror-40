@@ -1,0 +1,5 @@
+[console_scripts]
+FetaGenome = fetagenome.fetagenome:main
+baited_metagenome_simulator = fetagenome.baited_metagenome_simulator:main
+generate_config_file = fetagenome.generate_config_file:main
+
