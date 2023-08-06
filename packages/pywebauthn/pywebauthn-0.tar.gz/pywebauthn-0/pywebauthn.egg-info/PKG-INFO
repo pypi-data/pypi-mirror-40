@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pywebauthn
+Version: 0
+Summary: PyWebAuthn
+Home-page: https://github.com/pyauth/pywarp
+Author: Andrey Kislyuk
+Author-email: kislyuk@gmail.com
+License: Apache Software License
+Description: This project has moved to https://github.com/pyauth/pywarp.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: test

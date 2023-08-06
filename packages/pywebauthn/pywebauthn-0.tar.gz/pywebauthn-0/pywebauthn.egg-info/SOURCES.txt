@@ -1,0 +1,8 @@
+README.rst
+setup.py
+pywebauthn/__init__.py
+pywebauthn.egg-info/PKG-INFO
+pywebauthn.egg-info/SOURCES.txt
+pywebauthn.egg-info/dependency_links.txt
+pywebauthn.egg-info/requires.txt
+pywebauthn.egg-info/top_level.txt
