@@ -1,0 +1,13 @@
+CHANGES
+=======
+
+1.0
+---
+
+* Upgrade to Beta status
+* Add JupyterNotebook badge
+* Disclaimer
+* Add badges
+* SetEnv variables for tox
+* Change travis-ci setup
+* Initial commit
