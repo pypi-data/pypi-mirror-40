@@ -1,0 +1,10 @@
+README.md
+setup.py
+linesplit/__init__.py
+linesplit/linesplit.py
+mkv_line_split.egg-info/PKG-INFO
+mkv_line_split.egg-info/SOURCES.txt
+mkv_line_split.egg-info/dependency_links.txt
+mkv_line_split.egg-info/entry_points.txt
+mkv_line_split.egg-info/requires.txt
+mkv_line_split.egg-info/top_level.txt
