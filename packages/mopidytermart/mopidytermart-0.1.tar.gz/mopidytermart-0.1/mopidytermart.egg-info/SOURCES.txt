@@ -1,0 +1,11 @@
+README.md
+setup.py
+mopidytermart/__init__.py
+mopidytermart/__main__.py
+mopidytermart/mopidytermart.py
+mopidytermart.egg-info/PKG-INFO
+mopidytermart.egg-info/SOURCES.txt
+mopidytermart.egg-info/dependency_links.txt
+mopidytermart.egg-info/entry_points.txt
+mopidytermart.egg-info/requires.txt
+mopidytermart.egg-info/top_level.txt
