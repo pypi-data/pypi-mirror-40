@@ -1,0 +1,15 @@
+[console_scripts]
+ksconf = ksconf.__main__:cli
+
+[ksconf_cmd]
+check = ksconf.commands.check:CheckCmd
+combine = ksconf.commands.combine:CombineCmd
+diff = ksconf.commands.diff:DiffCmd
+merge = ksconf.commands.merge:MergeCmd
+minimize = ksconf.commands.minimize:MinimizeCmd
+promote = ksconf.commands.promote:PromoteCmd
+rest-export = ksconf.commands.restexport:RestExportCmd
+snapshot = ksconf.commands.snapshot:SnapshotCmd
+sort = ksconf.commands.sort:SortCmd
+unarchive = ksconf.commands.unarchive:UnarchiveCmd
+
