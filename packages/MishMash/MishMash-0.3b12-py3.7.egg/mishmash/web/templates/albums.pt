@@ -1,0 +1,58 @@
+<metal:block use-macro="main_template"><div metal:fill-slot="content">
+<!--! begin content -->
+<div class="row text-center">&nbsp;</div>
+
+<ul class="nav justify-content-center">
+  <li tal:repeat="L album_decades" class="nav-item">
+    <a class="nav-link" href="#${L}"><strong>${L}</strong></a>
+  </li>
+
+  <li>
+    <div class="dropdown">
+
+      <button class="btn btn-primary dropdown-toggle" type="button"
+              id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Filters</button>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <form class="form-inline" id="filter_form"
+              action="${request.route_url('all_albums')}"
+              method="GET">
+          <div class="form-check" tal:repeat="(tname, atype) album_types.items()">
+            <div class="form-group">
+              <input type="checkbox" class="form-check-input"
+                     id="${tname}_filter" name="type" value="${tname}"
+                     tal:attributes="checked atype['active']"/>
+              <label for="${tname}_filter"
+                     class="form-check-input">${atype['display_name']}</label>
+            </div>
+          </div>
+          <input type="hidden" name="filter-form" value="true"/>
+          <button type="submit" id="apply-album-filter"
+                  class="btn btn-primary btn-sm">Apply</button>
+        </form>
+      </div>
+    </div>
+  </li>
+
+</ul>
+
+<span tal:repeat="L reversed(album_decades)">
+  <h3><a id='${L}'><strong>${L}</strong></a></h3>
+  <ul class='list-unstyled'>
+    <li tal:repeat="album album_dict[L]">
+      <span tal:content="album.getBestDate().year if album.getBestDate() else ''">NNNN</span>
+      <a href="${request.route_url('album', id=album.id)}"
+         tal:content="album.title">--Album Title--</a>
+      <span class="text-muted">
+          by <a href="${request.route_url('artist', id=album.artist_id)}"
+                tal:content="album.artist.name">--Artist Name--</a>
+      </span>
+    </li>
+  </ul>
+</span>
+
+<script src="${request.static_url('mishmash.web:static/js/mishmash.js')}"></script>
+
+<!--! end content -->
+</div></metal:block>

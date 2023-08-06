@@ -1,0 +1,3 @@
+[console_scripts]
+mishmash = mishmash.__main__:app.run
+
