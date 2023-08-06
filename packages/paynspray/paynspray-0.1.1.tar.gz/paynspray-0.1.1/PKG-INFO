@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: paynspray
+Version: 0.1.1
+Summary: Provides access to functions pertaining to text generation, manipulation, & presentation
+Home-page: https://github.com/munshigroup/paynspray
+Author: The Munshi Group
+Author-email: support@munshigroup.com
+License: UNKNOWN
+Description: # paynspray
+        The Pay 'n' Spray library provides access to functions pertaining to text generation, manipulation, &amp; presentation.
+        
+        ## Installation
+        
+        You can install Pay 'n' Spray using the Python package installer (pip).
+        
+        Run the following command:
+        
+            $ pip install paynspray
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
