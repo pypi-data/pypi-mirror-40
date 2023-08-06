@@ -1,0 +1,9 @@
+README.md
+setup.py
+publishing_py/__init__.py
+publishing_py/multiply.py
+publishing_py/sum.py
+publishing_py.egg-info/PKG-INFO
+publishing_py.egg-info/SOURCES.txt
+publishing_py.egg-info/dependency_links.txt
+publishing_py.egg-info/top_level.txt
