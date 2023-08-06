@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: metasub-utils
+Version: 0.4.0
+Summary: Utility functions for the MetaSUB Consortium
+Home-page: UNKNOWN
+Author: David Danko
+Author-email: dcdanko@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: future
+Requires-Dist: six
+Requires-Dist: metasub-utils.athena
+Requires-Dist: metasub-utils.bridges
+Requires-Dist: metasub-utils.hudson-alpha
+Requires-Dist: metasub-utils.metadata
+Requires-Dist: metasub-utils.metagenscope
+Requires-Dist: metasub-utils.wasabi
+Requires-Dist: metasub-utils.zurich
+
+UNKNOWN
+
+
