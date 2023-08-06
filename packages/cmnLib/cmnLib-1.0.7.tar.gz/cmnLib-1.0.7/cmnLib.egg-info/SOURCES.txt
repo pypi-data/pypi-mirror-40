@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+cmnLib/__init__.py
+cmnLib/mem.py
+cmnLib/saLibrary.py
+cmnLib/security.py
+cmnLib/text.py
+cmnLib/tmpWorkAround.py
+cmnLib.egg-info/PKG-INFO
+cmnLib.egg-info/SOURCES.txt
+cmnLib.egg-info/dependency_links.txt
+cmnLib.egg-info/not-zip-safe
+cmnLib.egg-info/requires.txt
+cmnLib.egg-info/top_level.txt
