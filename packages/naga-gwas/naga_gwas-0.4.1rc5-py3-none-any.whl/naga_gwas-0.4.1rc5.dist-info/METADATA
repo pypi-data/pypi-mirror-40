@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: naga-gwas
+Version: 0.4.1rc5
+Summary: Network Assisted Genomic Association
+Home-page: https://github.com/shfong/naga
+Author: Samson Fong
+Author-email: shfong@ucsd.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: ijson
+Requires-Dist: requests
+Requires-Dist: pytz (>=2011k)
+Requires-Dist: cycler (>=0.10)
+Requires-Dist: kiwisolver (>=1.0.1)
+Requires-Dist: pyparsing (!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1)
+Requires-Dist: pytz
+Requires-Dist: networkx (==1.11)
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas (>=0.23.0)
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: ndex2
+Requires-Dist: python-igraph
+Requires-Dist: py2cytoscape
+Requires-Dist: coverage
+Requires-Dist: pytest
+Requires-Dist: mygene
+Requires-Dist: scikit-learn
+Requires-Dist: sphinx
+
+Network Assisted Genomic Analysis (NAGA)
+========================================
+
+Network Assisted Genomic Analysis(NAGA) re-prioritizes significant single
+nucleotide polymorphisms (SNPs) to genes using network diffusion methods
+including random walk and heat diffusion. 
+
+A companion website and REST API can be found at http://nbgwas.ucsd.edu/.
+
+Documentation
+=============
+
+A readthedocs page will be coming soon! In the mean time, you can view
+the documentations by building the sphinx documentation in the docs
+directory. Simply run the following in the docs folder
+
+.. code:: bash
+
+    make docs
+
+and open the index.html in the docs/build/html directory.
+
+Installation
+============
+
+It is recommended that NAGA be run under Anaconda_ with python-igraph_ manually installed using **conda**
+and to create a new conda environment
+
+
+To create a new **conda** environment and activate it:
+
+.. code:: bash
+
+   conda create -n nagaenv
+   source activate nagaenv
+
+To install python-igraph_ via **conda**:
+
+.. code:: bash
+
+   conda install -c conda-forge python-igraph
+
+
+To install NAGA via pip:
+
+.. code:: bash
+
+    pip install naga-gwas
+
+
+Tutorial
+========
+
+``notebooks/tutorial.ipynb`` demonstrates how to use this package once it
+is installed.
+
+Citing NAGA
+=============
+
+Publication to come...
+
+.. _Anaconda: https://anaconda.org
+.. _python-igraph: https://anaconda.org/conda-forge/python-igraph
+
+=======
+History
+=======
+
+0.4.1 (2019-01-09)
+------------------
+
+* First release on PyPI
+
+
+
