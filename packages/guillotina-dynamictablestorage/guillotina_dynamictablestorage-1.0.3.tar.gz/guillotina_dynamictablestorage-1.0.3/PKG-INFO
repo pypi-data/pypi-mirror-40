@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: guillotina_dynamictablestorage
+Version: 1.0.3
+Summary: Dynamic storages based on tables instead of databases
+Home-page: https://github.com/guillotinaweb/guillotina_dynamictablestorage
+Author: Nathan Van Gheem
+Author-email: vangheem@gmail.com
+License: UNKNOWN
+Description: guillotina_dynamictablestorage
+        ==============================
+        
+        Dynamic storage implementation that uses tables instead of pg databases.
+        
+        This allows us to reuse connection pools but still be able to separate
+        data to different tables.
+        
+        
+        Example configuration::
+        
+            ...
+            storages:
+              my-storage:
+                storage: postgresql
+                type: prefixed-table
+                dsn: postgresql://postgres@localhost:5432/guillotina
+            ...
+        
+Platform: UNKNOWN
+Provides-Extra: test
