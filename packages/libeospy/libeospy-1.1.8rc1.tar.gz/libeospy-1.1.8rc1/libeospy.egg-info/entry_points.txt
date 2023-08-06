@@ -1,0 +1,4 @@
+[console_scripts]
+pycleos = eospy.command_line:cleos
+validate_chain = eospy.command_line:validate_chain
+
