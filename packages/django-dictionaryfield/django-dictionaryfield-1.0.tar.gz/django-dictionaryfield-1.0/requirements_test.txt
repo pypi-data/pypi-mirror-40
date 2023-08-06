@@ -1,0 +1,7 @@
+-r requirements.txt
+pytest
+pytest-django>=3
+teamcity-messages~=1.17
+django-bootstrap3
+beautifulsoup4==4.5.1
+
