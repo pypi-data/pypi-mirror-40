@@ -1,0 +1,6 @@
+lib
+lib/libwebp_linux
+lib/libwebp_osx
+lib/libwebp_win32
+lib/libwebp_win64
+webptools
