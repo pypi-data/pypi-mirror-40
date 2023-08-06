@@ -1,0 +1,18 @@
+PyYAML>=3.10
+redis>=2.6.2
+requests>=1.0.4
+vr.common>=6
+
+[:python_version == "2.7"]
+supervisor
+
+[docs]
+sphinx
+jaraco.packaging>=3.2
+rst.linker>=1.9
+
+[testing]
+pytest!=3.7.3,>=3.5
+pytest-checkdocs
+pytest-flake8
+backports.unittest_mock
