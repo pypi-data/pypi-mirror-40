@@ -1,0 +1,11 @@
+[console_scripts]
+ais2json = simpleais.tools:to_json
+aisburst = simpleais.tools:burst
+aiscat = simpleais.tools:cat
+aisdump = simpleais.tools:dump
+aisgrep = simpleais.tools:grep
+aisinfo = simpleais.tools:info
+aisrefine = simpleais.tools:refine
+aisstat = simpleais.tools:stat
+aist = simpleais.tools:as_text
+
