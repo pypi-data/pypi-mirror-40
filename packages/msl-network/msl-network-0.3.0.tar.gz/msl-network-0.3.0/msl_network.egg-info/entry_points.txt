@@ -1,0 +1,3 @@
+[console_scripts]
+msl-network = msl.network.cli:main
+
