@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyepayco
+Version: 1.0.0
+Summary: Python library for ePayco Payment API
+Home-page: https://github.com/epayco/epayco-python/tarball/0.1
+Author: ePayco Development Team
+Author-email: desarrollo@epayco.co
+License: MIT
+Description: Basic python library to interact with ePayco Payment API
+Keywords: epayco,python,payco
+Platform: UNKNOWN
