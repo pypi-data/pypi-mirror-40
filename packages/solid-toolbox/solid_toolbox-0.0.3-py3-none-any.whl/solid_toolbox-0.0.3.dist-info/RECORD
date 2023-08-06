@@ -1,0 +1,11 @@
+solid_toolbox/__init__.py,sha256=zq-XOKGeMfv1E9UJO1bRNxU16CBbh7w2U_xkuUnfhAA,555
+solid_toolbox/__main__.py,sha256=Cp_rzMD56bq2-vJvjUFyaHVtOyfAQTd4vb2W7OXMPes,105
+solid_toolbox/commands.py,sha256=2vA02RSL-ol3EcoASjF_5fbr8wfBl6KtpSo16-wPa1M,1481
+solid_toolbox/curves.py,sha256=1bJpNcPcG_FlZnLo0ggwiZV7PTiQBRq9WnNHQfs2eGQ,991
+solid_toolbox/poly.py,sha256=pTf9gm0L53Zt6Q1qi7w3rOOdQhewzVE1xTtGQgAZ6VM,1166
+solid_toolbox/transforms.py,sha256=y534qrxdd-UfqL8veqZSPEGG-0r-R_1HK5sGsCWEIjk,419
+solid_toolbox/units.py,sha256=Ftbj2LM4_a5vhYubtJTEsJ1Kdj3ToUG4x7MmB9sFcFI,3227
+solid_toolbox-0.0.3.dist-info/LICENSE.md,sha256=5_VXCJKHd64m20HNf4LpxJ0j-C0ZlYZMSnq6foVkXbc,1093
+solid_toolbox-0.0.3.dist-info/WHEEL,sha256=OyjuYVC9vVJqb-Aqln3fyrroYJ4WrcSwx2msO2AokVc,85
+solid_toolbox-0.0.3.dist-info/METADATA,sha256=eX0udlcP74SoMfo3IEXGxDAiIJUVE0JF4Tp5PMyGGWo,797
+solid_toolbox-0.0.3.dist-info/RECORD,,
