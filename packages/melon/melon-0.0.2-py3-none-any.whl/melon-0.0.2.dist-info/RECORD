@@ -1,0 +1,12 @@
+melon/__init__.py,sha256=qoOd1DBTYyRFJYRIIfBkJI4jSM5h7YAD9wIamdeZ9cE,116
+melon/imgmelon.py,sha256=fPgSwyGykHR_-ilWSyb_JHSIakBZCGY_LhTAYTI_JaM,6758
+melon/imgmelon_denominations.py,sha256=FABaBBRhAtuwS0jnRfVJgKreW6iKRmpWOdhPP4NH44k,232
+melon/label_generator.py,sha256=zNRD1bueoQ5o4eF6vo2w_gV3kmPYnYRS0Ut4a7j9KBE,772
+melon/melon.py,sha256=rzZNSwM5JEpgpLTjawFhz7zqoDjdzkA0RGh3OUeq-e8,542
+scripts/__init__.py,sha256=YXqYhyvtSuaIKIt67Z-ZDsWpFDrY9yTnjkh9Sdn_hcw,41
+scripts/cli.py,sha256=vzZcaOh8Wr2bSjhg8DoMgog4GNG1GJMZqxj751OwGoE,508
+melon-0.0.2.dist-info/METADATA,sha256=nqOeR2mCXInqW17l-5P7vWj-GbMvQTex4Iuidmaw3K8,515
+melon-0.0.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+melon-0.0.2.dist-info/entry_points.txt,sha256=aNtLF4XU7YAAy4pV-es3vD30AumXWua2bveQwW10McE,43
+melon-0.0.2.dist-info/top_level.txt,sha256=JMX0JWqgvzP1sEN9O2GLYzH7zEIXieoBmK_1iNljino,14
+melon-0.0.2.dist-info/RECORD,,
