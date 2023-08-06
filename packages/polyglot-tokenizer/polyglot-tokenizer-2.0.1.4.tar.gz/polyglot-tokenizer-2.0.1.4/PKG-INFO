@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: polyglot-tokenizer
+Version: 2.0.1.4
+Summary: Tokenizer for world's most spoken languages and social media texts like Facebook, Twitter etc.
+Home-page: https://github.com/irshadbhat/polyglot-tokenizer
+Author: irshadbhat
+Author-email: bhatirshad127@gmail.com
+Keywords: nlp,polyglot,tokenizer
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pbr (>=2.0,<3.0)
+Requires-Dist: six (>=1.12,<2.0)
+Project-URL: Repository, https://github.com/irshadbhat/polyglot-tokenizer
