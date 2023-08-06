@@ -1,0 +1,13 @@
+README.md
+setup.py
+beautyacc/__init__.py
+beautyacc.egg-info/PKG-INFO
+beautyacc.egg-info/SOURCES.txt
+beautyacc.egg-info/dependency_links.txt
+beautyacc.egg-info/requires.txt
+beautyacc.egg-info/top_level.txt
+beautyacc.egg-info/zip-safe
+beautyacc/core/__init__.py
+beautyacc/core/archive.py
+beautyacc/util/__init__.py
+beautyacc/util/caching.py
