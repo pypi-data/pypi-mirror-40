@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+from kagenda import agenda
+import argparse
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Deliver today's overview.")
+    parser.add_argument("-p", "--print", help="print out a text overview")
+    parser.add_argument("-s", "--speak", action='store',
+                        help="speak today's overview")
+    args = parser.parse_args()
+
+    while True:
+        try:
+            agenda.today(args.print, args.speak)
+        except:
+            continue
+        break
+
+
+if __name__ == '__main__':
+    main()
