@@ -1,0 +1,75 @@
+-*- org -*-
+
+https://packaging.python.org/
+
+* Test
+** run-test-suite.py
+** Run tests towards installed program
+* Set version number
+in src/exactly_lib/program_info.py (if not already done)
+* Update CHANGELOG.md
+  - set version and release date
+  - make sure changes are included (see https://keepachangelog.com/en/1.0.0/)
+**  Template
+## [VERSION] - YYYY-MM-DD
+## [Unreleased]
+
+### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+* Make sure release year is included in COPYRIGHT
+* README/Future development
+Make sure are in lign with the release
+* Make release artifacts
+** Remove existing distributables
+> rm -rf dist
+> rm -rf build
+** Make distributables
+Distribute source and wheel
+
+> python3 setup.py sdist
+> python3 setup.py bdist_wheel
+
+* Upload
+> twine upload dist/*
+* wiki
+** Update examples
+Run tests in examples/wiki,
+and if changes are needed to make these work,
+make the same changes to wiki.
+** Generate new Reference.html
+* Tag repo with version
+> git tag vVERSION
+> git push --tags
+* Make release on github
+* Learning PyPi
+http://peterdowns.com/posts/first-time-with-pypi.html
+** Upload your package to PyPI Test
+
+Run:
+
+> python setup.py register -r pypitest
+
+This will attempt to register your package against PyPI's test server, just to
+make sure you've set up everything correctly.
+
+Then, run:
+
+> python setup.py sdist upload -r pypitest
+
+You should get no errors, and should also now be able to see your library in
+the test PyPI repository.
+
+** Upload to PyPI Live
+
+Once you've successfully uploaded to PyPI Test, perform the same steps but
+point to the live PyPI server instead. To register, run:
+
+> python setup.py register -r pypi
+Then, run:
+
+> python setup.py sdist upload -r pypi
+and you're done! Congratulations on successfully publishing your first package!
