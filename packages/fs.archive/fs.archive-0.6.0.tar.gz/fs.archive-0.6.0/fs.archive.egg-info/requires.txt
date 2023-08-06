@@ -1,0 +1,36 @@
+fs~=2.2.0
+six~=1.10
+
+[:python_version < "3.6"]
+typing~=3.6
+
+[all]
+pycdlib~=1.4
+
+[all:python_version < "3"]
+backports.lzma
+
+[dev]
+green
+coverage
+setuptools
+docutils
+Pygments
+codecov
+
+[iso]
+pycdlib~=1.4
+
+[tar.xz]
+
+[tar.xz:python_version < "3"]
+backports.lzma
+
+[test]
+pycdlib~=1.4
+
+[test:python_version < "3"]
+backports.lzma
+
+[test:python_version < "3.4"]
+mock
