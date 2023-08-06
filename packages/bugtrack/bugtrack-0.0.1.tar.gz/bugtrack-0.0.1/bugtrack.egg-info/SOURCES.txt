@@ -1,0 +1,8 @@
+setup.py
+bugtrack/__init__.py
+bugtrack/urls.py
+bugtrack.egg-info/PKG-INFO
+bugtrack.egg-info/SOURCES.txt
+bugtrack.egg-info/dependency_links.txt
+bugtrack.egg-info/not-zip-safe
+bugtrack.egg-info/top_level.txt
