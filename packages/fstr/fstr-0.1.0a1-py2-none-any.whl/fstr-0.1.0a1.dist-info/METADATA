@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fstr
+Version: 0.1.0a1
+Summary: A library for performing delayed f-string evaluation.
+Home-page: https://github.com/rmorshea/fstr
+Author: Ryan Morshead
+Author-email: ryan.morshead@gmail.com
+License: MIT
+Keywords: fstring,f-string
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Requires-Dist: six (==1.11.0)
+
+# fstr
+
+A library for performing delayed f-string evaluation.
+
+
