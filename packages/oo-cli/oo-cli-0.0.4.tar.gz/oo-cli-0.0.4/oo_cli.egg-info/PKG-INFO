@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: oo-cli
+Version: 0.0.4
+Summary: Object Oriented CLI
+Home-page: https://github.com/enigma0Z/python-object-oriented-cli.git
+Author: Johnathan Bell
+Author-email: enigma.0Z@gmail.com
+License: MIT
+Description: # Python Simple CLI Library
+        
+        Simple Python CLI library
+        
+        Provides a framework for developing an object-oriented CLI 
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
