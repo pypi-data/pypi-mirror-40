@@ -1,0 +1,13 @@
+semaphore/_lowlevel__lib.so,sha256=XX2EhZC3Q3sA65q8jNj4vJQf-XS-wZrdpRp9bIvYQ8s,33747882
+semaphore/_compat.py,sha256=Xj0taOAKjqrMHZZkr8benMXgh-Ig2mlPKEzmF2nTQvE,889
+semaphore/exceptions.py,sha256=kyQBBtdMLzhOWxkUGJEoYO4GCvhztmtGBEibAzrO9gI,1522
+semaphore/auth.py,sha256=yMhirxHvF60BHAECvO0l1_NUg9VKt_U_fzEUHgwqKfo,3624
+semaphore/__init__.py,sha256=1g9An-AmAb74svfUkQ7P2D5eQqSy7LG2zPzSvBPcEs8,577
+semaphore/utils.py,sha256=kM7B7vfV02Lqd37O2sfbH6uVbB0Ec8H1NyTBsh8wIWI,2761
+semaphore/_lowlevel__ffi.py,sha256=ANJ_b14bVC02aMRHvoxxPpcRy6FKFOhsAMIqu8OUeg0,5463
+semaphore/_lowlevel.py,sha256=Xyn7v-gCNh52d0si8U1mqdmwkxm1murj6qIASsNoR3Q,189
+semaphore/processing.py,sha256=TrDS06xJWhp0qf06JjOw4QIibSlUTQw7vcfi3zKF3BA,2640
+semaphore-0.4.0.dist-info/WHEEL,sha256=aU00KF4waDHstgol2eXMlA9R0kEFoeSm3RLrjv0zYrI,135
+semaphore-0.4.0.dist-info/top_level.txt,sha256=_6yD1N2zWfnly73576hNx0TJ4w0LTP_vJsjbyUSR5fM,10
+semaphore-0.4.0.dist-info/METADATA,sha256=sReUKY2-pOrZEvimh1WAZ4kz4Jc7FwRXIK_aqs1Aej4,254
+semaphore-0.4.0.dist-info/RECORD,,
