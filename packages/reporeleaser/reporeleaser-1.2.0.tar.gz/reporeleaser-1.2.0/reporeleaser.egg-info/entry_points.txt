@@ -1,0 +1,3 @@
+[console_scripts]
+reporeleaser = reporeleaser.cli:cli
+
