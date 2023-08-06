@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: TelegramApiClient
+Version: 0.72
+Summary: Telepot upgraded version
+Home-page: https://github.com/amirho3inf/TelegramApiClient
+Author: AmirHo3inF
+Author-email: MrAmirho3inf@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: telepot (==12.6)
+
+UNKNOWN
+
+
