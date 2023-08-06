@@ -1,0 +1,12 @@
+fcswrite>=0.4.1
+h5py>=2.8.0
+imageio>=2.3.0
+nptdms
+numpy>=1.10.0
+scipy>=0.13.0
+statsmodels>=0.5.0
+pandas>=0.14
+patsy>=0.3.0
+
+[:python_version <= "3.4"]
+pathlib
