@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+rs4/__init__.py
+rs4.egg-info/PKG-INFO
+rs4.egg-info/SOURCES.txt
+rs4.egg-info/dependency_links.txt
+rs4.egg-info/requires.txt
+rs4.egg-info/top_level.txt
