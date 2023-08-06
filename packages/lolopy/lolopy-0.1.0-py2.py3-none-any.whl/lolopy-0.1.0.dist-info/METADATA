@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lolopy
+Version: 0.1.0
+Summary: Python wrapper for the Lolo machine learning library
+Home-page: https://github.com/CitrineInformatics/lolo
+Maintainer: Max Hutchinson
+Maintainer-email: maxhutch@citrine.io
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: scikit-learn
+Requires-Dist: py4j
+
+!!!!! missing pandoc do not upload to PyPI !!!!
+
+
