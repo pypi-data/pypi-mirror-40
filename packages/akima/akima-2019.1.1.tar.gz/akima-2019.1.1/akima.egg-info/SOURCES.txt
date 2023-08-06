@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+akima/__init__.py
+akima/akima.c
+akima/akima.py
+akima.egg-info/PKG-INFO
+akima.egg-info/SOURCES.txt
+akima.egg-info/dependency_links.txt
+akima.egg-info/not-zip-safe
+akima.egg-info/requires.txt
+akima.egg-info/top_level.txt
