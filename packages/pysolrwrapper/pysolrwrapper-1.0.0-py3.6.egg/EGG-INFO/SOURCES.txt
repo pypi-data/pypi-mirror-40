@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pysolrwrapper/__init__.py
+pysolrwrapper/__version__.py
+pysolrwrapper/core.py
+pysolrwrapper/filter.py
+pysolrwrapper/utils.py
+pysolrwrapper.egg-info/PKG-INFO
+pysolrwrapper.egg-info/SOURCES.txt
+pysolrwrapper.egg-info/dependency_links.txt
+pysolrwrapper.egg-info/requires.txt
+pysolrwrapper.egg-info/top_level.txt

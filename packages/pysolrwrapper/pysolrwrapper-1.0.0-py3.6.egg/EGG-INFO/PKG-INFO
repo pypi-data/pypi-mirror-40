@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: pysolrwrapper
+Version: 1.0.0
+Summary: A wrapper for pySolr
+Home-page: https://framagit.org/parisni/pysolrwrapper
+Author: nicolas paris
+Author-email: nicolas.paris@riseup.net
+License: MIT
+Description: 
+        # Install
+        ```
+        pip install -r requirements.txt
+        pip install .
+        ```
+        
+        # Tests
+        ```
+        python -m pytest
+        ```
+        
+        # PEP
+        ```
+        pep8
+        ```
+        
+        # Usage
+        ```
+        from pysolrwrapper.core import SolrQuery
+        from pysolrwrapper.filter import (FilterText, FilterColumnEnum)
+        
+            result = SolrQuery("localhost:9983", "omop-concept")\
+                .set_type_edismax()\
+                .select(["concept_id","concept_name"])\
+                .add_filter(FilterText(["disease lethal", "patient"]))\
+                .add_filter(FilterColumnEnum("standard_concept", ["c","s"]))\
+                .add_filter(FilterColumnEnum("standard_concept", ["*"]))\
+                .highlight(["concept_name", "synonym_concept_name"])\
+                .facet(-1, ["standard_concept", "domain_id"])\
+                .sort("score", "asc")\
+                .sort("concept_id", "asc")\
+                .limit(2)\
+        	.run()
+        ```
+        
+        # Results
+        
+        Depending on what you ask for, the result is a dictionnary with this format:
+        
+        ```
+        {'num_shown': 2,
+         'num_found': 7052,
+         'docs': [{'concept_id': '42742376',
+                   'concept_name': 'Molecular pathology procedure, Level 7'},
+                  {'concept_id': '2107646',
+                   'concept_name': 'Direct repair of aneurysm, pseudoaneurysm, or excision(partial or total) and graft insertion, with or without patch graft for ruptured aneurysm, abdominal aorta involving iliac vessels(common, hypogastric, external)'}],
+            'facet_fields': {'standard_concept': [{'s': 6263},
+                                                  {'c': 789}],
+                             'domain_id': [{'condition': 2870},
+                                           {'measurement': 1621},
+                                           {'observation': 1481},
+                                           {'drug': 659},
+                                           {'procedure': 303},
+                                           {'meas': 100},
+                                           {'value': 100},
+                                           {'provider': 13},
+                                           {'specialty': 13},
+                                           {'device': 3}]
+                             }
+         }
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
