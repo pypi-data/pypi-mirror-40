@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: queuing
+Version: 0.2.2
+Summary: Multithreating producent-consumer solution
+Home-page: https://github.com/vojtek/queuing
+Author: Wojciech Kolodziej
+Author-email: vojtekkol@o2.pl
+License: MIT
+Description: # queuing
+        Multithreating producent-consumer solution
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

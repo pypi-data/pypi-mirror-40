@@ -1,0 +1,8 @@
+README.md
+setup.py
+queuing/__init__.py
+queuing/queuing.py
+queuing.egg-info/PKG-INFO
+queuing.egg-info/SOURCES.txt
+queuing.egg-info/dependency_links.txt
+queuing.egg-info/top_level.txt
