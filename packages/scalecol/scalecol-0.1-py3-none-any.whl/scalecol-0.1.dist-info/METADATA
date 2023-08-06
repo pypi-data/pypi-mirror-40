@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: scalecol
+Version: 0.1
+Summary: Implemetation of several preprocessing steps as i wanted 
+Home-page: https://github.com/kumarsuraj9450/scalecol
+Author: Kumar Suraj
+Author-email: kumarsuraj9450@gmail.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Keywords: sklearn,preprocessing,standardscale,scale,mean_removal
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+UNKNOWN
+
+
