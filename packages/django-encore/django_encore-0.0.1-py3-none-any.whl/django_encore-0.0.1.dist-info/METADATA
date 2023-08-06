@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: django-encore
+Version: 0.0.1
+Summary: Django integration with Webpack Encore
+Home-page: https://github.com/egorsmkv/django-encore
+Author: Yehor Smoliakov
+Author-email: yehors@ukr.net
+License: MIT
+Project-URL: Source, https://github.com/egorsmkv/django-encore
+Project-URL: Tracker, https://github.com/egorsmkv/django-encore/issues
+Keywords: django django-encore webpack-encore
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: Django (>=2.1.5)
+
+# Django Encore
+
+This library integrates [Webpack Encore][1] into your Django application like
+it does [Webpack Encore Bundle][2] for Symfony.
+
+## Usage
+
+1) Install the library from PyPI:
+
+```shell
+pip install django-encore
+```
+
+2) Configure your **settings.py** file:
+
+Include the library:
+
+```python
+INSTALLED_APPS = [
+    # ...
+    'encore',
+]
+```
+
+Add **ENCORE_ENTRYPOINTS_FILE** and change **STATICFILES_DIRS**:
+
+```python
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'assets_build'),
+]
+
+ENCORE_ENTRYPOINTS_FILE = os.path.join(BASE_DIR, 'assets_build') + '/build/entrypoints.json'
+```
+
+3) Use template tags in your templates:
+
+```text
+{% block javascripts %}
+    {{ block.super }}
+    {% encore_entry_script_tags 'demo1' %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    {% encore_entry_link_tags 'demo1' %}
+{% endblock %}
+```
+
+See the **example** folder for more details.
+
+[1]: https://github.com/symfony/webpack-encore
+[2]: https://github.com/symfony/webpack-encore-bundle
+
+
