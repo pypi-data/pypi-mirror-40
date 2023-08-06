@@ -1,0 +1,14 @@
+graphistry/__init__.py,sha256=TYiKsOyAB1x248i41B7JJsguyI367wXmnur3CZHWlJE,201
+graphistry/_version.py,sha256=vMT-rOFfuiHOKnWndUkjr3Euf-18H2wo0iGQVEVKYbg,472
+graphistry/bolt_util.py,sha256=ZjD4SxZ6PIu4UOOMfQMm1gKBW0gZvsxQbKe3RHUgon4,1566
+graphistry/graph_vector_pb2.py,sha256=ijR2gt-V66XHv_LZ1zVp5I1wGdpKWpmjnqyqXyP8L6M,27353
+graphistry/hyper.py,sha256=-yucMyBXRwGKwMIds8mP7fGvQcX6VpyjfdfXvK7Tc2M,8785
+graphistry/plotter.py,sha256=Gb7aMnSFRZh5Q3C8ntyAK2qaAug9sTbpblDzK9GA7iE,25259
+graphistry/pygraphistry.py,sha256=6EXYiwGJiyypLD3dEMmjMctvYAax9fOa8T6Tcbmi6hE,19792
+graphistry/util.py,sha256=fTrDBKeZQUNq8NFE-zWZpvdUGwlAoESsE0LOudhSKe4,2153
+graphistry/vgraph.py,sha256=l8jAL6pRiOpnJ5bK2bnVlAPjyQVnfkrS2y-OvSdmrXU,6495
+graphistry-0.9.62.dist-info/LICENSE.txt,sha256=FznF1t86WX4EFX3JAwhMUyC40Ji7IopWKdWPYiTg_I8,1487
+graphistry-0.9.62.dist-info/METADATA,sha256=n927v6az0uQ9e_hyY6nhJQIkC3iDrf4jF0dUgPRg_GY,2792
+graphistry-0.9.62.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+graphistry-0.9.62.dist-info/top_level.txt,sha256=3p9_lAt1Xu_czUcwcZlsMa1C-Fqwvcbd3kt6nVm350Y,11
+graphistry-0.9.62.dist-info/RECORD,,
