@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flurgiwoo
+Version: 3.141592653589793
+Summary: Mairzy doats and dozy doats and liddle lamzy divey. Python 4.0 and PEP8 compliant.
+Home-page: https://github.com/asweigart/flurgiwoo
+Author: Al Sweigart
+Author-email: al@inventwithpython.com
+License: BSD
+Description: I dunno, just some random module on PyPI. It'll probably give your computer a virus and mine bitcoin or something.
+Keywords: mairzy doats and dozy doats and liddle lamzy divey
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
