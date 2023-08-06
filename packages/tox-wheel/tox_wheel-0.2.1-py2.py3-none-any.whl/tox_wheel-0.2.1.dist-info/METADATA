@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: tox-wheel
+Version: 0.2.1
+Summary: A Tox plugin that builds and installs wheels instead of sdist.
+Home-page: https://github.com/ionelmc/tox-wheel
+Author: Ionel Cristian Mărieș
+Author-email: contact@ionelmc.ro
+License: BSD 2-Clause License
+Project-URL: Changelog, https://github.com/ionelmc/tox-wheel/blob/master/CHANGELOG.rst
+Project-URL: Issue Tracker, https://github.com/ionelmc/tox-wheel/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Dist: tox (>=3.6)
+Requires-Dist: wheel (>=0.31)
+
+========
+Overview
+========
+
+
+
+A Tox plugin that builds and installs wheels instead of sdist.
+
+* Free software: BSD 2-Clause License
+
+Installation
+============
+
+::
+
+    pip install tox-wheel
+
+Documentation
+=============
+
+
+Two way to use:
+
+* Run ``tox --wheel``
+* Have this in your ``tox.ini``:
+
+  .. code-block:: ini
+
+    [testenv]
+    wheel = true
+
+  You can also disable ``build`` directory removal (dirty builds, use at your own peril):
+
+  .. code-block:: ini
+
+    wheel_clean_build = false
+
+Development
+===========
+
+To run the all tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.2.1 (2019-01-12)
+------------------
+
+* Added ``wheel`` to dependencies.
+
+0.2.0 (2019-01-12)
+------------------
+
+* Remove ``--wheel-clean-build`` CLI option. Build directory cleaning is now on by default.
+  Correct behavior should be the default.
+* Added support for ``[testenv] wheel`` (default: ``false``) and ``[testenv] wheel_clean_build`` (default: ``true``)
+  in ``tox.ini``.
+
+0.1.0 (2019-01-09)
+------------------
+
+* First release on PyPI.
+
+
