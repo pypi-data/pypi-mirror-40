@@ -1,0 +1,76 @@
+Metadata-Version: 2.0
+Name: ib3
+Version: 0.2.0
+Summary: IRC bot framework using mixins to provide common functionality
+Home-page: https://github.com/bd808/python-ib3
+Author: Bryan Davis
+Author-email: bd808@bd808.com
+License: GPLv3+
+Download-URL: https://pypi.python.org/pypi/ib3
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Provides-Extra: testing
+Requires-Dist: irc (<17,>16); python_version < "3"
+Requires-Dist: irc (>=17.0); python_version >= "3.4"
+Provides-Extra: testing
+Requires-Dist: coverage; extra == 'testing'
+Requires-Dist: nose (>=1.0); extra == 'testing'
+Provides-Extra: testing
+Requires-Dist: mock; python_version < "3.3" and extra == 'testing'
+
+=============================
+IRC Bot Behavior Bundle (IB3)
+=============================
+
+IRC bot framework using mixins to provide commonly desired functionality.
+
+Overview
+========
+The `irc`_ python library's ``irc.bot.SingleServerIRCBot`` provides a nice
+base for making a new bot, but there are many common tasks needed by a robust
+bot that it does not handle out of the box. IB3 collects some commonly desired
+behaviors for a bot as `mixin`_ classes that can be used via `multiple
+inheritance`_::
+
+    from ib3 import Bot
+    from ib3.auth import SASL
+    from ib3.connection import SSL
+    from ib3.mixins import DisconnectOnError
+
+    class TestBot(SASL, SSL, DisconnectOnError, Bot):
+        pass
+
+Installation
+============
+* ``pip install ib3`` (recommended)
+* ``python setup.py install`` (from source distribution)
+
+License
+=======
+IB3 is licensed under the `GNU GPLv3+`_ license.
+
+Credits
+=======
+Some code and much inspiration taken from Wikimedia irc bots `Adminbot`_,
+`Jouncebot`_, and `Stashbot`_.
+
+.. _irc: https://pypi.org/project/irc/
+.. _mixin: https://en.wikipedia.org/wiki/Mixin
+.. _multiple inheritance: https://docs.python.org/3/tutorial/classes.html#multiple-inheritance
+.. _GNU GPLv3+: https://www.gnu.org/copyleft/gpl.html
+.. _Adminbot: https://phabricator.wikimedia.org/diffusion/ODAC/
+.. _Jouncebot: https://phabricator.wikimedia.org/diffusion/GJOU/
+.. _Stashbot: https://phabricator.wikimedia.org/diffusion/LTST/
+
+
