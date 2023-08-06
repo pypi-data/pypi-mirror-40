@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: plussize
+Version: 0.3.2
+Summary: Plus-size, find which log grows faster
+Home-page: https://gitlab.com/yaroslaff/pluss
+Author: Yaroslav Polyakov
+Author-email: xenon@sysattack.com
+License: MIT
+Description: # PlusSize
+        
+        Find out which log files are grows very fast.
+        
+        ## Installation
+        `pip3 install plussize`
+        
+        ## Examples
+        
+        Which log file grows faster in /var/log for next 5 seconds:
+        
+        `pluss -t 5 /var/log/ | tail`
+        
+        ## Options
+        
+        `-l` - count lines, not just bytes (takes longer time)
+        
+        `-r` - recursive
+        
+        `-t` - time difference (in seconds) between two checks. Default: 20
+        
+        `-z` - skip files with zero increment
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
