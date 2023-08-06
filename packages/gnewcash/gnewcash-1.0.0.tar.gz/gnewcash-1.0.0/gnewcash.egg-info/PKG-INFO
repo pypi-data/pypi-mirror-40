@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gnewcash
+Version: 1.0.0
+Summary: Python Library for reading, interacting with, and writing GnuCash files
+Home-page: https://github.com/pbromwelljr/gnewcash
+Author: Paul Bromwell Jr.
+Author-email: pbromwelljr@gmail.com
+License: MIT
+Description: # gnewcash
+        
+        Read the docs: https://pbromwelljr.github.io/gnewcash/
+Keywords: gnucash finance finances cash personal banking
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
