@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: instakit
+Version: 0.6.0
+Summary: Image processing tools based on PIL/Pillow and scikit-image
+Home-page: https://github.com/fish2000/instakit
+Author: Alexander Böhn
+Author-email: fish2000@gmail.com
+License: Copyright © 2012-2019 Alexander Böhn <fish2000@gmail.com>
+
+Permission is hereby granted by Alexander Böhn (the "Guy"),
+free of charge, to any person obtaining a copy of this software
+and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute,
+sublicense, sell copies of, and/or generally fuck with the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+*  The above copyright notice and this permission notice shall be
+   included in all copies or substantial portions of the Software.
+
+*  Users of the Software (the "User(s)") who enjoy the use of the
+   Software who recognize the Guy in person without mentioning the
+   fact of their enjoyment shall, henceforth and hithertoforthwith,
+   waive any soveriegn right to contest reputational damages related
+   to the Guy anecdotally describing how the User(s) were totally
+   weird that one time, potentially.
+   
+   §  Any such aforementioned potential anecdotes may, at the sole
+      discretion of the Guy, terminate herewith in a pause before
+      the word "Huh" and then maybe like an eyebrow-raisey thing.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+Download-URL: https://github.com/fish2000/instakit/zipball/master
+Description: Instakit: Filters and Tools; BYO Facebook Buyout
+        ========================================================================
+        
+        Image processors and filters - inspired by Instagram, built on top of the
+        PIL/Pillow, SciPy and scikit-image packages, accelerated with Cython, and
+        ready to use with PILKit and the django-imagekit framework.
+        
+        Included are filters for Atkinson and Floyd-Steinberg dithering, dot-pitch
+        halftoning (with GCR and per-channel pipeline processors), classes exposing
+        image-processing pipeline data as NumPy ND-arrays, Gaussian kernel functions,
+        processors for applying channel-based LUT curves to images from Photoshop
+        .acv files, imagekit-ready processors furnishing streamlined access to a wide
+        schmorgasbord of Pillow's many image adjustment algorithms (e.g. noise, blur,
+        and sharpen functions, histogram-based operations like Brightness/Contrast,
+        among others), an implementation of the entropy-based smart-crop algorithm
+        many will recognize from the easy-thumbnails Django app - and much more.
+Keywords: instakit django imagekit image processing halftone dithering Cython Photoshop PIL Pillow NumPy SciPy scikit-image acv curves
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
