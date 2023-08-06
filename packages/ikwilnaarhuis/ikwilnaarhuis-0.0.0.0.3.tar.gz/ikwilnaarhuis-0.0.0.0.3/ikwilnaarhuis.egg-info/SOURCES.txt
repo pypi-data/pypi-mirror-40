@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ikwilnaarhuis/cli.py
+ikwilnaarhuis.egg-info/PKG-INFO
+ikwilnaarhuis.egg-info/SOURCES.txt
+ikwilnaarhuis.egg-info/dependency_links.txt
+ikwilnaarhuis.egg-info/entry_points.txt
+ikwilnaarhuis.egg-info/top_level.txt
