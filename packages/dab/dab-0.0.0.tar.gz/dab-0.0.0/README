@@ -1,0 +1,22 @@
+dab
+===
+
+dab configures software builds. It doesn't build anything, but it can output files for use with your least hated build system (Ninja, Make, MSBuild).
+
+It doesn't stand for "doin' a build", but you can think it does it if you want.
+
+Installing
+----------
+
+    $ pip install dab
+
+Using
+-----
+
+Then:
+
+    $ dab
+
+For more information:
+
+    $ dab --help
