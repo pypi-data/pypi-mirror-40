@@ -1,0 +1,9 @@
+  compiler: arm-none-eabi-gcc
+  linker:   arm-none-eabi-gcc
+
+  define_flag:  -D
+  output_flag:  -o
+  compile_flag: -c
+  include_flag: -I
+  comand_line_file: "-Wl,@"
+  version_flag: --version
