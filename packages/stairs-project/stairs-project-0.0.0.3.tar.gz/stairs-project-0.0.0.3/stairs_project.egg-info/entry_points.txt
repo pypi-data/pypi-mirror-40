@@ -1,0 +1,3 @@
+[console_scripts]
+stairs-admin = stairs.services.management.commands:init_cli
+

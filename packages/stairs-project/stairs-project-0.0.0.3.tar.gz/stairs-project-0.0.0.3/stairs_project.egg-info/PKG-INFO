@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: stairs-project
+Version: 0.0.0.3
+Summary: Framework for data processing using data pipelines
+Home-page: https://github.com/electronick1/stairs
+Author: Aleh Shydlouski
+Author-email: oleg.ivye@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/electronick1/stairs/archive/0.0.3.tar.gz
+Description: UNKNOWN
+Keywords: data-pipeline,data-science,data-engineering,distributed-computing
+Platform: UNKNOWN
