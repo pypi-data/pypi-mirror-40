@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: npnlp
+Version: 0.0.2
+Summary: NumPy and SciPy based nonlinear programming and optimization.
+Home-page: https://github.com/msparapa/npnlp
+Author: msparapa
+Author-email: msparapa@purdue.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: cvxopt
+Requires-Dist: numpy (>=0.14.3)
+Requires-Dist: scipy
+
+UNKNOWN
+
+
