@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: nmme
+Version: 0.4
+Summary: NMME pip install script
+Home-page: https://nemoest.com
+Author: Nemo Est
+Author-email: nemo_est@outlook.com
+License: MIT
+Description: NMME
+        
+        ------------------
+        
+        To use, simply type:
+        
+            >>> import nmme
+            >>> print(nmme.info())
+        
+        
+        
+Platform: UNKNOWN
