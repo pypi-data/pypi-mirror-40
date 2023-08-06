@@ -1,0 +1,7 @@
+PyYAML
+h5py
+numpy
+meshio>=2.0.0
+raschii>=1.0.2
+yschema>=1.0.2
+fenics-dolfin<2018.2,>=2018.1.0.dev0
