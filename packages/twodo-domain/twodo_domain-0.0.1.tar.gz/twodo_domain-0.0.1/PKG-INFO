@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: twodo-domain
+Version: 0.0.1
+Summary: The domain (entities) of the 2do app.
+Home-page: https://github.com/alexandre/twodo_domain
+Author: Alexandre Souza
+Author-email: 0x41e@protonmail.ch
+Keywords: packaging,2do,clean-architecture-lab
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: dataclasses (>=0.6,<0.7)
+Project-URL: Repository, https://github.com/alexandre/twodo_domain
