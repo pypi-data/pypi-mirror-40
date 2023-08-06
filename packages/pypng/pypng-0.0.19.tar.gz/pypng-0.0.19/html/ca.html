@@ -1,0 +1,186 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Why Use PyPNG? &#8212; PyPNG 0.0.19 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PyPNG Code Examples" href="ex.html" />
+    <link rel="prev" title="PyPNG documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="why-use-pypng">
+<h1>Why Use PyPNG?<a class="headerlink" href="#why-use-pypng" title="Permalink to this headline">¶</a></h1>
+<p>In order to motivate you into using PyPNG this document discusses some
+of the reasons for using PyPNG over other software.</p>
+<p>For starters I assume you already love PNG.  If you don’t want to read
+and write PNG files then you don’t want to use PyPNG.</p>
+<p>The most obvious “competitor” to PyPNG is PIL.  Depending on what job
+you want to do you might also want to use Netpbm (PyPNG can convert to
+and from the Netpbm PNM format), or use <code class="docutils literal notranslate"><span class="pre">ctypes</span></code> to interface directly to a
+compiled version of libpng.  If you know of others, let me know.</p>
+<p>PyPNG is written in Python.  Python is clearly the coolest sexiest
+language going, so PyPNG is cool and sexy too.  By association.</p>
+<p>Because PyPNG is written in Python it’s trivial to install into a Python
+installation, or include in your application (as long as it’s written in
+Python!).  Just use <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code> or just copy the
+<code class="docutils literal notranslate"><span class="pre">code/png.py</span></code> file.  You can even <cite>curl</cite> it straight into wherever you
+need it: <code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-O</span> <span class="pre">http://pypng.googlecode.com/svn/trunk/code/png.py</span></code>.
+In fact, I have never managed to install PIL and that was one of the
+motivating factors for PyPNG.  So PyPNG will always be easy to install.</p>
+<p>PyPNG can read and write all PNG formats.  PNG supports a generous
+variety of image formats: RGB or greyscale, with or without an alpha
+channel; and a choice of bit depths from 1,2, or 4 (as long as you want
+greyscale or a pallete), 8, and 16 (but 16 bits is not allowed for
+palettes).  A pixel can vary in size from 1 to 64 bits:
+1/2/4/8/16/24/32/48/64.  In addition a PNG file can be <cite>interlaced</cite> or
+not.  An interlaced file allows an incrementally refined display of
+images being downloaded over slow links.</p>
+<p>PIL, according to its handbook, does not support interlaced PNG
+files.  Also, PIL only has internal representations (PIL <cite>mode</cite>)
+for 1-bit and 8-bit channel values.  This makes me wonder if PIL
+can read PNG files with bit depth 2 or 4 (greyscale or palette),
+and also bit depth 16 (which PNG supports for greyscale and RGB
+images).  In addition, PIL has only “limited support” for greyscale
+with alpha, which is one of PNG’s supported formats (in 8 and 16
+bits per channel).</p>
+<p>I don’t mean to belittle PIL here, PIL’s focus is not PNG.  PIL’s focus
+is image processing, and this is where PyPNG sucks.  If you want to
+actually process an image—resize, rotate, composite, crop–then you
+should use PIL.  This is simply out of scope for PyPNG.  In PyPNG you
+get the image as basically an array of numbers.  So some image
+processing is possible fairly easily, for example cropping to integer
+coordinates, or gamma conversion, but in any case PyPNG provides no
+support for it.  In the future a sister project to PyPNG may add some
+simple image processing, but processing in pure Python will be way slow.</p>
+<p>PyPNG (when used in its command-line mode) can read and write Netpbm
+PAM files.  PAM is useful as an intermediary format for performing
+processing; it allows the pixel data to be transferred in a simple format
+that is easily processed.  A typical workflow using PAM might be:</p>
+<p>PNG to PAM … process PAM file (for example, resize) … PAM to PNG</p>
+<p>Using PAM as an intermediate format is preferred over having to
+carry around your alpha channel in a separate file; it allows
+workflows to be pipelined more easily.</p>
+<p>When reading PAM files a single source file can be used to create
+PNG files with all permitted channel combinations: greyscale,
+greyscale–alpha, RGB, RGBA.  When writing a PAM file is created for
+those PNG formats with an alpha channel, otherwise a compatible PGM or
+PPM file is created.</p>
+<p>Netpbm’s support for PAM to PNG conversion is more limited than PyPNG’s.
+Netpbm will only convert a source PAM that has 4 channels (for example it does
+not create greyscale–alpha PNG files from <code class="docutils literal notranslate"><span class="pre">GRAYSCALE_ALPHA</span></code> PAM files).
+Netpbm’s usual tool for create PNG files, <code class="docutils literal notranslate"><span class="pre">pnmtopng</span></code>, requires an alpha
+channel to be specified in a separate file.</p>
+<p>PyPNG has good support for PNG’s <code class="docutils literal notranslate"><span class="pre">sBIT</span></code> chunk.  This allows end to end
+processing of files with any bit depth from 1 to 16 (for example a
+10-bit scanner may use the <code class="docutils literal notranslate"><span class="pre">sBIT</span></code> chunk to declare that the samples in
+a 16-bit PNG file are rescaled 10-bit samples; in this case, PyPNG
+delivers 10-bit samples).  Netpbm handle’s the <code class="docutils literal notranslate"><span class="pre">sBIT</span></code> chunk in a
+similar way, but other toolsets may not (PIL?).</p>
+<p><code class="docutils literal notranslate"><span class="pre">libpng</span></code> is made by the PNG gods, so if want to get at all that
+goodness, then you may want to interface directly to libpng via
+<code class="docutils literal notranslate"><span class="pre">ctypes</span></code>.  That could be a good idea for some things.  Installation
+would be trickier.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">PyPNG</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Why Use PyPNG?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ex.html">PyPNG Code Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="png.html">The png Module</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="chunk.html">PNG: Chunk by Chunk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tr20091230.html">How fast is PyPNG?</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">PyPNG documentation</a></li>
+      <li>Next: <a href="ex.html" title="next chapter">PyPNG Code Examples</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2009, David Jones.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/ca.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
