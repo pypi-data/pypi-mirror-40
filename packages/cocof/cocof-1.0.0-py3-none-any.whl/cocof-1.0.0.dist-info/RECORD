@@ -1,0 +1,12 @@
+cocof/__init__.py,sha256=KwGiZWhwug0K5ngnoP3y1Xx0RPSHLojsRIGCd5uMMB0,38
+cocof/cocof.py,sha256=vo5WsTQLjnaKqeaFXAQJMf3GfawlW2dJYDRTHPaWEfI,1813
+cocof/filehandling.py,sha256=im4tEQwDu0lzJo37_jxUYrgEWzsMdmBVekzEyODgOws,2664
+tests/__init__.py,sha256=-JIt3g1eBf4bVQNNQd4JBeQNA7o0LK0W9tYKKX_r5s8,22
+tests/test_filehandling.py,sha256=C7e3F5Rp1tGsqln4AtW3R465v5yUxBuCpBVknrFlQUo,1196
+cocof-1.0.0.dist-info/LICENSE,sha256=blOZrS9FSNwi3Z7_HDZ9XShu_BVyOJSzo7dyNHtgnRE,13865
+cocof-1.0.0.dist-info/METADATA,sha256=gPCmnsFMkh7CPCVv7yf8LfWxKo2N4-R04oPg_sjxKOU,3065
+cocof-1.0.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+cocof-1.0.0.dist-info/dependency_links.txt,sha256=F_1VeV1e3eNJLdBeVCTioHvsz4L2op2Lpndo7G-mof8,114
+cocof-1.0.0.dist-info/entry_points.txt,sha256=-6qcn7_fa7I9sGZrHRbIEXMit0zyP8qti3Z2ccFsfUg,43
+cocof-1.0.0.dist-info/top_level.txt,sha256=afsfpjAvWzVlFy6JGjTe_1EZkrayEUj8Rkhft2Cw264,12
+cocof-1.0.0.dist-info/RECORD,,
