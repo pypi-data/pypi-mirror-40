@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: dash-enterprise-auth
+Version: 0.0.1
+Summary: Authentication integrations for dash apps using dash-deployment-server
+Home-page: UNKNOWN
+Author: Philippe Duval
+Author-email: philippe@plot.ly
+License: UNKNOWN
+Description: # dash-enterprise-auth
+        Authentication for dash enterprise
+        
+Keywords: dash,dash-enterprise,dash-auth,plotly
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
