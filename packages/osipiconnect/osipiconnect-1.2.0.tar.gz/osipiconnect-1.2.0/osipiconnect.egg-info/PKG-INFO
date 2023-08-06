@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: osipiconnect
+Version: 1.2.0
+Summary: PI Web API client library for Python (2018)
+Home-page: https://github.com/vivekgoyanka/PI-Web-API-Client-Python
+Author: Vivek
+Author-email: vivekgoyanka2010@gmail.com
+License: MIT
+Description:     PI Web API client library for Python (2018) modified to use NTLM instead of Kerberos
+            
+Keywords: PI Web API
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
