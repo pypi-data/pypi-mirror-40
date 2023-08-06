@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: jj2c
+Version: 0.0.4
+Summary: Jinja2 compiler
+Home-page: https://github.com/tly1980/jj2c
+Author: Tom Tang
+Author-email: tly1980@gmail.com
+License: BSD
+Download-URL: https://github.com/tly1980/jj2c/tarball/0.0.4
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: PyYAML
+Requires-Dist: toml
+Requires-Dist: jinja2
+
+jj2c
+===============================
+
+version number: 0.0.4
+author: Tom Tang
+
+Overview
+--------
+
+Jinja2 compiler
+
+Installation / Usage
+--------------------
+
+To install use pip:
+
+    $ pip install jj2c
+
+
+To use it:
+
+Render from folder to folder:
+    `jj2c template_folder/ -V 'a: AAA' 'b: BBB' -o output_folder/`
+
+Render from zip to folder:
+    `jj2c template.zip -V 'a: AAA' 'b: BBB' -o output_folder/`
+
+Render from zip to zip:
+    `jj2c template.zip -V 'a: AAA' 'b: BBB' -o template.zip`
+
+Render to stdout:
+    `jj2c template-file -V 'a: AAA' 'b: BBB'`
+
+Or clone the repo:
+
+    $ git clone https://github.com/tly1980/jj2c.git
+    $ python setup.py install
+
+Contributing
+------------
+
+TBD
+
+Example
+-------
+
+TBD
+
+
+
