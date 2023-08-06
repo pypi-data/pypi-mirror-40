@@ -1,0 +1,6 @@
+{
+    "some_input": "input.csv",
+    "genes": "genes.csv",
+    "cells": "cells.csv",
+    "some_optional_input": "optional_existing"
+}
