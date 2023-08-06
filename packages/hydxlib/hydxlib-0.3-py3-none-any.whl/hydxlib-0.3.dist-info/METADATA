@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: hydxlib
+Version: 0.3
+Summary: Importer and Exporter for GWSW
+Home-page: UNKNOWN
+Author: Arnold van 't Veld
+Author-email: arnold.vantveld@nelen-schuurmans.nl
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Django
+Requires-Dist: sqlalchemy
+Requires-Dist: geoalchemy2
+Requires-Dist: psycopg2
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-flakes ; extra == 'test'
+Requires-Dist: pytest-black ; extra == 'test'
+
+A library for the GWSW-hydx exchange format
+===========================================
+
+RioNED is going to release a new format for exchanging sewerage data called GWSW-hydx.
+This tool could be used to exchange sewerage data from and to a hydx format (*.csv).  
+
+For more information about GWSW-hydx:  
+https://apps.gwsw.nl/item_definition  
+
+For more information about the database scheme of 3Di:  
+https://docs.3di.lizard.net/en/stable/d_before_you_begin.html#database-overview
+
+Purporse of this script is to exchange information between different formats.
+This means that this library doesn't improve lacking or incorrect data.
+For example, it doesn't remove double manholes on the same location.
+This libary does provide all kinds of checks with warning and error messages.
+
+This tool is currently in development.
+Therefore only nodes, weirs, orifices and pumpstations are currently supported.
+
+
+Installation
+------------
+
+We're installed with::
+
+  $ pip install hydxlib
+
+
+Running script
+--------------
+
+It's possible to run this tool on command line or with python
+
+Commandline::
+
+  $ hydxlib --import_type hydx --export_type threedi etc.
+
+Python::
+
+  from hydxlib import run_import_export, write_logging_to_file
+  log_relpath = log_relpath = os.path.join(os.path.abspath(options.hydx_path), "import_hydx_hydxlib.log")
+  write_logging_to_file(hydx_path)
+  run_import_export(import_type, export_type, hydx_path, threedi_db_settings)
+
+Installation for development
+----------------------------
+
+We're installed with `pipenv <https://docs.pipenv.org/>`_, a handy wrapper
+around pip and virtualenv. Install that first with ``pip install
+pipenv``. Then run::
+
+  $ PIPENV_VENV_IN_PROJECT=1 pipenv --three
+  $ pipenv install --dev
+
+There will be a script you can run like this::
+
+  $ pipenv run run-hydxlib
+
+It runs the `main()` function in `hydxlib/scripts.py`,
+adjust that if necessary. The script is configured in `setup.py` (see
+`entry_points`).
+
+In order to get nicely formatted python files without having to spend manual
+work on it, run the following command periodically::
+
+  $ pipenv run black hydxlib
+
+Run the tests regularly. This also checks with pyflakes, black and it reports
+coverage. Pure luxury::
+
+  $ pipenv run pytest
+
+The tests are also run automatically on "travis", you'll see it in the pull
+requests. There's also `coverage reporting
+<https://coveralls.io/github/nens/hydxlib>`_ on coveralls.io.
+
+Changelog of hydxlib
+
+===================================================
+
+
+
+
+
+0.3 (2019-01-09)
+----------------
+
+
+
+- Added docstrings and updated the readme.
+
+
+
+
+
+0.2 (2019-01-09)
+
+----------------
+
+
+
+- Enabled automatic pypi.org uploads from travis-ci.com
+
+
+
+
+
+0.1 (2019-01-09)
+
+----------------
+
+
+
+- Initial project structure created with cookiecutter and
+
+  https://github.com/nens/cookiecutter-python-template .
+
+
+
+- Set up automatic testing with travis: https://travis-ci.com/nens/hydxlib .
+
+
+
+- First working version with hydx import and 3Di postgres output.
+
+  In this version only nodes, weirs, orifices and pumpstations are supported
+
+
+
