@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+omnibus/.revision
+omnibus/__about__.py
+omnibus/__init__.py
+omnibus/defs.py
+omnibus/lang.py
+omnibus/properties.py
+omnibus/revision.py
+omnibus.egg-info/PKG-INFO
+omnibus.egg-info/SOURCES.txt
+omnibus.egg-info/dependency_links.txt
+omnibus.egg-info/requires.txt
+omnibus.egg-info/top_level.txt
