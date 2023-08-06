@@ -1,0 +1,11 @@
+README.md
+setup.py
+os_sys/__init__.py
+os_sys/__main__.py
+os_sys/os_sys.py
+os_sys/system.py
+os_sys/wifi.py
+os_sys.egg-info/PKG-INFO
+os_sys.egg-info/SOURCES.txt
+os_sys.egg-info/dependency_links.txt
+os_sys.egg-info/top_level.txt
