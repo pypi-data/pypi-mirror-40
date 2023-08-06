@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: bigwing
+Version: 1.2.1
+Summary: bingwing project
+Home-page: UNKNOWN
+Author: jihokwak
+Author-email: kakuteeko@naver.com
+License: UNKNOWN
+Keywords: geocoder,api processor,crawler,dbdriver
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: jsonschema (==2.6.0)
+Requires-Dist: pandas (==0.23.4)
+Requires-Dist: ipython (==7.2.0)
+Requires-Dist: ipython-genutils (==0.2.0)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: beautifulsoup4 (==4.6.3)
+Requires-Dist: pymongo (==3.7.2)
+Requires-Dist: PyMySQL (==0.9.3)
+
+UNKNOWN
+
+
