@@ -1,0 +1,14 @@
+invogen/__init__.py,sha256=VZ3EvFwqtHwB3H3D2xuHg7hdbjY9Brem2M9kQlRNk5s,353
+invogen/accounts.py,sha256=oXhQav3CcAqeyAAMZvCguIlPJzXLgWZjhr2107gu1iI,5648
+invogen/invoice.py,sha256=pY5-fdbfe09Dc3MhFvxQCyyfbOF95psjRcykGo1bbpM,7642
+invogen/template.py,sha256=PL3QnNJaEGPVlprFN6CRLOWcJJ99LC6FwWh-MdmFUfU,2435
+invogen/templates/default.tex,sha256=g0FFXMEt40xsxoh29EEjwHHbJJ1I1Qrxq59YJb--xRU,2473
+test/__init__.py,sha256=0iE-TMHrK92Ne0uVLK-7YKzZTVJoDRKUZDRbfWFL7Z8,62
+test/conftest.py,sha256=c-PRKAjdCz233f8bJ0sZFP-y7O3ckdphOAiCbrDPunY,315
+test/test_accounts.py,sha256=Oegucun8mUK5EBnVGm1sYZiZIo2Q4Dr2z7VAgLkAFDU,5287
+test/test_invoice.py,sha256=HYJEUkkRdrmmRwWef8xA9hWS2wk3_MVsOIHcFoT7-7A,7936
+invogen-0.3.0.dist-info/LICENSE,sha256=xp9TKd8cfMhbQpcrqSgeYDKoBlQ3CSGM3HvyQtUSRps,1078
+invogen-0.3.0.dist-info/METADATA,sha256=xcPVZKuoHQ2Z4OUwOlVyEdGd-XMOAShZFaHfHjce2sU,3841
+invogen-0.3.0.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+invogen-0.3.0.dist-info/top_level.txt,sha256=K7dd31Wk_JoGo2GfnlTUIAIhQeF78PpygIwmf1k7Vvo,13
+invogen-0.3.0.dist-info/RECORD,,
