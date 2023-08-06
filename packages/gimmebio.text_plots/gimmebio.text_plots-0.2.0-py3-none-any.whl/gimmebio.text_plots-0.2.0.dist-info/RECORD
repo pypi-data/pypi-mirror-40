@@ -1,0 +1,10 @@
+gimmebio.text_plots-0.2.0-py3.6-nspkg.pth,sha256=pxTb1jWsCspdqoPmV2TGBVot_a6QmHbVwKXbDN4rHTs,549
+gimmebio/text_plots/__init__.py,sha256=KYMcot9iAVimQyNuoZu2LFLFHT8zAZZHnC6XOB-U1JY,83
+gimmebio/text_plots/cli.py,sha256=EytpezpQoy_p3TJ5-GKShwOonAi-JixJahzUefFWW1s,1642
+gimmebio/text_plots/histogram.py,sha256=3SwlfLSoRNZ57EMIIicVBYKM5eEXg0CGdSzAG9UQgh8,1378
+gimmebio/text_plots/scatter_plot.py,sha256=cCtTBjNxBJG-SMAlxN0ZkBS9aUDIzgSDBOH3NYH6UIw,2205
+gimmebio.text_plots-0.2.0.dist-info/METADATA,sha256=0R36Ck5Jv2aR1DJzdTgtgjK7TnQaptQ8RyIGJy5klhY,363
+gimmebio.text_plots-0.2.0.dist-info/RECORD,,
+gimmebio.text_plots-0.2.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+gimmebio.text_plots-0.2.0.dist-info/namespace_packages.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
+gimmebio.text_plots-0.2.0.dist-info/top_level.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
