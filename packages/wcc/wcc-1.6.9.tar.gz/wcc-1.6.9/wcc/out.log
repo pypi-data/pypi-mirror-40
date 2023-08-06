@@ -1,0 +1,672 @@
+('110.86.176.136', '46109')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('125.123.124.220', '35112')
+{'incr': 1547694135242750, 'cthr': '2019-01-17 11:02:15', 'cost': 47, 'yield': 1.0, 'born': 51, 'cnt': 28, 'std': 4409, 'avg': 4884, 'max': 21225, 'min': 266}
+('123.54.231.72', '21022')
+{'incr': 1547694174550351, 'cthr': '2019-01-17 11:02:54', 'cost': 30, 'yield': 1.0, 'born': 43, 'cnt': 27, 'std': 4308, 'avg': 4671, 'max': 15764, 'min': 288}
+('60.184.186.86', '30643')
+{'incr': 1547694210599042, 'cthr': '2019-01-17 11:03:30', 'cost': 26, 'yield': 1.0, 'born': 39, 'cnt': 26, 'std': 5889, 'avg': 3846, 'max': 22722, 'min': 277}
+('183.144.209.224', '27236')
+{'incr': 1547694319004949, 'cthr': '2019-01-17 11:05:19', 'cost': 38, 'yield': 1.0, 'born': 39, 'cnt': 23, 'std': 6995, 'avg': 6787, 'max': 30389, 'min': 297}
+('123.55.2.212', '32019')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('123.55.2.212', '32019')
+{'incr': 1547694361334872, 'cthr': '2019-01-17 11:06:01', 'cost': 31, 'yield': 1.0, 'born': 31, 'cnt': 21, 'std': 6575, 'avg': 5908, 'max': 26983, 'min': 297}
+('120.40.239.152', '48393')
+{'incr': 1547694446986398, 'cthr': '2019-01-17 11:07:26', 'cost': 60, 'yield': 1.0, 'born': 27, 'cnt': 16, 'std': 3932, 'avg': 5095, 'max': 13202, 'min': 319}
+('114.238.39.128', '49022')
+{'incr': 1547694504091587, 'cthr': '2019-01-17 11:08:24', 'cost': 46, 'yield': 1.0, 'born': 29, 'cnt': 17, 'std': 6649, 'avg': 6098, 'max': 24179, 'min': 250}
+('27.152.8.69', '47791')
+{'incr': 1547694577806748, 'cthr': '2019-01-17 11:09:37', 'cost': 34, 'yield': 1.0, 'born': 31, 'cnt': 19, 'std': 7337, 'avg': 5299, 'max': 30613, 'min': 273}
+('171.14.91.226', '39117')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('117.26.228.185', '42653')
+{'incr': 1547694634608989, 'cthr': '2019-01-17 11:10:34', 'cost': 30, 'yield': 1.0, 'born': 28, 'cnt': 17, 'std': 6187, 'avg': 6615, 'max': 19151, 'min': 260}
+('114.238.39.128', '49022')
+{'incr': 1547694672687104, 'cthr': '2019-01-17 11:11:12', 'cost': 30, 'yield': 1.0, 'born': 24, 'cnt': 12, 'std': 2706, 'avg': 3588, 'max': 8563, 'min': 280}
+('117.31.176.100', '42609')
+{'incr': 1547694713432331, 'cthr': '2019-01-17 11:11:53', 'cost': 29, 'yield': 1.0, 'born': 17, 'cnt': 12, 'std': 6639, 'avg': 9610, 'max': 22025, 'min': 403}
+('183.145.207.45', '48195')
+{'incr': 1547694762357000, 'cthr': '2019-01-17 11:12:42', 'cost': 34, 'yield': 1.0, 'born': 13, 'cnt': 8, 'std': 6249, 'avg': 5766, 'max': 18247, 'min': 1335}
+('123.161.153.45', '22505')
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1087, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1563, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1516, in __start_session
+    server_session = self._get_server_session()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1549, in _get_server_session
+    return self._topology.get_server_session()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/topology.py", line 427, in get_server_session
+    None)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('123.161.153.45', '22505')
+{'incr': 1547694844216724, 'cthr': '2019-01-17 11:14:04', 'cost': 34, 'yield': 1.0, 'born': 26, 'cnt': 8, 'std': 2756, 'avg': 4040, 'max': 8536, 'min': 1028}
+('49.64.181.90', '31373')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('122.4.28.45', '22219')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('122.4.28.45', '22219')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('117.31.152.25', '22639')
+{'incr': 1547694956540665, 'cthr': '2019-01-17 11:15:56', 'cost': 31, 'yield': 1.0, 'born': 30, 'cnt': 12, 'std': 3422, 'avg': 5510, 'max': 9255, 'min': 317}
+('123.161.153.45', '22505')
+{'incr': 1547694986643686, 'cthr': '2019-01-17 11:16:26', 'cost': 31, 'yield': 1.0, 'born': 21, 'cnt': 11, 'std': 4487, 'avg': 7753, 'max': 17991, 'min': 391}
+('183.166.125.4', '25078')
+{'incr': 1547695068891772, 'cthr': '2019-01-17 11:17:48', 'cost': 54, 'yield': 1.0, 'born': 36, 'cnt': 12, 'std': 12857, 'avg': 9278, 'max': 47266, 'min': 366}
+('27.152.152.44', '48410')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('123.160.224.245', '48761')
+{'incr': 1547695154419663, 'cthr': '2019-01-17 11:19:14', 'cost': 40, 'yield': 1.0, 'born': 31, 'cnt': 11, 'std': 2849, 'avg': 3114, 'max': 7477, 'min': 279}
+('60.169.222.223', '34219')
+{'incr': 1547695163721164, 'cthr': '2019-01-17 11:19:23', 'cost': 22, 'yield': 1.0, 'born': 38, 'cnt': 13, 'std': 6219, 'avg': 5346, 'max': 21278, 'min': 279}
+('60.169.222.65', '27119')
+{'incr': 1547695199299336, 'cthr': '2019-01-17 11:19:59', 'cost': 30, 'yield': 1.0, 'born': 38, 'cnt': 12, 'std': 7853, 'avg': 10107, 'max': 28706, 'min': 338}
+('1.195.11.7', '34488')
+{'incr': 1547695202565231, 'cthr': '2019-01-17 11:20:02', 'cost': 30, 'yield': 1.0, 'born': 38, 'cnt': 12, 'std': 7853, 'avg': 10107, 'max': 28706, 'min': 338}
+('180.122.150.149', '23873')
+{'incr': 1547695254289008, 'cthr': '2019-01-17 11:20:54', 'cost': 26, 'yield': 1.0, 'born': 40, 'cnt': 15, 'std': 6630, 'avg': 6446, 'max': 25387, 'min': 502}
+('171.11.229.37', '32691')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('123.54.228.88', '24944')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('183.166.118.27', '25324')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('115.211.228.10', '35352')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('171.12.86.110', '23468')
+{'incr': 1547695606896584, 'cthr': '2019-01-17 11:26:46', 'cost': 85, 'yield': 1.0, 'born': 92, 'cnt': 37, 'std': 4227, 'avg': 4894, 'max': 15320, 'min': 264}
+('60.182.197.140', '46014')
+{'incr': 1547695680538881, 'cthr': '2019-01-17 11:28:00', 'cost': 34, 'yield': 1.0, 'born': 57, 'cnt': 35, 'std': 5563, 'avg': 5462, 'max': 23938, 'min': 293}
+('125.78.219.113', '30916')
+{'incr': 1547695777336701, 'cthr': '2019-01-17 11:29:37', 'cost': 46, 'yield': 1.0, 'born': 44, 'cnt': 29, 'std': 6704, 'avg': 5201, 'max': 32659, 'min': 284}
+('124.113.192.226', '39619')
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1087, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1563, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1516, in __start_session
+    server_session = self._get_server_session()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1549, in _get_server_session
+    return self._topology.get_server_session()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/topology.py", line 427, in get_server_session
+    None)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
+('221.227.58.41', '41982')
+{'incr': 1547695859142384, 'cthr': '2019-01-17 11:30:59', 'cost': 74, 'yield': 1.0, 'born': 49, 'cnt': 23, 'std': 3088, 'avg': 4073, 'max': 8870, 'min': 310}
+('117.94.180.58', '21794')
+{'incr': 1547695924235449, 'cthr': '2019-01-17 11:32:04', 'cost': 54, 'yield': 1.0, 'born': 42, 'cnt': 24, 'std': 4117, 'avg': 3776, 'max': 18974, 'min': 259}
+('183.135.251.107', '37899')
+{'incr': 1547695988186247, 'cthr': '2019-01-17 11:33:08', 'cost': 49, 'yield': 1.0, 'born': 35, 'cnt': 20, 'std': 2741, 'avg': 5789, 'max': 9203, 'min': 336}
+('180.125.160.134', '43303')
+{'incr': 1547696042806782, 'cthr': '2019-01-17 11:34:02', 'cost': 30, 'yield': 1.0, 'born': 35, 'cnt': 15, 'std': 4435, 'avg': 3406, 'max': 16371, 'min': 285}
+('27.156.212.25', '25533')
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1038, in _get_socket_no_auth
+    sock_info = self.sockets.pop()
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 968, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 843, in _configured_socket
+    sock = _create_connection(address, options)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 824, in _create_connection
+    raise err
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 817, in _create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "proxy.py", line 92, in verify_proxydb
+    for dbitem in dblist:
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1189, in next
+    if len(self.__data) or self._refresh():
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+    self.__send_message(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/cursor.py", line 931, in __send_message
+    operation, exhaust=self.__exhaust, address=self.__address)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1145, in _send_message_with_response
+    exhaust)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1156, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/server.py", line 85, in send_message_with_response
+    with self.get_socket(all_credentials, exhaust) as sock_info:
+  File "/usr/local/anaconda3/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1004, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 1041, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 972, in connect
+    _raise_connection_failure(self.address, error)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymongo/pool.py", line 273, in _raise_connection_failure
+    raise NetworkTimeout(msg)
+pymongo.errors.NetworkTimeout: dds-2zeabb0862781c64-pub.mongodb.rds.aliyuncs.com:3717: timed out
+
