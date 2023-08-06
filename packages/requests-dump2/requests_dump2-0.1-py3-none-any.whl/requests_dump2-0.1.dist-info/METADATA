@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: requests-dump2
+Version: 0.1
+Summary: dump requests' requests http message content to stderr or your custom file
+Home-page: https://github.com/weaming/requests-dump
+Author: weaming
+Author-email: garden.yuen@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/weaming/requests-dump
+Project-URL: Bug Reports, https://github.com/weaming/requests-dump
+Keywords: math
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Requests Dump
+
+Dump `requests`' http requests message content to stderr or your custom file.
+
+## Usage
+
+See `test.py`.
+
+## Other methods
+
+* https://stackoverflow.com/questions/20658572/python-requests-print-entire-http-request-raw
+
+
