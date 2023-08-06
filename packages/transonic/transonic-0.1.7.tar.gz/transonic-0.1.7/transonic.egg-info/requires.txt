@@ -1,0 +1,14 @@
+astunparse
+
+[dev]
+sphinx
+sphinx_rtd_theme
+numpydoc
+ipython
+jupyter
+fluiddyn
+
+[test]
+pytest
+numpy
+pythran
