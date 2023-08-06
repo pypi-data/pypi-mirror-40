@@ -1,0 +1,10 @@
+README.md
+setup.py
+lambdev/__init__.py
+lambdev/aws_lambda.py
+lambdev/core.py
+lambdev.egg-info/PKG-INFO
+lambdev.egg-info/SOURCES.txt
+lambdev.egg-info/dependency_links.txt
+lambdev.egg-info/requires.txt
+lambdev.egg-info/top_level.txt
