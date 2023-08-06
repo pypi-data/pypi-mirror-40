@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+sortableclasses/__init__.py
+sortableclasses.egg-info/PKG-INFO
+sortableclasses.egg-info/SOURCES.txt
+sortableclasses.egg-info/dependency_links.txt
+sortableclasses.egg-info/top_level.txt
