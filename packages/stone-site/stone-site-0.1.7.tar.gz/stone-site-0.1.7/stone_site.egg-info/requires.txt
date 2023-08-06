@@ -1,0 +1,8 @@
+jinja2
+unidecode
+
+[dev]
+check-manifest
+
+[test]
+coverage
