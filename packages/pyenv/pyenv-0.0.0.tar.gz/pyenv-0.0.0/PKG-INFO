@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: pyenv
+Version: 0.0.0
+Summary: pyenv project placeholder package
+Home-page: https://github.com/pyenv/pyenv
+Author: Yamashita, Yuu
+Author-email: peek824545201@gmail.com
+License: MIT
+Description: pyenv
+        =====
+        
+        pyenv lets you easily switch between multiple versions of Python. It's simple, 
+        unobtrusive, and follows the UNIX tradition of single-purpose tools that do one 
+        thing well.
+        
+        **NOTE:** This is a placeholder package. 
+        pyenv is a collection of shell scripts and not installable with pip.
+        
+        See `installation instructions <https://github.com/pyenv/pyenv#installation>` 
+        for more information.
+        
+Platform: UNIX
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
