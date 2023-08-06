@@ -1,0 +1,9 @@
+markdown
+proxy-tools
+jinja2
+
+[dev]
+sphinx
+
+[docs]
+sphinx
