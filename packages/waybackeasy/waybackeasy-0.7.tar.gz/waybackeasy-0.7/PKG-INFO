@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: waybackeasy
+Version: 0.7
+Summary: Easiest way to access a Waybackmachine snapshot of a sepecific website on a specific date.
+Home-page: https://github.com/JohannesSeikowsky/waybackeasy
+Author: Johannes Seikowsky
+Author-email: jseikowsky@gmail.com
+License: UNKNOWN
+Description: # Waybackeasy
+        
+        Easiest way to access a Waybackmachine snapshot of a sepecific website on a specific date.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
