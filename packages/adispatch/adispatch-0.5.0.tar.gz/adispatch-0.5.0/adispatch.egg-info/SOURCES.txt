@@ -1,0 +1,12 @@
+README.rst
+setup.py
+adispatch/__init__.py
+adispatch/conflict.py
+adispatch/core.py
+adispatch/dispatcher.py
+adispatch/utils.py
+adispatch.egg-info/PKG-INFO
+adispatch.egg-info/SOURCES.txt
+adispatch.egg-info/dependency_links.txt
+adispatch.egg-info/not-zip-safe
+adispatch.egg-info/top_level.txt
