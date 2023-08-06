@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		393822E48B6B49F4A1949AE4 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 592754E585D44629824DC00C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				671C35D885C541548A3328D1 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		8124892B026B4ECC924866F2 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5169F877971344CAA9F10349 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				883F5E08AD294F81BC45B6B8 /* CMake Rules */,
+			);
+			dependencies = (
+				7841D8A229654313BFAFF6FC /* PBXTargetDependency */,
+				4FA00426AFE84821A2591929 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		6AECD7D9718B4370A8874191 /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0E0A668829E843DA99339DFE /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/CMakeLists.txt */; };
+		C2D64B97E12B48E68B7C5CAE /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/CMakeFiles/external_simple_viewer2d.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 0C77DD81158542B58751932B /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/CMakeFiles/external_simple_viewer2d.dir/Info.plist */; };
+		F5FB654003C64D809E1082AE /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/main.cpp */ = {isa = PBXBuildFile; fileRef = 5739B910ABCF439D88D3C1AF /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		123A5960D6A44FBE94279BF2 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		15C14A0F79F540359245131E /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		6417C16DC76145FB831B3461 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		F4D725FB275E43C18157C241 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		61B5B5834F0D48DBA7BB4951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C36DEF21091D457384279708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 393822E48B6B49F4A1949AE4;
+			remoteInfo = ZERO_CHECK;
+		};
+		C06A8F2FA0B44CD897B2656B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C36DEF21091D457384279708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81FB80A344944E499545A91D;
+			remoteInfo = external_simple_viewer2d;
+		};
+		F54CE7899B3D4023AE7A034C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C36DEF21091D457384279708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 393822E48B6B49F4A1949AE4;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C77DD81158542B58751932B /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/CMakeFiles/external_simple_viewer2d.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = build/CMakeFiles/external_simple_viewer2d.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		0E0A668829E843DA99339DFE /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5739B910ABCF439D88D3C1AF /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		E9D4CEBF4E2C457C829EF670 /* external_simple_viewer2d */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = external_simple_viewer2d; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99A8E2AAB204CE78BCBE776 /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		118814DD928B4CE5AF44DDA4 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		119BD787EB8947EB9477AADE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C77DD81158542B58751932B /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/CMakeFiles/external_simple_viewer2d.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		36C3E16432CC4F7EAE62021A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9D4CEBF4E2C457C829EF670 /* external_simple_viewer2d */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C1A497F910F470E81909FCB /* external_simple_viewer2d */ = {
+			isa = PBXGroup;
+			children = (
+				FE29BD825D424158B6B7757F /* Source Files */,
+				119BD787EB8947EB9477AADE /* Resources */,
+				0E0A668829E843DA99339DFE /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/CMakeLists.txt */,
+			);
+			name = external_simple_viewer2d;
+			sourceTree = "<group>";
+		};
+		DD989F9FC25D4784BD2189F9 = {
+			isa = PBXGroup;
+			children = (
+				7C1A497F910F470E81909FCB /* external_simple_viewer2d */,
+				E7180FD246DD42A187A54C90 /* ALL_BUILD */,
+				36C3E16432CC4F7EAE62021A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7180FD246DD42A187A54C90 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				118814DD928B4CE5AF44DDA4 /* CMake Rules */,
+				F99A8E2AAB204CE78BCBE776 /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		FE29BD825D424158B6B7757F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5739B910ABCF439D88D3C1AF /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81FB80A344944E499545A91D /* external_simple_viewer2d */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDD0D1E3AE33434AB4A642B0 /* Build configuration list for PBXNativeTarget "external_simple_viewer2d" */;
+			buildPhases = (
+				D02B3BC34D33492C88BABA5F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69B02ED6B3AC483298E768A9 /* PBXTargetDependency */,
+			);
+			name = external_simple_viewer2d;
+			productName = external_simple_viewer2d;
+			productReference = E9D4CEBF4E2C457C829EF670 /* external_simple_viewer2d */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C36DEF21091D457384279708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 1CDB227F4B9442C7B79FCD8B /* Build configuration list for PBXProject "simple_viewer2d" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				123A5960D6A44FBE94279BF2 /* Debug */,
+				15C14A0F79F540359245131E /* Release */,
+				F4D725FB275E43C18157C241 /* MinSizeRel */,
+				6417C16DC76145FB831B3461 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = DD989F9FC25D4784BD2189F9;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				8124892B026B4ECC924866F2 /* ALL_BUILD */,
+				393822E48B6B49F4A1949AE4 /* ZERO_CHECK */,
+				81FB80A344944E499545A91D /* external_simple_viewer2d */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D2FBF73E15A444D80C314FA = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		671C35D885C541548A3328D1 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build -f /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		883F5E08AD294F81BC45B6B8 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build -f /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		AEB29103FBC140DFBDBD4074 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D02B3BC34D33492C88BABA5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FB654003C64D809E1082AE /* /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FA00426AFE84821A2591929 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 393822E48B6B49F4A1949AE4 /* ZERO_CHECK */;
+			targetProxy = F54CE7899B3D4023AE7A034C /* PBXContainerItemProxy */;
+		};
+		69B02ED6B3AC483298E768A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 393822E48B6B49F4A1949AE4 /* ZERO_CHECK */;
+			targetProxy = 61B5B5834F0D48DBA7BB4951 /* PBXContainerItemProxy */;
+		};
+		7841D8A229654313BFAFF6FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81FB80A344944E499545A91D /* external_simple_viewer2d */;
+			targetProxy = C06A8F2FA0B44CD897B2656B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08610F4924C2453D97F23604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/build;
+			};
+			name = Release;
+		};
+		0C67532333C04B45B498CBFD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		28A41BE2E38C4E1589365D0C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/build;
+			};
+			name = MinSizeRel;
+		};
+		3DB5E50AD1494CF38E0AD77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		4C639EB6574744469C74B63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		61A54931D5CF48128C22DA9B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		79BDA43D4B634440988471BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7A7DC8973D974E61BADC3FDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/opt/qt/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",QT_CORE_LIB,QT_NO_DEBUG,QT_WIDGETS_LIB,QT_GUI_LIB,QT_OPENGL_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/CMakeFiles/external_simple_viewer2d.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusAppKit.dylib /Library/Frameworks/Python.framework/Versions/3.6/lib/libpython3.6m.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusNodes.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusIdx.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusDb.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusGuiNodes.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusGui.dylib /usr/local/opt/qt/lib/QtOpenGL.framework/QtOpenGL /usr/local/opt/qt/lib/QtWidgets.framework/QtWidgets /usr/local/opt/qt/lib/QtGui.framework/QtGui /usr/local/opt/qt/lib/QtCore.framework/QtCore /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusDataflow.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusKernel.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = external_simple_viewer2d;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Kernel,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/AppKit,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Gui,/usr/local/opt/qt/lib/QtCore.framework/Headers,"/usr/local/opt/qt/./mkspecs/macx-clang",/usr/local/opt/qt/lib/QtWidgets.framework/Headers,/usr/local/opt/qt/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/opt/qt/lib/QtOpenGL.framework/Headers,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Dataflow,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Nodes,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Idx,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Db,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/GuiNodes,/Library/Frameworks/Python.framework/Versions/3.6/include/python3.6m);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8A986A230E0F4F0BB97D4CE2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8BAB0150205F4B5581A5726B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/opt/qt/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",QT_CORE_LIB,QT_NO_DEBUG,QT_WIDGETS_LIB,QT_GUI_LIB,QT_OPENGL_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/CMakeFiles/external_simple_viewer2d.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusAppKit.dylib /Library/Frameworks/Python.framework/Versions/3.6/lib/libpython3.6m.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusNodes.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusIdx.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusDb.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusGuiNodes.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusGui.dylib /usr/local/opt/qt/lib/QtOpenGL.framework/QtOpenGL /usr/local/opt/qt/lib/QtWidgets.framework/QtWidgets /usr/local/opt/qt/lib/QtGui.framework/QtGui /usr/local/opt/qt/lib/QtCore.framework/QtCore /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusDataflow.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusKernel.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = external_simple_viewer2d;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Kernel,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/AppKit,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Gui,/usr/local/opt/qt/lib/QtCore.framework/Headers,"/usr/local/opt/qt/./mkspecs/macx-clang",/usr/local/opt/qt/lib/QtWidgets.framework/Headers,/usr/local/opt/qt/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/opt/qt/lib/QtOpenGL.framework/Headers,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Dataflow,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Nodes,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Idx,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Db,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/GuiNodes,/Library/Frameworks/Python.framework/Versions/3.6/include/python3.6m);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9461D1A1753A4472A5470371 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		949D27ECBA1A4E8E9881E506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/opt/qt/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",QT_CORE_LIB,QT_WIDGETS_LIB,QT_GUI_LIB,QT_OPENGL_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/CMakeFiles/external_simple_viewer2d.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   -fPIC '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusAppKit.dylib /Library/Frameworks/Python.framework/Versions/3.6/lib/libpython3.6m.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusNodes.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusIdx.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusDb.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusGuiNodes.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusGui.dylib /usr/local/opt/qt/lib/QtOpenGL.framework/QtOpenGL /usr/local/opt/qt/lib/QtWidgets.framework/QtWidgets /usr/local/opt/qt/lib/QtGui.framework/QtGui /usr/local/opt/qt/lib/QtCore.framework/QtCore /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusDataflow.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusKernel.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = external_simple_viewer2d;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Kernel,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/AppKit,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Gui,/usr/local/opt/qt/lib/QtCore.framework/Headers,"/usr/local/opt/qt/./mkspecs/macx-clang",/usr/local/opt/qt/lib/QtWidgets.framework/Headers,/usr/local/opt/qt/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/opt/qt/lib/QtOpenGL.framework/Headers,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Dataflow,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Nodes,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Idx,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Db,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/GuiNodes,/Library/Frameworks/Python.framework/Versions/3.6/include/python3.6m);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B73C84E3630844538117BEBA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/opt/qt/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",QT_CORE_LIB,QT_NO_DEBUG,QT_WIDGETS_LIB,QT_GUI_LIB,QT_OPENGL_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/CMakeFiles/external_simple_viewer2d.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -fPIC '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusAppKit.dylib /Library/Frameworks/Python.framework/Versions/3.6/lib/libpython3.6m.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusNodes.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusIdx.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusDb.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusGuiNodes.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusGui.dylib /usr/local/opt/qt/lib/QtOpenGL.framework/QtOpenGL /usr/local/opt/qt/lib/QtWidgets.framework/QtWidgets /usr/local/opt/qt/lib/QtGui.framework/QtGui /usr/local/opt/qt/lib/QtCore.framework/QtCore /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusDataflow.dylib /Users/scrgiorgio/Desktop/OpenVisus/build/install/bin/libVisusKernel.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = external_simple_viewer2d;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Kernel,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/AppKit,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Gui,/usr/local/opt/qt/lib/QtCore.framework/Headers,"/usr/local/opt/qt/./mkspecs/macx-clang",/usr/local/opt/qt/lib/QtWidgets.framework/Headers,/usr/local/opt/qt/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/opt/qt/lib/QtOpenGL.framework/Headers,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Dataflow,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Nodes,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Idx,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/Db,/Users/scrgiorgio/Desktop/OpenVisus/build/install/include/GuiNodes,/Library/Frameworks/Python.framework/Versions/3.6/include/python3.6m);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F7DB948E22C4464E96FEB504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F8749150E17047F2B95E8B4E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F96A3828B52C44BA9B0B0BCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/scrgiorgio/Desktop/OpenVisus/Samples/simple_viewer2d/build/build;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CDB227F4B9442C7B79FCD8B /* Build configuration list for PBXProject "simple_viewer2d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F96A3828B52C44BA9B0B0BCD /* Debug */,
+				08610F4924C2453D97F23604 /* Release */,
+				28A41BE2E38C4E1589365D0C /* MinSizeRel */,
+				9461D1A1753A4472A5470371 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5169F877971344CAA9F10349 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C639EB6574744469C74B63B /* Debug */,
+				79BDA43D4B634440988471BD /* Release */,
+				8A986A230E0F4F0BB97D4CE2 /* MinSizeRel */,
+				F8749150E17047F2B95E8B4E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		592754E585D44629824DC00C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DB948E22C4464E96FEB504 /* Debug */,
+				3DB5E50AD1494CF38E0AD77C /* Release */,
+				0C67532333C04B45B498CBFD /* MinSizeRel */,
+				61A54931D5CF48128C22DA9B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CDD0D1E3AE33434AB4A642B0 /* Build configuration list for PBXNativeTarget "external_simple_viewer2d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949D27ECBA1A4E8E9881E506 /* Debug */,
+				7A7DC8973D974E61BADC3FDA /* Release */,
+				8BAB0150205F4B5581A5726B /* MinSizeRel */,
+				B73C84E3630844538117BEBA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C36DEF21091D457384279708 /* Project object */;
+}
