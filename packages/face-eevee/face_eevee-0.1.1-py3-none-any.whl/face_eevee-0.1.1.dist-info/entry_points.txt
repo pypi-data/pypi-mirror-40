@@ -1,0 +1,3 @@
+[console_scripts]
+face_eevee = face_eevee.face_eevee:main
+
