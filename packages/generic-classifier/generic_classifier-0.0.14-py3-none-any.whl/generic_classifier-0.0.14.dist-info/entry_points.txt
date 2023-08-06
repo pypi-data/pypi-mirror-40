@@ -1,0 +1,3 @@
+[console_scripts]
+gclf = generic_classifier.model:run
+

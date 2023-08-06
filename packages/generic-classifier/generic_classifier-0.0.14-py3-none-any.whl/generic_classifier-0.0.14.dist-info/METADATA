@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: generic-classifier
+Version: 0.0.14
+Summary: UNKNOWN
+Home-page: https://github.com/thautwarm/generic_classifier
+Author: thautwarm
+Author-email: twshere@outlook.com
+License: mit
+Keywords: machine learning tools,general purposed classifier
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+## generic_classifier
+
+
