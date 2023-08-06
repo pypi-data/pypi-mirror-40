@@ -1,0 +1,7 @@
+[console_scripts]
+wooqi = wooqi.__main__:main
+wooqi_pytest = wooqi_pytest:main
+
+[wooqi_pytest11]
+wooqi = wooqi.plugin_wooqi
+
