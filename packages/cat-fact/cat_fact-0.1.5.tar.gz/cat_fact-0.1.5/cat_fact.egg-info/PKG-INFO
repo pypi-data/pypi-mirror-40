@@ -1,0 +1,35 @@
+Metadata-Version: 1.2
+Name: cat-fact
+Version: 0.1.5
+Summary: Get random cat facts fromt the internet 😸
+Home-page: https://github.com/sohail535/cat_fact
+Author: Shaik Sohail Yunus
+Author-email: sohail.yunusha1@gmail.com
+Maintainer: Shaik Sohail Yunus
+Maintainer-email: sohail.yunusha1@gmail.com
+License: UNKNOWN
+Description: 
+        # cat_fact
+        `catFact` Get random cat facts from the internet :smile:
+        
+        ## Installation Instructions
+        
+        Create and activate virtual environment.
+        
+        ```bash
+        $ virtualenv venv
+        $ source ./venv/bin/activate
+        ```
+        Now run `python setup.py install`, this will install `catFact` command into the virtual environment
+        
+        If running `catFact` says command not found, deactivate and activate the virtual environment. That should fix it.
+        
+        ## Example
+        
+        ```bash
+        $ catFact
+        Julius Ceasar, Henri II, Charles XI, and Napoleon were all afraid of cats.
+        ```
+        
+        
+Platform: UNKNOWN
