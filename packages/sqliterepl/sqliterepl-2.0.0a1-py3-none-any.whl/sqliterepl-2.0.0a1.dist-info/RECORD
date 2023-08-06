@@ -1,0 +1,12 @@
+sqliterepl/__init__.py,sha256=b-yq_z1Ocx9pfZRKzeXCXceR_rWN38tR3XisdglKfRs,21
+sqliterepl/completions.py,sha256=NxlBSqNXCe5d8bzNkYhfF5YwgHbJI81neLEZy4ehDo4,18667
+sqliterepl/context.py,sha256=9QK7UaQoo31ZMoGsYlm3QZN29rQTtruTZtimiFF7hiQ,2176
+sqliterepl/main.py,sha256=cWLzSjVulc4gTCNLPzO49xqCst4Xh1vT8s8vN2e3pWs,4745
+sqliterepl/meta_cmds.py,sha256=cf4wWWq7MTesgUmxdBam2mqD937YXioBRUf51VRYdYw,16226
+sqliterepl/utils.py,sha256=5T1B3tdt_Vr8yxXv63FLVxel4s5orqYEUKJjkOLkOSk,4127
+sqliterepl-2.0.0a1.dist-info/LICENSE,sha256=toVYdvtLhrHyKKmJ4oPqL9HBbbbvvOLvZ9WsL-kE910,1537
+sqliterepl-2.0.0a1.dist-info/METADATA,sha256=Ee0kBNAGgA-ni3rKzIsUML5Lx9TFoqJ0aqbxU7SBUrw,4923
+sqliterepl-2.0.0a1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+sqliterepl-2.0.0a1.dist-info/entry_points.txt,sha256=xWnMHPMHtxh4YeqWEmDO94nlvjpG_au0xNluYT2-8uY,53
+sqliterepl-2.0.0a1.dist-info/top_level.txt,sha256=CVgI5V_4GGvXKikYB2iDnMvNXSSN92IivJ3-JT9Q42A,11
+sqliterepl-2.0.0a1.dist-info/RECORD,,
