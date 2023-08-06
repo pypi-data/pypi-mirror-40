@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: adblockeval
+Version: 0.2
+Summary: Evaluates URLs against AdBlock rules efficiently to check which rules would block them, if any.
+Home-page: https://github.com/hprid/adblockeval
+Author: Henning Pridöhl
+Author-email: henning.pridoehl@hprid.de
+License: MIT
+Description: # adblockeval
+        
+        [![Build Status](https://travis-ci.org/hprid/adblockeval.svg?branch=master)](https://travis-ci.org/hprid/adblockeval)
+        [![codecov](https://codecov.io/gh/hprid/adblockeval/branch/master/graph/badge.svg)](https://codecov.io/gh/hprid/adblockeval)
+        
+        Evaluates URLs against AdBlock rules efficiently to check which rules would 
+        block them, if any. It applies Aho-Corasick string matching to reduce the 
+        number of AdBlock rules that have to be evaluated.
+        
+        ## Status
+        This project is currently under development. It is already usable, but not
+        yet well tested against the real world data.
+        
+Keywords: adblock
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >= 3.5
+Description-Content-Type: text/markdown

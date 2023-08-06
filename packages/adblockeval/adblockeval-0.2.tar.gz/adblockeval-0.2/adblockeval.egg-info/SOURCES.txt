@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+adblockeval/__init__.py
+adblockeval/ahocorasick.py
+adblockeval/rules.py
+adblockeval.egg-info/PKG-INFO
+adblockeval.egg-info/SOURCES.txt
+adblockeval.egg-info/dependency_links.txt
+adblockeval.egg-info/top_level.txt
