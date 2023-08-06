@@ -1,0 +1,11 @@
+spectrum/__init__.py,sha256=igktDMYnhIEdJjTvXb6pVIqeHQQREn_ZNNMLRzKZlao,766
+spectrum/color.py,sha256=bSUPqXFZyfDKiwBYagjlaHEIzpUGWsrsWPtRM95JH6U,2541
+spectrum/fields.py,sha256=4jWTANbx7Peaatbx5zKcdpuWL0WVPnuTvUFI5DWNRak,2072
+spectrum/forms.py,sha256=VMK_Uay_k-ed0QUPvBxVvq6SrOtIOKy-2GIeIY_JvYg,2262
+spectrum/tests.py,sha256=ogHzp1YuzxPEhNfaqziTF78R9lVGRUKDpQa3IIJBScM,2085
+spectrum/widgets.py,sha256=EsXhGDvLWHzHgSd3qziFgo5L7u8n1VWwr0tdW7HKFE0,1203
+django_spectrum-0.0.1.dist-info/LICENSE.txt,sha256=Sgyf-TkSxQ0OBCfsR7gQFFK1YWM92Gv1a5YMisghTzw,1082
+django_spectrum-0.0.1.dist-info/METADATA,sha256=e9ItUR-Xpa1e1bODkQCiV_e3XshCS_WT2bFmnM6wRsg,1940
+django_spectrum-0.0.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+django_spectrum-0.0.1.dist-info/top_level.txt,sha256=buL9SW1hKYMtsFOS-A-w2vufupSkwTJQWeWIbG3j4e4,9
+django_spectrum-0.0.1.dist-info/RECORD,,
