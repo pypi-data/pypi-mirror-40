@@ -1,0 +1,9 @@
+Click
+pdfminer.six
+chardet
+
+[pdf]
+reportlab
+
+[testing]
+tox
