@@ -1,0 +1,10 @@
+[console_scripts]
+pyversion3 = version.cli:main
+
+[distutils.commands]
+increment = version.increment_command:increment
+tag = version.tag_command:tag
+
+[distutils.setup_keywords]
+auto_version = version.version3:version_keyword
+

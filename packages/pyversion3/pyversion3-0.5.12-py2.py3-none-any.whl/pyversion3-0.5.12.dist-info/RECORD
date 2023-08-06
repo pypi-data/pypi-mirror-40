@@ -1,0 +1,12 @@
+version/__init__.py,sha256=0fJaWt_H63SnWHczA0ov68LgGqTCCxJcJMP7OlVPFME,68
+version/cli.py,sha256=VXlEIY5hzwknYcXCOMp7-scTprcm7UKKQdotP7uHQwI,452
+version/increment_command.py,sha256=inwcPPSzXb2ALuPFl0wBmHlFTyzPJWWtzQ9Txd7VOo0,1413
+version/tag_command.py,sha256=LbsgA8E-jQh1iAv6AFAUmCnVPPgeOXBxvwsZN-Jzoz8,2351
+version/version3.py,sha256=avPyQ0R_g-1md60bx-k1cT231R7aMO5Uycg0hZwli0U,10492
+pyversion3-0.5.12.dist-info/LICENSE,sha256=n6FnU91PuYFzZQ9GC8N_rTjqjNemIspBE0DNbqY-AXM,1072
+pyversion3-0.5.12.dist-info/METADATA,sha256=W-HbiZ6EKNQrJPHPXCiHtLeTxVFGGBRGfCDKL1WNk2o,4127
+pyversion3-0.5.12.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+pyversion3-0.5.12.dist-info/entry_points.txt,sha256=uFcXxMlDFgBey_RU-riTAJn_KQIo5Qkz6bL3cAkWOzc,225
+pyversion3-0.5.12.dist-info/pbr.json,sha256=nFozX_6pr9qiVhojUPx_B9F9J6HcXYSJf7kwj-ZB6_E,46
+pyversion3-0.5.12.dist-info/top_level.txt,sha256=kSc8xAmawTZUp1jz59Junaccwqg0L7vPThJ3QWxZ4DY,8
+pyversion3-0.5.12.dist-info/RECORD,,
