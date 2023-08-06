@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+SafeTransformer/SafeTransformer.py
+SafeTransformer/__init__.py
+examples/SafeTransformerTests.ipynb
+examples/SafeTransformerTests_Classification.ipynb
+safe_transformer.egg-info/PKG-INFO
+safe_transformer.egg-info/SOURCES.txt
+safe_transformer.egg-info/dependency_links.txt
+safe_transformer.egg-info/requires.txt
+safe_transformer.egg-info/top_level.txt
