@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: crossclip
+Version: 0.0.1
+Summary: A Cross Platform clipboard manager
+Home-page: https://github.com/softwaresale/crossclip
+Author: Charlie Sale
+Author-email: softwaresale01@gmail.com
+License: UNKNOWN
+Description: # crossclip
+        A cross platform clipboard API for python
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown

@@ -1,0 +1,9 @@
+README.md
+setup.py
+crossclip/__init__.py
+crossclip/backends.py
+crossclip/frontend.py
+crossclip.egg-info/PKG-INFO
+crossclip.egg-info/SOURCES.txt
+crossclip.egg-info/dependency_links.txt
+crossclip.egg-info/top_level.txt
