@@ -1,0 +1,11 @@
+rtmidi/__init__.py,sha256=XVa5ZNqwTSrAbJmh8yHxRr00iziI_LgE1KNG5BpHU7c,202
+rtmidi/_rtmidi.cp35-win32.pyd,sha256=pwP_phNHSmE_31eK5m4QbJ8HWtGKdAqFhR8RG3wZUGs,168960
+rtmidi/midiconstants.py,sha256=IgdCwMLZ8CLPkfVwAHsXhmgmi7nuX81sAwg50pjy_ZQ,7412
+rtmidi/midiutil.py,sha256=wZ-CHvZeAWzTKJ5LYB7iiaZkG1tgWsseLhRTOYJufIc,8756
+rtmidi/release.py,sha256=8Ukvse9aCeiu0H7tWFesip4XlwR0jYz_lbr253ApIVI,3633
+python_rtmidi-1.2.0.dist-info/AUTHORS.rst,sha256=j-AnKOlEjP0g4Pc_e9CI87sQjmAMpwr-6SxEtL2HZuM,274
+python_rtmidi-1.2.0.dist-info/LICENSE.txt,sha256=zRw4mh000bRfiS26eywGPIR58mpiGuG9Pomw9DSNCXc,2771
+python_rtmidi-1.2.0.dist-info/METADATA,sha256=1TRlYl84OZK7Mjl5OCu5Bph7mY3zmYCf9IG4DfiAFLk,3451
+python_rtmidi-1.2.0.dist-info/WHEEL,sha256=zpiGhE7wHpe_WKYzV_azSlPDRA8fzPGhm1wNeBPbEgA,102
+python_rtmidi-1.2.0.dist-info/top_level.txt,sha256=zdXDd16SSzjBcv3ZghttppOSKVq7mPvpPZuHg2fo3as,7
+python_rtmidi-1.2.0.dist-info/RECORD,,
