@@ -1,0 +1,2 @@
+def starting():
+    print("Starting")
