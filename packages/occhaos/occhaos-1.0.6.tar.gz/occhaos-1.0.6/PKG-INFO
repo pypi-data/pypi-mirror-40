@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: occhaos
+Version: 1.0.6
+Summary: iOS中  OC马甲包制作中，前缀、后缀、垃圾代码生成、加入垃圾代码方案
+Home-page: https://github.com/ilioner/OCChaos
+Author: tywin
+Author-email: tywinzhang2017@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: iOS中  OC马甲包制作中，前缀、后缀、垃圾代码生成、加入垃圾代码方案
+Keywords: iOS 马甲包 垃圾代码 混淆
+Platform: UNKNOWN

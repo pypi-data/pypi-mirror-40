@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+OCChaos/Chaos.py
+OCChaos/Logger.py
+OCChaos/OCChaosConfig.py
+OCChaos/OCChaosImgMd5Change.py
+OCChaos/OCChaosPrefixRe.py
+OCChaos/OCChaosUselessClassfile.py
+OCChaos/OCChaosUselessCode.py
+OCChaos/__init__.py
+occhaos.egg-info/PKG-INFO
+occhaos.egg-info/SOURCES.txt
+occhaos.egg-info/dependency_links.txt
+occhaos.egg-info/entry_points.txt
+occhaos.egg-info/top_level.txt
+occhaos.egg-info/zip-safe
