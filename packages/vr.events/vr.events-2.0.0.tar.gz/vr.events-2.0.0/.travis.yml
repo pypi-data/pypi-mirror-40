@@ -1,0 +1,38 @@
+dist: xenial
+sudo: false
+language: python
+
+python:
+- 2.7
+- 3.6
+- &latest_py3 3.7
+
+jobs:
+  fast_finish: true
+  include:
+  - stage: deploy
+    if: tag IS present
+    python: *latest_py3
+    before_script: skip
+    env:
+    - TWINE_USERNAME=jaraco
+    # TWINE_PASSWORD
+    - secure: JM9bEkegjPSQqXHUO43ac7gMX/5mR6XReP+jdL3p+ZAv1XUBeL1ns7DDL3WqpG/SglFh7XAUiZGnWxRwDQHfJEaDP/A87i6UTAxccNXXuM0nF0F7vufi1Rw4oZ5ZuuZapeu1Al617TJalMw+c9yJOHevkc4UgmKynmxoShTHD/c8OwDkRL6ko5M4b6SXcdvwzan8+INxR/JwO3gVswmL+qAUWEMLoAaC/mn58gdyVkgG98nOuzjN9PcC8r1NHingVxVycNEmWCNY4bH/9d8UFVdEOC9UuHfQO25+9h40mibVmUK/CXokpcYkHiWcYS9Dvl1pfVYrVs/UPbqj2KJVsLWMhx8dCsSbag+PHRgj91Q5oaTt0ujm4qXkM1QT/AF/83yLU3L5sZL9p39YGge8e8RdamvrGVPsEPqFGQ2j6EivFtRp2VKiIF0V2SjbkTHzlKBWrB7i+9CecvACObFb+Jm2Pqqys1Z/B1eKKWlTg0xLlrGqRZuKx3acrHL0/cndIcYV43xXF4Sa88A9acbsGfjb4PpUKeKquftcDhBbzh/j+5yRUGIhZ+Xgn2JCeTcoFZhcJGFn13RlNJ0TeOO7xPRBUX4PQ2VaQkQIz+7O8HGtzrgLhCRP1pp7YZTSCqFs9ZzK98YU1beb+jl1AwIT7bvVyAZDHHFHTyd73bvEV4Q=
+    - TOX_TESTENV_PASSENV="TWINE_USERNAME TWINE_PASSWORD"
+    script: tox -e release
+
+notifications:
+  slack:
+    secure: YWKVGWFFQA41qbZA/rxytuCmc2j3Cvzg+b7KEX+Np3yuyeyxSH7eMa/qDMH3t1FxvNDLZg0IQdb2Sw6PQUN66l4+hDUjhi165xsFOWqcIfUt2sMaHn6OqQtSBcTG9Eh+zglb2cvGKpdHySSMX8l3ysMhYfqRwu6HYXYY47Vp8jMYw5Yi0NhAXw9nfsUAxxlBbnSCKArdkndReuqoax5iNIUcVCytEZTthmnz82PbUDnrY3pNnEN9P3Uu1sykYGrh9q22q+iEK+B6/eLfVgKtXhpcprCeCLelVlUVJ261RowFlW/iKH8FVyK/UJI7GjVbvXdaAAJ/tDO21RRmG+nna353s6QU0mmZ+z3/m89eBmSoDbWRGMjxR4+dv21WIWKfSdq4YJEKuTlCH51gvsZ7flzdSbK5I0jTsvUgru9Wx4vNx54dnlSY4UaS6BY+czVgFVe/33EIlaalYBovk1npFE8cwrtL71WK+NPpTo9hO6S2QcX3HGaK2GRipCgr7hybB0VYGyu4Rlrt9+DQ6HomBxybhlaNIWu+5HJT+Awx04CgCS6KQUst6BrDQ8pe+Q2NEArlCahimo7IVoPa5hle4CyZbo/W67uBT9skE7tRk0xrd58BGPbfkMILaxdZk/NUxmMUgCLqei3bZKMEldDM/oQHGW+vcSxxNhpoKkkqvxw=
+
+cache: pip
+
+install:
+- pip install tox tox-venv
+
+before_script:
+  # Disable IPv6. Ref travis-ci/travis-ci#8361
+  - if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
+      sudo sh -c 'echo 0 > /proc/sys/net/ipv6/conf/all/disable_ipv6';
+    fi
+script: tox
