@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+mongo_adapter/__init__.py
+mongo_adapter/__version__.py
+mongo_adapter/adapter.py
+mongo_adapter/client.py
+mongo_adapter/exceptions.py
+mongo_adapter.egg-info/PKG-INFO
+mongo_adapter.egg-info/SOURCES.txt
+mongo_adapter.egg-info/dependency_links.txt
+mongo_adapter.egg-info/requires.txt
+mongo_adapter.egg-info/top_level.txt
