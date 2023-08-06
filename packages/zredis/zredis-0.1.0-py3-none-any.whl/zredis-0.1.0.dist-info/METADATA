@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: zredis
+Version: 0.1.0
+Summary: 封装的redis连接器
+Home-page: https://pypi.org/
+Author: zlyuan
+Author-email: 1277260932@qq.com
+License: GNU GENERAL PUBLIC LICENSE
+Platform: all
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: redis
+Requires-Dist: zretry
+Requires-Dist: redis-py-cluster
+
+# 一个封装的redis连接器
+
+### 参数说明
+参数名|数据类型|默认值|描述
+--|:--:|:--:|---
+
+### 更新日志
+发布时间|发布版本|发布说明
+--|:--:|---
+19-01-10 | 0.1.0 | 发布第一版
+
+- - -
+##### 本项目仅供所有人学习交流使用, 禁止用于商业用途
+
+
