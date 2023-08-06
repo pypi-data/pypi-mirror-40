@@ -1,0 +1,6 @@
+pandas
+pbr
+
+[test]
+six
+pytest
