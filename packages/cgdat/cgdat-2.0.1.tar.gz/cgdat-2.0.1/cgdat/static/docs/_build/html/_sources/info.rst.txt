@@ -1,0 +1,4 @@
+Contributors
+====================
+* Created by Rick Staa
+* Maintained by Wesley Bosman `(wesleybosmann@gmail.com <mailto:wesleybosmann@gmail.com>`_)
