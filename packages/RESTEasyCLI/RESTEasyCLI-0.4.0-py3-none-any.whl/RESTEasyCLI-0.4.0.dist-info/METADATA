@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: RESTEasyCLI
+Version: 0.4.0
+Summary: Handy REST API client on your terminal
+Home-page: https://github.com/rapidstack/RESTEasyCLI
+Author: Arijit Basu
+Author-email: sayanarijit@gmail.com
+License: MIT
+Download-URL: https://github.com/rapidstack/RESTEasyCLI/archive/v0.4.0.tar.gz
+Keywords: REST API client CLI tool
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Requires-Dist: cliff (==2.14.0)
+Requires-Dist: PyYAML (==3.13)
+Requires-Dist: RESTEasy (==1.0.5)
+Requires-Dist: marshmallow (==3.0.0rc1)
+
+
+RESTEasyCLI
+===========
+
+Handy REST API client on your terminal
+
+
+.. image:: https://img.shields.io/pypi/v/RESTEasyCLI.svg
+   :target: https://pypi.org/project/RESTEasyCLI
+   :alt: PyPI version
+
+
+.. image:: https://travis-ci.org/rapidstack/RESTEasyCLI.svg?branch=master
+   :target: https://travis-ci.org/rapidstack/RESTEasyCLI
+   :alt: Build Status
+
+
+.. image:: https://readthedocs.org/projects/resteasycli/badge/?version=latest
+   :target: https://resteasycli.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
+
+
+.. image:: https://asciinema.org/a/219207.svg
+   :target: https://asciinema.org/a/219207
+   :alt: asciicast
+
+
+
+* `RESTEasyCLI <#resteasycli>`_
+
+  * `Get started with an interactive demo <#get-started-with-an-interactive-demo>`_
+  * `Usage <#usage>`_
+  * `TODO list <#todo-list>`_
+  * `Contribution guide <#contribution-guide>`_
+
+Get started with an interactive demo
+------------------------------------
+
+NOTE: This demo requires supported version of python and ``virtualenv`` to be installed
+
+.. code-block:: bash
+
+   curl -L https://raw.githubusercontent.com/rapidstack/RESTEasyCLI/master/tools/demo.sh -o demo.sh
+   chmod +x demo.sh
+   ./demo.sh
+
+Usage
+-----
+
+`Read full documentation on Read the Docs <http://resteasycli.readthedocs.io>`_
+
+TODO list
+---------
+
+`Checkout the great TODO list on project board <https://github.com/rapidstack/RESTEasyCLI/projects>`_
+
+Contribution guide
+------------------
+
+`Checkout the contribution guide here <https://github.com/rapidstack/RESTEasyCLI/blob/master/CONTRIBUTING.md>`_
+
+
