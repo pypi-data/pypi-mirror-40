@@ -1,0 +1,15 @@
+README.rst
+setup.py
+mds_mdspwrstripbackup.egg-info/PKG-INFO
+mds_mdspwrstripbackup.egg-info/SOURCES.txt
+mds_mdspwrstripbackup.egg-info/dependency_links.txt
+mds_mdspwrstripbackup.egg-info/not-zip-safe
+mds_mdspwrstripbackup.egg-info/requires.txt
+mds_mdspwrstripbackup.egg-info/top_level.txt
+mdspwrstripbackup/__init__.py
+mdspwrstripbackup/backuppwrstrip.py
+mdspwrstripbackup/epccontrol2.pl
+mdspwrstripbackup/gude.py
+mdspwrstripbackup/example/bk_read_konfig.py
+mdspwrstripbackup/example/bk_run_backup.py
+mdspwrstripbackup/example/bk_write_konfig.py
