@@ -1,0 +1,9 @@
+README.md
+setup.py
+tugit/Installer.py
+tugit/__init__.py
+tugit.egg-info/PKG-INFO
+tugit.egg-info/SOURCES.txt
+tugit.egg-info/dependency_links.txt
+tugit.egg-info/not-zip-safe
+tugit.egg-info/top_level.txt
