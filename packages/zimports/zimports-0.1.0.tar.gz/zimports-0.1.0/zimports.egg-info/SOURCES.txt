@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+zimports.py
+zimports.egg-info/PKG-INFO
+zimports.egg-info/SOURCES.txt
+zimports.egg-info/dependency_links.txt
+zimports.egg-info/entry_points.txt
+zimports.egg-info/not-zip-safe
+zimports.egg-info/requires.txt
+zimports.egg-info/top_level.txt
