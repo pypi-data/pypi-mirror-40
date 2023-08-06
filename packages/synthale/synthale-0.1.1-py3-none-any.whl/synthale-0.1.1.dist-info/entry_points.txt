@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        synthale=synthale.cli:cli
+    
