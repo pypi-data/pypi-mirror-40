@@ -1,0 +1,12 @@
+file_cache/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+file_cache/cache.py,sha256=wwnmg1OMnhyvu9AMgaedAD8PTxdqZvYIp0zLRGMi_ao,4839
+file_cache/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+file_cache/utils/other.py,sha256=_cLazM1CbA45yWB5jZHfrAY8pVsaOALF87oBkdtmRw0,5163
+file_cache/utils/reduce_mem.py,sha256=o3y6l0gpyqT2wMj8mHuvZkOprJ6shSxAUjWNQyEsTuY,2959
+file_cache/utils/util_date.py,sha256=siZoKan7QKeF4bYX_7HhCxasynFqhkZnnfqol8Q69Mw,4315
+file_cache/utils/util_log.py,sha256=OVYCPIMumHqWddoPlpoO29h8ekdKe4jRU0JIYlPaPMg,2123
+file_cache/utils/util_pandas.py,sha256=weaXjEMTIrr9ZRnxyhowqvqqREjCgfo9vTqz0dWCZ6g,3464
+file_cache-0.1.4.dist-info/METADATA,sha256=CERAF-4vo29jTCGqNrI87--SXIrfKs9D2EnLxHW-aJM,616
+file_cache-0.1.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+file_cache-0.1.4.dist-info/top_level.txt,sha256=oFsuFCq4p95qRu4HnHg2Pp_0Vra9KIqeYK0ZE2Lphls,11
+file_cache-0.1.4.dist-info/RECORD,,
