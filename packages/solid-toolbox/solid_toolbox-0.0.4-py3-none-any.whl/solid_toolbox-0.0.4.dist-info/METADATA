@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: solid-toolbox
+Version: 0.0.4
+Summary: A collection of utilities for solidpython
+Home-page: https://github.com/michael0x2a/solid_toolbox
+License: MIT
+Author: Michael Lee
+Author-email: michael.lee.0x2a@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: prettytable (==0.7.2)
+Requires-Dist: solidpython (>=0.2.0,<0.3.0)
+Project-URL: Repository, https://github.com/michael0x2a/solid_toolbox
+Description-Content-Type: text/markdown
+
+# Solid toolbox
+
+A collection of utilities for [SolidPython](https://github.com/SolidCode/SolidPython).
+
+
