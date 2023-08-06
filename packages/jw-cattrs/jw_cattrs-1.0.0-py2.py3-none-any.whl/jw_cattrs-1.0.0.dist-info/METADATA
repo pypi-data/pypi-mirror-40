@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: jw-cattrs
+Version: 1.0.0
+Summary: Temporary cattrs fork
+Home-page: https://github.com/j-walker23/cattrs
+Author: John Walker
+Author-email: john@chaosdevs.com
+License: MIT license
+Keywords: cattrs
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: attrs (>=17.3)
+Requires-Dist: functools32 (>=3.2.3) ; python_version < "3.0"
+Requires-Dist: singledispatch (>=3.4.0.3) ; python_version < "3.0"
+Requires-Dist: enum34 (>=1.1.6) ; python_version < "3.0"
+Requires-Dist: typing (>=3.5.3) ; python_version < "3.0"
+Provides-Extra: dev
+Requires-Dist: bumpversion ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: watchdog ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: hypothesis ; extra == 'dev'
+Requires-Dist: pendulum ; extra == 'dev'
+
+Temporary cattrs fork
+
+
