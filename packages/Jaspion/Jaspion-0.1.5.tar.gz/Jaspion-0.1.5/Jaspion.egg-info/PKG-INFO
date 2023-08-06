@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Jaspion
+Version: 0.1.5
+Summary: FreeSwitch Event Handler based in Flask.
+Home-page: https://github.com/Otoru/Jaspion
+Author: Vitor Hugo de Oliveira Vargas
+Author-email: vitor.hugo@sippulse.com
+License: UNKNOWN
+Description: # Jaspion
+Keywords: ESL,FreeSwitch
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: System :: Networking
+Description-Content-Type: text/markdown
+Provides-Extra: dev
