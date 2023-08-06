@@ -1,0 +1,10 @@
+README.md
+setup.py
+gyg_reader/__init__.py
+gyg_reader/gyg_reader.py
+gyg_reader.egg-info/PKG-INFO
+gyg_reader.egg-info/SOURCES.txt
+gyg_reader.egg-info/dependency_links.txt
+gyg_reader.egg-info/not-zip-safe
+gyg_reader.egg-info/requires.txt
+gyg_reader.egg-info/top_level.txt
