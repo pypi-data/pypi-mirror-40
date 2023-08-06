@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+manual
+setup.py
+simpletime.py
+simpletime.egg-info/PKG-INFO
+simpletime.egg-info/SOURCES.txt
+simpletime.egg-info/dependency_links.txt
+simpletime.egg-info/top_level.txt
