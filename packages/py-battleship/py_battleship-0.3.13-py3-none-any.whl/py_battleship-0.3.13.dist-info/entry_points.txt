@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        py-battleship=battleship.__main__:cli
+    
