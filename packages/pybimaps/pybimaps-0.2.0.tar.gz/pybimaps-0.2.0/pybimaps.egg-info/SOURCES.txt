@@ -1,0 +1,12 @@
+README.rst
+setup.py
+pybimaps/__init__.py
+pybimaps/base.py
+pybimaps/m2m.py
+pybimaps/o2m.py
+pybimaps/o2o.py
+pybimaps.egg-info/PKG-INFO
+pybimaps.egg-info/SOURCES.txt
+pybimaps.egg-info/dependency_links.txt
+pybimaps.egg-info/not-zip-safe
+pybimaps.egg-info/top_level.txt
