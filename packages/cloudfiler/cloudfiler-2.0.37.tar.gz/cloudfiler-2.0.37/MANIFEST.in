@@ -1,0 +1,3 @@
+include cloudfiler/images/*
+include cloudfiler/CloudFiler.ini
+include cloudfiler/CloudFilerUserGuide.pdf
