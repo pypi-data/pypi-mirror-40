@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+yash.py
+yash.egg-info/PKG-INFO
+yash.egg-info/SOURCES.txt
+yash.egg-info/dependency_links.txt
+yash.egg-info/entry_points.txt
+yash.egg-info/requires.txt
+yash.egg-info/top_level.txt
