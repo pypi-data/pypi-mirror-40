@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pycfca
+Version: 0.0.1
+Summary: Python CFCA Library
+Home-page: https://github.com/vcancy/pycfca
+Author: Vcancy
+Author-email: happiness1019@gmail.com
+License: LGPL 3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
