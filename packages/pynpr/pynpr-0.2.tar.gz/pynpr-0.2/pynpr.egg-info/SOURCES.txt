@@ -1,0 +1,12 @@
+setup.py
+pynpr/__init__.py
+pynpr/podcasts.py
+pynpr/programs.py
+pynpr/search.py
+pynpr/sections.py
+pynpr/series.py
+pynpr.egg-info/PKG-INFO
+pynpr.egg-info/SOURCES.txt
+pynpr.egg-info/dependency_links.txt
+pynpr.egg-info/requires.txt
+pynpr.egg-info/top_level.txt
