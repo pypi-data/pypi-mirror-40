@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: ttcal
+Version: 1.0.0
+Summary: ttcal - calendar operations
+===========================
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: 
+        .. image:: https://travis-ci.org/thebjorn/ttcal.svg?branch=master
+            :target: https://travis-ci.org/thebjorn/ttcal
+        
+        
+        ttcal -- short description
+        ==================================================
+        
+        
+        Installing from PyPI
+        --------------------
+        
+        This is what you want if you just want to use ttcal:
+        
+           pip install ttcal
+        
+        
+        As a source package
+        -------------------
+        This is what you want if you are developing ttcal or want 
+        to make local changes to the source code.
+        
+           pip install -e <path>
+        
+        
+        
+        
+        See docs/ folder for documentation.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries
