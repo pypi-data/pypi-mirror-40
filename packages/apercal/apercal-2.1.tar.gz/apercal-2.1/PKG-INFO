@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: apercal
+Version: 2.1
+Summary: Scientific Compute Container Spec Parser
+Home-page: https://github.com/apertif/apercal
+Author: Bjoern Adebahr
+Author-email: adebahr@astron.nl
+License: GPL2
+Description: UNKNOWN
+Keywords: science astronomy radio
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Operating System Kernels :: Linux
