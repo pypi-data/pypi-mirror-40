@@ -1,0 +1,11 @@
+bigwing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bigwing/api.py,sha256=aO5xqyPcFQIHS-PE5BtOvKcQmw4gkbWNkS-vIts7wug,9572
+bigwing/crawler.py,sha256=750AxoJsm8G2vvxj8oTOypX7BU_vk_tYwEyqLUGAHQs,6433
+bigwing/search.py,sha256=l2_PK78tPq5w86DA_wVpxBT34f5jw8IzcIiSy41MYOY,618
+bigwing/browser/chromedriver.exe,sha256=09dlApNMjQmqPNII7vd6gctlqlq2mfZ2eQkhAZ1zSu0,8713728
+bigwing/browser/phantomjs.exe,sha256=HPmyqnMr0MZag8VdlrqYxO1GK5NyDX_YwLzFNoO_z_s,18587648
+bigwing-1.1.1.dist-info/METADATA,sha256=ERgSnO8JPC4tOrDSz7XCBd_fOMUqbM-lSwxuwkPaPO8,808
+bigwing-1.1.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+bigwing-1.1.1.dist-info/license.md,sha256=0ZlcOWuQEhBdU3wbJlR9QhsEm_na3rvvnjGlctyHU9U,3294
+bigwing-1.1.1.dist-info/top_level.txt,sha256=JxEME5SOnk9LRKF4i3dC9NW-2aGxtyWqtyno0TRrq-A,8
+bigwing-1.1.1.dist-info/RECORD,,
