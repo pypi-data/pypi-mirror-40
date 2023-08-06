@@ -1,0 +1,11 @@
+README.md
+setup.py
+papero/__init__.py
+papero/codec.py
+papero/converter.py
+papero/iobuf.py
+papero/property.py
+papero.egg-info/PKG-INFO
+papero.egg-info/SOURCES.txt
+papero.egg-info/dependency_links.txt
+papero.egg-info/top_level.txt
