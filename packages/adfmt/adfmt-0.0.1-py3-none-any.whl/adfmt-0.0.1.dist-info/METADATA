@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: adfmt
+Version: 0.0.1
+Summary: a simple format tool for apiDoc
+Home-page: https://github.com/WangYue1993/adfmt
+Author: Yue Wang
+Author-email: wangyue930203@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# adfmt
+a simple format tool for apiDoc.
+
+
