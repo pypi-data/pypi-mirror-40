@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dshelper
+Version: 0.1.0
+Summary: A GUI tool to display pandas dataframe and draw plots in a few clicks
+Home-page: https://github.com/zmcddn/Data-Science-Helper
+Author: Minchang (Carson) Zhang
+Author-email: minchang@ualberta.ca
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: wxpython (>=3.0)
+Requires-Dist: matplotlib (>=2.1.2)
+Requires-Dist: numpy (>=1.14.0)
+Requires-Dist: scipy (>=1.0.0)
+Requires-Dist: pandas (>=0.22.0)
+Requires-Dist: scikit-learn (>=0.19.1)
+Requires-Dist: seaborn (>=0.8.0)
+Requires-Dist: statsmodels (>=0.8.0)
+
+UNKNOWN
+
+
