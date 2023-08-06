@@ -1,0 +1,25 @@
+include *.md
+include jiggle_version/*.py
+recursive-include jiggle_version *.py
+include AUTHORS
+include ChangeLog
+include LICENSE
+prune *.lock
+prune Pipfile
+prune Pipfile_nodev
+prune *.sh
+prune jiggle_version_self.py
+prune build.py
+prune build_utils.py
+prune *.txt
+prune *.yml
+prune pylintrc.ini
+prune docs
+prune sample_projects
+prune usage_example
+prune fetch_raw_data
+prune docs
+prune test
+prune sample_projects
+prune usage_example
+prune extra
