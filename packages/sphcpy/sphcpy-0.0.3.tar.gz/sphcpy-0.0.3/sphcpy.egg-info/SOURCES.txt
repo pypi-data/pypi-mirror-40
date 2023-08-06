@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+bin/p2VTK
+sphcpy/__init__.py
+sphcpy/constants.py
+sphcpy/dataslice.py
+sphcpy/utilities.py
+sphcpy.egg-info/PKG-INFO
+sphcpy.egg-info/SOURCES.txt
+sphcpy.egg-info/dependency_links.txt
+sphcpy.egg-info/not-zip-safe
+sphcpy.egg-info/requires.txt
+sphcpy.egg-info/top_level.txt
