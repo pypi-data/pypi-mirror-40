@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: leen
+Version: 0.0.1
+Summary: A package to judge whether a EBI code correspond to a sentence
+Home-page: https://gitlab.com/BioAI/leen
+Author: Zhang Zai
+Author-email: zhangzai1998@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# leen
+
+A package to judge whether a EBI code correspond to a sentence
+
+## Requirements
+
+- torch 8
+- Python >= 3.5
+
+## Installation
+You can use pip to install our package, similar to other packages
+
+```bash
+pip3 install leen
+```
+
+```python
+import leen.test as le
+le.same(EBI-id, sentence) #note that both parameters should be enclosed in quotations when typing pure string
+le.description(EBI-id) #also, EBI-id should be quotated
+```
+
+## Usage
+* description(EBI-id)
+	* a fuction getting the description corresponding to idcode
+	* input:str EBI-id
+	* return:str description
+
+* same(EBI-id, sentence)
+	* a function judging whether a EBI-id correspond to a description，return True/False 
+    * input:str idcode,str sentence
+	* output:bool True/False
+
+## Note
+* parameters should be enclosed in quotations when typing pure string
+* `torch 8` is Indispensable when using our package
+
+## FAQ
+* What is `EBI-id` in the description of `usage` above?
+    * It is the accession number of the interaction in the IntAct database.
+
+* How can I contribute to the project?
+	* Our project is on "https://gitlab.com/BioAI/leen" ,your contribution is highly appreciated.
+
