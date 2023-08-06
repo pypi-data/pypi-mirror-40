@@ -1,0 +1,3 @@
+[console_scripts]
+excluded-words-lint = excluded_words_lint.cli:main
+

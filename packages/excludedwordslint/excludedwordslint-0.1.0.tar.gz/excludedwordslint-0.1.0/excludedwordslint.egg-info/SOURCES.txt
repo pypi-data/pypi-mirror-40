@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+excluded_words_lint/__init__.py
+excluded_words_lint/cli.py
+excluded_words_lint/commands.py
+excluded_words_lint/models.py
+excludedwordslint.egg-info/PKG-INFO
+excludedwordslint.egg-info/SOURCES.txt
+excludedwordslint.egg-info/dependency_links.txt
+excludedwordslint.egg-info/entry_points.txt
+excludedwordslint.egg-info/not-zip-safe
+excludedwordslint.egg-info/requires.txt
+excludedwordslint.egg-info/top_level.txt
