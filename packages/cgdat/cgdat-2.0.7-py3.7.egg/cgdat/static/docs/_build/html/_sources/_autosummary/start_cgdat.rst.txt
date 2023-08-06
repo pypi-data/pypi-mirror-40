@@ -1,0 +1,22 @@
+start\_cgdat
+============
+
+.. automodule:: start_cgdat
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      main
+   
+   
+
+   
+   
+   
+
+   
+   
+   
