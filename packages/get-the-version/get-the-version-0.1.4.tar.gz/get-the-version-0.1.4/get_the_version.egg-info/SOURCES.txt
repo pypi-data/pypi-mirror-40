@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+get_the_version.egg-info/PKG-INFO
+get_the_version.egg-info/SOURCES.txt
+get_the_version.egg-info/dependency_links.txt
+get_the_version.egg-info/entry_points.txt
+get_the_version.egg-info/requires.txt
+get_the_version.egg-info/top_level.txt
+get_version/__init__.py
+get_version/__main__.py
+get_version/versions.py
