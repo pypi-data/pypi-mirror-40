@@ -1,0 +1,43 @@
+dist: xenial
+sudo: false
+language: python
+
+python:
+- 2.7
+- 3.6
+- &latest_py3 3.7
+
+matrix:
+  allow_failures:
+  # https://github.com/yougov/velociraptor/issues/225
+  - python: 3.7
+
+jobs:
+  fast_finish: true
+  include:
+  - stage: deploy
+    if: tag IS present
+    python: *latest_py3
+    before_script: skip
+    env:
+    - TWINE_USERNAME=jaraco
+    # TWINE_PASSWORD
+    - secure: x5CnVCBPU5SePtYE1ORKz6gJUPoVXKfKJQOJ8i64y+fgT6aldn5QX+niWVt2NyQvRotUoBVupdZWcrXuk8t9xQHwIRocZT3I98u4kOTf1l+b+KrejseQ68bR47dmVJVFu8DiZop+npZHQIVuqciEkijwqz09LhoxPGNd7kbRH9cpoiz1JsbUj9n7RCWuG1rSPLSyTsNEw5IgsSd7A2dN50l0ZEhzC5zXJHOyF4NEk1AV8Fb9UziFdO+pUGELOhlP7ltsPHBEYqqbltdIt33iGcM236rBY3ojfYYoL7R2UpcAIa7FVyu5xMdGpjBFNNX82ZEv8aL7GVvxa2gtDsHL7UEtl09qkOb/egR6MnRa/WNuwREusD8jV1lzbBp1ccztFoLMSUbqU5TKdukM4CFAD415rjHiPoG+sRqnyAZeoFhxgBxZ+zF57QmNcxnywikxgO02Cyl1eBjalfD33jsTqoGmkykBKp5a2JzCFa83ZiUaYPzIBUgkonwLYnFtWvwpTtzD7f6woNILvP3RZ1EI4M5cHIGG/IG3BzgUqQmstt/hCxrsa4+YR/YtZwgg0CCHSSP7tJXWAZFF6iBA24CZsa944xsgShzU/dtMeP6Fp14I5IQ33M3w8wl/uQQwo7pwhgOKJ6DRcs5PkYT8F5PQsZo7GbdYSS1E0ScCfV7PzPg=
+    - TOX_TESTENV_PASSENV="TWINE_USERNAME TWINE_PASSWORD"
+    script: tox -e release
+
+notifications:
+  slack:
+    secure: oxe5pua7Z+DWdbU7ZxnG74iuao4f3TIJBTLDWcnkzNnkOSxg0nYlYcUpqNGih9Xz/G62uziAyC8fbk/lee26gQ1ERRQGmAdiyz7QnHxqgFJOHq3MqmK3PotuipEy7cOXbFgrirsl+JbD7f9H2vcy7jTlyBkDMzaohbBJsMceEu0lc48gv9XcouqmITbH/S0/es/+0Gba+7DH90+M3mcH24v8dgBOB8uRhPBrsJY3q9DtJMXvuM3WJHBe18yaV24nW2Gl5o6ysLprxgMSc3Vbf7z8jbTC7NetSwWnmeXhDKSTXz92DZuRoWyb59HTNimedSHmAXV7fO739iYiNdwRxwFDgmfVkdNohCPSDBcLaAOoqBwJoJGjJmsZ89yXHBkIrePf/gJ+SsspiosE6SqIVb+Fp5S3vbDzewnJ5PQWPVvpUl4OtyGxBSpAAJ3lYhY/Z9fsQogu3DflJJNlwTLrIQjAShiUvUYEWADV39bliaeYrZo9CiX+TD4kckU9nbR1enE7iL4d+7+y6PsmCm4HmFA+NfF19p+AAjvfL7EIi04TQbTqkuYCWDSjGeITT7k6t3lOXNXaVTdcmsTCg32Sis3r+sSMgrK85n22m92pfPF5B717Bws+EUt6udY9LXyvtLferXR+PdJ8rh8qLDEFWCxsL8i0Tp6pPrdA9bDDHU4=
+
+cache: pip
+
+install:
+- pip install tox tox-venv
+
+before_script:
+  # Disable IPv6. Ref travis-ci/travis-ci#8361
+  - if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
+      sudo sh -c 'echo 0 > /proc/sys/net/ipv6/conf/all/disable_ipv6';
+    fi
+script: tox
