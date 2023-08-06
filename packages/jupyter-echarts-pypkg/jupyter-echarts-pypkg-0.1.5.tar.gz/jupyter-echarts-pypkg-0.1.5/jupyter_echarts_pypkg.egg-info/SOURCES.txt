@@ -1,0 +1,12 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+setup.py
+jupyter_echarts_pypkg/__init__.py
+jupyter_echarts_pypkg/_version.py
+jupyter_echarts_pypkg.egg-info/PKG-INFO
+jupyter_echarts_pypkg.egg-info/SOURCES.txt
+jupyter_echarts_pypkg.egg-info/dependency_links.txt
+jupyter_echarts_pypkg.egg-info/not-zip-safe
+jupyter_echarts_pypkg.egg-info/requires.txt
+jupyter_echarts_pypkg.egg-info/top_level.txt
