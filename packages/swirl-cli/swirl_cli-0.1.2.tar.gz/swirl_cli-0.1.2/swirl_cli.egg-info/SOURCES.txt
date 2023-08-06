@@ -1,0 +1,9 @@
+README.md
+setup.py
+swirl_cli/__init__.py
+swirl_cli/auth.py
+swirl_cli/config.py
+swirl_cli.egg-info/PKG-INFO
+swirl_cli.egg-info/SOURCES.txt
+swirl_cli.egg-info/dependency_links.txt
+swirl_cli.egg-info/top_level.txt
