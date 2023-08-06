@@ -1,0 +1,12 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+parametrizer/__init__.py
+parametrizer.egg-info/PKG-INFO
+parametrizer.egg-info/SOURCES.txt
+parametrizer.egg-info/dependency_links.txt
+parametrizer.egg-info/not-zip-safe
+parametrizer.egg-info/requires.txt
+parametrizer.egg-info/top_level.txt

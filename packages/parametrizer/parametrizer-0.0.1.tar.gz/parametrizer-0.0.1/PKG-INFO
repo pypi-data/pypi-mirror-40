@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: parametrizer
+Version: 0.0.1
+Summary: Simple parametrizer class template
+Home-page: https://github.com/davidemoro/parametrizer
+Author: Davide Moro
+Author-email: davide.moro@gmail.com
+Maintainer: Davide Moro
+Maintainer-email: davide.moro@gmail.com
+License: Apache Software License 2.0
+Description: ============
+        parametrizer
+        ============
+        
+        
+        .. image:: https://travis-ci.org/davidemoro/parametrizer.svg?branch=master
+            :target: https://travis-ci.org/davidemoro/parametrizer
+            :alt: See Build Status on Travis CI
+        
+        .. image:: https://codecov.io/gh/davidemoro/parametrizer/branch/master/graph/badge.svg
+            :target: https://codecov.io/gh/davidemoro/parametrizer
+        
+        ``parametrizer`` provides a simple parametrization class for
+        template substitution.
+        
+        Twitter
+        -------
+        
+        ``parametrizer`` tweets happens here:
+        
+        * `@davidemoro`_
+         
+        
+        .. _`@davidemoro`: https://twitter.com/davidemoro
+        
+        Changelog
+        =========
+        
+        0.0.1 (2019-01-16)
+        ------------------
+        
+        - First release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Provides-Extra: tests
+Provides-Extra: docs
