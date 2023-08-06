@@ -1,0 +1,17 @@
+PyOgg-0.6.6a1.dist-info/METADATA,sha256=3K_DoFa3cRelSMkVBDXO_s5216npA93v8rwgmcUpUtk,6061
+PyOgg-0.6.6a1.dist-info/RECORD,,
+PyOgg-0.6.6a1.dist-info/WHEEL,sha256=wpTmq-qWefR5iiI4HRAE_FrhS6asdjo0MzOvBq796Bs,120
+PyOgg-0.6.6a1.dist-info/top_level.txt,sha256=D8S6n_eP-FkE6Dfz_yxL_V9NV82Mfaq3KJ23soUjCyU,6
+pyogg/__init__.py,sha256=PqNrfh3un_qSOLUuITq7yJ3fvZsdgtKPdo-M_ikZktM,16721
+pyogg/flac.py,sha256=raPTZhIWRdMayv7-nB6CdD3BQD5cO31oqcYakcmnfhY,103016
+pyogg/libFLAC.dll,sha256=EvVGi7owQACqcRqgQPS5M8kck3lMkDYHOkhAMWpu1hs,399360
+pyogg/libogg.dll,sha256=uz4pQ8k3ECa3mrpDrF1Ya8pzmfMmW82tXesXj6YE77w,312832
+pyogg/library_loader.py,sha256=sVzTS5bWvivU2LVj1Siqr4Hq8Q0sQ2i3N675NCw_v3M,3138
+pyogg/libvorbis.dll,sha256=fnPCtOq16QFI4y3jEtcP95VM2_9FgQbENwd0yqCdvSA,783872
+pyogg/libvorbisfile.dll,sha256=UwhBQbIB4XZO17qCUnRK7oqu4HMF5BEGlHm_6u6HoPM,109056
+pyogg/ogg.py,sha256=2JlkMZlsoq98NplM7wQmjbmHptPFANt4XP4U2SFf0Zs,19255
+pyogg/opus.dll,sha256=gMemE8353hOLn7EAN59jH9Agcgu_yJXuPJz76EIUoJ0,356864
+pyogg/opus.py,sha256=hp6Tdu_wkhzKRBy1UV7Tmi790QGnd4UBSzKf_B6gdnU,50267
+pyogg/opusenc.dll,sha256=8O8ioUT73HGwVloBAVxyHQ70HCdr7kO78BV0AUJ6nXo,186368
+pyogg/opusfile.dll,sha256=egKnWH0guNBRgLDPLEwN85CoPqTQVdW33_QA2pziVXQ,150528
+pyogg/vorbis.py,sha256=gIx8nqTTJ2u_VL9poPcTy-zpfT8q7fGlemvI98u4IIg,28100
