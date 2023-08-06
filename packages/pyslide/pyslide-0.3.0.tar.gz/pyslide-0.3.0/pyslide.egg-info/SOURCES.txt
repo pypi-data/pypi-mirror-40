@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+pyslide/__init__.py
+pyslide/hello.py
+pyslide/setup.py
+pyslide.egg-info/PKG-INFO
+pyslide.egg-info/SOURCES.txt
+pyslide.egg-info/dependency_links.txt
+pyslide.egg-info/requires.txt
+pyslide.egg-info/top_level.txt
+pyslide/patch/__init__.py
+pyslide/patch/_sample.py
+pyslide/patch/setup.py
+pyslide/pyramid/__init__.py
+pyslide/pyramid/_pyramid.py
+pyslide/pyramid/setup.py
