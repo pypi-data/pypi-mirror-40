@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record id="tax_rule_line_11" model="account.tax.rule.line.template">
+            <field name="rule" ref="tax_rule_non_eu_purchase"/>
+            <field name="group" ref="tax_group_vst"/>
+            <field name="tax" ref="tax_import_19"/>
+        </record>
+        <record id="tax_rule_line_10" model="account.tax.rule.line.template">
+            <field name="rule" ref="tax_rule_non_eu_sale"/>
+            <field name="group" ref="tax_group_ust"/>
+            <field name="tax" ref="tax_export"/>
+        </record>
+        <record id="tax_rule_line_13" model="account.tax.rule.line.template">
+            <field name="rule" ref="tax_rule_eu_vat_id_sale"/>
+            <field name="group" ref="tax_group_ust"/>
+            <field name="tax" ref="tax_eu_sale"/>
+        </record>
+        <record id="tax_rule_line_12" model="account.tax.rule.line.template">
+            <field name="rule" ref="tax_rule_non_eu_purchase"/>
+            <field name="group" ref="tax_group_vst_reduced"/>
+            <field name="tax" ref="tax_import_7"/>
+        </record>
+        <record id="tax_rule_line_15" model="account.tax.rule.line.template">
+            <field name="rule" ref="tax_rule_eu_vat_id_purchase"/>
+            <field name="group" ref="tax_group_vst_reduced"/>
+            <field name="tax" ref="tax_eu_7_purchase"/>
+        </record>
+        <record id="tax_rule_line_14" model="account.tax.rule.line.template">
+            <field name="rule" ref="tax_rule_eu_vat_id_purchase"/>
+            <field name="group" ref="tax_group_vst"/>
+            <field name="tax" ref="tax_eu_19_purchase"/>
+        </record>
+        <record id="tax_rule_line_17" model="account.tax.rule.line.template">
+            <field name="rule" ref="tax_rule_eu_no_id_purchase"/>
+            <field name="group" ref="tax_group_vst_reduced"/>
+        </record>
+        <record id="tax_rule_line_16" model="account.tax.rule.line.template">
+            <field name="rule" ref="tax_rule_eu_no_id_purchase"/>
+            <field name="group" ref="tax_group_vst"/>
+        </record>
+
+    </data>
+</tryton>
