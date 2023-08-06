@@ -1,0 +1,8 @@
+ansible
+six
+pyyaml
+appdirs
+unidiff
+flake8
+yamllint
+nested-lookup
