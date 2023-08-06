@@ -1,0 +1,3 @@
+include requirements.txt
+include lib/salt_napalm/_runners/*
+include lib/salt_napalm/_roster/*
