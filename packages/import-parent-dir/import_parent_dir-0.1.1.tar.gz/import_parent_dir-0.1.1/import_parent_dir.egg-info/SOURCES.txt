@@ -1,0 +1,7 @@
+README.rst
+setup.py
+import_parent_dir/__init__.py
+import_parent_dir.egg-info/PKG-INFO
+import_parent_dir.egg-info/SOURCES.txt
+import_parent_dir.egg-info/dependency_links.txt
+import_parent_dir.egg-info/top_level.txt

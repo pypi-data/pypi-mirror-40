@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: import-parent-dir
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/fx-kirin/import_parent_dir
+Author: fx-kirin
+Author-email: fx.kirin@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: import_parent_dir
+        =================
+        
+        .. image:: https://img.shields.io/pypi/v/import_parent_dir.svg
+            :target: https://pypi.python.org/pypi/import_parent_dir
+            :alt: Latest PyPI version
+        
+        .. image:: .png
+           :target: 
+           :alt: Latest Travis CI build status
+        
+        
+        
+        Usage
+        -----
+        
+        Installation
+        ------------
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        Compatibility
+        -------------
+        
+        Licence
+        -------
+        
+        Authors
+        -------
+        
+        `import_parent_dir` was written by `fx-kirin <fx.kirin@gmail.com>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
