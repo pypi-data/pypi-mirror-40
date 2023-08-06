@@ -1,0 +1,8 @@
+boto3
+bcrypt
+falcon
+marshmallow
+pyaml
+python-jose
+stairs
+dynaconf
