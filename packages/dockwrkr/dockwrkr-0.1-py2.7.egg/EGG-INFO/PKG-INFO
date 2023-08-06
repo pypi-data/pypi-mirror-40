@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: dockwrkr
+Version: 0.1
+Summary: dockwrkr - docker container launch wrapper
+Home-page: UNKNOWN
+Author: Turbulent/bbeausej
+Author-email: b@turbulent.ca
+License: MIT
+Description: ****************************************
+        dockwrkr, Manage docker containers
+        ****************************************
+        
+Platform: UNKNOWN

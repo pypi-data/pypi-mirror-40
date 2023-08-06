@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+dockwrkr/__init__.py
+dockwrkr.egg-info/PKG-INFO
+dockwrkr.egg-info/SOURCES.txt
+dockwrkr.egg-info/dependency_links.txt
+dockwrkr.egg-info/entry_points.txt
+dockwrkr.egg-info/requires.txt
+dockwrkr.egg-info/top_level.txt
