@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sigproSS
+Version: 0.0.0.1
+Summary: Decomposes mutational catalogues to mutational signatures
+Home-page: https://github.com/AlexandrovLab/SigProfilerExtractor.git
+Author: S Mishu Ashiqul Islam
+Author-email: m0islam@ucsd.edu
+License: UCSD
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: SigProfilerMatrixGenerator
+Requires-Dist: sigProfilerPlotting
+Requires-Dist: sigproextractor
+
+UNKNOWN
+
+
