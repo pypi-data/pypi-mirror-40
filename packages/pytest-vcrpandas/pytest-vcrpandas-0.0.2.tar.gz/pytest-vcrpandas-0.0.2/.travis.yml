@@ -1,0 +1,27 @@
+language: python
+
+python:
+  - '3.6'
+
+install:
+  - pip install -U pip
+  - pip install -r requirements-dev.txt
+  - pip install .
+  - pip freeze
+  - pip install -U pytest
+
+script: pytest tests/test_vcrpandas.py
+
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+
+  user: gjeusel
+  password:
+    secure: hsjQDmtJ96v7G1/0QVujK6ey/oE4protolhzn2COH9k+L97HZb9eaVQNMH2TF99Cv0kRQ5YFlIr8Htmq+Nd+qxR5DEuJTnepXa8s5ks8/qqlhjHaQBIdBUetglIE43MC9ssTAABy0Gs8F5IwHFnEgrP+Qcv+HA2xaeP3NyQGfXIbNxgoHRty5TXDe8z9FAd8vDHH3je+XnXMxDXRhbTdNwJtsfKvuG9qyc2EpMdirBnlAnrJuOrSt61wA0uk/26hfVySdlYBabqPyeByX5UV4KWFj4JUG7ThjCeAqXQLfP8H3MtP4rB7JczzA//btNULtBDC4ttknBMGqrw7nLR/pW57r5xYZ6hNdHOGzL7OhQPX9TEXmNcbLgKuf2RYZvj2G8sEKjTOZQUI4ggZ2a5ESPVUTbklJR4dDa6tzDQJdNiyHM+CE7S9AEH6xDyy6QDdTy5253RJqKnLK158XttpeAhykLHCWHS6vyuQTjVEZnpn8bjFoBZLxn4yIeKANXI0nHEz12lbB1DcQTRNSiN24rslChQ3lHo/S+iUTRTd5YSOi1v+hJbLOizA5GkgYEaArUA4gt3uFoO1J1E9mCcFU4/jPfcWrmgmyF7u1DYbK0QE32JrKndJQohtcgH6r3/6I44SIAwNoJr9DWGt0VEWCmQR+o8vvSfsOnbHCLzGcGI=
+
+  skip_cleanup: true
+
+  on:
+    tags: true
+    branch: master
