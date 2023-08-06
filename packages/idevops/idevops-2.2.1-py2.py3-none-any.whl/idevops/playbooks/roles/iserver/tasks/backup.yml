@@ -1,0 +1,9 @@
+- name: Create backup dir
+  file:
+    path: "{{ data.backup_dir }}"
+    state: directory
+
+- name: Backup storage of node
+  archive:
+    path: "{{ iserver.data }}"
+    dest: "{{ data.backup_dir }}/{{ data.archive }}"

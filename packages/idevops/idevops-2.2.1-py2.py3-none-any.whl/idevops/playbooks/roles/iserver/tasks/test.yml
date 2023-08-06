@@ -1,0 +1,6 @@
+- name: cmd 2th
+  debug:
+    var: inventory_hostname
+
+- debug:
+    var: "'false' if 'master' in {{ group_names }}"
