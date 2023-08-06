@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: FControllerPY
+Version: 0.0.1
+Summary: Container and Front Controller for modules or controllers.
+Home-page: https://github.com/othercodes/fcontroller-py
+Author: Unay Santisteban
+Author-email: usantisteban@othercode.es
+Maintainer: Unay Santisteban
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# FControllerPY
+
+Port of [FController for PHP](https://github.com/othercodes/fcontroller)
+
+FController is a container for controllers/modules. This package allow us to register several controllers/modules that can be
+called in a simply way from a common entry point. In the same way we can register multiple libraries or services. These services 
+or libraries will be available in all modules.
+
+
+
