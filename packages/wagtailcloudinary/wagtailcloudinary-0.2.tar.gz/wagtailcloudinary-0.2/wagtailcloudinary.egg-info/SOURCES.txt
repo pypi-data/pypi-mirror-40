@@ -1,0 +1,14 @@
+README.md
+setup.py
+wagtailcloudinary/__init__.py
+wagtailcloudinary/apps.py
+wagtailcloudinary/blocks.py
+wagtailcloudinary/fields.py
+wagtailcloudinary/sites.py
+wagtailcloudinary.egg-info/PKG-INFO
+wagtailcloudinary.egg-info/SOURCES.txt
+wagtailcloudinary.egg-info/dependency_links.txt
+wagtailcloudinary.egg-info/requires.txt
+wagtailcloudinary.egg-info/top_level.txt
+wagtailcloudinary/templatetags/__init__.py
+wagtailcloudinary/templatetags/wagtailcloudinary.py
