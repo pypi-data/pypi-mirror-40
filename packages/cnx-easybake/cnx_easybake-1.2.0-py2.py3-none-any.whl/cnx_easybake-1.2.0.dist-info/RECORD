@@ -1,0 +1,14 @@
+cnx_easybake-1.2.0.dist-info/METADATA,sha256=HU1X-UbKKp546qsuyQjosHGJCosnzunvQZrO99UCwyM,423
+cnx_easybake-1.2.0.dist-info/RECORD,,
+cnx_easybake-1.2.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+cnx_easybake-1.2.0.dist-info/entry_points.txt,sha256=Ujc8vbhg-K_jdejXXva6B8q6VTzWsPk7Y6gcR_hiF8g,64
+cnx_easybake-1.2.0.dist-info/top_level.txt,sha256=t88W-PRdbsrNlIFYgJcyH3ky_LyU0VTobeeLSAzAwxM,12
+cnxeasybake/__init__.py,sha256=X3hAtI8SGz0QMXT8ZJ_diVo32h5sYMNMYJs5rtp2IZk,405
+cnxeasybake/_version.py,sha256=vpu4JLeJp3uq74W_FdMGf4kVR7RsMgcfbLRFIOBBi44,497
+cnxeasybake/oven.py,sha256=rDXYbIAJhM7P2lLi_VEStSUXVNgu9xpHn-7XLI0kdlY,63046
+cnxeasybake/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cnxeasybake/scripts/main.py,sha256=8L_KzPaTy-0km5iiPGIbiJBVcFQGDBgOGhdwyTXO5Po,3760
+cnxeasybake/tests/__init__.py,sha256=RbBsg4ZEKKBFGwAF6ZLksoJ3t0YVXMGG1fhcq9zRIZg,213
+cnxeasybake/tests/test_cli.py,sha256=Md_nYRVm9XMuJxV06a9iHMCi9jc2I7lLD0mVoyiFxFc,6504
+cnxeasybake/tests/test_oven.py,sha256=cpn3462vMAO-NTI0PXMceNs277BYAchOApkelBSZ1Y0,3602
+cnxeasybake/tests/test_rulesets.py,sha256=PQvYRB__MLT-T0zGJWaVq4h5knGcVs4Ory8l4qu4gaA,3920
