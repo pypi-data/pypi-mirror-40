@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: FFFLaTeX
+Version: 1.1
+Summary: Small scrapper script generating a basic LaTeX article from any FFF blog post. Includes images, videos and tables in the final pdf upon compilation. Compilation on windows will require to install wget on windows. 
+Home-page: https://github.com/helldragger/FactorioFridayFactsLaTeX/releases
+Author: Helldragger
+Author-email: chritopher1223334444@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Factorio LaTeX
+Platform: UNKNOWN
