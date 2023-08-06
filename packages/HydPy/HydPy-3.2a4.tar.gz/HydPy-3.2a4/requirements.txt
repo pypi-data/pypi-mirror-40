@@ -1,0 +1,13 @@
+hydpy
+bokeh
+coverage
+Cython
+matplotlib
+netcdf4
+numpy
+pandas
+setuptools
+scipy
+wheel
+wrapt
+xmlschema
