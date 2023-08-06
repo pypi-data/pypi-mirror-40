@@ -1,0 +1,3 @@
+[console_scripts]
+weibo-photos = weibo_photos.app:cli
+
