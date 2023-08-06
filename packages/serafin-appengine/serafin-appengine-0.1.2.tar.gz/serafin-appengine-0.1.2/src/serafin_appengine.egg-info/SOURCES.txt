@@ -1,0 +1,11 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+src/serafin_appengine/__init__.py
+src/serafin_appengine.egg-info/PKG-INFO
+src/serafin_appengine.egg-info/SOURCES.txt
+src/serafin_appengine.egg-info/dependency_links.txt
+src/serafin_appengine.egg-info/requires.txt
+src/serafin_appengine.egg-info/top_level.txt
