@@ -1,0 +1,9 @@
+
+[doc]
+sphinx
+
+[testing]
+pytest
+pytest-cov
+pytest-icdiff
+pytest-xdist
