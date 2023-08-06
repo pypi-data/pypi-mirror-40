@@ -1,0 +1,14 @@
+GBARPGMaker/GBARPGMaker.py,sha256=bH5sSy7htmY6LHyQUnMgy1icZlu54d3jAx07pEshdlA,11163
+GBARPGMaker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GBARPGMaker/__main__.py,sha256=nF8cRWVwS-VUoH_IrmdguOg5B56TelW-S7gf-KAtHRY,756
+GBARPGMaker/jinja_templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GBARPGMaker/jinja_templates/graphics.c,sha256=SaP3vHXZ9R8F8o7FGisM-VjXpgR9aSCVgAJccRW_h6M,5546
+GBARPGMaker/jinja_templates/graphics.h,sha256=CEQ_alRRMk2JVr1O8yFlHLG7y6gywRBj-IwLfgmCJZk,786
+GBARPGMaker/jinja_templates/imageData.c,sha256=XUvHVFzfnuMIlFaRpo38Xak9li2yjO73r3YutmG77JI,2383
+GBARPGMaker/jinja_templates/imageData.h,sha256=1BOqWRr3ycLThMUsxadFutrL0NnxvWqZZD_dfc8nC9U,1229
+GBARPGMaker/jinja_templates/main.c,sha256=EB7J9zK86rGAzAqwNBGhV7rtGJjHLhh9duM7RWGDV4w,1899
+GBARPGMaker-0.4.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+GBARPGMaker-0.4.dist-info/METADATA,sha256=sMo36_vG2e_-RdcNF5J5fob4nBLWiiPexAYc0mTx-58,223
+GBARPGMaker-0.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+GBARPGMaker-0.4.dist-info/top_level.txt,sha256=0qVWGhdjnSvuSUaYMbOpmwt6a6rqmE0KZaT94vV77gk,12
+GBARPGMaker-0.4.dist-info/RECORD,,
