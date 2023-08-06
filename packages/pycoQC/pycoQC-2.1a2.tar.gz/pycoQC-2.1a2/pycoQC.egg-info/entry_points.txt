@@ -1,0 +1,4 @@
+[console_scripts]
+Fast5_to_seq_summary = pycoQC.cli:main_Fast5_to_seq_summary
+pycoQC = pycoQC.cli:main_pycoQC
+
