@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gp-multistate-kernel
+Version: 0.0.11
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Matwey Kornilov
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: six
+
+UNKNOWN
+
+
