@@ -1,0 +1,10 @@
+etcmaint/__init__.py,sha256=PBOwJQVVQII5apVksNGMGEQEe5ULFR7bNZsqurNMmoM,78
+etcmaint/__main__.py,sha256=Ew_a2OdjXY3i885kI4bu0zzZIrrU-Aks40UTedcGhHY,65
+etcmaint/etcmaint.py,sha256=CpkUk3aGpreQAYaiN7r5FApNJUQL6xakPOHMS8se6NA,47196
+etcmaint/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+etcmaint/tests/test_commands.py,sha256=vfwOpYTRU_FleOdZSMsA276vryiMSActBq8_KTGqjGY,43392
+etcmaint-0.3.dist-info/entry_points.txt,sha256=hdQSwQvjQ4R7kUVSXnQbnjrP5g2y0yg4xw1qnFI83MM,51
+etcmaint-0.3.dist-info/LICENSE,sha256=BYxnNIn4fgI7LUA3ZXRuxWVFXX37zd-Kr6feJIizHQY,1081
+etcmaint-0.3.dist-info/WHEEL,sha256=FiUeJaDw4XYhaBV_yhW-XPenLpAB74w_Lsov4o5LaT8,79
+etcmaint-0.3.dist-info/METADATA,sha256=dalerx4WIw6rTltJ3H2e2gT3-lYgyIzV9pKV1yTqQf4,2176
+etcmaint-0.3.dist-info/RECORD,,

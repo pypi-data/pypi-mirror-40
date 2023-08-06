@@ -1,0 +1,3 @@
+[console_scripts]
+etcmaint=etcmaint.etcmaint:main
+
