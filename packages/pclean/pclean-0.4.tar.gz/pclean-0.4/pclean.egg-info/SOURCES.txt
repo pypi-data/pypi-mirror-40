@@ -1,0 +1,10 @@
+README.md
+setup.py
+pclean/__init__.py
+pclean/pclean.py
+pclean.egg-info/PKG-INFO
+pclean.egg-info/SOURCES.txt
+pclean.egg-info/dependency_links.txt
+pclean.egg-info/entry_points.txt
+pclean.egg-info/requires.txt
+pclean.egg-info/top_level.txt
