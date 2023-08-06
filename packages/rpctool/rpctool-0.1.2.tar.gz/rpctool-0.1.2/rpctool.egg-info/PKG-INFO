@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: rpctool
+Version: 0.1.2
+Summary: Tools for Retail-Product-Checkout-Dataset(RPC)
+Home-page: https://github.com/DIYer22/retail_product_checkout_tools
+Author: DIYer22, Cui Quan, 
+Author-email: ylxx@live.com
+Maintainer: Unknown
+License: UNKNOWN
+Download-URL: https://github.com/DIYer22/retail_product_checkout_tools/archive/master.zip
+Description: Tools for Retail-Product-Checkout-Dataset(RPC)
+        More information on github: https://github.com/DIYer22/retail_product_checkout_tools
+Platform: Windows
+Platform: MacOS
+Platform: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
