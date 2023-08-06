@@ -1,0 +1,14 @@
+README.rst
+setup.py
+microhttp_auth/__init__.py
+microhttp_auth/authenticator.py
+microhttp_auth/principal.py
+microhttp_auth/stateful_authenticator.py
+microhttp_auth.egg-info/PKG-INFO
+microhttp_auth.egg-info/SOURCES.txt
+microhttp_auth.egg-info/dependency_links.txt
+microhttp_auth.egg-info/requires.txt
+microhttp_auth.egg-info/top_level.txt
+microhttp_auth/tests/__init__.py
+microhttp_auth/tests/test_stateful_authenticator.py
+microhttp_auth/tests/test_stateless_authenticator.py
