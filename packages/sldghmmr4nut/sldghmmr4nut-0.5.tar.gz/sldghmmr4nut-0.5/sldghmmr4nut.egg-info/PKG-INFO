@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: sldghmmr4nut
+Version: 0.5
+Summary: txt-spliter wrap of numpy to handle txt
+Home-page: https://github.com/ihgazni2/sldghmmr4nut
+Author: dapeli
+Author-email: terryinzaghi@163.com
+License: MIT
+Description: refer to .md files in https://github.com/ihgazni2/sldghmmr4nut
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python
