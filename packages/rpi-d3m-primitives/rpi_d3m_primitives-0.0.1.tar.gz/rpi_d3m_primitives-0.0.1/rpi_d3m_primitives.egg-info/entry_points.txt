@@ -1,0 +1,11 @@
+[d3m.primitives]
+classification.naive_bayes.RPI = rpi_d3m_primitives.NaiveBayes:NaiveBayes
+classification.tree_augmented_naive_bayes.RPI = rpi_d3m_primitives.TAN:TAN
+feature_selection.identity_parentchildren_markov_blanket.Auto_RPI = rpi_d3m_primitives.IPCMBplus_auto:IPCMBplus_auto
+feature_selection.identity_parentchildren_markov_blanket.Manual_RPI = rpi_d3m_primitives.IPCMBplus:IPCMBplus
+feature_selection.joint_mutual_information.Auto_RPI = rpi_d3m_primitives.JMIplus_auto:JMIplus_auto
+feature_selection.joint_mutual_information.Manual_RPI = rpi_d3m_primitives.JMIplus:JMIplus
+feature_selection.score_based_markov_blanket.RPI = rpi_d3m_primitives.S2TMBplus:S2TMBplus
+feature_selection.simultaneous_markov_blanket.Auto_RPI = rpi_d3m_primitives.STMBplus_auto:STMBplus_auto
+feature_selection.simultaneous_markov_blanket.Manual_RPI = rpi_d3m_primitives.STMBplus:STMBplus
+
