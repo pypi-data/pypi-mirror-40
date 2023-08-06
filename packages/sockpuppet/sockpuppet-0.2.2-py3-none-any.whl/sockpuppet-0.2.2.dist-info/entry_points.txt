@@ -1,0 +1,3 @@
+[console_scripts]
+sockpuppet = sockpuppet.cli:main
+
