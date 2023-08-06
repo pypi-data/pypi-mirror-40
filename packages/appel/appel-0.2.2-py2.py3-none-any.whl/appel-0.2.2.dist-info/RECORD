@@ -1,0 +1,14 @@
+appel/__init__.py,sha256=eyz4Olkb2VHv3Deq8eQ_3gL_6_df6MnRXp_bMtpqNp8,140
+appel/canvas.py,sha256=xspxpi2HNljBzfeiVY_Yz7AtDsCATHkavfyiptSq1qI,2714
+appel/cli.py,sha256=mteVbN9unjh2JLsOAHpmkbSr5rBik4i3GvCsjxAn8YQ,5931
+appel/gradescope.py,sha256=zoKaD0w1dxPPD3_wqJIxz_DOSi8_Bi5zKMQIJmte5yY,1005
+appel/models.py,sha256=eYNCm8IOAIymX664rHgDn1dpMxmKPxtRUncFNvkD4pY,167
+appel/policy.py,sha256=VVIGmRS8h0LETKKSKClr8bPIGP2J_L76SeLskLyy354,739
+appel/spreadsheet.py,sha256=Z-BUrMtKuBiCu2bLZI2LR4RkskHv6B6R2uOyc6dTM5M,3602
+appel-0.2.2.dist-info/AUTHORS.rst,sha256=T4TOAQOZ2NCWIVtj1BLZubaFhHQZz8T4C4Qkl1AoXnM,148
+appel-0.2.2.dist-info/LICENSE,sha256=7-Wms3LM6uLHLybM_xPlRb10WyAWJF0Em8LaJjpiJGM,1069
+appel-0.2.2.dist-info/METADATA,sha256=dGe6ebt8Sbf7j5G4UdfKy2EVdkvTq82VaMvDPz8G2-8,2030
+appel-0.2.2.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+appel-0.2.2.dist-info/entry_points.txt,sha256=zRceEIryGveHS2ZmXmVl-b0mgTCCvD4M0kMtrp58Jgk,41
+appel-0.2.2.dist-info/top_level.txt,sha256=WksLGZ7-V0sgBJojXcXpUT8MqVa_rxxMhy3UtCUwUj8,6
+appel-0.2.2.dist-info/RECORD,,
