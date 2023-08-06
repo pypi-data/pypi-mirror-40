@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: ProcTitle
+Version: 0.1.0
+Summary: Context Manager to set/reset the current process name.
+Home-page: http://pypi.python.org/pypi/ProcTitle/
+Author: Glenn Franxman
+Author-email: gfranxman@gmail.com
+License: LICENSE.txt
+Description: Simple context manager so that tasks can be reflected in the process names of Celery workers.
+        
+        
+        For instance:
+        
+        with ProcTitle("intense task"):
+            do_something_intense()
+        
+        
+        
+        
+Platform: UNKNOWN
