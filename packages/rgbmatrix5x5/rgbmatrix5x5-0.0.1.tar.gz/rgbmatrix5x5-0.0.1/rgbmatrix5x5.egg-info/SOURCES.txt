@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+rgbmatrix5x5/__init__.py
+rgbmatrix5x5/is31fl3731.py
+rgbmatrix5x5.egg-info/PKG-INFO
+rgbmatrix5x5.egg-info/SOURCES.txt
+rgbmatrix5x5.egg-info/dependency_links.txt
+rgbmatrix5x5.egg-info/top_level.txt
