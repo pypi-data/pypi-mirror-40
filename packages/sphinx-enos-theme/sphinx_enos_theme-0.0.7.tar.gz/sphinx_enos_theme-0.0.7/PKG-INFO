@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: sphinx_enos_theme
+Version: 0.0.7
+Summary: ENOS Docs theme for Sphinx
+Home-page: https://github.com/TRoam/sphinx_enos_theme/
+Author: wanfeng tang, enos UED
+Author-email: envisionnanjing@envisioncn.com
+License: MIT
+Description: # sphinx_enos_theme
+        
+Platform: UNKNOWN
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Theme
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
