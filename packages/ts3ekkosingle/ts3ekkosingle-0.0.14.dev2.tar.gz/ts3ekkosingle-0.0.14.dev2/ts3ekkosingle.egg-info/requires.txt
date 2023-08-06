@@ -1,0 +1,17 @@
+ts3query
+SQLAlchemy
+SQLAlchemy-utils
+ts3ekkoutil>=0.0.20
+requests
+python-mpv
+youtube-dl
+PyYAML
+
+[doc]
+sphinx
+sphinx-autobuild
+sphinx_rtd_theme
+
+[test]
+coverage
+alchemy-mock
