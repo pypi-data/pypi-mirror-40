@@ -1,0 +1,10 @@
+README.md
+setup.py
+msbase/__init__.py
+msbase/argparse_.py
+msbase/assert_.py
+msbase/subprocess_.py
+msbase.egg-info/PKG-INFO
+msbase.egg-info/SOURCES.txt
+msbase.egg-info/dependency_links.txt
+msbase.egg-info/top_level.txt
