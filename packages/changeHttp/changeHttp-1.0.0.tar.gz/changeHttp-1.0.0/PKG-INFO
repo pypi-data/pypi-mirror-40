@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: changeHttp
+Version: 1.0.0
+Summary: Convert a http package into a dictionary, you can change the value by changing the function inside the changeHttp class.
+Home-page: https://github.com/windy-purple/changeHttp
+Author: windy_2
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: http cookie
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
