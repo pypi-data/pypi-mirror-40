@@ -1,0 +1,14 @@
+monkeylearn/__init__.py,sha256=F0IRHrV9NJclsqREu_on6p7ZRp7rkKnuhqSp2G8DAnA,1058
+monkeylearn/base.py,sha256=-hQYk5X0lOHIcU8Yv4ug4q-eceGFmFO7cE2oO1p4_vs,2882
+monkeylearn/classification.py,sha256=CXmN3vCkH9qE-oCwbV7Pq3nBNJzt2zUy26dh9cxkxOc,6747
+monkeylearn/exceptions.py,sha256=SnlF0pcyb3aFE0GfAKmZ44bm8GaO5tGZtWRUovVNtSk,2747
+monkeylearn/extraction.py,sha256=_K2rDR1C1gzIKHBNuCw8Vzh0u5lQ2Xa_J9seYZrMRUo,2033
+monkeylearn/response.py,sha256=OX3rLv3PTNANoxMRPzJKzkld8LmWih7DWmtjrQtXAbg,3381
+monkeylearn/settings.py,sha256=4_LqeXJE3jaEInMtR4Zi0FYxV0IcB1yEQe24zqQMPIg,205
+monkeylearn/validation.py,sha256=6IaCe2EaX1BEBE3NVdFbJoDpiM0ernJ8mVIvz4BCHHc,2400
+monkeylearn/workflows.py,sha256=O95JsrXqMunzpclno1S2W17bPRScYOaBFa65kwnPTEA,3963
+monkeylearn-3.2.4.dist-info/LICENSE.txt,sha256=uSNEUARWAbtaVC4TYius6gaJsDpojzU4pQGD6SpaN1Y,1069
+monkeylearn-3.2.4.dist-info/METADATA,sha256=APhaB2vLbyrxzFoBlGjxqEJS2QOyvWu-jQRX3RvVCfc,29665
+monkeylearn-3.2.4.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+monkeylearn-3.2.4.dist-info/top_level.txt,sha256=VyGjEfet_zI5Df3wa2POpIi31T9Uw_lcq-piYOMwDQo,12
+monkeylearn-3.2.4.dist-info/RECORD,,
