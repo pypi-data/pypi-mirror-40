@@ -1,0 +1,1 @@
+ pip install ./third_lib/TA_Lib-0.4.17-cp36-cp36m-win_amd64.whl
