@@ -1,0 +1,17 @@
+gwdatafind/__init__.py,sha256=RD9DVv6VAnPBpiNJvCJecdfv4AhARlZVM4rNm2eWW0A,1673
+gwdatafind/__main__.py,sha256=jU4v31q_Nr0oqX086ERs_3IXSKzwENoSGLwqa7jfPeM,16794
+gwdatafind/conftest.py,sha256=l3bV8hNys1E1onMKmDQPP9HlmgGvcZ-7-0BVqlcEMvo,907
+gwdatafind/http.py,sha256=MN6B8mYe9o_TREnHAHDR0fMKOOG4HbPLzSW6cbHqTZ4,14574
+gwdatafind/ui.py,sha256=kvi2Ry-VlIZaCB2wMSi0l8Bk9jHFCE_OzXvxOAjLqxw,2992
+gwdatafind/utils.py,sha256=lra0W_dvRa9_WOdLbCP2-BcbL8u9ED31PR2o9IlewzM,5651
+gwdatafind/tests/__init__.py,sha256=QPYyPi1bPOQQ9vE0DkR_TgkbQDKqJBJpPFG_ldwQKJo,816
+gwdatafind/tests/conftest.py,sha256=bEXsoY0T5tH2LPcX5cHKxmEmLSNb1ffU_Iib8zQuok0,1756
+gwdatafind/tests/test_http.py,sha256=SSXHkUF972F7Zj4_Zefh6cxtKQ8KZ2V9JmTOhyAGmDo,7141
+gwdatafind/tests/test_main.py,sha256=GTkKmM4_4auleoP6NPawt6zGo9GHNK_dSnhctmz6VoE,10253
+gwdatafind/tests/test_ui.py,sha256=IePeRCzm2P75dRoLJKZt-x4Cz2NPFCUjnl9KZ6zzmJA,2264
+gwdatafind/tests/test_utils.py,sha256=c5Hyngkf-7f-42gy-ONcMiI4uTo0ccWYIZUGKvBkrng,3917
+gwdatafind-1.0.3.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+gwdatafind-1.0.3.dist-info/METADATA,sha256=YYVio9bbDG09_83Qx2frHyBEimvlHNi5WXSf42kJEVA,2880
+gwdatafind-1.0.3.dist-info/WHEEL,sha256=CihQvCnsGZQBGAHLEUMf0IdA4fRduS_NBUTMgCTtvPM,110
+gwdatafind-1.0.3.dist-info/top_level.txt,sha256=AynmKky9K_3MY2AoJIOuk5--MiWuCS2SIPw2Xk1lnME,11
+gwdatafind-1.0.3.dist-info/RECORD,,
