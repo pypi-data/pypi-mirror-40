@@ -1,0 +1,14 @@
+desktop.ini,sha256=jOW55Fdq6g4jS7ho9cxEpi0vbGDiTBVqXlJhNYodkR0,136
+LiquPy-0.13.1.dist-info/DESCRIPTION.rst,sha256=ShPAz_1A0iGX176JERfTYCIqbCMg25cc2SMOyM6xIoo,79
+LiquPy-0.13.1.dist-info/METADATA,sha256=GrQeLZjbweEg10Hh6VovjMT6i4i3VPb4oJjSY0DvXRw,465
+LiquPy-0.13.1.dist-info/RECORD,,
+LiquPy-0.13.1.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+LiquPy-0.13.1.dist-info/desktop.ini,sha256=jOW55Fdq6g4jS7ho9cxEpi0vbGDiTBVqXlJhNYodkR0,136
+LiquPy-0.13.1.dist-info/metadata.json,sha256=Fwnz3omyWOXiEdVadmMTr1E0RkxIkxKA3ux9XmiZXKc,572
+LiquPy-0.13.1.dist-info/top_level.txt,sha256=6lKQI4Zr-WFw-cQCeAI1o-H6FYiISi3H-05ZV_ytcMw,7
+liqupy/__init__.py,sha256=klQzMOz-wcdLV9BGwhZ5OiqMaaRGgQXpRS6GbJlnA4c,448
+liqupy/boreholes.py,sha256=yGuitnUgvO9A9GJQRa1G9RaXGe5UJwNFuCT6ydDa7jc,22107
+liqupy/desktop.ini,sha256=jOW55Fdq6g4jS7ho9cxEpi0vbGDiTBVqXlJhNYodkR0,136
+liqupy/points.py,sha256=xaQcQ3bZ2M4yI1c_rvOvWZqEJL9UFuTCHYtU3TD0lOA,13699
+liqupy/default_datasets/__init__.py,sha256=-0SouEofzlYjCrddfaaVAEzbIxviyN5CbZvClZbrLPs,476
+liqupy/default_datasets/base.py,sha256=sqhR3RlRwscF3OIY1FAPyK_RDiUNyvXJlezOta5yPBY,864
