@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: djangoldp-circle
+Version: 0.0.4
+Summary: djangoldp package for circle data models
+Home-page: https://git.happy-dev.fr/startinblox/djangoldp-packages/djangoldp-circle
+Author: Startin'blox
+Author-email: nicolas@happy-dev.fr
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: djangoldp (~=0.5)
+Requires-Dist: djangoldp-account (~=0.0)
+
+UNKNOWN
+
+
