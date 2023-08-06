@@ -1,0 +1,12 @@
+setup.py
+PLC/AudioTools.py
+PLC/DatabaseTools.py
+PLC/FilmTools.py
+PLC/TextToVoiceApi.py
+PLC/TextTools.py
+PLC/Tools.py
+PLC/__init__.py
+PLC.egg-info/PKG-INFO
+PLC.egg-info/SOURCES.txt
+PLC.egg-info/dependency_links.txt
+PLC.egg-info/top_level.txt
