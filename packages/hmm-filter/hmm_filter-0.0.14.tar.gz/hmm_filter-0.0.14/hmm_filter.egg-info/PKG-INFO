@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: hmm-filter
+Version: 0.0.14
+Summary: Improve classifier predictions for sequential data with Hidden Markov Models (HMMs).
+Home-page: https://github.com/minodes/hmm_filter
+Author: Michele Dallachiesa
+Author-email: michele.dallachiesa@minodes.com
+License: MIT
+Description: Improve classifier predictions for sequential data with Hidden Markov Models (HMMs).
+        The online documentation is accessible at `<https://github.com/minodes/hmm_filter>`_.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.4
