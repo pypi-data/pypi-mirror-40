@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/xfoil/__init__.py
+src/xfoil/model.py
+src/xfoil/test.py
+src/xfoil/xfoil.py
+src/xfoil.egg-info/PKG-INFO
+src/xfoil.egg-info/SOURCES.txt
+src/xfoil.egg-info/dependency_links.txt
+src/xfoil.egg-info/requires.txt
+src/xfoil.egg-info/top_level.txt
