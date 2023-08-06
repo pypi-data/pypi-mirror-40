@@ -1,0 +1,13 @@
+include virtualenv.py
+recursive-include virtualenv_support *.whl
+recursive-include virtualenv_embedded *
+include virtualenv_support/__init__.py
+include pyproject.toml
+
+include AUTHORS.txt
+include LICENSE.txt
+
+recursive-include tests *
+recursive-include docs *
+include tasks/*
+include tox.ini
