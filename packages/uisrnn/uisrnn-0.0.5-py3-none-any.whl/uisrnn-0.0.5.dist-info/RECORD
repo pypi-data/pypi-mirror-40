@@ -1,0 +1,11 @@
+uisrnn/__init__.py,sha256=BIsYCw8ZXu57C97U3ViVzo1VYSPwOOy2zOIPeoNsr5M,959
+uisrnn/arguments.py,sha256=RCZFIqEUmtQfXeoTv2kEppG5ptUYZW6VA6maT7sSY-Y,6763
+uisrnn/evals.py,sha256=yHrI0_MqIEb7P7WQJTaz7Qm6Xj27JSBzEK78m7PyPd0,2518
+uisrnn/loss_func.py,sha256=pHNPhL_4z9LVBtaPveCHmoliBar2S5X_TYeRc7P330g,2386
+uisrnn/uisrnn.py,sha256=4qsKZ31HfUJ_3iqEeP_6-BV8Qnx0nM-_dvprUnmnRBI,22064
+uisrnn/utils.py,sha256=iRsijdiJtPpwSovNID4Q4xO9es8-yq9cl_JosxoKGD4,10964
+uisrnn-0.0.5.dist-info/LICENSE,sha256=H3ntYrZ6ln9kmidytVLGzjMpDqfVMVhqfLybDtko4RU,552
+uisrnn-0.0.5.dist-info/METADATA,sha256=PpE5IsNCTb_hsX15MWFpxTtRrgazut3Dn4XZ1KTEm-0,9767
+uisrnn-0.0.5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+uisrnn-0.0.5.dist-info/top_level.txt,sha256=K0n8kqDGHQR7GNrNF32HK4RyoRCBDRo620I9NP6Ix2U,7
+uisrnn-0.0.5.dist-info/RECORD,,
