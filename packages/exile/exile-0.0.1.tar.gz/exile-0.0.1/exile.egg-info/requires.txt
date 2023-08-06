@@ -1,0 +1,6 @@
+libusb1
+
+[test]
+coverage
+flake8
+wheel

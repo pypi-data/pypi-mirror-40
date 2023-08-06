@@ -1,0 +1,8 @@
+README.rst
+setup.py
+exile/__init__.py
+exile.egg-info/PKG-INFO
+exile.egg-info/SOURCES.txt
+exile.egg-info/dependency_links.txt
+exile.egg-info/requires.txt
+exile.egg-info/top_level.txt
