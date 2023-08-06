@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+bst.py
+setup.py
+bst.egg-info/PKG-INFO
+bst.egg-info/SOURCES.txt
+bst.egg-info/dependency_links.txt
+bst.egg-info/top_level.txt
