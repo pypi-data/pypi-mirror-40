@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: redis-log-handler
+Version: 0.0.1.dev9
+Summary: A log handler for the Python logging module, emitting all logs to specific Redis channels
+Home-page: UNKNOWN
+Author: See AUTHORS
+Author-email: contact@adimian.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: redis (==3.0.1)
+
+# redis-log-handler
+Handler for the std logging module which puts logs through to Redis.
+
+## How to use
+Each handler needs a channel name, and where needed a specified port, password or host.  
+Handlers open a connection to a channel, so they need to be closed after use or the channel will continue to exist.
+
+Logging can be configured globally:
+```python
+    log_handler = RedisLogHandler('ch:channel')
+    logging.basicConfig(handlers=(log_handler,), level=logging.INFO)
+    logging.info('Test-message on channel.')
+
+    log_handler.close()
+```
+
+Or as a specific standalone logger:
+```python
+    log_handler = RedisLogHandler('ch:channel')
+    logger = logging.getLogger('name')
+    logger.addHandler(log_handler)
+    logger.setLevel('WARNING')
+
+    logger.warning('Warning message')
+
+    log_handler.close()
+```
+
+
+
