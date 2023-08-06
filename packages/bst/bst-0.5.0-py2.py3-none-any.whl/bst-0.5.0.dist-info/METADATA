@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: bst
+Version: 0.5.0
+Summary: A binary search tree implemented for learning purposes.
+Home-page: https://github.com/rgilbert1/bst
+Author: Ryan Gilbert
+Author-email: ryangilbert7926@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# bst
+[![Build Status](https://travis-ci.org/rgilbert1/bst.svg?branch=master)](https://travis-ci.org/rgilbert1/bst)
+
+In school, I struggled with how binary search trees (and related data structures & algorithms) work, but now with a little more programming experience under my belt I decided to work through implementing one. It currently has insert, search, and traversal functionality.
+
+## Install
+
+```
+pip install bst
+```
+
+## Usage
+
+```python
+from bst import BST
+
+bst = BST()
+bst.insert(5)
+node = bst.search(5)  # <bst.Node object at 0x1060964e0>
+node.value  # 5
+```
+
+## Development
+
+The only dependency is `nose`, it's used to automatically run all of the unit tests in `tests/`. Install dependencies with `pip install -r requirements.txt`, and run the tests with `nosetests -v`.
+
+
