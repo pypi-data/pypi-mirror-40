@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sklearn-dummies
+Version: 0.3
+Summary: Scikit-learn label binarizer with support for missing values
+Home-page: https://github.com/gsmafra/sklearn-dummies
+Author: Gustavo Sena Mafra
+Author-email: gsenamafra@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
