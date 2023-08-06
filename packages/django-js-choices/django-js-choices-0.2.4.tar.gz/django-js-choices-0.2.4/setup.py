@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+from distutils.core import setup
+
+packages = \
+['django_js_choices',
+ 'django_js_choices.management',
+ 'django_js_choices.management.commands',
+ 'django_js_choices.templatetags']
+
+package_data = \
+{'': ['*'], 'django_js_choices': ['templates/django_js_choices/*']}
+
+install_requires = \
+['django>=1.5,<3.0']
+
+setup_kwargs = {
+    'name': 'django-js-choices',
+    'version': '0.2.4',
+    'description': 'Javascript model field choices handling for Django.',
+    'long_description': 'django-js-choices\n=================\n\n.. image:: https://img.shields.io/badge/packaging-poetry-purple.svg\n   :alt: Packaging: poetry\n   :target: https://github.com/sdispater/poetry\n\n.. image:: https://img.shields.io/badge/code%20style-black-black.svg\n   :alt: Code style: black\n   :target: https://github.com/ambv/black\n\nOverview\n--------\n\nDjango JS Choices is a small Django app that makes handling of\n`model field choices`_ in javascript easy.\n\n.. _model field choices: https://docs.djangoproject.com/en/dev/ref/models/fields.html#django.db.models.Field.choices\n\nFor example, given the model...\n\n.. code-block:: python\n\n    # models.py:\n\n    class Student(models.Model):\n        FRESHMAN = \'FR\'\n        SOPHOMORE = \'SO\'\n        JUNIOR = \'JR\'\n        SENIOR = \'SR\'\n        YEAR_IN_SCHOOL_CHOICES = (\n            (FRESHMAN, \'Freshman\'),\n            (SOPHOMORE, \'Sophomore\'),\n            (JUNIOR, \'Junior\'),\n            (SENIOR, \'Senior\'),\n        )\n        year_in_school = models.CharField(\n            max_length=2,\n            choices=YEAR_IN_SCHOOL_CHOICES,\n            default=FRESHMAN,\n        )\n\n...the choices are accesible in javascript.\n\n.. code-block:: javascript\n\n    Choices.pairs("year_in_school");\n\nResult:\n\n.. code-block:: javascript\n\n    [\n        {value: "FR", label: "Freshman"},\n        {value: "SO", label: "Sophomore"},\n        {value: "JR", label: "Junior"},\n        {value: "SR", label: "Senior"}\n    ]\n\nDisplay values are also accesible.\n\n.. code-block:: javascript\n\n    Choices.display("year_in_school", "FR")\n    Choices.display("year_in_school", {"year_in_school": "FR"})\n\nIn both cases the result is\n\n.. code-block:: javascript\n\n    "Freshman"\n\n\nRequirements\n------------\n\n-  Python (2.7+, 3.5+)\n-  Django (1.5+)\n\n\nInstallation\n------------\n\nInstall using ``pip``...\n\n.. code-block:: bash\n\n    pip install django-js-choices\n\n...or clone the project from GitHub.\n\n.. code-block:: bash\n\n    git clone https://github.com/lorinkoz/django-js-choices.git\n\nAdd ``\'django_js_choices\'`` to your ``INSTALLED_APPS`` setting.\n\n.. code-block:: python\n\n    INSTALLED_APPS = (\n        ...\n        \'django_js_choices\',\n    )\n\n\nUsage as static file\n--------------------\n\nFirst generate static file by\n\n.. code-block:: bash\n\n    python manage.py collectstatic_js_choices\n\nIf you add apps, models, or change some existing choices,\nyou may update the choices.js file by running the command again.\n\nThe choices files is always created with a locale prefix: ``choices-en-us.js``\nbut you can pass any locale to the command...\n\n.. code-block:: bash\n\n    python manage.py collectstatic_js_choices --locale es\n\n...and the generated file will be ``choices-es.js``\n\nAfter this add the file to your template.\n\n.. code-block:: html\n\n    <script src="{% static \'django_js_choices/js/choices-es.js\' %}"></script>\n\n\nUsage with views\n----------------\n\nInclude non-cached view...\n\n.. code-block:: python\n\n    from django_js_choices.views import choices_js\n    urlpatterns = [\n        url(r\'^jschoices/$\', choices_js, name=\'js_choices\'),\n    ]\n\n...or use cache to save some bandwith.\n\n.. code-block:: python\n\n    from django_js_choices.views import choices_js\n\n    urlpatterns = [\n        url(r\'^jschoices/$\', cache_page(3600)(choices_js), name=\'js_choices\'),\n    ]\n\nInclude javascript in your template.\n\n.. code-block:: html\n\n    <script src="{% url \'js_choices\' %}" type="text/javascript"></script>\n\n\nUsage as template tag\n---------------------\n\nIf you want to generate the javascript code inline, use the template tag.\n\n.. code-block:: html\n\n    {% load js_choices %}\n    <script type="text/javascript" charset="utf-8">\n        {% js_choices_inline %}\n    </script>\n\n\nUse the choices in javascript\n-----------------------------\n\nFor every model field with choices, they will be available by the following\nnames.\n\n.. code-block:: javascript\n\n    Choices.pairs("<app_label>_<model_name>_<field_name>")\n    Choices.pairs("<model_name>_<field_name>")\n    Choices.pairs("<field_name>")\n\nIf any of these names conflict with other model fields,\nthe conflicting names won\'t be accessible to prevent ambiguity.\n\n\nOptions\n-------\n\nOptionally, you can overwrite the default javascript variable \'Choices\' used\nto access the choices by Django setting.\n\n.. code-block:: python\n\n    JS_CHOICES_JS_VAR_NAME = \'Choices\'\n\nOptionally, you can change the name of the global object the javascript\nvariable used to access the choices is attached to. Default is ``this``.\n\n.. code-block:: python\n\n    JS_CHOICES_JS_GLOBAL_OBJECT_NAME = \'window\'\n\nOptionally, you can disable the minfication of the generated javascript file\nby Django setting.\n\n.. code-block:: python\n\n    JS_CHOICES_JS_MINIFY = False\n\nBy default collectstatic_js_choices writes its output (`choices-en-us.js`)\nto your project\'s `STATIC_ROOT`, but you can change the output path.\n\n.. code-block:: python\n\n    JS_CHOICES_OUTPUT_PATH = \'some/other/path\'\n\n\nRunning the test suite\n----------------------\n\nNOT YET AVAILABLE\n\n\nCredits\n-------\n\nInspired by (and conceptually forked from)\n`django-js-reverse <https://github.com/ierror/django-js-reverse>`_\n',
+    'author': 'Lorenzo Peña',
+    'author_email': 'lorinkoz@gmail.com',
+    'url': 'https://github.com/lorinkoz/django-js-choices',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*',
+}
+
+
+setup(**setup_kwargs)
