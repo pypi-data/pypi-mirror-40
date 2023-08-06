@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+doc/logo.png
+pylivestream/__init__.py
+pylivestream/ffmpeg.py
+pylivestream/stream.py
+pylivestream/utils.py
+pylivestream.egg-info/PKG-INFO
+pylivestream.egg-info/SOURCES.txt
+pylivestream.egg-info/dependency_links.txt
+pylivestream.egg-info/entry_points.txt
+pylivestream.egg-info/requires.txt
+pylivestream.egg-info/top_level.txt
