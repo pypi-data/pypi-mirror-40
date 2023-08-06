@@ -1,0 +1,3 @@
+[console_scripts]
+charm = charmer.__main__:main
+
