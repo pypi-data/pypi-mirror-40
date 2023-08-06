@@ -1,0 +1,10 @@
+six
+execnet
+contextlib2
+pytest<4.0.0
+path.py
+mock
+termcolor
+
+[tests]
+pytest
