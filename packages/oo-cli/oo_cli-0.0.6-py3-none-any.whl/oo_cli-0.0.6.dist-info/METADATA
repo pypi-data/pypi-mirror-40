@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: oo-cli
+Version: 0.0.6
+Summary: Object Oriented CLI
+Home-page: https://github.com/enigma0Z/python-object-oriented-cli.git
+Author: Johnathan Bell
+Author-email: enigma.0Z@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# Python Object Oriented CLI Library
+
+Full documentation here: https://enigma0z.github.io/python-object-oriented-cli/
+
+## Quickstart
+
+```
+pip install oo-cli
+```
+
+Example code:
+```
+from oocli import base, interpreter, entrypoint
+
+# do things here ...
+```
+
+
