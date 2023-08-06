@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: papero
+Version: 0.1.2
+Summary: Python's Apero
+Home-page: https://github.com/atolab/papero
+Author: kydos
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: System :: Networking
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+
+
