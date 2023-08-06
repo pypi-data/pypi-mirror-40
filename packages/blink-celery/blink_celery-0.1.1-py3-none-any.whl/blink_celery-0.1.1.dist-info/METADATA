@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: blink-celery
+Version: 0.1.1
+Summary: Library to create/execute celery tasks for blink cameras
+Home-page: UNKNOWN
+Author: Daniel Munoz
+Author-email: dmunozg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: blink-cameras
+Requires-Dist: celery
+
+# blink-celery
+Library used to create/execute tasks to download videos captured with blink cameras - combines celery and blink libraries
+
+
