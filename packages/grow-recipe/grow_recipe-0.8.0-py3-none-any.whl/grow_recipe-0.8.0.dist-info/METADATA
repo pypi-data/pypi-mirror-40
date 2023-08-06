@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: grow-recipe
+Version: 0.8.0
+Summary: Store plant grow recipes in a structured XML format
+Home-page: UNKNOWN
+Author: Jason Biegel
+Author-email: UNKNOWN
+License: LICENSE
+Platform: UNKNOWN
+Requires-Dist: lxml (==4.1.1)
+
+UNKNOWN
+
+
