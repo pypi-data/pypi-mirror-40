@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mopidytermart
+Version: 0.1
+Summary: Display mopidy album art in the terminal
+Home-page: https://github.com/sharktamer/mopidytermart
+Author: Shane Donohoe
+Author-email: donohoe.shane@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: ueberzug
+Requires-Dist: python-mpd2
+Requires-Dist: mopidyartfetch
+
+# mopidy-term-art
+
+Display mopidy album art in the terminal
+
+Detailed info to come.
+
+Currently manages downsizing covers fine but has problems upscaling.
+
+
