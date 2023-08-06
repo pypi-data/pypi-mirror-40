@@ -1,0 +1,16 @@
+statbank/__init__.py,sha256=q1xwW1bBaRw7AG54xUwnGsSBQdQPJtgD0AykBpjpk_w,2523
+statbank/config.py,sha256=0aagymr4_lyyXZzXP-350A9C1wTi32_r7lZzwphdu18,145
+statbank/error.py,sha256=2SCQLbw1RkpleMJ0ax1dUZXd3vhpxaFhLbYD4EmsJf8,180
+statbank/request.py,sha256=IIwv3EF_N3vY2VeQdd5Zie2-SWyHUPGnpbYp9sf4bqI,2331
+statbank/resources.py,sha256=xOixJxCo98d0K0bHdU4HV_F05fy7smvdSOx14GPNpsU,2896
+statbank/time.py,sha256=LA1wQT3GADosqztcs7anGNZlOpbPZup_G_U5VRZCa-I,3339
+statbank/url.py,sha256=GJJK4krURj495wn6VW8J1TdyhXZyziKLepzCac1veEg,1250
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_service.py,sha256=Uc988LMvQiBEMxiTCalJeoYTuh6fM2Zk0545rCFupFo,398
+tests/test_time.py,sha256=SwR1wXW3OK5U4J6Ky3zOnag4wj0n0QEDfMPdwZ_B5Us,3177
+tests/test_url.py,sha256=LBhxy0-rf9Zgacereg4VLrQCuFPuLll4TeNZ0WjVeus,823
+statbank-1.0.0.dist-info/LICENSE,sha256=iN3BIY9izOroE_iHZCdcGL_WWN-Ku99MyVjQq9OUFAc,1081
+statbank-1.0.0.dist-info/METADATA,sha256=RJaaLxV9gnC2JeEGJXVvLtkxB1mIYCyDO6enlu56UAw,1911
+statbank-1.0.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+statbank-1.0.0.dist-info/top_level.txt,sha256=pr0G8VIngSsAQHxXz3nfCuLe2-mrIJ9nRsIqBkFYvkY,15
+statbank-1.0.0.dist-info/RECORD,,
