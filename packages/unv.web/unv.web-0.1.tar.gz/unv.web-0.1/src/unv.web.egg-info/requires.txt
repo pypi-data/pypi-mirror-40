@@ -1,0 +1,4 @@
+aiohttp
+uvloop
+ujson
+unv.app==0.1.2
