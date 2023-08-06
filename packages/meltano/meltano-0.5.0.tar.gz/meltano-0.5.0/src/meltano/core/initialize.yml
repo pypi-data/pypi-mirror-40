@@ -1,0 +1,158 @@
+"requirements.txt": requirements go here... publish meltano on pypi first.
+"meltano.yml": ''
+"README.md": ''
+".env": |
+  export PG_PASSWORD=warehouse
+  export PG_USERNAME=warehouse
+  export PG_ADDRESS=localhost
+  export PG_SCHEMA=gitlab
+  export PG_PORT=5502
+  export PG_DATABASE=warehouse
+".gitignore": |
+  /venv
+  /.meltano
+  .env
+"/.meltano": []
+"docker-compose.yml": |
+  version: '3.1'
+  services: 
+    warehouse_db:
+      image: postgres
+      environment:
+        POSTGRES_DB: warehouse
+        POSTGRES_PASSWORD: warehouse
+        POSTGRES_USER: warehouse
+      ports:
+      - '5502:5432'
+"/model": []
+"model/carbon.model.ma": |
+  {
+    version = 1
+    name = carbon
+    # Postgres DB
+    connection = runners_db
+    label = carbon intensity
+    explores {
+      region {
+        from = region
+        label = region
+        description = Region Carbon Intensity Data
+        joins {
+          entry {
+            fields = [entry.from, entry.to]
+            sql_on = "{{ region.id }} = {{ entry.region_id }}"
+            relationship = one_to_one
+          }
+        }
+      }
+    }
+  }
+"model/entry.view.ma": |
+  {
+    sql_table_name = gitlab.entry
+    dimensions {
+      id {
+        primary_key = yes
+        hidden = yes
+        type = string
+        sql = "{{table}}.id"
+      }
+      region_id {
+        hidden = yes
+        type = string
+        sql = "{{table}}.id"
+      }
+    }
+    dimension_groups {
+      from {
+        description = Selected from range in carbon data
+        type = time
+        timeframes = [date, week, month, year]
+        convert_tz = no
+        sql = "{{TABLE}}.from"
+      }
+      to {
+        description = Selected to range in carbon data
+        type = time
+        timeframes = [date, week, month, year]
+        convert_tz = no
+        sql = "{{TABLE}}.to"
+      }
+    }
+  }
+"model/region.view.ma": |
+  {
+    sql_table_name = gitlab.region
+    dimensions {
+      id {
+        primary_key = true
+        hidden = true
+        type = string
+        sql = "{{table}}.id"
+      }
+      name {
+        description = Carbon region long name
+        type = string
+        sql = "{{table}}.dnoregion"
+      }
+      short_name {
+        description: Carbon region short name
+        type: string
+        sql: "{{table}}.shortname"
+      }
+    }
+    measures {
+      count {
+        description: Runner Count
+        type: count
+        sql: "{{table}}.id"
+      }
+    }
+  }
+"/extract": []
+"/load": []
+"/transform": []
+"transform/dbt_project.yml": |
+  # Name your package! Package names should contain only lowercase characters
+  # and underscores. A good package name should reflect your organization's
+  # name or the intended use of these models
+  name: 'my_meltano_project'
+  version: '1.0'
+  # This setting configures which "profile" dbt uses for this project. Profiles contain
+  # database connection information, and should be configured in the  ~/.dbt/profiles.yml file
+  profile: 'meltano'
+  # These configurations specify where dbt should look for different types of files.
+  # The `source-paths` config, for example, states that source models can be found
+  # in the "models/" directory. You probably won't need to change these!
+  source-paths: ["models"]
+  analysis-paths: ["analysis"]
+  test-paths: ["tests"]
+  data-paths: ["data"]
+  macro-paths: ["macros"]
+  target-path: "../.meltano/transformers/dbt/target"  # directory which will store compiled SQL files
+  clean-targets:         # directories to be removed by `dbt clean`
+      - "../.meltano/transformers/dbt/target"
+      - "dbt_modules"
+  models:
+    my_meltano_project:
+      enabled: true
+"/transform/profile": []
+"transform/profile/profiles.yml": |
+  config:
+    send_anonymous_usage_stats: False
+    use_colors: True
+  meltano:
+    target: postgres
+    outputs:
+      postgres:
+        type: postgres
+        threads: 2
+        host: "{{ env_var('PG_ADDRESS') }}"
+        port: "{{ env_var('PG_PORT') }}"
+        user: "{{ env_var('PG_USERNAME') }}"
+        pass: "{{ env_var('PG_PASSWORD') }}"
+        dbname: "{{ env_var('PG_DATABASE') }}"
+        schema: "{{ env_var('PG_SCHEMA') }}"
+"/analyze": []
+"/notebook": []
+"/orchestrate": []
