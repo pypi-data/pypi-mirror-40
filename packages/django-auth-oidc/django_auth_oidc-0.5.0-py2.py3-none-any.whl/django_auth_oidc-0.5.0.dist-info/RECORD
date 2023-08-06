@@ -1,0 +1,11 @@
+django_auth_oidc/__init__.py,sha256=Hw_95DCKNwqATu2VOu5vhwoyI1J1R_zcXYROU_I3AoQ,241
+django_auth_oidc/auth.py,sha256=zY1bH6ByFP3UM21hbdf6K8elAsYxBtEx6Y73sp7LnqY,319
+django_auth_oidc/urls.py,sha256=SmvsXXyCdwwZ6WL-gJcGzKp8-vhVu2VDdyAzTscDHS0,244
+django_auth_oidc/views.py,sha256=KG9Yqqxz-zG6JX48N0GbNMdvC9cF8CcHgYNda4U6jZY,2471
+django_auth_oidc-0.5.0.dist-info/LICENSE,sha256=pRu_JIF1eSeE9RrvLfi0acW6Qc6W1oP19CC_528LelE,1059
+django_auth_oidc-0.5.0.dist-info/LICENSE.BSD,sha256=IGrDBwSIj06CCfGInAAwVIrnNsRCyJUCRDYM9YKiIfE,1272
+django_auth_oidc-0.5.0.dist-info/METADATA,sha256=MFBPLZtjTW-RN379le18p661zRC57_xx4mi47wvNqbg,3772
+django_auth_oidc-0.5.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+django_auth_oidc-0.5.0.dist-info/top_level.txt,sha256=JUWBG9H33Lro6bsirz_P3pEChQdwvdc2d8D4ZaimJig,17
+django_auth_oidc-0.5.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_auth_oidc-0.5.0.dist-info/RECORD,,
