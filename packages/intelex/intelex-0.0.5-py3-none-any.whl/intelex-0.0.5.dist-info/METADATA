@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: intelex
+Version: 0.0.5
+Summary: Intelex SDK
+Home-page: https://github.com/thomassampson/intelex_sdk
+Author: Thomas Sampson
+Author-email: sampsont91@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+[![Build Status](https://travis-ci.org/thomassampson/intelex_sdk.svg?branch=master)](https://travis-ci.org/thomassampson/intelex_sdk) [![PyPI version](https://badge.fury.io/py/intelex.svg)](https://badge.fury.io/py/intelex)
+
+# Intelex Python SDK
+
+## Installation
+
+```python
+pip install intelex
+```
+
+## USAGE
+
+```python
+import intelex
+
+# Get current SDK version
+intelex.get_version()
+```
+
