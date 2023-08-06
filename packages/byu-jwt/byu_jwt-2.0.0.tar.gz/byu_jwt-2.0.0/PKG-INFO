@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: byu-jwt
+Version: 2.0.0
+Summary: 
+Home-page: https://github.com/byu-oit/byu-jwt-python
+Author: Nate Peterson
+Author-email: nate_peterson@byu.edu
+Requires-Python: >=3.4,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: cryptography (>=2.4,<3.0)
+Requires-Dist: pyjwt (>=1.7,<2.0)
+Requires-Dist: requests (>=2.21,<3.0)
+Project-URL: Repository, https://github.com/byu-oit/byu-jwt-python
