@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: arivo.om
+Version: 0.2.16
+Summary: Util functions for om docker containers
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: GPL-3
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: six
+Requires-Dist: related
+Requires-Dist: enum34
+
+VERSION=0.2.16
+GIT_BRANCH=master
+GIT_COMMIT=770cefb7719b3c0fb8abd6c98ad8b591548967a8
+GIT_COMMIT_SHORT=770cefb7
+
