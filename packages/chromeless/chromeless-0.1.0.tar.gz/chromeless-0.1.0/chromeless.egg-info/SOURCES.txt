@@ -1,0 +1,8 @@
+setup.py
+chromeless/__init__.py
+chromeless/dump_code.py
+chromeless.egg-info/PKG-INFO
+chromeless.egg-info/SOURCES.txt
+chromeless.egg-info/dependency_links.txt
+chromeless.egg-info/requires.txt
+chromeless.egg-info/top_level.txt
