@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="acutecmb.cap" format="2">
+  <anchor x="0.0" y="690.629746835443" name="_aboveUC"/>
+  <outline>
+    <contour>
+      <point x="-67.36" y="745.3" type="curve" name="hintSet0000"/>
+      <point x="-48.82" y="720.44" type="line"/>
+      <point x="-7.21" y="741.56"/>
+      <point x="35.33" y="764.52"/>
+      <point x="76.99" y="787.56" type="curve"/>
+      <point x="114.56" y="808.56"/>
+      <point x="127.36" y="825.09"/>
+      <point x="127.36" y="843.14" type="curve"/>
+      <point x="127.36" y="863.47"/>
+      <point x="110.03" y="877.16"/>
+      <point x="89.37" y="877.16" type="curve"/>
+      <point x="72" y="877.16"/>
+      <point x="54.88" y="867.21"/>
+      <point x="26.63" y="839.04" type="curve"/>
+      <point x="-4.62" y="808.84"/>
+      <point x="-36.03" y="777.55"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 745.3 -20</string>
+              <string>vstem -67 194</string>
+            </array>
+          </dict>
+        </array>
+        <key>id</key>
+        <string>4f69fb0369e25c8d9bc2a5c15e254439b5119a04bc75560f1e65dae1032aa5cae22c202a0571c12bd2b64536b48abb9f630668af355f9c14aa5435efb7273b9a</string>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
