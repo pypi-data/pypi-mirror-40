@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dumbcpm
+Version: 0.2.2
+Summary: Possibly very dumb package manager for C/++, written in Python.
+Home-page: https://github.com/handicraftsman/dumbcpm/
+Author: Nickolay Ilyushin
+Author-email: nickolay02@inbox.ru
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: structlog
+Requires-Dist: PyYAML
+Requires-Dist: semver
+Requires-Dist: colorama
+Requires-Dist: pkgconfig
+
+UNKNOWN
+
+
