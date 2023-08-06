@@ -1,0 +1,8 @@
+plico>=0.15
+palpao>=0.16
+numpy
+scipy
+psutil
+six
+pyfits
+pi_gcs
