@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: autorelease
+Version: 0.0.11
+Summary: Tools to keep the release process clean
+Home-page: http://github.com/dwhswenson/autorelease
+Author: David W.H. Swenson
+Author-email: dwhs@hyperblazer.net
+License: LGPL-2.1+
+Description: |Documentation Status| |Linux Build| |Windows Build|
+        
+        autorelease
+        ===========
+        
+        Tools for keeping release behavior clean. Eventually will integrate with
+        other release helpers (probably ``zest.releaser``).
+        
+        .. |Documentation Status| image:: https://readthedocs.org/projects/autorelease/badge/?version=latest
+           :target: http://autorelease.readthedocs.io/en/latest/?badge=latest
+        .. |Linux Build| image:: https://travis-ci.org/dwhswenson/autorelease.svg?branch=master
+           :target: https://travis-ci.org/dwhswenson/autorelease
+        .. |Windows Build| image:: https://ci.appveyor.com/api/projects/status/ox0c6u5gobk5ksat/branch/master?svg=true
+           :target: https://ci.appveyor.com/project/dwhswenson/autorelease/branch/master
+        
+Platform: Linux
+Platform: Mac OS X
+Platform: Unix
+Platform: Windows
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Testing
+Requires: packaging
+Requires: pyyaml
+Requires: gitpython
+Requires: future
+Requires: requests
