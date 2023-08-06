@@ -1,0 +1,44 @@
+Metadata-Version: 1.2
+Name: aiohttp-limit
+Version: 0.1.0
+Summary: An aiohttp middleware for limiting connections
+Home-page: https://github.com/underyx/aiohttp-limit
+Author: Bence Nagy
+Author-email: bence@underyx.me
+Maintainer: Bence Nagy
+Maintainer-email: bence@underyx.me
+License: UNKNOWN
+Download-URL: https://github.com/underyx/aiohttp-limit/releases
+Description: #############
+        aiohttp-limit
+        #############
+        
+        .. image:: https://circleci.com/gh/underyx/aiohttp-limit.svg?style=shield
+           :target: https://circleci.com/gh/underyx/aiohttp-limit
+           :alt: CI Status
+        
+        An aiohttp_ middleware for limiting connections.
+        Python 3.5+ is required for usage, 3.7+ is required for tests.
+        
+        *****
+        Usage
+        *****
+        
+        Just add ``LimitMiddleware`` as a middleware:
+        
+        .. code-block:: python
+        
+            from aiohttp import web
+            from aiohttp_limit import LimitMiddleware
+            app = web.Application(middlewares=[LimitMiddleware(requests=10)])
+        
+        This sample usage will restrict requests to 10 per worker.
+        
+        .. _aiohttp: http://aiohttp.readthedocs.io/en/stable/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7

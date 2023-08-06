@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+test-requirements.txt
+aiohttp_limit/__init__.py
+aiohttp_limit.egg-info/PKG-INFO
+aiohttp_limit.egg-info/SOURCES.txt
+aiohttp_limit.egg-info/dependency_links.txt
+aiohttp_limit.egg-info/requires.txt
+aiohttp_limit.egg-info/top_level.txt
+test/test_limit.py
