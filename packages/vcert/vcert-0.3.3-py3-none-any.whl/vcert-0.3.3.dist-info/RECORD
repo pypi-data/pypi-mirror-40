@@ -1,0 +1,13 @@
+vcert/__init__.py,sha256=PTGg5uziGkgyjHSluy9K6jKsuI5d9ds2_E1_vm3UJL0,1712
+vcert/common.py,sha256=ZNR4rGj-07FdDPlxzyFExcxzSuYoCGHcXht4Kn9b8JA,18573
+vcert/connection_cloud.py,sha256=Kv3XxHuRYQc8aPDu9Cgquu9NX9XV7a2gKG5INsWu9Ag,11214
+vcert/connection_fake.py,sha256=nvxNyqqgREBRZajKRWdoTg-QHqZPjL9rBbri_l0MI1M,9102
+vcert/connection_tpp.py,sha256=4vF1vizE-Aeqo0y81-yOvWeGlPQF01q3b22Lz6GeUiA,9120
+vcert/errors.py,sha256=10ZpB2NcpsEPM09CNTr4-x4oH4vrHg1-VJOxMh6AC6g,985
+vcert/http.py,sha256=X-7yPofLwWeHWqtx9PLzQdd5svo3AZly7nJnLgM2R0I,6523
+vcert-0.3.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+vcert-0.3.3.dist-info/METADATA,sha256=x51TNWbUdih_q0gA75zUxVmuzBWngNeMfc66Ic9JfyA,885
+vcert-0.3.3.dist-info/RECORD,,
+vcert-0.3.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+vcert-0.3.3.dist-info/metadata.json,sha256=FmwUNgXHyqDMvt9C_jx2brKFeqi-yAICptCLLWCT8is,1052
+vcert-0.3.3.dist-info/top_level.txt,sha256=5KwyudjZ9SQMGbOmEKo4ajFSTevVWftaBLKgr6yBZKI,6
