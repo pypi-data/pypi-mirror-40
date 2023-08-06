@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+# Convert all "p.XX" SPHC output file to "outnameXX.vtu" where outname is the argument of the script
+import sys
+import glob, os
+import sphcpy as spy
+
+if len(sys.argv)==2:
+    for file in glob.glob("p.*"):
+        d=spy.dataslice.fromfilename(file)
+        d.ToVTK(sys.argv[1])
+else:
+    print("Usage:")
+    print("    p2VTK outname")
