@@ -1,0 +1,14 @@
+markdown
+autopep8
+django
+pip>8.0.0
+tree-format
+python-dateutil
+wheel
+click
+jinja2
+termcolor==1.1.0
+jinja2
+defusedxml
+django
+antlr4-python3-runtime

@@ -1,0 +1,42 @@
+{% load crud_utils i18n %}
+
+<div>
+    <h2>{{ crud.meta.verbose_name_plural }}</h2>
+
+    {% if crud.items %}
+    <table>
+        <thead>
+        <tr>{% for field_name in crud.list_fields.values %}
+            <th>{{ field_name }}</th>{% endfor %}
+
+            {% if crud.can_edit %}
+            <th>{% trans "Edit" %}</th>
+            {% endif %}
+        </tr>
+        </thead>
+        <tbody>
+            {% for item in crud.items %}
+            <tr>{% for field in crud.list_fields %}
+                <td>{% crud_field item field %}</td>{% endfor %}
+
+                {% if crud.can_edit %}
+                <td>
+                    {% if crud.crud_detail_link %}<a href="{% crud_link crud.crud_detail_link crud.pk_param item.pk %}">[{% trans "Detail" %}]</a>{% endif %}
+                    {% if crud.crud_edit_link %}<a href="{% crud_link crud.crud_edit_link crud.pk_param item.pk %}">[{% trans "Edit" %}]</a>{% endif %}
+                    {% if crud.crud_delete_link %}<a href="{% crud_link crud.crud_delete_link crud.pk_param item.pk %}">[X]</a>{% endif %}
+                </td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>{% blocktrans with name=crud.meta.verbose_name_plural %}No {{ name }} yet.{% endblocktrans %}</p>
+    {% endif %}
+
+    {% if crud.crud_create_link and crud.can_edit %}
+    <p>
+        <a href="{% crud_link crud.crud_create_link %}">{% blocktrans with name=crud.meta.verbose_name %}Add new {{ name }}{% endblocktrans %}</a>
+    </p>
+    {% endif %}
+</div>
