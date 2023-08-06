@@ -1,0 +1,12 @@
+README.md
+setup.py
+hookdns/__init__.py
+hookdns/getaddrinfo.py
+hookdns/gethostbyname.py
+hookdns/gethostbyname_ex.py
+hookdns/hosts.py
+hookdns.egg-info/PKG-INFO
+hookdns.egg-info/SOURCES.txt
+hookdns.egg-info/dependency_links.txt
+hookdns.egg-info/requires.txt
+hookdns.egg-info/top_level.txt
