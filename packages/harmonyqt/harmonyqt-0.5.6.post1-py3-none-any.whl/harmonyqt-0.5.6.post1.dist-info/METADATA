@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: harmonyqt
+Version: 0.5.6.post1
+Summary: Test Matrix client
+Home-page: https://github.com/mirukan/harmonyqt
+Author: miruka
+Author-email: miruka@disroot.org
+License: GPLv3
+Keywords: <KEYWORDS>
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5
+Requires-Dist: atomicfile
+Requires-Dist: docopt
+Requires-Dist: matrix-client-harmonyqt[e2e] (>=0.4.2-dev-2)
+Requires-Dist: setuptools
+Requires-Dist: markdownify
+Requires-Dist: markdown2
+Requires-Dist: pygments
+Requires-Dist: cachetools
+Requires-Dist: kids.cache
+Requires-Dist: dataclasses; python_version < "3.7"
+
+# Temporary README
+
+Tested on Void Linux 4.18.14 x64 with Qt 5.10.1, Python 3.6.6, PyQt5 5.11.3
+
+Install olm/olm-devel from your distro's package manager,
+or manually from [here](https://git.matrix.org/git/olm/about/).
+Make sure Qt 5.x is installed
+
+If no wheel is available for your platform, a working C compiler and the
+Python headers are needed.
+
+On Void Linux:
+
+```sh
+    sudo xpbs-install -S gcc python3-devel qt5 olm-devel
+    sudo pip3 install harmonyqt
+    harmonyqt
+```
+
+
