@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: getup
+Version: 0.0.1
+Summary: First package
+Home-page: https://gitlab.com/jussiarpalahti/getup
+Author: Jussi Arpalahti
+Author-email: jussi.arpalahti@gmail.com
+License: UNKNOWN
+Description: 
+        # Getup
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
