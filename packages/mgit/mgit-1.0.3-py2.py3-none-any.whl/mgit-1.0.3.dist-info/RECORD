@@ -1,0 +1,11 @@
+mgit/__init__.py,sha256=11wyMZVtZEpYhiBHoI5LMsnzlRSeIj4a-43dnUoieWU,19725
+mgit/cli.py,sha256=JuW6cCWwYYfDuvrQFouq6e6GmwTSGNCr47c05eh363c,10280
+mgit/colored.py,sha256=Jjvqa--2LaReIGjUoKY6ynNUtLXyuTm2q38CpO9VE0w,2393
+mgit/git.py,sha256=KshnfiRXmTGxQh8LqXzhCV-3wXb6-ZEdaRDPklV5Qv0,27781
+mgit/utils.py,sha256=LIb7hje9lygJcYlpsejkZqBC-k_k1Y0jU3wPtygEQZM,8929
+mgit-1.0.3.dist-info/LICENSE,sha256=D3rgeg_D_Mr05-eIjfUkc6vLwrKbR7fCz-jBJVKOFTY,1068
+mgit-1.0.3.dist-info/METADATA,sha256=pkiXoHVNNBMeUT4uglD7VLfAzPes_5xNhVhtydc9t4E,6070
+mgit-1.0.3.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+mgit-1.0.3.dist-info/entry_points.txt,sha256=pt4-fFRE5iSSNswx5QgwDYbiM6HdLARkfLBUqaMFVFc,38
+mgit-1.0.3.dist-info/top_level.txt,sha256=CGzko63KesRtbSeVDtbZD5WEvyunRhTxnYStEDpeXvQ,5
+mgit-1.0.3.dist-info/RECORD,,
