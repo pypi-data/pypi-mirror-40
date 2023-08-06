@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+webdriver_start.egg-info/PKG-INFO
+webdriver_start.egg-info/SOURCES.txt
+webdriver_start.egg-info/dependency_links.txt
+webdriver_start.egg-info/requires.txt
+webdriver_start.egg-info/top_level.txt
