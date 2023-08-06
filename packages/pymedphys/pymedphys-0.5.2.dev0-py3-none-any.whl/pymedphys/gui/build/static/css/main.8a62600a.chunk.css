@@ -1,0 +1,2 @@
+#root{display:flex;flex-direction:column;position:absolute;top:0;left:0;right:0;bottom:0;margin:0;padding:0;overflow:hidden;background:#fff}#menuBar{flex:0 0 auto}.full-flex{flex:1 1 auto}#dock{padding:4px}.content{padding:13px}.console,.content{min-width:50px;min-height:50px;display:flex;flex-direction:column;border:1px solid silver;border-top:none;background:#fff;box-shadow:1px 1px 2px rgba(0,0,0,.2)}.console{padding:0}.content>div{flex:1 1 auto;overflow:auto}.content input{margin:8px}
+/*# sourceMappingURL=main.8a62600a.chunk.css.map */
