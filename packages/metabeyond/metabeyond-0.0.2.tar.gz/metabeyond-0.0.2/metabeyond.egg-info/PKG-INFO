@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: metabeyond
+Version: 0.0.2
+Summary: Metadata for Python
+Home-page: https://gitlab.com/flitt3r/metabeyond
+Author: Flitt3r
+License: MIT
+Description: Provides Java 6-like annotations, self-documenting decorators and additional type hinting utilities to extend Python's typing module further.
+Keywords: Metadata Java 6 annotation @interface hint documentation
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6.0
+Provides-Extra: deploy
+Provides-Extra: sast
+Provides-Extra: docs
+Provides-Extra: test
