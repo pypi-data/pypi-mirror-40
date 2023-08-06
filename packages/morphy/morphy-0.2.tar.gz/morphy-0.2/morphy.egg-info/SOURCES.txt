@@ -1,0 +1,15 @@
+setup.py
+morphy/__init__.py
+morphy/errors.py
+morphy/interfaces.py
+morphy/lang.py
+morphy/settings.py
+morphy.egg-info/PKG-INFO
+morphy.egg-info/SOURCES.txt
+morphy.egg-info/dependency_links.txt
+morphy.egg-info/requires.txt
+morphy.egg-info/top_level.txt
+morphy/preprocessing/__init__.py
+morphy/preprocessing/multilang.py
+morphy/preprocessing/russian.py
+morphy/preprocessing/types.py

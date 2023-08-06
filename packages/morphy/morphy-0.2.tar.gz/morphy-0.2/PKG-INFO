@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: morphy
+Version: 0.2
+Summary: Smart tool for morphological analysis
+Home-page: https://github.com/igorezersky/morphy
+Author: Igor Ezersky
+Author-email: igor.ezersky.work@gmail.com
+License: UNKNOWN
+Description: Morphy
+        ========
+        
+        `Morphy` is a Python library for morphological analysis. Presents a set of simple interfaces for segmentation, 
+        tokenization, lemmatization, and text filtering. Based on `nltk`, `spacy` and `pymorphy2`. 
+        
+        
+        Features
+        --------
+        
+        * **Fully supported multilanguage** support (English, German, Spanish, Portuguese, French, Italian, Dutch, Russian)
+        * Part-of-speech tagging
+        * Sentence segmentation
+        * Named entity recognition
+        * Dependency parsing
+        * Flexible customizability
+        * Caching
+        
+        Usage
+        ------
+        
+        **Language detection**
+        
+        ```python
+        from morphy import Language
+        text = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
+        lang = Language(text=text)
+        print(lang)
+        ```
+        
+        **Sentence segmentation**
+        
+        ```python
+        from morphy import MultiLang
+        text = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
+        english_proc = MultiLang(lang='en')
+        doc = english_proc(text)
+        for sent in doc.sentences:
+            print('%s\n%s' % (sent, '\n'.join(str(sent.tokens))))
+        ```
+        
+        **Lemmatization**
+        
+        ```python
+        from morphy import MultiLang
+        text = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
+        english_proc = MultiLang(lang='en')
+        doc = english_proc(text)
+        for token in doc.tokens:
+            print('%s --> %s' % (token.text, token.lemma))
+        ```
+        
+        
+        Installation
+        -------------
+        
+        **Option 1: Via PyPi**
+        
+        Using pip, `morphy` releases are available as source packages and binary wheels (as of v0.1.0).
+        
+        ```bash
+        pip install morphy
+        ```
+        
+        When using pip it is generally recommended to install packages in a virtual environment to avoid modifying system state:
+        
+        ```bash
+        python -m virtualenv venv
+        source venv/bin/activate
+        pip install morphy
+        ```
+        
+        **Option 2: Source Via Git**
+        
+        ```bash
+        git clone git@bitbucket.org:igor_ezersky/morphy.git
+        cd morphy
+        python -m virtualenv venv
+        source venv/bin/activate
+        python setup.py install
+        ```
+        
+        **Option 3: Source Zip**
+        
+        Download a zip of the code via GitHub or PyPi. Then follow the same instructions in option 2.
+        
+        **IMPORTANT**
+        
+        After package was installed, it is necessary to download `nltk` and `spacy` data.
+        
+        ```bash
+        python -c "import nltk; nltk.download('punkt')"
+        python -m spacy download en
+        python -m spacy download xx
+        # the line above should be repeated for each language that you need
+        ```
+        
+        You can specify which `spacy` model would you like to install, check their [documentation](https://spacy.io/usage/).
+        
+        Requirements
+        ------------
+        
+        * Python 3.3+
+        * [`spacy`](https://spacy.io)
+        * [`nltk`](https://www.nltk.org)
+        * [`cached_property`](https://github.com/pydanny/cached-property)
+        * [`langdetect`](https://github.com/Mimino666/langdetect)
+        
+        Notes
+        -----
+        
+        If you are using Windows there can be some errors while installing `morphy` requirements (e.g. `ujson`, `cytoolz`):
+        
+        ``
+        error: command 'cl.exe' failed: No such file or directory
+        ``
+        
+        Manual installation from compiled binaries of this two packages can be a solution. You can find them at [this unofficial 
+        Python distributive repo](https://www.lfd.uci.edu/~gohlke/pythonlibs/). 
+        
+        
+        Current limitations
+        -------------------
+        1. Installing `spacy` models for each language is required.
+        2. Downloading `nltk` tokenizer data is required.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
