@@ -1,0 +1,3 @@
+[console_scripts]
+alioth = alioth.alioth_verify:main
+
