@@ -1,0 +1,12 @@
+README.md
+setup.py
+aliceplex/serialize/__init__.py
+aliceplex/serialize/base.py
+aliceplex/serialize/util.py
+aliceplex/serialize/xml.py
+aliceplex/serialize/yml.py
+aliceplex_serialize.egg-info/PKG-INFO
+aliceplex_serialize.egg-info/SOURCES.txt
+aliceplex_serialize.egg-info/dependency_links.txt
+aliceplex_serialize.egg-info/requires.txt
+aliceplex_serialize.egg-info/top_level.txt
