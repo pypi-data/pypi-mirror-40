@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xdaLibs
+Version: 0.0.1
+Summary: A helping-tool library for self-use
+Home-page: https://github.com/thianda/xdaLibs
+Author: xda
+Author-email: thianda91@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: configparser (>=3.5.0)
+
+UNKNOWN
+
+
