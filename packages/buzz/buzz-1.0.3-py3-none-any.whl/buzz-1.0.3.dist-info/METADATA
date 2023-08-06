@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: buzz
+Version: 1.0.3
+Summary: Sophisticated corpus linguistics
+Home-page: http://github.com/interrogator/buzz
+Author: Daniel McDonald
+Author-email: mcddjx@gmail.com
+License: MIT
+Keywords: corpus,linguistics,nlp
+Platform: UNKNOWN
+Requires-Dist: nltk
+Requires-Dist: bllipparser
+Requires-Dist: scipy
+Requires-Dist: benepar
+Requires-Dist: benepar[cpu]
+Requires-Dist: tensorflow
+Requires-Dist: spacy
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: pyparsing
+Requires-Dist: tabview
+
+UNKNOWN
+
+
