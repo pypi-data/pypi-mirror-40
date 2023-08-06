@@ -1,0 +1,26 @@
+
+dsh: 2
+ns: flash.nyttth
+
+vars:
+  app_name: no_you_talk_to_the_hand
+
+init: 
+  - pip install -U pip setuptools wheel twine keyring pypandoc tox
+  - python -c "from pypandoc.pandoc_download import download_pandoc; download_pandoc()"
+
+test:
+  - tox
+
+install:
+  - pip install -e .
+
+package:
+  - rm -rf build
+  - rm -rf dist
+  - pandoc -o README.rst README.md
+  - python setup.py sdist bdist_wheel
+  - rm README.rst
+
+publish:
+  - twine upload -r pypi -u flashashen dist/{{app_name}}* 

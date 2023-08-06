@@ -1,0 +1,8 @@
+Click
+supervisor
+pyyaml>=4.2b1
+jinja2
+six
+requests>=2.20.0
+futures
+sshuttle==0.78.1
