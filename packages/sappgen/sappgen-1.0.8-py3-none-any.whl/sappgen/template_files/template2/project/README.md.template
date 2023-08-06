@@ -1,0 +1,16 @@
+# $PROJECT_NAME
+
+## $APP_NAME
+
+- run the setup: `make setup`
+- run the server: `make serve`
+- run tests via pytest: `make test`
+- cleanup: `make clean`
+
+## testing endpoints locally with curl
+
+```
+curl -H "Content-Type: application/json" -X GET http://localhost:8000/
+
+curl -d '{"val":"test val"}' -H "Content-Type: application/json" -X POST http://localhost:8000/test-route-1
+```
