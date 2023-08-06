@@ -1,0 +1,15 @@
+README.md
+setup.py
+spamclib/__init__.py
+spamclib/async_tcp_client.py
+spamclib/spamc_async_client.py
+spamclib/spamc_body.py
+spamclib/spamc_header.py
+spamclib/spamc_protocol.py
+spamclib/spamc_sync_client.py
+spamclib/sync_tcp_client.py
+spamclib/type_convert.py
+spamclib.egg-info/PKG-INFO
+spamclib.egg-info/SOURCES.txt
+spamclib.egg-info/dependency_links.txt
+spamclib.egg-info/top_level.txt
