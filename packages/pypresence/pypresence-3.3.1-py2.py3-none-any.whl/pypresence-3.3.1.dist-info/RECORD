@@ -1,0 +1,15 @@
+pypresence/__init__.py,sha256=QvKCN8ya8qEGQztTe-gcXgfrnvRxVOP-BTGJX-akFCs,434
+pypresence/activity.py,sha256=xJgjMXkfoPOGY012S-KW-CVSBG9W2S8yuoiXrjgH5Ww,2857
+pypresence/baseclient.py,sha256=ektaPopQ0eEWLhEBCyEs0uKvKgeiCSA7DGES2mMuCLU,4539
+pypresence/client.py,sha256=Rqtm3qTC13E_39mW5tW6qb8uzhYXcZb5GOWOkvcqgJg,14795
+pypresence/exceptions.py,sha256=_GG8MnFmkUv9QXmWiDyYhrQv0_yMFDQabks5JAFfDnE,1467
+pypresence/payloads.py,sha256=b1VB0jMg15I2TKFM6JzZGpQkKXPedYJ2-8StlXpIhaE,8455
+pypresence/presence.py,sha256=n-358foN29tcgMw7BmTFVoAEGDHa6Er29UPqHFeyh2A,3116
+pypresence/response.py,sha256=sGgA52AlLvdB11TRvRYeOufVglkpTOpQqoXsWjA9N7c,2547
+pypresence/utils.py,sha256=K2bUMpRCOcgpPvpu3c3rjx6Ee53MbpBxmBmeSycUdyY,1511
+pypresence-3.3.1.dist-info/LICENSE,sha256=s6RunrFp13y8yNKI3UIRJNltIMHDUoB9hke0zZYh8X8,1090
+pypresence-3.3.1.dist-info/METADATA,sha256=4TQ4Sjgboz-RggWmZmQC3gitb3PgYHhbToVCwkWdaJA,4808
+pypresence-3.3.1.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+pypresence-3.3.1.dist-info/top_level.txt,sha256=HgPRAKZXYeILcC2btf3X4WYdVa6CdfiT2Kl_O42RSuY,11
+pypresence-3.3.1.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+pypresence-3.3.1.dist-info/RECORD,,
