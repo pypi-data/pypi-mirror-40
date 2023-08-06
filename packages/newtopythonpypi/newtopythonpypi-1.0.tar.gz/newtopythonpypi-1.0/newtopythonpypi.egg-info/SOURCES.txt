@@ -1,0 +1,8 @@
+setup.py
+newtopythonpypi/__init__.py
+newtopythonpypi/newtopythonpypi.py
+newtopythonpypi.egg-info/PKG-INFO
+newtopythonpypi.egg-info/SOURCES.txt
+newtopythonpypi.egg-info/dependency_links.txt
+newtopythonpypi.egg-info/not-zip-safe
+newtopythonpypi.egg-info/top_level.txt
