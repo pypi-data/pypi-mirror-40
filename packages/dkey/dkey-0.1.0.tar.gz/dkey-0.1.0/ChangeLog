@@ -1,0 +1,12 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* Fixing travis -> pypi deployment
+* Fix travis script, readme and added more tests (#3)
+* Added warnings to the setitem method, too. (#2)
+* First working version
+* Created first version of README.md
+* Initial commit
