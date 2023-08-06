@@ -1,0 +1,41 @@
+Metadata-Version: 2.0
+Name: mds-mdspwrstripbackup
+Version: 0.1.0
+Summary: rsync backups to external hard drives with switchable power strip.
+Home-page: https://www.m-ds.de/
+Author: martin-data services
+Author-email: service@m-ds.de
+License: GPL-3
+Description-Content-Type: UNKNOWN
+Keywords: backup switch power strip gude
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: mds-mdslogger (>=0.5.2)
+Requires-Dist: mds-mdsshellcommand (>=0.6)
+
+mdspwrstripbackup
+=================
+rsync backups to external hard drives with switchable power strip.
+
+Install
+=======
+pip install mds-mdspwrstripbackup
+sudo apt-get install libwww-perl
+
+Changes
+=======
+
+*0.1.0 - 07.01.2019*
+
+- public version
+
+
