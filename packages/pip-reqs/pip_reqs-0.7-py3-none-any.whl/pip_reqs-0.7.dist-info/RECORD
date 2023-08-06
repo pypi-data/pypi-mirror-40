@@ -1,0 +1,11 @@
+pip_reqs/__init__.py,sha256=rqkLGN2FViq1CruPuvfVMN7NNOwc0lovjpHhTTaWYD0,196
+pip_reqs/__main__.py,sha256=mBEFPLHgoyxxJdsM3a1LHoL7QRTWwOT-UjeNQX676XE,2195
+pip_reqs/client.py,sha256=uSPLxdRZkRr2UxDvBWybuRdTCojdH0TXJo11FmFmUd4,687
+pip_reqs/parser.py,sha256=UI2-SCg2sVskTz8SGbyNW1pthABb54rED0aio-0NaoM,2725
+pip_reqs-0.7.dist-info/DESCRIPTION.rst,sha256=KjeO2alPrM5cBWgxSCGwAbCUH75rY50sOsW0AtL1hws,718
+pip_reqs-0.7.dist-info/METADATA,sha256=G-1HsT3LQrRCd3vSnUJaSE1jEa_8BWsGL-A4ni-hzGM,1358
+pip_reqs-0.7.dist-info/RECORD,,
+pip_reqs-0.7.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pip_reqs-0.7.dist-info/entry_points.txt,sha256=HUlnMPFUnqD3nwQNx-bYpPQ7EDecc-JC02-c_y3zXFk,52
+pip_reqs-0.7.dist-info/metadata.json,sha256=CVctwG2eoatUvzCE4znm7_8you1lzS_kU2cDLxh3828,932
+pip_reqs-0.7.dist-info/top_level.txt,sha256=6mvklBb0hgMREdDp4MHt84WVi_3DnwD2ViNax5uIPf8,9
