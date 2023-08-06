@@ -1,0 +1,11 @@
+tcplite/__init__.py,sha256=I9-nmSmlc3V8a9VPpX8eyDmLTwqL1iErPzbwxL90GQM,110
+tcplite/client.py,sha256=HxHwk5mBA3uxbvbc2UnwyYqOHwFUHflyp3YxMTuhXdQ,1131
+tcplite/error.py,sha256=VaObyi647ImYxhQyzN-BwxA9dFGT7cWemHd7IuL_4nM,237
+tcplite/packet.py,sha256=NQhmtPIKEkO2UVO3ZjrvMuzH1VDONUwOq808xv4p1wk,2897
+tcplite/receiver.py,sha256=O_0hYVtT5pOnhyeI-PcJaPjNvmyAj4KT18wIy0A_xBw,1043
+tcplite/server.py,sha256=K60ODIUOjcwKVSEyL9mXPybbvviLW9B_hde6zmS5-Fc,4018
+tcplite-0.0.1.dist-info/LICENSE,sha256=cJX8VQoa4xlbBUYrkBLQfCtHFh9PZSUyp8FMu50wbfQ,1071
+tcplite-0.0.1.dist-info/METADATA,sha256=tPejFXaM1AS8Himw4FA_MUIb4g8GufvlkURZT9gUmsU,437
+tcplite-0.0.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+tcplite-0.0.1.dist-info/top_level.txt,sha256=7aq1GadCV2GXX6GbF2bXawZPhgIFXFToUNkxZ03i1HA,8
+tcplite-0.0.1.dist-info/RECORD,,
