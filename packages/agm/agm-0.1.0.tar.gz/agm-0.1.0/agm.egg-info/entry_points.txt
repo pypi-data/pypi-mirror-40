@@ -1,0 +1,3 @@
+[console_scripts]
+agm = agm.agm:cli
+
