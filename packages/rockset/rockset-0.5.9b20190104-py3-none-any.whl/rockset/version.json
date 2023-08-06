@@ -1,0 +1,11 @@
+{
+    "format": "v1",
+    "major": "0",
+    "minor": "5",
+    "patch": "9",
+    "pre_release": ["beta", "20190104"],
+    "build_info": ["03aebdab96"],
+    "version": "0.5.9-beta.20190104+03aebdab96",
+    "dockertag": "0.5.9-beta.20190104-03aebdab96",
+    "python": "0.5.9b20190104"
+}
