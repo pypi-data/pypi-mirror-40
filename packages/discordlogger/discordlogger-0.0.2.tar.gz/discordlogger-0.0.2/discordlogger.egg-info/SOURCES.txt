@@ -1,0 +1,10 @@
+README.md
+setup.py
+discordlogger/__init__.py
+discordlogger.egg-info/PKG-INFO
+discordlogger.egg-info/SOURCES.txt
+discordlogger.egg-info/dependency_links.txt
+discordlogger.egg-info/not-zip-safe
+discordlogger.egg-info/requires.txt
+discordlogger.egg-info/top_level.txt
+test/test_discordlogger.py
