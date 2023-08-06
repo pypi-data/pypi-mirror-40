@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: tornado-apidoc
+Version: 1.0.0
+Summary: Adds ApiDoc support to Tornado
+Home-page: https://github.com/wenhan-wu/tornado-apidoc
+Author: Wenhan Wu
+Author-email: sdwwh2259253@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Description: # Tornado ApiDoc
+        
+        Tornado ApiDoc is a simple apidoc serving plugin for tornado inspired by flask-apidoc.
+        
+        ## Installation
+        
+        ```
+        $ pip install tornado-apidoc
+        ```
+        
+        ## Usage
+        
+        ```python
+        import tornado.web
+        from tornado_apidoc import make_apidoc_route
+        
+        application = tornado.web.Application([
+            make_apidoc_route(folder_path='./static',
+                              url_path='/docs')
+        ])
+        ```
+        
+        ## Example
+        
+        ```
+        $ git clone https://github.com/wenhan-wu/tornado-apidoc
+        $ cd tornado-apidoc
+        $ apidoc -i . -o ./static -f .py
+        $ python example.py
+        ```
+        
+        open [http://localhost:5000/docs](http://localhost:5000/docs) in your browser.
+Keywords: tornado,apidoc,doc,documentation,rest,restful
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: Implementation :: CPython
