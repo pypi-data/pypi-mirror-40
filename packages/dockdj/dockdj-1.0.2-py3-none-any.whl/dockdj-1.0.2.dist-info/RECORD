@@ -1,0 +1,12 @@
+dockdj/__init__.py,sha256=Y3LSfRioSl2xch70pq_ULlvyECXyEtN3krVaWeGyaxk,22
+dockdj/__main__.py,sha256=IrbycNshGlxP1_Ad3vGeCWcfO-J5GnlUIk5U57OPeNM,1048
+dockdj/deploy.py,sha256=TBI6T1g6iABpRAH38WEYke8O8VQcpGjsJdcpfrLVneo,3390
+dockdj/du_settings.py,sha256=hNvYGIztp5ojUNtqGUSot3qrqSlV64g8TJ-tBhwmQpM,61
+dockdj/init.py,sha256=ieHiW2GdFpHDZWNLb_0tXssT7119Klis8l2GukwE5w0,1113
+dockdj/logs.py,sha256=3am5w0gwGFjrSRXVbnoxvLX-q0ORkqAcQ0gQ_0Rkbxc,782
+dockdj/setup.py,sha256=tzXriN8cNpZjvJOJg6ts9ntksDYFLekNeEdV_auOOG8,1478
+dockdj-1.0.2.dist-info/METADATA,sha256=ETox5PJtU1s2Oy6IPFV8iO1DUCq9YvnQqtFnYdb8djc,3301
+dockdj-1.0.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+dockdj-1.0.2.dist-info/entry_points.txt,sha256=5JKIy6Qz8nXX9rX9PtRmgczcvfHlEWT2QUcY-xZMQUw,49
+dockdj-1.0.2.dist-info/top_level.txt,sha256=I8P2WCO44egcrFhcuFFjjBoMM7XQ7L5NuP8szNCEesc,7
+dockdj-1.0.2.dist-info/RECORD,,
