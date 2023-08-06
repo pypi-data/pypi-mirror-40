@@ -1,0 +1,10 @@
+beautyacc/__init__.py,sha256=DnfcT5augKtUMHNGWOD_X71gojyXB1EmcIxYnrTdsoY,75
+beautyacc/core/__init__.py,sha256=c7K4w5Eh8DV17DYBUN1YweIEyfE4ftz2OUrunINPNlw,33
+beautyacc/core/archive.py,sha256=7kN2RlqRkRtTUTkR5AyAcFI1OjqtnT4NPBnXRqO5btk,1733
+beautyacc/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beautyacc/util/caching.py,sha256=hmQOkLequlqR2xC052EE1A40pI5tQEV9L-6DixSlWy8,558
+beautyacc-0.2.0.dist-info/METADATA,sha256=msSZlIfnEqJGCf3hUBKLt1u6o-M42FygreUyH-AfC2g,1075
+beautyacc-0.2.0.dist-info/RECORD,,
+beautyacc-0.2.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+beautyacc-0.2.0.dist-info/top_level.txt,sha256=o2T4MGnFcKHFUpTPoVYAOl1axqwcOSD7_G6293O1O_I,10
+beautyacc-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
