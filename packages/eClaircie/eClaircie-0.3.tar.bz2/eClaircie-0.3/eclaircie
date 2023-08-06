@@ -1,0 +1,43 @@
+#!/usr/bin/python3
+
+# -*- coding: utf-8 -*-
+# éClaircie
+# Copyright (C) 2014-2018 Jean-Baptiste LAMY
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import sys, os
+
+from eclaircie import *
+
+conf_filename = ""
+force = False
+
+args = sys.argv[1:]
+
+while args:
+  if   (args[0] == "-f") or (args[0] == "--force"): force = True
+  elif (args[0] == "-h") or (args[0] == "--help"):
+    print("""Usage:
+eclaircie [--force] /path/to/conf.py
+""")
+    sys.exit()
+  elif (args[0] == "-v") or (args[0] == "--version"):
+    print("""Version: %s""" % VERSION)
+    sys.exit()
+  else: conf_filename = os.path.abspath(args[0])
+  del args[0]
+
+if conf_filename:
+  run(conf_filename, force)

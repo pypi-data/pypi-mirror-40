@@ -1,0 +1,21 @@
+@import url("green_roses.css");
+
+div.related1 {
+  padding: 10px 80px 10px 10px;
+  
+  background-image: url('fleur.svg');
+  background-repeat: no-repeat;
+  background-position: 99% bottom;
+}
+
+div.sphinxsidebarwrapper {
+  background-image: url("lyre4.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+div.sphinxsidebarwrapper>h3 a {
+  padding-top: 220px;
+  min-width: 210px;
+  display: block;
+  color: transparent;
+}
