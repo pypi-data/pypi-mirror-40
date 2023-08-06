@@ -1,0 +1,3 @@
+[console_scripts]
+perfm = perfm.cli:main
+
