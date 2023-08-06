@@ -1,0 +1,10 @@
+README.md
+setup.py
+nicetable/__init__.py
+nicetable/examples.py
+nicetable/nicetable.py
+nicetable/test_nicetable.py
+nicetable.egg-info/PKG-INFO
+nicetable.egg-info/SOURCES.txt
+nicetable.egg-info/dependency_links.txt
+nicetable.egg-info/top_level.txt
