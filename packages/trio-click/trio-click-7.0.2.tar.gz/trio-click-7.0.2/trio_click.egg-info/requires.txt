@@ -1,0 +1,12 @@
+trio>=0.9
+anyio
+async_exit_stack
+
+[dev]
+pytest>=3
+coverage
+tox
+sphinx
+
+[docs]
+sphinx
