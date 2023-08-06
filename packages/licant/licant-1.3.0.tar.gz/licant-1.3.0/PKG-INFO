@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: licant
+Version: 1.3.0
+Summary: licant make system
+Home-page: https://github.com/mirmik/licant
+Author: Sorokin Nikolay
+Author-email: mirmikns@yandex.ru
+License: MIT
+Description: # Licant
+        
+        Licant предназначен для сборки небольших модульных проектов с зависимостями.
+        
+        Установка
+        ---------
+        ```sh
+        python3 -m pip install licant
+        ```
+        
+        HelloWorld
+        ----------
+        ```python
+        #!/usr/bin/env python
+        
+        import licant.make as lmake
+        import licant
+        
+        lmake.source("a.txt")
+        lmake.copy(tgt = "build/b.txt", src = "a.txt")
+        lmake.copy(tgt = "build/c.txt", src = "build/b.txt")
+        
+        print("licant targets list:" + str(licant.core.core.targets))
+        
+        licant.ex(default = "build/c.txt")
+        ```
+Keywords: testing,make
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
