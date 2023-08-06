@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pychatwork
+Version: 1.0.5
+Summary: A Python wrapper for ChatWork's API
+Home-page: None
+Author: takeshi
+Author-email: sci.and.eng@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests (>=2.21,<3.0)
