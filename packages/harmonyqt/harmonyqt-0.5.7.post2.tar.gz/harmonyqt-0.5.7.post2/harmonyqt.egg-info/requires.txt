@@ -1,0 +1,13 @@
+PyQt5
+atomicfile
+docopt
+matrix_client_harmonyqt[e2e]>=0.4.2-dev-2
+setuptools
+markdownify
+markdown2
+pygments
+cachetools
+kids.cache
+
+[:python_version < "3.7"]
+dataclasses
