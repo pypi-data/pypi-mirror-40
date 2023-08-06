@@ -1,0 +1,10 @@
+py_mini_racer/_v8.so,sha256=s2wfmMea_wj7unqvSzKG1KhY5Mrs-ny3ntQ0omIo_Ls,19840314
+py_mini_racer/__init__.py,sha256=5l0ppqL_tGESLUVO0inbejGrpjDGHZprAXS3qwp9xm8,127
+py_mini_racer/py_mini_racer.py,sha256=I7z8RQ9DOMyMBqH7R7krI9HvgIchHx-CZHfQMPMdfoA,9410
+py_mini_racer/extension/mini_racer_extension.cc,sha256=W2-TJFTLsQHgGnGLWpq_TCcEn5CCa6PxULYOjXXRGOY,21712
+py_mini_racer/extension/v8_build.py,sha256=QWe7ISPlll9ae1rqdR7F58_j4fgXo7S5nun8as14BoQ,4658
+py_mini_racer/extension/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_mini_racer-0.1.18.dist-info/WHEEL,sha256=M5Ujap42zjfAFnpJOoFU72TFHuBKh-JF0Rqu5vZhkVE,110
+py_mini_racer-0.1.18.dist-info/top_level.txt,sha256=uQgwrHzmR3rPzog02298bQiRfnmgvLUjErOopfGWcXQ,14
+py_mini_racer-0.1.18.dist-info/METADATA,sha256=dHKXDSJy-WTLq62-6CV9iI4BHyjmXJFTX5Vrqx-vLb8,7971
+py_mini_racer-0.1.18.dist-info/RECORD,,
