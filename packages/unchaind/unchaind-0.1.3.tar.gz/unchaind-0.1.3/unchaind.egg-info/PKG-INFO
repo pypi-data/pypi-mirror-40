@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: unchaind
+Version: 0.1.3
+Summary: Wormhole space kill notification tool for EVE Online.
+Home-page: https://github.com/supakeen/unchaind
+Author: supakeen
+Author-email: cmdr@supakeen.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
