@@ -1,0 +1,12 @@
+drsip/Cn_symm_criterion.py,sha256=zSWhEkgSBsM24oLrxNMXHPtn5FuN06BO67UkQ-mQgWU,8300
+drsip/__init__.py,sha256=EOZR25AqCokQ4amauNpJXhQfFxTjo3vnFXiybAdVREc,45659
+drsip/dist_restraints_filter.py,sha256=kvPmU0PdSE4E5-xevpXr4U0Uh3JCM3eZvl8zs93u2cw,2836
+drsip/save_load.py,sha256=R77OsvtK9q-CJW5vQddAuNSq6ioJicuF1CLeZz8P5Pg,2832
+drsip/struct_clustering.py,sha256=9mSTFlFeyqCuY_Iq_kgEBYVjzhmWq4aod14p6pdY8Mk,13122
+drsip/tilt_angle_criterion.py,sha256=M9YyzgZspvF0rw70cs30phElM7bJpkq1gpJ_Lt4bkXc,3563
+drsip-0.25.data/scripts/drsip,sha256=TseGUMibmcYtBA1-SvhxiQx7Zyws7_GK2R45nrHpG48,5261
+drsip-0.25.dist-info/LICENSE,sha256=Lw-25pxkPBjx40iNgVb51UECZChXa8sa0Vanz_o5NlE,1089
+drsip-0.25.dist-info/METADATA,sha256=xRjGJ7DezjcwWC3-eowhwJOG3x_-uzzcD83nBcpn5K0,5927
+drsip-0.25.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+drsip-0.25.dist-info/top_level.txt,sha256=iKmwj_zGu-yuCab31Gdl6FYaglqX4YoZee2kKvbOivw,6
+drsip-0.25.dist-info/RECORD,,
