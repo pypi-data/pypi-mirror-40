@@ -1,0 +1,15 @@
+INSTALL.rst
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+src/generic/__init__.py
+src/generic/core.py
+src/generic/core_fast.c
+src/generic/errors.py
+src/generic/util.py
+src/pygeneric.egg-info/PKG-INFO
+src/pygeneric.egg-info/SOURCES.txt
+src/pygeneric.egg-info/dependency_links.txt
+src/pygeneric.egg-info/requires.txt
+src/pygeneric.egg-info/top_level.txt
