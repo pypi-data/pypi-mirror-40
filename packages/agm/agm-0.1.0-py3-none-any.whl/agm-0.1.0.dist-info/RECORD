@@ -1,0 +1,12 @@
+agm/__init__.py,sha256=07LeYtFwIEQ6yC47k62SJciR4kZiLWDLgJ9kfwZGidE,13
+agm/agm.py,sha256=mOrYVfyt4Eyv5flMd-GLTQQJp45cJ5iGELd8pl5U2hI,10171
+agm/docs.py,sha256=88_zGsZCa2gDE4EiWEE_nSTMXf6ZLSehkYbvSdaMsMY,10104
+agm/exceptions.py,sha256=Z9xONpBcJLs4zGhKQYm649l9SQfDaG3BzPbvIWGN9eA,101
+agm/executor.py,sha256=PCJ2Gm0KUKziYlJXxtjyJuw2Z9nYuoo0NwkEU8hiKAo,8692
+agm/google_auth.py,sha256=ac6HQoxBYzfxfxMpbz9YITJRY5p2uMYbCKSimaKWJ9Q,6362
+agm/utils.py,sha256=01FyRwYPGv9elbEEbe4pQLvf7vZsl6fbS5yPnAJM9sg,526
+agm-0.1.0.dist-info/METADATA,sha256=p2GLuaoBIkY9SPt2g2WFaYh0Hn6Fgej8JkbYGrb8Df0,1939
+agm-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+agm-0.1.0.dist-info/entry_points.txt,sha256=8Oqk_cG9cIYlNp7P3H-bCjQvcKECy2w40jKjaCao0ZQ,37
+agm-0.1.0.dist-info/top_level.txt,sha256=TERFU68O1tSlegbdumkuRAGWrZXld-3YvJc21ZT0aoY,4
+agm-0.1.0.dist-info/RECORD,,
