@@ -1,0 +1,7 @@
+numpy
+pandas
+six
+
+[dev]
+Sphinx
+sphinx_rtd_theme
