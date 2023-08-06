@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+bin/nmme-test
+nmme/__init__.py
+nmme.egg-info/PKG-INFO
+nmme.egg-info/SOURCES.txt
+nmme.egg-info/dependency_links.txt
+nmme.egg-info/not-zip-safe
+nmme.egg-info/requires.txt
+nmme.egg-info/top_level.txt
