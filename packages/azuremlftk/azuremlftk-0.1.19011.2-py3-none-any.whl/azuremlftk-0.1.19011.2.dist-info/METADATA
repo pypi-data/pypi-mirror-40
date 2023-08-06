@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: azuremlftk
+Version: 0.1.19011.2
+Summary: "Microsoft Azure Machine Learning Forecasting Toolkit"
+Home-page: https://aka.ms/aml-packages/forecasting
+Author: "Microsoft Corporation"
+Author-email: fcstcore@microsoft.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: <3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: dask (>=0.17.2)
+Requires-Dist: dill
+Requires-Dist: distributed (==1.23.1)
+Requires-Dist: h5py
+Requires-Dist: html5lib
+Requires-Dist: ipykernel (>=4.8)
+Requires-Dist: joblib
+Requires-Dist: jsonschema (>=2.6.0)
+Requires-Dist: keras
+Requires-Dist: matplotlib (>=3.0.2)
+Requires-Dist: numexpr
+Requires-Dist: numpy (>=1.11.3)
+Requires-Dist: pandas
+Requires-Dist: patsy
+Requires-Dist: pyOpenSSL (>=17.2.0)
+Requires-Dist: PyYAML (>=3.12)
+Requires-Dist: requests (>=2.18.4)
+Requires-Dist: scikit-learn (==0.19.1)
+Requires-Dist: scipy
+Requires-Dist: six (>=1.11.0)
+Requires-Dist: statsmodels (>=0.9.0)
+Requires-Dist: tensorflow (>=1.10.0)
+Requires-Dist: azureml-core
+Requires-Dist: azureml-telemetry
+Requires-Dist: azure-storage-blob (>=1.1.0)
+Requires-Dist: sqlparse
+Requires-Dist: pyodbc (>=4.0.23)
+Requires-Dist: sqlalchemy (>=1.2.8)
+Requires-Dist: azureml-train-core
+
+Azuremlftk is the Azure ML Package for Forecasting, a library of models, data transforms and evaluators common in forecasting scenarios.
+
+Some of the things it provides:
+* data imputation transforms
+* rolling window and lagging/leading transforms
+* timestamp featurization
+* validators for doing cross-validation correctly with time series
+* standard "univariate" models" like ARIMA, ETS and Seasonal Naive
+* forecasting models that seamlessly convert forecasting to regression and accept external regressors
+* grouping multiple time series to learn a single model
+
+All models and transforms are presented with uniform scikit-like interfaces.
+
+Reference documentation <https://azuremlpackages.blob.core.windows.net/forecasting/release1901/documentation/index.html>
+
+Sample notebooks <https://github.com/Azure-Samples/MachineLearningSamples-Notebooks/tree/master/domain-packages/forecasting>
+
+
+
+
