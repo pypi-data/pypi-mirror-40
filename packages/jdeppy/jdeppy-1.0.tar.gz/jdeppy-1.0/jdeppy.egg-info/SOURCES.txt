@@ -1,0 +1,11 @@
+README.md
+setup.py
+jdeppy/Bunsetsu.py
+jdeppy/JDepP.py
+jdeppy/Morph.py
+jdeppy/Sentence.py
+jdeppy/__init__.py
+jdeppy.egg-info/PKG-INFO
+jdeppy.egg-info/SOURCES.txt
+jdeppy.egg-info/dependency_links.txt
+jdeppy.egg-info/top_level.txt
