@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: sovereign
+Version: 0.1.1
+Summary: Envoy Proxy control-plane written in Python
+Home-page: https://bitbucket.org/vsyrakis/sovereign
+Author: Vassilios Syrakis
+Author-email: vsyrakis@atlassian.com
+License: Apache-2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
