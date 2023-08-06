@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: tcplite
+Version: 0.0.1
+Summary: a lite, flexible and extendable tcp framework
+Home-page: UNKNOWN
+Author: Vincent
+Author-email: wang.yuanqiu007@gmail.com
+Maintainer: Vincent
+Maintainer-email: wang.yuanqiu007@gmail.com
+License: MIT License
+Description: tcplite：a lite, flexible and extendable tcp framework
+        ===============================
+Platform: all
