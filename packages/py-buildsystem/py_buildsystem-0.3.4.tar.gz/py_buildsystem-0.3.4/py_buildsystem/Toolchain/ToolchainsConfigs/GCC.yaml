@@ -1,0 +1,9 @@
+  compiler: gcc
+  linker:   gcc
+
+  define_flag:  -D
+  output_flag:  -o
+  compile_flag: -c
+  include_flag: -I
+  comand_line_file: "@"
+  version_flag: --version
