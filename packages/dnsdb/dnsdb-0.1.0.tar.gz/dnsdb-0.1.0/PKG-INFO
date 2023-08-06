@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dnsdb
+Version: 0.1.0
+Summary: A Python Client to interact with Farsight Security's DNSDB API
+Home-page: None
+Author: Gabriel Iovino
+Author-email: giovino@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests (>=2.21,<3.0)
