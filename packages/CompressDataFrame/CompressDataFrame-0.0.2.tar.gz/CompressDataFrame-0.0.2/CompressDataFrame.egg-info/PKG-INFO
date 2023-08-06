@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: CompressDataFrame
+Version: 0.0.2
+Summary: CompressDataFrame, is a script that will automatically optimize your DataFrame in order to reduce its size in some cases by up to 70%. Note: It only works on numerical variables not Object based ones. Support for more types of variables and other optimization functions coming soon
+Home-page: https://github.com/michaelabehsera/compress-df
+Author: Michael Abehsera
+Author-email: michaelabehsera@gmail.com
+License: UNKNOWN
+Description: Compress DataFrame will automatically pick the correct dtypes based on each column and find the one that takes up the least memory
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
