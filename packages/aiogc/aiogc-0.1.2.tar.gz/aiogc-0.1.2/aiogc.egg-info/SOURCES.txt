@@ -1,0 +1,11 @@
+README.md
+setup.py
+aiogc/__init__.py
+aiogc/events.py
+aiogc/helpers.py
+aiogc/models.py
+aiogc.egg-info/PKG-INFO
+aiogc.egg-info/SOURCES.txt
+aiogc.egg-info/dependency_links.txt
+aiogc.egg-info/requires.txt
+aiogc.egg-info/top_level.txt
