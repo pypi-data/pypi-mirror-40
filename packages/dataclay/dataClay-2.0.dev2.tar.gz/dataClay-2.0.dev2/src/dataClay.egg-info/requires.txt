@@ -1,0 +1,13 @@
+pyyaml
+lru-dict
+Jinja2
+PyYAML
+decorator
+grpcio==1.17.1
+grpcio-tools==1.17.1
+protobuf
+psutil
+six
+
+[:python_version < "3.4"]
+enum34
