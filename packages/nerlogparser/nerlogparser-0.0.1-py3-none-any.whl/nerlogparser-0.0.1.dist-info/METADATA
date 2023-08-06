@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nerlogparser
+Version: 0.0.1
+Summary: Automatic log parser
+Home-page: http://github.com/studiawan/nerlogparser/
+Author: Guillaume Genthial, Hudan Studiawan
+Author-email: studiawan@gmail.com
+License: Apache
+Keywords: named entity recognition,log parser,log forensics
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: tensorflow (==1.4.1)
+Requires-Dist: nltk
+
+Automatic log parser using named entity recognition in Python
+
+

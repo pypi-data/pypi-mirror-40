@@ -1,0 +1,3 @@
+[console_scripts]
+nerlogparser = nerlogparser.nerlogparser:main
+
