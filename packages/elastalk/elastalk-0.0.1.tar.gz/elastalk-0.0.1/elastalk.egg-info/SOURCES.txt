@@ -1,0 +1,15 @@
+MANIFEST.in
+README
+setup.cfg
+setup.py
+elastalk/__init__.py
+elastalk/cli.py
+elastalk/config.py
+elastalk/connect.py
+elastalk/version.py
+elastalk.egg-info/PKG-INFO
+elastalk.egg-info/SOURCES.txt
+elastalk.egg-info/dependency_links.txt
+elastalk.egg-info/entry_points.txt
+elastalk.egg-info/requires.txt
+elastalk.egg-info/top_level.txt
