@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sentry-dingtalk-notification
+Version: 1.0.5
+Summary: A Sentry extension which send errors stats to DingDing
+Home-page: https://github.com/py-bar/sentry-dingtalk
+Author: panda
+Author-email: itwujunze@gmail.com
+License: MIT
+Description: # sentry-dingtalk
+        sentry dingtalk notification plugin
+        
+        
+        ## Extensions for Sentry. Includes Slack, GitHub, and HipChat.
+        
+        ### Install the package via ``pip``::
+        
+            ```pip install sentry-dingtalk```
+        
+        ### Run migrations after installation is complete
+        
+            ```sentry upgrade```
+Keywords: sentry dingtalk notification
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
