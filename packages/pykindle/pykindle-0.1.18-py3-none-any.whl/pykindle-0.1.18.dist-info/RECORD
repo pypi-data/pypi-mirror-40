@@ -1,0 +1,17 @@
+pykindle/__init__.py,sha256=1A_9B8ptA3nOK6vLS3cORmtdhwfJZtLqbW42JnB-Xw0,302
+pykindle/book.py,sha256=-WaOnSONUoVQyBbm5N8hRnGVoRCG3NEL3OgkRGgk7pY,3919
+pykindle/items.py,sha256=KfJ3uBnO6G4Ir0_zmYzLk5OoiNerOq-aqZSWviRHp-I,9469
+pykindle/readers.py,sha256=2nqRuWYel6gdmLWySj3z_5WLq0a7RN43_AtM7OQ_X9I,3331
+pykindle/templates/article.html,sha256=X3kad6gmPKgp1qjIuaMaQxOU-vzCabdfi9n0v1cydVk,362
+pykindle/templates/magazine.ncx,sha256=pApbBRMhGyXUNzreBGvcy0NQTNdzW76SpFmFpN80sRo,1745
+pykindle/templates/magazine.opf,sha256=Tkpgp8AcLtMYfDZBhM65yjkMindCOXOrRX2V3GS0MPo,1370
+pykindle/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_item.py,sha256=x8M5NmfhdtBozRH0O6TiYmWXZ59mbBGmIwVGIsi-XMY,3160
+tests/test_magazine.py,sha256=ewE3cEXgoweOMKnWGgh2Rr3VcDA5Ai7psibtyW9bA-k,1642
+tests/test_readers.py,sha256=ArxHTkqYRagZ5cWwo5YQdkFxduCEhr0YR-gFBHQCDwg,970
+pykindle-0.1.18.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pykindle-0.1.18.dist-info/METADATA,sha256=ge5pvUF3xMnGK_9bKjL8yVHQbsRrnreCGkWmHwpm2VQ,1933
+pykindle-0.1.18.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+pykindle-0.1.18.dist-info/top_level.txt,sha256=_eR9zuIPnKezZSl6YNmsQDNOUuKTjXbRxeAm6siZq24,15
+pykindle-0.1.18.dist-info/RECORD,,
