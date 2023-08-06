@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: playmafia
+Version: 0.0.1
+Summary: The SDK for playmafia
+Home-page: https://gitlab.com/v7a/playmafia
+Author: Nicolas Kogler
+Author-email: nicolas.kogler@hotmail.com
+License: UNKNOWN
+Description: # playmafia
+        
+        The SDK for playmafia defining basic roles, basic items and the workflow for the game itself.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
