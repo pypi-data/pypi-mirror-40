@@ -1,0 +1,3 @@
+[console_scripts]
+run-hydxlib = hydxlib.scripts:main
+
