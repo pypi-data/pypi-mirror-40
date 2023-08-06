@@ -1,0 +1,14 @@
+torchreinforce/__init__.py,sha256=YllGPq5JYl3LQdKr25S0MrYmPzxlKpNYV6Im9IVMISw,105
+torchreinforce/output.py,sha256=qTXA9DheIkwvDWej3w22OMGTyaFI_Bttu26H7QHlQ90,533
+torchreinforce/reinforce.py,sha256=SrhhV7t-4Zk6ZcRlTOd_X1qF8UP1Rqa5nqiMidsBE-M,2779
+torchreinforce/distributions/__init__.py,sha256=KNl_xNDeSnxnLDxVpWz1-DZysAqqNLJ2gb2u_9yTcF0,120
+torchreinforce/distributions/base.py,sha256=Eit74lGNdbPZvxfa6F2raa6bjYhGlUTy233qUjrbsxo,65
+torchreinforce/distributions/categorical.py,sha256=aR_sftPtI92VCCDym1BMd4o2SwFdcH6Wbx0AH_369lU,608
+torchreinforce/distributions/wrapper.py,sha256=QPiMKUbSE_J1udOtvxi1F8_jG_G_l8DqdPQqiJi2UOA,377
+torchreinforce/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchreinforce/tests/grad_test.py,sha256=Z_yvjXLbTEV-5EG0SKRXn0F3Uk_iXVLEXZW_J6tCbWI,906
+torchreinforce-0.1.0.dist-info/LICENSE,sha256=szPsNB1d9NiWGcxpRqaX9ZY7FEd_8JoV7dFwzGhE-dw,35149
+torchreinforce-0.1.0.dist-info/METADATA,sha256=-4u2_fHhCqcoZ9lNdNXbjNZV6TrSfBB49iZ_j-XpLh4,5297
+torchreinforce-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+torchreinforce-0.1.0.dist-info/top_level.txt,sha256=pIjsiZqtIu0zpz4MxUxIi9KQ2Ls0y7z9CfoQEuEqyO4,15
+torchreinforce-0.1.0.dist-info/RECORD,,
