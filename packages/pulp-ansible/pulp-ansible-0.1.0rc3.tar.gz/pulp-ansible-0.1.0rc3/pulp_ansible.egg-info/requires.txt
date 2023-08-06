@@ -1,0 +1,12 @@
+pulpcore-plugin<=0.1.0b11
+pulpcore<=3.0.0b13
+
+[test]
+coverage
+flake8
+flake8-docstrings
+flake8-quotes
+flake8-tuple
+mock
+pulp-smash
+pytest
