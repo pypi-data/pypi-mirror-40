@@ -1,0 +1,16 @@
+requests>=2.18.4
+asciinema>=2.0.1
+uservoice>=0.0.23
+pycryptodome>=3.7.2
+
+[all]
+requests>=2.18.4
+asciinema>=2.0.1
+uservoice>=0.0.23
+pycryptodome>=3.7.2
+
+[discourse]
+pycryptodome>=3.7.2
+
+[uservoice]
+uservoice>=0.0.23
