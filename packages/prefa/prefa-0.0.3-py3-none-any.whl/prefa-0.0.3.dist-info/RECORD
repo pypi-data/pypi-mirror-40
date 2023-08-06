@@ -1,0 +1,13 @@
+prefa/__init__.py,sha256=uea8oxkqxXbtaGek2GCepxYZikvCT2G3ceB73pHqpbA,113
+prefa/__version__.py,sha256=zTsK0eMsWhQM_J498JkPKagt-JSb3mUYRSG5GT1rn-4,352
+prefa/bintree.py,sha256=T22IvsuI3zdZWZqusoKHxH1mj--_lnTkroM5pCZVU3Y,5606
+prefa/dfa.py,sha256=eB3CsNvS_1ZJsRenKGVwMIgIL60mgnEB-9gbyz3KBCY,11615
+prefa/fa.py,sha256=4cz3nFEUXSNf_FRxwp4q96qqt3ppssNVyBs98Lzum4Q,5446
+prefa/nfa.py,sha256=pTbqBW8e1L9CYuvupHfAhgC2agHHxIDVzjHhOazAeLw,7951
+prefa/re.py,sha256=kqTDVyBvlHew6w8C8gxYyFvThqniqCz6Yrv_RbrjX1M,3932
+prefa-0.0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+prefa-0.0.3.dist-info/METADATA,sha256=M1_jflPLzwMnZ_-CcOuMPC25NaKM4mgGP1bCVLLlbjU,762
+prefa-0.0.3.dist-info/RECORD,,
+prefa-0.0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+prefa-0.0.3.dist-info/metadata.json,sha256=f1g33WVnAiVGlRiRZfbsvaSDx8IsbW-ShKT2_FHTdgg,834
+prefa-0.0.3.dist-info/top_level.txt,sha256=-w4ygpbvnAbrd3nngkEQRE62MFeB3RDb5jh50Q0mUds,6
