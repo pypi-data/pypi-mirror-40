@@ -1,0 +1,25 @@
+CHANGES
+=======
+
+0.0.13
+------
+
+* Bugra/more badges (#15)
+* Bugra/ci integration for auomated publishing (#14)
+* Bump up the version number (#13)
+* FashionMnist and TextClassifier models (#11)
+* Bugra/delete support on docdb (#10)
+* Bugra/fix azure table and elastic module (#9)
+* Update issue templates (#8)
+* Bugra/add azure table (#7)
+* Add presto and bump up (#6)
+* Efficient docdb lookups (#5)
+* Update docker files
+* Add security
+* Working an alpine container
+* Add consul module
+* Add libffi-dev package for cryptography package
+* Docker files are separated into different versions
+* + Code of Conduct
+* Initial commit
+* Initial commit
