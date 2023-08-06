@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: PricingEngine
+Version: 0.0.5-beta-
+Summary: Predict the the ACV of the used car dealer can buy in optimised price to gain maximum profit.
+Home-page: http://www.smalldaytech.com
+Author: SmallDay
+Author-email: pranjal@smalldaytech.com
+License: BSD
+Description: The Pricing Engine is price-aware forecasting used for decision making.
+        Predict the the price of the used car dealer can buy in optimised price to gain maximum profit.
+        Note: code stating point from main.py
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Requires-Python: >=3.5
+Provides-Extra: argon2
+Provides-Extra: bcrypt
