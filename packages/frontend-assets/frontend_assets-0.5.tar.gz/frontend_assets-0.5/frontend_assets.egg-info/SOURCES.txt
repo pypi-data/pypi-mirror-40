@@ -1,0 +1,10 @@
+README.md
+setup.py
+frontend_assets/__init__.py
+frontend_assets/utils.py
+frontend_assets.egg-info/PKG-INFO
+frontend_assets.egg-info/SOURCES.txt
+frontend_assets.egg-info/dependency_links.txt
+frontend_assets.egg-info/not-zip-safe
+frontend_assets.egg-info/requires.txt
+frontend_assets.egg-info/top_level.txt
