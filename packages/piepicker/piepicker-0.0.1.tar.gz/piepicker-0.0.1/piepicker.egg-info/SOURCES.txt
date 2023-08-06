@@ -1,0 +1,10 @@
+setup.py
+piepicker/__init__.py
+piepicker/client.py
+piepicker/client_reqrep.py
+piepicker/pyppeteer_session.py
+piepicker.egg-info/PKG-INFO
+piepicker.egg-info/SOURCES.txt
+piepicker.egg-info/dependency_links.txt
+piepicker.egg-info/requires.txt
+piepicker.egg-info/top_level.txt

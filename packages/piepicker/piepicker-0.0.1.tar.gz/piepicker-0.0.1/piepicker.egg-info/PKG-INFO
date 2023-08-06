@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: piepicker
+Version: 0.0.1
+Summary: PiePicker is a wrapper for both aiohttp and pyppetter
+Home-page: https://github.com/myrfy001/piepicker
+Author: Awesome Soul
+Author-email: me@example.com
+License: MIT
+Description: PiePicker is a wrapper for both aiohttp and pyppetter
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
