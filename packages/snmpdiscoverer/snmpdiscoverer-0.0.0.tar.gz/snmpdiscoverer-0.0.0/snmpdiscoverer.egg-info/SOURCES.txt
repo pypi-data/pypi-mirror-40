@@ -1,0 +1,17 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+devel-requirements.txt
+requirements.txt
+setup.cfg
+setup.py
+snmpdiscoverer/__init__.py
+snmpdiscoverer/snmpdiscoverer.py
+snmpdiscoverer.egg-info/PKG-INFO
+snmpdiscoverer.egg-info/SOURCES.txt
+snmpdiscoverer.egg-info/dependency_links.txt
+snmpdiscoverer.egg-info/entry_points.txt
+snmpdiscoverer.egg-info/requires.txt
+snmpdiscoverer.egg-info/top_level.txt
+snmpdiscoverer.egg-info/zip-safe

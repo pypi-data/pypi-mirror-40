@@ -1,0 +1,3 @@
+[console_scripts]
+snmpdiscoverer = snmpdiscoverer.snmpdiscoverer:main
+
