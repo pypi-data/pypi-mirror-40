@@ -1,0 +1,4 @@
+[console_scripts]
+_essex=essex.essex_complete:main
+essex=essex.essex:main
+
