@@ -1,0 +1,6 @@
+recursive-include class4gl *
+# include simulations/*
+# include setup/*
+# include processing/*
+
+
