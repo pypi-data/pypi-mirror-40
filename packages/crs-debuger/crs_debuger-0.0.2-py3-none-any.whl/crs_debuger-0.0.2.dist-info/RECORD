@@ -1,0 +1,9 @@
+crs_debuger/__init__.py,sha256=W__ix8HTBjcVlraR2RMDuCrS9jvZzeWNVGs6C0PXDlc,21
+crs_debuger/core.py,sha256=ygZwYtirv20imyb_uhqIB6smhk4V1ho-YUU6rQaUZDI,2675
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_database.py,sha256=RqdwZAy5I5tMvhvQQB6nqWa65eLMs0PmJuqXxrsjMlc,851
+crs_debuger-0.0.2.dist-info/LICENSE,sha256=RWDUJqmiIBxrT5R_GJGM690509RZFQLNI3i0_xG7nN0,1067
+crs_debuger-0.0.2.dist-info/METADATA,sha256=0jPF3borF1F14ntANyAn0A26xQJX89fVxV97kD1mjZ8,512
+crs_debuger-0.0.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+crs_debuger-0.0.2.dist-info/top_level.txt,sha256=65H4Ym8d4WRR-Pp3_O2h9fuvSZ_uQJSkquvbGwku8Hs,18
+crs_debuger-0.0.2.dist-info/RECORD,,
