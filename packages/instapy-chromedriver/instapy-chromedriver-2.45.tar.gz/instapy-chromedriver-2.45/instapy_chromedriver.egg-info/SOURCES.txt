@@ -1,0 +1,13 @@
+CURRENT_VERSION.txt
+MANIFEST.in
+README.md
+setup.py
+instapy_chromedriver/__init__.py
+instapy_chromedriver/chromedriver_linux64
+instapy_chromedriver/chromedriver_mac64
+instapy_chromedriver/chromedriver_win32.exe
+instapy_chromedriver.egg-info/PKG-INFO
+instapy_chromedriver.egg-info/SOURCES.txt
+instapy_chromedriver.egg-info/dependency_links.txt
+instapy_chromedriver.egg-info/not-zip-safe
+instapy_chromedriver.egg-info/top_level.txt

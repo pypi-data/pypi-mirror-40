@@ -1,0 +1,8 @@
+include README.md
+include CURRENT_VERSION.txt
+include instapy_chromedriver/chromedriver_win32.exe
+include instapy_chromedriver/chromedriver_win64.exe
+include instapy_chromedriver/chromedriver_linux32
+include instapy_chromedriver/chromedriver_linux64
+include instapy_chromedriver/chromedriver_mac32
+include instapy_chromedriver/chromedriver_mac64
