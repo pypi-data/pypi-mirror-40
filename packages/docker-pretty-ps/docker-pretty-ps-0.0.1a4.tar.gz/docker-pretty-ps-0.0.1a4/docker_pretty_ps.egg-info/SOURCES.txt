@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+docker_pretty_ps.egg-info/PKG-INFO
+docker_pretty_ps.egg-info/SOURCES.txt
+docker_pretty_ps.egg-info/dependency_links.txt
+docker_pretty_ps.egg-info/top_level.txt
+dockerprettyps/__init__.py
+dockerprettyps/bin/docker-pretty-ps
