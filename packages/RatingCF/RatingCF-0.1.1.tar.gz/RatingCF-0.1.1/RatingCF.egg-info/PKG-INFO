@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: RatingCF
+Version: 0.1.1
+Summary: Collaborative Filtering for Rating-Based Recommender System
+Home-page: https://github.com/Kaversoniano/Python-package-RatingCF
+Author: Tianjian Yang
+Author-email: kaversoniano@gmail.com
+License: UNKNOWN
+Description: # Python-package-RatingCF
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
