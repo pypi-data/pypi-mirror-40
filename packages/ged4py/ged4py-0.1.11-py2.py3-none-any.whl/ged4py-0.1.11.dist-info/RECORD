@@ -1,0 +1,15 @@
+ged4py/__init__.py,sha256=kKZPT7Xm4X-9IuNSOllnavYaFgKx0pg8bTcCN72YE8E,258
+ged4py/model.py,sha256=3MpSW8pBXzCjTpPJxMYbTRUndUR58wwn3bHxYBJZkyI,15878
+ged4py/parser.py,sha256=e7BjUQOcvh1JxtDQQJxkkvB0z5F5Pl0i0zCbF9d1De0,16925
+ged4py/detail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ged4py/detail/date.py,sha256=HQGBaitQCEBAuXjMicHoegoJ5ymJj4WH330BsSEopws,10057
+ged4py/detail/io.py,sha256=fSYiMGxmzdhHoMkVAmwgG7xXUnS7csJg_JBDtIO0i1U,1948
+ged4py/detail/name.py,sha256=HoEkeDfVq7oXe86UJ0JV_kdlGyuzLOL__B9_iIvseYU,4460
+ged4py-0.1.11.dist-info/DESCRIPTION.rst,sha256=VGXjt1nyznkXo9aQLVvtIxHsyl_zXgVMIYpqjTMxgg0,2323
+ged4py-0.1.11.dist-info/METADATA,sha256=Ol4eF8W7JgjeTufHtUACKqFtle2N4hZQAc8Ybo5dzfU,3186
+ged4py-0.1.11.dist-info/RECORD,,
+ged4py-0.1.11.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+ged4py-0.1.11.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+ged4py-0.1.11.dist-info/metadata.json,sha256=OcI2Gws1l_0nYBd1CqewJ9rLuahfeG0Pd9I-vjL1zpE,1127
+ged4py-0.1.11.dist-info/top_level.txt,sha256=-TcyCLr6HhmQY1GkcaBFU_gTdVcG-AOZeTuggGPU-wg,7
+ged4py-0.1.11.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
