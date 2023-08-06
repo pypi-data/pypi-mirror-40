@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: leer-vm
+Version: 1.1
+Summary: Virtual Machine for leer cryptocurrency
+Home-page: https://github.com/WTRMQDev/VM
+Author: Crez Khansick
+Author-email: TetsuwanAtomu@tuta.io
+License: UNKNOWN
+Description: # Leer VM
+        
+        Leer Virtual Machine is non-Turing complete stack machine inspired by Bitcoin Script.
+        
+        This stack machine has 2 types in it:
+         * bytes
+         * points on elliptic curve
+        
+        ## TODO
+        
+        * Logic for `excess_lookup`, `output_lookup` and `burden` is required (stubs for now)
+        * tests
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

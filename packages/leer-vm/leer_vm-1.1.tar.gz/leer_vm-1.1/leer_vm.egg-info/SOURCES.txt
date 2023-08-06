@@ -1,0 +1,11 @@
+setup.py
+leer_vm/__init__.py
+leer_vm/opcodes.py
+leer_vm/opfuncs.py
+leer_vm/utils.py
+leer_vm/vm.py
+leer_vm.egg-info/PKG-INFO
+leer_vm.egg-info/SOURCES.txt
+leer_vm.egg-info/dependency_links.txt
+leer_vm.egg-info/requires.txt
+leer_vm.egg-info/top_level.txt
