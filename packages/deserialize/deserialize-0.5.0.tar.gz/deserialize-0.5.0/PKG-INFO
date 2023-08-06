@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: deserialize
+Version: 0.5.0
+Summary: A library to make deserialization easy.
+Home-page: https://github.com/dalemyers/deserialize
+Author: Dale Myers
+Author-email: dale@myers.io
+Keywords: deserialization,deserialize,objects,object,json
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Project-URL: Repository, https://github.com/dalemyers/deserialize
