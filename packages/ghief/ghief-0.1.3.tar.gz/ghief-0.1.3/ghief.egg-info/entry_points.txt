@@ -1,0 +1,3 @@
+[console_scripts]
+ghief = ghief.__main__:main
+
