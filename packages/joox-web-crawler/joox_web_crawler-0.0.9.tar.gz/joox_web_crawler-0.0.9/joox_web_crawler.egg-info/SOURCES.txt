@@ -1,0 +1,11 @@
+README.md
+setup.py
+joox_web_crawler/CurlLib.py
+joox_web_crawler/JooxWeb.py
+joox_web_crawler/__init__.py
+joox_web_crawler.egg-info/PKG-INFO
+joox_web_crawler.egg-info/SOURCES.txt
+joox_web_crawler.egg-info/dependency_links.txt
+joox_web_crawler.egg-info/requires.txt
+joox_web_crawler.egg-info/top_level.txt
+test/test_joox_web.py
