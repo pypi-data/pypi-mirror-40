@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ixnetrestwrap
+Version: 0.0.8
+Summary: Rest API Wrapper For IxNetwork
+Home-page: https://github.com/ParthibanRamachandran/IxNetwork/tree/master/RestApi/Python/Modules
+Author: Parthiban Ramachandran
+Author-email: rparthibaan@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is REST API wrapper package to communicate with IxNetwork
+The actual code is available at github https://github.com/ParthibanRamachandran/IxNetwork/tree/master/RestApi/Python/Modules
+
+This is forked project from OpenIxia community. with changes to handle the requests based on sessions and fixing of few errors.
+
+
