@@ -1,0 +1,7 @@
+beautifulsoup4
+requests
+unicodecsv
+
+[test]
+responses
+mock
