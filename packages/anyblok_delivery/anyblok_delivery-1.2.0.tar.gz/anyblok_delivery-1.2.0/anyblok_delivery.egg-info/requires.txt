@@ -1,0 +1,9 @@
+anyblok
+anyblok_mixins
+anyblok_postgres
+anyblok_attachment
+anyblok_address
+cryptography
+idna
+requests
+requests-toolbelt
