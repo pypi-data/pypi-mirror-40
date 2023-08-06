@@ -1,0 +1,10 @@
+[Unit]
+Description=rpi-cam-mqtt
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/rpicammqtt
+
+[Install]
+WantedBy=multi-user.target

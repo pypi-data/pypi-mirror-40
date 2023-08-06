@@ -1,0 +1,61 @@
+---
+#
+# General settings
+#
+
+# Camera name. Camera id in MQTT topic
+rpiname: "backyard"
+
+# Set logging level to one of:
+# CRITICAL, ERROR, WARNING, INFO, DEBUG
+logging:
+  level: ERROR
+  file: '/var/log/rpi-cam-mqtt.log'
+
+# RPi-Camera-Web-Interface mapping for type checking
+# DON'T CHANGE IT
+data:
+  path: './data'
+  rpi_cam_file: 'rpi-cam-info.json'
+
+# These need to reflect the RPi-Camera-Web-Interface settings;
+# you don't normally need to change them
+rpicam:
+  statusfile: "/dev/shm/mjpeg/status_mjpeg.txt"
+  fifofile: "/var/www/FIFO11"
+
+
+#
+# MQTT settings
+#
+
+# Ensure server and user/pw are set
+# If you change the topics below and you intend to use the home assistant integration,
+# ensure the HA rpicam platform is configured the same.
+mqtt:
+  server: ""
+  port: 1883
+  keepalive: 60
+  user: ''
+  pw: ''
+  qos: 1
+  topic:
+    base: "rpicam/{}"
+    pantilt: "rpicam/{}/pt"
+    ptviews: "rpicam/{}/pt/views"
+    status: "rpicam/{}/status"
+
+#
+# Pan/Tilt settings
+#
+
+# If enabled, depending where your pan-tilt servos are connected you need to set the correct channels (0-15)
+pantilt:
+  enabled: 0
+  pan_pwm_ch: 0
+  tilt_pwm_ch: 4
+  config_file: /etc/rpi-cam-mqtt/Adafruit_PCA9685.yaml
+  views:
+#    front_window:
+#    - 560
+#    - 355

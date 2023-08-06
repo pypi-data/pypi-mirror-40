@@ -1,0 +1,4 @@
+[console_scripts]
+configpt = rpicammqtt.configpt:main
+rpicammqtt = rpicammqtt.__main__:main
+

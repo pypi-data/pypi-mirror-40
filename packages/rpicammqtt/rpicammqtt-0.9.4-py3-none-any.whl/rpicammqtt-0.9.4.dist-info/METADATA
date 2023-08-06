@@ -1,0 +1,183 @@
+Metadata-Version: 2.1
+Name: rpicammqtt
+Version: 0.9.4
+Summary: Mqtt agent for rpi-cam-web-interface
+Home-page: https://gitlab.com/gbus/rpi-cam-mqtt
+Author: Gianluca Busiello
+Author-email: gianluca.busiello@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: PyYaml (>=3.12)
+Requires-Dist: paho-mqtt (>=1.4.0)
+Requires-Dist: adafruit-pca9685
+
+Rpi-Cam-MQTT
+------------
+
+Mqtt agent for RPi-Cam-Web-Interface (https://elinux.org/RPi-Cam-Web-Interface) project.
+
+The agent runs on a raspberry pi where RPi-Cam-Web-Interface is installed and running.
+
+The main objective is to provide an mqtt interface to the FIFO file (/var/www/FIFO11) to inject commands and get the status from status_mjpeg.txt. 
+
+Additionally, the support for pantilt is also available (check below).
+
+The agent has been developed with the specific purpose to simplify the integration with homeassistant; this is made possible through the dedicated HA camera platform "rpicam" (https://gitlab.com/gbus/ha-rpicam), currently under development. 
+Anyway, the generic nature of the mqtt messages makes it possible to use any mqtt controller to read and send info with the agent.
+
+When connected to an MQTT server it is possible to:
+- get the camera status
+- send remote mqtt commands to control the camera
+- send remote mqtt commands to control pantilt (if available)
+- list pan/tilt views (if pantilt available and views configured)
+
+The topics are:
+- _`rpicam/<camera_name>/status`_, status from /dev/shm/mjpeg/status_mjpeg.txt
+- _`rpicam/<camera_name>`_, topic used to publish commands 
+- _`rpicam/<camera_name>/pt`_, topic used to publish pan/tilt commands
+- _`rpicam/<camera_name>/pt/views`_, list of configured views
+
+Install
+------------
+
+- From pypi
+
+Ensure that the command pip3 is installed and run:
+
+    sudo pip3 install rpicammqtt
+
+
+- Development code from gitlab
+
+Install the requirements, clone the repo and run the setup:
+
+    sudo apt-get install git python3-setuptools python3-yaml
+    git clone git@gitlab.com:gbus/rpi-cam-mqtt.git
+
+    cd rpi-cam-mqtt
+    sudo python3 setup.py install
+
+Configuration
+-------------
+
+The configuration is looked up in:
+
+    /etc/rpi-cam-mqtt/rpi-cam-mqtt.yaml
+    $HOME/.rpi-cam-mqtt/rpi-cam-mqtt.yaml
+
+Create the preferred directory:
+
+    sudo mkdir /etc/rpi-cam-mqtt
+    or
+    mkdir $HOME/.rpi-cam-mqtt
+
+cd into it and add the files:
+
+    sudo wget https://gitlab.com/gbus/rpi-cam-mqtt/raw/master/rpicammqtt/config/rpi-cam-mqtt.yaml
+    sudo wget https://gitlab.com/gbus/rpi-cam-mqtt/raw/master/rpicammqtt/config/Adafruit_PCA9685.yaml
+
+In rpi-cam-mqtt.yaml change at least the following:
+
+    - Camera name
+    - MQTT server address
+    - MQTT user/pw
+
+Configure the service to start at boot:
+
+    sudo wget -o /etc/systemd/system/rpi-cam-mqtt.service https://gitlab.com/gbus/rpi-cam-mqtt/raw/master/rpicammqtt/systemd/rpi-cam-mqtt.service
+    sudo systemctl daemon-reload
+    sudo systemctl enable rpi-cam-mqtt
+    sudo systemctl start rpi-cam-mqtt
+
+Pan/Tilt
+--------
+
+Pan/Tilt can be enabled and it is based on the PCA9685 controller and the Adafruit library.
+It is possible to predefine pan/tilt pair values with memorable names so that the camera can be instructed to point to a specific location (ie: point to "front_window").
+The configuration looks like this:
+
+    pantilt:
+      views:
+        front_window:
+        - 560
+        - 355
+        door:
+        - 420
+        - 355
+
+The pan/tilt values can be easily identified running the command "configpt", available from your path after the installation of the module.
+
+This allows you to move the arrow keys while watching the live feed from the camera and get the pan/tilt values:
+
+    # configpt
+
+
+
+     Pan:     540   Tilt:     470
+
+
+When the views are noted down with the correct pan/tilt values press q to exit the command.
+
+
+Testing
+-------
+
+- Test camera status and PIPE commands
+
+An easy way to test the agent is to check the topics for your camera with an mqtt client, ie with mosquitto:
+
+    mosquitto_sub -h MQTTSRV_IP -p 1883 -u USERNAME -P PASSWORD -q 1 -t rpicam/CAMERA_NAME/status
+    mosquitto_sub -h MQTTSRV_IP -p 1883 -u USERNAME -P PASSWORD -q 1 -t rpicam/CAMERA_NAME/pt/views
+or all of it:
+
+    mosquitto_sub -h MQTTSRV_IP -p 1883 -u USERNAME -P PASSWORD -q 1 -F 'Topic: %t\nMsg: %p\n' -t rpicam/CAMERA_NAME/#
+
+
+It is possible to send any commands you would normally send to the FIFO file as described in the documentation (https://elinux.org/RPi-Cam-Web-Interface#Pipe), ie:
+
+    Disable the camera:
+    mosquitto_pub -h MQTTSRV_IP -p 1883 -u USERNAME -P PASSWORD -q 1 -t rpicam/CAMERA_NAME -m "ru 0"
+
+    Enable motion detection:
+    mosquitto_pub -h MQTTSRV_IP -p 1883 -u USERNAME -P PASSWORD -q 1 -t rpicam/CAMERA_NAME -m "md 1"
+
+    Set a new annotation and add a background to the text:
+    mosquitto_pub -h MQTTSRV_IP -p 1883 -u USERNAME -P PASSWORD -q 1 -t rpicam/CAMERA_NAME -m "an Entrance hall %Y.%M.%D_%h:%m:%s"
+    mosquitto_pub -h MQTTSRV_IP -p 1883 -u USERNAME -P PASSWORD -q 1 -t rpicam/CAMERA_NAME -m "ab 1"
+
+When the agent receives the string commands, they are parsed before being sent to the pipe. The filtering is based on the type schema and the limits defined in data/rpi-cam-info.json 
+
+- Test pan/tilt views and commands
+
+The camera can be pointed to different corners by setting values for pan and tilt like this:
+
+    mosquitto_pub -h MQTTSRV_IP -p 1883 -u USERNAME -P PASSWORD -q 1 -t rpicam/CAMERA_NAME/pt -m "{\"pan\": 380, \"tilt\": 300}"
+
+Alternatively, one of views can be retreived:
+
+    mosquitto_sub -h MQTTSRV_IP -p 1883 -u USERNAME -P PASSWORD -q 1 -t rpicam/CAMERA_NAME/pt/views
+
+...and used:
+
+    mosquitto_sub -h MQTTSRV_IP -p 1883 -u USERNAME -P PASSWORD -q 1 -t rpicam/CAMERA_NAME/pt -m "{\"view\": \"front_window\"}"
+
+Debug
+-----
+
+After the agent is started by systemctl check for process errors:
+
+    systemctl status rpi-cam-mqtt
+
+If the process is correctly run, check the logs:
+
+    tail -f /var/log/rpi-cam-mqtt.log
+
+Increase the logging level in the configuration if needed:
+
+    logging:
+        level: ERROR|INFO|DEBUG
+
+

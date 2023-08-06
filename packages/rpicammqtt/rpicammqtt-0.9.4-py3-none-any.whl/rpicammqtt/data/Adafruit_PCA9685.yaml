@@ -1,0 +1,61 @@
+---
+# The pan/tilt control is based on two servos connected to the Adafruit_PCA9685 board.
+# The details of the hardware and the connections are explained here:
+# https://learn.adafruit.com/adafruit-16-channel-servo-driver-with-raspberry-pi
+
+freq: 60
+
+# Min/Max limits per channel.
+# Depending on the characteristics of the servos you connect, you can have different min/max limits.
+# Set a wider range (ie: 100-800) to experiment with your servo and use tools/configpt.py to find the limits of your
+# servos.
+# 180-570 are the limits I think work best for SG90 9g Micro Gear Servo from ebay.
+channel:
+  0:
+    minp: 180
+    maxp: 570
+  1:
+    minp: 180
+    maxp: 570
+  2:
+    minp: 180
+    maxp: 570
+  3:
+    minp: 180
+    maxp: 570
+  4:
+    minp: 180
+    maxp: 570
+  5:
+    minp: 180
+    maxp: 570
+  6:
+    minp: 180
+    maxp: 570
+  7:
+    minp: 180
+    maxp: 570
+  8:
+    minp: 180
+    maxp: 570
+  9:
+    minp: 180
+    maxp: 570
+  10:
+    minp: 180
+    maxp: 570
+  11:
+    minp: 180
+    maxp: 570
+  12:
+    minp: 180
+    maxp: 570
+  13:
+    minp: 180
+    maxp: 570
+  14:
+    minp: 180
+    maxp: 570
+  15:
+    minp: 180
+    maxp: 570

@@ -1,0 +1,580 @@
+{
+  "rpi_cam_cmds": {
+    "an": {
+      "Parameters": "Text",
+      "Description": "set annotation",
+      "type": {
+        "name": "string"
+      }
+    },
+    "ab": {
+      "Parameters": "0/1",
+      "Description": "annotation background off/on",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    "px": {
+      "Parameters": "AAAA BBBB CC DD EEEE FFFF",
+      "Description": "set video+img res  video = AxB px, C fps, box with D fps, image = ExF px)",
+      "type": {
+        "name": "list",
+        "length": [
+          6,
+          6
+        ]
+      }
+    },
+    "bu": {
+      "Parameters": "Number",
+      "Description": "set pre-trigger video buffer in mSec (approx)",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          null
+        ]
+      }
+    },
+    "as": {
+      "Parameters": "Number",
+      "Description": "Set text size 0-99",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          99
+        ]
+      }
+    },
+    "at": {
+      "Parameters": "E YYY UUU VVV",
+      "Description": "Set Text colour E (0/1 enable ) Colour as Y:U:V",
+      "type": {
+        "name": "list",
+        "length": [
+          4,
+          4
+        ]
+      }
+    },
+    "ac": {
+      "Parameters": "E YYY UUU VVV",
+      "Description": "Set background colour E (0/1 enable ) Colour as Y:U:V",
+      "type": {
+        "name": "list",
+        "length": [
+          4,
+          4
+        ]
+      }
+    },
+    "sh": {
+      "Parameters": "Number",
+      "Description": "set sharpness (range: [-100;100]; default: 0)",
+      "type": {
+        "name": "number",
+        "range": [
+          -100,
+          100
+        ]
+      }
+    },
+    "co": {
+      "Parameters": "Number",
+      "Description": "set contrast (range: [-100;100]; default: 0)",
+      "type": {
+        "name": "number",
+        "range": [
+          -100,
+          100
+        ]
+      }
+    },
+    "br": {
+      "Parameters": "Number",
+      "Description": "set brightness (range: [0;100]; default: 50)",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          100
+        ]
+      }
+    },
+    "sa": {
+      "Parameters": "Number",
+      "Description": "set saturation (range: [-100;100]; default: 0)",
+      "type": {
+        "name": "number",
+        "range": [
+          -100,
+          100
+        ]
+      }
+    },
+    "is": {
+      "Parameters": "Number",
+      "Description": "set ISO (range: [100;800]; default: 0=auto)",
+      "type": {
+        "name": "number",
+        "range": [
+          100,
+          800
+        ]
+      }
+    },
+    "vs": {
+      "Parameters": "Number",
+      "Description": "0/1 turn off/on video stabilisation",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    "ec": {
+      "Parameters": "Number",
+      "Description": "set exposure compensation (range: [-10;10]; default: 0)",
+      "type": {
+        "name": "number",
+        "range": [
+          -10,
+          10
+        ]
+      }
+    },
+    "em": {
+      "Parameters": "Keyword",
+      "Description": "set exposure mode (range: [off/auto/night/nightpreview/backlight/spotlight/sports/snow/beach/verylong/fixedfps/antishake/fireworks]; default: auto)",
+      "type": {
+        "name": "set",
+        "keywords": [
+          "off",
+          "auto",
+          "night",
+          "nightpreview",
+          "backlight",
+          "spotlight",
+          "sports",
+          "snow",
+          "beach",
+          "verylong",
+          "fixedfps",
+          "antishake",
+          "fireworks"
+        ]
+      }
+    },
+    "wb": {
+      "Parameters": "Keyword",
+      "Description": "set white balance (range: [off/auto/sun/cloudy/shade/tungsten/fluorescent/incandescent /flash/horizon]; default: auto)",
+      "type": {
+        "name": "set",
+        "keywords": [
+          "off",
+          "auto",
+          "sun",
+          "cloudy",
+          "shade",
+          "tungsten",
+          "fluorescent",
+          "incandescent",
+          "flash",
+          "horizon"
+        ]
+      }
+    },
+    "ag": {
+      "Parameters": "RRR BBB",
+      "Description": "set white balance off red_gain blue gain (100 = 1.0; default: 150)",
+      "type": {
+        "name": "list",
+        "length": [
+          2,
+          2
+        ]
+      }
+    },
+    "mm": {
+      "Parameters": "Keyword",
+      "Description": "set metering mode (range: [average/spot/backlit/matrix]; default: average)",
+      "type": {
+        "name": "set",
+        "keywords": [
+          "average",
+          "spot",
+          "backlit",
+          "matrix"
+        ]
+      }
+    },
+    "ie": {
+      "Parameters": "Keyword",
+      "Description": "set image effect (range: [none/negative/solarise/posterize/whiteboard/blackboard/sketch/denoise/emboss/oilpaint /hatch/gpen/pastel/watercolour/film/blur/saturation/colourswap/washedout/posterise /colourpoint/colourbalance/cartoon]; default: none)",
+      "type": {
+        "name": "set",
+        "keywords": [
+          "none",
+          "negative",
+          "solarise",
+          "posterize",
+          "whiteboard",
+          "blackboard",
+          "sketch",
+          "denoise",
+          "emboss",
+          "oilpaint",
+          "hatch",
+          "gpen",
+          "pastel",
+          "watercolour",
+          "film",
+          "blur",
+          "saturation",
+          "colourswap",
+          "washedout",
+          "posterise",
+          "colourpoint",
+          "colourbalance",
+          "cartoon"
+        ]
+      }
+    },
+    "ce": {
+      "Parameters": "A BB CC",
+      "Description": "set colour effect (A=enable/disable, effect = B:C)",
+      "type": {
+        "name": "list",
+        "length": [
+          3,
+          3
+        ]
+      }
+    },
+    "ro": {
+      "Parameters": "Number",
+      "Description": "set rotation (range: [0/90/180/270]; default: 0)",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          270
+        ]
+      }
+    },
+    "fl": {
+      "Parameters": "Number",
+      "Description": "Set horizontal flip(hflip) and vertical flip(vflip). 0={hflip=0,vflip=0}, 1={hflip=1,vflip=0}, 2={hflip=0,vflip=1}, 3={hflip=1,vflip=1}, default: 0",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          3
+        ]
+      }
+    },
+    "ri": {
+      "Parameters": "AAAAA BBBBB CCCCC DDDDD",
+      "Description": "set sensor region (AAAAA BBBBB CCCCC DDDDD, x=A, y=B, w=C, h=D)",
+      "type": {
+        "name": "list",
+        "length": [
+          4,
+          4
+        ]
+      }
+    },
+    "ss": {
+      "Parameters": "Number",
+      "Description": "Set shutter speed",
+      "type": {
+        "name": "number",
+        "range": [
+          null,
+          null
+        ]
+      }
+    },
+    "qu": {
+      "Parameters": "Number",
+      "Description": "set output image quality (range: [0;100]; default: 85)",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          100
+        ]
+      }
+    },
+    "pv": {
+      "Parameters": "QQ WWW DD",
+      "Description": "set preview quality (0-100) default 25 Width (128-1024) default 512, Divider (1-16) default 1",
+      "type": {
+        "name": "list",
+        "length": [
+          3,
+          3
+        ]
+      }
+    },
+    "bi": {
+      "Parameters": "Number",
+      "Description": "set output video bitrate (range: [0;25000000]; default: 17000000)",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          25000000
+        ]
+      }
+    },
+    "bo": {
+      "Parameters": "Number",
+      "Description": "Set mp4 boxing mode 0=off,1=background",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    "rl": {
+      "Parameters": "0/1",
+      "Description": "0/1 disable / enable raw layer",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    "ru": {
+      "Parameters": "0/1",
+      "Description": "0/1 halt/restart RaspiMJPEG and release camera",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    "rs": {
+      "Parameters": "1",
+      "Description": "Reset user config to default",
+      "type": {
+        "name": "number",
+        "range": [
+          1,
+          1
+        ]
+      }
+    },
+    "md": {
+      "Parameters": "0/1",
+      "Description": "0/1 stop/start motion detection",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    "ca": {
+      "Parameters": "0/1 [t]",
+      "Description": "0/1 stop/start video capture, t if present specifies capture duration in seconds",
+      "type": {
+        "name": "list",
+        "length": [
+          1,
+          2
+        ]
+      }
+    },
+    "im": {
+      "Parameters": "1",
+      "Description": "capture image",
+      "type": {
+        "name": "number",
+        "range": [
+          1,
+          1
+        ]
+      }
+    },
+    "tl": {
+      "Parameters": "0/1",
+      "Description": "Stop/start timelapse",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    "tv": {
+      "Parameters": "Number",
+      "Description": "Set timelapse between images number * 1/10 seconds.",
+      "type": {
+        "name": "number",
+        "range": [
+          null,
+          null
+        ]
+      }
+    },
+    "vi": {
+      "Parameters": "Number",
+      "Description": "Sets video split interval in seconds. 0 is no splitting.",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          null
+        ]
+      }
+    },
+    "sc": {
+      "Parameters": "1",
+      "Description": "Scan and set video and image indexes",
+      "type": {
+        "name": "number",
+        "range": [
+          1,
+          1
+        ]
+      }
+    },
+    "sy": {
+      "Parameters": "macro",
+      "Description": "Execute macro",
+      "type": {
+        "name": "string"
+      }
+    },
+    "um": {
+      "Parameters": "number macro",
+      "Description": "Update macro",
+      "type": {
+        "name": "string"
+      }
+    },
+    "vp": {
+      "Parameters": "0/1",
+      "Description": "Turn motion vector_preview off/on",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    "mn": {
+      "Parameters": "Number",
+      "Description": "Set motion_noise parameter",
+      "type": {
+        "name": "number",
+        "range": [
+          null,
+          null
+        ]
+      }
+    },
+    "mt": {
+      "Parameters": "Number",
+      "Description": "Set motion_threshold parameter",
+      "type": {
+        "name": "number",
+        "range": [
+          null,
+          null
+        ]
+      }
+    },
+    "mi": {
+      "Parameters": "Filename",
+      "Description": "Set motion_image parameter",
+      "type": {
+        "name": "string"
+      }
+    },
+    "ms": {
+      "Parameters": "Number",
+      "Description": "Set motion_initframes parameter",
+      "type": {
+        "name": "number",
+        "range": [
+          null,
+          null
+        ]
+      }
+    },
+    "mb": {
+      "Parameters": "Number",
+      "Description": "Set motion_startframes parameter",
+      "type": {
+        "name": "number",
+        "range": [
+          null,
+          null
+        ]
+      }
+    },
+    "me": {
+      "Parameters": "Number",
+      "Description": "Set motion_stopframes parameter",
+      "type": {
+        "name": "number",
+        "range": [
+          null,
+          null
+        ]
+      }
+    },
+    "cn": {
+      "Parameters": "1/2",
+      "Description": "Set camera number (Compute module only)",
+      "type": {
+        "name": "number",
+        "range": [
+          1,
+          2
+        ]
+      }
+    },
+    "qp": {
+      "Parameters": "A BB CC",
+      "Description": "Set h264 encoding pars A=minimise_frag BB=initial_quant CC=encode_qp",
+      "type": {
+        "name": "list",
+        "length": [
+          3,
+          3
+        ]
+      }
+    },
+    "ls": {
+      "Parameters": "Number",
+      "Description": "Set log_size",
+      "type": {
+        "name": "number",
+        "range": [
+          0,
+          null
+        ]
+      }
+    }
+  }
+}
