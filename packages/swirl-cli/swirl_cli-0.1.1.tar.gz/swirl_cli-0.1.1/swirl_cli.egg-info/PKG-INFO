@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: swirl-cli
+Version: 0.1.1
+Summary: Provides access to SWIRL CLI projects
+Home-page: https://git.starlightconsultants.com/swirl/python-cli
+Author: William Naslund
+Author-email: admin@starlightconsultants.com
+License: UNKNOWN
+Description: # SWIRL CLI Python
+        For information about the `swirl_cli` module, and its uses, please read the
+        documentation at:
+        
+        [http://swirl.git.starlightconsultants.com/python-cli/](http://swirl.git.starlightconsultants.com/python-cli/)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
