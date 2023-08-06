@@ -1,0 +1,12 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+dis3.py
+setup.py
+tox.ini
+dis3.egg-info/PKG-INFO
+dis3.egg-info/SOURCES.txt
+dis3.egg-info/dependency_links.txt
+dis3.egg-info/top_level.txt
+test/test_dis3.py
