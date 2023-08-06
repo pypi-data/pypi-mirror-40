@@ -1,0 +1,11 @@
+py_structures-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+py_structures-0.1.0.dist-info/METADATA,sha256=wgJ2rgLEoE0OaNpM8svqI3R3tnp8KhGNV-1Fl7n_ScI,250
+py_structures-0.1.0.dist-info/RECORD,,
+py_structures-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+py_structures-0.1.0.dist-info/metadata.json,sha256=MPi4111o5JiOehjaLKkD5FW4M-NqQ_r2uBMa3Bp0krA,471
+py_structures-0.1.0.dist-info/top_level.txt,sha256=jOl2KfeOEFDpsIvCL4pWlHbukePxB8yKBklvMv5NZW0,17
+structures/__init__.py,sha256=vdM10V78U2GAgCSLg9Xs3VK4U4k0RtEmJ-WA8si1Sf0,77
+structures/structures.py,sha256=j3menqeUyu8BNLoLqZ8oCK_FrwlL0B2xdKQe3dSCsZg,1551
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/tests_structures.py,sha256=-PjU2ovDmqi35DC_v8SRZ3P2U1kYmTxL1f8jyphs1BE,2444
