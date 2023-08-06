@@ -1,0 +1,15 @@
+neuralnet_pytorch/__init__.py,sha256=D-vH_-mAm1rdIF9RG_n4FC1MGumCq2MZVtJhk8hq52Q,326
+neuralnet_pytorch/_version.py,sha256=keRjKYRcSCfDShfiv46i2oYlUTK8hcI_vXwHrJEELOM,86
+neuralnet_pytorch/layers.py,sha256=TGNDdg8m1vYpO5SPZVq4N_CKOrIKaPejsb-4BEq6ei4,25634
+neuralnet_pytorch/metrics.py,sha256=MjyY8zcDqxLDHbV1Vobw-_mYArgJXdsCqe8daBg2mc4,8204
+neuralnet_pytorch/monitor.py,sha256=l2eH56owuNpoM3VLV3msXDpD83HY3k1LHILMCReAbQM,17508
+neuralnet_pytorch/normalization.py,sha256=kwb4U_6XPCkpiCW0FveNRZr5rznOO9BEn2D6R-tM81Y,2744
+neuralnet_pytorch/optimizer.py,sha256=chlCN7cSwr5pURuA-l_Sn8km-pUXyQQi6s1b2UhJDys,2380
+neuralnet_pytorch/resizing.py,sha256=vDYbXrfC8omqNsnLrQ0AOgFWZt-USewrDKlCKf6QcNU,8313
+neuralnet_pytorch/test.py,sha256=6md-B7m__xKZsVsvSBHaZe-5S8zSSDEGQjhfrjdKP2M,17046
+neuralnet_pytorch/utils.py,sha256=B-SneZv289uDzPT-GRJrTzS8mdxgmeoITM2Ra2zgJVQ,10133
+neuralnet_pytorch-0.0.3.dist-info/LICENSE.txt,sha256=JoTeFzAOCkNGhvHsf4r2BFIHpLRXo_4EsrnOZV58XVA,17098
+neuralnet_pytorch-0.0.3.dist-info/METADATA,sha256=VivhcsbzrG31pIiXa76_z4XxoX7ENXmRE6_Y2Zt6-R8,1533
+neuralnet_pytorch-0.0.3.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+neuralnet_pytorch-0.0.3.dist-info/top_level.txt,sha256=Ys-KcD_wkTUZNLw2izRNvgGK5l0opUiFXesVWDnD1Fg,18
+neuralnet_pytorch-0.0.3.dist-info/RECORD,,
