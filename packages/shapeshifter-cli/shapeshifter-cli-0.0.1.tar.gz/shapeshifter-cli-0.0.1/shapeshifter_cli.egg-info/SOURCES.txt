@@ -1,0 +1,10 @@
+setup.py
+shapeshifter_cli.egg-info/PKG-INFO
+shapeshifter_cli.egg-info/SOURCES.txt
+shapeshifter_cli.egg-info/dependency_links.txt
+shapeshifter_cli.egg-info/entry_points.txt
+shapeshifter_cli.egg-info/requires.txt
+shapeshifter_cli.egg-info/top_level.txt
+shapeshiftercli/__init__.py
+shapeshiftercli/__main__.py
+shapeshiftercli/shapeshiftercli.py
