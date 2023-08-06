@@ -1,0 +1,36 @@
+from enum import Enum
+
+from schematics import Model
+from schematics.types import ListType, ModelType, IntType, StringType, DictType
+
+from protobuf_schematics.models import ProtobufMessageModel
+from protobuf_schematics.types import EnumType, BytesType
+
+
+{%- macro enum_class(name, enum) -%}
+class {{ name }}(Enum):
+    {%- for field in enum.fields %}
+    {{ field.name }} = {{ field.value }}
+    {%- endfor %}
+{%- endmacro %}
+
+{% macro classdef(message) -%}
+class {{ message.full_name }}(ProtobufMessageModel):
+{%- for enum_name, enum in message.enums.items() %}
+    {{ enum_class(enum_name, enum) | indent(4) }}
+{% endfor %}
+{%- for field in message.fields|sort(attribute='index') %}
+    {{ field | schematics_field }}
+
+{%- endfor %}
+
+{% endmacro -%}
+
+
+{%- for enum in parser_dict.enums %}
+{{ enum_class(enum.full_name, enum) }}
+
+{% endfor %}
+{%- for class in parser_dict.messages %}
+{{ classdef(class) }}
+{%- endfor %}
