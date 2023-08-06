@@ -1,0 +1,9 @@
+README.md
+setup.py
+easy_kubernetes/__init__.py
+easy_kubernetes/kubernetes.py
+easy_kubernetes.egg-info/PKG-INFO
+easy_kubernetes.egg-info/SOURCES.txt
+easy_kubernetes.egg-info/dependency_links.txt
+easy_kubernetes.egg-info/requires.txt
+easy_kubernetes.egg-info/top_level.txt
