@@ -1,0 +1,10 @@
+logwrap/__init__.py,sha256=OVjtCVVaqKQMnMraefSomw-7XGKshDQGTe36-pQ0L6g,2035
+logwrap/class_decorator.py,sha256=KwFW8w6T-Ws0CR_B-TpNZCRgNFKGIn7jdqX0H1PRowo,3966
+logwrap/log_wrap.py,sha256=5jCmt93bzIMtLQBEACFk9Jc6eLHwMSd4oHucSxt7QdQ,27972
+logwrap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logwrap/repr_utils.py,sha256=3l4guUBCz9yMMABv8WJVPTNFEj-8i11cTT-MzDs_Evk,21028
+logwrap-6.0.0.dist-info/LICENSE,sha256=s8-_PAfhnpg1WRQLDom9s4Jj_WkJsibgqe2eXuGBz7s,11366
+logwrap-6.0.0.dist-info/METADATA,sha256=GfPb18X_ReTrlcNdIt-6rbthwjhf-_Q-S-6qTJCyROk,10782
+logwrap-6.0.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+logwrap-6.0.0.dist-info/top_level.txt,sha256=7q47MQq8ZedycLFMKaloOJ1NjkeTpxqwcdtYqVXduwM,8
+logwrap-6.0.0.dist-info/RECORD,,
