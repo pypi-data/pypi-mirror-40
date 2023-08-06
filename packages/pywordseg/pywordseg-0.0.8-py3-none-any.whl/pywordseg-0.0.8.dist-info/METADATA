@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pywordseg
+Version: 0.0.8
+Summary: Open-source state-of-the-art Chinese word segmentation toolkit
+Home-page: https://github.com/voidism/pywordseg
+Author: Jexus Chuang
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: torch
+Requires-Dist: h5py
+Requires-Dist: numpy
+Requires-Dist: overrides
+
+UNKNOWN
+
+
