@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+cvt2utf/__init__.py
+cvt2utf/main.py
+cvt2utf/meta_inf.py
+cvt2utf.egg-info/PKG-INFO
+cvt2utf.egg-info/SOURCES.txt
+cvt2utf.egg-info/dependency_links.txt
+cvt2utf.egg-info/entry_points.txt
+cvt2utf.egg-info/requires.txt
+cvt2utf.egg-info/top_level.txt
