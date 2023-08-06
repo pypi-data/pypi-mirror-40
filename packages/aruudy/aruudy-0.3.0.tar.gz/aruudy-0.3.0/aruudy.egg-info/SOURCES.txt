@@ -1,0 +1,15 @@
+README.md
+setup.py
+aruudy/__init__.py
+aruudy.egg-info/PKG-INFO
+aruudy.egg-info/SOURCES.txt
+aruudy.egg-info/dependency_links.txt
+aruudy.egg-info/top_level.txt
+aruudy/poetry/__init__.py
+aruudy/poetry/armetre.py
+aruudy/poetry/bahr.py
+aruudy/poetry/meter.py
+aruudy/web/__init__.py
+aruudy/web/api.py
+aruudy/web/cgi.py
+exec/aruudy

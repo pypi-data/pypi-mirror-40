@@ -1,0 +1,96 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import sys, getopt
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from aruudy.poetry import bahr, meter
+
+try:
+    UNICODE_EXISTS = bool(type(unicode))
+except NameError:
+    unicode = lambda s, u="": str(s)
+
+def help():
+    hlp = """aruudy [-s | --shatr] <string>:
+    Find meter to a verse's part (shatr)
+        <text> is the verse's part (shatr)
+
+aruudy [-l, --list] [a|e|t]:
+    List all Available arabic meters names
+        a: in Arabic, e: in English, t: in transliteration
+
+aruudy [-i, --info] <name>:
+    List information about the bahr
+        <name> is the name (english or arabic) of the meter (bahr)
+    """
+    print(hlp)
+
+def shatr(text):
+    text = unicode(text, "UTF-8")
+    s = meter.process_shatr(text)
+    #original text
+    print("original: " + s.orig)
+    #Normalized text
+    print("normalized: " + s.norm)
+    #prosody form
+    print("prosody form: " + s.prosody)
+    # Farahidi meter for poetry
+    print("arabic scansion: " + s.ameter)
+    # Western-like metre
+    print("western scansion: " + s.emeter)
+    if s.bahr:
+        print("Meter Arabic name: " + s.bahr.aname)
+        print("Meter English name: " + s.bahr.ename)
+        print("Meter Transliterated name: " + s.bahr.trans)
+    else:
+        print("Meter Not Found")
+
+def lst(lang):
+    if len(lang)> 1 or "aet".find(lang) == -1:
+        print("aruudy [-l, --list] [a|e|t]")
+        exit(1)
+    if lang == "t":
+        lang = "trans"
+    else:
+        lang += "name"
+    ls = bahr._get_values(lang)
+    print("List of meters:")
+    for l in ls:
+        print(l)
+
+def info(name):
+    name = unicode(name, "UTF-8")
+    b = bahr.get_bahr(name)
+    if b == None:
+        print("Meter not found")
+    else:
+        print("Arabic name: " + b["aname"])
+        print("English name: " + b["ename"])
+        print("Transliterated name: " + b["trans"])
+        print("Arabic meter: " + b["ameter"])
+        print("English meter: " + b["emeter"])
+        print("Key: " + b["key"])
+
+def main(argv):
+    try:
+        opts, args = getopt.getopt(argv,"hs:l:i:",["help", "shatr=", "list=", "info="])
+    except getopt.GetoptError:
+        help()
+        sys.exit(2)
+
+    for opt, arg in opts:
+        if opt in ("-h", "--help"):
+            help()
+            sys.exit()
+        elif opt in ("-s", "--shatr"):
+            shatr(arg)
+        elif opt in ("-l", "--list"):
+            lst(arg)
+        elif opt in ("-i", "--info"):
+            info(arg)
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
