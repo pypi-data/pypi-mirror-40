@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: zlogger
+Version: 0.1.1
+Summary: 对logging进行二次封装, 操作更简单
+Home-page: https://pypi.org/
+Author: zlyuan
+Author-email: 1277260932@qq.com
+License: GNU GENERAL PUBLIC LICENSE
+Platform: all
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# 对logging进行二次封装, 操作更简单
+
+
+###  实例代码
+```python
+from zlogger import logger
+log = logger('test')
+log.info('测试')
+```
+
+###  输出到文件
+```python
+from zlogger import logger
+log = logger('test', write_file=True)
+log.info('测试')
+```
+
+###  指定输出文件的路径
+```python
+from zlogger import logger
+log = logger('test', write_file=True, file_dir='./')
+log.info('测试')
+```
+
+###  单例
+######  对于大型程序来说, 可能有多个模块会操作日志模块, 但是你希望只用一个日志对象来避免一个进程产生多个日志文件
+```python
+from zlogger import logger_singleton
+log = logger_singleton('test')
+log.info('测试')
+```
+
+### 参数说明
+参数名|数据类型|描述
+--|:--:|---
+name | str | 日志名
+write_stream | bool | 是否输出日志到流(终端)
+write_file | bool | 是否输出日志到文件
+file_dir | str | 日志文件的目录
+level | zlogger.logger_level | 日志等级
+interval | int | 间隔多少天重新创建一个日志文件
+backupCount | int | 保留历史日志文件数量
+
+### 更新日志
+发布时间|发布版本|发布说明
+--|:--:|---
+19-01-11 | 0.1.1 | 修复了输出文件名不正常的bug
+19-01-07 | 0.1.0 | 发布第一版
+
+- - -
+##### 本项目仅供所有人学习交流使用, 禁止用于商业用途
+
+
