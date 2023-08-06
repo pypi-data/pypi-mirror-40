@@ -1,0 +1,9 @@
+requests
+
+[develop]
+pytest>=3.3.0
+tox
+mock
+coverage
+sphinx
+sphinx_rtd_theme
