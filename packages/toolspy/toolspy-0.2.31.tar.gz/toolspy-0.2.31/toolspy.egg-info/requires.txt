@@ -1,0 +1,5 @@
+Click>=6.0
+mysqlclient
+requests
+boto>=2.49.0
+xlsxwriter
