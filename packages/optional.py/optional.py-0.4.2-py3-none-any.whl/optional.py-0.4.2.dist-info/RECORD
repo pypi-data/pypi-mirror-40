@@ -1,0 +1,14 @@
+optional/__init__.py,sha256=3qbdoE8dfEn_Kl8PAsl2ltNgoSnPAoaQMqkyQ2HJwB8,31
+optional/abstract_optional.py,sha256=pL6PzzGlUcFlbftxbZiVebTGc4YB6eeNxfNwwJ5XxjE,816
+optional/compatible_abc.py,sha256=jT0xhwj3umf7WLlTbRlVXDHRSPvIQqQyHBpTepWph0M,304
+optional/exceptions.py,sha256=ZUv_E2UNlOVpmYMotiCofyvDCxc00NhhNlCFnf4scco,135
+optional/nothing.py,sha256=_GM3-8vRYNGIuATnYCE69hMiugcKuNwNE19ITRxKKjk,953
+optional/optional.py,sha256=Xl93mCqibs2U8ARhTw6_EZkztdrdIYqiyOB82LQBfGY,272
+optional/something.py,sha256=o4KMLSrsbZA2n-dk-Z_ogocgQnPCDITcPB9eUDO60Qo,1327
+optional.py-0.4.2.dist-info/METADATA,sha256=CMi-32I0I9HrkUsxXfxfGtz63W20cSLLpJe1Bts1c_Q,9276
+optional.py-0.4.2.dist-info/RECORD,,
+optional.py-0.4.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+optional.py-0.4.2.dist-info/top_level.txt,sha256=8zKcOs-Qe1XiEEEiKSpaLM9ZD2ilkDDYA18Lk8pHQGk,14
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_optional.py,sha256=eKrfcBWtCrGA5EEVGXZxKW_ON38XAqUa9bSYi4JG3vI,7844
+test/test_something.py,sha256=-T2aUKpcdiq8dpppkYb0gVbJBWBGw3efbR8o2odm2iU,448
