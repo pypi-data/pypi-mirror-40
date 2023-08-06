@@ -1,0 +1,17 @@
+attrs
+bidict
+faker
+geojson
+pandas
+psycopg2-binary
+shapely
+sqlalchemy
+tqdm
+
+[dev]
+ipython
+jupyter
+
+[test]
+pytest
+nbval
