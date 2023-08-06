@@ -1,0 +1,10 @@
+README.md
+setup.py
+bin/ssh-menu
+ssh-menu/__init__.py
+ssh-menu/ssh-menu.py
+ssh_menu.egg-info/PKG-INFO
+ssh_menu.egg-info/SOURCES.txt
+ssh_menu.egg-info/dependency_links.txt
+ssh_menu.egg-info/requires.txt
+ssh_menu.egg-info/top_level.txt
