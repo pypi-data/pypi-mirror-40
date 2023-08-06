@@ -1,0 +1,14 @@
+spamclib/__init__.py,sha256=PNmNynf_a_5lN-FD6_4BKEfmp6K5ddd4x9g22LGmqPI,209
+spamclib/async_tcp_client.py,sha256=DoCgWw0mRqin3Tzpn_IN18PJcbPbtZOkaOg-_9VLgfs,2547
+spamclib/spamc_async_client.py,sha256=qxO8vdtmaPK-hgFOzOPdRuh7jU2uyRcJ_XI3xbGAIOQ,4604
+spamclib/spamc_body.py,sha256=SfdW4VoHzBIu3-u2vjoUAPQENdk03Ajri_MRob0HHho,1000
+spamclib/spamc_header.py,sha256=2zoxUNnXV_GzvsKAm20_BkOBOQOCImz6dRUxi41zu3s,4168
+spamclib/spamc_protocol.py,sha256=YK6l-62QARuPuLfO-0qc1CRlT1TA6i24dofrXuT3zN4,2483
+spamclib/spamc_sync_client.py,sha256=ElLZQ8MJJv24nMFVLuJkvCXvIYqzdhvQrWrdC-d75FI,4503
+spamclib/sync_tcp_client.py,sha256=UXC9Amwl9kVkbHYjWL3LMbIvHWaXVEzesBiSiE_m9CA,5510
+spamclib/type_convert.py,sha256=o2cl24hNs1yPj9WsScGkquUbfBBsc646ryDMDf9NXoo,958
+spamclib-0.0.3.dist-info/LICENSE,sha256=Iw_SECwmjPdDLpVWTMygZPAGW5IlZmGT3eA0TvjwcUA,1084
+spamclib-0.0.3.dist-info/METADATA,sha256=aUeeeNnE624tqQkoTVSD8ZDGyIdBV4uzAKgxwM3xl-Y,4665
+spamclib-0.0.3.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+spamclib-0.0.3.dist-info/top_level.txt,sha256=4C5g7lafCj-F5d_cyr4lm2-stxVAx793W5Ac-pA-v_8,9
+spamclib-0.0.3.dist-info/RECORD,,
