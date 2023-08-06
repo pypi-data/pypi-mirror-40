@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mixlight
+Version: 0.4
+Summary: Service for MIXLight RPi shield MQTT integration
+Home-page: https://github.com/lmadean/mixlight
+Author: Lucian Madean
+Author-email: lmadean@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: pip
+Requires-Dist: voluptuous
+Requires-Dist: pyyaml
+Requires-Dist: pyserial
+Requires-Dist: spidev
+Requires-Dist: paho-mqtt
+
+If you don't know what this is, then it is not for you :)
+
+
