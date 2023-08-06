@@ -1,0 +1,12 @@
+eurostatapiclient/__init__.py,sha256=-b93WwdkDxwbiKu54pG85n0JYwsKON3DFBA2WT3tAVE,61
+eurostatapiclient/client.py,sha256=IpiqlV6Alydm_TyQriFo8kGC59ahy_HnSWxi8-0VHhk,2001
+eurostatapiclient/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eurostatapiclient/models/dataset.py,sha256=Wv7hp9LLHp1wnZZRpQvlnv9p3kjl2mu3zAvagRJFulM,6490
+eurostatapiclient/models/dimension.py,sha256=4fQmdrMptleSR7GvcfK2g14TgP3To7VsMfojAYVRgWU,3904
+eurostatapiclient/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eurostatapiclient/utils/property_decorators.py,sha256=si9nA2TawwEPyhZs4pncprH5S_4z21Rkkb28w3CdQHc,2864
+eurostatapiclient-0.2.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+eurostatapiclient-0.2.4.dist-info/METADATA,sha256=ViP8olitdsb242SKDwNJ3J7KkjKVn3Twq834QGcPKhM,1874
+eurostatapiclient-0.2.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+eurostatapiclient-0.2.4.dist-info/top_level.txt,sha256=MoI8otHXi0fzUNg_PnQEOGp5SZnpEAyWrr42hVRQIHw,18
+eurostatapiclient-0.2.4.dist-info/RECORD,,
