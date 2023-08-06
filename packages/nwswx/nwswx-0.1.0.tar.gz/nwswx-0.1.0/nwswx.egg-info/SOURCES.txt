@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+nwswx/__init__.py
+nwswx/__version__.py
+nwswx/api.py
+nwswx/client.py
+nwswx/exceptions.py
+nwswx/format_types.py
+nwswx.egg-info/PKG-INFO
+nwswx.egg-info/SOURCES.txt
+nwswx.egg-info/dependency_links.txt
+nwswx.egg-info/requires.txt
+nwswx.egg-info/top_level.txt
