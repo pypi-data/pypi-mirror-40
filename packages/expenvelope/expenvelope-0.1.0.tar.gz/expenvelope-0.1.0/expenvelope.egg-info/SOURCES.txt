@@ -1,0 +1,10 @@
+README.md
+setup.py
+expenvelope/__init__.py
+expenvelope/envelope.py
+expenvelope/envelope_segment.py
+expenvelope/utilities.py
+expenvelope.egg-info/PKG-INFO
+expenvelope.egg-info/SOURCES.txt
+expenvelope.egg-info/dependency_links.txt
+expenvelope.egg-info/top_level.txt
