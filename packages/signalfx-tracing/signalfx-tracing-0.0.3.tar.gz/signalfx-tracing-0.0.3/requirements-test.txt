@@ -1,0 +1,14 @@
+django
+docker
+flake8
+mock
+mockupdb
+psycopg2
+pymongo
+pymysql
+pytest
+pytest-django
+redis
+requests
+six
+tornado
