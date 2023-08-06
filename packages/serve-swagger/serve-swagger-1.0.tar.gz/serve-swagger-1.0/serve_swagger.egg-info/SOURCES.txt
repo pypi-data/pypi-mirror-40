@@ -1,0 +1,15 @@
+MANIFEST.in
+readme.md
+setup.py
+serve_swagger/__init__.py
+serve_swagger/app.py
+serve_swagger/py23compat_local.py
+serve_swagger/util.py
+serve_swagger.egg-info/PKG-INFO
+serve_swagger.egg-info/SOURCES.txt
+serve_swagger.egg-info/dependency_links.txt
+serve_swagger.egg-info/entry_points.txt
+serve_swagger.egg-info/not-zip-safe
+serve_swagger.egg-info/requires.txt
+serve_swagger.egg-info/top_level.txt
+serve_swagger/templates/api.html
