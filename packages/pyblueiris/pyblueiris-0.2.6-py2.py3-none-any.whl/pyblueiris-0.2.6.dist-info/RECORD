@@ -1,0 +1,11 @@
+pyblueiris/__init__.py,sha256=DH6Sx1jdtNVI3fAgWkthGQwSu9UlLDXn28qJYElg0k0,71
+pyblueiris/__version__.py,sha256=DLR3CjXmJAvoaovcBRcZ6f2qPEDoo3Py92k3Fd44o84,55
+pyblueiris/blueiris.py,sha256=1usshNhUfo7DEmGmqSUXnB-q-VJ1MDd5BW4Q0cLgJ0U,16420
+pyblueiris/camera.py,sha256=tceVhXYxFULbamZj8r2XCWgLOHsT1FSLfCfe3DlrpRw,6534
+pyblueiris/client.py,sha256=uFuFfchDVEW_lCn4lokpcg6F0ORv80VG-90fydUDHt8,2416
+pyblueiris/const.py,sha256=wm1jmywxg_TR5un087mh5pJiyoOUzTmroKKhyg7kEAc,2608
+pyblueiris-0.2.6.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+pyblueiris-0.2.6.dist-info/METADATA,sha256=PurpuQY2HPBnA9xqmQsuGchuxwGhsBo48ADWjGdchEA,1576
+pyblueiris-0.2.6.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+pyblueiris-0.2.6.dist-info/top_level.txt,sha256=DKO2Ywz63F49MWVvimxFZ1F1hRbULnKEJPuEIQuTZJ0,11
+pyblueiris-0.2.6.dist-info/RECORD,,
