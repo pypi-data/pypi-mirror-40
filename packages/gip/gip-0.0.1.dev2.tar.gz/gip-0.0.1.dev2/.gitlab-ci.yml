@@ -1,0 +1,17 @@
+---
+image: docker:git
+
+services:
+  - docker:dind
+
+stages:
+  - lint
+
+before_script:
+  - apk add python3
+  - pip3 install flake8
+
+lint:
+  stage: lint
+  script:
+    - flake8 .

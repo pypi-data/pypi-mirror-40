@@ -1,0 +1,14 @@
+click==7.0
+click_completion==0.5.0
+colorama==0.4.1
+github3.py==1.2.0
+pbr==5.1.1
+python-gitlab==1.7.0
+pyyaml==3.13
+
+[docs]
+Sphinx
+
+[test]
+twine
+wheel==0.32.3

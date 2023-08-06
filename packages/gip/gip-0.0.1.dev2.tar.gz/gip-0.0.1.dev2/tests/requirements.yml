@@ -1,0 +1,12 @@
+---
+- name: ansible-role-plex
+  repo: https://github.com/wilmardo/ansible-role-plex
+  type: github
+  version: 2.1.0
+  dest: lib/
+
+- name: cmdb-callback
+  repo: https://git.intermax.nl/team-automation/configuration_management/ansible/core/modules/cmdb-callback.git
+  type: gitlab
+  version: 1.0.2
+  dest: lib/
