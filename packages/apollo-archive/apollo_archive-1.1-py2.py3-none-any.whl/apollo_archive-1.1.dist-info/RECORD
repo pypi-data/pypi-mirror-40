@@ -1,0 +1,15 @@
+apolloarchive/.env.example,sha256=mkEtPDeaa_CTs5FQ8tQWRgUQ7cRMfcTk8247hBaRzpg,129
+apolloarchive/__init__.py,sha256=uAdNaUF51YcUbk1XOyEex0yFMpti89kdvMBWL4M4XD8,51
+apolloarchive/cli.py,sha256=YWby011IQJU8BPr1gXtOQOdK7Cfd5sdUngWSIAQEdoM,754
+apolloarchive/download.py,sha256=Xfjh-BT80QruYBcuC15U0O27Hi_iCKNKqKUMnWS4nw4,2100
+apolloarchive/env.py,sha256=2Xi1Wr1XlkltsFTRdWXhp9nt0nQ288ZmQTuQXJiiGmA,1710
+apolloarchive/flickr.py,sha256=mUlKbhb95Gs-Tldb5ik-p2RrwRGbuAZEZ-v1DPYtt_4,3062
+apolloarchive/vars.py,sha256=CrgUNQuKgGqZfp-LT2rosLavwdFLKaKcNBts7EY5Wk8,316
+apollo_archive-1.1.dist-info/AUTHORS,sha256=B4Xdr3Bzlx9yYnshKPvn5vBdy-wQ4SXoiFpJJGPqDXk,53
+apollo_archive-1.1.dist-info/LICENSE.md,sha256=x7qUq0sI4vk4i_v1oGKf7k2GmRKOgkqwfQkNxTHJuT0,1102
+apollo_archive-1.1.dist-info/METADATA,sha256=1CZJC_f0FxhYpzBJ_ITWUwh0ZfqyLssggcmq2d3EaNw,6565
+apollo_archive-1.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+apollo_archive-1.1.dist-info/entry_points.txt,sha256=PEuSgTkRVe32CnQDqCFtKF7KgTIhwlzRgLCPfZpSFzY,63
+apollo_archive-1.1.dist-info/pbr.json,sha256=LwfKAJk-Q1jc7cKcZC8R_OOQmtyMkXzo1FWa5n2eJxA,46
+apollo_archive-1.1.dist-info/top_level.txt,sha256=xsUl6GU_THaj-L4p8R0uBSoMw5yS3nzjqBDe8cQEvSY,14
+apollo_archive-1.1.dist-info/RECORD,,
