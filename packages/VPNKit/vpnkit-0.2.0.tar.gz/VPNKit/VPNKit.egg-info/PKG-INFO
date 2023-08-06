@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: VPNKit
+Version: 0.2.0
+Summary: An OpenVPN client
+Home-page: UNKNOWN
+Author: 54origins
+Author-email: opensource@54origins.com
+License: UNKNOWN
+Description: **VPNKit**
+        
+        VPNKit is a OpenVpn client application for connect to a remote server. Work of the application based on the OpenVpn service which allow to hide your traffic in a tun/tap interface.
+        
+        For work with application you must have  account on VPNKit server.
+        
+        **Installation**
+        
+            $ sudo pip install VPNKit
+        
+        **Usage**
+        
+        Enter 'vpnkit' in terminal. You can see this start menu:
+        
+            $ Choose operations[start|new|accounts|change|help|exit]: 
+        
+        - "start" - default option.If you press enter application will be started with parameters that was saved in settings 
+        - "new" - enter parameters  and start new connection to the server
+        - "accounts" - list of your active openvpn servers accounts
+        - "change" - option for changing current account settings
+        - "help" - option for getting application help information
+        - "exit" - close application
+        
+        After start and up connection with server you can choose two options:
+        
+            $ Choose [close|other]: 
+        
+        - "close" - close the applicatio. Kill openvp process and return default connection.
+        - "other" - kill current connection and return to the start menu
+        
+        
+        **Change log**
+        
+        **[0.2.0] - 2019-01-09**
+        
+         **Added**
+        
+        - option "help".
+        - servers accounts
+        - option "change" for change account
+        - messages for user behavior
+        
+        
+        **Changed**
+        - after connect option "new" rename to "other"
+        - current settings information in start menu 
+        - connection parameters are entering by special code string
+        
+        
+        **Deleted**
+        - option "settings"
+        
+        
+        **[0.1.0] - 2018-12-18**
+        
+          **Added**
+        
+        First release on PyPI.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
