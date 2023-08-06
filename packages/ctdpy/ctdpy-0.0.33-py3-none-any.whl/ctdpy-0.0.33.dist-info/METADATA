@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: ctdpy
+Version: 0.0.33
+Summary: TEST version 0.0.33 Package to handle CTD data
+Home-page: https://github.com/pypa/sampleproject
+Author: Johannes Johansson
+Author-email: johannes.johansson@smhi.se
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# CTDpy
+
+Python tool to handle CTD-data according to SMHI standards.
+
+
