@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+stan_syntax.json
+jupyterstan/__init__.py
+jupyterstan.egg-info/PKG-INFO
+jupyterstan.egg-info/SOURCES.txt
+jupyterstan.egg-info/dependency_links.txt
+jupyterstan.egg-info/not-zip-safe
+jupyterstan.egg-info/requires.txt
+jupyterstan.egg-info/top_level.txt
+stan_syntax/__init__.py
+stan_syntax/static/main.js
+stan_syntax/static/stan.css
+stan_syntax/static/stan.js
