@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: scanpydoc
+Version: 0.2.1
+Summary: A series of Sphinx extensions to get easy to maintain, numpydoc style documentation.
+Home-page: https://icb-scanpydoc.readthedocs-hosted.com/en/latest/
+Author: Philipp Angerer
+Author-email: phil.angerer@gmail.com
