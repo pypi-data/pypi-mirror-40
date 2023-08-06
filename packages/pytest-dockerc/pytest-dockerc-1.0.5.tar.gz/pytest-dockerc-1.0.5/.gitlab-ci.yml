@@ -1,0 +1,83 @@
+image: python:3.7-alpine
+
+stages:
+ - build
+ - test
+ - release
+
+check:
+  stage: build
+  before_script:
+    - pip install black flake8
+  script:
+    - black --check -v --diff $(find -name "*.py")
+    - flake8 --max-line-length=88 .
+
+package:
+  stage: build
+  only:
+    - tags
+  before_script:
+    - apk add git
+  script:
+    - python setup.py sdist bdist_wheel
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 day
+
+.template_py: &template_py
+  stage: test
+  image: docker:stable
+  services:
+    - docker:dind
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+
+py27:
+  <<: *template_py
+  before_script:
+    - docker run -id --rm -v $(pwd):/ws -e DOCKER_HOST=tcp://$(cat /etc/hosts | grep docker | cut -f1):2375/ -w /ws --name py27 python:2.7-alpine
+    - docker exec -i py27 apk add docker git
+    - docker exec -i py27 pip install pytest tox
+  script:
+    - docker exec -i py27 tox -e py27
+
+py35:
+  <<: *template_py
+  before_script:
+    - docker run -id --rm -v $(pwd):/ws -e DOCKER_HOST=tcp://$(cat /etc/hosts | grep docker | cut -f1):2375/ -w /ws --name py35 python:3.5-alpine
+    - docker exec -i py35 apk add docker git
+    - docker exec -i py35 pip install pytest tox
+  script:
+    - docker exec -i py35 tox -e py35
+
+py36:
+  <<: *template_py
+  before_script:
+    - docker run -id --rm -v $(pwd):/ws -e DOCKER_HOST=tcp://$(cat /etc/hosts | grep docker | cut -f1):2375/ -w /ws --name py36 python:3.6-alpine
+    - docker exec -i py36 apk add docker git
+    - docker exec -i py36 pip install pytest tox
+  script:
+    - docker exec -i py36 tox -e py36
+
+py37:
+  <<: *template_py
+  before_script:
+    - docker run -id --rm -v $(pwd):/ws -e DOCKER_HOST=tcp://$(cat /etc/hosts | grep docker | cut -f1):2375/ -w /ws --name py37 python:3.7-alpine
+    - docker exec -i py37 apk add docker git
+    - docker exec -i py37 pip install pytest tox
+  script:
+    - docker exec -i py37 tox -e py37
+
+deploy:
+  stage: release
+  only:
+    - tags
+  before_script:
+    - pip install twine
+  script:
+    - twine upload dist/*
+  dependencies:
+    - package
