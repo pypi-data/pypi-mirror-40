@@ -1,0 +1,11 @@
+README.md
+setup.py
+soneti_tasks/CopyToFuseki.py
+soneti_tasks/GSICrawlerScraper.py
+soneti_tasks/SenpyAnalysis.py
+soneti_tasks/__init__.py
+soneti_tasks.egg-info/PKG-INFO
+soneti_tasks.egg-info/SOURCES.txt
+soneti_tasks.egg-info/dependency_links.txt
+soneti_tasks.egg-info/requires.txt
+soneti_tasks.egg-info/top_level.txt
