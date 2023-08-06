@@ -1,0 +1,7 @@
+docutils
+Jinja2
+pyyaml
+reportlab>=2.4
+Pygments
+pdfrw
+pillow
