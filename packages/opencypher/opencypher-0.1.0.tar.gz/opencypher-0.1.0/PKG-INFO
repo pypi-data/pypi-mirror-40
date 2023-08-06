@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: opencypher
+Version: 0.1.0
+Summary: OpenCypher AST and Builder API
+Home-page: https://github.com/globality-corp/opencypher
+Author: Globality Engineering
+Author-email: engineering@globality.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: opencypher cypher
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: test
