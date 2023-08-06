@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: fever-allennlp-reader
+Version: 0.0.0
+Summary: Fact Extraction and VERification dataset reader for AllenNLP
+Home-page: https://jamesthorne.co.uk
+Author: James Thorne
+Author-email: james@jamesthorne.co.uk
+License: Type license() to see the full license text
+Description-Content-Type: UNKNOWN
+Description: readme
+Platform: UNKNOWN
+Requires-Python: >=3.6
