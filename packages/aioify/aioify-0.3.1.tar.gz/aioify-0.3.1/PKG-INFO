@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aioify
+Version: 0.3.1
+Summary: Make every Python function async/await
+Home-page: https://github.com/yifeikong/aioify
+Author: Yifei Kong
+Author-email: kongyifei@gmail.com
+Keywords: asyncio,async,await,aioify,wrap
+Requires-Python: >=3.5,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: module-wrapper (>=0.2.3,<0.3.0)
+Project-URL: Repository, https://github.com/yifeikong/aioify
