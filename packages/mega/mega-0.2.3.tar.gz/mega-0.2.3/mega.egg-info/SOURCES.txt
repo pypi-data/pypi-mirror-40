@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+Pipfile
+Pipfile.lock
+README.md
+requirements.txt
+setup.cfg
+setup.py
+mega/__init__.py
+mega/__version__.py
+mega/mega.py
+mega.egg-info/PKG-INFO
+mega.egg-info/SOURCES.txt
+mega.egg-info/dependency_links.txt
+mega.egg-info/entry_points.txt
+mega.egg-info/requires.txt
+mega.egg-info/top_level.txt
