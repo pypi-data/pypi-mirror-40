@@ -1,0 +1,12 @@
+numpy
+matplotlib
+scipy
+
+[cpu]
+tensorflow
+
+[examples]
+tensornets
+
+[gpu]
+tensorflow-gpu
