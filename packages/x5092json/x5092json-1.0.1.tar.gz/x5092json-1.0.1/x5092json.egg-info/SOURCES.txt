@@ -1,0 +1,15 @@
+README.md
+setup.py
+doc/man1/x5092json.1
+x5092json/__init__.py
+x5092json/asn1_decode_patches.py
+x5092json/extension_patches.py
+x5092json/more_oids.py
+x5092json/name_patches.py
+x5092json/x509parser.py
+x5092json.egg-info/PKG-INFO
+x5092json.egg-info/SOURCES.txt
+x5092json.egg-info/dependency_links.txt
+x5092json.egg-info/entry_points.txt
+x5092json.egg-info/requires.txt
+x5092json.egg-info/top_level.txt
