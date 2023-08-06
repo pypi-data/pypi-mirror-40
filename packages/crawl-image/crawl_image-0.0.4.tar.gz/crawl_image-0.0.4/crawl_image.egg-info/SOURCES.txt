@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+crawl_image/__init__.py
+crawl_image/img_crawl.py
+crawl_image.egg-info/PKG-INFO
+crawl_image.egg-info/SOURCES.txt
+crawl_image.egg-info/dependency_links.txt
+crawl_image.egg-info/requires.txt
+crawl_image.egg-info/top_level.txt
+crawl_image/config/__init__.py
+crawl_image/config/setting.py
