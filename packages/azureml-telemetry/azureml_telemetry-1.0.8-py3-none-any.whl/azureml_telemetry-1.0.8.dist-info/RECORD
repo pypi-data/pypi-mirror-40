@@ -1,0 +1,14 @@
+azureml/__init__.py,sha256=n0xtZ3iWcoVg5Qognsb7InYAUVAK8s3iaVeHB5GOaNA,251
+azureml/telemetry/__init__.py,sha256=uGPi4sRmM28QfnAMp3gudlXkkzSh08ONBVhmVi2cQOs,6075
+azureml/telemetry/_customtraceback.py,sha256=QpkwOKiGnXKbvgZ5JnN5ngE5fKx1eEAG7Y8tpZtd2NM,6609
+azureml/telemetry/_version.py,sha256=ZLG6VeCqoVZ1uhFUpd2oHn9c8jFtgQuHBvqSLBXIBvw,15
+azureml/telemetry/activity.py,sha256=adZQ5mhkPscYOdgVE-anABAjWqxOd52lmykrCgzldvw,4454
+azureml/telemetry/logging_handler.py,sha256=WRbdw7d17STo-du1d9gLeYhnGwkor-acOmtmmwSGowo,10162
+azureml/telemetry/telemetry.json,sha256=MRHeO6dm-yQqaDZSXWP2Z7nCEeh42yEQ6KV4KapUolI,93
+azureml_telemetry-1.0.8.dist-info/DESCRIPTION.rst,sha256=VFw4sJIt4Zc0-__eYnksN8Ku9qMhbPpHJEkXMWUiD30,4
+azureml_telemetry-1.0.8.dist-info/LICENSE.txt,sha256=GBoIyZ-6vJ4xjRc8U3wTw4EfkuaEdVTm_gbr1Nm8uDI,859
+azureml_telemetry-1.0.8.dist-info/METADATA,sha256=F-Ey1gBxRcfuayO6-t0JBfKkIy_P0_E-QwaDA4IqlaE,358
+azureml_telemetry-1.0.8.dist-info/RECORD,,
+azureml_telemetry-1.0.8.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+azureml_telemetry-1.0.8.dist-info/metadata.json,sha256=lIMZIBUZKWDFa3savXiJbp7dyP_gTxiyO8dV42LN3Ns,597
+azureml_telemetry-1.0.8.dist-info/top_level.txt,sha256=ZOeEa0TAXo6i5wOjwBoqfIGEuxOcKuscGgNSpizqREY,8
