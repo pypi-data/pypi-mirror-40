@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: simpleais
+Version: 0.7.0
+Summary: a simple ais parser
+Home-page: https://github.com/wpietri/simpleais
+Author: William Pietri
+Author-email: william-simpleais-0_6@scissor.com
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: bitstring
+Requires-Dist: testfixtures
+Requires-Dist: Click
+Requires-Dist: numpy
+Requires-Dist: python-dateutil
+Provides-Extra: dev
+Requires-Dist: beautifulsoup4 ; extra == 'dev'
+Requires-Dist: nose ; extra == 'dev'
+
+UNKNOWN
+
+
