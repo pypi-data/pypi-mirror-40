@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: rlbot_gui
+Version: 0.0.1
+Summary: A streamlined user interface for RLBot.
+Home-page: https://github.com/IamEld3st/RLBotGUI
+Author: RLBot Community
+Author-email: rlbotofficial@gmail.com
+License: UNKNOWN
+Description: # RLBot-Electron
+        
+        ## Dev Environment Setup
+        
+        ### Prerequisites
+        
+        - Python 3.6+
+        
+        ### Setup
+        
+        1. In a command prompt, run `pip install -r requirements.txt`
+        2. Run `python run.py`
+        
+        ### Deployment
+        
+        You can build an installer executable for users to download.
+        
+        1. Follow https://pynsist.readthedocs.io/en/latest/index.html to get NSIS installed.
+        2. Run `pip install pynsist`
+        3. Run `pynsist installer.cfg`
+        
+        Find the resulting executable in build\nsis.
+        
+Keywords: rocket-league
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
