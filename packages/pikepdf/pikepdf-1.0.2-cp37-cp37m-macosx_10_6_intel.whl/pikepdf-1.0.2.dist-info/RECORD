@@ -1,0 +1,16 @@
+pikepdf/__init__.py,sha256=OUllFsKTtKzqpf0gyCwn4O3HIAGWMw_-VLJ1F_CMdOw,1137
+pikepdf/_cpphelpers.py,sha256=uPF5GxSwU1uzvpKqZRLdB9s0U83kuJhXCRZRmrmo_yg,1545
+pikepdf/_methods.py,sha256=Ya-6krP4t3SdsiyMIFcJJQaLzW5PPg7jY1X_IWVBbxk,8928
+pikepdf/_qpdf.cpython-37m-darwin.so,sha256=EO_MDV4STMQYMDLJHMczVm1G28WrTHTJB8KgI7S0xM0,2600204
+pikepdf/objects.py,sha256=TYgKMLcr4LIU8qlLkowwu7L0l2IEfYdu7vGWRsNuBHY,5161
+pikepdf/.dylibs/libjpeg.9.dylib,sha256=irlgfJtgPMEE_NRtuA-Nzcq9IQw113DzjclgdvV3O7k,207360
+pikepdf/.dylibs/libqpdf.21.dylib,sha256=dfklKdoWnvBQHFB7kOKNag7XFGG-U-wKvXaaI0vsE9M,868232
+pikepdf/models/__init__.py,sha256=sxkju2LcV0p5DRS9h1gBcdTA-bQ-YNK1TFwvZ_Bgh7g,4088
+pikepdf/models/image.py,sha256=6kizQLsynECCjlFkYDkqIwq-Ob618rdXMNlFr-M9MiU,21446
+pikepdf/models/matrix.py,sha256=x42MDmxiLDD7WJRta060BKIRAeU4Erc4nngKKQ0ikI0,4038
+pikepdf/models/metadata.py,sha256=vfYptTUsKXgeoCwEcZMMD51HmmYkBydssWBIZbdOKNQ,21849
+pikepdf-1.0.2.dist-info/license.wheel.txt,sha256=8up_jwKeOHJUkLm54gXhWUrp_WgLQH8HcUX7rHjQkkc,31626
+pikepdf-1.0.2.dist-info/METADATA,sha256=DZ4NwX-QKDAojlL63cGG30EJ22iIdwaR3imYYJQgOGY,7883
+pikepdf-1.0.2.dist-info/RECORD,,
+pikepdf-1.0.2.dist-info/top_level.txt,sha256=I9EqKPMWS0R0KipU78RVfZCHdDzZhMrjM4wxykU9l_o,8
+pikepdf-1.0.2.dist-info/WHEEL,sha256=MVw9DoaMddiQdBOkUfXEYiaGS29d2D4WXMG3r_AwUW8,109
