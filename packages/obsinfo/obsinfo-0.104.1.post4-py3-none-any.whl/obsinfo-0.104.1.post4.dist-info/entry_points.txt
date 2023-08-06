@@ -1,0 +1,5 @@
+[console_scripts]
+obsinfo-makeSTATIONXML = obsinfo.network.network:_make_stationXML_script
+obsinfo-print = obsinfo.misc.print:_print_script
+obsinfo-validate = obsinfo.misc.info_files:_validate_script
+
