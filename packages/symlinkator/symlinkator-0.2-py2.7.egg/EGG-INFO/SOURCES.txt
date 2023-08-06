@@ -1,0 +1,8 @@
+setup.py
+symlinkator/__init__.py
+symlinkator/symlinkator.py
+symlinkator.egg-info/PKG-INFO
+symlinkator.egg-info/SOURCES.txt
+symlinkator.egg-info/dependency_links.txt
+symlinkator.egg-info/entry_points.txt
+symlinkator.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: symlinkator
+Version: 0.2
+Summary: link checking tool
+Home-page: http://unixportal.exelonds.com/linkator
+Author: Run Zhang
+Author-email: run.zhang@exeloncorp.com
+License: MIT
+Download-URL: http://unixportal.exelonds.com/idownload/linkator
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
