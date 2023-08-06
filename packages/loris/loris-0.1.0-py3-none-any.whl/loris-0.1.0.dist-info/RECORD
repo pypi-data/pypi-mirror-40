@@ -1,0 +1,15 @@
+loris/AMDStream.py,sha256=x0ILcOpC77L4ysZ6KrNkzHpn_aBh9SPNa0aE7qjN5tI,2446
+loris/ATISStream.py,sha256=HoBLeUsXpxLu8-NPMSowALLEeQ7u0XMlaWI6RMpRUV0,3920
+loris/ColorStream.py,sha256=sIjsuck3IIpo0ypSPjuDFVKyzDkIfsAEuKkHwDl2ckY,3565
+loris/DVSStream.py,sha256=8-y2VZByaBYEFhkeo4icDwnaD8w7w-5zwKj2TM5S_XM,3663
+loris/EventStream.py,sha256=5A_WBHrwSQg9IxEQN8g5YU5LPIUxmFRHuxM6YIoBDXk,456
+loris/GenericStream.py,sha256=nOosPQdVQ1s_j3p6L9--XM9WWSRyBr6s_dPICTbzD8k,2609
+loris/__init__.py,sha256=79rsPY-xJOhk7_0nWqRhPaqKkQOvga_qtToH_VdDODU,389
+loris/config.py,sha256=L1qBSDjPVtDmTHT_8IbBEyCkKwQUKSmi2UZ2uOLX5Ps,188
+loris/readStream.py,sha256=azi0xBb8YB-y73mLKXBFxiIR2Z2HTGpdU8JcOEwj_L4,1707
+loris/readtddat.py,sha256=ut2FodeBLnaWKdpWFqIa4XhAPhIRkITvsvZozolNqos,5182
+loris-0.1.0.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+loris-0.1.0.dist-info/METADATA,sha256=9oqML_wgoeiPlhW-1BNPQxpr6-TWdT2f7dlLjwOBLJg,1467
+loris-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+loris-0.1.0.dist-info/top_level.txt,sha256=2bnars3G7DN0trwX8WX1hOf7uXgPEDxFNXWA-J0ROxs,6
+loris-0.1.0.dist-info/RECORD,,
