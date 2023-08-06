@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+    <title>服务治理</title>
+  </head>
+  
+<body>
+
+            
+    <div id="app"  v-cloak>
+        <div class="panel panel-info">
+            <div class="panel-heading">服务发现（动态查询）</div>
+            <div class="panel-body">
+                <form class="form-inline">
+                    <div class="form-group" >
+                            <label class="sr-only" for="svrlist">svrlist</label> 
+                            <select class="form-control" v-model="searchData.svrSelect">
+                                <option style="display: none">服务列表</option>
+                                <option v-for="(valarr, pname) in maindata">
+                                    {{pname}}
+                                </option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                            <label class="sr-only" for="svrlist2">svrlist2</label> 
+                            <button class="form-control" 
+                                @click.prevent="onSearchPrvd">查询</button>
+
+                            &nbsp;&nbsp; <span> {{searchData.searchResult}} </span>
+                    </div>
+                </form>
+            </div>
+            </div>
+
+            <div class="panel-heading">服务提供 
+                        &nbsp;&nbsp; 
+                    <a class="btn btn-default" aria-label="Left Align"
+                        data-toggle="tooltip" title="刷新服务提供者列表"
+                        @click="onRefresh">
+                        
+                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                    </a>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    <a href="#" v-for="(valarr, pname) in maindata"
+                        @click="onClickName(pname)"
+                        :class="curPrvdName==pname? 'active': ''"
+                        class="list-group-item prvditem" >
+                        <span class="badge">{{valarr.length}}</span>
+                        <span class="prvdname">{{pname}}</span>
+                    </a>
+                </div>
+
+                
+                <button type="button" v-show="!addSampleCtrl.show"
+                    @click.prevent="onShowAddClick"
+                    data-toggle="tooltip" title="此处添加的服务的生命周期会随当前web-app退出而关闭"
+                    class="btn btn-default" aria-label="Left Align">
+                    服务添加 &nbsp;&nbsp;
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+
+                </button>
+            </div>
+
+            <div class="panel-heading" v-show="addSampleCtrl.show">
+                服务添加
+                &nbsp;&nbsp; 
+                <button type="button" 
+                    data-toggle="tooltip" title="收起添加栏目"
+                    @click.prevent="onShowAddClick"
+                    class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                    
+                </button>
+            </div>
+            <div class="panel-body" v-show="addSampleCtrl.show">
+                <form class="form-inline">
+                    <div class="form-group">
+                        
+                        <div class="input-group vcls-input vcls-input-regname">
+                            <span class="input-group-addon item-key">regname</span>
+                            <input type="text"  v-model="addSample.regname"
+                                class="form-control inputtext"
+                                placeholder="服务提供者名称"
+                                aria-describedby="basic-addon3">
+                        </div>
+                        <div class="input-group vcls-input"
+                            v-for="(itmVal, itmKey) in addSample.svrprop"  
+                            data-toggle="tooltip" :title="addSampleCtrl.textMsg[itmKey][0]"
+                            :class="'vcls-input-'+itmKey">
+                            <span class="input-group-addon item-key">{{itmKey}}</span>
+                
+                            <input type="text"  v-model="addSample.svrprop[itmKey]"
+                                class="form-control inputtext"
+                                aria-describedby="basic-addon3">
+                
+                        </div>
+                        
+                        <input class="btn btn-default" type="button" 
+                            @click.prevent="onAddPrvd" 
+                            value="提交" style="margin-right:25px;">
+                        <span
+                            :style="addSampleCtrl.resultStyle">
+                            {{addSampleCtrl.result}}
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="panel-body prvd-contant" 
+                 v-for="(item0, idx) in listContents">
+                <form class="form-inline">
+                    <div class="form-group">
+                       
+
+                        <div class="input-group vcls-input" v-for="(itmVal, itmKey) in item0"
+                            :class="'vcls-input-'+itmKey">
+                            <span class="input-group-addon item-key">{{itmKey}}</span>
+                            <input type="text" v-if="readonly || isKeyReadOnly(itmKey)"
+                                 :value="itmVal"
+                                 class="form-control inputtext"
+                                aria-describedby="basic-addon3" readonly>
+
+                            <input type="number" v-else
+                                 :value="itmVal"
+                                 @change="onItemValChange($event, item0, itmKey)"
+                                 class="form-control inputtext"
+                                aria-describedby="basic-addon3">
+                                
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+  <script src="https://vuejs.org/js/vue.min.js"></script>
+  <script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+
+
+  <script src="prvd.js"></script>
+</html>

@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: cppcloud-web
+Version: 1.0.1
+Summary: CppCloud python3 Web and RestApi System
+Home-page: UNKNOWN
+Author: valueho
+Author-email: hjl_mvp@126.com
+License: GPLv3
+Description: ## CppCloud Web system & REST Api
+        
+Keywords: cppcloud spring cloud python flask
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Requires-Python: >=3

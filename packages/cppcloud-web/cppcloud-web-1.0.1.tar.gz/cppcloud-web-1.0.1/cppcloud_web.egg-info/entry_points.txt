@@ -1,0 +1,3 @@
+[console_scripts]
+cppcloud-web = cppcloud_web.cppcloud_web:run
+
