@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+empugn/__init__.py
+empugn/__main__.py
+empugn/input.py
+empugn.egg-info/PKG-INFO
+empugn.egg-info/SOURCES.txt
+empugn.egg-info/dependency_links.txt
+empugn.egg-info/entry_points.txt
+empugn.egg-info/requires.txt
+empugn.egg-info/top_level.txt
+empugn.egg-info/zip-safe
