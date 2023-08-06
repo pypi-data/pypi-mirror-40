@@ -1,0 +1,12 @@
+djangoldp_notification/__init__.py,sha256=8L3u3bMxDAbnVY5T62h5Fd9HtnTbuuCxa7EQD5hklEo,54
+djangoldp_notification/admin.py,sha256=7wwhBWZ_ZqvU63QF2MekYyxISnDegKONTv5vtJarEOc,101
+djangoldp_notification/apps.py,sha256=SRIeu1GwwtTBvmUsuc9X8W5L7U6qm5sVet085rJF2XQ,117
+djangoldp_notification/factories.py,sha256=G27elxIveMn9oiCe4pxfTd9sYbbqGLeGs_Hth4LcQZQ,637
+djangoldp_notification/models.py,sha256=_Tt3NCRp_MtDOkeR_FfNoW4K1teOWkA-9dQClom6Y24,824
+djangoldp_notification/urls.py,sha256=awA7bJONhTIPJwGVdBc092rztFftxFtBynVmtZBDyAw,239
+djangoldp_notification/migrations/0001_initial.py,sha256=8miWLOQTgcxcblkjGlsvFVtcqwuuGL-Pm5Sx-6G77e4,1395
+djangoldp_notification/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_notification-0.0.3.dist-info/METADATA,sha256=lkWKCjJmVfP6_vMtDINK16wW1dbiyZBa_hvR1wCVXq0,421
+djangoldp_notification-0.0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+djangoldp_notification-0.0.3.dist-info/top_level.txt,sha256=g3n78mJabd1vB1NiDcnfXO6RTIXDmzkHSuYoV1G7nT8,23
+djangoldp_notification-0.0.3.dist-info/RECORD,,
