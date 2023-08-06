@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: esl-redis
+Version: 0.2.14
+Summary: elasticsearch_loader plugin for redis
+Home-page: https://github.com/moshe/elasticsearch_loader
+Author: Moshe Zada
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: elastic,elasticsearch,esl,redis,bulk,loader
+Platform: UNKNOWN
