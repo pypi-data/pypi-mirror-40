@@ -1,0 +1,17 @@
+radproc/__init__.py,sha256=hb5gpUw0uARYAn9maQ3-WpoZ5yBmTJM2qaInQqCh7mw,1129
+radproc/api.py,sha256=dNYN9UOCwkEw1ss_4aV60J4bxQ_ji7EKuFGI_Keagl8,2182
+radproc/arcgis.py,sha256=kyDrv_6JMEgfmnAU-Ipd-GLeG3jeeCVGgXC2ydgnJH4,34929
+radproc/core.py,sha256=pIvOf674TdWFywSUXQsEUPEPsbeCBqKy2xigWIrVXYg,20015
+radproc/dwd_gauge.py,sha256=qay5AqjY5iOXNa-yO1jDX_UYJ_lyA8TpLjOMvNXB1zw,13071
+radproc/heavyrain.py,sha256=RhMBD3unh6piaQRDTSxDKiTc885Za5h4qJ1uT4RJMIE,13738
+radproc/raw.py,sha256=OMDznKRjTz_1X6Ggl1SEhdNKjkpywc55FuACkNsLexs,35211
+radproc/version.py,sha256=aZl4wo-9KQKg_jXLaGLYhFgBBOVfDfODMJeJOLARzdg,65
+radproc/wradlib_io.py,sha256=mgmuXCCnkt7iIMSXPSHAaWNI176uhhb5KEipdij9EEQ,15299
+radproc/sampledata/__init__.py,sha256=RRzbQE5TRkb8lzWznYQNDdIk_XnzMEaS754lNM26G9U,350
+radproc/sampledata/radolan_proj.prj,sha256=vgRJVBagvdUK4EYFjxOMuypKra7mOh0YVz43oPv_oI4,354
+radproc-0.1.4.dist-info/DESCRIPTION.rst,sha256=daniesJWbP7HiO73zdUNekK99A1M6SmK9mlb4nQ9gJw,3605
+radproc-0.1.4.dist-info/METADATA,sha256=-WJ3qR0_mJXcPj70sDGZMpMRUhAP1T6R7bKFNlzDGsU,4909
+radproc-0.1.4.dist-info/RECORD,,
+radproc-0.1.4.dist-info/WHEEL,sha256=lzUwEtFmyjU_FlAT-CjHEe8XSsfe5tSQOHZ9I1rYDgo,97
+radproc-0.1.4.dist-info/metadata.json,sha256=Glj6Z6tt2TVvrH1ZU1y4KpM6VPxSKZPwg0Qt8r3CaqA,1328
+radproc-0.1.4.dist-info/top_level.txt,sha256=LtYYPaDFULNzgPzXAJH81flx-1P69qKZuw8UbE7_M0M,8
