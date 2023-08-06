@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/mkciud/__init__.py
+src/mkciud/__main__.py
+src/mkciud/_internal.py
+src/mkciud.egg-info/PKG-INFO
+src/mkciud.egg-info/SOURCES.txt
+src/mkciud.egg-info/dependency_links.txt
+src/mkciud.egg-info/entry_points.txt
+src/mkciud.egg-info/top_level.txt

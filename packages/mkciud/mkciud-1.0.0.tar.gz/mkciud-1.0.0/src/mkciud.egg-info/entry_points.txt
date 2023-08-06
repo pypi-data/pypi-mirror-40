@@ -1,0 +1,3 @@
+[console_scripts]
+mkciud = mkciud.__main__:main
+
