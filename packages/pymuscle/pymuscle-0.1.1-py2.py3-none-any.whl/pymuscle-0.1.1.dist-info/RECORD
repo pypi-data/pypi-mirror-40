@@ -1,0 +1,14 @@
+pymuscle/__init__.py,sha256=fax_dbJuhoK7HFPVqUUbRwrUtcqtqmdoNN-BUkTCSuw,619
+pymuscle/__version__.py,sha256=qZWacs8WSCRGatG3D5sRq_Cao3fSJ3kEPMlZ0_4DOoY,94
+pymuscle/hill_type.py,sha256=xmfBsw5FcqjSqKz4Uja8bXAZm8FU_CaH6VbOt-pd3kg,2664
+pymuscle/model.py,sha256=rOSeptG9oq2t4zPdk77uZQvnZ1Co5X6iz5zw3Cezs_k,425
+pymuscle/muscle.py,sha256=nnEZNIGynsqmeRr9zFUzVJ75Ezr1AYg9s-Xn8U-mphg,9873
+pymuscle/potvin_fuglevand_2017_motor_neuron_pool.py,sha256=yrtF0Pc2wRspq5jIuYik5uNA9kW201ao1jrmCwb5Ya8,13611
+pymuscle/potvin_fuglevand_2017_muscle_fibers.py,sha256=roRCBqpNnwR1FbEkmgPWVrlinSXtGkjYoaYFZQLckJg,12034
+pymuscle/pymuscle_fibers.py,sha256=-mVfjDOD88Hy_V-uHcpP7Mr8UiKhin-onUjo94H2iDM,5815
+pymuscle/vis/__init__.py,sha256=Ceyaoq3abiw31ZdGavh6gywsI-pU3lFyD0cgLzF8G5M,54
+pymuscle/vis/potvin_charts.py,sha256=OU8j0DzROd479w8v_HpkhG_E9CP5O0r9qBVj5W1SCHg,2321
+pymuscle-0.1.1.dist-info/METADATA,sha256=LyxzKYQjwGhd8IAZX4TZNQHBrvxW3oshLwE3H5jEw4A,10533
+pymuscle-0.1.1.dist-info/RECORD,,
+pymuscle-0.1.1.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+pymuscle-0.1.1.dist-info/top_level.txt,sha256=RUhjnFtqx1PkAjTbDym0BZjz2uK1pZDKJaLqUdNMZSQ,9
