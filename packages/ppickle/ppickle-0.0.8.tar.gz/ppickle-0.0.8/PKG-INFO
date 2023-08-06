@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ppickle
+Version: 0.0.8
+Summary: multilingual human-readable output pickler
+Home-page: https://github.com/umihico/ppickle
+Author: umihico
+Author-email: umihico@users.noreply.github.com
+License: MIT
+Description: UNKNOWN
+Keywords: pickle
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
