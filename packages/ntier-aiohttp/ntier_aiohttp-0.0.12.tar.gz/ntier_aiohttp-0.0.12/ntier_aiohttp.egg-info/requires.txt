@@ -1,0 +1,4 @@
+aiohttp
+ntier>=0.0.14
+ujson
+webdi>=0.0.4
