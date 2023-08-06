@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: PythonRuntimeDiagnostics
+Version: 0.1
+Summary: This is a small utility to record the same data in cyclic applications
+Home-page: https://github.com/dRacz3/PythonDiagnosticsLogger
+Author: Daniel Racz
+Author-email: daniel.racz.93@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: Logger,Diagnostics,Cyclic
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Logging
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
