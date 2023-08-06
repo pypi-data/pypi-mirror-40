@@ -1,0 +1,13 @@
+ipysankeywidget/__init__.py,sha256=7HIqTmUJyG-9gA5MXezt9L_Xz4g2dOtxppoSzhuBdPI,284
+ipysankeywidget/_version.py,sha256=B8sWooMNy-0jnEWATg_lB6V9Z_ogO22PBTehwqDFhpY,72
+ipysankeywidget/sankey_widget.py,sha256=LUP_02VDFLbxlUm5fbEvyH0Kyj3uZhCWfrWPRNHfDEU,6605
+ipysankeywidget/static/extension.js,sha256=rIEFAO5hCGCyxr1wcYj92QQd34dDwz8CvVRzUj0Qdyk,3046
+ipysankeywidget/static/index.js,sha256=fPHHe44mkTWZipJHS02YMGgzJkOMzkK1E162S3SK0y8,1516091
+ipysankeywidget/static/index.js.map,sha256=XQk9xHeofwfcpQydBsv6CYpSl_6Ev4FoDDudALDpR5c,1769671
+ipysankeywidget-0.2.5.data/data/share/jupyter/nbextensions/jupyter-sankey-widget/extension.js,sha256=rIEFAO5hCGCyxr1wcYj92QQd34dDwz8CvVRzUj0Qdyk,3046
+ipysankeywidget-0.2.5.data/data/share/jupyter/nbextensions/jupyter-sankey-widget/index.js,sha256=fPHHe44mkTWZipJHS02YMGgzJkOMzkK1E162S3SK0y8,1516091
+ipysankeywidget-0.2.5.data/data/share/jupyter/nbextensions/jupyter-sankey-widget/index.js.map,sha256=XQk9xHeofwfcpQydBsv6CYpSl_6Ev4FoDDudALDpR5c,1769671
+ipysankeywidget-0.2.5.dist-info/METADATA,sha256=XJWmX02kB8kwCE40B0c_JGGZo8XrPkGRsrFh_SMYxZw,919
+ipysankeywidget-0.2.5.dist-info/RECORD,,
+ipysankeywidget-0.2.5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+ipysankeywidget-0.2.5.dist-info/top_level.txt,sha256=eQmQ7A0CwSqKeO7YQmCeVq7C9vZxr2oxhTwCdFsyN9Y,16
