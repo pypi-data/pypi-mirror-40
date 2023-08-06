@@ -1,0 +1,7 @@
+setup.py
+bvrLib/__init__.py
+bvrLib.egg-info/PKG-INFO
+bvrLib.egg-info/SOURCES.txt
+bvrLib.egg-info/dependency_links.txt
+bvrLib.egg-info/not-zip-safe
+bvrLib.egg-info/top_level.txt
