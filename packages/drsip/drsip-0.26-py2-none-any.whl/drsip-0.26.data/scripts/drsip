@@ -1,0 +1,94 @@
+#!python
+import argparse
+import drsip
+import sys
+
+
+class DRSIP_Parser(argparse.ArgumentParser):
+    def error(self, message):
+        sys.stderr.write('error: %s\n' % message)
+        self.print_help()
+        sys.exit(2)
+
+
+def drsip_soluble(args):
+    drsip_obj = drsip.DR_SIP(args.static_pdb, args.mobile_pdb,
+                             args.zdock_output_file,
+                             args.dist_rest_file, soluble=True)
+    drsip_obj.run()
+
+    final_results(args, drsip_obj)
+
+
+def drsip_membrane(args):
+    transmem_helix_sel_strs = ['resid %s' %
+                                x.strip() for x in args.trans_helix.split()]
+
+    drsip_obj = drsip.DR_SIP(args.static_pdb, args.mobile_pdb,
+                             args.zdock_output_file,
+                             args.dist_rest_file, transmem_helix_sel_strs)
+
+    drsip_obj.run()
+
+    final_results(args, drsip_obj)
+
+
+def final_results(args, drsip_obj):
+
+    if len(args.save_file) != 0:
+        drsip_obj.save_data(args.save_file)
+
+    drsip_obj.write_results_file(args.output_file)
+    drsip_obj.write_topN_poses(args.poses_folder, num_poses=args.num_poses)
+
+
+if __name__ == '__main__':
+    parser = DRSIP_Parser(
+        description='DRSIP: Distance Restraints- and Cyclic Symmetry-Imposed Packing.\n\nPredicts the quaternary structure of Homo-oligomeric Transmembrane Proteins (HoTPs) assuming the complex is Cn-symmetric.')
+    subparsers = parser.add_subparsers()
+
+    soluble_subparser = subparsers.add_parser(
+        'soluble', help='Use DRSIP\'s soluble protein docking protocol. See: "drsip soluble -h" for more details')
+    soluble_subparser.add_argument(
+        'static_pdb', metavar='static-pdb', help='Static monomer PDB file')
+    soluble_subparser.add_argument(
+        'mobile_pdb', metavar='mobile-pdb', help='Mobile monomer PDB file')
+    soluble_subparser.add_argument('zdock_output_file', metavar='zdock-output-file', 
+                                   help='ZDOCK 3.0.2\'s output file')
+    soluble_subparser.add_argument(
+        'dist_rest_file', metavar='dist-rest-file', help='Distance restraints file')
+    soluble_subparser.add_argument('-o', dest='output_file', metavar='output-file',
+                                   help='Output the top N results file. Default: \'DRSIP_results.csv\'. See -N', required=False, default='DRSIP_results.csv')
+    soluble_subparser.add_argument('-p', dest='poses_folder', metavar='poses-folder',
+                                   help='Folder to write the top N poses. Default: Current folder. See -N', required=False, default='')
+    soluble_subparser.add_argument('-N', dest='num_poses', metavar='num-poses',
+                                   help='Set "N", the number of top poses to write out. Default: 20', required=False, type=int, default=20)
+    soluble_subparser.add_argument('--save-all', dest='save_file', metavar='save-file', help='For advanced users only. Saves all the input files and filtering data to a compressed msgpack file. Optional.',
+                                   required=False, default='')
+    soluble_subparser.set_defaults(func=drsip_soluble)
+
+    membrane_subparser = subparsers.add_parser(
+        'membrane', help='Use DRSIP\'s membrane protein docking protocol. See: "drsip membrane -h" for more details')
+    membrane_subparser.add_argument(
+        'static_pdb', metavar='static-pdb', help='Static monomer PDB file')
+    membrane_subparser.add_argument(
+        'mobile_pdb', metavar='mobile-pdb', help='Mobile monomer PDB file')
+    membrane_subparser.add_argument('trans_helix', metavar='trans-helix', help='Comma separated resids of transmembrane helices.\
+    Ex. Helix 1: resid 5-20 , Helix 2: resid 23-40, Helix 3: resid 45-60 then TRANS-HELIX:"5-20, 23-40, 45-60". These can be obtained from the Orientations of Proteins in Membranes (OPM) database or PPM server')
+    membrane_subparser.add_argument('zdock_output_file', metavar='zdock-output-file', 
+                                    help='ZDOCK 3.0.2\'s output file')
+    membrane_subparser.add_argument('-d', dest='dist_rest_file', metavar='dist-rest-file',
+                                    help='Distance restraints file', required=False, default='')
+    membrane_subparser.add_argument('-o', dest='output_file', metavar='output-file',
+                                    help='Output the top N results file. Default: \'DRSIP_results.csv\'. See -N', required=False, default='DRSIP_results.csv')
+    membrane_subparser.add_argument('-p', dest='poses_folder', metavar='poses-folder',
+                                    help='Folder to write the top N poses. Default: Current folder. See -N', required=False, default='')
+    membrane_subparser.add_argument('-N', dest='num_poses', metavar='num-poses',
+                                    help='Set "N", the number of top poses to write out. Default: 20', required=False, type=int, default=20)
+    membrane_subparser.add_argument('--save-all', dest='save_file', metavar='save-file', help='For advanced users only. Saves all the input files and filtering data to a compressed msgpack file. Optional.',
+                                    required=False, default='')
+
+    membrane_subparser.set_defaults(func=drsip_membrane)
+
+    args = parser.parse_args()
+    args.func(args)
