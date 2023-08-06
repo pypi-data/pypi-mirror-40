@@ -1,0 +1,14 @@
+api2ch/__init__.py,sha256=iRmSJFgTdura5vRJ1R_IjFbqb5x-cwyPdvIFAooW-MY,150
+api2ch/api.py,sha256=kHnvpG3XOhRwcYnzPKjJa4gRnq2Pc0Tz7LjGMjKbrl8,8719
+api2ch/captcha.py,sha256=515Alslcw6FwcFhTUwxSHJAZGR2k6OWgslGevPN9x8U,2409
+api2ch/client.py,sha256=6hANO_OdSnvXHCm9D-7319BWlPLt1VgZjHp3yK33Ft0,1049
+api2ch/exceptions.py,sha256=Gy64oG8IWe85ieRZC6OB46KsX8wpMf93fr7O4lXzgMA,1286
+api2ch/helpers.py,sha256=86EH3EqJWM37Veb6uKzAwUwGQNoSnz9qGpm8WgT02EI,638
+api2ch/models.py,sha256=cF3gP-XlsIxfF0A-OSMZFRKJExKPAuPjEHw32HNfNpg,6195
+api2ch/settings.py,sha256=OBemTNVN9-Yqil3xe9JriGYAdNGQh3pARK5MsUqjkEU,53
+api2ch/utils.py,sha256=Cj_XiIhk4mJxAM72h5c_7rn0Dt4KNPgzYs8Zve13s1c,213
+dvach.api-1.0.0.dist-info/LICENSE,sha256=9CVIu0QE7rOBQma7Nm0-lMVtpNIF_3Qx5V9uqlTPxec,575
+dvach.api-1.0.0.dist-info/METADATA,sha256=VNjDlcNcXl6HyK-vbCCFnG_gt_81tS4nq-BgghKtnkA,2212
+dvach.api-1.0.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+dvach.api-1.0.0.dist-info/top_level.txt,sha256=29wTaNYKhiuaQww4a8KMvCxRPnsm4KDKCaywTJkBpV4,7
+dvach.api-1.0.0.dist-info/RECORD,,
