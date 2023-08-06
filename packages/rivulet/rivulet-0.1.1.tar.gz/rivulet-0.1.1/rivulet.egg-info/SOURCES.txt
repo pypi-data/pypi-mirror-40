@@ -1,0 +1,9 @@
+README.rst
+setup.py
+rivulet/__init__.py
+rivulet/exceptions.py
+rivulet/rivulet.py
+rivulet.egg-info/PKG-INFO
+rivulet.egg-info/SOURCES.txt
+rivulet.egg-info/dependency_links.txt
+rivulet.egg-info/top_level.txt
