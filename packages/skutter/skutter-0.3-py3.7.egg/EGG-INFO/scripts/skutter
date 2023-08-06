@@ -1,0 +1,45 @@
+#!/Users/adamb/Developer/skutter/venv/bin/python
+
+import argparse
+import os
+import logging
+import sys
+
+log = logging.getLogger('skutter')
+
+try:
+    from skutter import Skutterd, Configuration
+except ImportError:
+    if 'SKUTTER' in os.environ:
+        log.critical('Unsafely configuring PYTHONPATH for development use')
+        log.critical('If you see this message in production, do not use the service and notify the developers')
+        log.debug('PYTHONPATH before modification was: %s', sys.path)
+
+        from pathlib import Path
+
+        scriptdir = os.path.dirname(os.path.realpath(__file__))
+
+        sys.path.append(str(Path(scriptdir, '..').resolve()))
+        sys.path.append(str(Path(scriptdir, '../skutter').resolve()))
+
+        log.debug('PYTHONPATH after modification was: %s', sys.path)
+
+        from skutter import Skutterd, Configuration
+    else:
+        log.critical('Loading failed, unable to find libskutter - check `PYTHONPATH`')
+        sys.exit(4)
+
+parser = argparse.ArgumentParser(description='Simple daemon for performing menial tasks.')
+parser.add_argument('-d', '--debug', dest='debug', action='store_true')
+
+Configuration.reset()
+Configuration.args(vars(parser.parse_args()))
+
+Skutterd.logging()
+
+if __name__ == '__main__':
+    log.info('Skutterd starting up')
+    Skutterd.run()
+
+    # Skutter has terminated, flush the log handlers
+    [h.flush() for h in log.handlers]
