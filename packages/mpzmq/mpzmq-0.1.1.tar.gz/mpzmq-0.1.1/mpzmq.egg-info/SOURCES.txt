@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mpzmq/__init__.py
+mpzmq/client.py
+mpzmq/server.py
+mpzmq.egg-info/PKG-INFO
+mpzmq.egg-info/SOURCES.txt
+mpzmq.egg-info/dependency_links.txt
+mpzmq.egg-info/requires.txt
+mpzmq.egg-info/top_level.txt
