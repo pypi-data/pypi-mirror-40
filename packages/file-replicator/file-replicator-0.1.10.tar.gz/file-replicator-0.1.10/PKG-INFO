@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: file-replicator
+Version: 0.1.10
+Summary: Replicate files to another computer for remote development
+Home-page: https://github.com/tcorbettclark/file-replicator
+Author: Timothy Corbett-Clark
+Author-email: timothy.corbettclark@gmail.com
+Keywords: development,copying,replication,synchronisation,sync,files
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: inotify (>=0.2.10,<0.3.0)
+Requires-Dist: pathspec (>=0.5.9,<0.6.0)
