@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: QUANTAXIS-CRAWLY
+Version: 1.0
+Summary: QUANTAXIS CRAWLY: QUANTAXIS SPIDER
+Home-page: https://github.com/quantaxis/quantaxis
+Author: yutiansut
+Author-email: yutiansut@qq.com
+License: MIT
+Keywords: quantaxis,quant,finance,Backtest,Framework
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Dist: quantaxis
+Requires-Dist: selenium
+Requires-Dist: tornado
+Requires-Dist: scrapy
+Requires-Dist: pymongo (>=3.7)
+
+QUANTAXIS CRAWLY: QUANTAXIS SPIDER
+
+
