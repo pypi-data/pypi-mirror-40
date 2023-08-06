@@ -1,0 +1,438 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cgdat.qt_custom.qt_extra &mdash; CGDAT  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> CGDAT
+          
+
+          
+            
+            <img src="../../../_static/CGDAT.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.2.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../use.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info.html">Additional information</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../code.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">CGDAT</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>cgdat.qt_custom.qt_extra</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for cgdat.qt_custom.qt_extra</h1><div class="highlight"><pre>
+<span></span><span class="c1"># subclass</span>
+<span class="sd">&#39;&#39;&#39;This module contains classes and functions that add added custom made widgets and functionalities to the qt GUI. It contains the</span>
+<span class="sd">following components:</span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="c1">### Set all ###</span>
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;MultiSelectMenu&#39;</span><span class="p">]</span>
+
+<span class="c1">### Import needed modules ###</span>
+<span class="kn">from</span> <span class="nn">PyQt5</span> <span class="k">import</span> <span class="n">QtGui</span><span class="p">,</span> <span class="n">QtCore</span><span class="p">,</span> <span class="n">QtWidgets</span>
+<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
+
+<span class="c1">###################################################################</span>
+<span class="c1">### CheckableComboBox Class                                     ###</span>
+<span class="c1">###################################################################</span>
+<div class="viewcode-block" id="MultiSelectMenu"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_extra.MultiSelectMenu">[docs]</a><span class="k">class</span> <span class="nc">MultiSelectMenu</span><span class="p">(</span><span class="n">QtWidgets</span><span class="o">.</span><span class="n">QToolButton</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This class is used to create a multi selection drop down menu.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">### Class initializer                         ###</span>
+    <span class="c1">#################################################</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">all_text_enabled</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">all_text</span><span class="o">=</span><span class="s2">&quot;Select all&quot;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize object.&quot;&quot;&quot;</span>
+
+        <span class="c1">### Get extra options ###</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">all_text_enabled</span> <span class="o">=</span> <span class="n">all_text_enabled</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">all_text</span> <span class="o">=</span> <span class="n">all_text</span>
+
+        <span class="c1">### Run parent initializer and setup components ###</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">MultiSelectMenu</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s1">&#39;Select Categories &#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QMenu</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setMenu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setPopupMode</span><span class="p">(</span><span class="n">QtWidgets</span><span class="o">.</span><span class="n">QToolButton</span><span class="o">.</span><span class="n">InstantPopup</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">installEventFilter</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+        <span class="c1">### Add all text to menu if enabled ###</span>
+        <span class="k">if</span> <span class="n">all_text_enabled</span><span class="p">:</span>
+            <span class="n">action</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QAction</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+            <span class="n">action</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">all_text</span><span class="p">)</span>
+            <span class="n">action</span><span class="o">.</span><span class="n">setCheckable</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">action</span><span class="o">.</span><span class="n">changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selectAll</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">all_text_enabled</span> <span class="o">=</span> <span class="kc">True</span>
+
+
+    <span class="c1">#################################################</span>
+    <span class="c1">### addItem method                            ###</span>
+    <span class="c1">#################################################</span>
+<div class="viewcode-block" id="MultiSelectMenu.addItem"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_extra.MultiSelectMenu.addItem">[docs]</a>    <span class="k">def</span> <span class="nf">addItem</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Method used to add additional actions to the toolbar menu.&quot;&quot;&quot;</span>
+
+        <span class="c1">### Add item to menu ###</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="n">action</span><span class="o">.</span><span class="n">setCheckable</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="c1">### Connect to selection function when All option exists ###</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_text_enabled</span><span class="p">:</span>
+            <span class="n">action</span><span class="o">.</span><span class="n">changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selectAction</span><span class="p">)</span></div>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">### addAllOption method                       ###</span>
+    <span class="c1">#################################################</span>
+<div class="viewcode-block" id="MultiSelectMenu.addAllOption"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_extra.MultiSelectMenu.addAllOption">[docs]</a>    <span class="k">def</span> <span class="nf">addAllOption</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">all_text</span><span class="o">=</span><span class="s2">&quot;Select all&quot;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This function is used to add a &quot;Select all&quot; action to the toolbar menu.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            all_text (str, optional): Defaults to &quot;Select all&quot;. The text used for the select all element.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1">### Check whether all text was already enabled ###</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_text_enabled</span><span class="p">:</span>
+            <span class="c1">### Set all_text if specified ###</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">all_text</span> <span class="o">=</span> <span class="n">all_text</span>
+
+            <span class="c1">### Add all action to menu ###</span>
+            <span class="n">action</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QAction</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+            <span class="n">action</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">all_text</span><span class="p">)</span>
+            <span class="n">action</span><span class="o">.</span><span class="n">setCheckable</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">action</span><span class="o">.</span><span class="n">changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selectAll</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">insertAction</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="n">action</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">all_text_enabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All text already enabled use changeAllText to change the all text.&quot;</span><span class="p">)</span></div>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">### ChangeAllText method                      ###</span>
+    <span class="c1">#################################################</span>
+<div class="viewcode-block" id="MultiSelectMenu.changeAllText"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_extra.MultiSelectMenu.changeAllText">[docs]</a>    <span class="k">def</span> <span class="nf">changeAllText</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">all_text</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This function is used to change the &quot;Select all&quot; text.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            all_text (str): The text used for the select all element.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1">### Check whether all text was already enabled ###</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_text_enabled</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No all text was enabled please first use the addAllOption method to enable the select all option.&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">all_text</span> <span class="o">=</span> <span class="n">all_text</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">all_text</span><span class="p">)</span></div>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">### removeAllOption method                       ###</span>
+    <span class="c1">#################################################</span>
+<div class="viewcode-block" id="MultiSelectMenu.removeAllOption"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_extra.MultiSelectMenu.removeAllOption">[docs]</a>    <span class="k">def</span> <span class="nf">removeAllOption</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This function is used to remove a &quot;Select all&quot; action to the toolbar menu.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1">### Remove select all element if it exists ###</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_text_enabled</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">all_text_enabled</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># Set select all text to false</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">removeAction</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No select all action was found.&quot;</span><span class="p">)</span></div>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">### selectAll method                          ###</span>
+    <span class="c1">#################################################</span>
+<div class="viewcode-block" id="MultiSelectMenu.selectAll"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_extra.MultiSelectMenu.selectAll">[docs]</a>    <span class="k">def</span> <span class="nf">selectAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method is used to select all the options when the select all action is selected</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1">### Check or unchecked the other actions based on the &quot;Select all&quot; action ###</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isChecked</span><span class="p">():</span>  <span class="c1"># If &quot;Select all&quot; action is checked</span>
+            <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">1</span><span class="p">:]:</span>
+                <span class="n">action</span><span class="o">.</span><span class="n">changed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selectAction</span><span class="p">)</span>
+                <span class="n">action</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Check actions</span>
+                <span class="n">action</span><span class="o">.</span><span class="n">changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selectAction</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">1</span><span class="p">:]:</span>
+                <span class="n">action</span><span class="o">.</span><span class="n">changed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selectAction</span><span class="p">)</span>
+                <span class="n">action</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># Uncheck all actions</span>
+                <span class="n">action</span><span class="o">.</span><span class="n">changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selectAction</span><span class="p">)</span></div>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">### selectAction method                          ###</span>
+    <span class="c1">#################################################</span>
+<div class="viewcode-block" id="MultiSelectMenu.selectAction"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_extra.MultiSelectMenu.selectAction">[docs]</a>    <span class="k">def</span> <span class="nf">selectAction</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method is used to unselect the select all option when one of the other values is unselected. Further it</span>
+<span class="sd">        also makes sure that the select all button is selected again if all items are selected again.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1">### Check or unchecked the other actions based on the &quot;Select all&quot; action ###</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isChecked</span><span class="p">()</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selectedItems</span><span class="p">())</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">changed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span> <span class="c1"># Disconnect all select function</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Disable all selected</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selectAll</span><span class="p">)</span>  <span class="c1"># Reconnect all select functino</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isChecked</span><span class="p">()</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selectedItems</span><span class="p">())</span> <span class="o">==</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">())</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Enable all selected</span></div>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">### selectedItems method                      ###</span>
+    <span class="c1">#################################################</span>
+<div class="viewcode-block" id="MultiSelectMenu.selectedItems"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_extra.MultiSelectMenu.selectedItems">[docs]</a>    <span class="k">def</span> <span class="nf">selectedItems</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method returns a list containing the items that were selected in the toolbox menu.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list: List containing the items that were selected.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1">### Create selected items list ###</span>
+        <span class="n">selected_items</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="c1">### Loop through the toolbar menu and return selected items ###</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_text_enabled</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">()[</span><span class="mi">1</span><span class="p">:]:</span>
+                <span class="k">if</span> <span class="n">action</span><span class="o">.</span><span class="n">isChecked</span><span class="p">():</span>  <span class="c1"># Check if item is checked</span>
+                    <span class="n">selected_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">action</span><span class="o">.</span><span class="n">text</span><span class="p">())</span>  <span class="c1"># Append item text to list</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">actions</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">action</span><span class="o">.</span><span class="n">isChecked</span><span class="p">():</span>  <span class="c1"># Check if item is checked</span>
+                    <span class="n">selected_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">action</span><span class="o">.</span><span class="n">text</span><span class="p">())</span>  <span class="c1"># Append item text to list</span>
+
+        <span class="c1">### Return result ###</span>
+        <span class="k">return</span> <span class="n">selected_items</span></div>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">### Clear method                      ###</span>
+    <span class="c1">#################################################</span>
+<div class="viewcode-block" id="MultiSelectMenu.clear"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_extra.MultiSelectMenu.clear">[docs]</a>    <span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This function clears all the cations out of the Qmenu.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+
+        <span class="c1">### Add select all option back if it was enabled ###</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_text_enabled</span><span class="p">:</span>
+            <span class="n">action</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QAction</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+            <span class="n">action</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">all_text</span><span class="p">)</span>
+            <span class="n">action</span><span class="o">.</span><span class="n">setCheckable</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">action</span><span class="o">.</span><span class="n">changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selectAll</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">toolmenu</span><span class="o">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">all_text_enabled</span> <span class="o">=</span> <span class="kc">True</span></div>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">### eventFilter method                        ###</span>
+    <span class="c1">#################################################</span>
+<div class="viewcode-block" id="MultiSelectMenu.eventFilter"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_extra.MultiSelectMenu.eventFilter">[docs]</a>    <span class="k">def</span> <span class="nf">eventFilter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This function is used to slightly edit the open and close behaviour of the</span>
+<span class="sd">        QToolButton. This was done since we want the toolbar drop down menu to stay open</span>
+<span class="sd">        when the user is selecting players.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            obj (QObject): The object on which the event filter needs to be applied.</span>
+<span class="sd">            event (QEvent): The QEvent we want to overwrite.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            QEvent: Pass the event to the parent class.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1">### Check if the mouse button is released ###</span>
+        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="n">QtCore</span><span class="o">.</span><span class="n">QEvent</span><span class="o">.</span><span class="n">MouseButtonRelease</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QMenu</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">obj</span><span class="o">.</span><span class="n">activeAction</span><span class="p">():</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="n">obj</span><span class="o">.</span><span class="n">activeAction</span><span class="p">()</span><span class="o">.</span><span class="n">menu</span><span class="p">():</span> <span class="c1">#if the selected action does not have a submenu</span>
+                        <span class="c1">#eat the event, but trigger the function</span>
+                        <span class="n">obj</span><span class="o">.</span><span class="n">activeAction</span><span class="p">()</span><span class="o">.</span><span class="n">trigger</span><span class="p">()</span>
+                        <span class="k">return</span> <span class="kc">True</span>
+
+        <span class="c1">### Return event ###</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">MultiSelectMenu</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">eventFilter</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">event</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Rick Staa
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

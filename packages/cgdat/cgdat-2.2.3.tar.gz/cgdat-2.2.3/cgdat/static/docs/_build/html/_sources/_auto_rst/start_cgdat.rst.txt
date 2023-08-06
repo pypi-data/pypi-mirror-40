@@ -1,0 +1,7 @@
+start\_cgdat module
+===================
+
+.. automodule:: start_cgdat
+    :members:
+    :undoc-members:
+    :show-inheritance:

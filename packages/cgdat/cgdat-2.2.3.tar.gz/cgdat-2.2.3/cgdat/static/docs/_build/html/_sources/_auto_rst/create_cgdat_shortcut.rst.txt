@@ -1,0 +1,7 @@
+create\_cgdat\_shortcut module
+==============================
+
+.. automodule:: create_cgdat_shortcut
+    :members:
+    :undoc-members:
+    :show-inheritance:
