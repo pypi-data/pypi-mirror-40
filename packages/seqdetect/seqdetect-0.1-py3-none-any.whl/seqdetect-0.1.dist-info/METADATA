@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: seqdetect
+Version: 0.1
+Summary: Automatic sequence feature detection using BLAST
+Home-page: UNKNOWN
+Author: Patrick Kunzmann
+License: BSD 3-Clause
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.13)
+Requires-Dist: biotite (>=0.9)
+
+
+*SeqDetect* is a command line program that gives the answer to the question:
+I have a DNA sequence but what is in there?
+This software takes a DNA sequences and enriches it with sequence features in
+the *GenBank* format.
+It achieves that by BLASTing the sequence and extracting feature information
+from the *GenBank* files corresponding to the BLAST hit IDs.
+
+
