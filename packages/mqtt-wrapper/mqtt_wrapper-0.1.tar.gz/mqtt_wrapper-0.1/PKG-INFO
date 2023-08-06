@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: mqtt_wrapper
+Version: 0.1
+Summary: wrapper for paho mqtt client
+Home-page: https://github.com/EmaroLab/mqtt_wrapper.git
+Author: Alessandro Carfi
+Author-email: carfi.alessandro@gmail.com
+License: MIT
+Description: ============
+        Installation
+        ============
+        
+        To install this package use the command:
+        
+        ``$ sudo pip install mqtt_wrapper``
+        
+        or
+        
+        ``$ sudo pip install "git+https://github.com/EmaroLab/mqtt_wrapper.git"``
+        
+Platform: UNKNOWN
