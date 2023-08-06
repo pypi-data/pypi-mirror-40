@@ -1,0 +1,4 @@
+[console_scripts]
+orzmc = OrzMC:startClient
+orzmcs = OrzMC:downloadServer
+
