@@ -1,0 +1,29 @@
+language: python
+
+python:
+  - 3.6
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+install:
+  - make ensure-pip-ci
+  - make dev-ci
+
+script:
+  - make checks
+  - make requirements
+  - make test-coverage
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
+deploy:
+  provider: pypi
+  user: krygal
+  password:
+    secure: "jG506FBgrMX2M55oOkv1zTzsZp3MIDx0dB4zKyVMsbE0hUrNpWGc8LL+SOPzMovrPQ51dtLe0Tq8mMetW52Ni/PtwwQZaW24J7KeTsCC4hLlnifJmMsarym1evUjGLzCCHxm9ls0RntCTZqS1CRKNQba3D9I/RGAn5Q6Cns8w3HFQND23lmHLIAQSyvVDOBGNofZ72HS8VFxIMsuaCiLrr2tvi90FqOSLjeINfNSjQlsDp6ScfgQOnaWw0fAUE+vz8UZbqzgCVaoXrCetew6/RYWhAmTFrCunaSmwDXrDBenGh4FQ5F4czxm+Y/AM1YrW7hiEXkqdx0OsvD7519XB35D49+MaY5KaF26d1KZxOXsQasCP9Fm+6Hwf6CNsyMk6bIKILDGu4VOcYIfDEsVtqDz5xbSvyY+va5m7NOA6a/t5NQPdLH8rp08UNhgxhLmbliqzCe4/ASwoT3WgMj3x2298aXk+I4nyK7dyxCYABAIqR0GK3LXWq18PS1QB9v+HGeYFMkIHtLOcgbW3PxlqspcphI1cncv6/wleWTvF840DblwGESUCa5GglicTkqa+rNXdmMANjeb2Lrs0RT3+tqbDrsytWLdT/pZ6Vh4w4ThAtnw2f2zfFrkEXPAUsuEmocQBWcSVo/ZE+xbRacebDyL28R7PvCinrfOgq7VZjI="
+  on:
+    tags: true

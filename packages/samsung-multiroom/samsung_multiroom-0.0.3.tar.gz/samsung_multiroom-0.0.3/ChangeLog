@@ -1,0 +1,34 @@
+CHANGES
+=======
+
+0.0.3
+-----
+
+* api timeouts
+* app player
+* app service browser
+* initial service implementation
+* moved low level api into separate location
+
+0.0.2
+-----
+
+* fix missing requirements
+* fix travis pypi password
+* updated README with better examples
+* speaker grouping
+* core speaker refactor to use @property
+* speakers time functionality
+* players jump function to advance current to track
+* speaker equalizer to make sound adjustments
+* players play playlist implementation
+* renamed browsers list to browse
+* paginator for api calls
+* metadata for browser items
+* preserve path in a browser
+* access browser from the speaker
+* tunein radio browser
+* dlna media browser
+* fixed missing tests
+* added ability to set speaker's name
+* initial commit
