@@ -1,0 +1,9 @@
+README.md
+setup.py
+magical_sqlserver/__init__.py
+magical_sqlserver/api.py
+magical_sqlserver/decorators.py
+magical_sqlserver.egg-info/PKG-INFO
+magical_sqlserver.egg-info/SOURCES.txt
+magical_sqlserver.egg-info/dependency_links.txt
+magical_sqlserver.egg-info/top_level.txt
