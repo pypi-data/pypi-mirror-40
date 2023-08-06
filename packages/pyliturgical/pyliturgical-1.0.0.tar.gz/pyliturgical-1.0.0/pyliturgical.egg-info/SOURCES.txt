@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pyliturgical/__init__.py
+pyliturgical/calendar.py
+pyliturgical.egg-info/PKG-INFO
+pyliturgical.egg-info/SOURCES.txt
+pyliturgical.egg-info/dependency_links.txt
+pyliturgical.egg-info/requires.txt
+pyliturgical.egg-info/top_level.txt
