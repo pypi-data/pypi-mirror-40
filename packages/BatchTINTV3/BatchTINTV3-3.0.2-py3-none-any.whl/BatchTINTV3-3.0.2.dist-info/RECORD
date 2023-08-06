@@ -1,0 +1,15 @@
+BatchTINTV3/BatchTint.py,sha256=cgOmKY307XcqzJqlhiL2e8FEy--Jru15C_SiFJmm3sI,41594
+BatchTINTV3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BatchTINTV3/setup_exe.py,sha256=Ck8FtFvtn44iB2NJjPHlKFYIeLcbG8h3uIhyM5bSB2Y,479
+BatchTINTV3/core/ChooseDirectory.py,sha256=gor7fi7a-MvsqB5ibqfbhWcqne6EcGYeSPknA38Fwk4,4273
+BatchTINTV3/core/KlustaFunctions.py,sha256=Q7L8m25Zj22xvFHmQ95UIr3olUExY-ItxbFLFiAOsww,34353
+BatchTINTV3/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BatchTINTV3/core/settings.py,sha256=KvyhgC_AQhaSEXwxWRAnvkeSClz7XJSrTPcslBQ5M20,19529
+BatchTINTV3/core/smtpSettings.py,sha256=-v7d72H7SgxBqZTdlDfjBNnDlG6uC7tPBDQ6w1H-44Q,10877
+BatchTINTV3/core/utils.py,sha256=guuhHgTaxyOVZ3E05lDRPhFGJ5FuC_4vIJb9fAj7Ctg,3117
+BatchTINTV3/img/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BatchTINTV3-3.0.2.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+BatchTINTV3-3.0.2.dist-info/METADATA,sha256=5iF_5kUuXmlgBl8gGkLj9O_8LfdJJ9mxyTjb8vHwgQM,9356
+BatchTINTV3-3.0.2.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+BatchTINTV3-3.0.2.dist-info/top_level.txt,sha256=BOduXV9lKi9uLj-4DT25fzVRSTlrqY9nmefwKFY6kWg,12
+BatchTINTV3-3.0.2.dist-info/RECORD,,
