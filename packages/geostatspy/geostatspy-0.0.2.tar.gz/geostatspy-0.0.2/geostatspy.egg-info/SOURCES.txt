@@ -1,0 +1,12 @@
+README.md
+setup.py
+geostatspy/__init__.py
+geostatspy/base.py
+geostatspy/declus.py
+geostatspy/gam.py
+geostatspy/gamv.py
+geostatspy/nscore.py
+geostatspy.egg-info/PKG-INFO
+geostatspy.egg-info/SOURCES.txt
+geostatspy.egg-info/dependency_links.txt
+geostatspy.egg-info/top_level.txt
