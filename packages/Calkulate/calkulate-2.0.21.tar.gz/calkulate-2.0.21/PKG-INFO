@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: calkulate
+Version: 2.0.21
+Summary: Seawater total alkalinity from titration data
+Home-page: https://github.com/mvdh7/calkulate
+Author: Matthew P. Humphreys
+Author-email: m.p.humphreys@cantab.net
+License: UNKNOWN
+Description: # calkulate v2.0.21
+        
+        Seawater total alkalinity from open-cell, non-purged, stepwise, potentiometric titration data.
+        
+        Code is under heavy development!
+        
+        University of East Anglia, Norwich, UK
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
