@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+vbio/__init__.py
+vbio/bot.py
+vbio/logging.py
+vbio/types.py
+vbio.egg-info/PKG-INFO
+vbio.egg-info/SOURCES.txt
+vbio.egg-info/dependency_links.txt
+vbio.egg-info/requires.txt
+vbio.egg-info/top_level.txt
+vbio/servers/__init__.py
+vbio/servers/flask.py
+vbio/servers/longpool.py

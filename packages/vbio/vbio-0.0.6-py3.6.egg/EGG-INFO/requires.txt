@@ -1,0 +1,7 @@
+requests
+
+[color]
+colorama
+
+[webhook]
+Flask
