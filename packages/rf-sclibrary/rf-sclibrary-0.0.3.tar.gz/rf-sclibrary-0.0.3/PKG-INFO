@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: rf-sclibrary
+Version: 0.0.3
+Summary: SC utility library for Robot Framework
+Home-page: https://github.com/
+Author: YoKey
+Author-email: yokeyword@gmail.com
+License: UNKNOWN
+Description: ### SC utility library for Robot Framework
+        
+        ### 安装
+        `pip install rf-sclibrary`
+        
+        ### 发布
+        ````
+        python setup.py sdist bdist_wheel
+        twine upload dist/*
+        ````
+        
+Platform: UNKNOWN
