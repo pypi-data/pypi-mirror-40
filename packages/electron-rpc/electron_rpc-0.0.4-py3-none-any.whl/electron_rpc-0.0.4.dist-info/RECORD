@@ -1,0 +1,16 @@
+electron/__init__.py,sha256=320yLq5H1n-VXWE5HdSUjpAAiOd3FZIQoJTEbgceYyY,463
+electron/exceptions.py,sha256=urU5evqL7P4NLgVjBQwxqD6u8ZiF8Qe_nXlEX3Qa4i8,47
+electron/messages.py,sha256=SD4fVYi_6gMV3Qnzlc8JkozpMUQtRYzze8DKHekjOjA,586
+electron/server.py,sha256=JXH_R81IDgaKYD-jcOZ67GK5hui_d7TyP5qMo1vXHy4,3442
+electron/types.py,sha256=HRW23N1dTx0vg9fiqoDixarYMJBbMbC9MKmhdQJHNjs,407
+electron/utils.py,sha256=wGjyp5o1dvU6ZndqUmmnccak6-siqyKNcykAbIWSWCU,478
+electron/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+electron/tests/conftest.py,sha256=KQMi_44UK8HDNSnW9b5o00GHiK5G0jfuqDzRQ2AJko8,788
+electron/tests/test_endpoints.py,sha256=-1ed8YrkYNGRT0O5gfTGQzx4PDPFa5Z7kQM7yCLHvoo,282
+electron/tests/test_messages.py,sha256=8Ef0XT-_Bvv8LxjQSl3Oeu6wvfPzq8nIkwjaIKIb1b8,292
+electron/tests/test_server.py,sha256=8inRFc0qER31s1VjSm6rVfuPAYKOzNKDFoHkH44oeaQ,1068
+electron_rpc-0.0.4.dist-info/LICENSE,sha256=UmtzeWA4L_TJbPRvdCow1Lb4lekJ_RrJMOjTY2UQz7Q,1074
+electron_rpc-0.0.4.dist-info/METADATA,sha256=vVnf8wG8YK0OsRagcQyERWPfCYnOzxpyYr3HjT-HbXk,2171
+electron_rpc-0.0.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+electron_rpc-0.0.4.dist-info/top_level.txt,sha256=ceZDk6Kiwt5LxFIOkNp3wANLewDqJVqD9k0Ji-WVuVI,9
+electron_rpc-0.0.4.dist-info/RECORD,,
