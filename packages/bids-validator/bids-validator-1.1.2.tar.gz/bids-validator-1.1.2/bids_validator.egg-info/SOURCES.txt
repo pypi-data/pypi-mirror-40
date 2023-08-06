@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+bids_validator/__init__.py
+bids_validator/bids_validator.py
+bids_validator.egg-info/PKG-INFO
+bids_validator.egg-info/SOURCES.txt
+bids_validator.egg-info/dependency_links.txt
+bids_validator.egg-info/top_level.txt
