@@ -1,0 +1,11 @@
+rtmidi/__init__.py,sha256=XVa5ZNqwTSrAbJmh8yHxRr00iziI_LgE1KNG5BpHU7c,202
+rtmidi/_rtmidi.cpython-37m-darwin.so,sha256=aInkKgLWatSFfAp9hZiQvtO0Cz3k9F57Lt92NMlbDRc,648848
+rtmidi/midiconstants.py,sha256=IgdCwMLZ8CLPkfVwAHsXhmgmi7nuX81sAwg50pjy_ZQ,7412
+rtmidi/midiutil.py,sha256=wZ-CHvZeAWzTKJ5LYB7iiaZkG1tgWsseLhRTOYJufIc,8756
+rtmidi/release.py,sha256=V5LJeYh4y2TF-lVl76LlpsB3AQvY99UbwdmV2ionX10,3633
+python_rtmidi-1.2.1.dist-info/AUTHORS.rst,sha256=j-AnKOlEjP0g4Pc_e9CI87sQjmAMpwr-6SxEtL2HZuM,274
+python_rtmidi-1.2.1.dist-info/LICENSE.txt,sha256=zRw4mh000bRfiS26eywGPIR58mpiGuG9Pomw9DSNCXc,2771
+python_rtmidi-1.2.1.dist-info/METADATA,sha256=IIddM6aVrOYRQthIViPatYBc0ka8t18jVuT8Me-w3LI,3451
+python_rtmidi-1.2.1.dist-info/WHEEL,sha256=MVw9DoaMddiQdBOkUfXEYiaGS29d2D4WXMG3r_AwUW8,109
+python_rtmidi-1.2.1.dist-info/top_level.txt,sha256=zdXDd16SSzjBcv3ZghttppOSKVq7mPvpPZuHg2fo3as,7
+python_rtmidi-1.2.1.dist-info/RECORD,,
