@@ -1,0 +1,10 @@
+biopython~=1.71
+cached-property~=1.4
+fs<2.3.0,>=2.1.0
+six~=1.10
+
+[:python_version < "3"]
+bz2file~=0.98
+
+[:python_version < "3.6"]
+typing~=3.6
