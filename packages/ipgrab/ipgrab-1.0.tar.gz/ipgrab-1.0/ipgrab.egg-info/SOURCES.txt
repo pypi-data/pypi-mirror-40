@@ -1,0 +1,8 @@
+setup.py
+ipgrab/__init__.py
+ipgrab/ipgrab.py
+ipgrab.egg-info/PKG-INFO
+ipgrab.egg-info/SOURCES.txt
+ipgrab.egg-info/dependency_links.txt
+ipgrab.egg-info/requires.txt
+ipgrab.egg-info/top_level.txt
