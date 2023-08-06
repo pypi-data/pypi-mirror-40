@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+FControllerPY.egg-info/PKG-INFO
+FControllerPY.egg-info/SOURCES.txt
+FControllerPY.egg-info/dependency_links.txt
+FControllerPY.egg-info/top_level.txt
+fcontroller/Core.py
+fcontroller/FController.py
+fcontroller/FControllerError.py
+fcontroller/Module.py
+fcontroller/__init__.py
