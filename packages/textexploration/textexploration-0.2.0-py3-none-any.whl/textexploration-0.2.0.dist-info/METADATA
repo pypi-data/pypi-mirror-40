@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: textexploration
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Matthijs Brouwer
+Author-email: UNKNOWN
+License: LICENSE.txt
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: pandas
+
+===============
+TextExploration
+===============
+
+
+
