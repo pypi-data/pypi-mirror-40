@@ -1,0 +1,6 @@
+pandas
+SQLAlchemy
+psycopg2
+gspread
+gspread-dataframe
+oauth2client
