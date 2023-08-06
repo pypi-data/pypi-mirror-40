@@ -1,0 +1,150 @@
+#!/usr/bin/env python
+'''
+dash_board
+Created by Seria at 29/12/2018 3:29 PM
+Email: zzqsummerai@yeah.net
+
+                    _ooOoo_
+                  o888888888o
+                 o88`_ . _`88o
+                 (|  0   0  |)
+                 O \   。   / O
+              _____/`-----‘\_____
+            .’   \||  _ _  ||/   `.
+            |  _ |||   |   ||| _  |
+            |  |  \\       //  |  |
+            |  |    \-----/    |  |
+             \ .\ ___/- -\___ /. /
+         ,--- /   ___\<|>/___   \ ---,
+         | |:    \    \ /    /    :| |
+         `\--\_    -. ___ .-    _/--/‘
+   ===========  \__  NOBUG  __/  ===========
+   
+'''
+# -*- coding:utf-8 -*-
+import matplotlib.pyplot as plt
+import scipy.misc as misc
+import numpy as np
+import os.path as path
+
+class DashBoard(object):
+    palette = ['#F08080', '#00BFFF', '#FFDAB9', '#2E8B57', '#6A5ACD', '#FFD700', '#808080']
+    linestyle = ['-', '--', '-.', ':']
+    def __init__(self, config=None, log_path='./aerolog', window=1, format=None):
+        '''
+        :param config:
+        :param window: the window length of moving average
+        :param format: a list of which the element is format and mode, e.g. ['3f', 'raw']
+        '''
+        if config is None:
+            self.param = {'log_path': log_path, 'window': window, 'format': format}
+        else:
+            config['window'] = config.get('window', window)
+            self.param = config
+        self.win_mile = {}
+        self.gauge_mile = {}
+        self.gauge_epoch = {}
+
+    def _getOridinal(self, number):
+        remainder = number % 10
+        if remainder == 1:
+            ordinal = 'st'
+        elif remainder == 2:
+            ordinal = 'nd'
+        elif remainder == 3:
+            ordinal = 'rd'
+        else:
+            ordinal = 'th'
+        return ordinal
+
+    def _formatAsStr(self, stage, abbr, value, global_mile=-1):
+        format, mode = self.param['format'][abbr]
+        format = '%-' + format
+        if mode == 'raw':
+            return ('%%s ➠ \033[36m%s\033[0m' % format) % (abbr, value)
+        elif mode == 'percent':
+            return ('%%s ➠ \033[36m%s\033[0m%%%%' % format) % (abbr, value*100)
+        elif mode == 'image':
+            if global_mile >= 0:
+                misc.imsave(path.join(self.param['log_path'], '%s/%s_%d.jpg'%(stage, abbr, global_mile)))
+            return ''
+        else:
+            raise KeyError('%s is an illegal format option.' % mode)
+
+    def _gaugeMile(self, items, mile, epoch, mpe, duration, interval):
+        epoch += 1
+        string = ' '
+        stage = 'UNKNOW'
+        flag_display = False
+        if mile % interval == 0:
+            flag_display = True
+        for name, value in items:
+            global_mile = ((epoch-1)*mpe+mile)
+            if flag_display:
+                stage, abbr = name.split(':')
+                string += '%s | ' % self._formatAsStr(stage, abbr, value, global_mile)
+            if name not in self.win_mile.keys():
+                self.win_mile[name] = np.zeros((self.param['window'],))
+                self.gauge_mile[name] = []
+                self.gauge_epoch[name] = [0]
+            self.win_mile[name][global_mile % self.param['window']] = value
+            self.gauge_epoch[name][-1] += value
+            if global_mile < self.param['window']:
+                gauge = np.array(self.win_mile[name][:global_mile+1]).mean()
+            else:
+                gauge = np.array(self.win_mile[name]).mean()
+            self.gauge_mile[name].append(gauge)
+        if flag_display:
+            ordinal = self._getOridinal(epoch)
+            progress = int(mile / mpe * 10 + 0.4)
+            yellow_bar = progress * ' '
+            space_bar = (10 - progress) * ' '
+            print('| %3d%s Epoch ✇  %5d Miles ⊰⟦\033[43m%s\033[0m%s⟧⊱︎ ⧲ %5.2fs/mile | %s |%s'
+                  % (epoch, ordinal, mile, yellow_bar, space_bar, duration, stage, string), end='\r')
+
+    def _gaugeEpoch(self, names, epoch, mpe, duration, interval):
+        epoch += 1
+        self.epoch = epoch
+        string = ' '
+        stage = 'UNKNOWN'
+        for name in names:
+            stage, abbr = name.split(':')
+            self.gauge_epoch[name][-1] /= mpe
+            string += '%s | ' % self._formatAsStr(stage, abbr, self.gauge_epoch[name][-1])
+            self.gauge_epoch[name].append(0)
+        if epoch % interval == 0:
+            ordinal = self._getOridinal(epoch)
+            mileage = str(epoch*mpe)
+            print('+' + (24 + len(mileage) + len(string) + len(stage)) * '-' + '+' + 30 * ' ')
+            print('| %3d%s Epoch ✇  %s Miles ︎⧲ %7.2fs/epoch | %s |%s'
+                  % (epoch, ordinal, mileage, duration, stage, string))
+            print('+' + (24 + len(mileage) + len(string) + len(stage)) * '-' + '+')
+
+    def log(self):
+        boards = {}
+        # clustering
+        for k in self.param['format'].keys():
+            boards[k] = []
+        for k in self.gauge_mile.keys():
+            boards[k.split(':')[-1]].append(k)
+        # plot
+        for k in boards.keys():
+            for i, b in enumerate(boards[k]):
+                distance = len(self.gauge_mile[b])
+                mileage = np.arange(distance)
+                plt.plot(mileage, self.gauge_mile[b], c=self.palette[i%7], label=b)
+                plt.legend()
+                plt.grid(True)
+                plt.savefig(path.join(self.param['log_path'], '%s%d_%.3g_mile_%d.jpg'
+                                      % (k, i, self.gauge_mile[b][-1], distance)))
+                plt.close()
+            for i, b in enumerate(boards[k]):
+                distance = len(self.gauge_epoch[b]) - 1
+                epochs = np.arange(distance)
+                plt.plot(epochs, self.gauge_epoch[b][:-1], marker='o',
+                         c=self.palette[i%7], linestyle=self.linestyle[i%4], label=b)
+            if distance > 0:
+                plt.legend()
+                plt.grid(True)
+                plt.savefig(path.join(self.param['log_path'], '%s_epoch_%d.jpg' % (k, distance)))
+                plt.close()
