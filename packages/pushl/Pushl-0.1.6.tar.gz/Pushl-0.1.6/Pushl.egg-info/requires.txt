@@ -1,0 +1,9 @@
+requests
+feedparser
+beautifulsoup4
+awesome-slugify
+defusedxml
+
+[dev]
+pylint
+twine
