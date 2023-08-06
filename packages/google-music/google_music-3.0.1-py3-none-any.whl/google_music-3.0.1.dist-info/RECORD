@@ -1,0 +1,13 @@
+google_music/__about__.py,sha256=iFoIsMnfssy5wRbcddKJtTrNYTb0U9uN1sqsTb3bb5s,546
+google_music/__init__.py,sha256=4BgcBdOjzp_FrMmsYcdJMbZEsB2dvXpzEEc7Bnm-HW8,136
+google_music/api.py,sha256=K49VWKKiISTNKtSI3LmvVllOQf2aaTauA6s82g0ykRk,1643
+google_music/clients/__init__.py,sha256=OgeHMstX82ZzEeKsq0Yv3wA6TJ25s343rmhxRoJsm_o,118
+google_music/clients/base.py,sha256=SpfZi050d1SwoDL5zcyUH5O5QVdV3MjNHMoy3uPK8mE,3836
+google_music/clients/mobileclient.py,sha256=_b3Gc_94izruTp-H9zWpFjVuhpE6-rYHO2-pQsR9SW0,49448
+google_music/clients/musicmanager.py,sha256=vgm2bXoOTmhykzsquPx0cpWk0Bj6U71GebWpqoXlsdg,11076
+google_music/session.py,sha256=1eBfFqCLR2UQYgyPAzIO9z_428pIX2REmSNrw36zx2o,874
+google_music/utils.py,sha256=ooWLJU4KHrKPObLNgaGS5Y_I-QcSt4EoSm8mvGEGCCE,1671
+google_music-3.0.1.dist-info/LICENSE,sha256=-dV4IcDLX9NHE6Na1IySg9QeFr-RRgF-bHlY6MtjxKw,1105
+google_music-3.0.1.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+google_music-3.0.1.dist-info/METADATA,sha256=mFofcLtezaty5QQyiGOyteo-oGULWmN1LAN0DMdcp5o,3369
+google_music-3.0.1.dist-info/RECORD,,
