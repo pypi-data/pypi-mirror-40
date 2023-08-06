@@ -1,0 +1,10 @@
+depthgen/SDR_compute.py,sha256=ywaoShZd4XoGZERGnQhGaZrhcmopTMet8stlGv-cfVQ,2780
+depthgen/__init__.py,sha256=KZh-lMjLbt-16Wdn6SrXJ20MzYGdQ7wEJsgpF9mM1Rg,2994
+depthgen/demo.py,sha256=aLyHgQKDCmOJLPvZPsrTd78oWp_Ws5PJj7IKpM83OHE,1623
+depthgen/pytorch_DIW_scratch.py,sha256=3qr4xZ_FSQ35qwTVO5L11oIZILfSGg2gTpRfCfM2E28,25569
+depthgen/rmse_error_main.py,sha256=8GFHPJGBvQeZa4c6wiJf1CfdB4nB-SlBSSoy18R0ASI,2101
+depthgen-0.1.dist-info/LICENSE,sha256=df3L10TSqIzAP4pwFQnEsAF1liwWs5dIYkd-y2RJYqY,1071
+depthgen-0.1.dist-info/METADATA,sha256=TwwAHq2ntMoSXm6YzNCR4kjPLfbzp-SYUOKK_G85Yhw,254
+depthgen-0.1.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+depthgen-0.1.dist-info/top_level.txt,sha256=ygNVYXG35cgN6FnbJk097xb07-kMQqrGdWNJjB6oJNA,9
+depthgen-0.1.dist-info/RECORD,,
