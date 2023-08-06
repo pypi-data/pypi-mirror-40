@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: deepdefacer
+Version: 1.1.3
+Summary: Automatic Removal of Facial Features from MRI Images
+Home-page: https://github.com/AKhazane/DeepDeface
+Author: Anish Khazane
+Author-email: akhazane@stanford.edu
+License: UNKNOWN
+Download-URL: https://github.com/AKhazane/DeepDeface/archive/v_01.tar.gz
+Description: Automatic Removal of Facial Features in 3D MRI Scans.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: tf_gpu
+Provides-Extra: tf
