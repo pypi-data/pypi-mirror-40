@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: shorttext
+Version: 1.0.5
+Summary: Short Text Mining
+Home-page: https://github.com/stephenhky/PyShortTextCategorization
+Author: Kwan-Yuet Ho
+Author-email: stephenhky@yahoo.com.hk
+License: MIT
+Description: Short text mining algorithms, involving word-embedding models, topic models, edit distances, Word Mover's distance, deep learning etc.
+Keywords: shorttext natural language processing text mining
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: C
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
