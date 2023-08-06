@@ -1,0 +1,3 @@
+[console_scripts]
+owlet = owlet_api.cli:cli
+

@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: owlet_api
+Version: 0.1.0
+Summary: Unofficial Python API for the Owlet Smart Baby Monitor
+Home-page: https://github.com/BastianPoe/owlet_api/
+Author: Wolf-Bastian Pöttner
+Author-email: bastian+owlet@poettner.de
+License: MIT
+Description: Unofficial Python API for the Owlet Smart Baby Monitor
+Keywords: owlet baby monitor api ayla
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
