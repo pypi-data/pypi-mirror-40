@@ -1,0 +1,34 @@
+setuptools>=38.3.0
+Logbook<2.0.0,>=1.1.0
+msgfy<0.1.0,>=0.0.4
+pyparsing<3.0.0,>=2.2.2
+six<2.0.0,>=1.11.0
+subprocrunner<1.0.0,>=0.16.0
+typepy<1.0.0,>=0.3.2
+
+[:python_version < "3.2"]
+futures
+
+[:python_version < "3.3"]
+ipaddress
+
+[:python_version < "3.4"]
+enum34
+
+[build]
+wheel
+
+[docs]
+path.py
+readmemaker<1.0.0,>=0.7.3
+sphinx_rtd_theme
+Sphinx
+
+[release]
+releasecmd<0.1.0,>=0.0.12
+
+[test]
+pytest-cov
+pytest
+simplejson
+tox
