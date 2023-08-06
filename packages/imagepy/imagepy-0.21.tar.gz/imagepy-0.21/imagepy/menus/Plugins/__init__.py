@@ -1,0 +1,1 @@
+catlog = ['New', 'Macros', 'Manager', '-', 'Install', 'update_plg', '-', 'screencap_plg', 'Games', 'Coins Segment WorkFlow']
