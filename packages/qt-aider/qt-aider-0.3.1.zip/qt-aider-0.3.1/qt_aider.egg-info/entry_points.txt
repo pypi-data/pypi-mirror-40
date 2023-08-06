@@ -1,0 +1,3 @@
+[console_scripts]
+qt-aider = qtaider.__main__:main
+
