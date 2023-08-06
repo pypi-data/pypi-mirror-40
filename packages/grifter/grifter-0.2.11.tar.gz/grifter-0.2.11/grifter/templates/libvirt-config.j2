@@ -1,0 +1,39 @@
+    node.vm.provider :libvirt do |domain|
+      domain.default_prefix = "#{domain_prefix}"
+      {% if data.provider_config.random_hostname %}
+      domain.random_hostname = true
+      {% endif %}
+      {% if data.provider_config.cpus %}
+      domain.cpus = {{ data.provider_config.cpus }}
+      {% endif %}
+      {% if data.provider_config.memory %}
+      domain.memory = {{ data.provider_config.memory }}
+      {% endif %}
+      {% if data.provider_config.huge_pages %}
+      domain.memorybacking :hugepages
+      {% endif %}
+      {% if data.provider_config.storage_pool %}
+      domain.storage_pool_name = "{{ data.provider_config.storage_pool }}"
+      {% endif %}
+      {% if data.provider_config.disk_bus %}
+      domain.disk_bus = "{{ data.provider_config.disk_bus }}"
+      {% endif %}
+      {% if data.provider_config.management_network_mac %}
+      domain.management_network_mac = "{{ data.provider_config.management_network_mac }}"
+      {% endif %}
+      {% set total_nics = data.data_interfaces|length + data.internal_interfaces|length + data.reserved_interfaces|length  %}
+      {% if total_nics %}
+      domain.nic_adapter_count = {{ total_nics }}
+      {% else %}
+      domain.nic_adapter_count = 8
+      {% endif %}
+      {% if data.provider_config.nic_model_type %}
+      domain.nic_model_type = "{{ data.provider_config.nic_model_type }}"
+      {% endif %}
+      {% if data.provider_config.additional_storage_volumes %}
+      {% for volume in data.provider_config.additional_storage_volumes %}
+      domain.storage :file, :path => "#{domain_prefix}-#{guest_name}-#{domain_uuid}-{{ volume.location.split('/')[-1] }}", :size => "{{ volume.size }}", :type => "{{ volume.type }}", :bus => "{{ volume.bus }}", :device => "{{ volume.device }}", :allow_existing => true
+      {% endfor %}
+      {% endif %}
+    end
+    {#  #}
