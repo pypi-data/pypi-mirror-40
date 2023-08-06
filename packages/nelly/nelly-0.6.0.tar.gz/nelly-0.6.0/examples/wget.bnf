@@ -1,0 +1,56 @@
+
+include 'constants.bnf'
+
+<%pre
+    import socket
+    import random
+    import struct
+    import logging
+
+    host = $host
+    try:
+        port = int($port)
+    except KeyError:
+        port = 80
+
+    try:
+        skt
+    except NameError:
+        try:
+            skt = socket.socket()
+            skt.connect((host,port))
+        except socket.error as e:
+            logging.error('%s', e)
+            exit()
+%>
+
+$SEND_HTTP_REQUEST(start):
+    REQUEST <%
+        print($$)
+        print()
+
+        skt.send($$.encode('utf-8'))
+        $* = skt.recv(1500)
+
+        headers,body = $*.decode('utf-8').split('\r\n\r\n', 1)
+
+        print(headers)
+        print(body)
+    %>;
+
+REQUEST:
+    "GET " URL " HTTP/1.1" CRLF
+    "Host: " &host CRLF
+    HEADER {0,10}
+    CRLF
+    ;
+
+URL: '/' ('index.' EXTENSION | WORD '.' EXTENSION);
+
+EXTENSION: WORD[:3];
+
+HEADER: HEADERS ": " WORD CRLF;
+
+HEADERS:
+    'Content-Type' | 'Date' | 'Content-Encoding'
+    ;
