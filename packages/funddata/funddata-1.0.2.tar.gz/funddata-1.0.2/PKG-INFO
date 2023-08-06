@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: funddata
+Version: 1.0.2
+Summary: A stockdata database api
+Home-page: https://github.com/guopw/funddata
+Author: guopw
+Author-email: 154221886@qq.com
+License: guopw Licence
+Description: A stockdata database api 
+Keywords: pip,funddata
+Platform: any

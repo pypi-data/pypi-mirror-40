@@ -1,0 +1,7 @@
+setup.py
+api/__init__.py
+api/basicApi.py
+funddata.egg-info/PKG-INFO
+funddata.egg-info/SOURCES.txt
+funddata.egg-info/dependency_links.txt
+funddata.egg-info/top_level.txt
