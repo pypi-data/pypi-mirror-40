@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+rebrand/__init__.py
+rebrand/__main__.py
+rebrand/rebrand.py
+rebrand.egg-info/PKG-INFO
+rebrand.egg-info/SOURCES.txt
+rebrand.egg-info/dependency_links.txt
+rebrand.egg-info/entry_points.txt
+rebrand.egg-info/not-zip-safe
+rebrand.egg-info/top_level.txt
