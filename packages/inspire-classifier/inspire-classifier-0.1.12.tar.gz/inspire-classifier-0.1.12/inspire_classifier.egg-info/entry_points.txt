@@ -1,0 +1,3 @@
+[console_scripts]
+inspire-classifier = inspire_classifier.cli:inspire_classifier
+
