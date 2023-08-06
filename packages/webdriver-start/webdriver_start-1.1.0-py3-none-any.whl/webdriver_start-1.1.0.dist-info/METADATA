@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: webdriver-start
+Version: 1.1.0
+Summary: Reliable module for starting up Selenium Webdriver, with custom user-agent and custom profile
+Home-page: https://github.com/SkullTech/webdriver-start
+Author: Sumit Ghosh
+Author-email: sumit@sumit-ghosh.com
+License: MIT
+Keywords: selenium webdriver development
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+
+# webdriver-start
+Reliable module for starting up Selenium Webdriver with custom modifications. Supports —
+- Custom `user-agent`
+- Custom user profile.
+- Headless mode.
+- Firefox and Chrome webdrivers. Open an issue if you want support for more.
+
+
+## Installation
+Install it using pip —
+
+```console
+$ pip install webdriver-start
+```
+
+## Usage
+
+For Chrome
+```python
+>>> from wdstart import webdriver
+>>> driver = webdriver.Chrome(headless=True, user_agent='this is a custom user-agent', user_profile='/path/to/profile/')
+>>> driver
+<selenium.webdriver.chrome.webdriver.WebDriver (session="46157cffe549da015b288cdabea94a29")>
+>>> driver.get('http://www.google.com')
+>>> driver.title
+'Google'
+>>> driver.execute_script('return navigator.userAgent')
+'this is a custom user-agent'
+```
+
+Similarly, for Firefox
+```python
+>>> from wdstart import webdriver
+>>> driver = webdriver.Firefox(headless=True, user_agent='this is a custom user-agent', user_profile='/path/to/profile/')
+>>> driver
+<selenium.webdriver.chrome.webdriver.WebDriver (session="46157cffe549da015b288cdabea94a29")>
+>>> driver.get('http://www.google.com')
+>>> driver.title
+'Google'
+>>> driver.execute_script('return navigator.userAgent')
+'this is a custom user-agent'
+```
+
+
