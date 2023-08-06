@@ -1,0 +1,12 @@
+README.md
+setup.py
+getsetpy/__init__.py
+getsetpy/constants.py
+getsetpy/database.py
+getsetpy/exceptions.py
+getsetpy/parrington.py
+getsetpy/space.py
+getsetpy.egg-info/PKG-INFO
+getsetpy.egg-info/SOURCES.txt
+getsetpy.egg-info/dependency_links.txt
+getsetpy.egg-info/top_level.txt
