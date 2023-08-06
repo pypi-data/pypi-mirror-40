@@ -1,0 +1,3 @@
+[console_scripts]
+githuber = github.github:cli_main
+
