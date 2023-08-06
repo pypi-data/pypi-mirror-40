@@ -1,0 +1,10 @@
+[console_scripts]
+spectra_lexer = spectra_lexer.__main__:main
+
+[plover.gui.qt.tool]
+lexer_plugin = spectra_lexer.app.plover:PloverPlugin
+
+[spectra_lexer.operations]
+batch = spectra_lexer.app.batch:main
+gui = spectra_lexer.app.gui:main
+

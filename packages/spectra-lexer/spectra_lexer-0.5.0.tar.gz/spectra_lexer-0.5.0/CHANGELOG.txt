@@ -1,0 +1,56 @@
+0.5.0
+-----
+* Some components are now user-configurable
+* More rules added (mostly orthographic variations)
+* Lexer can now return incomplete matches at the cost of speed
+* Various optimizations made on lexer and output components
+* Minor output display bugs fixed
+
+0.4.0
+-----
+* Program code is refactored again for better separation of components
+* Most exceptions are now displayed on the main text window instead of crashing the program
+* Lexer now uses the search dictionary to see if an asterisk is required because of conflicts
+* Batch mode added; lexer can take input queries from a JSON dict and output all results to a file
+* Standalone app can find Plover's dictionaries more easily
+
+0.3.0
+-----
+* Program code is heavily refactored to allow easier re-use/extension
+* Resources are now loaded correctly using pkg_resources (so they can be stored compressed)
+* GUI for Plover plugin is no longer reset upon window close
+* Text graph is displayed correctly more often
+* Distribution documents and metadata are fixed
+
+0.2.1
+-----
+* Engine no longer crashes when accessing previously closed GUI windows
+
+0.2.0
+-----
+* Program code is completely refactored to use an event/command based message system
+* Lexer processing is faster
+* Text graph has wider range of colors and highlights letters more precisely
+* Search is available by stroke as well as by word
+* Large numbers of bugs are fixed (mostly related to text graph output)
+
+0.1.3
+-----
+* Checks for Plover version compatibility
+* Example translations are supported in steno rules
+* JSON rules file extensions are renamed to indicate non-standard behavior (they contain comments)
+
+0.1.2
+-----
+* Text graph generation and formatting is faster
+* Program is ready for distribution on PyPI
+
+0.1.1
+-----
+* Standalone script finds Plover dictionaries automatically on Windows
+* Search and rule dictionaries load faster
+* Program state is saved between window openings (when used as a plugin)
+
+0.1.0
+-----
+* Initial version
