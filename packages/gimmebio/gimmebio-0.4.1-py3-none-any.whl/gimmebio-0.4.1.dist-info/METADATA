@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gimmebio
+Version: 0.4.1
+Summary: Utilities and explorations in computational biology
+Home-page: UNKNOWN
+Author: David Danko
+Author-email: dcdanko@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: future
+Requires-Dist: six
+Requires-Dist: gimmebio.seqs
+Requires-Dist: gimmebio.kmers
+Requires-Dist: gimmebio.linked-reads
+Requires-Dist: gimmebio.ram-seq
+Requires-Dist: gimmebio.text-plots
+
+UNKNOWN
+
+
