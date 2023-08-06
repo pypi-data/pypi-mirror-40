@@ -1,0 +1,9 @@
+include README.md
+include AUTHORS
+include LICENSE
+include MANIFEST.in
+include VERSION
+
+include requirements.txt
+
+global-exclude __pycache__ *.py[cod]
