@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+res_manager/__init__.py
+res_manager/manager.py
+res_manager.egg-info/PKG-INFO
+res_manager.egg-info/SOURCES.txt
+res_manager.egg-info/dependency_links.txt
+res_manager.egg-info/requires.txt
+res_manager.egg-info/top_level.txt
+tests/__init__.py
+tests/test_allfunctions.py
