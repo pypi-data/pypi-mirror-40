@@ -1,0 +1,11 @@
+serde/__init__.py,sha256=F7on024p4tbuZHnlJAx2suX9pHFHWTYB8zDTBzWspEk,2088
+serde/exceptions.py,sha256=j3HU4HvlHUsPmGKBMtBIK5xJPTfN4fpRYLbje8O0CrQ,3104
+serde/fields.py,sha256=dgqsBuCSWZoM6Jil3Mn8T7chH9JnklA10t8sMosuFs4,36355
+serde/model.py,sha256=RJeKzLNhb-lMVifDnJBxzLgf3-FcWWcPp1CdhmnEZpw,15839
+serde/utils.py,sha256=5ElMtpMjmAGPqgiZzwrWU7VKeVRFnFwI5WJSR3MgQ6U,2366
+serde/validate.py,sha256=ZRIiEnWHRJBts3S70JqiCcvr9aXE90tfQSC3n9Ir1Wc,7756
+serde-0.4.0.dist-info/LICENSE,sha256=-cTHe6o4KABO5UuKTy2y6I7USmI3pJOWW_VR-sD8ti0,1023
+serde-0.4.0.dist-info/METADATA,sha256=docS64i45hfhu74wRgwY-2BYsLb2Z-ps6ceyhmV9h4w,3208
+serde-0.4.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+serde-0.4.0.dist-info/top_level.txt,sha256=v93ySoysdcIMvENUWmThJ-48N6lqDWhK-afZI_kpFv0,6
+serde-0.4.0.dist-info/RECORD,,
