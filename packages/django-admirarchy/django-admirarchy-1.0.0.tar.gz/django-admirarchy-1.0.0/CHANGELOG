@@ -1,0 +1,40 @@
+django-admirarchy changelog
+===========================
+
+
+v1.0.0
+------
+! Dropped QA for Python 3.4.
+* No functional changes. Celebrating 1.0.0.
+
+
+v0.2.4
+------
+* Fixed UnicodeEncodeError for non-en locales.
+
+
+v0.2.3
+------
+* Fixed FK popup for nested sets.
+* Improved Django 2+ compatibility.
+
+
+v0.2.2
+------
+* Dummy. No changes.
+
+
+v0.2.1
+------
++ Added Grappelli style support.
+* Django 1.10 compatibility improved.
+
+
+v0.2.0
+------
++ Implemented in-popup navigation for adjacency lists.
+
+
+v0.1.0
+------
++ Basic functionality.
