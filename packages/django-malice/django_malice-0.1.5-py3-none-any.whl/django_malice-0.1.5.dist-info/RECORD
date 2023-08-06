@@ -1,0 +1,10 @@
+malice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+malice/apps.py,sha256=VUXDLxtTyhoa0hY4BReWDNVWzZ3Tgreg0iYEf3-AI38,87
+malice/tests.py,sha256=cgTp7kY0Z0VN-QFWl0f9HxIcIQO2Jma-xCsZJ_6iHVs,816
+malice/urls.py,sha256=oe4Q-LS_Avm82YVaAUKnCnGP4iIyq92xarL4ZBUcIjM,613
+malice/views.py,sha256=Q-3rMcuVh5wINIqUfUhzPR3qzGbLwIlHzSSYIEd9E6w,1778
+django_malice-0.1.5.dist-info/LICENSE.txt,sha256=FFV9J-rNG2TLVXGYixgJsxYHpjcrX4w4X3YEpNT5iVI,1049
+django_malice-0.1.5.dist-info/METADATA,sha256=1V3G_ZRfYEgcUicpECuJQshJDtWx2EYFgZGeLwEGFLY,801
+django_malice-0.1.5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+django_malice-0.1.5.dist-info/top_level.txt,sha256=qTWan_Ws3fpKfEdpAmNtYY-zoq5A2VDZa0z-drFB0Mc,7
+django_malice-0.1.5.dist-info/RECORD,,
