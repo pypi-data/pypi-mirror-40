@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        mozi-cli=mozi_service_cli.mozi_cli:cli
+    
