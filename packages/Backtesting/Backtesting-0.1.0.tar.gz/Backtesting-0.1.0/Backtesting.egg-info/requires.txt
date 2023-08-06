@@ -1,0 +1,20 @@
+numpy
+pandas
+bokeh>=0.12.15
+
+[:python_version < "3.5"]
+typing
+
+[dev]
+flake8
+
+[doc]
+pdoc3
+jupytext>=0.7.0
+nbconvert
+ipykernel
+jupyter_client
+
+[test]
+seaborn
+matplotlib

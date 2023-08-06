@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: Backtesting
+Version: 0.1.0
+Summary: Backtest trading strategies in Python
+Home-page: https://kernc.github.io/backtesting.py/
+Author: Zach Lûster
+License: AGPL-3.0
+Project-URL: Tracker, https://github.com/kernc/backtesting.py/issues
+Project-URL: Source, https://github.com/kernc/backtesting.py/
+Project-URL: Documentation, https://kernc.github.io/backtesting.py/doc/backtesting/
+Description: [![](https://i.imgur.com/E8Kj69Y.png)](https://kernc.github.io/backtesting.py/)
+        
+        Backtesting.py
+        ==============
+        Backtest trading strategies with Python.
+        
+        [![Build Status](https://img.shields.io/travis/kernc/backtesting.py.svg?style=for-the-badge)](https://travis-ci.org/kernc/backtesting.py)
+        [![Code Coverage](https://img.shields.io/codecov/c/gh/kernc/backtesting.py.svg?style=for-the-badge)](https://codecov.io/gh/kernc/backtesting.py)
+        [![Backtesting on PyPI](https://img.shields.io/pypi/v/backtesting.svg?style=for-the-badge)](https://pypi.org/project/backtesting)
+        
+        [**Project website**](https://kernc.github.io/backtesting.py/)
+        
+        [Documentation](https://kernc.github.io/backtesting.py/doc/backtesting/)
+        
+Keywords: algo,algorithmic,ashi,backtest,backtesting,bitcoin,bokeh,bonds,candles,candlestick,cboe,chart,cme,commodities,crash,crypto,currency,drawdown,equity,ethereum,exchange,finance,financial,forex,fund,futures,fx,fxpro,gold,heiken,historical,indicator,invest,investing,investment,macd,market,mechanical,money,oanda,ohlc,ohlcv,order,profit,quant,quantitative,silver,stocks,strategy,ticker,trader,trading,tradingview,usd
+Platform: UNKNOWN
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: doc
