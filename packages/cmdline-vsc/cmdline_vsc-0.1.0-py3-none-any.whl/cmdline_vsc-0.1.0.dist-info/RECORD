@@ -1,0 +1,9 @@
+cmdline_vsc-0.1.0.dist-info/METADATA,sha256=kbDyVWZIl7xW0V5mruY-8Mp6anGQnuqJKldqEkGSe6Q,268
+cmdline_vsc-0.1.0.dist-info/RECORD,,
+cmdline_vsc-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+cmdline_vsc-0.1.0.dist-info/entry_points.txt,sha256=FU9f3jh7bfzp-ES_NSKhqb_Ny6-h8GfE7_MrNXPv43Q,38
+cmdline_vsc-0.1.0.dist-info/top_level.txt,sha256=GgPgqj2KcQ-10o6VsQQY0JHQbvGF-3RkKO4Tm5qPN_Q,4
+vsc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsc/__main__.py,sha256=ENTYRG6RHtzaEUVjTET_B4aJollSm9n-nODavSDved8,144
+vsc/stuff.py,sha256=DbQ3QuN1YSsba2KGmCGlkY9FcNJcjY-lvsb3r_a8vMg,124
+vsc/vsc.py,sha256=JeL0BkH-hW-4-dNW2BaHeCkODkSIBtpGhWnoWA5ofo4,502
