@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: banweb
+Version: 0.1
+Summary: Interface with the banner website to access academic information
+Home-page: https://github.com/Alex979/banweb-python
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+UNKNOWN
+
+
