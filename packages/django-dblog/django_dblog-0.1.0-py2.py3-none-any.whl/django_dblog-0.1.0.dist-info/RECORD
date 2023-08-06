@@ -1,0 +1,11 @@
+dblog/__init__.py,sha256=4Pu92jHaHlAPFi3tMMjoERc3Q-QPaSEbIh9Z2SZAUWg,224
+dblog/admin.py,sha256=bvJ7xedS5rrQZtfplfFtdlZ09QAWxEwqnTb4sCbb7uo,481
+dblog/apps.py,sha256=8yyJL0FBR3gohJ_up7aB1nG27NBD-bAstd0-cRJLlVk,113
+dblog/handlers.py,sha256=k17yZecCEArwOLpm0Fv3TC2cv9RNPbbOY_5B9l3O4jk,898
+dblog/models.py,sha256=hWyhdeqm-W-rWysFTPf9CUe_zbLuAl_8l9Ep0UlKtV0,750
+dblog/tests.py,sha256=ZlFsTRr6TOIuY_N42p8XH5-7bG-c4xmviawkwr7UOW8,587
+django_dblog-0.1.0.dist-info/LICENSE,sha256=5NUmVBNwj68LfzChdULcdZfX85waKyNNpmwR0O30rUw,557
+django_dblog-0.1.0.dist-info/METADATA,sha256=NwPCchcZQv1FKlWE2-CcM3wGyLdd2v7Aqn612aTaE94,2298
+django_dblog-0.1.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+django_dblog-0.1.0.dist-info/top_level.txt,sha256=fkBbXCebjLrg0P1zTiPDk4Ks4WXX2kfjzrbvQojoaak,6
+django_dblog-0.1.0.dist-info/RECORD,,
