@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+{% block title %}{% trans "Network Fabric" %}{% endblock %}
+
+{% block page_header %}
+<div class="page-header-container">
+    {% include 'project/connections/_index_logo.html' %}
+</div>
+{% endblock page_header %}
+
+{% block main %}
+<div class="row-fluid">
+  <div class="col-sm-12">
+  {{ tab_group.render }}
+  	<div id="info" style="display: none;"></div>
+  </div>
+</div>
+{% endblock %}
+
