@@ -1,0 +1,11 @@
+README.md
+setup.py
+todero/__init__.py
+todero/cli.py
+todero.egg-info/PKG-INFO
+todero.egg-info/SOURCES.txt
+todero.egg-info/dependency_links.txt
+todero.egg-info/not-zip-safe
+todero.egg-info/requires.txt
+todero.egg-info/top_level.txt
+todero/bin/todero
