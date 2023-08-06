@@ -1,0 +1,3 @@
+[console_scripts]
+rekcurdui = drucker_dashboard.app:main
+
