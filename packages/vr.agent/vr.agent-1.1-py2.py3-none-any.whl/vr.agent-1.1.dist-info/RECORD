@@ -1,0 +1,14 @@
+vr.agent-1.1-py3.7-nspkg.pth,sha256=nY38QTPRLLz1O40TKrKHbtyF0K9tiFweXeezphmBkRE,519
+vr/agent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vr/agent/publisher.py,sha256=1b0RxxpyCPSoW6SXP-Q4iCPsTYHWa3Pyv9p3UVo_GXc,5487
+vr/agent/rpc.py,sha256=6zOlAK2nRkI0sFdBm3q3AEy1wdmSKzrvrUEsbaNZpOU,2649
+vr/agent/supervisor_utils.py,sha256=_VkPikGoqPvC5tdt7eY1b76S8fNR9pMr1M-lmE8meAw,15713
+vr/agent/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vr/agent/tests/test_publisher.py,sha256=M9euBvPxM82Ok750M3a3W8fSZDoeW3fRs8XaPF_af34,5698
+vr.agent-1.1.dist-info/LICENSE,sha256=pV4v_ptEmY5iHVHYwJS-0JrMS1I27nPX3zlaM7o8GP0,1050
+vr.agent-1.1.dist-info/METADATA,sha256=3jTZhQsBayPrYMoEvt4hgzXfmdPzfc7A3J1X1-Hvfow,1797
+vr.agent-1.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+vr.agent-1.1.dist-info/entry_points.txt,sha256=BQgSq1-dwrQ4a_Ow7pC3KqAOfRbHkLsMHD6E13trUVg,60
+vr.agent-1.1.dist-info/namespace_packages.txt,sha256=JANebmkKrNnjyN7WQ0b55oYFA5-J5FefSokdMSYS97I,3
+vr.agent-1.1.dist-info/top_level.txt,sha256=JANebmkKrNnjyN7WQ0b55oYFA5-J5FefSokdMSYS97I,3
+vr.agent-1.1.dist-info/RECORD,,
