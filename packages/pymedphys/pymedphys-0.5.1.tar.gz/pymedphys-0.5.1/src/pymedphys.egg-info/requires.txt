@@ -1,0 +1,11 @@
+numpy>=1.12
+scipy
+pandas
+matplotlib
+attrs
+psutil
+pymssql
+keyring
+shapely
+pydicom>=1.0
+python-dateutil
