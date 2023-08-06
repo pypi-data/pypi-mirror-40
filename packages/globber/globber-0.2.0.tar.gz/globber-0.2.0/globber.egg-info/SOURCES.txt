@@ -1,0 +1,9 @@
+README.md
+setup.py
+globber/__init__.py
+globber/globber.py
+globber.egg-info/PKG-INFO
+globber.egg-info/SOURCES.txt
+globber.egg-info/dependency_links.txt
+globber.egg-info/top_level.txt
+tests/__init__.py
