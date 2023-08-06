@@ -1,0 +1,13 @@
+README.md
+setup.py
+flame/__init__.py
+flame/data/__init__.py
+flame/data/data.py
+flame/train/__init__.py
+flame/train/train.py
+flame/train/validate.py
+inflame.egg-info/PKG-INFO
+inflame.egg-info/SOURCES.txt
+inflame.egg-info/dependency_links.txt
+inflame.egg-info/top_level.txt
+test/test_usage.py
