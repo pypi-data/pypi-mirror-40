@@ -1,0 +1,9 @@
+README.rst
+setup.py
+mamescraper/__init__.py
+mamescraper/mamescraper.py
+mamescraper.egg-info/PKG-INFO
+mamescraper.egg-info/SOURCES.txt
+mamescraper.egg-info/dependency_links.txt
+mamescraper.egg-info/entry_points.txt
+mamescraper.egg-info/top_level.txt
