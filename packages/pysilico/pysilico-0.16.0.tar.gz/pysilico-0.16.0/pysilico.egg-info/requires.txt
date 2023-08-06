@@ -1,0 +1,15 @@
+plico>=0.15
+numpy
+psutil
+configparser
+six
+appdirs
+pyfits
+futures
+rebin
+pyqtgraph
+pyside2
+Qt.py
+
+[:python_version < "3"]
+pathlib2
