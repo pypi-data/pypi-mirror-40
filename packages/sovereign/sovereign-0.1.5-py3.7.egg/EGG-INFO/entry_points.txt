@@ -1,0 +1,11 @@
+[sovereign.global_modifiers]
+merge_by_domain = sovereign.modifiers.micros:MergeByDomain
+
+[sovereign.modifiers]
+micros = sovereign.modifiers.micros:Micros
+
+[sovereign.sources]
+file = sovereign.sources.file:File
+inline = sovereign.sources.inline:Inline
+service_broker = sovereign.sources.service_broker:ServiceBroker
+
