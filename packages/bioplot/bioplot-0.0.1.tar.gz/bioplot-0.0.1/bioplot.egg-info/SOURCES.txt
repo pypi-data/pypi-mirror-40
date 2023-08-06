@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bioplot/__init__.py
+bioplot/bioplot.py
+bioplot.egg-info/PKG-INFO
+bioplot.egg-info/SOURCES.txt
+bioplot.egg-info/dependency_links.txt
+bioplot.egg-info/requires.txt
+bioplot.egg-info/top_level.txt
