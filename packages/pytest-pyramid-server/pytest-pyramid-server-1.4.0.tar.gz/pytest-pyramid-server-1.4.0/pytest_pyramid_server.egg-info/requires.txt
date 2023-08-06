@@ -1,0 +1,8 @@
+pytest-server-fixtures
+pytest<4.0.0
+pyramid
+waitress
+six
+
+[tests]
+pyramid-debugtoolbar
