@@ -1,0 +1,4 @@
+[console_scripts]
+chaosplatform-scheduler = chaosplt_scheduler.cli:cli
+chaosplatform-worker = chaosplt_scheduler.rq_worker:run
+
