@@ -1,0 +1,12 @@
+taskwarrior_inthe_am/__init__.py,sha256=YU_42OPd3M71CKuaAhmAM5b8bOg7D_phtEEaKy2kXNg,22
+taskwarrior_inthe_am/api.py,sha256=EcMO3nRfMFB_55qezf1dPUxQnbMHpyeoJ2vKeEEWNec,1990
+taskwarrior_inthe_am/cmdline.py,sha256=07gPvjeGwBEO1s4Mjcf9bYyO2o2sLTupBSxxqWpdM0o,1405
+taskwarrior_inthe_am/commands.py,sha256=nppKsIMZnRUyHzcywMvw8k2DaZxyoZFpgP3PW4TTems,5968
+taskwarrior_inthe_am/exceptions.py,sha256=2URN1kkkr2MEsq8jSwDLxpu8H_fi0B2wRyv3uPabMYo,148
+taskwarrior_inthe_am/taskwarrior.py,sha256=U1L5n8hr1qxGz1mQicLvnOrSO4osWLcAoZjLzQyQa3Q,143
+taskwarrior_inthe.am-1.1.2.dist-info/LICENSE,sha256=q8ibzgubxoTARusiY0UApm0KBEKDznba8pXU2Gd_GeY,1082
+taskwarrior_inthe.am-1.1.2.dist-info/METADATA,sha256=Qy7jdcoblt4-y9Yt5BR62_S4uKJwI5eUou8i5kaRfn0,644
+taskwarrior_inthe.am-1.1.2.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+taskwarrior_inthe.am-1.1.2.dist-info/entry_points.txt,sha256=ZydnVF1Hyq-fXC-eMSYRF7EZw98jwU4FM87jA8PQpUc,63
+taskwarrior_inthe.am-1.1.2.dist-info/top_level.txt,sha256=3Tl3ke-eGshego963okZ5Nbyug4nco0K9jtap8zXRug,21
+taskwarrior_inthe.am-1.1.2.dist-info/RECORD,,
