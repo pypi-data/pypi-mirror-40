@@ -1,0 +1,15 @@
+genie-3.1.1-py3.4-nspkg.pth,sha256=55hGpnePXkOAWbNjXAykyxJsVWn9MIFjxHxKb746fn4,352
+genie/base.so,sha256=nwWcH_eaCLM8sIFrJRPwg2E5c6fqIPw9t6MU88SDDDw,57796
+genie/decorator.so,sha256=__pHqw_lpcFzAkrIvd8DFnbld4hijuihn4eKNoOPqfA,367652
+genie/info.so,sha256=33q0McsohuwahP1d3b0OGXjHSkW9-gyZRv4xSZSaEQA,18716
+genie/cli/__main__.so,sha256=qN5joE0hOQa5ggUx3PL0UdW2_2Xt9PizXpOTYyiXwgA,44084
+genie/cli/core.so,sha256=cIDBybjUYDi07C1kWhL8nvF3w5oXsXJO1hObyNSCEXU,25112
+genie/cli/commands/diff.so,sha256=iWmrx0R-NIzm4fKEKWFeZgs3h-V9QUUCcBO4W3uNf7M,161848
+genie/cli/commands/learn.so,sha256=zprL9hTm5evJebfuGEzSJXxq3FZdFxHHM-Ro0xTHIxk,187432
+genie/cli/commands/unpickle.so,sha256=RD96_UWunmyFkBxVm9-nQQTt1Rn4FYMdD34xKhXvEF4,63436
+genie-3.1.1.dist-info/METADATA,sha256=I7ve0455zNWAramyAjUqlWr6EOMUPut1JO7te5r1ec0,4058
+genie-3.1.1.dist-info/WHEEL,sha256=NxJwBTuLPY7ebcEZAvprEKrQPjeP7QDJsmGX_XLjILM,111
+genie-3.1.1.dist-info/entry_points.txt,sha256=fxxTYDsqMcA7cl9YTlLMDh0EoAb7mnhYPKz2BO43c08,51
+genie-3.1.1.dist-info/namespace_packages.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie-3.1.1.dist-info/top_level.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie-3.1.1.dist-info/RECORD,,
