@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ising
+Version: 0.1.21
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: progressbar2
+Requires-Dist: future
+
+UNKNOWN
+
+
