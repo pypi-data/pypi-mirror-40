@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pesummary
+Version: 0.1.2
+Summary: Python package to produce summary pages for Parameter estimation codes
+Home-page: https://git.ligo.org/charlie.hoy/pesummary
+Author: Charlie Hoy
+Author-email: charlie.hoy@ligo.org
+License: MIT
+Download-URL: https://git.ligo.org/charlie.hoy/pesummary
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: h5py
+Requires-Dist: numpy
+Requires-Dist: corner
+Requires-Dist: matplotlib
+Requires-Dist: deepdish
+Requires-Dist: pandas
+Requires-Dist: pygments
+Requires-Dist: astropy
+Requires-Dist: lalsuite
+Requires-Dist: pytest
+
+# PESummary
+
+[![Coverage report](https://docs.ligo.org/charlie.hoy/pesummary/coverage_badge.svg)](https://docs.ligo.org/charlie.hoy/pesummary/htmlcov/index.html)
+
+This package helps the user to generate summary webpages to visualise the output from both LALInference and Bilby.
+
+ * [Installation instructions](https://docs.ligo.org/charlie.hoy/pesummary/installation.html)
+ * [Documentation](https://docs.ligo.org/charlie.hoy/pesummary)
+ * [Issue Tracker](https://git.ligo.org/charlie.hoy/pesummary/issues)
+
+
