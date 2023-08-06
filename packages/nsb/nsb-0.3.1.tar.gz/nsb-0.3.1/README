@@ -1,0 +1,62 @@
+=========================
+nsb (Night Sky Backgound)
+=========================
+
+Welcome to the best README ever written. Sorry for that! I will improve it! I promise!
+
+Bests, Matthias
+
+usage of the tool: ::
+	
+	python -m nsb [--OPTIONS] [-FLAGS]
+	python -m --help
+
+	--h --help prints this help message
+
+	--create CONFIGFILE
+	   writes a standard value configfile 
+
+	options (can all be set in config):
+	--use CONFIGFILE: 
+	   use an dedicated (non standard) configfile
+	--t --time DATETIME: 
+	   time and date for which the map should be drawn
+	   format: 2010/12/24 23:59:59
+	--o --output /OUTPUT/DIRECTORY/
+	   for saving results in different place than working directory
+	   filenames will be generated automatically
+	--s --size IMAGESIZE:
+	   set the output Imagesize in Pixels
+	--fov FIELDOFVIEW:
+	   set the (alt) fov
+	--altaz ALT AZ:
+	   set the observation position in the sky manually
+	--q --source SOURCENAME:
+	   set the observation position automatically on a source by name
+	   i.e.: "crab", "moon"
+	--l --location LOCATION:
+	   The observers coordinates (Lon Lat) on earth and elevation
+	   format: 16.5028 -23.27280 1800.0
+	--b --brightness NSB zenith brightness:
+	   dark night sky zenith brightness in nanoLambert. Needed for model
+	   format: 100.0 
+	--k EXTINCTION:
+	   Extinction in mags per air mass. Needed for model
+	   format: 0.55
+	--hp LEVEL:
+	   HealPix Level for the gaia catalog to be plotted
+	   Integer in range [1:12]
+	--g --gauss KERNELSIZE:
+	   Gaussian Kernel in pixel to smoothen the model images
+	   format: 1.5
+
+	Flags:
+	-mags
+	   use mags per arcsec^2 as output units (instead of nanoLamberts)
+	-savefits
+	   save Brightness Map(s) as *.fits file(s)
+	-noscreen
+	   do not show the Image using matplotlib plt
+
+feel free to contact me: matthias.buechele[at]fau[dot]de
+
