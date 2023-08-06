@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dempsters-algorithm
+Version: 0.0.1
+Summary: Dempster's covariance selection algorithm
+Home-page: https://github.com/Apollon76/dempster_algorithm
+License: UNKNOWN
+Description: # Dempster's algorithm
+        Realisation of Dempster's covariance selection algorithm.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,11 @@
+README.md
+setup.py
+covariance_selection_algorithm/__init__.py
+covariance_selection_algorithm/algorithm.py
+dempsters_algorithm.egg-info/PKG-INFO
+dempsters_algorithm.egg-info/SOURCES.txt
+dempsters_algorithm.egg-info/dependency_links.txt
+dempsters_algorithm.egg-info/top_level.txt
+tests/__init__.py
+tests/unit/__init__.py
+tests/unit/test_calculate.py
