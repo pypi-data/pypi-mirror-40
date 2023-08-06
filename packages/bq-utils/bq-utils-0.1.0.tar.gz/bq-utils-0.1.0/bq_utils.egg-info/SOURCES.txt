@@ -1,0 +1,11 @@
+README.md
+setup.py
+bq_utils.egg-info/PKG-INFO
+bq_utils.egg-info/SOURCES.txt
+bq_utils.egg-info/dependency_links.txt
+bq_utils.egg-info/entry_points.txt
+bq_utils.egg-info/requires.txt
+bq_utils.egg-info/top_level.txt
+bqutils/__init__.py
+bqutils/__main__.py
+bqutils/bigquery_description_manager.py

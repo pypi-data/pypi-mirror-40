@@ -1,0 +1,3 @@
+[console_scripts]
+bqutils = bqutils.__main__:main
+
