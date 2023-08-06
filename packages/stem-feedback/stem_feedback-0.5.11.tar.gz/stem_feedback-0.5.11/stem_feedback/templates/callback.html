@@ -1,0 +1,31 @@
+{% extends "main/base.html" %}
+{% load i18n %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+{% block sidebar %}
+{% endblock sidebar %}
+{% block content %}
+
+        <div class="container">
+            <div class="row">
+                <h1>{% trans "Перезвонить" %}</h1>
+                <div class="col-md-12 border">
+                    <form method="post" action="" class="form-signin" enctype="multipart/form-data">
+
+                        {% csrf_token %}
+
+
+                            <div class="row">
+                            <div class="col-md-7">
+                                {{ form.phone_number|as_crispy_field }}
+                            </div>
+                            </div>
+                        <input type="submit" class="btn btn-primary col-md-4 offset-md-3 mt-4"></input>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
+
