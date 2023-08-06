@@ -1,0 +1,9 @@
+click
+pyOpenSSL
+requests[security]
+requests-toolbelt
+beautifultable==0.5.3
+pytz
+tzlocal
+pyyaml
+websocket-client==0.54.0
