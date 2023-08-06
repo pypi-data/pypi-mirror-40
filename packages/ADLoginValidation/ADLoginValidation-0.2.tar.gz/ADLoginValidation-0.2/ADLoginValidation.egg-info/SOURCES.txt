@@ -1,0 +1,9 @@
+README.txt
+setup.py
+ADLoginValidation.egg-info/PKG-INFO
+ADLoginValidation.egg-info/SOURCES.txt
+ADLoginValidation.egg-info/dependency_links.txt
+ADLoginValidation.egg-info/requires.txt
+ADLoginValidation.egg-info/top_level.txt
+adloginvalidation/__init__.py
+adloginvalidation/adloginvalidation.py

@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: ADLoginValidation
+Version: 0.2
+Summary: UNKNOWN
+Home-page: https://gitlab.com/ibichara/adloginvalidation
+Author: Igor Bichara
+Author-email: igorbacoutinho@gmail.com
+License: MIT
+Description: This is a personal package used by TV Globo R&D Dept for adfs authentication using python api backend.
+        
+        Performs simple token validation on the server.
+        
+        pip install pyjwt
+        pip install adloginvalidation
+        
+        https://pypi.org/manage/project/ADLoginValidation/release/0.2/
+Keywords: microsoft adfs login token validation
+Platform: UNKNOWN
+Requires-Python: >=3
