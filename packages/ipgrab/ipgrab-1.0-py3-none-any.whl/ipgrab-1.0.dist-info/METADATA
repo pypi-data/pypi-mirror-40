@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ipgrab
+Version: 1.0
+Summary: External and local ip grabber
+Home-page: UNKNOWN
+Author: @haryrford
+Author-email: harry.robert.ford@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
