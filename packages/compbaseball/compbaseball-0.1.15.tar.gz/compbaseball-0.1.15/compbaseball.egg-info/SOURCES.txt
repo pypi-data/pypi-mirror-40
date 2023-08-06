@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+compbaseball/__init__.py
+compbaseball/baseball.py
+compbaseball/inputs.json
+compbaseball/playerchoices.json
+compbaseball/utils.py
+compbaseball.egg-info/PKG-INFO
+compbaseball.egg-info/SOURCES.txt
+compbaseball.egg-info/dependency_links.txt
+compbaseball.egg-info/top_level.txt
+compbaseball/tests/__init__.py
+compbaseball/tests/test.py
