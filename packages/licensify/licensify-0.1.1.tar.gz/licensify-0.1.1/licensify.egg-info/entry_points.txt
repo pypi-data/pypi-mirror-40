@@ -1,0 +1,3 @@
+[console_scripts]
+licensify = licensify.__main__:main
+
