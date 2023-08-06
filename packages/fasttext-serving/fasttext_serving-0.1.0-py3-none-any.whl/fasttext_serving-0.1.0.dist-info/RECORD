@@ -1,0 +1,7 @@
+fasttext_serving/__init__.py,sha256=94hqRJLgaQjvlfzWtTlEKPRa_R5Ie5f1rvSzOj6rFfk,872
+fasttext_serving/predict_pb2.py,sha256=jq3mZW46sdvktGyGB9s-riPaSDQM7hZj6I2sk72zhMo,6410
+fasttext_serving/predict_pb2_grpc.py,sha256=KzAhFtmSoL6ZFWDYjnrgFX7YPx2XHsWBxSDg3LHzsrA,1477
+fasttext_serving-0.1.0.dist-info/METADATA,sha256=9kiY1RAW4qvv2LOqUsSz5KC4tgbpRcTHbeTpa098OKw,925
+fasttext_serving-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+fasttext_serving-0.1.0.dist-info/top_level.txt,sha256=mFH4wpYTNIh40elCC5gNPsy-bAKjGpvWvsNaXS8UuQk,17
+fasttext_serving-0.1.0.dist-info/RECORD,,
