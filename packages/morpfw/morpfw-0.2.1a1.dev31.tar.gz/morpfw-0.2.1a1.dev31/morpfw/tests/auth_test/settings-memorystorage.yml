@@ -1,0 +1,2 @@
+application:
+  authn_policy: morpfw.tests.auth_test.test_auth_memorystorage:AuthnPolicy
