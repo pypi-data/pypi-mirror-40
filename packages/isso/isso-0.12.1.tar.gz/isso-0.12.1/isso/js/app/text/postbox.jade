@@ -1,0 +1,37 @@
+div(class='isso-postbox')
+    div(class='form-wrapper')
+        div(class='textarea-wrapper')
+            div(class='textarea placeholder' contenteditable='true')
+                = i18n('postbox-text')
+            div(class='preview')
+                div(class='isso-comment')
+                    div(class='text-wrapper')
+                        div(class='text')
+        section(class='auth-section')
+            p(class='input-wrapper')
+                label(for='isso-postbox__author')
+                    = i18n('postbox-author')
+                input(type='text' id='isso-postbox__author' name='author'
+                      value=author !== null ? '#{author}' : '')
+            p(class='input-wrapper')
+                label(for='isso-postbox__email')
+                    = i18n('postbox-email')
+                input(type='email' id='isso-postbox__email' name='email'
+                      value=email != null ? '#{email}' : '')
+            p(class='input-wrapper')
+                label(for='isso-postbox__website')
+                    = i18n('postbox-website')
+                input(type='text' id='isso-postbox__website' name='website'
+                      value=website != null ? '#{website}' : '')
+            p(class='post-action')
+                input(type='submit' value=i18n('postbox-submit'))
+            p(class='post-action')
+                input(type='button' name='preview'
+                      value=i18n('postbox-preview'))
+            p(class='post-action')
+                input(type='button' name='edit'
+                      value=i18n('postbox-edit'))
+        section(class='notification-section')
+                label
+                    input(type='checkbox' name='notification')
+                    = i18n('postbox-notification')
