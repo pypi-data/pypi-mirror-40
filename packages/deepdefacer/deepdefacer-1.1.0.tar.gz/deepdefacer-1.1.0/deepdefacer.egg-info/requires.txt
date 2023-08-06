@@ -1,0 +1,8 @@
+numpy
+keras>=2.2.2
+nilearn
+nibabel
+sklearn
+scipy
+ipython
+matplotlib
