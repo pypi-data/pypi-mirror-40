@@ -1,0 +1,12 @@
+requests
+bernhard
+click
+psycopg2>=2.7,<2.8 --no-binary psycopg2
+# --- development dependencies, i.e. dependencies not needed for running watch
+black
+coverage
+flake8
+flake8-string-format
+mypy
+pytest
+tox
