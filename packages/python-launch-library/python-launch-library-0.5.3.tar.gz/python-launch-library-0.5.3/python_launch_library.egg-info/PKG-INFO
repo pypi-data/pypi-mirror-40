@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: python-launch-library
+Version: 0.5.3
+Summary: A wrapper for the launchlibrary.net API
+Home-page: https://github.com/Plutoberth/python-launch-library
+Author: Nir Harel
+Author-email: nir@nirharel.space
+License: UNKNOWN
+Description: # python-launch-library
+        A simple python wrapper for the Launch Library web API. Can also be used asynchronously too.
+        
+        [![PyPI Version](https://img.shields.io/pypi/v/python-launch-library.svg)](https://pypi.org/project/python-launch-library/) [![Documentation Status](https://readthedocs.org/projects/python-launch-library/badge/?version=latest)](https://python-launch-library.readthedocs.io/en/latest/?badge=latest)
+        
+        Available models: `Agency, AgencyType, Launch, Launch Status, Pad, Location, Rocket, RocketFamily`
+        
+        The usage of the API is simple.
+        
+        ### Usage
+        
+        ##### Proper documentation is available in [Read The Docs](https://python-launch-library.readthedocs.io/en/latest/).
+        
+        To install, simply use pip: ```pip install python-launch-library```
+        
+        ```python
+        # Import the launchlibrary lib
+        import launchlibrary as ll
+        
+        # Create an instance of the API
+        api = ll.Api()  # You can also specify api url, api version...
+        
+        # And request the next 5 launches, for example.
+        launches = ll.Launch.fetch(api, next=5) # Any argument after "api" is not constrained (w/ kwargs).
+        # ^ Returns a list of launch objects.
+        
+        # You can fetch the pythonic property names by using launch.param_names
+        properties = launches[0].param_names
+        ```
+        
+        ### Todo
+        - [x] Tidy up the repository
+        - [x] Add exceptions to handle server timeout
+        - [x] Handle nested models (i.e. a Pad model inside a Location model inside a Launch model)
+        - [x] Handle times with the datetime class
+        - [x] Package properly and upload to PyPI
+        - [x] Add more abstraction methods for the api calls (open to suggestions)
+        - [x] Add magic method comparisons (open to suggestions)
+        - [x] Asynchronous operation
+        - [ ] Add tests
+        - [ ] Your suggestion here
+        
+        
+        
+        
+        Feel free to open issues and pull requests! I usually check Github daily. 
+         
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
