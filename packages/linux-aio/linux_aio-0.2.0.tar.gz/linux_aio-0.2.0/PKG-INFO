@@ -1,0 +1,29 @@
+Metadata-Version: 1.2
+Name: linux_aio
+Version: 0.2.0
+Summary: Linux aio ABI wrapper
+Home-page: https://github.com/isac322/linux_aio
+Author: Byeonghoon Yoo
+Author-email: bh322yoo@gmail.com
+License: LGPLv3+
+Description: UNKNOWN
+Keywords: Linux AIO ABI API wrapper
+Platform: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: System :: Operating System
+Classifier: Topic :: System :: Operating System Kernels
+Classifier: Topic :: System :: Operating System Kernels :: Linux
+Provides: linux_aio
+Requires-Python: >=3.7
