@@ -1,0 +1,11 @@
+rtmidi/__init__.py,sha256=XVa5ZNqwTSrAbJmh8yHxRr00iziI_LgE1KNG5BpHU7c,202
+rtmidi/_rtmidi.pyd,sha256=Mmd1bUXwDoTA_ecka1FFN2BcWgDh9m_4IdlK4rCmYXQ,199168
+rtmidi/midiconstants.py,sha256=IgdCwMLZ8CLPkfVwAHsXhmgmi7nuX81sAwg50pjy_ZQ,7412
+rtmidi/midiutil.py,sha256=wZ-CHvZeAWzTKJ5LYB7iiaZkG1tgWsseLhRTOYJufIc,8756
+rtmidi/release.py,sha256=8Ukvse9aCeiu0H7tWFesip4XlwR0jYz_lbr253ApIVI,3633
+python_rtmidi-1.2.0.dist-info/AUTHORS.rst,sha256=j-AnKOlEjP0g4Pc_e9CI87sQjmAMpwr-6SxEtL2HZuM,274
+python_rtmidi-1.2.0.dist-info/LICENSE.txt,sha256=zRw4mh000bRfiS26eywGPIR58mpiGuG9Pomw9DSNCXc,2771
+python_rtmidi-1.2.0.dist-info/METADATA,sha256=73rH9Wy59cw0kH0FdfN7JQsfYe01PTpSupQxSQEx6NM,3543
+python_rtmidi-1.2.0.dist-info/WHEEL,sha256=r-1U5ET-aSmOdK8jl4BHKWQvs0EUe4GPDL3LV9084as,106
+python_rtmidi-1.2.0.dist-info/top_level.txt,sha256=zdXDd16SSzjBcv3ZghttppOSKVq7mPvpPZuHg2fo3as,7
+python_rtmidi-1.2.0.dist-info/RECORD,,
