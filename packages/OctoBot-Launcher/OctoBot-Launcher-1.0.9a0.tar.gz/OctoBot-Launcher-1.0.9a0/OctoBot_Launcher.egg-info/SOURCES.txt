@@ -1,0 +1,15 @@
+README.md
+entrypoint.py
+setup.py
+OctoBot_Launcher.egg-info/PKG-INFO
+OctoBot_Launcher.egg-info/SOURCES.txt
+OctoBot_Launcher.egg-info/dependency_links.txt
+OctoBot_Launcher.egg-info/entry_points.txt
+OctoBot_Launcher.egg-info/not-zip-safe
+OctoBot_Launcher.egg-info/requires.txt
+OctoBot_Launcher.egg-info/top_level.txt
+launcher/__init__.py
+launcher/app_util.py
+launcher/launcher.py
+launcher/launcher_app.py
+launcher/launcher_controller.py
