@@ -1,0 +1,4 @@
+[console_scripts]
+atlasviewer = brainview.atlasviewer:atlasviewer
+brainviewer = brainview.brainviewer:brainviewer
+

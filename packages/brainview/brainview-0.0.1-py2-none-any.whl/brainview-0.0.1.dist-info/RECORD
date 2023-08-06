@@ -1,0 +1,14 @@
+brainview/__init__.py,sha256=KD7OmB1QPXxMjRe2CliX-sDxCJvrx4gDNzvlDlBOdDY,682
+brainview/atlasviewer.py,sha256=wOnbeT8i5IBsOP222-nbocJQlplWNySDsLJ6Za6lgEs,4323
+brainview/brainviewer.py,sha256=gieyXdV_NIksFGEPr-ycsczDqHSBPJnVeb1hazOtz-o,6127
+brainview/dev_tools.py,sha256=XhOQ7QpsWdtdP0ytWhjByrAW3QaUiK-uhgnB2ZUSJUw,1663
+brainview/export.py,sha256=E-ixiQJl49FGnfKAgOhRWvwj-jnU2hynj958utCD5_Y,3000
+brainview/multiview.py,sha256=klZnSjWa6dt49rFQ8zVvOO5Pr96OKB5XXtOO1PTweAk,1722
+brainview/singleview.py,sha256=ooQ7u29NWg64cqdHCCpQT5e96lXExYaAdoE9fwalxxg,11334
+brainview/util.py,sha256=nIuXsEKJJDkqqU2FAMzEyxTL6tZA1hPa1OEkX3oukao,12025
+brainview-0.0.1.dist-info/LICENSE,sha256=dXVl4IupO9HzyOnckF35REStgbet1OKhqwh1Faq-504,1069
+brainview-0.0.1.dist-info/METADATA,sha256=VqbmUkteYZR4VEzhuh23vDOhpQOTQsquOje8Gh8a2BM,1087
+brainview-0.0.1.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+brainview-0.0.1.dist-info/entry_points.txt,sha256=MbxHj8rciFgJoyTkf9bXdQp5fWi2nb07I97x0hYts0o,115
+brainview-0.0.1.dist-info/top_level.txt,sha256=uG_5G1DuGhVyaQ_Vta_F1jt-1VnPoO5xEaurP82-4Bk,10
+brainview-0.0.1.dist-info/RECORD,,
