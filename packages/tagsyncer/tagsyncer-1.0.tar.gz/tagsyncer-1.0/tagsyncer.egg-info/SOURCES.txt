@@ -1,0 +1,11 @@
+README.md
+setup.py
+tagsyncer/__init__.py
+tagsyncer/tag_syncer.py
+tagsyncer.egg-info/PKG-INFO
+tagsyncer.egg-info/SOURCES.txt
+tagsyncer.egg-info/dependency_links.txt
+tagsyncer.egg-info/entry_points.txt
+tagsyncer.egg-info/not-zip-safe
+tagsyncer.egg-info/requires.txt
+tagsyncer.egg-info/top_level.txt

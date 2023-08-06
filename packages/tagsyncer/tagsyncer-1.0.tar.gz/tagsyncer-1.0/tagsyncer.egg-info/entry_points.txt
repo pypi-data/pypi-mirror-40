@@ -1,0 +1,3 @@
+[console_scripts]
+tagsyncer = tagsyncer.tag_syncer:main
+
