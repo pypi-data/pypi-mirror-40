@@ -1,0 +1,7 @@
+pytest<4.0.0
+six
+
+[tests]
+mock
+pytest-virtualenv
+coverage
