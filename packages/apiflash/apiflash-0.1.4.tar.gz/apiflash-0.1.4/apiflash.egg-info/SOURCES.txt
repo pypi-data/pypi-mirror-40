@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+apiflash/__init__.py
+apiflash.egg-info/PKG-INFO
+apiflash.egg-info/SOURCES.txt
+apiflash.egg-info/dependency_links.txt
+apiflash.egg-info/requires.txt
+apiflash.egg-info/top_level.txt
