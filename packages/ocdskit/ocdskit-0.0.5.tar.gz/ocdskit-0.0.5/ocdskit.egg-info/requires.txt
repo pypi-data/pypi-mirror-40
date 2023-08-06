@@ -1,0 +1,14 @@
+jsonref
+jsonschema
+ocdsmerge>=0.5.1
+python-dateutil
+pytz
+requests
+rfc3987
+sqlalchemy
+strict-rfc3339
+
+[test]
+coveralls
+pytest
+pytest-cov
