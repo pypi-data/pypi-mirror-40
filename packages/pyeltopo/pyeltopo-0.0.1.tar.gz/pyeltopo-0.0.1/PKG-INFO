@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pyeltopo
+Version: 0.0.1
+Summary: El Topo bindings using pybind11
+Home-page: https://github.com/mtao/pyeltopo
+Author: Michael Tao
+Author-email: mtao@cs.toronto.edu
+License: UNKNOWN
+Description: # pyeltopo
+        A python wrapper for El Topo (https://github.com/tysonbrochu/eltopo)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
