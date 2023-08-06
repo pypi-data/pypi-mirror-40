@@ -1,0 +1,9 @@
+
+[:python_version < "3.4"]
+backports.html
+
+[tests]
+delegator.py
+
+[toc]
+python-slugify
