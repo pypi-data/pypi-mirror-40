@@ -1,0 +1,16 @@
+branches:
+  only:
+    - master
+    - dev
+
+sudo: required
+
+services:
+  - docker
+
+install:
+  - docker build -t chisubmit .
+
+script:
+  - docker run chisubmit python runtests.py all
+  - docker run chisubmit python runtests.py complete
