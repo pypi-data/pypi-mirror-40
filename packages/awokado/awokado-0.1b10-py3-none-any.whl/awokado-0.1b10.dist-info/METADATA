@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: awokado
+Version: 0.1b10
+Summary: Fast and flexible API framework based on Falcon and SQLAlchemy
+Home-page: UNKNOWN
+Author: Dmitry Karnei
+Author-email: 5783354@gmail.com
+License: UNKNOWN
+Keywords: api falcon rest sqlalchemy sqlalchemy-core wsgi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.6
+Requires-Dist: bcrypt
+Requires-Dist: boto3
+Requires-Dist: dynaconf
+Requires-Dist: falcon
+Requires-Dist: marshmallow (>=3.0.0rc3)
+Requires-Dist: pyaml
+Requires-Dist: PyJWT
+Requires-Dist: stairs
+Requires-Dist: python-jose
+
+UNKNOWN
+
+
