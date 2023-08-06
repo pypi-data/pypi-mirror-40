@@ -1,0 +1,24 @@
+Metadata-Version: 1.0
+Name: pihy
+Version: 0.2.112
+Summary: The funniest joke in the world
+Home-page: http://github.com/raubreywhite/pihy
+Author: Richard
+Author-email: w@rwhite.no
+License: MIT
+Description: # raspberrysystem
+        
+        python3 -m pihy.app
+        List_addr
+        
+        // base
+        //default pump address is 103 
+        Address,103
+        I2C,11
+        
+        // add new pump for acid
+        //default pump address is 103
+        Address,103
+        I2C,12
+        
+Platform: UNKNOWN
