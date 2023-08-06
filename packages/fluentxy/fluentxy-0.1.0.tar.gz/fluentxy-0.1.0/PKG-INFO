@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: fluentxy
+Version: 0.1.0
+Summary: An interface to produce Pandas DataFrames from Fluent XY output files.
+Home-page: https://github.com/bryanwweber/fluentxy
+Author: Bryan W. Weber
+Author-email: bryan.w.weber@gmail.com
