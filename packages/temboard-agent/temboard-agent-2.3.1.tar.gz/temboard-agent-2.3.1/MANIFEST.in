@@ -1,0 +1,4 @@
+include apidoc.json LICENSE README.rst
+graft share
+include packaging/temboard-agent@.service
+include packaging/deb/temboard-agent.service
