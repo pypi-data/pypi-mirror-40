@@ -1,0 +1,32 @@
+CHANGES
+=======
+
+12.0.1
+------
+
+* remove [testenv:dev]commands (no use)
+* add testenv:dev in tox.ini
+* OSP-252: Update tox.ini on master, for python3
+* use sudo when doing a git clean
+* update build scripts to use python3 for tox
+* OSP-246: Add src\_tenant\_id and src\_segment\_id to reachability test for neutron client
+* bump version for create stable queens branch
+* bump version for OSP-241
+* OSP-241: fix entry point extension name
+* change how RPM is built
+* OSP-165: add force sync command for topo\_sync
+* bump version
+* build script fix
+* remove fake build dependency
+* who forgot to remove sudo?!
+* bump version to test precheckin script as well
+* remove sudo from command - already root, sudo unavailable
+* fix typo
+* navigate to repo in container before build proceeds
+* update pkg build script to create hierarchical dir
+* fix build errors
+* fix error
+* run precheckin.sh in container
+* add build scripts for the project
+* add initial code for python-bsn-neutronclient
+* initialize repo
