@@ -1,0 +1,11 @@
+clean:
+	rm -r dist
+	rm -r twone.egg-info
+
+rebuild:
+	python setup.py sdist
+	python setup.py bdist_wheel
+
+publish:
+	twine upload dist/*
+
