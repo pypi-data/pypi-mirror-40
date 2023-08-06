@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: clinphen
+Version: 1.24
+Summary: An automatic phenotype extractor
+Home-page: http://bejerano.stanford.edu/clinphen/
+Author: Cole A. Deisseroth
+Author-email: cdeisser@stanford.edu
+License: UNKNOWN
+Description: ClinPhen is a free-to-use tool that automatically extracts phenotypes from clinical notes.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
