@@ -1,0 +1,12 @@
+azure/common/__init__.py,sha256=qtmKh81fR4K8ZdbEYMsmP5CfgePWNmYN28Rk-FJT76s,1358
+azure/common/_version.py,sha256=QjPd6E3MoeyzR5RjIvEI_m4q8lX_sktrvp8DfLKcobA,327
+azure/common/client_factory.py,sha256=TtrSPl97JUOlSN1iIZi_Nwt96MeV2OhihLD_Xs10_Hk,9305
+azure/common/cloud.py,sha256=WIbs80OBIGXYx3P3HjTHPKh-CmBjyKyN-1VYfb8yVc8,755
+azure/common/credentials.py,sha256=1IjRQFKf7CABXZaPzDj0sw7k5Kr-CZT1bkjAk9GDECc,2479
+azure/common/exceptions.py,sha256=NXSPW7JPbrIULC5CuWiv7LPUeesoCe5mQhUUyzLLlGM,805
+azure/profiles/__init__.py,sha256=7tSpGJSWW0nR45uvueKn7u2yWXmJO_Qom0eGkqPTvps,6079
+azure/profiles/multiapiclient.py,sha256=xImzkBUbwuyxnsS-l5ghq3NfvuAknUPgjffjAm2EhXk,3943
+azure_common-1.1.17.dist-info/METADATA,sha256=II-AoZKRZz6p8SVR8mZ6v3DIk-Z-NCr9H--qvWtqCIU,3927
+azure_common-1.1.17.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+azure_common-1.1.17.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
+azure_common-1.1.17.dist-info/RECORD,,
