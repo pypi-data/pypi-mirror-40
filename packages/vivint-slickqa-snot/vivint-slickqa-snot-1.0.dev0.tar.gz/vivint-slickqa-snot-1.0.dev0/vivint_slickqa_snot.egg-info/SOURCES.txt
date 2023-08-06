@@ -1,0 +1,12 @@
+MANIFEST.in
+README.txt
+build.txt
+requirements.txt
+setup.py
+snot.py
+vivint_slickqa_snot.egg-info/PKG-INFO
+vivint_slickqa_snot.egg-info/SOURCES.txt
+vivint_slickqa_snot.egg-info/dependency_links.txt
+vivint_slickqa_snot.egg-info/entry_points.txt
+vivint_slickqa_snot.egg-info/requires.txt
+vivint_slickqa_snot.egg-info/top_level.txt
