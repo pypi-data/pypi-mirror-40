@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wagtail-graphql
+Version: 0.1.3
+Summary: An app to automatically add graphql support to a Wagtail website
+Home-page: https://github.com/tr11/wagtail-graphql
+Author: Tiago Requeijo
+Author-email: tiago.requeijo.dev@gmail.com
+Keywords: wagtail,graphql,api,wagtail-graphql
+Requires-Python: >=3.6,<3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: menus
+Requires-Dist: graphene_django (>=2.2,<3.0)
+Requires-Dist: graphene_django_optimizer (>=0.3.5,<0.4.0)
+Requires-Dist: wagtail (>=2.3,<3.0)
+Requires-Dist: wagtailmenus (>=2.12,<3.0); extra == "menus"
+Project-URL: Repository, https://github.com/tr11/wagtail-graphql
