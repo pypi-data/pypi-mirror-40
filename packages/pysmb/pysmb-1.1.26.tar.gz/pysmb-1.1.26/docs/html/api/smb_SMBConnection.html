@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>SMBConnection Class &mdash; pysmb 1.1.25 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.1.25',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="pysmb 1.1.25 documentation" href="../index.html" />
+    <link rel="next" title="SMbHandler Class" href="smb_SMBHandler.html" />
+    <link rel="prev" title="NetBIOS class" href="nmb_NetBIOS.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="smb_SMBHandler.html" title="SMbHandler Class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nmb_NetBIOS.html" title="NetBIOS class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pysmb 1.1.25 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">SMBConnection Class</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#smb2-support">SMB2 Support</a></li>
+<li><a class="reference internal" href="#caveats">Caveats</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nmb_NetBIOS.html"
+                        title="previous chapter">NetBIOS class</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="smb_SMBHandler.html"
+                        title="next chapter">SMbHandler Class</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/smb_SMBConnection.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="smbconnection-class">
+<h1>SMBConnection Class<a class="headerlink" href="#smbconnection-class" title="Permalink to this headline">¶</a></h1>
+<p>The SMBConnection is suitable for developers who wish to use pysmb to perform file operations with a remote SMB/CIFS server sequentially.</p>
+<p>Each file operation method, when invoked, will block and return after it has completed or has encountered an error.</p>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>The following illustrates a simple file retrieving implementation.:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">tempfile</span>
+<span class="kn">from</span> <span class="nn">smb.SMBConnection</span> <span class="kn">import</span> <span class="n">SMBConnection</span>
+
+<span class="c1"># There will be some mechanism to capture userID, password, client_machine_name, server_name and server_ip</span>
+<span class="c1"># client_machine_name can be an arbitary ASCII string</span>
+<span class="c1"># server_name should match the remote machine name, or else the connection will be rejected</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">SMBConnection</span><span class="p">(</span><span class="n">userID</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">client_machine_name</span><span class="p">,</span> <span class="n">server_name</span><span class="p">,</span> <span class="n">use_ntlm_v2</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">conn</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">server_ip</span><span class="p">,</span> <span class="mi">139</span><span class="p">)</span>
+
+<span class="n">file_obj</span> <span class="o">=</span> <span class="n">tempfile</span><span class="o">.</span><span class="n">NamedTemporaryFile</span><span class="p">()</span>
+<span class="n">file_attributes</span><span class="p">,</span> <span class="n">filesize</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">retrieveFile</span><span class="p">(</span><span class="s1">&#39;smbtest&#39;</span><span class="p">,</span> <span class="s1">&#39;/rfc1001.txt&#39;</span><span class="p">,</span> <span class="n">file_obj</span><span class="p">)</span>
+
+<span class="c1"># Retrieved file contents are inside file_obj</span>
+<span class="c1"># Do what you need with the file_obj and then close it</span>
+<span class="c1"># Note that the file obj is positioned at the end-of-file,</span>
+<span class="c1"># so you might need to perform a file_obj.seek() if you need</span>
+<span class="c1"># to read from the beginning</span>
+<span class="n">file_obj</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="smb2-support">
+<h2>SMB2 Support<a class="headerlink" href="#smb2-support" title="Permalink to this headline">¶</a></h2>
+<p>Starting from pysmb 1.1.0, pysmb will utilize SMB2 protocol for communication if the remote SMB/CIFS service supports SMB2.
+Otherwise, it will fallback automatically back to using SMB1 protocol.</p>
+<p>To disable SMB2 protocol in pysmb, set the <em>SUPPORT_SMB2</em> flag in the <em>smb_structs</em> module to <em>False</em> before creating the <em>SMBConnection</em> instance.:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">smb</span> <span class="kn">import</span> <span class="n">smb_structs</span>
+<span class="n">smb_structs</span><span class="o">.</span><span class="n">SUPPORT_SMB2</span> <span class="o">=</span> <span class="bp">False</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="caveats">
+<h2>Caveats<a class="headerlink" href="#caveats" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>It is not meant to be used asynchronously.</li>
+<li>A single <em>SMBConnection</em> instance should not be used to perform more than one operation concurrently at the same time.</li>
+<li>Do not keep a <em>SMBConnection</em> instance &#8220;idle&#8221; for too long, i.e. keeping a <em>SMBConnection</em> instance but not using it.
+Most SMB/CIFS servers have some sort of keepalive mechanism and impose a timeout limit.
+If the clients fail to respond within the timeout limit, the SMB/CIFS server may disconnect the client.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="smb_SMBHandler.html" title="SMbHandler Class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="nmb_NetBIOS.html" title="NetBIOS class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pysmb 1.1.25 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2001-2018, Michael Teo http://miketeo.net/.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
+  </body>
+</html>
