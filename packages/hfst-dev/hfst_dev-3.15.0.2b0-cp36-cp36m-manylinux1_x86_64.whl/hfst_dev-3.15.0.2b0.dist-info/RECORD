@@ -1,0 +1,10 @@
+libhfst_dev.py,sha256=Np956MJTJiC-G8N7EJ9W791_YEThaHMyMUf5jg1nNwk,183620
+_libhfst_dev.cpython-36m-x86_64-linux-gnu.so,sha256=Cx9d-sVxxiozBK4BIQPnNsHKhKaZJTjNcub2WoW4UV8,119039880
+hfst_dev-3.15.0.2b0.dist-info/RECORD,,
+hfst_dev-3.15.0.2b0.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
+hfst_dev-3.15.0.2b0.dist-info/METADATA,sha256=VZMGOmeU4vrQtlnvF0TVdyoOn-KMIkeog-xTCYpToAQ,4471
+hfst_dev-3.15.0.2b0.dist-info/top_level.txt,sha256=KkXs4x6aqxAgjVxn7h7b7S1fjzQaLMKP5_J3Rx-ZW00,34
+hfst_dev/__init__.py,sha256=7bKJjIjYK4Oiw7505Lt9AJxfkLpBVcHrjoCkaS7ZMZ0,46389
+hfst_dev/exceptions/__init__.py,sha256=Nmb9I7IMlPWlG1X5Q8-x6TBPX7pvd6hH5rOVCioI258,1936
+hfst_dev/sfst_rules/__init__.py,sha256=pIMz1e4kPxzk_MAEwSV8kPJEQ7ttMpZuZgLZAmM9WCY,601
+hfst_dev/xerox_rules/__init__.py,sha256=u2R_HuNGTQYDtM6DeL95cz0qRksLMWBwdwk7jXeslkE,1023
