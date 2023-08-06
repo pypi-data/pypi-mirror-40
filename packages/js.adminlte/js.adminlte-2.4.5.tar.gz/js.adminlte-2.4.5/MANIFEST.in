@@ -1,0 +1,3 @@
+recursive-include js/adminlte/resources *.*
+recursive-include js/adminlte *.txt
+include *.txt
