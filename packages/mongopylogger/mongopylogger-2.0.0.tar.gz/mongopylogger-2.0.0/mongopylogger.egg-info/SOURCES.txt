@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mongolog/__init__.py
+mongolog/handlers.py
+mongolog/logger.py
+mongolog/tests.py
+mongopylogger.egg-info/PKG-INFO
+mongopylogger.egg-info/SOURCES.txt
+mongopylogger.egg-info/dependency_links.txt
+mongopylogger.egg-info/requires.txt
+mongopylogger.egg-info/top_level.txt
