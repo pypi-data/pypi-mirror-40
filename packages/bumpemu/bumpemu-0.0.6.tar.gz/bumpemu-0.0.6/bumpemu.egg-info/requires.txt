@@ -1,0 +1,4 @@
+dbus-python>=1.2.8
+PyGObject>=3.22.0
+pyserial>=3.4
+PyYAML>=3.13
