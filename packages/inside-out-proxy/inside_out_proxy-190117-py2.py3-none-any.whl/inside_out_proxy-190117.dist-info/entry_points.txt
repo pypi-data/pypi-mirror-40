@@ -1,0 +1,4 @@
+[console_scripts]
+inside_out_proxy = inside_out_proxy:run
+inside_out_proxy_testserver = inside_out_proxy.testserver:run
+
