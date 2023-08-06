@@ -1,0 +1,16 @@
+lazypsf/__init__.py,sha256=vUpnnkRx2s3v_GPB7L7kEGw-BTg1gobhfrowfNGCfMY,15
+lazypsf/r_psf.py,sha256=K9rmJ4Yg1XsDQUsjj4QE5lJb4RcDjPLeGibxAHCU_oo,20396
+lazypsf/config/default.conv,sha256=YTdatXKFNsnjP0GPr6Yf3gD0i8Awy8KIjQmnBL4Aa0Y,87
+lazypsf/config/default.nnw,sha256=y_lSb7xtdwwbJxV65NnnMSnAv0dOZ9_JPUk0lXqUqls,2186
+lazypsf/config/default.param,sha256=3-Smz4kFSeWtXzOAKJLP8pYVKpARcQDkW7VmYL94hdY,38270
+lazypsf/config/default.sex,sha256=pVVlzkvM7_mPu4llTswhAbbRdeibNyPLAlZ-NArkc38,3796
+lazypsf/config/psfex.conf,sha256=7V181S13XuczXY6S5KDVXv9AfXk7pqsMmxucqjFmbPI,3670
+lazypsf/config/r_psf.conv,sha256=YTdatXKFNsnjP0GPr6Yf3gD0i8Awy8KIjQmnBL4Aa0Y,87
+lazypsf/config/r_psf.param,sha256=HnMQphXNk03Q9DHWYrmF1IezOpH8vUa2bqmbWBnt1vc,72
+lazypsf/config/r_psf.sex,sha256=g67OUL2GcOe-4g8GgBqlFsQaOPB77VVC4ENUbl8XoHk,3770
+lazypsf-1.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+lazypsf-1.0.0.dist-info/METADATA,sha256=OiUvVhtpDdsz8Biw02nEMTgg0bvC3bKek57Qg6HJrfc,323
+lazypsf-1.0.0.dist-info/RECORD,,
+lazypsf-1.0.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+lazypsf-1.0.0.dist-info/metadata.json,sha256=ZjjZ_ZBYgjwdgDWCO1Ke8FSOqi5TIOYOtfkPen9GyUA,504
+lazypsf-1.0.0.dist-info/top_level.txt,sha256=d5gKYHeQ12yEXSAfJs5hogRrbLZSoKIcBzjLT0mPU0g,8
