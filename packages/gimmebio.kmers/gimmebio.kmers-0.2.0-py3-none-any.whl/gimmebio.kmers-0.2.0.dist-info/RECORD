@@ -1,0 +1,12 @@
+gimmebio.kmers-0.2.0-py3.6-nspkg.pth,sha256=pxTb1jWsCspdqoPmV2TGBVot_a6QmHbVwKXbDN4rHTs,549
+gimmebio/kmers/__init__.py,sha256=j0jRwNk2y6sihWhwyiSldvG64U0hQ4K12EImUv6LvQ8,31
+gimmebio/kmers/cli.py,sha256=mlsHpruQvVH1CBgO6nAOvPrYalC7oU_BfTkrC7Lww_U,1194
+gimmebio/kmers/gmers.py,sha256=ddDhmtrUaJdfFGHUrVp_2b6R8KhtIyD9-cK1bxWc_78,3241
+gimmebio/kmers/kmers.py,sha256=PFR72qeEmKcBHZDrF_XGT6SFUEwDzDSBsYP0fnPw3EI,2439
+gimmebio/kmers/min_sparse_kmers.py,sha256=e4_Q29MYNQhrzNTQ6esqJgHfRlxGGyS-jX2xq1YCgr4,2686
+gimmebio/kmers/rabin_kmers.py,sha256=k_UqKrKPCyZ2Hrn_jeKSGSWvXQ49C8YdmKkcI0dO2mo,4305
+gimmebio.kmers-0.2.0.dist-info/METADATA,sha256=B0mnMOC65z6s7mIk-CIw31V-XRdrFJpxS6VZtA5DGS0,366
+gimmebio.kmers-0.2.0.dist-info/RECORD,,
+gimmebio.kmers-0.2.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+gimmebio.kmers-0.2.0.dist-info/namespace_packages.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
+gimmebio.kmers-0.2.0.dist-info/top_level.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
