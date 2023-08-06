@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: eve-negotiable-auth
+Version: 0.9.2
+Summary: Eve Negotiable authentication
+Home-page: https://github.com/pointw-dev/eve-negotiable-auth
+Author: Michael Ottoson
+Author-email: michael@pointw.com
+License: MIT
+Description: # eve-negotiable-auth
+        An auth module for Eve.  Allows for easy configuration and handling of multiple auth schemes - including schemes like Digest which require "negotiation".
+        
+        `NegotiableAuth` is an abstract base class.  It uses the authparser library, which parses the `Authorization:` header and dispatches to handlers.  As a result, there is only one function to override:
+        
+        `process_claims(claims, allowed_roles, resource, method)`
+        This is where you will use the passed to set up the Eve authorization context (e.g. calling `set_request_auth_value()`).
+        - **claims** - a dict of name-value pairs containing the claims provided by the scheme handlers, derived from parsing the `Authorization:` header
+        - **allowed_roles** - the user's allowed roles, passed through from BasicAuth
+        - **resource** - the resource being requested
+        - **method** - the HTTP verb of the request
+        - Return True/False whether the user is authenticated.
+        
+        When NegotiableAuth calls AuthParser, it passes the following kwargs:
+        `get_user_record()` - passed through to the scheme's `user_record_fn`
+        - allowed_roles
+        - resource
+        - method
+        - request
+        
+        `get_challenge_header()` - passed through to the scheme's `challenge_fn`
+        - request
+        
+Keywords: eve,api,rest,auth,http
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Security
+Description-Content-Type: text/markdown
