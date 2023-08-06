@@ -1,0 +1,10 @@
+COPYING
+MANIFEST.in
+README.md
+pamela.py
+setup.cfg
+setup.py
+pamela.egg-info/PKG-INFO
+pamela.egg-info/SOURCES.txt
+pamela.egg-info/dependency_links.txt
+pamela.egg-info/top_level.txt
