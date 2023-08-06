@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: bogohash
+Version: 0.1
+Summary: A simple hash function with issues
+Home-page: https://github.com/jimbao/bogohash/
+Author: Jimmy Wahlberg
+Author-email: jimmy.wahlberg@gmail.com
+License: GLWT (Good Luck With That) Public License
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Education
+Classifier: Topic :: Internet
+
+# Hash is fast, hash is cool
+
+
+
+## Benefits
+
+- Fast
+- Consistent
+- Not sensitive to brute force attacks
+
+## Flaws
+
+- Many hash collisions Q(' .')-O
+
+## Installation
+
+It's not recommended to install this package. But if you read this far, why not.
+
+```pip install bogohash```
+
+## Usage
+
+```python
+import bogohash
+
+myhash = bogohash.bogo("password")
+digest = myhash.digest()
+```
+
+
