@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sep-eval
+Version: 0.2.3
+Summary: An easy to use collection of Speech enhancement measures
+Home-page: https://github.com/Enny1991/sep_eval
+Author: Enea Ceolini (UZH Zurich)
+Author-email: enea.ceolini@ini.uzh.ch
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: soundfile
+Requires-Dist: pystoi
+Requires-Dist: mir-eval
+
+UNKNOWN
+
+
