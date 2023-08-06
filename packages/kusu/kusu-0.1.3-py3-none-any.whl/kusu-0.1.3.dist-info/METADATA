@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: kusu
+Version: 0.1.3
+Summary: A set of utilities for developing python scripts
+Home-page: https://github.com/Descent098/kusu
+Author: Kieran Wood
+Author-email: kieranw098@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# kusu | Kieran's Useful Script Utilities
+
+install using:
+`pip install kusu`
+
+or download the source with:
+`git clone https://github.com/Descent098/kusu`
+
+There is inline documentation and 
+
+# Official Documentation
+There is some readthedocs documentation with examples available at:
+
+__*comming soon*__
+# Changelog
+---
+
+# January 4th 2019
+V0.1.3 | First Release
+
