@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: amlc
+Version: 1.0
+Summary: Analytic marginalization over linear continuum parameters
+Home-page: https://github.com/ktchrn/amlc
+Author: Kirill Tchernyshyov
+Author-email: ktcherny@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.5

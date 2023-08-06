@@ -1,0 +1,9 @@
+setup.py
+amlc/__init__.py
+amlc/covariance_matrix.py
+amlc/marginalized_likelihood.py
+amlc.egg-info/PKG-INFO
+amlc.egg-info/SOURCES.txt
+amlc.egg-info/dependency_links.txt
+amlc.egg-info/requires.txt
+amlc.egg-info/top_level.txt
