@@ -1,0 +1,10 @@
+README.md
+setup.py
+diversitree/__init__.py
+diversitree/diversitree.py
+diversitree/tree_generation.py
+diversitree.egg-info/PKG-INFO
+diversitree.egg-info/SOURCES.txt
+diversitree.egg-info/dependency_links.txt
+diversitree.egg-info/requires.txt
+diversitree.egg-info/top_level.txt
