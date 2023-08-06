@@ -1,0 +1,3 @@
+[console_scripts]
+ib_wrapper = ib_wrapper.cli:main
+
