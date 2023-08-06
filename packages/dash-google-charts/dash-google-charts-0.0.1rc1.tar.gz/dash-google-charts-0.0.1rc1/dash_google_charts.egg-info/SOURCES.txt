@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dash_google_charts/__init__.py
+dash_google_charts/_version.py
+dash_google_charts.egg-info/PKG-INFO
+dash_google_charts.egg-info/SOURCES.txt
+dash_google_charts.egg-info/dependency_links.txt
+dash_google_charts.egg-info/requires.txt
+dash_google_charts.egg-info/top_level.txt
+dash_google_charts/_components/Chart.py
+dash_google_charts/_components/__init__.py
+dash_google_charts/_components/dash_google_charts.min.js
+dash_google_charts/_components/metadata.json
