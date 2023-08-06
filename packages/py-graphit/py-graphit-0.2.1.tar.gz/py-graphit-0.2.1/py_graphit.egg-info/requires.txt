@@ -1,0 +1,7 @@
+uritools
+pytz
+python-dateutil
+
+[test]
+coverage
+PyYAML
