@@ -1,0 +1,98 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <title>Overview</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="Orange Canvas Reference" href="index.html" />
+    <link rel="prev" title="Welcome to Orange Canvas Core’s documentation!" href="../index.html" /> 
+  </head>
+  <body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>Orange Canvas Core 0.0.8 documentation</span></a></h1>
+        <h2 class="heading"><span>Overview</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="../index.html">Welcome to Orange Canvas Core’s documentation!</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="index.html">Orange Canvas Reference</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="overview">
+<h1>Overview</h1>
+<p>Orange Canvas application is build around the a workflow model (scheme),
+which is implemented in the <a class="reference internal" href="scheme.html#module-orangecanvas.scheme" title="orangecanvas.scheme"><code class="xref py py-mod docutils literal"><span class="pre">scheme</span></code></a> package. Briefly
+speaking a workflow is a simple graph structure (most commonly a
+Directed Acyclic Graph - DAG). The nodes in this graph represent some
+action/task to be computed. A node (also commonly referred to as a
+<em>widget</em>) has a set of inputs and outputs on which it receives and
+sends objects.</p>
+<p>The set of available node types for a workflow are kept in a
+(<a class="reference internal" href="registry.html#orangecanvas.registry.WidgetRegistry" title="orangecanvas.registry.WidgetRegistry"><code class="xref py py-class docutils literal"><span class="pre">WidgetRegistry</span></code></a>).
+<a class="reference internal" href="registry.html#orangecanvas.registry.WidgetDiscovery" title="orangecanvas.registry.WidgetDiscovery"><code class="xref py py-class docutils literal"><span class="pre">WidgetDiscovery</span></code></a> can be used (but not
+required) to populate the registry.</p>
+<div class="section" id="workflow-model">
+<h2>Workflow Model</h2>
+<p>The workflow model is implemented by <code class="xref py py-class docutils literal"><span class="pre">Scheme</span></code>.
+It is composed by a set of node (<code class="xref py py-class docutils literal"><span class="pre">SchemeNode</span></code>)
+instances and links (<code class="xref py py-class docutils literal"><span class="pre">SchemeLink</span></code>) between them.
+Every node has a corresponding <a class="reference internal" href="registry.html#orangecanvas.registry.WidgetDescription" title="orangecanvas.registry.WidgetDescription"><code class="xref py py-class docutils literal"><span class="pre">WidgetDescription</span></code></a>
+defining its inputs and outputs (restricting the node’s connectivity).</p>
+<p>In addition, it can also contain workflow annotations. These are only
+used when displaying the workflow in a GUI.</p>
+<div class="section" id="widget-description">
+<h3>Widget Description</h3>
+<ul class="simple">
+<li><a class="reference internal" href="registry.html#orangecanvas.registry.WidgetDescription" title="orangecanvas.registry.WidgetDescription"><code class="xref py py-class docutils literal"><span class="pre">WidgetDescription</span></code></a></li>
+<li><a class="reference internal" href="registry.html#orangecanvas.registry.CategoryDescription" title="orangecanvas.registry.CategoryDescription"><code class="xref py py-class docutils literal"><span class="pre">CategoryDescription</span></code></a></li>
+</ul>
+</div>
+<div class="section" id="workflow-execution">
+<h3>Workflow Execution</h3>
+<ul class="simple">
+<li><code class="xref py py-class docutils literal"><span class="pre">SignalManager</span></code></li>
+</ul>
+</div>
+</div>
+<div class="section" id="workflow-view">
+<h2>Workflow View</h2>
+<ul class="simple">
+<li>The workflow view (<a class="reference internal" href="canvas.scene.html#orangecanvas.canvas.scene.CanvasScene" title="orangecanvas.canvas.scene.CanvasScene"><code class="xref py py-class docutils literal"><span class="pre">CanvasScene</span></code></a>)</li>
+<li>The workflow editor (<a class="reference internal" href="document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget" title="orangecanvas.document.schemeedit.SchemeEditWidget"><code class="xref py py-class docutils literal"><span class="pre">SchemeEditWidget</span></code></a>)</li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="../index.html">Welcome to Orange Canvas Core’s documentation!</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="index.html">Orange Canvas Reference</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bioinformatics Laboratory, FRI UL.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

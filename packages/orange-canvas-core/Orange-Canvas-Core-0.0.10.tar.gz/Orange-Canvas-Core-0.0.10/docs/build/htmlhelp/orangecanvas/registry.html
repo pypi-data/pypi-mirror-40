@@ -1,0 +1,450 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <title>Registry (registry)</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="Canvas (canvas)" href="canvas.html" />
+    <link rel="prev" title="Scheme Serialization (readwrite)" href="scheme.readwrite.html" /> 
+  </head>
+  <body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>Orange Canvas Core 0.0.8 documentation</span></a></h1>
+        <h2 class="heading"><span>Registry (registry)</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="scheme.readwrite.html">Scheme Serialization (<code class="docutils literal"><span class="pre">readwrite</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="canvas.html">Canvas (<code class="docutils literal"><span class="pre">canvas</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="module-orangecanvas.registry">
+<span id="registry-registry"></span><h1>Registry (<code class="docutils literal"><span class="pre">registry</span></code>)</h1>
+<div class="section" id="registry">
+<h2>Registry</h2>
+<p>The registry module implements discovery and description of the widgets
+that are available/installed. The <a class="reference internal" href="#orangecanvas.registry.WidgetRegistry" title="orangecanvas.registry.WidgetRegistry"><code class="xref py py-class docutils literal"><span class="pre">WidgetRegistry</span></code></a> is a repository
+of <a class="reference internal" href="#orangecanvas.registry.WidgetDescription" title="orangecanvas.registry.WidgetDescription"><code class="xref py py-class docutils literal"><span class="pre">WidgetDescription</span></code></a> and <a class="reference internal" href="#orangecanvas.registry.CategoryDescription" title="orangecanvas.registry.CategoryDescription"><code class="xref py py-class docutils literal"><span class="pre">CategoryDescription</span></code></a> instances
+forming a two level widget hierarchy ([category]/[widget]).</p>
+<p>The <a class="reference internal" href="#orangecanvas.registry.WidgetDiscovery" title="orangecanvas.registry.WidgetDiscovery"><code class="xref py py-class docutils literal"><span class="pre">WidgetDiscovery</span></code></a> can be used to populate the registry.</p>
+</div>
+<div class="section" id="widgetregistry">
+<h2>WidgetRegistry</h2>
+<dl class="class">
+<dt id="orangecanvas.registry.WidgetRegistry">
+<em class="property">class </em><code class="descclassname">orangecanvas.registry.</code><code class="descname">WidgetRegistry</code><span class="sig-paren">(</span><em>other=None</em><span class="sig-paren">)</span></dt>
+<dd><p>A container for widget and category descriptions.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">reg</span> <span class="o">=</span> <span class="n">WidgetRegistry</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">file_desc</span> <span class="o">=</span> <span class="n">WidgetDescription</span><span class="o">.</span><span class="n">from_module</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="s2">&quot;Orange.OrangeWidgets.Data.OWFile&quot;</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reg</span><span class="o">.</span><span class="n">register_widget</span><span class="p">(</span><span class="n">file_desc</span><span class="p">)</span>  <span class="c1"># register the description</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">reg</span><span class="o">.</span><span class="n">widgets</span><span class="p">()</span>
+<span class="go">[...</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#orangecanvas.registry.WidgetRegistry" title="orangecanvas.registry.WidgetRegistry"><code class="xref py py-class docutils literal"><span class="pre">WidgetRegistry</span></code></a>, optional) – If supplied the registry is initialized with the contents of <cite>other</cite>.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#orangecanvas.registry.WidgetDiscovery" title="orangecanvas.registry.WidgetDiscovery"><code class="xref py py-class docutils literal"><span class="pre">WidgetDiscovery</span></code></a></p>
+</div>
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetRegistry.categories">
+<code class="descname">categories</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return a list all top level <a class="reference internal" href="#orangecanvas.registry.CategoryDescription" title="orangecanvas.registry.CategoryDescription"><code class="xref py py-class docutils literal"><span class="pre">CategoryDescription</span></code></a> instances
+ordered by <cite>priority</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetRegistry.category">
+<code class="descname">category</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span></dt>
+<dd><p>Find and return a <a class="reference internal" href="#orangecanvas.registry.CategoryDescription" title="orangecanvas.registry.CategoryDescription"><code class="xref py py-class docutils literal"><span class="pre">CategoryDescription</span></code></a> by its <cite>name</cite>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Categories are identified by <cite>name</cite> attribute in contrast
+with widgets which are identified by <cite>qualified_name</cite>.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Category name</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetRegistry.has_category">
+<code class="descname">has_category</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span></dt>
+<dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if a category with <cite>name</cite> exist in this registry.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Category name</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetRegistry.widgets">
+<code class="descname">widgets</code><span class="sig-paren">(</span><em>category=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Return a list of all widgets in the registry. If <cite>category</cite> is
+specified return only widgets which belong to the category.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>category</strong> (<a class="reference internal" href="#orangecanvas.registry.CategoryDescription" title="orangecanvas.registry.CategoryDescription"><code class="xref py py-class docutils literal"><span class="pre">CategoryDescription</span></code></a> or str, optional) – Return only descriptions of widgets belonging to the category.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetRegistry.widget">
+<code class="descname">widget</code><span class="sig-paren">(</span><em>qualified_name</em><span class="sig-paren">)</span></dt>
+<dd><p>Return a <a class="reference internal" href="#orangecanvas.registry.WidgetDescription" title="orangecanvas.registry.WidgetDescription"><code class="xref py py-class docutils literal"><span class="pre">WidgetDescription</span></code></a> identified by <cite>qualified_name</cite>.</p>
+<p>Raise <code class="xref py py-class docutils literal"><span class="pre">KeyError</span></code> if the description does not exist.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>qualified_name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Widget description qualified name</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetRegistry.has_widget">
+<code class="descname">has_widget</code><span class="sig-paren">(</span><em>qualified_name</em><span class="sig-paren">)</span></dt>
+<dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if the widget with <cite>qualified_name</cite> exists in
+this registry.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetRegistry.register_widget">
+<code class="descname">register_widget</code><span class="sig-paren">(</span><em>desc</em><span class="sig-paren">)</span></dt>
+<dd><p>Register a <a class="reference internal" href="#orangecanvas.registry.WidgetDescription" title="orangecanvas.registry.WidgetDescription"><code class="xref py py-class docutils literal"><span class="pre">WidgetDescription</span></code></a> instance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetRegistry.register_category">
+<code class="descname">register_category</code><span class="sig-paren">(</span><em>desc</em><span class="sig-paren">)</span></dt>
+<dd><p>Register a <a class="reference internal" href="#orangecanvas.registry.CategoryDescription" title="orangecanvas.registry.CategoryDescription"><code class="xref py py-class docutils literal"><span class="pre">CategoryDescription</span></code></a> instance.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It is always best to register the category
+before the widgets belonging to it.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="widgetdescription">
+<h2>WidgetDescription</h2>
+<dl class="class">
+<dt id="orangecanvas.registry.WidgetDescription">
+<em class="property">class </em><code class="descclassname">orangecanvas.registry.</code><code class="descname">WidgetDescription</code><span class="sig-paren">(</span><em>name</em>, <em>id</em>, <em>category=None</em>, <em>version=None</em>, <em>description=None</em>, <em>long_description=None</em>, <em>qualified_name=None</em>, <em>package=None</em>, <em>project_name=None</em>, <em>inputs=[]</em>, <em>outputs=[]</em>, <em>author=None</em>, <em>author_email=None</em>, <em>maintainer=None</em>, <em>maintainer_email=None</em>, <em>help=None</em>, <em>help_ref=None</em>, <em>url=None</em>, <em>keywords=None</em>, <em>priority=9223372036854775807</em>, <em>icon=None</em>, <em>background=None</em>, <em>replaces=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Description of a widget.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – A human readable name of the widget.</li>
+<li><strong>id</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – A unique identifier of the widget (in most situations this should
+be the full module name).</li>
+<li><strong>category</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – A name of the category in which this widget belongs.</li>
+<li><strong>version</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – Version of the widget. By default the widget inherits the project
+version.</li>
+<li><strong>description</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – A short description of the widget, suitable for a tool tip.</li>
+<li><strong>long_description</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – A longer description of the widget, suitable for a ‘what’s this?’
+role.</li>
+<li><strong>qualified_name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – A qualified name (import name) of the class implementing the widget.</li>
+<li><strong>package</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – A package name where the widget is implemented.</li>
+<li><strong>project_name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – The distribution name that provides the widget.</li>
+<li><strong>inputs</strong> (list of <a class="reference internal" href="#orangecanvas.registry.InputSignal" title="orangecanvas.registry.InputSignal"><code class="xref py py-class docutils literal"><span class="pre">InputSignal</span></code></a>, optional) – A list of input channels provided by the widget.</li>
+<li><strong>outputs</strong> (list of <a class="reference internal" href="#orangecanvas.registry.OutputSignal" title="orangecanvas.registry.OutputSignal"><code class="xref py py-class docutils literal"><span class="pre">OutputSignal</span></code></a>, optional) – A list of output channels provided by the widget.</li>
+<li><strong>help</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – URL or an Resource template of a detailed widget help page.</li>
+<li><strong>help_ref</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – A text reference id that can be used to identify the help
+page, for instance an intersphinx reference.</li>
+<li><strong>author</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – Author name.</li>
+<li><strong>author_email</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – Author email address.</li>
+<li><strong>maintainer</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – Maintainer name</li>
+<li><strong>maintainer_email</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – Maintainer email address.</li>
+<li><strong>keywords</strong> (<em>list-of-str</em><em>, </em><em>optional</em>) – A list of keyword phrases.</li>
+<li><strong>priority</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a><em>, </em><em>optional</em>) – Widget priority (the order of the widgets in a GUI presentation).</li>
+<li><strong>icon</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – A filename of the widget icon (in relation to the package).</li>
+<li><strong>background</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – Widget’s background color (in the canvas GUI).</li>
+<li><strong>replaces</strong> (<em>list-of-str</em><em>, </em><em>optional</em>) – A list of ids this widget replaces (optional).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="orangecanvas.registry.WidgetDescription.from_module">
+<em class="property">classmethod </em><code class="descname">from_module</code><span class="sig-paren">(</span><em>module</em><span class="sig-paren">)</span></dt>
+<dd><p>Get the widget description from a module.</p>
+<p>The module is inspected for global variables (upper case versions of
+<cite>WidgetDescription.__init__</cite> parameters).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>module</strong> (<cite>module</cite> or str) – A module to inspect for widget description. Can be passed
+as a string (qualified import name).</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="categorydescription">
+<h2>CategoryDescription</h2>
+<dl class="class">
+<dt id="orangecanvas.registry.CategoryDescription">
+<em class="property">class </em><code class="descclassname">orangecanvas.registry.</code><code class="descname">CategoryDescription</code><span class="sig-paren">(</span><em>name=None</em>, <em>version=None</em>, <em>description=None</em>, <em>long_description=None</em>, <em>qualified_name=None</em>, <em>package=None</em>, <em>project_name=None</em>, <em>author=None</em>, <em>author_email=None</em>, <em>maintainer=None</em>, <em>maintainer_email=None</em>, <em>url=None</em>, <em>help=None</em>, <em>keywords=None</em>, <em>widgets=None</em>, <em>priority=9223372036854775807</em>, <em>icon=None</em>, <em>background=None</em>, <em>hidden=False</em><span class="sig-paren">)</span></dt>
+<dd><p>Description of a widget category.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – A human readable name.</li>
+<li><strong>version</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – Version string.</li>
+<li><strong>description</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – A short description of the category, suitable for a tool tip.</li>
+<li><strong>long_description</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – A longer description.</li>
+<li><strong>qualified_name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>,</em>) – Qualified name</li>
+<li><strong>project_name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – A project name providing the category.</li>
+<li><strong>priority</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – Priority (order in the GUI).</li>
+<li><strong>icon</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – An icon filename (a resource name retrievable using <cite>pkg_resources</cite>
+relative to <cite>qualified_name</cite>).</li>
+<li><strong>background</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – An background color for widgets in this category.</li>
+<li><strong>hidden</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)"><em>bool</em></a>) – Is this category (by default) hidden in the canvas gui.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="orangecanvas.registry.CategoryDescription.from_package">
+<em class="property">classmethod </em><code class="descname">from_package</code><span class="sig-paren">(</span><em>package</em><span class="sig-paren">)</span></dt>
+<dd><p>Get the CategoryDescription from a package.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>package</strong> (<cite>module</cite> or <cite>str</cite>) – A package containing the category.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="inputsignal">
+<h2>InputSignal</h2>
+<dl class="class">
+<dt id="orangecanvas.registry.InputSignal">
+<em class="property">class </em><code class="descclassname">orangecanvas.registry.</code><code class="descname">InputSignal</code><span class="sig-paren">(</span><em>name</em>, <em>type</em>, <em>handler</em>, <em>flags=18</em>, <em>id=None</em>, <em>doc=None</em>, <em>replaces=[]</em><span class="sig-paren">)</span></dt>
+<dd><p>Description of an input channel.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Name of the channel.</li>
+<li><strong>type</strong> (str or <cite>type</cite>) – Type of the accepted signals.</li>
+<li><strong>handler</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Name of the handler method for the signal.</li>
+<li><strong>flags</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a><em>, </em><em>optional</em>) – Channel flags.</li>
+<li><strong>id</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – A unique id of the input signal.</li>
+<li><strong>doc</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – A docstring documenting the channel.</li>
+<li><strong>replaces</strong> (<em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>]</em>) – A list of names this input replaces.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="outputsignal">
+<h2>OutputSignal</h2>
+<dl class="class">
+<dt id="orangecanvas.registry.OutputSignal">
+<em class="property">class </em><code class="descclassname">orangecanvas.registry.</code><code class="descname">OutputSignal</code><span class="sig-paren">(</span><em>name</em>, <em>type</em>, <em>flags=18</em>, <em>id=None</em>, <em>doc=None</em>, <em>replaces=[]</em><span class="sig-paren">)</span></dt>
+<dd><p>Description of an output channel.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Name of the channel.</li>
+<li><strong>type</strong> (str or <cite>type</cite>) – Type of the output signals.</li>
+<li><strong>flags</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a><em>, </em><em>optional</em>) – Channel flags.</li>
+<li><strong>id</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – A unique id of the output signal.</li>
+<li><strong>doc</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – A docstring documenting the channel.</li>
+<li><strong>replaces</strong> (<em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>]</em>) – A list of names this output replaces.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="widgetdiscovery">
+<h2>WidgetDiscovery</h2>
+<dl class="class">
+<dt id="orangecanvas.registry.WidgetDiscovery">
+<em class="property">class </em><code class="descclassname">orangecanvas.registry.</code><code class="descname">WidgetDiscovery</code><span class="sig-paren">(</span><em>registry=None</em>, <em>cached_descriptions=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Base widget discovery runner.</p>
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>entry_points_iter</em><span class="sig-paren">)</span></dt>
+<dd><p>Run the widget discovery process from an entry point iterator
+(yielding <code class="xref py py-class docutils literal"><span class="pre">pkg_resources.EntryPoint</span></code> instances).</p>
+<p>As a convenience, if <cite>entry_points_iter</cite> is a string it will be used
+to retrieve the iterator using <cite>pkg_resources.iter_entry_points</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.process_widget_module">
+<code class="descname">process_widget_module</code><span class="sig-paren">(</span><em>module</em>, <em>name=None</em>, <em>category_name=None</em>, <em>distribution=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Process a widget module.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.process_category_package">
+<code class="descname">process_category_package</code><span class="sig-paren">(</span><em>category</em>, <em>name=None</em>, <em>distribution=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Process a category package.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.process_loader">
+<code class="descname">process_loader</code><span class="sig-paren">(</span><em>callable</em><span class="sig-paren">)</span></dt>
+<dd><p>Process a callable loader function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.process_iter">
+<code class="descname">process_iter</code><span class="sig-paren">(</span><em>iter</em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.handle_widget">
+<code class="descname">handle_widget</code><span class="sig-paren">(</span><em>desc</em><span class="sig-paren">)</span></dt>
+<dd><p>Handle a found widget description.</p>
+<p>Base implementation adds it to the registry supplied in the
+constructor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.handle_category">
+<code class="descname">handle_category</code><span class="sig-paren">(</span><em>desc</em><span class="sig-paren">)</span></dt>
+<dd><p>Handle a found category description.</p>
+<p>Base implementation adds it to the registry supplied in the
+constructor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.iter_widget_descriptions">
+<code class="descname">iter_widget_descriptions</code><span class="sig-paren">(</span><em>package</em>, <em>category_name=None</em>, <em>distribution=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Return an iterator over widget descriptions accessible from
+<cite>package</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.widget_description">
+<code class="descname">widget_description</code><span class="sig-paren">(</span><em>module</em>, <em>widget_name=None</em>, <em>category_name=None</em>, <em>distribution=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Return a widget description from a module.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.cache_insert">
+<code class="descname">cache_insert</code><span class="sig-paren">(</span><em>module</em>, <em>mtime</em>, <em>description</em>, <em>distribution=None</em>, <em>error=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Insert the description into the cache.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.cache_get">
+<code class="descname">cache_get</code><span class="sig-paren">(</span><em>mod_path</em>, <em>distribution=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Get the cache entry for <cite>mod_path</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.cache_has_valid_entry">
+<code class="descname">cache_has_valid_entry</code><span class="sig-paren">(</span><em>mod_path</em>, <em>distribution=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Does the cache have a valid entry for <cite>mod_path</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.cache_can_ignore">
+<code class="descname">cache_can_ignore</code><span class="sig-paren">(</span><em>mod_path</em>, <em>distribution=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Can the <cite>mod_path</cite> be ignored (i.e. it was determined that it
+could not contain a valid widget description, for instance the
+module does not have a valid description and was not changed from
+the last discovery run).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.registry.WidgetDiscovery.cache_log_error">
+<code class="descname">cache_log_error</code><span class="sig-paren">(</span><em>mod_path</em>, <em>error</em>, <em>distribution=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Cache that the <cite>error</cite> occurred while processing <cite>mod_path</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="scheme.readwrite.html">Scheme Serialization (<code class="docutils literal"><span class="pre">readwrite</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="canvas.html">Canvas (<code class="docutils literal"><span class="pre">canvas</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bioinformatics Laboratory, FRI UL.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

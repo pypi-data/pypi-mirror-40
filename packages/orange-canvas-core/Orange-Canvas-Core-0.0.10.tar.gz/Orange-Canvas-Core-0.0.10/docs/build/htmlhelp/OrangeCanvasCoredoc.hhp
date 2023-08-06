@@ -1,0 +1,68 @@
+[OPTIONS]
+Binary TOC=No
+Binary Index=No
+Compiled file=OrangeCanvasCoredoc.chm
+Contents file=OrangeCanvasCoredoc.hhc
+Default Window=OrangeCanvasCoredoc
+Default topic=index.html
+Display compile progress=No
+Full text search stop list file=OrangeCanvasCoredoc.stp
+Full-text search=Yes
+Index file=OrangeCanvasCoredoc.hhk
+Language=0x409
+Title=Orange Canvas Core 0.0.8 documentation
+
+[WINDOWS]
+OrangeCanvasCoredoc="Orange Canvas Core 0.0.8 documentation","OrangeCanvasCoredoc.hhc","OrangeCanvasCoredoc.hhk","index.html","index.html",,,,,0x63520,220,0x10384e,[0,0,1024,768],,,,,,,0
+
+[FILES]
+genindex.html
+index.html
+py-modindex.html
+_static\ajax-loader.gif
+_static\alert_info_32.png
+_static\alert_warning_32.png
+_static\basic.css
+_static\bg-page.png
+_static\bullet_orange.png
+_static\comment-bright.png
+_static\comment-close.png
+_static\comment.png
+_static\down-pressed.png
+_static\down.png
+_static\file.png
+_static\haiku.css
+_static\minus.png
+_static\plus.png
+_static\pygments.css
+_static\up-pressed.png
+_static\up.png
+orangecanvas\canvas.html
+orangecanvas\canvas.items.annotationitem.html
+orangecanvas\canvas.items.linkitem.html
+orangecanvas\canvas.items.nodeitem.html
+orangecanvas\canvas.scene.html
+orangecanvas\document.html
+orangecanvas\document.quickmenu.html
+orangecanvas\document.schemeedit.html
+orangecanvas\gui.dock.html
+orangecanvas\gui.dropshadow.html
+orangecanvas\gui.framelesswindow.html
+orangecanvas\gui.html
+orangecanvas\gui.lineedit.html
+orangecanvas\gui.quickhelp.html
+orangecanvas\gui.splashscreen.html
+orangecanvas\gui.stackedwidget.html
+orangecanvas\gui.toolbar.html
+orangecanvas\gui.toolbox.html
+orangecanvas\gui.toolgrid.html
+orangecanvas\gui.tooltree.html
+orangecanvas\index.html
+orangecanvas\overview.html
+orangecanvas\registry.html
+orangecanvas\scheme.annotation.html
+orangecanvas\scheme.html
+orangecanvas\scheme.link.html
+orangecanvas\scheme.node.html
+orangecanvas\scheme.readwrite.html
+orangecanvas\scheme.scheme.html

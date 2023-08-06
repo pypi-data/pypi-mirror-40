@@ -1,0 +1,205 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tool Grid Widget (toolgrid) &#8212; Orange Canvas Core 0.0.9 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tool Tree Widget (tooltree)" href="gui.tooltree.html" />
+    <link rel="prev" title="Tool Box Widget (toolbox)" href="gui.toolbox.html" /> 
+  </head>
+  <body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>Orange Canvas Core 0.0.9 documentation</span></a></h1>
+        <h2 class="heading"><span>Tool Grid Widget (toolgrid)</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.toolbox.html">Tool Box Widget (<code class="docutils literal"><span class="pre">toolbox</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gui.tooltree.html">Tool Tree Widget (<code class="docutils literal"><span class="pre">tooltree</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="module-orangecanvas.gui.toolgrid">
+<span id="tool-grid-widget-toolgrid"></span><h1>Tool Grid Widget (<code class="docutils literal"><span class="pre">toolgrid</span></code>)<a class="headerlink" href="#module-orangecanvas.gui.toolgrid" title="Permalink to this headline">¶</a></h1>
+<p>A widget containing a grid of clickable actions/buttons.</p>
+<dl class="class">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid">
+<em class="property">class </em><code class="descclassname">orangecanvas.gui.toolgrid.</code><code class="descname">ToolGrid</code><span class="sig-paren">(</span><em>parent=None</em>, <em>columns=4</em>, <em>buttonSize=None</em>, <em>iconSize=None</em>, <em>toolButtonStyle=3</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtWidgets.QFrame</span></code></p>
+<p>A widget containing a grid of actions/buttons.</p>
+<p>Actions can be added using standard <code class="xref py py-func docutils literal"><span class="pre">QWidget.addAction(QAction)()</span></code>
+and <code class="xref py py-func docutils literal"><span class="pre">QWidget.insertAction(int,</span> <span class="pre">QAction)()</span></code> methods.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>parent</strong> (<code class="xref py py-class docutils literal"><span class="pre">QWidget</span></code>) – Parent widget.</li>
+<li><strong>columns</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – Number of columns in the grid layout.</li>
+<li><strong>buttonSize</strong> (<code class="xref py py-class docutils literal"><span class="pre">QSize</span></code>, optional) – Size of tool buttons in the grid.</li>
+<li><strong>iconSize</strong> (<code class="xref py py-class docutils literal"><span class="pre">QSize</span></code>, optional) – Size of icons in the buttons.</li>
+<li><strong>toolButtonStyle</strong> (<code class="xref py py-class docutils literal"><span class="pre">Qt.ToolButtonStyle</span></code>) – Tool button style.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.actionTriggered">
+<code class="descname">actionTriggered</code><span class="sig-paren">(</span><em>QAction</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.actionTriggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signal emitted when an action is triggered.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.actionHovered">
+<code class="descname">actionHovered</code><span class="sig-paren">(</span><em>QAction</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.actionHovered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signal emitted when an action is hovered.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.setButtonSize">
+<code class="descname">setButtonSize</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.setButtonSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the button size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.buttonSize">
+<code class="descname">buttonSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.buttonSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the button size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.setIconSize">
+<code class="descname">setIconSize</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.setIconSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the button icon size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.iconSize">
+<code class="descname">iconSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.iconSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the icon size</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.setToolButtonStyle">
+<code class="descname">setToolButtonStyle</code><span class="sig-paren">(</span><em>style</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.setToolButtonStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the tool button style.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.toolButtonStyle">
+<code class="descname">toolButtonStyle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.toolButtonStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the tool button style.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.setColumnCount">
+<code class="descname">setColumnCount</code><span class="sig-paren">(</span><em>columns</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.setColumnCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the number of button/action columns.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.columns">
+<code class="descname">columns</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.columns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of columns in the grid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear all actions/buttons.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.insertAction">
+<code class="descname">insertAction</code><span class="sig-paren">(</span><em>before</em>, <em>action</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.insertAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert a new action at the position currently occupied
+by <cite>before</cite> (can also be an index).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>before</strong> (<code class="xref py py-class docutils literal"><span class="pre">QAction</span></code> or int) – Position where the <cite>action</cite> should be inserted.</li>
+<li><strong>action</strong> (<code class="xref py py-class docutils literal"><span class="pre">QAction</span></code>) – Action to insert</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.setActions">
+<code class="descname">setActions</code><span class="sig-paren">(</span><em>actions</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.setActions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the grid and add <cite>actions</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.buttonForAction">
+<code class="descname">buttonForAction</code><span class="sig-paren">(</span><em>action</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.buttonForAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the <code class="xref py py-class docutils literal"><span class="pre">QToolButton</span></code> instance button for <cite>action</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.createButtonForAction">
+<code class="descname">createButtonForAction</code><span class="sig-paren">(</span><em>action</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.createButtonForAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create and return a <code class="xref py py-class docutils literal"><span class="pre">QToolButton</span></code> for action.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolgrid.ToolGrid.count">
+<code class="descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolgrid.ToolGrid.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of buttons/actions in the grid.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.toolbox.html">Tool Box Widget (<code class="docutils literal"><span class="pre">toolbox</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gui.tooltree.html">Tool Tree Widget (<code class="docutils literal"><span class="pre">tooltree</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bioinformatics Laboratory, FRI UL.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

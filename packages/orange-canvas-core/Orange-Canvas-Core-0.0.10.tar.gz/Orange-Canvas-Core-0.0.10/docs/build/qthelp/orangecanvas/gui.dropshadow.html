@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Drop Shadow Frame (dropshadow)</title>
+    <link rel="stylesheet" href="../_static/nonav.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> 
+  </head>
+  <body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-orangecanvas.gui.dropshadow">
+<span id="drop-shadow-frame-dropshadow"></span><h1>Drop Shadow Frame (<code class="docutils literal"><span class="pre">dropshadow</span></code>)</h1>
+<div class="section" id="drop-shadow-frame">
+<h2>Drop Shadow Frame</h2>
+<p>A widget providing a drop shadow (gaussian blur effect) around another
+widget.</p>
+</div>
+<dl class="class">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame">
+<em class="property">class </em><code class="descclassname">orangecanvas.gui.dropshadow.</code><code class="descname">DropShadowFrame</code><span class="sig-paren">(</span><em>parent=None</em>, <em>color=None</em>, <em>radius=5</em>, <em>**kwargs</em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtWidgets.QWidget</span></code></p>
+<p>A widget drawing a drop shadow effect around the geometry of
+another widget (works similar to <code class="xref py py-class docutils literal"><span class="pre">QFocusFrame</span></code>).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>parent</strong> (<code class="xref py py-class docutils literal"><span class="pre">QObject</span></code>) – Parent object.</li>
+<li><strong>color</strong> (<code class="xref py py-class docutils literal"><span class="pre">QColor</span></code>) – The color of the drop shadow.</li>
+<li><strong>radius</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – Shadow radius.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.setColor">
+<code class="descname">setColor</code><span class="sig-paren">(</span><em>color</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the color of the shadow.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.color">
+<code class="descname">color</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the color of the drop shadow.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.color_">
+<code class="descname">color_</code></dt>
+<dd><p>Drop shadow color</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.setRadius">
+<code class="descname">setRadius</code><span class="sig-paren">(</span><em>radius</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the drop shadow’s blur radius.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.radius">
+<code class="descname">radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the shadow blur radius.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.radius_">
+<code class="descname">radius_</code></dt>
+<dd><p>Drop shadow blur radius.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.setWidget">
+<code class="descname">setWidget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the widget around which to show the shadow.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.widget">
+<code class="descname">widget</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the widget that was set by <cite>setWidget</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

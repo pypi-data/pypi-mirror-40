@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+        <param name="Window Styles" value="0x801227">
+        <param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Orange Canvas Core 0.0.8 documentation">
+    <param name="Local" value="index.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Python Module Index">
+    <param name="Local" value="py-modindex.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Overview">
+    <param name="Local" value="orangecanvas/overview.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Workflow Model">
+    <param name="Local" value="orangecanvas/overview.html#workflow-model">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Widget Description">
+    <param name="Local" value="orangecanvas/overview.html#widget-description">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Workflow Execution">
+    <param name="Local" value="orangecanvas/overview.html#workflow-execution">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Workflow View">
+    <param name="Local" value="orangecanvas/overview.html#workflow-view">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Orange Canvas Reference">
+    <param name="Local" value="orangecanvas/index.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="GUI elements (gui)">
+    <param name="Local" value="orangecanvas/gui.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="GUI toolkit">
+    <param name="Local" value="orangecanvas/gui.html#gui-toolkit">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Collapsible Dock Widget (dock)">
+    <param name="Local" value="orangecanvas/gui.dock.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Collapsible Dock Widget">
+    <param name="Local" value="orangecanvas/gui.dock.html#collapsible-dock-widget">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Drop Shadow Frame (dropshadow)">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Drop Shadow Frame">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html#drop-shadow-frame">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Frameless Window Widget (framelesswindow)">
+    <param name="Local" value="orangecanvas/gui.framelesswindow.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Line Edit Widget (lineedit)">
+    <param name="Local" value="orangecanvas/gui.lineedit.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Quick Help (quickhelp)">
+    <param name="Local" value="orangecanvas/gui.quickhelp.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Splash Screen (splashscreen)">
+    <param name="Local" value="orangecanvas/gui.splashscreen.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Stacked Widget (stackedwidget)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="AnimatedStackedWidget">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#animatedstackedwidget">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Tool Bar (toolbar)">
+    <param name="Local" value="orangecanvas/gui.toolbar.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Tool Box Widget (toolbox)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Tool Box Widget">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#tool-box-widget">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Tool Grid Widget (toolgrid)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Tool Tree Widget (tooltree)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Tool Tree">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#tool-tree">
+</OBJECT>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme (scheme)">
+    <param name="Local" value="orangecanvas/scheme.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme">
+    <param name="Local" value="orangecanvas/scheme.html#scheme">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme (scheme)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme Workflow">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#scheme-workflow">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme Node (node)">
+    <param name="Local" value="orangecanvas/scheme.node.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme Node">
+    <param name="Local" value="orangecanvas/scheme.node.html#scheme-node">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme Link (link)">
+    <param name="Local" value="orangecanvas/scheme.link.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme Link">
+    <param name="Local" value="orangecanvas/scheme.link.html#scheme-link">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme Annotations (annotations)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme Annotations">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#scheme-annotations">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme Serialization (readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Registry (registry)">
+    <param name="Local" value="orangecanvas/registry.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Registry">
+    <param name="Local" value="orangecanvas/registry.html#registry">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="WidgetRegistry">
+    <param name="Local" value="orangecanvas/registry.html#widgetregistry">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="WidgetDescription">
+    <param name="Local" value="orangecanvas/registry.html#widgetdescription">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="CategoryDescription">
+    <param name="Local" value="orangecanvas/registry.html#categorydescription">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="InputSignal">
+    <param name="Local" value="orangecanvas/registry.html#inputsignal">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="OutputSignal">
+    <param name="Local" value="orangecanvas/registry.html#outputsignal">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="WidgetDiscovery">
+    <param name="Local" value="orangecanvas/registry.html#widgetdiscovery">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Canvas (canvas)">
+    <param name="Local" value="orangecanvas/canvas.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Canvas">
+    <param name="Local" value="orangecanvas/canvas.html#canvas">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Canvas Scene (scene)">
+    <param name="Local" value="orangecanvas/canvas.scene.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Canvas Graphics Scene">
+    <param name="Local" value="orangecanvas/canvas.scene.html#canvas-graphics-scene">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Node Item (nodeitem)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Node Item">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#node-item">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Link Item (linkitem)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Link Item">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#link-item">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Annotation Items (annotationitem)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Document (document)">
+    <param name="Local" value="orangecanvas/document.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Document">
+    <param name="Local" value="orangecanvas/document.html#document">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme Editor (schemeedit)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Scheme Editor Widget">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#scheme-editor-widget">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Quick Menu (quickmenu)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Quick Menu">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#quick-menu">
+</OBJECT>
+</UL>
+</UL>
+</UL>
+</UL></BODY></HTML>

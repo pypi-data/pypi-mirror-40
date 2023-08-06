@@ -1,0 +1,110 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Quick Help (quickhelp) &#8212; Orange Canvas Core 0.0.9 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Splash Screen (splashscreen)" href="gui.splashscreen.html" />
+    <link rel="prev" title="Line Edit Widget (lineedit)" href="gui.lineedit.html" /> 
+  </head>
+  <body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>Orange Canvas Core 0.0.9 documentation</span></a></h1>
+        <h2 class="heading"><span>Quick Help (quickhelp)</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.lineedit.html">Line Edit Widget (<code class="docutils literal"><span class="pre">lineedit</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gui.splashscreen.html">Splash Screen (<code class="docutils literal"><span class="pre">splashscreen</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="module-orangecanvas.gui.quickhelp">
+<span id="quick-help-quickhelp"></span><h1>Quick Help (<code class="docutils literal"><span class="pre">quickhelp</span></code>)<a class="headerlink" href="#module-orangecanvas.gui.quickhelp" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="orangecanvas.gui.quickhelp.QuickHelp">
+<em class="property">class </em><code class="descclassname">orangecanvas.gui.quickhelp.</code><code class="descname">QuickHelp</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.quickhelp.QuickHelp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtWidgets.QTextBrowser</span></code></p>
+<dl class="attribute">
+<dt id="orangecanvas.gui.quickhelp.QuickHelp.textChanged">
+<code class="descname">textChanged</code><a class="headerlink" href="#orangecanvas.gui.quickhelp.QuickHelp.textChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emitted when the shown text changes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.quickhelp.QuickHelp.showHelp">
+<code class="descname">showHelp</code><span class="sig-paren">(</span><em>text</em>, <em>timeout=0</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.quickhelp.QuickHelp.showHelp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show help for <cite>timeout</cite> milliseconds. if timeout is 0 then
+show the text until it is cleared with clearHelp or showHelp is
+called with an empty string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.quickhelp.QuickHelp.clearHelp">
+<code class="descname">clearHelp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.quickhelp.QuickHelp.clearHelp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear help text previously set with <cite>showHelp</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.quickhelp.QuickHelp.showPermanentHelp">
+<code class="descname">showPermanentHelp</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.quickhelp.QuickHelp.showPermanentHelp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set permanent help text. The text may be temporarily overridden
+by showHelp but will be shown again when that is cleared.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.quickhelp.QuickHelp.currentText">
+<code class="descname">currentText</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.quickhelp.QuickHelp.currentText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current shown text.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.lineedit.html">Line Edit Widget (<code class="docutils literal"><span class="pre">lineedit</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gui.splashscreen.html">Splash Screen (<code class="docutils literal"><span class="pre">splashscreen</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bioinformatics Laboratory, FRI UL.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

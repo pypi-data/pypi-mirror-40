@@ -1,0 +1,2030 @@
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="actionAt() (orangecanvas.gui.lineedit.LineEdit method)">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.actionAt">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="actionHovered (orangecanvas.gui.toolgrid.ToolGrid attribute)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.actionHovered">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="actionTriggered (orangecanvas.gui.toolgrid.ToolGrid attribute)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.actionTriggered">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="activated (orangecanvas.canvas.items.nodeitem.NodeItem attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.activated">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="Active (orangecanvas.scheme.link.SchemeLink.State attribute)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.State.Active">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="add_annotation() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.add_annotation">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.add_annotation">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="add_annotation_item() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.add_annotation_item">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="add_link() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.add_link">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.add_link">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="add_link_item() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.add_link_item">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="add_node() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.add_node">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.add_node">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="add_node_item() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.add_node_item">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="addAnnotation() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.addAnnotation">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="addItem() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.addItem">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="addLink() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.addLink">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="addNode() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.addNode">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="addPage() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.addPage">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="addWidget() (orangecanvas.gui.stackedwidget.AnimatedStackedWidget method)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.addWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="adjustGeometry() (orangecanvas.canvas.items.annotationitem.ArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.ArrowAnnotation.adjustGeometry">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="adjustSize() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.adjustSize">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="alignToGrid() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.alignToGrid">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="anchor_layout() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.anchor_layout">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="anchorDirection() (orangecanvas.canvas.items.nodeitem.AnchorPoint method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.AnchorPoint.anchorDirection">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="anchorDirectionChanged (orangecanvas.canvas.items.nodeitem.AnchorPoint attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.AnchorPoint.anchorDirectionChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="anchorGeometryChanged (orangecanvas.canvas.items.nodeitem.NodeItem attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.anchorGeometryChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="AnchorPoint (class in orangecanvas.canvas.items.nodeitem)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.AnchorPoint">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="anchorRotation() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.anchorRotation">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="anchorScenePos() (orangecanvas.canvas.items.nodeitem.AnchorPoint method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.AnchorPoint.anchorScenePos">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="AnimatedStackedWidget (class in orangecanvas.gui.stackedwidget)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="animationEnabled() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.animationEnabled">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.dock.CollapsibleDockWidget method)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.animationEnabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.stackedwidget.AnimatedStackedWidget method)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.animationEnabled">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="Annotation (class in orangecanvas.canvas.items.annotationitem)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.Annotation">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="annotation_added (orangecanvas.canvas.scene.CanvasScene attribute)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.annotation_added">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.annotation_added">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="annotation_items() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.annotation_items">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="annotation_removed (orangecanvas.canvas.scene.CanvasScene attribute)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.annotation_removed">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.annotation_removed">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="annotations (orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Name" value="[0] orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.annotations">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.annotations">
+    <param name="Name" value="[1] orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.annotations">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.annotations">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="ArrowAnnotation (class in orangecanvas.canvas.items.annotationitem)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.ArrowAnnotation">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="autoAdjustGeometry() (orangecanvas.canvas.items.annotationitem.ArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.ArrowAnnotation.autoAdjustGeometry">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="BaseSchemeAnnotation (class in orangecanvas.scheme.annotations)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.BaseSchemeAnnotation">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="button() (orangecanvas.gui.lineedit.LineEdit method)">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.button">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="buttonForAction() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.buttonForAction">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="buttonSize() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.buttonSize">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="cache_can_ignore() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.cache_can_ignore">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="cache_get() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.cache_get">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="cache_has_valid_entry() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.cache_has_valid_entry">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="cache_insert() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.cache_insert">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="cache_log_error() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.cache_log_error">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="can_connect() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.can_connect">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="CanvasScene (class in orangecanvas.canvas.scene)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="categories() (orangecanvas.registry.WidgetRegistry method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetRegistry.categories">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="category() (orangecanvas.registry.WidgetRegistry method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetRegistry.category">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="CategoryDescription (class in orangecanvas.registry)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.CategoryDescription">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="channel_names_visible() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.channel_names_visible">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="channelNamesVisible() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.channelNamesVisible">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="check_connect() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.check_connect">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="children() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.children">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="clear() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.clear">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.clear">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="clear_scene() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.clear_scene">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="clearHelp() (orangecanvas.gui.quickhelp.QuickHelp method)">
+    <param name="Local" value="orangecanvas/gui.quickhelp.html#orangecanvas.gui.quickhelp.QuickHelp.clearHelp">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="collapse() (orangecanvas.gui.dock.CollapsibleDockWidget method)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.collapse">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="collapsedWidget() (orangecanvas.gui.dock.CollapsibleDockWidget method)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.collapsedWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="CollapsibleDockWidget (class in orangecanvas.gui.dock)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="color (orangecanvas.scheme.annotations.SchemeArrowAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeArrowAnnotation.color">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="color() (orangecanvas.canvas.items.annotationitem.ArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.ArrowAnnotation.color">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.dropshadow.DropShadowFrame method)">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html#orangecanvas.gui.dropshadow.DropShadowFrame.color">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="color_ (orangecanvas.gui.dropshadow.DropShadowFrame attribute)">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html#orangecanvas.gui.dropshadow.DropShadowFrame.color_">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="columns() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.columns">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="commit_scheme_link() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.commit_scheme_link">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="commit_scheme_node() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.commit_scheme_node">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="compatible_channels() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.compatible_channels">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="content (orangecanvas.scheme.annotations.SchemeTextAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.content">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="content_type (orangecanvas.scheme.annotations.SchemeTextAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.content_type">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="contentChanged (orangecanvas.canvas.items.annotationitem.TextAnnotation attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.contentChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="ContentRenderer (orangecanvas.canvas.items.annotationitem.TextAnnotation attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.ContentRenderer">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="count() (orangecanvas.gui.stackedwidget.AnimatedStackedWidget method)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.count">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.count">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.count">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="createButtonForAction() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.createButtonForAction">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="createNewNode() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.createNewNode">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="createPage() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.createPage">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="creates_cycle() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.creates_cycle">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="createTabButton() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.createTabButton">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="currentChanged (orangecanvas.gui.stackedwidget.AnimatedStackedWidget attribute)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.currentChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="currentIndex() (orangecanvas.gui.stackedwidget.AnimatedStackedWidget method)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.currentIndex">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="currentText() (orangecanvas.gui.quickhelp.QuickHelp method)">
+    <param name="Local" value="orangecanvas/gui.quickhelp.html#orangecanvas.gui.quickhelp.QuickHelp.currentText">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="currentWidget() (orangecanvas.gui.dock.CollapsibleDockWidget method)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.currentWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="description (orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.description">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="description_changed (orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.description_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="document() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.document">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="downstream_nodes() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.downstream_nodes">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="drawContents() (orangecanvas.gui.splashscreen.SplashScreen method)">
+    <param name="Local" value="orangecanvas/gui.splashscreen.html#orangecanvas.gui.splashscreen.SplashScreen.drawContents">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="DropShadowFrame (class in orangecanvas.gui.dropshadow)">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html#orangecanvas.gui.dropshadow.DropShadowFrame">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="dumps() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.dumps">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="DuplicatedLinkError (class in orangecanvas.scheme.scheme)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.DuplicatedLinkError">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="dynamic_enabled (orangecanvas.scheme.link.SchemeLink attribute)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.dynamic_enabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="dynamic_enabled_changed (orangecanvas.scheme.link.SchemeLink attribute)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.dynamic_enabled_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="DynamicResizeToolBar (class in orangecanvas.gui.toolbar)">
+    <param name="Local" value="orangecanvas/gui.toolbar.html#orangecanvas.gui.toolbar.DynamicResizeToolBar">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="editingFinished (orangecanvas.canvas.items.annotationitem.TextAnnotation attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.editingFinished">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="editNodeTitle() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.editNodeTitle">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="Empty (orangecanvas.scheme.link.SchemeLink.State attribute)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.State.Empty">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="enabled (orangecanvas.scheme.link.SchemeLink attribute)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.enabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="enabled_changed (orangecanvas.scheme.link.SchemeLink attribute)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.enabled_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="end_pos (orangecanvas.scheme.annotations.SchemeArrowAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeArrowAnnotation.end_pos">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="endEdit() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.endEdit">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="ensureCurrent() (orangecanvas.gui.tooltree.ToolTree method)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#orangecanvas.gui.tooltree.ToolTree.ensureCurrent">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="ensureVisible() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.ensureVisible">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="ensureWidgetVisible() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.ensureWidgetVisible">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="enumerateTitle() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.enumerateTitle">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="exclusive() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.exclusive">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="exclusive_ (orangecanvas.gui.toolbox.ToolBox attribute)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.exclusive_">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="exec_() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.exec_">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="expand() (orangecanvas.gui.dock.CollapsibleDockWidget method)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.expand">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="expanded() (orangecanvas.gui.dock.CollapsibleDockWidget method)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.expanded">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="expanded_ (orangecanvas.gui.dock.CollapsibleDockWidget attribute)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.expanded_">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="expandedChanged (orangecanvas.gui.dock.CollapsibleDockWidget attribute)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.expandedChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="expandedWidget() (orangecanvas.gui.dock.CollapsibleDockWidget method)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.expandedWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="flattened() (orangecanvas.gui.tooltree.ToolTree method)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#orangecanvas.gui.tooltree.ToolTree.flattened">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="focusNode() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.focusNode">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="font (orangecanvas.scheme.annotations.SchemeTextAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.font">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="font() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.font">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.font">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="frameBrush() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.frameBrush">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="FramelessWindow (class in orangecanvas.gui.framelesswindow)">
+    <param name="Local" value="orangecanvas/gui.framelesswindow.html#orangecanvas.gui.framelesswindow.FramelessWindow">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="framePen() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.framePen">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="from_module() (orangecanvas.registry.WidgetDescription class method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDescription.from_module">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="from_package() (orangecanvas.registry.CategoryDescription class method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.CategoryDescription.from_package">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="geometry (orangecanvas.scheme.annotations.SchemeArrowAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeArrowAnnotation.geometry">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.annotations.SchemeTextAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.geometry">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="geometry_changed (orangecanvas.scheme.annotations.BaseSchemeAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.BaseSchemeAnnotation.geometry_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="get_runtime_env() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.get_runtime_env">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="grab_svg() (in module orangecanvas.canvas.scene)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.grab_svg">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="handle_category() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.handle_category">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="handle_widget() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.handle_widget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="has_category() (orangecanvas.registry.WidgetRegistry method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetRegistry.has_category">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="has_widget() (orangecanvas.registry.WidgetRegistry method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetRegistry.has_widget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="hideEvent() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.hideEvent">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="hovered (orangecanvas.gui.tooltree.ToolTree attribute)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#orangecanvas.gui.tooltree.ToolTree.hovered">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="hovered() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.hovered">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="icon() (orangecanvas.document.quickmenu.MenuPage method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.MenuPage.icon">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="iconSize() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.iconSize">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="IncompatibleChannelTypeError (class in orangecanvas.scheme.scheme)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.IncompatibleChannelTypeError">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="indent() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.indent">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="indexOf() (orangecanvas.gui.stackedwidget.AnimatedStackedWidget method)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.indexOf">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="input_channel() (orangecanvas.scheme.node.SchemeNode method)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.input_channel">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="input_channels() (orangecanvas.scheme.node.SchemeNode method)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.input_channels">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="input_links() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.input_links">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="inputAnchors() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.inputAnchors">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="InputSignal (class in orangecanvas.registry)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.InputSignal">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="insertAction() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.insertAction">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="insertItem() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.insertItem">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="insertWidget() (orangecanvas.gui.stackedwidget.AnimatedStackedWidget method)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.insertWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="is_ancestor() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.is_ancestor">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="is_dynamic() (orangecanvas.scheme.link.SchemeLink method)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.is_dynamic">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="isDynamic() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.isDynamic">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="isDynamicEnabled() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.isDynamicEnabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="isModified() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.isModified">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="isModifiedStrict() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.isModifiedStrict">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="item_at() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.item_at">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="item_for_link() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.item_for_link">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="item_for_node() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.item_for_node">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="iter_widget_descriptions() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.iter_widget_descriptions">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="LeftPosition (orangecanvas.gui.lineedit.LineEdit attribute)">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.LeftPosition">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="leftTriggered (orangecanvas.gui.lineedit.LineEdit attribute)">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.leftTriggered">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="line() (orangecanvas.canvas.items.annotationitem.ArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.ArrowAnnotation.line">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="LineEdit (class in orangecanvas.gui.lineedit)">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="lineWidth() (orangecanvas.canvas.items.annotationitem.ArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.ArrowAnnotation.lineWidth">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="link_added (orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.link_added">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="link_for_item() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.link_for_item">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="link_item_added (orangecanvas.canvas.scene.CanvasScene attribute)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.link_item_added">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="link_item_hovered (orangecanvas.canvas.scene.CanvasScene attribute)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.link_item_hovered">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="link_item_removed (orangecanvas.canvas.scene.CanvasScene attribute)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.link_item_removed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="link_items() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.link_items">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="link_removed (orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.link_removed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="LinkItem (class in orangecanvas.canvas.items.linkitem)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="LinkItem.State (class in orangecanvas.canvas.items.linkitem)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.State">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="links (orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Name" value="[0] orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.links">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.links">
+    <param name="Name" value="[1] orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.links">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.links">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="literal_dumps() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.literal_dumps">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="load_from() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.load_from">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="menuBarActions() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.menuBarActions">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="MenuPage (class in orangecanvas.document.quickmenu)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.MenuPage">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="modificationChanged() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.modificationChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="modified (orangecanvas.document.schemeedit.SchemeEditWidget attribute)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.modified">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="neighbor_nodes() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.neighbor_nodes">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="new_link() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.new_link">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="new_link_item() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.new_link_item">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="new_node() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.new_node">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="new_node_item() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.new_node_item">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="newInputAnchor() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.newInputAnchor">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="newNodeHelper() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.newNodeHelper">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="newOutputAnchor() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.newOutputAnchor">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="nextPosition() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.nextPosition">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_added (orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.node_added">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_for_item() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.node_for_item">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_input_links() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.node_input_links">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_item_activated (orangecanvas.canvas.scene.CanvasScene attribute)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.node_item_activated">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_item_added (orangecanvas.canvas.scene.CanvasScene attribute)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.node_item_added">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_item_double_clicked (orangecanvas.canvas.scene.CanvasScene attribute)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.node_item_double_clicked">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_item_hovered (orangecanvas.canvas.scene.CanvasScene attribute)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.node_item_hovered">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_item_position_changed (orangecanvas.canvas.scene.CanvasScene attribute)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.node_item_position_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_item_removed (orangecanvas.canvas.scene.CanvasScene attribute)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.node_item_removed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_items() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.node_items">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_links() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.node_links">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_output_links() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.node_output_links">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="node_removed (orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.node_removed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="nodeAnimationEnabled() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.nodeAnimationEnabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="NodeItem (class in orangecanvas.canvas.items.nodeitem)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="nodes (orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Name" value="[0] orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.nodes">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.nodes">
+    <param name="Name" value="[1] orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.nodes">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.nodes">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="NoState (orangecanvas.scheme.link.SchemeLink.State attribute)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.State.NoState">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="openSelected() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.openSelected">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.canvas (module)">
+    <param name="Local" value="orangecanvas/canvas.html#module-orangecanvas.canvas">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.canvas.items.annotationitem (module)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#module-orangecanvas.canvas.items.annotationitem">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.canvas.items.linkitem (module)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#module-orangecanvas.canvas.items.linkitem">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.canvas.items.nodeitem (module)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#module-orangecanvas.canvas.items.nodeitem">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.canvas.scene (module)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#module-orangecanvas.canvas.scene">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.document (module)">
+    <param name="Local" value="orangecanvas/document.html#module-orangecanvas.document">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.document.quickmenu (module)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#module-orangecanvas.document.quickmenu">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.document.schemeedit (module)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#module-orangecanvas.document.schemeedit">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui (module)">
+    <param name="Local" value="orangecanvas/gui.html#module-orangecanvas.gui">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui.dock (module)">
+    <param name="Local" value="orangecanvas/gui.dock.html#module-orangecanvas.gui.dock">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui.dropshadow (module)">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html#module-orangecanvas.gui.dropshadow">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui.framelesswindow (module)">
+    <param name="Local" value="orangecanvas/gui.framelesswindow.html#module-orangecanvas.gui.framelesswindow">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui.lineedit (module)">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#module-orangecanvas.gui.lineedit">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui.quickhelp (module)">
+    <param name="Local" value="orangecanvas/gui.quickhelp.html#module-orangecanvas.gui.quickhelp">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui.splashscreen (module)">
+    <param name="Local" value="orangecanvas/gui.splashscreen.html#module-orangecanvas.gui.splashscreen">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui.stackedwidget (module)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#module-orangecanvas.gui.stackedwidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui.toolbar (module)">
+    <param name="Local" value="orangecanvas/gui.toolbar.html#module-orangecanvas.gui.toolbar">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui.toolbox (module)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#module-orangecanvas.gui.toolbox">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui.toolgrid (module)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#module-orangecanvas.gui.toolgrid">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.gui.tooltree (module)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#module-orangecanvas.gui.tooltree">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.registry (module)">
+    <param name="Local" value="orangecanvas/registry.html#module-orangecanvas.registry">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.scheme (module)">
+    <param name="Local" value="orangecanvas/scheme.html#module-orangecanvas.scheme">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.scheme.annotations (module)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#module-orangecanvas.scheme.annotations">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.scheme.link (module)">
+    <param name="Local" value="orangecanvas/scheme.link.html#module-orangecanvas.scheme.link">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.scheme.node (module)">
+    <param name="Local" value="orangecanvas/scheme.node.html#module-orangecanvas.scheme.node">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.scheme.readwrite (module)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#module-orangecanvas.scheme.readwrite">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="orangecanvas.scheme.scheme (module)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#module-orangecanvas.scheme.scheme">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="output_channel() (orangecanvas.scheme.node.SchemeNode method)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.output_channel">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="output_channels() (orangecanvas.scheme.node.SchemeNode method)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.output_channels">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="output_links() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.output_links">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="outputAnchors() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.outputAnchors">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="OutputSignal (class in orangecanvas.registry)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.OutputSignal">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="parents() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.parents">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="parse_scheme() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.parse_scheme">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="parse_scheme_v_1_0() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.parse_scheme_v_1_0">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="parse_scheme_v_2_0() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.parse_scheme_v_2_0">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="path() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.path">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="pathChanged() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.pathChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="Pending (orangecanvas.scheme.link.SchemeLink.State attribute)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.State.Pending">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="popup() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.popup">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="position (orangecanvas.scheme.node.SchemeNode attribute)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.position">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="position_changed (orangecanvas.scheme.node.SchemeNode attribute)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.position_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="positionChanged (orangecanvas.canvas.items.nodeitem.NodeItem attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.positionChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="process_category_package() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.process_category_package">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="process_iter() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.process_iter">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="process_loader() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.process_loader">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="process_widget_module() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.process_widget_module">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="processing_state (orangecanvas.scheme.node.SchemeNode attribute)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.processing_state">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="processing_state_changed (orangecanvas.scheme.node.SchemeNode attribute)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.processing_state_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="processingState() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.processingState">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="processingState_ (orangecanvas.canvas.items.nodeitem.NodeItem attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.processingState_">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="progress (orangecanvas.scheme.node.SchemeNode attribute)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.progress">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="progress() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.progress">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="progress_ (orangecanvas.canvas.items.nodeitem.NodeItem attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.progress_">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="progress_changed (orangecanvas.scheme.node.SchemeNode attribute)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.progress_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="propose_links() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.propose_links">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="QuickHelp (class in orangecanvas.gui.quickhelp)">
+    <param name="Local" value="orangecanvas/gui.quickhelp.html#orangecanvas.gui.quickhelp.QuickHelp">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="QuickMenu (class in orangecanvas.document.quickmenu)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="quickMenu() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.quickMenu">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="quickMenuTriggers() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.quickMenuTriggers">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="radius() (orangecanvas.gui.dropshadow.DropShadowFrame method)">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html#orangecanvas.gui.dropshadow.DropShadowFrame.radius">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.framelesswindow.FramelessWindow method)">
+    <param name="Local" value="orangecanvas/gui.framelesswindow.html#orangecanvas.gui.framelesswindow.FramelessWindow.radius">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="radius_ (orangecanvas.gui.dropshadow.DropShadowFrame attribute)">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html#orangecanvas.gui.dropshadow.DropShadowFrame.radius_">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.framelesswindow.FramelessWindow attribute)">
+    <param name="Local" value="orangecanvas/gui.framelesswindow.html#orangecanvas.gui.framelesswindow.FramelessWindow.radius_">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="rect (orangecanvas.scheme.annotations.SchemeTextAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.rect">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="redoAvailable (orangecanvas.document.schemeedit.SchemeEditWidget attribute)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.redoAvailable">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="redoAvailable() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.redoAvailable">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="register_category() (orangecanvas.registry.WidgetRegistry method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetRegistry.register_category">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="register_widget() (orangecanvas.registry.WidgetRegistry method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetRegistry.register_widget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="remove_annotation() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.remove_annotation">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.remove_annotation">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="remove_annotation_item() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.remove_annotation_item">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="remove_link() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.remove_link">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.remove_link">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="remove_link_item() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.remove_link_item">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="remove_node() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.remove_node">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.remove_node">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="remove_node_item() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.remove_node_item">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="removeActionAt() (orangecanvas.gui.lineedit.LineEdit method)">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.removeActionAt">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="removeAnnotation() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.removeAnnotation">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="removeInputAnchor() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.removeInputAnchor">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="removeItem() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.removeItem">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="removeLink() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.removeLink">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="removeNode() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.removeNode">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="removeOutputAnchor() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.removeOutputAnchor">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="removeSelected() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.removeSelected">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="removeWidget() (orangecanvas.gui.stackedwidget.AnimatedStackedWidget method)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.removeWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="renameNode() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.renameNode">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="RightPosition (orangecanvas.gui.lineedit.LineEdit attribute)">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.RightPosition">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="rightTriggered (orangecanvas.gui.lineedit.LineEdit attribute)">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.rightTriggered">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="rootIndex() (orangecanvas.document.quickmenu.MenuPage method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.MenuPage.rootIndex">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.tooltree.ToolTree method)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#orangecanvas.gui.tooltree.ToolTree.rootIndex">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="run() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.run">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="runtime_env() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.runtime_env">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="runtime_env_changed (orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.runtime_env_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="runtime_state() (orangecanvas.scheme.link.SchemeLink method)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.runtime_state">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="save_to() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.save_to">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="scene() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.scene">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="scenePositionChanged (orangecanvas.canvas.items.nodeitem.AnchorPoint attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.AnchorPoint.scenePositionChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="Scheme (class in orangecanvas.scheme.scheme)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="scheme() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.scheme">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="scheme_node_from_element() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.scheme_node_from_element">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="scheme_to_etree() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.scheme_to_etree">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="scheme_to_ows_stream() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.scheme_to_ows_stream">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="SchemeArrowAnnotation (class in orangecanvas.scheme.annotations)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeArrowAnnotation">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="SchemeCycleError (class in orangecanvas.scheme.scheme)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.SchemeCycleError">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="SchemeEditWidget (class in orangecanvas.document.schemeedit)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="SchemeLink (class in orangecanvas.scheme.link)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="SchemeLink.State (class in orangecanvas.scheme.link)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.State">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="SchemeNode (class in orangecanvas.scheme.node)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="SchemeTextAnnotation (class in orangecanvas.scheme.annotations)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="selectAll() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.selectAll">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="selected_annotation_items() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.selected_annotation_items">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="selected_node_items() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.selected_node_items">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="selectedAnnotations() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.selectedAnnotations">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="selectedNodes() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.selectedNodes">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="selectionChanged() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.selectionChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_anchor_layout() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.set_anchor_layout">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_channel_names_visible() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.set_channel_names_visible">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_color() (orangecanvas.scheme.annotations.SchemeArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeArrowAnnotation.set_color">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_content() (orangecanvas.scheme.annotations.SchemeTextAnnotation method)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.set_content">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_description() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.set_description">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_dynamic_enabled() (orangecanvas.scheme.link.SchemeLink method)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.set_dynamic_enabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_enabled() (orangecanvas.scheme.link.SchemeLink method)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.set_enabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_font() (orangecanvas.scheme.annotations.SchemeTextAnnotation method)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.set_font">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_geometry() (orangecanvas.scheme.annotations.SchemeArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeArrowAnnotation.set_geometry">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.annotations.SchemeTextAnnotation method)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.set_geometry">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_line() (orangecanvas.scheme.annotations.SchemeArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeArrowAnnotation.set_line">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_node_animation_enabled() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.set_node_animation_enabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_position() (orangecanvas.scheme.node.SchemeNode method)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.set_position">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_processing_state() (orangecanvas.scheme.node.SchemeNode method)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.set_processing_state">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_progress() (orangecanvas.scheme.node.SchemeNode method)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.set_progress">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_rect() (orangecanvas.scheme.annotations.SchemeTextAnnotation method)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.set_rect">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_registry() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.set_registry">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_runtime_env() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.set_runtime_env">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_runtime_state() (orangecanvas.scheme.link.SchemeLink method)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.set_runtime_state">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_scheme() (orangecanvas.canvas.scene.CanvasScene method)">
+    <param name="Local" value="orangecanvas/canvas.scene.html#orangecanvas.canvas.scene.CanvasScene.set_scheme">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_state_message() (orangecanvas.scheme.node.SchemeNode method)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.set_state_message">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_text() (orangecanvas.scheme.annotations.SchemeTextAnnotation method)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.set_text">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_title() (orangecanvas.scheme.node.SchemeNode method)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.set_title">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.set_title">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="set_tool_tip() (orangecanvas.scheme.link.SchemeLink method)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.set_tool_tip">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setAction() (orangecanvas.gui.lineedit.LineEdit method)">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.setAction">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setActionRole() (orangecanvas.gui.tooltree.ToolTree method)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#orangecanvas.gui.tooltree.ToolTree.setActionRole">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setActions() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.setActions">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setAnchorDirection() (orangecanvas.canvas.items.nodeitem.AnchorPoint method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.AnchorPoint.setAnchorDirection">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setAnchorRotation() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setAnchorRotation">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setAnimationEnabled() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setAnimationEnabled">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.dock.CollapsibleDockWidget method)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.setAnimationEnabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.stackedwidget.AnimatedStackedWidget method)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.setAnimationEnabled">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setAutoAdjustGeometry() (orangecanvas.canvas.items.annotationitem.ArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.ArrowAnnotation.setAutoAdjustGeometry">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setButtonSize() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.setButtonSize">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setChannelNamesVisible() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.setChannelNamesVisible">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.setChannelNamesVisible">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setCollapsedWidget() (orangecanvas.gui.dock.CollapsibleDockWidget method)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.setCollapsedWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setColor() (orangecanvas.canvas.items.annotationitem.ArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.ArrowAnnotation.setColor">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setColor">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.dropshadow.DropShadowFrame method)">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html#orangecanvas.gui.dropshadow.DropShadowFrame.setColor">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setColumnCount() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.setColumnCount">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setCurrentIndex() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.setCurrentIndex">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.stackedwidget.AnimatedStackedWidget method)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.setCurrentIndex">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setCurrentPage() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.setCurrentPage">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setCurrentWidget() (orangecanvas.gui.stackedwidget.AnimatedStackedWidget method)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.setCurrentWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setDefaultTextColor() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.setDefaultTextColor">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setDescription() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.setDescription">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setDynamic() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.setDynamic">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setDynamicEnabled() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.setDynamicEnabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setEnabled() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.setEnabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setExclusive() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.setExclusive">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setExpanded() (orangecanvas.gui.dock.CollapsibleDockWidget method)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.setExpanded">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setExpandedWidget() (orangecanvas.gui.dock.CollapsibleDockWidget method)">
+    <param name="Local" value="orangecanvas/gui.dock.html#orangecanvas.gui.dock.CollapsibleDockWidget.setExpandedWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setFilterFunc() (orangecanvas.document.quickmenu.MenuPage method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.MenuPage.setFilterFunc">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.setFilterFunc">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setFlattened() (orangecanvas.gui.tooltree.ToolTree method)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#orangecanvas.gui.tooltree.ToolTree.setFlattened">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setFont() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.setFont">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setFont">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setFrameBrush() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.setFrameBrush">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setFramePen() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.setFramePen">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setHtml() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.setHtml">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setIcon() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setIcon">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.document.quickmenu.MenuPage method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.MenuPage.setIcon">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setIconSize() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.setIconSize">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setLine() (orangecanvas.canvas.items.annotationitem.ArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.ArrowAnnotation.setLine">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setLineWidth() (orangecanvas.canvas.items.annotationitem.ArrowAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.ArrowAnnotation.setLineWidth">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setModel() (orangecanvas.document.quickmenu.MenuPage method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.MenuPage.setModel">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.setModel">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setModified() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.setModified">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setNodeAnimationEnabled() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.setNodeAnimationEnabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setPath() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.setPath">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setPlainText() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.setPlainText">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setProcessingState() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setProcessingState">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setProgress() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setProgress">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setQuickMenuTriggers() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.setQuickMenuTriggers">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setRadius() (orangecanvas.gui.dropshadow.DropShadowFrame method)">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html#orangecanvas.gui.dropshadow.DropShadowFrame.setRadius">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.framelesswindow.FramelessWindow method)">
+    <param name="Local" value="orangecanvas/gui.framelesswindow.html#orangecanvas.gui.framelesswindow.FramelessWindow.setRadius">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setRootIndex() (orangecanvas.document.quickmenu.MenuPage method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.MenuPage.setRootIndex">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.tooltree.ToolTree method)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#orangecanvas.gui.tooltree.ToolTree.setRootIndex">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setRuntimeState() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.setRuntimeState">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setScheme() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.setScheme">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setSinkItem() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.setSinkItem">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setSinkName() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.setSinkName">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setSizeGripEnabled() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.setSizeGripEnabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setSourceItem() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.setSourceItem">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setSourceName() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.setSourceName">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setStateMessage() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setStateMessage">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setStatusMessage() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setStatusMessage">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setTabButtonHeight() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.setTabButtonHeight">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setTabIconSize() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.setTabIconSize">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setTextMargins() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.setTextMargins">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setTextRect() (orangecanvas.gui.splashscreen.SplashScreen method)">
+    <param name="Local" value="orangecanvas/gui.splashscreen.html#orangecanvas.gui.splashscreen.SplashScreen.setTextRect">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setTitle() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setTitle">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.document.quickmenu.MenuPage method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.MenuPage.setTitle">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.setTitle">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setToolButtonStyle() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.setToolButtonStyle">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setWidget() (orangecanvas.gui.dropshadow.DropShadowFrame method)">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html#orangecanvas.gui.dropshadow.DropShadowFrame.setWidget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setWidgetCategory() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setWidgetCategory">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="setWidgetDescription() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.setWidgetDescription">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="showHelp() (orangecanvas.gui.quickhelp.QuickHelp method)">
+    <param name="Local" value="orangecanvas/gui.quickhelp.html#orangecanvas.gui.quickhelp.QuickHelp.showHelp">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="showMessage() (orangecanvas.gui.splashscreen.SplashScreen method)">
+    <param name="Local" value="orangecanvas/gui.splashscreen.html#orangecanvas.gui.splashscreen.SplashScreen.showMessage">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="showPermanentHelp() (orangecanvas.gui.quickhelp.QuickHelp method)">
+    <param name="Local" value="orangecanvas/gui.quickhelp.html#orangecanvas.gui.quickhelp.QuickHelp.showPermanentHelp">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="sink_type() (orangecanvas.scheme.link.SchemeLink method)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.sink_type">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="SinkChannelError (class in orangecanvas.scheme.scheme)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.SinkChannelError">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="sinkName() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.sinkName">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="sizeGripEnabled() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.sizeGripEnabled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="sizeHint() (orangecanvas.document.quickmenu.MenuPage method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.MenuPage.sizeHint">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="sniff_version() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.sniff_version">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="source_type() (orangecanvas.scheme.link.SchemeLink method)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.source_type">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="sourceName() (orangecanvas.canvas.items.linkitem.LinkItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.linkitem.html#orangecanvas.canvas.items.linkitem.LinkItem.sourceName">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="SplashScreen (class in orangecanvas.gui.splashscreen)">
+    <param name="Local" value="orangecanvas/gui.splashscreen.html#orangecanvas.gui.splashscreen.SplashScreen">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="StackLayout (class in orangecanvas.gui.stackedwidget)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.StackLayout">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="start_pos (orangecanvas.scheme.annotations.SchemeArrowAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeArrowAnnotation.start_pos">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="startEdit() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.startEdit">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="state_changed (orangecanvas.scheme.link.SchemeLink attribute)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.state_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="state_message_changed (orangecanvas.scheme.node.SchemeNode attribute)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.state_message_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="state_messages() (orangecanvas.scheme.node.SchemeNode method)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.state_messages">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="status_message_changed (orangecanvas.scheme.node.SchemeNode attribute)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.status_message_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="string_eval() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.string_eval">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="sync_node_properties() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.sync_node_properties">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="tabAction() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.tabAction">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="tabButton() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.tabButton">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="tabButtonHeight() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.tabButtonHeight">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="tabIconSize() (orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.tabIconSize">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="tabToogled (orangecanvas.gui.toolbox.ToolBox attribute)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.tabToogled">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="terminal_eval() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.terminal_eval">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="text (orangecanvas.scheme.annotations.SchemeTextAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.text">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="text_changed (orangecanvas.scheme.annotations.SchemeTextAnnotation attribute)">
+    <param name="Local" value="orangecanvas/scheme.annotation.html#orangecanvas.scheme.annotations.SchemeTextAnnotation.text_changed">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="TextAnnotation (class in orangecanvas.canvas.items.annotationitem)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="textChanged (orangecanvas.gui.quickhelp.QuickHelp attribute)">
+    <param name="Local" value="orangecanvas/gui.quickhelp.html#orangecanvas.gui.quickhelp.QuickHelp.textChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="textEdited (orangecanvas.canvas.items.annotationitem.TextAnnotation attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.textEdited">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="textMargins() (orangecanvas.canvas.items.annotationitem.TextAnnotation method)">
+    <param name="Local" value="orangecanvas/canvas.items.annotationitem.html#orangecanvas.canvas.items.annotationitem.TextAnnotation.textMargins">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="textRect() (orangecanvas.gui.splashscreen.SplashScreen method)">
+    <param name="Local" value="orangecanvas/gui.splashscreen.html#orangecanvas.gui.splashscreen.SplashScreen.textRect">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="title (orangecanvas.scheme.node.SchemeNode attribute)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.title">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.title">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="title() (orangecanvas.canvas.items.nodeitem.NodeItem method)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.title">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.document.quickmenu.MenuPage method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.MenuPage.title">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="title_ (orangecanvas.canvas.items.nodeitem.NodeItem attribute)">
+    <param name="Local" value="orangecanvas/canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem.title_">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="title_changed (orangecanvas.scheme.node.SchemeNode attribute)">
+    <param name="Local" value="orangecanvas/scheme.node.html#orangecanvas.scheme.node.SchemeNode.title_changed">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.scheme.scheme.Scheme attribute)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.title_changed">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="titleChanged() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.titleChanged">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="toggleZoom() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.toggleZoom">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="tool_tip (orangecanvas.scheme.link.SchemeLink attribute)">
+    <param name="Local" value="orangecanvas/scheme.link.html#orangecanvas.scheme.link.SchemeLink.tool_tip">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="toolbarActions() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.toolbarActions">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="ToolBox (class in orangecanvas.gui.toolbox)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="toolButtonStyle() (orangecanvas.gui.toolgrid.ToolGrid method)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid.toolButtonStyle">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="ToolGrid (class in orangecanvas.gui.toolgrid)">
+    <param name="Local" value="orangecanvas/gui.toolgrid.html#orangecanvas.gui.toolgrid.ToolGrid">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="ToolTree (class in orangecanvas.gui.tooltree)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#orangecanvas.gui.tooltree.ToolTree">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="transitionFinished (orangecanvas.gui.stackedwidget.AnimatedStackedWidget attribute)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.transitionFinished">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="transitionStarted (orangecanvas.gui.stackedwidget.AnimatedStackedWidget attribute)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.transitionStarted">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="triggered (orangecanvas.gui.lineedit.LineEdit attribute)">
+    <param name="Name" value="[0] orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.triggered">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.triggered">
+    <param name="Name" value="[1] orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.triggered">
+    <param name="Local" value="orangecanvas/gui.lineedit.html#orangecanvas.gui.lineedit.LineEdit.triggered">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.tooltree.ToolTree attribute)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#orangecanvas.gui.tooltree.ToolTree.triggered">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="triggered() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.triggered">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="triggerSearch() (orangecanvas.document.quickmenu.QuickMenu method)">
+    <param name="Local" value="orangecanvas/document.quickmenu.html#orangecanvas.document.quickmenu.QuickMenu.triggerSearch">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="tuple_eval() (in module orangecanvas.scheme.readwrite)">
+    <param name="Local" value="orangecanvas/scheme.readwrite.html#orangecanvas.scheme.readwrite.tuple_eval">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="undoAvailable (orangecanvas.document.schemeedit.SchemeEditWidget attribute)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.undoAvailable">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="undoAvailable() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.undoAvailable">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="undoCommandAdded() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.undoCommandAdded">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="undoStack() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.undoStack">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="upstream_nodes() (orangecanvas.scheme.scheme.Scheme method)">
+    <param name="Local" value="orangecanvas/scheme.scheme.html#orangecanvas.scheme.scheme.Scheme.upstream_nodes">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="view() (orangecanvas.document.schemeedit.SchemeEditWidget method)">
+    <param name="Local" value="orangecanvas/document.schemeedit.html#orangecanvas.document.schemeedit.SchemeEditWidget.view">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.tooltree.ToolTree method)">
+    <param name="Local" value="orangecanvas/gui.tooltree.html#orangecanvas.gui.tooltree.ToolTree.view">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="widget() (orangecanvas.gui.dropshadow.DropShadowFrame method)">
+    <param name="Local" value="orangecanvas/gui.dropshadow.html#orangecanvas.gui.dropshadow.DropShadowFrame.widget">
+</OBJECT>
+<UL> <LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.stackedwidget.AnimatedStackedWidget method)">
+    <param name="Local" value="orangecanvas/gui.stackedwidget.html#orangecanvas.gui.stackedwidget.AnimatedStackedWidget.widget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.gui.toolbox.ToolBox method)">
+    <param name="Local" value="orangecanvas/gui.toolbox.html#orangecanvas.gui.toolbox.ToolBox.widget">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="(orangecanvas.registry.WidgetRegistry method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetRegistry.widget">
+</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="widget_description() (orangecanvas.registry.WidgetDiscovery method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery.widget_description">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="WidgetDescription (class in orangecanvas.registry)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDescription">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="WidgetDiscovery (class in orangecanvas.registry)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetDiscovery">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="WidgetRegistry (class in orangecanvas.registry)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetRegistry">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Keyword" value="widgets() (orangecanvas.registry.WidgetRegistry method)">
+    <param name="Local" value="orangecanvas/registry.html#orangecanvas.registry.WidgetRegistry.widgets">
+</OBJECT>
+</UL>

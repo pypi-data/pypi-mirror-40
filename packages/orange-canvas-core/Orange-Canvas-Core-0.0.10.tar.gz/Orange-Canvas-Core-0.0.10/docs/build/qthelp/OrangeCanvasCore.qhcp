@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QHelpCollectionProject version="1.0">
+    <assistant>
+        <title>Orange Canvas Core 0.0.8 documentation</title>
+        <homePage>qthelp://org.sphinx.orangecanvascore.0.0/doc/index.html</homePage>
+        <startPage>qthelp://org.sphinx.orangecanvascore.0.0/doc/index.html</startPage>
+    </assistant>
+    <docFiles>
+        <generate>
+            <file>
+                <input>OrangeCanvasCore.qhp</input>
+                <output>OrangeCanvasCore.qch</output>
+            </file>
+        </generate>
+        <register>
+            <file>OrangeCanvasCore.qch</file>
+        </register>
+    </docFiles>
+</QHelpCollectionProject>

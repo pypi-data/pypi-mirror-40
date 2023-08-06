@@ -1,0 +1,204 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <title>Scheme Node (node)</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="Scheme Link (link)" href="scheme.link.html" />
+    <link rel="prev" title="Scheme (scheme)" href="scheme.scheme.html" /> 
+  </head>
+  <body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>Orange Canvas Core 0.0.8 documentation</span></a></h1>
+        <h2 class="heading"><span>Scheme Node (node)</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="scheme.scheme.html">Scheme (<code class="docutils literal"><span class="pre">scheme</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="scheme.link.html">Scheme Link (<code class="docutils literal"><span class="pre">link</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="module-orangecanvas.scheme.node">
+<span id="scheme-node-node"></span><h1>Scheme Node (<code class="docutils literal"><span class="pre">node</span></code>)</h1>
+<div class="section" id="scheme-node">
+<h2>Scheme Node</h2>
+</div>
+<dl class="class">
+<dt id="orangecanvas.scheme.node.SchemeNode">
+<em class="property">class </em><code class="descclassname">orangecanvas.scheme.node.</code><code class="descname">SchemeNode</code><span class="sig-paren">(</span><em>description</em>, <em>title=None</em>, <em>position=None</em>, <em>properties=None</em>, <em>parent=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<p>A node in a <a class="reference internal" href="scheme.scheme.html#orangecanvas.scheme.scheme.Scheme" title="orangecanvas.scheme.scheme.Scheme"><code class="xref py py-class docutils literal"><span class="pre">Scheme</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>description</strong> (<code class="xref py py-class docutils literal"><span class="pre">WidgetDescription</span></code>) – Node description instance.</li>
+<li><strong>title</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – Node title string (if None <cite>description.name</cite> is used).</li>
+<li><strong>position</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#tuple" title="(in Python v2.7)"><em>tuple</em></a>) – (x, y) tuple of floats for node position in a visual display.</li>
+<li><strong>properties</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) – Additional extra instance properties (settings, widget geometry, …)</li>
+<li><strong>parent</strong> (<code class="xref py py-class docutils literal"><span class="pre">QObject</span></code>) – Parent object.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="orangecanvas.scheme.node.SchemeNode.title_changed">
+<code class="descname">title_changed</code><span class="sig-paren">(</span><em>title</em><span class="sig-paren">)</span></dt>
+<dd><p>The title of the node has changed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.scheme.node.SchemeNode.position_changed">
+<code class="descname">position_changed</code><span class="sig-paren">(</span><em>(x</em>, <em>y)</em><span class="sig-paren">)</span></dt>
+<dd><p>Position of the node in the scheme has changed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.scheme.node.SchemeNode.progress_changed">
+<code class="descname">progress_changed</code><span class="sig-paren">(</span><em>progress</em><span class="sig-paren">)</span></dt>
+<dd><p>Node’s progress value has changed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.scheme.node.SchemeNode.processing_state_changed">
+<code class="descname">processing_state_changed</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span></dt>
+<dd><p>Node’s processing state has changed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.scheme.node.SchemeNode.input_channels">
+<code class="descname">input_channels</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return a list of input channels (<code class="xref py py-class docutils literal"><span class="pre">InputSignal</span></code>) for the node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.scheme.node.SchemeNode.output_channels">
+<code class="descname">output_channels</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return a list of output channels (<code class="xref py py-class docutils literal"><span class="pre">OutputSignal</span></code>) for the node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.scheme.node.SchemeNode.input_channel">
+<code class="descname">input_channel</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span></dt>
+<dd><p>Return the input channel matching <cite>name</cite>. Raise a <cite>ValueError</cite>
+if not found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.scheme.node.SchemeNode.output_channel">
+<code class="descname">output_channel</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span></dt>
+<dd><p>Return the output channel matching <cite>name</cite>. Raise an <cite>ValueError</cite>
+if not found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.scheme.node.SchemeNode.set_title">
+<code class="descname">set_title</code><span class="sig-paren">(</span><em>title</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the node title.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.scheme.node.SchemeNode.title">
+<code class="descname">title</code></dt>
+<dd><p>The node title.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.scheme.node.SchemeNode.set_position">
+<code class="descname">set_position</code><span class="sig-paren">(</span><em>pos</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the position (<code class="docutils literal"><span class="pre">(x,</span> <span class="pre">y)</span></code> tuple) of the node.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.scheme.node.SchemeNode.position">
+<code class="descname">position</code></dt>
+<dd><p><code class="docutils literal"><span class="pre">(x,</span> <span class="pre">y)</span></code> tuple containing the position of the node in the scheme.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.scheme.node.SchemeNode.set_progress">
+<code class="descname">set_progress</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the progress value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.scheme.node.SchemeNode.progress">
+<code class="descname">progress</code></dt>
+<dd><p>The current progress value. -1 if progress is not set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.scheme.node.SchemeNode.set_processing_state">
+<code class="descname">set_processing_state</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the node processing state.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.scheme.node.SchemeNode.processing_state">
+<code class="descname">processing_state</code></dt>
+<dd><p>The node processing state, 0 for not processing, 1 the node is busy.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.scheme.node.SchemeNode.status_message_changed">
+<code class="descname">status_message_changed</code></dt>
+<dd><p>The node’s status tip has changes</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.scheme.node.SchemeNode.state_message_changed">
+<code class="descname">state_message_changed</code></dt>
+<dd><p>The node’s state message has changed</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.scheme.node.SchemeNode.set_state_message">
+<code class="descname">set_state_message</code><span class="sig-paren">(</span><em>message</em><span class="sig-paren">)</span></dt>
+<dd><p>Set a message to be displayed by a scheme view for this node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.scheme.node.SchemeNode.state_messages">
+<code class="descname">state_messages</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return a list of all state messages.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="scheme.scheme.html">Scheme (<code class="docutils literal"><span class="pre">scheme</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="scheme.link.html">Scheme Link (<code class="docutils literal"><span class="pre">link</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bioinformatics Laboratory, FRI UL.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

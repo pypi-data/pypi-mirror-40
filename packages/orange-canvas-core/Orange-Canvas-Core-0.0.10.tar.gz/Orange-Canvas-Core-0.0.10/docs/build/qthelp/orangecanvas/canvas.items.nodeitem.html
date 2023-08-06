@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Node Item (nodeitem)</title>
+    <link rel="stylesheet" href="../_static/nonav.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> 
+  </head>
+  <body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-orangecanvas.canvas.items.nodeitem">
+<span id="node-item-nodeitem"></span><h1>Node Item (<code class="docutils literal"><span class="pre">nodeitem</span></code>)</h1>
+<div class="section" id="node-item">
+<h2>Node Item</h2>
+</div>
+<dl class="class">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem">
+<em class="property">class </em><code class="descclassname">orangecanvas.canvas.items.nodeitem.</code><code class="descname">NodeItem</code><span class="sig-paren">(</span><em>widget_description=None</em>, <em>parent=None</em>, <em>**kwargs</em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtWidgets.QGraphicsObject</span></code></p>
+<p>An widget node item in the canvas.</p>
+<dl class="attribute">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.positionChanged">
+<code class="descname">positionChanged</code></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.anchorGeometryChanged">
+<code class="descname">anchorGeometryChanged</code></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.activated">
+<code class="descname">activated</code></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.anchorRotation">
+<code class="descname">anchorRotation</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the anchor rotation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.animationEnabled">
+<code class="descname">animationEnabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Are node animations enabled.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.font">
+<code class="descname">font</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the title text font.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.inputAnchors">
+<code class="descname">inputAnchors</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return a list of all input anchor points.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.newInputAnchor">
+<code class="descname">newInputAnchor</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Create and return a new input <a class="reference internal" href="#orangecanvas.canvas.items.nodeitem.AnchorPoint" title="orangecanvas.canvas.items.nodeitem.AnchorPoint"><code class="xref py py-class docutils literal"><span class="pre">AnchorPoint</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.newOutputAnchor">
+<code class="descname">newOutputAnchor</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Create and return a new output <a class="reference internal" href="#orangecanvas.canvas.items.nodeitem.AnchorPoint" title="orangecanvas.canvas.items.nodeitem.AnchorPoint"><code class="xref py py-class docutils literal"><span class="pre">AnchorPoint</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.outputAnchors">
+<code class="descname">outputAnchors</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return a list of all output anchor points.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.processingState">
+<code class="descname">processingState</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>The node processing state.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.processingState_">
+<code class="descname">processingState_</code></dt>
+<dd><p>The node processing state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.progress">
+<code class="descname">progress</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the node work progress state.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.progress_">
+<code class="descname">progress_</code></dt>
+<dd><p>Node progress state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.removeInputAnchor">
+<code class="descname">removeInputAnchor</code><span class="sig-paren">(</span><em>anchor</em><span class="sig-paren">)</span></dt>
+<dd><p>Remove input anchor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.removeOutputAnchor">
+<code class="descname">removeOutputAnchor</code><span class="sig-paren">(</span><em>anchor</em><span class="sig-paren">)</span></dt>
+<dd><p>Remove output anchor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setAnchorRotation">
+<code class="descname">setAnchorRotation</code><span class="sig-paren">(</span><em>angle</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the anchor rotation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setAnimationEnabled">
+<code class="descname">setAnimationEnabled</code><span class="sig-paren">(</span><em>enabled</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the node animation enabled state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setColor">
+<code class="descname">setColor</code><span class="sig-paren">(</span><em>color</em>, <em>selectedColor=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the widget color.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setFont">
+<code class="descname">setFont</code><span class="sig-paren">(</span><em>font</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the title text font (<code class="xref py py-class docutils literal"><span class="pre">QFont</span></code>).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setIcon">
+<code class="descname">setIcon</code><span class="sig-paren">(</span><em>icon</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the node item’s icon (<code class="xref py py-class docutils literal"><span class="pre">QIcon</span></code>).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setProcessingState">
+<code class="descname">setProcessingState</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the node processing state i.e. the node is processing
+(is busy) or is idle.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setProgress">
+<code class="descname">setProgress</code><span class="sig-paren">(</span><em>progress</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the node work progress state (number between 0 and 100).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setStateMessage">
+<code class="descname">setStateMessage</code><span class="sig-paren">(</span><em>message</em><span class="sig-paren">)</span></dt>
+<dd><p>Set a state message to display over the item.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>message</strong> (<em>UserMessage</em>) – Message to display. <cite>message.severity</cite> is used to determine
+the icon and <cite>message.contents</cite> is used as a tool tip.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setStatusMessage">
+<code class="descname">setStatusMessage</code><span class="sig-paren">(</span><em>message</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the node status message text.</p>
+<p>This text is displayed below the node’s title.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setTitle">
+<code class="descname">setTitle</code><span class="sig-paren">(</span><em>title</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the node title. The title text is displayed at the bottom of the
+node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setWidgetCategory">
+<code class="descname">setWidgetCategory</code><span class="sig-paren">(</span><em>desc</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the widget category.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.setWidgetDescription">
+<code class="descname">setWidgetDescription</code><span class="sig-paren">(</span><em>desc</em><span class="sig-paren">)</span></dt>
+<dd><p>Set widget description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.title">
+<code class="descname">title</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the node title.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.canvas.items.nodeitem.NodeItem.title_">
+<code class="descname">title_</code></dt>
+<dd><p>Node title text.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="orangecanvas.canvas.items.nodeitem.AnchorPoint">
+<em class="property">class </em><code class="descclassname">orangecanvas.canvas.items.nodeitem.</code><code class="descname">AnchorPoint</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtWidgets.QGraphicsObject</span></code></p>
+<p>A anchor indicator on the <code class="xref py py-class docutils literal"><span class="pre">NodeAnchorItem</span></code>.</p>
+<dl class="attribute">
+<dt id="orangecanvas.canvas.items.nodeitem.AnchorPoint.scenePositionChanged">
+<code class="descname">scenePositionChanged</code><span class="sig-paren">(</span><em>QPointF</em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.canvas.items.nodeitem.AnchorPoint.anchorDirectionChanged">
+<code class="descname">anchorDirectionChanged</code><span class="sig-paren">(</span><em>QPointF</em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.AnchorPoint.anchorDirection">
+<code class="descname">anchorDirection</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the preferred anchor direction.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.AnchorPoint.anchorScenePos">
+<code class="descname">anchorScenePos</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return anchor position in scene coordinates.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.nodeitem.AnchorPoint.setAnchorDirection">
+<code class="descname">setAnchorDirection</code><span class="sig-paren">(</span><em>direction</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the preferred direction (QPointF) in item coordinates.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

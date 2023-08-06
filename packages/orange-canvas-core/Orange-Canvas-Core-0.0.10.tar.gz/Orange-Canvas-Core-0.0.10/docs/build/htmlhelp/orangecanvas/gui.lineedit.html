@@ -1,0 +1,140 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <title>Line Edit Widget (lineedit)</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="Quick Help (quickhelp)" href="gui.quickhelp.html" />
+    <link rel="prev" title="Frameless Window Widget (framelesswindow)" href="gui.framelesswindow.html" /> 
+  </head>
+  <body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>Orange Canvas Core 0.0.8 documentation</span></a></h1>
+        <h2 class="heading"><span>Line Edit Widget (lineedit)</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.framelesswindow.html">Frameless Window Widget (<code class="docutils literal"><span class="pre">framelesswindow</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gui.quickhelp.html">Quick Help (<code class="docutils literal"><span class="pre">quickhelp</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="module-orangecanvas.gui.lineedit">
+<span id="line-edit-widget-lineedit"></span><h1>Line Edit Widget (<code class="docutils literal"><span class="pre">lineedit</span></code>)</h1>
+<p>A LineEdit class with a button on left/right side.</p>
+<dl class="class">
+<dt id="orangecanvas.gui.lineedit.LineEdit">
+<em class="property">class </em><code class="descclassname">orangecanvas.gui.lineedit.</code><code class="descname">LineEdit</code><span class="sig-paren">(</span><em>parent=None</em>, <em>**kwargs</em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtWidgets.QLineEdit</span></code></p>
+<p>A line edit widget with support for adding actions (buttons) to
+the left/right of the edited text</p>
+<dl class="attribute">
+<dt id="orangecanvas.gui.lineedit.LineEdit.LeftPosition">
+<code class="descname">LeftPosition</code></dt>
+<dd><p>Left position flag</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.gui.lineedit.LineEdit.RightPosition">
+<code class="descname">RightPosition</code></dt>
+<dd><p>Right position flag</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.gui.lineedit.LineEdit.triggered">
+<code class="descname">triggered</code><span class="sig-paren">(</span><em>QAction</em><span class="sig-paren">)</span></dt>
+<dd><p>Emitted when the action is triggered.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">triggered</code></dt>
+<dd><p>Emitted when the action is triggered.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.gui.lineedit.LineEdit.leftTriggered">
+<code class="descname">leftTriggered</code></dt>
+<dd><p>The left action was triggered.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.gui.lineedit.LineEdit.rightTriggered">
+<code class="descname">rightTriggered</code></dt>
+<dd><p>The right action was triggered.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.lineedit.LineEdit.setAction">
+<code class="descname">setAction</code><span class="sig-paren">(</span><em>action</em>, <em>position=1</em><span class="sig-paren">)</span></dt>
+<dd><p>Set <cite>action</cite> to be displayed at <cite>position</cite>. Existing action
+(if present) will be removed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>action</strong> (<code class="xref py py-class docutils literal"><span class="pre">QAction</span></code>) – </li>
+<li><strong>position</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – Position where to set the action (default: <code class="docutils literal"><span class="pre">LeftPosition</span></code>).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.lineedit.LineEdit.actionAt">
+<code class="descname">actionAt</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span></dt>
+<dd><p>Return <code class="xref py py-class docutils literal"><span class="pre">QAction</span></code> at <cite>position</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.lineedit.LineEdit.removeActionAt">
+<code class="descname">removeActionAt</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span></dt>
+<dd><p>Remove the action at position.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.lineedit.LineEdit.button">
+<code class="descname">button</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span></dt>
+<dd><p>Return the button (<code class="xref py py-class docutils literal"><span class="pre">LineEditButton</span></code>) for the action
+at <cite>position</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.framelesswindow.html">Frameless Window Widget (<code class="docutils literal"><span class="pre">framelesswindow</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gui.quickhelp.html">Quick Help (<code class="docutils literal"><span class="pre">quickhelp</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bioinformatics Laboratory, FRI UL.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

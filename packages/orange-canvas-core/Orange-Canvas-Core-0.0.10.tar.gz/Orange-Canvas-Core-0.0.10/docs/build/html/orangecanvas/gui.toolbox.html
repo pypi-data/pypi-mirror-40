@@ -1,0 +1,209 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tool Box Widget (toolbox) &#8212; Orange Canvas Core 0.0.9 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tool Grid Widget (toolgrid)" href="gui.toolgrid.html" />
+    <link rel="prev" title="Tool Bar (toolbar)" href="gui.toolbar.html" /> 
+  </head>
+  <body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>Orange Canvas Core 0.0.9 documentation</span></a></h1>
+        <h2 class="heading"><span>Tool Box Widget (toolbox)</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.toolbar.html">Tool Bar (<code class="docutils literal"><span class="pre">toolbar</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gui.toolgrid.html">Tool Grid Widget (<code class="docutils literal"><span class="pre">toolgrid</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="module-orangecanvas.gui.toolbox">
+<span id="tool-box-widget-toolbox"></span><h1>Tool Box Widget (<code class="docutils literal"><span class="pre">toolbox</span></code>)<a class="headerlink" href="#module-orangecanvas.gui.toolbox" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tool-box-widget">
+<h2>Tool Box Widget<a class="headerlink" href="#tool-box-widget" title="Permalink to this headline">¶</a></h2>
+<p>A reimplementation of the <code class="xref py py-class docutils literal"><span class="pre">QToolBox</span></code> widget that keeps all the tabs
+in a single <code class="xref py py-class docutils literal"><span class="pre">QScrollArea</span></code> instance and can keep multiple open tabs.</p>
+</div>
+<dl class="class">
+<dt id="orangecanvas.gui.toolbox.ToolBox">
+<em class="property">class </em><code class="descclassname">orangecanvas.gui.toolbox.</code><code class="descname">ToolBox</code><span class="sig-paren">(</span><em>parent=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtWidgets.QFrame</span></code></p>
+<p>A tool box widget.</p>
+<dl class="attribute">
+<dt id="orangecanvas.gui.toolbox.ToolBox.tabToogled">
+<code class="descname">tabToogled</code><span class="sig-paren">(</span><em>index</em>, <em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.tabToogled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signal emitted when a tab at <cite>index</cite> is toggled.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.setExclusive">
+<code class="descname">setExclusive</code><span class="sig-paren">(</span><em>exclusive</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.setExclusive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set exclusive tabs (only one tab can be open at a time).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.exclusive">
+<code class="descname">exclusive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.exclusive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Are the tabs in the toolbox exclusive.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.gui.toolbox.ToolBox.exclusive_">
+<code class="descname">exclusive_</code><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.exclusive_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exclusive tabs</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.setTabButtonHeight">
+<code class="descname">setTabButtonHeight</code><span class="sig-paren">(</span><em>height</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.setTabButtonHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the tab button height.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.tabButtonHeight">
+<code class="descname">tabButtonHeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.tabButtonHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the tab button height.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.setTabIconSize">
+<code class="descname">setTabIconSize</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.setTabIconSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the tab button icon size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.tabIconSize">
+<code class="descname">tabIconSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.tabIconSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the tab icon size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.tabButton">
+<code class="descname">tabButton</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.tabButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the tab button at <cite>index</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.tabAction">
+<code class="descname">tabAction</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.tabAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return open/close action for the tab at <cite>index</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.addItem">
+<code class="descname">addItem</code><span class="sig-paren">(</span><em>widget</em>, <em>text</em>, <em>icon=None</em>, <em>toolTip=None</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.addItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append the <cite>widget</cite> in a new tab and return its index.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>widget</strong> (<code class="xref py py-class docutils literal"><span class="pre">QWidget</span></code>) – A widget to be inserted. The toolbox takes ownership
+of the widget.</li>
+<li><strong>text</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Name/title of the new tab.</li>
+<li><strong>icon</strong> (<code class="xref py py-class docutils literal"><span class="pre">QIcon</span></code>, optional) – An icon for the tab button.</li>
+<li><strong>toolTip</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a><em>, </em><em>optional</em>) – Tool tip for the tab button.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.insertItem">
+<code class="descname">insertItem</code><span class="sig-paren">(</span><em>index</em>, <em>widget</em>, <em>text</em>, <em>icon=None</em>, <em>toolTip=None</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.insertItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert the <cite>widget</cite> in a new tab at position <cite>index</cite>.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#orangecanvas.gui.toolbox.ToolBox.addItem" title="orangecanvas.gui.toolbox.ToolBox.addItem"><code class="xref py py-meth docutils literal"><span class="pre">ToolBox.addItem()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.removeItem">
+<code class="descname">removeItem</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.removeItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the widget at <cite>index</cite>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The widget hidden but is is not deleted.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.count">
+<code class="descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of widgets inserted in the toolbox.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.widget">
+<code class="descname">widget</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the widget at <cite>index</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.createTabButton">
+<code class="descname">createTabButton</code><span class="sig-paren">(</span><em>widget</em>, <em>text</em>, <em>icon=None</em>, <em>toolTip=None</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.createTabButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the tab button for <cite>widget</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.toolbox.ToolBox.ensureWidgetVisible">
+<code class="descname">ensureWidgetVisible</code><span class="sig-paren">(</span><em>child</em>, <em>xmargin=50</em>, <em>ymargin=50</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.toolbox.ToolBox.ensureWidgetVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scroll the contents so child widget instance is visible inside
+the viewport.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.toolbar.html">Tool Bar (<code class="docutils literal"><span class="pre">toolbar</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gui.toolgrid.html">Tool Grid Widget (<code class="docutils literal"><span class="pre">toolgrid</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bioinformatics Laboratory, FRI UL.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

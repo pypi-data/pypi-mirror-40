@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Splash Screen (splashscreen)</title>
+    <link rel="stylesheet" href="../_static/nonav.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> 
+  </head>
+  <body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-orangecanvas.gui.splashscreen">
+<span id="splash-screen-splashscreen"></span><h1>Splash Screen (<code class="docutils literal"><span class="pre">splashscreen</span></code>)</h1>
+<p>A splash screen widget with support for positioning of the message text.</p>
+<dl class="class">
+<dt id="orangecanvas.gui.splashscreen.SplashScreen">
+<em class="property">class </em><code class="descclassname">orangecanvas.gui.splashscreen.</code><code class="descname">SplashScreen</code><span class="sig-paren">(</span><em>parent=None</em>, <em>pixmap=None</em>, <em>textRect=None</em>, <em>textFormat=0</em>, <em>**kwargs</em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtWidgets.QSplashScreen</span></code></p>
+<p>Splash screen widget.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>parent</strong> (<code class="xref py py-class docutils literal"><span class="pre">QWidget</span></code>) – Parent widget</li>
+<li><strong>pixmap</strong> (<code class="xref py py-class docutils literal"><span class="pre">QPixmap</span></code>) – Splash window pixmap.</li>
+<li><strong>textRect</strong> (<code class="xref py py-class docutils literal"><span class="pre">QRect</span></code>) – Bounding rectangle of the shown message on the widget.</li>
+<li><strong>textFormat</strong> (<em>Qt.TextFormat</em>) – How message text format should be interpreted.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="orangecanvas.gui.splashscreen.SplashScreen.setTextRect">
+<code class="descname">setTextRect</code><span class="sig-paren">(</span><em>rect</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the rectangle (<code class="xref py py-class docutils literal"><span class="pre">QRect</span></code>) in which to show the message text.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.splashscreen.SplashScreen.textRect">
+<code class="descname">textRect</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the text message rectangle.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.splashscreen.SplashScreen.drawContents">
+<code class="descname">drawContents</code><span class="sig-paren">(</span><em>painter</em><span class="sig-paren">)</span></dt>
+<dd><p>Reimplementation of drawContents to limit the drawing
+inside <cite>textRext</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.splashscreen.SplashScreen.showMessage">
+<code class="descname">showMessage</code><span class="sig-paren">(</span><em>message</em>, <em>alignment=1</em>, <em>color=2</em><span class="sig-paren">)</span></dt>
+<dd><p>Show the <cite>message</cite> with <cite>color</cite> and <cite>alignment</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

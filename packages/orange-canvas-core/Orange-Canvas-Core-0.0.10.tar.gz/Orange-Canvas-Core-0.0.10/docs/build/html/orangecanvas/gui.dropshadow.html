@@ -1,0 +1,145 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Drop Shadow Frame (dropshadow) &#8212; Orange Canvas Core 0.0.9 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Frameless Window Widget (framelesswindow)" href="gui.framelesswindow.html" />
+    <link rel="prev" title="Collapsible Dock Widget (dock)" href="gui.dock.html" /> 
+  </head>
+  <body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>Orange Canvas Core 0.0.9 documentation</span></a></h1>
+        <h2 class="heading"><span>Drop Shadow Frame (dropshadow)</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.dock.html">Collapsible Dock Widget (<code class="docutils literal"><span class="pre">dock</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gui.framelesswindow.html">Frameless Window Widget (<code class="docutils literal"><span class="pre">framelesswindow</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="module-orangecanvas.gui.dropshadow">
+<span id="drop-shadow-frame-dropshadow"></span><h1>Drop Shadow Frame (<code class="docutils literal"><span class="pre">dropshadow</span></code>)<a class="headerlink" href="#module-orangecanvas.gui.dropshadow" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="drop-shadow-frame">
+<h2>Drop Shadow Frame<a class="headerlink" href="#drop-shadow-frame" title="Permalink to this headline">¶</a></h2>
+<p>A widget providing a drop shadow (gaussian blur effect) around another
+widget.</p>
+</div>
+<dl class="class">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame">
+<em class="property">class </em><code class="descclassname">orangecanvas.gui.dropshadow.</code><code class="descname">DropShadowFrame</code><span class="sig-paren">(</span><em>parent=None</em>, <em>color=None</em>, <em>radius=5</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.dropshadow.DropShadowFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtWidgets.QWidget</span></code></p>
+<p>A widget drawing a drop shadow effect around the geometry of
+another widget (works similar to <code class="xref py py-class docutils literal"><span class="pre">QFocusFrame</span></code>).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>parent</strong> (<code class="xref py py-class docutils literal"><span class="pre">QObject</span></code>) – Parent object.</li>
+<li><strong>color</strong> (<code class="xref py py-class docutils literal"><span class="pre">QColor</span></code>) – The color of the drop shadow.</li>
+<li><strong>radius</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – Shadow radius.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.setColor">
+<code class="descname">setColor</code><span class="sig-paren">(</span><em>color</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.dropshadow.DropShadowFrame.setColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the color of the shadow.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.color">
+<code class="descname">color</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.dropshadow.DropShadowFrame.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the color of the drop shadow.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.color_">
+<code class="descname">color_</code><a class="headerlink" href="#orangecanvas.gui.dropshadow.DropShadowFrame.color_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Drop shadow color</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.setRadius">
+<code class="descname">setRadius</code><span class="sig-paren">(</span><em>radius</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.dropshadow.DropShadowFrame.setRadius" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the drop shadow’s blur radius.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.radius">
+<code class="descname">radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.dropshadow.DropShadowFrame.radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the shadow blur radius.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.radius_">
+<code class="descname">radius_</code><a class="headerlink" href="#orangecanvas.gui.dropshadow.DropShadowFrame.radius_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Drop shadow blur radius.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.setWidget">
+<code class="descname">setWidget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.dropshadow.DropShadowFrame.setWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the widget around which to show the shadow.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.dropshadow.DropShadowFrame.widget">
+<code class="descname">widget</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.dropshadow.DropShadowFrame.widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the widget that was set by <cite>setWidget</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.dock.html">Collapsible Dock Widget (<code class="docutils literal"><span class="pre">dock</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gui.framelesswindow.html">Frameless Window Widget (<code class="docutils literal"><span class="pre">framelesswindow</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bioinformatics Laboratory, FRI UL.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Link Item (linkitem)</title>
+    <link rel="stylesheet" href="../_static/nonav.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> 
+  </head>
+  <body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-orangecanvas.canvas.items.linkitem">
+<span id="link-item-linkitem"></span><h1>Link Item (<code class="docutils literal"><span class="pre">linkitem</span></code>)</h1>
+<div class="section" id="link-item">
+<h2>Link Item</h2>
+</div>
+<dl class="class">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem">
+<em class="property">class </em><code class="descclassname">orangecanvas.canvas.items.linkitem.</code><code class="descname">LinkItem</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtWidgets.QGraphicsObject</span></code></p>
+<p>A Link item in the canvas that connects two <a class="reference internal" href="canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem" title="orangecanvas.canvas.items.nodeitem.NodeItem"><code class="xref py py-class docutils literal"><span class="pre">NodeItem</span></code></a>s in the
+canvas.</p>
+<p>The link curve connects two <cite>Anchor</cite> items (see <a class="reference internal" href="#orangecanvas.canvas.items.linkitem.LinkItem.setSourceItem" title="orangecanvas.canvas.items.linkitem.LinkItem.setSourceItem"><code class="xref py py-func docutils literal"><span class="pre">setSourceItem()</span></code></a>
+and <a class="reference internal" href="#orangecanvas.canvas.items.linkitem.LinkItem.setSinkItem" title="orangecanvas.canvas.items.linkitem.LinkItem.setSinkItem"><code class="xref py py-func docutils literal"><span class="pre">setSinkItem()</span></code></a>). Once the anchors are set the curve
+automatically adjusts its end points whenever the anchors move.</p>
+<p>An optional source/sink text item can be displayed above the curve’s
+central point (<a class="reference internal" href="#orangecanvas.canvas.items.linkitem.LinkItem.setSourceName" title="orangecanvas.canvas.items.linkitem.LinkItem.setSourceName"><code class="xref py py-func docutils literal"><span class="pre">setSourceName()</span></code></a>, <a class="reference internal" href="#orangecanvas.canvas.items.linkitem.LinkItem.setSinkName" title="orangecanvas.canvas.items.linkitem.LinkItem.setSinkName"><code class="xref py py-func docutils literal"><span class="pre">setSinkName()</span></code></a>)</p>
+<dl class="class">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.State">
+<em class="property">class </em><code class="descname">State</code></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.IntEnum</span></code></p>
+<p>Flags indicating the runtime state of a link</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.font">
+<code class="descname">font</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the font for the channel names text.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.isDynamic">
+<code class="descname">isDynamic</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Is the link dynamic.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.isDynamicEnabled">
+<code class="descname">isDynamicEnabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Is the link dynamic enabled.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.setChannelNamesVisible">
+<code class="descname">setChannelNamesVisible</code><span class="sig-paren">(</span><em>visible</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the visibility of the channel name text.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.setDynamic">
+<code class="descname">setDynamic</code><span class="sig-paren">(</span><em>dynamic</em><span class="sig-paren">)</span></dt>
+<dd><p>Mark the link as dynamic (i.e. it responds to
+<a class="reference internal" href="#orangecanvas.canvas.items.linkitem.LinkItem.setDynamicEnabled" title="orangecanvas.canvas.items.linkitem.LinkItem.setDynamicEnabled"><code class="xref py py-func docutils literal"><span class="pre">setDynamicEnabled()</span></code></a>).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.setDynamicEnabled">
+<code class="descname">setDynamicEnabled</code><span class="sig-paren">(</span><em>enabled</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the link’s dynamic enabled state.</p>
+<p>If the link is <cite>dynamic</cite> it will be rendered in red/green color
+respectively depending on the state of the dynamic enabled state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.setEnabled">
+<code class="descname">setEnabled</code><span class="sig-paren">(</span><em>enabled</em><span class="sig-paren">)</span></dt>
+<dd><p>Reimplemented from <code class="xref py py-class docutils literal"><span class="pre">QGraphicsObject</span></code></p>
+<p>Set link enabled state. When disabled the link is rendered with a
+dashed line.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.setFont">
+<code class="descname">setFont</code><span class="sig-paren">(</span><em>font</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the font for the channel names text item.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.setRuntimeState">
+<code class="descname">setRuntimeState</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span></dt>
+<dd><p>Style the link appropriate to the LinkItem.State</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>state</strong> (<a class="reference internal" href="#orangecanvas.canvas.items.linkitem.LinkItem.State" title="orangecanvas.canvas.items.linkitem.LinkItem.State"><em>LinkItem.State</em></a>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.setSinkItem">
+<code class="descname">setSinkItem</code><span class="sig-paren">(</span><em>item</em>, <em>anchor=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the sink <cite>item</cite> (<a class="reference internal" href="canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem" title="orangecanvas.canvas.items.nodeitem.NodeItem"><code class="xref py py-class docutils literal"><span class="pre">NodeItem</span></code></a>). Use <cite>anchor</cite>
+(<a class="reference internal" href="canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.AnchorPoint" title="orangecanvas.canvas.items.nodeitem.AnchorPoint"><code class="xref py py-class docutils literal"><span class="pre">AnchorPoint</span></code></a>) as the curve end point (if <code class="docutils literal"><span class="pre">None</span></code> a new
+input anchor will be created using <code class="docutils literal"><span class="pre">item.newInputAnchor()</span></code>).</p>
+<p>Setting item to <code class="docutils literal"><span class="pre">None</span></code> and a valid anchor is a valid operation
+(for instance while mouse dragging one and of the link).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.setSinkName">
+<code class="descname">setSinkName</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the name of the sink (used in channel name text).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.setSourceItem">
+<code class="descname">setSourceItem</code><span class="sig-paren">(</span><em>item</em>, <em>anchor=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the source <cite>item</cite> (<a class="reference internal" href="canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.NodeItem" title="orangecanvas.canvas.items.nodeitem.NodeItem"><code class="xref py py-class docutils literal"><span class="pre">NodeItem</span></code></a>). Use <cite>anchor</cite>
+(<a class="reference internal" href="canvas.items.nodeitem.html#orangecanvas.canvas.items.nodeitem.AnchorPoint" title="orangecanvas.canvas.items.nodeitem.AnchorPoint"><code class="xref py py-class docutils literal"><span class="pre">AnchorPoint</span></code></a>) as the curve start point (if <code class="docutils literal"><span class="pre">None</span></code> a new
+output anchor will be created using <code class="docutils literal"><span class="pre">item.newOutputAnchor()</span></code>).</p>
+<p>Setting item to <code class="docutils literal"><span class="pre">None</span></code> and a valid anchor is a valid operation
+(for instance while mouse dragging one end of the link).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.setSourceName">
+<code class="descname">setSourceName</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span></dt>
+<dd><p>Set the name of the source (used in channel name text).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.sinkName">
+<code class="descname">sinkName</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the sink name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.canvas.items.linkitem.LinkItem.sourceName">
+<code class="descname">sourceName</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Return the source name.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

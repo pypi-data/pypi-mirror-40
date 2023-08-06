@@ -1,0 +1,137 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tool Tree Widget (tooltree) &#8212; Orange Canvas Core 0.0.9 documentation</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Scheme (scheme)" href="scheme.html" />
+    <link rel="prev" title="Tool Grid Widget (toolgrid)" href="gui.toolgrid.html" /> 
+  </head>
+  <body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>Orange Canvas Core 0.0.9 documentation</span></a></h1>
+        <h2 class="heading"><span>Tool Tree Widget (tooltree)</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.toolgrid.html">Tool Grid Widget (<code class="docutils literal"><span class="pre">toolgrid</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="scheme.html">Scheme (<code class="docutils literal"><span class="pre">scheme</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="module-orangecanvas.gui.tooltree">
+<span id="tool-tree-widget-tooltree"></span><h1>Tool Tree Widget (<code class="docutils literal"><span class="pre">tooltree</span></code>)<a class="headerlink" href="#module-orangecanvas.gui.tooltree" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tool-tree">
+<h2>Tool Tree<a class="headerlink" href="#tool-tree" title="Permalink to this headline">¶</a></h2>
+<p>A ToolTree widget presenting the user with a set of actions
+organized in a tree structure.</p>
+</div>
+<dl class="class">
+<dt id="orangecanvas.gui.tooltree.ToolTree">
+<em class="property">class </em><code class="descclassname">orangecanvas.gui.tooltree.</code><code class="descname">ToolTree</code><span class="sig-paren">(</span><em>parent=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.tooltree.ToolTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtWidgets.QWidget</span></code></p>
+<p>A ListView like presentation of a list of actions.</p>
+<dl class="attribute">
+<dt id="orangecanvas.gui.tooltree.ToolTree.triggered">
+<code class="descname">triggered</code><span class="sig-paren">(</span><em>QAction</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.tooltree.ToolTree.triggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signal emitted when an action in the widget is triggered.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="orangecanvas.gui.tooltree.ToolTree.hovered">
+<code class="descname">hovered</code><span class="sig-paren">(</span><em>QAction</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.tooltree.ToolTree.hovered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signal emitted when an action in the widget is hovered.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.tooltree.ToolTree.setFlattened">
+<code class="descname">setFlattened</code><span class="sig-paren">(</span><em>flatten</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.tooltree.ToolTree.setFlattened" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the actions in a flattened view.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.tooltree.ToolTree.flattened">
+<code class="descname">flattened</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.tooltree.ToolTree.flattened" title="Permalink to this definition">¶</a></dt>
+<dd><p>Are actions shown in a flattened tree (a list).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.tooltree.ToolTree.setRootIndex">
+<code class="descname">setRootIndex</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.tooltree.ToolTree.setRootIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the root index</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.tooltree.ToolTree.rootIndex">
+<code class="descname">rootIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.tooltree.ToolTree.rootIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the root index.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.tooltree.ToolTree.view">
+<code class="descname">view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.tooltree.ToolTree.view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the QTreeView instance used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.tooltree.ToolTree.setActionRole">
+<code class="descname">setActionRole</code><span class="sig-paren">(</span><em>role</em><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.tooltree.ToolTree.setActionRole" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the action role. By default this is UserRole</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="orangecanvas.gui.tooltree.ToolTree.ensureCurrent">
+<code class="descname">ensureCurrent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orangecanvas.gui.tooltree.ToolTree.ensureCurrent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ensure the view has a current item if one is available.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="gui.toolgrid.html">Tool Grid Widget (<code class="docutils literal"><span class="pre">toolgrid</span></code>)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="scheme.html">Scheme (<code class="docutils literal"><span class="pre">scheme</span></code>)</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bioinformatics Laboratory, FRI UL.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>
