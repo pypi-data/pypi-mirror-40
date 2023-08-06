@@ -1,0 +1,5 @@
+#!python
+#coding:utf-8
+
+import zencad
+zencad.show()
