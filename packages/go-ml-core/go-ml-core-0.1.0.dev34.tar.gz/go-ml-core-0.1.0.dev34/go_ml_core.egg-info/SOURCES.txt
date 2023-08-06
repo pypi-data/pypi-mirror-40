@@ -1,0 +1,9 @@
+README.md
+setup.py
+config/__init__.py
+config/get_config.py
+go_ml_core.egg-info/PKG-INFO
+go_ml_core.egg-info/SOURCES.txt
+go_ml_core.egg-info/dependency_links.txt
+go_ml_core.egg-info/requires.txt
+go_ml_core.egg-info/top_level.txt
