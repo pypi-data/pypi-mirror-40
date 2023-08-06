@@ -1,0 +1,3 @@
+[console_scripts]
+packagemega = packagemega.cli:main
+

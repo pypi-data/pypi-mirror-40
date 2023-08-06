@@ -1,0 +1,5 @@
+click~=6.7
+DataSuper~=0.10.0
+gimme_input~=1.0.0
+PyYAML==3.12
+yaml_backed_structs~=1.0.0
