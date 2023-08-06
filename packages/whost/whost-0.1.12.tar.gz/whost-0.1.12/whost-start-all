@@ -1,0 +1,90 @@
+#!/usr/bin/python3
+
+import os
+import sys
+import json
+import logging
+import subprocess
+from pathlib import Path
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("whost-start-all")
+CONFIG_PATH = Path("/etc/cardshop-host.config")
+DEVICES_PREFIX = Path("/sys/devices")
+
+
+def read_conf():
+    """ read cardshop config file (json) """
+    try:
+        with open(str(CONFIG_PATH), "r") as fd:
+            return json.load(fd)
+    except Exception as exp:
+        logger.error("Unable to read config file at {}".format(str(CONFIG_PATH)))
+        logger.error(exp)
+        sys.exit(1)
+
+
+def get_block_name(device_path):
+    """ current block device name for this hardware path """
+    try:
+        bn = [
+            fname
+            for fname in os.listdir(device_path.joinpath("block"))
+            if fname.startswith("sd") or fname.startswith("mmcblk")
+        ][0]
+    except Exception as exp:
+        logger.error(exp)
+        return None
+    return device_path.joinpath("block", bn).name
+
+
+def main():
+    config = read_conf()
+    if not config.get("enabled", False):
+        logger.warn("Host is disabled. exiting.")
+        sys.exit()
+
+    username = config.get("username", "")
+    password = config.get("password", "")
+    api_url = config.get("api_url", "")
+    if not username or not password or not api_url:
+        logger.error("Host is missing credentials. exiting.")
+        sys.exit(1)
+
+    writers = config.get("writers", {})
+    if not len(writers):
+        logger.warn("Host has no configured writers. exiting.")
+        sys.exit()
+
+    logger.info("Calling stop-all first so we don't duplicate workers")
+    subprocess.run(["whost-stop-all"])
+
+    def _start_worker(worker, slot, device_path):
+        args = [
+            "whost-start-worker",
+            worker,
+            slot,
+            device_path,
+            username,
+            password,
+            api_url,
+        ]
+        subprocess.run(["echo", " ".join(args)])
+        subprocess.run(args)
+
+    logger.info("Starting 1 downloader and {} writers".format(len(writers)))
+
+    # downloader
+    _start_worker("downloader", "-", "-")
+
+    for index, slot in enumerate(writers.keys()):
+        block_name = get_block_name(Path(writers.get(slot)))
+        if block_name is None:
+            logger.error("\tnot starting its writer container.")
+            continue
+        device_path = "/dev/{}".format(block_name)
+        _start_worker("writer", slot, device_path)
+
+
+if __name__ == "__main__":
+    main()
