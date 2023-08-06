@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: smart-imports
+Version: 0.2.1
+Summary: automatic importing for Python modules
+Home-page: https://github.com/Tiendil/smart-imports
+Author: Aleksey Yeletsky <Tiendil>
+Author-email: a.eletsky@gmail.com
+License: BSD
+Keywords: python,import
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Russian
+
+UNKNOWN
+
+
