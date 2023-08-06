@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: config-store
+Version: 0.0.4
+Summary: A python module for env variable and config file management.
+Home-page: https://github.com/ZhongTing/config-store
+Author: Felix ZongTing
+Author-email: gary62107@gmail.com
+License: UNKNOWN
+Description: # config-store
+        A python module for env variable and config file management. 
+        Inspired from webpack configuration management, config-store support multi-stage configs merger.
+        For information security, separation of sensitive settings are also provided.
+        
+        ## Installation
+        ```bash
+        pip install configstore
+        ```
+        
+        ## Usage
+        ```python
+        import configstore
+        configstore.connect($CONFIG_FOLDER)
+        print(configstore.get("foo", default_value="not found QQ"))
+        # >>> 'bar'
+        ```
+        
+        ## Config Setting
+        ```
+        CONFIG_FOLDER
+        - secret
+            - secret.default.json
+            - secret.dev.json 
+            - secret.pd.json
+        - config.default.json [requried]
+        - config.dev.json 
+        - config.pd.json 
+        ```
+        Config Read Order
+        1. ENV variable
+        2. stage config
+        3. default config
+        4. default value
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
