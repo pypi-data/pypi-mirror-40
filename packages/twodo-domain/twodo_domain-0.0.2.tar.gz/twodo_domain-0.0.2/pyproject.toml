@@ -1,0 +1,40 @@
+[tool.black]
+line-length = 99
+py36 = true
+include = '\.pyi?$'
+
+[tool.pytest]
+testpaths = "tests"
+python_files = "test_*.py"
+
+[tool.poetry]
+name = "twodo_domain"
+version = "0.0.2"
+description = "The domain (entities) of the 2do app."
+
+license = "MIT"
+
+authors = [
+    "Alexandre Souza <0x41e@protonmail.ch>"
+]
+
+readme = 'README.md'  # Markdown files are supported
+
+repository = "https://github.com/alexandre-labs/twodo_domain"
+homepage = "https://github.com/alexandre-labs/twodo_domain"
+
+keywords = ["packaging", "2do", "clean-architecture-lab"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+dataclasses = "^0.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+pytest-cov = "^2.4"
+pytest-flake8 = ""
+flake8-mypy = "^17.8"
+mypy = "^0.620"
+black = "^18.9b0"
+pre-commit = "^1.10"
+pre-commit-hooks = "^2.0.0"
