@@ -1,0 +1,9 @@
+v1.0.1
+======
+
+* Fix support for pytest 4.1.
+
+v1.0
+=====
+
+* just a takeout of pytest-xdist
