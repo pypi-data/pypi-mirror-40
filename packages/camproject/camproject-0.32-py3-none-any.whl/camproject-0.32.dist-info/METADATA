@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: camproject
+Version: 0.32
+Summary: a camera projection lib to calculate the ray direction of a pixel and vice versa
+Home-page: UNKNOWN
+Author: Martin Israel
+Author-email: martin.israel@dlr.de
+License: MIT license
+Keywords: camera pin hole projection brown lut
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
