@@ -1,0 +1,88 @@
+
+--- To Release ---
+    
+How do you do a "release" on github
+
+Get docs onto readthedocs
+
+--- Table for Now -- 
+
+Github badges
+https://shields.io/#/
+
+https://img.shields.io/pypi/dm/pycel.svg
+
+codecov.io add badges to PRs?
+
+Document contributing (tox and pytest)
+
+
+--- Array Formulas ---
+
+The array formulas are marked as such on the ws.formula_attributes
+Need to add support for range ops.  Should convert to Numpy Arrays for this.
+For now just detect the array formulas and Raise NotImplemented
+
+--- Cleanup Items for version 1.1 ---
+
+LOG() bugs
+ROUND() & ROUNDUP() bug
+Implement FLOOR()
+Implement TRUNC()
+
+Look at formatting the code with: https://pypi.org/project/autopep8/#use-as-a-module
+
+Look at the diff of various branches in network vs the branch point to look for improvement ideas
+
+Read through pull requests and issues on pycel.
+
+--- End 2 End Testing ---
+
+Mimic test cases from Formulas Library
+
+Look at scraping MS Excel docs for funcs and their signatures and examples
+
+--- Notes around setup.py, requirements.txt -> pyproject.toml ---
+setuptools and setup.py are really by convention (pip defaults to setuptools/setup.py)
+
+pipenv - Newer tool for APP requirements management (not libraires)
+poetry - 1 year old, works with apps/libs and does good dependency resolution
+flit - Roughly same age as pipenv (setup tools?)
+hatch - Looks nice but also does not look super actively developed, also library only
+
+flit vs poetry?
+pipenv vs poetry? 
+
+Output to pypi should be a wheel file.  Is poetry better at wheels?
+
+pep518 - pyproject.toml (specify build dependencies, plus other vendor stuff)
+pep517 - pyproject.toml (build tool api needed)
+
+pipfile.lock?  poetry??
+
+--- Optimization ---
+
+Test define isNA() function
+  
+--- Can we just inherit from openpyxl spreadsheet?
+
+How to deal with values vs formulas?
+Don't need values if we can recalc. But would require supporting all formulas
+Amend the reader to get the values if we don;t understand a specific formula
+Declare error if a value set and we try to eval trhough an unknown formula
+
+
+--- Answers ---
+Could we do common subexpression elimination in the trim, and replace cell_eval to a constant with the constant?
+Yes but, this remove a level of visibilty that is proving useful for debug.  Maybe the trim is a optimization?
+
+How does the recursion through the cells work? (Ans. build_eval_context)
+
+Can we have generated python leave off the sheet when it matches refering cell containing formula?
+No, this would make it harder to cut search by hand the next address?
+
+Can we just generate a python program?  No benefit since we need to compile the code after AST manipulation so that we
+can insert operand massaging.  No, just marshal the lambdas.
+
+Leave the /src directory for better tox testing:
+https://docs.pytest.org/en/latest/goodpractices.html?highlight=src#tests-outside-application-code
