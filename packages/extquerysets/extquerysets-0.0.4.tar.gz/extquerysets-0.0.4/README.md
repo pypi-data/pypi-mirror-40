@@ -1,0 +1,101 @@
+ExtendedQuerySets
+-----------------
+
+ExtendedQuerySets is meant to simplify the way to retrieve **one** object from db using Django QuerySets.
+
+### Installation: ###
+```
+$ pip install extquerysets
+```
+
+### Examples: ###
+
+For the following examples assume that we have a model **Player**, and we've implemented custom Manager and QuerySet for that model. 
+
+
+**Task 1:** Retrieve one object or return None if object doesn't exist.
+
+*Usual way:* 
+```python
+try:
+   winner = Player.objects.winner()
+except Player.DoesNotExist:
+   winner = None
+```
+
+
+*Using ExtendedQuerySets:*
+```python
+winner = Player.objects.winner_or_none()
+```
+
+**Task 2:** Retrieve one object or raise Http404 if object doesn't exist.
+
+*Usual way:* 
+```python
+try:
+   winner = Player.objects.winner()
+except Player.DoesNotExist:
+   raise Http404
+```
+
+
+*Using ExtendedQuerySets:*
+```python
+winner = Player.objects.winner_or_404()
+```
+
+### Usage: ###
+
+models.py
+```python
+from django.db import models
+
+from .querysets import PlayerQuerySet
+
+
+class Player(model.Model):
+    name = models.CharField(_('Name'), max_length=12)
+    is_winner = models.BooleanField(_('Is winner'), default=False)
+    
+    objects = PlayerQuerySet.as_manager()
+```
+
+querysets.py
+```python
+from extquerysets.base import CustomQuerySet
+from extquerysets.decorators import or_404
+from extquerysets.decorators import or_none
+
+
+class PlayerQuerySet(CustomQuerySet):
+    @or_404
+    @or_none
+    def get(self, *args, **kwargs):
+        return super().get(*args, **kwargs)
+
+    @or_404
+    @or_none
+    def winner(self):
+        return self.get(is_winner=True)
+```
+
+Now you can retrieve Player instance:
+```python
+from .models import Player
+
+...
+
+player = Player.objects.winner_or_none()
+player = Player.objects.winner_or_404()
+player = Player.objects.filter(name__icontains='Tom').winner_or_none()
+player = Player.objects.filter(name__icontains='Tom').winner_or_404()
+player = Player.objects.get_or_none(pk=10)
+player = Player.objects.get_or_404(pk=10)
+
+...
+```
+
+
+*More info about custom Managers and QuerySets:*
+https://docs.djangoproject.com/en/2.0/topics/db/managers/
