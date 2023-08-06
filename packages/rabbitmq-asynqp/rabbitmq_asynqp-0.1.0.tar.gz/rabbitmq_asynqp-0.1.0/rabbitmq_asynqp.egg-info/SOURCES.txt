@@ -1,0 +1,16 @@
+CHANGES.txt
+MANIFEST.in
+README.txt
+setup.py
+bin/example.py
+rabbitmq_asynqp/__init__.py
+rabbitmq_asynqp/consumer.py
+rabbitmq_asynqp/messaging.py
+rabbitmq_asynqp/producer.py
+rabbitmq_asynqp/rabbitmq_consumer.py
+rabbitmq_asynqp/rabbitmq_producer.py
+rabbitmq_asynqp.egg-info/PKG-INFO
+rabbitmq_asynqp.egg-info/SOURCES.txt
+rabbitmq_asynqp.egg-info/dependency_links.txt
+rabbitmq_asynqp.egg-info/requires.txt
+rabbitmq_asynqp.egg-info/top_level.txt
