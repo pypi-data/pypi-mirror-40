@@ -1,0 +1,10 @@
+[console_scripts]
+rocker = rocker.cli:main
+
+[rocker.extensions]
+dev_helpers = rocker.extensions:DevHelpers
+home = rocker.extensions:HomeDir
+nvidia = rocker.extensions:Nvidia
+pulse = rocker.extensions:PulseAudio
+user = rocker.extensions:User
+
