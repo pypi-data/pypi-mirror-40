@@ -1,0 +1,12 @@
+bigwing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bigwing/api.py,sha256=QnhQCBqDAdzR2XMjIeoyzybPU5zXrfW2mMpO9FiuE-4,9944
+bigwing/crawler.py,sha256=AQ26DNjPhENu0O_w0IVY-4Qn_jh2uaJhdEX9rtXPK_8,9878
+bigwing/db.py,sha256=Tfr6CVEPB8BrFPRjCrpdI89Jp1Dr9vv7Ceec95yokKo,4625
+bigwing/search.py,sha256=l2_PK78tPq5w86DA_wVpxBT34f5jw8IzcIiSy41MYOY,618
+bigwing/browser/chromedriver.exe,sha256=09dlApNMjQmqPNII7vd6gctlqlq2mfZ2eQkhAZ1zSu0,8713728
+bigwing/browser/phantomjs.exe,sha256=HPmyqnMr0MZag8VdlrqYxO1GK5NyDX_YwLzFNoO_z_s,18587648
+bigwing-1.2.0.dist-info/METADATA,sha256=N_zYtgU5eKyVE20EDZuftXJ-oCS4wkon6YEGJ4q3qYY,883
+bigwing-1.2.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+bigwing-1.2.0.dist-info/license.md,sha256=6Sd-WOAItltl2WaySHouCJBe3mRyyz_Qknrt5e3NK4g,3297
+bigwing-1.2.0.dist-info/top_level.txt,sha256=JxEME5SOnk9LRKF4i3dC9NW-2aGxtyWqtyno0TRrq-A,8
+bigwing-1.2.0.dist-info/RECORD,,
