@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: sim-sm
+Version: 0.9
+Summary: Linhas de ônibus do SIM-SM no seu terminal.
+Home-page: https://github.com/jviriato/sim-sm/
+Author: José Victor Viriato
+Author-email: josevviriato@gmail.com
+License: MIT
+Keywords: CLI,bus,python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: terminaltables
+Requires-Dist: colorama
+Requires-Dist: requests
+
+# 🚌 sim-sm 🚌
+Aplicação em CLI para ver os horários de ônibus em [SIM - SM](http://simsm.com.br/horarios/).
+
+### Instalação
+Basta executar o seguinte comando no terminal: 
+```bash
+pip install sim-sm
+```
+
+### Utilização
+O programa deve conter três argumentos: linha, saída, e dia. Exemplo:
+
+Linha universidade, saindo da UFSM no dia de hoje
+```bash
+sim-sm universidade ufsm hoje
+```
+\
+Você também pode filtrar por faixa velha/nova:
+```bash
+sim-sm universidade ufsm hoje -fn
+```
+\
+Linha bombeiros, saindo do bairro no sábado
+```bash
+sim-sm bombeiros bairro sabado
+```
+
+### Docs
+```bash
+usage: sim-sm.py [-h] [-fv] [-fn] [-re] linha saida dia
+
+positional arguments:
+  linha              Linha do ônibus. Exemplo: universidade, bombeiros,
+                     circular
+  saida              De onde o ônibus sairá. Exemplo: bairro, centro, ufsm
+  dia                Hoje: hoje Dias úteis: util Sábado: sabado Domingos e
+                     feriados: domingo
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -fv, -faixa-velha  Para listar somente ônibus que passam pela faixa velha.
+  -fn, -faixa-nova   Para listar somente ônibus que passam pela faixa nova.
+  -re, -request      Utilização da biblioteca requests ao invés de cURL.)
+```
+
+### Dependências
+O programa usa as seguintes bibliotecas:
+* [terminaltables](https://github.com/Robpol86/terminaltables)
+* [colorama](https://pypi.org/project/colorama/)
+
+### Contribua
+Caso queira adicionar uma nova função, encontrou um bug ou sugestão, faça um pull request ou abra uma issue. :)
+
+**To do:**
+* Identificar feriados
+* Adicionar todas as linhas do site SIM - SM (No momento tem apenas as linhas que vão até o campus)
+
+### Licença
+MIT © José Victor Viriato
+
+
