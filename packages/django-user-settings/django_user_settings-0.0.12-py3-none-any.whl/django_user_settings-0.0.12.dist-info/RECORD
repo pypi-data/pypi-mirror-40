@@ -1,0 +1,17 @@
+django_user_settings-0.0.12.dist-info/DESCRIPTION.rst,sha256=7ZIdCfB2225CYty8hucAwjSR9zhPELSc6j8uAja6_hk,2030
+django_user_settings-0.0.12.dist-info/METADATA,sha256=ajh26R818iBD1f9dzhUmnHaf_xp2gdQGT9WL_RmP510,2859
+django_user_settings-0.0.12.dist-info/RECORD,,
+django_user_settings-0.0.12.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+django_user_settings-0.0.12.dist-info/metadata.json,sha256=HMTvFy5JuJSxdtL9dG7hsRxPixFiRjOOfLdas5ROpig,916
+django_user_settings-0.0.12.dist-info/top_level.txt,sha256=JPBjwogCAZazOkfPegpHKAm-Ugz-SpXg0aU5tv1JPo8,14
+user_settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+user_settings/admin.py,sha256=J-3oEcw1y_g1U5cGwe5dOioSJNnjtNVKtmaugZ80UXU,677
+user_settings/apps.py,sha256=VQVzSg27fj0xpBoh6dpqg4bzypoqyvNjCsNohpChwxk,100
+user_settings/models.py,sha256=kalalPf2pTculjMtn8qCTp6jvQDS6sZATUd7FMUVa5U,1730
+user_settings/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+user_settings/utils.py,sha256=NEzpCNonpgOWWz2HXPaDpObzjvQgKrFkTyNfl6DBEb8,2549
+user_settings/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+user_settings/migrations/0001_initial.py,sha256=Ez_wfQJN4AO7BLSGbeiqcEpK4bpKV82AorHlGHiTaRw,1634
+user_settings/migrations/0002_auto_20181120_1055.py,sha256=0TF7c0P17tMXLg75-Zcsd6ZIQYWB2-hScjO8BPW2O5E,548
+user_settings/migrations/0003_auto_20181225_1022.py,sha256=xF5hFO2pDob1inj8Fibsqorvsz8l0_hOU2qV1nvp9Pw,575
+user_settings/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
