@@ -1,0 +1,14 @@
+sigproextractor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sigproextractor/sigpro.py,sha256=WJ4YM_j0tiGlk6RycusMP2AWJl6peq9veuiZ8ORrKRI,27104
+sigproextractor/subroutines.py,sha256=PSKMidmeujh6xrssJBCIA52sH0JN9xxKozUOQeiwLIo,57357
+sigproextractor/data/21_breast_WGS_substitutions.mat,sha256=LyZbW5p39pz5yHt60QLnkD8XDGtZFNQHrN-iyn48240,3342
+sigproextractor/data/all_mice_silvio.txt,sha256=l7-mnKnwd5K7nRA4rd6R9wSW_wPYjRv42vOP-9QYCwo,3182
+sigproextractor/data/sigProfiler_DBS_signatures.csv,sha256=aKQ8PaRCzQi0Lox1Lmmo1r4Ym8imCv84mceMpTqHm08,8338
+sigproextractor/data/sigProfiler_ID_signatures.csv,sha256=3Ny_h2eR85IyXqf8jdeIDHbVkElPaHWx0om_iN1bzBQ,24038
+sigproextractor/data/sigProfiler_SBS_signatures_2018_03_28.csv,sha256=eSM5DVOplm3kWyG_7MOviXfnsFSESVMbA4aoUgPhmWc,57422
+sigproextractor/data/vcftest/breast_genomes_all_indels.txt,sha256=gmMeJDrIU8tfGqC3-RGF5dSSvTdwhKHXTJnAIyXTCtE,31047895
+sigproextractor/data/vcftest/breast_genomes_all_subs_simple_2.txt,sha256=kfZN1EROYz1aPH8I5pLLTbkXACChzATwXq7EhffYSyU,221352602
+sigproextractor-0.0.5.1.dist-info/METADATA,sha256=FvamNU0DZXJN9MAdIhhAAN4VCCAXDcUnCzPX0rS0D_E,489
+sigproextractor-0.0.5.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+sigproextractor-0.0.5.1.dist-info/top_level.txt,sha256=C4W1K8cHtkBMso9vx7rhnsVBgcS7wWKJ-hFLeDx-hDA,16
+sigproextractor-0.0.5.1.dist-info/RECORD,,
