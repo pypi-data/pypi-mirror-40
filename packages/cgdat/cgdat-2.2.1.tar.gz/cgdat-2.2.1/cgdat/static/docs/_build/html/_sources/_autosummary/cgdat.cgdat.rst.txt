@@ -1,0 +1,22 @@
+cgdat.cgdat
+===========
+
+.. automodule:: cgdat.cgdat
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      DataAnalyserGUI
+   
+   
+
+   
+   
+   

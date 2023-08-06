@@ -1,0 +1,2 @@
+recursive-include cgdat/static *
+include ./README.md
