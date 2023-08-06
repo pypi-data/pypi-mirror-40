@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: MatchZoo
+Version: 1.0.0
+Summary: MatchZoo is a toolkit for text matching. It was developed with a focus on facilitating the designing, comparing and sharing of deep text matching models.
+Home-page: https://github.com/NTMC-Community/MatchZoo
+Author: Yixing Fan, Liang Pang, Jianpeng Hou, Jiafeng Guo, Yanyan Lan, Xueqi Cheng
+Author-email: fanyixing@ict.ac.cn
+License: BSD
+Keywords: text matching models
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: keras (>=2.0.5)
+Requires-Dist: tensorflow (>=1.1.0)
+Requires-Dist: nltk (>=3.2.3)
+Requires-Dist: numpy (>=1.12.1)
+Requires-Dist: six (>=1.10.0)
+Requires-Dist: h5py (>=2.7.0)
+Requires-Dist: tqdm (>=4.19.4)
+Requires-Dist: scipy (>=1.0.0)
+Requires-Dist: jieba (>=0.39)
+Requires-Dist: psutil (>=5.4.6)
+Provides-Extra: tests
+Requires-Dist: coverage (>=4.3.4) ; extra == 'tests'
+Requires-Dist: codecov (>=2.0.15) ; extra == 'tests'
+Requires-Dist: pytest (>=3.0.3) ; extra == 'tests'
+Requires-Dist: pytest-cov (>=2.4.0) ; extra == 'tests'
+Requires-Dist: mock (>=2.0.0) ; extra == 'tests'
+Requires-Dist: flake8 (>=3.2.1) ; extra == 'tests'
+Requires-Dist: flake8-docstrings (>=1.0.2) ; extra == 'tests'
+Provides-Extra: visualize
+Requires-Dist: matplotlib (>=2.2.0) ; extra == 'visualize'
+
+MatchZoo is a toolkit for text matching. It was developed with a focus on facilitating the designing, comparing and sharing of deep text matching models.There are a number of deep matching methods, such as DRMM, MatchPyramid, MV-LSTM, aNMM, DUET, ARC-I, ARC-II, DSSM, and CDSSM, designed with a unified interface.Potential tasks related to MatchZoo include document retrieval, question answering, conversational response ranking, paraphrase identification, etc. We are always happy to receive any code contributions, suggestions, comments from all our MatchZoo users.
+
+
