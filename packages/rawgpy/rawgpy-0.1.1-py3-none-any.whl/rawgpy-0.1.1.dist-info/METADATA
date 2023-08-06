@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: rawgpy
+Version: 0.1.1
+Summary: simple RAWG.io python api wrapper
+Home-page: https://gitlab.com/laundmo/rawg-python-wrapper
+Author: laundmo
+Author-email: laurinschmidt2001@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# rawgpy - RAWG python api wrapper
+
+this is a small wrapper for the https://RAWG.io (game database) API
+
+
+usage:
+
+
+initialize API:
+
+
+`rawg = RAWG("<user-agent-here>")` 
+
+
+please supply a User-Agent that describes your project
+
+
+search for a game:
+
+
+`results = rawg.search("<game name here>")`
+
+
+ searches for the game, and returns a list of (5) results
+
+
+
+if you want to limit the number of results, you can chage that by doing:
+
+
+
+`results = rawg.search("<game name here>", num_results=2)`
+
+
+the results are GameResult objects, whihc contain all attribute the API supplies
+
+
+
+you can request more info for a game with
+
+
+
+`game = results[0]`
+
+
+
+`game.populate()`
+
