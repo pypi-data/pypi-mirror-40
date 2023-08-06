@@ -1,0 +1,57 @@
+Metadata-Version: 2.0
+Name: syszuxav
+Version: 0.1.0
+Summary: python bindings for ffmpeg
+Home-page: https://github.com/CivilNet/SYSZUXav
+Author: Gemfield
+Author-email: gemfield@civilnet.cn
+License: UNKNOWN
+Download-URL: https://github.com/CivilNet/SYSZUXav/releases/download/v0.1/syszuxav-0.1.0.tar.gz
+Keywords: ffmpeg python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+
+# SYSZUXav
+Python bindings for ffmpeg.
+- SYSZUXav now only tested on Ubuntu 16.04/18.04.
+- Other Linux distributions may work as well.
+
+
+# Install
+SYSZUXav has the dependency on ffmpeg library.
+On Ubuntu 16.04/18.04:
+
+```
+apt update
+apt install software-properties-common
+add-apt-repository ppa:jonathonf/ffmpeg-4
+apt update
+apt install ffmpeg libavutil-dev libswresample-dev libavcodec-dev libavformat-dev
+pip install syszuxav
+```
+
+# Usage
+You can use SYSZUXav by simply import syszuxav:
+
+```python
+import cv2
+import syszuxav                      
+import numpy as np
+#128 means decode thread number                 
+v = syszuxav.SYSZUXav("gemfield.mp4", 128)
+count = 0
+while True:
+  b = np.array(v.decodeJpg())
+  if b.shape[0] == 0:
+    continue
+  cv2.imwrite("gemfield{}.jpg".format(count),b)
+  count += 1
+```
+
+
+
