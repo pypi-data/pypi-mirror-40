@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: RatingCF
+Version: 0.1.2
+Summary: A user-preference-sensitive collaborative filtering algorithm for recommender system, which is based on items' ratings.
+Home-page: https://github.com/Kaversoniano/Python-package-RatingCF
+Author: Tianjian Yang
+Author-email: kaversoniano@gmail.com
+License: UNKNOWN
+Description: # Python package RatingCF
+        
+        * Description: A user-preference-sensitive collaborative filtering algorithm for recommender system, which is based on items' ratings.
+        
+        * Optimization Method: batch gradient descent
+        
+        * Parameter Initialization Method: normal distribution
+        
+        * Ensemble Method: voting
+        
+        * Output: a dictionary of recommendations
+        
+        * Other Features: flexible choices of the dimension of item's feature, training epochs, etc.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
