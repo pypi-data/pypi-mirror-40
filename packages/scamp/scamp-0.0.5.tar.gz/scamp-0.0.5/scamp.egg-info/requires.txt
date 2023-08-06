@@ -1,0 +1,12 @@
+pymusicxml
+expenvelope
+clockblocks
+pyfluidsynth
+sf2utils
+python-osc
+
+[lilypond output]
+abjad
+
+[midi stream]
+python-rtmidi
