@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Rumba
+Version: 0.9
+Summary: Rumba measurement framework for RINA
+Home-page: https://gitlab.com/arcfire/rumba
+Author: Sander Vrijders
+Author-email: sander.vrijders@ugent.be
+License: LGPL
+Keywords: rina measurement testbed
+Platform: UNKNOWN
+Requires-Dist: paramiko
+Requires-Dist: docker
+Requires-Dist: contextlib2 ; python_version < "3.0"
+Requires-Dist: enum34 ; python_version < "3.0"
+Requires-Dist: repoze.lru ; python_version < "3.2"
+Provides-Extra: numpyacceleration
+Requires-Dist: numpy ; extra == 'numpyacceleration'
+Provides-Extra: graphs
+Requires-Dist: pydot ; extra == 'graphs'
+
+UNKNOWN
+
+
