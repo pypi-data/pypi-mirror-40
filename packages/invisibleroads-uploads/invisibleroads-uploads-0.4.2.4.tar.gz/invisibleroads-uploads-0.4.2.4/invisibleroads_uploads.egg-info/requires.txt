@@ -1,0 +1,5 @@
+invisibleroads-macros>=0.9.5.1
+invisibleroads-posts>=0.6.1
+pyramid
+pytest
+six
