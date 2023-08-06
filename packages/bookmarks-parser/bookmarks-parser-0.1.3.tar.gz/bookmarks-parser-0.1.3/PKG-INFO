@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bookmarks-parser
+Version: 0.1.3
+Summary: netscape bookmarks parser
+Home-page: https://github.com/andriyor/amalgama-pq
+Author: Andriy Orehov
+Author-email: andriyorehov@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: beautifulsoup4 (>=4.5.0,<5.0.0)
+Requires-Dist: html5lib (>=1.0,<2.0)
