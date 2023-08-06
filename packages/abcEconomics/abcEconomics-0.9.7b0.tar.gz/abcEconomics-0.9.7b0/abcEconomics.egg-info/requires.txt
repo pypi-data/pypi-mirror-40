@@ -1,0 +1,8 @@
+flexx>=0.4.1
+future
+normality==0.6.1
+dataset==0.8
+numpy>=1.10.2p
+pandas>=0.17.1
+bokeh==0.12.16
+tornado==4.3
