@@ -1,0 +1,13 @@
+vbio/__init__.py,sha256=lBdM8yd1jz2vQPKo79jZP7Tz7qGISNuYigCCtJUctkk,183
+vbio/bot.py,sha256=m9LXot8ZuO_hFVAYzano9FBseRZ4rxsi3iX45ESrApQ,4306
+vbio/logging.py,sha256=uEZTWhqoBvvQoX-08pDGHo2btp_Nh8wTzWC4fAk-jIs,712
+vbio/types.py,sha256=dVJedCzp77C-xZ7gExoOOts2vCt1FooyuZ4uJ_5GFZc,7484
+vbio/servers/__init__.py,sha256=ZQDQ52nPFUNjIrzTUWyy4mEt216RjLPIb58fFGh1Egc,164
+vbio/servers/cherrypy.py,sha256=Jiizy29wrCHaOXf7J_CAZ4Gv_oouZy1HWheET8byPVA,2706
+vbio/servers/flask.py,sha256=-DpfYHB6bA8AE3gH9e0n3S1qmIr5JnnJP1I3Mb5P-6Y,1905
+vbio/servers/longpool.py,sha256=09HzAYXDWCF-BbVu8IED3qmeKCJ8rrqiyHS_hsptTxA,1761
+vbio-0.0.6.dist-info/LICENSE.txt,sha256=iQ7spgV5WKJPVbE93jJ3ABB4deg-02a6BGxxoM55wII,1065
+vbio-0.0.6.dist-info/METADATA,sha256=zkZsRv7xSjC7aKsG27EItnraF6x0l4wyl5eDUIog69U,2134
+vbio-0.0.6.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+vbio-0.0.6.dist-info/top_level.txt,sha256=jBOEmgfJZqGowvvv6jOw_934Kp_46YMCIFO5P0NSzaM,5
+vbio-0.0.6.dist-info/RECORD,,
