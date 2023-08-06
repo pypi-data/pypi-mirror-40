@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: gerrymetrics
+Version: 0.1.3
+Summary: Lots of metrics for quantifying gerrymandering
+Home-page: https://github.com/PrincetonUniversity/gerrymandertests
+Author: Princeton Gerrymandering Project
+Author-email: wtadler@princeton.edu
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+
+Code for running 16 different metrics for measuring partisan gerrymandering, including:
+
+- Mean-median difference and variant:
+   - Mean-median difference
+   - Equal vote weight
+- Lopsided margins (two-sample _t_-test on win margins)
+- Bootstrap (Monte Carlo) simulation
+- Declination variants
+   - Declination
+   - Declination (buffered)
+   - Declination variant
+   - Declination variant (buffered)
+- Efficiency gap variants
+   - Efficiency gap
+   - Difference gap
+   - Loss gap
+   - Surplus gap
+   - Vote-centric gap
+   - Vote-centric gap 2
+   - Tau gap
+- Partisan bias
+
+
