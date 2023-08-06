@@ -1,0 +1,3 @@
+[console_scripts]
+spinda = spinda.cli:main
+
