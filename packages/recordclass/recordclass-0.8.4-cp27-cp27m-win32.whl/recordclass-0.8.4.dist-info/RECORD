@@ -1,0 +1,14 @@
+recordclass/__init__.py,sha256=SiwgeaUCvOi5QFOW22kzqpmOKpY55AI3G5AQ_o3GPdU,1468
+recordclass/arrayclass.pyd,sha256=kZiuATpF7UuDDQ4MB70B_UAFgr4S77JRSrx0XpiflJQ,105984
+recordclass/memoryslots.pyd,sha256=3jrIs5WRKXBt2Ktq49Vt8q90V0aSZDdSfO0Lq8-tgfw,13824
+recordclass/record.py,sha256=hLjIKLsCfnfUFXNXHSXfGKxrxWs6ojufB4P4hO3V7gw,15498
+recordclass/test/__init__.py,sha256=VWMUC5EAaXbe-APb4WbM3Zg1IIBSS1et4fRGIPrXKJc,444
+recordclass/test/test_arrayclass.py,sha256=AwDUkDaTFJYAR00UzqUmDy-MD5zQnlh7948enY-oBBM,2364
+recordclass/test/test_memoryslots.py,sha256=1JP6dE1KCvPOF2N7Fth7lMnU0xBUWyx7E4ygJXmPdG4,3912
+recordclass/test/test_record.py,sha256=FCyDWOk4iutskKVbtu7OoWm74JYfz_iTU5X8Isoh6BQ,13044
+recordclass/test/test_struct.py,sha256=fYhDM0uAtYpbdfEqvt0pbtUrD_yVHWL9hoaW2akAu7c,14668
+recordclass-0.8.4.dist-info/LICENSE.txt,sha256=BN-NgAOIiEI5ABCSGfpqUNKvOl4kukuoUGSGW-EpxEY,1111
+recordclass-0.8.4.dist-info/METADATA,sha256=te1NOFasX9L88R3QbhRCO0XYMmfZdIcRX3x2oD0KGKA,13392
+recordclass-0.8.4.dist-info/WHEEL,sha256=-n8zIVjVB1IKnBRJeKHNlTctOSSX9dwZTSu92QhRvIs,102
+recordclass-0.8.4.dist-info/top_level.txt,sha256=LLBSTvco6TmQyOSQVUXy2wILr2AI1_I_v8HNWfqInDo,12
+recordclass-0.8.4.dist-info/RECORD,,
