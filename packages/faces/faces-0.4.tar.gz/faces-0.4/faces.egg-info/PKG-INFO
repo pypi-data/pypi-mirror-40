@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: faces
+Version: 0.4
+Summary: A Python library for developing desktop apps in a reactive way
+Home-page: https://github.com/teamfaces/faces
+Author: Ricardo Gomes
+Author-email: desk467@gmail.com
+License: MIT
+Download-URL: https://github.com/teamfaces/faces/releases/download/v0.4/faces-0.4.tar.gz
+Description: # faces
+        
+        A Python library for developing desktop/mobile apps in a reactive way.
+        
+        
+Keywords: gui,desktop-apps,mobile
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
