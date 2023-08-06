@@ -1,0 +1,17 @@
+django
+djangorestframework-csv
+djangorestframework
+et-xmlfile
+jdcal
+odfpy
+openpyxl
+pillow
+psycopg2-binary
+pytz
+pyyaml
+reportlab
+six
+tablib
+unicodecsv
+xlrd
+xlwt
