@@ -1,0 +1,16 @@
+HISTORY.rst,sha256=E7mML_H8tTJTdvQH2eJ-WVoYwx1mIA2lAabrokcgx34,2492
+docs/Makefile,sha256=qtY26VfAtVHADhxFZg8eoWvWF1K2XbQb0P4QQ9OK80M,611
+docs/source/_static/custom.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/source/api.rst,sha256=uBNQ2dP9hq-VucNfj67hL8bQaYy9f-pDUHrACnR-364,70
+docs/source/conf.py,sha256=FdtmtvN2tAsgH0yEKFCqv5LKf2T-TjRHzw4PFgwMb1Q,4797
+docs/source/features.rst,sha256=wQAuFeosy4j7oqC50ofta6a6tZbEnZ57XxijlJHUZHw,4824
+docs/source/history.rst,sha256=Eg8ulTObF9XBJm5fW_G_kXu3SWzw6fTTSmyNLpDBemU,31
+docs/source/index.rst,sha256=sPz4IdOZLGtjlDnLExG8HTJiPE9hLC7FBSmAlJRrxUU,269
+pygenstub.py,sha256=o5aFWxoIGCVwXvVYv7aNNwQMNgBG6XbgrL0ZwFr0L1g,27524
+tests/test_cli.py,sha256=YqgJNmFUoCyNS4A8xfF6Uwa9MUQLCtcrDc09NDWh8Es,2216
+tests/test_stub.py,sha256=bVGnWo-v90D1ntvZ0NMQEVQTTSjQ7AA9IqGOKi-Xz04,16654
+pygenstub-1.2.2.dist-info/entry_points.txt,sha256=ldt034oLyVWcFUTJy_NRbfYcH3M46D4ZCC3F_Oh6WP0,44
+pygenstub-1.2.2.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+pygenstub-1.2.2.dist-info/WHEEL,sha256=8bSsbOsfjCYuJ5fTC_9A5e8ObOgpeFXuhLBJSbnJo_c,89
+pygenstub-1.2.2.dist-info/METADATA,sha256=kbFHHFkmSEkwo4Lwb65FLhEGvcIhJ2N3WD1wSg_iD4s,3483
+pygenstub-1.2.2.dist-info/RECORD,,
