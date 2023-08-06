@@ -1,0 +1,5 @@
+requests
+
+[testing]
+nose
+requests_mock
