@@ -1,0 +1,12 @@
+pascal_voc_tools/__init__.py,sha256=YFIxEFLmw-sC8L80JJV-bI1cYLHLuohCN32fa2Z19LY,183
+pascal_voc_tools/datasetresize.py,sha256=UK03RgbaSagm3DKHG6mijAKYeQ0RV7rKUeZmq3qb_2A,5998
+pascal_voc_tools/datasplit.py,sha256=PFnnlKnufJnpaYVXwRvTsjaVQlIf4sn1xCl3_7mUa4M,4719
+pascal_voc_tools/resize.py,sha256=a_AExi0mkTmT6_1DkO4CbuGMaSVk1ROV8WdXPqnJRlE,6005
+pascal_voc_tools/xmlReader.py,sha256=QpY-rhohI0yGMuGCoUbzwFokJZNBCebHwQypzSou4Mc,4864
+pascal_voc_tools/xmlreader.py,sha256=QpY-rhohI0yGMuGCoUbzwFokJZNBCebHwQypzSou4Mc,4864
+pascal_voc_tools/xmlwriter.py,sha256=4pLt5tzebhgxhd3U_LWmKOjbKh7bWd0WF_LMTJT2seE,1419
+pascal_voc_tools-0.1.2.dist-info/LICENSE,sha256=HAE49CCfTEuwVNG7vVmPjMFqPWD-gu4Vs8Fq2fJKQ2U,1069
+pascal_voc_tools-0.1.2.dist-info/METADATA,sha256=OiAUqtbz5L1-5sxPfCgHfmC1uhSXV6LW_TxSZ3jYgLM,1435
+pascal_voc_tools-0.1.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pascal_voc_tools-0.1.2.dist-info/top_level.txt,sha256=anE9g2jrO_HedQlTn4URrSzs5u41ojFScA6VgZ5nqQs,17
+pascal_voc_tools-0.1.2.dist-info/RECORD,,
