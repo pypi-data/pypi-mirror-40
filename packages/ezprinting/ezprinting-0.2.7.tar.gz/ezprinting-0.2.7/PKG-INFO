@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ezprinting
+Version: 0.2.7
+Summary: Python package to easily print to a printer configured on either a CUPS server or Google Cloud Print.
+Home-page: https://github.com/mbello/ezprinting
+Author: Marcelo Bello
+Author-email: None
+Keywords: google cloud print,cloud print,cups,printing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: google-auth (>=1.5,<2.0)
+Requires-Dist: pycups (>=1.9.74)
+Requires-Dist: requests (>=2.19,<3.0)
+Project-URL: Repository, https://github.com/mbello/ezprinting
