@@ -1,0 +1,11 @@
+README.md
+setup.py
+yaci/__init__.py
+yaci/base_storage.py
+yaci/cache_manager.py
+yaci/dict_storage.py
+yaci.egg-info/PKG-INFO
+yaci.egg-info/SOURCES.txt
+yaci.egg-info/dependency_links.txt
+yaci.egg-info/requires.txt
+yaci.egg-info/top_level.txt
