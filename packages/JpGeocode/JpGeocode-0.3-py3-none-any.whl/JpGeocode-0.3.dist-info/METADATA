@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: JpGeocode
+Version: 0.3
+Summary: Search coordinates from municipalities in Japan
+Home-page: https://github.com/0x0u/JpGeocode
+Author: m0zu
+Author-email: m0zurillex@gmail.com
+License: MIT
+Keywords: Python3 japan geocoding
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# JpGeocode
+日本の市区町村名を入れて座標を出すやつ
+
+
