@@ -1,0 +1,474 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cgdat.qt_custom package &mdash; CGDAT  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CGDAT
+          
+
+          
+            
+            <img src="../_static/CGDAT.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.2.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../use.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info.html">Additional information</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../code.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CGDAT</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>cgdat.qt_custom package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/_auto_rst/cgdat.qt_custom.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cgdat-qt-custom-package">
+<h1>cgdat.qt_custom package<a class="headerlink" href="#cgdat-qt-custom-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cgdat.qt_custom.qt_dialogs">
+<span id="cgdat-qt-custom-qt-dialogs-module"></span><h2>cgdat.qt_custom.qt_dialogs module<a class="headerlink" href="#module-cgdat.qt_custom.qt_dialogs" title="Permalink to this headline">¶</a></h2>
+<p>This file contains some dialog classes that are created for the CGDAT GUI. These classes inherit from the
+QtWidgets.Qdialog Class.</p>
+<dl class="class">
+<dt id="cgdat.qt_custom.qt_dialogs.progressDialog">
+<em class="property">class </em><code class="descclassname">cgdat.qt_custom.qt_dialogs.</code><code class="descname">progressDialog</code><span class="sig-paren">(</span><em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_dialogs.html#progressDialog"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_dialogs.progressDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code>, <a class="reference internal" href="cgdat.qt_ui.html#cgdat.qt_ui.progress_dialog_ui.Ui_ProgressDialog" title="cgdat.qt_ui.progress_dialog_ui.Ui_ProgressDialog"><code class="xref py py-class docutils literal notranslate"><span class="pre">cgdat.qt_ui.progress_dialog_ui.Ui_ProgressDialog</span></code></a></p>
+<p>This class overloads the qt python class that was generated by yQt5.uic.pyuic converter for the
+progressDialog so it can be used as a dialog in our main GUI.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>QtWidgets (QtWidgets.QDialog): Main dialog class
+Ui_ProgressDialog (object): Custom made dialog class</dd>
+</dl>
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_dialogs.progressDialog.updateProgressBar">
+<code class="descname">updateProgressBar</code><span class="sig-paren">(</span><em>percentage</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_dialogs.html#progressDialog.updateProgressBar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_dialogs.progressDialog.updateProgressBar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to update the progress bar.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>int (int): The percentage of the progress bar.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_dialogs.progressDialog.updateProgressConsole">
+<code class="descname">updateProgressConsole</code><span class="sig-paren">(</span><em>text</em>, <em>color=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_dialogs.html#progressDialog.updateProgressConsole"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_dialogs.progressDialog.updateProgressConsole" title="Permalink to this definition">¶</a></dt>
+<dd><p>A function used to append messages to the progress console.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>text (str): The message we want to append.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cgdat.qt_custom.qt_dialogs.importDialog">
+<em class="property">class </em><code class="descclassname">cgdat.qt_custom.qt_dialogs.</code><code class="descname">importDialog</code><span class="sig-paren">(</span><em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_dialogs.html#importDialog"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_dialogs.importDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code>, <a class="reference internal" href="cgdat.qt_ui.html#cgdat.qt_ui.import_dialog_ui.Ui_ImportDialog" title="cgdat.qt_ui.import_dialog_ui.Ui_ImportDialog"><code class="xref py py-class docutils literal notranslate"><span class="pre">cgdat.qt_ui.import_dialog_ui.Ui_ImportDialog</span></code></a></p>
+<p>This class overloads the qt python class that was generated by yQt5.uic.pyuic converter for the
+importDialog so it can be used as a dialog in our main GUI.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>QtWidgets (QtWidgets.QDialog): Main dialog class
+Ui_ImportDialog (object): Custom made dialog class</dd>
+</dl>
+</dd></dl>
+
+<dl class="class">
+<dt id="cgdat.qt_custom.qt_dialogs.outputSettingsDialog">
+<em class="property">class </em><code class="descclassname">cgdat.qt_custom.qt_dialogs.</code><code class="descname">outputSettingsDialog</code><span class="sig-paren">(</span><em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_dialogs.html#outputSettingsDialog"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_dialogs.outputSettingsDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code>, <a class="reference internal" href="cgdat.qt_ui.html#cgdat.qt_ui.output_settings_ui.Ui_OutputSettings" title="cgdat.qt_ui.output_settings_ui.Ui_OutputSettings"><code class="xref py py-class docutils literal notranslate"><span class="pre">cgdat.qt_ui.output_settings_ui.Ui_OutputSettings</span></code></a></p>
+<p>This class overloads the qt python class that was generated by yQt5.uic.pyuic converter for the
+output_settings_ui so it can be used as a dialog in our main GUI.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>QtWidgets (QtWidgets.QDialog): Main dialog class
+Ui_OutputSettings (object): Custom made dialog class</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cgdat.qt_custom.qt_extra">
+<span id="cgdat-qt-custom-qt-extra-module"></span><h2>cgdat.qt_custom.qt_extra module<a class="headerlink" href="#module-cgdat.qt_custom.qt_extra" title="Permalink to this headline">¶</a></h2>
+<p>This module contains classes and functions that add added custom made widgets and functionalities to the qt GUI. It contains the
+following components:</p>
+<dl class="class">
+<dt id="cgdat.qt_custom.qt_extra.MultiSelectMenu">
+<em class="property">class </em><code class="descclassname">cgdat.qt_custom.qt_extra.</code><code class="descname">MultiSelectMenu</code><span class="sig-paren">(</span><em>all_text_enabled=True</em>, <em>all_text='Select all'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_extra.html#MultiSelectMenu"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_extra.MultiSelectMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QToolButton</span></code></p>
+<p>This class is used to create a multi selection drop down menu.</p>
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_extra.MultiSelectMenu.addAllOption">
+<code class="descname">addAllOption</code><span class="sig-paren">(</span><em>all_text='Select all'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_extra.html#MultiSelectMenu.addAllOption"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_extra.MultiSelectMenu.addAllOption" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to add a “Select all” action to the toolbar menu.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>all_text (str, optional): Defaults to “Select all”. The text used for the select all element.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_extra.MultiSelectMenu.addItem">
+<code class="descname">addItem</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_extra.html#MultiSelectMenu.addItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_extra.MultiSelectMenu.addItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method used to add additional actions to the toolbar menu.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_extra.MultiSelectMenu.changeAllText">
+<code class="descname">changeAllText</code><span class="sig-paren">(</span><em>all_text</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_extra.html#MultiSelectMenu.changeAllText"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_extra.MultiSelectMenu.changeAllText" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to change the “Select all” text.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>all_text (str): The text used for the select all element.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_extra.MultiSelectMenu.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_extra.html#MultiSelectMenu.clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_extra.MultiSelectMenu.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function clears all the cations out of the Qmenu.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_extra.MultiSelectMenu.eventFilter">
+<code class="descname">eventFilter</code><span class="sig-paren">(</span><em>obj</em>, <em>event</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_extra.html#MultiSelectMenu.eventFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_extra.MultiSelectMenu.eventFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to slightly edit the open and close behaviour of the
+QToolButton. This was done since we want the toolbar drop down menu to stay open
+when the user is selecting players.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>obj (QObject): The object on which the event filter needs to be applied.
+event (QEvent): The QEvent we want to overwrite.</dd>
+<dt>Returns:</dt>
+<dd>QEvent: Pass the event to the parent class.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_extra.MultiSelectMenu.removeAllOption">
+<code class="descname">removeAllOption</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_extra.html#MultiSelectMenu.removeAllOption"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_extra.MultiSelectMenu.removeAllOption" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to remove a “Select all” action to the toolbar menu.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_extra.MultiSelectMenu.selectAction">
+<code class="descname">selectAction</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_extra.html#MultiSelectMenu.selectAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_extra.MultiSelectMenu.selectAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to unselect the select all option when one of the other values is unselected. Further it
+also makes sure that the select all button is selected again if all items are selected again.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_extra.MultiSelectMenu.selectAll">
+<code class="descname">selectAll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_extra.html#MultiSelectMenu.selectAll"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_extra.MultiSelectMenu.selectAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to select all the options when the select all action is selected</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_extra.MultiSelectMenu.selectedItems">
+<code class="descname">selectedItems</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_extra.html#MultiSelectMenu.selectedItems"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_extra.MultiSelectMenu.selectedItems" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method returns a list containing the items that were selected in the toolbox menu.</p>
+<dl class="docutils">
+<dt>Returns:</dt>
+<dd>list: List containing the items that were selected.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-cgdat.qt_custom.qt_thread">
+<span id="cgdat-qt-custom-qt-thread-module"></span><h2>cgdat.qt_custom.qt_thread module<a class="headerlink" href="#module-cgdat.qt_custom.qt_thread" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the classes and functions that are used qt gui to enable multithreading. It contains the
+following components:</p>
+<dl class="class">
+<dt id="cgdat.qt_custom.qt_thread.WorkerSignals">
+<em class="property">class </em><code class="descclassname">cgdat.qt_custom.qt_thread.</code><code class="descname">WorkerSignals</code><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_thread.html#WorkerSignals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_thread.WorkerSignals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<p>Defines the signals available from a running worker thread.</p>
+<p>Supported signals are:</p>
+<dl class="docutils">
+<dt>finished</dt>
+<dd>No data</dd>
+<dt>error</dt>
+<dd><cite>tuple</cite> (exctype, value, traceback.format_exc() )</dd>
+<dt>ready</dt>
+<dd><cite>str</cite> string specifying which worker was ready</dd>
+<dt>result</dt>
+<dd><cite>object</cite> data returned from processing, anything</dd>
+<dt>progress</dt>
+<dd><cite>int</cite> indicating % progress</dd>
+</dl>
+<dl class="attribute">
+<dt id="cgdat.qt_custom.qt_thread.WorkerSignals.error">
+<code class="descname">error</code><a class="headerlink" href="#cgdat.qt_custom.qt_thread.WorkerSignals.error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cgdat.qt_custom.qt_thread.WorkerSignals.finished">
+<code class="descname">finished</code><a class="headerlink" href="#cgdat.qt_custom.qt_thread.WorkerSignals.finished" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cgdat.qt_custom.qt_thread.WorkerSignals.progress">
+<code class="descname">progress</code><a class="headerlink" href="#cgdat.qt_custom.qt_thread.WorkerSignals.progress" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cgdat.qt_custom.qt_thread.WorkerSignals.ready">
+<code class="descname">ready</code><a class="headerlink" href="#cgdat.qt_custom.qt_thread.WorkerSignals.ready" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cgdat.qt_custom.qt_thread.WorkerSignals.result">
+<code class="descname">result</code><a class="headerlink" href="#cgdat.qt_custom.qt_thread.WorkerSignals.result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cgdat.qt_custom.qt_thread.Worker">
+<em class="property">class </em><code class="descclassname">cgdat.qt_custom.qt_thread.</code><code class="descname">Worker</code><span class="sig-paren">(</span><em>fn</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_thread.html#Worker"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_thread.Worker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QThread</span></code></p>
+<p>Worker thread</p>
+<p>Inherits from QRunnable to handler worker thread setup, signals
+and wrap-up.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first docutils">
+<dt>fn (callback): The function callback to run on this worker thread. The</dt>
+<dd>supplied args and kwargs will be passed through to the runner.</dd>
+</dl>
+<p>args (*args): Arguments to pass to the callback function.</p>
+<p class="last">kwargs (*kwargs): Keywords to pass to the callback function.</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="cgdat.qt_custom.qt_thread.Worker.run">
+<code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgdat/qt_custom/qt_thread.html#Worker.run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgdat.qt_custom.qt_thread.Worker.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve args/kwargs and start up the thread using them.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-cgdat.qt_custom">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cgdat.qt_custom" title="Permalink to this headline">¶</a></h2>
+<p>This package contains all the additional classes and functions that are used in the CGDAT data anaylsis tool. It contains
+the following components:</p>
+<p><strong>Modules:</strong></p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../_autosummary/_autosummary/cgdat.qt_custom.qt_dialogs.html#module-cgdat.qt_custom.qt_dialogs" title="cgdat.qt_custom.qt_dialogs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cgdat.qt_custom.qt_dialogs</span></code></a></td>
+<td>This file contains some dialog classes that are created for the CGDAT GUI.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../_autosummary/_autosummary/cgdat.qt_custom.qt_extra.html#module-cgdat.qt_custom.qt_extra" title="cgdat.qt_custom.qt_extra"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cgdat.qt_custom.qt_extra</span></code></a></td>
+<td>This module contains classes and functions that add added custom made widgets and functionalities to the qt GUI.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../_autosummary/_autosummary/cgdat.qt_custom.qt_thread.html#module-cgdat.qt_custom.qt_thread" title="cgdat.qt_custom.qt_thread"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cgdat.qt_custom.qt_thread</span></code></a></td>
+<td>This module contains the classes and functions that are used qt gui to enable multithreading.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Rick Staa
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

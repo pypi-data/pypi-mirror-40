@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cgdat.qt_custom.qt_dialogs &mdash; CGDAT  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> CGDAT
+          
+
+          
+            
+            <img src="../../../_static/CGDAT.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.2.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../use.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../info.html">Additional information</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../code.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">CGDAT</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>cgdat.qt_custom.qt_dialogs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for cgdat.qt_custom.qt_dialogs</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This file contains some dialog classes that are created for the CGDAT GUI. These classes inherit from the</span>
+<span class="sd">QtWidgets.Qdialog Class.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1">### Set all ###</span>
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;progressDialog&#39;</span><span class="p">,</span> <span class="s1">&#39;importDialog&#39;</span><span class="p">,</span> <span class="s1">&#39;outputSettingsDialog&#39;</span><span class="p">]</span>
+
+<span class="c1">### Import needed pyqt modules modules ###</span>
+<span class="kn">from</span> <span class="nn">PyQt5</span> <span class="k">import</span> <span class="n">QtWidgets</span><span class="p">,</span> <span class="n">QtCore</span><span class="p">,</span> <span class="n">QtGui</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1">### Import other classes ###</span>
+<span class="kn">from</span> <span class="nn">..</span> <span class="k">import</span> <span class="n">qt_ui</span>
+<span class="kn">from</span> <span class="nn">.qt_extra</span> <span class="k">import</span> <span class="n">MultiSelectMenu</span>
+
+<span class="c1">#####################################################################</span>
+<span class="c1">#### Script Media paths                                          ####</span>
+<span class="c1">#####################################################################</span>
+<span class="n">DIRNAME</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>  <span class="c1"># Get relative script path</span>
+<span class="n">TOGGLE_ICON_ON</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DIRNAME</span><span class="p">,</span> <span class="s2">&quot;..&quot;</span><span class="p">,</span> <span class="s2">&quot;static/media/toggle_on.png&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>    <span class="c1"># Toggle on icon</span>
+<span class="n">TOGGLE_ICON_DISABLED</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DIRNAME</span><span class="p">,</span> <span class="s2">&quot;..&quot;</span><span class="p">,</span> <span class="s2">&quot;static/media/toggle_off_disabled.png&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>    <span class="c1"># Toggle on icon</span>
+<span class="n">TOGGLE_ICON_OFF</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DIRNAME</span><span class="p">,</span> <span class="s2">&quot;..&quot;</span><span class="p">,</span> <span class="s2">&quot;static/media/toggle_off.png&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>  <span class="c1"># Toggle off icon</span>
+
+<span class="c1">#####################################################################</span>
+<span class="c1">#### Overload custom progressDialog class                        ####</span>
+<span class="c1">#####################################################################</span>
+<div class="viewcode-block" id="progressDialog"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_dialogs.progressDialog">[docs]</a><span class="k">class</span> <span class="nc">progressDialog</span><span class="p">(</span><span class="n">QtWidgets</span><span class="o">.</span><span class="n">QDialog</span><span class="p">,</span> <span class="n">qt_ui</span><span class="o">.</span><span class="n">Ui_ProgressDialog</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This class overloads the qt python class that was generated by yQt5.uic.pyuic converter for the</span>
+<span class="sd">    progressDialog so it can be used as a dialog in our main GUI.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        QtWidgets (QtWidgets.QDialog): Main dialog class</span>
+<span class="sd">        Ui_ProgressDialog (object): Custom made dialog class</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">#### Class initializer                       ####</span>
+    <span class="c1">#################################################</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">parent</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Object initiation.</span>
+<span class="sd">            parent (object, optional): Defaults to None. The partent object the class needs to be applied to.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QDialog</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">WindowSystemMenuHint</span> <span class="o">|</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">WindowTitleHint</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setupUi</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">#### updateProgressConsole method            ####</span>
+    <span class="c1">#################################################</span>
+<div class="viewcode-block" id="progressDialog.updateProgressConsole"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_dialogs.progressDialog.updateProgressConsole">[docs]</a>    <span class="k">def</span> <span class="nf">updateProgressConsole</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A function used to append messages to the progress console.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            text (str): The message we want to append.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1">### Add normal text when no color was given ###</span>
+        <span class="k">if</span> <span class="n">color</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">progress_console</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">color_txt</span> <span class="o">=</span> <span class="s2">&quot;&lt;span style=</span><span class="se">\&quot;</span><span class="s2"> color:&quot;</span> <span class="o">+</span> <span class="n">color</span> <span class="o">+</span> <span class="s2">&quot;;</span><span class="se">\&quot;</span><span class="s2"> &gt;&quot;</span> <span class="o">+</span> <span class="n">text</span> <span class="o">+</span> <span class="s2">&quot;&lt;/span&gt;&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">progress_console</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">color_txt</span><span class="p">)</span></div>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">#### updateProgressBar method                ####</span>
+    <span class="c1">#################################################</span>
+<div class="viewcode-block" id="progressDialog.updateProgressBar"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_dialogs.progressDialog.updateProgressBar">[docs]</a>    <span class="k">def</span> <span class="nf">updateProgressBar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">percentage</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Function used to update the progress bar.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            int (int): The percentage of the progress bar.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1">### Set progress bar value ###</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">progress_bar</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">percentage</span><span class="p">)</span>
+
+        <span class="c1">### If 100 % change dialog buttons ###</span>
+        <span class="k">if</span> <span class="n">percentage</span> <span class="o">==</span> <span class="mf">100.0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buttonBox</span><span class="o">.</span><span class="n">removeButton</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buttonBox</span><span class="o">.</span><span class="n">button</span><span class="p">(</span><span class="n">QtWidgets</span><span class="o">.</span><span class="n">QDialogButtonBox</span><span class="o">.</span><span class="n">Cancel</span><span class="p">))</span>  <span class="c1"># Remove cancel button</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buttonBox</span><span class="o">.</span><span class="n">addButton</span><span class="p">(</span><span class="s2">&quot;Finish&quot;</span><span class="p">,</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QDialogButtonBox</span><span class="o">.</span><span class="n">AcceptRole</span><span class="p">)</span></div></div>
+
+<span class="c1">#####################################################################</span>
+<span class="c1">#### Overload custom import Dialog class                         ####</span>
+<span class="c1">#####################################################################</span>
+<div class="viewcode-block" id="importDialog"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_dialogs.importDialog">[docs]</a><span class="k">class</span> <span class="nc">importDialog</span><span class="p">(</span><span class="n">QtWidgets</span><span class="o">.</span><span class="n">QDialog</span><span class="p">,</span> <span class="n">qt_ui</span><span class="o">.</span><span class="n">Ui_ImportDialog</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This class overloads the qt python class that was generated by yQt5.uic.pyuic converter for the</span>
+<span class="sd">    importDialog so it can be used as a dialog in our main GUI.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        QtWidgets (QtWidgets.QDialog): Main dialog class</span>
+<span class="sd">        Ui_ImportDialog (object): Custom made dialog class</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">#### Class initializer                       ####</span>
+    <span class="c1">#################################################</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">parent</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QDialog</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">WindowSystemMenuHint</span> <span class="o">|</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">WindowTitleHint</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setupUi</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
+
+<span class="c1">#####################################################################</span>
+<span class="c1">#### Overload auto created output settings window class          ####</span>
+<span class="c1">#####################################################################</span>
+<div class="viewcode-block" id="outputSettingsDialog"><a class="viewcode-back" href="../../../_auto_rst/cgdat.qt_custom.html#cgdat.qt_custom.qt_dialogs.outputSettingsDialog">[docs]</a><span class="k">class</span> <span class="nc">outputSettingsDialog</span><span class="p">(</span><span class="n">QtWidgets</span><span class="o">.</span><span class="n">QDialog</span><span class="p">,</span> <span class="n">qt_ui</span><span class="o">.</span><span class="n">Ui_OutputSettings</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This class overloads the qt python class that was generated by yQt5.uic.pyuic converter for the</span>
+<span class="sd">    output_settings_ui so it can be used as a dialog in our main GUI.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        QtWidgets (QtWidgets.QDialog): Main dialog class</span>
+<span class="sd">        Ui_OutputSettings (object): Custom made dialog class</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">#################################################</span>
+    <span class="c1">#### Class initializer                       ####</span>
+    <span class="c1">#################################################</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QDialog</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">WindowSystemMenuHint</span> <span class="o">|</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">WindowTitleHint</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setupUi</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+        <span class="c1">### Create toggle buttons ###</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">frame_rate_toggle</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">&quot;QCheckBox::indicator:checked {image: url(&#39;&quot;</span><span class="o">+</span><span class="n">TOGGLE_ICON_ON</span><span class="o">+</span><span class="s2">&quot;&#39;);}</span><span class="se">\n</span><span class="s2"> QCheckBox::indicator:unchecked {image: url(&#39;&quot;</span><span class="o">+</span><span class="n">TOGGLE_ICON_OFF</span><span class="o">+</span><span class="s2">&quot;&#39;);}</span><span class="se">\n</span><span class="s2"> QCheckBox::indicator:disabled {image: url(&#39;&quot;</span><span class="o">+</span><span class="n">TOGGLE_ICON_DISABLED</span><span class="o">+</span><span class="s2">&quot;&#39;);}&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">columns_toggle</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">&quot;QCheckBox::indicator:checked {image: url(&#39;&quot;</span><span class="o">+</span><span class="n">TOGGLE_ICON_ON</span><span class="o">+</span><span class="s2">&quot;&#39;);}</span><span class="se">\n</span><span class="s2"> QCheckBox::indicator:unchecked {image: url(&#39;&quot;</span><span class="o">+</span><span class="n">TOGGLE_ICON_OFF</span><span class="o">+</span><span class="s2">&quot;&#39;);}</span><span class="se">\n</span><span class="s2"> QCheckBox::indicator:disabled {image: url(&#39;&quot;</span><span class="o">+</span><span class="n">TOGGLE_ICON_DISABLED</span><span class="o">+</span><span class="s2">&quot;&#39;);}&quot;</span><span class="p">)</span>
+
+        <span class="c1">### Create multi checkbox column choicer ###</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">column_choicer_drop_down_menu</span> <span class="o">=</span> <span class="n">MultiSelectMenu</span><span class="p">()</span>
+        <span class="n">font</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QFont</span><span class="p">()</span>
+        <span class="n">font</span><span class="o">.</span><span class="n">setPointSize</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">column_choicer_drop_down_menu</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="n">font</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">column_choicer_drop_down_menu</span><span class="o">.</span><span class="n">setObjectName</span><span class="p">(</span><span class="s2">&quot;column_choiser&quot;</span><span class="p">)</span>
+        <span class="n">sizePolicy</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QSizePolicy</span><span class="p">(</span><span class="n">QtWidgets</span><span class="o">.</span><span class="n">QSizePolicy</span><span class="o">.</span><span class="n">MinimumExpanding</span><span class="p">,</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QSizePolicy</span><span class="o">.</span><span class="n">Fixed</span><span class="p">)</span>
+        <span class="n">sizePolicy</span><span class="o">.</span><span class="n">setHorizontalStretch</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">sizePolicy</span><span class="o">.</span><span class="n">setVerticalStretch</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">sizePolicy</span><span class="o">.</span><span class="n">setHeightForWidth</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">column_choicer_drop_down_menu</span><span class="o">.</span><span class="n">sizePolicy</span><span class="p">()</span><span class="o">.</span><span class="n">hasHeightForWidth</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">column_choicer_drop_down_menu</span><span class="o">.</span><span class="n">setSizePolicy</span><span class="p">(</span><span class="n">sizePolicy</span><span class="p">)</span>
+
+        <span class="c1"># self.column_choicer_drop_down_menu.font(10)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">additional_output_settings_grid</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">column_choicer_drop_down_menu</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">column_choicer_drop_down_menu</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s2">&quot;Please import a data file to see the available columns&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">column_choicer_drop_down_menu</span><span class="o">.</span><span class="n">setEnabled</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">columns_toggle</span><span class="o">.</span><span class="n">setEnabled</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></div>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Rick Staa
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../../',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+API Reference
+=============
+
+Modules
+--------------
+
+.. autosummary::
+   :toctree: _autosummary
+
+    cgdat.qt_custom
+    cgdat.qt_ui
+
+Functions
+------------------
+
+.. autosummary::
+   :toctree: _autosummary
+
+    cgdat.cgdat
+    cgdat.create_shortcut_cl
+    cgdat.start_cl
+
+Scripts
+--------------------
+
+.. autosummary::
+   :toctree: _autosummary
+
+    start_cgdat
+    install_cgdat
+    create_shortcut_cl

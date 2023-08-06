@@ -1,0 +1,38 @@
+cgdat.qt\_custom package
+========================
+
+Submodules
+----------
+
+cgdat.qt\_custom.qt\_dialogs module
+-----------------------------------
+
+.. automodule:: cgdat.qt_custom.qt_dialogs
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cgdat.qt\_custom.qt\_extra module
+---------------------------------
+
+.. automodule:: cgdat.qt_custom.qt_extra
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cgdat.qt\_custom.qt\_thread module
+----------------------------------
+
+.. automodule:: cgdat.qt_custom.qt_thread
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cgdat.qt_custom
+    :members:
+    :undoc-members:
+    :show-inheritance:

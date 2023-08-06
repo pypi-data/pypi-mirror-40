@@ -1,0 +1,36 @@
+Usage
+=====================================
+This package can both be imported as a python package or run as a stand alone gui (see :numref:`figure_1`). To import the python package use :samp:`import cgdat`. To use as a stand alone package run the :samp:`cgdat-gui` cmd.
+
+Tool interface
+-------------------------
+
+.. figure:: ../../cgdat/static/media/gui_overview.png
+   :scale: 100 %
+   :alt: A overview of the CGDAT GUI window.
+   :name: figure_1
+
+   A overview of the CGDAT GUI.
+
+Functions
+-----------------------
+
+This repository can be used to perform a simple csv game data filtering. The tool can filter a input data file based on:
+
+* Conditions:
+    * Example: Speed > 10 & Acceleration < 5
+* A time section file:
+    * A file containing a :samp:`Start Time` and :samp:`End Time` column specifying the sections where you want to apply the condition filter.
+* Player name:
+    * In the gui you can specify for which players you want to conduct the analysis. For this option to work the :samp:`input_data.csv` file needs to contain a :samp:`Name` column.
+
+
+Further you can add also add a safety padding to the data filtering. Meaning that the program will also include a number of samples before and after the specified conditions are met.
+
+Console commands
+--------------------------
+
+This package also installs some additional console commands:
+
+* :samp:`cgdat-gui` - This will launch the CGDAT gui.
+* :samp:`cgdat-shortcut` - This will create a shortcut to launch the GUI on your desktop folder.
