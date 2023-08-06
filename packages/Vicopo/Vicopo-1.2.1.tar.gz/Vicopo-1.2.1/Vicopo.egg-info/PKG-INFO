@@ -1,0 +1,134 @@
+Metadata-Version: 2.1
+Name: Vicopo
+Version: 1.2.1
+Summary: Vicopo est un moyen léger et rapide rechercher une ville française et implémenter des propositions à la volée, l'autocomplétion d'un champ de ville ou de code postal et la conversion de l'un vers l'autre.
+Home-page: https://vicopo.selfbuild.fr
+Author: kylekatarnls
+License: UNKNOWN
+Description: # [VICOPO](https://vicopo.selfbuild.fr/)
+        
+        #### API HTTP et Script pour trouver les villes Ã  partir d'un code postal et code postaux Ã  partir d'une ville
+        
+        Vicopo est un moyen lÃ©ger et rapide rechercher une ville franÃ§aise et implÃ©menter des propositions Ã  la volÃ©e, l'autocomplÃ©tion d'un champ de ville ou de code postal et la conversion de l'un vers l'autre.
+        
+        https://vicopo.selfbuild.fr/
+        
+        ## Utilisation
+        
+        ### Afficher les villes possibles dans une liste
+        
+        ```html
+        <input id="ville" placeholder="Entrez un code postal ou une ville" autocomplete="off" size="50">
+        <ul>
+          <li data-vicopo="#ville">
+            <strong data-vicopo-code-postal></strong>
+            <span data-vicopo-ville></span>
+          </li>
+        </ul>
+        ```
+        [Voir la dÃ©monstration](https://jsfiddle.net/KyleKatarn/y27x72ka/6/)
+        
+        Ajoutez l'attribut data-vicopo Ã  un Ã©lÃ©ment et passez-lui en paramÃ¨tre un sÃ©lecteur qui pointera vers un champ(`<input>`, `<select>` ou `<textarea>`). Quand la valeur du champs change, l'Ã©lÃ©ment sera duppliquÃ© autant de fois qu'il y a de villes commenÃ§ant par la valeur tapÃ©e ou dont le code postal commence par la valeur tapÃ©e (la recherche commence Ã  partir de 2 caractÃ¨res tapÃ©s).
+        
+        Ã€ l'intÃ©rieur de ces Ã©lÃ©ments, les balises portant les attributs `data-vicopo-code-postal`, `data-vicopo-ville` seront respectivement pourvus du code postal et de la ville. Si ces balises sont des champs, utilisez `data-vicopo-val-code-postal` et `data-vicopo-val-ville` pour que les informations soient assignÃ©es en tant que valeur.
+        
+        ## ComplÃ©ter le champ avec le premier nom de ville trouvÃ©
+        
+        ```js
+        $('#ville').keyup(function (e) {
+          if(e.keyCode == 13) {
+            var $ville = $(this);
+            $.vicopo($ville.val(), function (input, cities) {
+              if(input == $ville.val() && cities[0]) {
+                $ville.val(cities[0].city).vicopoTargets().vicopoClean();
+              }
+            });
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        });
+        ```
+        [Voir la dÃ©monstration](https://jsfiddle.net/KyleKatarn/48uuL3v5/3/)
+        
+        Lors de l'appui sur `EntrÃ©e`, on rÃ©cupÃ¨re la premiÃ¨re ville et on l'applique comme nouvelle valeur du champ.
+        
+        L'ajout optionnel de `.vicopoTargets().vicopoClean()` permet d'effacer la liste de suggestions.
+        
+        ## RÃ©cupÃ©rer les villes au fur et Ã  mesure de la saisie
+        
+        ```js
+        $('#recherche').vicopo(function (cities) {
+          if(cities.length) {
+            $('#ville').val(cities[0].city);
+            $('#code').val(cities[0].code);
+          } else {
+            $('#ville').val('');
+            $('#code').val('');
+          }
+          $('#count').val(cities.length + ' villes trouvÃ©es');
+        });
+        ```
+        Les mÃ©thodes `.vicopo()`, `.codePostal()` et `.ville()` appliquÃ©es Ã  un Ã©lÃ©ment jQuery permettent de rÃ©cupÃ©rer dans une variable le rÃ©sultat de la recherche Ã  chaque lettre saisie dans le champ.
+        
+        ## Utilisation sans champs de saisie
+        
+        ```js
+        $('#cp').click(function () {
+          $.ville('strasbourg', function (input, cities) {
+            $('#cp-result').text(cities[0].code);
+          });
+        });
+        $('#villes').click(function () {
+          $.ville('des', function (input, cities) {
+            $('#villes-result').text(cities.map(function (entry) {
+              return entry.city;
+            }).join(', '));
+          });
+        });
+        ```
+        [Voir la dÃ©monstration](https://jsfiddle.net/KyleKatarn/ny8k9ya6/6/)
+        
+        Les mÃ©thodes `$.vicopo()`, `$.codePostal()` et `$.ville()` prennent en premier paramÃ¨tre le code postal ou la ville (partiel ou entier) recherchÃ© et en second paramÃ¨tre une fonction de callback appelÃ©e avec le terme recherchÃ© en premier paramÃ¨tre, les villes trouvÃ©es en second et en troisiÃ¨me 'code' pour une recherche de code postal ou 'city' pour une recherche de ville.
+        
+        ## API HTTP brute au fomart JSON (par dÃ©faut)
+        
+        | Protocole | URL                                                   |
+        |-----------|-------------------------------------------------------|
+        | HTTP      | http://vicopo.selfbuild.fr/cherche/680                |
+        | HTTPS     | https://vicopo.selfbuild.fr/cherche/680               |
+        ```json
+        {
+        	"input": "680",
+        	"cities": [
+        		{
+        			"code": 68040,
+        			"city": "INGERSHEIM"
+        		},
+        		{
+        			"code": 68000,
+        			"city": "COLMAR"
+        		}
+        	]
+        }
+        ```
+        
+        ## Plugin node.js
+        
+        Vicopo est disponible sous node.js directement via require('vicopo') :
+        
+        ```javascript
+        var ville = 'Lille';
+        var vicopo = require('vicopo')('http');
+        vicopo(ville, function (err, cities) {
+            if (err) {
+                throw err;
+            } else {
+                console.log(cities);
+            }
+        });
+        ```
+        
+        Plus d'options sur https://vicopo.selfbuild.fr/
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
