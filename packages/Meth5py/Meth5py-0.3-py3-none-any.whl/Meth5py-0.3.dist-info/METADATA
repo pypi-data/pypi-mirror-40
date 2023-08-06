@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Meth5py
+Version: 0.3
+Summary: A class for converting BSMAPz methratio output into a fast and compressed hd5f format
+Home-page: UNKNOWN
+Author: Greg Zynda
+Author-email: zyndagj@gmail.com
+License: BSD-3
+Platform: UNKNOWN
+Requires: h5py
+
+UNKNOWN
+
+
