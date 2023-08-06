@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: cli2
+Version: 0.0.1.dev80
+Summary: cli2 makes your python callbacks work on CLI too !
+Home-page: https://yourlabs.io/oss/cli2
+Author: James Pic
+Author-email: jamespic@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: cli
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Classifier: Topic :: Terminals
+Requires-Python: >=3
