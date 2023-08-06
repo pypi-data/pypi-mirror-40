@@ -1,0 +1,17 @@
+aircv==1.4.6
+Pillow>=2.7.0
+tornado>=4.4
+imageio>=1.5
+futures>=3.0.5 ; python_version <= '2.7'
+subprocess32>=3.2.7 ; python_version <= '2.7'
+tqdm>=4.5.0
+PyYAML
+numpy
+uiautomator2
+six
+#numpy>=1.11.0
+apkutils>=0.2.6 ; python_version >= '3.4'
+maproxy
+requests
+facebook-wda>=0.2.1
+colorama
