@@ -1,0 +1,14 @@
+numpy
+keras>=2.2.2
+nilearn
+nibabel
+sklearn
+scipy
+ipython
+matplotlib
+
+[tf]
+tensorflow>=1.0.0
+
+[tf_gpu]
+tensorflow-gpu>=1.0.0
