@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+mobilpy/__init__.py
+mobilpy.egg-info/PKG-INFO
+mobilpy.egg-info/SOURCES.txt
+mobilpy.egg-info/dependency_links.txt
+mobilpy.egg-info/not-zip-safe
+mobilpy.egg-info/requires.txt
+mobilpy.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: mobilpy
+Version: 0.1
+Summary: Library that helps create the XML necessary for online payments through MobilPay
+Home-page: https://github.com/onel/mobilpy
+Author: Andrei Onel
+Author-email: andrei@edumo.org
+License: MIT
+Description: UNKNOWN
+Keywords: online payments mobilpay netopia
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Text Processing :: Markup :: XML
