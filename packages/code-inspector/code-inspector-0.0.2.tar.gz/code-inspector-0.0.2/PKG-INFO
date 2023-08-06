@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: code-inspector
+Version: 0.0.2
+Summary: Trigger new code analysis on code-inspector.io
+Home-page: https://github.com/codeinspectorio/citool
+Author: code-inspector
+License: BSD
+Project-URL: Changelog, https://github.com/codeinspectorio/citool/blob/master/CHANGELOG.md
+Project-URL: Docs, https://github.com/codeinspectorio/citool/
+Description: # Code-Inspector Continuous Integration Tool
+        
+        This is a Python tool used to trigger new analysis on [code-inspector](https://www.code-inspector.com)
+        in continuous integration pipeline.
+        
+        
+        ## Build
+        
+        
+        ## Usage
+        
+        You need to set your API keys with environment variables:
+        
+         * `CODE_INSPECTOR_ACCESS_KEY`: your access key API generated from your project preferences
+         * `CODE_INSPECTOR_SECRET_KEY`: your secret key API generated from your project preferences
+        
+        On a terminal, you would set them up like this:
+        ```bash
+        export CODE_INSPECTOR_ACCESS_KEY=<INSERT-YOUR-API-ACCESS-KEY-HERE>
+        export CODE_INSPECTOR_SECRET_KEY=<INSERT-YOUR-API-SECRET-KEY-HERE>
+        ```
+        
+        Then, just invoke the tool as follow:
+        
+        ```python 
+        code-inspector
+        ```
+        
+        If a new build is triggered, the tool returns 0. If any issue occurs, it will return a non-zero value.
+        
+        If you get non-zero return code and want to investigate, use the `-verbose` flag and invoke the tool as follow:
+        
+        ```python 
+        code-inspector --verbose
+        ```
+        
+        
+        ## About Code Inspector
+        
+        [Code Inspector](https://www.code-inspector.com) is a software analysis platform to manage and mitigate
+        technical debt. It offers plans that caters to all developers. From our basic free plan for your personal project
+        to the gold plan (for companies with multiples private projects), [code-inspector](https://www.code-inspector.com) detects coding issues
+        and helps you keep your project afloat.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Testing
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Provides-Extra: yaml

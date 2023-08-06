@@ -1,0 +1,16 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+code_inspector/__init__.py
+code_inspector/__main__.py
+code_inspector/cli.py
+code_inspector/version.py
+code_inspector.egg-info/PKG-INFO
+code_inspector.egg-info/SOURCES.txt
+code_inspector.egg-info/dependency_links.txt
+code_inspector.egg-info/entry_points.txt
+code_inspector.egg-info/requires.txt
+code_inspector.egg-info/top_level.txt
