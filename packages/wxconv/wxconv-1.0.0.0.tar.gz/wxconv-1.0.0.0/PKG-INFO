@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wxconv
+Version: 1.0.0.0
+Summary: Python library for UTF to WX conversion and vice-versa for Indian languages.
+Home-page: https://github.com/irshadbhat/indic-wx-converter
+Author: irshadbhat
+Author-email: bhatirshad127@gmail.com
+Keywords: nlp,transliteration,romanization,wx
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pbr (>=2.0,<3.0)
+Requires-Dist: six (>=1.12,<2.0)
+Project-URL: Repository, https://github.com/irshadbhat/indic-wx-converter
