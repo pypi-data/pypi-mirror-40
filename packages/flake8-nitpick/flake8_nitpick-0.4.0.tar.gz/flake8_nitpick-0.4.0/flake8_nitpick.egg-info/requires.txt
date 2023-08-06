@@ -1,0 +1,6 @@
+flake8>3.0.0
+attrs
+toml
+requests
+dictdiffer
+pyyaml

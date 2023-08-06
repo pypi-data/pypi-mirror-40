@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+flake8_nitpick/__init__.py
+flake8_nitpick/__version__.py
+flake8_nitpick/generic.py
+flake8_nitpick.egg-info/PKG-INFO
+flake8_nitpick.egg-info/SOURCES.txt
+flake8_nitpick.egg-info/dependency_links.txt
+flake8_nitpick.egg-info/entry_points.txt
+flake8_nitpick.egg-info/requires.txt
+flake8_nitpick.egg-info/top_level.txt
