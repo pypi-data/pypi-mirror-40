@@ -1,0 +1,17 @@
+# runtime
+lazy-object-proxy
+
+# documentation
+sphinx>=1.3
+
+# testing
+pytest
+pytest-cov
+pytest-mock
+pylint
+pycodestyle
+pydocstyle
+mypy
+
+# building
+wheel
