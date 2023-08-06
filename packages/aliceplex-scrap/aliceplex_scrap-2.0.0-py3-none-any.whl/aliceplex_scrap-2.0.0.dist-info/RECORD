@@ -1,0 +1,13 @@
+aliceplex/scrap/__init__.py,sha256=jf6ByxQ7Eeq510ohGENI_NnYxyUMMyNBIHkPqTlFNLc,606
+aliceplex/scrap/base.py,sha256=9XMhUyFr4IY9q79wBAQiCVC5jvHD-Js_J16CQS1pk0U,1293
+aliceplex/scrap/contsant.py,sha256=65yGX-t6wiOeidHbm79i3gt38shStA_CnoqbnXPl5ao,1165
+aliceplex/scrap/html.py,sha256=-Os2oWliKDtCddRHGYO1y4LGT41n_8GzHWbqKZW04ck,1446
+aliceplex/scrap/json.py,sha256=iFrppREjnq9TkvT56j-8cHm4BLGrPjc6lTIv_l3KU68,1473
+aliceplex/scrap/tvdb.py,sha256=_rcY3_Bz35tRYG64zM3SQ_DV1JqPVrul9zMFOELoZ28,4312
+aliceplex/scrap/utils.py,sha256=LAGWeyBJbMOoAuhSTFNKCbqRgnogp7w9oPBXhfGMpaQ,1343
+aliceplex/scrap/wiki.py,sha256=Wf7QTYDGW91MTvMZrt_jFvs3qiupfNItK1xd5PjlzqE,10248
+aliceplex_scrap-2.0.0.dist-info/LICENSE,sha256=CE81OVovPIMql8iHBsDmRE3MgYGwoofW6N4QzPMdi74,11340
+aliceplex_scrap-2.0.0.dist-info/METADATA,sha256=0xASlCuntV7AJ_130XcGbZ_f9-kBm0M8lniHY68Xuf8,918
+aliceplex_scrap-2.0.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+aliceplex_scrap-2.0.0.dist-info/top_level.txt,sha256=zLQZP7sdPEp3gBruk0btDYwZUT1YUW5DXjjoiJORaX8,10
+aliceplex_scrap-2.0.0.dist-info/RECORD,,
