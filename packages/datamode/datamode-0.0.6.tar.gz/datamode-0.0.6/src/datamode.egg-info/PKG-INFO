@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: datamode
+Version: 0.0.6
+Summary: A tool to quickly build data science pipelines
+Home-page: https://www.datamode.com
+Author: Vaughn Koch
+Author-email: code@datamode.com
+License: Apache 2.0
+Project-URL: Main website, https://www.datamode.com
+Project-URL: Documentation, https://datamode.readthedocs.io/
+Project-URL: Source, https://github.com/datamode/datamode/
+Project-URL: Tracker, https://github.com/datamode/datamode/issues
+Description: UNKNOWN
+Keywords: data science,data transformation,feature engineering,data preparation,data munging,data visualization
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
