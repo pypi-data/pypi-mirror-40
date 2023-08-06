@@ -1,0 +1,14 @@
+emails_gdpr/__init__.py,sha256=1iJpgRZx6LhuDMNxPIfxYQF9IJ8ojX3dguQBdeXbls4,194
+emails_gdpr/exc.py,sha256=mionkc0V-nWHT6ZfOyvb2jxAhoA3_2KW4OIW3HffGDE,449
+emails_gdpr/imap_utf7.py,sha256=986WgTmAO0i2fBCbDPiSsExt8ig6nE_7UL78cOAB78A,1428
+emails_gdpr/logs.py,sha256=3tM82EsD60v4YzEEyw-n5ZiN90dxMYUR7PHqQKamCPg,739
+emails_gdpr/main.py,sha256=44dYW70a_IjKgWIj8WUvFFaLxt_jmw8WVU4cwofwNWo,5223
+emails_gdpr/settings.py,sha256=0rVQRKbB3XBJJ2qax-0T1i5UCKglytaCSjaTGXJ-WZM,1390
+emails_gdpr/utils.py,sha256=eaJldthALC7o1DqgqTcMmeeFvzkOZr4LlBdBf6Vm44I,1123
+emails_gdpr-1.0.5.dist-info/AUTHORS.rst,sha256=ivDbaT-rFErydEGyUby0WC0ffbvFrtvGNsASPvDZ-IQ,154
+emails_gdpr-1.0.5.dist-info/LICENSE,sha256=420soum5ZgbajnX7BKU11FLct2w_jHYycPyzIcqFGGw,1063
+emails_gdpr-1.0.5.dist-info/METADATA,sha256=kgXhJRj0zLd1xkQlHi0a8-10UXc_tMqhp2nJJUNv15s,1750
+emails_gdpr-1.0.5.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+emails_gdpr-1.0.5.dist-info/entry_points.txt,sha256=lpz-sSPitcw-WeNbP_asuKQm23uJrslAITdaSJBrZdI,55
+emails_gdpr-1.0.5.dist-info/top_level.txt,sha256=C-RV-MSyvqIr4n72EcmQfr-y2Y5G71oqIxBqf7uJjHc,12
+emails_gdpr-1.0.5.dist-info/RECORD,,
