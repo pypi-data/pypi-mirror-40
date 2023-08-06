@@ -1,0 +1,9 @@
+README.md
+setup.py
+bookgen/__init__.py
+bookgen/bookgen.py
+bookgen.egg-info/PKG-INFO
+bookgen.egg-info/SOURCES.txt
+bookgen.egg-info/dependency_links.txt
+bookgen.egg-info/requires.txt
+bookgen.egg-info/top_level.txt
