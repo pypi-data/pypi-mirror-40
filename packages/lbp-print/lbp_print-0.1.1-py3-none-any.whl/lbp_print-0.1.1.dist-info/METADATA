@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: lbp-print
+Version: 0.1.1
+Summary: Script for compiling LombardPress encoded XML documents to TeX and PDF.
+Home-page: https://github.com/stenskjaer/lbp_print
+Author: Michael Stenskjær Christensen
+Author-email: michael.stenskjaer@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
+Requires-Dist: docopt (==0.6.2)
+Requires-Dist: isodate (==0.5.4)
+Requires-Dist: lbppy (>=0.0.0)
+Requires-Dist: lxml (==4.3.0)
+Requires-Dist: pyparsing (==2.2.0)
+Requires-Dist: rdflib (==4.2.2)
+Requires-Dist: regex (==2018.8.17)
+Requires-Dist: samewords (==0.5.3)
+Requires-Dist: SPARQLWrapper (==1.8.0)
+Requires-Dist: untangle (==1.1.0)
+
+``lbp_print`` is a small utility for processing a LombardPress valid XML text with a relevant XSLT script and compile to PDF with XeLaTeX. For more info, see `the Github page <https://github.com/stenskjaer/lbp_print>`__
+
+
