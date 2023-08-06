@@ -1,0 +1,8 @@
+README.md
+setup.py
+gc_data.egg-info/PKG-INFO
+gc_data.egg-info/SOURCES.txt
+gc_data.egg-info/dependency_links.txt
+gc_data.egg-info/top_level.txt
+tests/__init__.py
+tests/test_city.py
