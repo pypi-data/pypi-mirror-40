@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Phosphorpy
+Version: 0.5.3.2
+Summary: UNKNOWN
+Home-page: https://github.com/patrickRauer/Phosphorpy
+Author: Patrick Rauer
+Author-email: j.p.rauer@sron.nl
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: seaborn
+Requires-Dist: numpy
+Requires-Dist: astropy
+Requires-Dist: pandas
+Requires-Dist: astroquery
+Requires-Dist: numba
+Requires-Dist: scikit-learn
+Requires-Dist: armapy
+Requires-Dist: requests
+
+UNKNOWN
+
+
