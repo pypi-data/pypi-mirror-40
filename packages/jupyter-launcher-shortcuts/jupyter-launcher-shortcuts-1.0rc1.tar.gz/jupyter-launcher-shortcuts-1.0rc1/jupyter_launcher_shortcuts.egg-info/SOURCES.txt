@@ -1,0 +1,14 @@
+README.rst
+setup.py
+jupyter_launcher_shortcuts/__init__.py
+jupyter_launcher_shortcuts/api.py
+jupyter_launcher_shortcuts/config.py
+jupyter_launcher_shortcuts.egg-info/PKG-INFO
+jupyter_launcher_shortcuts.egg-info/SOURCES.txt
+jupyter_launcher_shortcuts.egg-info/dependency_links.txt
+jupyter_launcher_shortcuts.egg-info/not-zip-safe
+jupyter_launcher_shortcuts.egg-info/requires.txt
+jupyter_launcher_shortcuts.egg-info/top_level.txt
+jupyter_launcher_shortcuts/etc/nbextension.json
+jupyter_launcher_shortcuts/etc/serverextension.json
+jupyter_launcher_shortcuts/static/tree.js
