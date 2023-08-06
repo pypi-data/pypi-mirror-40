@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gradedb/__init__.py
+gradedb/__version__.py
+gradedb/gpa.py
+gradedb.egg-info/PKG-INFO
+gradedb.egg-info/SOURCES.txt
+gradedb.egg-info/dependency_links.txt
+gradedb.egg-info/entry_points.txt
+gradedb.egg-info/requires.txt
+gradedb.egg-info/top_level.txt
