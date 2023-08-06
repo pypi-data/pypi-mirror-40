@@ -1,0 +1,11 @@
+README.md
+setup.py
+mew/__init__.py
+mew/__version__.py
+mew/decorator.py
+mew/serializer.py
+mew.egg-info/PKG-INFO
+mew.egg-info/SOURCES.txt
+mew.egg-info/dependency_links.txt
+mew.egg-info/not-zip-safe
+mew.egg-info/top_level.txt
