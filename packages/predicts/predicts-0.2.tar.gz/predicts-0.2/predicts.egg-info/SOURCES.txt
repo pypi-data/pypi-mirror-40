@@ -1,0 +1,11 @@
+setup.py
+predicts/__init__.py
+predicts/abstractest.py
+predicts/prediction.py
+predicts/utils.py
+predicts.egg-info/PKG-INFO
+predicts.egg-info/SOURCES.txt
+predicts.egg-info/dependency_links.txt
+predicts.egg-info/not-zip-safe
+predicts.egg-info/requires.txt
+predicts.egg-info/top_level.txt
