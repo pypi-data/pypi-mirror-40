@@ -1,0 +1,11 @@
+telebaka_channel_helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telebaka_channel_helper/admin.py,sha256=OAegRwNjlSbsg3sTD5dSn-8Vph395NscUToHoCMQmrQ,201
+telebaka_channel_helper/bot.py,sha256=8S3t2tG4foqW_3drbNRfx1I9a_ipyFJhQ8ft7V5MoI4,2927
+telebaka_channel_helper/models.py,sha256=TfVfxW_rBY2zyCcIItOg-t5R05UtCZEa3drw5VayRHQ,170
+telebaka_channel_helper/tasks.py,sha256=amkA9ZAkz-rUYM-vH0HKzwpIjpbW-RxLpCOJ1UpJqT0,921
+telebaka_channel_helper/migrations/0001_initial.py,sha256=LdaSJbAQtSjrpVDjemlfIhRbN0bPE1wi_c07vhM9aPI,669
+telebaka_channel_helper/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telebaka_channel_helper-0.1.11.dist-info/METADATA,sha256=ZcZMbcWoBft4Pl7oYbsQCUmMssm9HhvsBaZXL10uFmQ,291
+telebaka_channel_helper-0.1.11.dist-info/RECORD,,
+telebaka_channel_helper-0.1.11.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+telebaka_channel_helper-0.1.11.dist-info/top_level.txt,sha256=5L-V5G9Gq_oUSDTSHmvXm9xrvDouF-jku1bZG6gjk0I,24
