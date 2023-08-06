@@ -1,0 +1,10 @@
+aiohttp>=3.3
+bravado>=10.0.0
+yelp-bytes
+
+[aiobravado]
+aiobravado
+
+[aiohttp_extras]
+aiodns
+cchardet
