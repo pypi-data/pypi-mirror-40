@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: blockchair
+Version: 1.0.2
+Summary: Blockchair API Python Library
+Home-page: https://golf.blockchair.com/RustamSultanov/blockchair-python-sdk
+Author: Rustam Sultanov
+Author-email: info@blockchair.com
+License: MIT
+Description: UNKNOWN
+Keywords: blockchair.com api explorer
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Office/Business :: Financial
+Classifier: License :: OSI Approved :: MIT License
