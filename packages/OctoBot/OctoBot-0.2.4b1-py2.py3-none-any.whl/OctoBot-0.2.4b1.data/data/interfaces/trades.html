@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% import 'macros/tables.html' as m_tables %}
+
+{% macro extract_trades(trades_list, sim_or_real) -%}
+    {% for trades in trades_list %}
+        {% for trade in trades %}
+            {{ m_tables.trades_tr(trade, convert_type(trade.order_type),convert_timestamp(trade.creation_time), sim_or_real) }}
+        {% endfor %}
+    {% endfor %}
+{%- endmacro %}
+
+{% block body %}
+<div class="card">
+    <div class="card-header"><h2>Trades</h2></div>
+    <div class="card-body">
+        <div class="table-responsive">
+          <table id="open_trades_datatable" class="table table-striped table-bordered table-hover">
+            <caption>List of trades</caption>
+          <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Exchange</th>
+                <th scope="col">Symbol</th>
+                <th scope="col">Type</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Real / Simulated</th>
+                <th scope="col">Creation</th>
+            </tr>
+          </thead>
+          <tbody>
+          {{ extract_trades(real_trades_history, "Real") }}
+          {{ extract_trades(simulated_trades_history, "Simulated") }}
+          </tbody>
+          </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block additional_scripts %}
+<script>
+    $(document).ready(function () {
+      $('#open_trades_datatable').DataTable({
+         // "ajax": "{{ url_for('api.orders') }}"
+      })
+    });
+</script>
+{% endblock additional_scripts %}

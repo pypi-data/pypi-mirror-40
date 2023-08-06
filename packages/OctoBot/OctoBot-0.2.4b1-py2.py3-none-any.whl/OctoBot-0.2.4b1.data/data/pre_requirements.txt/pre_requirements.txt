@@ -1,0 +1,6 @@
+# use pandas==0.20.3 for delivery
+pandas
+numpy
+Cython
+lxml
+Twisted # to be removed (python-binance)
