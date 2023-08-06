@@ -1,0 +1,51 @@
+Metadata-Version: 2.0
+Name: rebrand
+Version: 0.0.1
+Summary: Self tracking your online life!
+Home-page: https://github.com/kootenpv/rebrand
+Author: Pascal van Kooten
+Author-email: kootenpv@gmail.com
+License: MIT
+Platform: any
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+
+## rebrand
+
+Refactor your software using programming language independent string replacement.
+
+Helps by renaming directories, filenames and file contents in a case-preserving manner.
+
+![rebrand demo](/resources/demo.gif)
+
+## Installation
+
+    pip install rebrand
+
+## Usage
+
+    rebrand run <OLD> <NEW> <LOCATION>
+    # e.g. rebrand run ancient modern .
+
+## TODO:
+
+- Implement faster matching
+- More options (such as disabling image warnings, verbose)
+- Switch from `fire` back to `argparse`
+
+
