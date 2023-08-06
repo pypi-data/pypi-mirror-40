@@ -1,0 +1,15 @@
+dev_env/__init__.py,sha256=ct4PgnOnWp5whyWzcQEY5xVIx2Q7hk1_nJMyN3clZAo,23
+dev_env/nose_plugins.py,sha256=aRs2emfunBzcJGKp23O0w6NGtRUDi1awjGIMR9zifYA,1507
+dev_env-0.5.10.data/scripts/dev_env_nosetests.py,sha256=v_T455aPponYwiwam3fmg-vD9OcWNIA82zpfkXyWTR4,798
+dev_env-0.5.10.data/scripts/prep-for-release-python.sh,sha256=5pMtQgiTeLc-6pPorTBnkY9gJ9_6gnOxTRP7LAXqw-E,668
+dev_env-0.5.10.data/scripts/prep-for-release.sh,sha256=9KmRmYwsomKycALr4UtnH1QhN-EgEgXkUfvhC63pLNs,5540
+dev_env-0.5.10.data/scripts/run_flake8.sh,sha256=5Qs1l1nWX-aYOcxdZSf5koTuNEXCCSvuuICoBLNTD-4,196
+dev_env-0.5.10.data/scripts/run_pip_check.sh,sha256=6l_DfqaSi0MXHG-IfJG6wpVVk4dJmyC1eTVBpOsx3S8,199
+dev_env-0.5.10.data/scripts/run_repo_security_scanner.sh,sha256=yD7Pm8XMtH7c_Wt6UTsOlcIE5xcB3oXe9RBSI6fexMk,177
+dev_env-0.5.10.data/scripts/run_shellcheck.sh,sha256=e4DAN0jpIhC1_kqOXMbz5cNhwjfj3oW6D_2VlAlYuQ0,603
+dev_env-0.5.10.data/scripts/run_unit_tests.sh,sha256=CYgCh_FHV_eHKi7wBz5srAPucksFJtzo7UAQ8NMuJXM,571
+dev_env-0.5.10.dist-info/LICENSE,sha256=KkkmOU5wiNtFsgs2zOQ8i3aIEfhCDVi2G3chU7mizlo,1080
+dev_env-0.5.10.dist-info/METADATA,sha256=nxAxesW8RI25latA-U6JLaZ_xPEdnt-pkGevMJQ1cSs,2768
+dev_env-0.5.10.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+dev_env-0.5.10.dist-info/top_level.txt,sha256=QLRiyBVX4dU4eZQ1slMAWAtQkrmw0elFgRZ-qqLPmm4,8
+dev_env-0.5.10.dist-info/RECORD,,
