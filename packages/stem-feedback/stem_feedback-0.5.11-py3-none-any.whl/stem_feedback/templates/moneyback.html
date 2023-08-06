@@ -1,0 +1,62 @@
+{% extends "main/base.html" %}
+{% load i18n %}
+{% load bootstrap4 %}
+{% block sidebar %}
+{% endblock sidebar %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <h1>{% trans "Сообщить о возврате" %}</h1>
+        <div class="col-md-10 border">
+            <form method="post" action="" class="form-signin" enctype="multipart/form-data">
+
+                {% csrf_token %}
+
+                <table class="table">
+                    <tbody>
+                    {% for orders in order %}
+                    <tr class='clickable-row'>
+                        <td><img src={{orders.photo}} width="80"></td>
+                        <td>{{ orders.name }}</td>
+                        <td>{{ orders.quantity }}</td>
+                        <td>{{ order_form.return_qty }}</td>
+
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <label> Комментарий </label>
+                <div class="row">
+                    <div class="col-md-10">
+                        {{ moneyback_form.comment}}
+                    </div>
+                </div>
+
+                <label> Причина возврата </label>
+                <div class="row">
+                    <div class="col-md-10">
+                        {{ moneyback_form.reason_for_the_return}}
+                    </div>
+                </div>
+                <label> Доставка </label>
+                <div class="row">
+                    <div class="col-md-10">
+                        {{ moneyback_form.ship}}
+                    </div>
+                </div>
+                <label> № Декларации </label>
+                <div class="row">
+                    <div class="col-md-10">
+                        {{ moneyback_form.tracking_number}}
+                    </div>
+                </div>
+                <input type="file" name="sentFile" multiple/>
+                <input type="submit" class="btn btn-primary col-md-4 offset-md-3 mt-4"></input>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
