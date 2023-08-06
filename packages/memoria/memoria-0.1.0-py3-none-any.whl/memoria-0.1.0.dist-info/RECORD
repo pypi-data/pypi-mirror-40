@@ -1,0 +1,17 @@
+memoria/Box.py,sha256=pPaMRAElOv3Y7yp5mJGNiW3TvqWAV-fqpGcIf5GJ6Ac,2373
+memoria/Cache.py,sha256=1c3m0-PQCZEHN1w-U4EdWYwBqPmRx5Ti_j4pc18qA20,4879
+memoria/Crypto.py,sha256=c4jJz5QnKuZXarTqhJkAk2Li7P_jsTLhOD28Q9M_y1c,764
+memoria/HardMemory.py,sha256=kkTK5yD1SbvcbfFdWHIrltJhNyg8oOlOFzokIPIjCfQ,2083
+memoria/PasswordManager.py,sha256=6mJr6ijzOgdIFTXU-fc8sFpVEmx4EyIWT4R1Llit4eg,771
+memoria/Pickler.py,sha256=WtNzaja4gzhLA4kv5OxBHXlhtxkgQCOCPMQQYbyUqLI,2257
+memoria/UsageMeter.py,sha256=RbiOwRl8xKA7Gs5VyYaKqBdmGYl0FcCZypHcnFqa1xg,3075
+memoria/Vault.py,sha256=JkDGkz92rPR11mHR6uAk75-JLnshpq4N5TXxcPCsZNo,3133
+memoria/__init__.py,sha256=dZ5GRvkyuf51ZTs5kzVOHZKm_bq5K_wyiDtsrNJs_6o,355
+memoria/encrypt.py,sha256=sAUPYr_je_YTeIZa8OzvgU0fRdDtUCshc04OKzjo3_k,563
+memoria/get_hardware_uid.py,sha256=z6BUBOiQM-2foZS3ppGmmLv3wezdIdtr0rViU9oixkM,158
+memoria/hash_collection.py,sha256=ePs3iE_Q1AcCgx3SB_T5hbZdAbPEURpO73FOHFUQ6YQ,1224
+memoria-0.1.0.dist-info/LICENSE,sha256=15a9eOezPb3ii9vtNvN5GStatXkyMzAAAtlWc4IRKBs,1063
+memoria-0.1.0.dist-info/METADATA,sha256=o74CjTKU4BUKroc17Q9wnF3TJZObs8SmMns1eZ1wJa8,925
+memoria-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+memoria-0.1.0.dist-info/top_level.txt,sha256=_ChPDpsb1hACJPaLng4ATTqx2xlaNgO8fNXvmAAhhmY,8
+memoria-0.1.0.dist-info/RECORD,,
