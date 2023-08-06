@@ -1,0 +1,3 @@
+[console_scripts]
+arucodesign = aruco_design.command_line:installOnMac
+
