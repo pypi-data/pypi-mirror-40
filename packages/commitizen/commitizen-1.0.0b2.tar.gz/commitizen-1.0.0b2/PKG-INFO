@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: commitizen
+Version: 1.0.0b2
+Summary: Python commitizen client tool
+Home-page: https://github.com/woile/commitizen
+Author: Santiago Fraire
+Author-email: santiwilly@gmail.com
+Keywords: commitizen,conventional,commits,git
+Requires-Python: >3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: delegator.py (>=0.1.1,<0.2.0)
+Requires-Dist: questionary (>=1.0,<2.0)
