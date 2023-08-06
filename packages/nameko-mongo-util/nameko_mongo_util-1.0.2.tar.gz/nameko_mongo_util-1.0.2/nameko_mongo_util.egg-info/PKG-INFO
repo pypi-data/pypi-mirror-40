@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: nameko-mongo-util
+Version: 1.0.2
+Summary: Redis dependency for nameko services
+Home-page: https://github.com/JackLeeMing/nameko_mongo.git
+Author: Jaque
+Author-email: 1285879942@qq.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.4
