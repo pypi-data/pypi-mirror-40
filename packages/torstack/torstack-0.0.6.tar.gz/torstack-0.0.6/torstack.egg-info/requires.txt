@@ -1,0 +1,13 @@
+tornado
+redis
+aioredis
+aiomysql
+sqlalchemy
+motor
+pyconvert
+apscheduler
+elasticsearch
+elasticsearch_async
+python-memcached
+aiofiles
+psycopg2
