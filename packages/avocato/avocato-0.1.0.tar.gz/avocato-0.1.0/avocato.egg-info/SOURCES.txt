@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+avocato/__init__.py
+avocato/exceptions.py
+avocato/fields.py
+avocato/serializer.py
+avocato/validators.py
+avocato.egg-info/PKG-INFO
+avocato.egg-info/SOURCES.txt
+avocato.egg-info/dependency_links.txt
+avocato.egg-info/requires.txt
+avocato.egg-info/top_level.txt
