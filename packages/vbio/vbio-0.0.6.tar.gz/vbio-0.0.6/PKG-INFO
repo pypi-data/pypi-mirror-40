@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: vbio
+Version: 0.0.6
+Summary: Python модуль для написания скриптов, использующих Callback API для социальной сети Вконтакте (vk.com)
+Home-page: https://github.com/yilbegan/vbio
+Author: yilbegan
+License: MIT
+Description: # Vk Bot I/O [![PyPI](https://img.shields.io/pypi/v/vbio.svg)](https://pypi.org/project/vbio/)
+        **vbio** - Python модуль для написания скриптов, использующих Callback API для социальной сети Вконтакте (vk.com)
+        * [Документация](https://vbio.readthedocs.io/en/latest/)
+        * [Примеры использования](./examples) (python3)
+        ## Hello world
+        ```python
+        # Можно использовать другие обертки для API.
+        # Например vk_api.
+        import vk_requests
+        
+        from vbio import VkBot
+        from vbio.servers import LongPoolClient
+            
+        api = vk_requests.create_api(service_token='<токен группы>')
+        bot = VkBot(api)
+        server = LongPoolClient(bot)
+            
+            
+        @bot.callback_message_handler()
+        def hello_world(m):
+            m.answer(message='Привет мир!')
+            
+            
+        if __name__ == '__main__':
+            server.run()
+        ```
+        
+        ## Установка
+        ```
+        pip3 install vbio
+        ```
+        или
+        ```
+        pip3 install --user vbio
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+Provides-Extra: webhook
+Provides-Extra: color
