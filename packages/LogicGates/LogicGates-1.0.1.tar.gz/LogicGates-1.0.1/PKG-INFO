@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: LogicGates
+Version: 1.0.1
+Summary: A small pet project of mine to implement Logic Gates in python through using NAND gate only
+Home-page: https://github.com/Naimish240/LogicGates
+Author: Naimish Mani B
+Author-email: nbalaji.buisness@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
