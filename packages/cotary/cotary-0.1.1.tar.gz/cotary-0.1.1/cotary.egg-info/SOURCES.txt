@@ -1,0 +1,13 @@
+README.md
+setup.py
+cotary/__init__.py
+cotary/checksum.py
+cotary/config.py
+cotary/cotary.py
+cotary/publisher.py
+cotary.egg-info/PKG-INFO
+cotary.egg-info/SOURCES.txt
+cotary.egg-info/dependency_links.txt
+cotary.egg-info/entry_points.txt
+cotary.egg-info/requires.txt
+cotary.egg-info/top_level.txt
