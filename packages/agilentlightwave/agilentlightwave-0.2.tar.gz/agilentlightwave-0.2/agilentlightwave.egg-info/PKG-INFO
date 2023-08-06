@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: agilentlightwave
+Version: 0.2
+Summary: Python driver for the Agilent Lightwave 8164A/B.
+Home-page: https://github.com/jtambasco/agilent-lightwave
+Author: Jean-Luc Tambasco
+Author-email: an.obscurity@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
