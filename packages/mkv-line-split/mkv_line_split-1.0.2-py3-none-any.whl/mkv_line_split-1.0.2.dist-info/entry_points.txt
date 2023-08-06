@@ -1,0 +1,3 @@
+[console_scripts]
+linesplit = linesplit.linesplit:main
+
