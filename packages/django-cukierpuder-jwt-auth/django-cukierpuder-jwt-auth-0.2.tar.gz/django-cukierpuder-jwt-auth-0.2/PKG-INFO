@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: django-cukierpuder-jwt-auth
+Version: 0.2
+Summary: A simple authorization Django app based on JSON Web Tokens.
+Home-page: https://github.com/CukierPuder/django-cukierpuder-jwt-auth
+Author: CukierPuder
+Author-email: cukier_puder@hotmail.com
+License: GNU
+Download-URL: https://github.com/CukierPuder/django-cukierpuder-jwt-auth/archive/v0.2.tar.gz
+Description: =====
+        django-cukierpuder-jwt-auth
+        =====
+        
+        django-cukierpuder-jwt-auth is a simple authorization Django app based on JSON Web Tokens.
+        
+        Quick start
+        -----------
+        
+        1. Add jwt_auth to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...,
+                'jwt_auth.apps.JwtAuthConfig',
+            ]
+        
+        2. Include the polls URLconf in your project urls.py like this::
+        
+            path('auth/', include('jwt_auth.urls')),
+        
+        3. Run `python manage.py migrate` to create the polls models.
+        
+        4. Available endpoints::
+        
+            '/auth/register/' - [POST] register a new user (requires an email, username and password in request's body)
+            '/auth/token/obtain/' - [POST] obtain access and refresh token (requires username and password in request's body)
+            '/auth/token/refresh' - [POST] obtain refresh token (requires refresh token in request's body)
+            '/auth/users/' - [GET] get the list of all users (requires access token in request's header)
+            '/auth/users/<int:id>/' - [GET] get the details of specific user (requires access token in request's header)
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
