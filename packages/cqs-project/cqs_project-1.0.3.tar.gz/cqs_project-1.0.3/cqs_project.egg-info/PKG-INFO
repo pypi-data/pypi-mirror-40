@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: cqs-project
+Version: 1.0.3
+Summary: An feature extraction algorithm
+Home-page: UNKNOWN
+Author: chenqingshan
+Author-email: 297110271@qq.com
+License: MIT Licence
+Description: An feature extraction algorithm, improve the FastICA
+Keywords: pip,SICA,featureextraction
+Platform: any
