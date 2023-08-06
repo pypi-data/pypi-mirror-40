@@ -1,0 +1,16 @@
+data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data/numpysocket.py,sha256=zOt4fkaEQf_FNWPXLV4TPs47BPO3JNHNdbogTvJHzJY,1295
+data/remoteh5.py,sha256=lKo-YEZIF9Tk3Ae0bEDRLEYBhcwaA7bwoopfh60tKDU,384
+data/utility.py,sha256=ZC9ZEYQriXxT6xrT5sNNUCSJCUdUswkIp46be_ZYQVw,1948
+dnn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnn/ednn.py,sha256=55XBY1x8gbeVQJV1ELqTv5QG2tl29JjIPh8Dq5aeLz0,1695
+dnn/english_muffin.py,sha256=TA_elBVWRA-knpZTdLlr7pZ7ydZ1vTVa7mNE5lH9wFY,5060
+kyle_helper-1.2.8.data/scripts/update_result,sha256=Rb5nCgFkzZxeYo4b69kfH-vgJ5sD2oT1GAvrHGKbXPI,461
+kyle_helper-1.2.8.dist-info/METADATA,sha256=NsZAaef-CNyB8JYWyOhK9A6vUREaA9d_0DEI2juzDM0,356
+kyle_helper-1.2.8.dist-info/RECORD,,
+kyle_helper-1.2.8.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+kyle_helper-1.2.8.dist-info/top_level.txt,sha256=ymJKGWVUYkgiZPuBn5l4cbWUc0v4nrIAWpuMeSZZER4,22
+latex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latex/results.py,sha256=1ws_SHYrgyx0seDoOBfWHaOSRp5IiMa0TwZVOXonLuw,2082
+render/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+render/moviemaker.py,sha256=KRCVUzG69kH3JIBuynncQgu0PHiR_ETKSNp4Hi-x434,1246
