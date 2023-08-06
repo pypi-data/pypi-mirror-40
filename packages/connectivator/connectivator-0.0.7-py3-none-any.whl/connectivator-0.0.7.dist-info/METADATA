@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: connectivator
+Version: 0.0.7
+Summary: Simple wrapper functions for connecting to and loading data
+Home-page: https://github.com/jonathan-marsan/connectivator
+Author: Jonathan
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: SQLAlchemy
+Requires-Dist: psycopg2
+Requires-Dist: gspread
+Requires-Dist: gspread-dataframe
+Requires-Dist: oauth2client
+
+## Connectivator
+
+Set of wrapper functions to abstract repetitive tasks such as reading data from a Redshift/postgres databases, and writing their contents to a CSV or Google sheet. The lack of flexibility is done on purpose to simplify and standardize importing/exporting procedures. For more flexibility, simply use the original packages these wrapper functions were built upon, i.e. pandas, gspread, etc.
+
+### Current State
+
+* Connect to Postgres / Redshift: `postgres.get_engine`
+* Read output of a sql query into a data frame: `transfer.read_sql_data`
+* Write output of SQL files to CSV: `transfer.sqls_to_csv`
+* Read contents of a Google sheet into a data frame: `gsheets.get_ws_data`
+* Update contents of a Google sheet using a data frame: `gsheets.update_ws`
+* Write output of SQL files to Google sheet: `transfer.sqls_to_gs`
+
+### Environment Variables
+
+* Add a `.env` file to the project root directory.
+* Add the following environment variables, replacing with values relevant for your connections. Format:
+
+**Postgres/Redshift Environment Variables**
+
+```
+export PGHOST = instance-name.abc123.us-east-1.redshift.amazonaws.com
+export PGPORT = 5439
+export PGUSER = your_user_name
+export PGPASSWORD = your_password
+```
+
+* Load the environment variables before running the script. For example, by running `source .env` in the terminal you are using to run Python scripts.
+
+**Google Sheets Credient File and Environment Variable**
+
+Requires a json credentials file, which can be downloaded when creating a service account within a Google developer console project. The Google Sheets API enabled also must be enabled. See: https://developers.google.com/sheets/api/quickstart/python
+
+Also, the google sheet to be modified needs to give access to the Service Account. To do so, find the email associated to the service account under Credentials >> Manage Service Accounts of the Google Console project. Then go to the google sheet to be modified and allow edit access to this email.
+
+```
+export GOOGLE_APPLICATION_CREDENTIALS="filepath/to.json"
+```
+
+
