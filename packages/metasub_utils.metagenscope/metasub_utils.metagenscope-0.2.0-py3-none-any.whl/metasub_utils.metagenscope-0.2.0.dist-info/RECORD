@@ -1,0 +1,11 @@
+metasub_utils.metagenscope-0.2.0-py3.6-nspkg.pth,sha256=7S4yU8K33I518h63RpME9OxHc4ZF8eWeDAEGqrA4bYg,574
+metasub_utils/metagenscope/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metasub_utils/metagenscope/cli.py,sha256=lM9xcjbhjRxYOcFbsm00Q0IgKm-aT9TYFB8JLzIfgNc,1123
+metasub_utils/metagenscope/constants.py,sha256=cggZPULbFf0IOeJmvWfX_-fhMJoqXNaH_Lr2e7cUQB8,137
+metasub_utils/metagenscope/metagenscope.py,sha256=VDpSl-IeTG8iDO9hrgFPJSnQHp1DABj9Fhgkvlkc0v0,3299
+metasub_utils/metagenscope/utils.py,sha256=xIOT-I63u6QA0xUdqlhrv3drtWTV6fpyiI5YztUkrVY,229
+metasub_utils.metagenscope-0.2.0.dist-info/METADATA,sha256=NZ3xH-ZepYZoOZi9DoXUDzCFigEEomcwrBq4Y2sAv1Q,421
+metasub_utils.metagenscope-0.2.0.dist-info/RECORD,,
+metasub_utils.metagenscope-0.2.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+metasub_utils.metagenscope-0.2.0.dist-info/namespace_packages.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
+metasub_utils.metagenscope-0.2.0.dist-info/top_level.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
