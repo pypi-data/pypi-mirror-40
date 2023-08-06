@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: galsim-hub
+Version: 0.0.1rc1
+Summary: Support for Tensorflow Hub modules in GalSim
+Home-page: https://github.com/McWilliamsCenter/galsim_hub
+Author: Francois Lanusse
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: galsim
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-hub
+
+# galsim_hub
+Collection of TensorFlow modules for GalSim
+
+
