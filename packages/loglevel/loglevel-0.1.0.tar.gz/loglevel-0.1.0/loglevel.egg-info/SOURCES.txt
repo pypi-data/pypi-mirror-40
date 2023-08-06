@@ -1,0 +1,8 @@
+README.rst
+setup.py
+loglevel/__init__.py
+loglevel.egg-info/PKG-INFO
+loglevel.egg-info/SOURCES.txt
+loglevel.egg-info/dependency_links.txt
+loglevel.egg-info/requires.txt
+loglevel.egg-info/top_level.txt
