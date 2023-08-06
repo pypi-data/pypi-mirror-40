@@ -1,0 +1,16 @@
+bidtoolsdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bidtoolsdk/settings.py,sha256=VNKnwpSiI3qvYfaqouTKcxl9xFXb54BqyBd76e94vxc,69
+bidtoolsdk/configuration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bidtoolsdk/configuration/adgroup_config.py,sha256=WxHlyUKjXRgnVDDvW_WBgrKMPfES4V5QXE4G9l35_8w,947
+bidtoolsdk/google/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bidtoolsdk/google/keyword_performance.py,sha256=w51Yo4MTY2iIGjLuUgkpwrKmVe_kGeZb7xH1SlS_A_E,1407
+configuration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configuration/dealer_config.py,sha256=WxHlyUKjXRgnVDDvW_WBgrKMPfES4V5QXE4G9l35_8w,947
+google/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+google/keyword_performance.py,sha256=LmBSoseNkFsyBKT__lUNTPAstKWRADwhsJdxg1gKfW8,1378
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_config.py,sha256=PytJ3cb9oZ_M7pSaLiZqi1fg3scrLEcSfVszevPtC9Y,177
+bidtoolsdk-0.0.4.dist-info/METADATA,sha256=TI2AbrjAGt4sAiqVvuPXWEcYVPGrC1rderjOWE2r8AY,287
+bidtoolsdk-0.0.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+bidtoolsdk-0.0.4.dist-info/top_level.txt,sha256=ty98IkuN20tlOwWXbCRJ1CX3YkYTS-vvLruX_LKxiws,16
+bidtoolsdk-0.0.4.dist-info/RECORD,,
