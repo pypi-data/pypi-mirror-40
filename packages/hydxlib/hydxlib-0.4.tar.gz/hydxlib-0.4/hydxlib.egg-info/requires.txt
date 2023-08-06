@@ -1,0 +1,10 @@
+sqlalchemy
+geoalchemy2
+psycopg2
+
+[test]
+pytest
+mock
+pytest-cov
+pytest-flakes
+pytest-black
