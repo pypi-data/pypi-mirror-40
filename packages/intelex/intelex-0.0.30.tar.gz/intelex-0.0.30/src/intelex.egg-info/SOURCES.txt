@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+Pipfile
+Pipfile.lock
+README.md
+setup.py
+src/intelex.py
+src/intelex.egg-info/PKG-INFO
+src/intelex.egg-info/SOURCES.txt
+src/intelex.egg-info/dependency_links.txt
+src/intelex.egg-info/requires.txt
+src/intelex.egg-info/top_level.txt
+tests/test_intelex.py
