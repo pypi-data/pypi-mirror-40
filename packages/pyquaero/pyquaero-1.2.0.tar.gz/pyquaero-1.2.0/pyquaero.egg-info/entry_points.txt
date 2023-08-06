@@ -1,0 +1,5 @@
+[console_scripts]
+pyqd = pyqtools.pyqd:main
+pyqmdump = pyqtools.pyqmdump:main
+pyqsettime = pyqtools.pyqsettime:main
+
