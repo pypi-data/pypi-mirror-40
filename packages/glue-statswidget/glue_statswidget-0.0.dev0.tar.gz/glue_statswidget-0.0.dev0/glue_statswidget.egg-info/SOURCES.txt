@@ -1,0 +1,10 @@
+README.rst
+setup.py
+glue_statswidget/__init__.py
+glue_statswidget/statistics.py
+glue_statswidget/version.py
+glue_statswidget.egg-info/PKG-INFO
+glue_statswidget.egg-info/SOURCES.txt
+glue_statswidget.egg-info/dependency_links.txt
+glue_statswidget.egg-info/entry_points.txt
+glue_statswidget.egg-info/top_level.txt
