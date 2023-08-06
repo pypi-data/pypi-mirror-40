@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+interface_meta/__init__.py
+interface_meta/_version.py
+interface_meta/decorators.py
+interface_meta/interface.py
+interface_meta.egg-info/PKG-INFO
+interface_meta.egg-info/SOURCES.txt
+interface_meta.egg-info/dependency_links.txt
+interface_meta.egg-info/requires.txt
+interface_meta.egg-info/top_level.txt
