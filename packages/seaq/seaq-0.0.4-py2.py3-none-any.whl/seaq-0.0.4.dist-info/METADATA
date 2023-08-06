@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: seaq
+Version: 0.0.4
+Summary: Easily integrate pandas data frame and sqlite.
+Home-page: http://packages.python.org/an_example_pypi_project
+Author: Danny Beachnau
+Author-email: DannyBeachnau@gmail.com
+License: MIT
+Keywords: db pandas sqlite
+Platform: UNKNOWN
+Requires-Dist: pandas
+
+# seaq
+A Python library for saving a loading pandas dataframe from sqlite
+
+
