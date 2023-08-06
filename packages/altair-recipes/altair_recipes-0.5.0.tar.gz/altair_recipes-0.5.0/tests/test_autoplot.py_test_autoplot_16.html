@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@4"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@2.6.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@3"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+      var spec = {"config": {"view": {"width": 400, "height": 300}}, "data": {"values": [{"x_cat": "Q", "y": 2.0737761708989626}, {"x_cat": "M", "y": -0.3372989855092248}, {"x_cat": "M", "y": -0.5581818991175033}, {"x_cat": "O", "y": 1.6786383700364085}, {"x_cat": "O", "y": 0.26804686684739965}, {"x_cat": "M", "y": -0.15288794953229778}, {"x_cat": "L", "y": 3.441574619723247}, {"x_cat": "L", "y": 0.8604979552326595}, {"x_cat": "M", "y": -0.38445679122646964}, {"x_cat": "L", "y": 0.4273050095412569}]}, "mark": {"type": "tick", "opacity": 1.0, "thickness": 2}, "encoding": {"x": {"type": "nominal", "field": "x_cat"}, "y": {"type": "quantitative", "field": "y"}}, "height": 600, "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json"};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+
+  </script>
+</body>
+</html>

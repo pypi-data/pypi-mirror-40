@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@4"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@2.6.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@3"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+      var spec = {"config": {"view": {"width": 400, "height": 300}}, "data": {"values": [{"Lag": 0, "Autocorrelation": 0.9999999999999998}, {"Lag": 1, "Autocorrelation": -0.07051583228220218}, {"Lag": 2, "Autocorrelation": 0.2825921981910391}, {"Lag": 3, "Autocorrelation": -0.12163420132397063}, {"Lag": 4, "Autocorrelation": 0.07458779245608979}, {"Lag": 5, "Autocorrelation": -0.07349594858870878}, {"Lag": 6, "Autocorrelation": 0.07101066702233698}, {"Lag": 7, "Autocorrelation": -0.050568648836178155}, {"Lag": 8, "Autocorrelation": 0.055437128718518885}, {"Lag": 9, "Autocorrelation": -0.17478516829165627}, {"Lag": 10, "Autocorrelation": 0.2372179636357854}, {"Lag": 11, "Autocorrelation": -0.1215914908735529}, {"Lag": 12, "Autocorrelation": 0.12712984228112253}, {"Lag": 13, "Autocorrelation": -0.042201004457959546}, {"Lag": 14, "Autocorrelation": 0.11602305290330876}, {"Lag": 15, "Autocorrelation": 0.04176962702559601}]}, "mark": "bar", "encoding": {"x": {"type": "ordinal", "field": "Lag"}, "y": {"type": "quantitative", "field": "Autocorrelation"}}, "height": 600, "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json"};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+
+  </script>
+</body>
+</html>

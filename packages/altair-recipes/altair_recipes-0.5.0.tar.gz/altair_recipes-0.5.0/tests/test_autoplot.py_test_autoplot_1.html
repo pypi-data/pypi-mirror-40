@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@4"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@2.6.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@3"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+      var spec = {"config": {"view": {"width": 400, "height": 300}}, "data": {"values": [{"variable": "x", "value": 1.764052345967664}, {"variable": "x", "value": 0.4001572083672233}, {"variable": "x", "value": 0.9787379841057392}, {"variable": "x", "value": 2.240893199201458}, {"variable": "x", "value": 1.8675579901499675}, {"variable": "x", "value": -0.977277879876411}, {"variable": "x", "value": 0.9500884175255894}, {"variable": "x", "value": -0.1513572082976979}, {"variable": "x", "value": -0.10321885179355784}, {"variable": "x", "value": 0.41059850193837233}]}, "mark": {"type": "tick", "opacity": 1.0, "thickness": 2}, "encoding": {"x": {"type": "nominal", "field": "variable"}, "y": {"type": "quantitative", "field": "value"}}, "height": 600, "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json"};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+
+  </script>
+</body>
+</html>

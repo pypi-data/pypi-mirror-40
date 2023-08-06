@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@4"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@2.6.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@3"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+      var spec = {"config": {"view": {"width": 400, "height": 300}}, "data": {"values": [{"x_cat": "Q", "y": 2.0737761708989626}, {"x_cat": "M", "y": -0.3372989855092248}, {"x_cat": "M", "y": -0.5581818991175033}, {"x_cat": "O", "y": 1.6786383700364085}, {"x_cat": "O", "y": 0.26804686684739965}, {"x_cat": "M", "y": -0.15288794953229778}, {"x_cat": "L", "y": 3.441574619723247}, {"x_cat": "L", "y": 0.8604979552326595}, {"x_cat": "M", "y": -0.38445679122646964}, {"x_cat": "L", "y": 0.4273050095412569}, {"x_cat": "N", "y": 1.297963240307022}, {"x_cat": "M", "y": 0.8533584705462581}, {"x_cat": "L", "y": 0.8939749922493959}, {"x_cat": "L", "y": -2.048299410843761}, {"x_cat": "O", "y": -0.6726956437496787}, {"x_cat": "N", "y": -0.23569367828202437}, {"x_cat": "O", "y": 2.1303457732641244}, {"x_cat": "M", "y": -0.9728074934078015}, {"x_cat": "K", "y": 0.931547184979487}, {"x_cat": "I", "y": -0.6709345191460393}, {"x_cat": "H", "y": -0.6936385428398328}, {"x_cat": "M", "y": -0.4218960394841662}, {"x_cat": "L", "y": -1.1547835119850807}, {"x_cat": "K", "y": -3.179629478172301}, {"x_cat": "O", "y": 2.1211911141018183}, {"x_cat": "K", "y": -0.3032142129877793}, {"x_cat": "M", "y": 0.2310819006998318}, {"x_cat": "L", "y": 0.4712770761459144}, {"x_cat": "L", "y": 1.4832431124632837}, {"x_cat": "L", "y": 1.7067576194226823}, {"x_cat": "M", "y": -1.3566328974446233}, {"x_cat": "N", "y": 2.310532852266269}, {"x_cat": "K", "y": -0.40536371360825874}, {"x_cat": "K", "y": -3.2965795172083654}, {"x_cat": "N", "y": -2.3115272119896852}, {"x_cat": "O", "y": 0.6894171529475353}, {"x_cat": "O", "y": 1.1209674637482052}, {"x_cat": "N", "y": 0.9191964293302435}, {"x_cat": "K", "y": 1.0464170280014324}, {"x_cat": "L", "y": -0.870919990924869}, {"x_cat": "J", "y": -1.8983994280803094}, {"x_cat": "K", "y": -0.6955714404079111}, {"x_cat": "I", "y": -1.1003718426487665}, {"x_cat": "M", "y": 0.6605169143392642}, {"x_cat": "L", "y": 0.2797809247151609}, {"x_cat": "K", "y": 1.5228394427032803}, {"x_cat": "I", "y": -1.5883351689939882}, {"x_cat": "L", "y": 0.16987817049413378}, {"x_cat": "J", "y": -2.3411397285957927}, {"x_cat": "M", "y": 0.6386683909584102}]}, "mark": {"type": "tick", "opacity": 0.5, "thickness": 2}, "encoding": {"x": {"type": "nominal", "field": "x_cat"}, "y": {"type": "quantitative", "field": "y"}}, "height": 600, "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json"};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+
+  </script>
+</body>
+</html>

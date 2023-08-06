@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@4"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@2.6.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@3"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+      var spec = {"config": {"view": {"width": 400, "height": 300}}, "data": {"values": [{"x_cat": "Q", "y_cat": "O", "z": 1.8716591437633003}, {"x_cat": "M", "y_cat": "L", "z": -1.170529986182704}, {"x_cat": "M", "y_cat": "L", "z": 1.1754183483234981}, {"x_cat": "O", "y_cat": "N", "z": 1.8692873741136176}, {"x_cat": "O", "y_cat": "L", "z": 0.09023647319880346}, {"x_cat": "M", "y_cat": "L", "z": -1.2379130685482167}, {"x_cat": "L", "y_cat": "P", "z": 4.413836952564494}, {"x_cat": "L", "y_cat": "N", "z": 2.291969639277652}, {"x_cat": "M", "y_cat": "L", "z": -0.6295298344856628}, {"x_cat": "L", "y_cat": "M", "z": -0.1959488005707805}, {"x_cat": "N", "y_cat": "N", "z": 0.9019643743013845}, {"x_cat": "M", "y_cat": "M", "z": -0.5051639317354918}, {"x_cat": "L", "y_cat": "N", "z": 2.2165775199163646}, {"x_cat": "L", "y_cat": "K", "z": -2.0448554724095422}, {"x_cat": "O", "y_cat": "K", "z": -0.6728924138582292}, {"x_cat": "N", "y_cat": "K", "z": 1.2980102771284217}, {"x_cat": "O", "y_cat": "O", "z": 1.3572635254398533}, {"x_cat": "M", "y_cat": "L", "z": -1.3740624305788853}, {"x_cat": "K", "y_cat": "N", "z": 0.8161904206068282}, {"x_cat": "I", "y_cat": "L", "z": 0.3406209298419537}, {"x_cat": "H", "y_cat": "K", "z": 0.8195969792161444}, {"x_cat": "M", "y_cat": "K", "z": 0.49517258171375766}, {"x_cat": "L", "y_cat": "K", "z": -0.42589044019722544}, {"x_cat": "K", "y_cat": "I", "z": -2.6275973351618376}, {"x_cat": "O", "y_cat": "N", "z": -0.682042970543169}, {"x_cat": "K", "y_cat": "L", "z": -0.6992673911579064}, {"x_cat": "M", "y_cat": "M", "z": -0.48206172138403747}, {"x_cat": "L", "y_cat": "M", "z": 1.7721107448471531}, {"x_cat": "L", "y_cat": "N", "z": 0.9303773196440395}, {"x_cat": "L", "y_cat": "N", "z": 3.7776550293271915}, {"x_cat": "M", "y_cat": "K", "z": -1.7225412275380272}, {"x_cat": "N", "y_cat": "N", "z": 1.4129028106101948}, {"x_cat": "K", "y_cat": "M", "z": 1.0395727674126989}, {"x_cat": "K", "y_cat": "J", "z": -3.123637663043657}, {"x_cat": "N", "y_cat": "I", "z": -2.028838715705998}, {"x_cat": "O", "y_cat": "L", "z": 1.7802867162127456}, {"x_cat": "O", "y_cat": "N", "z": 0.9196193021046547}, {"x_cat": "N", "y_cat": "N", "z": 0.2385106742609251}, {"x_cat": "K", "y_cat": "M", "z": 1.8496920517348032}, {"x_cat": "L", "y_cat": "L", "z": -1.2130838208954078}, {"x_cat": "J", "y_cat": "J", "z": -2.370888270279358}, {"x_cat": "K", "y_cat": "L", "z": -1.3878283385667578}, {"x_cat": "I", "y_cat": "K", "z": -1.1470431063674358}, {"x_cat": "M", "y_cat": "M", "z": 0.040936826089929323}, {"x_cat": "L", "y_cat": "M", "z": 1.1493069322424099}, {"x_cat": "K", "y_cat": "N", "z": 1.375956589937311}, {"x_cat": "I", "y_cat": "K", "z": -1.2602434059260248}, {"x_cat": "L", "y_cat": "L", "z": -1.1931653290487705}, {"x_cat": "J", "y_cat": "J", "z": -1.5333054255429883}, {"x_cat": "M", "y_cat": "M", "z": 1.2993324200604037}]}, "facet": {"column": {"type": "nominal", "field": "y_cat"}}, "spec": {"mark": {"type": "tick", "opacity": 0.5, "thickness": 2}, "encoding": {"x": {"type": "nominal", "field": "x_cat"}, "y": {"type": "quantitative", "field": "z"}}, "height": 600, "width": 100}, "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json"};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+
+  </script>
+</body>
+</html>

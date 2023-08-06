@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@4"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@2.6.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@3"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+      var spec = {"config": {"view": {"width": 400, "height": 300}}, "data": {"values": [{"x_cat": "Q", "y_cat": "O", "z_cat": "O"}, {"x_cat": "M", "y_cat": "L", "z_cat": "K"}, {"x_cat": "M", "y_cat": "L", "z_cat": "N"}, {"x_cat": "O", "y_cat": "N", "z_cat": "O"}, {"x_cat": "O", "y_cat": "L", "z_cat": "M"}, {"x_cat": "M", "y_cat": "L", "z_cat": "K"}, {"x_cat": "L", "y_cat": "P", "z_cat": "Q"}, {"x_cat": "L", "y_cat": "N", "z_cat": "N"}, {"x_cat": "M", "y_cat": "L", "z_cat": "L"}, {"x_cat": "L", "y_cat": "M", "z_cat": "M"}]}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "y_cat"}, "column": {"type": "nominal", "field": "z_cat"}, "row": {"type": "nominal", "field": "x_cat"}, "x": {"type": "nominal", "axis": null, "field": "y_cat"}, "y": {"type": "quantitative", "aggregate": "count"}}, "height": 150.0, "width": 133.33333333333334, "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json"};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+
+  </script>
+</body>
+</html>

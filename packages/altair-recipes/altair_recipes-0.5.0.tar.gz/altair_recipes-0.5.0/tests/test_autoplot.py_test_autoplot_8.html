@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@4"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@2.6.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@3"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+      var spec = {"config": {"view": {"width": 400, "height": 300}}, "data": {"values": [{"x_cat": "Q"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "O"}, {"x_cat": "O"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "O"}, {"x_cat": "N"}, {"x_cat": "O"}, {"x_cat": "M"}, {"x_cat": "K"}, {"x_cat": "I"}, {"x_cat": "H"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "K"}, {"x_cat": "O"}, {"x_cat": "K"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "N"}, {"x_cat": "K"}, {"x_cat": "K"}, {"x_cat": "N"}, {"x_cat": "O"}, {"x_cat": "O"}, {"x_cat": "N"}, {"x_cat": "K"}, {"x_cat": "L"}, {"x_cat": "J"}, {"x_cat": "K"}, {"x_cat": "I"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "K"}, {"x_cat": "I"}, {"x_cat": "L"}, {"x_cat": "J"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "K"}, {"x_cat": "K"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "K"}, {"x_cat": "K"}, {"x_cat": "L"}, {"x_cat": "K"}, {"x_cat": "K"}, {"x_cat": "J"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "N"}, {"x_cat": "K"}, {"x_cat": "N"}, {"x_cat": "N"}, {"x_cat": "J"}, {"x_cat": "M"}, {"x_cat": "O"}, {"x_cat": "O"}, {"x_cat": "M"}, {"x_cat": "J"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "O"}, {"x_cat": "O"}, {"x_cat": "N"}, {"x_cat": "N"}, {"x_cat": "M"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "K"}, {"x_cat": "N"}, {"x_cat": "K"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "P"}, {"x_cat": "N"}, {"x_cat": "N"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "N"}, {"x_cat": "K"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "K"}, {"x_cat": "M"}, {"x_cat": "J"}, {"x_cat": "N"}, {"x_cat": "N"}, {"x_cat": "M"}, {"x_cat": "I"}, {"x_cat": "N"}, {"x_cat": "K"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "K"}, {"x_cat": "O"}, {"x_cat": "L"}, {"x_cat": "J"}, {"x_cat": "K"}, {"x_cat": "N"}, {"x_cat": "O"}, {"x_cat": "N"}, {"x_cat": "N"}, {"x_cat": "K"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "P"}, {"x_cat": "J"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "K"}, {"x_cat": "N"}, {"x_cat": "K"}, {"x_cat": "L"}, {"x_cat": "J"}, {"x_cat": "L"}, {"x_cat": "P"}, {"x_cat": "N"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "M"}, {"x_cat": "K"}, {"x_cat": "N"}, {"x_cat": "N"}, {"x_cat": "N"}, {"x_cat": "N"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "O"}, {"x_cat": "K"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "J"}, {"x_cat": "J"}, {"x_cat": "J"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "J"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "K"}, {"x_cat": "N"}, {"x_cat": "J"}, {"x_cat": "O"}, {"x_cat": "N"}, {"x_cat": "P"}, {"x_cat": "O"}, {"x_cat": "L"}, {"x_cat": "K"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "K"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "P"}, {"x_cat": "K"}, {"x_cat": "K"}, {"x_cat": "K"}, {"x_cat": "K"}, {"x_cat": "M"}, {"x_cat": "P"}, {"x_cat": "K"}, {"x_cat": "K"}, {"x_cat": "L"}, {"x_cat": "J"}, {"x_cat": "L"}, {"x_cat": "K"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "I"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "N"}, {"x_cat": "N"}, {"x_cat": "J"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "L"}, {"x_cat": "M"}, {"x_cat": "K"}, {"x_cat": "O"}, {"x_cat": "N"}, {"x_cat": "J"}, {"x_cat": "K"}]}, "mark": "bar", "encoding": {"x": {"type": "nominal", "field": "x_cat"}, "y": {"type": "quantitative", "aggregate": "count"}}, "height": 600.0, "width": 800.0, "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json"};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+
+  </script>
+</body>
+</html>
