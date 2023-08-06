@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        denzel=denzel_cli.scripts.cli:cli
+    

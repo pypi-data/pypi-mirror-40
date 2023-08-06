@@ -1,0 +1,1099 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tutorial &mdash; denzel 0.1.4 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.2.10/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.2.10/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.2.10/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/denzel_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Pipeline Methods" href="pipeline.html" />
+    <link rel="prev" title="Introduction" href="intro.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo_sidebar.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toy-model">Toy Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#starting-a-denzel-project">Starting a denzel Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#define-interface-api">Define Interface (API)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#launch-partial-project">Launch (partial project)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pipeline-methods">Pipeline Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verify-input"><code class="docutils literal notranslate"><span class="pre">verify_input</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-model"><code class="docutils literal notranslate"><span class="pre">load_model</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#process"><code class="docutils literal notranslate"><span class="pre">process</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#predict"><code class="docutils literal notranslate"><span class="pre">predict</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-api-to-predict">Using the API to Predict</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#monitoring">Monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#debugging">Debugging</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verify-input-exceptions"><code class="docutils literal notranslate"><span class="pre">verify_input</span></code> Exceptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-model-exceptions"><code class="docutils literal notranslate"><span class="pre">load_model</span></code> Exceptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#process-predict-exceptions"><code class="docutils literal notranslate"><span class="pre">process</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">predict</span></code> Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#deployment">Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#production">Production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deleting">Deleting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pipeline.html">Pipeline Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endpoints.html">API Endpoints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line Interface (CLI)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">denzel</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Tutorial</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tutorial.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tutorial">
+<h1>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">A step by step tutorial for installing and launching a denzel deployment.</div>
+<div class="line">For this tutorial we will train and deploy a Iris classifier, based on the <a class="reference external" href="https://archive.ics.uci.edu/ml/datasets/Iris">Iris dataset</a>.</div>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Python 3 and docker are necessary for denzel.</div>
+<div class="line">Optionally, you can set up a <a class="reference external" href="https://virtualenv.pypa.io/en/stable/">virtualenv</a>.</div>
+</div>
+<ol class="arabic">
+<li><p class="first"><a class="reference external" href="https://docs.docker.com/install/">Install docker</a>, verify its installation by running</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ docker --version
+Docker version <span class="m">18</span>.06.1-ce, build e68fc7a
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first"><a class="reference external" href="https://docs.docker.com/compose/install/">Install docker-compose</a> &gt; 1.19.0, verify its installation by running</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ docker-compose --version
+docker-compose version <span class="m">1</span>.22.0, build f46880fe
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">(Optional) <a class="reference external" href="https://virtualenv.pypa.io/en/stable/installation/">Install virtualenv</a> and create one to work on.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<div class="last line-block">
+<div class="line">If opting for <code class="docutils literal notranslate"><span class="pre">virtualenv</span></code> understand that the deployment will not be using this env - it will only be used to install denzel on it.</div>
+<div class="line">The deployment itself will use the interpreter and packages installed into the containers (more on this further down).</div>
+</div>
+</div>
+</div>
+<div class="section" id="installation">
+<span id="install"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">If you are using a virtualenv, make sure you have it active.</div>
+<div class="line">To install denzel, simply run</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install denzel
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">After this command completes, you should have the <code class="docutils literal notranslate"><span class="pre">denzel</span></code> <a class="reference internal" href="cli.html"><span class="doc">Command Line Interface (CLI)</span></a> available.</div>
+<div class="line">Once available you can always call <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">--help</span></code> for the help menu.</div>
+</div>
+</div>
+<div class="section" id="toy-model">
+<span id="id1"></span><h2>Toy Model<a class="headerlink" href="#toy-model" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Before actually using denzel, we need a trained model saved locally.</div>
+<div class="line">If you already have one, you can skip this sub-section.</div>
+<div class="line"><br /></div>
+<div class="line">For this tutorial, we are going to use <a class="reference external" href="http://scikit-learn.org/stable/modules/svm.html#svm-classification">scikit-learn’s default SVM classifier</a> and train it on the <a class="reference external" href="https://archive.ics.uci.edu/ml/datasets/Iris">Iris dataset</a>.</div>
+<div class="line">The following script downloads the dataset, trains a model and saves it to disk</div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="k">import</span> <span class="n">SVC</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+
+<span class="c1"># -------- Load data --------</span>
+<span class="n">IRIS_DATA_URL</span> <span class="o">=</span> <span class="s2">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data&quot;</span>
+<span class="n">IRIS_DATA_COLUMNS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;class&#39;</span><span class="p">]</span>
+
+<span class="n">iris_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">IRIS_DATA_URL</span><span class="p">,</span>
+                      <span class="n">names</span><span class="o">=</span><span class="n">IRIS_DATA_COLUMNS</span><span class="p">)</span>
+
+
+<span class="c1"># -------- Spit train and test --------</span>
+<span class="n">features</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">iris_df</span><span class="o">.</span><span class="n">values</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span> <span class="n">iris_df</span><span class="o">.</span><span class="n">values</span><span class="p">[:,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="n">test_fraction</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">train_features</span><span class="p">,</span> <span class="n">test_features</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">,</span> <span class="n">test_labels</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+    <span class="n">features</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span>
+    <span class="n">test_size</span><span class="o">=</span><span class="n">test_fraction</span><span class="p">)</span>
+
+<span class="c1"># -------- Train and evaluate --------</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">train_features</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">train_labels</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">test_features</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">test_labels</span><span class="p">))</span>
+<span class="o">&gt;&gt;</span> <span class="mf">0.9666666666666667</span>
+
+<span class="c1"># -------- Save for later --------</span>
+<span class="n">SAVED_MODEL_PATH</span> <span class="o">=</span> <span class="s1">&#39;/home/creasy/saved_models/iris_svc.pkl&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">SAVED_MODEL_PATH</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">saved_file</span><span class="p">:</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span>
+        <span class="n">obj</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+        <span class="n">file</span><span class="o">=</span><span class="n">saved_file</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Great, we have a model trained to populate the deployment!</div>
+</div>
+</div>
+<div class="section" id="starting-a-denzel-project">
+<h2>Starting a denzel Project<a class="headerlink" href="#starting-a-denzel-project" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">To start a project, you first have to run the command <a class="reference internal" href="cli.html#startproject"><span class="std std-ref">startproject</span></a>, as a result denzel will build for you the following skeleton</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel startproject iris_classifier
+Successfully built iris_classifier project skeleton
+$ <span class="nb">cd</span> iris_classifier
+$ tree
+.
+<span class="p">|</span>-- Dockerfile
+<span class="p">|</span>-- __init__.py
+<span class="p">|</span>-- app
+<span class="p">|</span>   <span class="p">|</span>-- __init__.py
+<span class="p">|</span>   <span class="p">|</span>-- assets
+<span class="p">|</span>   <span class="p">|</span>   <span class="sb">`</span>-- info.txt  &lt;-------------------------- Deployment information
+<span class="p">|</span>   <span class="p">|</span>-- logic
+<span class="p">|</span>   <span class="p">|</span>   <span class="p">|</span>-- __init__.py
+<span class="p">|</span>   <span class="p">|</span>   <span class="sb">`</span>-- pipeline.py  &lt;----------------------- Pipeline Methods
+<span class="p">|</span>   <span class="sb">`</span>-- tasks.py
+<span class="p">|</span>-- docker-compose.yml
+<span class="p">|</span>-- entrypoints
+<span class="p">|</span>   <span class="p">|</span>-- api.sh
+<span class="p">|</span>   <span class="p">|</span>-- denzel.sh
+<span class="p">|</span>   <span class="sb">`</span>-- monitor.sh
+<span class="p">|</span>-- logs
+<span class="sb">`</span>-- requirements.txt  &lt;-------------------------- Requirements
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">To make denzel fully operational, the only files we’ll ever edit are:</div>
+<div class="line">1. <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> - Here we’ll store all the pip packages our system needs</div>
+<div class="line">2. <code class="docutils literal notranslate"><span class="pre">app/assets/info.txt</span></code> - Text file that contains deployment information about our model and system</div>
+<div class="line">3. <code class="docutils literal notranslate"><span class="pre">app/logic/pipeline.py</span></code> - Here we will edit the body of the <a class="reference internal" href="pipeline.html"><span class="doc">Pipeline Methods</span></a></div>
+<div class="line"><br /></div>
+<div class="line">These steps, are exactly what this tutorial is all about.</div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<div class="last line-block">
+<div class="line">A good practice will be to edit only the body of functions in <code class="docutils literal notranslate"><span class="pre">pipeline.py</span></code> and if you wish to add your own custom functions that will be called from within <code class="docutils literal notranslate"><span class="pre">pipeline.py</span></code>, you should put them on a separate file inside the <code class="docutils literal notranslate"><span class="pre">app/logic</span></code> directory and import them.</div>
+</div>
+</div>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">When we’ve built our toy model, we used <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> so before anything we want to specify this requirement in the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file.</div>
+<div class="line">Open your favorite file editor, and append <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">scipy</span></code> as requirements - don’t forget to leave a blank line in the end.</div>
+<div class="line">Your <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> should look like this</div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># ---------------------------------------------------------------
+#                           USER GUIDE
+# Remember this has to be a lightweight service;
+# Keep that in mind when choosing which libraries to use.
+# ---------------------------------------------------------------
+scikit-learn
+numpy
+scipy
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Take heed to the comment at the top of the file. Keep your system as lean as possible using light packages and operations in the pipeline methods.</div>
+</div>
+</div>
+<div class="section" id="define-interface-api">
+<span id="api-interface"></span><h2>Define Interface (API)<a class="headerlink" href="#define-interface-api" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Our end users will need to know what is the JSON scheme our API accepts, so we will have to define what is the accepted JSON scheme for the <a class="reference internal" href="endpoints.html#predict-endpoint"><span class="std std-ref">/predict</span></a> endpoint.</div>
+<div class="line">In our <a class="reference internal" href="#toy-model"><span class="std std-ref">toy model</span></a>, we have four features the model expects: ‘sepal-length’, ‘sepal-width’, ‘petal-length’ and ‘petal-width’.</div>
+<div class="line">Since we are going to return an <a class="reference internal" href="intro.html#tasks-and-synchrony"><span class="std std-ref">async response</span></a>, we also need to make sure we include a callback URI in the scheme.</div>
+<div class="line">Finally we’ll want to support batching, so the following JSON scheme should suffice</div>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+    &quot;callback_uri&quot;: &lt;callback_uri&gt;,
+    &quot;data&quot;: {&lt;unique_id1&gt;: {&quot;sepal-length&quot;: &lt;float&gt;,
+                            &quot;sepal-width&quot;: &lt;float&gt;,
+                            &quot;petal-length&quot;: &lt;float&gt;,
+                            &quot;petal-width&quot;: &lt;float&gt;},
+             &lt;unique_id2&gt;: {&quot;sepal-length&quot;: &lt;float&gt;,
+                            &quot;sepal-width&quot;: &lt;float&gt;,
+                            &quot;petal-length&quot;: &lt;float&gt;,
+                            &quot;petal-width&quot;: &lt;float&gt;},
+             ...}
+}
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Also let’s include a documentation of this interface and the model version in our <code class="docutils literal notranslate"><span class="pre">app/assets/info.txt</span></code> file that will be available to the end user in the <a class="reference internal" href="endpoints.html#info-endpoint"><span class="std std-ref">/info</span></a> endpoint.</div>
+<div class="line">For example we might edit <code class="docutils literal notranslate"><span class="pre">info.txt</span></code> to something like this</div>
+</div>
+<pre class="literal-block">
+# =====================  DEPLOYMENT  ======================
+
+    ██████╗ ███████╗███╗   ██╗███████╗███████╗██╗
+    ██╔══██╗██╔════╝████╗  ██║╚══███╔╝██╔════╝██║
+    ██║  ██║█████╗  ██╔██╗ ██║  ███╔╝ █████╗  ██║
+    ██║  ██║██╔══╝  ██║╚██╗██║ ███╔╝  ██╔══╝  ██║
+    ██████╔╝███████╗██║ ╚████║███████╗███████╗███████╗
+    ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚══════╝╚══════╝
+                         v0.1.4
+
+# ========================  MODEL  ========================
+
+Model information:
+    Version: 1.0.0
+    Description: Iris classifier
+
+For prediction, make a POST request for /predict matching the following scheme
+
+{
+    &quot;callback_uri&quot;: &quot;<a class="reference external" href="http://alonzo.trainingday.com/stash">http://alonzo.trainingday.com/stash</a>&quot;,
+    &quot;data&quot;: {&lt;unique_id1&gt;: {&quot;sepal-length&quot;: &lt;float&gt;,
+                            &quot;sepal-width&quot;: &lt;float&gt;,
+                            &quot;petal-length&quot;: &lt;float&gt;,
+                            &quot;petal-width&quot;: &lt;float&gt;},
+             &lt;unique_id2&gt;: {&quot;sepal-length&quot;: &lt;float&gt;,
+                            &quot;sepal-width&quot;: &lt;float&gt;,
+                            &quot;petal-length&quot;: &lt;float&gt;,
+                            &quot;petal-width&quot;: &lt;float&gt;},
+             ...}
+}
+</pre>
+<div class="line-block">
+<div class="line">Looks great, now end users can see this info using GET requests!</div>
+</div>
+</div>
+<div class="section" id="launch-partial-project">
+<h2>Launch (partial project)<a class="headerlink" href="#launch-partial-project" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">In an ideal scenario, we would launch a project only after we have completed all necessary tasks for a full deployment.</div>
+<div class="line">For guidance and simplicity sake of this tutorial, we will launch a partial project and complete tasks gradually.</div>
+<div class="line"><br /></div>
+<div class="line">What we have now is a skeleton, an editted <code class="docutils literal notranslate"><span class="pre">info.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> files and we can launch our API, without the functionality of the <a class="reference internal" href="endpoints.html#predict-endpoint"><span class="std std-ref">/predict</span></a> endpoint (yet).</div>
+<div class="line">Inside project directory run:</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel launch
+
+Creating network <span class="s2">&quot;iris_classifier_default&quot;</span> with the default driver
+Pulling redis <span class="o">(</span>redis:4<span class="o">)</span>...
+<span class="m">4</span>: Pulling from library/redis
+802b00ed6f79: Pull <span class="nb">complete</span>
+8b4a21f633de: Pull <span class="nb">complete</span>
+92e244f8ff14: Pull <span class="nb">complete</span>
+fbf4770cd9d6: Pull <span class="nb">complete</span>
+.
+.
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">By default denzel will occupy port 8000 for the API and port 5555 for monitoring. If one of them is taken, denzel will let you know and you can opt for other ports - for more info check the <a class="reference internal" href="cli.html#launch"><span class="std std-ref">launch</span></a> command documentation.</p>
+</div>
+<div class="line-block">
+<div class="line">If this is the first time you launch a denzel project, the necessary docker images will be downloaded and built.</div>
+<div class="line">What is going on in the background is necessary for building the containers that will power the deployment.</div>
+<div class="line"><br /></div>
+<div class="line">If you are not really familiar with docker you can think of images like classes in programming, they define the structure of an object, and containers are like the instances.</div>
+<div class="line">In the context of docker the objects the images define are actually virtual machines and the containers we create from them is where our code will run on.</div>
+<div class="line"><br /></div>
+<div class="line">This whole process might take a few minutes, so sit back and enjoy an <a class="reference external" href="https://youtu.be/6KrNpxODiDA">Oscar winning performance by the man himself</a>.</div>
+</div>
+<div class="line-block">
+<div class="line">Once done if everything went right you should see the end of the output looking like this:</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Starting redis   ... <span class="k">done</span>
+Starting api     ... <span class="k">done</span>
+Starting denzel  ... <span class="k">done</span>
+Starting monitor ... <span class="k">done</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">This indicates that all the containers (services) were created and are up.</div>
+<div class="line">Once they are up the services will start installing the packages we specified in <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code>, you can view the status of the services by using the <a class="reference internal" href="cli.html#status"><span class="std std-ref">status</span></a> command, optionally with the <code class="docutils literal notranslate"><span class="pre">--live</span></code> flag.</div>
+<div class="line">If you would run it right away you’d expect to see:</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel status
+Services:
+    denzel - PIP INSTALLING...
+    monitor - PIP INSTALLING...
+    api - PIP INSTALLING...
+    redis - UP
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">When all the installing is done and everything is ready, you’ll see all the statuses change to <code class="docutils literal notranslate"><span class="pre">UP</span></code> with an additional line <code class="docutils literal notranslate"><span class="pre">Worker:</span> <span class="pre">worker&#64;iris_classifier</span> <span class="pre">-</span> <span class="pre">UP</span></code> indicating the worker is ready.</div>
+<div class="line">If you want to see the messages printed out throughout the installation, you can use the <a class="reference internal" href="cli.html#logs"><span class="std std-ref">logs</span></a> command.</div>
+<div class="line">At any time during the lifetime of your project, if you want to add more pip packages, just insert them to the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file and use the <a class="reference internal" href="cli.html#updatereqs"><span class="std std-ref">updatereqs</span></a> command.</div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<div class="last line-block">
+<div class="line">Using the <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">status</span> <span class="pre">--live</span></code> command is a great way to monitor the system. When conducting installations and loading it is a great way to get a high level live view of the system.</div>
+<div class="line">For lower level view, examining the outputs of the containers, use the live view of the logs using <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">logs</span> <span class="pre">--live</span></code>.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">For sanity check, assuming you have deployed locally, open your favorite browser and go to <a class="reference external" href="http://localhost:8000/info">http://localhost:8000/info</a> . You should see the contents of <code class="docutils literal notranslate"><span class="pre">info.txt</span></code> (assuming all services are up).</div>
+<div class="line">At any time, you can stop all services using the <a class="reference internal" href="cli.html#stop"><span class="std std-ref">stop</span></a> command and start them again with the <a class="reference internal" href="cli.html#start"><span class="std std-ref">start</span></a> command.</div>
+<div class="line">From this moment forward we shouldn’t use the <a class="reference internal" href="cli.html#launch"><span class="std std-ref">launch</span></a> command as a project can and needs to be launched once.</div>
+<div class="line">If for any reason you wish to relaunch a project (for changing ports for example) you’d have to first <a class="reference internal" href="cli.html#shutdown"><span class="std std-ref">shutdown</span></a> and then <a class="reference internal" href="cli.html#launch"><span class="std std-ref">launch</span></a> again.</div>
+</div>
+</div>
+<div class="section" id="pipeline-methods">
+<h2>Pipeline Methods<a class="headerlink" href="#pipeline-methods" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Now is the time to fill the body of the <a class="reference internal" href="pipeline.html"><span class="doc">pipeline methods</span></a>. They are all stored inside <code class="docutils literal notranslate"><span class="pre">app/logic/pipeline.py</span></code>.</div>
+<div class="line">Open this file in your favorite IDE as we will go through the implementation of these methods.</div>
+</div>
+<div class="section" id="verify-input">
+<h3><code class="docutils literal notranslate"><span class="pre">verify_input</span></code><a class="headerlink" href="#verify-input" title="Permalink to this headline">¶</a></h3>
+<div class="figure">
+<img alt="_images/request_flow_verify_input.png" src="_images/request_flow_verify_input.png" />
+</div>
+<div class="line-block">
+<div class="line">When a user makes a request, the first pipeline method that the request will meet is <a class="reference internal" href="pipeline.html#pipeline-verify-input"><span class="std std-ref">verify_input</span></a>.</div>
+<div class="line">The <a class="reference internal" href="pipeline.html#pipeline-verify-input"><span class="std std-ref">verify_input</span></a> method is responsible for making sure the JSON data received matches the <a class="reference internal" href="#api-interface"><span class="std std-ref">interface we defined</span></a>.</div>
+<div class="line">In order to do that, lets edit the <a class="reference internal" href="pipeline.html#pipeline-verify-input"><span class="std std-ref">verify_input</span></a> method to do just that:</div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">FEATURES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">verify_input</span><span class="p">(</span><span class="n">json_data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Verifies the validity of an API request content</span>
+
+<span class="sd">    :param json_data: Parsed JSON accepted from API call</span>
+<span class="sd">    :type json_data: dict</span>
+<span class="sd">    :return: Data for the the process function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># callback_uri is needed to sent the responses to</span>
+    <span class="k">if</span> <span class="s1">&#39;callback_uri&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;callback_uri not supplied&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Verify data was sent</span>
+    <span class="k">if</span> <span class="s1">&#39;data&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;no data to predict for!&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Verify data structure</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">],</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;jsondata[&quot;data&quot;] must be a mapping between unique id and features&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Verify data scheme</span>
+    <span class="k">for</span> <span class="n">unique_id</span><span class="p">,</span> <span class="n">features</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">feature_names</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+        <span class="n">feature_values</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+
+        <span class="c1"># Verify all features needed were sent</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">([</span><span class="n">feature</span> <span class="ow">in</span> <span class="n">feature_names</span> <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">FEATURES</span><span class="p">]):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;For each example all of the features [</span><span class="si">{}</span><span class="s1">] must be present&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FEATURES</span><span class="p">))</span>
+
+        <span class="c1"># Verify all features that were sent are floats</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">([</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">feature_values</span><span class="p">]):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;All feature values must be floats&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">json_data</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">In the verification process implementation, you may throw any object that inherits from <code class="docutils literal notranslate"><span class="pre">Exception</span></code> and the message attached to it will be sent back to the user in case he tackles that exception.</div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">For JSON scheme verification, you can consider using the <a class="reference external" href="https://github.com/Julian/jsonschema">jsonschema</a> library.</p>
+</div>
+</div>
+<div class="section" id="load-model">
+<h3><code class="docutils literal notranslate"><span class="pre">load_model</span></code><a class="headerlink" href="#load-model" title="Permalink to this headline">¶</a></h3>
+<div class="figure">
+<img alt="_images/request_flow_load_model.png" src="_images/request_flow_load_model.png" />
+</div>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="pipeline.html#pipeline-load-model"><span class="std std-ref">load_model</span></a> is the method responsible for loading our saved model into memory and will keep it there as long as the worker lives.</div>
+<div class="line">This method is called when denzel starts up and is called only once - unlike <a class="reference internal" href="pipeline.html#pipeline-verify-input"><span class="std std-ref">verify_input</span></a>, <a class="reference internal" href="pipeline.html#pipeline-process"><span class="std std-ref">process</span></a> and <a class="reference internal" href="pipeline.html#pipeline-predict"><span class="std std-ref">predict</span></a> which are called one time per request.</div>
+<div class="line">So our model will be accessible for reading, we must copy it into the project directory, preferably to <code class="docutils literal notranslate"><span class="pre">app/assets</span></code>. Once copied there, the assets directory should be as follows:</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> app/assets/
+$ ls -l
+
+total <span class="m">8</span>
+-rw-rw-r-- <span class="m">1</span> creasy creasy <span class="m">1623</span> Sep <span class="m">14</span> <span class="m">14</span>:35 info.txt
+-rw-rw-r-- <span class="m">1</span> creasy creasy <span class="m">3552</span> Sep <span class="m">14</span> <span class="m">08</span>:55 iris_svc.pkl
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Now if we’ll look at <code class="docutils literal notranslate"><span class="pre">app/logic/pipeline.py</span></code> we will find the skeleton of <a class="reference internal" href="pipeline.html#pipeline-load-model"><span class="std std-ref">load_model</span></a>.</div>
+<div class="line">Edit it so it loads the model and returns it, it should look something like:</div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
+
+<span class="o">.</span>
+<span class="o">.</span>
+
+<span class="k">def</span> <span class="nf">load_model</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Load model and its assets to memory</span>
+<span class="sd">    :return: Model, will be used by the predict and process functions</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./app/assets/iris_svc.pkl&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">model_file</span><span class="p">:</span>
+        <span class="n">loaded_model</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">model_file</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">loaded_model</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<div class="last line-block">
+<div class="line">When using paths on code which is executed inside the containers (like the pipeline methods) the current directory is always the project main directory (where the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> is stored). Hence the saved model prefix above is <code class="docutils literal notranslate"><span class="pre">./app/assets/...</span></code>.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">When we edit the pipeline methods, the changes do not take effect until we restart the services.</div>
+<div class="line">As we just edited a pipeline method, we should run the <a class="reference internal" href="cli.html#restart"><span class="std std-ref">restart</span></a> command so the changes apply.</div>
+<div class="line">Navigate back into the project main directory and run <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">restart</span></code> and after the services have restarted the changes will take effect.</div>
+<div class="line">To verify all went well you can examine the logs by running the <a class="reference internal" href="cli.html#logs"><span class="std std-ref">logs</span></a> command - if anything went wrong we will see it there (more about that in <a class="reference internal" href="#debugging"><span class="std std-ref">Debugging</span></a>).</div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<div class="line-block">
+<div class="line">When loading heavy models (unlike the tutorial classifier) that take long time to be read, you might want to wait for it to load before making any requests.</div>
+<div class="line">To do that, you should watch the output of the <a class="reference internal" href="cli.html#status"><span class="std std-ref">status</span></a> command and check if your worker is ready, optionally with the <code class="docutils literal notranslate"><span class="pre">--live</span></code> flag. If your model is indeed taking much time to load, the output should like like follows:</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel status
+
+Services:
+    denzel - UP
+    monitor - UP
+    api - UP
+    redis - UP
+Worker: all - LOADING...
+</pre></div>
+</div>
+<div class="last line-block">
+<div class="line">This means all the services are up, but API endpoints (as well as monitoring) are not available yet as the worker is still loading.</div>
+</div>
+</div>
+</div>
+<div class="section" id="process">
+<h3><code class="docutils literal notranslate"><span class="pre">process</span></code><a class="headerlink" href="#process" title="Permalink to this headline">¶</a></h3>
+<div class="figure">
+<img alt="_images/request_flow_process.png" src="_images/request_flow_process.png" />
+</div>
+<div class="line-block">
+<div class="line">The output of the <a class="reference internal" href="pipeline.html#pipeline-verify-input"><span class="std std-ref">verify_input</span></a> and <a class="reference internal" href="pipeline.html#pipeline-load-model"><span class="std std-ref">load_model</span></a> methods are the input to the <a class="reference internal" href="pipeline.html#pipeline-process"><span class="std std-ref">process</span></a> method.</div>
+<div class="line">The model object itself is not always necessary, but it is there if you want to have some kind of loaded resource available for the processing, in this tutorial we won’t use the model in this method.</div>
+<div class="line"><br /></div>
+<div class="line">Now we are in possession of the JSON data, and we are already sure it has all the necessary data for making predictions.</div>
+<div class="line">Our model though, does not accept JSON, it expects four floats as input, so in this method we will turn the JSON data into model-ready data.</div>
+<div class="line">For our use case, we should edit the function to look as follows:</div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
+<span class="o">.</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="o">.</span>
+<span class="o">.</span>
+
+<span class="k">def</span> <span class="nf">process</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">json_data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Process the json_data passed from verify_input to model ready data</span>
+
+<span class="sd">    :param model: Loaded object from load_model function</span>
+<span class="sd">    :param json_data: Data from the verify_input function</span>
+<span class="sd">    :return: Model ready data</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Gather unique IDs</span>
+    <span class="n">ids</span> <span class="o">=</span> <span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+
+    <span class="c1"># Gather feature values and make sure they are in the right order</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">features</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">2</span><span class="p">]],</span> <span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">3</span><span class="p">]]])</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    data = [[float, float, float, float],</span>
+<span class="sd">            [float, float, float, float]]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="n">ids</span><span class="p">,</span> <span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="predict">
+<h3><code class="docutils literal notranslate"><span class="pre">predict</span></code><a class="headerlink" href="#predict" title="Permalink to this headline">¶</a></h3>
+<div class="figure">
+<img alt="_images/request_flow_predict.png" src="_images/request_flow_predict.png" />
+</div>
+<div class="line-block">
+<div class="line">The output of <a class="reference internal" href="pipeline.html#pipeline-process"><span class="std std-ref">process</span></a> and <a class="reference internal" href="pipeline.html#pipeline-load-model"><span class="std std-ref">load_model</span></a> are the input to the <a class="reference internal" href="pipeline.html#pipeline-predict"><span class="std std-ref">predict</span></a> method.</div>
+<div class="line">The final part of a request lifecycle is the actual prediction that will be sent back as response.</div>
+<div class="line">In our example in order to do that we would edit the method to look as follows:</div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Predicts and prepares the answer for the API-caller</span>
+
+<span class="sd">    :param model: Loaded object from load_model function</span>
+<span class="sd">    :param data: Data from process function</span>
+<span class="sd">    :return: Response to API-caller</span>
+<span class="sd">    :rtype: dict</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Unpack the outputs of process function</span>
+    <span class="n">ids</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+
+    <span class="c1"># Predict</span>
+    <span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="c1"># Pack the IDs supplied by the end user and their corresponding predictions in a dictionary</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">ids</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">response</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The returned value of the <a class="reference internal" href="pipeline.html#pipeline-predict"><span class="std std-ref">predict</span></a> function must be a <strong>dictionary and all of its contents must be JSON serializable</strong>.
+This is necessary because denzel will parse it into JSON to be sent back to the end user.</p>
+</div>
+<div class="line-block">
+<div class="line">And… That’s it! Denzel is ready to be fully operational.</div>
+<div class="line">Don’t forget, after all these changes we must run <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">restart</span></code> so they will take effect.</div>
+<div class="line">For reference, the full <code class="docutils literal notranslate"><span class="pre">pipeline.py</span></code> file should look like this</div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">FEATURES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">]</span>
+
+<span class="c1"># -------- Handled by api container --------</span>
+<span class="k">def</span> <span class="nf">verify_input</span><span class="p">(</span><span class="n">json_data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Verifies the validity of an API request content</span>
+
+<span class="sd">    :param json_data: Parsed JSON accepted from API call</span>
+<span class="sd">    :type json_data: dict</span>
+<span class="sd">    :return: Data for the the process function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># callback_uri is needed to sent the responses to</span>
+    <span class="k">if</span> <span class="s1">&#39;callback_uri&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;callback_uri not supplied&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Verify data was sent</span>
+    <span class="k">if</span> <span class="s1">&#39;data&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;no data to predict for!&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Verify data structure</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">],</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;jsondata[&quot;data&quot;] must be a mapping between unique id and features&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Verify data scheme</span>
+    <span class="k">for</span> <span class="n">unique_id</span><span class="p">,</span> <span class="n">features</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">feature_names</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+        <span class="n">feature_values</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+
+        <span class="c1"># Verify all features needed were sent</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">([</span><span class="n">feature</span> <span class="ow">in</span> <span class="n">feature_names</span> <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">FEATURES</span><span class="p">]):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;For each example all of the features [</span><span class="si">{}</span><span class="s1">] must be present&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FEATURES</span><span class="p">))</span>
+
+        <span class="c1"># Verify all features that were sent are floats</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">([</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">feature_values</span><span class="p">]):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;All feature values must be floats&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">json_data</span>
+
+
+<span class="c1"># -------- Handled by denzel container --------</span>
+<span class="k">def</span> <span class="nf">load_model</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Load model and its assets to memory</span>
+
+<span class="sd">    :return: Model, will be used by the predict and process functions</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./app/assets/iris_svc.pkl&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">model_file</span><span class="p">:</span>
+        <span class="n">loaded_model</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">model_file</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">loaded_model</span>
+
+
+<span class="k">def</span> <span class="nf">process</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">json_data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Process the json_data passed from verify_input to model ready data</span>
+
+<span class="sd">    :param model: Loaded object from load_model function</span>
+<span class="sd">    :param json_data: Data from the verify_input function</span>
+<span class="sd">    :return: Model ready data</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Gather unique IDs</span>
+    <span class="n">ids</span> <span class="o">=</span> <span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+
+    <span class="c1"># Gather feature values and make sure they are in the right order</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">features</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">2</span><span class="p">]],</span> <span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">3</span><span class="p">]]])</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">ids</span><span class="p">,</span> <span class="n">data</span>
+
+
+<span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Predicts and prepares the answer for the API-caller</span>
+
+<span class="sd">    :param model: Loaded object from load_model function</span>
+<span class="sd">    :param data: Data from process function</span>
+<span class="sd">    :return: Response to API-caller</span>
+<span class="sd">    :rtype: dict</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Unpack the outputs of process function</span>
+    <span class="n">ids</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+
+    <span class="c1"># Predict</span>
+    <span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="c1"># Pack the IDs supplied by the end user and their corresponding predictions in a dictionary</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">ids</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">response</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="using-the-api-to-predict">
+<h2>Using the API to Predict<a class="headerlink" href="#using-the-api-to-predict" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Now is the time to put denzel into action.</div>
+<div class="line">To do that, we must first have some URI to receive the responses (remember, we are using <a class="reference internal" href="intro.html#tasks-and-synchrony"><span class="std std-ref">async responses</span></a>).</div>
+<div class="line">You can do that by using <a class="reference external" href="http://waithook.com/">waithook</a> which is an in browser service for receiving HTTP requests, just what we need - just follow the link, choose a “Path Prefix” (for example <code class="docutils literal notranslate"><span class="pre">john_q</span></code> and press “Subscribe”.</div>
+<div class="line">Use the link that will be generated for you (<a class="reference external" href="http://waithook.com">http://waithook.com</a>/&lt;chosen_path_prefix&gt;) and keep the browser open as we will receive the responses to the output window.</div>
+<div class="line">Next we need to make an actual POST request to the <a class="reference internal" href="endpoints.html#predict-endpoint"><span class="std std-ref">/predict</span></a> endpoint. We will do that using <a class="reference external" href="https://curl.haxx.se/docs/manual.html">curl</a> through the command line.</div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<div class="last line-block">
+<div class="line">There are more intuitive ways to create HTTP requests than <a class="reference external" href="https://curl.haxx.se/docs/manual.html">curl</a>. For creating requests through UI you can either use <a class="reference external" href="https://www.getpostman.com/">Postman</a>, or through Python using the <a class="reference external" href="http://docs.python-requests.org/en/master/">requests</a> package.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">Let’s launch a predict request, for two examples from the test set:</div>
+</div>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-QmFzaA== docutils container">
+<div class="docutils container">
+Bash</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9u docutils container">
+<div class="docutils container">
+Python</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-QmFzaA== active docutils container">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl --header <span class="s2">&quot;Content-Type: application/json&quot;</span> <span class="se">\</span>
+&gt; --request POST <span class="se">\</span>
+&gt; --data <span class="s1">&#39;{&quot;callback_uri&quot;: &quot;http://waithook.com/john_q&quot;,&#39;</span><span class="se">\</span>
+&gt; <span class="s1">&#39;&quot;data&quot;: {&quot;a123&quot;: {&quot;sepal-length&quot;: 4.6, &quot;sepal-width&quot;: 3.6, &quot;petal-length&quot;: 1.0, &quot;petal-width&quot;: 0.2},&#39;</span><span class="se">\</span>
+&gt; <span class="s1">&#39;&quot;b456&quot;: {&quot;sepal-length&quot;: 6.5, &quot;sepal-width&quot;: 3.2, &quot;petal-length&quot;: 5.1, &quot;petal-width&quot;: 2.0}}}&#39;</span> <span class="se">\</span>
+http://localhost:8000/predict
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-UHl0aG9u docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;callback_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;http://waithook.com/john_q&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;a123&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;sepal-length&quot;</span><span class="p">:</span> <span class="mf">4.6</span><span class="p">,</span> <span class="s2">&quot;sepal-width&quot;</span><span class="p">:</span> <span class="mf">3.6</span><span class="p">,</span> <span class="s2">&quot;petal-length&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;petal-width&quot;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">},</span>
+           <span class="s2">&quot;b456&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;sepal-length&quot;</span><span class="p">:</span> <span class="mf">6.5</span><span class="p">,</span> <span class="s2">&quot;sepal-width&quot;</span><span class="p">:</span> <span class="mf">3.2</span><span class="p">,</span> <span class="s2">&quot;petal-length&quot;</span><span class="p">:</span> <span class="mf">5.1</span><span class="p">,</span> <span class="s2">&quot;petal-width&quot;</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">}}</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;http://localhost:8000/predict&#39;</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">If the request has passed the <a class="reference internal" href="pipeline.html#pipeline-verify-input"><span class="std std-ref">verify_input</span></a> method, you should immediately get a response that looks something like (on curl, you’d see it in your prompt, with <code class="docutils literal notranslate"><span class="pre">requests</span></code> you’ll have it in <code class="docutils literal notranslate"><span class="pre">response.json()</span></code>):</div>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="s2">&quot;success&quot;</span><span class="p">,</span><span class="nt">&quot;data&quot;</span><span class="p">:{</span><span class="nt">&quot;task_id&quot;</span><span class="p">:</span><span class="s2">&quot;19e39afe-0729-43a8-b4c5-6a60281157bc&quot;</span><span class="p">}}</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">This means that the task has passed verification successfully, already entered the task queue and will next go through <a class="reference internal" href="pipeline.html#pipeline-process"><span class="std std-ref">process</span></a> and <a class="reference internal" href="pipeline.html#pipeline-predict"><span class="std std-ref">predict</span></a>.</div>
+<div class="line">At any time, you can view the task status by sending a GET request to the <a class="reference internal" href="endpoints.html#status-endpoint"><span class="std std-ref">/status/{task_id}</span></a> endpoint.</div>
+<div class="line">If you examine waithook in your browser, you will see that a response was already sent back with the prediction, it should looks something like:</div>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;/john_q&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;headers&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;User-Agent&quot;</span><span class="p">:</span> <span class="s2">&quot;python-requests/2.19.1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Connection&quot;</span><span class="p">:</span> <span class="s2">&quot;close&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;X-Forwarded-Proto&quot;</span><span class="p">:</span> <span class="s2">&quot;http&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Accept&quot;</span><span class="p">:</span> <span class="s2">&quot;*/*&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Accept-Encoding&quot;</span><span class="p">:</span> <span class="s2">&quot;gzip, deflate&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Content-Length&quot;</span><span class="p">:</span> <span class="s2">&quot;49&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Host&quot;</span><span class="p">:</span> <span class="s2">&quot;waithook.com&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;X-Forwarded-for&quot;</span><span class="p">:</span> <span class="s2">&quot;89.139.202.80&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;body&quot;</span><span class="p">:</span> <span class="s2">&quot;{\&quot;a123\&quot;: \&quot;Iris-setosa\&quot;, \&quot;b456\&quot;: \&quot;Iris-virginica\&quot;}&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">In the <code class="docutils literal notranslate"><span class="pre">&quot;body&quot;</span></code> section, you can see the returned predictions.</div>
+<div class="line">If you got this response it means that all went well and your deployment is fully ready.</div>
+</div>
+</div>
+<div class="section" id="monitoring">
+<h2>Monitoring<a class="headerlink" href="#monitoring" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Denzel comes with a built in UI for monitoring the tasks and workers.</div>
+<div class="line">To use it, once the system is up go to the monitor port (defaults to 5555) on the deployment domain. If deployed locally open your browser and go to <a class="reference external" href="http://localhost:5555">http://localhost:5555</a></div>
+<div class="line">You will be presented with a UI that looks something like:</div>
+</div>
+<div class="figure" id="id4">
+<img alt="_images/monitor_ui.png" src="_images/monitor_ui.png" />
+<p class="caption"><span class="caption-text">Example of Flower’s monitoring UI</span></p>
+</div>
+<div class="line-block">
+<div class="line">This dashboard is generated by <a class="reference external" href="https://flower.readthedocs.io/en/latest/">Flower</a>, and gives you access to examine the worker status, tasks status, tasks time and more.</div>
+</div>
+</div>
+<div class="section" id="debugging">
+<span id="id2"></span><h2>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Life is not all tutorials and sometime things go wrong.</div>
+<div class="line">Debugging exceptions is dependent of where the exception is originated at.</div>
+</div>
+<div class="section" id="verify-input-exceptions">
+<h3><code class="docutils literal notranslate"><span class="pre">verify_input</span></code> Exceptions<a class="headerlink" href="#verify-input-exceptions" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">This method is executed in the API container. If anything goes wrong in this method you will get it as an immediate response to your <code class="docutils literal notranslate"><span class="pre">/predict</span></code> POST request.</div>
+<div class="line">For example, lets say we make the same POST request as we did before, but we opt out one of the features in the data.</div>
+<div class="line">Given the code we supplied <code class="docutils literal notranslate"><span class="pre">verify_input</span></code> we should get the following response</div>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+ <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Bad input format&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;For each example all of the features [[&#39;sepal-length&#39;, &#39;sepal-width&#39;, &#39;petal-length&#39;, &#39;petal-width&#39;]] must be present&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="load-model-exceptions">
+<h3><code class="docutils literal notranslate"><span class="pre">load_model</span></code> Exceptions<a class="headerlink" href="#load-model-exceptions" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">If anything went wrong with the <a class="reference internal" href="pipeline.html#pipeline-load-model"><span class="std std-ref">load_model</span></a> method, you will only able to see the traceback and exception on the logs.</div>
+<div class="line">Specifically, the denzel service log is where the model is loaded. In this case the exception can be found through the <a class="reference internal" href="cli.html#logs"><span class="std std-ref">logs</span></a> (to isoltate the relevant container, pass the <code class="docutils literal notranslate"><span class="pre">--service</span> <span class="pre">denzel</span></code> option) or <a class="reference internal" href="cli.html#logworker"><span class="std std-ref">logworker</span></a> command.</div>
+<div class="line">Check them both as the location of the exception is dependent on its type.</div>
+</div>
+</div>
+<div class="section" id="process-predict-exceptions">
+<h3><code class="docutils literal notranslate"><span class="pre">process</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">predict</span></code> Exceptions<a class="headerlink" href="#process-predict-exceptions" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">If something went wrong in these methods, it necessarily means you made a successful request and passed the <a class="reference internal" href="pipeline.html#pipeline-verify-input"><span class="std std-ref">verify_input</span></a> method and have received a <code class="docutils literal notranslate"><span class="pre">&quot;SUCCESS&quot;</span></code> status to your response with a task ID.</div>
+<div class="line"><a class="reference internal" href="pipeline.html#pipeline-process"><span class="std std-ref">process</span></a> and <a class="reference internal" href="pipeline.html#pipeline-predict"><span class="std std-ref">predict</span></a> both get executed on the denzel container. If anything goes wrong inside of them it will be most likely only visible when querying for task status.</div>
+<div class="line">For example, if we would forget to import <code class="docutils literal notranslate"><span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span></code> even though it is in use in the <a class="reference internal" href="pipeline.html#pipeline-process"><span class="std std-ref">process</span></a> method - we will get a <code class="docutils literal notranslate"><span class="pre">&quot;SUCCESS&quot;</span></code> response for our POST (because we passed the <a class="reference internal" href="pipeline.html#pipeline-verify-input"><span class="std std-ref">verify_input</span></a> method).</div>
+<div class="line">But the task will fail after entering the <a class="reference internal" href="pipeline.html#pipeline-process"><span class="std std-ref">process</span></a> method - to see the reason, we should query the <a class="reference internal" href="endpoints.html#status-endpoint"><span class="std std-ref">/status/{task_id}</span></a> and we would see the following:</div>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+ <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;FAILURE&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;args&quot;</span><span class="p">:[</span><span class="s2">&quot;name &#39;np&#39; is not defined&quot;</span><span class="p">]}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="deployment">
+<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Since denzel is fully containerized it should work on any machine as long as it has docker, docker-compose and Python3 installed.</div>
+<div class="line">Also all of the main cloud service providers already support dockerized appications.</div>
+<div class="line"><br /></div>
+<div class="line">After completing all the necessary implementations for deployment covered in this tutorial it is best to check that the system can be launched from scratch.</div>
+<div class="line">To do that, we should <a class="reference internal" href="cli.html#shutdown"><span class="std std-ref">shutdown</span></a> while purging all images, and relaunch the project - don’t worry no code is being deleted during shutdown. This process it to make sure that when we deploy it somewhere else, it will work.</div>
+<div class="line">Go to the main project directory and run the following:</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel shutdown --purge
+
+Stopping iris_classifier_denzel_1  ... <span class="k">done</span>
+Stopping iris_classifier_monitor_1 ... <span class="k">done</span>
+Stopping iris_classifier_api_1     ... <span class="k">done</span>
+Stopping iris_classifier_redis_1   ... <span class="k">done</span>
+Removing iris_classifier_denzel_1  ... <span class="k">done</span>
+Removing iris_classifier_monitor_1 ... <span class="k">done</span>
+Removing iris_classifier_api_1     ... <span class="k">done</span>
+Removing iris_classifier_redis_1   ... <span class="k">done</span>
+Removing network iris_classifier_default
+Removing image redis:4
+Removing image denzel:1.0.0
+Removing image denzel:1.0.0
+ERROR: Failed to remove image <span class="k">for</span> service denzel:1.0.0: <span class="m">404</span> Client Error: Not Found <span class="o">(</span><span class="s2">&quot;No such image: denzel:1.0.0&quot;</span><span class="o">)</span>
+Removing image denzel
+ERROR: Failed to remove image <span class="k">for</span> service denzel:1.0.0: <span class="m">404</span> Client Error: Not Found <span class="o">(</span><span class="s2">&quot;No such image: denzel:1.0.0&quot;</span><span class="o">)</span>
+
+$ denzel launch
+Creating network <span class="s2">&quot;iris_classifier_default&quot;</span> with the default driver
+Pulling redis <span class="o">(</span>redis:4<span class="o">)</span>...
+<span class="m">4</span>: Pulling from library/redis
+.
+.
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<div class="last line-block">
+<div class="line">The “ERROR: Failed to remove….” can be safely ignored. This is a result of the <code class="docutils literal notranslate"><span class="pre">--purge</span></code> flag that tells denzel to remove the denzel image.</div>
+<div class="line">Since the image is used by three different containers, it will successfully delete it on the first container but fail on the other two.</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">After the relaunching is done check again that all endpoints are functioning as expected - just to make sure.</div>
+<div class="line">If all is well your system is ready to be deployed wherever, on a local machine, a remote server or a docker supporting cloud service.</div>
+<div class="line">To deploy it elsewhere simply copy all the contents of the project directory to the desired destination, verify docker, docker-compose and Python3 are installed, <a class="reference internal" href="#install"><span class="std std-ref">install denzel</span></a> and call <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">launch</span></code> from within that directory.</div>
+<div class="line">As a matter of fact, we can skip the installing denzel part when we deploy - more about that in the <a class="reference internal" href="#production"><span class="std std-ref">Production</span></a> section.</div>
+</div>
+</div>
+<div class="section" id="production">
+<span id="id3"></span><h2>Production<a class="headerlink" href="#production" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Denzel is essentially a docker-compose application, with an accompanying CLI tool to abstract docker and OS related functionality from the data scientist developing the application.</div>
+<div class="line">This means that if you are going to deploy your application on a docker-supporting cloud service, or deliver it to a production developer the denzel package is no longer mandatory.</div>
+<div class="line">Because the contents of the project directory already include the <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code>, the <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> and all the code needed to run and manage the application - Any service or person that can deal with docker will be able to do so.</div>
+<div class="line">Denzel is built that way so that going into production, more advanced docker management tools (like <a class="reference external" href="https://kubernetes.io/">Kubernetes</a>) can be used to apply more advanced production techniques like continuous deployment and scaling.</div>
+<div class="line"><br /></div>
+<div class="line">Denzel takes you from a model, to a containerized and deployable application in a data scientist oriented way - once you have that, the options are endless.</div>
+</div>
+</div>
+<div class="section" id="deleting">
+<h2>Deleting<a class="headerlink" href="#deleting" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Deleting a denzel project is very simple.</div>
+<div class="line">To do so we must call the <a class="reference internal" href="cli.html#shutdown"><span class="std std-ref">shutdown</span></a> command, to remove all of the containers. Optionally we could pass the <code class="docutils literal notranslate"><span class="pre">--purge</span></code> flag to remove the underlying images.</div>
+<div class="line">Then delete the project directory and the denzel project is fully removed.</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pipeline.html" class="btn btn-neutral float-right" title="Pipeline Methods" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="intro.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Elior Cohen.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.4',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/sphinx_tabs/tabs.js"></script>
+      <script type="text/javascript" src="_static/sphinx_tabs/semantic-ui-2.2.10/tab.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; denzel 0.1.4 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/denzel_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tutorial" href="tutorial.html" />
+    <link rel="prev" title="Denzel Deployment Framework" href="index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo_sidebar.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#motivation">Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#architecture-and-task-flow">Architecture and Task Flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tasks-and-synchrony">Tasks and Synchrony</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#why-async-responses">Why Async Responses?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipeline.html">Pipeline Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endpoints.html">API Endpoints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line Interface (CLI)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">denzel</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/intro.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Denzel was designed by data scientists for data scientists.</div>
+<div class="line">The framework utilizes production grade tools and practices to allow quick deployment, while abstracting all the mechanics behind the scenes.</div>
+<div class="line">To launch a service with API interface, task queue management and monitoring the only thing required from the data scientist is to fill four functions, and denzel will take care of the rest.</div>
+<div class="line">Those four functions are <a class="reference internal" href="pipeline.html#pipeline.load_model" title="pipeline.load_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">pipeline.load_model()</span></code></a>, <a class="reference internal" href="pipeline.html#pipeline.verify_input" title="pipeline.verify_input"><code class="xref py py-func docutils literal notranslate"><span class="pre">pipeline.verify_input()</span></code></a>, <a class="reference internal" href="pipeline.html#pipeline.process" title="pipeline.process"><code class="xref py py-func docutils literal notranslate"><span class="pre">pipeline.process()</span></code></a> and <a class="reference internal" href="pipeline.html#pipeline.predict" title="pipeline.predict"><code class="xref py py-func docutils literal notranslate"><span class="pre">pipeline.predict()</span></code></a> (also called <a class="reference internal" href="pipeline.html"><span class="doc">Pipeline Methods</span></a>).</div>
+</div>
+<div class="section" id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Data scientists are not necessarily software engineers. In most companies’ structure the data science team is separated from the other engineering teams.</div>
+<div class="line">In a standard workflow the data science team will get some data and a problem to solve. The team will then iterate until the point where they believe their solution is worthy and will want to test it out in production environment.</div>
+<div class="line">Once this point is reached it is not guaranteed that the engineering teams will have the availability to wrap the solution (model) with a deployment system.</div>
+<div class="line"><br /></div>
+<div class="line">Denzel was created to fill this necessity, to create a framework where a data scientist could deploy a model, in a fast and reliable way.</div>
+<div class="line">Need to deploy? Denzel got your back.</div>
+</div>
+</div>
+<div class="section" id="architecture-and-task-flow">
+<h2>Architecture and Task Flow<a class="headerlink" href="#architecture-and-task-flow" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Under the hood denzel uses four <a class="reference external" href="https://www.docker.com/">docker</a> containers and the system overview is as follows:</div>
+</div>
+<div class="figure" id="id2">
+<img alt="_images/architecture.png" src="_images/architecture.png" />
+<p class="caption"><span class="caption-text">High level overview of the denzel architecture. Each box is a container (API, Redis, denzel and Monitor). In orange is the main container, where the model will reside.
+On top of each container we can see the functions that will need to be implemented by the data scientist</span></p>
+</div>
+<div class="line-block">
+<div class="line">Each box, is a docker container with its own purpose.</div>
+<div class="line">The API exposes three endpoints to the user, the <a class="reference internal" href="endpoints.html#predict-endpoint"><span class="std std-ref">/predict</span></a>, <a class="reference internal" href="endpoints.html#status-endpoint"><span class="std std-ref">/status/{task_id}</span></a> and <a class="reference internal" href="endpoints.html#info-endpoint"><span class="std std-ref">/info</span></a> endpoints.</div>
+<div class="line"><br /></div>
+<div class="line">On system startup (<code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">start</span></code>) a worker inside the <strong>denzel container</strong> will use the <a class="reference internal" href="pipeline.html#pipeline.load_model" title="pipeline.load_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">pipeline.load_model()</span></code></a> function to load the model into memory, and will keep it there until the worker shuts down (should happen only when the system is shut down).</div>
+<div class="line">The worker, is always listening for tasks in the queue, which is inside the <strong>Redis container</strong>.</div>
+<div class="line">When an end-user sends a POST request to the <code class="docutils literal notranslate"><span class="pre">/predict</span></code> endpoint, the request will first go through the <a class="reference internal" href="pipeline.html#pipeline.verify_input" title="pipeline.verify_input"><code class="xref py py-func docutils literal notranslate"><span class="pre">pipeline.verify_input()</span></code></a> function to make sure the schema is as expected by denzel (defined by the data scientist).</div>
+<div class="line">If all is well, the request is turned into a task and is sent into the task queue and a response will be sent back to the user with a task ID.</div>
+<div class="line">As the task enters the queue, if the worker is not already busy it will consume the task. The task then goes through the <a class="reference internal" href="pipeline.html#pipeline.process" title="pipeline.process"><code class="xref py py-func docutils literal notranslate"><span class="pre">pipeline.process()</span></code></a> function, which accepts the output of the <a class="reference internal" href="pipeline.html#pipeline.verify_input" title="pipeline.verify_input"><code class="xref py py-func docutils literal notranslate"><span class="pre">pipeline.verify_input()</span></code></a> function and parses it to model-ready data.</div>
+<div class="line">If processing is successful, the model-ready data enters the <a class="reference internal" href="pipeline.html#pipeline.predict" title="pipeline.predict"><code class="xref py py-func docutils literal notranslate"><span class="pre">pipeline.predict()</span></code></a> function where all the model magic happens and then a response with the prediction will be sent to a <code class="docutils literal notranslate"><span class="pre">callback_uri</span></code> which was supplied by the end-user initially.</div>
+<div class="line">At any time during the lifetime of a task, the end-user can view its status through the <a class="reference internal" href="endpoints.html#status-endpoint"><span class="std std-ref">/status/{task_id}</span></a> endpoint, or through the built-in UI exposed by the <strong>Monitor container</strong>.</div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">By default, denzel will run tasks on parallel, one task per core - for example if the host has 8 cores, that means 8 tasks can be executed in parallel.</p>
+</div>
+<div class="figure" id="id3">
+<img alt="_images/request_flow.png" src="_images/request_flow.png" />
+<p class="caption"><span class="caption-text">API request flow through the four methods</span></p>
+</div>
+</div>
+<div class="section" id="tasks-and-synchrony">
+<span id="id1"></span><h2>Tasks and Synchrony<a class="headerlink" href="#tasks-and-synchrony" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Denzel separates tasks from predictions jobs. This is so denzel can support batching, where in one task multiple prediction jobs will be sent.</div>
+<div class="line">Consider the following request-body (as JSON) sent by an end-user:</div>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;callback_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;http://alonzo.trainingday.com/stash&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;predict_id_1&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;feature1&quot;</span><span class="p">:</span> <span class="mf">0.45</span><span class="p">,</span> <span class="nt">&quot;feature2&quot;</span><span class="p">:</span> <span class="mf">-1.99</span><span class="p">},</span>
+             <span class="nt">&quot;predict_id_2&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;feature1&quot;</span><span class="p">:</span> <span class="mf">0.09</span><span class="p">,</span> <span class="nt">&quot;feature2&quot;</span><span class="p">:</span> <span class="mf">-6.15</span><span class="p">}}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">As a response, the end-user will be returned:</div>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;task_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1ba0dccre8d67dsa&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;SUCCESS&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">&quot;status&quot;:</span> <span class="pre">&quot;SUCCESS&quot;</span></code> means the task has been accepted - <strong>not</strong> that there was a prediction made yet.
+Essentially it means the request has passed the <a class="reference internal" href="pipeline.html#pipeline.verify_input" title="pipeline.verify_input"><code class="xref py py-func docutils literal notranslate"><span class="pre">pipeline.verify_input()</span></code></a> method and has made it into the queue</p>
+</div>
+<div class="line-block">
+<div class="line">Here we have a task submitted by the user with two separate prediction jobs.</div>
+<div class="line">If all goes well, as the end-user sends the request it will <strong>synchronously</strong> get a response with a task ID, uniquely identifying the task submitted.</div>
+<div class="line">After the data has been processed and the prediction has been made, an <strong>asynchronous</strong> response will be sent back to the <code class="docutils literal notranslate"><span class="pre">callback_uri</span></code> and will look something like this:</div>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;predict_id_1&quot;</span><span class="p">:</span> <span class="s2">&quot;hotdog&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;predict_id_2&quot;</span><span class="p">:</span> <span class="s2">&quot;not_hotdog&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="why-async-responses">
+<h3>Why Async Responses?<a class="headerlink" href="#why-async-responses" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">The use of asynchronous responses is very common in API services.</div>
+<div class="line">Denzel, does not want to limit the data scientist and understands that processing and prediction (espcially of batches) might take longer than the end-user response waiting timeout.</div>
+<div class="line">Using asynchronous responses, the system virtually unlimited in time it takes to return a response, even though it’s recommended to respond as fast as possible.</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tutorial.html" class="btn btn-neutral float-right" title="Tutorial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Denzel Deployment Framework" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Elior Cohen.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.4',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

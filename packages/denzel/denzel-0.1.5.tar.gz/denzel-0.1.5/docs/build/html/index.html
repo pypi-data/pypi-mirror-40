@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Denzel Deployment Framework &mdash; denzel 0.1.4 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/denzel_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction" href="intro.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#">
+          
+
+          
+            
+            <img src="_static/logo_sidebar.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipeline.html">Pipeline Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endpoints.html">API Endpoints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line Interface (CLI)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">denzel</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Denzel Deployment Framework</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="denzel-deployment-framework">
+<h1>Denzel Deployment Framework<a class="headerlink" href="#denzel-deployment-framework" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/logo_icon.svg"><img alt="_images/logo_icon.svg" src="_images/logo_icon.svg" width="10%" /></a>
+</div>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://github.com/eliorc/denzel">Denzel</a> is a model-agnostic lean framework for fast and easy API deployment of machine learning models.</div>
+<div class="line">Denzel is data scientist first; while it leverages production grade tools and practices, its main goal is to abstract the mechanics from the data scientist allowing model deployment with ease.</div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Denzel only works only on Linux environment at the moment. Windows support will be added - keep yourself updated by checking the <a class="reference internal" href="#development-state"><span class="std std-ref">development state</span></a> for new features and support.</p>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipeline.html">Pipeline Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endpoints.html">API Endpoints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line Interface (CLI)</a></li>
+</ul>
+</div>
+<div class="section" id="showcase">
+<h2>Showcase<a class="headerlink" href="#showcase" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Deployment with denzel is very simple.</div>
+<div class="line">Assuming we have saved to disk an already trained model with less than 60 lines you can have it deployed with the following features:</div>
+<div class="line">1. Expose an API for users to use your model</div>
+<div class="line">2. Allow users to check their prediction request status through API requests</div>
+<div class="line">3. Monitor the performance of your deployment through <a class="reference external" href="https://flower.readthedocs.io/en/latest/screenshots.html">Flower UI</a></div>
+<div class="line">4. Fully containerized system so it could be deployed anywhere</div>
+<div class="line"><br /></div>
+<div class="line">Here is an example of all the code necessary to deploy the Iris classifier from the <a class="reference internal" href="tutorial.html"><span class="doc">tutorial</span></a>.</div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">FEATURES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">]</span>
+
+<span class="c1"># -------- Handled by api container --------</span>
+<span class="k">def</span> <span class="nf">verify_input</span><span class="p">(</span><span class="n">json_data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Verifies the validity of an API request content &quot;&quot;&quot;</span>
+
+    <span class="c1"># callback_uri is needed to sent the responses to</span>
+    <span class="k">if</span> <span class="s1">&#39;callback_uri&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;callback_uri not supplied&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Verify data was sent</span>
+    <span class="k">if</span> <span class="s1">&#39;data&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;no data to predict for!&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Verify data structure</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">],</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;jsondata[&quot;data&quot;] must be a mapping between unique id and features&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Verify data scheme</span>
+    <span class="k">for</span> <span class="n">unique_id</span><span class="p">,</span> <span class="n">features</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">feature_names</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+        <span class="n">feature_values</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+
+        <span class="c1"># Verify all features needed were sent</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">([</span><span class="n">feature</span> <span class="ow">in</span> <span class="n">feature_names</span> <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">FEATURES</span><span class="p">]):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;For each example all of the features [</span><span class="si">{}</span><span class="s1">] must be present&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FEATURES</span><span class="p">))</span>
+
+        <span class="c1"># Verify all features that were sent are floats</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">([</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">feature_values</span><span class="p">]):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;All feature values must be floats&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">json_data</span>
+
+
+<span class="c1"># -------- Handled by denzel container --------</span>
+<span class="k">def</span> <span class="nf">load_model</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; Load model and its assets to memory &quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./app/assets/iris_svc.pkl&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">model_file</span><span class="p">:</span>
+        <span class="n">loaded_model</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">model_file</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">loaded_model</span>
+
+
+<span class="k">def</span> <span class="nf">process</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">json_data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Process the json_data passed from verify_input to model ready data &quot;&quot;&quot;</span>
+
+    <span class="c1"># Gather unique IDs</span>
+    <span class="n">ids</span> <span class="o">=</span> <span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+
+    <span class="c1"># Gather feature values and make sure they are in the right order</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">features</span> <span class="ow">in</span> <span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">2</span><span class="p">]],</span> <span class="n">features</span><span class="p">[</span><span class="n">FEATURES</span><span class="p">[</span><span class="mi">3</span><span class="p">]]])</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">ids</span><span class="p">,</span> <span class="n">data</span>
+
+
+<span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Predicts and prepares the answer for the API-caller &quot;&quot;&quot;</span>
+
+    <span class="c1"># Unpack the outputs of process function</span>
+    <span class="n">ids</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+
+    <span class="c1"># Predict</span>
+    <span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="c1"># Pack the IDs supplied by the end user and their corresponding predictions in a dictionary</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">ids</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">response</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="development-state">
+<span id="id1"></span><h2>Development State<a class="headerlink" href="#development-state" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Denzel is supported by <a class="reference external" href="http://www.datascience.co.il/">Data Science Group Ltd.</a> and is promised to be kept on open source.</div>
+<div class="line">Denzel right now is on alpha. This means that it is fully operational and new features and support will be added to it before moving on to a beta release.</div>
+</div>
+<div class="section" id="upcoming-features">
+<h3>Upcoming Features<a class="headerlink" href="#upcoming-features" title="Permalink to this headline">¶</a></h3>
+<blockquote class="trello-card-compact">
+  <a href="https://trello.com/c/EXb6xs4c/5-windows-support-for-denzel-cli">Trello Card</a>
+</blockquote>
+<script src="https://p.trellocdn.com/embed.min.js"></script>
+
+<blockquote class="trello-card-compact">
+  <a href="https://trello.com/c/xmmOmZuI/7-live-updating">Trello Card</a>
+</blockquote>
+<script src="https://p.trellocdn.com/embed.min.js"></script></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="intro.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Elior Cohen.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.4',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
