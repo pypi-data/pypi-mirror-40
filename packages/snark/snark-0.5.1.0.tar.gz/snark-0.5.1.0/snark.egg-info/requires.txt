@@ -1,0 +1,10 @@
+awscli
+click<7,>=6.7
+clint<1,>=0.5.1
+marshmallow<3.0.0b0,>=2.11.1
+outdated>=0.2.0
+pytz>=2016.10
+pyyaml
+requests-toolbelt<1,>=0.7.1
+requests<3,>=2.12.4
+tabulate<1,>=0.7.7
