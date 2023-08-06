@@ -1,0 +1,7 @@
+moksha.common>=1.0.6
+Twisted
+pyzmq
+txZMQ
+txWS
+service_identity
+pyasn1
