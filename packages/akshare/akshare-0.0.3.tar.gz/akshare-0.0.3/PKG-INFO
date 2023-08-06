@@ -1,0 +1,23 @@
+Metadata-Version: 1.0
+Name: akshare
+Version: 0.0.3
+Summary: A utility for fundamentals data of OBOR
+Home-page: https://github.com/jindaxiang/akshare
+Author: Albert King
+Author-email: jindaxiang@163.com
+License: UNKNOWN
+Description: 
+        akshare
+        ===============
+        https://github.com/jindaxiang/akshare
+        Installation
+        --------------
+            pip install akshare
+        
+        Upgrade
+        ---------------
+            pip install akshare --upgrade
+        
+        
+Keywords: OBOR Data
+Platform: UNKNOWN
