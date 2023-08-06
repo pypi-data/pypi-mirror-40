@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: django-mfa2
+Version: 0.8.5
+Summary: Allows user to add 2FA to their accounts
+Home-page: https://github.com/mkalioby/django-mfa2/
+Author: Mohamed El-Kalioby
+Author-email: mkalioby@mkalioby.com
+License: MIT
+Download-URL: https://github.com/mkalioby/django-mfa2/
+Description: UNKNOWN
+Platform: UNKNOWN
