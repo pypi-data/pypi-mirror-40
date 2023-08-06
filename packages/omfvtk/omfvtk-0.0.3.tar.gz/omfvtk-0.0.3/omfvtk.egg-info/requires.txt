@@ -1,0 +1,5 @@
+omf>=0.9.3
+vectormath>=0.2.0
+vtki>=0.15.0
+numpy
+vtk>=8.1.0
