@@ -1,0 +1,10 @@
+pytest_android/__init__.py,sha256=39bH8B0Hx52eU-1H4mcvi3EtlisOlLJbEk5yRQ7bsiY,406
+pytest_android/fixtrues.py,sha256=-ymJJqPX-eD4BGnNAPKon6d8bfMuxJv8zZJWeK1oGFk,4600
+pytest_android/hooks.py,sha256=6ZRSc05hQELLdP2XR64PGpYHeOBNo6EO74llSVJVQak,767
+pytest_android/utils.py,sha256=PyIl0MT7OmGCKazdjsTfWluoBN8ezkyL6Z_-7pXH6Ik,20516
+pytest_android-2019.1a6.dist-info/LICENSE,sha256=4w42kAJnVYA3jRrG5Z-jpL09p8hkKMo8dDvvlyarIog,1074
+pytest_android-2019.1a6.dist-info/METADATA,sha256=mJGtlW_5Frj50YN9d8niO-MipRnKd7XNZHgzGc7IM9c,7758
+pytest_android-2019.1a6.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pytest_android-2019.1a6.dist-info/entry_points.txt,sha256=KH22c_1NK_2w5pZ9j10nzv-p-Nky_KjIO5yF6IGTgOg,44
+pytest_android-2019.1a6.dist-info/top_level.txt,sha256=CASFbj7NkCtS2owjl0c5CdoJixasjq9BmpN7ZwLlX4o,15
+pytest_android-2019.1a6.dist-info/RECORD,,
