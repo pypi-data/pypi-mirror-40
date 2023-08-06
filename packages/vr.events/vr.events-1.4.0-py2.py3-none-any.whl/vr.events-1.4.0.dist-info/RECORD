@@ -1,0 +1,10 @@
+vr.events-1.4.0-py3.7-nspkg.pth,sha256=nY38QTPRLLz1O40TKrKHbtyF0K9tiFweXeezphmBkRE,519
+vr/events/__init__.py,sha256=_ZTH7kDwNhuoe2YjbGNOVuhRqNDgaVi91wDqo5x8RYE,5528
+vr/events/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vr/events/tests/test_listener.py,sha256=IO-Ti1G7QmkyVhZGbvFOhAV88qltr8FhaBGtkkD2bvc,508
+vr.events-1.4.0.dist-info/LICENSE,sha256=pV4v_ptEmY5iHVHYwJS-0JrMS1I27nPX3zlaM7o8GP0,1050
+vr.events-1.4.0.dist-info/METADATA,sha256=OUab7N_1m1zMM3LYl45UNJYc-SFACftDn0ZDfVwRR2I,1716
+vr.events-1.4.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+vr.events-1.4.0.dist-info/namespace_packages.txt,sha256=JANebmkKrNnjyN7WQ0b55oYFA5-J5FefSokdMSYS97I,3
+vr.events-1.4.0.dist-info/top_level.txt,sha256=JANebmkKrNnjyN7WQ0b55oYFA5-J5FefSokdMSYS97I,3
+vr.events-1.4.0.dist-info/RECORD,,
