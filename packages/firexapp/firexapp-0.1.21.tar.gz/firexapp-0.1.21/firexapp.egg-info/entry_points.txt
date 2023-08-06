@@ -1,0 +1,3 @@
+[console_scripts]
+firexapp = firexapp.application:main
+
