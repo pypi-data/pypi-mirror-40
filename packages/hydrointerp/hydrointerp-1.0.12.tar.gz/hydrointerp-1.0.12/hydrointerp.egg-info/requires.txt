@@ -1,0 +1,8 @@
+pandas
+scipy
+pycrsx
+xarray
+pyproj
+
+[fiona]
+fiona
