@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: python-codeforces
+Version: 0.2.0
+Summary: Codeforces API wrapper for python
+Home-page: https://github.com/Mukundan314/python-codeforces
+Author: Mukundan
+Author-email: mukundan314@gmail.com
+License: MIT
+Keywords: codeforces
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: bs4
+
+# python-codeforces
+
+[![Documentation Status](https://readthedocs.org/projects/python-codeforces/badge/?version=latest)](https://python-codeforces.readthedocs.io/en/latest/?badge=latest)
+
+Codeforces API wrapper for python
+
+
