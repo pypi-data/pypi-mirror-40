@@ -1,0 +1,25 @@
+Metadata-Version: 1.0
+Name: ocrd_kraken
+Version: 0.0.2
+Summary: kraken bindings
+Home-page: https://github.com/OCR-D/ocrd_kraken
+Author: Konstantin Baierer, Kay-Michael Würzner
+Author-email: unixprog@gmail.com, wuerzner@gmail.com
+License: Apache License 2.0
+Description: ocrd_kraken
+        ===========
+        
+        .. image:: https://travis-ci.org/OCR-D/ocrd_kraken.svg?branch=master
+            :target: https://travis-ci.org/OCR-D/ocrd_kraken
+        
+        .. image:: https://img.shields.io/docker/automated/ocrd/kraken.svg
+            :target: https://hub.docker.com/r/ocrd/kraken/tags/
+            :alt: Docker Automated build
+        
+        .. image:: https://circleci.com/gh/OCR-D/ocrd_kraken.svg?style=svg
+            :target: https://circleci.com/gh/OCR-D/ocrd_kraken
+        
+        
+            Wrapper for the kraken OCR engine
+        
+Platform: UNKNOWN
