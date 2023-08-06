@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jtyoui
+Version: 19.1.15
+Summary: This is my collection bag.
+Home-page: https://github.com/jtyoui
+Author: jtyoui
+Author-email: jtyoui@qq.com
+License: MIT Licence
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+
+UNKNOWN
+
+
