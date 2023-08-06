@@ -1,0 +1,6 @@
+click-plugins==1.0.4
+clint==0.5.1
+anyconfig==0.9
+docker-compose>1.20<1.30
+humanfriendly
+GitPython
