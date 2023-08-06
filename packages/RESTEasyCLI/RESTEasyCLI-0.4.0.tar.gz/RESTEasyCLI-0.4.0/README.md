@@ -1,0 +1,37 @@
+# RESTEasyCLI
+
+Handy REST API client on your terminal
+
+[![PyPI version](https://img.shields.io/pypi/v/RESTEasyCLI.svg)](https://pypi.org/project/RESTEasyCLI)
+[![Build Status](https://travis-ci.org/rapidstack/RESTEasyCLI.svg?branch=master)](https://travis-ci.org/rapidstack/RESTEasyCLI)
+[![Documentation Status](https://readthedocs.org/projects/resteasycli/badge/?version=latest)](https://resteasycli.readthedocs.io/en/latest/?badge=latest)
+
+[![asciicast](https://asciinema.org/a/219207.svg)](https://asciinema.org/a/219207)
+
+- [RESTEasyCLI](#resteasycli)
+  - [Get started with an interactive demo](#get-started-with-an-interactive-demo)
+  - [Usage](#usage)
+  - [TODO list](#todo-list)
+  - [Contribution guide](#contribution-guide)
+
+## Get started with an interactive demo
+
+NOTE: This demo requires supported version of python and `virtualenv` to be installed
+
+```bash
+curl -L https://raw.githubusercontent.com/rapidstack/RESTEasyCLI/master/tools/demo.sh -o demo.sh
+chmod +x demo.sh
+./demo.sh
+```
+
+## Usage
+
+[Read full documentation on Read the Docs](http://resteasycli.readthedocs.io)
+
+## TODO list
+
+[Checkout the great TODO list on project board](https://github.com/rapidstack/RESTEasyCLI/projects)
+
+## Contribution guide
+
+[Checkout the contribution guide here](https://github.com/rapidstack/RESTEasyCLI/blob/master/CONTRIBUTING.md)
