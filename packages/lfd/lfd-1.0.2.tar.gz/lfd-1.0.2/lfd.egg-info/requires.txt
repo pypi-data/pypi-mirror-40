@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scipy
+scikit-learn
+SQLAlchemy
+astropy
+fitsio
+Pillow
+opencv-python
