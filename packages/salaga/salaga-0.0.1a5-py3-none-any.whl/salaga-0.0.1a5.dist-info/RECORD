@@ -1,0 +1,13 @@
+salaga/__init__.py,sha256=u5Lso_VTEx1IaEKzFjrseRlTr8DmZQoloAUxGG0cEYs,1975
+salaga/clusterOp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+salaga/clusterOp/salagaDaemon.py,sha256=azgEnYtwf_GEpfIO-KcRZ1ec6qnZ7b3RSnIXukRX3t0,1552
+salaga/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+salaga/utils/hashCodeGen.py,sha256=PIHERG_ykNsGoW18BucC0KaLB70n-pLok1NKpWfaRz4,809
+salaga/utils/localMan.py,sha256=EIDDfKyN2D183iAVdfXvGn4MX-pujKJb0rIdymbfpFw,1158
+salaga/utils/neighbour.py,sha256=ZsiyHr3beQGUIEez7-lchaCWnuKTs3DN49MYUlRboqA,450
+salaga/utils/slgcodes.py,sha256=gJO-HWHNQfzK3C3-pkyuP37m4ZEGp7DeDlvmc9Pk4Ok,1197
+salaga-0.0.1a5.dist-info/LICENSE,sha256=PtZSYc6w2gjcrSju8rrLghwdFwg5063rETEVWV6kelE,1066
+salaga-0.0.1a5.dist-info/METADATA,sha256=K33Ehp9cJMTnDY8n60EbDrb0VWtduG3SJgPcgF2j0ss,658
+salaga-0.0.1a5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+salaga-0.0.1a5.dist-info/top_level.txt,sha256=8Nhd7A_wjG60_S1Ng3nsyhZuab5TVPofzyMg-XRvhLQ,7
+salaga-0.0.1a5.dist-info/RECORD,,

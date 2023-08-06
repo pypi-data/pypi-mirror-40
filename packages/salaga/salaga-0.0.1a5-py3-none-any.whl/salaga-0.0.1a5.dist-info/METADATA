@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: salaga
+Version: 0.0.1a5
+Summary: Simple distributed key-value store
+Home-page: https://github.com/yashasbharadwaj111/Salaga
+Author: Yashas ND
+Author-email: yashasbharadwaj111@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: python-daemon
+
+# Salaga
+Salaga is a distributed key-value storage system.
+
+Build under progress, will be out soon.
+
