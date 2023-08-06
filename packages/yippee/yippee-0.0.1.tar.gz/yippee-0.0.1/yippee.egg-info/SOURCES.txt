@@ -1,0 +1,14 @@
+README.md
+setup.py
+yippee/__init__.py
+yippee/__version__.py
+yippee/cli.py
+yippee/config.py
+yippee/generator.py
+yippee/repl.py
+yippee.egg-info/PKG-INFO
+yippee.egg-info/SOURCES.txt
+yippee.egg-info/dependency_links.txt
+yippee.egg-info/entry_points.txt
+yippee.egg-info/requires.txt
+yippee.egg-info/top_level.txt
