@@ -1,0 +1,8 @@
+slacker
+requests
+celery
+tqdm
+djangorestframework
+
+[test]
+pytest
