@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+prometheus_coin_scraper/PrometheusClient.py
+prometheus_coin_scraper/__init__.py
+prometheus_coin_scrapper.egg-info/PKG-INFO
+prometheus_coin_scrapper.egg-info/SOURCES.txt
+prometheus_coin_scrapper.egg-info/dependency_links.txt
+prometheus_coin_scrapper.egg-info/requires.txt
+prometheus_coin_scrapper.egg-info/top_level.txt
