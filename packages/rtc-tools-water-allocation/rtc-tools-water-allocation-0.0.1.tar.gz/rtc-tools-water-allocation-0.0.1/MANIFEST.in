@@ -1,0 +1,2 @@
+include versioneer.py
+include src/rtctools_water_allocation/_version.py

@@ -1,0 +1,4 @@
+rtc-tools>=2.3.0a2
+rtc-tools-channel-flow==1.*
+numpy
+casadi

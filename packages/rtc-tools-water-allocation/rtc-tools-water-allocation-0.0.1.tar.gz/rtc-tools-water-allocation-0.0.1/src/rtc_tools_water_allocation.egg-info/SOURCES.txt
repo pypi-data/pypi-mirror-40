@@ -1,0 +1,12 @@
+MANIFEST.in
+README
+setup.cfg
+setup.py
+versioneer.py
+src/rtc_tools_water_allocation.egg-info/PKG-INFO
+src/rtc_tools_water_allocation.egg-info/SOURCES.txt
+src/rtc_tools_water_allocation.egg-info/dependency_links.txt
+src/rtc_tools_water_allocation.egg-info/requires.txt
+src/rtc_tools_water_allocation.egg-info/top_level.txt
+src/rtctools_water_allocation/__init__.py
+src/rtctools_water_allocation/_version.py
