@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: statuscope
+Version: 0.0.2
+Summary: A package to ease log sending to Statuscope
+Home-page: https://github.com/statuscope-io/python-package
+Author: Baris Demiray
+Author-email: baris.demiray@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: simplejson
+
+# python-package
+Source code of the Python package that is on PyPI
+
+
