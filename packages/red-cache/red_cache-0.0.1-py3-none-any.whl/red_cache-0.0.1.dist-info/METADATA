@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: red-cache
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Memory_Leak
+Author-email: irealing@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: redis (>=3.0.1)
+
+UNKNOWN
+
+
