@@ -1,0 +1,130 @@
+.TH MYMOVIEBOOK 1 2019\-01\-04
+.SH NAME
+
+.B mymoviebook:
+Cambia el propietario y los permisos de ficheros y directorios recursivamente.
+.SH SYNOPSIS
+
+mymoviebook usage: mymoviebook [\-h] [\-\-version] [\-\-insert | \-\-generate] [\-\-user USER]
+                   [\-\-port PORT] [\-\-host HOST] [\-\-db DB] [\-\-output OUTPUT]
+                   [\-\-format {PDF,ODT}]
+.SH DESCRIPCI\('ON
+
+.PP
+Esta aplicaci\('on tiene los siguientes par\('ametros obligatorios
+.PP
+.RS
+.B \-\-insert
+.RE
+.PP
+.RS
+.RS
+A\(~nade un directorio con pel\('iculas cuyo \('indice es el nombre num\('erico del \('ultimo directorio.
+.RE
+.RE
+.PP
+.RS
+.B \-\-generate
+.RE
+.PP
+.RS
+.RS
+Genera el documento con la colecci\('on de pel\('iculas
+.RE
+.RE
+.PP
+Par\('ametros de conexi\('on a la base de datos Postgresql
+.PP
+.RS
+.B \-\-user
+.RE
+.PP
+.RS
+.RS
+Usuario de la base de datos. Por defecto 'postgres'.
+.RE
+.RE
+.PP
+.RS
+.B \-\-port
+.RE
+.PP
+.RS
+.RS
+Puerto de la base de datos. Por defecto '5432'
+.RE
+.RE
+.PP
+.RS
+.B \-\-host
+.RE
+.PP
+.RS
+.RS
+Database server. By default '127.0.0.1'.
+.RE
+.RE
+.PP
+.RS
+.B \-\-db
+.RE
+.PP
+.RS
+.RS
+Database name. By default 'mymoviebook'.
+.RE
+.RE
+.PP
+.RS
+.B \-\-output
+.RE
+.PP
+.RS
+.RS
+Path where the movie book it's going to be generated. You can use this parameter as many times as you with.
+.RE
+.RE
+.PP
+.RS
+.B \-\-format
+.RE
+.PP
+.RS
+.RS
+You can choose PDF or ODT arguments. PDF is used by default.
+.RE
+.RE
+.SH EJEMPLOS
+
+.PP
+.RS
+.B Insert movies with index 23
+.RE
+.PP
+.RS
+.RS
+mymoviebook \-\-insert /path/to/my/movies/23
+.RE
+.RE
+.PP
+.RS
+.RS
+This comand insert in database all movies (up to 6) in 23 directory. Each film must have it's cover with the same filename.
+.RE
+.RE
+.PP
+.RS
+.B Generate a book with all movies in the database
+.RE
+.PP
+.RS
+.RS
+mymoviebook \-\-generate \-\-output /home/user/mymoviecollection.pdf
+.RE
+.RE
+.PP
+.RS
+.RS
+This comand generates a movie book in the output path.
+.RE
+.RE
