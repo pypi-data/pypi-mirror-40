@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: note.py
+Version: 0.1.1
+Summary: TAKE NOTES IN COMMAND LINE
+Home-page: UNKNOWN
+Author: flyingpot
+Author-email: fanjingbo1@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Click
+Requires-Dist: pyobjc-framework-Cocoa
+Requires-Dist: Pyyaml
+
+UNKNOWN
+
+
