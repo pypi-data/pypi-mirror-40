@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: spider-task-monitor
+Version: 0.0.8
+Summary: 对于爬虫任务调度的监控
+Home-page: https://github.com/IceFruit0777/py_package/tree/master/spider_task_monitor
+Author: IceFruit
+Author-email: huangchi@zhiyitech.cn
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
