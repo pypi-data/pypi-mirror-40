@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: ndex2
+Version: 2.0.1
+Summary: Nice CX Python includes a client and a data model.
+Home-page: https://github.com/ndexbio/ndex2-client
+Author: The NDEx Project
+Author-email: contact@ndexbio.org
+License: BSD
+Keywords: network analysis biology
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: six
+Requires-Dist: ijson
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+Requires-Dist: networkx
+Requires-Dist: urllib3 (>=1.16)
+Requires-Dist: pandas
+Requires-Dist: enum34
+Requires-Dist: pysolr
+Requires-Dist: numpy
+Requires-Dist: enum ; python_version == "2.6" or python_version == "2.7"
+
+**NDEx2 Client v2.0**
+=====================
+
+**Overview**
+------------
+
+The NDEx2 Client v2.0 Python module provides methods to access NDEx via
+the NDEx Server API. It also provides methods for common operations on
+networks. It includes the NiceCX network object class for convenient
+NDEx access and as a data model for applications.
+
+**Jupyter Notebook Tutorials**
+------------------------------
+
+-  Basic Use of the NDEx2 Client:  `NDEx2 Client v2.0
+   Tutorial <https://github.com/ndexbio/ndex-jupyter-notebooks/blob/master/notebooks/NDEx2%20Client%20v2.0%20Tutorial.ipynb>`__
+-  Working with the NiceCX Network Class: `NiceCX v2.0
+   Tutorial <https://github.com/ndexbio/ndex-jupyter-notebooks/blob/master/notebooks/NiceCX%20v2.0%20Tutorial.ipynb>`__
+
+To use these tutorials, clone the `ndex-jupyter-notebooks
+repository <https://github.com/ndexbio/ndex-jupyter-notebooks>`__ to
+your local machine and start Jupyter Notebooks in the project directory.
+
+For information on installing and using Jupyter Notebooks, go to
+`jupyter.org <http://jupyter.org/>`__
+
+**Requirements**
+----------------
+
+The NDEx2 Client 2.0 module requires Python 3.6+ and the latest version
+of the PIP Python package manager for installation. `Click
+here <https://pypi.python.org/pypi/pip>`__ to download the PIP Python
+package.
+
+**Installing the NDEx2 Client Module**
+--------------------------------------
+
+The NDEx2 Client 2.0 module can be installed from the Python Package
+Index (PyPI) repository using PIP:
+
+    pip install ndex2
+
+If you already have an older version of the ndex2 module installed, you
+can use this command instead:
+
+    pip install --upgrade ndex2
+
+
+
+=======
+History
+=======
+
+2.0.1 (2019-01-03)
+------------------
+
+* Fixed bug where logs directory is created within
+  the package installation directory. 
+  `Issue #26 <https://github.com/ndexbio/ndex2-client/issues/26>`_
+
+
