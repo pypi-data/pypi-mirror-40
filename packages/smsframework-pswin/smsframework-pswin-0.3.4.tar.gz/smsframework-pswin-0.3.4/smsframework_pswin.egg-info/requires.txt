@@ -1,0 +1,5 @@
+smsframework>=0.0.9
+requests>=2.4.3
+
+[receiver]
+flask>=0.10
