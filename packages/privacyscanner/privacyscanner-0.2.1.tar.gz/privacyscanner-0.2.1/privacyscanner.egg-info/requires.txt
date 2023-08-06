@@ -1,0 +1,11 @@
+adblockeval
+cryptography
+dnspython
+geoip2
+pillow
+psutil
+psycopg2-binary
+pychrome
+requests
+tldextract
+toposort
