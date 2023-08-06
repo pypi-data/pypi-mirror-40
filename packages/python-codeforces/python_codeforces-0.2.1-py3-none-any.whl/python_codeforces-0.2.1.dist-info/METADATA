@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: python-codeforces
+Version: 0.2.1
+Summary: Codeforces API wrapper for python
+Home-page: https://github.com/Mukundan314/python-codeforces
+Author: Mukundan
+Author-email: mukundan314@gmail.com
+License: MIT
+Keywords: codeforces
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6,<4
+Description-Content-Type: text/markdown
+Requires-Dist: bs4
+
+# python-codeforces
+
+[![Documentation Status](https://readthedocs.org/projects/python-codeforces/badge/?version=latest)](https://python-codeforces.readthedocs.io/en/latest/?badge=latest)
+
+Codeforces API wrapper for python
+
+## Developer Setup
+
+```shell
+git clone https://github.com/mukundan314/python-codeforces.git
+cd python-codeforces
+virtualenv venv
+. venv/bin/activate
+pip install -e .
+```
+
+
