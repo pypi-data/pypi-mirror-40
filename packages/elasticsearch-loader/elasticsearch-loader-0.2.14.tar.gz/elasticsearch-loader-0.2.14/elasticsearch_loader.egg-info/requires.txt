@@ -1,0 +1,15 @@
+elasticsearch>=6
+click==6.7
+click-stream
+click-conf
+unicodecsv
+
+[parquet]
+parquet
+
+[redis]
+esl-redis
+
+[tests]
+pytest
+mock
