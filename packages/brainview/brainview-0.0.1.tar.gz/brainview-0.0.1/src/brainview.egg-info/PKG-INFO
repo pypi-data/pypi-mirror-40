@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: brainview
+Version: 0.0.1
+Summary: Visualize morphometry neuroimaging data on 3D brain meshes.
+Home-page: https://github.com/dfsp-spirit/brainview
+Author: Tim Schäfer
+Author-email: UNKNOWN
+License: MIT
+Description: Provides a high-level interface for visualizing arbitrary data on brain meshes in 3D by wrapping around matplotlib and mayavi.
+Keywords: neuroimaging freesurfer visualize plot 3D brain morphometry MRI
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

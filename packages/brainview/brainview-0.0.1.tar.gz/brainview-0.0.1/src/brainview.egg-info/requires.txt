@@ -1,0 +1,6 @@
+numpy
+nibabel
+matplotlib
+mayavi
+vtk
+brainload>=0.3.2
