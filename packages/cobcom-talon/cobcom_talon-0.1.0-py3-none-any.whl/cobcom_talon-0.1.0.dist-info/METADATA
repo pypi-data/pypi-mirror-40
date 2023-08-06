@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cobcom-talon
+Version: 0.1.0
+Summary: A Python package that implements Tractograms As Linear Operators in Neuroimaging
+Home-page: https://gitlab.inria.fr/mfrigo/talon
+Author: Samuel Deslauriers-Gauthier, Matteo Frigo, Mauro Zucchelli
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pyunlocbox
+Requires-Dist: scipy
+
+UNKNOWN
+
+
