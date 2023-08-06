@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pypolychord
+Version: 1.15
+Summary: 1.15
+Home-page: https://ccpforge.cse.rl.ac.uk/gf/project/polychord/
+Author: Will Handley
+Author-email: wh260@cam.ac.uk
+License: PolyChord
+Platform: UNKNOWN
+Provides-Extra: plotting
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: plotting
+Requires-Dist: getdist; extra == 'plotting'
+
+Polychord is a tool to solve high dimensional problems.
+
+
