@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+bin/script-sample
+src/sample_python_package/__init__.py
+src/sample_python_package/sample-data.csv
+src/sample_python_package/text.py
+src/sample_python_package.egg-info/PKG-INFO
+src/sample_python_package.egg-info/SOURCES.txt
+src/sample_python_package.egg-info/dependency_links.txt
+src/sample_python_package.egg-info/not-zip-safe
+src/sample_python_package.egg-info/requires.txt
+src/sample_python_package.egg-info/top_level.txt
+src/sample_python_package/tests/__init__.py
+src/sample_python_package/tests/test_text.py

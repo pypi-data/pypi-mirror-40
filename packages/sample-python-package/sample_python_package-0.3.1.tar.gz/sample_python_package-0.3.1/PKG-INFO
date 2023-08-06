@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sample_python_package
+Version: 0.3.1
+Summary: Testing
+Home-page: https://ghe.kst3.jp/contents-create-dev/sample_python_package
+Author: Mashiyat Zaman
+Author-email: Mashiyat_Zaman@r.recruit.co.jp
+License: RCO
+Description: Testing Python package creation.
+Platform: UNKNOWN
