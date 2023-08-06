@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: khopesh
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/Varkal/khopesh
+Author: UNKNOWN
+Author-email: moreau.romain83@gmail.com
+License: MIT
+Download-URL: https://github.com/Varkal/khopesh/archive/0.0.1.tar.gz
+Description: # Khopesh #
+        
+        Khopesh is a very simple wrapper around cli tools that allow you to have pre and post hooks for any subcommands.
+        
+        Hooks are local to a folder, give you the possibility to behave differently in different locations
+        
+        # Install #
+        
+            pip install khopesh
+        
+        # How it works #
+        
+        - Create a hooks folder
+        - Inside the hooks folder, create a folder with the name of the executable you want to be hooked by khopesh
+        - Add an alias in your .bashrc / .zshrc file to replace the command to be hooked by "khopesh thecommand"
+        
+        
+Keywords: Khopesh
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers

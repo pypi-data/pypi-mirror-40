@@ -1,0 +1,5 @@
+argcomplete==1.9.4
+chuda==0.0.22
+colorama==0.4.1
+crayons==0.1.2
+sh==1.12.14
