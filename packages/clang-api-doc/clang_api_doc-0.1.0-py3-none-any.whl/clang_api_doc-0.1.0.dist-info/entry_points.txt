@@ -1,0 +1,3 @@
+[console_scripts]
+clang-api-doc=clang_api_doc:clang_api_doc.main
+

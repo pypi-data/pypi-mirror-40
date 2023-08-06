@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: clang-api-doc
+Version: 0.1.0
+Summary: Automatically generate API documentation for C language dialects
+Home-page: https://github.com/gpmueller/clang-api-doc
+License: MIT
+Keywords: api,automatic,documentation
+Author: Gideon Müller
+Author-email: gpmueller@outlook.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: clang
+Project-URL: Repository, https://github.com/gpmueller/clang-api-doc
+Description-Content-Type: text/markdown
+
+clang-api-doc
+=============
+
+Generate C/C++ API documentation using libclang Python
