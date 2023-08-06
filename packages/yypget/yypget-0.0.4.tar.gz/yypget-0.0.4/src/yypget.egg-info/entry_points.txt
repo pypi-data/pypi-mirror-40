@@ -1,0 +1,3 @@
+[console_scripts]
+yypget = yypget.__main__:main
+
