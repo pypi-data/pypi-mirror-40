@@ -1,0 +1,12 @@
+PyTrinamic
+PyTrinamic/connections/serial_tmcl_interface
+PyTrinamic/connections/uart_ic_interface
+PyTrinamic/evalboards/TMC4671_eval
+PyTrinamic/examples/evalboards/TMC4671_eval_BLDC_ABN_encoder
+PyTrinamic/examples/evalboards/TMC4671_eval_BLDC_open_loop
+PyTrinamic/examples/ic/TMC4671_BLDC_ABN_encoder
+PyTrinamic/examples/modules/TMCM-0010-OPC_config_check
+PyTrinamic/examples/modules/TMCM-0010-OPC_config_update
+PyTrinamic/ic/TMC4671/TMC4671_mask_shift
+PyTrinamic/ic/TMC4671/TMC4671_register
+PyTrinamic/modules/TMCM_0010_OPC
