@@ -1,0 +1,11 @@
+diffdoc/__init__.py,sha256=o8qXWIbI58t4zOygxG6l1-lpIO2U7ELPXt20yG_6-wM,461
+diffdoc/cli.py,sha256=A9JAAD0c-5AIvSVbvjCTh7nJxu9i1jr4gJXudOQyWBI,1521
+diffdoc/compiler.py,sha256=JXzz153wm6MDk-9RvASn4X9OeB7eptAar0RuV0QFm6o,7007
+diffdoc/diff.py,sha256=l1W0JRFKC5VrBZ-xMrLrKKtrn_GKEyG9GvwF-mSCfs0,845
+diffdoc/parser.py,sha256=h9g_nea154fdU_CFEdZNEI-sEUHEB3A03VTg5AO9N2k,2719
+diffdoc/rst.py,sha256=E6j6daCvUhBNA-eOLGNHofxl3WFxC_tlSzux1kI4kCs,3896
+diff_doc-0.1.0.dist-info/METADATA,sha256=23tMdSu1yQ4e7IW773PZKdUfah0EdWklKK9C8vC59nE,929
+diff_doc-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+diff_doc-0.1.0.dist-info/entry_points.txt,sha256=W_jen3823yztbauc33V-urH5Nrz8h-BVDU3p8LlSZAA,47
+diff_doc-0.1.0.dist-info/top_level.txt,sha256=GgVEBmIXVG6cW09wsdO2SMyg1PBvmdbD7k_Ih4MPCGs,8
+diff_doc-0.1.0.dist-info/RECORD,,
