@@ -1,0 +1,11 @@
+README.rst
+setup.py
+bob/__init__.py
+bob.paper.tifs2018_dsu.egg-info/PKG-INFO
+bob.paper.tifs2018_dsu.egg-info/SOURCES.txt
+bob.paper.tifs2018_dsu.egg-info/dependency_links.txt
+bob.paper.tifs2018_dsu.egg-info/not-zip-safe
+bob.paper.tifs2018_dsu.egg-info/requires.txt
+bob.paper.tifs2018_dsu.egg-info/top_level.txt
+bob/paper/__init__.py
+bob/paper/tifs2018_dsu/__init__.py
