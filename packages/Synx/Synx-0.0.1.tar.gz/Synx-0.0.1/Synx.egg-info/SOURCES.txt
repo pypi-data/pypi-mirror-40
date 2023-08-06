@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+Synx/Synx.py
+Synx/__init__.py
+Synx/logo.png
+Synx.egg-info/PKG-INFO
+Synx.egg-info/SOURCES.txt
+Synx.egg-info/dependency_links.txt
+Synx.egg-info/requires.txt
+Synx.egg-info/top_level.txt
+Synx/media/vv.png
+Synx/media/vv2.png
+Synx/media/gen/vv.png
