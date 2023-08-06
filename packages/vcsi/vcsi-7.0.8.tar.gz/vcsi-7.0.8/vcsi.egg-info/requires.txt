@@ -1,0 +1,9 @@
+numpy
+pillow
+jinja2
+
+[dev]
+check-manifest
+
+[test]
+coverage
