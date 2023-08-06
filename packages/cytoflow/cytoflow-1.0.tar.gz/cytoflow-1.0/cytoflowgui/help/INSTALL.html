@@ -1,0 +1,234 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Installation notes</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="next" title="Project Structure" href="design.html" />
+    <link rel="prev" title="1. Quickstart" href="manual/01_quickstart.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="installation-notes">
+<span id="install"></span><h1>Installation notes</h1>
+<div class="section" id="to-use-the-cytoflow-modules-in-a-jupyter-notebook-or-your-own-code">
+<h2>To use the Cytoflow modules in a Jupyter notebook or your own code</h2>
+<p id="modules">Cytoflow is available as a package for the Anaconda scientific Python
+distribution.  You can install <em>cytoflow</em> through the Anaconda Navigator,
+or by using the command line.</p>
+<p><strong>This is not the only way to get Cytoflow up and running, but it is by far
+the most straightforward.</strong></p>
+<div class="section" id="installing-from-the-anaconda-navigator">
+<h3>Installing from the <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Navigator</span></code></h3>
+<ul>
+<li><p class="first">Start by installing the Anaconda Python distribution. <strong>Make sure to install
+version 3.6.</strong></p>
+<p><a class="reference external" href="https://www.continuum.io/downloads">Download Anaconda here</a></p>
+</li>
+<li><p class="first">Either from the Start Menu (Windows) or the Finder (Mac), run the
+<code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Navigator</span></code></p>
+</li>
+<li><p class="first">Click the <code class="docutils literal notranslate"><span class="pre">Channels</span></code> button.</p>
+<img alt="_images/channels.PNG" src="_images/channels.PNG" />
+</li>
+<li><p class="first">Click <code class="docutils literal notranslate"><span class="pre">Add...</span></code> and type <code class="docutils literal notranslate"><span class="pre">bpteague</span></code>.  Select “Update channels.”</p>
+<img alt="_images/add-channels.PNG" src="_images/add-channels.PNG" />
+</li>
+<li><p class="first">The application <code class="docutils literal notranslate"><span class="pre">cytoflow</span></code> should appear in the launcher.
+Click the <code class="docutils literal notranslate"><span class="pre">Install</span></code> button.</p>
+<img alt="_images/new-app.PNG" src="_images/new-app.PNG" />
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">Navigator</span></code> asks if you’d like to install in a new environment.
+Say <code class="docutils literal notranslate"><span class="pre">Yes</span></code>..</p>
+<img alt="_images/new-env.PNG" src="_images/new-env.PNG" />
+</li>
+<li><p class="first">To verify installation, start a Jupyter notebook.</p>
+<ul class="simple">
+<li>First, <em>make sure you have the ``cytoflow`` environment selected.</em></li>
+<li>From the <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Navigator</span></code>, install and then launch <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">notebook</span></code>.</li>
+<li>Create a new <em>Python 3</em> notebook.</li>
+<li>In the first cell, type <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">cytoflow</span></code> and press <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>.
+If Python doesn’t complain, you’re good to go.  (If it does, please submit
+a bug report!)</li>
+</ul>
+</li>
+<li><p class="first"><strong>Note: When you install Cytoflow this way, the point-and-click
+application is installed as well.</strong>  Launching it from the
+<code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Navigator</span></code> will be significantly faster than downloading the
+pre-packaged binary.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="installing-from-the-command-line">
+<h3>Installing from the command line</h3>
+<ul>
+<li><p class="first">Start <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Prompt</span></code> from the Start Menu (Windows) or Finder (Mac).</p>
+</li>
+<li><p class="first">Add the <code class="docutils literal notranslate"><span class="pre">bpteague</span></code> channel:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">bpteague</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Create a new environment and install <code class="docutils literal notranslate"><span class="pre">cytoflow</span></code> and the Jupyter notebook.
+In this example, the new environment will be called <code class="docutils literal notranslate"><span class="pre">cf</span></code> – feel free to
+choose a different name:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">cf</span> <span class="n">cytoflow</span> <span class="n">notebook</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Activate the new environment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">cf</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Launch the Jupyter notebook:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">notebook</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Create a new <em>Python 3</em> notebook.  In the first cell, type <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">cytoflow</span></code>
+and press <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>.  If Python doesn’t complain, you’re good to go.
+(If it does, please submit a bug report!)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="to-hack-on-the-code">
+<span id="hacking"></span><h2>To hack on the code</h2>
+<p>Cytoflow depends on a huge number of libraries from the Scientific Python
+ecosystem, and a change in any one of their APIs will break the <code class="docutils literal notranslate"><span class="pre">cytoflow</span></code>
+library.  So, I have pinned the versions of all of <code class="docutils literal notranslate"><span class="pre">cytoflow</span></code>’s dependencies,
+which all but guarantees that you’ll need to install into a virtual environment.
+This will ensure that the rest of your Python installation doesn’t break.</p>
+<p>I strongly recommend using Anaconda to install the proper dependencies.
+A PyPI package (installable using <code class="docutils literal notranslate"><span class="pre">pip</span></code>) is also available.  The following
+instructions assume that you have installed Anaconda (as above) and launched
+an Anaconda prompt.</p>
+<p>Finally, <code class="docutils literal notranslate"><span class="pre">cytoflow</span></code> relies on one C++ extension.  On Linux, installing the
+requirements for building it is straightforward.  On MacOS it is harder, and
+on Windows it is extremely difficult.  Instead, as part of rolling a new
+release, the appropriate files are made available on
+<a class="reference external" href="https://github.com/bpteague/cytoflow/releases">the GitHub releases page</a>.
+The procedure below includes instructions for downloading and installing
+the appropriate file.</p>
+<ul>
+<li><p class="first">Install the development dependencies</p>
+<ul class="simple">
+<li>On Ubuntu: <code class="docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">git</span> <span class="pre">swig</span> <span class="pre">python-dev</span></code></li>
+<li>On Windows: Install a copy of <code class="docutils literal notranslate"><span class="pre">git</span></code>.  I use <a class="reference external" href="http://git-for-windows.github.io">git-for-windows</a></li>
+<li>On MacOS: Install a copy of <code class="docutils literal notranslate"><span class="pre">git</span></code> from <a class="reference external" href="http://www.git-scm.com">the Git website</a>.</li>
+</ul>
+</li>
+<li><p class="first">If you haven’t, add the <code class="docutils literal notranslate"><span class="pre">bpteague</span></code> channel to conda:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">bpteague</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Clone the repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">bpteague</span><span class="o">/</span><span class="n">cytoflow</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Create a new environment.  In this example, I have called it <code class="docutils literal notranslate"><span class="pre">cf_dev</span></code>.
+In the new repository you just cloned, say:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">cf_dev</span> <span class="o">--</span><span class="n">file</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Activate the new environment</p>
+<ul>
+<li><p class="first">On Windows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">cf_dev</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">On Mac, Linux or Windows running bash:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="n">activate</span> <span class="n">cf_dev</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p class="first"><strong>On Windows and MacOS only,</strong> do the following to prevent <code class="docutils literal notranslate"><span class="pre">cytoflow</span></code>
+from trying to build the C++ extension.</p>
+<ul>
+<li><p class="first"><strong>On Windows</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">NO_LOGICLE</span><span class="o">=</span><span class="kc">True</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>On MacOS</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">NO_LOGICLE</span><span class="o">=</span><span class="kc">True</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p class="first">Install <code class="docutils literal notranslate"><span class="pre">cytoflow</span></code> in developer’s mode:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">develop</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">From the <a class="reference external" href="https://github.com/bpteague/cytoflow/releases">GitHub releases page</a>
+download the appropriate extension file for the version you’re installing.</p>
+<ul class="simple">
+<li><strong>On Windows (32-bit)</strong>: <code class="docutils literal notranslate"><span class="pre">_Logicle.cp36-win32.pyd</span></code></li>
+<li><strong>On Windows (64-bit)</strong>: <code class="docutils literal notranslate"><span class="pre">_Logicle.cp36-win_amd64.pyd</span></code></li>
+<li><strong>On MacOS</strong>: <code class="docutils literal notranslate"><span class="pre">_Logicle.cpython-36m-darwin.so</span></code></li>
+</ul>
+</li>
+<li><p class="first">Copy the file you just download into the <cite>cytoflow/utility/logicle_ext/</cite> folder
+in your source tree.</p>
+</li>
+<li><p class="first">Test that everything works.  Start a <code class="docutils literal notranslate"><span class="pre">python</span></code> interpreter and say:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cytoflow</span>
+</pre></div>
+</div>
+<p>If you don’t get any errors, you’re good to go.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="running-the-point-and-click-gui-program">
+<h2>Running the point-and-click GUI program</h2>
+<p>There are one-click bundles available at
+<a class="reference external" href="http://bpteague.github.io/cytoflow">http://bpteague.github.io/cytoflow</a>.</p>
+<p>Alternately, you can follow the instructions above for installing the
+Anaconda package, then run <code class="docutils literal notranslate"><span class="pre">cytoflow</span></code> through the Anaconda Navigator or
+via the command line.</p>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

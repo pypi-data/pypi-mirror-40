@@ -1,0 +1,75 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Linear Bleedthrough Compensation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-cytoflowgui.op_plugins.bleedthrough_linear"></span><div class="section" id="linear-bleedthrough-compensation">
+<h1>Linear Bleedthrough Compensation</h1>
+<p>Apply matrix-based bleedthrough correction to a set of fluorescence channels.</p>
+<p>This is a traditional matrix-based compensation for bleedthrough.  For each
+pair of channels, the module estimates the proportion of the first channel
+that bleeds through into the second, then performs a matrix multiplication to
+compensate the raw data.</p>
+<p>This works best on data that has had autofluorescence removed first;
+if that is the case, then the autofluorescence will be subtracted from
+the single-color controls too.</p>
+<p>To use, specify the single-color control files and which channels they should
+be measured in, then click <strong>Estimate</strong>.  Check the diagnostic plot to make sure
+the estimation looks good.  There must be at least two channels corrected.</p>
+<dl class="object">
+<dt>
+<code class="descname">Add Control, Remove Control</code></dt>
+<dd><p>Add or remove single-color controls.</p>
+</dd></dl>
+
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You cannot have any operations before this one which estimate model
+parameters based on experimental conditions.  (Eg, you can’t use a
+<strong>Density Gate</strong> to choose morphological parameters and set <em>by</em> to an
+experimental condition.)  If you need this functionality, you can access it
+using the Python module interface.</p>
+</div>
+<div class="figure">
+<img alt="_images/cytoflowgui-op_plugins-bleedthrough_linear-1.png" src="_images/cytoflowgui-op_plugins-bleedthrough_linear-1.png" />
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

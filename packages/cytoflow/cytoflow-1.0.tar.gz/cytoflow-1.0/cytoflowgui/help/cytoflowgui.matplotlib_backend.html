@@ -1,0 +1,64 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>&lt;no title&gt;</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-cytoflowgui.matplotlib_backend"></span><p>A matplotlib backend that renders across a process boundary.</p>
+<p>By default, matplotlib only works in one thread.  For a GUI application, this
+is a problem because when matplotlib is working (ie, scaling a bunch of data
+points) the GUI freezes.</p>
+<p>This module implements a matplotlib backend where the plotting done in one
+process (ie via pyplot, etc) shows up in a canvas running in another process
+(the GUI).  The canvas is the interface across the process boundary: a “local”
+canvas, which is a GUI widget (in this case a QWidget) and a “remote” canvas
+(running in the process where pyplot.plot() etc. are used.)  The remote canvas
+is a subclass of the Agg renderer; when draw() is called, the remote canvas
+pulls the current buffer out of the renderer and pushes it through a pipe
+to the local canvas, which draws it on the screen.  blit() is implemented
+too.</p>
+<p>This takes care of one direction of data flow, and would be enough if we were
+just plotting.  However, we want to use matplotlib widgets as well, which
+means there’s data flowing from the local canvas to the remote canvas too.
+The local canvas is a subclass of FigureCanvasQTAgg, which is itself a
+sublcass of QWidget.  The local canvas overrides several of the event handlers,
+passing the event information to the remote canvas which in turn runs the
+matplotlib event handlers.</p>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

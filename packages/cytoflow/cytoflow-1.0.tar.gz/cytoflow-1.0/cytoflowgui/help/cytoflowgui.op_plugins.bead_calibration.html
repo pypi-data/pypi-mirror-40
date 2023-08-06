@@ -1,0 +1,94 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bead Calibration</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-cytoflowgui.op_plugins.bead_calibration"></span><div class="section" id="bead-calibration">
+<h1>Bead Calibration</h1>
+<p>Calibrate arbitrary channels to molecules-of-fluorophore using fluorescent
+beads (eg, the <strong>Spherotech RCP-30-5A</strong> rainbow beads.)</p>
+<p>Computes a log-linear calibration function that maps arbitrary fluorescence
+units to physical units (ie molecules equivalent fluorophore, or <em>MEF</em>).</p>
+<p>To use, set <strong>Beads</strong> to the beads you calibrated with (check the lot!) and
+<strong>Beads File</strong> to an FCS file containing events collected <em>using
+the same cytometer settings as the data you’re calibrating</em>.  Then, click
+<strong>Add a channel</strong> to add the channels to calibrate, and set both the channel
+name and the units you want calibrate to.  Click <strong>Estimate</strong>, and <em>make sure
+you check the diagnostic plot to see that the correct peaks were found.</em></p>
+<p>If it didn’t find all the peaks (or found too many), try tweaking
+<strong>Peak Quantile</strong>, <strong>Peak Threshold</strong> and <strong>Peak Cutoff</strong>.  If you can’t make
+the peak finding work by tweaking , please submit a bug report!</p>
+<dl class="object">
+<dt>
+<code class="descname">Beads</code></dt>
+<dd><p>The beads you’re calibrating with.  Make sure to check the lot number!</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Beads file</code></dt>
+<dd><p>A file containing the FCS events from the beads.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Channels</code></dt>
+<dd><p>A list of the channels you want calibrated and the units you want them
+calibrated in.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Peak Quantile</code></dt>
+<dd><p>Peaks must be at least this quantile high to be considered.  Default = 80.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Peak Threshold</code></dt>
+<dd><p>Don’t search for peaks below this brightness.  Default = 100.</p>
+</dd></dl>
+
+<div class="figure">
+<img alt="_images/cytoflowgui-op_plugins-bead_calibration-1.png" src="_images/cytoflowgui-op_plugins-bead_calibration-1.png" />
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,107 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome to Cytoflow’s user and developer documentation!</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="next" title="Cytoflow program manual" href="manual.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-cytoflow-s-user-and-developer-documentation">
+<h1>Welcome to Cytoflow’s user and developer documentation!</h1>
+<div class="section" id="i-want-to-see-the-point-and-click-program-s-documentation">
+<h2>I want to see the point-and-click program’s documentation</h2>
+<p>Here’s the <a class="reference internal" href="manual.html#manual"><span class="std std-ref">manual</span></a>.  At the moment it’s pretty sparse,
+but there’s a <a class="reference internal" href="manual/01_quickstart.html#quickstart"><span class="std std-ref">tutorial</span></a> that should help you get started.
+Also, check out the online help in the “Help” pane.</p>
+</div>
+<div class="section" id="i-want-to-use-cytoflow-s-modules-in-my-own-cytometry-analysis">
+<h2>I want to use Cytoflow’s modules in my own cytometry analysis</h2>
+<p>Great!  May I recommend you start with some example Jupyter notebooks.
+They provide a good introduction to both basic modules and some of
+Cytoflow’s more advanced features.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/bpteague/cytoflow/blob/master/docs/examples-basic/Basic%20Cytometry.ipynb">Basic flow cytometry analysis</a></li>
+<li><a class="reference external" href="https://github.com/bpteague/cytoflow/blob/master/docs/examples-basic/Yeast%20Dose%20Response.ipynb">An small-molecule induction curve with yeast</a></li>
+<li><a class="reference external" href="https://github.com/bpteague/cytoflow/blob/master/docs/examples-basic/Machine%20Learning.ipynb">Machine learning methods applied to flow cytometry</a></li>
+<li><a class="reference external" href="https://github.com/bpteague/cytoflow-examples/blob/master/kiani/Kiani%20Nature%20Methods%202014.ipynb">Reproduced an analysis from a published paper</a></li>
+<li><a class="reference external" href="https://github.com/bpteague/cytoflow-examples/blob/master/yeast/Induction%20Timecourse.ipynb">A multidimensional induction in yeast</a></li>
+<li><a class="reference external" href="https://github.com/bpteague/cytoflow-examples/blob/master/tasbe/TASBE%20Workflow.ipynb">Calibrated flow cytometry in MEFLs</a></li>
+</ul>
+<p>If you decide you want to have a go, see the <a class="reference internal" href="INSTALL.html#install"><span class="std std-ref">installation notes</span></a>.
+Quick hint: if you have Anaconda installed, say:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">bpteague</span>
+<span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">cytoflow</span> <span class="n">cytoflow</span>
+</pre></div>
+</div>
+<p>This creates a new Anaconda environment named <code class="docutils literal notranslate"><span class="pre">cytoflow</span></code> and installs the
+latest package from the Anaconda Cloud.</p>
+<p>For more details of these modules, you’re likely to want to see the
+<a class="reference internal" href="py-modindex.html"><span class="std std-ref">module documents</span></a></p>
+</div>
+<div class="section" id="i-want-to-help-develop-cytoflow">
+<h2>I want to help develop Cytoflow.</h2>
+<p>Hooray!  Have a look at the <a class="reference internal" href="INSTALL.html#hacking"><span class="std std-ref">install documentation</span></a> for how to
+get the source code installed.  Then, have a look at the
+<a class="reference internal" href="design.html#design"><span class="std std-ref">design docs</span></a> and the <a class="reference internal" href="new_modules.html#new-modules"><span class="std std-ref">new modules</span></a> documentation.
+Finally, join us over at
+<a class="reference external" href="https://github.com/bpteague/cytoflow">the cytoflow GitHub repo</a> to file bugs, submit PRs, etc.</p>
+</div>
+<div class="section" id="contents">
+<h2>Contents:</h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="manual.html">Cytoflow program manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="INSTALL.html">Installation notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Project Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html#design-decisions-justifications">Design decisions &amp; justifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="new_modules.html">Writing new <code class="docutils literal notranslate"><span class="pre">cytoflow</span></code> modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RELEASE.html">Spinning a new release</a></li>
+</ul>
+</div>
+<div class="section" id="indices-and-tables">
+<h3>Indices and tables</h3>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

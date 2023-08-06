@@ -1,0 +1,114 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gaussian Mixture Model (1D)</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-cytoflowgui.op_plugins.gaussian_1d"></span><div class="section" id="gaussian-mixture-model-1d">
+<h1>Gaussian Mixture Model (1D)</h1>
+<p>Fit a Gaussian mixture model with a specified number of components to one
+channel.</p>
+<p>If <strong>Num Components</strong> is greater than 1, then this module creates a new
+categorical metadata variable named <strong>Name</strong>, with possible values
+<code class="docutils literal notranslate"><span class="pre">{name}_1</span></code> …. <code class="docutils literal notranslate"><span class="pre">name_n</span></code> where <code class="docutils literal notranslate"><span class="pre">n</span></code> is the number of components.
+An event is assigned to  <code class="docutils literal notranslate"><span class="pre">name_i</span></code> category if it has the highest posterior
+probability of having been produced by component <code class="docutils literal notranslate"><span class="pre">i</span></code>.  If an event has a
+value that is outside the range of one of the channels’ scales, then it is
+assigned to <code class="docutils literal notranslate"><span class="pre">{name}_None</span></code>.</p>
+<p>Additionally, if <strong>Sigma</strong> is greater than 0, this module creates new  boolean
+metadata variables named <code class="docutils literal notranslate"><span class="pre">{name}_1</span></code> … <code class="docutils literal notranslate"><span class="pre">{name}_n</span></code> where <code class="docutils literal notranslate"><span class="pre">n</span></code> is the
+number of components.  The column <code class="docutils literal notranslate"><span class="pre">{name}_i</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code> if the event is less
+than <strong>Sigma</strong> standard deviations from the mean of component <code class="docutils literal notranslate"><span class="pre">i</span></code>.  If
+<strong>Num Components</strong> is <code class="docutils literal notranslate"><span class="pre">1</span></code>, <strong>Sigma</strong> must be greater than 0.</p>
+<p>Finally, the same mixture model (mean and standard deviation) may not
+be appropriate for every subset of the data.  If this is the case, you
+can use <strong>By</strong> to specify metadata by which to aggregate the data before
+estimating and applying a mixture model.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>Num Components</strong> and <strong>Sigma</strong> withh be the same for each subset.</p>
+</div>
+<dl class="object">
+<dt>
+<code class="descname">Name</code></dt>
+<dd><p>The operation name; determines the name of the new metadata</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Channel</code></dt>
+<dd><p>The channels to apply the mixture model to.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Scale</code></dt>
+<dd><p>Re-scale the data in <strong>Channel</strong> before fitting.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Num Components</code></dt>
+<dd><p>How many components to fit to the data?  Must be a positive integer.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Sigma</code></dt>
+<dd><p>How many standard deviations on either side of the mean to include
+in the boolean variable <code class="docutils literal notranslate"><span class="pre">{name}_i</span></code>?  Must be <code class="docutils literal notranslate"><span class="pre">&gt;=</span> <span class="pre">0.0</span></code>.  If
+<strong>Num Components</strong> is <code class="docutils literal notranslate"><span class="pre">1</span></code>, must be <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">0</span></code>.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">By</code></dt>
+<dd><p>A list of metadata attributes to aggregate the data before estimating
+the model.  For example, if the experiment has two pieces of metadata,
+<code class="docutils literal notranslate"><span class="pre">Time</span></code> and <code class="docutils literal notranslate"><span class="pre">Dox</span></code>, setting <code class="xref py py-attr docutils literal notranslate"><span class="pre">by</span></code> to <code class="docutils literal notranslate"><span class="pre">[&quot;Time&quot;,</span> <span class="pre">&quot;Dox&quot;]</span></code> will fit
+the model separately to each subset of the data with a unique combination of
+<code class="docutils literal notranslate"><span class="pre">Time</span></code> and <code class="docutils literal notranslate"><span class="pre">Dox</span></code>.</p>
+</dd></dl>
+
+<div class="figure">
+<img alt="_images/cytoflowgui-op_plugins-gaussian_1d-1.png" src="_images/cytoflowgui-op_plugins-gaussian_1d-1.png" />
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

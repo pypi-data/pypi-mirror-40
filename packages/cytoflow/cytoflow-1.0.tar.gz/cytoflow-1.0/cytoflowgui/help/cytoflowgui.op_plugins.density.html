@@ -1,0 +1,90 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Density</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-cytoflowgui.op_plugins.density"></span><div class="section" id="density">
+<h1>Density</h1>
+<p>Computes a gate based on a 2D density plot.  The user chooses what proportion
+of events to keep, and the module creates a gate that selects those events in
+the highest-density bins of a 2D density histogram.</p>
+<p>A single gate may not be appropriate for an entire experiment.  If this is the
+case, you can use <strong>By</strong> to specify metadata by which to aggregate the data
+before computing and applying the gate.</p>
+<dl class="object">
+<dt>
+<code class="descname">Name</code></dt>
+<dd><p>The operation name; determines the name of the new metadata</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">X Channel, Y Channel</code></dt>
+<dd><p>The channels to apply the mixture model to.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">X Scale, Y Scale</code></dt>
+<dd><p>Re-scale the data in <strong>Channel</strong> before fitting.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Keep</code></dt>
+<dd><p>The proportion of events to keep in the gate.  Defaults to 0.9.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">By</code></dt>
+<dd><p>A list of metadata attributes to aggregate the data before estimating
+the model.  For example, if the experiment has two pieces of metadata,
+<code class="docutils literal notranslate"><span class="pre">Time</span></code> and <code class="docutils literal notranslate"><span class="pre">Dox</span></code>, setting <code class="xref py py-attr docutils literal notranslate"><span class="pre">by</span></code> to <code class="docutils literal notranslate"><span class="pre">[&quot;Time&quot;,</span> <span class="pre">&quot;Dox&quot;]</span></code> will fit
+the model separately to each subset of the data with a unique combination of
+<code class="docutils literal notranslate"><span class="pre">Time</span></code> and <code class="docutils literal notranslate"><span class="pre">Dox</span></code>.</p>
+</dd></dl>
+
+<div class="figure">
+<img alt="_images/cytoflowgui-op_plugins-density-1.png" src="_images/cytoflowgui-op_plugins-density-1.png" />
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
