@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: yapf-junit
+Version: 0.25.0
+Summary: Run yapf and report results in junit compatible xml
+Home-page: https://github.com/dbradf/yapf-junit
+Author: David Bradford
+Author-email: david.bradford@mongodb.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: yapf (==0.25.0)
+
+# yapf-junit
+
+[![Build Status](https://travis-ci.org/dbradf/yapf-junit.svg?branch=master)](https://travis-ci.org/dbradf/yapf-junit)
+
+Run yapf and report the results in junit compatible xml.
+
+## Usage
+
+```
+Usage: yapf-junit [OPTIONS]
+
+Options:
+  --target-dir TEXT   Directory to search.  [required]
+  --out-file TEXT     File to write results to.  [required]
+  --yapf-config TEXT  Yapf config file to use.
+  --help              Show this message and exit.
+```
+
+
