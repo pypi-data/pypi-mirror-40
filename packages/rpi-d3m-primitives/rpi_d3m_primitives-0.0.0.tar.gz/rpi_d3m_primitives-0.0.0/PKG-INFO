@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: rpi_d3m_primitives
+Version: 0.0.0
+Summary: RPI primitives for D3M submission.
+Home-page: https://www.ecse.rpi.edu/~cvrl/
+Author: Andrew James Soszynski, Deniz Koyuncu, Zijun Cui, Qiang Ji
+Author-email: cuiz3@rpi.edu
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: d3m_primitive
+Platform: Linux
+Platform: MacOS
