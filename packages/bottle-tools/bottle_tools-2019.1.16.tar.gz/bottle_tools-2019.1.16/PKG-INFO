@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bottle_tools
+Version: 2019.1.16
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Arjoonn Sharma
+License: UNKNOWN
+Project-URL: Source, https://github.com/thesage21/bottle_tools
+Description: Bottle-Tools
+        ============
+        
+        A set of tools to make things easier to work with when using Bottle.
+        [Full Documentation](https://bottle-tools.readthedocs.io/en/latest/)
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
