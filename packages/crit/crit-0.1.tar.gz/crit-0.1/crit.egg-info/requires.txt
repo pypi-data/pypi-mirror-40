@@ -1,0 +1,12 @@
+click
+paramiko
+dataclasses
+jinja2
+tabulate
+termcolor
+
+[docs]
+m2r
+recommonmark
+sphinx_rtd_theme
+sphinx-markdown-tables

@@ -1,0 +1,3 @@
+[console_scripts]
+crit = crit.commands.cli:main
+
