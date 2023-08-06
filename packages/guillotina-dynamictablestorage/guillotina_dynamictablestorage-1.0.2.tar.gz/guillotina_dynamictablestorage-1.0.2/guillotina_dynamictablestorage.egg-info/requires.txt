@@ -1,0 +1,11 @@
+guillotina>=4.4.3
+
+[test]
+pytest<=3.1.0
+docker
+backoff
+psycopg2
+pytest-asyncio<0.10.0
+pytest-cov<=2.5.1
+coverage>=4.0.3
+pytest-docker-fixtures
