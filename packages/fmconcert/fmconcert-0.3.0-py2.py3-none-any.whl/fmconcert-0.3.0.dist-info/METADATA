@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: fmconcert
+Version: 0.3.0
+Summary: Download France Musique concert file by scrapping on broadcast webpage
+Home-page: https://gitlab.com/boileaum/fmconcert
+Author: Matthieu Boileau
+Author-email: matthieu.boileau@gmail.com
+License: MIT license
+Keywords: fmconcert
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: bs4
+Requires-Dist: progressbar
+
+fmconcert
+=========
+
+|Pypi|
+
+Download France Musique concert file by scrapping on broadcast webpage
+
+Installation
+------------
+
+Install pip
+~~~~~~~~~~~
+
+.. code:: bash
+
+    curl https://bootstrap.pypa.io/get-pip.py -o /tmp/get-pip.py
+    python /tmp/get-pip.py --user
+
+Install fmconcert with pip
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: bash
+
+    pip install --user fmconcert
+
+Usage
+-----
+
+.. code:: bash
+
+    fmconcert https://www.francemusique.fr/emissions/...[end_of_url]
+
+.. |Pypi| image:: https://img.shields.io/pypi/v/fmconcert.svg
+   :target: https://pypi.python.org/pypi/fmconcert
+
+

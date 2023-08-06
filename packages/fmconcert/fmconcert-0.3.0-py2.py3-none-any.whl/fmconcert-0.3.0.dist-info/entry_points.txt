@@ -1,0 +1,3 @@
+[console_scripts]
+fmconcert = fmconcert.cli:main
+
