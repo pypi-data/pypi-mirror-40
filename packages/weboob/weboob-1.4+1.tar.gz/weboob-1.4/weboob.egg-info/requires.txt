@@ -1,0 +1,12 @@
+Pillow
+PyYAML
+cssselect
+html2text>=3.200
+lxml
+python-dateutil
+requests>=2.0.0
+six
+unidecode
+
+[:python_version < "3.2"]
+futures
