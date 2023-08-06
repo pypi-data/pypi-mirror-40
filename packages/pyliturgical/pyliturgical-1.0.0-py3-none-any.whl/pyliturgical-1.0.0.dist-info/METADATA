@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyliturgical
+Version: 1.0.0
+Summary: Package for generating liturgial information for a date
+Home-page: https://github.com/pizen/pyliturgical
+Author: Ian Turner
+Author-email: ian@pizen.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Religion
+Description-Content-Type: text/markdown
+Requires-Dist: python-dateutil
+
+# pyliturgical
+
+[![CircleCI](https://circleci.com/gh/pizen/pyliturgical/tree/master.svg?style=svg)](https://circleci.com/gh/pizen/pyliturgical/tree/master)
+
+**Library for getting liturgical information, such as color, for a date.**
+
+Example:
+
+```python
+>>> from pyliturgical import calendar
+>>> from datetime import date
+>>> calendar.lookup(date(2018, 12, 25))
+('Christmas Day', 'white')
+```
+
+
