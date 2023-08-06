@@ -1,0 +1,11 @@
+README.md
+setup.py
+connectivator/__init__.py
+connectivator/gsheets.py
+connectivator/postgres.py
+connectivator/transfer.py
+connectivator.egg-info/PKG-INFO
+connectivator.egg-info/SOURCES.txt
+connectivator.egg-info/dependency_links.txt
+connectivator.egg-info/requires.txt
+connectivator.egg-info/top_level.txt
