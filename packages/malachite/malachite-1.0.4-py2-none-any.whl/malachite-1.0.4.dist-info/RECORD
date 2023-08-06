@@ -1,0 +1,14 @@
+malachite/__init__.py,sha256=O-a1T6uLdX0DYXelAnzqY4NDGktopbWdpKZloec7oxY,21
+malachite/__main__.py,sha256=6PutkTRKE7G6auhNp5Kwm3BxuRrXd2TgvtKtabkRLlE,1256
+malachite/cmndPhase2.py,sha256=CSuq-KPSwVACMROoC-J8nI3x7Q5lqGK0XLcbNS8WIgI,1325
+malachite/cmndline.py,sha256=T2j2wSNH24l9W0EbXCqipRZDO9h3NSHNpgmEz4uAiX8,582
+malachite/drugCounter.py,sha256=i6BV3aDqzv_d8LsS5G6lVqumDhiIJ4ybbR7cQzedpMg,4673
+malachite/drugCounter2.py,sha256=onDz9VQZM066kXq-znjhqQOWzfulZkgOKr3-V0P6d1c,7820
+malachite/getAllFiles.py,sha256=5bu5m8dTy-vV7OD1glY_G5xNoqMi7UtpDzNFpExwXO0,73
+malachite/mech.py,sha256=wPwiSFFyhBIBI4VEgVieQars2ScpNCNkW8suQfCEa7Y,1616
+malachite/topgen.py,sha256=JYdBLW3dBjobrnrXkrm2oG66Lz52_3rCUTNujAtLo_g,2055
+malachite-1.0.4.dist-info/METADATA,sha256=dIpdn_aXfD8zbi_95Lu3JvloxC5tX4CbDjX72rr5yMc,2544
+malachite-1.0.4.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+malachite-1.0.4.dist-info/entry_points.txt,sha256=pXsyPjzo-BFkcOwx3mqXxsEu7Yi8OWhTTyBE_qnKGak,55
+malachite-1.0.4.dist-info/top_level.txt,sha256=g8a1AQ8FUjPMSgBLWWwppM1w8Zhksk7YCdeYU3zmYqc,10
+malachite-1.0.4.dist-info/RECORD,,
