@@ -1,0 +1,37 @@
+{
+    "log_level": "DEBUG",
+    "logfile": "/tmp/cronbackup.log",
+    "logfile_size": 100,
+    "logfile_backup_count": 3,
+    "backup": {
+        "backup_dir": "/tmp/cronbackup",
+        "hour": 5,
+        "minute": 0,
+        "type": "cron",
+        "_type": "interval",
+        "interval_seconds": 3600
+    },
+    "sync": {
+        "type": "rsync",
+        "remote_server": "192.168.1.2",
+        "remote_user": "root",
+        "remote_dir": "/tmp/backup_test"
+    },
+    "tasks": [{
+            "name": "mysql_backup",
+            "enable": false,
+            "description": "",
+            "backup_script_path": "mysql/mysql_backup.sh",
+            "keep_time": 7,
+            "sync": true
+        },
+        {
+            "name": "postgresql_backup",
+            "enable": false,
+            "description": "",
+            "backup_script_path": "postgresql/postgresql_backup.sh",
+            "keep_time": 7,
+            "sync": true
+        }
+    ]
+}
