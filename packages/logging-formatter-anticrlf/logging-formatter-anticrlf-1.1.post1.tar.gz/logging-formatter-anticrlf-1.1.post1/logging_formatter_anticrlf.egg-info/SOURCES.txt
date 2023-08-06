@@ -1,0 +1,12 @@
+README.rst
+setup.py
+anticrlf/__init__.py
+anticrlf/exception.py
+anticrlf/types.py
+anticrlf/tests/__init__.py
+anticrlf/tests/test_formatter.py
+anticrlf/tests/test_substitutionmap.py
+logging_formatter_anticrlf.egg-info/PKG-INFO
+logging_formatter_anticrlf.egg-info/SOURCES.txt
+logging_formatter_anticrlf.egg-info/dependency_links.txt
+logging_formatter_anticrlf.egg-info/top_level.txt
