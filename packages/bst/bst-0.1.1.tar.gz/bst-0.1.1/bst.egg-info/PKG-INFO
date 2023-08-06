@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bst
+Version: 0.1.1
+Summary: A binary search tree implemented for learning purposes.
+Home-page: https://github.com/rgilbert1/bst
+Author: Ryan Gilbert
+Author-email: ryangilbert7926@gmail.com
+License: MIT
+Description: # python-bst
+        
+Platform: UNKNOWN
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
