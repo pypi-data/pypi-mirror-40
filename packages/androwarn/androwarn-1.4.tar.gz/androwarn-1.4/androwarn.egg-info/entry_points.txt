@@ -1,0 +1,3 @@
+[console_scripts]
+androwarn = androwarn.androwarn:main
+
