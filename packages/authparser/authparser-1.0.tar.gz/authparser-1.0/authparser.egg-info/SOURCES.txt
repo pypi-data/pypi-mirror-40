@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+authparser/__init__.py
+authparser/authparser.py
+authparser.egg-info/PKG-INFO
+authparser.egg-info/SOURCES.txt
+authparser.egg-info/dependency_links.txt
+authparser.egg-info/requires.txt
+authparser.egg-info/top_level.txt
