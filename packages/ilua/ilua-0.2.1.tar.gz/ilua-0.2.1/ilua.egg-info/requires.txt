@@ -1,0 +1,9 @@
+twisted
+termcolor
+pygments
+txzmq
+jupyter_core
+jupyter_console
+
+[:sys_platform == "win32"]
+pywin32
