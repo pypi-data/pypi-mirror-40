@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ltsv2json
+Version: 0.1.2
+Summary: LTSV-to-JSON converter
+Home-page: https://github.com/hoffa/ltsv2json
+Author: Chris Rehn
+Author-email: chris@rehn.me
+License: MIT
+Description: # ltsv2json
+        
+        [![Build Status](https://travis-ci.org/hoffa/ltsv2json.svg?branch=master)](https://travis-ci.org/hoffa/ltsv2json)
+        
+        Reads LTSV from `stdin` and prints JSON to `stdout`.
+        
+        ## Installation
+        
+        ```shell
+        pip install ltsv2json
+        ```
+        
+        ## Usage
+        
+        ```shell
+        $ printf "world:bar\thello:foo\nworld:turtle" | ltsv2json
+        {"world":"bar","hello":"foo"}
+        {"world":"turtle"}
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
