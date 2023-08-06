@@ -1,0 +1,9 @@
+setup.py
+alej_supl/__init__.py
+alej_supl/__main__.py
+alej_supl/classes.py
+alej_supl/functions.py
+alej_supl.egg-info/PKG-INFO
+alej_supl.egg-info/SOURCES.txt
+alej_supl.egg-info/dependency_links.txt
+alej_supl.egg-info/top_level.txt
