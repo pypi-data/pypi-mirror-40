@@ -1,0 +1,365 @@
+#!python
+# -*- coding: utf-8 -*-
+
+'''Shows all times of day for the given timezones.
+
+This can be useful to select a common meeting time across multiple
+timezones easily. This takes into account daylight savings and
+whatnot, and can schedule meetings in the future. Default settings are
+taken from ~/.config/undertime.yml. Dates are parsed with the
+dateparser or parsedatetime modules, if available, in that order, see
+https://dateparser.readthedocs.io/en/latest/ and
+https://github.com/bear/parsedatetime.
+'''
+
+__description__ = '''pick a meeting time'''
+__website__ = 'https://gitlab.com/anarcat/undertime'
+__prog__ = 'undertime'
+__author__ = 'Antoine Beaupré'
+__email__ = 'anarcat@debian.org'
+__copyright__ = "Copyright (C) 2017 Antoine Beaupré"
+__license_short__ = 'AGPLv3'
+__license__ = """
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+"""
+
+import argparse
+import datetime
+import logging
+import os
+import sys
+
+# also considered colorama and crayons
+# 1. colorama requires to send reset codes. annoying.
+# 2. crayons is a wrapper around colorama, not in debian
+import termcolor
+
+try:
+    import dateparser
+except ImportError:
+    dateparser = None
+    try:
+        import parsedatetime
+    except ImportError:
+        parsedatetime = None
+import pytz
+import yaml
+
+# for tabulated data, i looked at other alternatives
+# humanfriendly has a tabulator: https://humanfriendly.readthedocs.io/en/latest/#module-humanfriendly.tables
+# tabulate is similar: https://pypi.python.org/pypi/tabulate
+# texttable as well: https://github.com/foutaise/texttable/
+# terminaltables is the full thing: https://robpol86.github.io/terminaltables/
+
+# originally, i was just centering thing with the .format()
+# handler. this was working okay except that it was too wide because i
+# was using the widest column as width everywhere because i'm lazy.
+
+# we use DoubleTable instead of SingleTable because the latter sends
+# vt100 escape sequences instead of unicode, which breaks pagers and
+# other things. See https://bugs.debian.org/891381 for the full
+# discussion.
+from terminaltables import DoubleTable
+
+
+class NegateAction(argparse.Action):
+    '''add a toggle flag to argparse
+
+    this is similar to 'store_true' or 'store_false', but allows
+    arguments prefixed with --no to disable the default. the default
+    is set depending on the first argument - if it starts with the
+    negative form (defined by default as '--no'), the default is False,
+    otherwise True.
+
+    originally written for the stressant project.
+    '''
+
+    negative = '--no'
+
+    def __init__(self, option_strings, *args, **kwargs):
+        '''set default depending on the first argument'''
+        kwargs['default'] = kwargs.get('default', not option_strings[0].startswith(self.negative))
+        super(NegateAction, self).__init__(option_strings, *args,
+                                           nargs=0, **kwargs)
+
+    def __call__(self, parser, ns, values, option):
+        '''set the truth value depending on whether
+        it starts with the negative form'''
+        setattr(ns, self.dest, not option.startswith(self.negative))
+
+
+class ConfigAction(argparse.Action):
+    """add configuration file to current defaults.
+
+    a *list* of default config files can be specified and will be
+    parsed when added by ConfigArgumentParser.
+    """
+    def __init__(self, *args, **kwargs):
+        """the config action is a search path, so a list, so one or more argument"""
+        kwargs['nargs'] = 1
+        super().__init__(*args, **kwargs)
+
+    def __call__(self, parser, ns, values, option):
+        """change defaults for the namespace, still allows overriding
+        from commandline options"""
+        for path in values:
+            parser.set_defaults(**self.parse_config(path))
+
+    def parse_config(self, path):
+        """abstract implementation of config file parsing, should be overriden in subclasses"""
+        raise NotImplementedError()
+
+
+class YamlConfigAction(ConfigAction):
+    """YAML config file parser action"""
+    def parse_config(self, path):
+        try:
+            with open(os.path.expanduser(path), 'r') as handle:
+                logging.debug('parsing path %s as YAML' % path)
+                return yaml.safe_load(handle)
+        except (FileNotFoundError, yaml.parser.ParserError) as e:
+            raise argparse.ArgumentError(self, e)
+
+
+class ConfigArgumentParser(argparse.ArgumentParser):
+    """argument parser which supports parsing extra config files
+
+    Config files specified on the commandline through the
+    YamlConfigAction arguments modify the default values on the
+    spot. If a default is specified when adding an argument, it also
+    gets immediately loaded.
+
+    This will typically be used in a subclass, like this:
+
+            self.add_argument('--config', action=YamlConfigAction, default=self.default_config())
+
+    """
+
+    def _add_action(self, action):
+        # this overrides the add_argument() routine, which is where
+        # actions get registered. it is done so we can properly load
+        # the default config file before the action actually gets
+        # fired. Ideally, we'd load the default config only if the
+        # action *never* gets fired (but still setting defaults for
+        # the namespace) but argparse doesn't give us that opportunity
+        # (and even if it would, it wouldn't retroactively change the
+        # Namespace object in parse_args() so it wouldn't work).
+        action = super()._add_action(action)
+        if isinstance(action, ConfigAction) and action.default is not None:
+            # fire the action, later calls can override defaults
+            try:
+                action(self, None, action.default, None)
+                logging.debug('loaded config file: %s' % action.default)
+            except argparse.ArgumentError as e:
+                # ignore errors from missing default
+                logging.debug('default config file %s error: %s' % (action.default, e))
+
+    def default_config(self):
+        """handy shortcut to detect commonly used config paths"""
+        return [os.path.join(os.environ.get('XDG_CONFIG_HOME', '~/.config/'), self.prog + '.yml')]
+
+
+class LoggingAction(argparse.Action):
+    """change log level on the fly
+
+    The logging system should be initialized befure this, using
+    `basicConfig`.
+    """
+    def __init__(self, *args, **kwargs):
+        """setup the action parameters
+
+        This enforces a selection of logging levels. It also checks if
+        const is provided, in which case we assume it's an argument
+        like `--verbose` or `--debug` without an argument.
+        """
+        kwargs['choices'] = logging._nameToLevel.keys()
+        if 'const' in kwargs:
+            kwargs['nargs'] = 0
+        super().__init__(*args, **kwargs)
+
+    def __call__(self, parser, ns, values, option):
+        """if const was specified it means argument-less parameters"""
+        if self.const:
+            logging.getLogger('').setLevel(self.const)
+        else:
+            logging.getLogger('').setLevel(values)
+
+
+class UndertimeArgumentParser(ConfigArgumentParser):
+    def __init__(self, *args, **kwargs):
+        """override constructor to setup our arguments and config files"""
+        super().__init__(description=__description__, epilog=__doc__, *args, **kwargs)
+        self.add_argument('timezones', nargs='*',
+                          help='timezones to show [default: current timezone]')
+        self.add_argument('--start', '-s', default=9, type=int, metavar='HOUR',
+                          help='start of working day, in hours [default: %(default)s]')
+        self.add_argument('--end', '-e', default=17, type=int, metavar='HOUR',
+                          help='end of working day, in hours [default: %(default)s]')
+        self.add_argument('--date', '-d', default=None, metavar='WHEN',
+                          help='target date for the meeting, for example "in two weeks" [default: now]')
+        self.add_argument('--colors', '--no-colors', action=NegateAction,
+                          default=sys.stdout.isatty() and 'NO_COLOR' not in os.environ,
+                          help='show colors [default: %(default)s]')
+        self.add_argument('--default-zone', '--no-default-zone', action=NegateAction,
+                          help='show current timezone first [default: %(default)s]')
+        self.add_argument('--print-zones', action='store_true',
+                          help='show valid timezones and exit')
+        self.add_argument('-v', '--verbose', action=LoggingAction,
+                          const='INFO', help='enable verbose messages')
+        self.add_argument('--debug', action=LoggingAction,
+                          const='DEBUG', help='enable debugging messages')
+        self.add_argument('--config', action=YamlConfigAction,
+                          default=self.default_config())
+
+
+def fmt_time(dt, args):
+    string = "{0:%H:%M}".format(dt.timetz())
+    if args.start <= dt.hour <= args.end:
+        return termcolor.colored(string, 'yellow', attrs=args.attrs)
+    else:
+        return termcolor.colored(string, attrs=args.attrs)
+
+
+def parse_date(date, local_zone):
+    if date is None:
+        now = datetime.datetime.now(local_zone)
+    elif dateparser:
+        logging.debug('parsing date with dateparser module')
+        now = dateparser.parse(date, settings={'TIMEZONE': str(local_zone),
+                                               'RETURN_AS_TIMEZONE_AWARE': True})
+    elif parsedatetime:
+        logging.debug('parsing date with parsedatetime module')
+        cal = parsedatetime.Calendar()
+        now, parse_status = cal.parseDT(datetimeString=date,
+                                        tzinfo=local_zone)
+        if not parse_status:
+            now = None
+    if now is None:
+        logging.warning('date provided cannot be parsed: %s', date)
+        now = datetime.datetime.now(local_zone)
+    return now
+
+
+def main():
+    logging.basicConfig(format='%(levelname)s: %(message)s', level='WARNING')
+    parser = UndertimeArgumentParser()
+    args = parser.parse_args()
+    if args.print_zones:
+        print("\n".join(pytz.all_timezones))
+        return
+
+    if not args.colors:
+        # monkeypatch
+        def dummy(string, color=None, attrs=None, *args, **kwargs):
+            if attrs:
+                return string + '*'
+            elif color:
+                return string + '_'
+            return string
+        termcolor.colored = dummy
+
+    # https://stackoverflow.com/a/39079819/1174784
+    local_zone = datetime.datetime.now(datetime.timezone.utc).astimezone().tzinfo
+    now = parse_date(args.date, local_zone).replace(second=0, microsecond=0)
+
+    timezones = []
+    if args.default_zone:
+        timezones.append(local_zone)
+    timezones += list(guess_zones(args.timezones))
+    timezones = list(uniq_zones(timezones, now))
+
+    rows = compute_table(now, timezones, args)
+    table = DoubleTable(rows)
+    for i in range(0, len(timezones)):
+        table.justify_columns[i] = 'center'
+    print(table.table)
+    print('Table generated for time: {}'.format(now))
+
+
+def guess_zones(timezones):
+    for zone in timezones:
+        found = False
+        for zone in (zone, zone.replace(' ', '_')):
+            if found:
+                break
+            try:
+                # match just the zone name, according to pytz rules
+                yield pytz.timezone(zone)
+                found = True
+            except pytz.UnknownTimeZoneError:
+                # case insensitive substring match over all zones
+                for z in pytz.all_timezones:
+                    if zone.upper() in z.upper():
+                        yield pytz.timezone(z)
+                        found = True
+        if not found:
+            logging.warning('unknown zone, skipping: %s', zone)
+
+
+def uniq_zones(timezones, now):
+    now = now.replace(tzinfo=None)
+    offsets = set()
+    for zone in timezones:
+        offset = zone.utcoffset(now)
+        if offset in offsets:
+            sign = ''
+            if offset < datetime.timedelta(0):
+                offset = -offset
+                sign = '-'
+            logging.warning('skipping zone %s with existing offset %s%s', zone, sign, offset)
+        else:
+            offsets.add(offset)
+            yield zone
+
+
+def compute_table(now, timezones, args):
+    nearest_hour = now.replace(minute=0, second=0, microsecond=0)
+    logging.debug('nearest hour is %s', nearest_hour)
+
+    start_time = current_time = nearest_hour.replace(hour=0)
+
+    # the table is a list of rows, which are themselves a list of cells
+    rows = []
+
+    # the first line is the list of timezones
+    line = []
+    for t in timezones:
+        line.append(str(t))
+    rows.append(line)
+
+    # set each start time
+    times = [start_time.astimezone(tz=zone) for zone in timezones]
+    while current_time < start_time + datetime.timedelta(hours=24):
+        args.attrs = []
+        # if this is the current time, show it in bold
+        if current_time == now:
+            args.attrs.append('bold')
+        line = []
+        for i, t in enumerate(times):
+            line.append(fmt_time(t, args))
+            times[i] += datetime.timedelta(hours=1)
+        rows.append(line)
+        # show the current time on a separate line, in bold
+        if current_time < now < current_time + datetime.timedelta(hours=1):
+            line = []
+            args.attrs.append('bold')
+            for zone in timezones:
+                line.append(fmt_time(now.astimezone(tz=zone), args))
+            rows.append(line)
+        current_time += datetime.timedelta(hours=1)
+    return rows
+
+
+if __name__ == '__main__':
+    main()
