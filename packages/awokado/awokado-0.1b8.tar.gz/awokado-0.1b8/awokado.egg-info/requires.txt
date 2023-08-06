@@ -1,0 +1,8 @@
+bcrypt
+boto3
+dynaconf
+falcon
+marshmallow==2.16.3
+pyaml
+PyJWT
+stairs
