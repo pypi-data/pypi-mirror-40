@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: afkak
+Version: 3.0.0.dev20181106
+Summary: Twisted Python client for Apache Kafka
+Home-page: https://github.com/ciena/afkak
+Author: Robert Thille
+Author-email: rthille@ciena.com
+License: Apache License 2.0
+Keywords: Kafka client,distributed messaging,txkafka
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Twisted
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Communications
+Classifier: Topic :: System :: Distributed Computing
+Requires-Dist: six
+Requires-Dist: Twisted (>=13.2.0)
+Provides-Extra: FastMurmur2
+Requires-Dist: pyhash; extra == 'FastMurmur2'
+Provides-Extra: snappy
+Requires-Dist: python-snappy (>=0.5); extra == 'snappy'
+
+This module provides low-level protocol support for Apache Kafka as well as
+high-level consumer and producer classes. Request batching is supported by the
+protocol as well as broker-aware request routing. Gzip and Snappy compression
+is also supported for message sets.
+
+
