@@ -1,0 +1,12 @@
+monashspa/__init__.py,sha256=1YPO8T2L0aFoqwJ7dVjD9pxbj2Db03vkNKZ6UlGySyQ,3262
+monashspa/__version__.py,sha256=KpC9jQxv0oVxI0_mngtXb_stjYBQiP9yl6PELdRPe7s,23
+monashspa/PHS1011/__init__.py,sha256=a424d8tuSOurmqkekEJAVeTLUkX-3QdrZakik8GBg7k,814
+monashspa/common/__init__.py,sha256=WJa4sGkazioR4AEj3LExX5BkXq2bYnqNNSFneKDUBeY,743
+monashspa/common/fitting.py,sha256=07EDQJB2HBRIIsMTm2gRL42b7WPOR7W-mzc89FYQzjQ,4597
+monashspa/tests/__init__.py,sha256=WJa4sGkazioR4AEj3LExX5BkXq2bYnqNNSFneKDUBeY,743
+monashspa/tests/fitting.py,sha256=qtRFchpGrNA7WgQi24yOIRAwS6Dsqt4jXlBhaKIDre8,4090
+monashspa-0.3.2.dist-info/COPYING,sha256=s9Hq5_Uk_J3dSFYqRlLv0rzYSOOLA_BeOIvM6UPnPfI,35819
+monashspa-0.3.2.dist-info/METADATA,sha256=w9wdUX3C5xwWQIf2xiMvr6qKir08y30S7E5LYDVAxHc,1622
+monashspa-0.3.2.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+monashspa-0.3.2.dist-info/top_level.txt,sha256=zJwlYWuJgtyqfvvPeY5Fk50mN1eYy_y7-2UIjW8X3xE,10
+monashspa-0.3.2.dist-info/RECORD,,
