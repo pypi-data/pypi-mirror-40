@@ -1,0 +1,11 @@
+pytest>=3.3.1
+coverage>=4.5.1
+coreapi>=2.3.3
+numpy
+jupyter
+
+[projectq]
+projectq>=0.4
+
+[qiskit]
+qiskit<0.8.0,>=0.7.0

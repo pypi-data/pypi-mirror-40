@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: quantuminspire
+Version: 0.4.2
+Summary: SDK for the Quantum Inspire platform
+Home-page: UNKNOWN
+Author: QuantumInspire
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Provides-Extra: qiskit
+Provides-Extra: projectq
