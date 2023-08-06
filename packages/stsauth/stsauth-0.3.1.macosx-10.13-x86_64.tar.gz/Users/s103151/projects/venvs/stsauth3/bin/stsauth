@@ -1,0 +1,12 @@
+#!/Users/s103151/projects/venvs/stsauth3/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'stsauth==0.3.1','console_scripts','stsauth'
+__requires__ = 'stsauth==0.3.1'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('stsauth==0.3.1', 'console_scripts', 'stsauth')()
+    )
