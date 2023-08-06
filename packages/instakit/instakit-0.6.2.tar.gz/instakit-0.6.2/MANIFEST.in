@@ -1,0 +1,17 @@
+exclude *.pyc *~ *.so .DS_Store
+recursive-include requirements *.txt
+include __version__.py
+include .bumpversion.cfg
+include .gitignore
+include .travis.yml
+include appveyor.yml
+include LICENSE.txt
+include Makefile
+include README.md
+include setup.py
+include tox.ini
+recursive-include instakit *
+recursive-include tests *
+recursive-exclude requirements *.pyc *~ *.so .DS_Store
+recursive-exclude instakit *.pyc *~ *.so .DS_Store
+recursive-exclude tests *.pyc *~ *.so .DS_Store
