@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.cfg
+setup.py
+smsframework_amazon_sns/__init__.py
+smsframework_amazon_sns/error.py
+smsframework_amazon_sns/provider.py
+smsframework_amazon_sns.egg-info/PKG-INFO
+smsframework_amazon_sns.egg-info/SOURCES.txt
+smsframework_amazon_sns.egg-info/dependency_links.txt
+smsframework_amazon_sns.egg-info/requires.txt
+smsframework_amazon_sns.egg-info/top_level.txt
