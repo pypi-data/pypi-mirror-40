@@ -1,0 +1,12 @@
+kafkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kafkit/httputils.py,sha256=Zdql6Gi-beNLRqRBBleP-KabzSZOx10NwRrKu7o0Ys0,1547
+kafkit/registry/__init__.py,sha256=RPB72Godrawhz2A6t1BfUpl_Q8fWCwKudjTIo0dC6_Q,22
+kafkit/registry/aiohttp.py,sha256=Q5_D4T14pkpLpHp2cxbkSNuoEBbpbWBF2GvkXGXhE7Q,880
+kafkit/registry/errors.py,sha256=OZAs3sVaYlxCM1SOfzN1mE78BhDuZQWcfK3rLcIRR3A,1551
+kafkit/registry/sansio.py,sha256=uzMnUXNcjR4zQyDPdG_XtoKHe5QDnauxEShF6pE0x9I,16835
+kafkit/registry/serializer.py,sha256=zDzL4DhmG-r2p_GOavCpSlcRl8_LUsDxOxfsTqB2BWc,11485
+kafkit-0.1.0a1.dist-info/LICENSE,sha256=sdo3pAkHMo2i8cqnVLMD2c0AZqFDBD9FsaxaxlKjh0k,1110
+kafkit-0.1.0a1.dist-info/METADATA,sha256=yARRy3Y1b8DKf-_vnK4HFbQwm4s_Oz9fybh5emmUOXc,1358
+kafkit-0.1.0a1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+kafkit-0.1.0a1.dist-info/top_level.txt,sha256=gZYxgW-HE3gyw-v9c55nIb3XxKArup-3VCvbL0wqmMg,7
+kafkit-0.1.0a1.dist-info/RECORD,,
