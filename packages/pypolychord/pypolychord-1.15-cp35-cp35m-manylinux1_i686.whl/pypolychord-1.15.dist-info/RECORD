@@ -1,0 +1,16 @@
+_pypolychord.cpython-35m-i386-linux-gnu.so,sha256=ogmkU7UwSA0rFHA3kt4XRVl4LG0VxpqX8iGLsiHxDNE,198680
+pypolychord-1.15.dist-info/WHEEL,sha256=5uJgXrzESlz5BEVUtG_qT5iZkFr_xW73vqby14S5SqE,107
+pypolychord-1.15.dist-info/top_level.txt,sha256=0Hm1rJ3Mq_UZPZPs1JZB0tG040OJ1nXArezlLTRItFU,25
+pypolychord-1.15.dist-info/METADATA,sha256=HQJkoeAGgz2XfplfFrrPn1-5mNuQpNkXins7gMgkAvY,415
+pypolychord-1.15.dist-info/RECORD,,
+pypolychord/priors.py,sha256=mqGDMDnYGQM2BozycwEgLjJ3_VR6z-j4p3BjEeBHLGA,1082
+pypolychord/output.py,sha256=bfJv7WXCzPAi6qEjocmSmJuZcu8H5K00pnTihUUFcg8,4650
+pypolychord/settings.py,sha256=fdMvUS0nitf1E4QVQT-M4s-NP8VyhzU9LTMY3hCvRG0,6535
+pypolychord/__init__.py,sha256=ffbCvIN5bzyEk6wBEZvlmTh6BJk3xfdM41ImfSl_cAg,7054
+pypolychord/libs_pypolychord/libmpi_usempi-3f5c84ef.so.20.12.0,sha256=nXs0byLvhaD3QhgmIdot8B3-rhQW3b6iaw2W7onFyIs,33904
+pypolychord/libs_pypolychord/libchord-eafb5c95.so,sha256=amNTD3n_jztIXpxF4Mk_3hhXYgtaE48NKmmWxXgL46E,618452
+pypolychord/libs_pypolychord/libopen-rte-12be89e1.so.20.10.4,sha256=NYA0k_UxVzv6ubO0vsx2G4v4jln8pdwNZeHLDHBKFfE,625576
+pypolychord/libs_pypolychord/libopen-pal-27200e0e.so.20.10.4,sha256=FDju5E75CWmM_AbGhQ8B-v_r4IDY0dX5C-n0v9V3ypc,1328180
+pypolychord/libs_pypolychord/libgfortran-3b85572a.so.3.0.0,sha256=B66TIelvpZ3TOvIkONo8N-o4Wz1keyTd6krJKiOoKhU,900100
+pypolychord/libs_pypolychord/libmpi_mpifh-fa0715ae.so.20.12.1,sha256=_u0KMP4H0knr7b-hJ980azsI2wchLSKmOMvJUe4fqJ4,773376
+pypolychord/libs_pypolychord/libmpi-7b056a46.so.20.10.3,sha256=o_oN3wWsfHdrusFUTjDGXgzIUf6bjli6xOhU_ixTPJA,1128768
