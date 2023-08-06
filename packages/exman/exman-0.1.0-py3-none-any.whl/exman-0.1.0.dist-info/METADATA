@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: exman
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Max Kochurov
+Author-email: maxim.v.kochurov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: configargparse
+Requires-Dist: PyYAML
+Requires-Dist: strconv
+Requires-Dist: pandas
+Requires-Dist: filelock
+
+UNKNOWN
+
+
