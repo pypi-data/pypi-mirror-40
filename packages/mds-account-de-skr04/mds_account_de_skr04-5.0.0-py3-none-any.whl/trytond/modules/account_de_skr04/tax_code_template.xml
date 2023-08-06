@@ -1,0 +1,446 @@
+<?xml version="1.0" ?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record id="tax_code_USTVA" model="account.tax.code.template">
+            <field name="name">Kennzifferntabelle SKR04 (Germany)</field>
+            <field name="code">USTVA</field>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_B" model="account.tax.code.template">
+            <field name="name">Bemessungsgrundlage</field>
+            <field name="code">B</field>
+            <field name="parent" ref="tax_code_USTVA"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_83" model="account.tax.code.template">
+            <field name="name">Verbleibende Umsatzsteuer-Vorauszahlung / Verbleibender Überschuss - bitte dem Betrag ein Minuszeichen voranstellen</field>
+            <field name="code">83</field>
+            <field name="parent" ref="tax_code_USTVA"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_39" model="account.tax.code.template">
+            <field name="name">Anrechnung (Abzug) der festgesetzten Sondervorauszahlung für Dauerfristverlängerung (nur auszufüllen in der letzten Voranmeldung des Besteuerungszeitraums, in der Regel Dezember)</field>
+            <field name="code">39</field>
+            <field name="parent" ref="tax_code_83"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_VST" model="account.tax.code.template">
+            <field name="name">Abziehbare Vorsteuerbeträge</field>
+            <field name="code">VST</field>
+            <field name="parent" ref="tax_code_83"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_U" model="account.tax.code.template">
+            <field name="name">Umsatzsteuer</field>
+            <field name="code">U</field>
+            <field name="parent" ref="tax_code_83"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BV" model="account.tax.code.template">
+            <field name="name">Vorsteuer (dient lediglich der Verprobung)</field>
+            <field name="code">BV</field>
+            <field name="parent" ref="tax_code_B"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BU" model="account.tax.code.template">
+            <field name="name">Umsatzsteuer</field>
+            <field name="code">BU</field>
+            <field name="parent" ref="tax_code_B"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BRV" model="account.tax.code.template">
+            <field name="name">Rechnungen von anderen Unternehmern (§ 15 Abs. 1 Satz 1 Nr. 1 UStG), Leistungen im Sinne des § 13a Abs. 1 Nr. 6 UStG (§ 15 Abs. 1 Satz 1 Nr. 5 UStG) und innergemeinschaftliche Dreiecksgeschäfte (§ 25b Abs. 5 UStG)</field>
+            <field name="code">BRV</field>
+            <field name="parent" ref="tax_code_BV"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BAUS" model="account.tax.code.template">
+            <field name="name">Einfuhren</field>
+            <field name="code">BAUS</field>
+            <field name="parent" ref="tax_code_BV"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_AST" model="account.tax.code.template">
+            <field name="name">Andere Steuerbeträge</field>
+            <field name="code">AST</field>
+            <field name="parent" ref="tax_code_83"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_69" model="account.tax.code.template">
+            <field name="name">In Rechnungen unrichtig oder unberechtigt ausgewiesene Steuerbeträge (§ 14c UStG) sowie Steuerbeträge, die nach § 4 Nr. 4a Satz 1 Buchst. a Satz 2, § 6a Abs. 4 Satz 2, § 17 Abs. 1 Satz 6 oder § 25b Abs. 2 UStG geschuldet werden</field>
+            <field name="code">69</field>
+            <field name="parent" ref="tax_code_AST"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_67" model="account.tax.code.template">
+            <field name="name">Vorsteuerbeträge aus Leistungen im Sinne des § 13b Abs. 1 UStG (§ 15 Abs. 1 Satz 1 Nr. 4 UStG)</field>
+            <field name="code">67</field>
+            <field name="parent" ref="tax_code_VST"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_66" model="account.tax.code.template">
+            <field name="name">Vorsteuerbeträge aus Rechnungen von anderen Unternehmern (§ 15 Abs. 1 Satz 1 Nr. 1 UStG), aus Leistungen im Sinne des § 13a Abs. 1 Nr. 6 UStG (§ 15 Abs. 1 Satz 1 Nr. 5 UStG) und aus innergemeinschaftlichen Dreiecksgeschäften (§ 25b Abs. 5 UStG)</field>
+            <field name="code">66</field>
+            <field name="parent" ref="tax_code_VST"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_64" model="account.tax.code.template">
+            <field name="name">Berichtigung des Vorsteuerabzugs (§ 15a UStG)</field>
+            <field name="code">64</field>
+            <field name="parent" ref="tax_code_VST"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_63" model="account.tax.code.template">
+            <field name="name">Vorsteuerbeträge, die nach allgemeinen Durchschnittssätzen berechnet sind (§§ 23 und 23a UStG)</field>
+            <field name="code">63</field>
+            <field name="parent" ref="tax_code_VST"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_62" model="account.tax.code.template">
+            <field name="name">Entrichtete Einfuhrumsatzsteuer (§ 15 Abs. 1 Satz 1 Nr. 2 UStG)</field>
+            <field name="code">62</field>
+            <field name="parent" ref="tax_code_VST"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_61" model="account.tax.code.template">
+            <field name="name">Vorsteuerbeträge aus dem innergemeinschaftlichen Erwerb von Gegenständen (§ 15 Abs. 1 Satz 1 Nr. 3 UStG)</field>
+            <field name="code">61</field>
+            <field name="parent" ref="tax_code_VST"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_59" model="account.tax.code.template">
+            <field name="name">Vorsteuerabzug für innergemeinschaftliche Lieferungen neuer Fahrzeuge außerhalb eines Unternehmens (§ 2a UStG) sowie von Kleinunternehmern im Sinne des § 19 Abs. 1 UStG (§ 15 Abs. 4a UStG)</field>
+            <field name="code">59</field>
+            <field name="parent" ref="tax_code_VST"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_UZ39" model="account.tax.code.template">
+            <field name="name">Ergänzende Angaben zu Umsätzen </field>
+            <field name="code">UZ39</field>
+            <field name="parent" ref="tax_code_U"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_UZ33" model="account.tax.code.template">
+            <field name="name">Innergemeinschaftliche Erwerbe</field>
+            <field name="code">UZ33</field>
+            <field name="parent" ref="tax_code_U"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_UZ19" model="account.tax.code.template">
+            <field name="name">Lieferungen und sonstige Leistungen (einschließlich unentgeltlicher Wertabgaben)</field>
+            <field name="code">UZ19</field>
+            <field name="parent" ref="tax_code_U"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BZ46" model="account.tax.code.template">
+            <field name="name">Umsätze, für die als Leistungsempfänger die Steuer nach § 13b Abs. 2 UStG geschuldet wird</field>
+            <field name="code">BZ46</field>
+            <field name="parent" ref="tax_code_BU"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BZ39" model="account.tax.code.template">
+            <field name="name">Ergänzende Angaben zu Umsätzen</field>
+            <field name="code">BZ39</field>
+            <field name="parent" ref="tax_code_BU"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BZ33" model="account.tax.code.template">
+            <field name="name">Innergemeinschaftliche Erwerbe</field>
+            <field name="code">BZ33</field>
+            <field name="parent" ref="tax_code_BU"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BZ19" model="account.tax.code.template">
+            <field name="name">Lieferungen und sonstige Leistungen (einschließlich unentgeltlicher Wertabgaben)</field>
+            <field name="code">BZ19</field>
+            <field name="parent" ref="tax_code_BU"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BRV7" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 7 %</field>
+            <field name="code">BRV7</field>
+            <field name="parent" ref="tax_code_BRV"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BRV19" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 19 %</field>
+            <field name="code">BRV19</field>
+            <field name="parent" ref="tax_code_BRV"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BAUS7" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 7 %</field>
+            <field name="code">BAUS7</field>
+            <field name="parent" ref="tax_code_BAUS"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BAUS19" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 19 %</field>
+            <field name="code">BAUS19</field>
+            <field name="parent" ref="tax_code_BAUS"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_84" model="account.tax.code.template">
+            <field name="name">Bauleistungen eines im Inland ansässigen Unternehmers (§ 13b Abs. 1 Satz 1 Nr. 4 UStG)</field>
+            <field name="code">84</field>
+            <field name="parent" ref="tax_code_BZ46"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_73" model="account.tax.code.template">
+            <field name="name">Lieferungen sicherungsübereigneter Gegenstände und Umsätze, die unter das GrEStG fallen (§ 13b Abs. 1 Satz 1 Nr. 2 und 3 UStG)</field>
+            <field name="code">73</field>
+            <field name="parent" ref="tax_code_BZ46"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_60" model="account.tax.code.template">
+            <field name="name">Steuerpflichtige Umsätze im Sinne des § 13b Abs. 1 Satz 1 Nr. 1 bis 5 UStG, für die der Leistungsempfänger die Steuer schuldet</field>
+            <field name="code">60</field>
+            <field name="parent" ref="tax_code_BZ39"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_52" model="account.tax.code.template">
+            <field name="name">Leistungen eines im Ausland ansässigen Unternehmers (§ 13b Abs. 1 Satz 1 Nr. 1 und 5 UStG)</field>
+            <field name="code">52</field>
+            <field name="parent" ref="tax_code_BZ46"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_45" model="account.tax.code.template">
+            <field name="name">Nicht steuerbare Umsätze (Leistungsort nicht im Inland)</field>
+            <field name="code">45</field>
+            <field name="parent" ref="tax_code_BZ39"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_42" model="account.tax.code.template">
+            <field name="name">Lieferungen des ersten Abnehmers bei innergemeinschaftlichen Dreiecksgeschäften (§ 25b Abs. 2 UStG)</field>
+            <field name="code">42</field>
+            <field name="parent" ref="tax_code_BZ39"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_UZ46" model="account.tax.code.template">
+            <field name="name">Umsätze, für die als Leistungsempfänger die Steuer nach § 13b Abs. 2 UStG geschuldet wird</field>
+            <field name="code">UZ46</field>
+            <field name="parent" ref="tax_code_UZ39"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_UZ35" model="account.tax.code.template">
+            <field name="name">Steuerpflichtige innergemeinschaftliche Erwerbe</field>
+            <field name="code">UZ35</field>
+            <field name="parent" ref="tax_code_UZ33"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_UZ26" model="account.tax.code.template">
+            <field name="name">Steuerpflichtige Umsätze (Lieferungen und sonstige Leistungen einschl. unentgeltlicher Wertabgaben)</field>
+            <field name="code">UZ26</field>
+            <field name="parent" ref="tax_code_UZ19"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BZ35" model="account.tax.code.template">
+            <field name="name">Steuerpflichtige innergemeinschaftliche Erwerbe</field>
+            <field name="code">BZ35</field>
+            <field name="parent" ref="tax_code_BZ33"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BZ34" model="account.tax.code.template">
+            <field name="name">Steuerfreie innergemeinschaftliche Erwerbe</field>
+            <field name="code">BZ34</field>
+            <field name="parent" ref="tax_code_BZ33"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BZ26" model="account.tax.code.template">
+            <field name="name">Steuerpflichtige Umsätze (Lieferungen und sonstige Leistungen einschl. unentgeltlicher Wertabgaben)</field>
+            <field name="code">BZ26</field>
+            <field name="parent" ref="tax_code_BZ19"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BZ24" model="account.tax.code.template">
+            <field name="name">Steuerfreie Umsätze ohne Vorsteuerabzug</field>
+            <field name="code">BZ24</field>
+            <field name="parent" ref="tax_code_BZ19"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BZ20" model="account.tax.code.template">
+            <field name="name">Steuerfreie Umsätze mit Vorsteuerabzug</field>
+            <field name="code">BZ20</field>
+            <field name="parent" ref="tax_code_BZ19"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_98" model="account.tax.code.template">
+            <field name="name">zu anderen Steuersätzen</field>
+            <field name="code">98</field>
+            <field name="parent" ref="tax_code_UZ35"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_96" model="account.tax.code.template">
+            <field name="name">neuer Fahrzeuge von Lieferern ohne USt-IdNr. zum allgemeinen Steuersatz</field>
+            <field name="code">96</field>
+            <field name="parent" ref="tax_code_UZ35"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_95" model="account.tax.code.template">
+            <field name="name">zu anderen Steuersätzen</field>
+            <field name="code">95</field>
+            <field name="parent" ref="tax_code_BZ35"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_94" model="account.tax.code.template">
+            <field name="name">neuer Fahrzeuge von Lieferern ohne USt-IdNr. zum allgemeinen Steuersatz</field>
+            <field name="code">94</field>
+            <field name="parent" ref="tax_code_BZ35"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_931" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 7%</field>
+            <field name="code">931</field>
+            <field name="parent" ref="tax_code_UZ35"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_93" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 7%</field>
+            <field name="code">93</field>
+            <field name="parent" ref="tax_code_BZ35"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_91" model="account.tax.code.template">
+            <field name="name">Erwerbe nach § 4b UStG</field>
+            <field name="code">91</field>
+            <field name="parent" ref="tax_code_BZ34"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_891" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 19 %</field>
+            <field name="code">891</field>
+            <field name="parent" ref="tax_code_UZ35"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_89" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 19 %</field>
+            <field name="code">89</field>
+            <field name="parent" ref="tax_code_BZ35"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_861" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 7%</field>
+            <field name="code">861</field>
+            <field name="parent" ref="tax_code_UZ26"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_86" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 7%</field>
+            <field name="code">86</field>
+            <field name="parent" ref="tax_code_BZ26"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_85" model="account.tax.code.template">
+            <field name="name">Bauleistungen eines im Inland ansässigen Unternehmers (§ 13b Abs. 1 Satz 1 Nr. 4 UStG)</field>
+            <field name="code">85</field>
+            <field name="parent" ref="tax_code_UZ46"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_811" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 19 %</field>
+            <field name="code">811</field>
+            <field name="parent" ref="tax_code_UZ26"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_81" model="account.tax.code.template">
+            <field name="name">zum Steuersatz von 19 %</field>
+            <field name="code">81</field>
+            <field name="parent" ref="tax_code_BZ26"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_74" model="account.tax.code.template">
+            <field name="name">Lieferungen sicherungsübereigneter Gegenstände und Umsätze, die unter das GrEStG fallen (§ 13b Abs. 1 Satz 1 Nr. 2 und 3 UStG)</field>
+            <field name="code">74</field>
+            <field name="parent" ref="tax_code_UZ46"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_65" model="account.tax.code.template">
+            <field name="name">Steuer infolge Wechsels der Besteuerungsform sowie Nachsteuer auf versteuerte Anzahlungen u. ä. wegen Steuersatzänderung</field>
+            <field name="code">65</field>
+            <field name="parent" ref="tax_code_UZ46"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_53" model="account.tax.code.template">
+            <field name="name">Leistungen eines im Ausland ansässigen Unternehmers (§ 13b Abs. 1 Satz 1 Nr. 1 und 5 UStG)</field>
+            <field name="code">53</field>
+            <field name="parent" ref="tax_code_UZ46"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_49" model="account.tax.code.template">
+            <field name="name">neuer Fahrzeuge außerhalb eines Unternehmens (§ 2a UStG)</field>
+            <field name="code">49</field>
+            <field name="parent" ref="tax_code_BZ20"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_48" model="account.tax.code.template">
+            <field name="name">Umsätze nach § 4 Nr. 8 bis 28 UStG</field>
+            <field name="code">48</field>
+            <field name="parent" ref="tax_code_BZ24"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_44" model="account.tax.code.template">
+            <field name="name">neuer Fahrzeuge an Abnehmer ohne USt-IdNr</field>
+            <field name="code">44</field>
+            <field name="parent" ref="tax_code_BZ20"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_43" model="account.tax.code.template">
+            <field name="name">Weitere steuerfreie Umsätze mit Vorsteuerabzug (z.B. Ausfuhrlieferungen, Umsätze nach § 4 Nr. 2 bis 7 UStG)</field>
+            <field name="code">43</field>
+            <field name="parent" ref="tax_code_BZ20"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_41" model="account.tax.code.template">
+            <field name="name">Innergemeinschaftliche Lieferungen (§ 4 Nr. 1 Buchst. b UStG) an Abnehmer mit USt-IdNr</field>
+            <field name="code">41</field>
+            <field name="parent" ref="tax_code_BZ20"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_36" model="account.tax.code.template">
+            <field name="name">zu anderen Steuersätzen</field>
+            <field name="code">36</field>
+            <field name="parent" ref="tax_code_UZ26"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_35" model="account.tax.code.template">
+            <field name="name">zu anderen Steuersätzen</field>
+            <field name="code">35</field>
+            <field name="parent" ref="tax_code_BZ26"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_UZ30" model="account.tax.code.template">
+            <field name="name">Umsätze land- und forstwirtschaftlicher Betrieb nach § 24 UStG</field>
+            <field name="code">UZ30</field>
+            <field name="parent" ref="tax_code_UZ26"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_BZ30" model="account.tax.code.template">
+            <field name="name">Umsätze land- und forstwirtschaftlicher Betrieb nach § 24 UStG</field>
+            <field name="code">BZ30</field>
+            <field name="parent" ref="tax_code_BZ26"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_80" model="account.tax.code.template">
+            <field name="name">Umsätze, für die eine Steuer nach § 24 UStG zu entrichten ist (Sägewerkserzeugnisse, Getränke und alkohol. Flüssigkeiten, z.B. Wein)</field>
+            <field name="code">80</field>
+            <field name="parent" ref="tax_code_UZ30"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_77" model="account.tax.code.template">
+            <field name="name">Lieferungen in das übrige Gemeinschaftsgebiet an Abnehmer mit Ust-IdNr.</field>
+            <field name="code">77</field>
+            <field name="parent" ref="tax_code_BZ30"/>
+            <field name="account" ref="root_de"/>
+        </record>
+        <record id="tax_code_76" model="account.tax.code.template">
+            <field name="name">Umsätze, für die eine Steuer nach § 24 UStG zu entrichten ist (Sägewerkserzeugnisse, Getränke und alkohol. Flüssigkeiten, z.B. Wein)</field>
+            <field name="code">76</field>
+            <field name="parent" ref="tax_code_BZ30"/>
+            <field name="account" ref="root_de"/>
+        </record>
+
+    </data>
+</tryton>
