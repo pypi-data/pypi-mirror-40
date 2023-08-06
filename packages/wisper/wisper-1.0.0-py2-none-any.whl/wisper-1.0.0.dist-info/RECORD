@@ -1,0 +1,17 @@
+wisper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wisper/client.py,sha256=_-SKGZiPQ9XIyf3cNnKrJ6_QpmkVsJ1_IGHxHxMrGbk,4836
+wisper/encryption.py,sha256=NKWKH1kCgnZAsLFLPy-lidu8lYAlyaYH6wqG9pChuhg,1126
+wisper/server.py,sha256=iVc4R7RTlyoa__6bgHJqj4FLtpR5ZPUKC-cvR3sJtEI,5102
+wisper/session.py,sha256=o3G0ebmq7_yqgOqwRt08ND3QnuGVHnbOz_Ic9xLK8-A,4219
+wisper/utils.py,sha256=v-wqKdMFW4d41WgRiYfh6BFJCwXb8IwHHnVpL8E1AHY,954
+wisper/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wisper/aws/api_gateway.py,sha256=SW2UMT6BkebeYqeHiYqAy0hC3iSzZw8B5QGPC-HkENg,1143
+wisper/aws/ec2.py,sha256=CNAj7D5zf8NYnd9hAsQfvAXIBRFYm19XbDJlOat5RZ8,3494
+wisper/protobuf/__init__.py,sha256=Pld3T0F314rbmSRVvq4Faz9CuSEG7DKpV8td21fcrvU,375
+wisper/protobuf/secure_message_pb2.py,sha256=m6oUb4d07tX1AJRYDYevChYsx5AnOZsu3Ce0Yw-0Fdo,2318
+wisper-1.0.0.dist-info/LICENSE,sha256=7cmTVvqymaBftfh22YR90d0REITOYNrUt90a7H-zrvs,1082
+wisper-1.0.0.dist-info/METADATA,sha256=8UaoUGnJLQgQpboRyXOIhcujSq6WRyI_8ZGJ8Q7WsYI,4400
+wisper-1.0.0.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+wisper-1.0.0.dist-info/entry_points.txt,sha256=VV8u9FMbSHB1lIY8lEe5aWTr_JFoT9slqHKdvr4Y1fo,99
+wisper-1.0.0.dist-info/top_level.txt,sha256=IUVEQDCMX-G7yTjiy-aE1wM-RJ2XEztNQ165IHpbcF8,7
+wisper-1.0.0.dist-info/RECORD,,

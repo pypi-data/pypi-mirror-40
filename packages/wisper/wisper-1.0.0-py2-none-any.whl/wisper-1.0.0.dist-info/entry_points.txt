@@ -1,0 +1,4 @@
+[console_scripts]
+wisper = wisper.session:run_client
+wisper-runserver = wisper.session:run_server
+
