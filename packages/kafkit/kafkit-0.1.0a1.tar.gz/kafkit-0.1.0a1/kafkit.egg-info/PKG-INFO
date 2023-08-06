@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: kafkit
+Version: 0.1.0a1
+Summary: Kafkit helps you write Kafka producers and consumers in Python with asyncio
+Home-page: https://github.com/lsst-sqre/kafkit
+Author: Association of Universities for Research in Astronomy
+Author-email: sqre-admin@lists.lsst.org
+License: MIT
+Description: ######
+        Kafkit
+        ######
+        
+        Kafkit helps you write Kafka producers and consumers in Python with asyncio:
+        
+        - Kafkit integrates aiokafka_ with the Confluent Schema Registry.
+        - Kafkit provides Python APIs for working the Confluent Schema Registry and Kafka Broker HTTP APIs.
+        
+        .. _aiokafka: https://aiokafka.readthedocs.io/en/stable/
+        
+Keywords: lsst,kafka
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: dev
+Provides-Extra: aiohttp
