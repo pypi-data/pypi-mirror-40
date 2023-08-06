@@ -1,0 +1,10 @@
+README.md
+setup.py
+RawGithubURL.egg-info/PKG-INFO
+RawGithubURL.egg-info/SOURCES.txt
+RawGithubURL.egg-info/dependency_links.txt
+RawGithubURL.egg-info/entry_points.txt
+RawGithubURL.egg-info/top_level.txt
+github/__about__.py
+github/__init__.py
+github/github.py
