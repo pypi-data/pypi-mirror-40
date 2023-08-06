@@ -1,0 +1,11 @@
+{%- extends "alabaster/layout.html" %}
+
+{%- block extrahead %}
+{{ super() }}
+<!-- Add JupyterHub styling -->
+<link rel="stylesheet" href="{{ pathto('_static/jupyter.css', 1) }}" type="text/css" />
+{% endblock %}
+
+{% block sidebar1 %}
+{%- include "rightsidebar.html" %}
+{% endblock %}
