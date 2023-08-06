@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: custom-python-docx
+Version: 0.8.8
+Summary: Bgo Education: Create and update Microsoft Word .docx files.
+Home-page: https://github.com/another-it-team/custom-python-docx
+Author: kietdv
+Author-email: dinhvankiet124@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: docx office word
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Office/Business :: Office Suites
+Classifier: Topic :: Software Development :: Libraries
