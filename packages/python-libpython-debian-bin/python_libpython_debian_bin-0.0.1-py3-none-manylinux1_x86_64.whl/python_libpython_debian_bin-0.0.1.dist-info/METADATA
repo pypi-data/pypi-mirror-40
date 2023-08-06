@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: python-libpython-debian-bin
+Version: 0.0.1
+Summary: Libraries for Python on debian
+Home-page: http://github.com/spencer-hanson/python-libpython-debian-bin
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Keywords: libpython
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+
+Libraries for Python on debian
+
+
