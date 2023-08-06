@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: igrepper
+Version: 0.0.2
+Summary: Interactive curses-based grepping tool
+Home-page: https://github.com/igoyak/igrepper
+Author: Gustav Larsson
+Author-email: gustav.e.larsson@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Interactive curses-based grepping tool
+
+
