@@ -1,0 +1,11 @@
+django_rest_framework_camel_case/__init__.py,sha256=9fWf3I24j-NzvbaEjTyIamOG-0DWP4uP-jUfSeZch0Q,252
+django_rest_framework_camel_case/parser.py,sha256=9jq4CmCwy0D5mgUZfZ2ZSMc2Q0Xcb2yNqPeRo2eLJNs,803
+django_rest_framework_camel_case/render.py,sha256=fh9kTHmu8jGnEJYzJRuOz1gsUhhNf5hDjJKYy51u728,402
+django_rest_framework_camel_case/settings.py,sha256=xuiGuAaoOXLgT5-l4AGbz67ClTIe6T3JxvVhT5kG774,1454
+django_rest_framework_camel_case/util.py,sha256=vQK1GI8g0uiMqsgrgbVXAMkiBTWDxEcAL9vLIHSfYVE,1862
+django_rest_framework_camel_case-2.0.0.dist-info/AUTHORS.rst,sha256=7dosWtYfrrbo0mdFUKZNlEgmmalOtxYwPOQD9TOJdIs,155
+django_rest_framework_camel_case-2.0.0.dist-info/LICENSE,sha256=QDk1BiIuNh5N22uGzfyYR-eN5iMHKSCvrMgYmu9e8GY,1495
+django_rest_framework_camel_case-2.0.0.dist-info/METADATA,sha256=IBVzWzsWjZPCp3ZOlRRb1sQ4aumWXXygItj1yztW7N0,3880
+django_rest_framework_camel_case-2.0.0.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+django_rest_framework_camel_case-2.0.0.dist-info/top_level.txt,sha256=SYP7MBPU9Ev7Hg8fb52MM50OjgGlUmTiriF0gLing7g,33
+django_rest_framework_camel_case-2.0.0.dist-info/RECORD,,
