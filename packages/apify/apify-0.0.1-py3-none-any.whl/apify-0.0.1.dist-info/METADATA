@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: apify
+Version: 0.0.1
+Summary: Work in progress: Apify SDK for Python
+Home-page: https://github.com/apifytech/apify-python
+Author: Apify Technologies s.r.o.
+Author-email: support@apify.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Apify SDK for Python
+
+This will be a Python implementation of
+[Apify SDK](https://sdk.apify.com/). The source code is available at
+https://github.com/apifytech/apify-python.
+
+It's still work in progress, so please don't use this yet!
+
+
+
+
