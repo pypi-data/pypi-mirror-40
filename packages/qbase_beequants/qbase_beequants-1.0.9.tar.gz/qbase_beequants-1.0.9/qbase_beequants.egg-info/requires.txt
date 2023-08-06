@@ -1,0 +1,5 @@
+requests>=2.0.0
+pymysql
+pandas
+websocket
+websocket-client
