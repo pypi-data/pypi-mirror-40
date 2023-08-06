@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: biowardrobe-airflow-plugins
+Version: 1.1.2
+Summary: Add plugin workflows to BioWardrobe
+Home-page: https://github.com/Barski-lab/biowardrobe-airflow-plugins
+Author: Michael Kotliar
+Author-email: misha.kotliar@gmail.com
+License: Apache-2.0
+Download-URL: https://github.com/Barski-lab/biowardrobe-airflow-plugins
+Description: # BioWardrobe Airflow Plugins
+        [![Build Status](https://travis-ci.org/Barski-lab/biowardrobe-airflow-plugins.svg?branch=master)](https://travis-ci.org/Barski-lab/biowardrobe-airflow-plugins)
+        
+        1. Install **biowardrobe-airflow-plugins** from PyPi
+        
+        ```
+            pip3 install biowardrobe-airflow-plugins
+        ```
+        
+        2. Run **biowardrobe-plugin-init** in any folder
+        ```
+            biowardrobe-plugin-init
+        ```
+        
+        To trigger all available plugins by experiment UID
+        ```bash
+            airflow trigger_dag --conf "{\"uid\":\"UID\"}" biowardrobe_plugins
+        ```
+        
+        To trigger the specific plugin by experiment UID
+        ```bash
+            airflow trigger_dag --conf "{\"uid\":\"UID\"}" <plugin's name>
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Description-Content-Type: text/markdown

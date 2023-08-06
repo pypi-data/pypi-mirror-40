@@ -1,0 +1,3 @@
+sqlparse
+cwl-airflow-parser
+mysqlclient>=1.3.6
