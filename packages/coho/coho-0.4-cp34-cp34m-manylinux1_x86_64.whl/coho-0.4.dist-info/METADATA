@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: coho
+Version: 0.4
+Summary: SMILES parser
+Home-page: https://github.com/cornett/coho
+Author: Ben Cornett
+Author-email: ben@lantern.is
+License: ISC
+Keywords: smiles opensmiles cheminformatics
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Software Development
+Requires-Python: >= 3.4
+
+UNKNOWN
+
+
