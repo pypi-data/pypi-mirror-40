@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dominance-analysis
+Version: 0.6
+Summary: Dominance Analysis
+Home-page: https://github.com/bhagatsajan0073/dominance_analysis
+Author: Sajan Kumar Bhagat, Kunjithapatham Sivakumar, Shashank Shekhar
+Author-email: bhagat.sajan0073@gmail.com, s.vibish@gmail.com, quintshekhar@gmail.com
+Maintainer: Sajan Kumar Bhagat, Kunjithapatham Sivakumar, Shashank Shekhar
+Maintainer-email: bhagat.sajan0073@gmail.com, s.vibish@gmail.com, quintshekhar@gmail.com
+License: MIT
+Description: Dominance Analysis Package
+        
+        This package can be used for dominance analysis on the given data-set.
+        
+        Please follow the github repository for detailed description [here](https://github.com/bhagatsajan0073/dominance_analysis).
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
