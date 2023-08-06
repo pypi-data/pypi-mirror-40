@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        sumeru-scheduler=sumeru.cli.sumeru_scheduler:go
+        sumeru-worker=sumeru.cli.sumeru_worker:go
+      
