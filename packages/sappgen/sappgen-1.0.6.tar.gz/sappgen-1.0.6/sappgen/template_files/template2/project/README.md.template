@@ -1,0 +1,8 @@
+# $PROJECT_NAME
+
+## $APP_NAME
+
+- run the setup: `make setup`
+- run the server: `make serve`
+- run tests via pytest: `make test`
+- cleanup: `make clean`

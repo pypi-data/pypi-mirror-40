@@ -1,0 +1,15 @@
+test:
+	./venv/bin/python3.7 -m pytest -s tests
+
+serve:
+	./venv/bin/gunicorn -b :8000 --workers=3 $APP_NAME:app
+
+clean:
+	find . -name *.pyc -exec rm -f {} \;
+	rm -rf 	.cache \
+			.pytest_cache
+
+setup:
+	rm -rf venv
+	virtualenv -p python3.7 venv
+	./venv/bin/pip install -r requirements.txt
