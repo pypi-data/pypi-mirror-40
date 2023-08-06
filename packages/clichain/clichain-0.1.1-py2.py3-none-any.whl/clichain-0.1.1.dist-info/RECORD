@@ -1,0 +1,11 @@
+clichain/__init__.py,sha256=TLK-c5m_fXuCzXPJUaiOxspObnPOMWUPcvArHDRFFjU,153
+clichain/cli.py,sha256=WvW3VRDl0CmayhEFvo8Ns1YArqu6WsU9_14lX4riiGA,20183
+clichain/pipeline.py,sha256=Zz9nfV0H7aR7uXkqhMiIHacCzx_3hxygpTR11WJGYwo,29232
+clichain-0.1.1.dist-info/METADATA,sha256=2bEkqNigojFo0zMM0CpOf_6psF3Pc1cmMwJhMF-gseE,3587
+clichain-0.1.1.dist-info/RECORD,,
+clichain-0.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+clichain-0.1.1.dist-info/top_level.txt,sha256=vWosuPheT0zwqnfEYXxncXYOn64mpB6RCVMJ3uPBtIk,15
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=AdSEQy5-z3aQHOJdwLtJ9UeVuNVmlgg6VgNY97mJX08,17394
+tests/test_pep8.py,sha256=xP0E4QuZOgi6gns1yoRSN8Ba__rRMBuLMiSlKw40KAw,304
+tests/test_pipeline.py,sha256=YJg2hP10t-_Ib4kGe3HDqu76mfJLqiqEYIX4mjJP27M,17827
