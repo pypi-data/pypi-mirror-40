@@ -1,0 +1,1110 @@
+# This document was created by PyBEL v0.13.1-dev and bel-resources v0.0.2-dev on Tue Jan  8 14:53:24 2019
+
+################################################################################
+#| Metadata
+################################################################################
+
+SET DOCUMENT Name = "GABA subgraph"
+SET DOCUMENT Version = "5.1.2"
+SET DOCUMENT ContactInfo = "daniel.domingo.fernandez@scai.fraunhofer.de"
+SET DOCUMENT Licenses = "CC BY 4.0"
+SET DOCUMENT Copyright = "Copyright © 2019 Fraunhofer SCAI, All rights reserved."
+
+################################################################################
+#| Namespaces
+################################################################################
+
+# Enumerated Namespaces
+# ---------------------
+DEFINE NAMESPACE ADO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns"
+DEFINE NAMESPACE BRCO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns"
+DEFINE NAMESPACE CHEBI AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/chebi-names.belns"
+DEFINE NAMESPACE CTO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE ECCODE AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+DEFINE NAMESPACE FPLX AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+DEFINE NAMESPACE GFAM AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3f89d31906739fce9678d868b6a599a851aa7c00/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/go.belns"
+DEFINE NAMESPACE GOBP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20170725.belns"
+DEFINE NAMESPACE GOCC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170725.belns"
+DEFINE NAMESPACE HBP AS URL "https://raw.githubusercontent.com/pharmacome/terminology/570376e4c233483b667eab12a1f964950368282a/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/hgnc-symbols.belns"
+DEFINE NAMESPACE HP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE INTERPRO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-20170731.belns"
+DEFINE NAMESPACE MESH AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/mesh.belns"
+DEFINE NAMESPACE MESHC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170725.belns"
+DEFINE NAMESPACE MESHCS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20170511.belns"
+DEFINE NAMESPACE MESHD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20170725.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20170725.belns"
+DEFINE NAMESPACE MGI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20170725.belns"
+DEFINE NAMESPACE NIFT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/imaging-ontology/imaging-ontology-1.0.6.belns"
+DEFINE NAMESPACE PTS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/neurodegeneration-pathways/neurodegeneration-pathways-1.0.0.belns"
+DEFINE NAMESPACE RGD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20170725.belns"
+DEFINE NAMESPACE SCOMP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Regular Expression Namespaces
+# -----------------------------
+DEFINE NAMESPACE DBSNP AS PATTERN "^rs\d+$"
+DEFINE NAMESPACE TAXONOMY AS PATTERN "^\d+$"
+
+################################################################################
+#| Annotations
+################################################################################
+
+# Enumerated Annotations
+# ----------------------
+DEFINE ANNOTATION Anatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION Cell AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION CellLine AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Confidence AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+# Regular Expression Annotations
+# ------------------------------
+DEFINE ANNOTATION Species AS PATTERN "\d+"
+
+# Locally Defined Annotations
+# ---------------------------
+DEFINE ANNOTATION Condition AS LIST {"Normal Healthy State"}
+DEFINE ANNOTATION Developmental_Phase__of_patient AS LIST {"Developmental stage", "Old"}
+DEFINE ANNOTATION DiseaseState AS LIST {"Early-onset AD", "Familial Alzheimers Disease", "Late-onset AD", "Mild AD", "Moderate AD", "Sporadic Alzheimers Disease"}
+DEFINE ANNOTATION Duration_of_Chemical_Exposure AS LIST {"Chronic", "Subchronic"}
+DEFINE ANNOTATION Encode_Feature_Types AS LIST {"Promoter"}
+DEFINE ANNOTATION Experimental_Group AS LIST {"Physical exercised group", "Sedentary group"}
+DEFINE ANNOTATION FDASTATUS AS LIST {"Phase 2", "Phase 3"}
+DEFINE ANNOTATION KnockoutMice AS LIST {"App transgenic"}
+DEFINE ANNOTATION NIFT AS LIST {"Positron Emission Tomography", "Volumetric MRI"}
+DEFINE ANNOTATION Patient AS LIST {"AD T2DM +ve", "AD T2DM -ve", "APOE e4 +ve", "APOE e4 -ve"}
+DEFINE ANNOTATION Published AS LIST {"CDR story", "Epilepsy comorbidity paper"}
+DEFINE ANNOTATION Race AS LIST {"Caucasian", "Chinese", "Colombian", "Italian", "Swedish", "Taiwanese"}
+DEFINE ANNOTATION Transcriptionally_active_region AS LIST {"3 prime UTR", "5 prime UTR"}
+DEFINE ANNOTATION UserdefinedCellLine AS LIST {"293APPwt", "App transgenic", "CHOAPPsw", "INS-1 cells", "N2a695 cell", "NT2N cells", "Neuroblastoma cell", "primary cortical neuron", "primary neuron"}
+
+################################################################################
+#| Statements
+################################################################################
+SET Citation = {"PubMed", "11039729"}
+
+SET SupportingText = "The results of the present study, thus, suggest that nefiracetam enhances activity of nicotinic ACh receptors by interacting with a PKC pathway, thereby increasing glutamate release from presynaptic terminals, and then leading to a sustained facilitation of hippocampal neurotransmission. This may represent a cellular mechanism underlying the cognition-enhancing action of nefiracetam. The results also provide the possibility that nefiracetam could be developed as a promising therapeutic drug for senile dementia or Alzheimer's disease."
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+a(CHEBI:nefiracetam) increases bp(GOBP:cognition)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+a(CHEBI:nefiracetam) increases complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA)) increases act(p(HGNC:CHRNA2))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA)) increases act(p(HGNC:CHRNA3))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA)) increases act(p(HGNC:CHRNA4))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA)) increases act(p(HGNC:CHRNA5))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA)) increases act(p(HGNC:CHRNA6))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA)) increases act(p(HGNC:CHRNA7))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA)) increases act(p(HGNC:CHRNA9))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA)) increases act(p(HGNC:CHRNA10))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA)) increases act(p(HGNC:CHRNB2))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA)) increases act(p(HGNC:CHRNB3))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+complex(a(CHEBI:nefiracetam), p(HGNC:PRKCA)) increases act(p(HGNC:CHRNB4))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12031754"}
+
+SET SupportingText = "GABRA6 protein mutant form results in decreased susceptibility to Midazolam"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:Midazolam) decreases p(HGNC:GABRA6)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "14585504"}
+
+SET SupportingText = "Egr-1 upregulates the Alzheimer's disease presenilin-2 gene in neuronal cells."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Published = "Epilepsy comorbidity paper"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+path(MESHD:"Alzheimer Disease") association p(HGNC:PSEN2)
+UNSET {Confidence, Disease, Published, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Published = "Epilepsy comorbidity paper"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+path(MESHD:"Alzheimer Disease") association p(HGNC:EGR1)
+UNSET {Confidence, Disease, Published, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Published = "Epilepsy comorbidity paper"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:PSEN2) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, Published, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Published = "Epilepsy comorbidity paper"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, Published, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Published = "Epilepsy comorbidity paper"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) increases p(HGNC:PSEN2)
+UNSET {Confidence, Disease, Published, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16000229"}
+
+SET SupportingText = "Estradiol affects the expression of GABRA4 mRNA"
+SET Confidence = "Medium"
+SET Species = "9606"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:estradiol) regulates r(HGNC:GABRA4)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Estradiol results in increased expression of GABRA3 mRNA"
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:estradiol) increases r(HGNC:GABRA3)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Estradiol results in increased expression of GABRB3 mRNA"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:estradiol) increases r(HGNC:GABRB3)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17095583"}
+
+SET SupportingText = "In immunoblotting analysis, nefiracetam treatment increased the PKCalpha activity with a bell-shaped dose-response relationship peaking at 10 nM, thereby increasing phosphorylation of PKC substrate and NMDA receptor. Nefiracetam treatment did not affect the PKA activity."
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "NMDA receptor"}
+p(HGNC:APP) increases p(HGNC:GRIN2B, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "NMDA receptor"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:PRKCA))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "NMDA receptor"}
+a(CHEBI:nefiracetam) causesNoChange bp(GOBP:"protein kinase A signaling")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "We have previously demonstrated that the nootropic drug nefiracetam potentiates the activity of both nicotinic acetylcholine and NMDA receptors and that nefiracetam modulates the glycine binding site of the NMDA receptor."
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:GRIN2B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:CHRNA2))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:CHRNA3))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:CHRNA4))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:CHRNA5))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:CHRNA6))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:CHRNA7))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:CHRNA9))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:CHRNA10))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:CHRNB2))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:CHRNB3))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18397369"}
+
+SET SupportingText = "Furthermore, both pharmacological alpha-secretase pathway inhibition and sAPPalpha immunoneutralization approaches prevented etazolate neuroprotection against Abeta, indicating that etazolate exerts its neuroprotective effect via sAPPalpha induction."
+SET Confidence = "Medium"
+SET Species = "10116"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+a(HBP:"sAPP-alpha") increases bp(MESHPP:Neuroprotection)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Species = "10116"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+act(a(CHEBI:etazolate)) increases a(HBP:"sAPP-alpha")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Species = "10116"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+act(a(CHEBI:etazolate)) increases bp(MESHPP:Neuroprotection)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In this study, we show that at nanomolar-low micromolar concentrations, etazolate, a selective GABA(A) receptor modulator, stimulates sAPPalpha production in rat cortical neurons and in guinea pig brains. Etazolate (20 nM-2 microM) dose-dependently protected rat cortical neurons against Abeta-induced toxicity."
+SET Confidence = "Medium"
+SET Species = "10116"
+SET Subgraph = "GABA subgraph"
+act(a(MESHC:Etazolate)) isA a(CHEBI:"GABA modulator")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Species = "10116"
+SET Subgraph = "GABA subgraph"
+act(a(MESHC:Etazolate)) increases a(HBP:"sAPP-alpha")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Species = "10116"
+SET Subgraph = "GABA subgraph"
+act(a(MESHC:Etazolate)) increases bp(MESHPP:Neuroprotection)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19272425"}
+
+SET SupportingText = "Galantamine and nefiracetam have been shown to potentiate the phasic activity of nicotinic acetylcholine receptors (nAChRss) in the brain. Stimulation of nAChRss is also known to cause release of various neurotransmitters including glutamate and gamma-aminobutyric acid (GABA)."
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA4)) increases a(CHEBI:"gamma-aminobutyric acid")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA4)) increases a(CHEBI:"glutamate(1-)")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNB2)) increases a(CHEBI:"glutamate(1-)")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA2)) increases a(CHEBI:"gamma-aminobutyric acid")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA2)) increases a(CHEBI:"glutamate(1-)")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA3)) increases a(CHEBI:"gamma-aminobutyric acid")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA3)) increases a(CHEBI:"glutamate(1-)")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA5)) increases a(CHEBI:"gamma-aminobutyric acid")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA5)) increases a(CHEBI:"glutamate(1-)")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA6)) increases a(CHEBI:"gamma-aminobutyric acid")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA6)) increases a(CHEBI:"glutamate(1-)")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA7)) increases a(CHEBI:"gamma-aminobutyric acid")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA7)) increases a(CHEBI:"glutamate(1-)")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA9)) increases a(CHEBI:"gamma-aminobutyric acid")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA9)) increases a(CHEBI:"glutamate(1-)")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA10)) increases a(CHEBI:"gamma-aminobutyric acid")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNA10)) increases a(CHEBI:"glutamate(1-)")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNB3)) increases a(CHEBI:"glutamate(1-)")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+act(p(HGNC:CHRNB4)) increases a(CHEBI:"glutamate(1-)")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:galanthamine) increases act(p(HGNC:CHRNA2))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:galanthamine) increases act(p(HGNC:CHRNA3))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:galanthamine) increases act(p(HGNC:CHRNA4))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:galanthamine) increases act(p(HGNC:CHRNA5))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:galanthamine) increases act(p(HGNC:CHRNA6))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:galanthamine) increases act(p(HGNC:CHRNA7))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:galanthamine) increases act(p(HGNC:CHRNA9))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:galanthamine) increases act(p(HGNC:CHRNA10))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:galanthamine) increases act(p(HGNC:CHRNB2))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:galanthamine) increases act(p(HGNC:CHRNB3))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:galanthamine) increases act(p(HGNC:CHRNB4))
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The nefiracetam-induced increase in the frequency of mEPSCs and mIPSCs over and above the level achieved by ACh alone would contribute to the therapeutic effect of nefiracetam as the cholinergic system is known to be downregulated in the brain of Alzheimer's disease patients.The therapeutic effects of galantamine are ascribed to the modest potentiation of nACh receptor and NMDA receptor activities in addition to the modest inhibition of acetylcholinesterase."
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+path(MESHD:"Alzheimer Disease") decreases bp(GOBP:"synaptic transmission, cholinergic")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) isA a(CHEBI:"EC 3.1.1.7 (acetylcholinesterase) inhibitor")
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19549813"}
+
+SET SupportingText = "Copper Sulfate results in decreased expression of GABRB3 mRNA"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:"copper(II) sulfate pentahydrate") decreases r(HGNC:GABRB3)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Copper Sulfate results in increased expression of GABRA5 mRNA"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:"copper(II) sulfate pentahydrate") increases r(HGNC:GABRA5)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19909279"}
+
+SET SupportingText = "Hence, it is predicted that zif268 may regulate transcription of genes associated with glutamate receptors and/or GABA(A)Rs."
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRA1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRA2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRA3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRA4)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRA5)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRA6)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRB1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRB2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRB3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRG1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRG2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRG3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRD)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRE)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRP)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(HGNC:GABRQ)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) regulates p(GFAM:"Glutamate ionotropic receptor NMDA type subunits")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Induction of zif268 in neurons leads to altered expression of proteasome subunit and proteasome-regulatory genes, thereby changing the capacity of the neuron to degrade synaptic proteins, including receptors and receptor subunits."
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"GABA subgraph", "Ubiquitin degradation subgraph"}
+p(HGNC:EGR1) regulates complex(GOCC:"proteasome complex")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Most forms of neuronal plasticity are associated with the induction of the transcription factor zif268 (egr1)."
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:EGR1) association bp(GOBP:"regulation of neuronal synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of neuronal synaptic plasticity") association p(HGNC:EGR1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The regulation of synaptic glutamate receptor and GABA(A)R (gamma-aminobutyric acid subtype A receptor) levels is a key component of synaptic plasticity."
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRA1) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRA2) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRA3) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRA4) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRA5) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRA6) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRB1) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRB2) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRB3) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRG1) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRG2) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRG3) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRD) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRE) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRP) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABRQ) association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(GFAM:"Glutamate ionotropic receptor NMDA type subunits") association bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRA1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRA2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRA3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRA4)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRA5)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRA6)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRB1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRB2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRB3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRG1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRG2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRG3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRD)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRE)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRP)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(HGNC:GABRQ)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+bp(GOBP:"regulation of synaptic plasticity") association p(GFAM:"Glutamate ionotropic receptor NMDA type subunits")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20223232"}
+
+SET SupportingText = "Etazolate is a phosphodiesterase 4 (PDE4) inhibitor and GABAA receptor modulator that also stimulates alpha-secretase activity and neurotrophic soluble amyloid precursor protein (sAPPalpha) production, currently developed as a possible Alzheimer's disease therapeutic."
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+a(CHEBI:etazolate) increases a(HBP:"sAPP-alpha")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+a(CHEBI:etazolate) isA a(CHEBI:"EC 3.1.4.* (phosphoric diester hydrolase) inhibitor")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+a(CHEBI:etazolate) increases act(p(HGNC:ADAM10), ma(pep))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Species = "10116"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+act(a(MESHC:Etazolate)) increases a(HBP:"sAPP-alpha")
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The combined behavioral data demonstrate positive effects of etazolate on separate age-related cognitive deficits, using a complex task based on naturally occurring rodent behaviors."
+SET Confidence = "Medium"
+SET Species = "10116"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+act(a(CHEBI:etazolate)) increases bp(GOBP:"learning or memory")
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20888417"}
+
+SET SupportingText = "In this work, we describe a novel non-coding (nc) RNA (named 17A) RNA polymerase (pol) III-dependent embedded in the human G-protein-coupled receptor 51 gene (GPR51, GABA B2 receptor). The stable expression of 17A in SHSY5Y neuroblastoma cells induces the synthesis of an alternative splicing isoform that abolish GABA B2 intracellular signaling (i.e., inhibition of cAMP accumulation and activation of K(+) channels). Indeed, 17A is expressed in human brain, and we report that it is upregulated in cerebral tissues derived from Alzheimer disease patients. We demonstrate that 17A expression in neuroblastoma cells enhances the secretion of amyloid beta peptide (Abeta) and the Abeta x-42/Î‘beta x-40 peptide ratio and that its synthesis is induced in response to inflammatory stimuli."
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABBR2) increases bp(GOBP:"cAMP catabolic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+p(HGNC:GABBR2) increases complex(GOCC:"potassium channel complex")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20938992"}
+
+SET SupportingText = "[Methionine deficiency co-treated with Choline deficiency co-treated with Folic Acid deficiency] results in increased expression of GABRB3 mRNA"
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:choline) association r(MGI:Gabrb3)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = "GABA subgraph"
+r(MGI:Gabrb3) association a(CHEBI:choline)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21222604"}
+
+SET SupportingText = "EHT0202 (etazolate hydrochloride) is a new compound exhibiting both potential disease-modifying and symptomatic treatment properties in Alzheimer's Disease increasing alpha-secretase activity and sAPP alpha secretion, as well as acting as a GABA-A receptor modulator and as a PDE-4 inhibitor."
+SET Confidence = "High"
+SET FDASTATUS = "Phase 2"
+SET Species = "9606"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+a(CHEBI:etazolate) isA a(CHEBI:"GABA modulator")
+UNSET {Confidence, FDASTATUS, Species, Subgraph}
+SET Confidence = "Medium"
+SET FDASTATUS = "Phase 2"
+SET Species = "9606"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+a(CHEBI:etazolate) increases tloc(a(HBP:"sAPP-alpha"), fromLoc(GOCC:intracellular), toLoc(GOCC:"extracellular space"))
+UNSET {Confidence, FDASTATUS, Species, Subgraph}
+SET Confidence = "High"
+SET FDASTATUS = "Phase 2"
+SET Species = "9606"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+a(CHEBI:etazolate) isA a(CHEBI:"EC 3.1.4.* (phosphoric diester hydrolase) inhibitor")
+UNSET {Confidence, FDASTATUS, Species, Subgraph}
+SET Confidence = "High"
+SET FDASTATUS = "Phase 2"
+SET Species = "9606"
+SET Subgraph = {"GABA subgraph", "Non-amyloidogenic subgraph"}
+a(CHEBI:etazolate) increases act(p(HGNC:ADAM10), ma(pep))
+UNSET {Confidence, FDASTATUS, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21729720"}
+
+SET SupportingText = "1-(3-chlorophenyl)piperazine affects the reaction [gamma-Aminobutyric Acid results in increased activity of [GABRA1 protein co-treated with GABBR2 protein co-treated with GABRG2 protein]]"
+SET Confidence = "Medium"
+SET Species = "9606"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:"1-(3-chlorophenyl)piperazine") regulates p(HGNC:GABRA1)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21821968"}
+
+SET SupportingText = "In conclusion, nefiracetam enhances NMDA-receptor function through stimulation of its glycine binding site and nefiracetam-induced CaMKII activation likely contributes to improvement of cognition, learning, and memory."
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+p(HGNC:GRIN2B) increases bp(GOBP:cognition)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+p(HGNC:GRIN2B) increases bp(GOBP:learning)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+p(HGNC:GRIN2B) increases bp(GOBP:memory)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+a(CHEBI:nefiracetam) increases act(p(HGNC:GRIN2B))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph", "NMDA receptor"}
+a(CHEBI:nefiracetam) increases act(complex(SCOMP:"CAMK2 Complex"))
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Nefiracetam treatment significantly enhanced long-term potentiation (LTP) with the same bell-shaped dose-response curve. Furthermore, nefiracetam-induced LTP enhancement was closely associated with calcium/calmodulin-dependent protein kinase II (CaMKII) activation with increase in phosphorylation of AMPA-type glutamate receptor subunit 1 (GluA1) (Ser-831) as a postsynaptic CaMKII substrate. "
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:nefiracetam) increases bp(GOBP:"long-term synaptic potentiation")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:nefiracetam) increases act(complex(SCOMP:"CAMK2 Complex"))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = "GABA subgraph"
+complex(SCOMP:"CAMK2 Complex") increases p(HGNC:GRIA1, pmod(Ph, Ser, 831))
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21969301"}
+
+SET SupportingText = "Egr1 expression is induced following glatiramer acetate immunotherapy in rodent models of glaucoma and Alzheimer's disease."
+SET Confidence = "Medium"
+SET MeSHDisease = {"Alzheimer Disease", "Glaucoma"}
+SET Species = "10090"
+SET Subgraph = "GABA subgraph"
+a(MESHC:"Glatiramer Acetate") increases p(MGI:Egr1)
+UNSET {Confidence, MeSHDisease, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In AD-Tg mice, a significant increase in hippocampal EGR1 protein levels was also found in response to GA immunization."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Hippocampus"
+SET Species = "10090"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+path(MESHD:"Alzheimer Disease") association p(HGNC:EGR1)
+UNSET {Confidence, Disease, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Hippocampus"
+SET Species = "10090"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Hippocampus"
+SET Species = "10090"
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+a(MESHC:"Glatiramer Acetate") increases p(HGNC:EGR1)
+UNSET {Confidence, Disease, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Moreover, it identifies EGR1 transcription factor as a potential mediator for GA-induced neuroprotection in both glaucoma and AD."
+SET Confidence = "Medium"
+SET MeSHDisease = {"Alzheimer Disease", "Glaucoma"}
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) increases a(MESHC:"Glatiramer Acetate")
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "Medium"
+SET MeSHDisease = {"Alzheimer Disease", "Glaucoma"}
+SET Subgraph = {"GABA subgraph", "Gamma secretase subgraph"}
+a(MESHC:"Glatiramer Acetate") increases bp(MESH:D000066829)
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24966471"}
+
+SET SupportingText = "In addition, TNF-alpha can potentiate glutamate-mediated cytotoxicity by two complementary mechanisms: indirectly, by inhibiting glutamate transport on astrocytes, and directly, by rapidly triggering the surface expression of Ca+2 permeable-AMPA receptors and NMDA receptors, while decreasing inhibitory GABAA receptors on neurons."
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+p(HGNC:TNF) increases bp(GOBP:"cell death")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+p(HGNC:TNF) increases p(MESHC:"NMDA receptor A1")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+p(HGNC:TNF) increases p(MESHC:"NR1 NMDA receptor")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+p(HGNC:TNF) increases p(MESHC:"NR2A NMDA receptor")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+p(HGNC:TNF) increases p(MESHC:"NR2B NMDA receptor")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+p(HGNC:TNF) increases p(MESHC:"NR2C NMDA receptor")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+p(HGNC:TNF) increases p(MESHC:"NR2D NMDA receptor")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+p(HGNC:TNF) increases p(MESHC:"NR3A NMDA receptor")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+p(HGNC:TNF) increases p(MESHC:"NR3B NMDA receptor")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+p(HGNC:TNF) decreases complex(GOCC:"GABA receptor complex")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+p(HGNC:TNF) increases p(MESHC:"metabotropic quisqualate receptor")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRA1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRA2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRA3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRA4)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRA5)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRA6)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRB1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRB2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRB3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRG1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRG2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRG3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRD)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRE)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRP)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABRQ)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GABA subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) decreases p(HGNC:GABBR1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GABA subgraph", "Glutamatergic subgraph"}
+a(MESHC:Glutamates) increases bp(GOBP:"cell death")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "7838908"}
+
+SET SupportingText = "The nootropic compound nefiracetam was evaluated in 88 older rabbits in a 750-ms delay paradigm of eyeblink classical conditioning (EBCC). Nefiracetam facilitated acquisition of EBCC in older rabbits. EBCC is performed poorly by older humans and is seriously impaired in Alzheimer's disease. These preclinical data in an animal model with clear parallels in humans suggest that nefiracetam may prove effective as a cognition enhancer in clinical trials."
+SET Confidence = "High"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:nefiracetam) increases bp(GOBP:cognition)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "9201800"}
+
+SET SupportingText = "Nefiracetam is undergoing preclinical and clinical tests as a cognition-enhancing drug in Alzheimer's disease (AD)."
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GABA subgraph"}
+a(CHEBI:nefiracetam) increases bp(GOBP:cognition)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "9523823"}
+
+SET SupportingText = "GABRB3 protein results in increased susceptibility to Midazolam"
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = "GABA subgraph"
+a(CHEBI:Midazolam) increases p(MGI:Gabrb3)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################

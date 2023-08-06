@@ -1,0 +1,2383 @@
+# This document was created by PyBEL v0.13.1-dev and bel-resources v0.0.2-dev on Tue Jan  8 14:53:24 2019
+
+################################################################################
+#| Metadata
+################################################################################
+
+SET DOCUMENT Name = "GSK3 subgraph"
+SET DOCUMENT Version = "5.1.2"
+SET DOCUMENT ContactInfo = "daniel.domingo.fernandez@scai.fraunhofer.de"
+SET DOCUMENT Licenses = "CC BY 4.0"
+SET DOCUMENT Copyright = "Copyright © 2019 Fraunhofer SCAI, All rights reserved."
+
+################################################################################
+#| Namespaces
+################################################################################
+
+# Enumerated Namespaces
+# ---------------------
+DEFINE NAMESPACE ADO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns"
+DEFINE NAMESPACE BRCO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns"
+DEFINE NAMESPACE CHEBI AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/chebi-names.belns"
+DEFINE NAMESPACE CTO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE ECCODE AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+DEFINE NAMESPACE FPLX AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+DEFINE NAMESPACE GFAM AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3f89d31906739fce9678d868b6a599a851aa7c00/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/go.belns"
+DEFINE NAMESPACE GOBP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20170725.belns"
+DEFINE NAMESPACE GOCC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170725.belns"
+DEFINE NAMESPACE HBP AS URL "https://raw.githubusercontent.com/pharmacome/terminology/570376e4c233483b667eab12a1f964950368282a/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/hgnc-symbols.belns"
+DEFINE NAMESPACE HP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE INTERPRO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-20170731.belns"
+DEFINE NAMESPACE MESH AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/mesh.belns"
+DEFINE NAMESPACE MESHC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170725.belns"
+DEFINE NAMESPACE MESHCS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20170511.belns"
+DEFINE NAMESPACE MESHD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20170725.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20170725.belns"
+DEFINE NAMESPACE MGI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20170725.belns"
+DEFINE NAMESPACE NIFT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/imaging-ontology/imaging-ontology-1.0.6.belns"
+DEFINE NAMESPACE PTS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/neurodegeneration-pathways/neurodegeneration-pathways-1.0.0.belns"
+DEFINE NAMESPACE RGD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20170725.belns"
+DEFINE NAMESPACE SCOMP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Regular Expression Namespaces
+# -----------------------------
+DEFINE NAMESPACE DBSNP AS PATTERN "^rs\d+$"
+DEFINE NAMESPACE TAXONOMY AS PATTERN "^\d+$"
+
+################################################################################
+#| Annotations
+################################################################################
+
+# Enumerated Annotations
+# ----------------------
+DEFINE ANNOTATION Anatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION Cell AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION CellLine AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Confidence AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+# Regular Expression Annotations
+# ------------------------------
+DEFINE ANNOTATION Species AS PATTERN "\d+"
+
+# Locally Defined Annotations
+# ---------------------------
+DEFINE ANNOTATION Condition AS LIST {"Normal Healthy State"}
+DEFINE ANNOTATION Developmental_Phase__of_patient AS LIST {"Developmental stage", "Old"}
+DEFINE ANNOTATION DiseaseState AS LIST {"Early-onset AD", "Familial Alzheimers Disease", "Late-onset AD", "Mild AD", "Moderate AD", "Sporadic Alzheimers Disease"}
+DEFINE ANNOTATION Duration_of_Chemical_Exposure AS LIST {"Chronic", "Subchronic"}
+DEFINE ANNOTATION Encode_Feature_Types AS LIST {"Promoter"}
+DEFINE ANNOTATION Experimental_Group AS LIST {"Physical exercised group", "Sedentary group"}
+DEFINE ANNOTATION FDASTATUS AS LIST {"Phase 2", "Phase 3"}
+DEFINE ANNOTATION KnockoutMice AS LIST {"App transgenic"}
+DEFINE ANNOTATION NIFT AS LIST {"Positron Emission Tomography", "Volumetric MRI"}
+DEFINE ANNOTATION Patient AS LIST {"AD T2DM +ve", "AD T2DM -ve", "APOE e4 +ve", "APOE e4 -ve"}
+DEFINE ANNOTATION Published AS LIST {"CDR story", "Epilepsy comorbidity paper"}
+DEFINE ANNOTATION Race AS LIST {"Caucasian", "Chinese", "Colombian", "Italian", "Swedish", "Taiwanese"}
+DEFINE ANNOTATION Transcriptionally_active_region AS LIST {"3 prime UTR", "5 prime UTR"}
+DEFINE ANNOTATION UserdefinedCellLine AS LIST {"293APPwt", "App transgenic", "CHOAPPsw", "INS-1 cells", "N2a695 cell", "NT2N cells", "Neuroblastoma cell", "primary cortical neuron", "primary neuron"}
+
+################################################################################
+#| Statements
+################################################################################
+SET Citation = {"PubMed", "10341227"}
+
+SET SupportingText = "It was shown recently that axin negatively regulates beta-catenin by bridging beta-catenin and GSK-3beta together in the same complex and thereby facilitating the phosphorylation of beta-catenin by GSK-3beta "
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(HGNC:GSK3B)) increases p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+p(HGNC:CTNNB1, pmod(Ph)) decreases p(HGNC:CTNNB1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "GSK3 subgraph"
+p(SFAM:"AXIN Family") decreases p(HGNC:CTNNB1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "GSK3 subgraph"
+p(SFAM:"AXIN Family") increases complex(p(HGNC:CTNNB1), p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+p(SFAM:"AXIN Family") increases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "10486203"}
+
+SET SupportingText = "Recent studies have shown that GSK-3beta phosphorylates the microtubule-associated protein tau in vitro and in cell culture."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "10850726"}
+
+SET SupportingText = "In cells treated with wortmannin, protein kinase C delta fragments were observed, and the protein kinase C activity increased after 3 hours, whereas treatment of cells with z-DEVD-fmk, an inhibitor of caspase-3, inhibited fragmentation of protein kinase C delta and induced continuous activation of GSK-3."
+SET Confidence = "Medium"
+SET Subgraph = {"Caspase subgraph", "GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+a(CHEBI:wortmannin) increases act(p(HGNC:PRKCD))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Caspase subgraph", "GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+a(CHEBI:"Z-DEVD-FMK") decreases act(p(HGNC:CASP3))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Caspase subgraph", "GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+a(CHEBI:"Z-DEVD-FMK") decreases p(HGNC:PRKCD)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Caspase subgraph", "GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+a(CHEBI:"Z-DEVD-FMK") increases act(p(SFAM:"GSK3 Family"))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "It is suggested that fragmentation of protein kinase C delta during the process of apoptosis results in the phosphorylation and the inactivation of GSK-3."
+SET Confidence = "Medium"
+SET Subgraph = {"Caspase subgraph", "GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+bp(GOBP:"apoptotic process") increases act(p(HGNC:PRKCD, frag("?")))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Caspase subgraph", "GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+act(p(HGNC:PRKCD, frag("?"))) increases p(SFAM:"GSK3 Family", pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Caspase subgraph", "GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+act(p(HGNC:PRKCD, frag("?"))) decreases act(p(SFAM:"GSK3 Family"))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "10967351"}
+
+SET SupportingText = "Alzheimer's disease (AD) is a neurodegenerative disease with progressive dementia accompanied by three main structural changes in the brain: diffuse loss of neurons; intracellular protein deposits termed neurofibrillary tangles (NFT) and extracellular protein deposits termed amyloid or senile plaques, surrounded by dystrophic neurites. Recent studies have suggested that the trafficking process of membrane associated proteins is modulated by the FAD-linked presenilin (PS) proteins, and that amyloid beta-peptide deposition may be initiated intracellularly, through the secretory pathway. Current hypotheses concerning presenilin function are based upon its cellular localization and its putative interaction as macromolecular complexes with the cell-adhesion/signaling beta-catenin molecule and the glycogen synthase kinase 3beta (GSK-3beta) enzyme. Developmental studies have shown that PS proteins function as components in the Notch signal transduction cascade and that beta-catenin and GSK-3beta are transducers of the Wnt signaling pathway. Both pathways are thought to have an important role in brain development, and they have been connected through Dishevelled (Dvl) protein, a known transducer of the Wnt signaling pathway. In addition to a review of the current state of research on the subject, we present a cell signaling model in which a sustained loss of function of Wnt signaling components would trigger a series of misrecognition events, determining the onset and development of AD."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:GSK3B) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+path(MESHD:"Alzheimer Disease") association p(HGNC:CTNNB1)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+path(MESHD:"Alzheimer Disease") association p(HGNC:GSK3B)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:CTNNB1) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "10998059"}
+
+SET SupportingText = "We here report that paullones also act as very potent inhibitors of glycogen synthase kinase-3beta (GSK-3beta) (IC50: 4-80 nM) and the neuronal CDK5/p25 (IC50: 20-200 nM)."
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+a(CHEBI:paullone) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "We show that alsterpaullone is able to inhibit the in vivo phosphorylation of tau at AD-specific sites by GSK-3beta and the in vivo phosphorylation of DARPP-32 in isolated striatum slices by CDK5. "
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) negativeCorrelation a(CHEBI:alsterpaullone)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:CDK5)) negativeCorrelation a(CHEBI:alsterpaullone)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:CDK5)) increases p(HGNC:PPP1R1B, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+a(CHEBI:alsterpaullone) decreases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+a(CHEBI:alsterpaullone) negativeCorrelation act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+a(CHEBI:alsterpaullone) negativeCorrelation act(p(HGNC:CDK5))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11007782"}
+
+SET SupportingText = "Glycogen synthase kinase-3beta phosphorylates protein tau and rescues the axonopathy in the central nervous system of human four-repeat tau transgenic mice."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11013232"}
+
+SET SupportingText = "Indirubins inhibit glycogen synthase kinase-3 beta and CDK5/p25, two protein kinases involved in abnormal tau phosphorylation in Alzheimer's disease."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Low"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:CDK5)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11104755"}
+
+SET SupportingText = " The physiological relevance of the association between PS1 and beta-catenin remains controversial. In this study, we report the identification and functional characterization of a highly conserved glycogen synthase kinase-3beta consensus phosphorylation site within the hydrophilic loop domain of PS1. Site-directed mutagenesis, together with in vitro and in vivo phosphorylation assays, indicates that PS1 residues Ser(353) and Ser(357) are glycogen synthase kinase-3beta targets."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:PSEN1, pmod(Ph, Ser, 353))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:PSEN1, pmod(Ph, Ser, 357))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Site-directed mutagenesis, together with in vitro and in vivo phosphorylation assays, indicates that PS1 residues Ser(353) and Ser(357) are glycogen synthase kinase-3beta targets."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:PSEN1, pmod(Ph, Ser, 353))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:PSEN1, pmod(Ph, Ser, 357))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11181841"}
+
+SET SupportingText = "Two protein kinases, tau protein kinase I (TPK I or GSK 3beta) and tau protein kinase II (TPK II; cdk5/p20), have been isolated from bovine brain microtubules"
+SET Confidence = "High"
+SET Species = "9913"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "9913"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:CDK5)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11212302"}
+
+SET SupportingText = "In the absence of an activating signal, phosphorylation of beta-catenin by glycogen synthase kinase 3 (GSK3) acting in conjunction with adenomatous polyposis coli and axin/conductin causes beta-catenin to interact with the beta-transducin repeat-containing protein which results in its ubiquitination and degradation."
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+complex(p(HGNC:APC), p(HGNC:CSNK1A1), p(HGNC:CTNNB1), p(HGNC:GSK3B), p(SFAM:"AXIN Family")) increases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:CTNNB1, pmod(Ph)) increases act(p(HGNC:BTRC))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph", "Wnt signaling subgraph"}
+p(SFAM:"AXIN Family") increases complex(p(HGNC:APC), p(HGNC:CSNK1A1), p(HGNC:CTNNB1), p(HGNC:GSK3B), p(SFAM:"AXIN Family"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:CSNK1A1) increases p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+act(p(HGNC:BTRC)) decreases p(HGNC:CTNNB1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11504726"}
+
+SET SupportingText = "This pool of beta-catenin exists in the cytosol and is normally rapidly degraded through phosphorylation by GSK 3beta, leading to its subsequent degradation. "
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3B) increases p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+p(HGNC:CTNNB1, pmod(Ph)) decreases p(HGNC:CTNNB1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11527574"}
+
+SET SupportingText = "Lithium, the primary therapeutic agent for bipolar mood disorder, is a selective inhibitor of GSK3beta."
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+a(CHEBI:"lithium(1+)") decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Notable among the signaling proteins regulated by GSK3beta are the many transcription factors, including activator protein-1, cyclic AMP response element binding protein, heat shock factor-1, nuclear factor of activated T cells, Myc, beta-catenin, CCAAT/enhancer binding protein, and NFkappaB. "
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(HGNC:GSK3B)) increases complex(SCOMP:"AP-1 Complex")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"CREB subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CREB3L4, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Chaperone subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:HSF1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Chaperone subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MYC, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "T cells signaling"}
+act(p(HGNC:GSK3B)) increases p(HGNC:NFATC2, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Nuclear factor Kappa beta subgraph"}
+act(p(HGNC:GSK3B)) regulates complex(SCOMP:"Nfkb Complex")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "This mechanism was shown to allow local inhibition of GSK3beta, leading to stabilization of beta-catenin levels due to reduced GSK3beta-facilitated degradation of beta-catenin, a necessary step in embryo development"
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3B) decreases p(HGNC:CTNNB1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11578751"}
+
+SET SupportingText = "Two main protein kinases have been shown to be involved in anomalous tau phosphorylations: the cyclin-dependent kinase Cdk5 and glycogen synthase kinase GSK3beta"
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) directlyIncreases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11803455"}
+
+SET SupportingText = "Several kinases, such as glycogen synthase kinase 3 beta (GSK3beta) and c-Jun N-terminal kinase (JNK), phosphorylate tau at sites that are phosphorylated in PHF."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "MAPK-JNK subgraph", "Tau protein subgraph"}
+act(p(HGNC:MAPK8)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12191990"}
+
+SET SupportingText = "Aberrant tau phosphorylation by glycogen synthase kinase-3beta and JNK3 induces oligomeric tau fibrils in COS-7 cells."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "MAPK-JNK subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "MAPK-JNK subgraph", "Tau protein subgraph"}
+act(p(HGNC:MAPK10)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12387894"}
+
+SET SupportingText = "These data suggest that aberrant glycosylation of tau in AD might be involved in neurofibrillary degeneration by promoting abnormal hyperphosphorylation by cdk5 and GSK-3beta."
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurofibrillary Tangles"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+path(HBP:Neurodegeneration) association p(HGNC:MAPT, pmod(Glyco))
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:MAPT, pmod(Glyco)) increases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurofibrillary Tangles"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:MAPT, pmod(Glyco)) association path(HBP:Neurodegeneration)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12428805"}
+
+SET SupportingText = "A large body of biochemical, genetic, and cell biological evidence implicate two major serine-threonine protein kinases, glycogen synthase kinase 3 (GSK-3) and cyclin-dependent kinase 5 (CDK5) as major kinases responsible for both normal and pathological phosphorylation of tau protein in vivo."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(SFAM:"GSK3 Family")) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Interestingly, some of these kinase and phosphatase activities have recently merged as key regulators of fast axonal transport (FAT). Specifically, CDK5 and GSK-3 have been recently shown to regulate kinesin-driven motility. "
+SET Confidence = "High"
+SET Subgraph = {"Axonal transport subgraph", "Cyclin-CDK subgraph", "GSK3 subgraph"}
+act(p(SFAM:"GSK3 Family")) regulates bp(GOBP:"axonal transport")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Axonal transport subgraph", "Cyclin-CDK subgraph", "GSK3 subgraph"}
+act(p(HGNC:CDK5)) regulates bp(GOBP:"axonal transport")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15314261"}
+
+SET SupportingText = "Glycogen synthase kinase-3beta (GSK3beta) is recognized as one of major kinases to phosphorylate tau in Alzheimer's disease (AD), thus lots of AD drug discoveries target GSK3beta. However, the inactive form of GSK3beta which is phosphorylated at serine-9 is increased in AD brains. This is also inconsistent with phosphorylation status of other GSK3beta substrates, such as beta-catenin and collapsin response mediator protein-2 (CRMP2) since their phosphorylation is all increased in AD brains. "
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B, pmod(Ph, Ser, 9)) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B, pmod(Ph, Ser, 9)) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+path(MESHD:"Alzheimer Disease") association p(HGNC:GSK3B)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+path(MESHD:"Alzheimer Disease") positiveCorrelation p(HGNC:GSK3B, pmod(Ph, Ser, 9))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+path(MESHD:"Alzheimer Disease") positiveCorrelation p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:CTNNB1, pmod(Ph)) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Thus, we addressed this paradoxical condition of AD in rat neurons treated with okadaic acid (OA) which inhibits protein phosphatase-2A (PP2A) and induces tau hyperphosphorylation and cell death. Interestingly, OA also induces phosphorylation of GSK3beta at serine-9 and other substrates including tau, beta-catenin and CRMP2 like in AD brains. In this context, we observed that GSK3beta inhibitors such as lithium chloride and 6-bromoindirubin-3'-monoxime (6-BIO) reversed those phosphorylation events and protected neurons. These data suggest that GSK3beta may still have its kinase activity despite increase of its phosphorylation at serine-9 in AD brains at least in PP2A-compromised conditions and that GSK3beta inhibitors could be a valuable drug candidate in AD."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Species = "10116"
+SET Subgraph = "GSK3 subgraph"
+a(CHEBI:"lithium chloride") decreases p(HGNC:GSK3B)
+UNSET {Confidence, Disease, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Species = "10116"
+SET Subgraph = "GSK3 subgraph"
+a(CHEBI:"okadaic acid") increases p(HGNC:GSK3B, pmod(Ph, Ser, 9))
+UNSET {Confidence, Disease, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15522877"}
+
+SET SupportingText = "In situ, FRAT-2 significantly increased GSK3 beta-mediated phosphorylation of tau at a primed epitope while not significantly affecting the phosphorylation of unprimed sites."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:FRAT2) increases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15525785"}
+
+SET SupportingText = "Here, we show that GSK-3beta phosphorylates and regulates the activity of Bax, a pro-apoptotic Bcl-2 family member that stimulates the intrinsic (mitochondrial) death pathway by eliciting cytochrome c release from mitochondria."
+SET Confidence = "High"
+SET Subgraph = {"Bcl-2 subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3B) increases p(HGNC:BAX, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Bcl-2 subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3B) regulates act(p(HGNC:BAX))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Bcl-2 subgraph", "GSK3 subgraph"}
+act(p(HGNC:BAX)) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15676027"}
+
+SET SupportingText = "Phosphorylation by GSK3beta was exclusively observed in Cdk5-phosphorylated CRMP2, but barely in CRMP2T509A."
+SET Confidence = "High"
+SET Subgraph = {"Axonal guidance subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Regulation of actin cytoskeleton subgraph"}
+act(p(HGNC:GSK3B)) positiveCorrelation p(HGNC:DPYSL2, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Axonal guidance subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Regulation of actin cytoskeleton subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:DPYSL2, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Axonal guidance subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Regulation of actin cytoskeleton subgraph"}
+act(p(HGNC:CDK5)) increases p(HGNC:DPYSL2, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Axonal guidance subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Regulation of actin cytoskeleton subgraph"}
+p(HGNC:DPYSL2, pmod(Ph)) positiveCorrelation act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15686969"}
+
+SET SupportingText = "This interaction is regulated by the phosphorylation of Tau at selected sites, by glycogen synthase kinase-3beta (GSK3beta) and cyclin-dependent kinase 5 (Cdk5), and requires an intact microtubule network."
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) association complex(p(HGNC:APBB1), p(HGNC:MAPT))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+complex(p(HGNC:APBB1), p(HGNC:MAPT)) association act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15773910"}
+
+SET SupportingText = "In concordance, significant increases in the levels of phosphorylation of total Akt substrates, including: GSK3beta(Ser9), tau(Ser214), mTOR(Ser2448), and decreased levels of the Akt target, p27(kip1), were found in AD temporal cortex compared with controls."
+SET Confidence = "High"
+SET MeSHDisease = "Alzheimer Disease"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3B, pmod(Ph, Ser, 9)) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = "Alzheimer Disease"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph"}
+path(MESHD:"Alzheimer Disease") positiveCorrelation p(HGNC:GSK3B, pmod(Ph, Ser, 9))
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = "Alzheimer Disease"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph", "mTOR signaling subgraph"}
+path(MESHD:"Alzheimer Disease") positiveCorrelation p(HGNC:MTOR, pmod(Ph, Ser, 2448))
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = "Alzheimer Disease"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph", "mTOR signaling subgraph"}
+p(HGNC:MTOR, pmod(Ph, Ser, 2448)) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16257959"}
+
+SET SupportingText = "In vitro kinase reaction revealed that recombinant GSK-3beta indeed phosphorylates MARK2, whereas it failed to phosphorylate Ser-262 of tau."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MARK2, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "These results, respectively, indicated that GSK-3beta is responsible for phosphorylating Ser-262 of tau through phosphorylation and activation of MARK2 and that the phosphorylation of tau at this particular site is predominantly mediated by a GSK-3beta-MARK2 pathway."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MARK2, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph, Ser, 262))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:MARK2, pmod(Ph)) increases act(p(HGNC:MARK2))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:MAPT, pmod(Ph, Ser, 262)) positiveCorrelation act(p(HGNC:MARK2))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:MARK2)) positiveCorrelation p(HGNC:MAPT, pmod(Ph, Ser, 262))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16316932"}
+
+SET SupportingText = "Activation of PI3K after CsA treatment appeared to trigger opposite effects. First, CsA induced PI3K-dependent activation of Akt, which mediated cellular responses against cell injury. Akt activation led to transient phosphorylation and inhibition of the pro-apoptotic GSK3beta and Bad, thus preventing GSK3beta-mediated phosphorylation and activation of the pro-apoptotic Bax, and Bad-sequestering of Bcl-2."
+SET Confidence = "High"
+SET Subgraph = {"Bcl-2 subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:BAX, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Bcl-2 subgraph", "GSK3 subgraph"}
+p(HGNC:BAX, pmod(Ph)) increases act(p(HGNC:BAX))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Bcl-2 subgraph", "GSK3 subgraph"}
+act(p(SFAM:"AKT Family")) decreases p(HGNC:BAD)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Bcl-2 subgraph", "GSK3 subgraph"}
+act(p(SFAM:"AKT Family")) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Bcl-2 subgraph", "GSK3 subgraph"}
+act(p(SFAM:"AKT Family")) decreases p(HGNC:BAX)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Bcl-2 subgraph", "GSK3 subgraph"}
+a(CHEBI:"cyclosporin A") increases act(p(SFAM:"AKT Family"))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16511867"}
+
+SET SupportingText = "Cerebrolysin is a peptide mixture with neurotrophic effects that might reduce the neurodegenerative pathology in Alzheimer's disease (AD). Cerebrolysin might reduce amyloid deposition by regulating amyloid-beta (Abeta) degradation or by modulating APP expression, maturation, or processing. To investigate these possibilities, APP tg mice were treated for 6 months with Cerebrolysin and analyzed in the water maze, followed by RNA, immunoblot, and confocal microscopy analysis of full-length (FL) APP and its fragments, beta-secretase (BACE1), and Abeta-degrading enzymes [neprilysin (Nep) and insulin-degrading enzyme (IDE)]. Consistent with previous studies, Cerebrolysin ameliorated the performance deficits in the spatial learning portion of the water maze and reduced the synaptic pathology and amyloid burden in the brains of APP tg mice. These effects were associated with reduced levels of FL APP and APP C-terminal fragments, but levels of BACE1, Notch1, Nep, and IDE were unchanged. In contrast, levels of active cyclin-dependent kinase-5 (CDK5) and glycogen synthase kinase-3beta [GSK-3beta; but not stress-activated protein kinase-1 (SAPK1)], kinases that phosphorylate APP, were reduced. Furthermore, Cerebrolysin reduced the levels of phosphorylated APP and the accumulation of APP in the neuritic processes. Taken together, these results suggest that Cerebrolysin might reduce AD-like pathology in the APP tg mice by regulating APP maturation and transport to sites where Abeta protein is generated."
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Non-amyloidogenic subgraph"}
+p(MGI:Gsk3b) increases p(MGI:App, pmod(Ph))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Non-amyloidogenic subgraph"}
+a(MESHC:cerebrolysin) decreases p(MGI:Cdk5)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Non-amyloidogenic subgraph"}
+a(MESHC:cerebrolysin) decreases p(MGI:Gsk3b)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Non-amyloidogenic subgraph"}
+a(MESHC:cerebrolysin) decreases p(MGI:App, pmod(Ph))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Non-amyloidogenic subgraph"}
+a(MESHC:cerebrolysin) decreases tloc(p(MGI:App), fromLoc(MESHCS:"Cell Surface Extensions"), toLoc(MESHCS:Endosomes))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Non-amyloidogenic subgraph"}
+a(MESHC:cerebrolysin) decreases a(MESHC:"Amyloid beta-Peptides")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Non-amyloidogenic subgraph"}
+p(MGI:Cdk5) increases p(MGI:App, pmod(Ph))
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16814287"}
+
+SET SupportingText = "Previously we described presenilin-1 (PS1) as a GSK-3beta substrate."
+SET Confidence = "Low"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:PSEN1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+p(HGNC:PSEN1) increases p(HGNC:GSK3B)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16866215"}
+
+SET SupportingText = "In addition, the sequential phosphorylation of CRMP2 by Cdk5 and GSK3beta is an important process of Sema3A signaling."
+SET Confidence = "High"
+SET Subgraph = {"Axonal guidance subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Regulation of actin cytoskeleton subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:DPYSL2, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16914869"}
+
+SET SupportingText = "In the present review, we discuss our initial in vitro results and additional investigations showing that Abeta activates GSK-3beta through impairment of phosphatidylinositol-3 (PI3)/Akt signaling; that Abeta-activated GSK-3beta induces hyperphosphorylation of tau, NFT formation, neuronal death, and synaptic loss (all found in the AD brain); that GSK-3beta can induce memory deficits in vivo; and that inhibition of GSK-3alpha (an isoform of GSK-3beta) reduces Abeta production."
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B) decreases bp(GOBP:memory)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B) association bp(GOBP:"neuron death")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B) increases complex(GOCC:"neurofibrillary tangle")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B) association bp(ADO:"loss_of_synapses")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+a(CHEBI:"amyloid-beta") increases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+bp(GOBP:"neuron death") association p(HGNC:GSK3B)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+bp(ADO:"loss_of_synapses") association p(HGNC:GSK3B)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3A) increases a(CHEBI:"amyloid-beta")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16973241"}
+
+SET SupportingText = "GSK3B is known to phosphorylate the microtubule protein tau (MAPT)."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) directlyIncreases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17049785"}
+
+SET SupportingText = "Here we review the role of insulin signaling in brain aging and AD, concluding that the signaling pathways downstream to neurotrophic and insulin signaling are defective and coincident with aberrant phosphorylation and translocation of key components, notably AKT and GSK3beta, but also rac> PAK signaling."
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction"}
+path(MESHD:"Alzheimer Disease") decreases bp(PTS:"Insulin receptor signaling pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction"}
+bp(PTS:"Insulin receptor signaling pathway") increases p(HGNC:GSK3B, pmod(Ph))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17078951"}
+
+SET SupportingText = "Phosphorylation of tau protein is regulated by several kinases, especially glycogen synthase kinase 3beta (GSK-3beta), cyclin-dependent protein kinase 5 (cdk5) and cAMP-dependent protein kinase (PKA)."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:CDK5)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:PRKACA)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17120162"}
+
+SET SupportingText = "The basal kinase activities of protein kinase-A (PKA), CaM Kinase II and GSK-3 were stimulated more than two-fold by isoproterenol, bradykinin and wortmannin, respectively. "
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+a(CHEBI:wortmannin) increases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "These studies suggest that PKA, cdk5, CaM Kinase II and GSK-3 are involved in the regulation of phosphorylation of tau and that AD-type phosphorylation of tau is probably a product of the synergistic action of two or more of these kinases."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:PRKACA), ma(kin)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17160145"}
+
+SET SupportingText = "In addition, cdk5/p25 might also interact with other pathways such as glycogen synthetase kinase 3beta (GSK3beta) and c-JUN kinase."
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3B) association complex(p(HGNC:CDK5), p(HGNC:CDK5R1))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph"}
+complex(p(HGNC:CDK5), p(HGNC:CDK5R1)) association p(HGNC:GSK3B)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph"}
+complex(p(HGNC:CDK5), p(HGNC:CDK5R1)) association p(HGNC:JUN)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = {"Cyclin-CDK subgraph", "GSK3 subgraph"}
+p(HGNC:JUN) association complex(p(HGNC:CDK5), p(HGNC:CDK5R1))
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17360687"}
+
+SET SupportingText = "Here, we show that cells overexpressing tau exhibit marked resistance to apoptosis induced by various apoptotic stimuli, which also causes correlated tau hyperphosphorylation and glycogen synthase kinase 3 (GSK-3) activation. "
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(HGNC:GSK3B)) association bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+p(HGNC:CTNNB1, pmod(Ph)) association bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+bp(GOBP:"apoptotic process") association p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+bp(GOBP:"apoptotic process") association act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "GSK3 subgraph"
+p(HGNC:MAPT) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "These results reveal an antiapoptotic function of tau hyperphosphorylation, which likely inhibits competitively phosphorylation of beta-catenin by GSK-3beta and hence facilitates the function of beta-catenin."
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(HGNC:GSK3B)) increases p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17360711"}
+
+SET SupportingText = "We demonstrate that phosphorylation of serines 353 and 357 by glycogen synthase kinase-3beta (GSK3beta) induces a structural change of the hydrophilic loop of PS1 that can also be mimicked by substitution of the phosphorylation sites by negatively charged amino acids in vitro and in cultured cells. The structural change of PS1 reduces the interaction with beta-catenin leading to decreased phosphorylation and ubiquitination of beta-catenin."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:PSEN1, pmod(Ph, Ser, 353))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:PSEN1, pmod(Ph, Ser, 357))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:CTNNB1, pmod(Ph)) positiveCorrelation complex(p(HGNC:CTNNB1), p(HGNC:PSEN1))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:PSEN1, pmod(Ph, Ser, 353)) decreases complex(p(HGNC:CTNNB1), p(HGNC:PSEN1))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:PSEN1, pmod(Ph, Ser, 357)) decreases complex(p(HGNC:CTNNB1), p(HGNC:PSEN1))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:CTNNB1, pmod(Ub)) positiveCorrelation complex(p(HGNC:CTNNB1), p(HGNC:PSEN1))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+complex(p(HGNC:CTNNB1), p(HGNC:PSEN1)) positiveCorrelation p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+complex(p(HGNC:CTNNB1), p(HGNC:PSEN1)) positiveCorrelation p(HGNC:CTNNB1, pmod(Ub))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17389597"}
+
+SET SupportingText = "Glycogen synthase kinase 3beta-mediated phosphorylation of Presenilin 1 reduces its binding to N-cadherin, thereby down-regulating its cell-surface expression."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:PSEN1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) decreases complex(p(HGNC:CDH2), p(HGNC:PSEN1))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) decreases tloc(p(HGNC:PSEN1), fromLoc(GOCC:intracellular), toLoc(GOCC:"cell surface"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+tloc(p(HGNC:PSEN1), fromLoc(GOCC:intracellular), toLoc(GOCC:"cell surface")) positiveCorrelation complex(p(HGNC:CDH2), p(HGNC:PSEN1))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+complex(p(HGNC:CDH2), p(HGNC:PSEN1)) positiveCorrelation tloc(p(HGNC:PSEN1), fromLoc(GOCC:intracellular), toLoc(GOCC:"cell surface"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+complex(p(HGNC:CDH2), p(HGNC:PSEN1)) negativeCorrelation p(HGNC:PSEN1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+p(HGNC:PSEN1, pmod(Ph)) negativeCorrelation complex(p(HGNC:CDH2), p(HGNC:PSEN1))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Our findings indicate that the abnormal activation of glycogen synthase kinase 3beta can reduce neuronal viability and synaptic plasticity via modulating Presenilin 1/N-cadherin/beta-catenin interaction and thus have important implications in the pathophysiology of Alzheimer disease."
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) increases bp(GOBP:"neuron death")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) decreases bp(GOBP:"regulation of synaptic plasticity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) regulates complex(p(HGNC:CDH2), p(HGNC:CTNNB1), p(HGNC:PSEN1))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph", "Gamma secretase subgraph"}
+path(MESHD:"Alzheimer Disease") association act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Presenilin 1 interacts with N-cadherin/beta-catenin to form a trimeric complex at the synaptic site through its loop domain, whose serine residues (serine 353 and 357) can be phosphorylated by glycogen synthase kinase 3beta."
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:PSEN1, pmod(Ph, Ser, 353))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph", "Gamma secretase subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:PSEN1, pmod(Ph, Ser, 357))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph", "Gamma secretase subgraph"}
+p(HGNC:PSEN1) increases complex(p(HGNC:CDH2), p(HGNC:CTNNB1), p(HGNC:PSEN1))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17683481"}
+
+SET SupportingText = "This function of CRMP2 is regulated by phosphorylation by glycogen synthase kinase 3 (GSK3) and cyclin-dependent kinase 5 (Cdk5)."
+SET Confidence = "High"
+SET Subgraph = {"Axonal guidance subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Regulation of actin cytoskeleton subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:DPYSL2, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17902168"}
+
+SET SupportingText = "Both GSK-3alpha and 3beta phosphorylate purified pig brain CRMP-2 and significantly alter its mobility in SDS-gels, resembling the CRMP-2 pmodification observed in AD brain."
+SET Confidence = "High"
+SET Species = "9823"
+SET Subgraph = {"Axonal guidance subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Regulation of actin cytoskeleton subgraph"}
+p(HGNC:GSK3B) increases p(HGNC:DPYSL2, pmod(Ph))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "9823"
+SET Subgraph = {"Axonal guidance subgraph", "GSK3 subgraph", "Nerve growth factor subgraph", "Regulation of actin cytoskeleton subgraph"}
+p(HGNC:GSK3A) increases p(HGNC:DPYSL2, pmod(Ph))
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Ser-522 prephosphorylated by Cdk5 is required for subsequent GSK-3alpha-mediated phosphorylation of CRMP-2 in vitro."
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(HGNC:GSK3A)) increases p(HGNC:DPYSL2, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(HGNC:GSK3A)) positiveCorrelation p(HGNC:DPYSL2, pmod(Ph, Ser, 522))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+p(HGNC:DPYSL2, pmod(Ph, Ser, 522)) positiveCorrelation act(p(HGNC:GSK3A))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18217188"}
+
+SET SupportingText = "Simultaneously, it increased the level of Ser9-phosphorylated (inactive) GSK-3beta"
+SET Confidence = "High"
+SET Subgraph = {"Estrogen subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3B, pmod(Ph, Ser, 9)) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Estrogen subgraph", "GSK3 subgraph"}
+a(CHEBI:"17beta-estradiol") increases p(HGNC:GSK3B, pmod(Ph, Ser, 9))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "We found that betaE2 could attenuate tau hyperphosphorylation at multiple AD-related sites, including Ser396/404, Thr231, Thr205, and Ser199/202, induced by Wort/GFX or transient overexpression of GSK-3beta. "
+SET Confidence = "High"
+SET Subgraph = {"Estrogen subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Estrogen subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+a(CHEBI:"17beta-estradiol") decreases p(HGNC:MAPT, pmod(Ph, Thr, 231))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Estrogen subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+a(CHEBI:"17beta-estradiol") decreases p(HGNC:MAPT, pmod(Ph, Thr, 205))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Estrogen subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+a(CHEBI:"17beta-estradiol") decreases p(HGNC:MAPT, pmod(Ph, Ser, 396))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Estrogen subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+a(CHEBI:"17beta-estradiol") decreases p(HGNC:MAPT, pmod(Ph, Ser, 404))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Estrogen subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+a(CHEBI:"17beta-estradiol") decreases p(HGNC:MAPT, pmod(Ph, Ser, 199))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Estrogen subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+a(CHEBI:"17beta-estradiol") decreases p(HGNC:MAPT, pmod(Ph, Ser, 202))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18494933"}
+
+SET SupportingText = "it has been demonstrated that micromolar S100B concentrations stimulate c-Jun N-terminal kinase (JNK) phosphorylation through the receptor for advanced glycation ending products, and subsequently activate nuclear AP-1/cJun transcription, in cultured human neural stem cells. In addition, as revealed by Western blot, small interfering RNA and immunofluorescence analysis, S100B-induced JNK activation increased expression of Dickopff-1 that, in turn, promoted glycogen synthase kinase 3beta phosphorylation and beta-catenin degradation, causing canonical Wnt signaling pathway disruption and tau protein hyperphosphorylation. These findings propose a previously unrecognized link between S100B and tau hyperphosphorylation, suggesting S100B can contribute to NFT formation in AD and in all other conditions in which neuroinflammation may have a crucial role."
+SET Confidence = "High"
+SET Subgraph = {"Calcium-dependent signal transduction", "GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:CTNNB1) positiveCorrelation bp(GOBP:"Wnt signaling pathway")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Very High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph", "Wnt signaling subgraph"}
+p(HGNC:CTNNB1) negativeCorrelation p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Very High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph", "Wnt signaling subgraph"}
+p(HGNC:MAPT, pmod(Ph)) negativeCorrelation p(HGNC:CTNNB1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Calcium-dependent signal transduction", "GSK3 subgraph", "Wnt signaling subgraph"}
+bp(GOBP:"Wnt signaling pathway") positiveCorrelation p(HGNC:CTNNB1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Calcium-dependent signal transduction", "DKK1 subgraph", "GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:S100B) increases p(HGNC:GSK3B, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Calcium-dependent signal transduction", "DKK1 subgraph", "GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:S100B) increases p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Calcium-dependent signal transduction", "DKK1 subgraph", "GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:GSK3B, pmod(Ph)) positiveCorrelation p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Very High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph", "Wnt signaling subgraph"}
+p(HGNC:GSK3B, pmod(Ph)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Calcium-dependent signal transduction", "DKK1 subgraph", "GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:DKK1) positiveCorrelation p(HGNC:GSK3B, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18852562"}
+
+SET SupportingText = "Recent findings from our and other groups have suggested glycogen synthase kinase 3 and p70 S6 kinase as main tau kinases and protein \ phosphatase 2A as the main tau phosphatase involved in the formation of these processes."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(SFAM:"GSK3 Family")) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19038340"}
+
+SET SupportingText = "Compared to vehicle, Abeta increased GSK3 activity, and was associated with elevations in levels of ptau, caspase-3, the tau kinase phospho-c-jun N-terminal kinase (pJNK), neuronal DNA fragmentation, and gliosis."
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+a(CHEBI:"amyloid-beta") increases act(p(SFAM:"GSK3 Family"))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19154537"}
+
+SET SupportingText = "Glycogen synthase kinase-3beta (GSK-3beta) and cyclin-dependent kinase 5 (CDK5) have been implicated as two major protein kinases involved in the abnormal hyperphosphorylation of tau in Alzheimer's disease (AD) brain, and the development of neurofibrillary tangles."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:MAPT, pmod(Ph)) increases complex(GOCC:"neurofibrillary tangle")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:CDK5)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19429119"}
+
+SET SupportingText = "We have previously demonstrated that Leptin reduces extracellular amyloid beta (Abeta) protein both in vitro and in vivo, and intracellular tau phosphorylation in vitro. Further, we have shown that these effects are dependent on activation of AMP-activated protein kinase (AMPK) in vitro. Herein, we investigated downstream effectors of AMPK signaling directly linked to tau phosphorylation. One such target, of relevance to Alzheimer's disease (AD), may be GSK-3beta, which has been shown to be inactivated by Leptin. We therefore dissected the role of GSK-3beta in mediating Leptin's ability to reduce tau phosphorylation in neuronal cells. Our data suggest that Leptin regulates tau phosphorylation through a pathway involving both AMPK and GSK-3beta. This was based on the following: Leptin and the cell-permeable AMPK activator, 5-aminoimidazole-4-carboxyamide ribonucleoside (AICAR), reduced tau phosphorylation at AD-relevant sites similarly to the GSK-3beta inhibitor, lithium chloride (LiCl). Further, this reduction of tau phosphorylation was mimicked by the downregulation of GSK-3beta, achieved using siRNA technology and antagonized by the ectopic overexpression of GSK-3beta. "
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Leptin subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Leptin subgraph", "Tau protein subgraph"}
+bp(GOBP:"regulation of cAMP-dependent protein kinase activity") association p(HGNC:LEP)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Leptin subgraph", "Tau protein subgraph"}
+p(HGNC:LEP) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Leptin subgraph", "Tau protein subgraph"}
+p(HGNC:LEP) association bp(GOBP:"regulation of cAMP-dependent protein kinase activity")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19458225"}
+
+SET SupportingText = "Interestingly, GPCs from AD patients exhibited elevated levels of glycogen synthase kinase 3beta (GSK-3beta, an enzyme known to phosphorylate beta-catenin), accompanied by an increase in phosphorylated beta-catenin and a decrease in nonphosphorylated beta-catenin compared with HC counterparts."
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3B) increases p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19519303"}
+
+SET SupportingText = "Activation of the catalytic subunit of the PI3-kinase results in phosphorylation of phosphatidylinositide-diphosphate (PI4,5P) to generate phosphatidylinositide-triphosphate (PI3,4,5P). This leads to activation of several downstream targets, such as phosphoinositide-dependent protein kinase (PDK)-1, protein kinase B (PKB, AKT), p70S6kinase, glycogen synthase kinase(GSK)-3 and BAD a proapoptotic member of the Bcl-2 family. Phosphorylation of GSK-3 and BAD inactivates these proteins and thereby inhibits further signaling leading to apoptosis. Activated AKT phosphorylates the forkhead transcription factor Foxo, which triggers its nuclear exclusion and thereby regulates transcription of genes involved in development, growth, stress resistance, apoptosis, metabolism and aging [29-31]. Several Foxo target genes might play an important role for the pathogenetics of AD (review in [32]): Catalase and MnSOD (manganese superoxid dismutase) are crucial in promoting longevity by possibly acting as antioxidants due to reduced insulin-like signaling in various species such as drosophila [33] and C. elegans [34]. "
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+p(HGNC:GSK3B, pmod(Ph)) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+p(HGNC:GSK3B, pmod(Ph)) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+a(CHEBI:"1-phosphatidyl-1D-myo-inositol 3,4,5-trisphosphate") increases act(p(HGNC:RPS6KB1))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+a(CHEBI:"1-phosphatidyl-1D-myo-inositol 3,4,5-trisphosphate") increases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "CerebraiiR/IGF-1 signaling in APP metabolism. Binding of insulin and IGF-1 to their receptors leads to autophosphorylation of the -subunit of the IR/IGF-IR and recruitment of IRS-1 /-2. IRS proteins activate mainly two pathways, the PI3 kinase pathway, and the RAS-RAF-MAP kinase cascade. Tau phosphorylation via IR/IGF-1 signaling is influenced by GSK-3 and the tau phosphatase PP2A. InterÂ­ estingly, mTOR signaling couples the activity ofPP2A and GSK-3in a way that the activities of both enzymes change always in the same direction. suggesting that only a dysregulation of either PP2A or GSK-3induces tau hyperphosphorylation. The PI3K pathway as well as the RAS-RAF-MAPK cascade regulate different transcription factors involved in transcriptional regulation of metabolism and clearance of Â­ amyloid. APP is cleaved by a.-, -secretase (BACE-1) and y-secretase (presenilin). - and subsequent y-cleavage of APP leads to generation of -amyloid 1 -4o/ t-42â€¢ IGF-1 signaling promotes a switch lrom TrkA to p75NTR expression leading to increased -secretase activity due to an upregulation of BACE-1 expression. Recent data suggest that not only BACE-1 is int1uenced by IRIIGF- IR mediated signals but also a.Â­ secretase activity is stimulated by the PI3K pathway."
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction"}
+p(HGNC:GSK3B) increases complex(p(HGNC:IGF1), p(HGNC:INSR))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "mTOR signaling subgraph"}
+act(p(HGNC:GSK3B)) association bp(GOBP:"TOR signaling")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "mTOR signaling subgraph"}
+bp(GOBP:"TOR signaling") association act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction"}
+p(HGNC:PPP2CA) increases complex(p(HGNC:IGF1), p(HGNC:INSR))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "GSK-3 is a serine/threonine kinase, modulated by insulin/IGF-1 signaling. When the IRIIGF-IR pathÂ­ way is activated, GSK-3is phosphorylated by AKT at Scr 9 leading to its inactivation [I 06-109]. However, PP2A dephosphorylates GSK-3(review in [II 0]), which then phosphorylates tau at several sites leading to an equilibrium of phosphorylation and dephosphorylation of tau (Overview : see Fig. 1). Thus, impaired IRIIGF-1 R signaling might lead to hyperphosphory lation of tau protein and an in creased forÂ­ mation of neurofibrillary tangles."
+SET Confidence = "High"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3B, pmod(Ph, Ser, 9)) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph"}
+act(p(HGNC:AKT1)) increases p(HGNC:GSK3B, pmod(Ph, Ser, 9))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction"}
+bp(GOBP:"insulin receptor signaling pathway") decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction"}
+bp(GOBP:"insulin-like growth factor receptor signaling pathway") decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In SHSY5Y cells, a human neuroblastoma cell line, as well as in primary cultu res of rat cortical neurons insulin administration leads to tau hyperphosphorylation (111-113]. In contrast, insulin and IGF- 1 administration in NT2N cells, cultured human neurons, decreases tau phosphorylation [114]. In primary cortical neuron cultures, M esk e et a/ . (115J found that insulin treatment causes a regulatory interaction between PP2A and GSK-3. Inhibition of Pl3-kinase leads to activat ion of GSK-3and PP2A. Enzyme activity of both enzymes al ways changed in the same direction. This balÂ­ anced response seemed to induce a steady state in tau phosÂ­ phorylation at GSK-3/PP2A-dependent sites (115]. Thus, on ly a dysbalance of insulin/IGF-1 regulated tau kinases and phosphatases might lead to tau hyperphosphorylation, partially explaining the different resu lts obtained under different conditions."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+act(p(HGNC:GSK3B)) negativeCorrelation p(HGNC:PIK3CA)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+act(p(HGNC:GSK3B)) isA complex(p(HGNC:GSK3B), p(HGNC:PPP2CA))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+p(HGNC:MAPT, pmod(Ph)) association complex(p(HGNC:GSK3B), p(HGNC:PPP2CA))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+complex(p(HGNC:GSK3B), p(HGNC:PPP2CA)) association p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+p(HGNC:PIK3CA) negativeCorrelation act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+p(HGNC:PIK3CA) negativeCorrelation act(p(HGNC:PPP2CA))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "Tau protein subgraph"}
+SET UserdefinedCellLine = "primary cortical neuron"
+p(HGNC:INS) increases complex(p(HGNC:GSK3B), p(HGNC:PPP2CA))
+UNSET {Confidence, Subgraph, UserdefinedCellLine}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+act(p(HGNC:PPP2CA)) negativeCorrelation p(HGNC:PIK3CA)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Phosphatidylinositol 3 subgraph"}
+act(p(HGNC:PPP2CA)) isA complex(p(HGNC:GSK3B), p(HGNC:PPP2CA))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The phosphorylation of tau is mainly promoted by GSK-3and cyclin-dependent kinase 5 (Cdk5). Besides these kinases, activated c-Jun N-terminal kinases (JNK) and ERK-1 /-2 signaling lead to an increase in tau phosphorylation and th erefore might be of importance in AD pathogenesis."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19782073"}
+
+SET SupportingText = "In Alzheimer disease, it has been proposed that the peptide beta amyloid promotes GSK3 activation, resulting in tau phosphorylation"
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+a(CHEBI:"amyloid-beta") increases act(p(SFAM:"GSK3 Family"))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph", "Tau protein subgraph"}
+act(p(SFAM:"GSK3 Family")) directlyIncreases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19885299"}
+
+SET SupportingText = "By way of review, insulin and IGF-1 mediate their effects by activating complex intracellular signaling pathways starting with ligand binding to cell surface receptors, followed by autophosphorylation and activation of the intrinsic receptor tyrosine kinases.34â€“36 Insulin/IGF-1 receptor tyrosine kinases phosphorylate IRS molecules,34,37â€“39 which transmit signals downstream by activating the extracellular signal-related kinase/mitogen-activated protein kinase (ERK/MAPK) and PI3 kinase/Akt pathways, and inhibit glycogen synthase kinase 3beta (GSK-3beta). Major biological responses to signaling through IRS molecules include increased cell growth; survival, energy metabolism, and cholinergic gene expression; and inhibition of oxidative stress and apoptotic process.39â€“46 "
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:GSK3B)) regulates bp(MESHPP:"Energy Metabolism")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+p(HGNC:GSK3B, pmod(Ph, Ser, 9)) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:BAD)) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(SFAM:"AKT Family")) increases p(HGNC:GSK3B, pmod(Ph, Ser, 9))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(SFAM:"AKT Family")) increases p(HGNC:GSK3A, pmod(Ph, Ser, 21))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(SFAM:"AKT Family")) decreases act(p(HGNC:BAD))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(SFAM:"AKT Family")) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+p(HGNC:INS) directlyIncreases act(p(HGNC:INSR))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:INSR)) positiveCorrelation bp(GOBP:"insulin receptor signaling pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:INSR)) increases p(HGNC:IRS1, pmod(Ph))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:INSR)) increases p(HGNC:IRS2, pmod(Ph))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:INSR)) increases p(HGNC:IRS4, pmod(Ph))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+bp(GOBP:"insulin receptor signaling pathway") positiveCorrelation act(p(HGNC:INSR))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+p(HGNC:IRS1, pmod(Ph)) increases act(p(HGNC:IRS1))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+p(HGNC:IRS2, pmod(Ph)) increases act(p(HGNC:IRS2))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+p(HGNC:IRS4, pmod(Ph)) increases act(p(HGNC:IRS4))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:IRS1)) increases bp(PTS:"PI3K/AKT signaling")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:IRS1)) decreases bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:IRS1)) increases bp(PTS:"Ras/MEK/ERK pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+bp(PTS:"PI3K/AKT signaling") increases act(p(SFAM:"AKT Family"))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+bp(PTS:"Ras/MEK/ERK pathway") increases bp(GOBP:"cell growth")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+bp(PTS:"Ras/MEK/ERK pathway") increases bp(MESHPP:"Cell Survival")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+bp(GOBP:"insulin-like growth factor receptor signaling pathway") positiveCorrelation act(p(HGNC:IGF1R))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:IGF1R)) increases p(HGNC:IRS4, pmod(Ph))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:IGF1R)) positiveCorrelation bp(GOBP:"insulin-like growth factor receptor signaling pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+p(HGNC:IGF1) directlyIncreases act(p(HGNC:IGF1R))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:IRS4)) decreases bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:IRS4)) increases p(HGNC:GRB2)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:IRS4)) increases bp(PTS:"Ras/MEK/ERK pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:IRS2)) increases bp(PTS:"PI3K/AKT signaling")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:IRS2)) decreases bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = "Adipocytes"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "MAPK-ERK subgraph"}
+act(p(HGNC:IRS2)) increases bp(PTS:"Ras/MEK/ERK pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Rosiglitazone is a TZD derivative that was recently observed to improve cognition in both APP transgenic mice and AD patients [Watson et al., 2005; Pedersen et al., 2006]. It activates PPARgamma leading to increased glucose disposal rates [Jung et al., 2005] and is also neuroprotective against Abeta neurotoxicity [Inestrosa et al., 2005]. Neuroprotection may result through modulation of Wnt signaling since an increase in beta-catenin and inhibition of GSK-3beta is observed upon exposure to rosiglitazone [Inestrosa et al., 2005], although a different study has shown that activation of PPARgamma by a potent ligand leads to beta-catenin degradation [Liu and Farmer 2004]. Nonetheless, in support of the role for PPARgamma activation in neuroprotection, PPARgamma agonists have potent anti-inflammatory effects [Luna-Medina et al., 2005], inhibit microglial activation [Bernardo et al., 2005; Heneka et al., 2005] and have been shown to improve verbal memory in AD patients with T2DM, possibly in a mechanism dependent on PPARgamma activation . A recent report demonstrates that overexpression of PPARgamma in cultured cells leads to a dramatic decrease in the production of Abeta, by increasing the rate of APP degradation via ubiquitination [D'Abramo et al., 2005]. This study also showed that by decreasing Abeta secretion, PPARgamma protects the cells against H2O2-mediated necrosis [D'Abramo et al., 2005]."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+bp(GOBP:"Wnt signaling pathway") positiveCorrelation bp(MESH:D000066829)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+bp(MESH:D000066829) positiveCorrelation bp(GOBP:"Wnt signaling pathway")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+a(CHEBI:rosiglitazone) decreases p(HGNC:GSK3B)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20056834"}
+
+SET SupportingText = "Genes known to contribute to neuroinflammation that were most negatively affected by GSK3beta inactivation included IP-10/CXCL10, MCP-1/CCL2, IL-8/CXCL8, RANTES/CCL5, and Groalpha/CXCL1. Interactions of monocytes with TNFalpha-activated BMVECs led to barrier disruption, and GSK3beta suppression in the endothelium restored barrier integrity. GSK3beta inhibition in vivo substantially decreased leukocyte adhesion to brain endothelium under inflammatory conditions. In summary, inhibition of GSK3beta emerges as an important target for stabilization of the blood-brain barrier in neuroinflammation."
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Inflammatory response subgraph"}
+act(p(HGNC:GSK3B)) increases bp(GOBP:"inflammatory response")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Chemokine signaling subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CXCL10)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Chemokine signaling subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CCL2)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Interleukin signaling subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CXCL8)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Chemokine signaling subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CCL5)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Chemokine signaling subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CXCL1)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(HGNC:GSK3B)) decreases bp(GOBP:"maintenance of permeability of blood-brain barrier")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Inhibition of glycogen synthase kinase 3beta (GSK3beta) decreases inflammatory responses in brain endothelial cells."
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Inflammatory response subgraph"}
+act(p(HGNC:GSK3B)) increases bp(GOBP:"inflammatory response")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20157255"}
+
+SET SupportingText = "Treatment with leptin reversed the 27-OHC-induced increase in Abeta and phosphorylated tau by decreasing the levels of BACE-1 and GSK-3beta respectively."
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+p(HGNC:LEP) decreases p(HGNC:GSK3B)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20576277"}
+
+SET SupportingText = "In experimental pmodels of AD, GSK3B has been shown to hyperphosphorylate Tau, leading to microtubule disassembly and loss of function"
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20679343"}
+
+SET SupportingText = "Glycogen synthase kinase 3beta (GSK3beta) is a proline-directed kinase generally considered as one of the major players that (hyper)phosphorylates Tau."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20847424"}
+
+SET SupportingText = "Akt substrates such as mammalian target of rapamycin (mTOR; Ser2448) and decreased levels of cell-cycle inhibitors (p27kip1) are found in AD temporal cortex when compared to controls. GSK-3a has been implicated in the production of Abeta peptide while increased GSK-3beta activity has been implicated in tau hyperphosphorylation and neuronal cell death"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"Apoptosis signaling subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B), ma(kin)) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3A)) increases a(CHEBI:"amyloid-beta")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The PI3K/Akt signaling: PI3K, a membrane-associated second messenger protein, and its downstream kinase, Akt, are associated with neuronal survival [111] and plasticity [112] via activation of transcription pathways and protein synthesis. PI3K pathway, which required the activation of IGF-1/insulin receptors, is the most convincing prosurvival effect of ABeta¸42 monomers. The PI3K signaling pathway is important in the transmission of survival signals in many cell types including neurons [113, 114]. The PI3K-Akt signaling cascade, initiated by IRS, is phosphorylated by stimulated insulin- andIGF-receptor tyrosine kinases [115]. One of the kinases known to lie downstream of PI3K is Akt, which can be directly activated by products of PI3K [116] by promoting its phosphorylation at Ser473 and Thr308 [117]. Activated Akt, in turn, phosphorylates a wide range of substrates activating anti-apoptotic (survival) factors and inactivating pro-apoptotic factors [114, 117]. Certain proapoptotic mediators, such as the transcription factor forkhead (FOXO), the tau kinase GSK-3ÃƒÅ¸, and the Bcl2 antagonist BAD proteins, are inactivated by Akt [118, 119]. Akt downregulates the activities of GSK-3a and GSK-3ÃƒÅ¸ by phosphorylating the former at Ser21 and the latter at Ser9 [118]. Phosphorylation/inactivation of GSK-3ÃƒÅ¸, suppresses GSK-3ÃƒÅ¸-dependent phosphorylation of tau at residues overphosphorylated in AD and prevents apoptosis of confluent cells. Treatment of cortical neurons with ABeta¸42 monomers increased Ser9 phosphorylation (inhibition) of the Akt substrate, GSK- 3ÃƒÅ¸ [97]. Inhibition of GSK-3ÃƒÅ¸ promotes cell survival through a variety of mechanisms including a reduced degradation of ÃƒÅ¸-catenin, which then translocates into the nucleus and activates the transcription of protective genes [126]."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) positiveCorrelation bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) negativeCorrelation p(HGNC:CTNNB1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+bp(GOBP:"neuron apoptotic process") positiveCorrelation act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+p(HGNC:APP, frag("672_713")) increases p(HGNC:GSK3B, pmod(Ph, Ser, 9))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3B, pmod(Ph, Ser, 9)) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B, pmod(Ph, Ser, 9)) decreases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B, pmod(Ph, Ser, 9)) decreases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+p(HGNC:CTNNB1) negativeCorrelation act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph"}
+act(p(SFAM:"AKT Family")) increases p(HGNC:GSK3B, pmod(Ph, Ser, 9))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph"}
+act(p(SFAM:"AKT Family")) increases p(HGNC:GSK3A, pmod(Ph, Ser, 21))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph"}
+act(p(SFAM:"AKT Family")) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph"}
+act(p(SFAM:"AKT Family")) decreases act(p(HGNC:GSK3A))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Akt subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3A, pmod(Ph, Ser, 21)) decreases act(p(HGNC:GSK3A))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21034527"}
+
+SET SupportingText = "Although the role of AICD as a gene transcription inducer is still controversial, several targets of AICD- or APP-mediated transcriptional activation are reportedly regulated by APP nuclear signaling, including APP itself, BACE, Tip60, GSK-3ÃƒÅ¸, p53, Mn-SOD, KAI1, Neprilysin, transgelin, a2actin, S100a9, and other genes"
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(HGNC:APP)) increases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21156028"}
+
+SET SupportingText = "DYRK1A phosphorylates tau at 11 sites, including Thr212; primes tau phosphorylation by GSK-3beta; promotes tau aggregation into NFTs and the several-fold increase in the number of DYRK1A-positive NFTs. Phosphorylation of ASF by nuclear DYRK1A increases the level of 3R tau, leading to an imbalance in the 3R/4R-tau ratio and triggering neurofibrillary degeneration with a several-fold increase of 3R-tau-positive NFTs. Both cytoplasmic and nuclear pathways contribute to neurofibrillary degeneration, loss of neuron function, and neuronal death."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Published = "CDR story"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Disease, Published, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Published = "CDR story"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:MAPT, pmod(Ph)) increases complex(GOCC:"neurofibrillary tangle")
+UNSET {Confidence, Disease, Published, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Published = "CDR story"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+complex(GOCC:"neurofibrillary tangle") increases bp(GOBP:"neuron death")
+UNSET {Confidence, Disease, Published, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21297267"}
+
+SET SupportingText = "We found a significant reduction of calyculin A-induced tau hyperphosphorylation at Ser198/199/202, Ser396, Ser404, Thr205, and Thr231 24 h after treatment with 20 Î¼g/ml berberine. Berberine also restored protein phosphates 2A activity and reversed glycogen synthase kinase-3beta (GSK-3beta) activation, as determined by phosphatase activity assay and GSK-3beta phosphorylation at Tyr216 and Ser9, respectively. Furthermore, berberine reversed both the increase of malondialdehyde and the decrease of superoxide dismutase activity induced by calyculin A, indicating its role in anti-oxidative stress."
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+a(CHEBI:berberine) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+a(CHEBI:berberine) decreases a(CHEBI:malonaldehyde)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21352912"}
+
+SET SupportingText = "Thirdly, GSK-3beta has many substrates, such as beta-catenin, APC, Axin, Tau protein, etc."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) association p(SFAM:"AXIN Family")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) association p(HGNC:APC)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(SFAM:"AXIN Family") association act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:APC) association act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21598254"}
+
+SET SupportingText = "This decrease in insulin-PI3K-AKT signalling could lead to activation of glycogen synthase kinase-3beta, the major tau kinase."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "Phosphatidylinositol 3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) negativeCorrelation bp(GOBP:"insulin receptor signaling pathway via phosphatidylinositol 3-kinase")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "Phosphatidylinositol 3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases bp(GOBP:"regulation of tau-protein kinase activity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "Phosphatidylinositol 3 subgraph", "Tau protein subgraph"}
+p(HGNC:MAPT, pmod(Ph)) association bp(GOBP:"regulation of tau-protein kinase activity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "Phosphatidylinositol 3 subgraph", "Tau protein subgraph"}
+bp(GOBP:"regulation of tau-protein kinase activity") association p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Insulin signal transduction", "Phosphatidylinositol 3 subgraph", "Tau protein subgraph"}
+bp(GOBP:"insulin receptor signaling pathway via phosphatidylinositol 3-kinase") negativeCorrelation act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21720686"}
+
+SET SupportingText = "The availability of megalin at the cell surface is controlled by several regulatory mechanisms, including the phosphorylation of its cytoplasmic domain by GSK3, the proteolysis of the extracellular domain at the cell surface (shedding), the subsequent intramembrane proteolysis of the transmembrane domain by the gamma-secretase complex, and exosome secretion"
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Low density lipoprotein subgraph"}
+p(SFAM:"GSK3 Family") regulates p(HGNC:LRP2, pmod(Ph))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21945540"}
+
+SET SupportingText = "Abeta-Amyloid (Abeta) plaques in Alzheimer (AD) brains are surrounded by severe dendritic and axonal changes, including local spine loss, axonal swellings and distorted neurite trajectories. Whether and how plaques induce these neuropil abnormalities remains unknown. We tested the hypothesis that oligomeric assemblies of Abeta, seen in the periphery of plaques, mediate the neurodegenerative phenotype of AD by triggering activation of the enzyme GSK-3beta, which in turn appears to inhibit a transcriptional program mediated by CREB. We detect increased activity of GSK-3beta after exposure to oligomeric Abeta in neurons in culture, in the brain of double transgenic APP/tau mice and in AD brains. Activation of GSK-3beta, even in the absence of Abeta, is sufficient to produce a phenocopy of Abeta-induced dendritic spine loss in neurons in culture, while pharmacological inhibition of GSK-3beta prevents spine loss and increases expression of CREB-target genes like BDNF. Of note, in transgenic mice GSK-3beta inhibition ameliorated plaque-related neuritic changes and increased CREB-mediated gene expression. Moreover, GSK-3beta inhibition robustly decreased the oligomeric Abeta load in the mouse brain. All these findings support the idea that GSK3beta is aberrantly activated by the presence of Abeta, and contributes, at least in part, to the neuronal anatomical derangement associated with Abeta plaques in AD brains and to Abeta pathology itself."
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) decreases act(p(INTERPRO:"cAMP response element binding (CREB) protein"))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(HGNC:GSK3B)) decreases r(HGNC:BDNF)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+a(CHEBI:"amyloid-beta") increases act(p(HGNC:GSK3B))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+a(CHEBI:"amyloid-beta") increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+p(HGNC:APP, frag("672_713")) increases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(MGI:Gsk3b)) negativeCorrelation act(p(SFAM:"CREB Family"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(SFAM:"CREB Family")) positiveCorrelation r(HGNC:BDNF)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(SFAM:"CREB Family")) negativeCorrelation act(p(MGI:Gsk3b))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+r(HGNC:BDNF) positiveCorrelation act(p(SFAM:"CREB Family"))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21985244"}
+
+SET SupportingText = "In this in vitro study, we found that: (a) alpha-SN directly stimulates the phosphorylation of tau by glycogen synthase kinase-3beta (GSK-3beta), (b) alpha-SN forms a heterotrimeric complex with tau and GSK-3beta, and (c) the nonamyloid beta component (NAC) domain and an acidic region of alpha-SN are responsible for the stimulation of GSK-3beta-mediated tau phosphorylation. Thus, it is concluded that alpha-SN functions as a connecting mediator for tau and GSK-3beta, resulting in GSK-3beta-mediated tau phosphorylation. Because the expression of alpha-SN is promoted by oxidative stress, the accumulation of alpha-SN induced by such stress may directly induce the hyperphosphorylation of tau by GSK-3beta. Furthermore, we found that heat shock protein 70 (Hsp70) suppresses the alpha-SN-induced phosphorylation of tau by GSK-3beta through its direct binding to alpha-SN, suggesting that Hsp70 acts as a physiological suppressor of alpha-SN-mediated tau hyperphosphorylation."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Synuclein subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) directlyIncreases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Synuclein subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) positiveCorrelation p(HGNC:SNCA)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Synuclein subgraph", "Tau protein subgraph"}
+bp(GOBP:"response to oxidative stress") increases p(HGNC:SNCA)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Synuclein subgraph", "Tau protein subgraph"}
+bp(GOBP:"response to oxidative stress") increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Synuclein subgraph", "Tau protein subgraph"}
+p(HGNC:SNCA) positiveCorrelation act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Synuclein subgraph", "Tau protein subgraph"}
+p(HGNC:SNCA) directlyIncreases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Synuclein subgraph", "Tau protein subgraph"}
+complex(p(HGNC:GSK3B), p(HGNC:MAPT), p(HGNC:SNCA)) increases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Synuclein subgraph", "Tau protein subgraph"}
+complex(p(HGNC:GSK3B), p(HGNC:MAPT), p(HGNC:SNCA)) directlyIncreases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Synuclein subgraph", "Tau protein subgraph"}
+p(FPLX:HSPA) decreases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Synuclein subgraph", "Tau protein subgraph"}
+p(FPLX:HSPA) directlyDecreases p(HGNC:SNCA)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22122372"}
+
+SET SupportingText = "Another transactivating complex consisting of AICD, Fe65 and Late SV40 Factor (LSF)/leader-binding protein-1 (LBP1)/transcription factor CP2 (TFCP2) has also been reported to induce the expression of GSK3-b (Kim et al. 2003)."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Non-amyloidogenic subgraph"}
+complex(p(HGNC:APBB1), p(HGNC:TFCP2), p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site")) association act(g(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Non-amyloidogenic subgraph"}
+act(g(HGNC:GSK3B)) association complex(p(HGNC:APBB1), p(HGNC:TFCP2), p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site"))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In addition, AICD-induced cytotoxicity may be mediated by its regulation targets. For example, P53 expression, as well as p53-mediated apoptotic process, can be enhanced by AICD. Another AICD target gene, GSK3-beta, may also contribute to AICD-related cytotoxicity by upregulating tau hyperphosphorylation. GSK-3beta activation and CRMP-2 phosphorylation, along with downstream tau hyper-phosphorylation/aggregation, neurodegeneration and memory loss, are observed in an AICD C59 transgenic mouse line in which Fe65 is co-expressed"
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Apoptosis signaling subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = "GSK3 subgraph"
+p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site") increases act(p(MGI:Gsk3b))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(MGI:Gsk3b)) increases p(MGI:Mapt, pmod(Ph))
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In addition, AICD-induced cytotoxicity may be mediated by its regulation targets. For example, P53\ expression, as well as p53-mediated apoptotic process, can be enhanced by AICD. Another AICD target gene, GSK3-b, may also\ contribute to AICD-related cytotoxicity by up-regulating tau hyperphosphorylation. GSK-3b activation and collapsin\ response mediator protein 2 (CRMP2) phosphorylation, along with downstream tau hyper-phosphorylation/aggregation,\ neurodegeneration and memory loss"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(HGNC:GSK3B)) decreases bp(GOBP:"generation of neurons")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+act(p(HGNC:GSK3B)) decreases bp(GOBP:memory)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site") increases act(p(HGNC:GSK3B))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Tip60, a histone acetyltransferase, is a component of a larger nuclear complex with DNA binding, ATPase and DNA helicase activities. Although Tip60 does not bind to AICD directly, an indirect interaction between AICD and Tip60 is mediated by Fe65. Upon forming this complex, AICD is stabilized and can be translocated into the nucleus to regulate expression of genes such as KAI1, Neprilysin, LRP1, p53, GSK-3b and EGF receptor"
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Non-amyloidogenic subgraph"}
+tloc(p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site"), fromLoc(MESHCS:Cytoplasm), toLoc(MESHCS:"Cell Nucleus")) positiveCorrelation act(p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Non-amyloidogenic subgraph"}
+act(p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site")) positiveCorrelation tloc(p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site"), fromLoc(MESHCS:Cytoplasm), toLoc(MESHCS:"Cell Nucleus"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Non-amyloidogenic subgraph"}
+act(p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site")) regulates r(HGNC:GSK3B)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Non-amyloidogenic subgraph"}
+act(p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site")) regulates p(SFAM:"EGFR/ERBB Family")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22184106"}
+
+SET SupportingText = "Alzheimer disease (AD) is characterized by the presence of senile plaques of amyloid-beta (Abeta) peptides derived from amyloid precursor protein (APP) and neurofibrillary tangles made of hyperphosphorylated Tau. Increasing APP gene dosage or expression has been shown to cause familial early-onset AD. However, whether and how protein stability of APP is regulated is unclear. The prolyl isomerase Pin1 and glycogen synthase kinase-3beta (GSK3beta) have been shown to have the opposite effects on APP processing and Tau hyperphosphorylation, relevant to the pathogenesis of AD. However, nothing is known about their relationship. In this study, we found that Pin1 binds to the pT330-P motif in GSK3beta to inhibit its kinase activity. Furthermore, Pin1 promotes protein turnover of APP by inhibiting GSK3beta activity. A point mutation either at Thr-330, the Pin1-binding site in GSK3beta, or at Thr-668, the GSK3beta phosphorylation site in APP, abolished the regulation of GSK3beta activity, Thr-668 phosphorylation, and APP stability by Pin1, resulting in reduced non-amyloidogenic APP processing and increased APP levels. These results uncover a novel role of Pin1 in inhibiting GSK3beta kinase activity to reduce APP protein levels, providing a previously unrecognized mechanism by which Pin1 protects against Alzheimer disease."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+p(HGNC:PIN1) decreases act(p(HGNC:GSK3B))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+p(HGNC:PIN1) increases deg(p(HGNC:APP))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+p(HGNC:PIN1) increases a(CHEBI:"amyloid-beta")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+p(HGNC:GSK3B, pmod(Ph, Thr, 668)) increases deg(p(HGNC:APP))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22496686"}
+
+SET SupportingText = "In the absence of Wnt ligand, axin recruits CK1 causing the initiation of the beta-catenin phosphorylation cascade by glycogen synthase kinase-3 beta (GSK-3beta). Phosphorylated beta-catenin is recognized by beta-transducin repeat-containing protein (beta-TrCP) and degraded by the proteosome, reducing the level of cytosolic beta-catenin."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+complex(p(HGNC:APC), p(HGNC:CSNK1A1), p(HGNC:CTNNB1), p(HGNC:GSK3B), p(SFAM:"AXIN Family")) increases act(p(HGNC:GSK3B))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:CTNNB1, pmod(Ph)) increases act(p(HGNC:BTRC))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Wnt signaling subgraph"}
+act(p(HGNC:BTRC)) decreases p(HGNC:CTNNB1)
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "It was reported that beta-catenin interacts with PSs, and that PS1 promotes beta-catenin degradation regulating phosphorylation by cyclin-dependent kinase 5 (CDK5) and GSK-3beta. Importantly, GSK-3beta was implicated in various neurological disorders, including AD"
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "It was reported that beta-catenin interacts with PSs, and that PS1 promotes beta-catenin degradation regulating phosphorylation by cyclin-dependent kinase 5 (CDK5) and GSK-3beta. Importantly, GSK-3beta was implicated in various neurological disorders, including AD."
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:CTNNB1, pmod(Ph))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22496686 "}
+
+SET SupportingText = "The increase in intracellular copper was correlated with a dramatic and rapid decrease in levels of extracellular ABeta¸ including ABeta¸1Ã¢â‚¬â€œ40 and 1Ã¢â‚¬â€œ42. It has been previously reported that CQ/copper complexes trigger the activation of PI3K and its downstream modulator Akt and the inhibition of glycogen synthase kinase 3 that in turn potentiated ERK1/2 phosphorylation.It is not clear if and how environmental factors take part to pathway discussed in this review, in which both ABeta¸PP and PS1 participate in the same signaling pathway leading, through Grb2 binding, to ERK1/2 activation and neurodegeneration. However, we may speculate that ERK1/2 activation by copper may contribute to the signal transduction system activated by ABeta¸PP, and PSs."
+SET Confidence = "High"
+SET Subgraph = "GSK3 subgraph"
+a(CHEBI:"copper atom") decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22613765"}
+
+SET SupportingText = "In this study, we found the AICD to strongly inhibit Wnt-induced transcriptional reporter activity, and to counteract Wnt-induced c-Myc expression. Loss of the AICD resulted in an increased responsiveness to Wnt/beta-catenin-mediated transcription. Mechanically, the AICD was found to interact with glycogen synthase kinase 3 beta (GSK3beta) and promote its kinase activity. The subsequent AICD-strengthened Axin-GSK3beta complex potentiates beta-catenin poly-ubiquitination."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases complex(p(HGNC:APC), p(HGNC:CSNK1A1), p(HGNC:CTNNB1), p(HGNC:GSK3B), p(SFAM:"AXIN Family"))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = "GSK3 subgraph"
+p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site") directlyIncreases act(p(HGNC:GSK3B))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site") increases complex(p(HGNC:APC), p(HGNC:CSNK1A1), p(HGNC:CTNNB1), p(HGNC:GSK3B), p(SFAM:"AXIN Family"))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Beta-Catenin subgraph", "GSK3 subgraph"}
+complex(p(HGNC:APC), p(HGNC:CSNK1A1), p(HGNC:CTNNB1), p(HGNC:GSK3B), p(SFAM:"AXIN Family")) increases p(HGNC:CTNNB1, pmod(Ub))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22718609"}
+
+SET SupportingText = "As a constitutively active kinase, glycogen synthase kinase 3 (GSK3) is a kinase which regulates body metabolism by phosphorylation of glycogen synthase (GS) and other substrates."
+SET Confidence = "Medium"
+SET Subgraph = "GSK3 subgraph"
+act(p(SFAM:"GSK3 Family")) increases p(HGNC:GYS1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The inhibition of this kinase can prevent the aggregation of beta-amyloid (Abeta) and hyperphosphorylation of tau protein."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"GSK3 subgraph", "Non-amyloidogenic subgraph"}
+act(p(HGNC:GSK3B)) increases a(HBP:"amyloid-beta aggregates")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The neuroprotective effects of novel drugs developed to treat T2DM, glucagon-like peptide 1 (GLP-1) and its long-lasting analogs, have a possible link to GSK3 modification."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Glucagon subgraph"}
+p(SFAM:"GSK3 Family") association act(p(HGNC:GCG))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Glucagon subgraph"}
+act(p(HGNC:GCG)) association p(SFAM:"GSK3 Family")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23362255"}
+
+SET SupportingText = "Alzheimer disease, the most common tauopathy, is characterized by neurofibrillary tangles that are mainly composed of abnormally phosphorylated Tau. Tau phosphorylation occurs mainly at proline-directed Ser/Thr sites, which are targeted by protein kinases such as GSK3beta and Cdk5. We reported previously that dephosphorylation of Tau at Cdk5-mediated sites was enhanced by Pin1, a peptidyl-prolyl isomerase that stimulates dephosphorylation at proline-directed sites by protein phosphatase 2A. Pin1 deficiency is suggested to cause Tau hyperphosphorylation in Alzheimer disease. Up to the present, Pin1 binding was only shown for two Tau phosphorylation sites (Thr-212 and Thr-231) despite the presence of many more hyperphosphorylated sites. Here, we analyzed the interaction of Pin1 with Tau phosphorylated by Cdk5-p25 using a GST pulldown assay and Biacore approach. We found that Pin1 binds and stimulates dephosphorylation of Tau at all Cdk5-mediated sites (Ser-202, Thr-205, Ser-235, and Ser-404). Furthermore, FTDP-17 mutant Tau (P301L or R406W) showed slightly weaker Pin1 binding than non-mutated Tau, suggesting that FTDP-17 mutations induce hyperphosphorylation by reducing the interaction between Pin1 and Tau."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph, Ser))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph, Thr))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23711227"}
+
+SET SupportingText = "Taken together, our results suggest that the neuroprotective effects of donepezil against Abeta42-induced neurotoxicity are mediated through activation of PP2A, but its additional mechanisms including regulation of GSK-3beta and nAChRs activity would partially contribute to its effects. This observation led us to assume that additional mechanisms of donepezil, including its inhibitory effect on GSK-3beta activity and/or the activation role of nicotinic acetylcholine receptors (nAChRs), might be involved. Donepezil increased neuronal viability with reduced p-tau by enhancing PP2A activity."
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "GSK3 subgraph"}
+a(CHEBI:donepezil) decreases act(p(HGNC:GSK3B))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24262633"}
+
+SET SupportingText = "We bring forward the hypothesis that inflammation via prolonged activation of key kinases (p38 and GSK-3beta) and activation of histone deacetylases gives rise to dysregulation of the NRF2 system in the brain, which contributes to oxidative stress and injury."
+SET Confidence = "High"
+SET MeSHDisease = {"Inflammation", "Wounds and Injuries"}
+SET Subgraph = {"GSK3 subgraph", "Inflammatory response subgraph"}
+act(p(HGNC:GSK3B)) association path(MESHD:Inflammation)
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = {"Inflammation", "Wounds and Injuries"}
+SET Subgraph = {"GSK3 subgraph", "Inflammatory response subgraph"}
+act(p(HGNC:GSK3B)) association act(p(HGNC:NFE2L2))
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = {"Inflammation", "Wounds and Injuries"}
+SET Subgraph = {"GSK3 subgraph", "Response to oxidative stress"}
+p(HGNC:GSK3B) association p(HGNC:NFE2L2)
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = {"Inflammation", "Wounds and Injuries"}
+SET Subgraph = {"GSK3 subgraph", "Inflammatory response subgraph"}
+path(MESHD:Inflammation) association act(p(HGNC:GSK3B))
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = {"Inflammation", "Wounds and Injuries"}
+SET Subgraph = {"GSK3 subgraph", "Inflammatory response subgraph"}
+act(p(HGNC:NFE2L2)) association act(p(HGNC:GSK3B))
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = {"Inflammation", "Wounds and Injuries"}
+SET Subgraph = {"GSK3 subgraph", "Response to oxidative stress"}
+p(HGNC:NFE2L2) association p(HGNC:GSK3B)
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = {"Inflammation", "Wounds and Injuries"}
+SET Subgraph = {"GSK3 subgraph", "Response to oxidative stress"}
+p(HGNC:NFE2L2) increases bp(GOBP:"response to oxidative stress")
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "7505567"}
+
+SET SupportingText = "In sharp contrast, when Ser-10 of this peptide was replaced by a phosphoserine, the phosphopeptide fragment (VAVVRTPPKS(p)PSSAK) became an excellent substrate for kinase FA/GSK-3 alpha."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3A)) increases p(HGNC:MAPT, frag("226_240"), pmod(Ph, Ser, 10))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "7704571"}
+
+SET SupportingText = "A number of kinases, including mitogen-activated protein (MAP) kinase, glycogen synthase kinase (GSK)-3 alpha, GSK-3 beta and cyclin-dependent kinase-5, phosphorylate recombinant tau in vitro so that it resembles PHF-tau as judged by its reactivity with a panel of antibodies capable of discriminating between normal tau and PHF-tau, and by a reduced electrophoretic mobility that is characteristic of PHF-tau."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "7774712"}
+
+SET SupportingText = "Here we describe results that show that although MAP kinase can hyperphosphorylate tau in vitro, activation of MAP kinase in transformed fibroblasts does not result in hyperphosphorylation of transfected tau, whereas glycogen synthase kinase-3 beta (GSK-3 beta) when co-transfected with tau does result in tau hyperphosphorylation. The findings imply that GSK-3 beta may be a stronger candidate than MAP kinase for inducing tau hyperphosphorylation in vivo."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+p(HGNC:GSK3B) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "7786411"}
+
+SET SupportingText = "The results provide initial evidence that TPKI/GSK-3 beta/FA after heparin potentiation may represent one of the most potent systems possibly involved in the abnormal phosphorylation of PHF-tau and neuronal degeneration in Alzheimer disease brains."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "7931292"}
+
+SET SupportingText = "Previously, we identified protein kinase FA/glycogen synthase kinase-3 alpha (GSK-3 alpha) as a brain microtubule-associated tau kinase that phosphorylates Ser235 and Ser404 of tau and causes its electrophoretic mobility shift in gels, a unique property characteristic of paired helical filament-associated pathological tau (PHF-tau) in Alzheimer's disease brains."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3A)) increases p(HGNC:MAPT, pmod(Ph, Ser, 235))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3A)) increases p(HGNC:MAPT, pmod(Ph, Ser, 404))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "8050597"}
+
+SET SupportingText = "A mixture of recombinant human tau isoforms phosphorylated by GSK-3 beta gave similar results to those obtained with control human brain tau."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "8764598"}
+
+SET SupportingText = "In vitro phosphorylation of the cytoplasmic domain of the amyloid precursor protein by glycogen synthase kinase-3beta."
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:APP, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "8769876"}
+
+SET SupportingText = "Treatment of PSer262 peptide or GSK 3 beta phosphorylated tau with alkaline phosphatase increased Ab262 immunoreactivity, indicating that Ab262 is a reagent useful for studying tau phosphorylation at the Ser262 residue."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph, Ser, 262))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "8930358"}
+
+SET SupportingText = "Colocalization of these epitopes suggests that tau protein kinase I/glycogen synthase kinase-3 beta abnormally phosphorylates tau and is in a position to disrupt neuronal metabolism in anatomical areas vulnerable to Alzheimer's disease."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "9565682"}
+
+SET SupportingText = "GSK-3beta transfection showed the phosphorylation at Ser-199, Thr-231, Ser-396, and Ser-413."
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph, Ser, 199))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph, Thr, 231))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph, Ser, 396))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Tau protein subgraph"}
+act(p(HGNC:GSK3B)) increases p(HGNC:MAPT, pmod(Ph, Ser, 413))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed Central", "PMC21391"}
+
+SET SupportingText = " PS1 directly binds tau and a tau kinase , glycogen synthase kinase 3beta"
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+p(HGNC:GSK3B) association p(HGNC:PSEN1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"GSK3 subgraph", "Gamma secretase subgraph"}
+p(HGNC:PSEN1) association p(HGNC:GSK3B)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
