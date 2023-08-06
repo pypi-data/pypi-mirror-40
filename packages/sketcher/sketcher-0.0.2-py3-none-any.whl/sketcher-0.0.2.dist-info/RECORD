@@ -1,0 +1,11 @@
+sketcher/__init__.py,sha256=ZdIOiIghgux0kGR9kyeNJNyVvWRVNKrBeZJAHLI6FdY,1723
+sketcher/backend.py,sha256=bviHptWmwrcFN7dcRT6iXwcyLafxm52cMeJyPf04CYA,472
+sketcher/backend_base.py,sha256=NP2OqfHhKMadSVkf7iHbR29B_C2NomB9dBFFfoNDBWs,1171
+sketcher/backend_tk.py,sha256=qZddEFJKJrgE7TNNwfdKm-WbcGidZ4svC1IE83cS5jE,2149
+sketcher/common.py,sha256=Nhn40wb0k1OBLV5rtggev_sfNyJbSBe0bOFHn9jFyUQ,1025
+sketcher-0.0.2.dist-info/DESCRIPTION.rst,sha256=SOFHBK4ZCKy9F4FG5a-z9puUkc7wNH9hxD4PP1O9QZI,1748
+sketcher-0.0.2.dist-info/METADATA,sha256=fRrD7um1R5gOKzK6d41a7KyXxjkCVYy8VHYcnqR-rps,2199
+sketcher-0.0.2.dist-info/RECORD,,
+sketcher-0.0.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+sketcher-0.0.2.dist-info/metadata.json,sha256=g88cLn6lMvNuJ9oxucPRX9AkHCz5hK0Sjb4b_R-yYSY,614
+sketcher-0.0.2.dist-info/top_level.txt,sha256=PL0JkiUkTUPzcHT0MsVuMO6tyvSdya0XdXVS5-WsTW8,9
