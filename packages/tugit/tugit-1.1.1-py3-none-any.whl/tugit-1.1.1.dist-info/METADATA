@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tugit
+Version: 1.1.1
+Summary: Python library for installing packages directly from a git repository
+Home-page: https://github.com/idin/tugit.git
+Author: Idin
+Author-email: d@idin.net
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# TugIt
+
+
