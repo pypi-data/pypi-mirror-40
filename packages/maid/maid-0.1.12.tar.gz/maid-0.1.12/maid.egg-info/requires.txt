@@ -1,0 +1,4 @@
+wget>=3.2
+patool>=1.12
+pywin32>=224
+winshell>=0.6
