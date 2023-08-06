@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: drymail
+Version: 0.0.3
+Summary: Drymail is a minimalist wrapper over Python’s existing smtplib and email libraries, designed to be friendly but unrestrictive. 
+Home-page: https://github.com/SkullTech/drymail
+Author: Sumit Ghosh
+Author-email: sumit@sumit-ghosh.com
+License: MIT
+Requires-Dist: mistune
+Requires-Dist: beautifulsoup4
+
+# drymail
+
+
