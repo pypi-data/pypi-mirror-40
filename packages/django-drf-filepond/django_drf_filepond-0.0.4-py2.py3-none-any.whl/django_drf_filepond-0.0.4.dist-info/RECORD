@@ -1,0 +1,17 @@
+django_drf_filepond/__init__.py,sha256=C9iZTUN_W6rQzMU9vHBDP9aIVUINrVgqkvmgA7gEmsk,72
+django_drf_filepond/apps.py,sha256=ZQfhukFYbWZLPTrqtQEIQeLJ7MJbxWM6m9O55NpKyt0,1480
+django_drf_filepond/drf_filepond_settings.py,sha256=NWVlySbHcvtYAAkrFFZNhG-x--RBUUhJjQu0kDT-7i4,788
+django_drf_filepond/models.py,sha256=oNtSPwfoE7hn4wvMNoG9723uXHvioE08zfniBSa1Xok,2542
+django_drf_filepond/parsers.py,sha256=epSih1X_H3nZs5b57TfJENaNYQ9c7H9C35QzCN0YpV4,836
+django_drf_filepond/renderers.py,sha256=WfAgXvH5GrTOZpfCRHrjIlJcqzE558Di9QjiiRlUl7g,1248
+django_drf_filepond/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_drf_filepond/urls.py,sha256=rjgQJfsWVkSEjZuSKjRWF_X45lLEpQ_NVc77zBDQNXs,624
+django_drf_filepond/views.py,sha256=HATxuqII7jIT_Kt9ehWEFChITC57bUnrueCQxegn5RY,12075
+django_drf_filepond/migrations/0001_initial.py,sha256=8CH1m54Y44sbxIAYNnL80l_voZS9wVvupQCUXz1h7ZE,1110
+django_drf_filepond/migrations/0002_add_upload_dir.py,sha256=b6_FnN6rIL6UyFZ7sof2OYlg0hfhFmhhnG6e45IIvlc,790
+django_drf_filepond/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_drf_filepond-0.0.4.dist-info/LICENSE,sha256=_nGDFCS05UQtfBVm4l5WLOwMCbJYPSntK59I1r2ZbG8,1537
+django_drf_filepond-0.0.4.dist-info/METADATA,sha256=zvbetf5nrFA5kp6hIyqMrjd8PiDVI4wN4iQ17hWTuYU,5504
+django_drf_filepond-0.0.4.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+django_drf_filepond-0.0.4.dist-info/top_level.txt,sha256=MA9t4vvdjKPvKnZhYjhEjc5h2JDf5BSJvFvAKu9Qt7g,20
+django_drf_filepond-0.0.4.dist-info/RECORD,,
