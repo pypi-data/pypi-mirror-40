@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: lerc-control
+Version: 0.0.dev1
+Summary: Libraries and utilities for controling and working with Live Endpoint Response Clients.
+Home-page: https://github.com/IntegralDefense/lerc/lerc_control
+Author: Sean McFeely
+Author-email: zsmcfeely@gmail.com
+License: Apache-2.0
+Description: # Live Endpoint Response Client Control
+        
+        LERC Control provides utilities for interacting and controlling clients (via the LERC Server API) to perform live response and administrative actions. LERC Control can be used as a library or the 'lerc_ui' script is made available for global use when installed with pip3. 
+        ### Features
+        
+        + Upload files from clients
+        + Contain clients with the windows firewall (configurable firewall rules)
+        + Download files to the clients
+        + Run commands on the clients
+        + Perform scripted routines
+        + Create scripted routines and save them for future use
+        + Perform complex collections routines via custom, extendable modules
+        + Perform remediation actions (file/registry deletions, service deletion, schedule task deletion, process killing) - also extendable module format
+        + Query the LERC Server for client statuses and client command history
+        
+        ## Getting Started
+        
+        You can install lerc_control with pip3:
+        
+            pip3 install lerc_control
+        
+        
+        ## Documentation
+        
+        Documentation is still a work in progress but you can find it here [http://lerc.readthedocs.io/](http://lerc.readthedocs.io/)
+        
+Keywords: Incident Response,Live Endpoint Response Client,LERC,Remote Administration Tool
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
