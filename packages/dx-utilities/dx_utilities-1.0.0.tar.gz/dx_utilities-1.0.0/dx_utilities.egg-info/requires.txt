@@ -1,0 +1,8 @@
+sphinx>=1.8.3
+scipy>=1.1.0
+pyfarmhash>=0.2.2
+geos>=0.2.1
+nose2>=0.7.4
+shapely>=1.6.4.post1
+expiringdict==1.1.4
+mathutils==2.79.1

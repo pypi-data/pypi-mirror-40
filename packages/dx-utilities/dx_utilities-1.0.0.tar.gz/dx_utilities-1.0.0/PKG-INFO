@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: dx_utilities
+Version: 1.0.0
+Summary: Base utilities for engineering packages
+Home-page: https://gitlab.com/d-e/dx-utilities
+Author: Konstantinos Demartinos
+Author-email: kostas@d-e.gr
+Maintainer: demetriou engineering ltd.
+Maintainer-email: kostas@d-e.gr
+License: AGPLv3+
+Description: 
+        # `dx-utilities` package
+        
+        ## Features
+        
+        * Geometry module on top of `shapely`.
+        * Representations of physical fields.
+        * Linear algebra and numerical integration.
+        
+          * Utilities on top of `numpy` and `mathutils.Vector`.
+        
+        * Decorators.
+        * Exception classes with error-code.
+        * Data-structures.
+        * Book-keeping of physical constants and manipulation of units.
+        * Testing and printing utilities.
+        
+        ### Sample usage
+        
+        ```
+        >>> from dx_utilities.geometry import PlanarShape
+        >>> rectangle = PlanarShape.new(shape='rectangle', bx=1.0, by=2.0)
+        >>> rectangle.area
+        2.0
+        ```
+        
+        ## Public API
+        
+        See the [documentation pages](https://d-e.gitlab.io/dx-utilities/).
+        
+        ## Contribute
+        
+        Source code lives in https://gitlab.com/d-e/dx-utilities.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
