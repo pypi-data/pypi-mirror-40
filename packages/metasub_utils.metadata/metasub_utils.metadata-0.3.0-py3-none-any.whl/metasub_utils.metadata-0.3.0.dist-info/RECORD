@@ -1,0 +1,10 @@
+metasub_utils.metadata-0.3.0-py3.6-nspkg.pth,sha256=7S4yU8K33I518h63RpME9OxHc4ZF8eWeDAEGqrA4bYg,574
+metasub_utils/metadata/__init__.py,sha256=pi2n61X6mpr7p_F_UzhtPGB8QZSETipv2_Mp3y5xqs4,111
+metasub_utils/metadata/cli.py,sha256=q72SlSg08_ZibFF42mlJItevV_Ec4soawWfLn2Xr_FM,978
+metasub_utils/metadata/constants.py,sha256=x7CVJrCyuvsCPmJ8T5tj_vMbV7pwdSM8XixxG93RZ5c,393
+metasub_utils/metadata/metadata.py,sha256=nmlb7iaV7-eEwZCpO2Tz9sS0wu143rF0aVLR6lobRUk,1052
+metasub_utils.metadata-0.3.0.dist-info/METADATA,sha256=TRqAn2UlIv-FyIUSNpPy3WFbFo-orq77_Iq_EMFgv-A,388
+metasub_utils.metadata-0.3.0.dist-info/RECORD,,
+metasub_utils.metadata-0.3.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+metasub_utils.metadata-0.3.0.dist-info/namespace_packages.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
+metasub_utils.metadata-0.3.0.dist-info/top_level.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
