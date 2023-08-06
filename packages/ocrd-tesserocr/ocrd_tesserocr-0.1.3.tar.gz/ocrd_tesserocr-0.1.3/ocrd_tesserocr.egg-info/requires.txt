@@ -1,0 +1,3 @@
+ocrd>=0.7.2
+tesserocr>=2.3.0
+click
