@@ -1,0 +1,11 @@
+How to use this tool
+=============================
+There are two ways you can use this tool namely as a stand alone GUI or as a package.
+
+Use as a GUI
+-------------------------
+To use the cgdat package as a GUI click the cgdat shortcut that was created in the repository folder or use the :samp:`cgdat-gui` console command. You can also create a desktop shortcut by running the `cgdat-shortcut` console command.
+
+Use as a package
+----------------------------
+Since the package was installed on your default python enviroment you can simply import it as :samp:`import cgdat`.
