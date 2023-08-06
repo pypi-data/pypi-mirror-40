@@ -1,0 +1,8 @@
+README.md
+setup.py
+filemanip/__init__.py
+filemanip/filemanip.py
+filemanip.egg-info/PKG-INFO
+filemanip.egg-info/SOURCES.txt
+filemanip.egg-info/dependency_links.txt
+filemanip.egg-info/top_level.txt
