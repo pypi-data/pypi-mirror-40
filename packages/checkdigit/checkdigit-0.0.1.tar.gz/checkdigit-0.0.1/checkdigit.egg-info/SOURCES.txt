@@ -1,0 +1,8 @@
+README.md
+setup.py
+checkdigit/__init__.py
+checkdigit/isbn.py
+checkdigit.egg-info/PKG-INFO
+checkdigit.egg-info/SOURCES.txt
+checkdigit.egg-info/dependency_links.txt
+checkdigit.egg-info/top_level.txt
