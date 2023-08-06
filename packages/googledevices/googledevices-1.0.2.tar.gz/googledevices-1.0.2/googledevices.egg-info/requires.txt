@@ -1,0 +1,5 @@
+aiohttp
+async_timeout
+click
+netifaces
+requests
