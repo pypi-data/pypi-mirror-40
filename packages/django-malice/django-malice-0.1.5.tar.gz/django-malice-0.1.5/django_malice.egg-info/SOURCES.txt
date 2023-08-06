@@ -1,0 +1,11 @@
+README.md
+setup.py
+django_malice.egg-info/PKG-INFO
+django_malice.egg-info/SOURCES.txt
+django_malice.egg-info/dependency_links.txt
+django_malice.egg-info/top_level.txt
+malice/__init__.py
+malice/apps.py
+malice/tests.py
+malice/urls.py
+malice/views.py

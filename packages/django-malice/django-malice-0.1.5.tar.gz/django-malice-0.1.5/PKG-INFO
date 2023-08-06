@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: django-malice
+Version: 0.1.5
+Summary: A simple Django app that enables own occuring error.
+Home-page: https://github.com/salexkidd/django_malice/
+Author: salexkidd
+Author-email: salexkidd@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: django,testing
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
