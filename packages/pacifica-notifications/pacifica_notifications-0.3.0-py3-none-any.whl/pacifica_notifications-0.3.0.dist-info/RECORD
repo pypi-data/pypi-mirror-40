@@ -1,0 +1,17 @@
+pacifica_notifications-0.3.0-py3.6-nspkg.pth,sha256=D3iBWN0sQfyYHlyK1b54AmsNexyR1L2R1mNEdQLAsCo,549
+pacifica/notifications/__init__.py,sha256=V_dBx7yu90XVbA95MjOu8c6Bp-iV7ElAhrP8GlIcycw,79
+pacifica/notifications/__main__.py,sha256=56HcF1nWSbMrbUoVbC5XXeE_b2WI9nYcS5E2C4wblH8,3743
+pacifica/notifications/config.py,sha256=k4Dzqmz4wNfamQGFJktl10ckSCTBgWLbQaW1GENGHSQ,1342
+pacifica/notifications/globals.py,sha256=W5Fg-cmTlcGCTye2Djgba1CuDNATJUjT5g2qR9uCZzo,479
+pacifica/notifications/jsonpath.py,sha256=zdHeq9hz4Mt0_otoNzbwVONXph78FKjM8mjMhT81vBs,844
+pacifica/notifications/orm.py,sha256=n3BOM7j4FcvKvK5c5WM8s6u9Qi7drIv9k6ZaQgsJTHY,6809
+pacifica/notifications/rest.py,sha256=CbfCw0FDPLsbh0abi6WENGcJWjyxR_nUSowS1rW2QCU,6365
+pacifica/notifications/tasks.py,sha256=OuI7nzouo0YrRivAvHDbgHJvSFxkIC-Ai8k2MwQLu7g,2645
+pacifica/notifications/wsgi.py,sha256=XxYS53cOES_r_j27VgziczTEYiO82MgKWYcyriOYBA8,492
+pacifica_notifications-0.3.0.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+pacifica_notifications-0.3.0.dist-info/METADATA,sha256=PTEYzvNmNpqOHzwTNSM_Ed5FkXDxr5z_ebIfXiz50CA,4209
+pacifica_notifications-0.3.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pacifica_notifications-0.3.0.dist-info/entry_points.txt,sha256=X8letSwyKE7lk2sjMyudXU26sz4Ichh382GdrFa4nKE,146
+pacifica_notifications-0.3.0.dist-info/namespace_packages.txt,sha256=97BgCdNVxU-31S58qvZcRI0NGHH7Zk4ZBB-KSTnEIpk,9
+pacifica_notifications-0.3.0.dist-info/top_level.txt,sha256=97BgCdNVxU-31S58qvZcRI0NGHH7Zk4ZBB-KSTnEIpk,9
+pacifica_notifications-0.3.0.dist-info/RECORD,,
