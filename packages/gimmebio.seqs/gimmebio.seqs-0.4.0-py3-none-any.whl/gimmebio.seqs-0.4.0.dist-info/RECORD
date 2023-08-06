@@ -1,0 +1,13 @@
+gimmebio.seqs-0.4.0-py3.6-nspkg.pth,sha256=pxTb1jWsCspdqoPmV2TGBVot_a6QmHbVwKXbDN4rHTs,549
+gimmebio/seqs/__init__.py,sha256=faE8-Ac31NpfieGrKWEvOvlhPAWVMDwp1L2U47Va7aA,89
+gimmebio/seqs/cli.py,sha256=W9IllvCa62eJCU9_UfwjzNnfoHL_I28_2-bjY1yMtyM,3167
+gimmebio/seqs/concat_lanes.py,sha256=gnU3zoXmqyzNOHSNJhAAVp1OkYBSBFVCRDahnX-Qmgc,1213
+gimmebio/seqs/fastx.py,sha256=aGYSPD3RP4w66jXdtSNLbq-taVI1NtxsMhZcPefQx1I,2456
+gimmebio/seqs/fastx_io.py,sha256=7tMXzJpqK0-Lt1edG4lXN3OwYSTo0OGnI7Igv2AFKlE,944
+gimmebio/seqs/sample_management.py,sha256=sL-Q34QMbtB7EJxTjtTFU-id8BwYTbkW1v0CU20ua9c,479
+gimmebio/seqs/seqs.py,sha256=tnw9QuyIxLW5tMyuQzwwbRDkXQF_nd8UmVocVrswuTw,903
+gimmebio.seqs-0.4.0.dist-info/METADATA,sha256=hHQRah7Xq_rF9NVvAnxTzwqPNoh6j466r-M4P9qLr3w,336
+gimmebio.seqs-0.4.0.dist-info/RECORD,,
+gimmebio.seqs-0.4.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+gimmebio.seqs-0.4.0.dist-info/namespace_packages.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
+gimmebio.seqs-0.4.0.dist-info/top_level.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
