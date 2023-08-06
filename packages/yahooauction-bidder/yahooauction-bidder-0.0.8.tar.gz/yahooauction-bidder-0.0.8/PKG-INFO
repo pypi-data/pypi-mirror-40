@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: yahooauction-bidder
+Version: 0.0.8
+Summary: programmable bidding system by wrapping selenium & chrome
+Home-page: https://github.com/umihico/yahooauction-bidder
+Author: umihico
+Author-email: umihico@users.noreply.github.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
