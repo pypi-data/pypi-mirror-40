@@ -1,0 +1,22 @@
+cgdat.create\_shortcut\_cl
+==========================
+
+.. automodule:: cgdat.create_shortcut_cl
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      main
+   
+   
+
+   
+   
+   
+
+   
+   
+   
