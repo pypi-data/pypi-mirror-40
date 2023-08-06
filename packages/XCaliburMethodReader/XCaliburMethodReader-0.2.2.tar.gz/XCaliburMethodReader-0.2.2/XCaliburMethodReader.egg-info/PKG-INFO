@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: XCaliburMethodReader
+Version: 0.2.2
+Summary: A command-line program for mass spectrometry researchers that extracts and converts data from Thermo XCalibur Method (.meth) files.
+Home-page: https://github.com/nickdelgrosso/XCaliburMethodReader
+Author: Nicholas A. Del Grosso
+Author-email: delgrosso.nick@gmail.com
+License: GNU
+Description: UNKNOWN
+Platform: UNKNOWN
