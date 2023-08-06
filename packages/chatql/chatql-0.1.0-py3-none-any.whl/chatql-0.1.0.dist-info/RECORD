@@ -1,0 +1,10 @@
+chatql/__init__.py,sha256=qdkZHM6PCLQ0CbcP1XT1LDL-QpbaP5qrxvZwn8QE8FI,136
+chatql/chatql.py,sha256=XRZ-wlEsL1Jj4DbsK2F3vSIvm-3suW0QbHzDC1vOJJk,1728
+chatql/engine.py,sha256=2v7MxA3WNuNnAEa01lCD1J_PyTFUEclbVhUKmqa3Jek,1559
+chatql/matcher/__init__.py,sha256=A6hr45ewEtneT9kDdzjKaNPBOKcgVCJHlP_H7uCVhQo,53
+chatql/matcher/regex_matcher.py,sha256=QZWgEJql8lN_a2Z30i_4cMw1sZdkZ5jdNW99PU8Ye9E,710
+chatql/mongodb_client.py,sha256=s1AEyRObuTZN3VsI12ARgTZVxAg7907K4mB_Vz5wvMg,3994
+chatql-0.1.0.dist-info/LICENSE,sha256=uR5L_rTxL7uakt-er0VcPwdZ8IbIG_IQoSsLgLdy-qM,1075
+chatql-0.1.0.dist-info/WHEEL,sha256=OyjuYVC9vVJqb-Aqln3fyrroYJ4WrcSwx2msO2AokVc,85
+chatql-0.1.0.dist-info/METADATA,sha256=GgpGfRE4ZCYuw68HmrUY50W71hbSrtM2lEgJKb4g_8M,1425
+chatql-0.1.0.dist-info/RECORD,,
