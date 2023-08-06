@@ -1,0 +1,6 @@
+# recursive-include class4gl *.py
+include simulations/*
+include setup/*
+include processing/*
+
+
