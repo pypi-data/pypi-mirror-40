@@ -1,0 +1,9 @@
+scipy
+dataclasses
+numpy
+scikit_sparse
+matplotlib
+pandas
+scikit_learn
+typing
+pygam
