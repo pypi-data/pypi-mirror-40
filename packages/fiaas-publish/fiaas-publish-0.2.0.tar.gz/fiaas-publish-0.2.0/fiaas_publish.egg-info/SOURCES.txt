@@ -1,0 +1,17 @@
+.gitignore
+.prospector.yaml
+LICENSE
+README.rst
+publish.py
+requirements.txt
+setup.cfg
+setup.py
+test_publish.py
+tox.ini
+fiaas_publish.egg-info/PKG-INFO
+fiaas_publish.egg-info/SOURCES.txt
+fiaas_publish.egg-info/dependency_links.txt
+fiaas_publish.egg-info/entry_points.txt
+fiaas_publish.egg-info/requires.txt
+fiaas_publish.egg-info/top_level.txt
+fiaas_publish.egg-info/zip-safe
