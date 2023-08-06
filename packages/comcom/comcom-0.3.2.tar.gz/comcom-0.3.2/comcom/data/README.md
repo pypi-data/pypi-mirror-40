@@ -1,0 +1,5 @@
+citys.dat是城市名数据集
+tails.dat是公司名的结尾数据集
+results.json是公司名分词之后的数据集
+merges.json是公司名中各要素的数据集
+com_types.dat是公司要素中com_type字段的库
