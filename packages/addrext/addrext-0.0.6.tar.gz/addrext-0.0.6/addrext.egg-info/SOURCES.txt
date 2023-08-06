@@ -1,0 +1,10 @@
+setup.py
+addrext/__init__.py
+addrext/addrext.py
+addrext/phrase_entity_encoder.py
+addrext.egg-info/PKG-INFO
+addrext.egg-info/SOURCES.txt
+addrext.egg-info/dependency_links.txt
+addrext.egg-info/not-zip-safe
+addrext.egg-info/requires.txt
+addrext.egg-info/top_level.txt
