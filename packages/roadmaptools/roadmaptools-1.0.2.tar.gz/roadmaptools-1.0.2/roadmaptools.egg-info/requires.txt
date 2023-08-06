@@ -1,0 +1,15 @@
+osmread
+setuptools
+networkx>=2.0
+geojson
+gpx_lite
+rtree
+tqdm
+typing
+numpy
+fconfig
+googlemaps
+overpass
+pandas
+scipy
+shapely
