@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: django-cookiefilter
+Version: 0.1
+Summary: Django Cookie Filter
+Home-page: https://github.com/developersociety/django-cookiefilter
+Maintainer: The Developer Society
+Maintainer-email: studio@dev.ngo
+License: BSD
+Description: Django Cookie Filter
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Requires-Python: >=3.4
