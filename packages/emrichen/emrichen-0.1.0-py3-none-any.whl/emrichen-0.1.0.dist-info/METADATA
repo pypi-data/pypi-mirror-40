@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: emrichen
+Version: 0.1.0
+Summary: Template engine for YAML & JSON
+Home-page: http://github.com/japsu/emrichen
+Author: Santtu Pajukanta
+Author-email: santtu@pajukanta.fi
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: PyYAML
+Requires-Dist: pyaml
+Requires-Dist: jsonpath-rw (~=1.4.0)
+
+UNKNOWN
+
+
