@@ -1,0 +1,13 @@
+attrs
+structlog
+attrs
+colorama
+absl-py
+gevent
+appdirs
+rx
+
+[tests]
+coverage
+pytest_to_md
+pytest>=3.3.0
