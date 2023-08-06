@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: csharpy
+Version: 0.1.116
+Summary: Tools to use C# + Python mostly from Python.
+Home-page: http://www.xavierdupre.fr/app/csharpy/
+Author: Xavier Dupré
+Author-email: xavier.dupre@gmail.com
+License: MIT
+Download-URL: https://github.com/sdpython/csharpy/
+Keywords: csharpy,first name,last name
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Dist: pythonnet
+Requires-Dist: pyquickhelper
+
+
+.. _l-README:
+
+README
+======
+
+.. image:: https://travis-ci.org/sdpython/csharpy.svg?branch=master
+    :target: https://travis-ci.org/sdpython/csharpy
+    :alt: Build status
+
+.. image:: https://ci.appveyor.com/api/projects/status/ldrgt6sxeyfwtoo2?svg=true
+    :target: https://ci.appveyor.com/project/sdpython/csharpy
+    :alt: Build Status Windows
+
+.. image:: https://circleci.com/gh/sdpython/csharpy/tree/master.svg?style=svg
+    :target: https://circleci.com/gh/sdpython/csharpy/tree/master
+
+.. image:: https://badge.fury.io/py/csharpy.svg
+    :target: http://badge.fury.io/py/csharpy
+
+.. image:: http://img.shields.io/github/issues/sdpython/csharpy.png
+    :alt: GitHub Issues
+    :target: https://github.com/sdpython/csharpy/issues
+
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :alt: MIT License
+    :target: http://opensource.org/licenses/MIT
+
+.. image:: https://requires.io/github/sdpython/csharpy/requirements.svg?branch=master
+     :target: https://requires.io/github/sdpython/csharpy/requirements/?branch=master
+     :alt: Requirements Status
+
+.. image:: https://codecov.io/github/sdpython/csharpy/coverage.svg?branch=master
+    :target: https://codecov.io/github/sdpython/csharpy?branch=master
+
+.. image:: http://www.xavierdupre.fr/app/csharpy/helpsphinx/_images/nbcov.png
+    :target: http://www.xavierdupre.fr/app/csharpy/helpsphinx/all_notebooks_coverage.html
+    :alt: Notebook Coverage
+
+**Links:**
+
+* `GitHub/csharpy <https://github.com/sdpython/csharpy/>`_
+* `documentation <http://www.xavierdupre.fr/app/csharpy/helpsphinx2/index.html>`_
+* `Blog <http://www.xavierdupre.fr/app/csharpy/helpsphinx/blog/main_0000.html#ap-main-0>`_
+
+Introduction
+------------
+
+Helpers to play with C# and Python.
+It can easily compile and wrap a C# function
+into Python:
+
+::
+
+    from csharpy.runtime import create_cs_function
+    code = "public static double SquareX(double x) {return x*x ; }"
+    SquareX = create_cs_function("SquareX", code)
+    print(SquareX(4))
+
+The module relies on `pythonnet <https://github.com/pythonnet/pythonnet>`_.
+
+Installation
+------------
+
+*Windows*
+
+::
+
+    pip install csharpy
+
+*Linux*
+
+Follow the instructions described in
+`config.yml <https://github.com/sdpython/csharpy/blob/master/.circleci/config.yml>`_.
+
+.. _l-HISTORY:
+
+=======
+History
+=======
+
+current - 2019-01-08 - 0.00Mb
+=============================
+
+* `9`: implements sphinx extension runcsharp (2018-08-19)
+* `8`: catch standard output and error when running a C# script (2018-08-19)
+* `5`: run unit tests for C# (2018-06-16)
+* `6`: add Debug and Release folder in assemblies (2018-06-14)
+
+0.1.53 - 2018-05-20 - 0.02Mb
+============================
+
+* `2`: fix CI (2018-05-20)
+* `1`: first commit (2018-05-17)
+
+
