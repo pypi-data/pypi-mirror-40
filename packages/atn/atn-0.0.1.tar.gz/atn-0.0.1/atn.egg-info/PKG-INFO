@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: atn
+Version: 0.0.1
+Summary: ATN staging for Alzheimer's Disease based on CSF biomarkers
+Home-page: https://gitlab.com/xgrg/atn/-/archive/0.1/atn-0.1.tar.gz
+Author: Greg Operto
+Author-email: goperto@barcelonabeta.org
+License: UNKNOWN
+Description: # atn
+        
+        ATN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
