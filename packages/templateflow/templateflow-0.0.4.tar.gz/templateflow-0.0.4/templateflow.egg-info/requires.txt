@@ -1,0 +1,11 @@
+datalad
+
+[all]
+pytest
+pytest-xdist
+
+[doc]
+
+[tests]
+pytest
+pytest-xdist
