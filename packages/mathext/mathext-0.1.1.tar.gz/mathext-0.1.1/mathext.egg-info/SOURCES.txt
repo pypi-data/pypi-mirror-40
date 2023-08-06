@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+mathext/__init__.py
+mathext.egg-info/PKG-INFO
+mathext.egg-info/SOURCES.txt
+mathext.egg-info/dependency_links.txt
+mathext.egg-info/top_level.txt
