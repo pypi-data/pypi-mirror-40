@@ -1,0 +1,12 @@
+README.md
+setup.py
+text_vectorian/__init__.py
+text_vectorian/bases.py
+text_vectorian/config.yml
+text_vectorian/sentencepiece.py
+text_vectorian/utils.py
+text_vectorian.egg-info/PKG-INFO
+text_vectorian.egg-info/SOURCES.txt
+text_vectorian.egg-info/dependency_links.txt
+text_vectorian.egg-info/requires.txt
+text_vectorian.egg-info/top_level.txt
