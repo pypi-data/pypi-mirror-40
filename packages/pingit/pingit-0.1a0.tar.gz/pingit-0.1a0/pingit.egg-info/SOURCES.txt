@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bin/__init__.py
+bin/pingit
+bin/pingitc
+bin/__pycache__/pingitcpython-35.pyc
+pingit.egg-info/PKG-INFO
+pingit.egg-info/SOURCES.txt
+pingit.egg-info/dependency_links.txt
+pingit.egg-info/requires.txt
+pingit.egg-info/top_level.txt
