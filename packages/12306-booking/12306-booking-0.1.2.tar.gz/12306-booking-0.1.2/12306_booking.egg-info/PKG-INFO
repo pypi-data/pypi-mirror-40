@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: 12306-booking
+Version: 0.1.2
+Summary: 12306 booking tool
+Home-page: https://github.com/hack12306/12306-booking
+Author: Meng.yangyang
+Author-email: mengyy_linux@163.com
+License: MIT
+Description: # 12306-booking-tool
+        12306订票工具
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
