@@ -1,0 +1,14 @@
+README.md
+setup.py
+bin/cf-run
+codeforces/__init__.py
+codeforces/api.py
+codeforces/error.py
+codeforces/problem.py
+python_codeforces.egg-info/PKG-INFO
+python_codeforces.egg-info/SOURCES.txt
+python_codeforces.egg-info/dependency_links.txt
+python_codeforces.egg-info/requires.txt
+python_codeforces.egg-info/top_level.txt
+test/test_api.py
+test/test_problem.py
