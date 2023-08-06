@@ -1,0 +1,9 @@
+certauth==1.1.6
+warctools<=4.10.0,>=4.10.0
+urlcanon<=0.1.dev23,>=0.1.dev16
+doublethink<=0.2.0.dev88,>=0.2.0.dev87
+urllib3<=1.23,>=1.23
+requests<=2.19.1,>=2.0.1
+PySocks<=1.6.8,>=1.6.8
+cryptography<=2.3.1,>=2.3
+idna<2.8,>=2.5
