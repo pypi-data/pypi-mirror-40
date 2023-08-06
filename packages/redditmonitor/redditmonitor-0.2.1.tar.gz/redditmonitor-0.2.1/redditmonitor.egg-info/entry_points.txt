@@ -1,0 +1,4 @@
+[console_scripts]
+monitor_comments = redditmonitor.monitor:monitor_comments
+monitor_submissions = redditmonitor.monitor:monitor_submissions
+
