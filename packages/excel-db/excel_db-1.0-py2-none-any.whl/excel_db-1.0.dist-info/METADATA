@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: excel-db
+Version: 1.0
+Summary: UNKNOWN
+Home-page: https://github.com/fanmolh/excel_db.git
+Author: fanmo
+Author-email: fanmolh@163.com
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: numpy (==1.15.4)
+Requires-Dist: pandas (==0.23.4)
+Requires-Dist: PyMySQL (==0.9.3)
+Requires-Dist: SQLAlchemy (==1.2.15)
+Requires-Dist: xlrd (==1.2.0)
+Requires-Dist: openpyxl
+
+UNKNOWN
+
+
