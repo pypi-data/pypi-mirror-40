@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record id="tax_rule_eu_no_id_purchase" model="account.tax.rule.template">
+            <field name="name">Lieferant EU (ohne Ust-ID)</field>
+            <field name="account" ref="root_de"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record id="tax_rule_non_eu_purchase" model="account.tax.rule.template">
+            <field name="name">Lieferant Ausland</field>
+            <field name="account" ref="root_de"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record id="tax_rule_eu_vat_id_sale" model="account.tax.rule.template">
+            <field name="name">Kunde EU Unternehmen (mit USt-ID)</field>
+            <field name="account" ref="root_de"/>
+            <field name="kind">sale</field>
+        </record>
+        <record id="tax_rule_non_eu_sale" model="account.tax.rule.template">
+            <field name="name">Kunde Ausland</field>
+            <field name="account" ref="root_de"/>
+            <field name="kind">sale</field>
+        </record>
+        <record id="tax_rule_eu_vat_id_purchase" model="account.tax.rule.template">
+            <field name="name">Lieferant EU Unternehmen (mit USt-ID)</field>
+            <field name="account" ref="root_de"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record id="tax_rule_eu_no_id_sale" model="account.tax.rule.template">
+            <field name="name">Kunde EU (ohne USt-ID)</field>
+            <field name="account" ref="root_de"/>
+            <field name="kind">sale</field>
+        </record>
+
+    </data>
+</tryton>
