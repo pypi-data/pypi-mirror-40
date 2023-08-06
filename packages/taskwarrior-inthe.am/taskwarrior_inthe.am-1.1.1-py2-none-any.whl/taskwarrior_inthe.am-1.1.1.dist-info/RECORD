@@ -1,0 +1,13 @@
+taskwarrior_inthe.am-1.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+taskwarrior_inthe.am-1.1.1.dist-info/METADATA,sha256=djw9ySDzw7f3sS0JUCNNlda2YkdcrvDomgXgZ6LcVak,644
+taskwarrior_inthe.am-1.1.1.dist-info/RECORD,,
+taskwarrior_inthe.am-1.1.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+taskwarrior_inthe.am-1.1.1.dist-info/entry_points.txt,sha256=ZydnVF1Hyq-fXC-eMSYRF7EZw98jwU4FM87jA8PQpUc,63
+taskwarrior_inthe.am-1.1.1.dist-info/metadata.json,sha256=yZElP8Jf2CuKdpuY_fc-btuq6khujSRt4TV2dZ5q5bY,940
+taskwarrior_inthe.am-1.1.1.dist-info/top_level.txt,sha256=3Tl3ke-eGshego963okZ5Nbyug4nco0K9jtap8zXRug,21
+taskwarrior_inthe_am/__init__.py,sha256=E-6wAZjiLRVInABFxrWoqdYlO_t-zVhK8XNfNnaDyzI,22
+taskwarrior_inthe_am/api.py,sha256=EcMO3nRfMFB_55qezf1dPUxQnbMHpyeoJ2vKeEEWNec,1990
+taskwarrior_inthe_am/cmdline.py,sha256=07gPvjeGwBEO1s4Mjcf9bYyO2o2sLTupBSxxqWpdM0o,1405
+taskwarrior_inthe_am/commands.py,sha256=UWTEf-TpfStXk_GqBhjl1ohBQ5QRqIXB3_hopt9Etnc,5952
+taskwarrior_inthe_am/exceptions.py,sha256=2URN1kkkr2MEsq8jSwDLxpu8H_fi0B2wRyv3uPabMYo,148
+taskwarrior_inthe_am/taskwarrior.py,sha256=U1L5n8hr1qxGz1mQicLvnOrSO4osWLcAoZjLzQyQa3Q,143
