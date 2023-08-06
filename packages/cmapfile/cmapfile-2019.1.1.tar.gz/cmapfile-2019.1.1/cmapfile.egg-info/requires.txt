@@ -1,0 +1,5 @@
+numpy>=1.11.3
+scipy>=1.1
+h5py>=2.8
+tifffile>=2019.1.1
+oiffile>=2019.1.1
