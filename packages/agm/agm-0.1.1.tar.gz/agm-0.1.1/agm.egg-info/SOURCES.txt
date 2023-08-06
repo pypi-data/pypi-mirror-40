@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+agm/__init__.py
+agm/agm.py
+agm/docs.py
+agm/exceptions.py
+agm/executor.py
+agm/google_auth.py
+agm/utils.py
+agm.egg-info/PKG-INFO
+agm.egg-info/SOURCES.txt
+agm.egg-info/dependency_links.txt
+agm.egg-info/entry_points.txt
+agm.egg-info/requires.txt
+agm.egg-info/top_level.txt
