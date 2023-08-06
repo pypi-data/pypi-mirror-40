@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<netcloud>
+	<login>
+		<phone></phone>
+		<password></password>
+		<email></email>
+		<rememberLogin>true</rememberLogin>
+	</login>
+	<file>
+		<saveRootDir></saveRootDir>
+	</file>
+</netcloud>

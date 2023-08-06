@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: NetCloud
+Version: 1.0.2
+Summary: 网易云音乐综合爬虫,可以实现:
+                    1.对于网易云音乐评论以及用户信息的爬取,并且可视化展示;
+                    2.支持模拟登录,提供包括音乐,歌手,歌单,dj等全方位的api支持
+Home-page: http://www.github.com/Lyrichu/NetCloud
+Author: lyrichu
+Author-email: lyrichu@foxmail.com
+Maintainer: lyrichu
+Maintainer-email: lyrichu@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: jieba
+Requires-Dist: pandas
+Requires-Dist: pycrypto
+Requires-Dist: pyecharts
+Requires-Dist: requests
+Requires-Dist: scipy
+Requires-Dist: wordcloud
+
+UNKNOWN
+
+
