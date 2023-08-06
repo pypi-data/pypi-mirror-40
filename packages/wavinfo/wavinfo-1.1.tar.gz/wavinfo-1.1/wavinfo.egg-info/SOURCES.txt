@@ -1,0 +1,12 @@
+README.md
+setup.py
+wavinfo/__init__.py
+wavinfo/riff_parser.py
+wavinfo/wave_bext_reader.py
+wavinfo/wave_info_reader.py
+wavinfo/wave_ixml_reader.py
+wavinfo/wave_reader.py
+wavinfo.egg-info/PKG-INFO
+wavinfo.egg-info/SOURCES.txt
+wavinfo.egg-info/dependency_links.txt
+wavinfo.egg-info/top_level.txt
