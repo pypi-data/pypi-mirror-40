@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: alphapy
+Version: 2.3.6
+Summary: AlphaPy: A Machine Learning Pipeline for Speculators
+Home-page: https://github.com/ScottFreeLLC/AlphaPy
+Maintainer: ScottFree LLC [Robert D. Scott II, Mark Conway]
+Maintainer-email: scottfree.analytics@scottfreellc.com
+License: Apache License, Version 2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Operating System :: OS Independent
+Requires-Dist: bokeh (>=0.12)
+Requires-Dist: category-encoders (>=1.2.0)
+Requires-Dist: imbalanced-learn (>=0.3)
+Requires-Dist: ipython (>=5.0)
+Requires-Dist: keras (>=2.2)
+Requires-Dist: matplotlib (>=2.0.0)
+Requires-Dist: numpy (>=1.12)
+Requires-Dist: pandas (>=0.22)
+Requires-Dist: pandas-datareader (>=0.6)
+Requires-Dist: pyfolio (>=0.8)
+Requires-Dist: pyyaml (>=3.12)
+Requires-Dist: scikit-learn (>=0.20)
+Requires-Dist: scipy (>=1.0)
+Requires-Dist: seaborn (>=0.8)
+Requires-Dist: tensorflow (>=1.2)
+Requires-Dist: xgboost (>=0.71)
+
+alphapy is a Python library for machine learning using scikit-learn. We have a stock market pipeline and a sports pipeline so that speculators can test predictive models, along with functions for trading systems and portfolio management.
+
+
