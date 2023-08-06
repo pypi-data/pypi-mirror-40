@@ -1,0 +1,105 @@
+/* All messages */
+
+.name {
+    color: rgb(210, 35, 110);
+}
+
+.date {
+    color:     gray;
+    font-size: small;
+}
+
+.content p:first-child {
+    margin: 0;
+}
+
+.content p {
+    margin: 16px 0 0 0;
+}
+
+
+/* Specific to our own messages */
+
+.own-message .name {
+    color: rgb(0, 165, 220);
+}
+
+
+/* System prints, e.g. command outputs like `/help` */
+
+.system.info {
+    color: rgb(130, 80, 200);
+}
+.system.info code {
+    color: rgb(135, 110, 170);
+}
+.system.warning {
+    color: rgb(200, 175, 80);
+}
+.system.warning code {
+    color: rgb(175, 160, 105);
+}
+.system.error {
+    color: rgb(200, 80, 80);
+}
+.system.error code {
+    color: rgb(170, 110, 110);
+}
+
+
+/* /help output */
+
+pre.help {
+    font-family: sans-serif;
+    color:       rgb(160, 160, 160);
+}
+
+.help .title {
+    color: rgb(130, 80, 200);
+}
+
+.help .title.section {
+    font-size: x-large;
+}
+
+.help .title.command {
+    font-size: large;
+}
+
+
+/* General text elements */
+
+h1, h2, h3, h4, h5, h6 {  /* titles */
+    font-weight: normal;
+}
+h6 {  /* not small like h4-h5 by default for some reason */
+    font-size: small;
+}
+
+a {  /* links */
+    color: rgb(40, 160, 110);
+}
+
+pre {  /* preformatted blocks, e.g. ```code blocks``` */
+    margin: 0;
+}
+
+code {
+    color: rgb(135, 110, 170);
+}
+
+th { /* table cells */
+    padding: 4px;
+}
+
+hr {  /* --- lines */
+    width: 100%;
+}
+
+blockquote {
+    color: gray;
+}
+
+.escaped-quote {
+    color:  rgb(140, 180, 60);
+}
