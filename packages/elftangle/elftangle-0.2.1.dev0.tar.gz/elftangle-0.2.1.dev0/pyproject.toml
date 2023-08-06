@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "elftangle"
+author = "Terrel Shumway"
+author-email = "gh2241@pythonteacher.us"
+home-page = "https://elftangle.pythonic.ink/"
+classifiers = ["License :: OSI Approved :: MIT License"]
+requires = [ "flask" ]
