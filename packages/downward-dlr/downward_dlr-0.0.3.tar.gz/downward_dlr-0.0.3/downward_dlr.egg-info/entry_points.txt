@@ -1,0 +1,3 @@
+[console_scripts]
+fast-downward = downward_dlr.downward_dlr:dwdlr_main
+
