@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fstr/__init__.py
+fstr/fstr.py
+fstr/utils.py
+fstr.egg-info/PKG-INFO
+fstr.egg-info/SOURCES.txt
+fstr.egg-info/dependency_links.txt
+fstr.egg-info/requires.txt
+fstr.egg-info/top_level.txt
