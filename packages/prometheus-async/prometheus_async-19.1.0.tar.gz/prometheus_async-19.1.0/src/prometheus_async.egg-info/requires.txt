@@ -1,0 +1,43 @@
+decorator
+prometheus_client>=0.0.18
+
+[:python_version <= "3.5"]
+monotonic
+
+[aiohttp]
+aiohttp>=3
+
+[consul]
+aiohttp>=3
+
+[dev]
+aiohttp>=3
+aiohttp>=3
+twisted
+aiohttp
+sphinx
+sphinxcontrib-asyncio
+twisted
+coverage
+pytest<4.1
+pytest-twisted
+pre-commit
+
+[dev:python_version >= "3.5"]
+pytest-asyncio
+
+[docs]
+aiohttp
+sphinx
+sphinxcontrib-asyncio
+twisted
+
+[tests]
+coverage
+pytest<4.1
+
+[tests:python_version >= "3.5"]
+pytest-asyncio
+
+[twisted]
+twisted
