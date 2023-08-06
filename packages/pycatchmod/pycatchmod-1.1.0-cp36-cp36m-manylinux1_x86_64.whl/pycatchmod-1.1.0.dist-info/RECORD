@@ -1,0 +1,13 @@
+pycatchmod/__init__.py,sha256=Q1SOTznbcrJ7Gd2FcSQESYBuYu9EAtTrvnwZLzbIzcg,1582
+pycatchmod/_catchmod.cpython-36m-x86_64-linux-gnu.so,sha256=gKS_-fCGWEwIlqOL83LAbggjzTfge3WBMcI5H-aKb7w,2006770
+pycatchmod/__main__.py,sha256=1HkljRB2wl3kCv1c3SIUdH4PsHAsibW2TWJv_gye9SA,5228
+pycatchmod/_weather_generator.cpython-36m-x86_64-linux-gnu.so,sha256=MJY-ajUv5_PgjtY96-zLSBQO8zGnvMDiVTzUAktXKbk,1362181
+pycatchmod/weather_generator.py,sha256=SyTuXfVFVBnafK9WJd1sxOAl_ZuWxs_3THPgVul40Ww,5476
+pycatchmod/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycatchmod/io/excel.py,sha256=KGsI2mivgBwdvvnXSs8YXku86qpQcdbSieyEUzcM8uE,8477
+pycatchmod/io/json.py,sha256=fXxWWpsEFFWe71T4BP299QYldKOS-RSGrRGWzcczD64,1862
+pycatchmod-1.1.0.dist-info/RECORD,,
+pycatchmod-1.1.0.dist-info/top_level.txt,sha256=xcM_FC0xm3AR2_qvUTN8N-RiTxQ4zjT_tdJhta44ZWE,11
+pycatchmod-1.1.0.dist-info/METADATA,sha256=mBb__BMWdpL31zbTmJ5_8zjmxM172DIeXOiJgq_hVp0,4003
+pycatchmod-1.1.0.dist-info/entry_points.txt,sha256=VPK2yNW7xDIZjNpmbUVmDdWfMpFxeFFikC-Iqh33BQk,57
+pycatchmod-1.1.0.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
