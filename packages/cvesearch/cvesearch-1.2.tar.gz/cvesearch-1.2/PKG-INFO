@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: cvesearch
+Version: 1.2
+Summary: Search references, exploit modules and pocs for any CVE ID
+Home-page: https://pypi.org/project/cvesearch/
+Author: Sujit Ghosal
+Author-email: thesujit@gmail.com
+License: UNKNOWN
+Description: **CVESearch** is a tool to simplify searching for exploits, references and proof-of-concept codes fairly simple from sources like Metasploit, Exploit-DB etc. All you need is a Linux/Windows box with ***Python3*** installed. Internally, this tool works as a thin wrapper around: https://cve.circl.lu/ without which, this project might have not been possible!
+        
+        
+        ## Requirements
+        
+        * **Python 3.x**
+            * requests
+            * termcolor
+            * ujson (optional, but good to have!)
+        
+        
+        ## Install
+        
+        ```
+        * pip3 install cvesearch
+        ```
+        
+        
+        ## Usage
+        
+        ```
+        * cvesearch -h           # Show help and exit
+        * cvesearch -s 2017-0145 # Show all found matches
+        ```
+        
+        
+        ## Feedback
+        
+        Should you have any feedback or suggestion, kindly drop an email to the author (Sujit Ghosal, **thesujit** **[@]** **gmail** **[.]** **com**) mentionining your inputs.
+        
+        
+        
+        ## Disclaimer
+        
+        Please, use this tool at your own risk. The author shall not be responsible for any misuse done through usage of this tool. Any actions and or activities related to this tool is solely your responsibility. The misuse of this tool might result in criminal charges brought against the persons in question. Please pay respect to the third-party website owners and bandwidth, who makes these type of structured information available easily to the public.
+Keywords: cve cveid cvesearch cvelinks cvepoc cveurl vulnerability exploits references poc search
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
