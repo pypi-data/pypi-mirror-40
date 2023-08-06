@@ -1,0 +1,11 @@
+cfdiclient/__init__.py,sha256=miD0A9l-Jn36IwUCD6JixhJBij5QMXcvGbQbTEpyQvw,313
+cfdiclient/autenticacion.py,sha256=ITrOGwUUYSBhpCHC70srB2HpH757MAmxH7CYrYPnpoo,5894
+cfdiclient/descargamasiva.py,sha256=D46Yd54qcfCePq_dAI09JDTggyf6rL1PtGoec-jkrH0,5250
+cfdiclient/fiel.py,sha256=qh0fT2deSlf_Z-qCmtQYT2bSWTIRVdQb0D71i8ROXy4,1639
+cfdiclient/solicitadescarga.py,sha256=f3f-6iqgFiPes9RwV1s5wnMxN4Yltvv-OBzVQWPSc2s,5686
+cfdiclient/verificasolicituddescarga.py,sha256=BvYWIyn7iLaeyWFoNUYnkg-cd2m5olZDrfiXJ83SXmo,5497
+cfdiclient-1.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cfdiclient-1.0.3.dist-info/METADATA,sha256=Tn_rELmNqtH9Txze0lEXkg2viIZtXRut-YsGNRRm_DI,3825
+cfdiclient-1.0.3.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+cfdiclient-1.0.3.dist-info/top_level.txt,sha256=KZ_ig93eSNujwVIm98KBrccJUiM4paGHs_94-tPRFUg,11
+cfdiclient-1.0.3.dist-info/RECORD,,
