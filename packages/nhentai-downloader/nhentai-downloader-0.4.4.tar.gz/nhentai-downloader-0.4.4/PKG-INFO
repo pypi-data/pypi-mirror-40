@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: nhentai-downloader
+Version: 0.4.4
+Summary: Nhentai doujinshi fetcher and downloader
+Home-page: UNKNOWN
+Author: DukeValentine
+Author-email: humanix@posteo.de
+License: Apache
+Description: UNKNOWN
+Keywords: nhentai,doujinshi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
