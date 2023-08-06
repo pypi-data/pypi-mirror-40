@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+bogohash/__init__.py
+bogohash/tests.py
+bogohash.egg-info/PKG-INFO
+bogohash.egg-info/SOURCES.txt
+bogohash.egg-info/dependency_links.txt
+bogohash.egg-info/not-zip-safe
+bogohash.egg-info/top_level.txt
