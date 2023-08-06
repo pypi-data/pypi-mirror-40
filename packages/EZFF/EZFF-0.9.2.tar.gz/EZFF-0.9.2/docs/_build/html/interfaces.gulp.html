@@ -1,0 +1,245 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ezff.interfaces.gulp - Interface to GULP &#8212; EZFF 0.9 Beta documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ezff.utilities.reaxff - Utility to generate forcefield templates for ReaxFF" href="utils.reaxff.html" />
+    <link rel="prev" title="ezff.interfaces.qchem - Interface to QChem" href="interfaces.qchem.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.reaxff.html" title="ezff.utilities.reaxff - Utility to generate forcefield templates for ReaxFF"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="interfaces.qchem.html" title="ezff.interfaces.qchem - Interface to QChem"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EZFF 0.9 Beta documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="code_documentation.html" accesskey="U">Code Documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-ezff.interfaces.gulp">
+<span id="ezff-interfaces-gulp-interface-to-gulp"></span><h1>ezff.interfaces.gulp - Interface to GULP<a class="headerlink" href="#module-ezff.interfaces.gulp" title="Permalink to this headline">¶</a></h1>
+<p>Interface to GULP, the General Utility Lattice Program</p>
+<dl class="class">
+<dt id="ezff.interfaces.gulp.job">
+<em class="property">class </em><code class="descclassname">ezff.interfaces.gulp.</code><code class="descname">job</code><span class="sig-paren">(</span><em>verbose=False</em>, <em>path='.'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/interfaces/gulp.html#job"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.interfaces.gulp.job" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class representing a GULP calculation</p>
+<dl class="method">
+<dt id="ezff.interfaces.gulp.job.cleanup">
+<code class="descname">cleanup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/interfaces/gulp.html#job.cleanup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.interfaces.gulp.job.cleanup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clean-up after the completion of a GULP job. Deletes input, output and forcefields files</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.interfaces.gulp.job.read_atomic_structure">
+<code class="descname">read_atomic_structure</code><span class="sig-paren">(</span><em>structure_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/interfaces/gulp.html#job.read_atomic_structure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.interfaces.gulp.job.read_atomic_structure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-in atomic structure. Currently only VASP POSCAR/CONTCAR files are supported</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>structure_file</strong> (<em>str</em>) – Filename of the atomic structure file</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">xtal trajectory with the structure in the first snapshot</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.interfaces.gulp.job.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>command=None</em>, <em>parallel=False</em>, <em>processors=1</em>, <em>timeout=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/interfaces/gulp.html#job.run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.interfaces.gulp.job.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute GULP job with user-defined parameters</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>command</strong> (<em>str</em>) – path to GULP executable</li>
+<li><strong>parallel</strong> (<em>bool</em>) – Flag for parallel execution</li>
+<li><strong>processors</strong> (<em>int</em>) – Number of processors for parallel execution of each GULP job</li>
+<li><strong>timeout</strong> (<em>int</em>) – GULP job is automatically killed after <code class="docutils literal notranslate"><span class="pre">timeout</span></code> seconds</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.interfaces.gulp.job.write_script_file">
+<code class="descname">write_script_file</code><span class="sig-paren">(</span><em>convert_reaxff=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/interfaces/gulp.html#job.write_script_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.interfaces.gulp.job.write_script_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write-out a complete GULP script file, <code class="docutils literal notranslate"><span class="pre">job.scriptfile</span></code>, based on job parameters</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>convert_reaxff</strong> (<em>bool</em>) – Optional function that manipulates <code class="docutils literal notranslate"><span class="pre">job.forcefield</span></code> before the script file is written</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="ezff.interfaces.gulp.read_elastic_moduli">
+<code class="descclassname">ezff.interfaces.gulp.</code><code class="descname">read_elastic_moduli</code><span class="sig-paren">(</span><em>outfilename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/interfaces/gulp.html#read_elastic_moduli"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.interfaces.gulp.read_elastic_moduli" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read elastic modulus matrix from a completed GULP job</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>outfilename</strong> (<em>str</em>) – Path of the stdout from the GULP job</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">6x6 Elastic modulus matrix in GPa</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ezff.interfaces.gulp.read_energy">
+<code class="descclassname">ezff.interfaces.gulp.</code><code class="descname">read_energy</code><span class="sig-paren">(</span><em>outfilename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/interfaces/gulp.html#read_energy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.interfaces.gulp.read_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read single-point from a completed GULP job</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>outfilename</strong> (<em>str</em>) – Path of the stdout from the GULP job</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Energy of the structure in eV</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ezff.interfaces.gulp.read_lattice_constant">
+<code class="descclassname">ezff.interfaces.gulp.</code><code class="descname">read_lattice_constant</code><span class="sig-paren">(</span><em>outfilename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/interfaces/gulp.html#read_lattice_constant"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.interfaces.gulp.read_lattice_constant" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read lattice constant values from a completed GULP job</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>outfilename</strong> (<em>str</em>) – Path of the stdout from the GULP job</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dictionary with <code class="docutils literal notranslate"><span class="pre">abc</span></code> - 3 lattice constants, <code class="docutils literal notranslate"><span class="pre">ang</span></code> - 3 supercell angles, <code class="docutils literal notranslate"><span class="pre">err_abc</span></code> - error in lattice constant, <code class="docutils literal notranslate"><span class="pre">err_ang</span></code> - error in supercell angles</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ezff.interfaces.gulp.read_phonon_dispersion">
+<code class="descclassname">ezff.interfaces.gulp.</code><code class="descname">read_phonon_dispersion</code><span class="sig-paren">(</span><em>phonon_dispersion_file</em>, <em>units='cm-1'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/interfaces/gulp.html#read_phonon_dispersion"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.interfaces.gulp.read_phonon_dispersion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read phonon dispersion from a complete GULP job</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>phonon_dispersion_file</strong> (<em>str</em>) – Path of file containing phonon dispersion from the GULP job</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">2D np.array containing the phonon dispersion in THz</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="interfaces.qchem.html"
+                        title="previous chapter">ezff.interfaces.qchem - Interface to QChem</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="utils.reaxff.html"
+                        title="next chapter">ezff.utilities.reaxff - Utility to generate forcefield templates for ReaxFF</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/interfaces.gulp.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.reaxff.html" title="ezff.utilities.reaxff - Utility to generate forcefield templates for ReaxFF"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="interfaces.qchem.html" title="ezff.interfaces.qchem - Interface to QChem"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EZFF 0.9 Beta documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="code_documentation.html" >Code Documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Aravind Krishnamoorthy.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.3.
+    </div>
+  </body>
+</html>

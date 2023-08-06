@@ -1,0 +1,180 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Basic Usage &#8212; EZFF 0.9 Beta documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Examples" href="examples.html" />
+    <link rel="prev" title="EZFF – Easy Multi-objective Forcefield Optimization" href="index.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="examples.html" title="Examples"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="EZFF – Easy Multi-objective Forcefield Optimization"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EZFF 0.9 Beta documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="basic-usage">
+<h1>Basic Usage<a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a></h1>
+<p>You will need five pieces of information to get started with focefield optimization using EZFF.</p>
+<ol class="arabic simple">
+<li>Ground truths - Physical properties to parameterize the forcefield against</li>
+<li>Serial GULP executable</li>
+<li>Forcefield template</li>
+<li>Maximum and minimum values of decision variables</li>
+<li>A master python script (<cite>run.py</cite> in examples) that defines different errors, handles GULP jobs and optimization parameters</li>
+<li>(<strong>Optional</strong>) A working installation of MPI and mpi4py for parallel optimization</li>
+</ol>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Ground truths:</th><td class="field-body"><p class="first">Ground truth values (for lattice constant, elastic constants, energies, phonon dispersion curves etc) can either be provided by hand in the master script, or can be calculated using methods provided in the different ezff.interfaces modules</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Serial GULP executable:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">Serial GULP executable built from source code available from <a class="reference external" href="http://gulp.curtin.edu.au/gulp/">http://gulp.curtin.edu.au/gulp/</a> . Parallel optimization jobs simply launch multiple copies of the serial executable.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Forcefield template:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">A forcefield template file is used to designate which variables must be considered for optimization. The forcefield template is constructed from a functioning GULP-readable forcefield by replacing the parameters that need to be optimized with variable names enclosed within dual angle-brackets. For example, the following Lennard-Jones forcefield for solid Neon (from examples lj-serial and lj-parallel)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lennard</span> <span class="n">epsilon</span> <span class="mi">12</span> <span class="mi">6</span>  <span class="c1"># Tell GULP that the next line will contain LJ parameters</span>
+<span class="n">Ne</span> <span class="n">Ne</span> <span class="mf">1.0</span> <span class="mf">1.5</span>  <span class="c1"># Format: atom1 atom2 epsilon sigma</span>
+</pre></div>
+</div>
+<p>can be converted to a template by replacing epsilon and sigma by optimizable decision variables:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lennard</span> <span class="n">epsilon</span> <span class="mi">12</span> <span class="mi">6</span>  <span class="c1"># Tell GULP that the next line will contain LJ parameters</span>
+<span class="n">Ne</span> <span class="n">Ne</span> <span class="o">&lt;&lt;</span><span class="n">eps</span><span class="o">&gt;&gt;</span> <span class="o">&lt;&lt;</span><span class="n">sgma</span><span class="o">&gt;&gt;</span>  <span class="c1"># Format: atom1 atom2 epsilon sigma</span>
+</pre></div>
+</div>
+<p>This fill will instruct EZFF to optimize the <strong>eps</strong> and <strong>sgma</strong> variables. Decision variables are assumed to be real-valued by default. Any decision variable beginning with an underscore (_) is assumed to be integer-valued.</p>
+<p>The template forcefield must be paired with an appropriate file specifying the permissible ranges of these decision variables.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Decision variable ranges:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">This file lists the permissible ranges of decision variables (i.e. minimum and maximum value that the variable can take) during forcefield optimization. This text file is written in the following format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Decision_variable_1</span><span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">angle</span> <span class="n">brackets</span><span class="p">)</span>    <span class="n">Minimum_value</span>  <span class="n">Maximum_value</span>
+<span class="n">Decision_variable_2</span><span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">angle</span> <span class="n">brackets</span><span class="p">)</span>    <span class="n">Minimum_value</span>  <span class="n">Maximum_value</span>
+<span class="n">Decision_variable_3</span><span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">angle</span> <span class="n">brackets</span><span class="p">)</span>    <span class="n">Minimum_value</span>  <span class="n">Maximum_value</span>
+<span class="o">.</span>
+<span class="o">.</span>
+<span class="n">Decision_variable_n</span><span class="p">(</span><span class="n">without</span> <span class="n">the</span> <span class="n">angle</span> <span class="n">brackets</span><span class="p">)</span>    <span class="n">Minimum_value</span>  <span class="n">Maximum_value</span>
+</pre></div>
+</div>
+<p>A valid variable range file for the Lennard-Jones template file above is given below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">eps</span> <span class="mf">0.5</span> <span class="mf">2.5</span>
+<span class="n">sgma</span> <span class="mf">0.1</span> <span class="mf">0.4</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Please ensure that the template and variable_ranges file are compatible. Specifically,
+1. Every variable defined in the forcefield template must have one (and only one) corresonding entry in the variable ranges file
+2. The variable ranges file should not refer to variables not present in the template file</p>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Python script:</th><td class="field-body"><p class="first">This python script should include, at the very least, your custom function to calculate the error (i.e. deviation of the forcefield from ground-truths), an ezff.OptProblem, an ezff.Algorithm and a call to ezff.optimize, and for the case of parallel execution, an ezff.Pool.</p>
+<p class="last">The custom error function should be written to accept one input – a dictionary of decision_variable-value pairs (e.g. {‘eps’: 1.273, ‘sgma’: 0.12} for example above) and should return a list of all computed objectives. The length of this returned list should equal the number of errors provided during OptProblem initialization.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">EZFF – Easy Multi-objective Forcefield Optimization</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="examples.html"
+                        title="next chapter">Examples</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/basic.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="examples.html" title="Examples"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="EZFF – Easy Multi-objective Forcefield Optimization"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EZFF 0.9 Beta documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Aravind Krishnamoorthy.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.3.
+    </div>
+  </body>
+</html>

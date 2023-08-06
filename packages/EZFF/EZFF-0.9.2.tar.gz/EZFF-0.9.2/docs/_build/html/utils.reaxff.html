@@ -1,0 +1,350 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ezff.utilities.reaxff - Utility to generate forcefield templates for ReaxFF &#8212; EZFF 0.9 Beta documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="ezff.interfaces.gulp - Interface to GULP" href="interfaces.gulp.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="interfaces.gulp.html" title="ezff.interfaces.gulp - Interface to GULP"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EZFF 0.9 Beta documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="code_documentation.html" accesskey="U">Code Documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-ezff.utils.reaxff">
+<span id="ezff-utilities-reaxff-utility-to-generate-forcefield-templates-for-reaxff"></span><h1>ezff.utilities.reaxff - Utility to generate forcefield templates for ReaxFF<a class="headerlink" href="#module-ezff.utils.reaxff" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ezff.utils.reaxff.reax_forcefield">
+<em class="property">class </em><code class="descclassname">ezff.utils.reaxff.</code><code class="descname">reax_forcefield</code><span class="sig-paren">(</span><em>filename=None</em>, <em>template='ff.template.generated'</em>, <em>ranges='param_ranges'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield" title="Permalink to this definition">¶</a></dt>
+<dd><p>ReaxFF forcefield class. Used for generating ReaxFF templates</p>
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.generate_templates">
+<code class="descname">generate_templates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.generate_templates"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.generate_templates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to write-out the current modified forcefield sections into a forcefield template file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.get_element_number">
+<code class="descname">get_element_number</code><span class="sig-paren">(</span><em>element</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.get_element_number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.get_element_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the numerical index of an element in the ReaxFF forcefield file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>element</strong> (<em>str</em>) – Chemical symbol for the element</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.make_template_fourbody">
+<code class="descname">make_template_fourbody</code><span class="sig-paren">(</span><em>e1</em>, <em>e2</em>, <em>e3</em>, <em>e4</em>, <em>bounds=0.1</em>, <em>common=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.make_template_fourbody"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.make_template_fourbody" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to generate decision variables for all four-body terms for a given quartet of elements</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>e1</strong> (<em>str</em>) – Chemical symbol for element 1</li>
+<li><strong>e2</strong> (<em>str</em>) – Chemical symbol for element 2</li>
+<li><strong>e3</strong> (<em>str</em>) – Chemical symbol for element 3</li>
+<li><strong>e4</strong> (<em>str</em>) – Chemical symbol for element 4</li>
+<li><strong>bounds</strong> (<em>float</em>) – Maximum deviation allowed for each decision variable from its current value in the forcefield</li>
+<li><strong>common</strong> (<em>bool</em>) – Flag for the optimization of common parameters</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.make_template_threebody">
+<code class="descname">make_template_threebody</code><span class="sig-paren">(</span><em>e1</em>, <em>e2</em>, <em>e3</em>, <em>bounds=0.1</em>, <em>common=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.make_template_threebody"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.make_template_threebody" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to generate decision variables for all three-body terms for a given triplet of elements</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>e1</strong> (<em>str</em>) – Chemical symbol for element 1</li>
+<li><strong>e2</strong> (<em>str</em>) – Chemical symbol for element 2</li>
+<li><strong>e3</strong> (<em>str</em>) – Chemical symbol for element 3</li>
+<li><strong>bounds</strong> (<em>float</em>) – Maximum deviation allowed for each decision variable from its current value in the forcefield</li>
+<li><strong>common</strong> (<em>bool</em>) – Flag for the optimization of common parameters</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.make_template_twobody">
+<code class="descname">make_template_twobody</code><span class="sig-paren">(</span><em>e1</em>, <em>e2</em>, <em>double_bond=False</em>, <em>triple_bond=False</em>, <em>bounds=0.1</em>, <em>common=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.make_template_twobody"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.make_template_twobody" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to generate decision variables for all two-body terms (i.e. bond-order, attractive and vdW) between two given elements</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>e1</strong> (<em>str</em>) – Chemical symbol for element 1</li>
+<li><strong>e2</strong> (<em>str</em>) – Chemical symbol for element 2</li>
+<li><strong>bounds</strong> (<em>float</em>) – Maximum deviation allowed for each decision variable from its current value in the forcefield</li>
+<li><strong>double_bond</strong> (<em>bool</em>) – Flag for the presence of a double-bond between elements e1 and e2</li>
+<li><strong>triple_bond</strong> (<em>bool</em>) – Flag for the presence of a triple-bond between elements e1 and e2</li>
+<li><strong>common</strong> (<em>bool</em>) – Flag for the optimization of common parameters</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.read_forcefield">
+<code class="descname">read_forcefield</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.read_forcefield"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.read_forcefield" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read ReaxFF forcefield</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<em>str</em>) – ReaxFF forcefield filename</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.split_forcefield">
+<code class="descname">split_forcefield</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.split_forcefield"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.split_forcefield" title="Permalink to this definition">¶</a></dt>
+<dd><p>Split ReaxFF forcefield into sections corresponding to general, one-body, two-body, three-body, four-body, offdiagonal and H-bond sections</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.template_bond_energy_attractive">
+<code class="descname">template_bond_energy_attractive</code><span class="sig-paren">(</span><em>e1</em>, <em>e2</em>, <em>double_bond=False</em>, <em>triple_bond=False</em>, <em>bounds=0.1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.template_bond_energy_attractive"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.template_bond_energy_attractive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate decision variables related to the two-body attractive term</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>e1</strong> (<em>str</em>) – Chemical symbol for element 1</li>
+<li><strong>e2</strong> (<em>str</em>) – Chemical symbol for element 2</li>
+<li><strong>bounds</strong> (<em>float</em>) – Maximum deviation allowed for each decision variable from its current value in the forcefield</li>
+<li><strong>double_bond</strong> (<em>bool</em>) – Flag for the presence of a double-bond between elements e1 and e2</li>
+<li><strong>triple_bond</strong> (<em>bool</em>) – Flag for the presence of a triple-bond between elements e1 and e2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.template_bond_energy_vdW">
+<code class="descname">template_bond_energy_vdW</code><span class="sig-paren">(</span><em>e1</em>, <em>e2</em>, <em>f13=False</em>, <em>bounds=0.1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.template_bond_energy_vdW"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.template_bond_energy_vdW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate decision variables related to the two-body repulsive (i.e. van der Waals) term</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>e1</strong> (<em>str</em>) – Chemical symbol for element 1</li>
+<li><strong>e2</strong> (<em>str</em>) – Chemical symbol for element 2</li>
+<li><strong>bounds</strong> (<em>float</em>) – Maximum deviation allowed for each decision variable from its current value in the forcefield</li>
+<li><strong>f13</strong> (<em>bool</em>) – Flag for the optimization of common variables</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.template_bond_order">
+<code class="descname">template_bond_order</code><span class="sig-paren">(</span><em>e1</em>, <em>e2</em>, <em>double_bond=False</em>, <em>triple_bond=False</em>, <em>bounds=0.1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.template_bond_order"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.template_bond_order" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate decision variables in the bond-order equation for bonds between two elements</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>e1</strong> (<em>str</em>) – Chemical symbol for element 1</li>
+<li><strong>e2</strong> (<em>str</em>) – Chemical symbol for element 2</li>
+<li><strong>bounds</strong> (<em>float</em>) – Maximum deviation allowed for each decision variable from its current value in the forcefield</li>
+<li><strong>double_bond</strong> (<em>bool</em>) – Flag for the presence of a double-bond between elements e1 and e2</li>
+<li><strong>triple_bond</strong> (<em>bool</em>) – Flag for the presence of a triple-bond between elements e1 and e2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.template_fourbody_energy">
+<code class="descname">template_fourbody_energy</code><span class="sig-paren">(</span><em>e1</em>, <em>e2</em>, <em>e3</em>, <em>e4</em>, <em>bounds=0.1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.template_fourbody_energy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.template_fourbody_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate decision variables related to the four-body dihedral term</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>e1</strong> (<em>str</em>) – Chemical symbol for element 1</li>
+<li><strong>e2</strong> (<em>str</em>) – Chemical symbol for element 2</li>
+<li><strong>e3</strong> (<em>str</em>) – Chemical symbol for element 3</li>
+<li><strong>e4</strong> (<em>str</em>) – Chemical symbol for element 4</li>
+<li><strong>bounds</strong> (<em>float</em>) – Maximum deviation allowed for each decision variable from its current value in the forcefield</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.template_threebody_energy">
+<code class="descname">template_threebody_energy</code><span class="sig-paren">(</span><em>e1</em>, <em>e2</em>, <em>e3</em>, <em>bounds=0.1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.template_threebody_energy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.template_threebody_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate decision variables related to the three-body angle term</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>e1</strong> (<em>str</em>) – Chemical symbol for element 1</li>
+<li><strong>e2</strong> (<em>str</em>) – Chemical symbol for element 2</li>
+<li><strong>e3</strong> (<em>str</em>) – Chemical symbol for element 3</li>
+<li><strong>bounds</strong> (<em>float</em>) – Maximum deviation allowed for each decision variable from its current value in the forcefield</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.write_formatted_forcefields">
+<code class="descname">write_formatted_forcefields</code><span class="sig-paren">(</span><em>outfilename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.write_formatted_forcefields"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.write_formatted_forcefields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to write-out the current forcefield with correct ReaxFF formatting</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>outfilename</strong> (<em>str</em>) – File to which formatted forcefield to be written to</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.utils.reaxff.reax_forcefield.write_gulp_library">
+<code class="descname">write_gulp_library</code><span class="sig-paren">(</span><em>outfilename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff/utils/reaxff.html#reax_forcefield.write_gulp_library"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.utils.reaxff.reax_forcefield.write_gulp_library" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to write-out the forcefield in the GULP library format</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>outfilename</strong> (<em>str</em>) – File to which the GULP ReaxFF forcefield library</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="interfaces.gulp.html"
+                        title="previous chapter">ezff.interfaces.gulp - Interface to GULP</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/utils.reaxff.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="interfaces.gulp.html" title="ezff.interfaces.gulp - Interface to GULP"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EZFF 0.9 Beta documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="code_documentation.html" >Code Documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Aravind Krishnamoorthy.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>EZFF - Easy forcefield fitting &#8212; EZFF 0.9 Beta documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ezff.ffio - Methods to read/write forcefield files" href="ffio.html" />
+    <link rel="prev" title="Code Documentation" href="code_documentation.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="ffio.html" title="ezff.ffio - Methods to read/write forcefield files"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="code_documentation.html" title="Code Documentation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EZFF 0.9 Beta documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="code_documentation.html" accesskey="U">Code Documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ezff-easy-forcefield-fitting">
+<h1>EZFF - Easy forcefield fitting<a class="headerlink" href="#ezff-easy-forcefield-fitting" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ezff.OptProblem">
+<em class="property">class </em><code class="descclassname">ezff.</code><code class="descname">OptProblem</code><span class="sig-paren">(</span><em>num_errors=None</em>, <em>error_function=None</em>, <em>variable_bounds=None</em>, <em>template=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff.html#OptProblem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.OptProblem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for Forcefield optimization problem. Derived from the generic Platypus Problem class for optimization problems</p>
+<dl class="method">
+<dt id="ezff.OptProblem.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>num_errors=None</em>, <em>error_function=None</em>, <em>variable_bounds=None</em>, <em>template=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff.html#OptProblem.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.OptProblem.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>num_errors</strong> (<em>int</em>) – Number of errors to be minimized for forcefield optimization</li>
+<li><strong>error_function</strong> (<em>function</em>) – User-defined function that takes-in a dictionary of variable-value pairs and outputs a list of computed errors</li>
+<li><strong>variable_bounds</strong> (<em>dict</em>) – Dictionary of bounds for decision variables in the format <cite>variable: [lower_bound upper_bound]</cite></li>
+<li><strong>template</strong> (<em>str</em>) – Forcefield template</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ezff.OptProblem.evaluate">
+<code class="descname">evaluate</code><span class="sig-paren">(</span><em>solution</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff.html#OptProblem.evaluate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.OptProblem.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper for platypus.Problem.evaluate . Takes the array of current decision variables and repackages it as a dictionary for the error function</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>solution</strong> (<em>list</em>) – 1-D array of variables for current epoch and rank</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-ezff"></span><p>This module provide general functions for EZFF</p>
+<dl class="function">
+<dt id="ezff.Algorithm">
+<code class="descclassname">ezff.</code><code class="descname">Algorithm</code><span class="sig-paren">(</span><em>myproblem</em>, <em>algorithm_string</em>, <em>population=1024</em>, <em>pool=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff.html#Algorithm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.Algorithm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide a uniform interface to initialize an algorithm class for serial and parallel execution</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>myproblem</strong> (<em>Problem</em>) – EZFF Problem to be optimized</li>
+<li><strong>algorithm_string</strong> (<em>str</em>) – EZFF Algorithm to use for optimization. Allowed options are <code class="docutils literal notranslate"><span class="pre">NSGAII</span></code>, <code class="docutils literal notranslate"><span class="pre">NSGAIII</span></code> and <code class="docutils literal notranslate"><span class="pre">IBEA</span></code></li>
+<li><strong>population</strong> (<em>int</em>) – Population size for genetic algorithms</li>
+<li><strong>pool</strong> (<em>MPIPool</em><em> or </em><em>None</em>) – MPI pool for parallel execution. If this is None, serial execution is assumed</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="ezff.Pool">
+<em class="property">class </em><code class="descclassname">ezff.</code><code class="descname">Pool</code><span class="sig-paren">(</span><em>comm=None</em>, <em>debug=False</em>, <em>loadbalance=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff.html#Pool"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.Pool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper for platypus.MPIPool</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>MPIPool</strong> (<em>MPIPool</em>) – MPI Pool</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="ezff.Pool.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>comm=None</em>, <em>debug=False</em>, <em>loadbalance=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff.html#Pool.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.Pool.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-ezff"></span><p>This module provide general functions for EZFF</p>
+<dl class="function">
+<dt id="ezff.error_phonon_dispersion">
+<code class="descclassname">ezff.</code><code class="descname">error_phonon_dispersion</code><span class="sig-paren">(</span><em>md_disp</em>, <em>gt_disp</em>, <em>weights='uniform'</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff.html#error_phonon_dispersion"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.error_phonon_dispersion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate error between MD-computed phonon dispersion and the ground-truth phonon dispersion with user-defined weighting schemes</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>md_disp</strong> (<em>2D np.array</em>) – MD-computed phonon dispersion curve</li>
+<li><strong>gt_disp</strong> (<em>2D np.array</em>) – Ground-truth phonon dispersion curve</li>
+<li><strong>weights</strong> (str <cite>or</cite> list) – User-defined weighting scheme for calculating errors provided as a list of numbers, one per band. Possible values are
+<code class="docutils literal notranslate"><span class="pre">uniform</span></code> - where errors from all bands are equally weighted,
+<code class="docutils literal notranslate"><span class="pre">acoustic</span></code> - where errors from lower-frequency bands are assigned greater weights, and
+<cite>list</cite> - 1-D list of length equal to number of bands</li>
+<li><strong>verbose</strong> (<em>bool</em>) – Deprecated option for verbosity of error calculation routine</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ezff.optimize">
+<code class="descclassname">ezff.</code><code class="descname">optimize</code><span class="sig-paren">(</span><em>problem</em>, <em>algorithm</em>, <em>iterations=100</em>, <em>write_forcefields=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff.html#optimize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.optimize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uniform wrapper function that steps through the optimization process. Also provides uniform handling of output files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>problem</strong> (<em>Problem</em>) – EZFF Problem to be optimized</li>
+<li><strong>algorithm</strong> (<em>str</em>) – EZFF Algorithm to use for optimization. Allowed options are <code class="docutils literal notranslate"><span class="pre">NSGAII</span></code>, <code class="docutils literal notranslate"><span class="pre">NSGAIII</span></code> and <code class="docutils literal notranslate"><span class="pre">IBEA</span></code></li>
+<li><strong>iterations</strong> (<em>int</em>) – Number of epochs to perform the optimization for</li>
+<li><strong>write_forcefields</strong> (<em>int</em><em> or </em><em>None</em>) – All non-dominated forcefields are written out every <code class="docutils literal notranslate"><span class="pre">write_forcefields</span></code> epochs. If this is <code class="docutils literal notranslate"><span class="pre">None</span></code>, the forcefields are written out for the first and last epoch</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ezff.read_atomic_structure">
+<code class="descclassname">ezff.</code><code class="descname">read_atomic_structure</code><span class="sig-paren">(</span><em>structure_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff.html#read_atomic_structure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.read_atomic_structure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-in atomic structure. Currently only VASP POSCAR/CONTCAR files are supported</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>structure_file</strong> (<em>str</em>) – Filename of the atomic structure file</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ezff.pick_algorithm">
+<code class="descclassname">ezff.</code><code class="descname">pick_algorithm</code><span class="sig-paren">(</span><em>myproblem</em>, <em>algorithm</em>, <em>population=1024</em>, <em>evaluator=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ezff.html#pick_algorithm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ezff.pick_algorithm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a serial or parallel platypus.Algorithm object based on input string</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>myproblem</strong> (<em>Problem</em>) – EZFF Problem to be optimized</li>
+<li><strong>algorithm</strong> (<em>str</em>) – EZFF Algorithm to use for optimization. Allowed options are <code class="docutils literal notranslate"><span class="pre">NSGAII</span></code>, <code class="docutils literal notranslate"><span class="pre">NSGAIII</span></code> and <code class="docutils literal notranslate"><span class="pre">IBEA</span></code></li>
+<li><strong>population</strong> (<em>int</em>) – Population size for genetic algorithms</li>
+<li><strong>evaluator</strong> (<em>Platypus.Evaluator</em>) – Platypus.Evaluator in case of parallel execution</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="code_documentation.html"
+                        title="previous chapter">Code Documentation</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ffio.html"
+                        title="next chapter">ezff.ffio - Methods to read/write forcefield files</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/ezff.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="ffio.html" title="ezff.ffio - Methods to read/write forcefield files"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="code_documentation.html" title="Code Documentation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EZFF 0.9 Beta documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="code_documentation.html" >Code Documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Aravind Krishnamoorthy.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.3.
+    </div>
+  </body>
+</html>
