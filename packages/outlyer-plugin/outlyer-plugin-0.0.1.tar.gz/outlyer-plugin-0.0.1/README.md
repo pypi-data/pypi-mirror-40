@@ -1,0 +1,37 @@
+# Outlyer Plugin
+
+api for definining native Outlyer Plugins
+
+```python
+
+class Plugin:
+    """
+    The Plugin API.
+    Users must derive from this class when implementing a custom Plugin
+    """
+    def collect(self) -> Status:
+        """Perform collections operations for the provided Target"""
+
+    def gauge(self, name: str, labels: Optional[dict]) -> Gauge:
+        """Get a Gauge instance for the specified Name/Labels"""
+
+    def counter(self, name: str, labels: Optional[dict]) -> Counter:
+        """Get a Counter instance for the specified Name/Labels"""
+
+    def get(self, key: str, default: any) -> any:
+        """Get a Target config property"""
+```
+
+## Usage
+```python
+from outlyer_plugin import Plugin, Status
+
+class MyPlugin(Plugin):
+    def collect(self):
+        self.gauge(f'sys.cpu.user.pct').set(55)
+        return Status.OK
+
+if __name__ == '__main__':
+    # To run the collection
+    sys.exit(MyPlugin().run())
+```
