@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: test_docx
+Version: 0.3
+Summary: Parse docx file
+Home-page: https://github.com/another-it-team/test-docx
+Author: kietdv
+Author-email: dinhvankiet124@gmail.com
+License: MIT
+Download-URL: https://github.com/another-it-team/test-docx/archive/v1.1.tar.gz
+Description: UNKNOWN
+Keywords: docx,python-docx
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
