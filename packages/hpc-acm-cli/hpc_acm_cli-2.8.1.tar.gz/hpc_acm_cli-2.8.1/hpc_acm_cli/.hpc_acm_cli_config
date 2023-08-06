@@ -1,0 +1,18 @@
+[DEFAULT]
+# Issuer URL of Azure Active Directory
+# issuer_url=https://...
+
+# Azure Active Directory App Id
+# client_id=
+
+# Azure Active Directory App secret
+# client_secret=
+
+# API server url, default value for "--host" parameter
+# host=https://xxx.azurewebsites.net/v1
+
+# Number of items to show in a "list" subcommand, default value for "--count" parameter
+count=100
+
+# Node pattern to "new" subcommand, default value for "--pattern" parameter
+pattern=*

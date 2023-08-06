@@ -1,0 +1,5 @@
+[console_scripts]
+clusdiag = hpc_acm_cli.diag:main
+clusnode = hpc_acm_cli.node:main
+clusrun = hpc_acm_cli.clus:main
+
