@@ -1,0 +1,3 @@
+[console_scripts]
+apollo-archive = apolloarchive.cli:cli_sync
+

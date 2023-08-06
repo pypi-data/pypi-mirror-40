@@ -1,0 +1,20 @@
+CHANGES
+=======
+
+1.1
+---
+
+* Add prefix id to picture filename to avoid overwrite on duplicated title
+* Fix caption image readme
+* Add Apollo 11 image to README
+
+1.0
+---
+
+* Upgrade to Beta status
+* Add JupyterNotebook badge
+* Disclaimer
+* Add badges
+* SetEnv variables for tox
+* Change travis-ci setup
+* Initial commit
