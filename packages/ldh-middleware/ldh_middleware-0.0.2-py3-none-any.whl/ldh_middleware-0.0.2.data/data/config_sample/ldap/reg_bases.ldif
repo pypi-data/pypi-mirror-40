@@ -1,0 +1,13 @@
+# Replace the 'dc=example,dc=com' lines below by your domain name
+
+# An organizational unit to store groups
+dn: ou=groups,dc=example,dc=com
+objectclass:organizationalunit
+ou: groups
+description: just groups
+
+# An organizational unit to store people
+dn: ou=people,dc=example,dc=com
+objectclass:organizationalunit
+ou: people
+description: just people
