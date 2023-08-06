@@ -1,0 +1,4 @@
+[console_scripts]
+pymedphys = pymedphys.entry_points.gui:gui
+trf2csv = pymedphys.entry_points.trf2csv:trf2csv_cli
+
