@@ -1,0 +1,119 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+#
+# GitAuthors - A simple tool that prints a quick summary of a repo's authors.
+#
+# Ansgar Grunseid
+# grunseid.com
+# grunseid@gmail.com
+#
+# License: MIT
+#
+
+"""GitAuthors - Get a quick summary of a repo's authors.
+
+Usage:
+  gitauthors <repository-URL>
+  gitauthors -h | --help
+  gitauthors --version
+
+Options:
+  -h --help     Show this screen.
+  --version     Show version.
+
+Examples:
+  gitauthors https://github.com/gruns/gitauthors
+"""
+
+import os
+import sys
+import shutil
+from io import BytesIO
+from tempfile import mkdtemp
+from time import gmtime, strftime
+from contextlib import contextmanager
+
+from docopt import docopt
+from dulwich import porcelain
+try:
+    from icecream import ic
+except ImportError:  # Graceful fallback if IceCream isn't installed.
+    ic = lambda *a: None if not a else (a[0] if len(a) == 1 else a)
+
+try:  # Local import.
+    from __version__ import __version__ as VERSION
+except ImportError:  # System import.
+    from gitauthors.__version__ import __version__ as VERSION
+
+
+def utf8(s):
+    if hasattr(s, 'decode'):  # Python 3.
+        return s.decode('utf8')
+    return s  # Python 3.
+
+
+@contextmanager
+def temporaryDirectory():
+    tmp = mkdtemp()
+    try:
+        yield tmp
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)  # Can still raise.
+
+
+def getRepositoryAuthors(path):
+    authors = {}  # email -> (name, numCommits, latestCommitDate).
+
+    with porcelain.open_repo_closing(path) as repo:
+        for entry in repo.get_walker():
+            commit = entry.commit
+            author = utf8(commit.author)
+
+            date = utf8(strftime('%b %d, %Y', gmtime(commit.author_time)))
+            name, email = [s.strip(' <>') for s in author.rsplit(' ', 1)]
+
+            _, numCommits, _ = authors.get(email, ('ignored', 0, 'ignored'))
+            numCommits += 1
+
+            authors[email] = (name, numCommits, date)
+
+    items = list(authors.items())
+    byNumCommits = sorted(items, key=lambda author: author[1][1])[::-1]
+
+    return byNumCommits
+
+
+def gitauthors(repoUrl):
+    lines = []
+
+    with temporaryDirectory() as repo:
+        with open(os.devnull, 'wb') as devnull:
+            porcelain.clone(repoUrl, repo, errstream=devnull)
+
+        authors = getRepositoryAuthors(repo)
+
+        longestNameLen = max(len(t[0]) for _, t in authors)
+        longestEmailLen = max(len(email) for email, _ in authors)
+        longestCommitsLen = max(len(str(t[1])) for _, t in authors)
+
+        fmt = u'{0:%i}  {1:<%i}  {2:>%i} %%s latest on {3}'
+        fmt = fmt % (longestNameLen, longestEmailLen, longestCommitsLen)
+        for email, (name, numCommits, latestCommitDate) in authors:
+            tmp = fmt % (u' commit,' if numCommits == 1 else u'commits,')
+            lines.append(tmp.format(name, email, numCommits, latestCommitDate))
+
+    return os.linesep.join(lines)
+
+
+def main():
+    args = docopt(__doc__, version=VERSION)  # Raises SystemExit.
+    url = args.get('<repository-URL>')
+
+    out = gitauthors(url)
+
+    print(out)
+
+
+if __name__ == '__main__':
+    main()
