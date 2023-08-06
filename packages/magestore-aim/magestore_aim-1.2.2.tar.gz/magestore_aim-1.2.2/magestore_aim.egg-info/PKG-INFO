@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: magestore-aim
+Version: 1.2.2
+Summary: Auto install magento using docker
+Home-page: https://github.com/Magestore/go-environment
+Author: Mars
+Author-email: mars@trueplus.vn
+License: UNKNOWN
+Description: # Automation install magento using Docker
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
