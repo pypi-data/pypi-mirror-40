@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: baybars
+Version: 0.0.12
+Summary: Python Common Packages
+Home-page: http://pypi.org/project/baybars/
+Author: Bugra Akyildiz
+Author-email: bugra.akyildiz@jet.com
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: azure kafka blob documentdb cosmosdb queue tar
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
