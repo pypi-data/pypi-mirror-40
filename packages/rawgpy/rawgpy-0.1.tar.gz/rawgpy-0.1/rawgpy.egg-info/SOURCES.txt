@@ -1,0 +1,15 @@
+README.md
+setup.py
+rawgpy/__init__.py
+rawgpy/charts.py
+rawgpy/game_result.py
+rawgpy/id_name_slug.py
+rawgpy/platform_.py
+rawgpy/rating.py
+rawgpy/rawg.py
+rawgpy/store.py
+rawgpy.egg-info/PKG-INFO
+rawgpy.egg-info/SOURCES.txt
+rawgpy.egg-info/dependency_links.txt
+rawgpy.egg-info/not-zip-safe
+rawgpy.egg-info/top_level.txt
