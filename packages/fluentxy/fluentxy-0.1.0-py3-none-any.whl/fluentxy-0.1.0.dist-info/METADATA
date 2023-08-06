@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: fluentxy
+Version: 0.1.0
+Summary: An interface to produce Pandas DataFrames from Fluent XY output files.
+Home-page: https://github.com/bryanwweber/fluentxy
+License: UNKNOWN
+Author: Bryan W. Weber
+Author-email: bryan.w.weber@gmail.com
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: parse
+Requires-Dist: pandas
+Requires-Dist: numpy
+Provides-Extra: .none
+
+# fluentxy
+
+A small package to parse `.xy` output files from Fluent into Pandas DataFrames.
+The typical `.xy` output from Fluent looks like
+
+```text
+(title "Axial Velocity")
+(labels "Position" "Axial Velocity")
+
+((xy/key/label "inlet")
+0	0.2
+...
+0.00873	0.2
+)
+```
+
+and this module parses this output into a DataFrame that looks like
+
+```python
+from fluentxy import parse_data
+with open('filename.xy', 'r') as f:
+    lines = f.readlines()
+data = parse_data(lines)
+data.head()
+      inlet
+   Position Axial Velocity
+0  0.000000            0.2
+1  0.000582            0.2
+2  0.001164            0.2
+3  0.001746            0.2
+4  0.002328            0.2
+```
+

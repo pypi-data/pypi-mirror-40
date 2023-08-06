@@ -1,0 +1,11 @@
+fluentxy/__init__.py,sha256=1uLEFTJt_vJvgTI75Gjvkf5WDsU7D6SbU0TzBceKQUw,1539
+fluentxy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fluentxy/tests/test_fluentxy.py,sha256=YHFb9gU6sVDVdezATRLcyQG08glE0jnBH7B8qxjPxNQ,805
+fluentxy/tests/data/axial-velocity-mesh-1.csv,sha256=psn3zYltFgMGqQwlRmkD2LqmjJ0Q3qFIdhpdh6YGpd0,4136
+fluentxy/tests/data/axial-velocity-mesh-1.xy,sha256=IN_n3yRvVGY-h7KekAA4ZhA-8OZGYLZQPzHR-9LiBfU,4248
+fluentxy/tests/data/axial-velocity-mesh-2.csv,sha256=bLnXx6DWNqKlKkSU7hggMtCCi6wZ6rqThFVDzvAA-TE,8109
+fluentxy/tests/data/axial-velocity-mesh-2.xy,sha256=SMiIUcP7DkCyw1_jeM3Se3-oZlUNrb5s1wmn-oSKUBE,8311
+fluentxy-0.1.0.dist-info/LICENSE,sha256=jmOy2ku7GIzojg54Q59wihwAJrsKb52aTmhIuECWCkQ,1514
+fluentxy-0.1.0.dist-info/WHEEL,sha256=MP1UiX4AXjPa4mWvCuy-oUiZT3GZDnthv7K0OSicOP0,81
+fluentxy-0.1.0.dist-info/METADATA,sha256=cpclWkbpznNIuBVunEVDelDJoG0TKcgv8Q6PS7-WZkk,1264
+fluentxy-0.1.0.dist-info/RECORD,,
