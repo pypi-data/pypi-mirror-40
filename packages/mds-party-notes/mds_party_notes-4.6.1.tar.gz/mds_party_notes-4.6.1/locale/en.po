@@ -1,0 +1,17 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+# party.party
+msgctxt "field:party.party,notizen:"
+msgid "Notes"
+msgstr "Notes"
+
+msgctxt "field:party.party,notizen_tree:"
+msgid "Notes"
+msgstr "Notes"
+
+msgctxt "view:party.party:"
+msgid "Notes"
+msgstr "Notes"
+
