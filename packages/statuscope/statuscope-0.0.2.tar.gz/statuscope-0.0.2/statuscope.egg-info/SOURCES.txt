@@ -1,0 +1,10 @@
+README.md
+setup.py
+statuscope/__init__.py
+statuscope.egg-info/PKG-INFO
+statuscope.egg-info/SOURCES.txt
+statuscope.egg-info/dependency_links.txt
+statuscope.egg-info/requires.txt
+statuscope.egg-info/top_level.txt
+statuscope/log/__init__.py
+statuscope/log/sender.py
