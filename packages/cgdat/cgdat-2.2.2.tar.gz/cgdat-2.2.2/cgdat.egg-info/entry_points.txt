@@ -1,0 +1,4 @@
+[console_scripts]
+cgdat-gui = cgdat.start_cl:main
+cgdat-shortcut = cgdat.create_shortcut_cl:main
+
