@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dophon-db"
+version = "1.2.6a2"
+description = "dophon mysql module"
+authors = ["CallMeE <ealohu@163.com>"]
+license='Apache 2.0'
+url='https://github.com/Ca11MeE/dophon'
+
+[tool.poetry.dependencies]
+python = "^3.6"
+PyMySQL="*"
+dophon-logger="*"
+
+[tool.poetry.dev-dependencies]
+python = "^3.6"
