@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+django_context/__init__.py
+django_context/apps.py
+django_context/logging.py
+django_context/middlewares.py
+django_context/signals.py
+django_context/tools.py
+django_context.egg-info/PKG-INFO
+django_context.egg-info/SOURCES.txt
+django_context.egg-info/dependency_links.txt
+django_context.egg-info/not-zip-safe
+django_context.egg-info/requires.txt
+django_context.egg-info/top_level.txt
