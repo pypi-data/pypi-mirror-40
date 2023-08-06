@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+mangum/__init__.py
+mangum/__version__.py
+mangum.egg-info/PKG-INFO
+mangum.egg-info/SOURCES.txt
+mangum.egg-info/dependency_links.txt
+mangum.egg-info/top_level.txt
