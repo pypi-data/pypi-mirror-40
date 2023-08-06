@@ -1,0 +1,11 @@
+setup.py
+dreamnet/__init__.py
+dreamnet/dreamnet.py
+dreamnet/english_cnet.py
+dreamnet/scene.py
+dreamnet.egg-info/PKG-INFO
+dreamnet.egg-info/SOURCES.txt
+dreamnet.egg-info/dependency_links.txt
+dreamnet.egg-info/not-zip-safe
+dreamnet.egg-info/requires.txt
+dreamnet.egg-info/top_level.txt
