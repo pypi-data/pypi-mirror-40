@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: pid-1zlab
+Version: 1.0
+Summary: PID controll algorithm.
+Home-page: https://www.1zlab.com
+Author: Akai
+Author-email: xingshunkai@qq.com
+License: MIT License
+Description: UNKNOWN
+Keywords: PID 1zlab controll micropython
+Platform: Linux
+Platform: Unix
+Platform: Windows
