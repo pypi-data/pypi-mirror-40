@@ -1,0 +1,3 @@
+[console_scripts]
+linnea = linnea.__main__:main
+
