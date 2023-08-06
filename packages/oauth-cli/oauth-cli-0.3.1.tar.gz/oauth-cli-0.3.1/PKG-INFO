@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: oauth-cli
+Version: 0.3.1
+Summary: utility to obtain an JWT access token using OAuth PKCE flow
+Home-page: https://github.com/binxio/oauth-cli
+Author: Mark van Holsteijn
+Author-email: mark@binx.io
+License: Apache Software License (http://www.apache.org/licenses/LICENSE-2.0)
+Description: 
+        CLI for obtaining JWT access tokens using the PKCE flow
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
