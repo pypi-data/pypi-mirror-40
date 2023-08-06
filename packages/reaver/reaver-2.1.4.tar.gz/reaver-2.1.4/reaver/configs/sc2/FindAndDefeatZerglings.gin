@@ -1,0 +1,21 @@
+build_fully_conv.fc_dim = 64
+
+tf.train.AdamOptimizer.learning_rate = @tf.train.polynomial_decay()
+tf.train.polynomial_decay.decay_steps = 100000
+tf.train.polynomial_decay.learning_rate = 0.0007
+tf.train.polynomial_decay.end_learning_rate = 0.000007
+tf.train.polynomial_decay.global_step = @tf.train.get_global_step()
+
+ACAgent.value_coef = 0.5
+ACAgent.entropy_coef = 0.001
+
+ACAgent.batch_sz = 32
+ACAgent.traj_len = 16
+
+ACAgent.gae_lambda = 0.95
+
+ACAgent.clip_rewards = 1.0
+ACAgent.clip_grads_norm = 1.0
+
+ACAgent.normalize_returns = False
+ACAgent.normalize_advantages = False
