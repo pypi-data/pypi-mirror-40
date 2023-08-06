@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: stylo
+Version: 0.9.3
+Summary: Drawing images with a blend of Python and Mathematics
+Home-page: https://stylo.readthedocs.io/en/latest/
+Author: Alex Carney
+Author-email: alcarneyme@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Multimedia :: Graphics
+Provides-Extra: jupyter
+Provides-Extra: testing
+Requires-Dist: Pillow
+Requires-Dist: click
+Requires-Dist: hypothesis; extra == "testing"
+Requires-Dist: jupyter (>=1.0,<2.0); extra == "jupyter"
+Requires-Dist: matplotlib; extra == "jupyter"
+Requires-Dist: numpy
+Requires-Dist: pytest (==4.0.2); extra == "testing"
+Requires-Dist: tqdm
+Project-URL: Documentation, https://stylo.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/alcarney/stylo
