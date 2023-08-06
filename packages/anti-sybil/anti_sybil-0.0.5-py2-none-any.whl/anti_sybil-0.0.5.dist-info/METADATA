@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: anti-sybil
+Version: 0.0.5
+Summary: Anti sybil package for BrightID
+Home-page: http://github.com/BrightID/BrightID-Node
+Author: Abram Symons
+Author-email: abram.symons@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: networkx (==2.1)
+Requires-Dist: flask
+
+# BrightID Anti Sybil
+
+This package provides a framework to generate different types of test graphs and to evaluate the quality of different anti sybil algorithms on them.
+
+### Prerequisite
+
+- Python2.7
+
+### Install
+
+```
+git clone https://github.com/BrightID/BrightID-AntiSybil.git
+cd BrightID-AntiSybil
+pip install .
+```
+
+### Web Based UI
+
+Run `anti_sybil_server` in your termainal and then open `localhost:8082` in your browser.
+
+

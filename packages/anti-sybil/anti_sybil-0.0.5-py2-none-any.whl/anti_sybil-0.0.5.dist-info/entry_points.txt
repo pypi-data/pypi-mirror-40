@@ -1,0 +1,3 @@
+[console_scripts]
+anti_sybil_server = anti_sybil.simulation_platform.server:main
+
