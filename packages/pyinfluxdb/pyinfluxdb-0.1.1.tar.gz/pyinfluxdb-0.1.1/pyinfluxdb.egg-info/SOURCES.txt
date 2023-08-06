@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+pyinfluxdb/__init__.py
+pyinfluxdb/client.py
+pyinfluxdb/database.py
+pyinfluxdb/errors.py
+pyinfluxdb/measurement.py
+pyinfluxdb.egg-info/PKG-INFO
+pyinfluxdb.egg-info/SOURCES.txt
+pyinfluxdb.egg-info/dependency_links.txt
+pyinfluxdb.egg-info/requires.txt
+pyinfluxdb.egg-info/top_level.txt
