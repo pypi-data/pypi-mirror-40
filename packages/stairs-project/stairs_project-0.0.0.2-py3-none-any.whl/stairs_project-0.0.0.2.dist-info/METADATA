@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: stairs-project
+Version: 0.0.0.2
+Summary: Framework for data processing using data pipelines
+Home-page: https://github.com/electronick1/stairs
+Author: Aleh Shydlouski
+Author-email: oleg.ivye@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/electronick1/stairs/archive/0.0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Keywords: data-pipeline,data-science,data-engineering,distributed-computing
+Platform: UNKNOWN
+Requires-Dist: tqdm (==4.25.0)
+Requires-Dist: redis (==3.0.1)
+Requires-Dist: blinker (==1.4)
+Requires-Dist: click (==7.0)
+Requires-Dist: ujson (==1.35)
+Requires-Dist: flask
+Requires-Dist: stepist
+
+UNKNOWN
+
+
