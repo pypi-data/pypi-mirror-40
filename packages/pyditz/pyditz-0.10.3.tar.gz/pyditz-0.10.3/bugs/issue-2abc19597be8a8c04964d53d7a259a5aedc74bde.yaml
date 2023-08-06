@@ -1,0 +1,33 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Resolve problems with cerberus update
+desc: |-
+  Moving to cerberus 1.2 causes schema validation problems.  Need to
+  either fix the version at 1.1, or fix the problems.
+type: :bugfix
+component: PyDitz
+release: 0.10.2
+reporter: Glenn Hutchings <zondo42@gmail.com>
+status: :closed
+disposition: :fixed
+creation_time: 2018-08-31 08:29:29.397034 Z
+references: 
+- https://bitbucket.org/zondo/pyditz/issues/12/theres-no-handler-for-name-in-the-validate
+
+id: 2abc19597be8a8c04964d53d7a259a5aedc74bde
+log_events: 
+- - 2018-08-31 08:29:29.403345 Z
+  - Glenn Hutchings <zondo42@gmail.com>
+  - created
+  - ""
+- - 2018-08-31 08:30:57.237389 Z
+  - Glenn Hutchings <zondo42@gmail.com>
+  - added reference 1
+  - "Bitbucket issue #12."
+- - 2018-08-31 08:58:22.946263 Z
+  - Glenn Hutchings <zondo42@gmail.com>
+  - closed with disposition fixed
+  - |-
+    Had a look at cerberus changes, and tried updating the schema, but
+    no success yet.  Not totally convinced it isn't a cerberus problem.
+    But anyway, quick fix (as per matt's pull request) is to pin the
+    version at 1.1.

@@ -1,0 +1,23 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Resolve problems with markups update
+desc: Markups 3.0 changed the markup API.
+type: :bugfix
+component: PyDitz
+release: 0.10.2
+reporter: Glenn Hutchings <zondo42@gmail.com>
+claimer: 
+status: :closed
+disposition: :fixed
+creation_time: 2018-08-31 08:33:13.748515 Z
+references: []
+
+id: a0cb43e0e561a8bbd6cb924b0505f9ad83f071dc
+log_events: 
+- - 2018-08-31 08:33:13.755179 Z
+  - Glenn Hutchings <zondo42@gmail.com>
+  - created
+  - ""
+- - 2018-08-31 09:13:39.521736 Z
+  - Glenn Hutchings <zondo42@gmail.com>
+  - closed with disposition fixed
+  - ""

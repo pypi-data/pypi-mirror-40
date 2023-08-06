@@ -1,0 +1,27 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Crash when trying to create db
+desc: On Linux, trying to create database in new directory fails.
+type: :bugfix
+component: PyDitz
+release: 0.10.1
+reporter: Matt Hussey
+status: :closed
+disposition: :fixed
+creation_time: 2017-03-19 19:58:47.561359 Z
+references: 
+- https://bitbucket.org/zondo/pyditz/issues/11/crash-when-trying-to-create-db
+
+id: 75fff45bde6db23ad1f07b4ef0abdcf1ab4b850e
+log_events: 
+- - 2017-03-19 19:58:47.582952 Z
+  - Glenn Hutchings <zondo42@gmail.com>
+  - created
+  - ""
+- - 2017-03-19 19:59:14.536476 Z
+  - Glenn Hutchings <zondo42@gmail.com>
+  - added reference 1
+  - "Bitbucket issue #11."
+- - 2017-07-31 17:41:17.546514 Z
+  - Glenn Hutchings <zondo42@gmail.com>
+  - closed with disposition fixed
+  - ""

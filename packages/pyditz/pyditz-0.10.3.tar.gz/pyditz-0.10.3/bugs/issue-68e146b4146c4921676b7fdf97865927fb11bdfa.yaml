@@ -1,0 +1,23 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Fix highlighting customization
+desc: There's no effect when setting the 'style' config value.
+type: :bugfix
+component: PyDitz
+release: 0.10.3
+reporter: Jack Page <jackpage88@gmail.com>
+claimer: 
+status: :closed
+disposition: :fixed
+creation_time: 2019-01-11 15:51:57.820594 Z
+references: []
+
+id: 68e146b4146c4921676b7fdf97865927fb11bdfa
+log_events: 
+- - 2019-01-11 15:51:57.831735 Z
+  - Glenn Hutchings <zondo42@gmail.com>
+  - created
+  - ""
+- - 2019-01-11 15:53:11.660364 Z
+  - Glenn Hutchings <zondo42@gmail.com>
+  - closed with disposition fixed
+  - Forgot to pass the style param to the formatter.  Doh!
