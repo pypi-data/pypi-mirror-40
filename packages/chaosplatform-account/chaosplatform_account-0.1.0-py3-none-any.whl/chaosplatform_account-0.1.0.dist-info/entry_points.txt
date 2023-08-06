@@ -1,0 +1,3 @@
+[console_scripts]
+chaosplatform-account = chaosplt_account.cli:cli
+
