@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: equadratures
+Version: 7.6.1
+Summary: Machine learning with polynomials
+Home-page: https://github.com/Effective-Quadratures/Effective-Quadratures
+Author: Pranay Seshadri, Nicholas Wong, Irene Virdis
+Author-email: contact@effective-quadratures.org
+License: LPGL-2.1
+Description: # Effective Quadratures
+        **Version 7.6**
+        
+        Tools for machine learning with polynomials.
+        
+        # Installation and Documentation
+        Please visit www.effective-quadratures.org
+        
+        # Community guidelines
+        If you have contributions, questions, or feedback use either the Github repository, or contact: contact <at> effective-quadratures.org
+        
+Keywords: polynomial chaos effective quadratures polynomial approximations gradients
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
