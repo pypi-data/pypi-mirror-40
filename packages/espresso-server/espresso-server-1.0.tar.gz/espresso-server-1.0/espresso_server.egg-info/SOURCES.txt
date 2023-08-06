@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+apache/espresso.conf
+cmd/espresso
+espresso/__init__.py
+espresso/espresso.py
+espresso/main.py
+espresso_server.egg-info/PKG-INFO
+espresso_server.egg-info/SOURCES.txt
+espresso_server.egg-info/dependency_links.txt
+espresso_server.egg-info/not-zip-safe
+espresso_server.egg-info/requires.txt
+espresso_server.egg-info/top_level.txt
