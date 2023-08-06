@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+aclients/__init__.py
+aclients/aio_http_client.py
+aclients/aio_mongo_client.py
+aclients/aio_mysql_client.py
+aclients/aio_redis_client.py
+aclients/err_msg.py
+aclients/exceptions.py
+aclients/utils.py
+aclients.egg-info/PKG-INFO
+aclients.egg-info/SOURCES.txt
+aclients.egg-info/dependency_links.txt
+aclients.egg-info/requires.txt
+aclients.egg-info/top_level.txt
