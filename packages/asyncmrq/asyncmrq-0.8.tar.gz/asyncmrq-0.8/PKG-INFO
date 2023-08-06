@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: asyncmrq
+Version: 0.8
+Summary: MrQ client for Python Asyncio
+Home-page: https://github.com/MarkReedZ/asyncmrq
+Author: Mark Reed
+Author-email: mark@untilfluent.com
+License: MIT License
+Description: Asyncio based Python client for MrQ, a ridiculously fast message queue
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
