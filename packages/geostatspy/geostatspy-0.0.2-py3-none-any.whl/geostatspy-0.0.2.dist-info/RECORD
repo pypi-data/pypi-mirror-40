@@ -1,0 +1,11 @@
+geostatspy/__init__.py,sha256=RG5DvVnAoAMN--vCSmQNGOVqNgGsx0h_GQDheuRcT8M,19
+geostatspy/base.py,sha256=9dxCX2KaxvRmuJlSOtaM1stfA-s1FZLk9Q23y8UPCYQ,46124
+geostatspy/declus.py,sha256=OV6O6yBJ1yWmBoJA2eQmn23f5I3L5BpBp9iNxgCQYcY,4671
+geostatspy/gam.py,sha256=eTe53PVNl8IkDQadaxbyGDKAovqgQaqhs1N20GZ7HbU,3031
+geostatspy/gamv.py,sha256=a8rXIpb-gGO1-Xzu1TJCEgPXJjhOBKkX36jifBwhuCE,7158
+geostatspy/nscore.py,sha256=pH64ELMFf9Nbdj1r_H4xtYcGePbCc08i4xaAVGVOwKs,5105
+geostatspy-0.0.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+geostatspy-0.0.2.dist-info/METADATA,sha256=ipJi7iH5tyNo9wFlGCccKMo-XPkL8q3NGO4fVvmmoK0,6657
+geostatspy-0.0.2.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+geostatspy-0.0.2.dist-info/top_level.txt,sha256=Awa8rDotIGyu_VGMpNNQJbLF5KRpsphAn4Fya3phV5A,11
+geostatspy-0.0.2.dist-info/RECORD,,
