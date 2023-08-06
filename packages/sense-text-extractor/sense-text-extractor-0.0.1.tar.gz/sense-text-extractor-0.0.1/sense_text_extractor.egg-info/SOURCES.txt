@@ -1,0 +1,12 @@
+README.md
+setup.py
+sense_text_extractor/__init__.py
+sense_text_extractor/text_extract_pb2.py
+sense_text_extractor/text_extract_pb2_grpc.py
+sense_text_extractor/text_extractor.py
+sense_text_extractor.egg-info/PKG-INFO
+sense_text_extractor.egg-info/SOURCES.txt
+sense_text_extractor.egg-info/dependency_links.txt
+sense_text_extractor.egg-info/requires.txt
+sense_text_extractor.egg-info/top_level.txt
+test/test.py

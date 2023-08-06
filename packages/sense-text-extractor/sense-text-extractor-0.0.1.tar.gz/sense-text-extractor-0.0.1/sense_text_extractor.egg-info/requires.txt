@@ -1,0 +1,3 @@
+grpcio
+protobuf
+sense-core>=0.0.18
