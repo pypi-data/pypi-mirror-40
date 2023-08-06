@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: vtt-to-srt
+Version: 0.7
+Summary: vtt to srt converter package
+Home-page: https://github.com/jansenicus/vtt-to-srt.py
+Author: heniotierra
+Author-email: heniotster@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# vtt_to_srt.py
+
+useful python script
+
+## convert all vtt files to srt subtitle format
+
+Usage from terminal:
+----------
+
+		python vtt_to_srt.py pathname [-r]
+
+		pathname - a file or directory with files to be converted 
+
+		-r       - walk path recursively                          
+
+Usage as a lib:
+----------
+
+		# convert vtt file
+
+		from vtt_to_srt import vtt_to_srt
+		path = '/path/to/file.vtt'
+		vtt_to_srt(path)
+
+
+		# recursively convert all vtt files in directory
+
+		from vtt_to_srt import vtts_to_srt
+		path = '/path/to/directory'
+		vtts_to_srt(path, rec = True)
+
+
