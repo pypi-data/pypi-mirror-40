@@ -1,0 +1,58 @@
+Metadata-Version: 1.1
+Name: face-eevee
+Version: 0.1.1
+Summary: Early test of eos lib for the EEVEE plateform
+Home-page: https://github.com/alexisfcote/face_eevee
+Author: Alexis Fortin-Cote
+Author-email: alexisfcote@gmail.com
+License: MIT
+Description: Face EEVEE
+        ==========
+        
+        .. image:: https://img.shields.io/pypi/v/face_eevee.svg
+            :target: https://pypi.python.org/pypi/face_eevee
+            :alt: Latest PyPI version
+        
+        .. image:: https://travis-ci.com/alexisfcote/face_eevee.svg?branch=master
+            :target: https://travis-ci.com/alexisfcote/face_eevee
+            :alt: Latest Travis-ci build
+        
+        Early test of eos lib for the EEVEE plateform. Fit a facemesh on facial landmarks detected by the webcam 0
+        
+        Usage
+        -----
+        face_eevee.exe
+        
+        quit with 'q' or 'esc'
+        
+        Installation
+        ------------
+        pip install face_eevee
+        
+        Requirements
+        ^^^^^^^^^^^^
+        imutils 
+        numpy 
+        opencv-python 
+        eos-py 
+        dlib
+        matplotlib
+        
+        Compatibility
+        -------------
+        python>=3.5
+        
+        Authors
+        -------
+        
+        `face_eevee` was written by `Alexis Fortin-Cote <alexisfcote@gmail.com>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
