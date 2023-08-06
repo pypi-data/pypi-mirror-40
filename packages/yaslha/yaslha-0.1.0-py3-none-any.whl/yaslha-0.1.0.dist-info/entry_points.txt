@@ -1,0 +1,5 @@
+[console_scripts]
+yaslha-convert=yaslha.script:convert
+yaslha-extract=yaslha.script:extract
+yaslha-merge=yaslha.script:merge
+
