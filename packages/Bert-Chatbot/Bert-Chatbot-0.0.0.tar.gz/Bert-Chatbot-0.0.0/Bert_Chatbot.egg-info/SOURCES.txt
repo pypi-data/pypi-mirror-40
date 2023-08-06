@@ -1,0 +1,14 @@
+README.md
+setup.py
+Bert_Chatbot.egg-info/PKG-INFO
+Bert_Chatbot.egg-info/SOURCES.txt
+Bert_Chatbot.egg-info/dependency_links.txt
+Bert_Chatbot.egg-info/requires.txt
+Bert_Chatbot.egg-info/top_level.txt
+bert-chatbot/__init__.py
+bert-chatbot/bert-qa/__init__.py
+bert-chatbot/bert-reading/__init__.py
+bert-chatbot/bert-reading/bert-qa.py
+bert-chatbot/bert-reading/file_utils.py
+bert-chatbot/bert-reading/modeling.py
+bert-chatbot/bert-reading/tokenization.py
