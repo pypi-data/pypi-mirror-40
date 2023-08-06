@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lfd
+Version: 1.0
+Summary: Linear Feature Detector for Astronomical images
+Home-page: UNKNOWN
+Author: Dino Bektesevic
+Author-email: ljetibo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: SQLAlchemy
+Requires-Dist: astropy
+Requires-Dist: fitsio
+Requires-Dist: Pillow
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
