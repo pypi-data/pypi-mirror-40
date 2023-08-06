@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+tiffreader/__init__.py
+tiffreader/main.py
+tiffreader.egg-info/PKG-INFO
+tiffreader.egg-info/SOURCES.txt
+tiffreader.egg-info/dependency_links.txt
+tiffreader.egg-info/requires.txt
+tiffreader.egg-info/top_level.txt

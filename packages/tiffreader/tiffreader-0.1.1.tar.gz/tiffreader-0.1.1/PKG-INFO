@@ -1,0 +1,82 @@
+Metadata-Version: 1.1
+Name: tiffreader
+Version: 0.1.1
+Summary: convenience wrapper for libtiff
+Home-page: https://github.com/Palpatineli/tiffreader
+Author: Keji Li
+Author-email: mail@keji.li
+License: GPLv3
+Download-URL: https://github.com/Palpatineli/tiffreader/archive/0.1.1.tar.gz
+Description: TiffReader, convenience wrapper for libtiff
+        ===========================================
+        
+        Why?
+        ----
+        
+        Compared to PIL and some other tiff related projects, this package is
+        more for scientific imaging.
+        
+        Features exposed from libtiff:
+        
+        1. responds to
+        
+           1. pixel bit depth
+           2. number of channels
+           3. compression scheme
+        
+        2. sequential and random access to frames in multi-frame tiff
+        3. query length of multi-frame tiff
+        
+        Open
+        ----
+        
+        .. code:: python
+        
+           from tiffreader import TiffReader
+           tif = TiffReader.open("file_path.tif")
+        
+        Random Access
+        -------------
+        
+        .. code:: python
+        
+           tif.seek(10)
+           frame = tif.read_current()  # gives a 2D numpy array
+        
+        is equivalent to
+        
+        .. code:: python
+        
+           frame = tif[10]
+        
+        Sequential Access
+        -----------------
+        
+        example for an average image of the 10th to 20th frames:
+        
+        .. code:: python
+        
+           tif.seek(10)
+           result = np.zeros(tif.shape, dtype=np.uint64)
+           for frame in zip(tif, range(10)):
+               result += frame
+           result /= 10
+        
+        Additionally
+        ------------
+        
+        .. code:: python
+        
+           from tiffreader import save_tiff
+           array = np.array([[1, 2, 3, 4], [5, 6, 7, 8]], dtype=np.uint8)
+           save_tiff(array, "tif_path.tif")
+        
+        .. code:: python
+        
+           tif.length  # length of multi-frame tiff stack
+           tif.shape   # shape of one frame
+           tiffinfo("tif_path.tif", ["width", "height"])  # wraps tiffinfo to query for additional tags
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
