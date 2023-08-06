@@ -1,0 +1,16 @@
+slack_backup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slack_backup/client.py,sha256=4M82iOZpk9vC9Ms5OIrRxQjZsS4J1WLXBW1lbcy56Rg,15914
+slack_backup/command.py,sha256=wPL1Mpj5mpk1mDdjpQ6qZbrWbB3Vkn9frmV9ARry4q4,6090
+slack_backup/config.py,sha256=xe92P0_5hwWlr6jheq_T_kUW3pGrsgjdQh-LULqaOjk,4215
+slack_backup/db.py,sha256=EnL3eOY2r2qqYd0lKpTke8wBGODW96NQuXulDpkvGS0,986
+slack_backup/download.py,sha256=Ju8j3ZTzB2H7-mUZWzd9rmJWnXQS0qvRYHA415Wi9mI,6187
+slack_backup/emoji.py,sha256=iJ4WEXQ-3eVb0F0dRj3i15Yj4KManT876K2Zl0tjoqA,58919
+slack_backup/objects.py,sha256=l7NNQ2oz6OaSHSc2Y9u_gYRT_86ncOQn4mULMtsTYvs,9362
+slack_backup/reporters.py,sha256=1wC93bjJQg_OHPSswMUn94zeMt8jzcfKVbcBuDIII1s,16083
+slack_backup/utils.py,sha256=cQVC-pHlAVqhMjKfgrb3TNe8VjzEvvi25yT51vzqsuU,1591
+slack_backup-0.8.data/scripts/slack-backup,sha256=XAXhR5oPQpYpG_GfyXD35E4HaTcMADyLtDg2ryvB1bQ,156
+slack_backup-0.8.dist-info/LICENSE,sha256=XbdM_5htZGRcTcaMB-jgvcsV5tiWsag-NokhrLk2AAg,1500
+slack_backup-0.8.dist-info/METADATA,sha256=PvQ15GtKvc98_V8kf5rjqEbjuIV0m3w9RwdK5bttnLU,9464
+slack_backup-0.8.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+slack_backup-0.8.dist-info/top_level.txt,sha256=R_fvD8HnViJG9HWlLuM0tBbixYXBCDt1kLhhgkQ-HVI,13
+slack_backup-0.8.dist-info/RECORD,,
