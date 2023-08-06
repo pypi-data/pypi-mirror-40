@@ -1,0 +1,2 @@
+pynetworktables>=2019.0.0
+wpilib<2020.0.0,>=2019.0.0
