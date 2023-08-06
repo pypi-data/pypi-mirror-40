@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: django-silver
+Version: 0.7.0
+Summary: Django app for automated billing with an API.
+
+Home-page: http://www.presslabs.com/silver/
+Author: Presslabs
+Author-email: ping@presslabs.com
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: django,app,reusable,billing,invoicing,api
+Platform: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 1.11
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Provides-Extra: dev
