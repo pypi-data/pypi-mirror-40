@@ -1,0 +1,2 @@
+include src/zero_ex/contract_artifacts/py.typed
+include src/zero_ex/contract_artifacts/artifacts/*
