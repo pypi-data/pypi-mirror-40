@@ -1,0 +1,6 @@
+pytablereader[excel,sqlite]>=0.23
+pytest
+simplejson
+tablib
+termcolor
+tox
