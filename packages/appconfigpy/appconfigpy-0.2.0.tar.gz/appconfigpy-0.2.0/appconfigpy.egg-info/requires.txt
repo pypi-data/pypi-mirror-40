@@ -1,0 +1,11 @@
+setuptools>=38.3.0
+six<2.0.0,>=1.11.0
+
+[build]
+wheel
+
+[logging]
+logbook<2.0.0,>=1.1.0
+
+[release]
+releasecmd<0.1.0,>=0.0.12
