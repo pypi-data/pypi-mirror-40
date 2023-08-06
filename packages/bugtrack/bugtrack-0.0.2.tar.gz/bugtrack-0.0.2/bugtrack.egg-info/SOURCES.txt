@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+bugtrack/__init__.py
+bugtrack/forms.py
+bugtrack/models.py
+bugtrack/urls.py
+bugtrack/utils.py
+bugtrack/views.py
+bugtrack/workflows.py
+bugtrack.egg-info/PKG-INFO
+bugtrack.egg-info/SOURCES.txt
+bugtrack.egg-info/dependency_links.txt
+bugtrack.egg-info/not-zip-safe
+bugtrack.egg-info/top_level.txt
+bugtrack/templates/bug.html
+bugtrack/templates/bugs_extra.html
