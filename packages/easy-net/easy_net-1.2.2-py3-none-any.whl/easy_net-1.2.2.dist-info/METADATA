@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: easy-net
+Version: 1.2.2
+Summary: This is a simple wrapper for Twisted framework
+Home-page: https://github.com/pufit/easy-net
+Author: pufit
+Author-email: albrustovetskiy@edu.hse.ru
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: attrs (>=18.2.0)
+Requires-Dist: setuptools (>=39.2.0)
+Requires-Dist: twisted (>=17.5.0)
+Requires-Dist: werkzeug (>=0.14.1)
+Requires-Dist: autobahn[twisted]
+
+UNKNOWN
+
+
