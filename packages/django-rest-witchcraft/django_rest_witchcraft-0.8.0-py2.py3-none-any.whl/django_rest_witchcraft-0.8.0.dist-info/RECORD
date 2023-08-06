@@ -1,0 +1,16 @@
+django_rest_witchcraft-0.8.0.dist-info/DESCRIPTION.rst,sha256=G-IhUUZhHXktcrQLSUZoaqcNhA84uHgGO9HynbvnfQ0,7139
+django_rest_witchcraft-0.8.0.dist-info/METADATA,sha256=HW9YLul0wgMJ-pFkgZyF9dlkokcGmMNJjQ4AdwXtap4,8349
+django_rest_witchcraft-0.8.0.dist-info/RECORD,,
+django_rest_witchcraft-0.8.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_rest_witchcraft-0.8.0.dist-info/metadata.json,sha256=n9agBCgHMXnjYXsYHMI-VybiF0AqmuhrxYTFdAJEtIk,1294
+django_rest_witchcraft-0.8.0.dist-info/top_level.txt,sha256=M66SunADU8Q96EdZTPLwYwWB3Zvz_FaqajTjNmbv2Bk,16
+rest_witchcraft/__init__.py,sha256=QhrQT--lNjyi8OgSspm03zXBIPZDJ0FD_S3T4vadFYw,190
+rest_witchcraft/__version__.py,sha256=sw_IG3vs9811lgNvrnR9ml-ziS_sScoflvAEQSfbDFA,256
+rest_witchcraft/field_mapping.py,sha256=Ew1kBF3n07XFTFHTmzTuq-DfF969VORC9ET0kaczifU,3028
+rest_witchcraft/fields.py,sha256=m86qnZCV7vEF_UDlV1_LAhj5y7QI0SM-SNnxA1Cl7sA,3064
+rest_witchcraft/generics.py,sha256=JRd_2OAFqWB9N10PhIAnbqZkQbgIOXo3_VMh4RGkg0k,2196
+rest_witchcraft/mixins.py,sha256=H4SpFLiVA5jkt2FEWr4uF4wYoRxyWRuz4juu7WuRxFo,4039
+rest_witchcraft/routers.py,sha256=DnTHC1-ZVDD974qj5bAWTqd7ST9GmLDMQ3fMjxaSoCI,1962
+rest_witchcraft/serializers.py,sha256=nIzgagnskGFNJ3Oq5tLJhu7abltj-Ou4iq3BgeCCCs0,37710
+rest_witchcraft/utils.py,sha256=zZoIfKtGUzRW5BwCvl_Yqc-0okHyaIylLBurEXoix6k,1078
+rest_witchcraft/viewsets.py,sha256=phOUH33f07IxGb6gsm0s9yF6wbMvWUC0AFgBgEq_5LY,1434
