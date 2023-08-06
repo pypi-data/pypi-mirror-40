@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+zosftplib.py
+zosftplib.rst
+test/XMIT1
+test/XMIT2
+test/binary1
+test/jcl.txt
+zosftplib.egg-info/PKG-INFO
+zosftplib.egg-info/SOURCES.txt
+zosftplib.egg-info/dependency_links.txt
+zosftplib.egg-info/top_level.txt
