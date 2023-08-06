@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: gtree
+Version: 0.1.2
+Summary: A general tree implementation and provides convinient methods for defining trees in JSON or YAML files.
+Home-page: https://github.com/lunjon/gtree
+Author: Jonathan Lundholm
+Author-email: jon.lundholm@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# PTree
+
+PTree provides a general tree implementation which is not really useful in itself.
+
+## Requirements
+
+The `gtree` package has no requirements other than Python 3.
+
+## Usefulness
+
+Ignoring the statement above, it provides a method for building a tree from dictionaries and convinient methods for iterating trees (bottom up as well as top to bottom).
+
+This means that you can define a tree structure in JSON and YAML files, load it using e.g. using `json.load` and then build a tree.
+
+See examples directory for more!
+
+## Tests
+
+The tests utilize the popular Python module `pytest`. From the project root directory run the following command to run all tests:
+
+```
+> pytest tests
+```
+
+
