@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+package.json
+setup.cfg
+setup.py
+config/jupyterlab_zip.json
+jupyterlab-zip/__init__.py
+jupyterlab-zip/handler.py
+jupyterlab_zip.egg-info/PKG-INFO
+jupyterlab_zip.egg-info/SOURCES.txt
+jupyterlab_zip.egg-info/dependency_links.txt
+jupyterlab_zip.egg-info/requires.txt
+jupyterlab_zip.egg-info/top_level.txt

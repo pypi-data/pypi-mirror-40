@@ -1,0 +1,8 @@
+tornado
+requests
+six
+jupyterlab
+notebook<6.0a,>=5.2
+flake8
+twine
+nodejs
