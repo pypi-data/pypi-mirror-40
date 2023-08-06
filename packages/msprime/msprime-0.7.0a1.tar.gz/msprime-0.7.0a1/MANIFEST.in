@@ -1,0 +1,6 @@
+include lib/*.h
+include lib/tskit/c/tsk_*.h
+include lib/tskit/c/kastore/c/*.h
+include README.txt
+include LICENSE
+recursive-include tests *.py
