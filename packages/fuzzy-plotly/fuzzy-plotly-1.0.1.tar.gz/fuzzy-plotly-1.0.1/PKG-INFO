@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: fuzzy-plotly
+Version: 1.0.1
+Summary: Fan chart and various other uncertainty charts.
+Home-page: https://github.com/WintonCentre/python-fuzzy-plots
+Author: Jin Park
+Author-email: jp835@cam.ac.uk
+License: MIT
+Description: Fan charts and their variations explored by the Winton Centre for Risk and Evidence Communication.
+         Similar to fan chart by Office for National Statistics. See doc at https://github.com/WintonCentre/python-fuzzy-plots
+         
+Platform: UNKNOWN
