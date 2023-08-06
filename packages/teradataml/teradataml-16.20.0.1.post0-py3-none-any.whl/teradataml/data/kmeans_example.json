@@ -1,0 +1,10 @@
+{
+  "computers_train1": {
+    "id": "integer",
+    "price": "real",
+    "speed": "real",
+    "hd": "real",
+    "ram": "real",
+    "screen": "real"
+  }
+}

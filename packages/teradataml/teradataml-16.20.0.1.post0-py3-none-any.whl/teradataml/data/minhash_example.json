@@ -1,0 +1,6 @@
+{
+  "salesdata" : {
+    "userid" : "integer",
+    "itemd" : "varchar(20)"
+  }
+}
