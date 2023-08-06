@@ -1,0 +1,12 @@
+#!python
+
+from pipcli import *
+from os import *
+import fire
+
+class PipCLI(object):
+    def create(self, name, outputdir = './'):
+        pip_creation.create_pip(name, path.abspath(outputdir))
+
+if __name__ == '__main__':
+    fire.Fire(PipCLI)
