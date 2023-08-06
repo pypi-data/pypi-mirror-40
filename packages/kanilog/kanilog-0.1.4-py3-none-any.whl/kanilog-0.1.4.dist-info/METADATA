@@ -1,0 +1,55 @@
+Metadata-Version: 2.0
+Name: kanilog
+Version: 0.1.4
+Summary: UNKNOWN
+Home-page: https://github.com/fx-kirin/kanilog
+Author: fx-kirin
+Author-email: fx.kirin@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+kanilog
+=======
+
+.. image:: https://img.shields.io/pypi/v/kanilog.svg
+    :target: https://pypi.python.org/pypi/kanilog
+    :alt: Latest PyPI version
+
+.. image:: .png
+   :target: 
+   :alt: Latest Travis CI build status
+
+
+
+Usage
+-----
+
+Installation
+------------
+
+Requirements
+^^^^^^^^^^^^
+
+Compatibility
+-------------
+
+Licence
+-------
+
+Authors
+-------
+
+`kanilog` was written by `fx-kirin <fx.kirin@gmail.com>`_.
+
+
