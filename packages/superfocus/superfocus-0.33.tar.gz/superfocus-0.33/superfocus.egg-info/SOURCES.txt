@@ -1,0 +1,12 @@
+README.md
+setup.py
+superfocus.egg-info/PKG-INFO
+superfocus.egg-info/SOURCES.txt
+superfocus.egg-info/dependency_links.txt
+superfocus.egg-info/entry_points.txt
+superfocus.egg-info/not-zip-safe
+superfocus.egg-info/requires.txt
+superfocus.egg-info/top_level.txt
+superfocus_app/do_alignment.py
+superfocus_app/superfocus.py
+superfocus_app/superfocus_downloadDB.py
