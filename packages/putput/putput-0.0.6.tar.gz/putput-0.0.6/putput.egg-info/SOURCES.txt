@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements-dev.txt
+requirements.txt
+setup.py
+version.txt
+putput/__init__.py
+putput/joiner.py
+putput/pattern_definition_processor.py
+putput/pattern_definition_validator.py
+putput/utterance_token_generator.py
+putput.egg-info/PKG-INFO
+putput.egg-info/SOURCES.txt
+putput.egg-info/dependency_links.txt
+putput.egg-info/requires.txt
+putput.egg-info/top_level.txt

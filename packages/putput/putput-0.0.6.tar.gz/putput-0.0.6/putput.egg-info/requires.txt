@@ -1,0 +1,6 @@
+pyyaml>=3.13
+
+[dev]
+pylint>=2.2.1
+nose2>=0.8.0
+mypy>=0.641
