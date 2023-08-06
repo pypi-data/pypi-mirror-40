@@ -1,0 +1,15 @@
+reformat_money/__init__.py,sha256=hMqcGNZ3jrgcbbdOmtKmZZQm0IiNMqij3PI-MMUzyyg,23
+reformat_money/__main__.py,sha256=i4aN5nkJApzLBS_erHlGK3jYJMUa6ESk4RhP_ycDkSI,161
+reformat_money/arguments.py,sha256=0NR459zxlLyW4iBukfx76bAEa2Ee_bPElOpC-IaR2vo,1405
+reformat_money/file_formatter.py,sha256=nbtW5spHuYLOVKGi3bacmt5JnuT-drvLq6JCuaCSRzk,5102
+reformat_money/file_searcher.py,sha256=tR9xu9RM5Tw2HXMHHiBCFeI6cSat08BR0phgYFai6kc,396
+reformat_money/match.py,sha256=7s27Z7BmpdFudS3U31_M3_1raoclrGFPigqsEJr-ANg,841
+reformat_money/run.py,sha256=FOVhKxctcXbIyWDDTt1_ehrpoi3NaqtddCu-kSiUMGo,1004
+reformat_money/settings.py,sha256=uxXdkge_b30PdoffOf4w0Fk2T7KvD7ZaVXQSESKHYAA,19
+reformat_money/text_formatter.py,sha256=9s23Ne8omfF8EmblgovOXlIdgXQG28wWjlyMerwEE0E,2860
+reformat_money-0.0.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+reformat_money-0.0.2.dist-info/METADATA,sha256=00Wu8EHmDH186eRxZpnI-dphDxmey44hoXdZJhjrQNg,2987
+reformat_money-0.0.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+reformat_money-0.0.2.dist-info/entry_points.txt,sha256=x8jYZ5VzE38Cqx9DY-xrxh8M8dukSKn42MKLs7Al1nA,65
+reformat_money-0.0.2.dist-info/top_level.txt,sha256=4ASeLlH0IzVydccSfAbjYvYJiiilzNNVEgqyUdXhG2k,15
+reformat_money-0.0.2.dist-info/RECORD,,
