@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ege_utils
+Version: 1.2.0
+Summary: Utils classes for EGE project
+Home-page: https://github.com/CoticEaDIFRN/ege_utils
+Author: Kelson da Costa Medeiros
+Author-email: kelsoncm@ifrn.edu.br
+License: UNKNOWN
+Download-URL: https://github.com/CoticEaDIFRN/ege_utils/releases/tag/1.2.0
+Description: Utils classes for EGE project
+Keywords: EGE,JWT,Django,Auth,SSO,client
+Platform: UNKNOWN
