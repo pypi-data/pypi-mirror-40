@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: inside-out-proxy
+Version: 190113
+Summary: HTTP Proxy
+Home-page: UNKNOWN
+Author: Axiros GmbH
+Author-email: gk@axiros.com
+License: UNKNOWN
+Keywords: http,proxy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Internet :: Proxy Servers
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Requires-Dist: attrs
+Requires-Dist: structlog
+Requires-Dist: attrs
+Requires-Dist: colorama
+Requires-Dist: absl-py
+Requires-Dist: gevent
+Requires-Dist: rx
+Provides-Extra: tests
+Requires-Dist: coverage; extra == 'tests'
+Requires-Dist: pytest-to-md; extra == 'tests'
+Requires-Dist: pytest (>=3.3.0); extra == 'tests'
+
+# Inside Out HTTP Proxy
+
+
+
+
