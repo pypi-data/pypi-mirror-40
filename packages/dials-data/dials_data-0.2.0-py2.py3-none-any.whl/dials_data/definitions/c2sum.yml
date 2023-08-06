@@ -1,0 +1,21 @@
+name: Beta-Lactamase
+description: >
+  Reprocessed / rebinned to 0.5 degree images:
+  Beta-Lactamase X-ray diffraction data
+  recorded at Diamond Light Source I04
+  as part of commissioning & development
+author: Graeme Winter (2017)
+license: CC-BY 4.0
+url: https://zenodo.org/record/1014387
+
+data:
+  - url: https://zenodo.org/record/1014387/files/C2sum_1.tar?download=1
+    filter: tar
+  - url: https://zenodo.org/record/1014387/files/C2sum_2.tar?download=1
+    filter: tar
+  - url: https://zenodo.org/record/1014387/files/C2sum_3.tar?download=1
+    filter: tar
+  - url: https://zenodo.org/record/1014387/files/C2sum_4.tar?download=1
+    filter: tar
+  - url: https://zenodo.org/record/1014387/files/C2sum_5.tar?download=1
+    filter: tar
