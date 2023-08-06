@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: reformat-money
+Version: 0.0.1
+Summary: A script to fix money references within a codebase.
+Home-page: https://github.com/MikeWooster/reformat-money
+Author: Mike Wooster
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-env ; extra == 'dev'
+Requires-Dist: ipdb ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-docstrings ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: pytest ; extra == 'docs'
+Requires-Dist: pytest-cov ; extra == 'docs'
+Requires-Dist: pytest-env ; extra == 'docs'
+Requires-Dist: ipdb ; extra == 'docs'
+Requires-Dist: flake8 ; extra == 'docs'
+Requires-Dist: flake8-docstrings ; extra == 'docs'
+Requires-Dist: black ; extra == 'docs'
+Requires-Dist: setuptools ; extra == 'docs'
+Requires-Dist: wheel ; extra == 'docs'
+Requires-Dist: twine ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: flake8-docstrings ; extra == 'lint'
+Requires-Dist: black ; extra == 'lint'
+Provides-Extra: production
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-env ; extra == 'test'
+Requires-Dist: ipdb ; extra == 'test'
+
+# Reformat Money
+
+`reformat-money` is a simple command line utility that will attempt to
+reformat the usage of [`py-moneyed`][py-moneyed] Money within the application
+into a standard string format.
+
+The driver behind this is that usage of money within an application needs to
+be consistent and precise.  The main aim of this utility is to stop an
+application defining money as `float`, which can lead to unpredictable errors.
+In order to keep consistency, where possible all instances of money will have
+the amount reformatted to a string.
+
+The following will be reformatted.
+```
+Money(100.20, "USD") --> Money("100.20", "USD")
+Money(200, "USD") --> Money("200.00", "USD")
+```
+
+If it is not possible to reformat, the filename will be logged for the user to
+inspect manually.
+
+It is advised that you have your code committed to version control before running
+`reformat-money` to allow you to roll back changes that you are not happy with.
+
+
+## Installation
+
+Installation is simple:
+```
+pip install reformat_money
+```
+
+## Usage
+
+This utility can be used by specifying either a single file or directory, for example
+
+```
+reformat-money package_name
+```
+
+
+[py-moneyed]: https://github.com/limist/py-moneyed
+
