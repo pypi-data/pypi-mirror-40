@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+testing/__init__.py
+testing/ethminer.py
+testing/parity.py
+testing.parity.egg-info/PKG-INFO
+testing.parity.egg-info/SOURCES.txt
+testing.parity.egg-info/dependency_links.txt
+testing.parity.egg-info/namespace_packages.txt
+testing.parity.egg-info/requires.txt
+testing.parity.egg-info/top_level.txt
