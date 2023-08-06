@@ -1,0 +1,9 @@
+{
+    "name": "pyskel",
+    "version": "1.0.0",
+    "description": "",
+    "devDependencies": {
+        "kes": "^2.2.7"
+    },
+    "author": ""
+}
