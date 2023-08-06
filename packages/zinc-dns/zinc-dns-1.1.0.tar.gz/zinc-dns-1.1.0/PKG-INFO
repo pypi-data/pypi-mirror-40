@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zinc-dns
+Version: 1.1.0
+Summary: Route 53 zone manager
+Home-page: https://github.com/Presslabs/zinc
+Author: Presslabs
+Author-email: ping@presslabs.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Provides-Extra: test

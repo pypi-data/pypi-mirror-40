@@ -1,0 +1,14 @@
+boto3
+celery
+Django
+djangorestframework
+dnspython
+hashids
+redis
+requests
+zipa
+
+[test]
+pytest
+pytest-runner<4,>=3.0
+pytest-flake8
