@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: intrinioPy
+Version: 0.1.0
+Summary: Intrinio client to fetch stocks from Screener API
+Home-page: https://github.com/orlandodiaz/IntrinioPy
+Author: Orlando Diaz
+Author-email: orlandodiaz.dev@gmail.com
+License: UNKNOWN
+Description: ### Description
+        Save ticker symbols from Intrinio's stock screening API.
+        
+        You need to have an active subscription to Intrinio's "US Fundamentals and Stock Prices"
+        
+        Intrinio's screener API settings can be found at http://blog.intrinio.com/stock-screener-api-intrinio/
+        
+        
+        ### Usage
+        
+        Fill in credentials:
+        
+            email = 'your.email@gmail.com'
+            password = 'your.pass' 
+            intrinio = Intrinio(username, password)
+        
+        Example
+            # Market-cap greater than 2 billion
+            intrinio.url = 'https://api.intrinio.com/securities/search?conditions=marketcap~gt~2000000000&page_size=500'
+            
+        Start request
+        
+            symbols = intrinio.get_stocks()
+            
+        Save for later
+        
+            intrinio.save(symbols, "less_than_200m.p")  
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
