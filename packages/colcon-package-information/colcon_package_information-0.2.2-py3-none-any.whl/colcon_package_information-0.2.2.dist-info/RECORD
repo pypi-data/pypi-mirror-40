@@ -1,0 +1,12 @@
+colcon_package_information/__init__.py,sha256=QNdkLlo_cE657yGWMuhz2jCF_oTIJWZUBa3LvoHglDE,106
+colcon_package_information/verb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colcon_package_information/verb/info.py,sha256=eUQSAYPcvP6nLVYlB_Nt-tSS1pu15r5Vvi8Os7qIQgQ,3381
+colcon_package_information/verb/list.py,sha256=UFGKbT-msQC7oxf_0YUVBwPYhUpAivux3kJN34EKbxA,13064
+colcon_package_information-0.2.2.dist-info/DESCRIPTION.rst,sha256=OrrfGXKsZxf2siBnKC8-B7cnu6EUIE64Wkr5nwhrxKo,172
+colcon_package_information-0.2.2.dist-info/METADATA,sha256=CQVjcQJRZlCBFROOtnJAB53nm0WqHGzs9bGWioGloIU,1180
+colcon_package_information-0.2.2.dist-info/RECORD,,
+colcon_package_information-0.2.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+colcon_package_information-0.2.2.dist-info/entry_points.txt,sha256=kDMAjseKYS9iq8qT33UmFVcPq4ThJYDCzcJGqrDv32g,126
+colcon_package_information-0.2.2.dist-info/metadata.json,sha256=hNplg2TYZLj8ogK88KtXgl2zy0IIL1FNaLIwm2kuSt0,1556
+colcon_package_information-0.2.2.dist-info/top_level.txt,sha256=PizFMjjikeHuuRPdC9PPY4zNumlTIwdDiA-BmpAeIX0,27
+colcon_package_information-0.2.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
