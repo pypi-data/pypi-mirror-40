@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: py-pol
+Version: 0.1.0
+Summary: Jones and Mueller polarization - Optics
+Home-page: https://bitbucket.org/optbrea/py_pol/src/master/
+Author: Luis Miguel Sanchez Brea / Jesus del Hoyo Munoz
+Author-email: optbrea@ucm.es
+License: MIT license
+Keywords: py_pol
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Click (>=6.0)
+
+===================
+Python polarization
+===================
+
+
+.. image:: https://img.shields.io/pypi/v/py_pol.svg
+        :target: https://test.pypi.org/project/py-pol/0.1.0/
+
+.. image:: https://img.shields.io/travis/optbrea/py_pol.svg
+        :target: https://bitbucket.org/optbrea/py_pol/src/master/
+
+.. image:: https://readthedocs.org/projects/py-pol/badge/?version=latest
+        :target: https://py-pol.readthedocs.io/en/latest/
+        :alt: Documentation Status
+
+
+
+
+Jones and Mueller polarization - Optics
+
+
+* Free software: MIT license
+* Documentation: https://py-pol.readthedocs.io/en/latest/
+
+
+Features
+--------
+
+* Jones matrices and vectors, Stokes vectors and Mueller matrices.
+* Each one has its own class, with multiple methods for generation, operation
+and parameters extraction.
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2018-12-22)
+------------------
+
+* First release on PyPI.
+
+
