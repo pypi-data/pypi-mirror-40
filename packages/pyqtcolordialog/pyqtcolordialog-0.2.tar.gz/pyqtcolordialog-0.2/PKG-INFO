@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pyqtcolordialog
+Version: 0.2
+Summary: An improved color dialog for PyQt5
+Home-page: https://github.com/rr-/pyqtcolordialog
+Author: Marcin Kurczewski
+Author-email: rr-@sakuya.pl
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Widget Sets
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
