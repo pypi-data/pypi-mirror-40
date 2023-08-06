@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: wirecardpy
+Version: 0.5.1
+Summary: Python Library to Wirecard (old MOIP in Brazil) API routes.
+Home-page: https://github.com/surfmappers/wirecardpy
+Author: Lucas Alves Limeira
+Author-email: lucas@surfmappers.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2018.11.29)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.7)
+Requires-Dist: requests (==2.20.1)
+Requires-Dist: urllib3 (==1.24.1)
+
+# wirecardpy
+Python Library to Wirecard (old MOIP in Brazil) API routes.
+
+
