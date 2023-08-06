@@ -1,0 +1,14 @@
+click>=5.0
+
+[dev]
+pytest
+sphinx
+sphinxcontrib-googleanalytics
+sphinx_rtd_theme
+sphinx-click
+ghp-import
+pyyaml
+ipython
+twine
+wheel
+bumpversion
