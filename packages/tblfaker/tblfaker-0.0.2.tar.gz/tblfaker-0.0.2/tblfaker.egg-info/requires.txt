@@ -1,0 +1,15 @@
+setuptools>=38.3.0
+Faker<2.0.0,>=1.0.1
+tabledata<1.0.0,>=0.5.0
+
+[build]
+wheel
+
+[release]
+releasecmd<0.1.0,>=0.0.13
+
+[test]
+pytablewriter>=0.38
+pytest
+six
+tox
