@@ -1,0 +1,13 @@
+uc/README.md,sha256=VbPRsiJHXNTEQuNvqC5LnA-qWPyzdw0BHJAzqjKrYmE,52
+uc/__init__.py,sha256=7DxiEpT1g6hMwW1hBF17OOFRJ3DW03giEu6rgvRCTHY,17
+uc/conlib.py,sha256=t66CZ-dNfum2QTkJfT1zJNx9QAzS8UcxWO7QwUPWC5w,1288
+uc/mesh.dll.2,sha256=uR2XDGXMP3Bf7Wi2IbA3YCRwM54ffujBR6Qbq7ZlTe8,138130
+uc/mesh.py,sha256=ltW3dnV-FeMI1SVqJiXmpyLG2mjM35JVZmb-dNxn0Rg,7190
+uc/mesh.so.2,sha256=I5c1NpnrzdYZ8ZQGMgoBhXMEqsNiUKirD18X3tGDAkY,100872
+uc/mlp.py,sha256=yvU3LXweDWPWR02LUTywrurJeMLNf5lvFzARIUbfSCg,13083
+uc/plotting.py,sha256=FA9UP0ywt3rK98RCXWL4BljRtKZnLEywfRLYemhZzF4,3618
+uc/progress.py,sha256=DgQwjIzNQMibjNBpbIFnB5hqNAp-N86ZANer2Cmdzk0,2905
+uc-0.1.3.dist-info/METADATA,sha256=c5ysL6S7Zn4SgdQCGYFarZyb5toOznQkCsBhdDkNeGY,592
+uc-0.1.3.dist-info/RECORD,,
+uc-0.1.3.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+uc-0.1.3.dist-info/top_level.txt,sha256=O8cI1d7EeE_Jp7TS8Gn3duXD7fqmSq09xQDZNxsr_AI,3

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: uc
+Version: 0.1.3
+Summary: uc
+Home-page: https://pypi.org/project/uc/
+Author: anycode
+Author-email: anycode@yahoo.com
+Maintainer: anycode
+Maintainer-email: anycode@yahoo.com
+License: UNKNOWN
+Platform: all
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+
+# uc
+forked from https://pypi.org/project/ultimate/
+
