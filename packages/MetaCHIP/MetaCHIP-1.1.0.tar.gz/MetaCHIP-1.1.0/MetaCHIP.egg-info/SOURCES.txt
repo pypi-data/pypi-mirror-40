@@ -1,0 +1,14 @@
+setup.py
+MetaCHIP/BM.py
+MetaCHIP/MetaCHIP_config.py
+MetaCHIP/PG.py
+MetaCHIP/PG_backup.py
+MetaCHIP/PI.py
+MetaCHIP/PI_backup.py
+MetaCHIP/__init__.py
+MetaCHIP.egg-info/PKG-INFO
+MetaCHIP.egg-info/SOURCES.txt
+MetaCHIP.egg-info/dependency_links.txt
+MetaCHIP.egg-info/requires.txt
+MetaCHIP.egg-info/top_level.txt
+bin/MetaCHIP
