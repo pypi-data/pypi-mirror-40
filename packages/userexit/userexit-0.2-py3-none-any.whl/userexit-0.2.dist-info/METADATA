@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: userexit
+Version: 0.2
+Summary: Use exceptions to abort without a traceback, rather than sys.exit()
+Home-page: https://github.com/datagrok/python-userexit
+Author: Michael F. Lamb
+Author-email: mike@datagrok.org
+License: AGPL-3.0+
+Keywords: sysexit systemexit exception traceback exit abort
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
