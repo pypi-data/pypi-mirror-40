@@ -1,0 +1,4 @@
+
+      [console_scripts]
+      lastpass-hibp = lastpass_hibp.main:run
+      

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+lastpass_hibp/__init__.py
+lastpass_hibp/hibp_checker.py
+lastpass_hibp/lastpass_wrapper.py
+lastpass_hibp/main.py
+lastpass_hibp.egg-info/PKG-INFO
+lastpass_hibp.egg-info/SOURCES.txt
+lastpass_hibp.egg-info/dependency_links.txt
+lastpass_hibp.egg-info/entry_points.txt
+lastpass_hibp.egg-info/requires.txt
+lastpass_hibp.egg-info/top_level.txt
+lastpass_hibp.egg-info/zip-safe
