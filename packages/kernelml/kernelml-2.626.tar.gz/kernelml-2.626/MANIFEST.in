@@ -1,0 +1,9 @@
+# Include the README
+include kernelml/hdr_estimator/hdr_estimator.c
+include kernelml/kernelml_bycython/kernelml.c
+include *.md
+
+
+# Include the license file
+include LICENSE.txt
+
