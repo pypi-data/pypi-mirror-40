@@ -1,0 +1,16 @@
+tad4bj/__init__.py,sha256=LPuavt_uW26rw-y-CU20UtniQ_OxiUwiTY-rwFxIQ1w,113
+tad4bj/__main__.py,sha256=bhMakDqy1CouSuEnvUFzDTbhwftFoNtoR0aMZgXSbi0,5834
+tad4bj/dbconn.py,sha256=v8ntSQBjDTJKn811859tWi2inYzuN8Dar12pxniPuiw,9772
+tad4bj/dummy.py,sha256=EyrwRkj8ya3bI7AnkuEeFcE-PEnWKHhZAMUMu9Ykj2c,81
+tad4bj/handlers.py,sha256=Ku2g7zNSMLfwIcKfQzdmMU0lmKHQTYJKX9cQyY8h9Uk,2467
+tad4bj/pbs.py,sha256=qE-erAm86Q7p7Xsh8PZcyOmTNMn84dVmLzXcUh7niIE,88
+tad4bj/schedulers.py,sha256=7BfAZv8RdgMurSRZPNg2-FVL1oKn8xGI5lSRfOy4Ng8,971
+tad4bj/slurm.py,sha256=x7CQSCG7FXCa7Yre6eVUgqJtCmLFHYgEvconNiTDKwA,91
+tad4bj/transformers.py,sha256=MR7YswkQ8zi4nGXqFFx48DWQEccmZUlrY9eP8KrunTM,1058
+tad4bj-1.0.dist-info/DESCRIPTION.rst,sha256=hElc35KN_EkrAS7alhqvQuKMskXf0z3dsSZ8ZgqbNWE,8150
+tad4bj-1.0.dist-info/METADATA,sha256=bq1YYB9ukQYfAE9fW01Fl3ziDWdxwwGesiTj749Vz44,9040
+tad4bj-1.0.dist-info/RECORD,,
+tad4bj-1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+tad4bj-1.0.dist-info/entry_points.txt,sha256=ZkZouioPZaE_AB9zhRbr2NCGTogRdOxvds1LYyMNiZ4,40
+tad4bj-1.0.dist-info/metadata.json,sha256=X4di3iMafNxrwS88EAKJqKbOyr2g9cJdj84ROTzFsAA,1107
+tad4bj-1.0.dist-info/top_level.txt,sha256=39SGHyKbClF6A-maNpatUW5eJfj5kdOV_7-VsqUvXLI,7
