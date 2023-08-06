@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: beancount-nblock
+Version: 0.0.1
+Summary: A collection of beancount plugins
+Home-page: https://nblock.org
+Author: Florian Preinstorfer
+Author-email: nblock@archlinux.us
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
+Provides-Extra: style
