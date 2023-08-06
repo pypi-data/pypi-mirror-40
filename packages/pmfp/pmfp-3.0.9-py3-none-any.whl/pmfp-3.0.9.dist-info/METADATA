@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pmfp
+Version: 3.0.9
+Summary: a simple package manager for python like npm.
+Home-page: https://github.com/Python-Tools/pmfp
+Author: hsz
+Author-email: hsz1273327@gmail.com
+License: MIT
+Requires-Dist: wheel
+Requires-Dist: pep8
+Requires-Dist: coverage
+Requires-Dist: mypy
+Requires-Dist: lxml
+Requires-Dist: mypy-extensions
+Requires-Dist: pydocstyle
+Requires-Dist: autopep8
+Requires-Dist: sphinx
+Requires-Dist: wheel
+Requires-Dist: coverage
+Requires-Dist: recommonmark
+Requires-Dist: sphinxcontrib-napoleon
+Requires-Dist: mypy
+Requires-Dist: lxml
+Requires-Dist: mypy-extensions
+Requires-Dist: boom
+Requires-Dist: voluptuous
+
+pmfp
+
+
