@@ -1,0 +1,6 @@
+requests
+pyquery
+tablib==0.11.4
+
+[pandas]
+pandas
