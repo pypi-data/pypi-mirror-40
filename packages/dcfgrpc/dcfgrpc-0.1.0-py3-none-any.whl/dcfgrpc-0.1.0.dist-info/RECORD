@@ -1,0 +1,9 @@
+dcfgrpc/__init__.py,sha256=oHu7Zr4eGDUqj93pLwz8t7gLa8lpAx6Q-xbGiJ3nJx0,18
+dcfgrpc/api.py,sha256=TuTcPaoz500VfSJ-nTielAANE8ZdYiohIPgwyFIFjEU,680
+dcfgrpc/gateway_pb2.py,sha256=G1vqyeEp4EjChrVetitwpAeA16643zv9Z_g7vv569nE,4084
+dcfgrpc/gateway_pb2_grpc.py,sha256=tgvu3DyyHZRDXUaAnokFG94OeKRxTu6aqmGM5Vk8B18,1382
+dcfgrpc-0.1.0.dist-info/LICENSE,sha256=WP3_39Neq4nFavNrmhT-jM6m3aV5567iI9lb_vRuO7Y,1084
+dcfgrpc-0.1.0.dist-info/METADATA,sha256=O3kxvQpq9Jz1SVFrLRwl5TyhdporF3Rao5IbPiOQQ00,410
+dcfgrpc-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+dcfgrpc-0.1.0.dist-info/top_level.txt,sha256=-tq_oD6RYO1q2kS1koCMuqWOo7mznve9E5fX2A2tApg,8
+dcfgrpc-0.1.0.dist-info/RECORD,,
