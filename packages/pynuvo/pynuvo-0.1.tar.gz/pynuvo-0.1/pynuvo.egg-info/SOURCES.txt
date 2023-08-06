@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+pynuvo/__init__.py
+pynuvo.egg-info/PKG-INFO
+pynuvo.egg-info/SOURCES.txt
+pynuvo.egg-info/dependency_links.txt
+pynuvo.egg-info/requires.txt
+pynuvo.egg-info/top_level.txt
