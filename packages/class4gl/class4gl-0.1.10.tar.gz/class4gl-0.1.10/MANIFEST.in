@@ -1,0 +1,7 @@
+recursive-include class4gl *.py
+recursive-include class4gl *.pbs
+# include simulations/*
+# include setup/*
+# include processing/*
+
+
