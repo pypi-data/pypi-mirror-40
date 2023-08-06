@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: beancount-nblock
+Version: 0.0.1
+Summary: A collection of beancount plugins
+Home-page: https://nblock.org
+Author: Florian Preinstorfer
+Author-email: nblock@archlinux.us
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: beancount
+Provides-Extra: style
+Requires-Dist: black ; extra == 'style'
+Requires-Dist: flake8 ; extra == 'style'
+Requires-Dist: isort ; extra == 'style'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-randomly ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+
+UNKNOWN
+
+
