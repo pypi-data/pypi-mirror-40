@@ -1,0 +1,6 @@
+[skutter.plugins.actions]
+iptables = skutter.actions:IPTables
+
+[skutter.plugins.checks]
+process = skutter.checks:Process
+
