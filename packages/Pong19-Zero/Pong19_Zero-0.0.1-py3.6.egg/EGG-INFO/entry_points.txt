@@ -1,0 +1,3 @@
+[console_scripts]
+mytool = Pong19_Zero.cli:main
+
