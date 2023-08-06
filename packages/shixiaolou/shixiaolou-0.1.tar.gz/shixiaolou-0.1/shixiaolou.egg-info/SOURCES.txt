@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.py
+myfact/__init__.py
+myfact/fact.py
+shixiaolou.egg-info/PKG-INFO
+shixiaolou.egg-info/SOURCES.txt
+shixiaolou.egg-info/dependency_links.txt
+shixiaolou.egg-info/top_level.txt
