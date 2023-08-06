@@ -1,0 +1,10 @@
+README.md
+setup.py
+sample/__init__.py
+sample/pos.py
+team_2z_nlp/__init__.py
+team_2z_nlp.egg-info/PKG-INFO
+team_2z_nlp.egg-info/SOURCES.txt
+team_2z_nlp.egg-info/dependency_links.txt
+team_2z_nlp.egg-info/top_level.txt
+team_2z_nlp/devlog/__init__.py
