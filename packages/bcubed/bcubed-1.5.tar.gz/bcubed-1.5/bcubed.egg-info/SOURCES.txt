@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bcubed/__init__.py
+bcubed/extended.py
+bcubed.egg-info/PKG-INFO
+bcubed.egg-info/SOURCES.txt
+bcubed.egg-info/dependency_links.txt
+bcubed.egg-info/requires.txt
+bcubed.egg-info/top_level.txt
