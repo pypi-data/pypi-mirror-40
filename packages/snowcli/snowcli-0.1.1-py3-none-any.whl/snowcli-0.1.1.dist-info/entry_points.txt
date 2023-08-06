@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        snowcli=snowcli.main:main
+    
