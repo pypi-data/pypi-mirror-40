@@ -1,0 +1,10 @@
+setup.py
+thelatinlibrary/__init__.py
+thelatinlibrary/api.py
+thelatinlibrary/authors.py
+thelatinlibrary/section.py
+thelatinlibrary/tome.py
+thelatinlibrary.egg-info/PKG-INFO
+thelatinlibrary.egg-info/SOURCES.txt
+thelatinlibrary.egg-info/dependency_links.txt
+thelatinlibrary.egg-info/top_level.txt
