@@ -1,0 +1,4 @@
+dagster
+dagstermill
+pandas>=0.22.0
+pyarrow>=0.11.0
