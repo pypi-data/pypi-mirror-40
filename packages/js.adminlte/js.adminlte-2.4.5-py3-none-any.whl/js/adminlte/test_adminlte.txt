@@ -1,0 +1,15 @@
+How to use?
+===========
+
+This should be setup before rendering a page. See `fanstatic`_ for more
+information::
+
+  >>> from fanstatic import init_needed
+  >>> needed = init_needed(base_url='http://localhost')
+
+You can import ``adminlte`` from ``js.adminlte`` and ``need`` it where you want
+these resources to be included on a page::
+
+  >>> from js.adminlte import adminlte_js
+  >>> adminlte_js.need()
+
