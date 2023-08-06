@@ -1,0 +1,10 @@
+include *.in
+include *.ini
+include setup.md
+include *.txt
+include *.py
+include *.so
+include LICENSE
+
+recursive-include py_rmq *.py *.so
+#recursive-exclude py_rmq/lib

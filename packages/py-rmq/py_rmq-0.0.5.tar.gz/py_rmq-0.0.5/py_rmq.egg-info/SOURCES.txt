@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.md
+setup.py
+py_rmq/__init__.py
+py_rmq/consumer.so
+py_rmq/producer.so
+py_rmq/rmq_consumer.py
+py_rmq/rmq_producer.py
+py_rmq/rmq_test.py
+py_rmq.egg-info/PKG-INFO
+py_rmq.egg-info/SOURCES.txt
+py_rmq.egg-info/dependency_links.txt
+py_rmq.egg-info/requires.txt
+py_rmq.egg-info/top_level.txt
