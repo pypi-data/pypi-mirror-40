@@ -1,0 +1,3 @@
+[console_scripts]
+voca = voca.voca:command_line_runner
+
