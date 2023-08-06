@@ -1,0 +1,12 @@
+Click
+fake-useragent
+scrapy
+tqdm
+PyDispatcher
+
+[dev]
+pytest
+pytest-cov==2.5.1
+pytest-mock
+coveralls
+pre-commit
