@@ -1,0 +1,10 @@
+certvalidator
+cryptography
+python-dateutil
+requests>=2.20.0
+
+[:python_version < "3.3"]
+ipaddress
+
+[:python_version < "3.4"]
+enum34
