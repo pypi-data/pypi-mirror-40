@@ -1,0 +1,13 @@
+panopto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panopto/auth.py,sha256=_NcAgXx4ixxsX8zJcPZMgbHQcVjw3wyi1KvZ4C6p-NU,3249
+panopto/session.py,sha256=XtkZLtX0OicRiChNNznfl1RV5_qUReLiB3-ImlzBvPU,2781
+panopto/upload.py,sha256=a6zfx44KDGZL4UUJgir4uPHiofBTCwlBO4Gr9EiH-sw,9493
+panopto/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panopto/tests/patches.py,sha256=sQTjEts0m9sZnwwzOGBteXA2Dpp-8VFyZkr5hXn2bcQ,669
+panopto/tests/test_auth.py,sha256=OMU4zaskL6aQTKJVNKNHc4oJRXh2fGMCzkXjxWE-ibg,1231
+panopto/tests/test_upload.py,sha256=Sem4BSc4v7VpZUj4pWEqmo3lEBP8QhDIwVLphMiifd8,685
+pypanopto-0.0.6.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+pypanopto-0.0.6.dist-info/METADATA,sha256=QdlxWuuDDoHGQF7SwE6cUoryT79vGA829G4t5hByC3o,240
+pypanopto-0.0.6.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+pypanopto-0.0.6.dist-info/top_level.txt,sha256=BqxB7HEokwrb2HJjm0GWem7lTWIhlcgLNIf2KFExB88,8
+pypanopto-0.0.6.dist-info/RECORD,,
