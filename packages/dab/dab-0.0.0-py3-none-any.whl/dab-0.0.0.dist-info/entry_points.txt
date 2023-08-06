@@ -1,0 +1,3 @@
+[console_scripts]
+dab = dab.__main__:main
+
