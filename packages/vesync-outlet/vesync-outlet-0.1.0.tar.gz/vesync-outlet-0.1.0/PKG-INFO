@@ -1,0 +1,59 @@
+Metadata-Version: 1.1
+Name: vesync-outlet
+Version: 0.1.0
+Summary: vesync-outlet is a library to control Vesync wifi outlets
+Home-page: https://github.com/jeffleary00/vesync-outlet
+Author: Jeff Leary
+Author-email: sillymonkeysoftware@gmail.com
+License: MIT
+Description: # vesync-outlet
+        Python module to control Vesync WiFi power outlets
+        
+        ## Installation
+        ```
+        pip3 install vesync-outlet
+        ```
+        
+        ## Usage
+        ```
+        from vesync-outlet import Vesync
+        
+        hashpw = hashlib.md5(password.encode('utf-8')).hexdigest()
+        
+        vesync = Vesync(username, hashpw)
+        devices, response = vesync.get_outlets()
+        for d in devices:
+          data, response = vesync.turn_on(d['id'])
+          data, response = vesync.turn_off(d['id'])
+        ```
+        
+        ## Methods
+        The methods below return a tuple. The first element is the payload data.
+        If this entry is None, check results in the response object for errors.
+        
+        ### get_devices()
+        Get all wifi-switch outlet devices from Vesync api.
+        
+        Arguments: none
+        Returns: ( payload, requests.response )
+        
+        ### turn_off(id)
+        Switch an outlet to OFF.
+        
+        Arguments: the device ID
+        Returns: ( payload, requests.response )
+        
+        ### turn_on(id)
+        Switch an outlet to ON.
+        
+        Arguments: the device ID
+        Returns: ( payload, requests.response )
+        
+Keywords: vesync,iot
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.0
