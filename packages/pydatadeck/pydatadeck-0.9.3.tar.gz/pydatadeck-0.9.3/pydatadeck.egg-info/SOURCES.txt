@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+pydatadeck/__init__.py
+pydatadeck.egg-info/PKG-INFO
+pydatadeck.egg-info/SOURCES.txt
+pydatadeck.egg-info/dependency_links.txt
+pydatadeck.egg-info/not-zip-safe
+pydatadeck.egg-info/requires.txt
+pydatadeck.egg-info/top_level.txt
+pydatadeck/datasource/__init__.py
+pydatadeck/datasource/errors.py
+pydatadeck/datasource/operators.py
+pydatadeck/datasource/service_factory.py
+pydatadeck/datasource/translation.py
