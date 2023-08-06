@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: goquantdata
+Version: 0.0.2
+Summary: Python client library for Go Quant Financial Data Services
+Home-page: https://github.com/hyu2707/goquant-data-client
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (<3.0,>=2.20.0)
+
+UNKNOWN
+
+
