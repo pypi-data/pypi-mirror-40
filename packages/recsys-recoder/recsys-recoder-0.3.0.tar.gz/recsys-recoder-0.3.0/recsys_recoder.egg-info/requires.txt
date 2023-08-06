@@ -1,0 +1,6 @@
+torch>=0.4.1
+annoy
+numpy
+scipy>=1.2.0
+tqdm
+glog
