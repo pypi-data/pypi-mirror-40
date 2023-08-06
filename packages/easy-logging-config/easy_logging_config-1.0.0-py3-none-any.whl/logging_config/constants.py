@@ -1,0 +1,5 @@
+DEFAULT_LOG_HANDLER_CLASS = 'logging.handlers.WatchedFileHandler'
+DEBUG_LOG_FILE = 'app_debug.log'
+INFO_LOG_FILE = 'app_info.log'
+WARN_LOG_FILE = 'app_warn.log'
+ERROR_LOG_FILE = 'app_error.log'
