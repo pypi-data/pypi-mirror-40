@@ -1,0 +1,53 @@
+Metadata-Version: 2.0
+Name: directrix-pkg
+Version: 0.0.2
+Summary: A small example package
+Home-page: https://github.com/directrix1/directrix_pkg
+Author: Edward Flick
+Author-email: directrix1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Directrix Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+This requires setuptools, wheel, and twine.
+
+To create source and binary distributions in the dist/ folder execute:
+
+```
+python setup.py sdist bdist_wheel
+```
+
+To upload to PyPI test server execute:
+
+```
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+```
+
+To install from PyPI test server execute:
+
+```
+pip install --index-url https://test.pypi.org/simple/ directrix_pkg
+```
+
+To upload to PyPI production server execute:
+
+```
+twine upload dist/*
+```
+
+To install from PyPI production server execute:
+
+```
+pip install directrix_pkg
+```
+
+
