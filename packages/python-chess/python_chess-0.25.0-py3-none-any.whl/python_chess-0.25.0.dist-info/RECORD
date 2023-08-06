@@ -1,0 +1,16 @@
+chess/__init__.py,sha256=7T3xQdE4bOSSXrCjeULsgN9T0Gqf_TNlemqHiFZ6vOc,122790
+chess/_engine.py,sha256=TGfJcvBKJgmA8g2HzOYSipxRqkU6IQWtx_SYb92KBz4,8729
+chess/engine.py,sha256=l-lm3kRsRWMQUnntsaMzrKjEcyV1FNzBUZi4jrOiCCY,83733
+chess/gaviota.py,sha256=Ido5RClyn4wg8w6puiujRrxktZC72Nswr6RoFG8O73k,60852
+chess/pgn.py,sha256=PF2rcgVhhjGpotAwMN_RbNFK5tTBwG6_bg8Beak0geY,39737
+chess/polyglot.py,sha256=LnPnco_yLVKp7eL61jLfjfXyOvuxUqKtUhtTfJc5V0w,26777
+chess/svg.py,sha256=OKA6IrKOeC9x1Dve4462En-DuFcAn1x31nVk1_L0xxs,18466
+chess/syzygy.py,sha256=L3evxtlsP5hElp8yZGNS42wzFRp3EJfQkGobyuvE4jg,66543
+chess/uci.py,sha256=1rYI4XP2ss8rvJPdIAUk3vP7dGjHiFMf18EntxAkQP0,40996
+chess/variant.py,sha256=WEiBCLnq0Cm6VswBrLUAhjy_0IqM356Ii7oyt189aO8,30868
+chess/xboard.py,sha256=DTlxVyCfk-_40DI7ZzkTAlfCPMSrSBO-smVCRrDm6Q8,47654
+python_chess-0.25.0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+python_chess-0.25.0.dist-info/METADATA,sha256=cYqz2sGVbhd51tDOw8Ui-xaUbdU5I_oa25I0KXmcLik,11595
+python_chess-0.25.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+python_chess-0.25.0.dist-info/top_level.txt,sha256=KQh_dmhsO-MtGPgCihpBa-q5XF6tGfA9_MKDXETuyss,6
+python_chess-0.25.0.dist-info/RECORD,,
