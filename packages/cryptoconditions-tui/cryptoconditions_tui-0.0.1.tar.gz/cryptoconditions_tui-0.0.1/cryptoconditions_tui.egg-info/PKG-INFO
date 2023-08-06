@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cryptoconditions-tui
+Version: 0.0.1
+Summary: Terminal user interfaces for Komodo CryptoConditions smart-contracts
+Home-page: https://github.com/tonymorony/GatewaysCC-TUI
+Author: Anton Lysakov
+Author-email: tlysakov@gmail.com
+License: UNKNOWN
+Description: # GatewaysCC Terminal User Interface
+        
+        ![alt text](https://i.imgur.com/c8DPfpp.png)
+        
+        This program was created for demonstration and partial automation of Komodo GatewaysCC stack testing. (AssetsCC, OraclesCC, GatewaysCC, oraclesfeed dAPP)
+        
+        Python3 required for execution:
+        *  `sudo apt-get install python3.6`
+        pip packages needed:
+        * `pip3 install setuptools wheel slick-bitcoinrpc`
+        * or `pip3 install -r requirements.txt`
+        Before execution be sure than daemon for needed AC up.
+        
+        At the moment raw version of manual gateway how-to guide can be found here: https://docs.komodoplatform.com/cc/contracts/gateways/scenarios/tutorial.html I advice to read it before you start use this tool to understand the flow.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
