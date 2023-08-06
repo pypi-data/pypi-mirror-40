@@ -1,0 +1,17 @@
+axial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+axial/axial.py,sha256=BJ-cCwVgnZvEl6zszsLQ33eNgh-pZT5WsvUTRCvbAk0,17923
+axial/go/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+axial/go/human_gene_sets.js,sha256=DT67ByLyWboJ4dT2eS288z3cvV9EsQczopkoTGmhmwk,2420618
+axial/go/mouse_gene_sets.js,sha256=gX9eAZZFXJRHujhahDEiD3xywtVOjzXw8e2-w5rbASo,10458879
+axial/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+axial/templates/bar.html.j2,sha256=Hagg_jtuYpPrWLy03Uemzje26b7kqv8xIss69X6KYX4,3588
+axial/templates/base.html.j2,sha256=diZvPWy8wG6N4ccIIfJYy0ckmWCsNMdoMNzmDWCqFUU,1048
+axial/templates/braid.html.j2,sha256=J7nXcaoGTkMmX_a20nqd-rR5TIaJ_tyyVjeP7zS2w9s,18053
+axial/templates/graph.html.j2,sha256=OLQmlkrOOFb5pgBifpLh1BTxP0gvawC1Slw5Uj8QNn4,6799
+axial/templates/heatmap.html.j2,sha256=lrtz2-hwLhwYqv5rGLBENl2ai3VdBTU2fqzpU5AUhxQ,23862
+axial/templates/volcano.html.j2,sha256=q9Q_COUHsQy6oYp2heyxFZ4bcBQD2w9c1bkScOZfFwU,5343
+axial-0.1.10.dist-info/LICENSE,sha256=xhHp84lSbHAqA3HjQ5heijhfd6PyO0N8s15wP9LDNRc,1073
+axial-0.1.10.dist-info/METADATA,sha256=sBzBZc4mZrxJMmevmCdcCxI5dwsy84ewiGselhfDTBs,542
+axial-0.1.10.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+axial-0.1.10.dist-info/top_level.txt,sha256=C2R_PP-9J8EyKYsI782urD0DT_eING7uz2sQ0y9I8vM,6
+axial-0.1.10.dist-info/RECORD,,
