@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: phynix-gym
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/Phynix/phynix_gym
+Author: Jonas Eschle 'Mayou36'
+Author-email: jonas.eschle@cern.ch
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3
+Requires-Dist: gym
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+
+UNKNOWN
+
+
