@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb/testbench.cpp in debug mode
+   Compiling ../../../../src/dut.cpp in debug mode
+   Generating csim.exe
+Expected result: 100, Got Result: 100
+Expected result: 103, Got Result: 103
+Expected result: 106, Got Result: 106
+Expected result: 109, Got Result: 109
+Expected result: 112, Got Result: 112
+Expected result: 115, Got Result: 115
+Expected result: 118, Got Result: 118
+Expected result: 121, Got Result: 121
+Expected result: 124, Got Result: 124
+Expected result: 127, Got Result: 127
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,44 @@
+================================================================
+  Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+  Version 2017.1
+  Build 1846317 on Fri Apr 14 19:19:38 MDT 2017
+  Copyright (C) 1986-2017 Xilinx, Inc. All Rights Reserved.
+================================================================
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2017.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'ben' on host 'localhost' (Linux_x86_64 version 3.10.0-514.21.1.el7.x86_64) on Tue Sep 18 05:36:32 NZST 2018
+INFO: [HLS 200-10] In directory '/mnt/centos_share/Vivado_Projects/hlsclt/hlsclt/examples/sin_taylor_series'
+INFO: [HLS 200-10] Creating and opening project '/mnt/centos_share/Vivado_Projects/hlsclt/hlsclt/examples/sin_taylor_series/proj_sin_taylor_series'.
+INFO: [HLS 200-10] Adding design file 'src/dut.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/dut.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'tb/testbench.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/mnt/centos_share/Vivado_Projects/hlsclt/hlsclt/examples/sin_taylor_series/proj_sin_taylor_series/solution1'.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb/testbench.cpp in debug mode
+   Compiling ../../../../src/dut.cpp in debug mode
+   Generating csim.exe
+make: Warning: File `csim.mk' has modification time 0.34 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+Sin(0) - Expected result: 0.000000, Got Result: 0.000000
+Sin(5) - Expected result: 0.087153, Got Result: 0.087153
+Sin(10) - Expected result: 0.173643, Got Result: 0.173643
+Sin(15) - Expected result: 0.258812, Got Result: 0.258812
+Sin(20) - Expected result: 0.342010, Got Result: 0.342010
+Sin(25) - Expected result: 0.422607, Got Result: 0.422607
+Sin(30) - Expected result: 0.499987, Got Result: 0.499987
+Sin(35) - Expected result: 0.573562, Got Result: 0.573562
+Sin(40) - Expected result: 0.642772, Got Result: 0.642772
+Sin(45) - Expected result: 0.707090, Got Result: 0.707090
+Sin(50) - Expected result: 0.766028, Got Result: 0.766028
+Sin(55) - Expected result: 0.819136, Got Result: 0.819136
+Sin(60) - Expected result: 0.866010, Got Result: 0.866010
+Sin(65) - Expected result: 0.906294, Got Result: 0.906294
+Sin(70) - Expected result: 0.939680, Got Result: 0.939680
+Sin(75) - Expected result: 0.965916, Got Result: 0.965916
+Sin(80) - Expected result: 0.984801, Got Result: 0.984801
+Sin(85) - Expected result: 0.996191, Got Result: 0.996191
+Sin(90) - Expected result: 1.000000, Got Result: 1.000000
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
