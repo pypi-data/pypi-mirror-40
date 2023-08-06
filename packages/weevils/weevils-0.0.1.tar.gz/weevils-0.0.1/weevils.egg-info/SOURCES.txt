@@ -1,0 +1,9 @@
+README.md
+setup.py
+weevils/__init__.py
+weevils.egg-info/PKG-INFO
+weevils.egg-info/SOURCES.txt
+weevils.egg-info/dependency_links.txt
+weevils.egg-info/not-zip-safe
+weevils.egg-info/requires.txt
+weevils.egg-info/top_level.txt
