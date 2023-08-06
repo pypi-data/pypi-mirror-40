@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: jj2c
+Version: 0.0.1
+Summary: Jinja2 compiler
+Home-page: https://github.com/tly1980/jj2c
+Author: Tom Tang
+Author-email: tly1980@gmail.com
+License: BSD
+Download-URL: https://github.com/tly1980/jj2c/tarball/0.0.1
+Description: jj2c
+        ===============================
+        
+        version number: 0.0.1
+        author: 'Tom Tang
+        
+        Overview
+        --------
+        
+        Jinja2 compiler
+        
+        Installation / Usage
+        --------------------
+        
+        To install use pip:
+        
+            $ pip install jj2c
+        
+        
+        Or clone the repo:
+        
+            $ git clone https://github.com/tly1980/jj2c.git
+            $ python setup.py install
+        
+        Contributing
+        ------------
+        
+        TBD
+        
+        Example
+        -------
+        
+        TBD
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
