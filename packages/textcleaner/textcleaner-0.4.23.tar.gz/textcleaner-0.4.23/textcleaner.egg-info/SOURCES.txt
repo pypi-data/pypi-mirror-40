@@ -1,0 +1,10 @@
+README.txt
+setup.cfg
+setup.py
+textcleaner/__init__.py
+textcleaner/textcleaner.py
+textcleaner.egg-info/PKG-INFO
+textcleaner.egg-info/SOURCES.txt
+textcleaner.egg-info/dependency_links.txt
+textcleaner.egg-info/requires.txt
+textcleaner.egg-info/top_level.txt
