@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+spawn/__init__.py
+spawn/__main__.py
+spawn/_version.py
+spawn/generate_tasks.py
+spawn.egg-info/PKG-INFO
+spawn.egg-info/SOURCES.txt
+spawn.egg-info/dependency_links.txt
+spawn.egg-info/requires.txt
+spawn.egg-info/top_level.txt
