@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: SQ-Black
+Version: 2019.1.15
+Summary: The uncompromising, single quotes, code formatter.
+Home-page: https://github.com/s0undt3ch/sq-black
+Author: Pedro Algarvio
+Author-email: pedro@algarvio.me
+License: Apache Software License 2.0
+Keywords: automation formatter yapf autopep8 pyfmt gofmt rustfmt black
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: black (>=18.9b0)
+
+# Opionated Single Quotes Black
+
+This is [black](https://github.com/ambv/black), with a patched behaviour to, prefer single quotes over double quotes.
+
+
