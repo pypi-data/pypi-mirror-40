@@ -1,0 +1,4 @@
+bluepy==1.1.4
+paho-mqtt
+pyyaml>=4.2b1
+miflora==0.4
