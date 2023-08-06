@@ -1,0 +1,10 @@
+structures/__init__.py,sha256=8UmAVw_x7rLOKGCqlxjO-keUWvS9trfO1OxM3Qo2Pms,34
+structures/structures.py,sha256=1km_tmyKM5sM2DJWlWchBd-n1qjWaErSCMvQzB7dYiw,425
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/tests_structures.py,sha256=mQ_4DgOIsqsysaNxZ9OEky_lET-EQAT1HCOHx4d1RlE,765
+py_structures-0.0.1.dist-info/LICENSE,sha256=QqCM1dJgjsiVVNx7J5HdQzqTYylzdUUgBuTJeRt5TAM,1071
+py_structures-0.0.1.dist-info/METADATA,sha256=pREkTG_NacCCfArnBdNO0huP7e66fCcNTVKWz3s2ECQ,250
+py_structures-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+py_structures-0.0.1.dist-info/top_level.txt,sha256=jOl2KfeOEFDpsIvCL4pWlHbukePxB8yKBklvMv5NZW0,17
+py_structures-0.0.1.dist-info/RECORD,,
