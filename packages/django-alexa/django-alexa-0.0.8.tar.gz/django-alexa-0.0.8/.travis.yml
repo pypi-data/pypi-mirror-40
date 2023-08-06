@@ -1,0 +1,21 @@
+sudo: false
+language: python
+branches:
+  only:
+    - master
+before_cache:
+  - rm -f $HOME/.cache/pip/log/debug.log
+cache:
+  directories:
+    - $HOME/.cache/pip
+python:
+    - "3.6"
+install:
+    - "pip install pipenv"
+    - "pipenv install --dev"
+    - "python setup.py develop"
+script:
+    - "flake8 django_alexa/"
+    - "py.test"
+after_success:
+  coveralls

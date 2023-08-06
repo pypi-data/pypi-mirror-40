@@ -1,0 +1,124 @@
+CHANGES
+=======
+
+0.0.8
+-----
+
+* initial sphinx documentation layout (#43)
+* updated packages and deploy configs
+* Updated readme to include git upstream
+* Added pyversion3, updated tox.ini to release to pypi and test.pypi and other fixes
+
+0.0.10
+------
+
+* added note about using black for code style
+* include dev dependenices for travis builds
+* Fix the broken link to requires.io pycontribs/django-alexa is not working
+* change travis job to run against python 3.6 only
+* Add some notes for contributing
+* Added missing test packages, fixed unit tests, fix linter errors
+* update dependenices
+* Add pipenv for package control, upgrade to Django>2 version, add black formatter, remove python 2.7 from tox
+* Refreshed requirements
+* access token pasing ASKUserSerializer class
+* Decode request body into utf-8
+* ADDED: simple tests for ResponseBuilder
+* ADDED: simple tests for ResponseBuilder
+* FIXED: version conflict caused by pyversion
+* FIXED: requirements.txt for Python 2.x only
+* FIXED: requirements.txt for Python 2 only
+* ADDED: packaing 15.0 into requirements.txt
+* ADDED: packaing into requirements.txt
+* ADDED: handling of images in cards (type:Standard)
+* corrected flake8 error
+* updated badge urls
+* removed pytest options from .travis.yml options are now in tox.ini [pytest]
+* moved py.test command to separate [pytest] section for faster local tests using only pytest and avoiding tox
+* testing python 3.6 with travis-ci
+* now testing python 3.6 with tox
+* Validation checked for length and inadvertently added a check against the encoding of the output. This commit will change this to look at the size of the variable and not force any form of encoding
+* added tests to validation.py
+* incorrect position for string format in validation.py
+* added mock for testing
+* ignore pytest.ini file
+* added some tests for internal/validation.py
+* Corrected some spelling
+* added python 3 for tox testing
+* added pyOpenSSL to requirements.txt
+* added urllib import for python 3
+* added tests for internal.validation.py
+* python 3 check and exclude pyversion
+* Added license to setup.py
+* Added python 3.5 version to test against
+* Added requests and pyOpenSSL to the requirements
+
+0.0.7
+-----
+
+* Fix issues flake8 found
+* Not sure why Travis CI is failing on this
+* Updating certificate validation issues to return an error code rather than 200 OK
+* Adding carveout for port 'none' when no port is explicitly specified
+* Adding port check (scheme isn't sufficient)
+* Changing to make sure the request isn't old (in addition to isn't from the future)
+* Remove reference to validated\_data
+* Correct session
+* Send through validated data
+* Pass through user to intent
+* Forgot \`open\_file\`..
+* Fix misc issues with README
+* Ensure that dependencies installed properly, and fix typo in README
+* only build master branch
+* moved todo from the readme to github issues
+* fix a few things in the readme
+* pep8 fixes for latest changes
+* Few more bug fixes from latest demo work
+* few more bug fixes and a readme tweak
+* Bug fixes for the latest set of change, plus a change to how to App ID's are used
+* readme updates for latest changes
+* Multi App rework, more cleaner management commands, more api isolation
+* Allow response builder to automatically append reprompt
+* final fix to make the build pass
+* more pep8 fixes
+* pep8 fixes for latest changes
+* Some more changes
+* more readme tweaks
+* pep8 fixes
+* fix docstring on responsebuilder
+* readme fix
+* Fixes after putting water through the pipe in an actual test usage
+* Fix readme some more
+* fix readme TODO list
+* fix timestamp check
+* Switching coverage to develop branch
+* fix pep8 errors with latest changes
+* Add to readme a TODO list
+* Add support for new slot types
+* add default utterances for default intents
+* cleanup readmes
+* Fix django\_alexa framework so it actually works
+* change build badge to master branch only
+
+0.0.5
+-----
+
+* unneeded test requirements
+* travis ci fixes
+* fix tests
+* pep8 fixes
+* trying to add ci
+* fix code block in readme
+
+0.0.4
+-----
+
+* fix pypi readme and add badges to github readme
+
+0.0.3
+-----
+
+* readme updates
+* fix .gitignore
+* Inital Project API blockout
+* Initial commit
