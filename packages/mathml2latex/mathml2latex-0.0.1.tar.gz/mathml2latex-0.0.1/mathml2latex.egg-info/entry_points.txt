@@ -1,0 +1,3 @@
+[console_scripts]
+mathml2latex = mathml2latex.mathml:process_mathml
+
