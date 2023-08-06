@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: erp-air
+Version: 0.0.4b0
+Summary: Evaluate Air Handling Unit per Ecodesign.
+Home-page: https://gitlab.com/remak-dva/erp-air
+Author: Artem Zhukov
+Author-email: zhukovgreen@ya.ru
+Keywords: ahu,erp,ecodesign
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: attrs (>=18.1,<19.0)
+Project-URL: Repository, https://gitlab.com/remak-dva/erp-air

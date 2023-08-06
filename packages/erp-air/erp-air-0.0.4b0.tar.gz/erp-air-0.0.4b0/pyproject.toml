@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "erp-air"
+version = "0.0.4b"
+description = "Evaluate Air Handling Unit per Ecodesign."
+readme = "README.md"
+authors = ["Artem Zhukov <zhukovgreen@ya.ru>"]
+license = "MIT"
+
+homepage = "https://gitlab.com/remak-dva/erp-air"
+repository = "https://gitlab.com/remak-dva/erp-air"
+
+keywords = ["ahu", "erp", "ecodesign"]
+
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+attrs = "^18.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.1"
+pytest-cov = "^2.5"
+
+[tool.black]
+line-length = 54
+py36 = true
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
