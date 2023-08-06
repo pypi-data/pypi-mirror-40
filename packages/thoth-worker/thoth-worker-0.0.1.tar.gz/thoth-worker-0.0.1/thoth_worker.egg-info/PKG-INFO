@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: thoth-worker
+Version: 0.0.1
+Summary: Selinon thoth example application
+Home-page: https://github.com/thoth-station/selinon-worker
+Author: Fridolin Pokorny
+Author-email: fridolin.pokorny@gmail.com
+Maintainer: Fridolin Pokorny
+Maintainer-email: fridolin.pokorny@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: selinon celery
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
