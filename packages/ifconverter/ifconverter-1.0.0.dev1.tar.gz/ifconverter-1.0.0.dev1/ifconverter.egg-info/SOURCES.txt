@@ -1,0 +1,9 @@
+setup.py
+ifconverter.egg-info/PKG-INFO
+ifconverter.egg-info/SOURCES.txt
+ifconverter.egg-info/dependency_links.txt
+ifconverter.egg-info/top_level.txt
+test/test_Cofig.py
+test/test_ConvertRunner.py
+test/test_MsSqlConverter.py
+test/test_MssqlChecker.py
