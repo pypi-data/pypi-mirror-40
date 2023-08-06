@@ -1,0 +1,9 @@
+hdfscm/__init__.py,sha256=4-KJU7bI5VPhfAf5LGiC-80ZyZxuE8oR6_6_qcs2xjQ,196
+hdfscm/_version.py,sha256=lflMwgc11t9XLBp2_Vfts7F26G-JqfICYSY1bFlWYQo,497
+hdfscm/checkpoints.py,sha256=bAxkOsNUrtaU2QNiuRk86oK6c5RzSs_SdQCCCi8_X4o,4785
+hdfscm/hdfsmanager.py,sha256=A8eQxuf0SZi5ylkdsxoLwDEPX5wczbNtkPlPDgQlaYg,13123
+hdfscm/utils.py,sha256=I1pZQooWJooVQpxK6wKNqREylch7jiWcUfs7XJCUsPE,1483
+jupyter_hdfscm-0.1.0.dist-info/METADATA,sha256=uHhtrpEpvTM2xxl-2f51K9A9QpyV-y__CTVtKUAEVio,1387
+jupyter_hdfscm-0.1.0.dist-info/RECORD,,
+jupyter_hdfscm-0.1.0.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+jupyter_hdfscm-0.1.0.dist-info/top_level.txt,sha256=AbcYUBr05uEauTPuo93gOpUew1ThBgKrEnP5knAYfh0,7
