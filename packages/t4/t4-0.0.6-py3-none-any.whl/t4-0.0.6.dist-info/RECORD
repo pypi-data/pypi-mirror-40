@@ -1,0 +1,13 @@
+t4/__init__.py,sha256=PLgNV6Wap62tLwXFI7U-6Y2bxy5-RVpzRND6aKcozgQ,284
+t4/api.py,sha256=QD5qnTqZ0isIQ6I1oWczl-NhYeOXUINyT_xrL6UZk5w,16287
+t4/bucket.py,sha256=nZeuckFxEsxxT776Gc4QCe2XsozK808M8Q9GhRSspLo,8914
+t4/data_transfer.py,sha256=QEt2VKPhLeUqb3ARfU0jQPeyAGCdUYvuU8_iGHnUUFU,33866
+t4/exceptions.py,sha256=ElMrSqetK0sczSTvrloBPj2Du_vvDGTPnrGHKko7sBA,123
+t4/packages.py,sha256=wGYYezssHZ2JED8lmBOSysjGaLLF-Ju_VUuJH_MRHyc,34310
+t4/search_util.py,sha256=ASssmhJ994pPnkyLGc_09-lr_A5b7M_XvNKzEQvrIZg,3048
+t4/util.py,sha256=fPDccWfAIArRSTIl0-z3Kq0gIErSJTFEqMHv97HAzyo,11673
+t4/xattr.py,sha256=xCLyEa-ddZ83ihLo39f3oLVRlF9f_Xx05Whi27LQv4o,916
+t4-0.0.6.dist-info/METADATA,sha256=FHBlXdC_SC1WfwLitjGEJshELcCW0l6x86nzNjscsm4,1974
+t4-0.0.6.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+t4-0.0.6.dist-info/top_level.txt,sha256=Vt8oaXy9c4igvedO7gMswunM8OZM1a9axrOBssTc1Q4,3
+t4-0.0.6.dist-info/RECORD,,
