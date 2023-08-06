@@ -1,0 +1,13 @@
+runHiC/__init__.py,sha256=BTcE6UjqJvIjiFVgXM8jnaMqiNLH19USQhcNs9Qe8HE,119
+runHiC/binning.py,sha256=aV-WBf6bTzueAEF8ed1YOEYGFMW2GZsHhwZVnlsDnsY,1113
+runHiC/filtering.py,sha256=bNkc4w__cDotGjOC4qKwwxjMn5kjjj527uWQkqQY_l4,8255
+runHiC/mapping.py,sha256=KWMC3ybNPAfogyxKcYK5jKRysUEcOvmlUD3H0aqLilw,8853
+runHiC/quality.py,sha256=0_Gez8L6YqDBN3zc7QGaK2uH_n92nGoCQYC9PWJ8sB0,7748
+runHiC/utilities.py,sha256=B9JCQ7_b8CvlKhD4Ou4fAkZCWsM-1UIyqjZqVjhnjTQ,3612
+runHiC-0.8.2.data/scripts/runHiC,sha256=jT5AMMRXYIl_V-bh3CgxupN_af00wXwLmnQL60ZFPqY,40241
+runHiC-0.8.2.data/scripts/runHiC-digest,sha256=JnuWFBb9Ex7lfUimqJWcYerg653mIR399cWb30KVfgI,3069
+runHiC-0.8.2.dist-info/LICENSE,sha256=yPpanRCYSbY18M9RS0aAVQCPfpSMels7YOW6pz9b364,35797
+runHiC-0.8.2.dist-info/METADATA,sha256=KF5EH8895TLYS62kh0sCI_gYBy4G-OHQnqe0TPu2xdU,3588
+runHiC-0.8.2.dist-info/WHEEL,sha256=YO0P_oFqt6DWX0LhbH7jsyzb3BUtoq2kERtqGsXDJHs,92
+runHiC-0.8.2.dist-info/top_level.txt,sha256=-lKktCgDOpP--HIHuChK2WoAPrz7g8P0p5GQqv91zpo,7
+runHiC-0.8.2.dist-info/RECORD,,
