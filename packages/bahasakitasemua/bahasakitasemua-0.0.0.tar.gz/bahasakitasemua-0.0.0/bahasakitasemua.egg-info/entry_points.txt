@@ -1,0 +1,3 @@
+[console_scripts]
+bahasakita = bahasakita.cli:main
+
