@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: lapdog
+Version: 0.10.0
+Summary: A relaxed wrapper for FISS and dalmatian
+Home-page: UNKNOWN
+Author: Aaron Graubert - Broad Institute - Cancer Genome Computational Analysis
+Author-email: aarong@broadinstitute.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Requires-Dist: firecloud-dalmatian (==0.0.4)
+Requires-Dist: google-cloud-storage (>=1.13.2)
+Requires-Dist: PyYAML (==3.12)
+Requires-Dist: agutil (>=4.0.2)
+Requires-Dist: Flask-Cors (==3.0.6)
+Requires-Dist: crayons (==0.1.2)
+Requires-Dist: connexion (==1.5.3)
+Requires-Dist: oauth2client
+Requires-Dist: requests (>=2.18.0)
+Requires-Dist: googleapis-common-protos (>=1.5.0)
+Requires-Dist: google-auth (>=1.4.0)
+Requires-Dist: google-cloud-kms (==0.2.1)
+Requires-Dist: cryptography (>=2.1.0)
+
+A wrapper for FISS and dalmatian
+
+
