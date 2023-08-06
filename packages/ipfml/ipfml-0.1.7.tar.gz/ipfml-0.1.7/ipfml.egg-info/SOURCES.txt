@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+images/test_img.png
+ipfml/__init__.py
+ipfml/metrics.py
+ipfml/processing.py
+ipfml.egg-info/PKG-INFO
+ipfml.egg-info/SOURCES.txt
+ipfml.egg-info/dependency_links.txt
+ipfml.egg-info/not-zip-safe
+ipfml.egg-info/requires.txt
+ipfml.egg-info/top_level.txt
