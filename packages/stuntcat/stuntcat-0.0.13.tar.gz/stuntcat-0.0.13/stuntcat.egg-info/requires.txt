@@ -1,0 +1,10 @@
+pygame
+pyscroll
+pytmx
+thorpy
+
+[:sys_platform != "win32"]
+pymunk>=5.4.1
+
+[:sys_platform == "win32"]
+pymunk==5.4.0
