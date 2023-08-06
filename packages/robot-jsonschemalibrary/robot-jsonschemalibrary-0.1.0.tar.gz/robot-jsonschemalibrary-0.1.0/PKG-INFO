@@ -1,0 +1,47 @@
+Metadata-Version: 1.2
+Name: robot-jsonschemalibrary
+Version: 0.1.0
+Summary: A Robot Framework library for JSON Schema validation.
+Home-page: https://github.com/hypc/robot-jsonschemalibrary
+Author: hypc
+Author-email: h_yp00@163.com
+License: MIT
+Description: ================================
+        RobotFramework JSONSchamaLibrary
+        ================================
+        
+        Provides a simple interface to `jsonschema`_, the Python implementation of JSON Schema.
+        
+        Usage
+        -----
+        
+        You can import library like this::
+        
+            Library     JSONSchemaLibrary
+        
+        or::
+        
+            Library     JSONSchemaLibrary  /path/to/schemas
+        
+        and you can write your testcase like this::
+        
+            My Test Case:
+                Validate Json   schema_name.schema.json  {"foo": "bar"}
+        
+            My Test Case2:
+                Validate Json   /path/to/schema_name.schema.json  {"foo": "bar"}
+        
+        .. _`jsonschema`: https://github.com/Julian/jsonschema
+        
+Keywords: robotframework json jsonschema
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Robot Framework
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
