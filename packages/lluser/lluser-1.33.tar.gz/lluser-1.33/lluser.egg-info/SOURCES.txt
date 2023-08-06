@@ -1,0 +1,8 @@
+setup.py
+lluser/__init__.py
+lluser/store_userinfo.py
+lluser.egg-info/PKG-INFO
+lluser.egg-info/SOURCES.txt
+lluser.egg-info/dependency_links.txt
+lluser.egg-info/requires.txt
+lluser.egg-info/top_level.txt
