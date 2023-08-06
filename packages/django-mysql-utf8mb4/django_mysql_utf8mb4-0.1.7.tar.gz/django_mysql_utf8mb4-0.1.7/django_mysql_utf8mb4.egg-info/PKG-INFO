@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: django-mysql-utf8mb4
+Version: 0.1.7
+Summary: A migration, command and checks to ensure Django and MySQL are using the best-avaliable collation
+Home-page: https://github.com/software-opal/django_mysql_utf8mb4
+Author: Opal Symes
+Author-email: pypi@opal.codes
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Security
+Requires-Python: >=3.5
