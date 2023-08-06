@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: dumbcpm
+Version: 0.3.3
+Summary: Possibly very dumb package manager for C/++, written in Python.
+Home-page: https://github.com/handicraftsman/dumbcpm/
+Author: Nickolay Ilyushin
+Author-email: nickolay02@inbox.ru
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
