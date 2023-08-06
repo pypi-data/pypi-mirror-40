@@ -1,0 +1,11 @@
+README.md
+setup.py
+schemalite/__init__.py
+schemalite/core.py
+schemalite/schema_error.py
+schemalite/validators.py
+schemalite.egg-info/PKG-INFO
+schemalite.egg-info/SOURCES.txt
+schemalite.egg-info/dependency_links.txt
+schemalite.egg-info/requires.txt
+schemalite.egg-info/top_level.txt
