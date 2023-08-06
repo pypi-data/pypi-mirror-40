@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: stat-arb-tools
+Version: 0.0.4
+Summary: This package provides statistics arbitrage tools for traders
+Home-page: https://github.com/devnull-capital/stat_arb_tools
+Author: Adam Hanna
+Author-email: ahanna@mba2016.hbs.edu
+License: UNKNOWN
+Description: # Stat Arb Tools
+        This library provides multiple tools that are useful for statistical arbitrage traders.
+        
+        # Docs
+        Documentation is available at this project's [read the docs](https://stat-arb-tools.readthedocs.io/en/latest/) page.
+        
+        # Install
+        ```bash
+        $ pip install stat-arb-tools
+        ```
+        
+        # Pip
+        This project is available on [pypi.org](https://pypi.org/project/stat-arb-tools/)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
