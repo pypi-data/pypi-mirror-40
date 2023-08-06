@@ -1,0 +1,3 @@
+[robotpy]
+websim = robotpy_websim.sim_server:Main
+
