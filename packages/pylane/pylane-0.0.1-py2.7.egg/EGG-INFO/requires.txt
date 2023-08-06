@@ -1,0 +1,7 @@
+Click==7.0
+
+[:python_version < "3.4"]
+ipython==5.8
+
+[:python_version >= "3.4"]
+ipython==7.2
