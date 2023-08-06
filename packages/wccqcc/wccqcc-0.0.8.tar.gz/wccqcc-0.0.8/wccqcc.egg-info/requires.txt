@@ -1,0 +1,6 @@
+requests!=2.9.0
+wcc>=1.7.0
+tqdm
+lxml
+pymongo
+beautifulsoup4
