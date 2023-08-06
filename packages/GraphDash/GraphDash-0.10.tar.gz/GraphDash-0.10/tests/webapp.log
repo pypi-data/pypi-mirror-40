@@ -1,0 +1,280 @@
+[2018-12-03 08:51:39,180] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /" 302 FOUND
+    Request:   GET /
+    Version:   HTTP/1.1
+    Status:    302 FOUND
+    Url:       http://0.0.0.0:7357/
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:51:39,191] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /tags" 200 OK
+    Request:   GET /tags
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/tags
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:51:39,294] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /family/" 200 OK
+    Request:   GET /family/
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/family/
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:51:39,307] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /family/cat" 200 OK
+    Request:   GET /family/cat
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/family/cat
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:51:39,326] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /search" 200 OK
+    Request:   GET /search
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/search?value=*
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:51:39,336] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /search" 200 OK
+    Request:   GET /search
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/search?value=find
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:51:39,352] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /nonexistent" 404 NOT FOUND
+    Request:   GET /nonexistent
+    Version:   HTTP/1.1
+    Status:    404 NOT FOUND
+    Url:       http://0.0.0.0:7357/nonexistent
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:06,292] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /" 302 FOUND
+    Request:   GET /
+    Version:   HTTP/1.1
+    Status:    302 FOUND
+    Url:       http://0.0.0.0:7357/
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:06,303] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /tags" 200 OK
+    Request:   GET /tags
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/tags
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:06,450] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /family/" 200 OK
+    Request:   GET /family/
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/family/
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:06,466] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /family/cat" 200 OK
+    Request:   GET /family/cat
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/family/cat
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:06,479] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /search" 200 OK
+    Request:   GET /search
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/search?value=*
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:06,510] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /search" 200 OK
+    Request:   GET /search
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/search?value=find
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:06,534] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /nonexistent" 404 NOT FOUND
+    Request:   GET /nonexistent
+    Version:   HTTP/1.1
+    Status:    404 NOT FOUND
+    Url:       http://0.0.0.0:7357/nonexistent
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:43,185] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /" 302 FOUND
+    Request:   GET /
+    Version:   HTTP/1.1
+    Status:    302 FOUND
+    Url:       http://0.0.0.0:7357/
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:43,203] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /tags" 200 OK
+    Request:   GET /tags
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/tags
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:43,413] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /family/" 200 OK
+    Request:   GET /family/
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/family/
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:43,434] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /family/cat" 200 OK
+    Request:   GET /family/cat
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/family/cat
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:43,461] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /search" 200 OK
+    Request:   GET /search
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/search?value=*
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:43,479] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /search" 200 OK
+    Request:   GET /search
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/search?value=find
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:52:43,511] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /nonexistent" 404 NOT FOUND
+    Request:   GET /nonexistent
+    Version:   HTTP/1.1
+    Status:    404 NOT FOUND
+    Url:       http://0.0.0.0:7357/nonexistent
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:53:47,063] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /" 302 FOUND
+    Request:   GET /
+    Version:   HTTP/1.1
+    Status:    302 FOUND
+    Url:       http://0.0.0.0:7357/
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:53:47,081] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /tags" 200 OK
+    Request:   GET /tags
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/tags
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:53:47,399] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /family/" 200 OK
+    Request:   GET /family/
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/family/
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:53:47,419] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /family/cat" 200 OK
+    Request:   GET /family/cat
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/family/cat
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:53:47,439] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /search" 200 OK
+    Request:   GET /search
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/search?value=*
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:53:47,453] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /search" 200 OK
+    Request:   GET /search
+    Version:   HTTP/1.1
+    Status:    200 OK
+    Url:       http://0.0.0.0:7357/search?value=find
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
+[2018-12-03 08:53:47,479] [WARNING] [client 127.0.0.1 localhost.localdomain] HTTP/1.1 "GET /nonexistent" 404 NOT FOUND
+    Request:   GET /nonexistent
+    Version:   HTTP/1.1
+    Status:    404 NOT FOUND
+    Url:       http://0.0.0.0:7357/nonexistent
+    IP:        127.0.0.1
+    Hostname:  localhost.localdomain
+    Agent:     None | None | None
+    Raw Agent: curl/7.40.0
+    
