@@ -1,0 +1,11 @@
+README.rst
+setup.py
+bob/__init__.py
+bob.thesis.tiago.egg-info/PKG-INFO
+bob.thesis.tiago.egg-info/SOURCES.txt
+bob.thesis.tiago.egg-info/dependency_links.txt
+bob.thesis.tiago.egg-info/not-zip-safe
+bob.thesis.tiago.egg-info/requires.txt
+bob.thesis.tiago.egg-info/top_level.txt
+bob/thesis/__init__.py
+bob/thesis/tiago/__init__.py
