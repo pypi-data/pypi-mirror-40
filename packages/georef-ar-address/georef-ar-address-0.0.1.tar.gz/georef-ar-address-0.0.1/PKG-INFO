@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: georef-ar-address
+Version: 0.0.1
+Summary: Librería escrita en Python para la identificación de componentes de direcciones argentinas
+Home-page: https://github.com/datosgobar/georef-ar-address
+Author: Datos Argentina
+Author-email: datos@modernizacion.gob.ar
+License: MIT
+Download-URL: https://github.com/datosgobar/georef-ar-address/archive/0.0.1.tar.gz
+Description: # georef-ar-address
+        [![Build Status](https://travis-ci.org/datosgobar/georef-ar-address.svg?branch=master)](https://travis-ci.org/datosgobar/georef-ar-address)
+        [![Coverage Status](https://coveralls.io/repos/github/datosgobar/georef-ar-address/badge.svg?branch=master)](https://coveralls.io/github/datosgobar/georef-ar-address?branch=master)
+        
+        Librería escrita en Python para la identificación de componentes de direcciones argentinas.
+        
+Keywords: georef,datos,argentina,direccion,calle,altura,json,nltk
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Software Development :: Libraries
