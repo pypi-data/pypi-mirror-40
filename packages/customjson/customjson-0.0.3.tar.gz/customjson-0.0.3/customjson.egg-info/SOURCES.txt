@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+customjson/__init__.py
+customjson/cli.py
+customjson/custom.py
+customjson/defaults.py
+customjson.egg-info/PKG-INFO
+customjson.egg-info/SOURCES.txt
+customjson.egg-info/dependency_links.txt
+customjson.egg-info/entry_points.txt
+customjson.egg-info/requires.txt
+customjson.egg-info/top_level.txt
