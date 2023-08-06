@@ -1,0 +1,3 @@
+[console_scripts]
+gastop = gastop.__main__:main
+
