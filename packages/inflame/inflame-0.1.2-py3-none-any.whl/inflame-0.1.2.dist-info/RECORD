@@ -1,0 +1,11 @@
+flame/__init__.py,sha256=fD41TOxElXzkQjw8tyA4gCPlzmpmzP3Pv0eYGD3fgOk,1360
+flame/data/__init__.py,sha256=Zu0rcozgcdUjsMvWtpvvPEw_KZttz6tTlzObUh1MLoU,31
+flame/data/data.py,sha256=yr5APVh0Dzkg8zKsyHfOTAaiqSG7zpkRMs-56LOl2Ms,1696
+flame/train/__init__.py,sha256=d5-rvXeo3eGjHtZP_aTy9Xh-YtWi4S-qGuRD4bCi49w,764
+flame/train/train.py,sha256=uEjRRgSqmUDWyTUb3fASxZyl9r40Hi6TQpYzFFuW39E,575
+flame/train/validate.py,sha256=-cLvxwt7ou97aBROnZ4nq71Twdol20Eg2ceb6L5jeBI,775
+inflame-0.1.2.dist-info/LICENSE.md,sha256=Xqd1-w0lyoC4U7vhYdUx6WCzaMA9exkY7XUXVf9963g,1077
+inflame-0.1.2.dist-info/METADATA,sha256=kSQq6sg6BxSn6IlaB1Rrvt9jYxZ3F45bXHU7oJUb5DQ,1062
+inflame-0.1.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+inflame-0.1.2.dist-info/top_level.txt,sha256=rcQ-0obvxz5OVEmyqzZ0Yp4K_W9k4cEK6IWN8fj6Ymw,6
+inflame-0.1.2.dist-info/RECORD,,
