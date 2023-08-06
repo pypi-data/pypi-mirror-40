@@ -1,0 +1,62 @@
+Metadata-Version: 1.1
+Name: freeplane-helper
+Version: 0.0.5
+Summary: A script that help convert FreePlane document to other formats
+Home-page: https://github.com/starofrainnight/freeplane-helper
+Author: Hong-She Liang
+Author-email: starofrainnight@gmail.com
+License: Apache Software License
+Description: ================
+        freeplane-helper
+        ================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/freeplane-helper.svg
+            :target: https://pypi.python.org/pypi/freeplane-helper
+        
+        .. image:: https://travis-ci.org/starofrainnight/freeplane-helper.svg?branch=master
+            :target: https://travis-ci.org/starofrainnight/freeplane-helper
+        
+        .. image:: https://ci.appveyor.com/api/projects/status/github/starofrainnight/freeplane-helper?svg=true
+            :target: https://ci.appveyor.com/project/starofrainnight/freeplane-helper
+        
+        A script that help convert FreePlane document to other formats
+        
+        
+        * License: Apache-2.0
+        * Documentation: https://freeplane-helper.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        ---------
+        
+        This package was created with Cookiecutter_ and the `PyPackageTemplate`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`PyPackageTemplate`: https://github.com/starofrainnight/rtpl-pypackage
+        
+        
+        
+        =======
+        History
+        =======
+        
+        0.0.2 (2019-01-10)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: freeplanehelper,freeplane-helper
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
