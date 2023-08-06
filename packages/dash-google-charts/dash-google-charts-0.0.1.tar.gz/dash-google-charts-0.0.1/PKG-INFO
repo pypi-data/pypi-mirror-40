@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dash-google-charts
+Version: 0.0.1
+Summary: Google Charts for Plotly Dash
+Home-page: https://github.com/tcbegley/dash-google-charts
+Author: Tom Begley
+Author-email: tomcbegley@gmail.com
+License: Apache Software License
+Description: # dash-google-charts
+        
+        A google charts component for Plotly Dash built on top of [react-google-charts][rgc].
+        
+        This is still pretty experimental, interface and features could change.
+        
+        
+        [rgc]: https://react-google-charts.com/
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
