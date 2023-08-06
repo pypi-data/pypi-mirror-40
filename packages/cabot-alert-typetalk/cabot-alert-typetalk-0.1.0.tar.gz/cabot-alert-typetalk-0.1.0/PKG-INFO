@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cabot-alert-typetalk
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/is2ei/cabot-alert-typetalk
+Author: Issei Horie
+Author-email: is2ei.horie@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/is2ei/cabot-alert-typetalk/issues
+Project-URL: Source, https://github.com/is2ei/cabot-alert-typetalk
+Description: Cabot Alert Typetalk
+        ====
+        
+        This is an alert plugin for Cabot. It will send notifications to Typetalk.
+        
+        ## Install
+        
+        Enter the cabot virtual environment:
+        
+        ```
+        $ pip install cabot-alert-typetalk
+        ```
+        
+        or:
+        
+        ```
+        $ pip install git+git://github.com/is2ei/cabot-alert-typetalk.git
+        ```
+        
+        ## Enable plugin
+        
+        Edit conf/*.env
+        
+        ```
+        CABOT_PLUGINS_ENABLED=cabot_alert_typetalk
+        ...
+        TYPETALK_TOKEN={YOUR_TYPETALK_TOKEN}
+        TYPETALK_TOPIC_ID={YOUR_TYPETALK_TOPIC_ID}
+        ```
+        
+Keywords: cabot alert typetalk
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
