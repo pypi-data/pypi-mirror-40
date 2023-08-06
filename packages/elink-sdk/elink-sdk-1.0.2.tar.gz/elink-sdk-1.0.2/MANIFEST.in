@@ -1,0 +1,3 @@
+recursive-include elink *.pyd
+recursive-include elink *.dll
+
