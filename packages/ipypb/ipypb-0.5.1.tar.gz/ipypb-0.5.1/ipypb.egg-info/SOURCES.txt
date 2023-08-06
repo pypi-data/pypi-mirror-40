@@ -1,0 +1,8 @@
+README.md
+setup.py
+ipypb/__init__.py
+ipypb/progressbar.py
+ipypb.egg-info/PKG-INFO
+ipypb.egg-info/SOURCES.txt
+ipypb.egg-info/dependency_links.txt
+ipypb.egg-info/top_level.txt
