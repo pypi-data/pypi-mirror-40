@@ -1,0 +1,15 @@
+fbotics/__init__.py,sha256=z28lmDIKmYH5cigD8JhOAl5uF0d3V0MkyZWxGHzklUg,3675
+fbotics/_version.py,sha256=GZUGjhMEYiHis5E9EBur5UPO4KX9GMvmeiy-8H2Va3E,18445
+fbotics/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fbotics/models/message.py,sha256=0Cy70DvXeFHIUBGFROGZFgSC3GYDep32T5Tz1oYuFE0,359
+fbotics/models/quick_reply.py,sha256=QYrWcqANoF1H6cM36I7jp7wuhZbTEy9hMWKpBq7_v3I,1441
+fbotics/models/recipient.py,sha256=G4JAH-9pI42Ff1M4-3MCvBW-Jz6BfYcqBRP85QaWVvc,1185
+fbotics/models/request.py,sha256=kO0FQDmP6-GxesfCco_TRRBsdqujSa9jOCCa7hirufI,1435
+fbotics/tests/__init__.py,sha256=tUyrC7fTMOCkEf-dcbJr5OB1xozuof3pyxL0dQXn-RY,146
+fbotics/tests/conftest.py,sha256=4ImQGgahgrCrH-Xi6HTXnRqmGCOiNyECswOwLu2sth0,426
+fbotics/tests/test_retrieve_supported_tags.py,sha256=Z-6C_kZ5IsSZKiywtwl53cs7VqHcO-GmlFd9vfDo2Ec,747
+fbotics/tests/test_send_message.py,sha256=AKta0UQ8SY6cvmREdEo6qJTlfvFEzfVgagD8XRDEZXg,2205
+fbotics-0.0.5.dist-info/METADATA,sha256=ngKIhEk_6MFL-AuY5KNOXK7PvFj1fFANfIWjg-oQvNc,3592
+fbotics-0.0.5.dist-info/RECORD,,
+fbotics-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+fbotics-0.0.5.dist-info/top_level.txt,sha256=p78duBL7b1aVjstndcoosCVyzdVeedrY52waxI1aeWU,8
