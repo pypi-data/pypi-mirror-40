@@ -1,0 +1,10 @@
+README.md
+setup.py
+list_github_repos.egg-info/PKG-INFO
+list_github_repos.egg-info/SOURCES.txt
+list_github_repos.egg-info/dependency_links.txt
+list_github_repos.egg-info/entry_points.txt
+list_github_repos.egg-info/requires.txt
+list_github_repos.egg-info/top_level.txt
+listgithubrepos/__init__.py
+listgithubrepos/listgithubrepos.py

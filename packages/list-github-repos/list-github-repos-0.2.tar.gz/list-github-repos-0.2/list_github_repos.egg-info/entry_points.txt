@@ -1,0 +1,3 @@
+[console_scripts]
+list-github-repos = listgithubrepos.listgithubrepos:main
+

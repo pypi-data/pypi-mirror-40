@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: list-github-repos
+Version: 0.2
+Summary: A utility that lists the repos from a GitHub profile
+Home-page: https://github.com/knadh/list-github-repos
+Author: Kailash Nadh
+Author-email: kailash@nadh.in
+License: MIT License
+Download-URL: https://github.com/knadh/list-github-repos
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
