@@ -1,0 +1,3 @@
+[console_scripts]
+licencia=licencia.app:application.run
+

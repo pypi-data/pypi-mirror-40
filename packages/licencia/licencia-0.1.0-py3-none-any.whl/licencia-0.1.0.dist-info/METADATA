@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: licencia
+Version: 0.1.0
+Summary: 
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: kk6
+Author-email: hiro.ashiya@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: beautifultable (>=0.6.0,<0.7.0)
+Requires-Dist: cleo (>=0.7.2,<0.8.0)
+Requires-Dist: tomlkit (>=0.5.3,<0.6.0)
