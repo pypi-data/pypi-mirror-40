@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sparkvacancies01
+Version: 0.0.1
+Summary: "Collecting data about vacancies"
+Home-page: UNKNOWN
+Author: jjavadzade@yandex.ru
+Author-email: jjavadzade@yandex.ru
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Framework :: Django
+
+"Collecting data about vacancies"
+
+
