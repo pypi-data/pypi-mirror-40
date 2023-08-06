@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: who
+Version: 0.0.3
+Summary: Who are you
+Home-page: https://github.com/Sweeterio/who
+Author: Sweeterio
+Author-email: sweeterio@qq.com
+License: UNKNOWN
+Description: Who are you?
+        
+        Author: zhongyujian, xwtester
+        
+        https://github.com/sweeterio/who
+        
+        
+        ## start
+        
+        ```python
+        from who import get_region
+        from who import validity_check
+        
+        
+        result = get_region(320)
+        print(result)
+        
+        
+        id="440304199010104562"
+        result = validity_check(id)
+        print(result)
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
