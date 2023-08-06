@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: codemetrics
+Version: 0.7.0
+Summary: SCM mining utility classes
+Home-page: http://github.com/elmotec/codemetrics
+Author: Elmotec
+Author-email: elmotec@gmx.com
+License: MIT
+Description: .. image:: https://img.shields.io/pypi/v/codemetrics.svg
+            :target: https://pypi.org/pypi/codemetrics/
+            :alt: PyPi version
+        
+        .. image:: https://img.shields.io/pypi/pyversions/codemetrics.svg
+            :target: https://pypi.org/pypi/codemetrics/
+            :alt: Python compatibility
+        
+        .. image:: https://img.shields.io/travis/elmotec/codemetrics.svg
+            :target: https://travis-ci.org/elmotec/codemetrics
+            :alt: Build Status
+        
+        .. image:: https://img.shields.io/readthedocs/:packageName.svg
+            :target: https://codemetrics.readthedocs.org/
+            :alt: Documentation
+        
+        ============
+        Code Metrics
+        ============
+        
+        Mine your SCM for insight on your software. A work of love
+        inspired by `Adam Tornhill`_'s books.
+        
+        Code metrics is a simple Python module that leverage your source control
+        management (SCM) tool to generate insight on your code base.
+        
+        - pandas_: for data munching.
+        - lizard_: for code complexity calculation.
+        - cloc.pl (script): for line counts from cloc_
+        - For now, only Subversion and git are supported.
+        
+        
+        Installation
+        ------------
+        
+        To install codemetrics, simply use pip:
+        
+        ::
+        
+          pip install codemetrics
+        
+        
+        
+        Usage
+        -----
+        
+        This is a simple tool that makes it easy to retrieve information from your
+        Source Control Management (SCM) repository and hopefully gain insight from it.
+        
+        ::
+        
+          import codemetrics as cm
+          import cm.git
+        
+          log_df = cm.git.get_git_log()
+          ages_df = cm.get_ages(log_df)
+        
+        
+        See `module documentation`_ for more advanced functions.
+        
+        
+        License
+        -------
+        
+        Licensed under the term of `MIT License`_. See attached file LICENSE.txt.
+        
+        
+        Credits
+        -------
+        
+        - This package was inspired by `Adam Tornhill`_'s books.
+        - This package was created with Cookiecutter_.
+        
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _lizard: https://github.com/terryyin/lizard
+        .. _pandas: https://pandas.pydata.org/
+        .. _cloc: http://cloc.sourceforge.net/
+        .. _Pandas documentation: https://pandas.pydata.org/pandas-docs/stable/text.html
+        .. _MIT License: https://en.wikipedia.org/wiki/MIT_License
+        .. _Adam Tornhill: https://www.adamtornhill.com/
+        .. _module documentation: https://codemetrics.readthedocs.org/
+        
+        
+        =======
+        History
+        =======
+        
+        0.7
+        ---
+        
+        * Function oriented interface.
+        * Visualization via Vega, Altair.
+        * Documentation.
+        
+        0.5 - 0.6
+        ---------
+        
+        * Alpha work.
+        
+        0.5.0 (2018-05-12)
+        ------------------
+        
+        * First release on PyPI.
+        
+        
+        
+Keywords: code metrics mining scm subversion svn Adam Tornhill utilities
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
