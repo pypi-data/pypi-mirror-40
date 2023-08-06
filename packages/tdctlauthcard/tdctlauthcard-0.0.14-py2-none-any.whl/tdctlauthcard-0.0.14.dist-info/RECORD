@@ -1,0 +1,11 @@
+authcard/__init__.py,sha256=ZEZ3aHAIG9AK4cBPxR35ZSRxc3YrY8o4s1ywfw73QlQ,45
+authcard/encryptutils/__init__.py,sha256=ZEZ3aHAIG9AK4cBPxR35ZSRxc3YrY8o4s1ywfw73QlQ,45
+authcard/encryptutils/bcrypt.py,sha256=4qgxFkbGzb0uBvpGqyIl9BDfI_plmeCOOUnFOVqxlTo,506
+authcard/encryptutils/ctr.py,sha256=9IDK3oVCx73cokX_GZWH7BuXK6Kf5EjLg7BueHc1Vgc,155
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_sample.py,sha256=8v7i-Zs9si-euLvLW3EfUWWeH06W7Ow0-WE4LoCLgjQ,73
+tdctlauthcard-0.0.14.dist-info/LICENSE,sha256=u85wZDNis_ygtUyjTs2EJI8LkYoMdmrExy3PerTytq4,1053
+tdctlauthcard-0.0.14.dist-info/METADATA,sha256=G0KiFM_2MAP0yyP8YXX5-ouXJ_ETIvUYTh9okr3lJWU,576
+tdctlauthcard-0.0.14.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+tdctlauthcard-0.0.14.dist-info/top_level.txt,sha256=hL8LN2MyonTR1PzWcdDlqc5XW_DsPZ8sPW2GKhAXE3g,15
+tdctlauthcard-0.0.14.dist-info/RECORD,,
