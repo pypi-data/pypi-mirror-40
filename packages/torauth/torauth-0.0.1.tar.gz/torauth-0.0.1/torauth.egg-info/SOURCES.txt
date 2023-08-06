@@ -1,0 +1,9 @@
+README.rst
+setup.py
+torauth/__init__.py
+torauth.egg-info/PKG-INFO
+torauth.egg-info/SOURCES.txt
+torauth.egg-info/dependency_links.txt
+torauth.egg-info/not-zip-safe
+torauth.egg-info/requires.txt
+torauth.egg-info/top_level.txt

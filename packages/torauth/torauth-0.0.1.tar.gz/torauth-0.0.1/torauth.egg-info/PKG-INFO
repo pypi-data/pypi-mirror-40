@@ -1,0 +1,61 @@
+Metadata-Version: 1.2
+Name: torauth
+Version: 0.0.1
+Summary: An authentication, registration, account management for Tornado.
+Home-page: https://github.com/longniao/torauth
+Author: Longniao
+Author-email: longniao@gmail.com
+Maintainer: Longniao
+Maintainer-email: longniao@gmail.com
+License: MIT
+Description: ===================
+        Welcome to torauth
+        ===================
+        
+        .. image:: https://badge.fury.io/py/torauth.svg
+            :target: http://badge.fury.io/py/torauth
+        
+        .. image:: https://travis-ci.org/longniao/torauth.svg
+            :target: https://travis-ci.org/longniao/torauth
+        
+        .. image:: https://img.shields.io/pypi/v/torauth.svg
+            :target: https://pypi.python.org/pypi/torauth/
+        
+        .. image:: https://img.shields.io/pypi/wheel/torauth.svg
+            :target: https://pypi.python.org/pypi/torauth/
+        
+        .. image:: https://img.shields.io/pypi/pyversions/torauth.svg
+            :target: https://pypi.python.org/pypi/torauth/
+        
+        .. image:: https://img.shields.io/pypi/l/torauth.svg
+            :target: https://pypi.python.org/pypi/torauth/
+        
+        
+        An authentication, registration, account management for `TorStack`_ of `Tornado`_.
+        
+        
+        Installing
+        ----------
+        
+        Install and update using `pip`_:
+        
+        .. code-block:: text
+        
+            pip install -U torauth
+        
+        
+        .. _TorStack: https://github.com/longniao/torstack
+        .. _Tornado: http://www.tornadoweb.org
+        .. _pip: https://pip.pypa.io/en/stable/quickstart/
+Keywords: tornado torstack auth account social openid twitter facebook oauth wechat weixin
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
