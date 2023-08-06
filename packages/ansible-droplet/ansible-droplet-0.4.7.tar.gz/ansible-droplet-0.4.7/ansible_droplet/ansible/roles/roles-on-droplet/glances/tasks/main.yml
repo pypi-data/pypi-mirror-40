@@ -1,0 +1,38 @@
+- name: "Ensure running as Root"
+  assert:
+    that:
+      - "{{ ansible_user_uid }} == 0"
+    msg: "Please run this role as root!"
+
+- set_fact:
+    python_version: 3.7.0
+
+- name: "Install Python / pip"
+  include_role:
+    name: TOOCS.python
+  vars:
+    python_versions:
+      - "{{ python_version }}"
+    global_pip_packages:
+      - glances
+      - docker
+      - bottle
+
+- set_fact:
+    python_installation: "/root/.asdf/installs/python/{{ python_version }}"
+
+- name: "Start Glances Web server as Daemon"
+  block:
+    - name: "Copy `glances.service` file"
+      template:
+        src: glances.service
+        dest: /etc/systemd/system/glances.service
+        owner: root
+        mode: 0644
+
+    - name: "Start `glances.service` and set to start on boot"
+      service:
+        name: glances.service
+        state: started
+        enabled: yes
+    
