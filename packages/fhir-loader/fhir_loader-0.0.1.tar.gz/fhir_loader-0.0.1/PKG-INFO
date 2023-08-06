@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: fhir_loader
+Version: 0.0.1
+Summary: FHIR loading tool
+Home-page: https://github.com/hsolbrig/fhir_loader
+Author: Harold Solbrig
+Author-email: solbrig@jhu.edu
+License: Apache 2.0
+Description: Utility for uploading files, directories and other content into FHIR
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Database
+Classifier: Programming Language :: Python :: 3
