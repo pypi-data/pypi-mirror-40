@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: joox-web-crawler
+Version: 0.0.8
+Summary: a simple joox web crawler
+Home-page: UNKNOWN
+Author: Luk Chun Pong
+Author-email: cpluk3@gmail.com
+License: UNKNOWN
+Description: #joox web crawler
+        
+        The purpose of this package is to provide library for crawling joox web data
+        
+        version change:
+        
+        [0.0.8]
+        add lyric crawler
+        
+        [0.0.3]
+        add artist id
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
