@@ -1,0 +1,3 @@
+[console_scripts]
+reconto = reconto.__main__:main
+

@@ -1,0 +1,6 @@
+pyyaml
+plumbum
+docker
+
+[dev]
+ipython
