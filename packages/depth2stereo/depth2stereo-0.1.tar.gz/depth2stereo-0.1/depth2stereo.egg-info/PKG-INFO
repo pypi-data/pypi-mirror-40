@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: depth2stereo
+Version: 0.1
+Summary: Create steroscopic images from image + depthmap
+Home-page: https://github.com/jaroslaw-weber/depth2stereo
+Author: Jaroslaw Weber
+Author-email: jaroslawweber@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
