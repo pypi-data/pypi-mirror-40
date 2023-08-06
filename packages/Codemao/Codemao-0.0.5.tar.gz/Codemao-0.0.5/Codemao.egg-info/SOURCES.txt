@@ -1,0 +1,12 @@
+README.md
+setup.py
+Codemao.egg-info/PKG-INFO
+Codemao.egg-info/SOURCES.txt
+Codemao.egg-info/dependency_links.txt
+Codemao.egg-info/requires.txt
+Codemao.egg-info/top_level.txt
+codemao/__init__.py
+codemao/detect.py
+codemao/image.py
+codemao/ui.py
+codemao/utils.py
