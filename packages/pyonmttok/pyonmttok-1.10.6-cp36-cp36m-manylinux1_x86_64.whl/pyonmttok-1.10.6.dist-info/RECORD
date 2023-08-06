@@ -1,0 +1,10 @@
+pyonmttok-1.10.6.dist-info/top_level.txt,sha256=wuxOdfXNXj98ECi-4TSLRm_bpRYIccmePnOKlVvxvfY,10
+pyonmttok-1.10.6.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
+pyonmttok-1.10.6.dist-info/RECORD,,
+pyonmttok-1.10.6.dist-info/METADATA,sha256=--DRWJ3bKPtWX3FbH6Ve5RGBIOLoQNmirZ9H2ci1FUY,695
+pyonmttok/__init__.py,sha256=EK9QEmBWSuGxlf7sYqNCvKT1cGwRk5cRUEJYXlL7Sjc,42
+pyonmttok/tokenizer.cpython-36m-x86_64-linux-gnu.so,sha256=gVtA2g3OsFv1atdPfZ5a0wt6xNY-UpMZ9o4p-ZYd9Dk,1575704
+pyonmttok/.libs/libsentencepiece_train-9dac273e.so.0.0.0,sha256=ZwHxFPXavYRt5ogvnpOLJ34bITW2BYVPpGG-zdPt798,1611376
+pyonmttok/.libs/libboost_python36-384e6119.so.1.67.0,sha256=f03WUlHwtlNF5o2gG-uxEqsZ63tBAJQQ2zclcPEASJg,439152
+pyonmttok/.libs/libOpenNMTTokenizer-d27b9c4d.so,sha256=8gUJZ_67pmnsD2OoYdtmIFVyP1LZtQ2pSsQu92ZBc-0,447984
+pyonmttok/.libs/libsentencepiece-46053d08.so.0.0.0,sha256=U3nal6M1IyKCO6GsE9yMDwFz7dWd7Dq7wIA-_EpQPS4,1211912
