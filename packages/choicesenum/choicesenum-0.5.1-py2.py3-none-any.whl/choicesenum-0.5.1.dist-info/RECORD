@@ -1,0 +1,12 @@
+choicesenum/__init__.py,sha256=-e4Ktn1V9josvQLunFRyC2D-4y0H0bsxlmXJTs1pkBA,226
+choicesenum/enums.py,sha256=SBr6NZx5T4rBQUFybvdhskzNsqkcGw4onf55pdRtzJU,4427
+choicesenum/patches.py,sha256=bIBLW8vjVHZpu-led1uCOdKQv3lRSQ6LQv859xDpcbQ,434
+choicesenum/django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+choicesenum/django/compat.py,sha256=Vkz8QorsatRc9fCSlcbVJYscp_u7VOaLBAC9WrhMbmU,798
+choicesenum/django/fields.py,sha256=nrrizvyDTWEVK0ZhlMouDgMMqgI1gCRxAxSHlo19Dd8,5364
+choicesenum-0.5.1.dist-info/AUTHORS.rst,sha256=vtIdMH3tJfwOlrFUDmFJH80XYtqrR4MSnEGQKQoxK_E,559
+choicesenum-0.5.1.dist-info/LICENSE,sha256=aTLagdxoPsu8l0sYrIM55c_DbJqgwvApGFLxnsqK1rE,1508
+choicesenum-0.5.1.dist-info/METADATA,sha256=AS0CRbfu7Mmp4iwpTnXXwK9TNwU6NEMVzwFGrsrjrz0,12182
+choicesenum-0.5.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+choicesenum-0.5.1.dist-info/top_level.txt,sha256=3bWUOQr2Urv071kim0FPgp0syDLVaiCBhkXVFLCLg9A,12
+choicesenum-0.5.1.dist-info/RECORD,,
