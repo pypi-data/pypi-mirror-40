@@ -1,0 +1,4 @@
+
+    [taarapi_app]
+    app=taar.plugin:configure_plugin
+    
