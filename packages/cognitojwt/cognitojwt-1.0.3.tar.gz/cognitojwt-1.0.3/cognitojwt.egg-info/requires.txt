@@ -1,0 +1,8 @@
+python-jose
+
+[async]
+aiohttp
+async_lru
+
+[sync]
+requests
