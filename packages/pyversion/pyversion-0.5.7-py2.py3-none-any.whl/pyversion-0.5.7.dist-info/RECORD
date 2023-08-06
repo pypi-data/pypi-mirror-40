@@ -1,0 +1,12 @@
+version/__init__.py,sha256=MucRxe-doi_Hxn221rmRxbMBokwICVjX0vE0g2WIE2E,67
+version/cli.py,sha256=ElgW95wLMAZ45kzJ0bj-Nr3joNAo5gGwVnu0NQe0t_U,451
+version/increment_command.py,sha256=_j1_kgzB2TPuy5F4clo0U5w1LAP3gwQ-Cw0hdxF5-A8,1412
+version/tag_command.py,sha256=M-Hw_6sUY4KaYm7iDY4j_lXF2hDdEcX6pFas1xXwEis,2350
+version/version.py,sha256=avPyQ0R_g-1md60bx-k1cT231R7aMO5Uycg0hZwli0U,10492
+pyversion-0.5.7.dist-info/LICENSE,sha256=n6FnU91PuYFzZQ9GC8N_rTjqjNemIspBE0DNbqY-AXM,1072
+pyversion-0.5.7.dist-info/METADATA,sha256=mP_idZkRZfyQSb-sRHFN2muK1zL_3XOtn8AWk5Haquo,4449
+pyversion-0.5.7.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+pyversion-0.5.7.dist-info/entry_points.txt,sha256=QWeD5d-fU-u0a-_65fX3DZ2CISBVYwTXaTLYT-tR8ns,223
+pyversion-0.5.7.dist-info/pbr.json,sha256=1EaktIolnYr7BuNHJCUJDt5jrgvQ01OIx0X0kqkKZXA,46
+pyversion-0.5.7.dist-info/top_level.txt,sha256=kSc8xAmawTZUp1jz59Junaccwqg0L7vPThJ3QWxZ4DY,8
+pyversion-0.5.7.dist-info/RECORD,,
