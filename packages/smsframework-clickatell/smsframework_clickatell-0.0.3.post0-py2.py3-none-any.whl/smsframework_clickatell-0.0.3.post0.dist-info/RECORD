@@ -1,0 +1,12 @@
+smsframework_clickatell/__init__.py,sha256=nJnVinRweXNCEEDu6ZGrGm6VdAnjWHoGAFAnIbBqWGo,41
+smsframework_clickatell/api.py,sha256=YP2OjP8nYr1wtqUb5NDRr-xb90WemxTC6gwZezNqK8E,5302
+smsframework_clickatell/const.py,sha256=FrhavB1wq3bRuzd7zgMwYKsE_h22eBzJIdkrqUOUuAA,880
+smsframework_clickatell/error.py,sha256=DUm85Jehpqz5duh6PRzIHv15Io2W4KmYfvRmA6fToL4,3683
+smsframework_clickatell/provider.py,sha256=bA9acQPr2DKPGlSDntEHCxlF4qnJRjUXYWpD1TWoAXs,3510
+smsframework_clickatell/receiver.py,sha256=M7iF7QCBIS4pus9wO3i8ES5oo8Mb9-ckgHefXcYUBNM,3364
+smsframework_clickatell/status.py,sha256=qRPI2HW_MZj3ggUYSxuZ3L2CRAKOFuvEAxIR46b7Y_o,1840
+smsframework_clickatell-0.0.3.post0.dist-info/LICENSE,sha256=4FSh01Q8Klx9FWEPLXHcFEpSEsNU9B8_85aSBnC0nos,1341
+smsframework_clickatell-0.0.3.post0.dist-info/METADATA,sha256=1s6Il2QCJ771EmCJ76KPyrIGlVUUfybsyZ6yzX0nRF4,3975
+smsframework_clickatell-0.0.3.post0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+smsframework_clickatell-0.0.3.post0.dist-info/top_level.txt,sha256=8CrSqY4FUpelRmA8fGXBEGQMzhs3vtbt90B04B9UnBM,24
+smsframework_clickatell-0.0.3.post0.dist-info/RECORD,,
