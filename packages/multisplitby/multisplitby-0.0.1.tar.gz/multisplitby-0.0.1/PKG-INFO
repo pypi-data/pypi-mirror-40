@@ -1,0 +1,94 @@
+Metadata-Version: 1.2
+Name: multisplitby
+Version: 0.0.1
+Summary: Split an iterable into multiple using arbitrary predicates.
+Home-page: https://github.com/cthoyt/multisplitby
+Author: Charles Tapley Hoyt
+Author-email: cthoyt@gmail.com
+Maintainer: Charles Tapley Hoyt
+Maintainer-email: cthoyt@gmail.com
+License: MIT
+Download-URL: https://github.com/cthoyt/multisplitby/releases
+Project-URL: Bug Tracker, https://github.com/cthoyt/multisplitby/issues
+Project-URL: Source Code, https://github.com/cthoyt/multisplitby
+Description: multisplitby |build| |coverage|
+        ===============================
+        Split an iterable into multiple using arbitrary predicates.
+        
+        This package comes with a single function: ``multisplitby.multi_split_by``.
+        
+        For all lists ``values`` and ``predicates``, the following conditions are always true:
+        
+        1. ``1 + len(predicates) = len(list(multi_split_by(values, predicates)))``
+        2. ``values == itertools.chain.from_iterable(multi_split_by(values, predicates))``
+        
+        Normal usage with one predicate:
+        
+        .. code-block:: python
+        
+           >>> values = range(4)
+           >>> predicates = [lambda x: 2 < x]
+           >>> list(map(list, multi_split_by(values, predicates)))
+           [[0, 1, 2], [3]]
+        
+        Normal usage with several predicates:
+        
+        .. code-block:: python
+        
+           >>> values = range(9)
+           >>> predicates = [lambda x: 2 < x, lambda x: 4 < x, lambda x: 7 < x]
+           >>> list(map(list, multi_split_by(values, predicates)))
+           [[0, 1, 2], [3, 4], [5, 6, 7], [8]]
+        
+        If no values are given, will result in ``|predicates| + 1`` generators, all yielding empty lists.
+        
+        .. code-block:: python
+        
+           >>> values = []
+           >>> predicates = [lambda x: 2 < x, lambda x: 4 < x, lambda x: 7 < x]
+           >>> list(map(list, multi_split_by(values, predicates)))
+           [[], [], [], []]
+        
+        If no predicates are given, will result in a single generator that yields the original list:
+        
+        .. code-block:: python
+        
+           >>> values = range(4)
+           >>> predicates = []
+           >>> list(map(list, multi_split_by(values, predicates)))
+           [[0, 1, 2, 3]]
+        
+        Installation
+        ------------
+        Install from PyPI with:
+        
+        .. code-block:: bash
+        
+           $ pip install multisplitby
+        
+        or get the latest code from `GitHub <https://github.com/cthoyt/multisplitby>`_ with:
+        
+        .. code-block:: bash
+        
+           $ git clone https://github.com/cthoyt/multisplitby.git
+           $ cd multisplitby
+           $ pip install -e .
+        
+        .. |build| image:: https://travis-ci.com/cthoyt/multisplitby.svg?branch=master
+            :target: https://travis-ci.com/cthoyt/multisplitby
+        
+        .. |coverage| image:: https://codecov.io/gh/cthoyt/multisplitby/branch/master/graph/badge.svg
+            :target: https://codecov.io/gh/cthoyt/multisplitby
+        
+Keywords: iteration
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5

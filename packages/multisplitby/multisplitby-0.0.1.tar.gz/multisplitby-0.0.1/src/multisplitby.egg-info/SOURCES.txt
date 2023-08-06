@@ -1,0 +1,16 @@
+.flake8
+.travis.yml
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+tox.ini
+src/multisplitby/__init__.py
+src/multisplitby.egg-info/PKG-INFO
+src/multisplitby.egg-info/SOURCES.txt
+src/multisplitby.egg-info/dependency_links.txt
+src/multisplitby.egg-info/top_level.txt
+src/multisplitby.egg-info/zip-safe
+tests/__init__.py
+tests/test_multisplitby.py
