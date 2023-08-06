@@ -1,0 +1,3 @@
+[console_scripts]
+sq-black = sqblack.cli:main
+

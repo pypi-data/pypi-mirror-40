@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+SQ_Black.egg-info/PKG-INFO
+SQ_Black.egg-info/SOURCES.txt
+SQ_Black.egg-info/dependency_links.txt
+SQ_Black.egg-info/entry_points.txt
+SQ_Black.egg-info/not-zip-safe
+SQ_Black.egg-info/requires.txt
+SQ_Black.egg-info/top_level.txt
+sqblack/__init__.py
+sqblack/_version.py
+sqblack/cli.py
