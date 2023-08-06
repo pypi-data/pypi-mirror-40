@@ -1,0 +1,6 @@
+{
+    "release_date": "2019-01-18",
+    "version": "2.2.1",
+    "maintainer": "Ben Finney <ben+python@benfinney.id.au>",
+    "body": "Additions:* Add aPEP 518 conformant build system specification (thepyproject.toml file).\n"
+}
