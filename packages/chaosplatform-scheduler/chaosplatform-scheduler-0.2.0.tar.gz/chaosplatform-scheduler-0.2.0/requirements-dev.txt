@@ -1,0 +1,9 @@
+coverage
+pycodestyle
+pytest
+pytest-cov
+pytest-sugar
+pylama
+grpcio-tools>=1.17.1
+wheel>=0.32.1
+fakeredis>=0.16.0

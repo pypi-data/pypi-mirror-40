@@ -1,0 +1,15 @@
+Click>=7.0
+cryptography>=2.3.1
+itsdangerous>=0.24
+cherrypy>=18.0.1
+dateparser>=0.7.0
+simplejson>=3.15.0
+grpcio>=1.17.1
+chaosplatform-grpc>=0.1.0
+croniter>=0.3.26
+redis>=3.0.1
+rq>=0.13.0
+rq-scheduler>=0.9
+psutil>=5.4.8
+chaostoolkit-lib>=1.0.0rc1
+toml>=0.10.0
