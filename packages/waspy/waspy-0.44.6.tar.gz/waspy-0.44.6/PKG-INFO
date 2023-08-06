@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: waspy
+Version: 0.44.6
+Summary: Async Microservices Framework
+Home-page: https://github.com/wasp/waspy
+Author: Nick Humrich
+Author-email: nhumrich@canopytax.com
+Keywords: wasp,async,asyncio,rest framework,rabbitmq,microservices
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: PyYAML
+Requires-Dist: aenum (==1.4.5)
+Requires-Dist: aioamqp
+Requires-Dist: httptools
