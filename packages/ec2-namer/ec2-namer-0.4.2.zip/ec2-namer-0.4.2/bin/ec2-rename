@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# vim: ai ts=4 sts=4 et sw=4 nu
+"""
+:Author: Ronan Delacroix
+:Copyright: (c) 2018 Ronan Delacroix
+"""
+import logging
+import ec2host
+import tbx.log
+import tbx.network
+
+
+def main():
+    tbx.log.configure_logging_to_screen(debug=False)
+    logging.info("Checking EC2 tags, creating public DNS routes and updating hostname if necessary")
+    private_hostname = ec2host.check_ec2_hostname_tags()  # check if instance is a duplicate or not
+    ec2host.create_public_routes()
+    logging.info("Ensuring hostname is %s" % private_hostname)
+    tbx.network.ensure_hostname(private_hostname, reboot_if_necessary=True)
+    logging.info("Done")
+
+
+if __name__ == '__main__':
+    main()

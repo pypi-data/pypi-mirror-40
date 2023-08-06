@@ -1,0 +1,84 @@
+Metadata-Version: 1.1
+Name: ec2-namer
+Version: 0.4.2
+Summary: EC2 Namer - AWS EC2 host naming tool. Modifies hostname and public DNS routes based on EC2 tags.
+Home-page: https://github.com/ronhanson/ec2-namer
+Author: Ronan Delacroix
+Author-email: ronan.delacroix@gmail.com
+License: The MIT License (MIT)
+
+Copyright (c) 2010-2018 Ronan Delacroix
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+Description: EC2 Namer - AWS EC2 host naming tool. 
+        =====================================
+        
+        
+        About
+        -----
+        
+        Startup script - Modifies tags, hostname and public DNS routes based on EC2 some tags
+        
+        Tag your ec2 instance with the following : 
+        
+         - 'group': 'compute' / 'webserver'
+         - 'number': '0001'
+         - 'zone': 'my-dns.com'
+         - 'environment': 'dev' / 'prod'
+        
+        If another machine is found with same tags, the number tag will be incremented (or updated with non existing one at least).
+        You can then duplicate an instance with its tags, and these tags will be updated to make the host unique (hostname and DNS route pointing to it).
+        
+        And a public route in the form of {group}-{number}.{env}.{zone}. For example : webserver-0001.dev.my_dns.com
+        
+        Internal hostname will also be set to {group}-{number}.{env} like webserver-0001.dev.
+        
+        Works on linux and windows (but needs a reboot once in windows after changing hostname).
+        
+        Project url : https://github.com/ronhanson/ec2-namer
+        
+        
+        Usage
+        -----
+        
+        Add "python3 ec2-rename" at startup.
+        
+        Compatibility
+        -------------
+        
+        This libraries are used most on Linux and Windows systems.
+        
+        This libraries are compatibles with Python 3.4+.
+        
+        Mainly tested on 3.6.
+        
+        
+        Author & Licence
+        ----------------
+        
+        Copyright (c) 2010-2015 Ronan Delacroix
+        
+        This program is released under MIT Licence. Feel free to use it or part of it anywhere you want.
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
