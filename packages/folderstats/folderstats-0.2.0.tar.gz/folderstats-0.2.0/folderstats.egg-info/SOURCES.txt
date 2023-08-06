@@ -1,0 +1,10 @@
+README.rst
+setup.py
+folderstats/__init__.py
+folderstats/__main__.py
+folderstats.egg-info/PKG-INFO
+folderstats.egg-info/SOURCES.txt
+folderstats.egg-info/dependency_links.txt
+folderstats.egg-info/entry_points.txt
+folderstats.egg-info/requires.txt
+folderstats.egg-info/top_level.txt
