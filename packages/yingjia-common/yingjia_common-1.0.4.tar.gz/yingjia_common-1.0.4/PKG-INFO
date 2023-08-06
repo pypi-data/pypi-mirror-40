@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yingjia_common
+Version: 1.0.4
+Summary: 赢家公共包
+Home-page: http://39.106.175.106:81/svn/yj_server/src/common/trunk
+Author: RobinSun
+Author-email: xiaoshousoft@163.com
+License: UNKNOWN
+Description: # Example Package
+        
+        公共方法
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
