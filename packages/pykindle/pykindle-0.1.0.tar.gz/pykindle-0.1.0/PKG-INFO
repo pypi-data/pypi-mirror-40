@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pykindle
+Version: 0.1.0
+Summary: PyKindle: Generate mobi files in a programming way
+Home-page: https://github.com/panhaoyu/pykindle
+Author: Haoyu Pan
+Author-email: haoyupan@aliyun.com
+License: GPL
+Project-URL: Documentation, https://github.com/panhaoyu/pykindle
+Project-URL: Source, https://github.com/panhaoyu/pykindle
+Description: # pykindle
+        A library to make book.mobi files.
+        
+        **Not finished.**
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
