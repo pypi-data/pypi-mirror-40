@@ -1,0 +1,3 @@
+[console_scripts]
+chaosplatform-scheduling = chaosplt_scheduling.cli:cli
+
