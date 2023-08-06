@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: eth-keyfun
+Version: 1.1
+Summary: A small tool to bruteforce weak ethereum private keys and more
+Home-page: https://github.com/Sector443/eth_keyfun
+Author: Chirag Jariwala(CJHackerz)
+Author-email: cjhackerz443@protonmail.com
+License: UNKNOWN
+Description: # eth_keyfun
+        
+        ### A small tool to bruteforce weak ethereum private keys and more
+        
+        ## Usage
+        
+        #### Install from PyPI
+        
+        ```bash
+        pip install eth-keyfun
+        ```
+        
+        #### Display help
+        
+        ```bash
+        python3 -m eth-keyfun -h
+        ```
+        
+        Note: Secure keygen mode requires internet connetion to fetch quantum bits from remote server
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
