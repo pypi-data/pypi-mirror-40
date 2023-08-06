@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: anki-overdrive
+Version: 0.1.2
+Summary: Python library for communicating with and controlling the Anki
+Overdrive cars. Forked from https://github.com/xerodotc/overdrive-
+python/
+Home-page: https://github.com/flyte/overdrive-python
+Author: Ellis Percival
+Author-email: overdrive_python@failcode.co.uk
+License: MIT
+Description: UNKNOWN
+Keywords: anki overdrive anki-overdrive drive
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications
+Classifier: Topic :: System :: Networking
