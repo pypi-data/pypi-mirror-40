@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: parPDE
+Version: 1.0.0
+Summary: A parallel solver for partial differential equations using MPI
+Home-page: https://bitbucket.org/cbillington/parPDE/
+Author: Chris Billington
+Author-email: chrisjbillington@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
