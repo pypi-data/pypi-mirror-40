@@ -1,0 +1,5 @@
+requests
+robotframework-requests
+pymysql
+robotframework-databaselibrary
+kazoo
