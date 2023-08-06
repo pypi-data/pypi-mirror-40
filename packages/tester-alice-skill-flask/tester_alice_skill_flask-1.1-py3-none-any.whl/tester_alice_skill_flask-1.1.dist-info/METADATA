@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tester-alice-skill-flask
+Version: 1.1
+Summary: Class for autotests YandexAlice skill, that implemented as flask application
+Home-page: https://github.com/vb64/test.helper.yandex.alice.flask
+Author: Vitaly Bogomolov
+Author-email: mail@vitaly-bogomolov.ru
+License: UNKNOWN
+Download-URL: https://github.com/vb64/test.helper.yandex.alice.flask/archive/v1.1.tar.gz
+Keywords: python,Yandex.Alice,flask,unittest
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+# test.helper.yandex.alice.flask
+
+Class for autotests YandexAlice skill, that implemented as flask application
+
+
