@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: pymatrixprofile
+Version: 1.0.0
+Summary: My Awesome Package.
+Home-page: https://github.com/dawran6/cookiecutter-pypackage-minimal
+Author:  
+Author-email:  
+License: UNKNOWN
+Description: pymatrixprofile
+        ===============
+        
+        .. image:: https://img.shields.io/pypi/v/pymatrixprofile.svg
+            :target: https://pypi.python.org/pypi/pymatrixprofile
+            :alt: Latest PyPI version
+        
+        .. image:: https://travis-ci.org/dawran6/cookiecutter-pypackage-minimal.png
+           :target: https://travis-ci.org/dawran6/cookiecutter-pypackage-minimal
+           :alt: Latest Travis CI build status
+        
+        My Awesome Package.
+        
+        Usage
+        -----
+        
+        Installation
+        ------------
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        Compatibility
+        -------------
+        
+        Licence
+        -------
+        
+        Authors
+        -------
+        
+        `pymatrixprofile` was written by `  < >`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License

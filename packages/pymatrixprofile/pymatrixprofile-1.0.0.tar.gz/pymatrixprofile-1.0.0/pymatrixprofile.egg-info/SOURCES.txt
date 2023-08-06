@@ -1,0 +1,10 @@
+README.rst
+setup.py
+pymatrixprofile/__init__.py
+pymatrixprofile/pymatrixprofile.py
+pymatrixprofile.egg-info/PKG-INFO
+pymatrixprofile.egg-info/SOURCES.txt
+pymatrixprofile.egg-info/dependency_links.txt
+pymatrixprofile.egg-info/top_level.txt
+tests/__init__.py
+tests/test_apis.py
