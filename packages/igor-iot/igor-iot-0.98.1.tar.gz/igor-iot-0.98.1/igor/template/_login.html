@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Igor Login</title>
+</head>
+<body>
+	<h1>Igor Login</h1>
+	{% set user = igor.app.getSessionItem('user', None) %}
+	{% if user %}
+		<p>
+			You are currently logged in as {{user}}.
+		</p>
+		<form action="/login">
+			<input type="submit" name="logout" value="logout">
+		</form>
+	{% endif %}
+	{% if message %}
+		<p>
+			<em>{{message}}</em>
+		</p>
+	{% endif %}
+		
+	<form action="/login" method="post">
+		Username:<br>
+		<input type="text" name="username"><br>
+		Password:<br>
+		<input type="password" name="password"><br>
+		<input type="submit" value="Login">
+	</form>
+	<hr>
+	<p><a href="/">Return to Igor homepage</a></p>
+</body>
+</html>

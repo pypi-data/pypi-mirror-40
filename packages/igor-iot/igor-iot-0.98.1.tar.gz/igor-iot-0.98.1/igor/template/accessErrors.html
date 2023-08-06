@@ -1,0 +1,142 @@
+{% macro showtime(tstr) -%}
+	{% if tstr %}
+		{{time.strftime("%d/%b/%Y %H:%M:%S", time.localtime(float(tstr)))}}
+	{% endif %}
+{% endmacro %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Igor Access Control Failures</title>
+	<style>
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	</style>
+</head>
+<body>
+	<h1>Igor Access Control Failures</h1>
+	{% if not igor.internal.accessControl('hasCapabilitySupport') %}
+		<p>This Igor runs without capability support. It is unlikely you see anything interesting here.</p>
+	{% endif %}
+
+	{% if igor.app.getSessionItem('user', None) %}
+		{% set user = igor.app.getSessionItem('user') %}
+		<p>You are logged in as {{user}}.</p>
+	{% else %}
+		{% set user = "admin" %}
+	{% endif %}
+		
+	<p>
+		This page lists all access control failures (missing capabilities) encountered by Igor in the current invocation.
+		(So, this information may be incorrect, because issues have been fixed already, and may be incomplete because Igor
+		may have restarted since a failure). For each failure the first occurrence is shown, so you can look it up in <a href="/internal/log">the Igor log</a>.
+	</p>
+	
+	<p>
+		If you (the user currently logged in) <i>do</i> have the correct capabilities to allow the operation you will see a <i>Fix</i>
+		button which will create the capability and assign it to the action. Or you may see a <i>Create</i> button which will create the
+		correct capability in your user account, so you can export it to the device that issued the request.
+	</p>
+	
+	{% set errors = igor.databaseAccessor.get_key('services/igor/accessFailures', 'application/x-python-object', 'content', token) %}
+	{% if 'accessFailure' in errors %}
+		{% set errors = errors.get('accessFailure') %}
+		{% if errors is mapping %}
+			{% set errors = [errors] %}
+		{% endif %}
+	{% else %}
+		{% set errors = [] %}
+	{% endif %}
+	
+	<table style="width:100%">
+		<tr>
+			<th>time</th>
+			<th>action</th>
+			<th>request path</th>
+			<th>op</th>
+			<th>path</th>
+			<th>capabilities</th>
+			<th>...</th>
+			<th>Can fix?</th>
+		</tr>
+		{% for error in errors %}
+			{% set keep = error %}
+			<tr>
+				<td>{{showtime(error.pop('timestamp', ''))}}</td>
+				<td>
+					{{error.pop('action', '')}}
+					{% if 'representing' in error %}
+						<br><i>representing {{error.pop('representing', '')}}</i>
+					{% endif %}
+				</td>
+				<td>{{error.pop('requestPath', '')}}</td>
+				<td>{{error.pop('operation', '')}}</td>
+				<td>
+					{{error.pop('path', '')}}
+					{% if 'external' in error %}
+						<br><i>external={{error.pop('external','')}}</i>
+					{% endif %}
+				</td>
+				<td>
+					{% for cid in error.pop('capID', []) %}
+						{{cid}}<br>
+					{% endfor %}
+				</td>
+				<td>
+					{% for k, v in error.items() %}
+						{{k}}={{str(v)}}<br>
+					{% endfor %}
+				</td>
+				<td>
+					{% if 'path' in keep and 'operation' in keep %}
+						{% set kwargs = {keep['operation']:'self'} %}
+						{% if keep.get('external', '') %}
+							{% do kwargs.update(aud='to-be-provided') %}
+						{% endif %}
+						{% set myCaps = igor.access.findCompatibleTokens(token, keep['path'], **kwargs) %}
+						{% if myCaps %}
+							{% set myCaps = myCaps|join('/') %}
+							{% if 'action' in keep %}
+								<form action="/capabilities.html">
+									<input name="returnTo" type="hidden" value="/accessErrors.html">
+									<input name="action" type="hidden" value="create">
+									<input name="newOwner" type="hidden" value="{{keep.get('action','')}}">
+									<input name="obj" type="hidden" value="{{keep.get('path','')}}">
+									{% if 'external' in keep %}
+										<input name="aud" type="hidden" value="cut-and-paste-from-obj">
+									{% endif %}
+									<input name="{{keep.get('operation', 'unknownOperation')}}" type="hidden" value="self">
+									<input name="parentList" type="hidden" value="{{myCaps}}">
+									<input type="submit" value="Fix">
+								</form>
+							{% else %}
+								<form action="/capabilities.html">
+									<input name="returnTo" type="hidden" value="/accessErrors.html">
+									<input name="action" type="hidden" value="create">
+									<input name="newOwner" type="hidden" value="/data/identities/{{user}}">
+									<input name="obj" type="hidden" value="{{keep.get('path','')}}">
+									{% if 'external' in keep %}
+										<input name="aud" type="hidden" value="cut-and-paste-from-obj">
+									{% endif %}
+									<input name="{{keep.get('operation', 'unknownOperation')}}" type="hidden" value="self">
+									<input name="delegate" type="hidden" value="true">
+									<input name="parentList" type="hidden" value="{{myCaps}}">
+									<input type="submit" value="Create">
+								</form>
+							{% endif %}
+						{% endif %}
+					{% endif %}
+				</td>
+			</tr>
+		{% endfor %}
+	</table>
+	<hr>
+	<p><a href="/">Return to Igor homepage</a></p>
+	{% if 'returnTo' in kwargs %}
+		<p><a href="{{kwargs['returnTo']}}">Return to {{kwargs['returnTo']}}.</a></p>
+	{% endif %}
+	
+</body>
+</html>

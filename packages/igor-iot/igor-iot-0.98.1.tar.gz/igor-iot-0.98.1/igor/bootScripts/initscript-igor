@@ -1,0 +1,67 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          igor
+# Required-Start:    networking
+# Required-Stop:     networking
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Igor home automation service
+### END INIT INFO
+
+#
+# Template for init.d configuration file.
+# Replace percent-name-s by corresponding values:
+# igorDir - pathname of the igor Python package (where __main__.py lives)
+# user - username
+# database - directory where the database lives (usually ~user/.igor)
+#
+RUNAS=%(user)s
+DAEMON="igorServer"
+IGOR_DIR="%(database)s"
+export PATH=$PATH:/usr/sbin:~$RUNAS/bin
+
+# Using the lsb functions to perform the operations.
+. /lib/lsb/init-functions
+# Process name ( For display )
+NAME=igor
+# Daemon name, where is the actual executable
+DAEMON_ARGS="-d $IGOR_DIR --advertise --nologstderr"
+
+SCRIPT="$DAEMON $DAEMON_ARGS"
+PIDFILE=/var/run/igor.pid
+
+start() {
+  if [ -f /var/run/$PIDNAME ] && kill -0 $(cat /var/run/$PIDNAME); then
+    echo 'Service already running' >&2
+    return 1
+  fi
+  echo 'Starting service…' >&2
+  local CMD="PATH=$PATH $SCRIPT & echo \$!"
+  su -c "$CMD" $RUNAS > "$PIDFILE"
+  echo 'Service started' >&2
+}
+
+stop() {
+  if [ ! -f "$PIDFILE" ] || ! kill -0 $(cat "$PIDFILE"); then
+    echo 'Service not running' >&2
+    return 1
+  fi
+  echo 'Stopping service…' >&2
+  kill -15 $(cat "$PIDFILE") && rm -f "$PIDFILE"
+  echo 'Service stopped' >&2
+}
+
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  retart)
+    stop
+    start
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|restart}"
+esac

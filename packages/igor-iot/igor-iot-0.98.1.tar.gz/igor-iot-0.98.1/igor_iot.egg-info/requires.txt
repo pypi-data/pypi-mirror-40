@@ -1,0 +1,11 @@
+future
+httplib2
+requests
+flask
+gevent
+python-dateutil
+py-dom-xpath-six
+passlib
+pyjwt
+pyopenssl
+markdown

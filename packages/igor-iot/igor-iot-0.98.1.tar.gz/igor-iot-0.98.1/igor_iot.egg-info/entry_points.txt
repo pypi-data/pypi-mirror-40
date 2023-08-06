@@ -1,0 +1,7 @@
+[console_scripts]
+igorCA = igorCA:main
+igorControl = igorControl:main
+igorServer = igor.__main__:main
+igorSetup = igorSetup:main
+igorVar = igorVar:main
+
