@@ -1,0 +1,11 @@
+sense_data/__init__.py,sha256=d0Q6Fn44e7wFfLabDOBxpcJ1DPKWlFunGYDUBmO-4hA,22
+sense_data/client.py,sha256=0ZU73KCyo8gLnjfCC2NH4WVcq8WHdOySdgnZwtQPyhQ,4827
+sense_data/dictobj.py,sha256=xLqGCwWTeZBrarFN-vIo7kRZUgyVleLurXPA1hOIqIY,1488
+sense_data/stock_pb2.py,sha256=4LvY8tUm6GIlBCRV_0P_MZxlEqh8grF9BHUa_xiVeAE,14188
+sense_data/stock_pb2_grpc.py,sha256=YBRsDanFjA45YF9eNYhUGKC2i-USVMfnduNNiLavatA,6700
+sense_data-0.0.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+sense_data-0.0.5.dist-info/METADATA,sha256=rLv6fLEwZj3MXyRkVANx1HRXEziqANz3GpcW20H7rvs,334
+sense_data-0.0.5.dist-info/RECORD,,
+sense_data-0.0.5.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+sense_data-0.0.5.dist-info/metadata.json,sha256=9W0-t3jGsWHDRWZhmIn4bBMlEBX9DvVSlxgJW0ZeGYc,478
+sense_data-0.0.5.dist-info/top_level.txt,sha256=hFXUqcdmmbOfLyknmOyz8syjndWHx2CMo_I9krVijYc,11
