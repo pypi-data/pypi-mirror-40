@@ -1,0 +1,10 @@
+service_urls/__init__.py,sha256=FRf8mrPpIkrZ9HqOCcCWeDdcHdhDnc_mm4WLffT5OKU,261
+service_urls/base.py,sha256=-2G4naCnESkBTI4Ha-81QPBm2snghJYC2J5xkPKGNHw,3115
+service_urls/patch.py,sha256=kN8aUlCCNiICNfFW7pexYQHP1ECTm65WvCVX5LTYi68,2596
+service_urls/services.py,sha256=QdXimPeyF4RVbSAm5u3hOTsByMWL2ltYTehZXKB-97o,7711
+service_urls/version.py,sha256=8lUTGWaLB2pMMEwHqbL2Zq6E2wooR3JMxpt3q10fbHM,717
+django_service_urls-1.1.dist-info/LICENSE,sha256=SisiN9Zfwh15LvaYdYpWEFhlOTUJGKC6XYXCESUGt54,1361
+django_service_urls-1.1.dist-info/METADATA,sha256=7_QI1LOaI5wUbijQREXgopddeEkTC9RwvWxgZfmUCH4,8425
+django_service_urls-1.1.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+django_service_urls-1.1.dist-info/top_level.txt,sha256=Omlz_Z375Kvvj2V3zPEiDbXOOcu27duFivi8S-EQY1k,13
+django_service_urls-1.1.dist-info/RECORD,,
