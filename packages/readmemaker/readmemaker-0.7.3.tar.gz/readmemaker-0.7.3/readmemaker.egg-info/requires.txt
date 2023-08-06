@@ -1,0 +1,7 @@
+path.py
+
+[build]
+wheel
+
+[release]
+releasecmd<0.1.0,>=0.0.12
