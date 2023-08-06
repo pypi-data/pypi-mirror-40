@@ -1,0 +1,13 @@
+README.md
+setup.py
+nms/__init__.py
+nms/fast.py
+nms/felzenszwalb.py
+nms/helpers.py
+nms/malisiewicz.py
+nms/nms.py
+nms.egg-info/PKG-INFO
+nms.egg-info/SOURCES.txt
+nms.egg-info/dependency_links.txt
+nms.egg-info/requires.txt
+nms.egg-info/top_level.txt
