@@ -1,0 +1,11 @@
+bcdata
+click
+geojson
+pgdata
+requests
+shapely
+sqlalchemy
+
+[test]
+pytest
+coverage
