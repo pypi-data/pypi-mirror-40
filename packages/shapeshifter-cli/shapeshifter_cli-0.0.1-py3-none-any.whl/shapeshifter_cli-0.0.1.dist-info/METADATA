@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: shapeshifter-cli
+Version: 0.0.1
+Summary: A command-line tool for transforming large data sets
+Home-page: https://github.com/srp33/ShapeShifter-CLI
+Author: Piccolo Lab
+Author-email: stephen_piccolo@byu.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: shapeshifter
+Requires-Dist: pandas
+
+UNKNOWN
+
+
