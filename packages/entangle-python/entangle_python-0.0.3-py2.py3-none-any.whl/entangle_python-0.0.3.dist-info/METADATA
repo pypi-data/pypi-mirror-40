@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: entangle-python
+Version: 0.0.3
+Summary: Create an entanglement across network and even programming language.
+Home-page: https://github.com/penguinmenac3/entangle-python
+Author: Michael Fuerst
+Author-email: mail@michaelfuerst.de
+License: BSD
+Download-URL: https://github.com/penguinmenac3/entangle-python/tarball/0.0.3
+Description-Content-Type: UNKNOWN
+Requires-Dist: autobahn[twisted]
+Requires-Dist: bcrypt
+
+# Entangle-Python [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+
