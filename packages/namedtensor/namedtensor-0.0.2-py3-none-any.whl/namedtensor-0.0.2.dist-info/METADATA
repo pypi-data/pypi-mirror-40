@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: namedtensor
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/harvardnlp/NamedTensor
+Author: Alexander Rush
+Author-email: srush@seas.harvard.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: einops
+Requires-Dist: numpy
+
+UNKNOWN
+
+
