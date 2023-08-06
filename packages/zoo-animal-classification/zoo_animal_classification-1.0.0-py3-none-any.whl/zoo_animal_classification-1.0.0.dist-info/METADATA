@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: zoo-animal-classification
+Version: 1.0.0
+Summary: classification of zoo animals using machine learning models
+Home-page: https://github.com/yijiaceline/CSF-project.git
+Author: Xinyu Zhang, Yijia Chen, Xiaochi Ge
+Author-email: mandy_zhang512@gwu.edu
+License: MIT
+Keywords: decision tree,classification,multiclass,zoo,animals
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: appnope (==0.1.0)
+Requires-Dist: backcall (==0.1.0)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: decorator (==4.3.0)
+Requires-Dist: ipython (==7.2.0)
+Requires-Dist: ipython-genutils (==0.2.0)
+Requires-Dist: jedi (==0.13.2)
+Requires-Dist: kiwisolver (==1.0.1)
+Requires-Dist: matplotlib (==3.0.2)
+Requires-Dist: numpy (==1.15.4)
+Requires-Dist: pandas (==0.23.4)
+Requires-Dist: parso (==0.3.1)
+Requires-Dist: pexpect (==4.6.0)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: prompt-toolkit (==2.0.7)
+Requires-Dist: ptyprocess (==0.6.0)
+Requires-Dist: pydotplus (==2.0.2)
+Requires-Dist: Pygments (==2.3.1)
+Requires-Dist: pyparsing (==2.3.0)
+Requires-Dist: python-dateutil (==2.7.5)
+Requires-Dist: pytz (==2018.7)
+Requires-Dist: scikit-learn (==0.20.2)
+Requires-Dist: scipy (==1.2.0)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: traitlets (==4.3.2)
+Requires-Dist: wcwidth (==0.1.7)
+
+# DATS6450-final-project
+This package contains different machine learning models for prediction of zoo animals based on a given set of features. 
+
+Machine Learning Models Used: 
+* Decision Tree 
+* Random Forest
+* Support Vector Machine
+
+## Installation
+You can install `animal_classification` following the below steps: 
+
+`# git clone https://github.com/yijiaceline/CSF-project.git`
+
+`# cd CSF-project`
+
+`# python3 setup.py install`
+
+## Usage
+Refer to example.py
+
+## Example Output 
+`Fitting and predicting using Decision Tree Model:`  
+`Accuracy:0.9523809523809523`  
+`Fitting and predicting using Random Forest Model:`  
+`Accuracy: 1.0`  
+`Fitting and predicting using Support Vector Machine:`  
+`Accuracy: 1.0`  
+`Fitting and predicting using KNN:`  
+`Accuracy: 0.9047619047619048`  
+
+## License
+The MIT License. Refer to LICENSE. 
+
+
