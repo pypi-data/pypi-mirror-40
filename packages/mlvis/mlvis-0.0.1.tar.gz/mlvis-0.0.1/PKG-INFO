@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mlvis
+Version: 0.0.1
+Summary: Machine Learning Visualizations
+Home-page: https://github.com/gnavvy/mlvis
+Author: Yang Wang
+Author-email: gnavvy@gmail.com
+License: UNKNOWN
+Description: # mlvis
+        Machine Learning Visualization
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
