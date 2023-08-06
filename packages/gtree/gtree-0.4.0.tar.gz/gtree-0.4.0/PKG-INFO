@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: gtree
+Version: 0.4.0
+Summary: A general tree implementation providing convinient methods for defining trees in JSON or YAML files.
+Home-page: https://github.com/lunjon/gtree
+Author: Jonathan Lundholm
+Author-email: jon.lundholm@gmail.com
+License: MIT
+Description: 
+        Gtree is a general tree implementation that provides a simple (and quite limited) API.
+        
+        One of the more useful features is the functionality that allows one to build trees from dictionaries.
+        
+        See examples at the github page for more information!
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
