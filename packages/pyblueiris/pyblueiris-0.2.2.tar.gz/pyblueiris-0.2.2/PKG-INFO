@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyblueiris
+Version: 0.2.2
+Summary: An async python api for Blue Iris
+Home-page: https://github.com/nwesterhausen/pyblueiris
+Author: Nicholas Westerhausen
+License: MIT
+Description: 
+        # Blue Iris Python Library
+        
+        An async python library for the Blue Iris JSON API.
+        
+        Right now just publishing to pypi test server: https://test.pypi.org/project/pyblueiris/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5.3
+Description-Content-Type: text/markdown
