@@ -1,0 +1,5 @@
+colcon-core<=0.3.14,>=0.3.10
+colcon-bundle==0.0.9
+colcon-ros<=0.3.6,>=0.3.5
+rosdep<=0.14.0
+setuptools>=30.3.0
