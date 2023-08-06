@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: paladin-utils
+Version: 0.0.1
+Summary: A utility collection.
+Home-page: https://bitbucket.org/MAX1234/paladin-utils/
+Author: Max Steinberg
+Author-email: nooneishere@supachat.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# paladin-utils
+#### A small utility collection.
+
+
+## Utils
+
+### Namespace
+##### A dict accessible by getattr/setattr.
+Example:
+```python
+namespace = Namespace({
+    'data': 'a'
+})
+print(namespace.data) #=> 'a'
+namespace.data = 'b'
+print(namespace.data) #=> 'b'
+```
+
+### complexrange
+##### A range over the complex space
+
+Example:
+```python
+for i in complexrange.complexrange((1, 32, -1), (32, 1)):
+    print(i.real + i.imag)
+```
+
