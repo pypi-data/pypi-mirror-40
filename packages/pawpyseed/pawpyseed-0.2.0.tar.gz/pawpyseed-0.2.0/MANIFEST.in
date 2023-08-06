@@ -1,0 +1,5 @@
+include LICENSE *.txt
+recursive-include pawpyseed *
+recursive-exclude pawpyseed *.pyc
+recursive-include docs *
+recursive-exclude docs *.pyc
