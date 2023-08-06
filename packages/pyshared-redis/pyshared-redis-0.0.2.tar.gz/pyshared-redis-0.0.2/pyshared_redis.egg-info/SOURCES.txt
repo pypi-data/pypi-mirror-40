@@ -1,0 +1,10 @@
+setup.py
+pyshared_redis.egg-info/PKG-INFO
+pyshared_redis.egg-info/SOURCES.txt
+pyshared_redis.egg-info/dependency_links.txt
+pyshared_redis.egg-info/requires.txt
+pyshared_redis.egg-info/top_level.txt
+shared_redis/__init__.py
+shared_redis/client.py
+shared_redis/hash_algorithm.py
+shared_redis/user_demo.py
