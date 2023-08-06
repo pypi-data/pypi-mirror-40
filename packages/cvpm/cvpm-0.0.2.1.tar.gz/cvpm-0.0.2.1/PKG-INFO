@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: cvpm
+Version: 0.0.2.1
+Summary: Computer Vision Package Manager
+Home-page: https://github.com/unarxiv/cvpm
+Author: Xiaozhe Yao
+Author-email: xiaozhe.yaoi@gmail.com
+License: UNKNOWN
+Description: For full description, please go to [Our Documentation](https://cvpm.autoai.org)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Software Development
