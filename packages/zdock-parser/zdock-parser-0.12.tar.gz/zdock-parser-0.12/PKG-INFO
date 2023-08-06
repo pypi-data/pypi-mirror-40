@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: zdock-parser
+Version: 0.12
+Summary: ZDOCK output file parser
+Home-page: https://github.com/capslockwizard/zdock-parser
+Author: Justin Chan
+Author-email: capslockwizard@gmail.com
+License: UNKNOWN
+Description: # ZDOCK Parser
+        
+        Parses ZDOCK output files and returns coordinates of ZDOCK poses as NumPy arrays.
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Development Status :: 5 - Production/Stable
+Description-Content-Type: text/markdown
