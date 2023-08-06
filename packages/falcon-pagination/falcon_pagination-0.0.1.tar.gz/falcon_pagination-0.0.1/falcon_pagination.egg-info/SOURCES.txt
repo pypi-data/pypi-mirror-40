@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+falcon_pagination/__init__.py
+falcon_pagination/offset_pagination_hook.py
+falcon_pagination.egg-info/PKG-INFO
+falcon_pagination.egg-info/SOURCES.txt
+falcon_pagination.egg-info/dependency_links.txt
+falcon_pagination.egg-info/requires.txt
+falcon_pagination.egg-info/top_level.txt
