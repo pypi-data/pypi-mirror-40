@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: awsjar
+Version: 0.0.18
+Summary: Jar saves the state of your AWS Lambda functions
+Home-page: https://github.com/ysawa0/awsjar
+Author: Yuki Sawa
+Author-email: yukisawa@gmail.com
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
