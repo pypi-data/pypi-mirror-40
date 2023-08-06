@@ -1,0 +1,16 @@
+caching/__init__.py,sha256=mN2C5cqUuTifqsz9Mse63nlxSWMyepbvh92Qn0OWBXY,46
+caching/cache.py,sha256=oqKdDaPxnJOxAEL6poSfEPj3fSVd1rU_DSyVD0S6MAs,6132
+ditto_lib/__init__.py,sha256=XcYjS2NX2ChF2XTU8RHZ7qZ_IK4txMCFPiIIoZBFzWo,25
+ditto_lib/clustering/__init__.py,sha256=KFEP5ure_maqF61xddiwbpJsZ3NI4EWdmUMcrNhfSEU,107
+ditto_lib/clustering/cluster.py,sha256=1LBypNtyCDcuXK5NEY8I27YdeT9jVdL6BJRpBylHW5Y,2077
+ditto_lib/clustering/clustercollection.py,sha256=_Xb0MXRvuSb3dmPTY2eHXxpQr4YsNdExQBI9cEZwKnE,5212
+ditto_lib/generic/__init__.py,sha256=nwcGYn-5mnYEmVhPIxOISIWcdPfL_QoIe4wSk4y3WDo,193
+ditto_lib/generic/attribute.py,sha256=RvR2moMG0maACP_1W7eGYz8U73mMU0ZNUgjUJ3W20aE,1943
+ditto_lib/generic/config.py,sha256=hC_uZuNCMS5_4FI56YggYygA99j2XABm9mMDwZUamOI,360
+ditto_lib/generic/item.py,sha256=hFvCVpmIv8mX2jjA-x-FRilc8Oo3ljZgfPu4szjwcus,3725
+ditto_lib/generic/itemcollection.py,sha256=ly9U2El-4TR1xwpSfVbTFk-f-P7ujBiFpFG-Nl2TN-4,17721
+ditto_lib/generic/utils.py,sha256=3kXdcBSTWLEIbQe9j17lBa3iEtIs_ite_MaqkbZPAQ4,1291
+ditto_lib-0.2.0.dev0.dist-info/METADATA,sha256=MxAzZmeBudlx44nTIk4eQskZCQ545K7CWMKaFJkxHwM,332
+ditto_lib-0.2.0.dev0.dist-info/RECORD,,
+ditto_lib-0.2.0.dev0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+ditto_lib-0.2.0.dev0.dist-info/top_level.txt,sha256=8CRY-SpttKeyz3qgwvfDTat38P7WRBVMY3MYSlUlMF0,18
