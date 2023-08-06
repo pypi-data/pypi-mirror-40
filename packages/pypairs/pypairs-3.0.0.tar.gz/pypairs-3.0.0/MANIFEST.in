@@ -1,0 +1,2 @@
+include versioneer.py
+include pypairs/_version.py
