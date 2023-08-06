@@ -1,0 +1,3 @@
+[console_scripts]
+fury = furystoolbox.cli.cli:CLI
+
