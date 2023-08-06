@@ -1,0 +1,16 @@
+tests/__init__.py,sha256=Wy8n8YdWzDAoApkkZZ1T3KoXYd9SG20SZf2X8rs9ADE,1143
+tests/test_hunks.py,sha256=bAWFtDMdh7DU6jTBiL-Cl5je7MIN1t48euruGkqHd_Y,3443
+tests/test_parser.py,sha256=_u49fJSo5eZEpgq7zMXpg2aIPKwZiZUMN7ixoE6LTcI,8351
+tests/test_patchedfile.py,sha256=NclQfrlrnK4cpldgoqDFQ4peJAJLLzLTmdhx49s9xoo,2072
+unidiff/__init__.py,sha256=u2qtvDgTRHmvRnLp8gtUgu0v-4C-VeYjB1lB04G9aFA,1420
+unidiff/constants.py,sha256=1hQHheoO27rsJMTdT0yr7F4Np96LngKfOlORQDLc-jM,1939
+unidiff/errors.py,sha256=SPC12poASZn49xKHmCgVJWdjGwiK_uLDvbL-ThU6dm0,1330
+unidiff/patch.py,sha256=siSNnGoeFZAgll7QUdXEVIcLCJ90iZ2ypXqgPPMlfu8,12094
+unidiff-0.5.2.data/scripts/unidiff,sha256=OZxkWpYnC9pFq8-tDDj4PpSJQP6IciUtclmPvmN6EzY,1787
+unidiff-0.5.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+unidiff-0.5.2.dist-info/LICENSE.txt,sha256=Q31TdaueVjDyFwYer-invDDOv-eRvdd99f_qXIRP8M8,1080
+unidiff-0.5.2.dist-info/METADATA,sha256=h2JhHOZiE08V-xjCvVY5Oy3kRCNgIGwra93LhSId4lk,665
+unidiff-0.5.2.dist-info/RECORD,,
+unidiff-0.5.2.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+unidiff-0.5.2.dist-info/metadata.json,sha256=EddnUuMuhMbexzHsD6cx6cyzKH289jr9AVo5BjgkUus,842
+unidiff-0.5.2.dist-info/top_level.txt,sha256=tvcW69m0J2909eRWdAHWSjYjhZKSd1TVJWIVDteN7xg,14
