@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: Dosie
+Version: 0.0.1
+Summary: A search engine that makes knowledge a resource, and creates liberation with information sharing
+Home-page: https://eliezerodjao.com/desktop/portfolio.php?sent=dosie
+Author: Eliezer Odjao
+Author-email: eliezerodjaoofficial@gmail.com
+License: Proprietary
+Project-URL: Source, https://eliezerodjao.com/desktop/portfolio.php?sent=dosie
+Project-URL: Documentation, https://eliezerodjao.com/docs/Dosie_User_Documentation.docx
+Keywords: search searchEngine information web internet data
+Platform: UNKNOWN
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Topic :: Communications
+Classifier: Topic :: Education
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Requires-Python: ~=3.3
+Description-Content-Type: text/markdown
+Requires-Dist: Synx
+Requires-Dist: Pillow
+
+
+# Dosie Search Engine
+## A personal search engine
+
+This project created a desktop search engine app which allows casual searchers and researches to find authentic, relevant, unfiltered, and referenced information with speed, security and privacy.
+
+With the increase in advocating for data privacy, information transparency and the need for authenticity of news and information, the need for a platform or service to solve this issue has opened up. Truth and knowledge has always been a fundamental part of growth, development and the shaping of society, but in these times profitability has been found in withholding and manipulation of information. Dosie hopes to find better in the release and transparency of information. Giving the power to the consumers, and not the distributors of information.
+
+|**What Dosie Does**|  |
+|--|--|
+|Make Your Own Index| The app allows you to create a list or category of domains you will like to find specific type of information from. This is to help users establish what we call a "**Network Of Trust**"|
+|Find Information| **Dosie works automatically** to find, sort and categorize information. Unlike using regular search engines and a browser, and taking time to try out different search results, the app **simply does the proof-reading and verification of information** for users. The search algorithms are such that click-bait content can be vetted based on how much quality content is actually found. These results are automatically pushed down. There are configurations available for you to set limits and relevance grading for information found.|
+|You Get Only What You Want| Sometimes you may be only looking for a specific and small information, instead of a 2000 word blog post. Dosie squashes all that and **gives you just the couple lines of text or image information** you want. In the occasion where you may actually be interested in reading the 2000 word post, You will be **provided a link to the main content itself**.|
+
+##
+##
+##
+
+|**What Dosie Doesn't Do**|  |
+|--|--|
+|Keep Your Personal Information| The app currently doesn't require any information from it's users. No email, password, credit card information or any such data. All you need to do is install the app and use it. The app may have a log in system in future and may require an email-pasword login.|
+|Track Your Behavior| The app doesn't and will never pin your usage patterns and information searches to you to sell your data or show ads. We have no business or technological reasons to collect or keep such information. What the app may collect is performance data and bug reports to make sure we always know what our users want, and make useful updates. We care about your privacy.|
+
+## Social Media
+[Facebook](https://web.facebook.com/Dosie-322980288548325/?ref=br_rs)
+
+[Instagram](https://www.instagram.com/dosie.app/)
+
+|LINKS|  |
+|--|--|
+|EULA| [Dosie EULA](https://eliezerodjao.com/docs/Dosie_EULA.txt) |
+|Developer | [eliezerodjaoofficial@gmail.com](mailto:eliezerodjaoofficial@gmail.com)|
+
+Please make sure you read the **End-User License Agreement (EULA)** for this project.
+By using this software, you agree to the EULA agreement.
+
+
