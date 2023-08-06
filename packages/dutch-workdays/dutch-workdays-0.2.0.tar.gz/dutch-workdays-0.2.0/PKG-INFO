@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dutch-workdays
+Version: 0.2.0
+Summary: A very small library that handles with Dutch calendars and holidays 🇳🇱
+Home-page: https://gitlab.com/new10-public/dutch-workdays/
+Author: New10
+Author-email: pypi-admin@new10.com
+Keywords: workdays,dutch,netherlands,calendar
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
