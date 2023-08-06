@@ -1,0 +1,10 @@
+
+[cov]
+pytest-cov
+codecov
+
+[test]
+pyyaml
+pytest
+pytest-cov
+codecov
