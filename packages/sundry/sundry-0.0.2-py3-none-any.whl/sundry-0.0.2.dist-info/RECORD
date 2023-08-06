@@ -1,0 +1,16 @@
+sundry/__init__.py,sha256=cUR3uwzOOtnge2WM-USn32SV_Wxr48-cuEQCoQgfhlk,435
+sundry/__version__.py,sha256=l93MMKyk1wOCOzE8HrEzut7c9LL6mbfSnhXKf-NChjU,336
+sundry/date_time.py,sha256=fPCeXA8X97HfQ02zoGv9ZJ-h2THQaCVxpLgpG0lMy_I,1270
+sundry/hash.py,sha256=mVMn5UhYDn-DitWGkD_UoaPTXd58n56th6FgD5p1IH0,1066
+sundry/serializable.py,sha256=um4ywlsJcniHVdNnSyezDhHXdVOjrJM1xkaXXYSAUhs,1434
+sundry/to_dynamodb.py,sha256=2H2GceD1iFnZ7xfymRfBinLKbSJ3kmgX9sNO6GH7ZwE,1597
+sundry/type_conversion.py,sha256=2hIP9SoIx1oTqqTDcT0FOk1-nu_scchfiPkqrjt3q-0,753
+sundry/uidb32/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sundry/uidb32/__main__.py,sha256=1cIF-_euuxpxqyHjvSYxUY5QN92vCiEDO94-yhgjrm8,41
+sundry/uidb32/uidb32.py,sha256=tka9mDg1SDW1AW8WeYty0aIavKoefqYkPMZsTuFOJMQ,1606
+sundry-0.0.2.dist-info/LICENSE,sha256=jYomPUnQY5ZooVvfFAl-XXyRI6jd-o6xkXSDiXj6ahk,1088
+sundry-0.0.2.dist-info/LICENSE.txt,sha256=jYomPUnQY5ZooVvfFAl-XXyRI6jd-o6xkXSDiXj6ahk,1088
+sundry-0.0.2.dist-info/METADATA,sha256=I-u2H28BnYlVgb05wRBf0LAkU7sGAvtEaNNhOgSyyC4,400
+sundry-0.0.2.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+sundry-0.0.2.dist-info/top_level.txt,sha256=08XMpBjNGkdHRun9tcbRLuRdVy29pPpJVI-0loP6if0,7
+sundry-0.0.2.dist-info/RECORD,,
