@@ -1,0 +1,11 @@
+README.md
+setup.py
+dep2pict_gui.egg-info/PKG-INFO
+dep2pict_gui.egg-info/SOURCES.txt
+dep2pict_gui.egg-info/dependency_links.txt
+dep2pict_gui.egg-info/entry_points.txt
+dep2pict_gui.egg-info/requires.txt
+dep2pict_gui.egg-info/top_level.txt
+src/__init__.py
+src/conll.py
+src/dep2pict.py

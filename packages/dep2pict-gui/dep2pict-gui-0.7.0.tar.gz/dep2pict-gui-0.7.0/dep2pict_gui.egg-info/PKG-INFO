@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dep2pict-gui
+Version: 0.7.0
+Summary: A Qt interface for the dep2pict software
+Home-page: http://dep2pict.loria.fr
+Author: bguil
+Author-email: Bruno.Guillaume@loria.fr
+License: LICENSE/Licence_CeCILL_V2-en.txt
+Description: # dep2pict-gui
+        
+        dep2pict-gui is a PyQt5 based GUI for the software dep2pict.
+        See http://dep2pict.loria.fr for more information.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

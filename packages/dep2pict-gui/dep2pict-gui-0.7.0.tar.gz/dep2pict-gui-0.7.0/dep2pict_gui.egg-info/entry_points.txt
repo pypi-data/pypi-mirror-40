@@ -1,0 +1,3 @@
+[gui_scripts]
+dep2pict-gui = src.dep2pict:main
+
