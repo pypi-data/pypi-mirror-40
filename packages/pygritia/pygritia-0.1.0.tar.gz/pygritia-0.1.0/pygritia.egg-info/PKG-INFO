@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pygritia
+Version: 0.1.0
+Summary: Pygritia: Lazy Symbolic Evaluation
+Home-page: https://github.com/gwangyi/pygritia
+Author: Sungkwang Lee
+Author-email: gwangyi.kr@gmail.com
+License: MIT
+Description: # Pygritia
+        
+        Pygritia is a symbolic expression library.
+        
+        It can
+        
+        * create symbolic expressions with one or more symbols
+        * resolve symbolic expressions by substituting values to symbols
+        * partially resolve symbolic expression
+        
+        Example:
+        
+        ```python
+        from pygritia import symbol, evaluate, update
+        
+        this = symbol('this')
+        that = symbol('that')
+        arr = [1, 2, 3]
+        print(5 / this + 2 * 6)  # 5 / this + 12
+        print(evaluate(5 / this + 2 * 6, this=2))  # 14.5
+        print(evaluate(this[that], this=arr)) # [1, 2, 3][that]
+        update(this[that], 42, this=arr, that=1)
+        print(arr)  # [1, 42, 3]
+        ```
+        
+        Documentation of all public functions can be found in [`pygritia`][pygritia]
+        
+        [pygritia]: https://gwangyi.github.io/pygritia/
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
