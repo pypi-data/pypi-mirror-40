@@ -1,0 +1,17 @@
+syntax: glob
+*.egg-info
+*.mo
+*.pyc
+.DS_Store
+.idea
+.jupyter
+.jupyterlab
+.ipynb_checkpoints
+/geckodriver.log
+/html
+/log.html
+/output.xml
+/report.html
+/result
+/selenium-screenshot-*.png
+
