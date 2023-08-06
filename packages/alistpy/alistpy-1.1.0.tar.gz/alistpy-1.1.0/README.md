@@ -1,0 +1,78 @@
+# alistpy
+
+An Association List construct for Python
+
+---
+
+## Install
+
+```pip install alistpy```
+
+---
+
+## Usage
+
+This simple library provides an AList object that should be a drop-in replacement for most dictionaries, but based on immutable data structures instead.
+
+Cheap to construct, expensive to mutate, as it isn't mutable. Every mutative method actually generates a new AList in it's place.
+
+Example:
+
+```
+import alist
+
+# This is cheap:
+a = alist.AList(x=0,y=1)
+
+# This is also cheap:
+print(a['x'])
+
+# This is expensive:
+a['x'] = 12
+```
+
+---
+
+## Differences to Dictionaries
+
+There's primarily two differences:
+
+* Mutating the AList is expensive, rather than cheap.
+
+* Setting the same key multiple times at init time is a ValueError.
+
+That is, Python is happy with:
+
+```
+{'x': 0, 'x': 4}
+> {'x': 4}
+```
+
+That sort of behaviour might be unexpected, or cause unexpected problems for the programmer.
+
+So, instead alist:
+
+```
+alist.AList(x=0, x=4)
+> Exception raised, ValueError
+```
+
+## Explicit API
+
+There isn't one yet.
+
+Check back in future versions.
+
+---
+
+## Testing
+
+Install ```pytest```, and then run it.
+
+Currently 31 tests for 21 methods.
+
+---
+
+## License
+
+BSD-3 Clause. See [LICENSE.md](https://git.sr.ht/~shakna/alistpy/tree/master/LICENSE.md) for more.
