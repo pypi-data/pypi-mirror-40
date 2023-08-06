@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: minerva_deconvolve
+Version: 1.0.1
+Summary: Algorithm for deconvolving and clustering barcoded short reads
+Home-page: https://github.com/dcdanko/minerva_barcode_deconvolution
+Author: David C. Danko
+Author-email: dcd3001@med.cornell.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
