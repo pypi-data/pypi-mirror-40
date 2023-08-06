@@ -1,0 +1,12 @@
+setup.py
+metasub_utils.wasabi.egg-info/PKG-INFO
+metasub_utils.wasabi.egg-info/SOURCES.txt
+metasub_utils.wasabi.egg-info/dependency_links.txt
+metasub_utils.wasabi.egg-info/entry_points.txt
+metasub_utils.wasabi.egg-info/namespace_packages.txt
+metasub_utils.wasabi.egg-info/requires.txt
+metasub_utils.wasabi.egg-info/top_level.txt
+metasub_utils/wasabi/__init__.py
+metasub_utils/wasabi/cli.py
+metasub_utils/wasabi/constants.py
+metasub_utils/wasabi/wasabi_bucket.py
