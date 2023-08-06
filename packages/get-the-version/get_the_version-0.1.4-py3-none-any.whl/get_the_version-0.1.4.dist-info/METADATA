@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: get-the-version
+Version: 0.1.4
+Summary: Get the version of so many things.
+Home-page: https://github.com/duyixian1234/get_version
+Author: Yixian Du
+Author-email: duyixian1234@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: click
+
+
+get-the-version
+---------------
+
+get the version of so many things.
+
+Use
+---
+
+.. code-block:: shell
+
+    $ get-version python
+    The version info of python is:
+    Python 3.7.1
+    From command "python -V"
+
+Install
+-------
+
+.. code-block:: shell
+
+    pip install get-version
+
+
+Author
+------
+Yixian Du
+
+
