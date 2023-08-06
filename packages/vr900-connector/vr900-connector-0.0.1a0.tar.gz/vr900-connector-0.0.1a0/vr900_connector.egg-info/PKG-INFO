@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: vr900-connector
+Version: 0.0.1a0
+Summary: Connector to handle vaillant vr900/vr920 data
+Home-page: https://github.com/thomasgermain/vr900-connector.git
+Author: Thomas Germain
+Author-email: thomas.germain@live.be
+License: MIT
+Description: Connector to handle vaillant vr900/vr920 data
+Platform: UNKNOWN
