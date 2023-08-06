@@ -1,0 +1,48 @@
+Metadata-Version: 2.0
+Name: photinia
+Version: 0.6.0
+Summary: Build deep learning models quickly for scientists in an object-oriented way.
+Home-page: https://github.com/XoriieInpottn/photinia
+Author: darklab_502
+Author-email: gylv@mail.ustc.edu.cn
+License: Free
+Keywords: deep learning,neural network
+Platform: any
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pymongo
+Requires-Dist: opencv-python
+Requires-Dist: prettytable
+
+![Photinia](logo.png)
+
+Photinia is a package used to build deep learning models.
+It is lightweight and designed for scientists who wish to implement models quickly with
+high flexibility.
+
+Photinia is not a totally independent deep learning framework.
+It can be regarded as some kind of "shortcut" to Tensorflow.
+We build this project, since we wish to have an easy, powerful and free toolset to
+do research on deep learning.
+
+# Dependencies
+
+* Python 3.6+
+* TensorFlow 1.2.0+
+* numpy
+* scipy
+* pymongo
+* opencv-python
+
+# Installation
+
+The package can be installed directly from PyPI repository:
+```bash
+pip3 install photinia
+```
+Or you can just download the package from Github and copy the photinia/photinia directory
+to you project's class path.
+
+
