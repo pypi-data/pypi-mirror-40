@@ -1,0 +1,8 @@
+GDAL
+pyproj
+numpy<1.16.0
+scipy
+scikit-image
+shapely
+pint==0.9
+imageio
