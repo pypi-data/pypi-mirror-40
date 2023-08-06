@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: microcosm-neo4j
+Version: 0.1.0
+Summary: OpenCypher AST and Builder API
+Home-page: https://github.com/globality-corp/opencypher
+Author: Globality Engineering
+Author-email: engineering@globality.com
+License: Apache 2.0
+Description: # microcosm-neo4j
+        Opinionated persistence with Neo4J
+        
+Keywords: opencypher cypher neo4j
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
