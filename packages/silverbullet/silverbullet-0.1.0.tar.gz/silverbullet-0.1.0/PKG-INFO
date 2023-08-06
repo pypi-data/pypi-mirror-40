@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: silverbullet
+Version: 0.1.0
+Summary: shallow but powerful wrapper around pybullet
+Home-page: https://github.com/MonoMotion/silverbullet
+Author: coord.e
+Author-email: me@coord-e.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: numpy (>=1.16,<2.0)
+Requires-Dist: pybullet (>=2.4,<3.0)
+Project-URL: Repository, https://github.com/MonoMotion/silverbullet
