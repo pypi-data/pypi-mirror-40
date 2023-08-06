@@ -1,0 +1,11 @@
+README.md
+setup.py
+emailtoolspython/__init__.py
+emailtoolspython.egg-info/PKG-INFO
+emailtoolspython.egg-info/SOURCES.txt
+emailtoolspython.egg-info/dependency_links.txt
+emailtoolspython.egg-info/requires.txt
+emailtoolspython.egg-info/top_level.txt
+emailtoolspython/util/__init__.py
+emailtoolspython/util/agents.py
+emailtoolspython/util/seleniumdriver.py
