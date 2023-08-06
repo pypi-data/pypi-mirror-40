@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: py_goicp
+Version: 0.0.3
+Summary: GO-ICP compiled using Cython to use in python
+Home-page: https://github.com/aalavandhaann/go-icp_cython
+Author: #0K Srinivasan Ramachandran
+Author-email: ashok.srinivasan2002@gmail.com
+License: LICENSE.txt
+Description: Go-ICP for globally optimal 3D pointset registration.
+Keywords: icp go-icp registration alignment rigid-align rigid-alignment
+Platform: any
