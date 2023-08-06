@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: recollect-waste
+Version: 1.0.0
+Summary: Python 3 API for Recollect Waste to track waste pickup and types.
+Home-page: https://github.com/stealthhacker/python-recollect-waste
+Author: stealthhacker
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Refer to Github for a full description.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
