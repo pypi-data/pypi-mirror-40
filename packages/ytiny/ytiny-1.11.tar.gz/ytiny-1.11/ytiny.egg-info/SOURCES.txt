@@ -1,0 +1,8 @@
+setup.py
+ytiny/__init__.py
+ytiny/store_userinfo.py
+ytiny.egg-info/PKG-INFO
+ytiny.egg-info/SOURCES.txt
+ytiny.egg-info/dependency_links.txt
+ytiny.egg-info/requires.txt
+ytiny.egg-info/top_level.txt
