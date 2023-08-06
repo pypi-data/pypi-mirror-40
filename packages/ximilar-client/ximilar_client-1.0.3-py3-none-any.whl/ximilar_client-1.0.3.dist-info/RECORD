@@ -1,0 +1,17 @@
+ximilar_client-1.0.3-py3.6-nspkg.pth,sha256=PqlHhgjw0f15MqizUIXtiXulemRrBfRAoUsuA-n9Bl8,544
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/client.py,sha256=1zlDGgs9sHnfDgKHQ9py3qWPAL5bgYn9bIkss5KpofU,3094
+tests/conftest.py,sha256=wJp9jK9jhjXdiCyCpDjmnF4xdeIqfUrjuZGvDHI4xig,145
+ximilar/client/__init__.py,sha256=G64W5QiYjy3gjNnJh6XUzPONC6jr3vLnR7n3RP0BDrI,251
+ximilar/client/client.py,sha256=n56uP_eXD19LvpHLLcgazrpXoiInts0OyEdT2DiUEOg,5080
+ximilar/client/colors.py,sha256=fecQxf5QLuRBcm_Uv7prFgbIr1nkA4D-4LwrFlE8RZc,769
+ximilar/client/constants.py,sha256=beD-3kIQnkffVLTWrS6Y6H-e48FVRQtMLnBQht8tuAE,242
+ximilar/client/recognition.py,sha256=uXBAVWRjEZ_JC_NFaAhCqAwaJhGbq8AuuzOlvPrvP9Q,11673
+ximilar/client/search.py,sha256=4dfMimgy13p8YDWNSfdNv34xCPutzDMhuv6moRyylIE,1541
+ximilar/client/tagging.py,sha256=ZErM9SHJ8SsHQSoGqBEp-IpjUea_pjbrpl8D01D_Kc8,649
+ximilar_client-1.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ximilar_client-1.0.3.dist-info/METADATA,sha256=5J9pyXBABw08hdO9svTk6PeLZqFn5xgxudkq6GIy_N0,613
+ximilar_client-1.0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+ximilar_client-1.0.3.dist-info/namespace_packages.txt,sha256=wnxipKz8mlhGjfToHHiZbUaJCQglojKMOLoFeBES7xI,8
+ximilar_client-1.0.3.dist-info/top_level.txt,sha256=kKTZOtM0jXMDkom2UqpPI5bWreJEzfJzxdYeAB2obFI,14
+ximilar_client-1.0.3.dist-info/RECORD,,
