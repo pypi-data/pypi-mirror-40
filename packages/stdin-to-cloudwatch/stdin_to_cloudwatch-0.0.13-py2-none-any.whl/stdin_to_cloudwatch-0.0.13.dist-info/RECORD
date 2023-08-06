@@ -1,0 +1,12 @@
+stdin_to_cloudwatch/__init__.py,sha256=JPo_PBL877mqUqSTfFMMZ3aI-XTWi7tvcNryS6lUlsM,29
+stdin_to_cloudwatch/__main__.py,sha256=tR8Bl7FRZ-vHRqVBjwvxd236mwypyhuZaSiM6XYEryg,1772
+stdin_to_cloudwatch/input_adapters.py,sha256=MuI5iFLUdbfn4ckc3ggCwbSAVpxP2K7sR-Ga-l5tkT4,346
+stdin_to_cloudwatch/output_adapters.py,sha256=hOAXnNpb71YsVf1tjOxDQE0SgK2HNOMSYl2qILI0oQs,38
+stdin_to_cloudwatch/publish_json_metrics.py,sha256=CxG3eMT9gJp4UcL3DNBEMM1mxvVnxhFsB3ll1WP2vUo,1045
+stdin_to_cloudwatch/stream_consumer.py,sha256=pE7mnFB1DeUdhYmuYJLr6k5J1NkW9rEJSxziLmCvw8I,567
+stdin_to_cloudwatch-0.0.13.dist-info/LICENSE,sha256=RqpUUejOxfrUiPZhVZC0lm3NDPBPa2GFqGbVLQM2Pb4,1063
+stdin_to_cloudwatch-0.0.13.dist-info/METADATA,sha256=OEKPmG6VeT_khd9Z3A324hT_TvdNBYcq3cqs1qSdX10,2363
+stdin_to_cloudwatch-0.0.13.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+stdin_to_cloudwatch-0.0.13.dist-info/entry_points.txt,sha256=R6L-ns1e_mcVeL2_2-LWVoL9T_ONlLAnK_Yr8HtAcnI,74
+stdin_to_cloudwatch-0.0.13.dist-info/top_level.txt,sha256=g6iNqi2jV3OrpomzGDePAO0GYzvDwzuUlyyPT-_gpoI,20
+stdin_to_cloudwatch-0.0.13.dist-info/RECORD,,
