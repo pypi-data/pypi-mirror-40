@@ -1,0 +1,8 @@
+README.md
+setup.py
+compress-dataframe/__init__.py
+compress-dataframe/compress-df.py
+compress_dataframe.egg-info/PKG-INFO
+compress_dataframe.egg-info/SOURCES.txt
+compress_dataframe.egg-info/dependency_links.txt
+compress_dataframe.egg-info/top_level.txt
