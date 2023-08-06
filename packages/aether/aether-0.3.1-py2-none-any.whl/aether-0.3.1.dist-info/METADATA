@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: aether
+Version: 0.3.1
+Summary: Welcome to the Aether Platform
+Home-page: https://davidbernat.github.io/aether-user/html/index.html
+Author: David Bernat
+Author-email: david@starlight.ai
+License: UNKNOWN
+Keywords: satellite,imagery,remote sensing,starlight,platform,gis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: python-box
+Requires-Dist: google-cloud-bigquery
+Requires-Dist: google-cloud-firestore
+Requires-Dist: dill
+Requires-Dist: glymur
+Requires-Dist: flask-cors
+Requires-Dist: flask-wtf
+Requires-Dist: flask-login
+Requires-Dist: geocoder
+Requires-Dist: pytest
+Requires-Dist: scipy
+Requires-Dist: utm
+Requires-Dist: pyshp
+Requires-Dist: bjoern
+Requires-Dist: Flask
+Requires-Dist: Flask-RESTful
+Requires-Dist: Pillow
+Requires-Dist: Shapely
+Requires-Dist: dbfread
+Requires-Dist: enum34
+Requires-Dist: firebase-admin
+Requires-Dist: google-api-core
+Requires-Dist: numpy
+Requires-Dist: pycloudfn
+Requires-Dist: pyproj
+Requires-Dist: rasterio
+Requires-Dist: six
+Requires-Dist: tifffile
+Requires-Dist: sklearn
+Requires-Dist: tensorflow
+Requires-Dist: geojson
+Requires-Dist: fiona
+Requires-Dist: flask-caching
+Requires-Dist: RestrictedPython
+Requires-Dist: oauth2client
+
+# Welcome to Aether
+
+The Aether platform is a system of applications and utilities for developers to rapidly and easily build algorithms
+that use satellite and geospatial data. The Aether platform is accessible by REST API and python, but operates
+entirely in the cloud using deferred graphs. This allows developers to build and execute applications with processing
+abstracted away and minimal data transfer. An important consequence of this design choice is that the same algorithm
+code developers use during exploration can be repackaged and deployed as mobile or web applications. These
+applications are entirely portable, and can be published to users or other developers through a simple URL key.
+In that regard, the Aether platform is an SDK for satellite analytics and framework for mobile end user applications.
+
+The platform currently supports search of three publicly available Resources: The LandSat Archive (LandSat 4
+through 8), Sentinel-2, and the USDA Cropland Data Layer, a 30m map of the US categorizing the agricultural land use
+annually.
+
+The platform is designed to rapidly add new data layers, making them available through the same interface. Resources
+can be hosted by Aether, or made accessible via owner API, and restricted to a subset of users. The usage of each
+Resource and its geographic usage is tracked as well.
+
+The Aether platform is designed to allow user-developers to compile and publish their applications as easily as they
+prototype, often with the same code. This tutorial demonstrates a developer creating an application that generates
+an NDVI map from LandSat imagery for an arbitrary polygon, which does not need to be specified until runtime by
+the end user (or mobile device).
+
+
