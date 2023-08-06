@@ -1,0 +1,10 @@
+pytest
+pytest-qt
+pytest-mock
+pytest-faulthandler
+pytest-xdist
+pyinstaller
+tox
+bump2version
+flake8
+twine
