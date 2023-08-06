@@ -1,0 +1,6 @@
+
+[:platform_system == "Darwin"]
+py-mini-racer
+
+[:platform_system == "Linux"]
+py-mini-racer
