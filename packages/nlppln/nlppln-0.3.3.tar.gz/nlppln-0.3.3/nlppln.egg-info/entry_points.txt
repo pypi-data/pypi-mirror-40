@@ -1,0 +1,3 @@
+[console_scripts]
+nlppln_copy_cwl = nlppln.copycwl:main
+

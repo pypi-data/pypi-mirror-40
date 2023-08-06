@@ -1,0 +1,6 @@
+scipy
+pandas
+scriptcwl>=0.8.0
+lxml
+beautifulsoup4
+sklearn
