@@ -1,0 +1,37 @@
+Metadata-Version: 1.0
+Name: Giraffe2D
+Version: 1.1.12
+Summary: This Is A PyGame Powered And OpenGL Powered Game Engine
+Home-page: https://github.com/CrypticCoding/Girrafee2D
+Author: Saugat Siddiky Jarif
+Author-email: saugatjarif@gmail.com
+License: MIT
+Description: Usage
+        --------
+        
+        Inherits From "App" Class
+        
+        	Public Methods:
+        	-------------
+        	    RenderWindow-(width, height) // Definition: Renders A Window In The Screen
+        	    
+        	    SetTitle(string) // Definition: Sets The Title
+        	    
+                    SetAssetFolder() // Definition: Sets Your Default Folder
+        	    
+                    Update() // Definition: Updates The Game
+        	    
+                    FPS(value) // Definition: Sets Target FPS To The Value
+        	    
+                    Fill(color) // Definition: Sets RGB Value To The Background Color
+        	    
+                    SetIcon(path) // Definition: Sets Icon To Your Game Window
+        	    
+                    quit() // Definition: Quits The Game
+        
+        
+        
+        
+        Inherits From "Event" Class
+        	
+Platform: UNKNOWN
