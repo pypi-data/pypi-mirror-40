@@ -1,0 +1,15 @@
+sql_connectors/__init__.py,sha256=wqKaXciWwzjKYhCuzWWJyjlj42876J278quqv-0TwV8,174
+sql_connectors/_version.py,sha256=mcG8QxlZELaqKUbGqrH6xXSRY-1i7guUCH1sSPD08Jk,114
+sql_connectors/client.py,sha256=HEuM4ztkIm1EjbX-FaaTU89WAaczoJ99MwOsLCyhBAk,6965
+sql_connectors/config.py,sha256=ku4rruq2XEOeki0SMSiHlGsA26VzdREEmN3qZVsN7N0,920
+sql_connectors/config_util.py,sha256=RMRMjlvZ334BhaziHYKmq4nwUMGZtt7oJGdqp3skT38,1692
+sql_connectors/connections.py,sha256=ZmaeqWO_w1E4cIX93TP5Cy83Ezx0B3nnhpjg8XTUzWk,233
+sql_connectors/exceptions.py,sha256=3PGwj9fb1Ds0eihzt4xrtoej92DFqiSTZRX_BwzQjxE,210
+sql_connectors/storage.py,sha256=53Z8okQsaR0iEAU30aLetvsWSglSgS0JiGd4mfybBpQ,8843
+sql_connectors/util.py,sha256=X1ZZWTNMlKbwW5_wirF7emC0HP2HArW7whyu9zLZLMg,1712
+sql_connectors-1.0.0.dist-info/DESCRIPTION.rst,sha256=b12X70jE2rOyUjra84bl-KBNXc2FGVcE9B2xkd9CCc0,7781
+sql_connectors-1.0.0.dist-info/METADATA,sha256=yV9gkDMFQTskkswXw9So7keQ8J0o6WVYk1n9NHf5Mz0,9284
+sql_connectors-1.0.0.dist-info/RECORD,,
+sql_connectors-1.0.0.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+sql_connectors-1.0.0.dist-info/metadata.json,sha256=FVjbJVykmgRSlXWVsP7wYYmZGcEo1m60nAaEcpMUZLk,1389
+sql_connectors-1.0.0.dist-info/top_level.txt,sha256=qHsU_zC-FGUcl8ppnVXwiQsaXcotUrmYHumsUqn5AVA,15
