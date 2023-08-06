@@ -1,0 +1,11 @@
+README.md
+setup.py
+youdao_dict/__init__.py
+youdao_dict/utils.py
+youdao_dict/youdao.py
+youdao_dict.egg-info/PKG-INFO
+youdao_dict.egg-info/SOURCES.txt
+youdao_dict.egg-info/dependency_links.txt
+youdao_dict.egg-info/entry_points.txt
+youdao_dict.egg-info/requires.txt
+youdao_dict.egg-info/top_level.txt
