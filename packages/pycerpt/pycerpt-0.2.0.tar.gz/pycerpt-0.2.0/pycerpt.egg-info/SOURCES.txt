@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+test.md
+pycerpt/__init__.py
+pycerpt/cli.py
+pycerpt/excerpt.py
+pycerpt/extractor.py
+pycerpt/pdfgen.py
+pycerpt.egg-info/PKG-INFO
+pycerpt.egg-info/SOURCES.txt
+pycerpt.egg-info/dependency_links.txt
+pycerpt.egg-info/entry_points.txt
+pycerpt.egg-info/requires.txt
+pycerpt.egg-info/top_level.txt
