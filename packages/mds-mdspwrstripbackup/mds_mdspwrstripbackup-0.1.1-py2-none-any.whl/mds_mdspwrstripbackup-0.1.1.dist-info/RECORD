@@ -1,0 +1,13 @@
+mds_mdspwrstripbackup-0.1.1.dist-info/DESCRIPTION.rst,sha256=Oj-FYnHYl7yNaqCFncbXOs_x-XtvPlEEx3H65AhfHD8,308
+mds_mdspwrstripbackup-0.1.1.dist-info/METADATA,sha256=9WtcEutsfu-ypI7_AosiLrSudXeN3uF2msWcOXmeu5o,1218
+mds_mdspwrstripbackup-0.1.1.dist-info/RECORD,,
+mds_mdspwrstripbackup-0.1.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+mds_mdspwrstripbackup-0.1.1.dist-info/metadata.json,sha256=naMJOAt_GOG4uFv13Gw6x6AmxEU9uxBaXiN2XeNqzPE,1066
+mds_mdspwrstripbackup-0.1.1.dist-info/top_level.txt,sha256=vRBG9rkR3F1_A1FfUcvwe_wfIZrDDUv_L_eF96xRfh8,18
+mdspwrstripbackup/__init__.py,sha256=xVtVsNWcevnemSVDSsi-DluFEnKnK5v99uC8zab1nDg,91
+mdspwrstripbackup/backuppwrstrip.py,sha256=aDq-KoyMQPO5L3zT_R2AXBjW8aGD3MCiKWsR40_UQmA,68070
+mdspwrstripbackup/epccontrol2.pl,sha256=0GNcLWq8xodO8TZcyOOFxGC7ABa8A-njZgVni_9Y5pk,9725
+mdspwrstripbackup/gude.py,sha256=SYlwtTCGVf0yN2e4o2DxIe_pvNCk7w6AHtHDMmWPfuw,5899
+mdspwrstripbackup/example/bk_read_konfig.py,sha256=MyyDtiPMpp0nxbLYtfcUJCgajmWUk-LIx0ixFVIW0UU,245
+mdspwrstripbackup/example/bk_run_backup.py,sha256=VANjtFYULM1B9LfyBE2Akws70Dj8F4bz0t8-5QOdMsg,273
+mdspwrstripbackup/example/bk_write_konfig.py,sha256=6bf_ZQYD7vZlHnNdGtUVXgxZBNYOEJYYWAc1gxX3HJU,677
