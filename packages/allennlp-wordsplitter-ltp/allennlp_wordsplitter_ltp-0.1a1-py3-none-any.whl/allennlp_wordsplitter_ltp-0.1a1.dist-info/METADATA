@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: allennlp-wordsplitter-ltp
+Version: 0.1a1
+Summary: LTP word splitter for AllenNLP
+Home-page: https://github.com/tanbro/allennlp_wordsplitter_ltp
+Author: liu xue yan
+Author-email: liu_xue_yan@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: allennlp (<0.9,>=0.7)
+Requires-Dist: requests
+Requires-Dist: overrides
+Provides-Extra: ltp
+Requires-Dist: pyltp ; extra == 'ltp'
+
+# allennlp_wordsplitter_ltpnlp
+
+Add a [LTP][] `WordSplitter` into [AllenNLP][]'s tokenizers.
+
+## config
+
+```js
+{
+  "dataset_reader": {
+
+    // ... ...
+
+    "tokenizer": {
+      "word_splitter": {
+        "type": "ltp_remote",
+        "url": "http://10.1.1.174:12345/ltp"
+      }
+    },
+
+    // ... ...
+
+  },
+
+  // ... ...
+
+}
+```
+
+## CLI
+
+```sh
+allennlp train --include-package allennlp_wordsplitter_ltp -s /your/output/dir /your/training/config/file
+```
+
+------
+[AllenNLP]: https://allennlp.org/
+[LTP]: https://github.com/HIT-SCIR/ltp
+
+
