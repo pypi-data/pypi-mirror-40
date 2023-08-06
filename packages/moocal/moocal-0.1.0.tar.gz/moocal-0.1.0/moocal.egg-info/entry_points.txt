@@ -1,0 +1,3 @@
+[console_scripts]
+moocal = moocal:main
+
