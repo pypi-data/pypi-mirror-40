@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: jupyterlab-zip
+Version: 0.1.0
+Summary: Quickly open a file in JupyterLab by typing part of its name
+Home-page: https://git.corp.adobe.com/adobesensei/jupyterlab-zip
+Author: SChatter
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: tornado
+Requires-Dist: requests
+Requires-Dist: six
+Requires-Dist: jupyterlab
+Requires-Dist: notebook (<6.0a,>=5.2)
+Requires-Dist: flake8
+Requires-Dist: twine
+Requires-Dist: nodejs
+
+UNKNOWN
+
+
