@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: azureml-contrib-explain-model
+Version: 1.0.8.2
+Summary: UNKNOWN
+Home-page: https://docs.microsoft.com/en-us/azure/machine-learning/service/
+Author: Microsoft Corp
+License: Proprietary https://aka.ms/azureml-preview-sdk-license 
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: shap (<=0.26.0,>=0.20.0)
+Requires-Dist: azureml-explain-model (==1.0.8.*)
+Requires-Dist: lime
+
+
+
+
+
