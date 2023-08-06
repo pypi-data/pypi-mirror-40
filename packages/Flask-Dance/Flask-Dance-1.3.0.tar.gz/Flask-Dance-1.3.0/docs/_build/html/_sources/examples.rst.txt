@@ -1,0 +1,34 @@
+Projects Using Flask-Dance
+==========================
+
+If you want to see how others use Flask-Dance, check out some of these
+projects.
+
+openedx-webhooks
+----------------
+:source: `@edx/openedx-webhooks on GitHub <https://github.com/edx/openedx-webhooks>`_
+:providers: GitHub, JIRA
+
+The project that created Flask-Dance. This project uses Flask-Dance
+to synchronize events between GitHub and JIRA.
+
+flask-dance-github
+------------------
+:source: `@singingwolfboy/flask-dance-github on GitHub <https://github.com/singingwolfboy/flask-dance-github>`_
+:providers: GitHub
+
+A deployable example of using Flask Dance on GitHub.
+
+flask-dance-google
+------------------
+:source: `@singingwolfboy/flask-dance-google on GitHub <https://github.com/singingwolfboy/flask-dance-google>`_
+:providers: Google
+
+A deployable example of using Flask Dance on Google.
+
+flask-dance-twitter
+-------------------
+:source: `@singingwolfboy/flask-dance-twitter on GitHub <https://github.com/singingwolfboy/flask-dance-twitter>`_
+:providers: Twitter
+
+A deployable example of using Flask Dance on Twitter.
