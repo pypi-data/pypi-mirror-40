@@ -1,0 +1,10 @@
+README.md
+setup.py
+Chromosome/__init__.py
+Chromosome/darwin.py
+Chromosome/genome.py
+Chromosome/target.py
+Chromosome.egg-info/PKG-INFO
+Chromosome.egg-info/SOURCES.txt
+Chromosome.egg-info/dependency_links.txt
+Chromosome.egg-info/top_level.txt
