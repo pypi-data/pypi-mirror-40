@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: axial
+Version: 0.1.10
+Summary: Interactive Visualizations for High Dimensional Genomics Data
+Home-page: https://github.com/zfrenchee/axial
+Author: zfrenchee
+Author-email: alex@lenail.org
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >3.5.2
