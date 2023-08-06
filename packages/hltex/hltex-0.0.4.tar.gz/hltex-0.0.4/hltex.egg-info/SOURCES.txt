@@ -1,0 +1,10 @@
+setup.py
+hltex/__init__.py
+hltex/cli.py
+hltex/translator.py
+hltex.egg-info/PKG-INFO
+hltex.egg-info/SOURCES.txt
+hltex.egg-info/dependency_links.txt
+hltex.egg-info/entry_points.txt
+hltex.egg-info/requires.txt
+hltex.egg-info/top_level.txt
