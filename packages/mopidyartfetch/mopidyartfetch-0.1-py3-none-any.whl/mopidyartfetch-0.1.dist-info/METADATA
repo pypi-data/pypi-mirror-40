@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mopidyartfetch
+Version: 0.1
+Summary: Fetch album art for various mopidy uri types
+Home-page: http://github.com/sharktamer/mopidy-art-fetch
+Author: Shane Donohoe
+Author-email: donohoe.shane@gmail.com
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: feedparser
+
+# mopidyartfetch
+
+
