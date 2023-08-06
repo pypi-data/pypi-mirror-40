@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: samsung-mdc
+Version: 0.1.0
+Summary: Implementation of the Multiple Display Control Protocol.
+Home-page: https://git.vpgrp.io/noc/python-mdc
+Author: Damien PLENARD
+Author-email: dplenard@vente-privee.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Multimedia :: Video :: Display
+
+Implementation of the Samsung Multiple Display Control
+Protocol through Ethernet/Wireless. Right now, this implementation is
+tested only on Samsung DM-E Series and specifically on the Samsung
+LH55DMEPLGC/EN.
+
