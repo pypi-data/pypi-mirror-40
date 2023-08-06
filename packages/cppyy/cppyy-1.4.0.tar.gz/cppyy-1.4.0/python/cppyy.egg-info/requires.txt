@@ -1,0 +1,3 @@
+cppyy-cling
+cppyy-backend
+CPyCppyy>=1.5.0
