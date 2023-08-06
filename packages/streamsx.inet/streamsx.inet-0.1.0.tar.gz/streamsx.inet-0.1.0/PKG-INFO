@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: streamsx.inet
+Version: 0.1.0
+Summary: IBM Streams Internet protocol integration
+Home-page: https://github.com/IBMStreams/streamsx.inet
+Author: IBM Streams @ github.com
+Author-email: hegermar@de.ibm.com
+License: Apache License - Version 2.0
+Description: Overview
+        ========
+        
+        Provides functions to run HTTP requests.
+        This package exposes the `com.ibm.streamsx.inet` toolkit as Python methods.
+        
+        This package is compatible with Streaming Analytics service on IBM Cloud:
+        
+        * `IBM Streaming Analytics <https://www.ibm.com/cloud/streaming-analytics>`_
+        
+        
+        Sample
+        ======
+        
+        A simple example of a Streams application that emits http requests::
+        
+            from streamsx.topology.topology import *
+            from streamsx.topology.schema import CommonSchema, StreamSchema
+            from streamsx.topology.context import submit
+            import streamsx.inet as inet
+        
+            topo = Topology()
+            s = topo.source(['http://httpbin.org/get']).as_string()
+            result_http_get = inet.request_get(s)
+            result_http_get.print()
+        
+            submit('STREAMING_ANALYTICS_SERVICE', topo)
+        
+        
+        Documentation
+        =============
+        
+        * `streamsx.inet package documentation <http://streamsxinet.readthedocs.io/en/pypackage/>`_
+        
+Keywords: streams,ibmstreams,streaming,analytics,streaming-analytics,http,inet
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
