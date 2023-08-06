@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: chromeless
+Version: 0.1.2
+Summary: AWS lambda unit which execute given code on selenium
+Home-page: https://github.com/umihico/chromeless
+Author: umihico
+Author-email: umihico@users.noreply.github.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
