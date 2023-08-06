@@ -1,0 +1,3 @@
+[console_scripts]
+python-project-starter = python_project_starter.__main__:main
+
