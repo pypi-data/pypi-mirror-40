@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hack12306
+Version: 0.0.4
+Summary: Hack 12306
+Home-page: https://github.com/hack12306/hack12306
+Author: Meng yangyang
+Author-email: mengyy_linux@163.com
+License: MIT
+Description: # hack12306
+        12306 订票 Python SDK
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
