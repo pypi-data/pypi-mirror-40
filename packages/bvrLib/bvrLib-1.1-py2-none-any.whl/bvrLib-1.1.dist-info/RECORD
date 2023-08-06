@@ -1,0 +1,13 @@
+bvrLib/__init__.py,sha256=wvz7HSA6JcH3Av-6DBZw7K3CwgFjU72nfRXOk1wgdW8,55
+bvrLib/api.py,sha256=heoMOfcJfuUS0jwL9-pgRFzsv9QbFXze4NxOLCaAY8E,3496
+bvrLib/cronProfile.py,sha256=2WON0pXA3QFeT4LHmTed65uqrdVbz-A_tXP_tC7DIOI,559
+bvrLib/gpu-efficiency-profiler.py,sha256=w8wD19A4Ds2fCbU7Eu0h6GB3ktceh0YFwmKzywNU6Xg,2048
+bvrLib/minerProfile.py,sha256=iyhsCW-sIFxgl7BDP568jprp4Fr7nZcxvpHXiYwOhRY,9211
+bvrLib/powerProfile.py,sha256=o6XBPo2pGDBz5T_WAEV2kF5gyHgXdbjQxhBu4fSikyM,4010
+bvrLib/set-power.py,sha256=-_sp9jgG7Tb8vhVuxEcllJT8Q85YviAj5hh1EAbzJrI,13253
+bvrLib/start.mining.py,sha256=1hA1ejS_Q5wGu-FFJEbSczqIKgg2jxYrvXDFgTDwFC0,13195
+bvrLib/userProfile.py,sha256=lkg7Ws7x2dfD8-7OkMdCD4KmjMxfe3-9O-27c7qTF9E,2778
+bvrLib-1.1.dist-info/METADATA,sha256=xjv5t1kJGH72xX1MH2L3o8SIEYmgo74Y8RcisUPVgnY,254
+bvrLib-1.1.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+bvrLib-1.1.dist-info/top_level.txt,sha256=Eqd9Noo5Qk0aC66VKofBIfmSiYMPurUrtRHWk6bVvcA,7
+bvrLib-1.1.dist-info/RECORD,,
