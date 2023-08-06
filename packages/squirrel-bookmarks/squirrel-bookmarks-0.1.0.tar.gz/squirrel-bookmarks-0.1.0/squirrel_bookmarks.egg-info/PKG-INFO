@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: squirrel-bookmarks
+Version: 0.1.0
+Summary: Bookmark system between development branches.
+Home-page: https://github.com/johnlinp/squirrel-bookmarks
+Author: johnlinp
+Author-email: johnlinp@gmail.com
+License: New BSD License
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5

@@ -1,0 +1,8 @@
+README.md
+setup.py
+bin/squirrel
+etc/bash_completion.d/sq
+squirrel_bookmarks.egg-info/PKG-INFO
+squirrel_bookmarks.egg-info/SOURCES.txt
+squirrel_bookmarks.egg-info/dependency_links.txt
+squirrel_bookmarks.egg-info/top_level.txt
