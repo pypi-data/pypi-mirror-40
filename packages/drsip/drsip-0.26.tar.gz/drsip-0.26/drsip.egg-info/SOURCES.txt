@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requires.txt
+setup.py
+bin/drsip
+drsip/Cn_symm_criterion.py
+drsip/__init__.py
+drsip/dist_restraints_filter.py
+drsip/save_load.py
+drsip/struct_clustering.py
+drsip/tilt_angle_criterion.py
+drsip.egg-info/PKG-INFO
+drsip.egg-info/SOURCES.txt
+drsip.egg-info/dependency_links.txt
+drsip.egg-info/requires.txt
+drsip.egg-info/top_level.txt
