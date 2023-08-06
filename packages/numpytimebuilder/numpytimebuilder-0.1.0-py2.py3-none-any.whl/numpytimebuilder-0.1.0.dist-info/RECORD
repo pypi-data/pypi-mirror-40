@@ -1,0 +1,11 @@
+numpytimebuilder/__init__.py,sha256=NWiO-mAIDn3eq6TzxjrcNP6QOS2humL4l55YSEyaStE,11729
+numpytimebuilder/compat.py,sha256=1AUeXPoNdp4eW_FN0zNyqVgBwGU7-g4QbWTIJbSfdZc,299
+numpytimebuilder/constants.py,sha256=ft7DHfsuvKCHPbMkE_yY3R1NbGmWj0lhUZcybG1pxbw,766
+numpytimebuilder/util.py,sha256=nNnP_vjjGFURrUGenCNDRqKXrVPl7vL-fEe1ykCkMdk,5552
+numpytimebuilder/tests/__init__.py,sha256=fTze-wZVwlWm5PQ3JwVFQB4_sUA8VYc5xAUlpuJXyF8,209
+numpytimebuilder/tests/test_init.py,sha256=_wVUySBnkF1tb12rxkxvRXHFDsW_eA43ueUCxcouApk,37387
+numpytimebuilder/tests/test_util.py,sha256=PpTEu8piB2oUqFFL-z1Ljh7QjpuEOg3FynPr7-sz6Xw,13549
+numpytimebuilder-0.1.0.dist-info/METADATA,sha256=zIbmLBSzp3Y4zm0Y2ESgdvO28VAyinSB5cjLPc8ldUA,13970
+numpytimebuilder-0.1.0.dist-info/RECORD,,
+numpytimebuilder-0.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+numpytimebuilder-0.1.0.dist-info/top_level.txt,sha256=EnPY-twGFauIPIXL8_hbaCIovtoAOti5Ho1IPKzaH4Y,17
