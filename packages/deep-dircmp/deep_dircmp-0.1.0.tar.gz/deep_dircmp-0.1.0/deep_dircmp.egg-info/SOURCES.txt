@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+deep_dircmp/__init__.py
+deep_dircmp.egg-info/PKG-INFO
+deep_dircmp.egg-info/SOURCES.txt
+deep_dircmp.egg-info/dependency_links.txt
+deep_dircmp.egg-info/top_level.txt
