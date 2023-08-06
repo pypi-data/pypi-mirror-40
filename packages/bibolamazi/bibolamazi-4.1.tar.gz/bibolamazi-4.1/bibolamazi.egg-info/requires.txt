@@ -1,0 +1,6 @@
+pybtex>=0.19
+arxiv2bib>=1.0.2
+pylatexenc>=1.4
+future
+bs4
+requests
