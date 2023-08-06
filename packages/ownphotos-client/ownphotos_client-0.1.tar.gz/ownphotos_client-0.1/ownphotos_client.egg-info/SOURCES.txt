@@ -1,0 +1,11 @@
+README.rst
+setup.py
+ownphotos_client/__init__.py
+ownphotos_client/ownphotos_client.py
+ownphotos_client.egg-info/PKG-INFO
+ownphotos_client.egg-info/SOURCES.txt
+ownphotos_client.egg-info/dependency_links.txt
+ownphotos_client.egg-info/entry_points.txt
+ownphotos_client.egg-info/not-zip-safe
+ownphotos_client.egg-info/requires.txt
+ownphotos_client.egg-info/top_level.txt
