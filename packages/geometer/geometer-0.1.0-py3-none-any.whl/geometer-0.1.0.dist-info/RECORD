@@ -1,0 +1,14 @@
+geometer/__init__.py,sha256=u-PexK69f7ZQnSF7KtTy_spXnXQ9BlPqcNngS7bCVt8,396
+geometer/__version__.py,sha256=8gT9kpuJexiYw5nZmD-KxYZzob4bI_XWtMTSpHdsooY,64
+geometer/base.py,sha256=hVssIihB5shCEFn4YbA6R2GaA-Bf63IzF-Fmsi4bOXg,7198
+geometer/curve.py,sha256=TS5EApyv0MvILMab90e8VtnZ74IMmPY0-vuz4bd4I2I,9401
+geometer/exceptions.py,sha256=KH2uLc4htoQLZvC8Aw7r2vac8K2vxGcHwN3rUVwbD6s,667
+geometer/operators.py,sha256=myLMgYphk0lACZqeMRE8D8XrG3WrckVhX4r5QcRbb7k,6888
+geometer/point.py,sha256=YlokCVrV19Y4Ier45ZBbZC7rdNi0KEhGDFRTvj8sEkw,10124
+geometer/transformation.py,sha256=QelC6q7zwkOk7LwuSE76vkSHkMx2NpMl8pT9WN1AtY8,1732
+geometer/utils/__init__.py,sha256=UdcbV6538KMlmt1bMvSVR6Bdi5z39af5uiS39u8_8To,69
+geometer/utils/polynomial.py,sha256=kxwESFHqLkFS-HB4XSoyxVWIbESzACFd6MP5149eiEE,1091
+geometer-0.1.0.dist-info/METADATA,sha256=sK9NRDjWnqlM8OdhdVQz0UJHcp7h16qBo0Tz-D67xu8,4318
+geometer-0.1.0.dist-info/RECORD,,
+geometer-0.1.0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+geometer-0.1.0.dist-info/top_level.txt,sha256=EjzTgyd1wsoEQla0ntwSYnxjgsU5Mcrui_hZbLxC22Q,9
