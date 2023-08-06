@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: amara3.iri
+Version: 3.0.0
+Summary: Module for handling Internationalized Resource Identifiers (IRIs). Core of the Amara3 project, which offers a variety of data processing tools.
+Home-page: https://github.com/uogbuji/amara3-xml
+Author: Uche Ogbuji
+Author-email: uche@ogbuji.net
+License: License :: OSI Approved :: Apache Software License
+Description: Core of the Amara3 project, which provides a variety of data processing tools. Core is mostly a library for handling Internationalized Resource Identifiers (IRIs)
+        
+Keywords: web,data,url,uri,iri
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP
+Description-Content-Type: text/markdown
