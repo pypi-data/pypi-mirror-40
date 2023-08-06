@@ -1,0 +1,341 @@
+Metadata-Version: 2.1
+Name: MishMash
+Version: 0.3b12
+Summary: Music database and web interface.
+Home-page: https://github.com/nicfit/MishMash
+Author: Travis Shirk
+Author-email: travis@pobox.com
+License: GNU GPL v3.0
+Download-URL: https://github.com/nicfit/mishmash/releases/downloads/v0.3b12/MishMash-0.3b12.tar.gz
+Description: ========
+        MishMash
+        ========
+        
+        |Build Status| |License| |PyPI| |Python versions| |Coverage| |Status|
+        
+        Music database and web interface.
+        
+        Features
+        --------
+        
+        * MishMash is a music database using `Python`_ and `SQLAlchemy`_.
+        * A command-line tool for building and managing a music database.
+        * Web browser interface (using `Pyramid`_) for browsing your music library.
+        * Uses `eyeD3`_ for reading MP3s and ID3 metadata.
+        * Support and tested with Python 3.6 and Postgresql. SQLite is periodically
+          tested with, but future features may not be supported (e.g. full text
+          search).
+        * Free software: GNU GPL v3.0 license
+        
+        .. _Python: https://www.python.org/
+        .. _SQLAlchemy: http://www.sqlalchemy.org/
+        .. _eyeD3: http://eyeD3.nicfit.net/
+        .. _Pyramid: https://trypyramid.com/
+        
+        Getting Started
+        ----------------
+        ::
+        
+            $ mishmash info
+            /\/\_____  .__       .__        _____                .__   /\/\
+            \(\(     \ |__| _____|  |__    /     \ _____    _____|  |__\(\(
+              /  \ /  \|  |/  ___/  |  \  /  \ /  \\__  \  /  ___/  |  \
+             /    Y    \  |\___ \|   Y  \/    Y    \/ __ \_\___ \|   Y  \
+             \____|__  /__/____  >___|  /\____|__  (____  /____  >___|  /
+                     \/        \/     \/         \/     \/     \/     \/
+        
+            Version              : 0.3
+            Database URL         : sqlite:////~/mishmash.db
+            Database version     : 0.3
+            Last sync            : Never
+            Configuration files  : <default>
+        
+        
+            === Music library ===
+            0 music tracks
+            0 music artists
+            0 music albums
+            0 music tags
+        
+        
+        Surprise, you now have an empty sqlite database in the current directory.
+        Let's leave it here for now, it can be located elsewhere or use a different
+        database using command line arguments and/or environment variables. Pretty
+        useless without any music.::
+        
+            $ mishmash sync ~/Music/Melvins
+            Syncing library 'Music': paths=['~/Music/Melvins/']
+            Syncing directory: ~/Music/Melvins/
+            Syncing directory: ~/Music/Melvins/1984 - Mangled Demos
+            Adding artist: Melvins
+            Syncing directory: ~/Music/Melvins/1986 - 10 Songs
+            Adding album: 10 Songs
+            Adding track: ~/Music/Melvins/1986 - 10 Songs/Melvins - 01 - Easy As It Was.mp3
+            Updating album: 10 Songs
+            ...
+            == Library 'Music' sync'd [ 8.73s time (45.9 files/s) ] ==
+            401 files sync'd
+            401 tracks added
+            0 tracks modified
+            0 orphaned tracks deleted
+            0 orphaned artists deleted
+            0 orphaned albums deleted
+        
+        Use your database as you wish. Browse it with `mishmash web`, or use one of its
+        management commands.
+        
+        Check out the `Unsonic`_ project for streaming capabilities.
+        
+        
+        .. _Unsonic: https://github.com/redshodan/unsonic
+        
+        .. |Build Status| image:: https://travis-ci.org/nicfit/MishMash.svg?branch=master
+           :target: https://travis-ci.org/nicfit/MishMash
+           :alt: Build Status
+        .. |PyPI| image:: https://img.shields.io/pypi/v/MishMash.svg
+           :target: https://pypi.python.org/pypi/MishMash/
+           :alt: Latest Version
+        .. |Python versions| image:: https://img.shields.io/pypi/pyversions/MishMash.svg
+           :target: https://pypi.python.org/pypi/MishMash/
+           :alt: Supported Python versions
+        .. |License| image:: https://img.shields.io/pypi/l/MishMash.svg
+           :target: https://pypi.python.org/pypi/MishMash/
+           :alt: License
+        .. |Status| image:: https://img.shields.io/pypi/status/MishMash.svg
+           :target: https://pypi.python.org/pypi/MishMash/
+           :alt: Project Status
+        .. |Coverage| image:: https://coveralls.io/repos/nicfit/MishMash/badge.svg
+           :target: https://coveralls.io/r/nicfit/MishMash
+           :alt: Coverage Status
+        
+        
+        
+        Release History
+        ===============
+        
+        
+        
+        v0.3b12 (2019-01-12)
+        ------------------------
+        
+        New
+        ~~~
+        - `mishmash web`: Image HTTP cache headers
+        - `mishmash web`: Added --port arg.
+        - Added gevent and gunicorn to `web` requirements (and docker image) to allow
+          for SSL etc.
+        
+        Changes
+        ~~~~~~~
+        - Default sqlite database is now $CWD/mishmash.db.
+        
+        Fix
+        ~~~
+        - Pyaml >= 4.2b1 for security alert.
+        - Don't override web port from config file.
+        
+        
+        v0.3b11 (2018-12-16)
+        ------------------------
+        - Run unsonic from `mishmash server`
+        - Venv-less docker.
+        
+        
+        v0.3b10 (2018-12-15)
+        ------------------------
+        
+        New
+        ~~~~~
+        - `mishmash server`
+        - Bootstrap4 update.
+        
+        Fix
+        ~~~
+        - Fix album sorts for missing dates.
+        - Various artist support.
+        
+        
+        v0.3b9 (2018-12-15)
+        ------------------------
+        
+        Fix
+        ~~~
+        - Fix album sorts for missing dates.
+        - Various artist support.
+        
+        
+        v0.3b9 (2018-12-02)
+        ------------------------
+        
+        New
+        ~~~
+        - Split-artist docs.
+        - `mishmash web` albums view.
+        - `mishmash web` artist filters.
+        
+        Fix
+        ~~~
+        - Database URL obfuscation is more reliable.
+        
+        
+        v0.3b8 (2018-11-28)
+        ------------------------
+        
+        New
+        ~~~
+        - Added `MishMash(ConfigClass=clazz)` keyword argument.
+        
+        v0.3b7 (2018-06-18)
+        ------------------------
+        
+        New
+        ~~~
+        - More multi-lib supoort (merge, split, info)
+        
+        Fix
+        ~~~
+        - Return resolved album when a sync does not occur.
+        - Recent inotify uses Unicode natively, remove conversions to bytes.
+        - Pick up new image files when rescanning and no audio files changed.
+        
+        Other
+        ~~~~~
+        - Run make test targets thru tox. Travis-CI will do this in a future
+          commit.
+        
+        
+        v0.3b6 (2018-02-18)
+        --------------------
+        
+        New
+        ~~~
+        - Mishmash info -L/--library and --artists.
+        
+        Changes
+        ~~~~~~~
+        - Reduced sync stats precision.
+        - Nicfit.py 0.8 Command changes.
+        
+        Fix
+        ~~~
+        - Fix container fail to start issue (#242) <me@benschumacher.com>
+        - Added check for osx to avoid monitor mode (#260) <redshodan@gmail.com>
+        - Nicfit.py 0.8 config_env_var changes.
+        - Removed no-arg (nicfit.py) main test, test is done upstream.
+        
+        
+        v0.3b5 (2017-11-26) : I Need a Miracle
+        ---------------------------------------
+        
+        New
+        ~~~
+        - Mishmash_cmd session-scoped fixture.
+        - Library 'excludes' option. Fixes #202.
+        - orm length limit constants
+        - More ORM limit tests, truncation, validation.
+        - Use mishmash.util.safeDbUrl for displayed/logged password obfuscation.
+        - Add Track.metadata_format and Track.METADATA_FORMATS.
+        
+        Changes
+        ~~~~~~~
+        - Moved VARIOUS_TYPE detection info _albumTypeHint.
+          less noise about lp->various conversion
+        - Close DB connections after commands.
+        - Better logging for debugging VARIOUS_TYPE coersion.
+        - Moved limit constants to each ORM class.
+        - Docker updates.
+        
+        Fix
+        ~~~
+        - PServeCommand requires .ini extension.
+        - Show used config files.
+        - Some (not all) truncation for colomn limits and \x00 handling.
+        - Make docker-publish.
+        - Dup config section error.
+        
+        
+        v0.3b4 (2017-05-14) : Triumph Of Death
+        -----------------------------------------
+        
+        New
+        ~~~
+        - Init(scope=False), for wrapped SessionMaker with
+          sqlalchemy.orm.scoped_session.
+        - Mishmash.web is optional, and packaged as extra [web] install.
+        - Mishmash.VARIOUS_ARTISTS_NAME == gettext("Various Artists")
+        
+        Changes
+        ~~~~~~~
+        - Removed various artist config and started gettext.
+        
+        Fix
+        ~~~
+        - Mishmash.web working again.
+        
+        Other
+        ~~~~~
+        - Update eyed3 from 0.8.0b1 to 0.8 (#108) <github-bot@pyup.io>
+        - Pin pyramid to latest version 1.8.3 (#94) <github-bot@pyup.io>
+        
+        
+        v0.3b3 (2017-04-09) : Prayers for Rain
+        ---------------------------------------
+        
+        New
+        ~~~
+        - UTC sync times and per lib last_sync. Fixes #6, #7.
+        - Db test fixtures, etc.
+        
+        Changes
+        ~~~~~~~
+        - mishmash.data.init now returns the 3-tuple (engine, SessionMaker, connection).
+          Previously a 2-tuple, sans connection, was returned.
+          The new mishmash.database.DatebaseInfo namedtuple is the actual return type,
+          if you prefer not to unpack the return value.
+        
+        v0.3b2 (2017-03-12) : Nine Patriotic Hymns For Children
+        -------------------------------------------------------
+        
+        Fix
+        ~~~
+        - Protect against not being the first to call
+          multiprocessing.set_start_method.
+        
+        
+        v0.3b1 (2017-03-12) : Nine Patriotic Hymns For Children
+        -------------------------------------------------------
+        
+        New
+        ~~~
+        - Mismash sync --monitor (using inotify)
+        - Test beginnings.
+        
+        Changes
+        ~~~~~~~
+        - Label_id renamed tag_id. Fixes #65.
+        - Mishmash.database.init accepts the DB URL as its first arguments, NO
+          LONGER a Config object.
+        
+        Fix
+        ~~~
+        - Postgres service on Travis-CI.
+        - Restored gitchangelog fork.
+        
+        
+        v0.3b0 (2017-02-26)
+        -------------------------
+        
+        * Initial release
+        
+Keywords: music,database
+Platform: Any
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 5 - Production/Stable
+Provides-Extra: postgres
+Provides-Extra: web

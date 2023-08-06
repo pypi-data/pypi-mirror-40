@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='${request.locale_name}'
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="python music web application" />
+  <meta name="description" content="music library" />
+
+  <!-- bootstrap begin -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- bootstrap end -->
+
+  <title>${layout.page_title}</title>
+
+  <link href="${request.static_url('mishmash.web:static/css/mishmash.css')}"
+        rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    ${panel('navbar')}
+  </header>
+
+  <main role="main" class="container-fluid">
+    <metal:content define-slot="content"/>
+  </main>
+
+  <footer class="footer">
+    ${panel('footer')}
+  </footer>
+</body>
+</html>
+<!-- vim: set ai sw=2: -->
