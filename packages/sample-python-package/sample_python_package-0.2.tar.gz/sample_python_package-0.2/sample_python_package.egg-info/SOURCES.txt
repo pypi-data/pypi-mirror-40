@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+README.rst
+setup.py
+sample_python_package/__init__.py
+sample_python_package/text.py
+sample_python_package.egg-info/PKG-INFO
+sample_python_package.egg-info/SOURCES.txt
+sample_python_package.egg-info/dependency_links.txt
+sample_python_package.egg-info/not-zip-safe
+sample_python_package.egg-info/requires.txt
+sample_python_package.egg-info/top_level.txt
