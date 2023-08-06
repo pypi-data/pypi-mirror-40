@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: mooda-gui
+Version: 0.0.0
+Summary: GUI to use the mooda functionalities
+Home-page: https://github.com/rbardaji/mooda-gui
+Author: Raul Bardaji Benach
+Author-email: rbardaji@gmail.com
+License: MIT
+Description: GUI to use the mooda functionalities
+Keywords: mooda,GUI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
