@@ -1,0 +1,55 @@
+Metadata-Version: 2.0
+Name: polyaxon-gpustat
+Version: 0.3.4
+Summary: An utility to monitor NVIDIA GPU status and usage
+Home-page: https://github.com/polyaxon/polyaxon-gpustat
+Author: Mourad Mourafiq
+Author-email: mourad@polyaxon.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: nvidia-smi gpu cuda monitoring gpustat
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Monitoring
+Requires-Dist: nvidia-ml-py3 (==7.352.0)
+Requires-Dist: psutil (==5.4.7)
+Requires-Dist: blessings (==1.6.1)
+Provides-Extra: test
+Requires-Dist: mock (==2.0.0); extra == 'test'
+Requires-Dist: pytest (==3.7.0); extra == 'test'
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/polyaxon/polyaxon-gpustat.svg?branch=master)](https://travis-ci.org/polyaxon/polyaxon-gpustat)
+[![PyPI version](https://badge.fury.io/py/polyaxon-gpustat.svg)](https://badge.fury.io/py/polyaxon-gpustat)
+[![Slack](https://img.shields.io/badge/chat-on%20slack-aadada.svg?logo=slack&longCache=true)](https://join.slack.com/t/polyaxon/shared_invite/enQtMzQ0ODc2MDg1ODc0LWY2ZTdkMTNmZjBlZmRmNjQxYmYwMTBiMDZiMWJhODI2ZTk0MDU4Mjg5YzA5M2NhYzc5ZjhiMjczMDllYmQ2MDg)
+
+GPUSTATS
+--------
+
+This is a utility function to query gpu stats. this is a modified fork of [wookayin/gpustat](https://github.com/wookayin/gpustat).
+
+Quick Installation
+------------------
+
+Install from [PyPI][pypi_gpustat]:
+
+```
+pip install polyaxon-gpustat
+```
+
+To install the latest version (master branch) via pip:
+
+```
+pip install git+https://github.com/polyaxon/polyaxon-gpustat.git@master
+```
+
+License
+-------
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpolyaxon%2Fpolyaxon-gpustat.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpolyaxon%2Fpolyaxon-gpustat?ref=badge_large)
+
+
