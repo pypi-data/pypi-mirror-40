@@ -1,0 +1,6 @@
+{
+    "release_date": "2019-01-19",
+    "version": "2.2.2",
+    "maintainer": "Ben Finney <ben+python@benfinney.id.au>",
+    "body": "Bug Fixes:* Remove from the build system specification a white space character not\n  permitted in TOML format.\nAdditions:* Implement test suite automation in virtualenvs, using Tox.\n"
+}
