@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: algorithmx
+Version: 1.0.0b1
+Summary: A library for network visualization and algorithm simulation.
+Home-page: https://github.com/algorithmx/algorithmx-python
+Author: Alex Socha
+Author-email: algorithmx.lib@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: Jupyter,Widgets,IPython
+Platform: Linux
+Platform: MacOS
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Jupyter
+Provides-Extra: docs
+Provides-Extra: test
