@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: mpzmq
+Version: 0.1
+Summary: minimalist library for building scalable, distributed python applications
+Home-page: https://github.com/jshlbrd/mpzmq
+Author: Josh Liburdi @jshlbrd
+Author-email: liburdi.joshua@gmail.com
+License: MIT
+Description: This is a minimalist library for building scalable, distributed Python applications using multiprocessing and ZeroMQ (ZMQ). See project homepage for more details.
+Keywords: zmq,pyzmq,mp,multiprocessing,distributed
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
