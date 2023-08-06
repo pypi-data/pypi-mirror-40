@@ -1,0 +1,9 @@
+README.md
+setup.py
+igrepper/__init__.py
+igrepper/igrepper.py
+igrepper.egg-info/PKG-INFO
+igrepper.egg-info/SOURCES.txt
+igrepper.egg-info/dependency_links.txt
+igrepper.egg-info/top_level.txt
+test/test_igrepper.py
