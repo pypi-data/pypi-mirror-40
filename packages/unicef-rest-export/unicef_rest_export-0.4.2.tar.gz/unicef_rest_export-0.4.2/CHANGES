@@ -1,0 +1,52 @@
+Release 0.4.2
+-------------
+* PDF renderer gracefully handles large blobs of text
+* Remove support for Django < 2.0
+
+Release 0.4.1
+-------------
+* Update CI deploy flow
+* Update requirements, allow Django 2.1
+
+Release 0.4
+-----------
+* added FriendlyRenderer
+
+Release 0.3.4
+-------------
+* tweaked PDFExport
+
+
+Release 0.3.3
+-------------
+* tweaked PDFExport
+
+
+Release 0.3.2
+-------------
+* freeze requirements
+
+
+Release 0.3.1
+-------------
+* fixed setup requirements
+
+
+Release 0.3
+-----------
+* added PDFExport
+
+
+Release 0.2.1
+-------------
+* updated requirements
+
+
+Release 0.2
+-----------
+* added OpenXMLRenderer
+
+
+Release 0.1
+-----------
+* Initial release
