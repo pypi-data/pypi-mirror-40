@@ -1,0 +1,15 @@
+pyslide/__init__.py,sha256=jjLYWMLrEO9pzoxfi-fOYnps6Yj8mAeQsGpx3Hkl60w,155
+pyslide/hello.py,sha256=ZJNWlgjSP5ooFtnOex10E5T--hixlqCzNqHRwA_tVFg,64
+pyslide/setup.py,sha256=9wYFD3kW5Kj6veks0UsDwJoMHeMQPYkKCN92fV8XVdg,449
+pyslide/patch/__init__.py,sha256=k03ukuYaDPn4E2Xq2dm4NPQlzLGX98nGP2Bb7sqO1qA,64
+pyslide/patch/_sample.py,sha256=AwaFIy7_zKwNuNVFw7EaowbuPzFoOqeA4JE_xSRg8Es,1685
+pyslide/patch/setup.py,sha256=Iq2pR0wQOJ3XEZ1IpeOeAF5RMdbrnQaYsA1rDRq3cjo,628
+pyslide/pyramid/__init__.py,sha256=8f3-C-Se49LBfPEmya0ClGAZlB3GR8Hj7bCuX62J6oA,65
+pyslide/pyramid/_pyramid.py,sha256=R0P9EwsQaDUNp4kNZzjL-o_6wTbZxhVZAduYZUHaiDQ,1701
+pyslide/pyramid/setup.py,sha256=_2dJIFqaW0djhiJa2OSVSW-O6-wm6_HqrLmr2Epw5W4,629
+pyslide-0.3.0.dist-info/AUTHORS.md,sha256=f06E7qJ-tZinF3NKLff7LruTL8Km2K8sZiJbCNk_FoU,125
+pyslide-0.3.0.dist-info/LICENSE,sha256=duwF65Q0YS3QtV-FHr_xElVnqHnmMh0Wx7Q-t7WTDNI,1069
+pyslide-0.3.0.dist-info/METADATA,sha256=M72r6Y9XyEFWNXWadjvay8hC64_FGJTR1o-R4ttWF_U,987
+pyslide-0.3.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+pyslide-0.3.0.dist-info/top_level.txt,sha256=4bhgMGN0heaVK5DK71GUR__ba8Zp_K4pJHN5hPfNrs0,8
+pyslide-0.3.0.dist-info/RECORD,,
