@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: lightware
+Version: 0.0.1
+Summary: Python library to provide a  communication link with LightWare Eth switches.
+Home-page: https://github.com/dorokhin/lightware-api
+Author: Andrew Dorokhin
+Author-email: andrew@dorokhin.moscow
+License: UNKNOWN
+Description: ## LightWare RESTFUL API
+        
+        
+        ### Console commands
+        
+            To run test: make tests
+        
+            To run application: make run
+        
+            To run all commands at once : make all
+        
+        
+        ### App URL
+        
+            Open the following url on your browser to view swagger documentation
+            http://127.0.0.1:5000/
+        
+        
+        ### Using Postman
+        
+            Authorization header is in the following format:
+        
+            Key: Authorization
+            Value: "token_generated_during_login"
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Home Automation
+Description-Content-Type: text/markdown
