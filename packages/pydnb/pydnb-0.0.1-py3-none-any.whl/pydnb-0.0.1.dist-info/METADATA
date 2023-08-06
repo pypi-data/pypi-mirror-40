@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pydnb
+Version: 0.0.1
+Summary: Implementation of dynamic naive Bayes classifier (extension of hidden Markov model)
+Home-page: https://github.com/tsabata/PyDNB
+Author: Tomas Sabata
+Author-email: sabata.tomas@mail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+
+# PyDNB
+
+This library contains method for learning and inference of an extension of hidden Markov model called dynamic naive
+Bayes. The library use principles from dynamic Bayesian network but handle the network as a hidden Markov model.
+
