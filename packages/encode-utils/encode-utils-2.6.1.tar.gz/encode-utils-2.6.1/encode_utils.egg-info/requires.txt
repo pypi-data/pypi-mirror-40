@@ -1,0 +1,7 @@
+awscli
+boto3
+google-api-python-client
+inflection
+jsonschema
+requests
+urllib3
