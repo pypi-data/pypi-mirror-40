@@ -1,0 +1,8 @@
+boto3
+click
+PyYAML
+cfn-lint
+
+[test]
+mock
+pylint
