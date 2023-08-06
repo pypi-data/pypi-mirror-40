@@ -1,0 +1,10 @@
+google_cloud_logger/__init__.py,sha256=8FfWnmTfJiXaONhBY8eveEkA9WinnAwwBEEfnCn4LiA,2927
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/google_cloud_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/google_cloud_logger/conftest.py,sha256=gRvMti_N_pYnst_lbkpYxsSDJ5p7u0hVM4K4guagYFA,352
+test/google_cloud_logger/test_google_cloud_formatter.py,sha256=MVCM780AcXtp3ofyHGJ9cCy4g2PB2KPHpkiI-f9yS20,5455
+google_cloud_logger-0.2.1.dist-info/LICENSE,sha256=Nj-XizSdKJVBe5iUY-JrfXBGJFBL7sYg0EGBb-ijngA,1072
+google_cloud_logger-0.2.1.dist-info/METADATA,sha256=_1cbkoLcZlbp8GmNAj1o9jMcrHwCJWCOmSUvX7y6MU8,3214
+google_cloud_logger-0.2.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+google_cloud_logger-0.2.1.dist-info/top_level.txt,sha256=MXXB-SW60FXoj3NFerh63erqQOfXOo5XjIIwfXFpfvI,25
+google_cloud_logger-0.2.1.dist-info/RECORD,,
