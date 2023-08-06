@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: agogosml-cli
+Version: 0.1.2
+Summary: Agogosml cli project to scaffold and generate an agogosml project.
+Home-page: https://github.com/Microsoft/agogosml/agogosml_cli
+Author: Rami Sayar
+Author-email: rami.sayar@microsoft.com
+License: MIT license
+Description: Agogosml CLI
+        ============
+        
+        This project includes the CLI for Agogosml. Please refer to the overall documentation:
+        
+        -  `User Guide - Getting Started <../docs/USER_GUIDE.rst>`__
+        -  `Developer Guide <../docs/DEVELOPER_GUIDE.rst>`__
+        
+        =======
+        History
+        =======
+        
+        0.1.0
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: agogosml_cli
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
