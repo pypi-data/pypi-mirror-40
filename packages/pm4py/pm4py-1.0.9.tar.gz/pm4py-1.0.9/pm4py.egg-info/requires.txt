@@ -1,0 +1,13 @@
+pyvis
+networkx==1.11
+matplotlib==2.1
+numpy
+ciso8601
+cvxopt
+dataclasses
+flask
+flask-cors
+lxml
+graphviz
+pandas
+scipy
