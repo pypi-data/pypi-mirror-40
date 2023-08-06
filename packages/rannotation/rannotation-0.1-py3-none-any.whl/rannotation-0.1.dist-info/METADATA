@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rannotation
+Version: 0.1
+Summary: rectangle annotation tool for object detection dataset creation
+Home-page: https://github.com/kznovo/rectangle-annotation
+Author: Kazuya Hatta
+Author-email: kazuya.hatta@gmail.com
+License: MIT
+Keywords: cnn objectdetection annotation image
+Platform: UNKNOWN
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
