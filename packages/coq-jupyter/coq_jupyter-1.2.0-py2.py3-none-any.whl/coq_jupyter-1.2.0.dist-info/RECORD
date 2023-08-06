@@ -1,0 +1,10 @@
+coq_jupyter/__init__.py,sha256=K_idJSWg1CnZOFVXKFKyX5_lBJewteEeYyXsnRJLt9I,67
+coq_jupyter/__main__.py,sha256=XPDHaevGJ5IKYMCrqdTEwjRdx1dv21nJD1JOtttEN-E,164
+coq_jupyter/install.py,sha256=nWtoQrqe3H7b50c-U1k6UBQkWbCBFgp5-xIy4iTLIig,1769
+coq_jupyter/kernel.js,sha256=SsFILc5JZS__zwQy6VHLvk87UBiiBN6OeeeelVgKPaI,8148
+coq_jupyter/kernel.py,sha256=FbnO25UHK1Y8RKgJsN2StqzMUgGwr4-pckeD9hHhneg,8075
+coq_jupyter-1.2.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+coq_jupyter-1.2.0.dist-info/METADATA,sha256=vLNvXQjiBAg-v6XNxnzCO1LWSN83BjSRaLwTppwghlc,871
+coq_jupyter-1.2.0.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+coq_jupyter-1.2.0.dist-info/top_level.txt,sha256=nb1rfVZEGmY0gEqwLxyzlj6ku967izdTXv8RY7EkiD4,12
+coq_jupyter-1.2.0.dist-info/RECORD,,
