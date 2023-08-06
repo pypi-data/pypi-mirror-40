@@ -1,0 +1,8 @@
+README.rst
+setup.py
+rust_pypi/__init__.py
+rust_pypi/double.py
+rust_pypi.egg-info/PKG-INFO
+rust_pypi.egg-info/SOURCES.txt
+rust_pypi.egg-info/dependency_links.txt
+rust_pypi.egg-info/top_level.txt
