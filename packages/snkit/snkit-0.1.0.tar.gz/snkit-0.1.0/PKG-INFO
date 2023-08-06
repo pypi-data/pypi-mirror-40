@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: snkit
+Version: 0.1.0
+Summary: a spatial networks toolkit
+Home-page: https://github.com/tomalrussell/snkit
+Author: Tom Russell
+Author-email: tomalrussell@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Utilities
