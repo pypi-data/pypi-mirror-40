@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: cvml
+Version: 0.1.2
+Summary: Computer vision machine learning tools
+Home-page: http://github.com/willprice/libml
+Author: Will Price
+Author-email: will.price94@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
