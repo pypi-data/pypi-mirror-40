@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from sanic import Sanic
+from os_sanic import run
+
+app = Sanic("{{project_name}}")
+
+if __name__ == "__main__":
+    run(app)
