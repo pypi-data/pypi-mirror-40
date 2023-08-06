@@ -1,0 +1,6 @@
+clipper_admin
+pyspark
+tensorflow
+keras
+h2o
+cloudpickle==0.5.3
