@@ -1,0 +1,3 @@
+[console_scripts]
+vivian = vivian.vivian:main
+

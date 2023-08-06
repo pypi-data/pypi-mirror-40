@@ -1,0 +1,11 @@
+README.md
+setup.py
+vivian/__init__.py
+vivian/__version__.py
+vivian/vivian.py
+vivian.egg-info/PKG-INFO
+vivian.egg-info/SOURCES.txt
+vivian.egg-info/dependency_links.txt
+vivian.egg-info/entry_points.txt
+vivian.egg-info/requires.txt
+vivian.egg-info/top_level.txt
