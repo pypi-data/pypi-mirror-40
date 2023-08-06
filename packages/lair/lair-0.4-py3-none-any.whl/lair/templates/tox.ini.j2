@@ -1,0 +1,26 @@
+[tox]
+envlist = py37,flake8,docs
+
+[testenv]
+passenv = TRAVIS TRAVIS_JOB_ID TRAVIS_BRANCH
+deps = pytest
+       pytest-cov
+       coveralls
+       -rrequirements.txt
+
+commands =
+    pytest --cov-config .coveragerc --cov {{ module_name }} tests
+    - coveralls
+
+[testenv:flake8]
+commands = flake8 {{ module_name }}
+deps =
+    flake8
+
+[testenv:docs]
+basepython=python
+deps =
+    -rrequirements.txt
+    sphinx
+commands=
+    sphinx-build -W -b html docs/source docs/build
