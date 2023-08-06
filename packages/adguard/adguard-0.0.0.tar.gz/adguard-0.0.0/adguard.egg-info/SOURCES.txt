@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+adguard/__init__.py
+adguard/client.py
+adguard/const.py
+adguard/general.py
+adguard/version.py
+adguard.egg-info/PKG-INFO
+adguard.egg-info/SOURCES.txt
+adguard.egg-info/dependency_links.txt
+adguard.egg-info/requires.txt
+adguard.egg-info/top_level.txt
