@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+transitleastsquares/JAA546A14limb1-4.csv
+transitleastsquares/__init__.py
+transitleastsquares/ld_claret_tess.csv
+transitleastsquares.egg-info/PKG-INFO
+transitleastsquares.egg-info/SOURCES.txt
+transitleastsquares.egg-info/dependency_links.txt
+transitleastsquares.egg-info/requires.txt
+transitleastsquares.egg-info/top_level.txt
