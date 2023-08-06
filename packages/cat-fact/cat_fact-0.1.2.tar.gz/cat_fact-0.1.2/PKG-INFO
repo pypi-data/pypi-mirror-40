@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: cat_fact
+Version: 0.1.2
+Summary: Get random cat facts fromt the internet 😸
+Home-page: https://github.com/sohail535/cat_fact
+Author: Shaik Sohail Yunus
+Author-email: sohail.yunusha1@gmail.com
+Maintainer: Shaik Sohail Yunus
+Maintainer-email: sohail.yunusha1@gmail.com
+License: UNKNOWN
+Description: 
+        cat_fact
+        --------
+        
+        The client interface for cat fact
+        
+        Install
+        ~~~~~~~
+        
+        Install the stable version from PyPi
+        ```bash
+        $ pip install cat-fact
+        ```
+        
+Platform: UNKNOWN
