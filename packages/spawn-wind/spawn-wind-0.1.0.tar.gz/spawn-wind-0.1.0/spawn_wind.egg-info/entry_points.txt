@@ -1,0 +1,3 @@
+[console_scripts]
+spawnwind = spawnwind.__main__:cli
+
