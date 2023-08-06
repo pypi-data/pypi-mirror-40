@@ -1,0 +1,11 @@
+coq_jupyter/__init__.py,sha256=K_idJSWg1CnZOFVXKFKyX5_lBJewteEeYyXsnRJLt9I,67
+coq_jupyter/__main__.py,sha256=XPDHaevGJ5IKYMCrqdTEwjRdx1dv21nJD1JOtttEN-E,164
+coq_jupyter/install.py,sha256=nWtoQrqe3H7b50c-U1k6UBQkWbCBFgp5-xIy4iTLIig,1769
+coq_jupyter/kernel.js,sha256=gHijjWnl3LWzrt9F2ck5rwYU5rrWBms8M1t5CCGcy8Q,8897
+coq_jupyter/kernel.py,sha256=td6hbhZJq6Xcjj1BL1c22KH2L_0i2SBXAp3hqcwnUno,15600
+coq_jupyter/rollback_comm.js,sha256=bZDxImNNCmDaK3ZtIiE7egBIb92rReFpI6VdRFXjbf4,1822
+coq_jupyter-1.3.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+coq_jupyter-1.3.0.dist-info/METADATA,sha256=mlDOoFIiZ_NeIFEyJPWycuwZs6PpuAsg31A2WY5IBkc,871
+coq_jupyter-1.3.0.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+coq_jupyter-1.3.0.dist-info/top_level.txt,sha256=nb1rfVZEGmY0gEqwLxyzlj6ku967izdTXv8RY7EkiD4,12
+coq_jupyter-1.3.0.dist-info/RECORD,,
