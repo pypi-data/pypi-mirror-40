@@ -1,0 +1,2 @@
+class DicebetDoesNotExistsException(Exception):
+    pass
