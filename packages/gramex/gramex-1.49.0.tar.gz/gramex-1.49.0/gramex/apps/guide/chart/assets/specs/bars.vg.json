@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v4.json",
+  "width": 600,
+  "height": 360,
+  "autosize": "fit",
+  "data": [
+    {
+      "name": "table",
+      "url": "<%= dataset_url %>"
+    }
+  ],
+  "scales": [
+    {
+      "name": "xscale",
+      "type": "band",
+      "domain": {
+        "data": "table",
+        "field": "<%= data_mapper.column_1 %>"
+      },
+      "range": "width",
+      "padding": 0.3,
+      "round": true
+    },
+    {
+      "name": "yscale",
+      "domain": {
+        "data": "table",
+        "field": "<%= data_mapper.column_2 %>"
+      },
+      "nice": true,
+      "range": "height"
+    }
+  ],
+  "axes": [
+    {
+      "orient": "bottom",
+      "scale": "xscale",
+      "ticks": false,
+      "labelPadding": 10
+    }
+  ],
+  "marks": [
+    {
+      "name": "bars",
+      "type": "rect",
+      "from": {
+        "data": "table"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "scale": "xscale",
+            "field": "<%= data_mapper.column_1 %>"
+          },
+          "width": {
+            "scale": "xscale",
+            "band": 1
+          },
+          "y": {
+            "scale": "yscale",
+            "field": "<%= data_mapper.column_2 %>"
+          },
+          "y2": {
+            "scale": "yscale",
+            "value": 0
+          }
+        },
+        "update": {
+          "fill": {
+            "value": "#FEC44F"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "bars"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x",
+            "offset": 29
+          },
+          "y": {
+            "field": "y",
+            "offset": -10
+          },
+          "fill": {
+            "value": "#000000"
+          },
+          "align": {
+            "value": "right"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "text": {
+            "field": "datum['<%= data_mapper.column_2 %>']"
+          }
+        }
+      }
+    }
+  ]
+}

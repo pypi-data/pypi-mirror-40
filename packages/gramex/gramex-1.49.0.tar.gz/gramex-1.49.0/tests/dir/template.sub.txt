@@ -1,0 +1,9 @@
+{% set x = 'Hello' %}
+{% set y = 'world' %}
+{% include 'subdir/template.txt' %}
+
+{# standard variables is available in template #}
+{% set assert(handler) %}
+{% set assert(handler.path) %}
+{% set assert(request is handler.request) %}
+{% set assert(current_user is handler.current_user) %}
