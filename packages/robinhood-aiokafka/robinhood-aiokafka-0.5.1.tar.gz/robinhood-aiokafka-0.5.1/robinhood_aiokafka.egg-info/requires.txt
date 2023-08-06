@@ -1,0 +1,4 @@
+robinhood-kafka-python==1.4.3
+
+[snappy]
+python-snappy>=0.5
