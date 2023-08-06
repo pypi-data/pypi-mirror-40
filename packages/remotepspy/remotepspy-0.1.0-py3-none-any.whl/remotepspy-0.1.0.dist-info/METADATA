@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: remotepspy
+Version: 0.1.0
+Summary: Monitor and log remote PowerShell sessions.
+Home-page: https://github.com/countercept/RemotePSpy
+Author: Matt Hillman
+Author-email: matt.hillman@countercept.com
+License: UNKNOWN
+Keywords: powershell,PowerShell,PSRP
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Logging
+Requires-Python: >=3.7
+Requires-Dist: psutil (==5.4.8)
+Requires-Dist: pywintrace (==0.1.1)
+
+RemotePSpy provides live monitoring of remote PowerShell sessions, which is particularly useful for older (pre-5.0) versions of PowerShell which do not have comprehensive logging facilities built in.
+
+

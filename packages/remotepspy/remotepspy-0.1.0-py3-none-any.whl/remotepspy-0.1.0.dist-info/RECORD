@@ -1,0 +1,14 @@
+remotepspy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+remotepspy/__main__.py,sha256=HIiu-zxv0A4D25yYT7XwzUxFb2pOczZ3WLYkerRDptA,3802
+remotepspy/etw.py,sha256=mQVuNYLDolIJ2DpmYwXP2W8Uy3U09rp1Xn79Ng6psIc,7476
+remotepspy/psrp.py,sha256=KWnWMPNK9yvkgyNAB4qPEcjMrY1IEDDXgXn5I_4r4lQ,13380
+remotepspy/simple_command_tracer.py,sha256=4fV8AzTBA2DXqOku1mbULhH4Ab6F8lSNHS7Dv7rUxio,16128
+remotepspy/winrm.py,sha256=fH6F7uEWdB6wq10nJ02mc0nqRYi1WMMaTduUbWc5fSA,36588
+remotepspy/libwim_bin/32/libwim-15.dll,sha256=7KMYK_7AHNNRSkt7yT8Qr-r1ffzTF-Mn2G3fK8yFpgQ,708096
+remotepspy/libwim_bin/64/libwim-15.dll,sha256=v7hrjTAhB4WJdWI6bCsSsejSpyfMqGPH5YQ40qP7wfc,752128
+remotepspy-0.1.0.dist-info/LICENSE,sha256=60vTI1FgHvSdr7QQjakV1jhnbp7zkJFhoX4H1tNgNH0,1630
+remotepspy-0.1.0.dist-info/METADATA,sha256=L23vqK3hZ26r1iQsMji89KD-o1eKE8gkTNSg6DGeuI0,987
+remotepspy-0.1.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+remotepspy-0.1.0.dist-info/entry_points.txt,sha256=n_koQKdfMhsjTugFz6Ng-Ta3-yof39bx1khcqqabQog,134
+remotepspy-0.1.0.dist-info/top_level.txt,sha256=rev96Sd3rhNGQG2r_j9yb0hpG701ebOgIOL3bHzMipU,11
+remotepspy-0.1.0.dist-info/RECORD,,
