@@ -1,0 +1,3 @@
+[console_scripts]
+emails-gdpr = emails_gdpr.main:main
+
