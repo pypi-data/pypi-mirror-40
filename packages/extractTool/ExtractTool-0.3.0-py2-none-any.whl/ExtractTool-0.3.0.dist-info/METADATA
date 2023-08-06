@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: ExtractTool
+Version: 0.3.0
+Summary: Tool for extracting spatial and temporal extent of Geodata
+Home-page: https://github.com/carobro/Geosoftware2
+Author: Die Gruppe 1
+Author-email: c_bron02@uni-muenster.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: Click (==7.0)
+Requires-Dist: db-sqlite3 (==0.0.1)
+Requires-Dist: docopt (==0.6.2)
+Requires-Dist: geojson (==2.4.1)
+Requires-Dist: jsonlib (==1.6.1)
+Requires-Dist: numpy (==1.15.4)
+Requires-Dist: pandas (==0.23.4)
+Requires-Dist: PyGeoj (==1.0.0)
+Requires-Dist: pylint (==1.9.3)
+Requires-Dist: pyshp (==2.0.1)
+Requires-Dist: pytest (==3.3.2)
+Requires-Dist: scipy (==1.1.0)
+Requires-Dist: wrapt (==1.10.11)
+Requires-Dist: xarray (==0.11.0)
+Requires-Dist: pyproj (==1.9.5.1)
+Requires-Dist: dateparser (==0.7.0)
+
+PyPi Module
+
+Anleitung wie man pypi module erstellt:
+https://packaging.python.org/tutorials/packaging-projects/
+
+# Use as CLI-Tool
+
+## Install
+
+`pip install extractTool`
+
+In addition, the following commands must be executed (if necessary with sudo):   
+`apt-get install python-gdal`     
+`apt-get install gdal-bin`   
+
+`pip install pytest`
+
+## Usage
+
+`python detailebenen.py --path="<filepath>"`
+
+behind it can still be added specifications:
+
+Options:   
+`--bbox` &larr; for the bounding box of the file (is also set as default)      
+`--feature` &larr; to get all the coordinates of the file      
+`--single` &larr; to get only the coordinates of a file (also default)      
+`--whole` &larr; in combination with --bbox or --feature to read the respective one from an entire directory   
+`--time` &larr; to get the time of a file      
+
+

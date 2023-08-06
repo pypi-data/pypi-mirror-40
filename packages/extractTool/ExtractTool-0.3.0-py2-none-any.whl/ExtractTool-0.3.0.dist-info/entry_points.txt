@@ -1,0 +1,3 @@
+[console_scripts]
+extract-extent = extractTool.extractTool:main
+
