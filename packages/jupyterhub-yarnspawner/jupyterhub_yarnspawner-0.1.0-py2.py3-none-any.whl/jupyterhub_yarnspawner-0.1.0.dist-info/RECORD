@@ -1,0 +1,9 @@
+jupyterhub_yarnspawner-0.1.0.dist-info/METADATA,sha256=FAYl1j7xla-r4Ar7SLOur_Yd0JfkdstZ0EQIvmdQB1M,1421
+jupyterhub_yarnspawner-0.1.0.dist-info/RECORD,,
+jupyterhub_yarnspawner-0.1.0.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+jupyterhub_yarnspawner-0.1.0.dist-info/top_level.txt,sha256=86v9XPMc1bI8v9XwPL6gP223GfQjdmBjwEJrUq0dLvc,12
+yarnspawner/__init__.py,sha256=k8hbEzRnfNRkloXRx-BGhBQDX6o4GL4aDhZloISI9mU,200
+yarnspawner/_version.py,sha256=evGZRV-MUfVf3DP1LxKWEzNujkduf0Kfeh84YBfI_ZQ,497
+yarnspawner/apihandler.py,sha256=Cvfs5LGnSwtadJ-wHWlsMySVkcomzDVcqf4K1-2lMsc,704
+yarnspawner/singleuser.py,sha256=DaPFANybcWTgyJejVDLJg-BE4d3hiGleQKGEkiJl-XU,1089
+yarnspawner/spawner.py,sha256=yiTYI6DonZf0JhYt8m6IVmVWeb43btlyFs9abqA-LIE,7583

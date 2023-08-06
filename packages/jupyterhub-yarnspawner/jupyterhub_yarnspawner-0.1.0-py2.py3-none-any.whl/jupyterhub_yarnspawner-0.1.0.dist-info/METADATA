@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: jupyterhub-yarnspawner
+Version: 0.1.0
+Summary: JupyterHub Spawner for Apache Hadoop/YARN Clusters
+Home-page: http://github.com/jcrist/yarnspawner
+Maintainer: Jim Crist
+Maintainer-email: jiminy.crist@gmail.com
+License: BSD
+Project-URL: Source, https://github.com/jcrist/yarnspawner
+Project-URL: Issue Tracker, https://github.com/jcrist/yarnspawner/issues
+Project-URL: Documentation, https://jcrist.github.io/yarnspawner/
+Keywords: YARN HDFS hadoop jupyterhub
+Platform: UNKNOWN
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: System :: Distributed Computing
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Requires-Dist: jupyterhub (>=0.8)
+Requires-Dist: skein (>=0.5.0)
+
+yarnspawner
+===========
+
+|travis|
+
+Spawns JupyterHub single user notebook servers in `Apache YARN`_ containers.
+See `the documentation`_ for more information.
+
+LICENSE
+-------
+
+New BSD. See the `License File`_.
+
+.. _Apache YARN: https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html
+.. _License File: https://github.com/jcrist/yarnspawner/blob/master/LICENSE
+.. _the documentation: https://jcrist.github.io/yarnspawner/
+
+.. |travis| image:: https://travis-ci.org/jcrist/yarnspawner.svg?branch=master
+   :target: https://travis-ci.org/jcrist/yarnspawner
+
+
