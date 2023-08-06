@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: crosscompute-image
+Version: 0.7.6.1
+Summary: Image data type plugin for CrossCompute
+Home-page: https://crosscompute.com/docs
+Author: CrossCompute Inc
+Author-email: support@crosscompute.com
+License: UNKNOWN
+Keywords: web pyramid pylons crosscompute
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Pyramid
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: invisibleroads-macros (>=0.9.5.1)
+Requires-Dist: invisibleroads-uploads (>0.4.2.3crosscompute>=0.7.7)
+
+CrossCompute Image
+==================
+
