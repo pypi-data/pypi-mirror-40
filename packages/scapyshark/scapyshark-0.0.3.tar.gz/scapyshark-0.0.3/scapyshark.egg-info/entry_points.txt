@@ -1,0 +1,3 @@
+[console_scripts]
+scapyshark = scapyshark.scapyshark:main
+

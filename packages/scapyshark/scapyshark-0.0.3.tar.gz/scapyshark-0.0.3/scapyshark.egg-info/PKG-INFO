@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: scapyshark
+Version: 0.0.3
+Summary: Wireshark, but with Scapy.
+Home-page: https://github.com/bannsec/scapyshark
+Author: Michael Bann
+Author-email: self@bannsecurity.com
+License: MIT
+Description: See website for more info.
+Keywords: wireshark scapy python tcpdump
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
