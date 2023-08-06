@@ -1,0 +1,13 @@
+quicktest/__init__.py,sha256=t2f759cbUI6WnyBSJgmkHEe-WkJDRDStDi7jRNpBUig,50
+quicktest/printer.py,sha256=UWVHYlKpzC018mtW0Rv0YIsz3zXDw34B1HNuFIK_9_o,2127
+quicktest/quicktest.py,sha256=qe7ALC3MAb2EwfoTs6EsmsJHCsQAJ8mPhf5k9njp7UU,571
+quicktest/summary.py,sha256=aCgnPSQtYxmH4tVQLReeoBtlYLdBKI7CWIBMI7t1l_s,683
+quicktest/tester.py,sha256=RPHaahH99hcwazsWZ4DoHmo81P1dbBpfpM8BUru-p_w,813
+quicktest/util.py,sha256=nKcFGVeZAJXLUWbCp3O7P_DUcqISrtaVvZGOA_pJ8-4,236
+quicktest/utils.py,sha256=xkX9mj4VbewoLQkwtfLxxOtCUe8F4E3bTktpvESlA3Q,63
+quicktest-0.1.1.dist-info/DESCRIPTION.rst,sha256=uEuN_3pR_VGSmkUDaLI2gtid4KOZXQnTDQkHTM6PEos,165
+quicktest-0.1.1.dist-info/METADATA,sha256=B_UBnVY6jnpU-R8BV1hS5oDHi1eC6IuBsWtGD1vwMBM,536
+quicktest-0.1.1.dist-info/RECORD,,
+quicktest-0.1.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+quicktest-0.1.1.dist-info/metadata.json,sha256=oIJ4H-m_NWekDB4RdTiXlqLy4D9zgmw9PCNSl9hzz9E,600
+quicktest-0.1.1.dist-info/top_level.txt,sha256=k3dIxlmzgur50MJLPgIG1aoqAp2F-EyC2oTfyZH-mgw,10
