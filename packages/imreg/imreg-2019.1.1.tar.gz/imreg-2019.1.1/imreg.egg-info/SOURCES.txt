@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+imreg/__init__.py
+imreg/imreg.py
+imreg.egg-info/PKG-INFO
+imreg.egg-info/SOURCES.txt
+imreg.egg-info/dependency_links.txt
+imreg.egg-info/requires.txt
+imreg.egg-info/top_level.txt
