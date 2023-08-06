@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: calcbsimpvol
+Version: 0.0.1
+Summary: Calculate Black Scholes Implied Volatility - Vectorwise
+Home-page: https://duckduckgo.com
+Author: Erkan Demiralay
+Author-email: erkan@erkan.io
+License: MIT
+Project-URL: Documentation, https://dukcduckgo.com
+Project-URL: Bug Reports, https://dukcduckgo.com
+Project-URL: Source, https://dukcduckgo.com
+Keywords: options implied volatility option iv ivol options-on-futures ivsurface black-scholes
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Office/Business :: Financial 
+Classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
