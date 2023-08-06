@@ -1,0 +1,9 @@
+README.md
+setup.py
+pybitmap/PyBitMap.py
+pybitmap/__init__.py
+pybitmap.egg-info/PKG-INFO
+pybitmap.egg-info/SOURCES.txt
+pybitmap.egg-info/dependency_links.txt
+pybitmap.egg-info/entry_points.txt
+pybitmap.egg-info/top_level.txt
