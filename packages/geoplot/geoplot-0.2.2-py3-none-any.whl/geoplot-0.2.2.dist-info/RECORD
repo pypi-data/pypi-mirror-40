@@ -1,0 +1,9 @@
+geoplot/__init__.py,sha256=KGVb1FZ_qPNh5PQa36RN7_TtCB5nhb4xGq22FbL9Nnw,772
+geoplot/crs.py,sha256=KLU04Jj60-lGlBHjDtQY1CwDWrGrsNKiDGirUQJfLSY,6919
+geoplot/geoplot.py,sha256=AblP8f6LIvAiHltpga1vy50C0rNPDYYG8e-MZxatHbI,125037
+geoplot/quad.py,sha256=uzrVDnDHnudyKF5Ov692DiSb-SZO5rxL4uEKEGtiN9M,6043
+geoplot/utils.py,sha256=beWgledPPLz7aKYAydAA48QQwTcZdMUTErn89IZXzwk,2825
+geoplot-0.2.2.dist-info/METADATA,sha256=G3CQIu9S6gZtRZeUBOPVI5Rc9oMjl5YthNlbXx7qP_0,558
+geoplot-0.2.2.dist-info/RECORD,,
+geoplot-0.2.2.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+geoplot-0.2.2.dist-info/top_level.txt,sha256=l_bPkaGddAWVIS3cu7lszw3MpUAsBhcuj1ZmHxxvL_g,23
