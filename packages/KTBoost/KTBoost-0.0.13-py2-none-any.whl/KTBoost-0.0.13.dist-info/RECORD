@@ -1,0 +1,11 @@
+KTBoost/KTBoost.py,sha256=DE0fNhPFPxQx4X7oBmYbB0E-4P_qw7KTk24-i2-NYiY,121840
+KTBoost/__init__.py,sha256=EDvvt_6oaFrGy0KqHet2e0ORQL7Veb5DAxcb8RIY-kg,16
+KTBoost/kernel_ridge.py,sha256=gjH7Iuek28HspetYq2PA1WHsTg9ZeuZxhU2yYVQmedk,13344
+KTBoost/ridge_exten.py,sha256=14xCgn_Bb6nwF4SAxh0RZCON5Na3HPtDJT3ytFFXHsU,57022
+KTBoost/test.py,sha256=PDM0aORmYbSetT60bil05vCu9Bf5veD2NXckBYVDbYw,485
+KTBoost/tree.py,sha256=OyiZvs-Zp0g7AmRzhEksNRd8W-GgsEGA5zWCD8LfmXc,62825
+KTBoost-0.0.13.dist-info/LICENSE,sha256=gL2HLluVlpBDtg3In7SUaicBm0E7zQoUD5Cstil8YJA,1093
+KTBoost-0.0.13.dist-info/METADATA,sha256=cFNVNXjhl2GLcnsyRHcCdUNiT7Zyap6-7frurhnLYDo,5003
+KTBoost-0.0.13.dist-info/WHEEL,sha256=6EdtIfQmBpGgb6Y7UyywfQ8EO2xmaQlvEiD3D9cjVh4,97
+KTBoost-0.0.13.dist-info/top_level.txt,sha256=wWNVO52BqDb-lbpRjo4iMvYs0LXz4ut34V_8VLQt4Ho,8
+KTBoost-0.0.13.dist-info/RECORD,,
