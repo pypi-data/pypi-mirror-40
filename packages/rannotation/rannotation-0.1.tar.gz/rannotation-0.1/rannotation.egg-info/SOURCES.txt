@@ -1,0 +1,13 @@
+setup.py
+rannotation/__init__.py
+rannotation/annotate.py
+rannotation/core.py
+rannotation/helpers.py
+rannotation/label_objects.py
+rannotation.egg-info/PKG-INFO
+rannotation.egg-info/SOURCES.txt
+rannotation.egg-info/dependency_links.txt
+rannotation.egg-info/entry_points.txt
+rannotation.egg-info/not-zip-safe
+rannotation.egg-info/requires.txt
+rannotation.egg-info/top_level.txt
