@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+obliquestrategies/__init__.py
+obliquestrategies/obliquestrategies.py
+obliquestrategies.egg-info/PKG-INFO
+obliquestrategies.egg-info/SOURCES.txt
+obliquestrategies.egg-info/dependency_links.txt
+obliquestrategies.egg-info/top_level.txt
+obliquestrategies/resources/edition_1_1975.txt
+obliquestrategies/resources/edition_2_1978.txt
+obliquestrategies/resources/edition_3_1979.txt
+obliquestrategies/resources/edition_4_1996.txt
+script/obliquestrategies
