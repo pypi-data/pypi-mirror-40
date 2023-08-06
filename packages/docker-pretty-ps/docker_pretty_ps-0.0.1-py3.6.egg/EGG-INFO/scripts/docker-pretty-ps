@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+
+import dockerprettyps
+
+dockerprettyps.run_cli()
