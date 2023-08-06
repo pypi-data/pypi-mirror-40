@@ -1,0 +1,11 @@
+pandas_gbq/__init__.py,sha256=Nom5IiITwKB5g-MK_X6rXJE5cZvmrvROMLHjRsfvgnM,260
+pandas_gbq/_version.py,sha256=85MSbdlctYGpTXnCyEg99mdFkrbGDpPt5M-Qgv9HItc,497
+pandas_gbq/auth.py,sha256=ZZ2GEysYC7S3GTQau1FBbpT_D3L4JyMkEP_D9uUvi5M,3657
+pandas_gbq/exceptions.py,sha256=MLlFP6qmoVnxIIddG5bgPjA2Wec7p0rJ1sucws0dNCU,260
+pandas_gbq/gbq.py,sha256=BiY6zmlVTdr7uRWcV8ZVK8dpNecLWkM-jxe1ry9LuqQ,39915
+pandas_gbq/load.py,sha256=-5mcs-hD7sXyEP56jq5KD9_8XNU2k0q_wQ_rfGUeG9A,2538
+pandas_gbq/schema.py,sha256=1VZQL9sqeSWKBb3xNhlLfPsyf9fbMAcYaefhc5KuNCA,844
+pandas_gbq-0.9.0.dist-info/METADATA,sha256=WwNM3DSUF0_I2WW_Fg_rhF-mB_bx5Q0knDGYshiW9U8,2444
+pandas_gbq-0.9.0.dist-info/RECORD,,
+pandas_gbq-0.9.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+pandas_gbq-0.9.0.dist-info/top_level.txt,sha256=-mpJxjq3sltcqJ-5VeNn8aBNKP0RBs1jki-ttoJC_Pc,11
