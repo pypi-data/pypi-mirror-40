@@ -1,0 +1,3 @@
+[console_scripts]
+openrpa = openrpa.run:run_cli
+
