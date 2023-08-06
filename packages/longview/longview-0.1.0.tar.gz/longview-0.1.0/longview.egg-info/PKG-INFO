@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: longview
+Version: 0.1.0
+Summary: Live Interactive Debugging and Visualization for AI
+Home-page: https://github.com/sytelus/longview
+Author: Shital Shah
+Author-email: sytelus@gmail.com
+License: MIT
+Description: # Python API for AirSim
+        
+        This package contains Python library for [longview](https://github.com/sytelus/longview).
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
