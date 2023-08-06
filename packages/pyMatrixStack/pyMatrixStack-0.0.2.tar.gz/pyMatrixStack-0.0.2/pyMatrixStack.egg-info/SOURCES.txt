@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyMatrixStack.egg-info/PKG-INFO
+pyMatrixStack.egg-info/SOURCES.txt
+pyMatrixStack.egg-info/dependency_links.txt
+pyMatrixStack.egg-info/requires.txt
+pyMatrixStack.egg-info/top_level.txt
+src/pyMatrixStack/__init__.py
+src/pyMatrixStack/pyMatrixStack.py

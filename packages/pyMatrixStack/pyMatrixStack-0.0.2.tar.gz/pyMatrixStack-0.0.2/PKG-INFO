@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pyMatrixStack
+Version: 0.0.2
+Summary: Matrix stack for OpenGL
+Home-page: https://github.com/billsix/pyMatrixStack
+Author: William Emerison Six
+Author-email: billsix@gmail.com
+License: MIT
+Description: 
+        A matrix stack implementation for OpenGL 3+
+        
+Keywords: nuklear imgui
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
