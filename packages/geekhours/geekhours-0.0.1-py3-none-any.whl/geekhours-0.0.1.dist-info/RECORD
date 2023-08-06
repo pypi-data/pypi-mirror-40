@@ -1,0 +1,13 @@
+geekhours/__init__.py,sha256=SurCInX1pHQ5CaomDh5ayG3H1nmDWNbRSIIJuTDc6A4,89
+geekhours/command.py,sha256=96OI7AXaC_ArgFQkiCf6jqB2aI-M2NW67CmpcmzzzDU,1123
+geekhours/database.py,sha256=FrvwdlJkuKIqE7UEc-WBCTuQeo6BKTDsZIU1MZ53ab8,4273
+geekhours/util.py,sha256=LDWozECAvoe5FexTUCyeqyASQyp0Dt5ryu0h0mYukTA,405
+geekhours/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geekhours/test/test_command.py,sha256=sy-68vF-dNbf8_B3RcGqERvHz9JyfZiL_RTPGoA1s54,4313
+geekhours/test/test_database.py,sha256=PHKe41k2eFm8EeeGMvtwkENZ2ImvSZIarS8F5oDnQKY,6386
+geekhours-0.0.1.data/scripts/geekhours,sha256=c2X2BbdTECR9GR6T-LffYrwUB7PZEphXSRmpDkwkNkk,4461
+geekhours-0.0.1.dist-info/LICENSE,sha256=rHvzFJAu-PxXxU77E16UCl9DOaE6zXpF4qymf0N8RNQ,1066
+geekhours-0.0.1.dist-info/METADATA,sha256=0EA_o5Ple7g5ED0IfJwbpaFlSSVngG68z7PnmPxIR94,1692
+geekhours-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+geekhours-0.0.1.dist-info/top_level.txt,sha256=LANgOAdBtSNUkd05KaT8xdwO-VQaSmONGBm5pBCV4aQ,10
+geekhours-0.0.1.dist-info/RECORD,,

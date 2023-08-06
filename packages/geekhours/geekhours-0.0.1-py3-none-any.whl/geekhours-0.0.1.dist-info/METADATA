@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: geekhours
+Version: 0.0.1
+Summary: Study time management tool
+Home-page: https://github.com/YukieK/GeekHours.git
+Author: Yukie Kato
+Author-email: yukie.kato.28@gmail.com
+Maintainer: Mitz Amano
+License: MIT
+Platform: Linux
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: ~=3.5
+Description-Content-Type: text/markdown
+
+# Geek Hours
+
+**Table of Contents**
+
+- [Geek Hours](#geek-hours)
+  - [Overview](#overview)
+  - [Prerequisites](#prerequisites)
+  - [Installing](#installing)
+  - [Usage](#usage)
+    - [Record](#record)
+    - [List](#list)
+    - [Delete](#delete)
+  - [Specifications](#specifications)
+  - [License](#license)
+
+## Overview
+
+**Geek Hours** is a simple study time management tool.
+
+## Prerequisites
+
+* Ubuntu **16.04** or later
+
+* Python **3.5** or later
+
+* SQLite **3.11.0** or later
+
+## Installing
+
+Install from PyPI via pip.
+
+```
+pip3 install geekhours
+```
+
+## Usage
+
+### Record
+
+Register course names you study.
+
+```
+geekhours course add course_name [course_name ...]
+```
+
+Record date, course and time you studied.
+
+```
+geekhours done add [-d [DATE]] [-D [DURATION]] course_name
+```
+
+### List
+
+List courses:
+
+```
+geekhours course list
+```
+
+List study records:
+
+```
+geekhours done list
+```
+
+### Delete
+
+Delete a course:
+
+```
+geekhours course rm course_name
+```
+
+Delete a study record:
+```
+geekhours done rm date course_name
+```
+
+## Specifications
+
+[SPEC.md](SPEC.md)
+
+## License
+
+This project is licensed under the MIT License.
+
+[LICENSE](LICENSE)
+
+
