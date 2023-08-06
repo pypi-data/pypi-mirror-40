@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+lucam/__init__.py
+lucam/lucam.py
+lucam.egg-info/PKG-INFO
+lucam.egg-info/SOURCES.txt
+lucam.egg-info/dependency_links.txt
+lucam.egg-info/requires.txt
+lucam.egg-info/top_level.txt
