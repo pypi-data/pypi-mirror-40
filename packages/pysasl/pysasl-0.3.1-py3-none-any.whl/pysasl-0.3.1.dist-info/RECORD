@@ -1,0 +1,13 @@
+pysasl/__init__.py,sha256=aXPJSqwymIcsTVd2tfmI4I0mlE2CJk2hZ5U_u0YvoXY,11625
+pysasl/crammd5.py,sha256=O-Yp5RF1SY84Awm8bRMCo8ewntQ1JnQI7xDbxAApB4g,3343
+pysasl/external.py,sha256=GcZklYlpdGYdFVaNt-BAJkz0Qf8nOjPS5dKyZjZv2Yo,2348
+pysasl/login.py,sha256=-gpU36EcY4kj5dH-uWMCLHw6-SJuidzkimw5JnsQbUw,1436
+pysasl/oauth.py,sha256=DEHNAFKCH_OfFBrnh5Waph7bPUJEkQaw7Ocg_R3lYYA,1264
+pysasl/plain.py,sha256=7XUAnGfafvuGij60TODhoN-d95qnuosOUP-ONBDHBJY,1641
+pysasl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysasl-0.3.1.dist-info/LICENSE,sha256=OcNwYUs4SHyTHhDRyAXRXz-ngm-7FNZpmSXBbD-6I_w,1076
+pysasl-0.3.1.dist-info/METADATA,sha256=ke3Dx6Bubo5HYCMkkhxx5bkXiW-hIoQqT3BtJl_keCE,6718
+pysasl-0.3.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pysasl-0.3.1.dist-info/entry_points.txt,sha256=vgaZpL7avHJ6FdgnYd6m7OUujXu_1wwowRiA-gtkXLo,220
+pysasl-0.3.1.dist-info/top_level.txt,sha256=33b8QmBma27wPAdV36iar2GtGsGWkRYyxyp1UTuyPNk,7
+pysasl-0.3.1.dist-info/RECORD,,
