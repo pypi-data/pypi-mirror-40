@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: etcmaint
+Version: 0.3
+Summary: An Arch Linux tool based on git for the maintenance of /etc files.
+Home-page: https://gitlab.com/xdegaye/etcmaint
+Author: Xavier de Gaye
+Author-email: xdegaye@gmail.com
