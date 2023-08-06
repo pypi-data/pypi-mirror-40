@@ -1,0 +1,6 @@
+argtoolbox<0.2,>=0.1.0
+linshareapi<0.4,>=0.3.6
+poster<0.9progressbar==2.3,>=0.8.1
+veryprettytable==0.8.1
+hurry.filesize==0.9
+mock==2.0.0
