@@ -1,0 +1,9 @@
+yapsy>=1.12
+docutils>=0.14
+pip>=10
+setuptools>=39
+wheel>=0.32
+
+[dev]
+
+[test]
