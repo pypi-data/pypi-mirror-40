@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: algo_db_controller
+Version: 0.0.1
+Summary: Handles everything db related for algo
+Home-page: UNKNOWN
+Author: Afzal SH @ Tarams
+Author-email: afzal.hameed@tarams.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
