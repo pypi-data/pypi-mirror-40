@@ -1,0 +1,8 @@
+res_manager/__init__.py,sha256=7S0DrObD4OS-zkf2W3Oy8YPu-9dQ-h6g3biqFR6qnlo,90
+res_manager/manager.py,sha256=8Vg7_lnt71oRhjMcFH4btOOiWzTyTXff-2mVjUd-KaE,13687
+res_manager-3.1.1.dist-info/METADATA,sha256=GPbM7FE5NYEN_iu1vqXH-ANwSJtauLJf2TCPDBVoNFA,4662
+res_manager-3.1.1.dist-info/RECORD,,
+res_manager-3.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+res_manager-3.1.1.dist-info/top_level.txt,sha256=ZjNSBkvqACyUWvLvqAN6aFLv8QxWOHIskPOonZZvfqY,18
+tests/__init__.py,sha256=_4gM9iUdwf95qu3UicGL6WCLMQ4bFYmL9XlYn-jnmSM,79
+tests/test_allfunctions.py,sha256=GmPUrXIDKKCoOCfa99IuCMwh0NQvVUd535R7k9Kf968,1128
