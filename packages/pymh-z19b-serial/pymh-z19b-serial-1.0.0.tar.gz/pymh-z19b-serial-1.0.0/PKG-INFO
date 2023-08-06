@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pymh-z19b-serial
+Version: 1.0.0
+Summary: MH-Z19B CO2 sensor communication via serial port
+Home-page: https://github.com/yozik04/pymh-z19b
+Author: Jevgeni Kiski
+Author-email: yozik04@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: mh-z19b mh-z19 serial async
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
