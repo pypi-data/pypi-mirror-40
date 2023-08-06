@@ -1,0 +1,14 @@
+irclib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irclib/commands.py,sha256=ZCgMYnR3T1DjNYN3OOgUBO4sgG3LN3LYN3y1s96JAXc,892
+irclib/errors.py,sha256=OmweFNtkybKYpCLpBZbzalyfPWG1c3s-SLfGZDG3HH0,39
+irclib/parser.py,sha256=CgwiLArRA_hrVg7-895rnCvdw3lXLYVcRtviQHE9c18,13963
+irclib/string.py,sha256=hFIkEwJLjaJfD2XJKiaEruNY-l0VyQJZBhxTzmi4QaE,6150
+irclib/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irclib/util/compare.py,sha256=OsnrVoX5a-RRxBTonuSK-JkBBE0xAfa1XJcb6bNMoxo,386
+irclib/util/frozendict.py,sha256=puLKhi_poK4SjdikFynTqMQStLvPz8sJ6bPx-p7kizM,517
+irclib/util/numerics.py,sha256=f_KoKZa6691fqyeNEdgugIqBhKZ6GzLmwfbhRcuHSNU,6735
+py_irclib-0.2.0.dist-info/LICENSE,sha256=UpdGn2ZJ-avNQr7zvbaFzBN69OVrTQbbmWdvteSrNwk,1075
+py_irclib-0.2.0.dist-info/METADATA,sha256=Kg0Z_u5JedNl0MxHAULIqSF-tic9rEYgaXBwgtMVsI0,669
+py_irclib-0.2.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+py_irclib-0.2.0.dist-info/top_level.txt,sha256=OrHzCwynhWuQbUHJ4k0ZQXRnUMjfTRi4qMixMXYORpY,7
+py_irclib-0.2.0.dist-info/RECORD,,
