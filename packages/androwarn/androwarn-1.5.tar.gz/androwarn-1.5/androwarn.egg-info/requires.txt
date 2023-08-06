@@ -1,0 +1,4 @@
+argparse
+androguard>=3.2.1
+jinja2
+play_scraper
