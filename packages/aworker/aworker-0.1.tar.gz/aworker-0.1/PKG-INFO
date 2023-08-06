@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: aworker
+Version: 0.1
+Summary: Task queue worker that can process functions written in regular python and asyncio coroutines.
+Home-page: https://github.com/skruger/aworker
+Author: Shaun Kruger
+Author-email: shaun.kruger@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
