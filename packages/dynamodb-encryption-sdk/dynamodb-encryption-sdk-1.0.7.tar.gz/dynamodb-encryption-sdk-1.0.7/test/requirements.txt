@@ -1,0 +1,14 @@
+hypothesis>=3.63.0
+mock
+# temporarily pinning moto pending resolution of
+# https://github.com/spulec/moto/issues/1924
+moto==1.3.6
+pytest>=3.4.0
+pytest-cov
+pytest-mock
+pytest-xdist
+# temporarily pinning boto3 and botocore because the new version broke moto
+# https://github.com/spulec/moto/issues/1793
+# proper fix TBD https://github.com/aws/aws-dynamodb-encryption-python/issues/85
+boto3 < 1.8.0
+botocore < 1.11.0
