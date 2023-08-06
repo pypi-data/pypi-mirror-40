@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gtmunit2
+Version: 1.2
+Summary: Package 1 for Gigantum Client unit testing.
+Home-page: https://github.com/gigantum/gigantum-client
+Author: Gigantum
+Author-email: hello@gigantum.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 2.7
+
+This package does not contain any real functionality. It exists for unit testing the pip integration for the Gigantum Client
+
+
