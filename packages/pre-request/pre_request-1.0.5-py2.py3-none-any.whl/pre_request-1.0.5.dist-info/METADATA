@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pre-request
+Version: 1.0.5
+Summary: Deal with request params for Flask and Tornado
+Home-page: https://github.com/Eastwu5788/pre-request
+Author: Wu Dong <wudong@eastwu.cn>
+Author-email: wudong@eastwu.cn
+License: Apache 2.0
+
+# pre-request
+
+
