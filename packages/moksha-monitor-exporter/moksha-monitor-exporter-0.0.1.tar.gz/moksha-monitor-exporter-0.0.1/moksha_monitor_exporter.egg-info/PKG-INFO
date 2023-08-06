@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: moksha-monitor-exporter
+Version: 0.0.1
+Summary: A nanoservice written in Python providing Prometheus export(s) from moksha.monitoring.socket data.
+Home-page: https://github.com/redhat-developer/moksha-monitor-exporter
+Author: The Factory 2.0 Team
+Author-email: fivaldi@redhat.com
+License: MIT
+Description: UNKNOWN
+Keywords: moksha monitoring socket prometheus exporter flask
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
