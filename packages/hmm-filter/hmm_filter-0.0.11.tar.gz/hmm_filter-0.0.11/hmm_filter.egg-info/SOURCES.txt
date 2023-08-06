@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+version.py
+hmm_filter/__init__.py
+hmm_filter/hmm_filter.py
+hmm_filter/version.py
+hmm_filter.egg-info/PKG-INFO
+hmm_filter.egg-info/SOURCES.txt
+hmm_filter.egg-info/dependency_links.txt
+hmm_filter.egg-info/requires.txt
+hmm_filter.egg-info/top_level.txt
