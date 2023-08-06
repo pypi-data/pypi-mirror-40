@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: airlango_mystic
+Version: 0.0.1a0
+Summary: This python package provides abilities to control Airlango drone - Mystic
+Home-page: https://airlango.com/
+Author: Airlango Tech Support
+Author-email: it@airlango.com
+License: UNKNOWN
+Description: 
+        # Manipulation over Airlango Mystic Drone via Python
+        
+        This package provides the capabilities for user to play with Mystic drone via python scripts.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
