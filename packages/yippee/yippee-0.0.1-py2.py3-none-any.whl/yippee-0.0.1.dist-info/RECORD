@@ -1,0 +1,11 @@
+yippee/__init__.py,sha256=y7-LHU2kKnrsPyXCQj6GvV_lOCppDqs3heL1x8dnP-Y,799
+yippee/__version__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+yippee/cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yippee/config.py,sha256=UvTgo2Hdpo2q1AMQIaB3WpvpGFDUdgtRJGr8gOjZaDc,622
+yippee/generator.py,sha256=QIWUimEBybbenUljCOrGZVL29A9hMYzbaY9b6dIQt3M,4574
+yippee/repl.py,sha256=7WEFTFB8l_aimAd3Ha0LNct_XmiD_0xwUlik-8vEw5A,340
+yippee-0.0.1.dist-info/METADATA,sha256=XJQCMZg0TeKakSaw7xEtZJD8ublb340_kzxW3Zyg3hM,1665
+yippee-0.0.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+yippee-0.0.1.dist-info/entry_points.txt,sha256=Sq6sXnkT2PohKuzhzEXW43HiXYQf6IRYOgSdbOOW8wg,44
+yippee-0.0.1.dist-info/top_level.txt,sha256=wQl91tF6WMK-Gw22p5fHuk_Ucp9hqKNLvUMzPrQqEZs,7
+yippee-0.0.1.dist-info/RECORD,,
