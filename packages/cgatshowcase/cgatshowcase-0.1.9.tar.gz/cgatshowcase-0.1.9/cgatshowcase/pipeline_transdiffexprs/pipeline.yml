@@ -1,0 +1,108 @@
+project_name: showcase_test
+
+# name of the gtf file in gz format, located in the directory the pipeline will be ran.
+geneset: refcoding.gtf.gz
+
+# This is the name of the fasta genome indexed
+genome: hg19
+
+# location of indexed genome 
+genome_dir: .
+
+    ################################################################
+    ## kallisto options
+    ################################################################
+kallisto:
+    # kmer size for kallisto. Default is 31. Max is 31.
+    # Used to generate the Kallisto index.
+    # Kallisto will ignore transcripts shorter than this
+    kmer: 31
+
+    # number of threads for kallisto
+    threads: 8
+
+    # string to append to the Kallisto quant command to provide specific
+    # options
+    # optional arguments include:
+    # --bias --single -l -s 
+    # --rf-stranded (check manual for strandedness details)
+    # see https://pachterlab.github.io/kallisto/manual 
+    options: '--single -l 200 -s 20'
+
+    # fragment-length/sd required for single-end reads only
+    fragment_length: 180
+
+    fragment_sd: 20
+
+    # number of bootstrap samples. Note, you need to bootstrap for
+    # differential expression with sleuth if there are no technical
+    # replicates. If you only need point estimates, set to 1
+    # note that bootstrap must be set to at least 1
+    bootstrap: 100
+
+    # job memory for Kallisto
+    memory: 6G
+
+
+################
+# Merging files
+################
+
+merge_pattern_output:
+
+merge_pattern_input: 
+
+
+#########################
+# Differential expression
+#########################
+
+# differential expression methods to apply
+# currently the only allowable quantifier is:
+# deseq2
+# although this pipeline could be extended to include edgeR or sleuth.
+de_tools: [deseq2]
+
+
+################################################################
+# Deseq2 options
+################################################################
+
+deseq2:
+    # fdr to accept for deseq2
+    fdr: 0.05
+
+    # model to pass as DESeq2 design
+    model: ~group
+
+    # contrast to return during post-hoc pairwise tests
+    contrast: group
+
+    # reference level for contrast , e.g WT
+    control: Brain1
+    # test for significance for deseq1 - wald or lrt
+    detest: wald
+
+    # Set the correct bioMart dataset to convert ensembl
+    # transcripts to gene id's
+    # To find the available dataset for each species you have mapped against
+    # type mart=useMart(biomert="ENSEMBL_MART_ENSEMBL", host="www.ensembl.org") then
+    # listDatasets(mart) and choose the correct one for your species. e.g. mmusculus_gene_ensembl for mouse. 
+    biomart: hsapiens_gene_ensembl
+
+##################################################################
+# Convert counts to tpm values
+###################################################################
+
+tpm:
+    # This calculation can be turned on or off. set to 1 to run or 0 to turn off.
+    run: 1
+
+    # The tpm conversion required you to specify the genome version used according to
+    # GRC ensembl format. e.g. for example if mm10 then specify GRCm38
+    genome_version: GRCh37.75
+
+    # tpm calulation requires a mean fragment length for your sample libraries
+    # this can be calculated experimentally by looking at the bioanalyzer trace or calulated bioinformatically
+    # using picard tools
+    frag_length: 200 
