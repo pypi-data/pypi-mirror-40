@@ -1,0 +1,11 @@
+README.md
+setup.py
+strainchoosr/__init__.py
+strainchoosr/strainchoosr.py
+strainchoosr/tree_generation.py
+strainchoosr.egg-info/PKG-INFO
+strainchoosr.egg-info/SOURCES.txt
+strainchoosr.egg-info/dependency_links.txt
+strainchoosr.egg-info/entry_points.txt
+strainchoosr.egg-info/requires.txt
+strainchoosr.egg-info/top_level.txt
