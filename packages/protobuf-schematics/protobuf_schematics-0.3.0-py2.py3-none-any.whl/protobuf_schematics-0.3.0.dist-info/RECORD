@@ -1,0 +1,10 @@
+protobuf_schematics/__init__.py,sha256=io5eM1CH4YG1V6EH-8i6NkKqixV-K_5bX2ugYjpwWEw,128
+protobuf_schematics/cli.py,sha256=lUJFatJvh187_dfEbUr-VYJ9VE_E-eStgcehG6gKljA,1003
+protobuf_schematics/engine.py,sha256=o0LGCW_JW82jSJGYNiVd27Fd-thIs-JwNcsakx1maSw,946
+protobuf_schematics/templates/schematics_py.tmpl,sha256=nu6VmPP0cmHtpAtcBw3NTNAo7xgoWpuapKJruY6z8KE,3432
+protobuf_schematics-0.3.0.dist-info/LICENSE,sha256=6mSbbepJ08urtc7zKinnr838rtdI5nhkYzSPPN8qZXE,583
+protobuf_schematics-0.3.0.dist-info/METADATA,sha256=i_9klG4bJT3XHg1VV3xISuC6B4FHT10UpKmGweM8DZk,6380
+protobuf_schematics-0.3.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+protobuf_schematics-0.3.0.dist-info/entry_points.txt,sha256=Emmdssw5mxlhkGuikvHMeKlNxJD0A_lpmddAYdb6AUM,70
+protobuf_schematics-0.3.0.dist-info/top_level.txt,sha256=UQHF0la2BvKEe5Ut-sHr6Xe1Sci6XBp32FvirW_7-zA,20
+protobuf_schematics-0.3.0.dist-info/RECORD,,
