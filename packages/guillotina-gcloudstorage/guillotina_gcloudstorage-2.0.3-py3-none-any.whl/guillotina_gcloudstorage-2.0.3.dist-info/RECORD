@@ -1,0 +1,14 @@
+guillotina_gcloudstorage/__init__.py,sha256=2XOfuEkQGAsl7zVECp6NRl4EN28FQNyS4uilqjaIn4s,369
+guillotina_gcloudstorage/interfaces.py,sha256=W-295hHHTqipwK8CzNJ5TDq23qd3yiuLFQ11FKoY-wc,399
+guillotina_gcloudstorage/redisdm.py,sha256=MFJtTb7Q7nw0bLbOhF8x6-qEm-YiJDcZFsPje7KuVLI,365
+guillotina_gcloudstorage/storage.py,sha256=OnwgRknZKVGBvEYDBeiujwKdNUWO453f49GrEAGDJuE,16354
+guillotina_gcloudstorage/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guillotina_gcloudstorage/tests/conftest.py,sha256=_1C9aXpLotHbPSLtjP9iVPukn5Xaw4qTFQvSqLww-So,131
+guillotina_gcloudstorage/tests/fixtures.py,sha256=BnkddU_IqPoryEkX88aFNub9domWFQbpyHWpoXsiHVQ,714
+guillotina_gcloudstorage/tests/test_storage.py,sha256=0dmT0TQp-xVyvp3Oz9J4JfeZ7y5tFV2rL1JGXfuIyXI,19390
+guillotina_gcloudstorage-2.0.3.dist-info/METADATA,sha256=dOR-DPZy3F23lDiVI5HbKbZWhQ-ZTSgQuAqMmD4mlX4,6561
+guillotina_gcloudstorage-2.0.3.dist-info/RECORD,,
+guillotina_gcloudstorage-2.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+guillotina_gcloudstorage-2.0.3.dist-info/entry_points.txt,sha256=8J2jx873UlLrbLt2UzKeOxdtwy5-z_Cy7l6mn9J3FaA,49
+guillotina_gcloudstorage-2.0.3.dist-info/top_level.txt,sha256=r3wtCzzxJ3IeIgomisLyIGtueClr1iKt-M9YrhPnxwk,25
+guillotina_gcloudstorage-2.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
