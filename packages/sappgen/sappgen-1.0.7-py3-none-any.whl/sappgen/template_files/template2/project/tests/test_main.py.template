@@ -1,0 +1,33 @@
+import logging
+from flask import json
+from $APP_NAME import app
+
+
+# ==================================================================================================
+
+logging.getLogger().setLevel("DEBUG")
+
+app.testing = True
+client = app.test_client()
+mimetype = "application/json"
+headers = {"Content-Type": mimetype, "Accept": mimetype}
+
+# ==================================================================================================
+
+
+def test_ping():
+    r = client.get("/")
+    assert r.status_code == 200
+    resp = r.json
+    logging.debug(str(resp))
+    assert resp["message"] == "success"
+    assert resp["return_code"] == 0
+
+
+def test_test_route_1():
+    data = {"val": "test val"}
+    r = client.post("/test-route-1", data=json.dumps(data), headers=headers)
+    assert r.status_code == 200
+    resp = r.json
+    logging.debug(str(resp))
+    assert resp["return_code"] == 0
