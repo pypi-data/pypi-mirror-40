@@ -1,0 +1,10 @@
+README.md
+setup.py
+attribute_dict/__init__.py
+attribute_dict.egg-info/PKG-INFO
+attribute_dict.egg-info/SOURCES.txt
+attribute_dict.egg-info/dependency_links.txt
+attribute_dict.egg-info/top_level.txt
+tests/__init__.py
+tests/test_attribute_dict.py
+tests/utils.py
