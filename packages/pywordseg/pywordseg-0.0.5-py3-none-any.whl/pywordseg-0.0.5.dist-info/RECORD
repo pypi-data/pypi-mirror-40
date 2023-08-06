@@ -1,0 +1,10 @@
+pywordseg/__init__.py,sha256=tuZff2yFvhL7h1gQNr4iqgLOjbY-belENcnhYhUtbUk,982
+pywordseg/download.py,sha256=Gp3Zp0i7xw7Klj5aGov_wkY8sx1w9-eh7IC_VYXXOR8,1274
+pywordseg/pywordseg.py,sha256=9HJE7WgPhc4Vfp5WOOlyzDfN31AN86OGKGW0ShXFwB0,10696
+pywordseg/CharEmb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywordseg/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywordseg-0.0.5.dist-info/LICENSE,sha256=Y2n4PCs1gWvwQHoKG83kdL62EVxG8bDh1OTbCBp9Lso,1069
+pywordseg-0.0.5.dist-info/METADATA,sha256=HteiLD4BaLlGfWZtBkJcnfBtNdHDLhDwELj1kjEGC88,486
+pywordseg-0.0.5.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+pywordseg-0.0.5.dist-info/top_level.txt,sha256=Oc4dsJdnqBtfUDKOcPAVBExI8jdZlFue_X_4NIdLd4o,10
+pywordseg-0.0.5.dist-info/RECORD,,
