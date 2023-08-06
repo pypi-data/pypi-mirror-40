@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: catpy
+Version: 0.3.0
+Summary: Python client for the CATMAID API
+Home-page: https://github.com/catmaid/catpy
+Author: Andrew S. Champion
+Author-email: andrew.champion@gmail.com
+License: MIT license
+Keywords: catpy catmaid neuron
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: networkx (>=1.11)
+Requires-Dist: numpy (>=1.12)
+Requires-Dist: Pillow (>=5.0)
+Requires-Dist: requests (>=2.14)
+Requires-Dist: requests-futures (>=0.9)
+Requires-Dist: six (>=1.10)
+Requires-Dist: futures (>=3.2) ; python_version < "3.3"
+Requires-Dist: backports.functools-lru-cache (>=1.5) ; python_version < "3.3"
+Requires-Dist: enum34 (>=1.1) ; python_version < "3.4"
+
+catpy - Python client for the CATMAID API
+=========================================
+
+
+.. image:: https://img.shields.io/pypi/v/catpy.svg
+        :target: https://pypi.python.org/pypi/catpy
+        :alt: PyPI Package Version
+
+.. image:: https://img.shields.io/travis/catmaid/catpy.svg
+        :target: https://travis-ci.org/catmaid/catpy
+        :alt: Continuous Integration Status
+
+.. image:: https://readthedocs.org/projects/catpy/badge/?version=latest
+        :target: https://catpy.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. image:: https://img.shields.io/badge/License-MIT-blue.svg
+        :target: https://opensource.org/licenses/MIT
+        :alt: License: MIT
+
+
+Python client for the `CATMAID <https://catmaid.org>`_ API, plus some helpful tools for working with the data.
+
+
+=======
+History
+=======
+
+
+In progress
+-----------
+
+
+0.3.0 (2019-01-11)
+------------------
+
+* Refactors
+* Improve docs
+* Allow networkx 2+ to be used
+* Add NameResolver application
+* Add enum for connector relation types
+* Add utility for interpolating virtual treenodes
+
+
+0.2.0 (2018-05-30)
+------------------
+
+* Refactoring and fixing PyPI deployment
+* ImageFetcher
+* CoordinateTransformer
+* URL builder
+
+
+0.1.0 (2017-05-12)
+------------------
+
+* First release on PyPI.
+
+
