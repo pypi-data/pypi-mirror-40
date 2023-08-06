@@ -1,0 +1,3 @@
+[console_scripts]
+numecon = numecon.__main__:cli
+
