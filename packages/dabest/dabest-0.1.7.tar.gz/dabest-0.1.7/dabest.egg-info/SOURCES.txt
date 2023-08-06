@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dabest/__init__.py
+dabest/_api.py
+dabest/_bootstrap_tools.py
+dabest/_misc_tools.py
+dabest/_plot_tools.py
+dabest.egg-info/PKG-INFO
+dabest.egg-info/SOURCES.txt
+dabest.egg-info/dependency_links.txt
+dabest.egg-info/top_level.txt
+dabest/tests/__init__.py
+dabest/tests/test_bootstrap.py
+dabest/tests/test_plotting.py
