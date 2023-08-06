@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyaudiogame
+Version: 0.0.3
+Summary: PyAudioGame is a toolkit for making audio games in python.
+Home-page: https://github.com/frastlin/PyAudioGame
+Author: Brandon Keith Biggs
+Author-email: brandonkeithbiggs@gmail.com
+License: MIT
+Download-URL: https://codeload.github.com/frastlin/PyAudioGame/zip/master
+Platform: UNKNOWN
+Requires-Dist: pygame
+
+UNKNOWN
+
+
