@@ -1,0 +1,16 @@
+dials_data/__init__.py,sha256=_ur-GLELxL_LOAOd8PuxlC0Yt-dUPzZHJpSGKAuehA8,1428
+dials_data/cli.py,sha256=Aan-saayqDtU9P3O8oTcRG876o9tUODZqJACAGaglYA,3268
+dials_data/datasets.py,sha256=webf5Uv3Z6kJbFeYyd7c6tv60z_ghGhsikloJoNyuzY,5256
+dials_data/download.py,sha256=OhAu3c2Et3H0rDH87rbOjRJqQSP4fyORZ4mEbcEAPVk,7718
+dials_data/definitions/insulin.yml,sha256=QqGAjNzFEo-RFdvGTBl427TyxjBa2GhE23PJ3T86vFk,3659
+dials_data/definitions/pychef.yml,sha256=FAl2r1uwBcwQ0wNcwTG8mz0VURMKOd4bY7oLAdHGdYE,150
+dials_data/definitions/x4wide.yml,sha256=ZHvnm7eQrBv0Z1U1PEik2qLhYwINaGu2TyKbYDOTJZQ,7832
+dials_data/hashinfo/insulin.yml,sha256=sSSBDZRckUBTud7Zew48k2fFB_iNcVu35vg97Myn0Pk,4152
+dials_data/hashinfo/pychef.yml,sha256=XWYSpkIY6CmnqsR6Ih1azN9UgtXGqweDZdLalOYL-MU,191
+dials_data/hashinfo/x4wide.yml,sha256=0gEizFfMR_uaSU_9F51AdN0UKiZtvdQHIkWFy21mds4,8112
+dials_data-0.4.0.dist-info/LICENSE,sha256=aiCFAaXNt3NV6Qy-VUZORIOs-i5G9_LmjgbqSKiN1TI,1481
+dials_data-0.4.0.dist-info/METADATA,sha256=ZZOZhc0ehHgTznOKTRlmsa1vIYXZc5giP2A1FuEyjD0,5010
+dials_data-0.4.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+dials_data-0.4.0.dist-info/entry_points.txt,sha256=VZy-Qm_lSINJhqJxepeoFSiV26CVLjQzCoqMBdlxGg8,104
+dials_data-0.4.0.dist-info/top_level.txt,sha256=knqEnZUce6i_fN3z-aLkTN1T69nx3bTj6r6nY16VwrI,11
+dials_data-0.4.0.dist-info/RECORD,,
