@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gcp-integration-tools
+Version: 0.0.1
+Summary: Integration toolset for Google Cloud Platform
+Home-page: https://github.com/stephendarling/gcp-integration-tools
+Author: Stephen Darling
+Author-email: stephen.darling@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# GCP Integration Tools
+
+
