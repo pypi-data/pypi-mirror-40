@@ -1,0 +1,10 @@
+setup.py
+pwnsandbox.egg-info/PKG-INFO
+pwnsandbox.egg-info/SOURCES.txt
+pwnsandbox.egg-info/dependency_links.txt
+pwnsandbox.egg-info/entry_points.txt
+pwnsandbox.egg-info/not-zip-safe
+pwnsandbox.egg-info/requires.txt
+pwnsandbox.egg-info/top_level.txt
+sandbox/__init__.py
+sandbox/sandbox.py

@@ -1,0 +1,3 @@
+[console_scripts]
+pwn_sandbox = sandbox.sandbox:main
+

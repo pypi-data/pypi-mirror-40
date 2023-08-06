@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pwnsandbox
+Version: 0.1
+Summary: Yet another pwn sandbox in CTF!
+Home-page: https://github.com/unamer/PwnSandboxForCTF
+Author: unamer
+Author-email: n0nick@protonmail.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: pwn sandbox ctf
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
