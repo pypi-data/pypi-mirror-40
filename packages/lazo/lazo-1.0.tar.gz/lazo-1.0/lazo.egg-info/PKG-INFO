@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: lazo
+Version: 1.0
+Summary: small utility to iteract with Rancher API
+Home-page: https://github.com/saxix/lazo
+Author: Stefano Apostolico
+Author-email: s.apostolico@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
