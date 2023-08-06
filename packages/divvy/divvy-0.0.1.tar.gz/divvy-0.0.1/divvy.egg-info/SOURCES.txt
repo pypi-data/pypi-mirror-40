@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+divvy.egg-info/PKG-INFO
+divvy.egg-info/SOURCES.txt
+divvy.egg-info/dependency_links.txt
+divvy.egg-info/top_level.txt
+divvy/submit_templates/default_compute_settings.yaml
+divvy/submit_templates/localhost_template.sub
+divvy/submit_templates/slurm_template.sub
+requirements/requirements-all.txt
+requirements/requirements-dev.txt
+requirements/requirements-test.txt
