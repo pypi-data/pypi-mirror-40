@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django-jsonyamlfield
+Version: 0.1.1
+Summary: Django JSONField as YAML.
+Home-page: https://gitlab.com/mike_tk/django-jsonyamlfield
+Author: Mike Tkachuk
+Author-email: mike@tkachuk.name
+License: UNKNOWN
+Description: Same as Django JSONField but represent it as YAML
+Platform: UNKNOWN
