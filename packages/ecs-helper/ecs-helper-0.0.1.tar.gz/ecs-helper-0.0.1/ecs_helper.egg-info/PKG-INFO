@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ecs-helper
+Version: 0.0.1
+Summary: Scriptable tool for managing ECS deployments
+Home-page: https://github.com/fibertide/ecs-helper
+Author: Fibertide
+Author-email: team@fibertide.com
+License: UNKNOWN
+Description: ecs-helper
+        ===
+        
+        Scriptable tool for managing ECS deployments.
+        
+Keywords: aws ecs cli
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

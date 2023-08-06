@@ -1,0 +1,3 @@
+[console_scripts]
+ecs-helper = ecshelper.main:main
+

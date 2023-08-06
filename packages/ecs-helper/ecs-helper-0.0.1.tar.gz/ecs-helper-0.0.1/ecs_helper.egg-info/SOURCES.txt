@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+ecs_helper.egg-info/PKG-INFO
+ecs_helper.egg-info/SOURCES.txt
+ecs_helper.egg-info/dependency_links.txt
+ecs_helper.egg-info/entry_points.txt
+ecs_helper.egg-info/top_level.txt
+ecshelper/__init__.py
+ecshelper/main.py
