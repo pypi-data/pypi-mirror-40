@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pynuoadmin
+Version: 1.0.0
+Summary: Python management interface for NuoDB
+Home-page: https://nuodb.com
+Author: NuoDB
+Author-email: info@nuodb.com
+License: BSD License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.7
+Provides-Extra: completion

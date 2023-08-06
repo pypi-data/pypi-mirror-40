@@ -1,0 +1,9 @@
+nuodb_cli.py
+nuodb_mgmt.py
+setup.cfg
+setup.py
+pynuoadmin.egg-info/PKG-INFO
+pynuoadmin.egg-info/SOURCES.txt
+pynuoadmin.egg-info/dependency_links.txt
+pynuoadmin.egg-info/requires.txt
+pynuoadmin.egg-info/top_level.txt

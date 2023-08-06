@@ -1,0 +1,5 @@
+requests<3.0.0,>=2.8.1
+pynuodb>=2.3.3
+
+[completion]
+argcomplete<2.0.0,>=1.9.0
