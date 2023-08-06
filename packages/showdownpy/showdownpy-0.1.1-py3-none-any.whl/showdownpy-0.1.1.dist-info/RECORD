@@ -1,0 +1,11 @@
+showdown/__init__.py,sha256=ANdO1tfJd1mrqgj3lcaCILQ7-0NJq7BHvWsRAqy1SXE,294
+showdown/client.py,sha256=UFzjufr1f9veEllq2VwctBCt8p_lLn3qb7-XOHYVasE,30930
+showdown/message.py,sha256=kH4LIozr7Y2RSRjA3QfwjSyPhwoDuSc2sWw6YNvoKss,4329
+showdown/room.py,sha256=-is2cquDuPXdbWuGvOxvVqt1wKCRiMG3HoYb3x2nYRo,11616
+showdown/server.py,sha256=J_01mATxS24N7tLf386EYGOFRl9FDNiGnLga7JLzqMU,10228
+showdown/user.py,sha256=BYy7QgKDoemnGvsOnGGhwsG-n_-eR3HA3ul7V4nuS9A,9217
+showdown/utils.py,sha256=spYC6Kgt-AdjhAkvmZRUDOouIYIdCgdQVqPu8li09lo,7507
+showdownpy-0.1.1.dist-info/METADATA,sha256=ykWgOqyQAHgn5bs-VfYtbKf3meichIpGa0vc7SSWxlg,2390
+showdownpy-0.1.1.dist-info/RECORD,,
+showdownpy-0.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+showdownpy-0.1.1.dist-info/top_level.txt,sha256=8AV8X-CBE3PizPLvfj0mTcfOz3ovre_lnjZ5ERs1EhA,9
