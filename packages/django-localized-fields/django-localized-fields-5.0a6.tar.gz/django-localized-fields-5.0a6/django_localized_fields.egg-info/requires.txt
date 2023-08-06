@@ -1,0 +1,3 @@
+django-postgres-extra>=1.21a14
+Django>=1.11
+deprecation==2.0.3
