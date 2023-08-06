@@ -1,0 +1,12 @@
+numpy>=1.7.1
+six>=1.3
+bz2file; python_version < "3.0"
+
+[dicom]
+dicom>=0.9.9
+
+[doc]
+Sphinx>=0.3
+
+[test]
+nose>=0.10.1
