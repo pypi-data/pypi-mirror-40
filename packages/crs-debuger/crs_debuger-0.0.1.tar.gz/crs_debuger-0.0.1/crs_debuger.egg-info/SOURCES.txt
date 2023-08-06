@@ -1,0 +1,10 @@
+README.md
+setup.py
+crs_debuger/__init__.py
+crs_debuger/core.py
+crs_debuger.egg-info/PKG-INFO
+crs_debuger.egg-info/SOURCES.txt
+crs_debuger.egg-info/dependency_links.txt
+crs_debuger.egg-info/top_level.txt
+tests/__init__.py
+tests/test_database.py
