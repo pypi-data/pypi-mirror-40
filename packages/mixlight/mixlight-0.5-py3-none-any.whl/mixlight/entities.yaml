@@ -1,0 +1,180 @@
+output:
+  universe: 0
+  switch:
+    - 41: "Garaj Motor"
+    - 42: "Poarta Motor"
+    - 43: "Recirculare"
+    - 44: "Degivrare"
+    - 45: "Switch 45"
+    - 46: "Pardoseala Garaj"
+    - 47: "Switch 47"
+    - 48: "Switch 48"
+  light:
+    - 1: "Bec 1"
+    - 2: "Bec 2"
+    - 3: "Bec 3"
+    - 4: "Bec 4"
+    - 5: "Bec 5"
+    - 6: "Bec 6"
+    - 7: "Bec 7"
+    - 8: "Garaj mare"
+    - 9: "Intrare exterior"
+    - 10: "Dining"
+    - 11: "Living"
+    - 12: "Intrare"
+    - 13: "Bucatarie"
+    - 14: "Baie jos"
+    - 15: "Bec 15"
+    - 16: "Bec 16"
+    - 17: "Scari"
+    - 18: "Spalatorie"
+    - 19: "Camera copil"
+    - 20: "Bec 20"
+    - 21: "Camera Paul Disco"
+    - 22: "Camera Paul"
+    - 23: "Dressing"
+    - 24: "Dormitor"
+    - 25: "Baie mare dus"
+    - 26: "Bec 26"
+    - 27: "Baie mare"
+    - 28: "Bec 28"
+    - 29: "Bec 29"
+    - 30: "Hol sus"
+    - 31: "Bec 31"
+    - 32: "Birou"
+    - 33: "Bec 33"
+    - 34: "Bec 34"
+    - 35: "Bec 35"
+    - 36: "Bec 36"
+    - 37: "Bec 37"
+    - 38: "Bec 38"
+    - 39: "Bec 39"
+    - 40: "Baie mica"
+  dimmer:
+    - 98: "Dimmer 98"
+    - 99: "Baie oglinda"
+    - 100: "Bucatarie blat"
+  rgb:
+    - 65: "rgb 65"
+    - 68: "rgb 68"
+    - 71: "Dining RGB"
+    - 74: "rgb 74"
+    - 77: "rgb 77"
+    - 80: "Living RGB"
+    - 83: "rgb 83"
+    - 86: "rgb 86"
+    - 89: "Intrare RGB"
+    - 92: "rgb 92"
+    - 95: "Bucatarie RGB"
+    - 101: "rgb 101"
+    - 104: "rgb 104"
+    - 107: "rgb 107"
+    - 110: "rgb 110" 
+    - 113: "rgb 113"
+    - 116: "rgb 116"
+    - 119: "rgb 119"
+    - 122: "Camera Paul RGB"
+    - 125: "rgb 125"
+    - 128: "Dormitor RGB"
+    
+input:
+  universe: 0
+  boards:
+    - address: 1
+      direct:
+        - 2: "MIX_O0_E89"
+        - 3: "MIX_O0_E9"
+        - 4: "MIX_O0_E12"
+        - 5: "MIX_O0_E8"
+    - address: 2
+      direct:
+        - 2: "MIX_O0_E30"
+    - address: 3
+      direct:
+        - 3: "MIX_O0_E10"
+        - 4: "MIX_O0_E71"
+    - address: 4
+      direct:
+        - 3: "MIX_O0_E11"
+    - address: 5
+      direct:
+        - 3: "MIX_O0_E11"
+        - 4: "MIX_O0_E80"
+    - address: 6
+      direct:
+        - 2: "MIX_O0_E13"
+        - 3: "MIX_O0_E95"
+        - 4: "MIX_O0_E100"
+    - address: 7
+      direct:
+        - 1: "MIX_O0_E14"
+        - 2: "MIX_O0_E99"
+    - address: 8
+      direct:
+        - 2: "MIX_O0_E8"
+        - 3: "MIX_O0_E41"
+        - 4: "MIX_O0_E42"
+    - address: 9
+      direct:
+        - 2: "MIX_O0_E24"
+        - 3: "MIX_O0_E128"
+    - address: 16
+      direct:
+        - 2: "MIX_O0_E40"
+    - address: 17
+      direct:
+        - 2: "MIX_O0_E27"
+        - 3: "MIX_O0_E25"
+    - address: 18
+      direct:
+        - 2: "MIX_O0_E30"
+        - 3: "MIX_O0_E17"
+    - address: 19
+      direct:
+        - 2: "MIX_O0_E22"
+        - 3: "MIX_O0_E122"
+        - 4: "MIX_O0_E21"
+    - address: 20
+      direct:
+        - 2: "MIX_O0_E19"
+    - address: 21
+      direct:
+        - 2: "MIX_O0_E32"
+    - address: 22
+      direct:
+        - 2: "MIX_O0_E23"
+        - 3: "MIX_O0_E18"
+    - address: 48
+      temperature: "Temp Dormitor"
+      humidity: "Hum Dormitor"
+    - address: 49
+      temperature: "Temp Garaj"
+      humidity: "Hum Garaj"
+    - address: 50
+      temperature: "Temp Birou"
+      humidity: "Hum Birou"
+    - address: 51
+      temperature: "Temp Paul"
+      humidity: "Hum Paul"
+    - address: 52
+      temperature: "Temp Bucatarie"
+      humidity: "Hum Bucatarie"
+    - address: 53
+      temperature: "Temp Baie mare"
+      humidity: "Hum Baie mare"
+    - address: 54
+      temperature: "Temp Baie jos"
+      humidity: "Hum Baie jos"
+    - address: 55
+      temperature: "Temp Baie dormitor"
+      humidity: "Hum Baie dormitor"
+    - address: 56
+      temperature: "Temp Living"
+      humidity: "Hum Living"
+    - address: 57
+      temperature: "Temp Dining"
+      humidity: "Hum Dining"
+    - address: 58
+      temperature: "Temp Copil"
+      humidity: "Hum Copil"
+      
