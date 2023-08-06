@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: backscatter
+Version: 0.1.0
+Summary: Client to interact with Backscatter.io services.
+Home-page: https://github.com/
+Author: Brandon Dixon
+Author-email: brandon@backscatter.io
+License: MIT
+Download-URL: https://github.com/USER/PROJECT/archive/master.zip
+Description: UNKNOWN
+Keywords: internet scanning,cybersecurity,defense,intelligence
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
