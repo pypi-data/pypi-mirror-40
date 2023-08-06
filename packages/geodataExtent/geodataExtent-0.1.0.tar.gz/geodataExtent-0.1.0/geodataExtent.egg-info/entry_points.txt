@@ -1,0 +1,3 @@
+[console_scripts]
+extract-extant = geodataExtent.masterExtract:main
+
