@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+# Convert all "p.XX" SPHC output file to "casenameXX.vtu" where outname is the argument of the script
+import sys
+import glob, os
+import re
+import sphcpy as spy
+
+if len(sys.argv)==2:
+    reg = re.compile(r'^p.\d+$')
+    for file in glob.glob("p.*"):
+        if reg.match(file):
+            d=spy.dataslice(int(file.split(".")[1]))
+            d.ToVTK(sys.argv[1])
+
+else:
+    print("Usage:")
+    print("    p2VTK casename")
+
+
