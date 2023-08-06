@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: ownphotos-client
+Version: 0.1
+Summary: Ownphotos client
+Home-page: http://github.com/guysoft/ownphotos-client
+Author: Guy Sheffer
+Author-email: guysoft@gmail.com
+License: GPLv3
+Keywords: ownphotos
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: requests (>=2.21.0)
+
+Ownphotos Client
+================
+Lets you interact with an `Ownphotos <https://github.com/hooram/ownphotos>`_ backend server.
+
+Installation::
+
+    pip3 install ownphotos-client
+
+Example::
+
+    #!/usr/bin/python3
+    from ownphotos_client import OwnphotosAPI
+
+    if __name__ == "__main__":    
+        username = "admin"
+        password = "admin"
+        url= 'https://ownphotos.gnethomelinux.com/'
+        a = OwnphotosAPI(url, username, password)
+        print(a.avilable())
+        for i in a.get_user_photos()["results"]:
+            for cover in i["cover_photos"]:
+                image_data = a.get_thumbnail(cover["image_hash"])
+                with open("/tmp/" + cover["image_hash"] + ".jpg",'wb') as w:
+                    w.write(image_data)
+
+
