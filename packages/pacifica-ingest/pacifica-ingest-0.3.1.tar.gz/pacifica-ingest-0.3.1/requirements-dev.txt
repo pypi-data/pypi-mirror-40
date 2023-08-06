@@ -1,0 +1,13 @@
+-r requirements.txt
+coverage
+mock
+pacifica-archiveinterface
+pacifica-metadata
+pacifica-policy
+pacifica-uniqueid
+pep257
+pre-commit
+pylint<2.0
+pytest
+radon
+recommonmark
