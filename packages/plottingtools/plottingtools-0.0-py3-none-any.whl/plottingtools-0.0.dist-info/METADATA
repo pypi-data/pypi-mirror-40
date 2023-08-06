@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: plottingtools
+Version: 0.0
+Summary: A collection of tools for plotting graphs that I have used often enough (or are complex enough) for me to add to a repo
+Home-page: https://github.com/JoshuaBeard/plottingtools
+Author: Joshua Beard
+Author-email: joshuabeard92@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# plottingtools
+A collection of tools that I use for plotting often enough (or with enough complexity) to necessitate creating a useful API
+
+
