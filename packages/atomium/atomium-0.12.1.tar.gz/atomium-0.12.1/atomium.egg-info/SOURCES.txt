@@ -1,0 +1,15 @@
+README.rst
+setup.py
+atomium/__init__.py
+atomium/base.py
+atomium/data.py
+atomium/mmcif.py
+atomium/mmtf.py
+atomium/pdb.py
+atomium/structures.py
+atomium/utilities.py
+atomium.egg-info/PKG-INFO
+atomium.egg-info/SOURCES.txt
+atomium.egg-info/dependency_links.txt
+atomium.egg-info/requires.txt
+atomium.egg-info/top_level.txt
