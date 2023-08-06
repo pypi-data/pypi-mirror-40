@@ -1,0 +1,55 @@
+Metadata-Version: 1.1
+Name: malachite
+Version: 1.0.5
+Summary: A Gene Enrichment Meta-Analysis (GEM) Tool for ToppGene
+Home-page: https://github.com/ggersh/malachite-final
+Author: Gregory R. Gershkowitz, Zachary B. Abrams, Kevin R. Coombes
+Author-email: kevin.coombes@osumc.edu
+License: UNKNOWN
+Description: # Malchite: A Gene Enrichment Meta-Analysis (GEM) Tool for ToppGene
+        
+        ##### Researchers commonly use software, such as Toppgene and online tools to conduct enrichment analyses on gene expression data. This process does not allow multiple gene data sets to be analyzed and compared at once. Malachite allows researchers to perform enrichment analyses on multiple gene lists and concatenate the resulting enrichment statistics, thus, enabling meta-enrichment analyses across multiple data sets.
+        
+        # How to Use:
+        
+        ## Command Line Argument Descriptions:
+        
+        #### 1# Full path to Input Folder:
+        
+        ex. "/Desktop/myInput/"
+        
+        #### 2# Input type:
+        ###### Choose one: HGNC, HGNC_SYNONYMS, ENTREZ, ENSEMBL, REFSEQ, UNIPROT
+        
+        ex. "HGNC"
+        
+        #### 3# Categories:
+        ###### Options: "GeneOntologyMolecularFunction": "GO: Molecular Function", "GeneOntologyBiologicalProcess": "GO: Biological Process", "GeneOntologyCellularComponent":"GO: Cellular Component", "HumanPheno":"Human Phenotype","MousePheno":"Mouse Phenotype","Domain":"Domain", "Pathway":"Pathway","Pubmed":"Pubmed","Interaction":"Interaction","Cytoband":"Cytoband","TFBS":"Transcription Factor Binding Site","GeneFamily":"Gene Family","Coexpression":"Coexpression","CoexpressionAtlas":"Coexpression Atlas","Computational":"Computational","MicroRNA":"MicroRNA","Drug":"Drug","Disease":"Disease"
+        
+        ex. ["Drug", "Disease", "GeneOntologyMolecularFunction"]
+        
+        #### 4# Individual Toppgene Analyses Output path:
+        
+        ex. "/Desktop/Results/IndividualResults/"
+        
+        #### 5# Name for Output:
+        
+        ex. "item"
+        
+        #### 6# Final Concatenated Results Output path:
+        
+        ex. "/Desktop/Results/ConcatenatedResults/"
+        
+        # FOR EXAMPLE,
+        
+        ### In terminal type...
+        
+        ./malachite.py "/Desktop/myInput/" "HGNC" ["Drug", "Disease", "GeneOntologyMolecularFunction"] "/Desktop/Results/IndividualResults/" "item" "/Desktop/Results/ConcatenatedResults/"
+        
+        ### *NOTE: quotation marks (“/‘) can be glitchy, make sure you use straight quotes, not curly quotes.
+        ### *NOTE: input data has to be of type .xls
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
