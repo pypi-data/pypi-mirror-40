@@ -1,0 +1,14 @@
+kagenda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kagenda/__main__.py,sha256=pXXjNCvveK-1a67t0KJUNSihvVGBCsmhOENcyjNczTg,166
+kagenda/agenda.py,sha256=TeXj7egev2bvLdFzhRjGNx7huQ6Nzel9g8RUKtGMQZI,2292
+kagenda/cal.py,sha256=cRiGdKR58aPqE_0ZAkDqyNSeqGL0qf_CZis8MlOr-mw,2689
+kagenda/config.py,sha256=Ixe_ROBjOmQ7NdhKA0Qylqc8w0ltP--Ew8l_3RZPiP8,228
+kagenda/printer.py,sha256=BVYUquwI7YEq4MmWhhSXKMwj3justoTozvUkuiOFjik,25520
+kagenda/speech.py,sha256=wcVpqIK_0MiEwXNb_4RvLlg_x47aRKysK2SMnc4n4gI,259
+kagenda/todo.py,sha256=b8tFJgOp4vSP4QBVjAtXsjNiZK0-9ZjGYXbHwev5nys,1696
+kagenda/wx.py,sha256=AF_jSqPd9HhLSn576SNhxNmwwI0np8Y568YVMueAyHg,1359
+kagenda-1.3.1.data/scripts/agenda,sha256=yBjXd4l56-j1uAWlxfGdJDYpFa-_zmOBotb61DEifqo,445
+kagenda-1.3.1.dist-info/METADATA,sha256=Q5RtFaVFwX1eEErGZbVxXFLYK_I2IYeQx0EusBAQahg,501
+kagenda-1.3.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+kagenda-1.3.1.dist-info/top_level.txt,sha256=rhYjJgYkoH4vZ5enxr9Op5NQCbM73nx4F1UqoWvasVA,8
+kagenda-1.3.1.dist-info/RECORD,,
