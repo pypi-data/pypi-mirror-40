@@ -1,0 +1,9 @@
+README.md
+setup.py
+big_pkg/__init__.py
+big_pkg.egg-info/PKG-INFO
+big_pkg.egg-info/SOURCES.txt
+big_pkg.egg-info/dependency_links.txt
+big_pkg.egg-info/top_level.txt
+big_pkg/sources/__init__.py
+big_pkg/sources/mysub.py
