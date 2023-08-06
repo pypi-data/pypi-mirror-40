@@ -1,0 +1,3 @@
+[console_scripts]
+ltsv2json = ltsv2json:main
+
