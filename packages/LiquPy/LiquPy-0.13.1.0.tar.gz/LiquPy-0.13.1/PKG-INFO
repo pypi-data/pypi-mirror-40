@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: LiquPy
+Version: 0.13.1
+Summary: Open-source Python Library for Soil Liquefaction and Lateral Spread Analysis
+Home-page: https://github.com/LiquPy/LiquPy
+Author: Massoud Hosseinali
+Author-email: massoud.hosseinali@utah.edu
+License: New BSD License
+Description: Open-source Python Library for Soil Liquefaction and Lateral Spread Analysis
+Platform: UNKNOWN

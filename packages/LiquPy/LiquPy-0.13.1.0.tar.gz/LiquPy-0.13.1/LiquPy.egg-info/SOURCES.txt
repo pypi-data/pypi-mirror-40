@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+LiquPy.egg-info/PKG-INFO
+LiquPy.egg-info/SOURCES.txt
+LiquPy.egg-info/dependency_links.txt
+LiquPy.egg-info/desktop.ini
+LiquPy.egg-info/not-zip-safe
+LiquPy.egg-info/requires.txt
+LiquPy.egg-info/top_level.txt
+liqupy/__init__.py
+liqupy/boreholes.py
+liqupy/points.py
+liqupy/default_datasets/__init__.py
+liqupy/default_datasets/base.py
