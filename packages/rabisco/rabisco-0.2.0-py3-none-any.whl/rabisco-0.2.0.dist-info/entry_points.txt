@@ -1,0 +1,4 @@
+[console_scripts]
+r = cli:cli
+rabisco = cli:cli
+
