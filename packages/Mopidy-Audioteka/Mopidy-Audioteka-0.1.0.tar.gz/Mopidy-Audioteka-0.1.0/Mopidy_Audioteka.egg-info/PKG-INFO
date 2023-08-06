@@ -1,0 +1,81 @@
+Metadata-Version: 1.1
+Name: Mopidy-Audioteka
+Version: 0.1.0
+Summary: Mopidy backend extension for Audioteka
+Home-page: https://github.com/jedrus2000/mopidy-audioteka
+Author: Andrzej Bargański
+Author-email: a.barganski@gmail.com
+License: Apache License, Version 2.0
+Description: ****************************
+        Mopidy-Audioteka
+        ****************************
+        
+        .. image:: https://img.shields.io/pypi/v/Mopidy-Audioteka.svg?style=flat
+            :target: https://pypi.python.org/pypi/Mopidy-Audioteka/
+            :alt: Latest PyPI version
+        
+        .. image:: https://img.shields.io/travis/jedrus2000/mopidy-audioteka/master.svg?style=flat
+            :target: https://travis-ci.org/jedrus2000/mopidy-audioteka
+            :alt: Travis CI build status
+        
+        .. image:: https://img.shields.io/coveralls/jedrus2000/mopidy-audioteka/master.svg?style=flat
+           :target: https://coveralls.io/r/jedrus2000/mopidy-audioteka
+           :alt: Test coverage
+        
+        
+        `Mopidy <https://www.mopidy.com/>`_ extension (non-official) for `Audioteka <https://audioteka.com/>`_ audiobooks service.
+        
+        
+        Installation
+        ============
+        
+        Install by running::
+        
+            pip install Mopidy-Audioteka
+        
+        Or, if available, install the Debian/Ubuntu package from `apt.mopidy.com
+        <http://apt.mopidy.com/>`_.
+        
+        
+        Configuration
+        =============
+        
+        Before starting Mopidy, you must add configuration for
+        Mopidy-Audioteka to your Mopidy configuration file::
+        
+            [audioteka]
+            enabled = true
+            username = account name at Audioteka
+            password = password for above account name
+        
+        
+        Project resources
+        =================
+        
+        - `Source code <https://github.com/jedrus2000/mopidy-audioteka>`_
+        - `Issue tracker <https://github.com/jedrus2000/mopidy-audioteka/issues>`_
+        
+        
+        Credits
+        =======
+        
+        - Original author: `Andrzej Bargański <https://github.com/jedrus2000>`_
+        - Current maintainer: `Andrzej Bargański <https://github.com/jedrus2000>`_
+        - `Contributors <https://github.com/jedrus2000/mopidy-audioteka/graphs/contributors>`_
+        
+        
+        Changelog
+        =========
+        
+        v0.1.0 (2019-01-17)
+        ----------------------------------------
+        
+        - Initial release.
+        
+Platform: UNKNOWN
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
