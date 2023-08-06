@@ -1,0 +1,10 @@
+numpy
+pillow
+jinja2
+texttable
+
+[dev]
+check-manifest
+
+[test]
+coverage
