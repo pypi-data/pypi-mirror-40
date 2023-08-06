@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Pong19-Zero/__init__.py
+Pong19-Zero/main.py
+Pong19_Zero.egg-info/PKG-INFO
+Pong19_Zero.egg-info/SOURCES.txt
+Pong19_Zero.egg-info/dependency_links.txt
+Pong19_Zero.egg-info/not-zip-safe
+Pong19_Zero.egg-info/top_level.txt
