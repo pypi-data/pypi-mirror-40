@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pip-plant
+Version: 0.1
+Summary: Plant simplifies Python package management for your projects.
+Home-page: https://github.com/Ideas-Labs/plant
+Author: Ideas Labs
+Author-email: saurabh.chaturvedi63@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: pip,packaging,python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
