@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+naga_gwas.egg-info/PKG-INFO
+naga_gwas.egg-info/SOURCES.txt
+naga_gwas.egg-info/dependency_links.txt
+naga_gwas.egg-info/requires.txt
+naga_gwas.egg-info/top_level.txt
+nbgwas/__init__.py
+nbgwas/nbgwas.py
+nbgwas/network.py
+nbgwas/propagation.py
+nbgwas/tables.py
+nbgwas/utils.py
+nbgwas/version.py

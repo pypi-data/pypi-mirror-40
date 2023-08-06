@@ -1,0 +1,48 @@
+Network Assisted Genomic Analysis (NAGA)
+========================================
+
+Network Assisted Genomic Analysis(NAGA) re-prioritizes significant single
+nucleotide polymorphisms (SNPs) to genes using network diffusion methods
+including random walk and heat diffusion. 
+
+A companion website and REST API can be found at http://nbgwas.ucsd.edu/.
+
+Documentation
+=============
+
+A readthedocs page will be coming soon! In the mean time, you can view
+the documentations by building the sphinx documentation in the docs
+directory. Simply run the following in the docs folder
+
+.. code:: bash
+
+    make docs
+
+and open the index.html in the docs/build/html directory.
+
+Installation
+============
+
+It is recommended that NAGA be run under Anaconda_ with python-igraph_ manually installed using **conda**
+
+
+To install NAGA via pip:
+
+.. code:: bash
+    
+    pip install naga-gwas
+
+
+Tutorial
+========
+
+``notebooks/tutorial.ipynb`` demonstrates how to use this package once it
+is installed.
+
+Citing NAGA
+=============
+
+Publication to come...
+
+.. _Anaconda: https://anaconda.org
+.. _python-igraph: https://anaconda.org/conda-forge/python-igraph
