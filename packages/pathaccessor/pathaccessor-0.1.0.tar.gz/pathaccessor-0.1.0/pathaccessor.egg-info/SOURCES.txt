@@ -1,0 +1,9 @@
+README.rst
+setup.py
+pathaccessor/__init__.py
+pathaccessor.egg-info/PKG-INFO
+pathaccessor.egg-info/SOURCES.txt
+pathaccessor.egg-info/dependency_links.txt
+pathaccessor.egg-info/top_level.txt
+pathaccessor/tests/__init__.py
+pathaccessor/tests/test_pathaccessor.py
