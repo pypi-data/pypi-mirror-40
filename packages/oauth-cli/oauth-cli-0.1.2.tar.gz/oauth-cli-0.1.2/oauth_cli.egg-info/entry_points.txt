@@ -1,0 +1,3 @@
+[console_scripts]
+oauth-cli = oauth_cli.__main__:cli
+
