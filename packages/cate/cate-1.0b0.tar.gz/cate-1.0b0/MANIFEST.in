@@ -1,0 +1,13 @@
+include CONTRIBUTING.rst
+include CONTRIBUTORS.rst
+include Changelog.rst
+include LICENSE.rst
+include README.rst
+include requirements-test.txt
+include requirements.txt
+
+recursive-include doc *
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

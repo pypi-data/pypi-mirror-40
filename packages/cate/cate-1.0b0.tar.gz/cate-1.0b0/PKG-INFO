@@ -1,0 +1,214 @@
+Metadata-Version: 2.1
+Name: cate
+Version: 1.0b0
+Summary: Tool to draw the templates of chaotic attractors.
+Home-page: https://gitlab.uni.lu/pcog/cate
+Maintainer: Raphaël Bleuse
+Maintainer-email: cs@research.bleuse.net
+License: LGPLv3
+Description: ====
+        cate
+        ====
+        
+        |pipeline status| |coverage report|
+        
+        CATE stands for **C**\ haotic **A**\ ttractor **TE**\ mplate.
+        
+        ``cate`` is a libre software tool (licensed under GNU Lesser General Public
+        License v3.0 only) to draw the templates of chaotic attractors.
+        
+        .. SPDX-License-Identifier: LGPL-3.0-only
+        
+        
+        Chaotic attractors are solutions of deterministic processes, of which the
+        topology can be described by templates.  We consider templates of chaotic
+        attractors bounded by a genus-1 torus described by a linking matrix.
+        
+        This tool first validates a linking matrix by checking continuity and
+        determinism constraints.
+        The tool then draws the template corresponding to the linking matrix, and
+        optimizes the compactness of the representation.  The representation is saved
+        as a Scalable Vector Graphics (SVG) file.
+        
+        
+        Citation
+        --------
+        
+        ``cate`` is developed as a research project.
+        
+        The motivation for a tool such as ``cate``, an introduction to linking
+        matrices, and a description of the optimization logic are described, *inter
+        alia*, in a publication presented at the conference Graph Drawing 2018.
+        
+        This publication is available in the conference proceedings
+        (`doi:10.1007/978-3-030-04414-5\_8 <https://doi.org/10.1007/978-3-030-04414-5_8>`__, paywalled),
+        or on arXiv (`arxiv:1807.11853 <https://arxiv.org/abs/1807.11853>`__).
+        
+        
+        If you use ``cate`` for a publication, please cite as follows:
+        
+          Maya Olszewski, Jeff Meder, Emmanuel Kieffer, Raphaël Bleuse, Martin Rosalie,
+          Grégoire Danoy, and Pascal Bouvry.
+          **Visualizing the Template of a Chaotic Attractor.**
+          In *Graph Drawing*, volume 11282 of Lecture Notes in Computer Science, 106–119.
+          Springer, 2018.
+          `doi:10.1007/978-3-030-04414-5\_8 <https://doi.org/10.1007/978-3-030-04414-5_8>`__.
+        
+        Or you may use, at your convenience, the following
+        `BibTeX entry <https://gitlab.uni.lu/PCOG/cate/raw/master/doc/OlszewskiM2018Visualizing.bib>`__:
+        
+        .. code-block:: bibtex
+        
+           @inproceedings{OlszewskiM2018Visualizing,
+             author    = {Olszewski, Maya and
+                          Meder, Jeff and
+                          Kieffer, Emmanuel and
+                          Bleuse, Rapha{\"{e}}l and
+                          Rosalie, Martin and
+                          Danoy, Gr{\'{e}}goire and
+                          Bouvry, Pascal},
+             title     = {{V}isualizing the {T}emplate of a {C}haotic {A}ttractor},
+             booktitle = {Graph Drawing},
+             series    = {Lecture Notes in Computer Science},
+             volume    = 11282,
+             pages     = {106--119},
+             publisher = {Springer},
+             year      = 2018,
+             month     = sep,
+             doi       = {10.1007/978-3-030-04414-5_8},
+             isbn      = {978-3-030-04413-8},
+           }
+        
+        
+        Installation
+        ------------
+        
+        ``cate`` is packaged as a regular Python package, and is published on
+        `PyPI <https://pypi.org/project/cate/>`__.  It hence can easily be installed
+        with ``pip``.
+        
+        For more details on how to install a Python package, one can refer to
+        https://packaging.python.org/tutorials/installing-packages/
+        
+        The latest stable (recommended) version can be installed with the following
+        command (assuming ``pip`` is installed):
+        
+        .. code-block:: console
+        
+           $ pip install cate
+        
+        ----
+        
+        It is recommended to use a virtual environment to install ``cate``.  Again, one
+        can refer to https://packaging.python.org/tutorials/installing-packages/ to get
+        a more comprehensive overview.
+        
+        On a typical Linux environment, the typical commands to use would be:
+        
+        .. code-block:: console
+        
+           $ python3 -m venv cate_venv
+           $ source cate_venv/bin/activate
+           $ pip install cate
+        
+        This will create a new virtual environment in the ``cate_venv`` subdirectory,
+        and configure the current shell to use it as the default ``python``
+        environment.  This will then install ``cate`` in this new environment without
+        interfering with the already installed packages.
+        
+        One would then exit this environment either by exiting the current shell, or by
+        typing the command ``deactivate``.
+        
+        Further uses of ``cate`` only require to activate the virtual environment with
+        the following command:
+        
+        .. code-block:: console
+        
+           $ source cate_venv/bin/activate
+        
+        
+        Usage
+        -----
+        
+        Given a linking matrix, we can draw its template with ``cate`` by following
+        these steps.  For instance, let's consider the following linking matrix:
+        
+        .. image:: https://gitlab.uni.lu/PCOG/cate/raw/master/doc/5x5_001_matrix.png
+           :align: center
+           :alt: 5x5 linking matrix
+        
+        This linking matrix describes a template made of five strips.  ``cate`` uses
+        JSON files as an input.  A linking matrix has to be described as an array made
+        of arrays of integers, with a row-major order.  For the above example linking
+        matrix, one can encode it as follows.  Note that whitespaces, new lines, … are
+        insignificant, but do improve the readability.
+        
+        .. code-block:: json
+        
+           [[2, 1, 0, 0, 0],
+            [1, 1, 0, 0, 0],
+            [0, 0, 0, 0, 0],
+            [0, 0, 0, 1, 1],
+            [0, 0, 0, 1, 2]]
+        
+        To draw the compact template of this example linking matrix, it is as simple as
+        calling ``cate`` with the name of the input file as the first argument.
+        
+        .. code-block:: console
+        
+           $ cate 5x5_001.json
+           [  INFO  ] Input matrix
+           [  INFO  ]   [2, 1, 0, 0, 0]
+           [  INFO  ]   [1, 1, 0, 0, 0]
+           [  INFO  ]   [0, 0, 0, 0, 0]
+           [  INFO  ]   [0, 0, 0, 1, 1]
+           [  INFO  ]   [0, 0, 0, 1, 2]
+           [  INFO  ] Starting constructing the tree
+           [  INFO  ] Maximum possible template length: 2
+           [  INFO  ] Finished constructing the tree
+           [  INFO  ] Starting creation of the SVG template
+           [  INFO  ] Shortest template
+           [  INFO  ]   Level 1: (0, 1), (3, 4)
+           [  INFO  ] Finished creation of the SVG template
+        
+        ``cate`` has created a SVG whose default file is ``template.svg``.
+        
+        .. image:: https://gitlab.uni.lu/PCOG/cate/raw/master/doc/5x5_001_template.png
+           :align: center
+           :scale: 50
+           :alt: template of the 5x5 linking matrix
+        
+        ----
+        
+        The comprehensive set of elementary matrices of size 5x5 and 6x6 is available
+        in the official repository of ``cate``
+        (see https://gitlab.uni.lu/PCOG/cate/tree/master/examples).
+        The depicted example corresponds to the
+        `5x5_001.json <https://gitlab.uni.lu/PCOG/cate/raw/master/examples/5x5_001.json>`__
+        linking matrix.
+        
+        The comprehensive list of the supported options and their usage is available by
+        typing ``cate -h``.
+        
+        .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
+        
+        .. |pipeline status| image:: https://gitlab.uni.lu/PCOG/cate/badges/master/pipeline.svg
+           :target: https://gitlab.uni.lu/PCOG/cate/commits/master
+           :alt: pipeline status
+        
+        .. |coverage report| image:: https://gitlab.uni.lu/PCOG/cate/badges/master/coverage.svg
+           :target: https://gitlab.uni.lu/PCOG/cate/commits/master
+           :alt: coverage report
+        
+Keywords: chaotic attractor,dynamical system,template
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Utilities
+Provides-Extra: test
