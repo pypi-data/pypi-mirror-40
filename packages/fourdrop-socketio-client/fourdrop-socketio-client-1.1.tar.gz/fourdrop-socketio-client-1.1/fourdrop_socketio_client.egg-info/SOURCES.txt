@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+fourdrop_socketio_client.egg-info/PKG-INFO
+fourdrop_socketio_client.egg-info/SOURCES.txt
+fourdrop_socketio_client.egg-info/dependency_links.txt
+fourdrop_socketio_client.egg-info/not-zip-safe
+fourdrop_socketio_client.egg-info/requires.txt
+fourdrop_socketio_client.egg-info/top_level.txt
+socketio_client/__init__.py
+socketio_client/manager.py
+socketio_client/parser.py
+socketio_client/socket.py
