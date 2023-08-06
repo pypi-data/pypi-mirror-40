@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: athom-api
+Version: 0.2.0
+Summary: A python module for accessing the Athom Web-API for use with Athom Homey
+Home-page: https://github.com/rkokkelk/python-athom-api
+Author: Roy K
+Author-email: rkokk@protonmail.com
+License: GPLv3
+Description: # python-athom-api
+        Python module for acessing the Athom Homey Web-API
+        
+        [![Build Status](https://travis-ci.org/rkokkelk/python-athom-api.svg?branch=master)](https://travis-ci.org/rkokkelk/python-athom-api)
+        [![Maintainability](https://api.codeclimate.com/v1/badges/dc8aed8d644968e69728/maintainability)](https://codeclimate.com/github/rkokkelk/python-athom-api/maintainability)
+        [![Test Coverage](https://api.codeclimate.com/v1/badges/dc8aed8d644968e69728/test_coverage)](https://codeclimate.com/github/rkokkelk/python-athom-api/test_coverage)
+        
+Keywords: API athom homey
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3

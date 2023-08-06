@@ -1,0 +1,31 @@
+from setuptools import setup
+
+with open("README.md", "r") as f:
+    long_description = f.read()
+
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+
+
+setup(
+    name="athom-api",
+    version="0.2.0",
+    author="Roy K",
+    author_email="rkokk@protonmail.com",
+    description=("A python module for accessing the Athom Web-API for use with Athom Homey"),
+    license="GPLv3",
+    keywords="API athom homey",
+    url="https://github.com/rkokkelk/python-athom-api",
+    install_requires=requirements,
+    long_description=long_description,
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Topic :: Utilities",
+        'Programming Language :: Python :: 3',
+    ],
+    entry_points={
+        'console_scripts': [
+            'athom = athom.__main__:main'
+        ]
+    }
+)
