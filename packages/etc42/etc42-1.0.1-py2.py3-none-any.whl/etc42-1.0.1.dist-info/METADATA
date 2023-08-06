@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: etc42
+Version: 1.0.1
+Summary: ETC42 Universal Exposure Time Calculator
+Home-page: https://lam.fr/
+Author: The LAM ETC42 developers
+Author-email: UNKNOWN
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: docker (>=2.0.0)
+Requires-Dist: wget (>=1.0)
+
+ETC42-docker-python
+===================
+
+# Authors
+
+CeSAM (Centre de donnéeS Astrophysique de Marseille) at LAM (Laboratoire d'Astrophysique de Marseille)
+
+# About ETC42-docker-python:
+
+ETC42-docker-python is a python module use to launch etc42
+
+# Requirements
+
+1. For Linux users:
+
+  * python3
+
+  * virtualenv
+```
+pip install --user virtualenv
+```
+  * docker
+
+    * The Docker daemon binds to a Unix socket instead of a TCP port. By default that Unix socket is owned by the user root and other users can only access it using sudo. The Docker daemon always runs as the root user.
+    The docker commands used by ETC42-docker-python can not be prefaced with sudo
+    To use ETC42-docker-python correctly we must create a Unix group called docker and add users to it:
+```
+sudo groupadd docker
+sudo usermod -aG docker $USER
+```
+2. For MAC-OS users:
+
+  * python3
+
+  * venv
+```
+pip install --user venv
+```
+  * You must have docker on your mac.(see [Mac-OS docker installation](https://docs.docker.com/docker-for-mac/install/))
+  * You have to install XQuartz with command line `brew cask install xquartz` (see [XQuartz installation](https://www.xquartz.org/index.html) for MacPorts or others installations type).
+
+  __*note*__: don't forget to select __Allow connections from network clients__ on XQuartz preferences (preferences -> security)
+
+# Installation
+
+1. Create a folder for the project ETC42 that will contain all the files needed to run an instance etc42:
+```
+mkdir ETC42
+cd ETC42
+```
+
+2. Clone the etc42-docker-python repository:
+```
+git clone git@gitlab.lam.fr:etc42/etc42-docker-python.git
+```
+
+3. create virtualenv:
+```
+virtualenv -p python3 virtualenv_etc42
+source virtualenv_etc42/bin/activate
+```
+or
+  ```
+  python3 -m venv virtualenv_etc42
+  source virtualenv_etc42/bin/activate
+  ```
+
+
+4. install the python modules and the etc42:
+```
+cd etc42-docker-python
+pip install -r pip-requirements.txt
+pip install -e .
+```
+
+# How to use it
+
+1. if it is not started, use the virtual environment created previously:
+```
+source virtualenv_etc42/bin/activate
+```
+
+2. launch the etc42:
+```
+etc42
+```
+
+  To see all etc42 options available:
+  ```
+  etc42 -h or --help
+  ```
+
+
+
+# Create sphinx documentation
+```
+source virtualenv_etc42/bin/activate
+cd docs
+sphinx-apidoc -f -o source/ ../etc42/
+sphinx-build -b latex source/ build/
+cd build
+make
+```
+
+

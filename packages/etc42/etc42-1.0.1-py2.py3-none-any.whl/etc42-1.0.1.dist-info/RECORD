@@ -1,0 +1,12 @@
+etc42/__init__.py,sha256=4PyRvTz-8pW_kqKsvTYpP1eaWiEXs8ev8QGHoqjrM4I,11
+etc42/etc42/Dockerfile,sha256=3843doIp0jcgiZUwjV4h60ZdQVsn-fL0cLqbtEjiNYY,205
+etc42/etc42/__init__.py,sha256=lybjvp13dfqmm3LOVcIeWDRLfqxpMeDMdXx-3mKN4Y8,87
+etc42/etc42/etc42.conf,sha256=sC6vxCzbF_dtPriwxv5rnuval-pECgns5FwLrY3UOv0,69
+etc42/etc42/etc42.py,sha256=1C9-Zia0FUZqryP3RDv9m8vRbulPzzQ32bX4NoY-33Q,22557
+etc42/tests/__init__.py,sha256=LDgd-SaTVq92Y3xYx7YuGnpv-TqV8INrPG45E2tYZlc,74
+etc42/tests/test_etc42.py,sha256=OViLTCLX4bnU3pO6Vvxo2pqDjmjezyMLxwe7HeND-l0,3369
+etc42-1.0.1.dist-info/METADATA,sha256=Ao5Vv4aaC_A9dgFPnvuQaDVL8VVXnTg7myL4XeHYSo0,3012
+etc42-1.0.1.dist-info/RECORD,,
+etc42-1.0.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+etc42-1.0.1.dist-info/entry_points.txt,sha256=C1CJ8ZWalckqzpryyhjOwRmlm2gv0U0wAsYg4DI63eI,50
+etc42-1.0.1.dist-info/top_level.txt,sha256=lXX1ex9Q7UtQB_WGucPAETS4mBUT_P1O3UaYDsdbF_o,6
