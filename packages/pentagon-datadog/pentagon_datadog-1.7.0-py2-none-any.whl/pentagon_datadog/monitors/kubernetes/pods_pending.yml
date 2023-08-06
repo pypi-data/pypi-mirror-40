@@ -1,0 +1,28 @@
+notify_audit: false
+locked: false
+name: '[${environment}] Pods are stuck Pending'
+tags: ['${environment}', reactiveops]
+include_tags: false
+silenced: {}
+new_host_delay: 300
+require_full_window: true
+notify_no_data: false
+no_data_timeframe: 0
+renotify_interval: 0
+escalation_message: ''
+query: min(last_30m):sum:kubernetes_state.pod.status_phase{kubernetescluster:${cluster},phase:pending} >= 1
+message: |
+  {{#is_alert}}
+  There has been at least 1 pod Pending for 30 minutes.
+  There are currently {{value}} pods Pending.
+    - Is something crash-looping?
+    - Is autoscaling adding node capacity where needed?
+    - Is a secret or a configmap missing?
+  {{/is_alert}}
+  {{^is_alert}}
+  Pods are no longer pending.
+  {{/is_alert}}
+  ${notifications}
+type: metric alert
+thresholds: {critical: 1}
+timeout_h: 0
