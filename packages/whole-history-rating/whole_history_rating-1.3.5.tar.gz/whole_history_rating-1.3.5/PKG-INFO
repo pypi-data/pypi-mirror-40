@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: whole_history_rating
+Version: 1.3.5
+Summary: a python convertion from the ruby implementation of Rémi Coulom's Whole-History Rating (WHR) algorithm.
+Home-page: https://github.com/pfmonville/whole_history_rating
+Author: Pierre-François Monville
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
