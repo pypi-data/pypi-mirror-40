@@ -1,0 +1,74 @@
+Metadata-Version: 1.0
+Name: simpletime
+Version: 0.0.7
+Summary: simple to date and time conver
+Home-page: https://github.com/area0li/simpletime
+Author: Area0 Li <area0cn@gmail.com>
+Author-email: area0cn@gmail.com
+License: Mozilla Public License 2.0
+Description-Content-Type: text/markdown
+Description: # simpletime
+        
+        ***
+        
+        ##### A module for converting dates and times. 
+        
+        ***
+        
+        **Supported objects include :**
+        
+        1. datetime.datetime, 
+        
+        2. datetime.date, 
+        
+        3. datetime.time, 
+        
+        4. timestamp(float/int), 
+        
+        5. time.time.struct_time, 
+        
+        6. string(%Y-%m-%d %H:%M:%S)
+        
+        ***
+        
+        if date argument is lost, use the current date instead
+        
+        if time argument is lost, use 00:00:00 instead
+        
+        if date and time are lost, use now instead
+        
+        ***
+        
+        **Function list:**
+        
+        1. toDatetime()
+        
+        2. toDate()
+        
+        3. toTime() #always return int object
+        
+        4. toStamp()
+        
+        5. toTuple()
+        
+        6. toString()
+        
+        **If do not provide a object to conver, the function return current time**
+        
+        ***
+        
+        ```
+        >>> import simpletime as st
+        >>> st.toDatetime()
+        datetime.datetime(2019, 1, 15, 22, 29, 8, 185436)
+        >>> st.toString()
+        '2019-01-15 22:29:13'
+        >>> st.toStamp()
+        1547562563
+        >>> st.toDatetime('2019-01-01 01:02:03')
+        datetime.datetime(2019, 1, 1, 1, 2, 3)
+        >>> st.toStamp('2019-01-01 01:02:03')
+        1546275723
+        ```
+        
+Platform: UNKNOWN
