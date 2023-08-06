@@ -1,0 +1,12 @@
+dewar/__init__.py,sha256=5cfyXV690T8i1Ouc8L1Y4GoJFEaHU-F5piDvM_x3PRA,21
+dewar/_internal.py,sha256=Dsv1ig721G1ZGUknh40BoIiB0dbocKpdR3x6ovbzyPc,1656
+dewar/dewar.py,sha256=q5WvnQayIfgKTgTDJYCNr5lk7Z8XTjoEcJFUJ0Q_a_I,5470
+dewar/exceptions.py,sha256=wCLVaAueNwmSHtS1k-r4MqLGKYzV3j1WoC1BAiZ-9PI,43
+dewar/helpers.py,sha256=nrwFC4fmS2Ucx2zGBLvH8h5V_a8X11zxDgjoiWLWboc,6532
+dewar/parser.py,sha256=WbBxxoyZ4RUx7c-kdad_5T1One9-mRs5Xbv64BfTIpg,964
+dewar/validator.py,sha256=E5g-64sPsuc5QRZkgHiUEnBNEK2b4wlOUxBocDlNvVg,2176
+dewar-1.0.0.dist-info/LICENSE.txt,sha256=wXVK1nubGjIQ0poYumYsXMNLCfJvOP9g-MXomGyAvuk,11342
+dewar-1.0.0.dist-info/METADATA,sha256=GuMAAyeFeI8Gz_rpzoibi42oTWhkvoEEhzlU5IvZw7o,2586
+dewar-1.0.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+dewar-1.0.0.dist-info/top_level.txt,sha256=UdB_9Hv8A7YU5AqNDtjkLguWOfetAnc2iMLLfjrTyy8,6
+dewar-1.0.0.dist-info/RECORD,,
