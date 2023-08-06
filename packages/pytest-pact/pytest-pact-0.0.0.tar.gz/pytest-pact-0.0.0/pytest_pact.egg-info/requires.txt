@@ -1,0 +1,3 @@
+pactman>=2.10.0
+pytest>=3.5.0
+requests>=2.0.0
