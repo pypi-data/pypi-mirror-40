@@ -1,0 +1,11 @@
+MDAnalysis
+cython
+future
+h5py
+lmfit
+matplotlib
+mdtraj
+numpy
+pandas
+scipy
+tqdm
