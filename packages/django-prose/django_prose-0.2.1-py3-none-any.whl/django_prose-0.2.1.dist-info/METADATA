@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: django-prose
+Version: 0.2.1
+Summary: Elegant prose authoring for Django
+Home-page: https://github.com/sourcelair/django-prose
+Author: Paris Kasidiaris
+Author-email: accounts@sourcelair.com
+License: MIT
+Keywords: prose development rich text
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+
+UNKNOWN
+
+
