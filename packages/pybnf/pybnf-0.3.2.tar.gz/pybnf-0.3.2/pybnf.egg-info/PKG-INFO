@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: pybnf
+Version: 0.3.2
+Summary: An application for parallel fitting of BioNetGen and SBML models using metaheuristics
+Home-page: UNKNOWN
+Author: Eshan Mitra, Ryan Suderman, Alex Ionkov
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: ![alt text](docs/Logo1.png "PyBioNetFit")
+        
+        This application is for fitting BNGL and SBML models with metaheuristic methods. 
+        
+        For documentation, refer to [Documentation.pdf](Documentation.pdf).
+        
+        PyBioNetFit is released under the BSD-3 license. For more information, refer to the
+        [LICENSE](LICENSE). LANL code designation: C18062
+        
+Platform: UNKNOWN
