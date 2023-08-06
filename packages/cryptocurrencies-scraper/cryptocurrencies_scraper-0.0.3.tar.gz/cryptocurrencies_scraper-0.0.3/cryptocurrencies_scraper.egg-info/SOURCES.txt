@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cryptocurrencies_scraper/CurrencyService.py
+cryptocurrencies_scraper/__init__.py
+cryptocurrencies_scraper.egg-info/PKG-INFO
+cryptocurrencies_scraper.egg-info/SOURCES.txt
+cryptocurrencies_scraper.egg-info/dependency_links.txt
+cryptocurrencies_scraper.egg-info/requires.txt
+cryptocurrencies_scraper.egg-info/top_level.txt
