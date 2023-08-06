@@ -1,0 +1,11 @@
+README.md
+setup.py
+revelio/Path.py
+revelio/__init__.py
+revelio/dir.py
+revelio/get_basename.py
+revelio.egg-info/PKG-INFO
+revelio.egg-info/SOURCES.txt
+revelio.egg-info/dependency_links.txt
+revelio.egg-info/not-zip-safe
+revelio.egg-info/top_level.txt
