@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pkg-common
+Version: 0.1
+Summary: Package
+Home-page: UNKNOWN
+Author: Ivan Carlos Martello
+Author-email: ivcmartello@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: scrapy
+Requires-Dist: pymongo
+
+UNKNOWN
+
+
