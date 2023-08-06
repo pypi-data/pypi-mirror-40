@@ -1,0 +1,10 @@
+farmware_tools/VERSION,sha256=yJuHwmLp1f_SDnOqx0oXcq3Mn1ohaCzDOtz1CG5f71w,6
+farmware_tools/__init__.py,sha256=5WsQuvgvj4KePVzcd71ykVZB2ufMjcP4bwU2mnPp6j8,1977
+farmware_tools/app.py,sha256=a5bBhYk4f5bMiEWTDG-WFboyKrlXDexUzcC6qDIuaX8,8087
+farmware_tools/auxiliary.py,sha256=j7bGJwmaXNHFG-lC78zxsYX2JPKgjRyTupeD2WbK75s,3658
+farmware_tools/device.py,sha256=JUXgQFfng_YVdwEm7TAS1uke_mD-xcMLNeH2CpdUUa0,18889
+farmware_tools-2.1.0.dist-info/LICENSE,sha256=aL3lCUzcPy9g7K2O4peNBmjA9L1UpH9JzK-9kR31Q2U,1069
+farmware_tools-2.1.0.dist-info/METADATA,sha256=uYR4kmKw_a_Rg2XOgrX3wJObkbZwrTkaXf9T13mo60k,2189
+farmware_tools-2.1.0.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+farmware_tools-2.1.0.dist-info/top_level.txt,sha256=J4x8TB4bbefVH3TN7qMkN8V93rGkOvLF2RoQt_3xdcc,15
+farmware_tools-2.1.0.dist-info/RECORD,,
