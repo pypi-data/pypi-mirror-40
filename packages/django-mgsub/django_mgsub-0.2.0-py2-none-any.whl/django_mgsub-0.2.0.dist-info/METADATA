@@ -1,0 +1,85 @@
+Metadata-Version: 2.0
+Name: django-mgsub
+Version: 0.2.0
+Summary: Subscribe Mailgun mailing lists from Django
+Home-page: https://github.com/ferrix/mgsub/
+Author: Ferrix Hovi
+Author-email: ferrix+pypi@ferrix.fi
+License: MIT License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: certifi (==2018.11.29)
+Requires-Dist: requests (==2.21.0)
+
+Mailgun list subscription for Django
+====================================
+
+.. image:: https://travis-ci.org/ferrix/django-mgsub.svg?branch=master
+    :target: https://travis-ci.org/ferrix/django-mgsub
+.. image:: https://coveralls.io/repos/github/ferrix/django-mgsub/badge.svg?branch=master
+    :target: https://coveralls.io/github/ferrix/django-mgsub?branch=master
+
+
+This Django module provides a `FormView` and a `Form` that subscribe the user
+to a list on `Mailgun`_.
+
+.. _Mailgun: https://www.mailgun.com/
+
+Usage
+-----
+
+0. Install::
+
+    pip install django-mgsub
+    pip freeze | grep django-mgsub >> requirements.txt
+
+1. Add to Django::
+
+    # settings.py
+    INSTALLED_APPS += 'mgsub',
+
+2. Configure credentials::
+
+    # settings.py
+    MGSUB_DEFAULT_MAILINGLIST = 'mylist@example.com'
+    MAILGUN_API_KEY = '<secret>'
+
+   or::
+
+    export MGSUB_DEFAULT_MAILINGLIST='mylist@example.com' MAILGUN_API_KEY=...
+
+3. Add urls::
+
+    # urls.py
+    urlpatterns = [
+      ...
+        url('^mailinglist/', include('mgsub.urls', namespace='mgsub')),
+      ...
+    ]
+
+4. Configure::
+
+    ## settings.py
+
+    # Setting this to False will disable email sending and the following
+    # settings
+    MGSUB_SEND_WELCOME = True
+
+    MGSUB_WELCOME_FROM = 'noreply@example.com'    # defaults to settings.SERVER_EMAIL
+    MGSUB_WELCOME_REPLY_TO = 'me@example.com'     # nothing by default
+
+    # Subscription email templates
+    MGSUB_WELCOME_SUBJECT = 'Welcome to my list!' # Defaults to: Welcome!
+    MGSUB_WELCOME_TEMPLATE = 'myapp/welcome.html' # HTML template
+    MGSUB_WELCOME_TEMPLATE_PLAIN = 'myapp/w.txt'  # Plain text template
+
+
+
