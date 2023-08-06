@@ -1,0 +1,12 @@
+README.md
+setup.py
+pykindle/__init__.py
+pykindle/book.py
+pykindle/items.py
+pykindle/readers.py
+pykindle.egg-info/PKG-INFO
+pykindle.egg-info/SOURCES.txt
+pykindle.egg-info/dependency_links.txt
+pykindle.egg-info/requires.txt
+pykindle.egg-info/top_level.txt
+pykindle/utils/__init__.py
