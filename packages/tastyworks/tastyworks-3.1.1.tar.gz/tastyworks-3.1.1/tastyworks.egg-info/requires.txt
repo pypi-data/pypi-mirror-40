@@ -1,0 +1,7 @@
+aiohttp==3.2.1
+dataclasses
+requests==2.18.4
+websockets==6.0
+
+[testing]
+pytest
