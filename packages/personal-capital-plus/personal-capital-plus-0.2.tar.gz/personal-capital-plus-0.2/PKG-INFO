@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: personal-capital-plus
+Version: 0.2
+Summary: Skeleton python application
+Home-page: https://github.com/aagnone3/personal-capital-plus
+Author: Anthony Agnone
+Author-email: anthonyagnone@gmail.com
+License: UNKNOWN
+Description: Skeleton python application
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
