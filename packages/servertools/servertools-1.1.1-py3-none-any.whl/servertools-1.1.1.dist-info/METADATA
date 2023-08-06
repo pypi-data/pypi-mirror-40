@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: servertools
+Version: 1.1.1
+Summary: administration tools for specific servers
+Home-page: https://github.com/michagrandel/servertools
+Author: Micha Grandel
+Author-email: talk@michagrandel.de
+Maintainer: Micha Grandel
+Maintainer-email: talk@michagrandel.de
+License: UNKNOWN
+Download-URL: https://github.com/michagrandel/servertools/archive/v1.1.1.tar.gz
+Keywords: server admin tools
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: System :: Systems Administration
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Classifier: Natural Language :: German
+Requires-Dist: yapsy (>=1.12)
+Requires-Dist: docutils (>=0.14)
+Requires-Dist: pip (>=10)
+Requires-Dist: setuptools (>=39)
+Requires-Dist: wheel (>=0.32)
+Provides-Extra: dev
+Provides-Extra: test
+
+Getting Started
+================
+
+**servertools** provide some tools to identify servers and fix some specific problems.
+
+**Early Development**: 
+*Please note that this project is in planning/early development phase!
+Many things might not work or not even exist the way you would expect.*
+
+Installing
+----------
+
+Use this command to install the latest version from PyPI.org:
+```
+pip3 install servertools
+```
+
+Contributing
+------------
+
+Thank you for your interest in contributing to our code!
+Please take a moment and read [our Contributing Guide](Contributing.md) to get you started!
+
+Versioning
+-----------
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, 
+see the [releases on this repository][github-releases]. 
+
+Authors
+-------
+
+* **Micha Grandel** - *Author and maintainer* - [Github][github]
+
+We thank all of our [contributors][github-contributors], who participated in this project.
+
+License
+--------
+
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) 
+file for details
+
+[github]: https://github.com/michagrandel
+[github-releases]: https://github.com/michagrandel/servertools/releases
+[github-contributors]: https://github.com/michagrandel/servertools/graphs/contributors
+[python]: https://www.python.org/downloads/
+[pip]: https://pypi.python.org/pypi/pip
+[flask]: http://flask.pocoo.org
+[gitflow]: https://danielkummer.github.io/git-flow-cheatsheet/
+[gitflow-model]: http://nvie.com/posts/a-successful-git-branching-model/
+
+
