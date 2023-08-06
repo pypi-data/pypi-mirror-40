@@ -1,0 +1,13 @@
+esmlab/__init__.py,sha256=sOndBD67cQGjPjz1r5CPBzUU5sk-VY6i6wBwlVugV84,306
+esmlab/_version.py,sha256=Alcu78nhDvO6YE1f64PXvz3_OTDjYq4YKY3aKTi5Gc0,501
+esmlab/climatology.py,sha256=p4ELomjnnzmtE4sHFeCPVGMnNrKnhkv1CCZDhnV2I_c,5655
+esmlab/statistics.py,sha256=aX7EFrFvr1PYnjAs5YI_2UszupXOKE5fsdYF6t67XJI,7077
+esmlab/utils.py,sha256=XUY4obNwxWmWWtFD0dBDrofhGY6nMUGL6XOBjk11PYg,2319
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_climatology.py,sha256=D-0RBQTCOD8FJizryeLWsCa7-4GObYYkHuDj4xFvpQE,1896
+tests/test_statistics.py,sha256=nzpjfuoEzH8uksAcI2VSuD3VQQkl-abJR0cV0qxvdGQ,2729
+esmlab-2019.1.0.dist-info/LICENSE,sha256=azPZWYawJFfBH7YPJwvnX0fNOWyrf8jBaYbu0yQNhXo,11390
+esmlab-2019.1.0.dist-info/METADATA,sha256=BMjuUEEtOR4JLzx_bMPQIajwRlatqKBLcmr4eAy4JeM,1433
+esmlab-2019.1.0.dist-info/WHEEL,sha256=CrDFromy0BmNYzyZFyVIlKdTa5Zg2RBBtjMkE7goq78,110
+esmlab-2019.1.0.dist-info/top_level.txt,sha256=lDif2tzayzXofgs-FwMbecaUnI3vwLPuPBThC5QrH9w,13
+esmlab-2019.1.0.dist-info/RECORD,,
