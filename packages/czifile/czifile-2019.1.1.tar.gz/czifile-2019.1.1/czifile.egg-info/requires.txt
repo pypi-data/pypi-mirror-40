@@ -1,0 +1,6 @@
+numpy>=1.11.3
+scipy>=1.1
+tifffile>=2019.1.1
+
+[:platform_system == "Windows"]
+imagecodecs>=2019.1.1
