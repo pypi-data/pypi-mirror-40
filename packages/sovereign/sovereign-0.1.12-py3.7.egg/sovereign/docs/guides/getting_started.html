@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started &mdash; Sovereign 0.1.11 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Available Configuration Loaders" href="config_loaders.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Sovereign
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../guides.html">Guides</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#configuring-sovereign">Configuring Sovereign</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#explanation-of-the-above">Explanation of the above</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#templates">Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#guidelines-for-creating-templates">Guidelines for creating templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#an-example-template-based-on-the-example-configuration">An example template based on the example configuration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="config_loaders.html">Available Configuration Loaders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stats.html">Statistics</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Internals</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Sovereign</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../guides.html">Guides</a> &raquo;</li>
+        
+      <li>Getting Started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/guides/getting_started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>To begin, you’ll need templates and a configuration file.</p>
+<p>A minimal example of a project might look like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>├── config.yaml
+└── templates
+    ├── clusters.yaml
+    ├── endpoints.yaml
+    ├── listeners.yaml
+    └── routes.yaml
+</pre></div>
+</div>
+<div class="section" id="configuring-sovereign">
+<h2>Configuring Sovereign<a class="headerlink" href="#configuring-sovereign" title="Permalink to this headline">¶</a></h2>
+<p>The control plane loads configurations from the environment variable <code class="docutils literal notranslate"><span class="pre">SOVEREIGN_CONFIG</span></code>.</p>
+<p>The main job of the configuration that you will supply to sovereign is to
+tell it where to find:</p>
+<ul class="simple">
+<li>Templates used for Envoy discovery requests</li>
+<li>Contextual data that should be available in the template</li>
+<li><em>(Optional)</em> What modifications should be performed (via custom modifiers)</li>
+<li>Where to obtain instance data from (sources)</li>
+</ul>
+<p>A basic configuration may look like:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">template_context</span><span class="p">:</span>
+  <span class="nt">utils</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">module://sovereign.utils.templates</span>
+  <span class="nt">eds</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">module://sovereign.utils.eds</span>
+  <span class="nt">crypto</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">module://sovereign.utils.crypto</span>
+  <span class="nt">certificates</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">file://deploy/environments/dev/certificates.yaml</span>
+
+<span class="nt">templates</span><span class="p">:</span>
+  <span class="nt">1.9.0</span><span class="p">:</span>
+    <span class="nt">routes</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">file+jinja://xds_templates/1.9.0/routes.yaml</span>
+    <span class="nt">clusters</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">file+jinja://xds_templates/1.9.0/clusters.yaml</span>
+    <span class="nt">listeners</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">file+jinja://xds_templates/1.9.0/listeners.yaml</span>
+    <span class="nt">endpoints</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">file+jinja://xds_templates/1.9.0/endpoints.yaml</span>
+
+<span class="nt">sources</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">file</span>
+    <span class="nt">config</span><span class="p">:</span>
+      <span class="nt">path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://bitbucket.org/!api/2.0/snippets/vsyrakis/ae9LEx/master/files/service1.yaml</span>
+  <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">file</span>
+    <span class="nt">config</span><span class="p">:</span>
+      <span class="nt">path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://bitbucket.org/!api/2.0/snippets/vsyrakis/ae9LEx/master/files/service2.yaml</span>
+</pre></div>
+</div>
+<div class="section" id="explanation-of-the-above">
+<h3>Explanation of the above<a class="headerlink" href="#explanation-of-the-above" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>template_context</dt>
+<dd><p class="first">The following variables can be referenced in templates to aid with the generation of config.</p>
+<dl class="last docutils">
+<dt>utils, eds, crypto</dt>
+<dd>Loads the templates, eds, and crypto python module from the sovereign utils, respectively.</dd>
+<dt>certificates</dt>
+<dd>Loads in a yaml file containing certificates for Envoy to use when providing
+listener configuration.
+In our example at Atlassian, we store the certificates encrypted, and use the above <strong>crypto</strong>
+variable to decrypt them before providing them to the Envoy clients.</dd>
+</dl>
+</dd>
+<dt>templates</dt>
+<dd>Lists some template files which Sovereign should load, for each discovery type.
+It also specifies the Envoy version that it will render config for. It will not
+render for other versions. This is a feature to help migrations to new Envoy
+versions while maintaining backward compatibility.</dd>
+<dt>sources</dt>
+<dd>These sources tell sovereign to download some instance data from the linked bitbucket snippet.
+The instance data will be used to generate configuration later on.
+You can check these examples via the above URLs, which proxy major tech company websites as a very basic example.</dd>
+</dl>
+<p>See <a class="reference internal" href="config_loaders.html#config-loaders"><span class="std std-ref">Available Configuration Loaders</span></a> for examples on adding the above type of configuration to Sovereign.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">SOVEREIGN_CONFIG</span></code> environment variable above is also loaded using config loaders.
+This means that you can load it using any of the available schemes, for example on disk, or via a HTTP endpoint.</p>
+</div>
+</div>
+</div>
+<div class="section" id="templates">
+<h2>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h2>
+<p>As you might guess by looking at the above example configuration, each template
+corresponds to a type of discovery service in Envoy.</p>
+<p>The template must eventually render out to a form that Envoy will understand.
+You can see <a class="reference external" href="https://bitbucket.org/atlassian/sovereign/src/master/xds_templates">examples in the sovereign repo</a></p>
+<p>A small cluster snippet might look like:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version_info</span><span class="p">:</span> <span class="s">&#39;abcdef1234&#39;</span>
+<span class="nt">resources</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">&#39;@type&#39;</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">type.googleapis.com/envoy.api.v2.Cluster</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">helloworld-google-proxy-example</span>
+    <span class="nt">connect_timeout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5s</span>
+    <span class="nt">dns_lookup_family</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">V4_ONLY</span>
+    <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">strict_dns</span>
+    <span class="nt">load_assignment</span><span class="p">:</span>
+      <span class="nt">cluster_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">google</span>
+      <span class="nt">endpoints</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="nt">lb_endpoints</span><span class="p">:</span>
+            <span class="p p-Indicator">-</span> <span class="nt">endpoint</span><span class="p">:</span>
+                <span class="nt">address</span><span class="p">:</span>
+                  <span class="nt">socket_address</span><span class="p">:</span>
+                    <span class="nt">address</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">google.com.au</span>
+                    <span class="nt">port_value</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">443</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Templates are rendered using <a class="reference external" href="http://jinja.pocoo.org/docs/2.10/">Jinja2</a></p>
+</div>
+</div>
+<div class="section" id="guidelines-for-creating-templates">
+<h2>Guidelines for creating templates<a class="headerlink" href="#guidelines-for-creating-templates" title="Permalink to this headline">¶</a></h2>
+<p>To begin with, there are a few important variables that are made available via template context:</p>
+<dl class="docutils">
+<dt>version</dt>
+<dd><p class="first">This is a string that is automatically generated based off the contents
+of the template after it has been fully rendered.</p>
+<p>In general, your templates should start with the following:</p>
+<div class="last highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version_info</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">version|default(0)</span><span class="nv"> </span><span class="s">}}&#39;</span>
+</pre></div>
+</div>
+</dd>
+<dt>instances</dt>
+<dd><p class="first">When sovereign executes all of the sources it has configured, it will place the results
+into this variable.</p>
+<p class="last">So, depending on what you have configured for sources, this is the main variable that
+determines what will be rendered into the template.</p>
+</dd>
+</dl>
+<div class="section" id="an-example-template-based-on-the-example-configuration">
+<h3>An example template based on the example configuration<a class="headerlink" href="#an-example-template-based-on-the-example-configuration" title="Permalink to this headline">¶</a></h3>
+<p>This example would run through the following steps before being rendered and given to an Envoy client.</p>
+<p>Sovereign more-or-less does the following in order:</p>
+<ol class="arabic simple">
+<li>Reads the configured sources but does not get any instance data</li>
+<li>Receives a CDS discovery request from an Envoy proxy</li>
+<li>Gets all sources (i.e. 3 instances from the two bitbucket snippets above)</li>
+<li>Renders the below template<ol class="arabic">
+<li>Begins to loop over the 3 instances</li>
+<li>Feeds the ‘endpoints’ field into <code class="xref py py-func docutils literal notranslate"><span class="pre">sovereign.utils.eds.locality_lb_endpoints()</span></code></li>
+<li>Creates a cluster using the endpoints and name, for each instance</li>
+<li>Hashes the entire configuration</li>
+<li>Inserts the hash into the <code class="docutils literal notranslate"><span class="pre">version_info</span></code></li>
+</ol>
+</li>
+<li>If the Envoy proxy provided a different <code class="docutils literal notranslate"><span class="pre">version_info</span></code> in its request, it returns
+the configuration with a 200 OK, otherwise it returns 304 Not Modified</li>
+</ol>
+<div class="highlight-jinja notranslate"><div class="highlight"><pre><span></span><span class="x">version_info: &#39;</span><span class="cp">{{</span> <span class="nv">version</span><span class="o">|</span><span class="nf">default</span><span class="o">(</span><span class="m">0</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&#39;</span>
+<span class="x">resources:</span>
+<span class="cp">{%</span> <span class="k">for</span> <span class="nv">instance</span> <span class="k">in</span> <span class="nv">instances</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">  </span><span class="cp">{%</span> <span class="k">set</span> <span class="nv">endpoints</span> <span class="o">=</span> <span class="nv">eds.locality_lb_endpoints</span><span class="o">(</span><span class="nv">instance.endpoints</span><span class="o">,</span> <span class="nv">discovery_request</span><span class="o">,</span> <span class="nv">resolve_dns</span><span class="o">=</span><span class="kp">False</span><span class="o">)</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">  - &#39;@type&#39;: type.googleapis.com/envoy.api.v2.Cluster</span>
+<span class="x">    name: </span><span class="cp">{{</span> <span class="nv">instance.name</span> <span class="cp">}}</span><span class="x"></span>
+<span class="x">    connect_timeout: 5s</span>
+<span class="x">    type: strict_dns</span>
+<span class="x">    load_assignment:</span>
+<span class="x">      cluster_name: </span><span class="cp">{{</span> <span class="nv">instance.name</span> <span class="cp">}}</span><span class="x">-cluster</span>
+<span class="x">      endpoints: </span><span class="cp">{{</span> <span class="nv">endpoints</span><span class="o">|</span><span class="nf">tojson</span> <span class="cp">}}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="config_loaders.html" class="btn btn-neutral float-right" title="Available Configuration Loaders" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vasilios Syrakis
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
