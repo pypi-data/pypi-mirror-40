@@ -1,0 +1,137 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Spinning a new release</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="prev" title="Writing new cytoflow modules" href="new_modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="spinning-a-new-release">
+<h1>Spinning a new release</h1>
+<div class="section" id="tests">
+<h2>Tests</h2>
+<ul>
+<li><p class="first">We use three continuous integration platforms:
+<a class="reference external" href="https://travis-ci.org/bpteague/cytoflow">Travis</a>,
+<a class="reference external" href="https://ci.appveyor.com/project/bpteague/cytoflow">Appveyor</a>, and
+<a class="reference external" href="https://readthedocs.org/projects/cytoflow/">ReadTheDocs</a>.
+We also publish to <a class="reference external" href="https://anaconda.org/">Anaconda Cloud</a>.
+Temporary build artifacts get published to <a class="reference external" href="https://bintray.com/bpteague/cytoflow/cytoflow#files">Bintray</a>.</p>
+</li>
+<li><p class="first">Make sure that the <code class="xref py py-mod docutils literal notranslate"><span class="pre">cytoflow</span></code> tests pass, both locally and on Travis and Appveyor:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nose2</span> <span class="o">-</span><span class="n">c</span> <span class="n">packaging</span><span class="o">/</span><span class="n">nose2</span><span class="o">.</span><span class="n">cfg</span> <span class="o">-</span><span class="n">s</span> <span class="n">cytoflow</span><span class="o">/</span><span class="n">tests</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Make sure the <a class="reference internal" href="cytoflowgui.html#module-cytoflowgui" title="cytoflowgui"><code class="xref py py-mod docutils literal notranslate"><span class="pre">cytoflowgui</span></code></a> tests pass.
+<strong>You must do this locally; it runs too long for the free CI platforms.</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nose2</span> <span class="o">-</span><span class="n">c</span> <span class="n">packaging</span><span class="o">/</span><span class="n">nose2</span><span class="o">.</span><span class="n">cfg</span> <span class="o">-</span><span class="n">s</span> <span class="n">cytoflowgui</span><span class="o">/</span><span class="n">tests</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Make sure that the ReadTheDocs build is working.</p>
+</li>
+<li><p class="first">Make sure that the <code class="xref py py-mod docutils literal notranslate"><span class="pre">pyinstaller</span></code> distribution will build on your local
+machine.  We are currently building with a custom version of PyIntaller that’s
+included as a submodule in <cite>packaging/pyinstaller</cite></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pyinstaller</span> <span class="n">packaging</span><span class="o">/</span><span class="n">pyinstaller</span><span class="o">.</span><span class="n">spec</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Make sure that the expected files (installers, conda packages, wheels, built extensions)
+are getting published to Bintray.  Remember – a failed deployment doesn’t show
+up on the CI platforms as a broken build!</p>
+</li>
+<li><p class="first">Make sure that <code class="xref py py-mod docutils literal notranslate"><span class="pre">pyinstaller</span></code> built the executables on all three supported
+platforms.  Download and test that all three start and can run a basic workflow.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation</h2>
+<ul>
+<li><p class="first">Build the API docs and check them for completeness:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_sphinx</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Build the online docs and check them for completeness:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_sphinx</span> <span class="o">-</span><span class="n">b</span> <span class="n">embedded_help</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="versioning-and-dependencies">
+<h2>Versioning and dependencies</h2>
+<ul>
+<li><p class="first">We’re using <code class="docutils literal notranslate"><span class="pre">versioneer</span></code> to manage versions.  No manual versions required.</p>
+</li>
+<li><p class="first">If there are dependencies that don’t have packages on Anaconda, add recipes
+to <code class="docutils literal notranslate"><span class="pre">packaging/conda_recipes</span></code> (using <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">skeleton</span></code>) and upload them to
+the Anaconda Cloud.  Unless there’s a really (really!) good reason, please
+make them no-arch.</p>
+</li>
+<li><p class="first">Make sure <code class="docutils literal notranslate"><span class="pre">install_requires</span></code> in <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> matches <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code></p>
+</li>
+<li><p class="first">Update the README.rst from the README.md.  From the project root, say:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pandoc</span> <span class="o">--</span><span class="n">from</span><span class="o">=</span><span class="n">markdown</span> <span class="o">--</span><span class="n">to</span><span class="o">=</span><span class="n">rst</span> <span class="o">--</span><span class="n">output</span><span class="o">=</span><span class="n">README</span><span class="o">.</span><span class="n">rst</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Push the updated docs to GitHub.  Give the CI builders ~30 minutes, then
+check the build status on <a class="reference external" href="https://travis-ci.org/bpteague/cytoflow">Travis</a>, <a class="reference external" href="https://ci.appveyor.com/project/bpteague/cytoflow">Appveyor</a>, <a class="reference external" href="https://readthedocs.org/projects/cytoflow/">ReadTheDocs</a> and <a class="reference external" href="https://anaconda.org/">Anaconda Cloud</a>.</p>
+</li>
+<li><p class="first">Create a new tag on the master branch.  This will re-build everything on the CI
+builders, create a new release on GitHub, and upload new source and wheels to
+PyPI and packages to Anaconda Cloud.</p>
+</li>
+<li><p class="first">Double-check that the required files ended up on <a class="reference external" href="https://bintray.com/bpteague/cytoflow/cytoflow#files">Bintray</a>.</p>
+</li>
+<li><p class="first">On branch <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, update the version in <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>.  Push these
+changes to update the main download links on
+<a class="reference external" href="http://bpteague.github.io/cytoflow">http://bpteague.github.io/cytoflow</a></p>
+</li>
+<li><p class="first">Download the wheels from Bintray or Github and add them to PyPI.
+TODO - use <code class="docutils literal notranslate"><span class="pre">twine</span></code> to release to PyPI from CI builders.</p>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

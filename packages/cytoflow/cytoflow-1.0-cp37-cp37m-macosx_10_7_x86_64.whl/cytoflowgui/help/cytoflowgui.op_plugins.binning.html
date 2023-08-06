@@ -1,0 +1,80 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Binning</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-cytoflowgui.op_plugins.binning"></span><div class="section" id="binning">
+<h1>Binning</h1>
+<p>Bin data along an axis.</p>
+<p>This operation creates equally spaced bins (in linear or log space)
+along an axis and adds a condition assigning each event to a bin.  The
+value of the event’s condition is the left end of the bin’s interval in
+which the event is located.</p>
+<dl class="object">
+<dt>
+<code class="descname">Name</code></dt>
+<dd><p>The name of the new condition created by this operation.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Channel</code></dt>
+<dd><p>The channel to apply the binning to.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Scale</code></dt>
+<dd><p>The scale to apply to the channel before binning.</p>
+</dd></dl>
+
+<dl class="object">
+<dt>
+<code class="descname">Bin Width</code></dt>
+<dd><p>How wide should each bin be?  Can only set if <strong>Scale</strong> is <em>linear</em> or
+<em>log</em> (in which case, <strong>Bin Width</strong> is in log10-units.)</p>
+</dd></dl>
+
+<div class="figure">
+<img alt="_images/cytoflowgui-op_plugins-binning-1.png" src="_images/cytoflowgui-op_plugins-binning-1.png" />
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
