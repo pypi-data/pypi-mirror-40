@@ -1,0 +1,13 @@
+README.md
+setup.py
+FFFLaTeX/FFFparser.py
+FFFLaTeX/__init__.py
+FFFLaTeX/configLaTeX.py
+FFFLaTeX/configSymbols.py
+FFFLaTeX/parserutil.py
+FFFLaTeX.egg-info/PKG-INFO
+FFFLaTeX.egg-info/SOURCES.txt
+FFFLaTeX.egg-info/dependency_links.txt
+FFFLaTeX.egg-info/entry_points.txt
+FFFLaTeX.egg-info/requires.txt
+FFFLaTeX.egg-info/top_level.txt
