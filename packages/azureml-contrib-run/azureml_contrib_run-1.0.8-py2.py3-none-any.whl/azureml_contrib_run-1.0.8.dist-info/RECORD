@@ -1,0 +1,16 @@
+azureml/__init__.py,sha256=n0xtZ3iWcoVg5Qognsb7InYAUVAK8s3iaVeHB5GOaNA,251
+azureml/contrib/__init__.py,sha256=n0xtZ3iWcoVg5Qognsb7InYAUVAK8s3iaVeHB5GOaNA,251
+azureml/contrib/run/__init__.py,sha256=KXvjh6hMmmobhKjFInEFQZflO47qhH9YUhqkhjfXpu4,243
+azureml/contrib/run/persistence/__init__.py,sha256=rQph4Fljc7VaeyuwB5bBdW0dfO-DRo2htAVRxufyc2k,2691
+azureml/contrib/run/persistence/_persistence.py,sha256=kFTL9FVGdsonBW21-MXeYrXZO08-XJVidO7Vd0a0Ylc,6750
+azureml/contrib/run/persistence/base_persistence.py,sha256=YJLB3aUgJydbDrdSNZ6PndlAI2sUvEi4Jais80Xdx2s,1411
+azureml/contrib/run/persistence/handlers_store.py,sha256=2GrUfSxsJ7p_dEIVULtq3FKUX2UneFnIewlXTGY26es,2853
+azureml/contrib/run/persistence/pyspark_persistence.py,sha256=OkxrY81oYjRAlV7aJb6x_vzPWS8MX8WoeXU6SSMxKSo,2799
+azureml/contrib/run/persistence/sklearn_persistence.py,sha256=RWBRTZtVQMqG70_COHx2Zoc3DXALswVWO3xQIheQTpU,3675
+azureml_contrib_run-1.0.8.dist-info/DESCRIPTION.rst,sha256=VFw4sJIt4Zc0-__eYnksN8Ku9qMhbPpHJEkXMWUiD30,4
+azureml_contrib_run-1.0.8.dist-info/LICENSE.txt,sha256=FOfkEEz4uS7g278F9Rq12rqKF3lLyBUZhVpLetuZrTg,1021
+azureml_contrib_run-1.0.8.dist-info/METADATA,sha256=gL2I5_BT_sTJ8GIeSC26s6O6Vof0u9lofQ_y7lM8Ffw,914
+azureml_contrib_run-1.0.8.dist-info/RECORD,,
+azureml_contrib_run-1.0.8.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+azureml_contrib_run-1.0.8.dist-info/metadata.json,sha256=wdG2FDtDE3MtypArrlw9-FSf6y1ZtHiYNqlQwasVb_4,1071
+azureml_contrib_run-1.0.8.dist-info/top_level.txt,sha256=ZOeEa0TAXo6i5wOjwBoqfIGEuxOcKuscGgNSpizqREY,8
