@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: remotsylib
+Version: 0.0.1
+Summary: A Remotsy lib for use the Restfull API
+Home-page: https://github.com/jorgecis/remotsylib
+Author: Jorge Cisneros
+Author-email: jorge@remotsy.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: full readme
+        
+        
+Keywords: Remotsy infrared remote control smarthome
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
