@@ -1,0 +1,6 @@
+mock
+parse
+six
+
+[:python_version=="2.7"]
+mock
