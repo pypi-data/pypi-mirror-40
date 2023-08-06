@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ex4ml
+Version: 0.0.1
+Summary: A toolkit for conducting machine learning experiments efficiently
+Home-page: http://...
+Author: MINDS @ Mines
+Author-email: minds@mines.edu
+License: mit
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Provides-Extra: cv
+Provides-Extra: nlp

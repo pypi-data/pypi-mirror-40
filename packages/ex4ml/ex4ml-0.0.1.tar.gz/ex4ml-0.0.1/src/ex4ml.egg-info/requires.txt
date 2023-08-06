@@ -1,0 +1,11 @@
+numpy<2.0,>=1.14
+scipy<2.0,>=1.1
+matplotlib<3.0,>=2.2
+scikit-learn<1.0,>=0.19
+pandas<1.0,>=0.23
+
+[cv]
+opencv-contrib-python<3.5,>=3.4
+
+[nlp]
+spacy<3.0,>=2.0
