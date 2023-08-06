@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: binance-downloader
+Version: 0.2.3
+Summary: CLI to download k-line (candlestick/OHLC) data from Binance API
+Home-page: https://github.com/anson-vandoren/binance-downloader.git
+Author: Anson VanDoren
+Author-email: anson.vandoren@gmail.com
+Keywords: Binance,Cryptocurrency,Finance,Technical Analysis
+Requires-Python: >=3.5
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Topic :: Utilities
+Requires-Dist: dateparser (>=0.7.0,<0.8.0)
+Requires-Dist: logbook (>=1.4,<2.0)
+Requires-Dist: pandas (>=0.23,<0.24)
+Requires-Dist: requests (>=2.21,<3.0)
+Requires-Dist: tables (>=3.4,<4.0)
+Requires-Dist: tqdm (>=4.28,<5.0)
+Project-URL: Repository, https://github.com/anson-vandoren/binance-downloader.git
