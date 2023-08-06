@@ -1,0 +1,3 @@
+[console_scripts]
+freeplane-helper = freeplanehelper.__main__:main
+
