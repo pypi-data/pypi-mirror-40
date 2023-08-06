@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: coho
+Version: 0.3
+Summary: SMILES parser
+Home-page: https://github.com/cornett/coho
+Author: Ben Cornett
+Author-email: ben@lantern.is
+License: ISC
+Keywords: smiles opensmiles cheminformatics
+Platform: UNKNOWN
+Requires-Python: >= 3.3
+
+UNKNOWN
+
+

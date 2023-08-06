@@ -1,0 +1,11 @@
+coho-0.3.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
+coho-0.3.dist-info/top_level.txt,sha256=L517hUKzoi_loLmgKcGI_BoPUX4O0bCVfvVrZKxQ4Ak,5
+coho-0.3.dist-info/METADATA,sha256=aRAQOuLiFR9VXyGbCFAeK08qZZeRe2wOJymkq5-05uU,271
+coho-0.3.dist-info/RECORD,,
+coho/__init__.cpython-36m-x86_64-linux-gnu.so,sha256=f4grpIWNwvQvb9ajxlCKKY2mk9plNUmp-Bi2YEfYcB0,51026
+coho/smiles.pyi,sha256=-ouId59TGC1rG8z6YmISQOBA_2egEDZJGmsCUrLcxrE,237
+coho/smiles.cpython-36m-x86_64-linux-gnu.so,sha256=JfgwCegvuJ9cKmzGLa7-MjfBxaneUR0RyyB5RMOa_UY,335350
+coho/smiles.c,sha256=BZafFZ5inK9_8z8vw8bAaXsp7OuKAthQEOZPvxoCXYs,245803
+coho/__init__.pyi,sha256=Y25n44pyE3vp92MiABKrcK3IWRyQ1JG1rZ4Ufqy2nC0,17
+coho/__init__.c,sha256=-ZzKTrxVJMJbooEarTk1mO3Sc7TGrjfSHK-YFJlaABI,100998
+coho/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
