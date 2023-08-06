@@ -1,0 +1,12 @@
+gkit/__init__.py,sha256=Xw447asPzdYFUO8aQgE9T_paU_FUrkhGsis-vYjLKKU,178
+gkit/cli.py,sha256=V6wMJNc0V40-iQj1mEnl-4Nd2ym_n3Ez7e5-SC0BaJ0,1832
+gkit/io.py,sha256=S65_oiYxiAlOe0sZ-lyhJiF3VLk7kvU27sC86XonigU,3717
+gkit/math.py,sha256=R8dVaD8TWmJJvu1f5rjtjIUP3ZQlTfWWuJT3qYjimXs,1829
+gkit/core/__init__.py,sha256=dnR-8K8y6I5BxvcgxvqTijxZkmiWe3o7ukcbwPuytyQ,54
+gkit/core/raster.py,sha256=XyMZmi3uXID5TvqKRVNakXs_S5sZIlsRJoQQeGjpM64,14956
+gkit-0.4.2.dist-info/LICENSE,sha256=oSG5BNBlKXhhAZWunNsgN_U3gvFZoIK4Dhpic6LGMwQ,1062
+gkit-0.4.2.dist-info/METADATA,sha256=ISFvnWAqBB1Ge7P1nduo1oaUblGOl_u_C45jPQRPaME,3618
+gkit-0.4.2.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+gkit-0.4.2.dist-info/entry_points.txt,sha256=m8r6D5blUekgRwCgac9iBZzEAKkjwOYpSDCLQlgGCCM,40
+gkit-0.4.2.dist-info/top_level.txt,sha256=6DOGFSQc4lacBMHrJ_MYQEZoIRVajQmni84xcsL7YTw,5
+gkit-0.4.2.dist-info/RECORD,,
