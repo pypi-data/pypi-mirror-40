@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ogr
+Version: 0.0.1
+Summary: One API for multiple git forges.
+Home-page: https://github.com/user-cont/ogr
+Author: Red Hat
+Author-email: user-cont-team@redhat.com
+License: MIT
+Description: # One Git Rule
+        
+        Library for one API for many git forges. (e.g. github, gitlab, pagure).
+        
+        # Contribution notes
+        
+        - Property should not connect to network.
+        
+Keywords: git,api,github,gitlab,pagure
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: testing
