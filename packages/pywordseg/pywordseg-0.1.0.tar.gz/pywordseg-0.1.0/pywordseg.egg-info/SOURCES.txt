@@ -1,0 +1,10 @@
+README.md
+setup.py
+pywordseg/__init__.py
+pywordseg/download.py
+pywordseg/pywordseg.py
+pywordseg.egg-info/PKG-INFO
+pywordseg.egg-info/SOURCES.txt
+pywordseg.egg-info/dependency_links.txt
+pywordseg.egg-info/requires.txt
+pywordseg.egg-info/top_level.txt
