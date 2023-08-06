@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: diecast
+Version: 0.3.2
+Summary: Dependency Injection framework for Python 3
+Home-page: https://glow.dev.maio.me/sjohnson/diecast
+License: MIT
+Keywords: dependency-injection,di,python3
+Author: Sean Johnson
+Author-email: sean.johnson@maio.me
+Requires-Python: >=3.4,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Project-URL: Repository, https://glow.dev.maio.me/sjohnson/diecast
