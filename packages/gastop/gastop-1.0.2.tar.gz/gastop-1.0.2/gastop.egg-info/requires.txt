@@ -1,0 +1,13 @@
+numpy
+matplotlib
+configobj
+tqdm
+colorama
+imageio
+
+[dev]
+check-manifest
+
+[test]
+pytest
+pytest-cov
