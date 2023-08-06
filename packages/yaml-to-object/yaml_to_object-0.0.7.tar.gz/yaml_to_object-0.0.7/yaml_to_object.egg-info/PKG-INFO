@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: yaml-to-object
+Version: 0.0.7
+Summary: Generate Python Class & Object from YAML file
+Home-page: https://github.com/SF-Zhou/yaml-to-object
+Author: SF-Zhou
+Author-email: sfzhou.scut@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: YAML class object
+Platform: UNKNOWN
