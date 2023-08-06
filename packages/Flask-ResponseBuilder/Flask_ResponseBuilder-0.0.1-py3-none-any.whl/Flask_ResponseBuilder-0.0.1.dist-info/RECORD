@@ -1,0 +1,10 @@
+flask_response_builder/__init__.py,sha256=zh5O_-7Ll1TaI6UGCT_hFXamwPxOw5xWE7whXW4GYEI,262
+flask_response_builder/builders.py,sha256=JBsqIBT8Z2xtCZZPNXmuJTxF5dsPIlz7YZqNDmEkFvQ,5737
+flask_response_builder/case_notation.py,sha256=P0340HvhVkfl1OxEwO-MwJk2plXG5s5BzfYt_IxAsy4,1857
+flask_response_builder/transformers.py,sha256=NXAyIqg3d40Yco6KWERqwCcAun09DCHPY5UNPb-E5kM,4458
+flask_response_builder/wrapper.py,sha256=mNRj_BnKf_3Eysqfxx1TZiW57xnE_PNwQE7Wi6zynNE,1169
+Flask_ResponseBuilder-0.0.1.dist-info/LICENSE,sha256=GSAKapQH5ZIGWlpQTA7v5YrfECyaxaohUb1vJX-qepw,1090
+Flask_ResponseBuilder-0.0.1.dist-info/METADATA,sha256=4u7LRU8W_ZpB6OTDjL0tCNqy5uQLbJQwzJu__hoRQnU,2118
+Flask_ResponseBuilder-0.0.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+Flask_ResponseBuilder-0.0.1.dist-info/top_level.txt,sha256=T_FGlWQpyqoaqhIpoqQq7d5jQx3wWR39_70vmqyQs-U,23
+Flask_ResponseBuilder-0.0.1.dist-info/RECORD,,
