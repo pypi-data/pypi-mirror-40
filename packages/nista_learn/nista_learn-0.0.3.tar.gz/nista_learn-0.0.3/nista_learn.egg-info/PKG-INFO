@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: nista-learn
+Version: 0.0.3
+Summary: A small machine learning package
+Home-page: https://github.com/wariored/nista_learn
+Author: Cheikh Tidjane Konteye
+Author-email: cheikh@cheikhkonteye.com
+License: UNKNOWN
+Description: nista\_learn
+        ============
+        
+        This is a Python ML librabry like scikit-learn
+        
+        You can create your ML model or use some ML algorithms on your project
+        
+        Example: Logistic Regression
+        ----------------------------
+        
+        Read csv file and slip data into training and test data
+        
+        ::
+        
+            import pandas as pd
+            df = pd.read_csv('Data_for_UCI_named.csv', header=0)
+            df['stabf'] = df['stabf'].map({'unstable': 0, 'stable': 1})
+            Y = df['stabf'].values
+            # sometimes it's needed to reshape data
+            X = df.drop(['stabf'], axis=1).values
+        
+            X_train = X[:9000]
+            Y_train = Y[:9000]
+            X_test = X[9000:]
+            Y_test = Y[9000:]
+        
+        Let's use our library \`\`\`\` # call the LogisticRegression class from
+        nista\_learn.regressions import LinearRegression, LogisticRegression
+        
+        log\_reg = LogisticRegression() # fitting data log\_reg.fit(X\_train,
+        Y\_train, iterations=200000, learning\_rate=0.25, show=True) # predict a
+        small dataset y\_pred = log\_reg.predict(X\_test[20:28]) print('---
+        small value ---') print(Y\_test[20:28]) print('--- predicted data ---')
+        print(y\_pred) # plotting the cost function log\_reg.plot\_cost() \`\`\`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
