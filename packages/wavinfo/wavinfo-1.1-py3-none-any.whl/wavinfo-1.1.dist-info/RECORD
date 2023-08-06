@@ -1,0 +1,11 @@
+wavinfo/__init__.py,sha256=9Suleu8mq82OV7Ma_x8u3Yc8QOp-nSN2_anTD-Yi664,223
+wavinfo/riff_parser.py,sha256=cnXS8Xj-pCJrxSFN-3DlhZo_P24-pik4Ag6b3BCIync,1729
+wavinfo/wave_bext_reader.py,sha256=k6Rl6Vhf0t-EQudqCAwH0_ZTh3GiEiqqs88352J0nF0,3167
+wavinfo/wave_info_reader.py,sha256=_oC9V8h_uMc7uhSjIK0HygAtm9eBdEA--aXmEpXfQUA,2094
+wavinfo/wave_ixml_reader.py,sha256=g5-8NmXBYi2dg4_ogvSQt9mmerk1m3IpE8xDDSG0Arg,927
+wavinfo/wave_reader.py,sha256=_R-8pU7Ip76Y0vsrQ-5_Q345ad2mNsLhM0g2LBkh0K4,5168
+wavinfo-1.1.dist-info/LICENSE,sha256=s_kFBW5rOgSZwR6Y-sX11xV0yqxCo0mKvwlK55tQjwY,1068
+wavinfo-1.1.dist-info/METADATA,sha256=cTFTONOC5BhFqjgNrrSZpWwWqgv0Xnmycba0OILl5Zg,6112
+wavinfo-1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+wavinfo-1.1.dist-info/top_level.txt,sha256=LsSyoBXc3ipI-xFLrz7E31PNF2wQ1ocFfON2I5INLo8,8
+wavinfo-1.1.dist-info/RECORD,,
