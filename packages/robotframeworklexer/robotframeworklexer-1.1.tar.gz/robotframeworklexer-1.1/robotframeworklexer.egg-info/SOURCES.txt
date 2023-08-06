@@ -1,0 +1,15 @@
+BUILD.rst
+COPYRIGHT.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+robotframeworklexer.py
+setup.py
+tasks.py
+robotframeworklexer.egg-info/PKG-INFO
+robotframeworklexer.egg-info/SOURCES.txt
+robotframeworklexer.egg-info/dependency_links.txt
+robotframeworklexer.egg-info/entry_points.txt
+robotframeworklexer.egg-info/top_level.txt
+test/test_robotframeworklexer.py
