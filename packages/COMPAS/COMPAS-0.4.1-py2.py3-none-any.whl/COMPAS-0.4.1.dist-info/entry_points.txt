@@ -1,0 +1,3 @@
+[console_scripts]
+install_compas_rhino = compas_rhino.install:install
+
