@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: crs-debuger
+Version: 0.0.3
+Summary: crs debuger
+Home-page: https://github.com/ywyt738/crs_debuger
+Author: HuangXiaojun
+Author-email: huangxiaojun@sightp.com
+License: UNKNOWN
+Description: # CRS Debug
+        
+        This is a tool for debuging crs.
+        
+        ## Installation
+        
+        ```bash
+        pip insall crs_debuger
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
