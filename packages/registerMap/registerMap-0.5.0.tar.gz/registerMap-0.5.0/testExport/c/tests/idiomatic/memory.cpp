@@ -1,0 +1,46 @@
+/*
+ *
+ * Copyright 2018 Russell Smiley
+ *
+ * This file is part of registerMap.
+ *
+ * registerMap is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * registerMap is distributed in the hope that it will be useful
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with registerMap.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+#include <cstdint>
+
+#include "catch.hpp"
+#include "some/path/myRegisterMap/registerMap.h"
+
+
+SCENARIO( "memory values", "[memory]" )
+{
+  std::uint_least8_t const expectedValue = 10;
+
+  GIVEN( "A memory space instantiated in the global register map" )
+  {
+    REQUIRE( expectedValue != myRegisterMap_memory.base[0] );
+
+    WHEN( "the memory off target memory is modified" )
+    {
+      myRegisterMap_memory.base[0] = expectedValue;
+
+      THEN( "the module memory reference reflects the base change" )
+      {
+        REQUIRE( expectedValue == myRegisterMap_memory.base[0] );
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "registerMap"
+author = "Russell Smiley"
+author-email = "im.russell.smiley@gmail.com"
+home-page = "https://gitlab.com/registerMap/registerMap"
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+description-file = "README.rst"
+keywords = "registermap register digital electronic design csr control status"
+requires-python = ">=3.6"
+
+
+requires = [
+  "jinja2",
+  "pyyaml",
+]
+
+
+[tool.flit.metadata.requires-extra]
+dev = [
+  "nose",
+  "nose-cov",
+  "nosehtmloutput-2",
+]
+
+
+[tool.flit.scripts]
+export-map = "registerMap.exporter:entry"
