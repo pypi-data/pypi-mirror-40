@@ -1,0 +1,10 @@
+robot_cli/__init__.py,sha256=3et2xAtVDxdHCNLkFp9o7gJYhZieoAuz3oiabVRK9Io,66
+robot_cli/core/__init__.py,sha256=drpFa9b5H9bJilGk3qNR4im59A6mqP_r5OPcxVcu6Os,2960
+robot_cli/core/base.py,sha256=IWbe8RzR1SAHIkmk2dkImqN8_ZEUYK2hI1DS87LeJ5g,2122
+robot_cli/core/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robot_cli/core/commands/create.py,sha256=SctuPDjz6YA27FFH_ekRtlK6cD0Oelz-AWSHoHnpjFc,2709
+robot_cli-0.1.0.dist-info/METADATA,sha256=zn-Fn3wsKJwGT2EgDKBa8c8wectUwTRB0HcDXPcO3Wg,715
+robot_cli-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+robot_cli-0.1.0.dist-info/entry_points.txt,sha256=PC_6ju1wBx1nTMyCMTPGEZa9DHjJFBkvqqaPgbyg1Nk,72
+robot_cli-0.1.0.dist-info/top_level.txt,sha256=hkyPorILoYHb0-OmPrsqSegVfHUinIWqpzK-_noTU7c,10
+robot_cli-0.1.0.dist-info/RECORD,,
