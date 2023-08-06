@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: algo-db-controller
+Version: 0.0.2
+Summary: Handles everything db related for algo
+Home-page: UNKNOWN
+Author: Afzal SH @ Tarams
+Author-email: afzal.hameed@tarams.com
+License: UNKNOWN
+Description: # Handles everything db related for algo.
+        
+        ## Deploy
+        ```
+        python3 setup.py sdist bdist_wheel
+        twine upload dist/*
+        ```
+        For details: https://packaging.python.org/tutorials/packaging-projects/
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
