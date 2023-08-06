@@ -1,0 +1,12 @@
+README.md
+setup.py
+fsx/__init__.py
+fsx/glob.py
+fsx.egg-info/PKG-INFO
+fsx.egg-info/SOURCES.txt
+fsx.egg-info/dependency_links.txt
+fsx.egg-info/requires.txt
+fsx.egg-info/top_level.txt
+fsx/test/_FsxFakeFsTree.py
+fsx/test/__init__.py
+fsx/test/_fsx_fake.py
