@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: inkbot
+Version: 0.0.8
+Summary: Inkbot is a wrapper around darknode-cli to make it easier to backup and restore darknodes configuration and credentials
+Home-page: https://github.com/bachew/inkbot
+Author: Chew Boon Aik
+Author-email: bachew@gmail.com
+License: MIT
+Download-URL: https://github.com/bachew/inkbot/archive/master.zip
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Dist: invoke (>=1.1.1)
+
+UNKNOWN
+
+
