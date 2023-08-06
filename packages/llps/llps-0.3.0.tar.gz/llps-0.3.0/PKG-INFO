@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: llps
+Version: 0.3.0
+Summary: A simple specification for large bioinformatics projects.
+Home-page: https://github.com/LongTailBio/large_project_specification
+Author: David C. Danko
+Author-email: dev@longtailbio.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
