@@ -1,0 +1,22 @@
+language: python
+
+python:
+ - "2.6"
+ - "2.7"
+ - "3.4"
+ - "3.5"
+ - "3.6"
+ - "3.7"
+ - "pypy"
+ - "pypy3"
+
+install:
+ # test with nose2: which can also report "expected failures"
+ - pip install --upgrade nose2
+ - echo "always-on = True" >> .nose2.cfg
+
+before_script:
+ - mkdir -p shippable/testresults
+
+script:
+ - nose2
