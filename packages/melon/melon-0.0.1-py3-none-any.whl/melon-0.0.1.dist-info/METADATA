@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: melon
+Version: 0.0.1
+Summary: Library for data interpretation
+Home-page: https://github.com/evoneutron/melon
+Author: evoneutron
+Author-email: evoneutron@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# melon
+Library for data interpretation
+
+
