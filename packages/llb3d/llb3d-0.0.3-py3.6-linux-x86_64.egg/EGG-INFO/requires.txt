@@ -1,0 +1,10 @@
+pytest>=3.7
+ply>=3.11
+llvmlite>=0.24
+typeguard>=2.2.2
+wheel>=0.31.1
+
+[dev]
+pytest>=3.7
+pytest-cov>=2.5
+pylint>=2.1

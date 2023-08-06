@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: llb3d
+Version: 0.0.3
+Summary: LLVM Blitz3d implementation.
+Home-page: https://github.com/vslutov/llb3d
+Maintainer: vslutov
+Maintainer-email: vslutov@yandex.ru
+License: WTFPL
+Download-URL: https://pypi.python.org/pypi/llb3d
+Description: Read the doc: <https://github.com/vslutov/llb3d>
+        
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Provides-Extra: dev

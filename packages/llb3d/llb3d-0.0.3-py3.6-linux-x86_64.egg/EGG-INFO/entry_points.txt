@@ -1,0 +1,3 @@
+[console_scripts]
+llb3d = llb3d.__main__:main
+
