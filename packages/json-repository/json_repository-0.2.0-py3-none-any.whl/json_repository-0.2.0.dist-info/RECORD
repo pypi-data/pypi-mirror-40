@@ -1,0 +1,16 @@
+json_repository/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_repository/context/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_repository/context/json_context.py,sha256=MA2dJ4yn0JB9rdFXTG2hb_qOZCaXHT_9hgSt9G3tUjI,3241
+json_repository/errors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_repository/errors/entity_not_found.py,sha256=qQkcOIS4kTZkRmbmgpU19uVArwz9X4M3kPsrXpT_ACE,43
+json_repository/errors/more_than_one_result.py,sha256=NwQaCbpvo5ekjiXTNGUpIkZvH28AROh8PkGgn7eousE,46
+json_repository/repositories/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_repository/repositories/base_json_repository.py,sha256=W7sNNG5Lycf7Y7QPjLH0fn-D6Oe3Z5BsK8JXPEIvzuY,942
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/sample/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/sample/foobar_test.py,sha256=5P0pdi0MbpCzuk5rZtZ6T8gdD-AvCwDlM2mO-IeCEwk,5457
+json_repository-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+json_repository-0.2.0.dist-info/METADATA,sha256=302YkgugAN4DfrJ-dE7AXRtdOxm5JzWIDwxaUsuHgMY,1217
+json_repository-0.2.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+json_repository-0.2.0.dist-info/top_level.txt,sha256=df-s9d7p3fk6PZJO_nnUSSpPMg5J0ZLvPfZSbgoo2p8,21
+json_repository-0.2.0.dist-info/RECORD,,
