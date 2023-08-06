@@ -1,0 +1,10 @@
+README.md
+setup.py
+tpmstore/README
+tpmstore/__init__.py
+tpmstore/tpmstore.py
+tpmstore.egg-info/PKG-INFO
+tpmstore.egg-info/SOURCES.txt
+tpmstore.egg-info/dependency_links.txt
+tpmstore.egg-info/requires.txt
+tpmstore.egg-info/top_level.txt

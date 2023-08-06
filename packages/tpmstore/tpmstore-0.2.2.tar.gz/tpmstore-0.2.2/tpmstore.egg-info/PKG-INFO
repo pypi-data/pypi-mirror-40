@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: tpmstore
+Version: 0.2.2
+Summary: Lookup TeamPasswordManager from Ansible.
+Home-page: https://github.com/peshay/tpmstore
+Author: Andreas Hubert
+Author-email: anhubert@gmail.com
+License: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Download-URL: https://github.com/peshay/tpmstore/archive/master.zip
+Description: # tpm-ansible
+        A TeamPasswordManager Module for Ansible
+        
+Keywords: ansible,ansible plugin,console,automation
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Systems Administration
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
