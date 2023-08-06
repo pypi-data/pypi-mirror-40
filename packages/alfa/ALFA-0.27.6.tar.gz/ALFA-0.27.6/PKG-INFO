@@ -1,0 +1,23 @@
+Metadata-Version: 1.0
+Name: ALFA
+Version: 0.27.6
+Summary: A simple software to get a quick overview of features composing NGS dataset(s).
+Home-page: https://github.com/biocompibens/ALFA
+Author: Mathieu Bahin
+Author-email: mathieu.bahin@biologie.ens.fr
+License: MIT
+Description: ====
+        ALFA
+        ====
+        
+        ALFA provides a global overview of features distribution composing NGS dataset(s). Given a set of aligned reads (BAM files) and an annotation file (GTF format), the tool produces plots of the raw and normalized distributions of those reads among genomic categories (stop codon, 5'-UTR, CDS, intergenic, etc.) and biotypes (protein coding genes, miRNA, tRNA, etc.). Whatever the sequencing technique, whatever the organism.
+        
+        See all information on `ALFA GitHub project page <https://github.com/biocompibens/ALFA>`_.
+        
+        Contributors
+        ------------
+        Mathieu Bahin, Benoit Noel, Auguste Genovesio (Biocomp team, IBENS, Paris, France)
+        
+        Leila Bastianelli and Valentine Murigneux
+        
+Platform: UNKNOWN
