@@ -1,0 +1,2 @@
+recursive-include comname/json *
+recursive-include comname/user_dict *
