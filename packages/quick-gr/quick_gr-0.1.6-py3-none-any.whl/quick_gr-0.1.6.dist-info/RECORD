@@ -1,0 +1,10 @@
+command/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+command/make.py,sha256=Pas-1cY6n4E8EPsBDCtozvoMojcC0O5q_S0lKBvIzXo,3304
+command/normal_command.py,sha256=XKD3SiuyMpxLt3qQ1UJDKYbYeWxEdYm6dEp_8u78mfE,3238
+visit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+visit/help.py,sha256=4zyPUaNwHHWFqRf6rf3z5wNVaL0m2TKmKVglEaZcM5s,982
+quick_gr-0.1.6.dist-info/METADATA,sha256=yIaEhyHTnwPecyNTl9FQFbf7e8PUubbiGCy5AXmkxS0,300
+quick_gr-0.1.6.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+quick_gr-0.1.6.dist-info/entry_points.txt,sha256=F-gCf4gvz_muPa3T7tq6ZH5pmnRqaRQJHgkcu-pH5D8,43
+quick_gr-0.1.6.dist-info/top_level.txt,sha256=OsM_BFQKiDi0NAE8_uuN8WMmI30yAUP7XzyUDlCDuS8,14
+quick_gr-0.1.6.dist-info/RECORD,,
