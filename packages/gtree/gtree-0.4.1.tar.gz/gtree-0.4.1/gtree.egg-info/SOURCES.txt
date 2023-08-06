@@ -1,0 +1,8 @@
+README.md
+setup.py
+gtree/__init__.py
+gtree/gtree.py
+gtree.egg-info/PKG-INFO
+gtree.egg-info/SOURCES.txt
+gtree.egg-info/dependency_links.txt
+gtree.egg-info/top_level.txt
