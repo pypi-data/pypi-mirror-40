@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: get-my-pastebin
+Version: 1.0.12
+Summary: Terminal application to find and copy your own Paste for Pastebin.
+Home-page: https://github.com/tanrax/get-my-pastebin
+Author: Andros Fenollosa
+Author-email: andros@fenollosa.email
+License: UNKNOWN
+Keywords: pastebin,terminal,console,copy,search,notes
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.6
+Requires-Dist: Click (>=7.0)
+Requires-Dist: pick (>=0.6.4)
+Requires-Dist: pyperclip (>=1.7.0)
+
+UNKNOWN
+
+

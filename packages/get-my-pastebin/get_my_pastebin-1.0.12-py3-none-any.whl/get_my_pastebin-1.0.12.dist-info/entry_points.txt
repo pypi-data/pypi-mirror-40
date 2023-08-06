@@ -1,0 +1,4 @@
+
+      [console_scripts]
+      getmypastebin=get_my_pastebin:main
+  
