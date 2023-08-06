@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: skidward
+Version: 0.0.1.dev43
+Summary: scheduler for python scripts
+Home-page: https://gitlab.adimian.com/open-source/skidward/
+Author: See AUTHORS
+Author-email: contact@adimian.com
+License: UNKNOWN
+Description: # skidward
+        
+        Scheduler For Python Scripts
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
