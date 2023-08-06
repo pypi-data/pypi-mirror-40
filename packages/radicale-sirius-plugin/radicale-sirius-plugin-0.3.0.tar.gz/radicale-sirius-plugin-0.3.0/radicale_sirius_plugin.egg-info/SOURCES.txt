@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+radicale_sirius_plugin/LockCollection.py
+radicale_sirius_plugin/__init__.py
+radicale_sirius_plugin/auth.py
+radicale_sirius_plugin/storage.py
+radicale_sirius_plugin.egg-info/PKG-INFO
+radicale_sirius_plugin.egg-info/SOURCES.txt
+radicale_sirius_plugin.egg-info/dependency_links.txt
+radicale_sirius_plugin.egg-info/not-zip-safe
+radicale_sirius_plugin.egg-info/requires.txt
+radicale_sirius_plugin.egg-info/top_level.txt
