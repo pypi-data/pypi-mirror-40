@@ -1,0 +1,49 @@
+{% extends "bee_django_mission/base.html" %}
+{% load bee_django_mission_filter %}
+
+{% block content %}
+    <div class="text-center"><h3>
+        用户阶段任务
+    </h3>
+    </div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th>阶段</th>
+            <th>任务名称</th>
+            <th></th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for user_stage in user_stage_list %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ user_stage.user_line__line__name }}</td>
+                <td>{{ user_stage.name }}</td>
+                <td><a href="{% url 'bee_django_mission:user_stage_report' token=user_stage.token %}">统计</a></td>
+{#                <td>{{ stage.line.name }}</td>#}
+{#                <td>{{ stage.level }}</td>#}
+{#                <td>{{ stage.name }}</td>#}
+{#                <td>{{ stage.created_at|local_datetime|date:"Y-m-d H:i:s" }}</td>#}
+{#                <td>#}
+                    {#                    <a href="{% url 'bee_django_mission:stage_detail' stage.id %}  ">详情</a>#}
+{#                    {% if perms.bee_django_mission.change_stage %}#}
+{#                        <a href="{% url 'bee_django_mission:stage_update' pk=stage.id %}  ">修改</a>#}
+{#                    {% endif %}#}
+                    {#                    <a href="#" id="delete_{{ source.id }}"#}
+                    {#                       data-confirm="{% url "bee_django_crm:source_delete" source.id %}"#}
+                    {#                       onclick="click_del(this)">删除</a>#}
+{#                </td>#}
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+    {% include 'bee_django_mission/paginator.html' %}
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}

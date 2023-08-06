@@ -1,0 +1,45 @@
+{% extends "bee_django_mission/base.html" %}
+{% load bee_django_mission_filter %}
+
+{% block content %}
+    <div class="text-center"><h3>
+        任务统计
+    </h3>
+    </div>
+    <hr>
+    <h4>任务</h4>
+    <table class="table">
+        <tr>
+            <td class="col-xs-4">任务线</td>
+            <td>{{ user_stage.user_line.line.name }}</td>
+        </tr>
+        <tr>
+            <td>任务名称</td>
+            <td>{{ user_stage.name }}</td>
+        </tr>
+    </table>
+    <h4>人数统计</h4>
+    <table class="table">
+
+        <tbody>
+        {% for status in status_list %}
+            <tr>
+                <td class="col-xs-4">{{ status.name }}</td>
+                <td>{{ status.c }}人</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <h4>奖励</h4>
+    <table class="table">
+        {% for prize in prize_list %}
+            <tr>
+                <td class="col-xs-4">{{ prize.prize_coin }}</td>
+                <td>{{ prize.c }}人</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}
