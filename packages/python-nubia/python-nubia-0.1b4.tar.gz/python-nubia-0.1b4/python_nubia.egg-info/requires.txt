@@ -1,0 +1,6 @@
+termcolor
+python-levenshtein
+pyparsing
+prettytable
+prompt-toolkit<=2
+pygments
