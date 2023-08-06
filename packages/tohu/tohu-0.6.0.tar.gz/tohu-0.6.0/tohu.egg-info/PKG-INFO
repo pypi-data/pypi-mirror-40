@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: tohu
+Version: 0.6.0
+Summary: Create random data in a controllable way
+Home-page: https://github.com/maxalbert/tohu
+Author: Maximilian Albert
+Author-email: maximilian.albert@gmail.com
+License: MIT
+Description: [![CircleCI](https://circleci.com/gh/maxalbert/tohu.svg?style=shield)](https://circleci.com/gh/maxalbert/tohu)
+        
+        tohu: Create random data in a controllable way
+        ==============================================
+        
+        Prerequisites
+        -------------
+        
+        - [pipenv](https://docs.pipenv.org/)
+        - [PostgreSQL](https://www.postgresql.org/) (for running the tests)
+        
+        
+        Quick start
+        -----------
+        
+        To run the tests:
+        ```
+        $ pipenv install --dev
+        $ pipenv shell
+        $ make test
+        ```
+        
+        
+        Copyright
+        ---------
+        
+        See [LICENSE](./LICENSE)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: test
+Provides-Extra: dev
