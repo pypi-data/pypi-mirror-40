@@ -1,0 +1,9 @@
+README.md
+setup.py
+pymusicxml/__init__.py
+pymusicxml/music_xml_objects.py
+pymusicxml/utilities.py
+pymusicxml.egg-info/PKG-INFO
+pymusicxml.egg-info/SOURCES.txt
+pymusicxml.egg-info/dependency_links.txt
+pymusicxml.egg-info/top_level.txt
