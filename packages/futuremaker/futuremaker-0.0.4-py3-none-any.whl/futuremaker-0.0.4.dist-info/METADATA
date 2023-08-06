@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: futuremaker
+Version: 0.0.4
+Summary: Cryptocurrency trading library
+Home-page: https://github.com/gncloud/futuremaker
+Author: SongSangWook
+Author-email: swsong@gncloud.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: asyncio
+Requires-Dist: bitmex
+Requires-Dist: pandas
+Requires-Dist: python-telegram-bot
+Requires-Dist: pytz
+Requires-Dist: websocket-client
+Requires-Dist: websockets
+
+# Futuremaker
+
+This is a cryptocurrency trading library package.
+
+Support exchanges : BitMEX, (Binance, Bithumb and Upbit are comming soon.)
+
