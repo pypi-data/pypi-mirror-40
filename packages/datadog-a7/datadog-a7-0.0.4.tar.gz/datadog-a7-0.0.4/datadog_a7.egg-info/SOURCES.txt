@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+a7/__init__.py
+a7/validate.py
+datadog_a7.egg-info/PKG-INFO
+datadog_a7.egg-info/SOURCES.txt
+datadog_a7.egg-info/dependency_links.txt
+datadog_a7.egg-info/entry_points.txt
+datadog_a7.egg-info/requires.txt
+datadog_a7.egg-info/top_level.txt
