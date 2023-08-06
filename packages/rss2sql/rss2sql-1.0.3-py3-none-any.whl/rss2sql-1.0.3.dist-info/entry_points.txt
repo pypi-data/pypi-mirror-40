@@ -1,0 +1,3 @@
+[console_scripts]
+rss2sql = rss2sql.rss2sql:entrypoint
+
