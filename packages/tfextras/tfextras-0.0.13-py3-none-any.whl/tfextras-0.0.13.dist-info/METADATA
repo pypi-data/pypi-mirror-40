@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tfextras
+Version: 0.0.13
+Summary: Tensorflow extras
+Home-page: UNKNOWN
+Author: Andreas Urbanski
+Author-email: urbanski.andreas@gmail.com
+License: TBD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.5
+
+UNKNOWN
+
+
