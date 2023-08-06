@@ -1,0 +1,16 @@
+radicl/__init__.py,sha256=0u3zD-F53eukiOjd-qsvKDIvGq1IwkcdFKKHLnhdv0c,155
+radicl/api.py,sha256=FNEwn3ituE3ZDv3_me57vChVIfmBN5txo43cPeliF68,20802
+radicl/calibrate.py,sha256=zoESv5rhYDKad3i_mN3H8Fps_AWp3JNTKDZozJj5w7E,2265
+radicl/cli.py,sha256=RKHJCbf-V_B0mTalHZ98qFZ2zxj-eJkTmcr4znK3GJE,4133
+radicl/probe.py,sha256=2yJlOlEF-2UDnQKnX7sh6xrq3cldx8U82bxK8m63Q44,27327
+radicl/radicl.py,sha256=8W6830idqIFZppLcd7gen1tOJQ_DvZNM4v4q-pzJCs4,12334
+radicl/serial.py,sha256=Zpyzjs7pfzxWxtrvNmo0mFD4v4DTzQPNw2M6Ir0PxkU,3708
+radicl/ui_tools.py,sha256=xQLLDqfDWOwom_M1PjHzguKpHX-Y6PQPOfsw3EYWRqA,4717
+radicl/update.py,sha256=V7DqIj4NvU7Ftu-7ul4joeCbqZDslrKG66Wdxe-nVMM,12751
+radicl-0.1.0.data/scripts/plotlyte,sha256=pL3134q8bOmvWlFvAvwJTZ3vQjR8g6301z46GnS_e34,5147
+radicl-0.1.0.dist-info/LICENSE,sha256=n4pVUIRJlCLQqtY-RlZyGoEvEnvXdkdF1alTYsgC3AM,1507
+radicl-0.1.0.dist-info/METADATA,sha256=S3vaNVr4AX2ga2rjF57_NuVpaArjB1NXlrR6bke4xI4,1669
+radicl-0.1.0.dist-info/WHEEL,sha256=-ZFxwj8mZJPIVcZGLrsQ8UGRcxVAOExzPLVBGR7u7bE,92
+radicl-0.1.0.dist-info/entry_points.txt,sha256=KBiGa-n_ChqcMkFWMl76qiHj1RYJRJnjdS_t6oiB1p4,44
+radicl-0.1.0.dist-info/top_level.txt,sha256=AY0Acr9Rft5DRwQLytDjx1grzjRc4k-0_RfTg54BnH0,7
+radicl-0.1.0.dist-info/RECORD,,
