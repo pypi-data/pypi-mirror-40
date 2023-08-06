@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+examples/temp.py
+npnlp/__init__.py
+npnlp/_sqp.py
+npnlp/npnlp.py
+npnlp/release.py
+npnlp.egg-info/PKG-INFO
+npnlp.egg-info/SOURCES.txt
+npnlp.egg-info/dependency_links.txt
+npnlp.egg-info/requires.txt
+npnlp.egg-info/top_level.txt
+npnlp/tests/test_sqp.py
