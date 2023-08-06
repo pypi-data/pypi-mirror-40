@@ -1,0 +1,33 @@
+# adguard
+
+<!-- badges start -->
+
+[![Build Status][travisbadge]][travislink]
+[![PyPI version][pypibadge]][pypilink]
+[![Maintained][Maintained]](#)
+[![BuyMeCoffee][buymecoffeebadge]][buymecoffeelink]
+
+<!-- badges end -->
+
+
+_API Wrapper client for AdGuard._
+
+## Install
+
+```bash
+python3 -m pip install adguard
+```
+
+Look at the file `example.py` for a usage example.
+
+<!-- links start -->
+
+[buymecoffeelink]:https://www.buymeacoffee.com/ludeeus
+[buymecoffeebadge]: https://camo.githubusercontent.com/cd005dca0ef55d7725912ec03a936d3a7c8de5b5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6275792532306d6525323061253230636f666665652d646f6e6174652d79656c6c6f772e737667
+[maintained]: https://img.shields.io/maintenance/yes/2019.svg
+[pypilink]: https://pypi.org/project/adguard/
+[pypibadge]: https://badge.fury.io/py/adguard.svg
+[travislink]: https://travis-ci.com/ludeeus/adguard
+[travisbadge]: https://travis-ci.com/ludeeus/adguard.svg?branch=master
+
+<!-- links end -->
