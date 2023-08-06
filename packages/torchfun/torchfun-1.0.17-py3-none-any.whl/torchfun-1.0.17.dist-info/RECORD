@@ -1,0 +1,17 @@
+testcase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testcase/maxminnorm.py,sha256=tcxM4NJE5fYYdMY_bbPARstygACX14_nd2kB_U3q0FE,1177
+torchfun/__init__.py,sha256=UG3WcXsVHlkYG964Ry0ZdTTkHRF0ywYhapby0BwnR2w,2626
+torchfun/datasets.py,sha256=NjV5TZXD-ZGX2oA1isEYkMIXXwwyK46eXL33JvtnA9E,7034
+torchfun/functional.py,sha256=p8coJu5MvxGFNkPPC7q25fQZ4Ic2xLDBb_JVKwQQN9g,7164
+torchfun/metrics.py,sha256=6Kg6VlErxi0Hh4vqPZxSv9nDd07M4Nfoj0Zd2_ENpFI,5461
+torchfun/nn.py,sha256=7KKie7U_sXX_9k0pHF9xM46lARuOa3LgkKw6e14iCzE,21405
+torchfun/torchfun.py,sha256=oNbV1QGbLjvG2MaZMCC276jcpF3vxe-OjjfZzQlkir0,38588
+torchfun/transforms.py,sha256=d6i1IfBUF2NJfL5HXNQ5zzlBzgawiq4QBHfwqTqVhVs,1579
+torchfun/types.py,sha256=keDAaXYzxA-T5PQIf_9kWwuBodU22xRKLxFjMOKbywE,2081
+torchfun/ui.py,sha256=jYvZd3FkwwcnzMNf9DU_xHWWrKOBYo4a5YUwZEP8Rc0,624
+torchfun/utils.py,sha256=TgWuFdUmqJDr67UuHKbpa0rR0EEpI8RBgW_fG3XMrvU,2477
+torchfun/version,sha256=ps95BnPUDuF3V0kSWLBwCIWDeRCcL-I1c1i46ut_HH0,6
+torchfun-1.0.17.dist-info/METADATA,sha256=9kEcz2QNdwUbyh6OSTHZtP7hSJOpx-A2hHsHKEqU2fw,9884
+torchfun-1.0.17.dist-info/RECORD,,
+torchfun-1.0.17.dist-info/WHEEL,sha256=pZyAqgNAylOf0KG_hPHMtuuY08rV3WzWwZu2OTsNnnw,97
+torchfun-1.0.17.dist-info/top_level.txt,sha256=7YtieCErK8gV6KrVao1saAa-dWY0AIzIV1F0QOkdqpg,18
