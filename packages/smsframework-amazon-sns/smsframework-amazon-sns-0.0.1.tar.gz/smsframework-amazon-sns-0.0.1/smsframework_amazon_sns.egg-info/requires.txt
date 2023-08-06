@@ -1,0 +1,5 @@
+smsframework>=0.0.9
+boto3>=1.4
+
+[receiver]
+flask>=0.10
