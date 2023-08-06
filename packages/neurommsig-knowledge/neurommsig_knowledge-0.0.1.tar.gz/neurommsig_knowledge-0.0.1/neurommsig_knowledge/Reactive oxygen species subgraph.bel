@@ -1,0 +1,1566 @@
+# This document was created by PyBEL v0.13.1-dev and bel-resources v0.0.2-dev on Tue Jan  8 14:53:24 2019
+
+################################################################################
+#| Metadata
+################################################################################
+
+SET DOCUMENT Name = "Reactive oxygen species subgraph"
+SET DOCUMENT Version = "5.1.2"
+SET DOCUMENT ContactInfo = "daniel.domingo.fernandez@scai.fraunhofer.de"
+SET DOCUMENT Licenses = "CC BY 4.0"
+SET DOCUMENT Copyright = "Copyright © 2019 Fraunhofer SCAI, All rights reserved."
+
+################################################################################
+#| Namespaces
+################################################################################
+
+# Enumerated Namespaces
+# ---------------------
+DEFINE NAMESPACE ADO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns"
+DEFINE NAMESPACE BRCO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns"
+DEFINE NAMESPACE CHEBI AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/chebi-names.belns"
+DEFINE NAMESPACE CTO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE ECCODE AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+DEFINE NAMESPACE FPLX AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+DEFINE NAMESPACE GFAM AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3f89d31906739fce9678d868b6a599a851aa7c00/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/go.belns"
+DEFINE NAMESPACE GOBP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20170725.belns"
+DEFINE NAMESPACE GOCC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170725.belns"
+DEFINE NAMESPACE HBP AS URL "https://raw.githubusercontent.com/pharmacome/terminology/570376e4c233483b667eab12a1f964950368282a/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/hgnc-symbols.belns"
+DEFINE NAMESPACE HP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE INTERPRO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-20170731.belns"
+DEFINE NAMESPACE MESH AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/mesh.belns"
+DEFINE NAMESPACE MESHC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170725.belns"
+DEFINE NAMESPACE MESHCS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20170511.belns"
+DEFINE NAMESPACE MESHD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20170725.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20170725.belns"
+DEFINE NAMESPACE MGI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20170725.belns"
+DEFINE NAMESPACE NIFT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/imaging-ontology/imaging-ontology-1.0.6.belns"
+DEFINE NAMESPACE PTS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/neurodegeneration-pathways/neurodegeneration-pathways-1.0.0.belns"
+DEFINE NAMESPACE RGD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20170725.belns"
+DEFINE NAMESPACE SCOMP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Regular Expression Namespaces
+# -----------------------------
+DEFINE NAMESPACE DBSNP AS PATTERN "^rs\d+$"
+DEFINE NAMESPACE TAXONOMY AS PATTERN "^\d+$"
+
+################################################################################
+#| Annotations
+################################################################################
+
+# Enumerated Annotations
+# ----------------------
+DEFINE ANNOTATION Anatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION Cell AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION CellLine AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Confidence AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+# Regular Expression Annotations
+# ------------------------------
+DEFINE ANNOTATION Species AS PATTERN "\d+"
+
+# Locally Defined Annotations
+# ---------------------------
+DEFINE ANNOTATION Condition AS LIST {"Normal Healthy State"}
+DEFINE ANNOTATION Developmental_Phase__of_patient AS LIST {"Developmental stage", "Old"}
+DEFINE ANNOTATION DiseaseState AS LIST {"Early-onset AD", "Familial Alzheimers Disease", "Late-onset AD", "Mild AD", "Moderate AD", "Sporadic Alzheimers Disease"}
+DEFINE ANNOTATION Duration_of_Chemical_Exposure AS LIST {"Chronic", "Subchronic"}
+DEFINE ANNOTATION Encode_Feature_Types AS LIST {"Promoter"}
+DEFINE ANNOTATION Experimental_Group AS LIST {"Physical exercised group", "Sedentary group"}
+DEFINE ANNOTATION FDASTATUS AS LIST {"Phase 2", "Phase 3"}
+DEFINE ANNOTATION KnockoutMice AS LIST {"App transgenic"}
+DEFINE ANNOTATION NIFT AS LIST {"Positron Emission Tomography", "Volumetric MRI"}
+DEFINE ANNOTATION Patient AS LIST {"AD T2DM +ve", "AD T2DM -ve", "APOE e4 +ve", "APOE e4 -ve"}
+DEFINE ANNOTATION Published AS LIST {"CDR story", "Epilepsy comorbidity paper"}
+DEFINE ANNOTATION Race AS LIST {"Caucasian", "Chinese", "Colombian", "Italian", "Swedish", "Taiwanese"}
+DEFINE ANNOTATION Transcriptionally_active_region AS LIST {"3 prime UTR", "5 prime UTR"}
+DEFINE ANNOTATION UserdefinedCellLine AS LIST {"293APPwt", "App transgenic", "CHOAPPsw", "INS-1 cells", "N2a695 cell", "NT2N cells", "Neuroblastoma cell", "primary cortical neuron", "primary neuron"}
+
+################################################################################
+#| Statements
+################################################################################
+SET Citation = {"PubMed", "10363952"}
+
+SET SupportingText = "Here we show that bleomycin hydrolase, known to be induced in an oxidative environment, is specifically increased in neurons marked for degeneration in AD. These findings support a key proximal role for bleomycin hydrolase, and oxidative stress in AD."
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Alzheimer Disease") positiveCorrelation p(HGNC:BLMH)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:BLMH) increases bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:BLMH) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "10658956"}
+
+SET SupportingText = "antioxidants such as vitamin E prevents Abeta-induced ROS production, oxidative damage and neurotoxicity in brain cells. "
+SET Confidence = "High"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+a(CHEBI:"vitamin E") decreases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+a(CHEBI:"vitamin E") decreases bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+a(CHEBI:"vitamin E") decreases bp(HBP:neurotoxicity)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12548636"}
+
+SET SupportingText = "We have examined this by using oxidative stress to induce apoptosis in a mouse hippocampal neuronal cell line (HT-22). Oxidatively modified proteins were measured by high-resolution two-dimensional gel electrophoresis coupled with oxidation-specific immunostains.Under these conditions the oxidatively stressed cells undergo apoptotic process, and specific proteins are oxidized. The three proteins that appeared to be most susceptible to oxidation were identified by mass spectrometry. Those oxidized proteins are heat shock protein 60 and vimentin, both believed to function as antiapoptotic proteins, and a third protein with sequence homology to hemoglobin alpha-chain. When the cells were pretreated with vitamin E, these proteins were not oxidized and the cells did not undergo apoptotic process."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") increases p(MGI:Hspd1, pmod(GO:"GO:0018158"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") increases p(MGI:Vim, pmod(GO:"GO:0018158"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+p(MGI:Vim, pmod(GO:"GO:0018158")) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"vitamin E") decreases p(MGI:Hspd1, pmod(GO:"GO:0018158"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"vitamin E") decreases p(MGI:Vim, pmod(GO:"GO:0018158"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"vitamin E") decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+p(MGI:Hspd1) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+p(MGI:Vim) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15232608"}
+
+SET SupportingText = "The extracellular amyloid deposits in senile plaques also trigger reactive glial changes and neuroinflammation that can also contribute to neuronal loss through production of reactive oxygen species (ROS), NO, and proinflammatory cytokines such as TNF-a and IL-1Abeta."
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"amyloid-beta") increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"amyloid-beta") increases path(MESHD:"Neurogenic Inflammation")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"amyloid-beta") increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"reactive oxygen species") increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"nitric oxide") increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("672_713")) increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+bp(GOBP:"reactive oxygen species metabolic process") increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16443152"}
+
+SET SupportingText = "Activation of PLA2 in cerebral ischemia has been shown while other studies have separately demonstrated increased lipid peroxidation. Dissecting the contribution of PLA2 to lipid peroxidation in cerebral ischemia is challenging due to multiple forms of PLA2, cardiolipin hydrolysis, diverse sources of ROS arising from arachidonic acid metabolism, catecholamine autoxidation, xanthine oxidase activity, mitochondrial dysfunction, activated neutrophils coupled with NADPH oxidase activity, and lack of specific inhibitors. Cardiolipin hydrolysis by mitochondrial sPLA2 disrupts the mitochondrial respiratory chain and increases production of reactive oxygen species (ROS). Oxidative metabolism of arachidonic acid also generates ROS."
+SET Confidence = "Medium"
+SET Subgraph = "Reactive oxygen species subgraph"
+act(p(HGNC:PLA2G1B)) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16484331"}
+
+SET SupportingText = "Developmental exposure to lead (Pb) has been shown to elevate the Alzheimer's disease (AD) related beta-amyloid peptide (Abeta), which is known to generate reactive oxygen species in the aging brain. This study measures the lifetime cerebral 8-hydroxy-2'-deoxyguanosine (oxo8dG) levels and the activity of the DNA repair enzyme 8-oxoguanine DNA glycosylase (Ogg1) in rats developmentally exposed to Pb."
+SET Confidence = "High"
+SET Developmental_Phase__of_patient = "Old"
+SET Species = "10116"
+SET Subgraph = {"Amyloidogenic subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("672_713")) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Developmental_Phase__of_patient, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "It has been proposed that an accumulation of oxo8dG in the AD brain might be a result of a decrease in the activity of Ogg1,"
+SET Confidence = "High"
+SET Developmental_Phase__of_patient = "Old"
+SET Disease = "Alzheimer's disease"
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+act(p(RGD:Ogg1)) negativeCorrelation a(CHEBI:"8-hydroxy-2'-deoxyguanosine")
+UNSET {Confidence, Developmental_Phase__of_patient, Disease, Species, Subgraph}
+SET Confidence = "High"
+SET Developmental_Phase__of_patient = "Old"
+SET Disease = "Alzheimer's disease"
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"8-hydroxy-2'-deoxyguanosine") negativeCorrelation act(p(RGD:Ogg1))
+UNSET {Confidence, Developmental_Phase__of_patient, Disease, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "the increase in Ogg1 activity tends to be greater in the Pb-exposed group as compared with the control."
+SET Confidence = "High"
+SET Developmental_Phase__of_patient = "Old"
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:OGG1) orthologous p(RGD:Ogg1)
+UNSET {Confidence, Developmental_Phase__of_patient, Species, Subgraph}
+SET Confidence = "High"
+SET Developmental_Phase__of_patient = "Old"
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+p(RGD:Ogg1) orthologous p(HGNC:OGG1)
+UNSET {Confidence, Developmental_Phase__of_patient, Species, Subgraph}
+SET Confidence = "High"
+SET Developmental_Phase__of_patient = "Old"
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"lead(0)") increases act(p(RGD:Ogg1))
+UNSET {Confidence, Developmental_Phase__of_patient, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17015226"}
+
+SET SupportingText = "Reactive oxygen species (ROS), produced within mitochondria, inhibit the function of EAAT2, the main glial glutamate transporter protein, responsible for most of the reuptake of synaptically released glutamate. Glutamate excess increases intracellular calcium, which enhances oxidative stress and mitochondrial damage."
+SET Confidence = "Medium"
+SET Subgraph = {"Glutamatergic subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"reactive oxygen species") decreases act(p(HGNC:SLC1A2))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Glutamatergic subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:SLC1A2) association bp(GOBP:"glutamate homeostasis")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Glutamatergic subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"glutamate(2-)") increases a(CHEBI:"calcium(2+)")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Glutamatergic subgraph", "Reactive oxygen species subgraph"}
+bp(GOBP:"glutamate homeostasis") association p(HGNC:SLC1A2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17316167"}
+
+SET SupportingText = "OPN is involved in a number of physiologic and pathologic events including angiogenesis, apoptotic process, inflammation, oxidative stress, remyelination, wound healing, bone remodeling, cell migration and tumorigenesis."
+SET Confidence = "High"
+SET Subgraph = {"Chemokine signaling subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") association p(HGNC:SPP1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Chemokine signaling subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:SPP1) association bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Since these functions of OPN, and the events that it regulates, are involved with neurodegeneration, we examined whether OPN was differentially expressed in the hippocampus of the Alzheimer's disease (AD) compared with age-matched (59-93 years) control brain."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = {"Brain", "Hippocampus"}
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(MESHPP:"Oxidative Stress") association path(MESHD:"Neurodegenerative Diseases")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = {"Brain", "Hippocampus"}
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Neurodegenerative Diseases") association bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17316694"}
+
+SET SupportingText = "The fact that mitochondria are the major generators and direct targets of reactive oxygen species led several investigators to foster the idea that oxidative stress and damage in mitochondria are contributory factors to several disorders including Alzheimer's disease and diabetes."
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"reactive oxygen species") association a(MESH:D008928)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"reactive oxygen species") association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(MESHPP:"Oxidative Stress") association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(MESHPP:"Oxidative Stress") association path(MESHD:"Diabetes Mellitus, Type 2")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Alzheimer Disease") association bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Alzheimer Disease") association a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Alzheimer Disease") association act(a(MESHCS:Mitochondria))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Reactive oxygen species subgraph"
+act(a(MESHCS:Mitochondria)) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Reactive oxygen species subgraph"
+act(a(MESHCS:Mitochondria)) association path(MESHD:"Diabetes Mellitus, Type 2")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(MESH:D008928) association a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Diabetes Mellitus, Type 2") association bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Diabetes Mellitus, Type 2") association act(a(MESHCS:Mitochondria))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17424907"}
+
+SET SupportingText = "Interaction of mitochondrial Abeta with mitochondrial enzymes such as amyloid beta binding alcohol dehydrogenase (ABAD) exaggerates mitochondrial stress by inhibiting the enzyme activity, releasing reactive oxygen species (ROS), and affecting glycolytic, Krebs cycle and/or the respiratory chain pathways through the accumulation of deleterious intermediate metabolites."
+SET Confidence = "Medium"
+SET Subgraph = {"Alcohol dehydrogenase subgraph", "Amyloidogenic subgraph", "Reactive oxygen species subgraph"}
+complex(a(CHEBI:"amyloid-beta"), p(HGNC:ADH1B)) decreases bp(GOBP:"mitochondrial protein catabolic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Alcohol dehydrogenase subgraph", "Amyloidogenic subgraph", "Reactive oxygen species subgraph"}
+complex(a(CHEBI:"amyloid-beta"), p(HGNC:ADH1B)) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17426120"}
+
+SET SupportingText = "Patients with AD have been shown to exhibit a much higher level of 8-oxoG DNA lesions in brain than age-matched normal control subjects The increased level of 8-oxoG lesions in AD is likely due to reduced DNA repair in these patients"
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response DNA damage"}
+a(CHEBI:"8-oxoguanine") positiveCorrelation bp(MESHPP:"DNA Damage")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response DNA damage"}
+bp(MESHPP:"DNA Damage") positiveCorrelation a(CHEBI:"8-oxoguanine")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The C796-deleted OGG1 gene encodes a proteins lacking 8-oxoG glycosylase activity"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+g(HGNC:OGG1, var("c.796Cdel")) decreases act(p(HGNC:OGG1))
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Two additional OGG1 mutations, A53T and A288V, were also identified in AD patients and both were found to reduce 8-oxoG glycosylase activity"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:OGG1, var("p.Ala53Thr"))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:OGG1, var("p.Ala288Val"))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:OGG1, var("p.Ala53Thr")) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:OGG1, var("p.Ala53Thr")) decreases act(p(HGNC:OGG1))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:OGG1, var("p.Ala288Val")) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:OGG1, var("p.Ala288Val")) decreases act(p(HGNC:OGG1))
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17869087"}
+
+SET SupportingText = "Piceatannol treatment attenuated hydrogen-peroxide- and peroxynitrite-induced cytotoxicity, apoptotic features, PARP cleavage and intracellular ROS and RNS accumulation."
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:piceatannol) decreases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:piceatannol) decreases a(CHEBI:"reactive nitrogen species")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18480271"}
+
+SET SupportingText = "Previous experiments indicate that RAGE mediates A beta-induced oxidative stress and nuclear factor-kB activation (Yan et al., 1996) as well as neuronal expression of macrophage colony-stimulating factor (Du Yan et al., 1997), mitogen-activated protein (MAP) kinases signaling defects (Arancio et al., 2004), or cell death (Hadding et al., 2004)."
+SET Confidence = "High"
+SET Subgraph = {"Immunoglobulin subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:AGER) increases bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18554520"}
+
+SET SupportingText = "Associated with these inflammatory responses are tumor necrosis factor-alpha (TNF-alpha) and reactive oxygen species (ROS), both believed to be derived from brain microglia."
+SET Confidence = "High"
+SET MeSHAnatomy = {"Brain", "Microglia"}
+SET Subgraph = {"Inflammatory response subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+a(CHEBI:"reactive oxygen species") association path(MESHD:Inflammation)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Brain", "Microglia"}
+SET Subgraph = {"Inflammatory response subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+path(MESHD:Inflammation) association a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Brain", "Microglia"}
+SET Subgraph = {"Inflammatory response subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+path(MESHD:Inflammation) association p(HGNC:TNF)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Brain", "Microglia"}
+SET Subgraph = {"Inflammatory response subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) association path(MESHD:Inflammation)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "However, the possible role of MPO and enzymatically inactive MPO (iMPO) as the choreographers of the destruction done by TNF-alpha and ROS is not generally recognized."
+SET Confidence = "High"
+SET Subgraph = {"Myeloperoxidase subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+a(CHEBI:"reactive oxygen species") association p(HGNC:MPO)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Myeloperoxidase subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:MPO) association a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Myeloperoxidase subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:MPO) association p(HGNC:TNF)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Myeloperoxidase subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) association p(HGNC:MPO)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18718604"}
+
+SET SupportingText = "These findings show that riluzole maintains altered oxidant-antioxidant balance. Consistently, previous studies have shown the antioxidant effect of riluzole [19, 20 and 21]. In the study of Koh et al. [ 19], riluzole, besides preventing the excitotoxic neuronal damage, was also effective against FeCl3 induced nonexcitotoxic injury in cortical neuron cultures. In another study, riluzole was shown to protect the dopaminergic neurons against oxidative stress by reducing lipid peroxidation and adenosine triphosphate consumption [ 21]. It has been suggested that the mechanism involved in the protective effects in nonexcitotoxic oxidant damage was inhibition of PLA2, thereby reducing arachidonic acid and its metabolites, and further inhibition of protein kinase C [ 43]."
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Lipid peroxidation subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") association p(HGNC:PLA2G4A)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Lipid peroxidation subgraph", "Reactive oxygen species subgraph"}
+act(p(SFAM:"PRKC Family")) increases bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Lipid peroxidation subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:PLA2G4A) association bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Species = "10116"
+SET Subgraph = {"Lipid peroxidation subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:Riluzole) decreases bp(GOBP:"lipid oxidation")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Lipid peroxidation subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:Riluzole) decreases act(p(SFAM:"PRKC Family"))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Lipid peroxidation subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:Riluzole) decreases a(CHEBI:"arachidonic acid")
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19076431"}
+
+SET SupportingText = "Increased oxidative stress is associated with neuronal cell death during the pathogenesis of multiple chronic neurodegenerative diseases, including Alzheimer's disease, Parkinson's disease, Huntington's disease, and amyotrophic lateral sclerosis."
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET MeSHDisease = {"Alzheimer Disease", "Amyotrophic Lateral Sclerosis", "Huntington Disease", "Neurodegenerative Diseases", "Parkinson Disease"}
+SET Species = "9606"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(MESHPP:"Oxidative Stress") increases bp(GOBP:"cell death")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET MeSHDisease = {"Alzheimer Disease", "Amyotrophic Lateral Sclerosis", "Huntington Disease", "Neurodegenerative Diseases", "Parkinson Disease"}
+SET Species = "9606"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(GOBP:"cell death") association path(MESHD:"Neurodegenerative Diseases")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET MeSHDisease = {"Alzheimer Disease", "Amyotrophic Lateral Sclerosis", "Huntington Disease", "Neurodegenerative Diseases", "Parkinson Disease"}
+SET Species = "9606"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(GOBP:"cell death") association path(MESHD:"Parkinson Disease")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET MeSHDisease = {"Alzheimer Disease", "Amyotrophic Lateral Sclerosis", "Huntington Disease", "Neurodegenerative Diseases", "Parkinson Disease"}
+SET Species = "9606"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(GOBP:"cell death") association path(MESHD:"Huntington Disease")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET MeSHDisease = {"Alzheimer Disease", "Amyotrophic Lateral Sclerosis", "Huntington Disease", "Neurodegenerative Diseases", "Parkinson Disease"}
+SET Species = "9606"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(GOBP:"cell death") association path(MESHD:"Amyotrophic Lateral Sclerosis")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET MeSHDisease = {"Alzheimer Disease", "Amyotrophic Lateral Sclerosis", "Huntington Disease", "Neurodegenerative Diseases", "Parkinson Disease"}
+SET Species = "9606"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Neurodegenerative Diseases") association bp(GOBP:"cell death")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET MeSHDisease = {"Alzheimer Disease", "Amyotrophic Lateral Sclerosis", "Huntington Disease", "Neurodegenerative Diseases", "Parkinson Disease"}
+SET Species = "9606"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Parkinson Disease") association bp(GOBP:"cell death")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET MeSHDisease = {"Alzheimer Disease", "Amyotrophic Lateral Sclerosis", "Huntington Disease", "Neurodegenerative Diseases", "Parkinson Disease"}
+SET Species = "9606"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Huntington Disease") association bp(GOBP:"cell death")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET MeSHDisease = {"Alzheimer Disease", "Amyotrophic Lateral Sclerosis", "Huntington Disease", "Neurodegenerative Diseases", "Parkinson Disease"}
+SET Species = "9606"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Amyotrophic Lateral Sclerosis") association bp(GOBP:"cell death")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19245828"}
+
+SET SupportingText = " 8-oxo-dG is widely used as biomarker of oxidative DNA damage due to demethylation. 8-dihydro-2 ÃƒÅ’Ã¯Â¿Â½'-deoxyguanosine (8-oxo-dG), a general marker of oxidative stress"
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"8-hydroxy-2'-deoxyguanosine") biomarkerFor bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = " Increased Abeta levels promoted the production of reactive oxygen species (ROS)"
+SET Confidence = "Medium"
+SET Species = "10090"
+SET Subgraph = {"Amyloidogenic subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"amyloid-beta") increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Amyloidogenic subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("672_713")) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = " hypomethylation of the APP promoter for example can increase the ceiling of expression of the APP gene in response to aging processes driving overproduction of APP and Abeta levels. The increased Abeta levels then facilitate ROS production with their pro-oxidant properties, damaging the DNA. "
+SET Confidence = "High"
+SET Encode_Feature_Types = "Promoter"
+SET Species = "10090"
+SET Subgraph = {"Epigenetic modification subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"reactive oxygen species") increases path(MESHPP:"DNA Damage")
+UNSET {Confidence, Encode_Feature_Types, Species, Subgraph}
+SET Confidence = "High"
+SET Encode_Feature_Types = "Promoter"
+SET Species = "10090"
+SET Subgraph = {"Epigenetic modification subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("672_713")) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Encode_Feature_Types, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19499146"}
+
+SET SupportingText = "Apoptosis is the most common form of physiological cell death in multicellular organisms. Apoptosis signaling is classically composed of two principle pathways. One is a direct pathway from death receptor (CD95, TNF-R1, and TRAIL-R1/TRAIL-R2 [9]) ligation to caspase cascade activation and cell death. Death receptor ligation triggers recruitment of the precursor form of caspase-8 to a death-inducing complex, through the adaptor protein FADD, which leads to caspase-8 activation. The other pathway triggered by stimuli such as drugs, radiation, infectious agents, and reactive oxygen species is initiated in mitochondria. After cytochrome c is released into the cytosol from the mitochondria, it binds to Apaf1 and ATP, which then activate caspase-9."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Electron transport chain", "Reactive oxygen species subgraph", "Response to oxidative stress", "XIAP subgraph"}
+a(CHEBI:"reactive oxygen species") increases tloc(p(HGNC:CYCS), fromLoc(MESH:D008928), toLoc(MESHCS:Cytosol))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Electron transport chain", "Reactive oxygen species subgraph", "Response to oxidative stress", "XIAP subgraph"}
+tloc(p(HGNC:CYCS), fromLoc(MESH:D008928), toLoc(MESHCS:Cytosol)) increases complex(a(CHEBI:ATP), p(HGNC:APAF1), p(HGNC:CYCS))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19519303"}
+
+SET SupportingText = "Activation of the catalytic subunit of the PI3-kinase results in phosphorylation of phosphatidylinositide-diphosphate (PI4,5P) to generate phosphatidylinositide-triphosphate (PI3,4,5P). This leads to activation of several downstream targets, such as phosphoinositide-dependent protein kinase (PDK)-1, protein kinase B (PKB, AKT), p70S6kinase, glycogen synthase kinase(GSK)-3 and BAD a proapoptotic member of the Bcl-2 family. Phosphorylation of GSK-3 and BAD inactivates these proteins and thereby inhibits further signaling leading to apoptosis. Activated AKT phosphorylates the forkhead transcription factor Foxo, which triggers its nuclear exclusion and thereby regulates transcription of genes involved in development, growth, stress resistance, apoptosis, metabolism and aging [29-31]. Several Foxo target genes might play an important role for the pathogenetics of AD (review in [32]): Catalase and MnSOD (manganese superoxid dismutase) are crucial in promoting longevity by possibly acting as antioxidants due to reduced insulin-like signaling in various species such as drosophila [33] and C. elegans [34]. "
+SET Confidence = "High"
+SET Species = {"6239", "7227"}
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:SOD1) positiveCorrelation bp(MESHPP:Longevity)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Species = {"6239", "7227"}
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(MESHPP:Longevity) positiveCorrelation p(HGNC:CAT)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = {"6239", "7227"}
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(MESHPP:Longevity) positiveCorrelation p(HGNC:SOD1)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Species = {"6239", "7227"}
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:CAT) positiveCorrelation bp(MESHPP:Longevity)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19885299"}
+
+SET SupportingText = "Although this point requires the generation of experimental models to demonstrate proof of principle, the finding that microglial, astrocytic, and APP mRNA levels are all increased in the early stages of neurodegeneration supports the inflammatory hypothesis of AD.6Previous studies demonstrated that microglial activation promotes APP-Abeta accumulation90â€“92 and that APP gene expression and cleavage increase with oxidative stress.93 Therefore, the mechanism we propose is that impaired insulin/ IGF signaling leads to increased oxidative stress and mitochondrial dysfunction,32,94,95 which induces APP gene expression and cleavage.93 The attendant APP-Abeta accumulations cause local neurotoxicity96â€“98 and further increase in oxidative stress-induced APP expression and APP-Abeta deposition."
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") increases g(HGNC:APP)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") increases rxn(reactants(p(HGNC:APP)), products(p(HGNC:APP, frag("672_713"))))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Insulin signal transduction", "Reactive oxygen species subgraph"}
+bp(GOBP:"insulin receptor signaling pathway") decreases bp(HBP:"mitochondrial dysfunction")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Herein, we review the evidence that (1) T2DM causes brain insulin resistance, oxidative stress, and cognitive impairment, but its aggregate effects fall far short of mimicking AD; (2) extensive disturbances in brain insulin and insulin-like growth factor (IGF) signaling mechanisms represent early and progressive abnormalities and could account for the majority of molecular, biochemical, and histopathological lesions in AD; (3) experimental brain diabetes produced by intracerebral administration of streptozotocin shares many features with AD, including cognitive impairment and disturbances in acetylcholine homeostasis; and (4) experimental brain diabetes is treatable with insulin sensitizer agents, i.e., drugs currently used to treat T2DM"
+SET Confidence = "High"
+SET Subgraph = {"Insulin signal transduction", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") positiveCorrelation path(MESHD:"Diabetes Mellitus, Type 2")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Insulin signal transduction", "Reactive oxygen species subgraph"}
+bp(GOBP:cognition) negativeCorrelation path(MESHD:"Diabetes Mellitus, Type 2")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Insulin signal transduction", "Reactive oxygen species subgraph"}
+path(MESHD:"Diabetes Mellitus, Type 2") positiveCorrelation bp(MESHPP:"Insulin Resistance")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Insulin signal transduction", "Reactive oxygen species subgraph"}
+path(MESHD:"Diabetes Mellitus, Type 2") positiveCorrelation bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Insulin signal transduction", "Reactive oxygen species subgraph"}
+path(MESHD:"Diabetes Mellitus, Type 2") negativeCorrelation bp(GOBP:cognition)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Insulin signal transduction", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Insulin Resistance") positiveCorrelation path(MESHD:"Diabetes Mellitus, Type 2")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "we have been able to draw the conclusion that neuronal and oligodendroglial cell survival and function are integrally related to the integrity of insulin and IGF signaling mechanisms in the brain.10,28,29,31,33,88,89 Similarly, impairments in insulin/IGF signaling lead to deficits in energy metabolism with attendant increased oxidative stress, mitochondrial dysfunction, proinflammatory cytokine activation, and APP expression.4"
+SET Confidence = "High"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = {"Neurons", "Oligodendroglia"}
+SET Subgraph = {"Insulin signal transduction", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") negativeCorrelation bp(GOBP:"insulin receptor signaling pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = {"Neurons", "Oligodendroglia"}
+SET Subgraph = {"Insulin signal transduction", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") negativeCorrelation bp(GOBP:"insulin-like growth factor receptor signaling pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = {"Neurons", "Oligodendroglia"}
+SET Subgraph = {"Insulin signal transduction", "Reactive oxygen species subgraph"}
+bp(GOBP:"insulin receptor signaling pathway") negativeCorrelation bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "type 2 diabetes mellitus"
+SET MeSHAnatomy = {"Neurons", "Oligodendroglia"}
+SET Subgraph = {"Insulin signal transduction", "Reactive oxygen species subgraph"}
+bp(GOBP:"insulin-like growth factor receptor signaling pathway") negativeCorrelation bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20064547"}
+
+SET SupportingText = "Nrf2-encoding NFE2L2 haplotypes influence disease progression but not risk in Alzheimer's disease and age-related cataract."
+SET Confidence = "High"
+SET MeSHDisease = {"Alzheimer Disease", "Cataract"}
+SET Subgraph = {"Free radical formation subgraph", "Inflammatory response subgraph", "Reactive oxygen species subgraph"}
+path(MESHD:"Alzheimer Disease") association p(HGNC:NFE2L2)
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = {"Alzheimer Disease", "Cataract"}
+SET Subgraph = {"Free radical formation subgraph", "Inflammatory response subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:NFE2L2) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "We hypothesize that common variants of NFE2L2 and KEAP1, the genes encoding the main regulators of the Nrf2 system, an important defence system against oxidative stress, may influence risk of AD and/or age-related cataract."
+SET Confidence = "High"
+SET Subgraph = {"Free radical formation subgraph", "Inflammatory response subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") association p(HGNC:NFE2L2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Free radical formation subgraph", "Inflammatory response subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") association p(HGNC:KEAP1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Free radical formation subgraph", "Inflammatory response subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:NFE2L2) association bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Free radical formation subgraph", "Inflammatory response subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:KEAP1) association bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20847424"}
+
+SET SupportingText = " Increased oxidative stress, coupled with dysregulation of calcium homeostasis and resulting apoptosis of vulnerable neuronal populations, are proposed to underlie the loss of synaptic activity and associated cognitive decline. From these deficiencies emerges the concept of synaptic energy exhaustion in AD, both phosphorylative (ATP) and redox (NAD[P]H) energies. Our previous work shows that hippocampal NAD(P)H and glutathione (GSH) decline with age in association with increased susceptibility to glutamate toxicity in neurons of old-age. Thus, an age-related decline in neuronal reducing currency (NAD[P]H) and reducing buffer (GSH) will surely promote oxidative stress and excess ROS. It is noteworthy that in the early stages of AD, there is already a reduction in the number of mitochondria and the activities of tricarboxylic acid cycle enzymes and cytochrome C oxidase. However, how ROS are produced at the synapse in response to Abeta oligomers is not fully known."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Glutathione reductase subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:glutathione) decreases bp(MESHPP:"Oxidative Stress")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Glutathione reductase subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:glutathione) decreases a(CHEBI:"reactive oxygen species")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Excessive ROS are locally generated in response to synaptic Abeta oligomer binding. This ROS formation can be totally blocked by the mitochondrial uncoupler, 2,4-dinitrophenol which suggests a central role of mitochondria in Abeta-induced oxidative stress."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+a(CHEBI:"amyloid-beta polypeptide 42") increases a(CHEBI:"reactive oxygen species")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+a(CHEBI:"amyloid-beta polypeptide 42") increases bp(MESHPP:"Oxidative Stress")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+bp(MESHPP:"Oxidative Stress") association a(MESH:D008928)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+a(MESH:D008928) association bp(MESHPP:"Oxidative Stress")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+a(CHEBI:"2,4-dinitrophenol") decreases bp(MESHPP:"Oxidative Stress")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Lower levels of ROS are required for synaptic signaling with ROS acting as messenger molecules in the process of LTP. However, high levels of ROS have been implicated as damaging toxic molecules in the age-related impairments of LTP. Our previous work shows that ROS levels increase with age of neurons in parallel with an age-related decline in transmembrane potential. As mitochondrial transmembrane potential is a driving force for cellular production of ATP, its decline in neurons will have a long term effect in many important energy driven reactions."
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"reactive oxygen species") decreases bp(GOBP:"long-term synaptic potentiation")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(GOBP:"positive regulation of mitochondrial membrane potential") increases a(CHEBI:ATP)
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Many studies suggest the possible involvement of oxidative stress and calcium dysfunction in Abeta toxicity.The question as to why brain synaptic ROS levels increase with age is uncertain, but may involve lack of use followed by acute overstimulation of excitatory NMDARs that leads to excessive ROS, related to excess Ca2+ entry into mitochondria. Dysregulation of NMDAR function induced by Abeta binding to neuronal synapses may lead to synaptic mitochondrial dysfunction and excessive ROS formation."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Calcium-dependent signal transduction", "Glutamatergic subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"amyloid-beta polypeptide 42") association bp(MESHPP:"Oxidative Stress")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Calcium-dependent signal transduction", "Glutamatergic subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"amyloid-beta polypeptide 42") association bp(GOBP:"calcium ion homeostasis")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Calcium-dependent signal transduction", "Glutamatergic subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") association a(CHEBI:"amyloid-beta polypeptide 42")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Calcium-dependent signal transduction", "Glutamatergic subgraph", "Reactive oxygen species subgraph"}
+bp(GOBP:"calcium ion homeostasis") association a(CHEBI:"amyloid-beta polypeptide 42")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Calcium-dependent signal transduction", "Glutamatergic subgraph", "Reactive oxygen species subgraph"}
+act(p(GFAM:"Glutamate ionotropic receptor NMDA type subunits")) increases a(CHEBI:"reactive oxygen species")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Calcium-dependent signal transduction", "Glutamatergic subgraph", "Reactive oxygen species subgraph"}
+act(p(GFAM:"Glutamate ionotropic receptor NMDA type subunits")) decreases act(a(MESHCS:Mitochondria))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Mitochondrial Abeta-binding alcohol dehydrogenase (ABAD): ABAD is a member of the short chain dehydrogenase reductase family in mitochondria that binds Abeta. Binding of Abeta to ABAD distorts the enzymebetas structure, rendering it inactive. In neurons, ABAD is predominately localized to mitochondria. Upon binding ABAD, Abeta triggers events leading to neuronal apoptosis through a mitochondrial pathway.Interestingly, mitochondrial ABAD is upregulated in neurons from AD patients. The ABAD-Abeta complex has been hypothesized to induce oxidant stress and mitochondrial dysfunction. Increased expression of ABAD exacerbates Abeta-mediated mitochondrial and neuronal stress. Abeta binding to ABAD causes free radical production and neuronal apoptotic process"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"reactive oxygen species") increases bp(GOBP:"neuron apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The interaction of CypD with Abeta causes functional modification of this protein leading to MPTP opening. Abeta also binds with another mitochondrial protein, ABAD to distort the enzymebetas structure, rendering it inactive. This causes an increase in reactive oxygen species and oxidative stress leading to initiation of apoptotic process"
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+a(CHEBI:"reactive oxygen species") increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+complex(p(HGNC:APP, frag("672_713")), p(HGNC:HSD17B10)) increases a(CHEBI:"reactive oxygen species")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+complex(p(HGNC:APP, frag("672_713")), p(HGNC:HSD17B10)) increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20885006"}
+
+SET SupportingText = "Furthermore, the results demonstrated that the administration of riluzole can attenuate the morphine-induced elevation of glutamate in the lumbar spinal cord. In conclusion, i.c.v. administration of riluzole attenuated morphine-induced tolerance to analgesia and apoptosis in addition to preventing the morphine-induced increase of glutamate in the lumbar spinal cord of rats. In addition to being an anti-glutamatergic agent, riluzole also has antioxidant effects and can protect dopaminergic neurons against oxidative stress by reducing lipid peroxidation and ATP consumption [19, 27, 35, 36]. On the other hand, our results show that 80 Âµg/10 Âµl of riluzole increases the level of Bcl-2 in the lumbar spinal cord when administered with morphine"
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:Riluzole) decreases bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21845541"}
+
+SET SupportingText = "In the stage of mild to moderate dementia along with the increase of oxidative DNA damage, there was an increase in OGG1 protein level"
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:OGG1) increases bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "It also seems that a specific DNA repair enzyme 8-oxoguanine DNA glycosylase (OGG1) may contribute to downregulation of the inflammatory factor (TNF-alpha) level, especially in the early stages of dementia. "
+SET Confidence = "High"
+SET DiseaseState = "Early-onset AD"
+SET Subgraph = {"Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:OGG1) decreases p(HGNC:TNF)
+UNSET {Confidence, DiseaseState, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21893081"}
+
+SET SupportingText = "Production of reactive oxygen species (ROS) in brain regions was measured relative to control. There was a significant increase (P<0.01) in ROS level in cerebellum, hippocampus, cortex and striatum of OKA 200 ng treated rats as compared to control group. Treatment with memantine significantly (Pb0.05) reduced the amount of ROS whereas donepezil did not show significant (PN0.05) effect in any brain regions."
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Cerebellum", "Cerebral Cortex", "Hippocampus"}
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:donepezil) causesNoChange a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Cerebellum", "Cerebral Cortex", "Hippocampus"}
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:memantine) decreases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Cerebellum", "Cerebral Cortex", "Hippocampus"}
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"okadaic acid") increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Recently, we have reported that intracerebroventricular (ICV) administration of okadaic acid (OKA) in rats induces memory impairment that was associated with increased oxidative stress. Besides memory deficit, OKA caused impairment in mitochondrial function as revealed by alterations in calcium ion, reactive oxygen species (ROS) generation, mitochondrial membrane potential (MMP), SDH activity and ATP level in the brain regions. Further, in histopathological study it was observed that donepezil and memantine reduced the cell loss and neurodegeneration in hippocampus and periventricular cortex regions in OKA treated rats."
+SET Confidence = "High"
+SET MeSHAnatomy = {"Cerebral Cortex", "Hippocampus"}
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"reactive oxygen species") increases bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Cerebral Cortex", "Hippocampus"}
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(MESHPP:"Oxidative Stress") decreases bp(GOBP:memory)
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Cerebral Cortex", "Hippocampus"}
+SET Species = "10116"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"okadaic acid") increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22046282"}
+
+SET SupportingText = "Activated gadd153 can generate oxidative damage and reactive oxygen species (ROS), increase beta-amyloid (Abeta) levels, disturb iron homeostasis and induce inflammation as well as cell death, which are all pathological hallmarks of AD."
+SET Confidence = "Medium"
+SET MeSHDisease = {"Alzheimer Disease", "Inflammation"}
+SET Subgraph = {"Reactive oxygen species subgraph", "Response DNA damage"}
+act(p(HGNC:DDIT3)) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22055193"}
+
+SET SupportingText = "Taken together, these results suggest that glucose deprivation leads to p53 activation through a pathway that involves elevated ROS levels and ATM activation in the absence of DNA double-strand breaks. In this paper, we report that glucose deprivation results in ROS production and in the activation of endogenous p53 through an ATM-dependent mechanism."
+SET Confidence = "High"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response DNA damage"}
+a(CHEBI:"reactive oxygen species") increases act(p(HGNC:ATM))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response DNA damage"}
+a(CHEBI:"reactive oxygen species") increases act(p(HGNC:TP53))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response DNA damage"}
+act(p(HGNC:ATM)) increases act(p(HGNC:TP53))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22235318"}
+
+SET SupportingText = "In vitro studies revealed that (1) exposure of neural stem cells (NSCs) from the hippocampus to STZ strikingly increased intracellular reactive oxygen species (ROS) levels, induced cell death and perturbed cell proliferation and differentiation, (2) hydrogen peroxide induced similar cellular activities as STZ, (3) pre-incubation of STZ-treated NSCs with catalase, an antioxidant, suppressed all these cellular activities induced by STZ, and (4) likewise, pre-incubation of STZ-treated NSCs with salidroside, also an antioxidant, suppressed all these activities as catalase: reduction of ROS levels and NSC death with simultaneous increases in proliferation and differentiation."
+SET Cell = "neuronal stem cell"
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:streptozocin) increases a(CHEBI:"reactive oxygen species")
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "neuronal stem cell"
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(MESHC:Catalase) decreases a(CHEBI:"reactive oxygen species")
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "neuronal stem cell"
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(MESHC:Catalase) decreases bp(GOBP:"cell death")
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "neuronal stem cell"
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:Salidroside) decreases a(CHEBI:"reactive oxygen species")
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "neuronal stem cell"
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:Salidroside) decreases bp(GOBP:"cell death")
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22367970"}
+
+SET SupportingText = "We recently reported increased mitochondrial fission and decreased fusion, increased amyloid beta (Abeta) interaction with the mitochondrial fission protein Drp1, increased mitochondrial fragmentation, impaired axonal transport of mitochondria and synaptic degeneration in neurons affected by AD. In the present study, we extended our previous investigations to determine whether phosphorylated tau interacts with Drp1 and to elucidate mitochondrial damage in the progression of AD."
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Reactive oxygen species subgraph"}
+bp(GOBP:"mitochondrial fission") increases complex(a(CHEBI:"amyloid-beta"), p(HGNC:FIS1))
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22523685"}
+
+SET SupportingText = "Amyloid-beta accumulation in the synapses directly disturbs mitochondrial function, causing oxidative stress, decreased ATP, and increased Ca2+ influx. Furthermore, the interaction of mitochondrial amyloid-beta with its binding proteins, such as ABAD and CypD, exacerbates amyloid-beta-induced mitochondria and neuronal stress and malfunction."
+SET CellStructure = "Synapses"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+p(HGNC:APP, frag("672_713")) increases bp(GOBP:"response to oxidative stress")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Synapses"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+p(HGNC:APP, frag("672_713")) increases bp(GOBP:"mitochondrial calcium ion transport")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Synapses"
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+p(HGNC:APP, frag("672_713")) decreases a(CHEBI:ATP)
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Synapses"
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+complex(p(HGNC:APP, frag("672_713")), p(HGNC:HSD17B10)) decreases act(a(MESH:D008928))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Synapses"
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Reactive oxygen species subgraph", "Response to oxidative stress"}
+complex(p(HGNC:APP, frag("672_713")), p(HGNC:PPID)) decreases act(a(MESH:D008928))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Biochemical and morphological alterations of mitochondria may play an important role in the pathogenesis of Alzheimer's disease (AD). Particularly, mitochondrial dysfunction is a hallmark of amyloid-beta-induced neuronal toxicity in Alzheimer's disease. The recent emphasis on the intracellular biology of amyloid-beta and its precursor protein (APP) has led researchers to consider the possibility that mitochondria-associated and mitochondrial amyloid-beta may directly cause neurotoxicity. Both proteins are known to localize to mitochondrial membranes, block the transport of nuclear-encoded mitochondrial proteins to mitochondria, interact with mitochondrial proteins, disrupt the electron transport chain, increase reactive oxygen species production, cause mitochondrial damage, and prevent neurons from functioning normally. "
+SET CellStructure = "Mitochondria"
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"amyloid-beta") increases a(CHEBI:"reactive oxygen species")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"reactive oxygen species") decreases bp(GOBP:"mitochondria-nucleus signaling pathway")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Increased ROS levels act at multiple levels to impair mitochondrial function: they induce mtDNA mutations that consequently negatively influence mitochondrial function, enhance amyloid-beta production by guiding APP cleavage pathway toward the amyloidogenesis, increase lipid peroxidation, activate mitophagy, leading to a reduced mitochondrial number, and augment tau hyperphosphorylation and NFT formation impairing organelle trafficking and neuronal function finally leading to apoptotic process."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"reactive oxygen species") increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"reactive oxygen species") increases p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"reactive oxygen species") increases bp(GOBP:"lipid oxidation")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"reactive oxygen species") increases bp(GOBP:"mitochondrion disassembly")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"reactive oxygen species") increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The accumulation of APP across mitochondrial import channels inhibited the entry of nuclear-encoded cytochrome c-oxidase subunits IV and Vb proteins and was associated with decreased cytochrome oxidase and increased free radical production"
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("49_*")) directlyDecreases tloc(p(HGNC:COX4I1), fromLoc(MESHCS:Cytoplasm), toLoc(GOCC:mitochondrion))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("49_*")) directlyDecreases tloc(p(HGNC:COX4I2), fromLoc(MESHCS:Cytoplasm), toLoc(GOCC:mitochondrion))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("49_*")) directlyDecreases tloc(p(HGNC:COX5B), fromLoc(MESHCS:Cytoplasm), toLoc(GOCC:mitochondrion))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("49_*")) negativeCorrelation complex(GOCC:"respiratory chain complex IV")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("49_*")) positiveCorrelation a(CHEBI:radical)
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:COX4I1) increases complex(GOCC:"respiratory chain complex IV")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:COX4I2) increases complex(GOCC:"respiratory chain complex IV")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:COX5B) increases complex(GOCC:"respiratory chain complex IV")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+complex(GOCC:"respiratory chain complex IV") negativeCorrelation p(HGNC:APP, frag("49_*"))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+complex(GOCC:"respiratory chain complex IV") negativeCorrelation p(HGNC:APP, frag("50_*"))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+complex(GOCC:"respiratory chain complex IV") isA p(ECCODE:"1.9.3.1")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+a(CHEBI:radical) positiveCorrelation p(HGNC:APP, frag("49_*"))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+a(CHEBI:radical) negativeCorrelation p(HGNC:APP, frag("50_*"))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("50_*")) directlyDecreases tloc(p(HGNC:COX4I1), fromLoc(MESHCS:Cytoplasm), toLoc(GOCC:mitochondrion))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("50_*")) directlyDecreases tloc(p(HGNC:COX4I2), fromLoc(MESHCS:Cytoplasm), toLoc(GOCC:mitochondrion))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("50_*")) directlyDecreases tloc(p(HGNC:COX5B), fromLoc(MESHCS:Cytoplasm), toLoc(GOCC:mitochondrion))
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("50_*")) negativeCorrelation complex(GOCC:"respiratory chain complex IV")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("50_*")) negativeCorrelation a(CHEBI:radical)
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Electron transport chain", "Reactive oxygen species subgraph"}
+bp(GOBP:"respiratory chain complex IV assembly") decreases a(CHEBI:radical)
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22956607"}
+
+SET SupportingText = "Stress of the endoplasmic reticulum and oxidative stress play critical roles in the pathogenesis of Fuchs Endothelial Corneal Dystrophy (FECD)."
+SET CellStructure = "Endoplasmic Reticulum"
+SET Confidence = "High"
+SET Disease = "Fuchs' endothelial dystrophy"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(MESHPP:"Oxidative Stress") positiveCorrelation path(MESHD:"Fuchs' Endothelial Dystrophy")
+UNSET {CellStructure, Confidence, Disease, MeSHAnatomy, Subgraph}
+SET CellStructure = "Endoplasmic Reticulum"
+SET Confidence = "High"
+SET Disease = "Fuchs' endothelial dystrophy"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Fuchs' Endothelial Dystrophy") positiveCorrelation bp(MESHPP:"Oxidative Stress")
+UNSET {CellStructure, Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23653222"}
+
+SET SupportingText = "Oxidative stress has been suggested to play an important role in the pathogenesis of various neurodegenerative diseases including Alzheimer's disease (AD)."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHDisease = "Neurodegenerative Diseases"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(MESHPP:"Oxidative Stress") association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHDisease = "Neurodegenerative Diseases"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(MESHPP:"Oxidative Stress") association path(MESHD:"Neurodegenerative Diseases")
+UNSET {Confidence, Disease, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHDisease = "Neurodegenerative Diseases"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Alzheimer Disease") association bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Disease, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHDisease = "Neurodegenerative Diseases"
+SET Subgraph = "Reactive oxygen species subgraph"
+path(MESHD:"Neurodegenerative Diseases") association bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Disease, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23818595"}
+
+SET SupportingText = "Furthermore, our data with ROS scavengers suggest that intracellular ROS mediates the SOD1(G93A)-induced activation of MST1, although the origin of ROS generation induced by SOD1(G93A) remains unclear (25)."
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"reactive oxygen species") increases act(p(MGI:Stk4))
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23954639"}
+
+SET SupportingText = "Similarly, high glucose levels inhibit AMPK activity and increase ROS generation. This leads to the upregulation of Nox4 and the activation of p53-induced apoptosis in glomerular epithelial cells (podocytes), the loss of which may contribute to albuminuria and diabetic kidney disease. The reactivation of AMPK by AICAR in this context leads to a reduction in Nox4 levels, resulting in a suppression of p53 (Eid et al., 2010)."
+SET Confidence = "High"
+SET Subgraph = {"Reactive oxygen species subgraph", "p53 stabilization subgraph"}
+a(CHEBI:"reactive oxygen species") increases p(HGNC:NOX4)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Reactive oxygen species subgraph", "p53 stabilization subgraph"}
+p(HGNC:NOX4) increases act(p(HGNC:TP53))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Reactive oxygen species subgraph", "p53 stabilization subgraph"}
+act(p(HGNC:PRKAA2)) decreases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Reactive oxygen species subgraph", "p53 stabilization subgraph"}
+a(CHEBI:glucose) decreases act(p(HGNC:PRKAA2))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24262633"}
+
+SET SupportingText = "However, in response to oxidative stress, NRF2 translocates to the nucleus and binds to specific DNA sites termed anti-oxidant response elements or electrophile response elements to initiate transcription of cytoprotective genes."
+SET Confidence = "High"
+SET Subgraph = "Reactive oxygen species subgraph"
+bp(MESHPP:"Oxidative Stress") increases tloc(p(HGNC:NFE2L2), fromLoc(MESHCS:Cytoplasm), toLoc(MESHCS:"Cell Nucleus"))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24357806"}
+
+SET SupportingText = "Oligomeric amyloid beta induces IL-1beta processing via production of ROS: implication in Alzheimer's disease."
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:APP, frag("672_713")) increases p(HGNC:IL1B)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Reactive oxygen species subgraph"
+p(HGNC:APP, frag("672_713")) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The processing is induced by an increase in activity of caspase-1 and NOD-like receptor family, pyrin domain containing 3 (NLRP3) via mitochondrial reactive oxygen species (ROS) and partially via NADPH oxidase-induced ROS."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:CASP1) increases p(HGNC:IL1B)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:CASP1) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:NLRP3) increases p(HGNC:IL1B)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:NLRP3) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24587007"}
+
+SET SupportingText = "Results of this study indicate that ethanol extracts of SF (SF-E) suppress NMDA-induced reactive oxygen species (ROS) production in neurons, and LPS- and IFNgamma-induced ROS and nitric oxide (NO) production in microglial cells."
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Microglia", "Neurons"}
+SET Subgraph = "Reactive oxygen species subgraph"
+act(p(GFAM:"Glutamate ionotropic receptor NMDA type subunits")) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:lipopolysaccharide) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Microglia", "Neurons"}
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:ethanol) decreases act(p(GFAM:"Glutamate ionotropic receptor NMDA type subunits"))
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = {"Interferon signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:ethanol) decreases p(MGI:Ifng)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:ethanol) decreases a(CHEBI:lipopolysaccharide)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = {"Interferon signaling subgraph", "Reactive oxygen species subgraph"}
+p(MGI:Ifng) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24619568"}
+
+SET SupportingText = "The data indicate that apart from acetylsalicylic acid (aspirin) and simvastatin, several neurophysiologically-relevant concentrations of Abetapeptides and neurotoxic trace metals variably induced ROS induction, COX-2 and cPLA2 expression."
+SET Confidence = "Medium"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"reactive oxygen species") association a(CHEBI:"acetylsalicylic acid")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Reactive oxygen species subgraph"
+a(CHEBI:"acetylsalicylic acid") association a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "25018698"}
+
+SET SupportingText = "ASK1, a member of the MAP3K family, has been shown to mediate SOD1(G93A)-induced neurotoxicity in an ALS mouse model"
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Neurons"
+SET Species = "10090"
+SET Subgraph = {"MAPK-ERK subgraph", "Reactive oxygen species subgraph"}
+p(MGI:Sod1, var("p.Gly93Ala")) increases act(p(MGI:Map3k5))
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET Species = "10090"
+SET Subgraph = {"MAPK-ERK subgraph", "Reactive oxygen species subgraph"}
+p(MGI:Map3k5) increases bp(GOBP:"neuron death")
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "25698445"}
+
+SET SupportingText = "Specifically, conditional loss of beta1-integrin prevented Abeta42O-induced Cofilin activation, and allosteric modulation or activation of beta1-integrin significantly reduced Abeta42O binding to neurons while blocking Abeta42O-induced reactive oxygen species (ROS) production, mitochondrial dysfunction, depletion of F-actin/focal Vinculin, and apoptotic process."
+SET Confidence = "Medium"
+SET Subgraph = {"Reactive oxygen species subgraph", "Regulation of actin cytoskeleton subgraph"}
+a(CHEBI:"amyloid-beta polypeptide 42") increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed Central", "PMC3287608"}
+
+SET SupportingText = "Alzheimer's Abeta-amyloid precursor protein interacts with appoptosin and modulates appoptosin-induced apoptotic process."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+complex(p(HGNC:APP), p(HGNC:SLC25A21)) regulates bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Here we find that a mitochondrial solute carrier family protein, appoptosin, induces reactive oxygen species release and intrinsic caspase-dependent apoptotic process"
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+act(p(HGNC:SLC25A21)) increases a(CHEBI:"reactive oxygen species")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+act(p(HGNC:SLC25A21)) increases p(GFAM:Caspases)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+p(GFAM:Caspases) increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Levels of appoptosin are upregulated in brain samples from Alzheimer's disease and infarct patients and in rodent stroke models, as well as in cells treated with Abeta-amyloid (Abeta) and glutamate. Downregulation of appoptosin prevents the cell death and caspase activation caused by glutamate or Abeta insults."
+SET Confidence = "Very High"
+SET MeSHAnatomy = "Brain"
+SET MeSHDisease = {"Alzheimer Disease", "Infarction"}
+SET Species = "9606"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:SLC25A21) positiveCorrelation path(MESH:D000544)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+SET Confidence = "Very High"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:SLC25A21) positiveCorrelation composite(a(CHEBI:"L-glutamate(1-)"), a(CHEBI:"amyloid-beta"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Very High"
+SET MeSHAnatomy = "Brain"
+SET MeSHDisease = {"Alzheimer Disease", "Infarction"}
+SET Species = "9606"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+path(MESH:D000544) positiveCorrelation p(HGNC:SLC25A21)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+SET Confidence = "Very High"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+composite(a(CHEBI:"L-glutamate(1-)"), a(CHEBI:"amyloid-beta")) positiveCorrelation p(HGNC:SLC25A21)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The physiological function of appoptosin is to transport/exchange glycine/5-amino-levulinic acid across the mitochondrial membrane for heme synthesis."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+act(p(HGNC:SLC25A21)) increases tloc(a(CHEBI:glycine), fromLoc(GOCC:cytoplasm), toLoc(GOCC:mitochondrion))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Caspase subgraph", "Reactive oxygen species subgraph"}
+act(p(HGNC:SLC25A21)) increases tloc(a(CHEBI:"5-aminolevulinic acid"), fromLoc(GOCC:cytoplasm), toLoc(GOCC:mitochondrion))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################

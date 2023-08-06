@@ -1,0 +1,880 @@
+# This document was created by PyBEL v0.13.1-dev and bel-resources v0.0.2-dev on Tue Jan  8 14:53:24 2019
+
+################################################################################
+#| Metadata
+################################################################################
+
+SET DOCUMENT Name = "Notch signaling subgraph"
+SET DOCUMENT Version = "5.1.2"
+SET DOCUMENT ContactInfo = "daniel.domingo.fernandez@scai.fraunhofer.de"
+SET DOCUMENT Licenses = "CC BY 4.0"
+SET DOCUMENT Copyright = "Copyright © 2019 Fraunhofer SCAI, All rights reserved."
+
+################################################################################
+#| Namespaces
+################################################################################
+
+# Enumerated Namespaces
+# ---------------------
+DEFINE NAMESPACE ADO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns"
+DEFINE NAMESPACE BRCO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns"
+DEFINE NAMESPACE CHEBI AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/chebi-names.belns"
+DEFINE NAMESPACE CTO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE ECCODE AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+DEFINE NAMESPACE FPLX AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+DEFINE NAMESPACE GFAM AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3f89d31906739fce9678d868b6a599a851aa7c00/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/go.belns"
+DEFINE NAMESPACE GOBP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20170725.belns"
+DEFINE NAMESPACE GOCC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170725.belns"
+DEFINE NAMESPACE HBP AS URL "https://raw.githubusercontent.com/pharmacome/terminology/570376e4c233483b667eab12a1f964950368282a/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/hgnc-symbols.belns"
+DEFINE NAMESPACE HP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE INTERPRO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-20170731.belns"
+DEFINE NAMESPACE MESH AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/mesh.belns"
+DEFINE NAMESPACE MESHC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170725.belns"
+DEFINE NAMESPACE MESHCS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20170511.belns"
+DEFINE NAMESPACE MESHD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20170725.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20170725.belns"
+DEFINE NAMESPACE MGI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20170725.belns"
+DEFINE NAMESPACE NIFT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/imaging-ontology/imaging-ontology-1.0.6.belns"
+DEFINE NAMESPACE PTS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/neurodegeneration-pathways/neurodegeneration-pathways-1.0.0.belns"
+DEFINE NAMESPACE RGD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20170725.belns"
+DEFINE NAMESPACE SCOMP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Regular Expression Namespaces
+# -----------------------------
+DEFINE NAMESPACE DBSNP AS PATTERN "^rs\d+$"
+DEFINE NAMESPACE TAXONOMY AS PATTERN "^\d+$"
+
+################################################################################
+#| Annotations
+################################################################################
+
+# Enumerated Annotations
+# ----------------------
+DEFINE ANNOTATION Anatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION Cell AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION CellLine AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Confidence AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+# Regular Expression Annotations
+# ------------------------------
+DEFINE ANNOTATION Species AS PATTERN "\d+"
+
+# Locally Defined Annotations
+# ---------------------------
+DEFINE ANNOTATION Condition AS LIST {"Normal Healthy State"}
+DEFINE ANNOTATION Developmental_Phase__of_patient AS LIST {"Developmental stage", "Old"}
+DEFINE ANNOTATION DiseaseState AS LIST {"Early-onset AD", "Familial Alzheimers Disease", "Late-onset AD", "Mild AD", "Moderate AD", "Sporadic Alzheimers Disease"}
+DEFINE ANNOTATION Duration_of_Chemical_Exposure AS LIST {"Chronic", "Subchronic"}
+DEFINE ANNOTATION Encode_Feature_Types AS LIST {"Promoter"}
+DEFINE ANNOTATION Experimental_Group AS LIST {"Physical exercised group", "Sedentary group"}
+DEFINE ANNOTATION FDASTATUS AS LIST {"Phase 2", "Phase 3"}
+DEFINE ANNOTATION KnockoutMice AS LIST {"App transgenic"}
+DEFINE ANNOTATION NIFT AS LIST {"Positron Emission Tomography", "Volumetric MRI"}
+DEFINE ANNOTATION Patient AS LIST {"AD T2DM +ve", "AD T2DM -ve", "APOE e4 +ve", "APOE e4 -ve"}
+DEFINE ANNOTATION Published AS LIST {"CDR story", "Epilepsy comorbidity paper"}
+DEFINE ANNOTATION Race AS LIST {"Caucasian", "Chinese", "Colombian", "Italian", "Swedish", "Taiwanese"}
+DEFINE ANNOTATION Transcriptionally_active_region AS LIST {"3 prime UTR", "5 prime UTR"}
+DEFINE ANNOTATION UserdefinedCellLine AS LIST {"293APPwt", "App transgenic", "CHOAPPsw", "INS-1 cells", "N2a695 cell", "NT2N cells", "Neuroblastoma cell", "primary cortical neuron", "primary neuron"}
+
+################################################################################
+#| Statements
+################################################################################
+SET Citation = {"PubMed", "10366748"}
+
+SET SupportingText = "The mammalian homologue of lin-12, Notch1, is a transmembrane receptor that plays an important role in cell fate decisions during development, including neurogenesis, but does not have a known function in fully differentiated cells. "
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+p(HGNC:NOTCH1) association bp(GOBP:neurogenesis)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+bp(GOBP:neurogenesis) association p(HGNC:NOTCH1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "10967351"}
+
+SET SupportingText = "Alzheimer's disease (AD) is a neurodegenerative disease with progressive dementia accompanied by three main structural changes in the brain: diffuse loss of neurons; intracellular protein deposits termed neurofibrillary tangles (NFT) and extracellular protein deposits termed amyloid or senile plaques, surrounded by dystrophic neurites. Recent studies have suggested that the trafficking process of membrane associated proteins is modulated by the FAD-linked presenilin (PS) proteins, and that amyloid beta-peptide deposition may be initiated intracellularly, through the secretory pathway. Current hypotheses concerning presenilin function are based upon its cellular localization and its putative interaction as macromolecular complexes with the cell-adhesion/signaling beta-catenin molecule and the glycogen synthase kinase 3beta (GSK-3beta) enzyme. Developmental studies have shown that PS proteins function as components in the Notch signal transduction cascade and that beta-catenin and GSK-3beta are transducers of the Wnt signaling pathway. Both pathways are thought to have an important role in brain development, and they have been connected through Dishevelled (Dvl) protein, a known transducer of the Wnt signaling pathway. In addition to a review of the current state of research on the subject, we present a cell signaling model in which a sustained loss of function of Wnt signaling components would trigger a series of misrecognition events, determining the onset and development of AD."
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+bp(GOBP:"Notch signaling pathway") association p(HGNC:PSEN2)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+bp(GOBP:"Notch signaling pathway") association p(HGNC:PSEN1)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Notch signaling subgraph", "Wnt signaling subgraph"}
+bp(GOBP:"Notch signaling pathway") association bp(GOBP:"brain development")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:PSEN1) association bp(GOBP:"Notch signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:PSEN2) association bp(GOBP:"Notch signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Notch signaling subgraph", "Wnt signaling subgraph"}
+bp(GOBP:"brain development") association bp(GOBP:"Notch signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Notch signaling subgraph", "Wnt signaling subgraph"}
+bp(GOBP:"brain development") association bp(GOBP:"Wnt signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Notch signaling subgraph", "Wnt signaling subgraph"}
+bp(GOBP:"brain development") decreases bp(GOBP:"neuron apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Notch signaling subgraph", "Wnt signaling subgraph"}
+bp(GOBP:"Wnt signaling pathway") association p(SFAM:"DVL Family")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Notch signaling subgraph", "Wnt signaling subgraph"}
+bp(GOBP:"Wnt signaling pathway") association bp(GOBP:"brain development")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Notch signaling subgraph", "Wnt signaling subgraph"}
+bp(GOBP:"Wnt signaling pathway") decreases path(MESHD:"Alzheimer Disease")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Notch signaling subgraph", "Wnt signaling subgraph"}
+p(SFAM:"DVL Family") association bp(GOBP:"Wnt signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12297508"}
+
+SET SupportingText = "Presenilin and nicastrin are essential components of the gamma-secretase complex that is required for the intramembrane proteolysis of an increasing number of membrane proteins including the amyloid-beta precursor protein (APP) and Notch."
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Gamma secretase subgraph", "Notch signaling subgraph"}
+complex(p(HGNC:NCSTN), p(HGNC:PSEN1)) increases deg(p(HGNC:APP))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Gamma secretase subgraph", "Notch signaling subgraph"}
+complex(p(HGNC:NCSTN), p(HGNC:PSEN1)) increases deg(p(HGNC:NOTCH1))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Similar to the loss of presenilin or nicastrin, the inactivation of endogenous mAPH-1 using small interfering RNAs results in the decrease of presenilin levels, accumulation of gamma-secretase substrates (APP carboxyl-terminal fragments), and reduction of gamma-secretase products (amyloid-beta peptides and the intracellular domains of APP and Notch). "
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:APH1A) increases p(HGNC:PSEN1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:APH1A) increases p(HGNC:APP)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:APH1A) increases p(HGNC:NOTCH1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:APH1A) increases a(CHEBI:"amyloid-beta")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12471034"}
+
+SET SupportingText = " APH-1 interacts with mature and immature forms of presenilins and nicastrin and may play a role in maturation of presenilin.nicastrin complexes."
+SET Confidence = "High"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:APH1A) association complex(p(HGNC:NOTCH1), p(HGNC:PSEN1))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+complex(p(HGNC:NOTCH1), p(HGNC:PSEN1)) association p(HGNC:APH1A)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "APH-1 interacts with mature and immature forms of presenilins and nicastrin and may play a role in maturation of presenilin.nicastrin complexes."
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+complex(p(HGNC:APH1A), p(HGNC:NCSTN)) association bp(GO:"GO:0051604")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+bp(GO:"GO:0051604") association complex(p(HGNC:APH1A), p(HGNC:PSEN1))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+bp(GO:"GO:0051604") association complex(p(HGNC:APH1A), p(HGNC:PSEN2))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+bp(GO:"GO:0051604") association complex(p(HGNC:APH1A), p(HGNC:NCSTN))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+complex(p(HGNC:APH1A), p(HGNC:PSEN1)) association bp(GO:"GO:0051604")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+complex(p(HGNC:APH1A), p(HGNC:PSEN2)) association bp(GO:"GO:0051604")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12639958"}
+
+SET SupportingText = "PEN-2 is an integral membrane protein that is a necessary component of the gamma-secretase complex, which is central in the pathogenesis of Alzheimer's disease and is also required for Notch signaling. In the absence of PEN-2, Notch signaling fails to guide normal development in Caenorhabditis elegans, and amyloid beta peptide is not generated from the amyloid precursor protein"
+SET Confidence = "Medium"
+SET Species = "6239"
+SET Subgraph = {"Gamma secretase subgraph", "Non-amyloidogenic subgraph", "Notch signaling subgraph"}
+p(HGNC:APP, frag("672_713")) positiveCorrelation p(HGNC:PSENEN)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Species = "6239"
+SET Subgraph = {"Gamma secretase subgraph", "Non-amyloidogenic subgraph", "Notch signaling subgraph"}
+p(HGNC:PSENEN) positiveCorrelation bp(GOBP:"Notch signaling pathway")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Species = "6239"
+SET Subgraph = {"Gamma secretase subgraph", "Non-amyloidogenic subgraph", "Notch signaling subgraph"}
+p(HGNC:PSENEN) positiveCorrelation p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+complex(SCOMP:"gamma Secretase Complex") increases bp(GOBP:"Notch signaling pathway")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Species = "6239"
+SET Subgraph = {"Gamma secretase subgraph", "Non-amyloidogenic subgraph", "Notch signaling subgraph"}
+bp(GOBP:"Notch signaling pathway") positiveCorrelation p(HGNC:PSENEN)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12802175"}
+
+SET SupportingText = "Recently, Notch receptors have been hypothesized to play a role in neurodegeneration and in particular in Alzheimer's disease (Notch1) and CADASIL (Notch3). Here we show that another family member (Notch2) is constitutively expressed in adult mouse hippocampus in DG and not in CA1 and CA3 neurons. Treatment with kainic acid resulted in marked Notch2 induction in pyramidal neurons of CA1 and in a subpopulation of CA3 neurons surviving the lesion and protein expression was still detectable 6 weeks after drug treatment. These results suggest Notch2 involvement in the response of postmitotic neurons to excitotoxic stimuli."
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:NOTCH2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+p(HGNC:NOTCH2) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16511867"}
+
+SET SupportingText = "Cerebrolysin is a peptide mixture with neurotrophic effects that might reduce the neurodegenerative pathology in Alzheimer's disease (AD). Cerebrolysin might reduce amyloid deposition by regulating amyloid-beta (Abeta) degradation or by modulating APP expression, maturation, or processing. To investigate these possibilities, APP tg mice were treated for 6 months with Cerebrolysin and analyzed in the water maze, followed by RNA, immunoblot, and confocal microscopy analysis of full-length (FL) APP and its fragments, beta-secretase (BACE1), and Abeta-degrading enzymes [neprilysin (Nep) and insulin-degrading enzyme (IDE)]. Consistent with previous studies, Cerebrolysin ameliorated the performance deficits in the spatial learning portion of the water maze and reduced the synaptic pathology and amyloid burden in the brains of APP tg mice. These effects were associated with reduced levels of FL APP and APP C-terminal fragments, but levels of BACE1, Notch1, Nep, and IDE were unchanged. In contrast, levels of active cyclin-dependent kinase-5 (CDK5) and glycogen synthase kinase-3beta [GSK-3beta; but not stress-activated protein kinase-1 (SAPK1)], kinases that phosphorylate APP, were reduced. Furthermore, Cerebrolysin reduced the levels of phosphorylated APP and the accumulation of APP in the neuritic processes. Taken together, these results suggest that Cerebrolysin might reduce AD-like pathology in the APP tg mice by regulating APP maturation and transport to sites where Abeta protein is generated."
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Nerve growth factor subgraph", "Notch signaling subgraph"}
+a(MESHC:cerebrolysin) causesNoChange p(MGI:Notch1)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Nerve growth factor subgraph", "Notch signaling subgraph"}
+a(MESHC:cerebrolysin) causesNoChange p(MGI:Mme)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Nerve growth factor subgraph", "Notch signaling subgraph"}
+a(MESHC:cerebrolysin) causesNoChange p(MGI:Ide)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16515557"}
+
+SET SupportingText = " To investigate potential homodimeric and heterodimeric interactions of APP and Notch2 (N2), we have visualized the subcellular localization of the APP/N2 complexes formed in living cells using bimolecular fluorescence complementation (BiFC) analysis. BiFC was accomplished by fusing the N-terminal fragment or the C-terminal fragment of yellow fluorescent protein (YFP) to APP, N2, and a C-terminally truncated form of N2.When expressed in COS-7 cells, these tagged proteins alone did not produce a fluorescent signal. The tagged APP homodimer produced a weak fluorescent signal, while neither full-length N2, nor a truncated N2 alone, produced a visible signal, suggesting that N2 receptors do not form homodimers. The strongest fluorescent signal was obtained with co-expression of the C-terminal fragment of YFP fused to APP and the N-terminal fragment of YFP fused to the truncated form of N2. This heterodimer localized to plasma membrane, endoplasmic reticulum (ER), Golgi and other compartments. The results were confirmed and quantified by flow cytometry. The BiFC method of specifically visualizing APP/Notch interactions can be applied to study APP and Notch signaling during development, aging and neurodegeneration."
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+p(HGNC:NOTCH2) association path(MESHD:"Neurodegenerative Diseases")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+path(MESHD:"Neurodegenerative Diseases") association p(HGNC:NOTCH2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16696577"}
+
+SET SupportingText = "gamma-Secretase comprises a molecular complex of four integral membrane proteins - presenilin, nicastrin, APH-1 and PEN-2 - and its molecular mechanism remains under extensive scrutiny. The ratio of Abeta(42) over Abeta(40) is increased by familial Alzheimer's disease mutations occurring in the presenilin genes or in APP, near the gamma-secretase cleavage site."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Amyloidogenic subgraph", "Gamma secretase subgraph", "Notch signaling subgraph"}
+act(complex(SCOMP:"gamma Secretase Complex"), ma(pep)) increases p(HGNC:APP, frag("672_713"))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17404688"}
+
+SET SupportingText = "[Progesterone co-treated with Estradiol] results in decreased expression of MYCN mRNA"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Notch signaling subgraph"
+a(CHEBI:estradiol) association r(HGNC:MYCN)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Notch signaling subgraph"
+r(HGNC:MYCN) association a(CHEBI:estradiol)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17486130"}
+
+SET SupportingText = "Isotretinoin results in decreased expression of MYCN mRNA"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Notch signaling subgraph"
+a(CHEBI:isotretinoin) decreases r(HGNC:MYCN)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17599166"}
+
+SET SupportingText = "There are 4 classes of potentially disease-modifying treatments that have successfully advanced to later-stage clinical trials: (1) immunotherapies, (2) secretase inhibitors, (3) selective Abeta42-lowering agents (SALAs), and (4) anti-Abeta aggregation agents. Gamma-secretase has many biologically essential substrates. One physiologically important gamma-secretase substrate is the Notch signaling protein"
+SET Confidence = "High"
+SET DiseaseState = "Mild AD"
+SET FDASTATUS = "Phase 2"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+act(complex(SCOMP:"gamma Secretase Complex"), ma(pep)) increases bp(GOBP:"Notch signaling pathway")
+UNSET {Confidence, DiseaseState, FDASTATUS, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19789989"}
+
+SET SupportingText = " The result showed that liquiritin significantly promotes the neurite outgrowth stimulated by NGF in PC12 cells in dose dependant manners whereas the liquiritin alone did not induce neurite outgrowth. Oligo microarray and RT-PCR analysis further clarified that the neurotrophic effect of liquiritin was related to the overexpression of neural related genes such as neurogenin 3, neurofibromatosis 1, notch gene homolog 2, neuromedin U receptor 2 and neurotrophin 5. Thus, liquiritin may be a good candidate for treatment of various neurodegenerative diseases such as Alzheimer's disease or Parkinson's disease."
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:NOTCH2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+p(HGNC:NOTCH2) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+a(CHEBI:liquiritin) increases p(HGNC:NOTCH2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+a(CHEBI:liquiritin) increases bp(GOBP:"neuron projection development")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20089128"}
+
+SET SupportingText = " The amyloid precursor protein is a ubiquitously expressed transmembrane protein that has been long implicated in the pathogenesis of Alzheimer's disease but its normal biological function has remained elusive despite extensive effort. We have previously reported the identification of Notch2 as an amyloid precursor protein interacting protein in E18 rat neurons. Here, we sought to reveal the physiologic consequences of this interaction. We report a functional relationship between amyloid precursor protein and Notch1, which does not affect Delta ligand binding. First, we observed interactions between the amyloid precursor protein and Notch in mouse embryonic stem cells lacking both presenilin 1 and presenilin 2, the active proteolytic components of the gamma-secretase complex, suggesting that these two transmembrane proteins can interact in the absence of presenilin. Next, we demonstrated that the amyloid precursor protein affects Notch signaling by using Notch-dependent luciferase assays in two cell lines, the human embryonic kidney 293 and the monkey kidney, COS7. We found that the amyloid precursor protein exerts opposing effects on Notch signaling in human embryonic kidney 293 vs. COS7 cells. Finally, we show that more Notch Intracellular Domain is found in the nucleus in the presence of exogenous amyloid precursor protein or its intracellular domain, suggesting the mechanism by which the amyloid precursor protein affects Notch signaling in certain cells. Our results provide evidence of potentially important communications between the amyloid precursor protein and Notch."
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+p(SFAM:"NOTCH Family") association composite(p(HGNC:PSEN1), p(HGNC:PSEN2))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+act(p(SFAM:"NOTCH Family")) increases bp(GOBP:"Notch signaling pathway")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+composite(p(HGNC:PSEN1), p(HGNC:PSEN2)) association p(SFAM:"NOTCH Family")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20117143"}
+
+SET SupportingText = " Our results show that liquiritigenin treatment improves the behavioral performance of the model rats and attenuates neuronal loss in the brain. More importantly, liquiritigenin treatment decreases mRNA levels and protein expression of Notch-2, an effect that could promote the generation of new neurons. These findings provide evidence for the beneficial activity of liquiritigenin in a brain-injured rat model and support the continued investigation of SERMs such as liquiritigenin as an alternative to estrogen-based hormone therapy in reducing the risk of neurodegenerative diseases such as Alzheimer's disease."
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:NOTCH2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+p(HGNC:NOTCH2) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+a(CHEBI:liquiritigenin) decreases p(HGNC:NOTCH2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+a(CHEBI:liquiritigenin) decreases path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+a(CHEBI:liquiritigenin) increases a(MESH:D009474)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20655472"}
+
+SET SupportingText = "SIRT1 directly activates the transcription of the gene encoding the alpha-secretase, ADAM10. SIRT1 deacetylates and coactivates the retinoic acid receptor beta, a known regulator of ADAM10 transcription. ADAM10 activation by SIRT1 also induces the Notch signaling pathway, which is known to repair neuronal damage in the brain."
+SET Confidence = "Medium"
+SET Subgraph = {"Cell adhesion subgraph", "Notch signaling subgraph"}
+act(p(HGNC:ADAM10)) increases act(p(SFAM:"NOTCH Family"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Matrix metalloproteinase subgraph", "Notch signaling subgraph"}
+act(p(HGNC:ADAM10)) increases p(SFAM:"NOTCH Family")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Cell adhesion subgraph", "Notch signaling subgraph"}
+p(HGNC:SIRT1) increases act(p(HGNC:RARB))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20883690"}
+
+SET SupportingText = "Notch signaling has been shown to control cell fate through local cell-to-cell interactions. During development, Notch suppresses neuronal differentiation in vivo and in vitro (Geling et al., 2004; Kabos et al., 2002). When ligands bind Notch, proteolytic cleavage of Notch receptors occurs by the gamma-secretase/nicastrin complex to release the signal-transducing Notch intracellular domain (NICD) (Yu et al., 2000). Cleaved NICDs translocate into the nucleus and interact with a nuclear protein named CBF1/Su(H)/Lag-1 (CSL) (Schroeter et al., 1998). The CSL and NICD complex activates expression of primary target genes of Notch, such as Hairy and enhancer of split (Hes) gene families (Jarriault et al., 1998). Following activation, Hes suppresses expression of transcription factors involved in neuronal differentiation, such as Mash1 and NeuroD (Pleasure et al., 2000). Notch activation is reported to strengthen glial differentiation by crosstalk to IL-6 signaling pathways, which is a known central regulator of gliogenesis. IL-6 cytokine signaling activation induces subsequent phosphorylation of gp130, Janus kinases (JAKs), and signal transducer and activator of transcription 3 (STAT3) (Kamakura et al., 2004). Upon Notch activation, increased Hes is known to facilitate complex formation between JAK2 and STAT3, promoting STAT3 phosphorylation. This facilitates accessibility of STAT3 to the DNA binding element of the GFAP promoter. In the present study, we demonstrate APP may induce glial differentiation of NPCs through activation of the Notch signaling pathway."
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+act(complex(SCOMP:"gamma Secretase Complex"), ma(pep)) increases rxn(reactants(p(FPLX:Notch)), products(a(HBP:"Notch intracellular domain")))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Interleukin signaling subgraph", "Notch signaling subgraph"}
+act(p(HGNC:IL6)) increases bp(GOBP:gliogenesis)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Interleukin signaling subgraph", "Notch signaling subgraph"}
+act(p(FPLX:Notch)) increases act(p(HGNC:IL6))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Recently, He et al. proposed that the Jak/STAT pathway is central to the gliogenic machinery and postulated a framework for understanding the control of gliogenesis during development (He et al., 2005). Treatment with sAPP increased phosphorylation of STAT3, which was suppressed when treated with L-685,458 (Fig 5C), indicating existence of crosstalk between the Notch and Jak/STAT pathway in APP-induced glial differentiation."
+SET Confidence = "High"
+SET Subgraph = {"JAK-STAT signaling subgraph", "Notch signaling subgraph"}
+a(HBP:"sAPP-alpha") increases p(HGNC:STAT3, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"JAK-STAT signaling subgraph", "Notch signaling subgraph"}
+a(HBP:"sAPP-alpha") increases act(p(FPLX:Notch))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"JAK-STAT signaling subgraph", "Notch signaling subgraph"}
+p(HGNC:STAT3, pmod(Ph)) increases bp(GOBP:"glial cell differentiation")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"JAK-STAT signaling subgraph", "Notch signaling subgraph"}
+p(HGNC:STAT3, pmod(Ph)) increases act(p(FPLX:Notch))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "These results suggest that sAPP-induced glial differentiation is mediated through the gamma-secretase dependent Notch signaling pathway."
+SET Confidence = "Medium"
+SET Subgraph = "Notch signaling subgraph"
+act(a(HBP:"sAPP-alpha")) increases bp(GOBP:"glial cell differentiation")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Notch signaling subgraph"
+act(p(FPLX:Notch)) increases act(a(HBP:"sAPP-alpha"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Notch signaling subgraph"
+act(p(FPLX:Notch)) increases bp(GOBP:"glial cell differentiation")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20938992"}
+
+SET SupportingText = "[Methionine deficiency co-treated with Choline deficiency co-treated with Folic Acid deficiency] results in decreased expression of MYCN mRNA"
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = "Notch signaling subgraph"
+a(CHEBI:choline) association r(MGI:Mycn)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = "Notch signaling subgraph"
+r(MGI:Mycn) association a(CHEBI:choline)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21852083"}
+
+SET SupportingText = "resveratrol inhibits the reaction [Dietary Fats results in increased expression of MYCN mRNA]"
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+a(CHEBI:resveratrol) decreases r(HGNC:MYCN)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21872584"}
+
+SET SupportingText = " Furthermore, treatment with liquiritigenin inhibited astrocytosis in the hippocampus, and it may through its inhibitory activities on Notch-2, an important molecular regulating neural proliferation and differentiation. These findings provide evidence for beneficial activity of liquiritigenin in a mouse model of Alzheimer's disease and support the continued investigation of Notch signaling pathway as a target for treatment of Alzheimer's disease."
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:NOTCH2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+p(HGNC:NOTCH2) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+a(CHEBI:liquiritigenin) decreases p(HGNC:NOTCH2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22087836"}
+
+SET SupportingText = "gamma-Secretase inhibitor believed to be associated with the inhibition of the cleavage of Notch, a transmembrane receptor involved in regulating cell-fate decisions."
+SET Confidence = "High"
+SET DiseaseState = "Mild AD"
+SET FDASTATUS = "Phase 3"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+a(CHEBI:"gamma-secretase modulator") decreases act(complex(SCOMP:"gamma Secretase Complex"), ma(pep))
+UNSET {Confidence, DiseaseState, FDASTATUS, Subgraph}
+SET Confidence = "High"
+SET DiseaseState = "Mild AD"
+SET FDASTATUS = "Phase 3"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+a(CHEBI:"gamma-secretase modulator") decreases rxn(reactants(p(HGNC:NOTCH1)), products(p(HGNC:NOTCH1, frag("?"))))
+UNSET {Confidence, DiseaseState, FDASTATUS, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22426017"}
+
+SET SupportingText = "These differences in Abeta(42) deposition were not significantly reflected in the brain structure, and CTh was only correlated with total tau. The lack of significant differences in relation to t-tau and p-tau levels and to the severity of CTh or grey matter loss suggests a similar level of neuronal injury despite higher Abeta(42) load in PSEN1."
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:PSEN1) increases bp(GOBP:"neuron death")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+bp(GOBP:"neuron death") increases a(NIFT:"Cortical Thinning")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22461631"}
+
+SET SupportingText = "Our present study demonstrated that the PS1 mutants M146L, E280A and H163R directly affect gamma-secretase activity, which leads to a reduction in the rate of Notch1 cleavage."
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:PSEN1) decreases act(p(HGNC:NOTCH1))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:PSEN1, var("p.Glu280Ala")) decreases act(complex(SCOMP:"gamma Secretase Complex"))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:PSEN1, var("p.Met146Leu")) decreases act(complex(SCOMP:"gamma Secretase Complex"))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:PSEN1, var("p.His163Arg")) decreases act(complex(SCOMP:"gamma Secretase Complex"))
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "gamma-Secretase cleaves multiple substrates including the amyloid precursor protein (APP), Notch, and other type I membrane proteins."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+act(complex(SCOMP:"gamma Secretase Complex")) increases p(HGNC:APP, frag("?"))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+act(complex(SCOMP:"gamma Secretase Complex")) increases p(SFAM:"NOTCH Family", frag("?"))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22496686"}
+
+SET SupportingText = "Another relevant role for PSs is Notch processing. Notch signaling is involved in cell fate regulation, cell differentiation, proliferation, and apoptosis as well as neurodegeneration. Notch is a membrane receptor whose C-terminal domain (NICD), upon interaction with appropriate ligands, translocates into the nucleus where it activates the CSL family of transcription factors. NICD formation depends on gamma-secretase complex as the AICD fragment of AbetaPP. PSs play a role in apoptotic process, since FAD mutants cause cell death or induce secondary events that may lead to apoptotic process .Animals, in which PS1 and PS2 genes are deleted, show deficit in learning, memory, synaptic function and neuronal death. The processes beneath these effects are unknown, but the findings that PS1 interacts with antiapoptotic member of Bcl-2 family might indicate a possible mechanism."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+act(complex(SCOMP:"gamma Secretase Complex"), ma(pep)) increases act(p(SFAM:"NOTCH Family"))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(SFAM:"NOTCH Family") association composite(p(HGNC:PSEN1), p(HGNC:PSEN2))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+act(p(SFAM:"NOTCH Family")) increases bp(GOBP:"Notch signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+tloc(p(SFAM:"NOTCH Family"), fromLoc(MESHCS:Cytoplasm), toLoc(MESHCS:"Cell Nucleus")) increases act(p(HGNC:RBPJL))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+bp(GOBP:"Notch signaling pathway") association bp(GOBP:"regulation of cell fate commitment")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+bp(GOBP:"Notch signaling pathway") association bp(GOBP:"cell proliferation")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+bp(GOBP:"Notch signaling pathway") association bp(GOBP:"cell differentiation")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+bp(GOBP:"Notch signaling pathway") association bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+bp(GOBP:"Notch signaling pathway") association bp(GOBP:"neuron death")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Bcl-2 subgraph", "Notch signaling subgraph"}
+p(HGNC:PSEN1) association p(HGNC:BCL2)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Bcl-2 subgraph", "Notch signaling subgraph"}
+p(HGNC:BCL2) association p(HGNC:PSEN1)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+p(HGNC:BCL2) decreases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+bp(GOBP:"neuron death") association bp(GOBP:"Notch signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+bp(GOBP:"apoptotic process") association bp(GOBP:"Notch signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+bp(GOBP:"apoptotic process") association composite(p(HGNC:PSEN1), p(HGNC:PSEN2))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+composite(p(HGNC:PSEN1), p(HGNC:PSEN2)) association p(SFAM:"NOTCH Family")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+composite(p(HGNC:PSEN1), p(HGNC:PSEN2)) association bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+bp(GOBP:"cell proliferation") association bp(GOBP:"Notch signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+bp(GOBP:"regulation of cell fate commitment") association bp(GOBP:"Notch signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+bp(GOBP:"cell differentiation") association bp(GOBP:"Notch signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Besides their involvement in Abeta formation, PSs regulate the cleavage of other signaling receptors and transducers such as Notch-1, ErbB4, DC44, and LDL-receptor-related proteins and cadherins. PSs also affect different other signaling molecules, such as wingless-type MMTV integration site family (Wnt) signal transduction pathway, which is evolutionary conserved and controls many events during the embryogenesis . At cellular level, this pathway regulates morphology, proliferation, and motility of the cell. Wnt signaling pathway plays a central role during tumorigenesis, and the inappropriate activation of this pathway has been observed in several human cancers. It has been shown that Wnt-ligand-mediated signaling leads to the accumulation of cytosolic beta-catenin. Cytosolic beta-catenin will then translocate into the nucleus to bind to members of the T-cell factor (Tcf)/lymphoid-enhancing factor (Lef) family of DNA-binding proteins leading to the transcription of Wnt target genes."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(SFAM:"NOTCH Family", frag("?")) association composite(p(HGNC:PSEN1), p(HGNC:PSEN2))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+composite(p(HGNC:PSEN1), p(HGNC:PSEN2)) association p(SFAM:"NOTCH Family", frag("?"))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+composite(p(HGNC:PSEN1), p(HGNC:PSEN2)) association p(HGNC:ERBB4, frag("?"))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+composite(p(HGNC:PSEN1), p(HGNC:PSEN2)) association p(HGNC:FUNDC2, frag("?"))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:ERBB4, frag("?")) association composite(p(HGNC:PSEN1), p(HGNC:PSEN2))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:FUNDC2, frag("?")) association composite(p(HGNC:PSEN1), p(HGNC:PSEN2))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Chromosome missegregation and trisomy 21 mosaicism have been associated with mutations in AbetaPP and PSs. Aberrant expression of cell-cycle proteins and tetraploidy in neurons from AD patients have been described. In AD brains, the activation of several cell-cycle components has been detected, including cdc2, cdk4, p16, Ki-67, cyclin B1 and cyclin D, p25 (the regulatory subunit of cdk5), as well as the increased expression activity of genes encoding for cell-cycle proteins. It was observed that hippocampal pyramidal and basal forebrain neurons, in AD brain show markers of DNA replication, and it was speculated that the state of tetraploidy is lethal to neurons"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = {"Amyloidogenic subgraph", "Cyclin-CDK subgraph", "DNA synthesis", "Notch signaling subgraph"}
+p(HGNC:APP) association bp(GOBP:"chromosome segregation")
+UNSET {Condition, Confidence, MeSHAnatomy, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = {"Amyloidogenic subgraph", "Cyclin-CDK subgraph", "DNA synthesis", "Notch signaling subgraph"}
+bp(GOBP:"chromosome segregation") association p(HGNC:APP)
+UNSET {Condition, Confidence, MeSHAnatomy, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = {"Amyloidogenic subgraph", "Cyclin-CDK subgraph", "DNA synthesis", "Notch signaling subgraph"}
+bp(GOBP:"chromosome segregation") association p(HGNC:PSEN1)
+UNSET {Condition, Confidence, MeSHAnatomy, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = {"Amyloidogenic subgraph", "Cyclin-CDK subgraph", "DNA synthesis", "Notch signaling subgraph"}
+p(HGNC:PSEN1) association bp(GOBP:"chromosome segregation")
+UNSET {Condition, Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:PSEN1) association path(MESHD:"Down Syndrome")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = {"Gamma secretase subgraph", "Notch signaling subgraph"}
+path(MESHD:"Down Syndrome") association p(HGNC:PSEN1)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "It was reported that beta-catenin interacts with PSs, and that PS1 promotes beta-catenin degradation regulating phosphorylation by cyclin-dependent kinase 5 (CDK5) and GSK-3beta. Importantly, GSK-3beta was implicated in various neurological disorders, including AD."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Beta-Catenin subgraph", "Notch signaling subgraph"}
+p(HGNC:PSEN1) increases deg(p(HGNC:CTNNB1))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Beta-Catenin subgraph", "Notch signaling subgraph"}
+p(HGNC:CTNNB1, pmod(Ph)) increases deg(p(HGNC:CTNNB1))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "PS1 is also essential for efficient N-cadherin trafficking from ER to plasma membrane. Cadherins, including E-cadherin and neuronal cadherin (N-cadherin), are a family of type I transmembrane proteins that mediate Ca2+-dependent cell-cell adhesion, and recognition. PS1-mediated delivery of N-cadherin to the plasma membrane is important to exert its physiological function, including the control of the state of cell-cell contact."
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Calcium-dependent signal transduction", "Cell adhesion subgraph", "Gamma secretase subgraph", "Notch signaling subgraph"}
+p(HGNC:PSEN1) increases tloc(p(HGNC:CDH2), fromLoc(MESHCS:"Endoplasmic Reticulum"), toLoc(MESHCS:"Cell Membrane"))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23237322"}
+
+SET SupportingText = "Several of the Abeta42/43 -increasing mutants severely impaired the cleavages of Notch1 and CD44 substrates, which were not affected by any other L383 mutation."
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+p(HGNC:APP, frag("672_713")) association p(HGNC:NOTCH1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+p(HGNC:NOTCH1) association p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23373633"}
+
+SET SupportingText = "Estradiol affects the expression of NOL3 mRNA"
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+a(CHEBI:estradiol) association r(HGNC:NOL3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Notch signaling subgraph"
+r(HGNC:NOL3) association a(CHEBI:estradiol)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed Central", "PMC3892805"}
+
+SET SupportingText = "Notch signaling has a tumor suppressor role in neuroendocrine tumnors;effect of thiocoraline on the activation of the Notch pathway; In order to assess if thiocoraline treatment functionally activated the Notch pathway, real-time PCR was conducted to assess the relative induction or reduction in mRNA levels of HES1, HES2, HES6, and HEY1. Analysis revealed that expression levels of HES1, HES2, and HEY1 increased"
+SET Confidence = "Medium"
+SET MeSHDisease = "Thyroid Neoplasms"
+SET Subgraph = "Notch signaling subgraph"
+bp(GOBP:"Notch signaling pathway") increases r(HGNC:HES2)
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################

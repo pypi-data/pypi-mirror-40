@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: neurommsig_knowledge
+Version: 0.0.1
+Summary: Knowledge curated for NeuroMMSig during the AETIONOMY project
+Home-page: https://github.com/neurommsig/neurommsig-knowledge
+Author: Daniel Domingo-Fernández
+Author-email: daniel.domingo.fernandez@scai.fraunhofer.de
+Maintainer: Daniel Domingo-Fernández
+Maintainer-email: daniel.domingo.fernandez@scai.fraunhofer.de
+License: UNKNOWN
+Download-URL: https://github.com/neurommsig/neurommsig-knowledge/releases
+Project-URL: Bug Tracker, https://github.com/neurommsig/neurommsig-knowledge/issues
+Project-URL: Source Code, https://github.com/neurommsig/neurommsig-knowledge
+Description: <h1 align="center">
+          <br>
+          NeuroMMSig Knowledge
+          </a>
+          <br>
+        </h1>
+        
+        <p align="center">
+        This repository contains knowledge curated in Biological Expression Language (BEL)
+        for NeuroMMSig during the <a href="https://aetionomy.eu">AETIONOMY</a> project.
+        </p>
+        
+        ## Installation
+        
+        The latest version can be installed from GitHub with:
+        
+        ```bash
+        $ pip install git+https://github.com/neurommsig/neurommsig-knowledge.git
+        ```
+        
+        ## Usage
+        
+        The graph can be loaded with:
+        
+        ```python
+        from neurommsig_knowledge import repository
+        from pybel import union
+        
+        # Get all graphs
+        graphs = repository.get_graphs()
+        
+        # Combine them all using pybel.union
+        graph = union(graphs.values())
+        ```
+        
+Keywords: Biological Expression Language,BEL,Biocuration,Networks Biology
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

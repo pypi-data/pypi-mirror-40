@@ -1,0 +1,754 @@
+# This document was created by PyBEL v0.13.1-dev and bel-resources v0.0.2-dev on Tue Jan  8 14:53:24 2019
+
+################################################################################
+#| Metadata
+################################################################################
+
+SET DOCUMENT Name = "DKK1 subgraph"
+SET DOCUMENT Version = "5.1.2"
+SET DOCUMENT ContactInfo = "daniel.domingo.fernandez@scai.fraunhofer.de"
+SET DOCUMENT Licenses = "CC BY 4.0"
+SET DOCUMENT Copyright = "Copyright © 2019 Fraunhofer SCAI, All rights reserved."
+
+################################################################################
+#| Namespaces
+################################################################################
+
+# Enumerated Namespaces
+# ---------------------
+DEFINE NAMESPACE ADO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns"
+DEFINE NAMESPACE BRCO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns"
+DEFINE NAMESPACE CHEBI AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/chebi-names.belns"
+DEFINE NAMESPACE CTO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE ECCODE AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+DEFINE NAMESPACE FPLX AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+DEFINE NAMESPACE GFAM AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3f89d31906739fce9678d868b6a599a851aa7c00/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/go.belns"
+DEFINE NAMESPACE GOBP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20170725.belns"
+DEFINE NAMESPACE GOCC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170725.belns"
+DEFINE NAMESPACE HBP AS URL "https://raw.githubusercontent.com/pharmacome/terminology/570376e4c233483b667eab12a1f964950368282a/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/hgnc-symbols.belns"
+DEFINE NAMESPACE HP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE INTERPRO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-20170731.belns"
+DEFINE NAMESPACE MESH AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/mesh.belns"
+DEFINE NAMESPACE MESHC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170725.belns"
+DEFINE NAMESPACE MESHCS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20170511.belns"
+DEFINE NAMESPACE MESHD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20170725.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20170725.belns"
+DEFINE NAMESPACE MGI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20170725.belns"
+DEFINE NAMESPACE NIFT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/imaging-ontology/imaging-ontology-1.0.6.belns"
+DEFINE NAMESPACE PTS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/neurodegeneration-pathways/neurodegeneration-pathways-1.0.0.belns"
+DEFINE NAMESPACE RGD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20170725.belns"
+DEFINE NAMESPACE SCOMP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Regular Expression Namespaces
+# -----------------------------
+DEFINE NAMESPACE DBSNP AS PATTERN "^rs\d+$"
+DEFINE NAMESPACE TAXONOMY AS PATTERN "^\d+$"
+
+################################################################################
+#| Annotations
+################################################################################
+
+# Enumerated Annotations
+# ----------------------
+DEFINE ANNOTATION Anatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION Cell AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION CellLine AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Confidence AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+# Regular Expression Annotations
+# ------------------------------
+DEFINE ANNOTATION Species AS PATTERN "\d+"
+
+# Locally Defined Annotations
+# ---------------------------
+DEFINE ANNOTATION Condition AS LIST {"Normal Healthy State"}
+DEFINE ANNOTATION Developmental_Phase__of_patient AS LIST {"Developmental stage", "Old"}
+DEFINE ANNOTATION DiseaseState AS LIST {"Early-onset AD", "Familial Alzheimers Disease", "Late-onset AD", "Mild AD", "Moderate AD", "Sporadic Alzheimers Disease"}
+DEFINE ANNOTATION Duration_of_Chemical_Exposure AS LIST {"Chronic", "Subchronic"}
+DEFINE ANNOTATION Encode_Feature_Types AS LIST {"Promoter"}
+DEFINE ANNOTATION Experimental_Group AS LIST {"Physical exercised group", "Sedentary group"}
+DEFINE ANNOTATION FDASTATUS AS LIST {"Phase 2", "Phase 3"}
+DEFINE ANNOTATION KnockoutMice AS LIST {"App transgenic"}
+DEFINE ANNOTATION NIFT AS LIST {"Positron Emission Tomography", "Volumetric MRI"}
+DEFINE ANNOTATION Patient AS LIST {"AD T2DM +ve", "AD T2DM -ve", "APOE e4 +ve", "APOE e4 -ve"}
+DEFINE ANNOTATION Published AS LIST {"CDR story", "Epilepsy comorbidity paper"}
+DEFINE ANNOTATION Race AS LIST {"Caucasian", "Chinese", "Colombian", "Italian", "Swedish", "Taiwanese"}
+DEFINE ANNOTATION Transcriptionally_active_region AS LIST {"3 prime UTR", "5 prime UTR"}
+DEFINE ANNOTATION UserdefinedCellLine AS LIST {"293APPwt", "App transgenic", "CHOAPPsw", "INS-1 cells", "N2a695 cell", "NT2N cells", "Neuroblastoma cell", "primary cortical neuron", "primary neuron"}
+
+################################################################################
+#| Statements
+################################################################################
+SET Citation = {"PubMed", "18494933"}
+
+SET SupportingText = "it has been demonstrated that micromolar S100B concentrations stimulate c-Jun N-terminal kinase (JNK) phosphorylation through the receptor for advanced glycation ending products, and subsequently activate nuclear AP-1/cJun transcription, in cultured human neural stem cells. In addition, as revealed by Western blot, small interfering RNA and immunofluorescence analysis, S100B-induced JNK activation increased expression of Dickopff-1 that, in turn, promoted glycogen synthase kinase 3beta phosphorylation and beta-catenin degradation, causing canonical Wnt signaling pathway disruption and tau protein hyperphosphorylation. These findings propose a previously unrecognized link between S100B and tau hyperphosphorylation, suggesting S100B can contribute to NFT formation in AD and in all other conditions in which neuroinflammation may have a crucial role."
+SET Confidence = "High"
+SET Subgraph = {"Calcium-dependent signal transduction", "DKK1 subgraph", "GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:DKK1) positiveCorrelation p(HGNC:GSK3B, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Calcium-dependent signal transduction", "DKK1 subgraph", "GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:S100B) increases p(HGNC:GSK3B, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Calcium-dependent signal transduction", "DKK1 subgraph", "GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:S100B) increases p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Calcium-dependent signal transduction", "DKK1 subgraph", "GSK3 subgraph", "Wnt signaling subgraph"}
+p(HGNC:GSK3B, pmod(Ph)) positiveCorrelation p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23164821"}
+
+SET SupportingText = "Abeta increased intracellular clusterin and decreased clusterin protein secretion, resulting in the p53-dependent induction of DKK1. To further elucidate how the clusterin-dependent induction of Dkk1 by Abeta mediates neurotoxicity, we measured the effects of Abeta and Dkk1 protein on whole-genome expression in primary neurons, finding a common pathway suggestive of activation of wnt–planar cell polarity (PCP)–c-Jun N-terminal kinase (JNK) signalling leading to the induction of genes including EGR1 (early growth response-1), NAB2 (Ngfi-A-binding protein-2) and KLF10 (Krüppel-like factor-10) that, when individually silenced, protected against Abeta neurotoxicity and/or tau phosphorylation"
+SET Confidence = "Medium"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:EGR1) increases bp(GOBP:"neuron death")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:NAB2) increases bp(GOBP:"neuron death")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:KLF10) increases bp(GOBP:"neuron death")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+bp(GOBP:"Wnt signaling pathway, planar cell polarity pathway") increases p(HGNC:EGR1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+bp(GOBP:"Wnt signaling pathway, planar cell polarity pathway") increases p(HGNC:NAB2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+bp(GOBP:"Wnt signaling pathway, planar cell polarity pathway") increases p(HGNC:KLF10)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:TP53) increases r(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "DKK1 subgraph"
+g(HGNC:DKK1) increases bp(GOBP:"Wnt signaling pathway, planar cell polarity pathway")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Although the mechanism of Ab action in the pathogenesis of Alzheimer’s disease (AD) has remained elusive, it is known to increase the expression of the antagonist of canonical wnt signalling, Dickkopf-1 (Dkk1), whereas the silencing of Dkk1 blocks Ab neurotoxicity."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:APP, frag("672_713")) increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:APP, frag("672_713")) increases p(HGNC:DKK1)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:DKK1) decreases bp(GOBP:"Wnt signaling pathway")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:DKK1) increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Although the mechanism of Abeta action in the pathogenesis of Alzheimer's disease (AD) has remained elusive, it is known to increase the expression of the antagonist of canonical wnt signalling, Dickkopf-1 (Dkk1)"
+SET Confidence = "Very High"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) decreases bp(GOBP:"Wnt signaling pathway")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Although the mechanism of Abeta action in the pathogenesis of Alzheimer's disease (AD) has remained elusive, it is known to increase the expression of the antagonist of canonical wnt signalling, Dickkopf-1 (Dkk1), whereas the silencing of Dkk1 blocks Abeta neurotoxicity."
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:APP, frag("672_713")) increases p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:APP, frag("672_713")) negativeCorrelation deg(p(HGNC:DKK1))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+deg(p(HGNC:DKK1)) negativeCorrelation p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Caricasole et al demonstrated that the Abeta peptide fragment, Abeta25-35, induces neuronal expression of the wnt antagonist Dkk1 and that silencing of DKK1 blocks Abeta neurotoxicity."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:DKK1) decreases bp(GOBP:"Wnt signaling pathway")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:DKK1) increases bp(GOBP:"neuron death")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:APP, frag("25_35")) increases p(HGNC:DKK1)
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Dkk4 and Dkk1 induced EGR1 (Figure 6b) and FOS (data not shown) whereas Dkk2 and Dkk3 did not, mirroring the abilities of the Dkk1 family to antagonise canonical wnt."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph"}
+p(HGNC:DKK1) increases p(HGNC:EGR1)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) increases p(HGNC:FOS)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph"}
+p(HGNC:DKK4) increases p(HGNC:EGR1)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK4) increases p(HGNC:FOS)
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Hippocampal expression levels of Egr1 have been shown to positively correlate with disease progression in AD, whereas the overexpression of EGR1 in rat brain induces tau phosphorylation via its target, and regulator of cdk5, p35."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph"}
+p(HGNC:EGR1) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph"}
+path(MESHD:"Alzheimer Disease") positiveCorrelation p(HGNC:EGR1)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Knockdown of clusterin in primary neurons reduced Abeta toxicity and DKK1 upregulation and, conversely, Abeta increased intracellular clusterin and decreased clusterin protein secretion, resulting in the p53-dependent induction of DKK1"
+SET Confidence = "Medium"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:APP, frag("672_713")) increases p(HGNC:CLU, loc(MESHCS:Cytosol))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:APP, frag("672_713")) decreases tloc(p(HGNC:CLU), fromLoc(GOCC:intracellular), toLoc(GOCC:"extracellular space"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:APP, frag("672_713")) increases p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:CLU) decreases p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:CLU, loc(MESHCS:Cytosol)) increases bp(PTS:"p53 signaling pathway")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+tloc(p(HGNC:CLU), fromLoc(GOCC:intracellular), toLoc(GOCC:"extracellular space")) increases bp(PTS:"p53 signaling pathway")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+bp(PTS:"p53 signaling pathway") increases p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Knockdown of clusterin in primary neurons reduced Abeta toxicity and DKK1 upregulation and, conversely, Abeta increased intracellular clusterin and decreased clusterin protein secretion, resulting in the p53-dependent induction of DKK1."
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:APP, frag("672_713")) increases bp(GOBP:"neuron death")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:APP, frag("672_713")) positiveCorrelation p(HGNC:CLU)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:APP, frag("672_713")) increases p(HGNC:CLU, loc(MESHCS:Cytosol))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:APP, frag("672_713")) decreases tloc(p(HGNC:CLU), fromLoc(GOCC:intracellular), toLoc(GOCC:"extracellular space"))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:CLU) positiveCorrelation p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:CLU) positiveCorrelation p(HGNC:DKK1)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:CLU, loc(MESHCS:Cytosol)) increases bp(PTS:"p53 signaling pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+tloc(p(HGNC:CLU), fromLoc(GOCC:intracellular), toLoc(GOCC:"extracellular space")) increases bp(PTS:"p53 signaling pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+p(HGNC:DKK1) positiveCorrelation p(HGNC:CLU)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Endosomal lysosomal subgraph"}
+bp(PTS:"p53 signaling pathway") increases p(HGNC:DKK1)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Thus, we have identified a pathway whereby Abeta induces a clusterin/p53/Dkk1/wnt-PCP-JNK pathway, which drives the upregulation of several genes that mediate the development of AD-like neuropathologies, thereby providing new mechanistic insights into the action of Abeta in neurodegenerative diseases."
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:APP, frag("672_713")) increases p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:APP, frag("672_713")) increases bp(GOBP:"Wnt signaling pathway, planar cell polarity pathway")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+bp(GOBP:"Wnt signaling pathway, planar cell polarity pathway") positiveCorrelation path(MESHD:Tauopathies)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+path(MESHD:Tauopathies) positiveCorrelation bp(GOBP:"Wnt signaling pathway, planar cell polarity pathway")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "To further elucidate how the clusterin-dependent induction of Dkk1 by Abeta mediates neurotoxicity, we measured the effects of Abeta and Dkk1 protein on whole-genome expression in primary neurons, finding a common pathway suggestive of activation of wnt–planar cell polarity (PCP)–c-Jun N-terminal kinase (JNK) signalling leading to the induction of genes including EGR1 (early growth response-1), NAB2 (Ngfi-A-binding protein-2) and KLF10 (Krüppel-like factor-10) that, when individually silenced, protected against Abeta neurotoxicity and/or tau phosphorylation. To summarise, we show that Ab-induced neurotoxicity, including tau phosphorylation at specific epitopes, is via the CLU-dependent induction of Dkk1, with Dkk1 then driving wnt–PCP signalling to increase expression of genes that we have identified and shown to be necessary mediators of these pathological processes."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:APP, frag("672_713")) positiveCorrelation p(HGNC:EGR1)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:APP, frag("672_713")) positiveCorrelation p(HGNC:NAB2)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:APP, frag("672_713")) positiveCorrelation p(HGNC:KLF10)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:EGR1) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:EGR1) positiveCorrelation p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:NAB2) positiveCorrelation p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:NAB2) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:KLF10) positiveCorrelation p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+p(HGNC:KLF10) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+bp(GOBP:"Wnt signaling pathway, planar cell polarity pathway") increases p(HGNC:EGR1)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+bp(GOBP:"Wnt signaling pathway, planar cell polarity pathway") increases p(HGNC:NAB2)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+bp(GOBP:"Wnt signaling pathway, planar cell polarity pathway") increases p(HGNC:KLF10)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+bp(GOBP:"Wnt signaling pathway, planar cell polarity pathway") isA bp(GOBP:"non-canonical Wnt signaling pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"DKK1 subgraph", "Gamma secretase subgraph", "Tau protein subgraph"}
+bp(GOBP:"non-canonical Wnt signaling pathway") isA bp(GOBP:"Wnt signaling pathway")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23261660"}
+
+SET SupportingText = "Along these lines, one mechanism through which E2 protects the hippocampus from cerebral ischemia is by preventing the post-ischemic elevation of Dkk1, a neurodegenerative factor that serves as an antagonist of the canonical Wnt signaling pathway, and simultaneously inducing pro-survival Wnt/beta-Catenin signaling in hippocampal neurons."
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"DKK1 subgraph", "Wnt signaling subgraph"}
+p(HGNC:DKK1) decreases bp(GOBP:"Wnt signaling pathway")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"DKK1 subgraph", "Wnt signaling subgraph"}
+p(HGNC:DKK1) increases path(MESHD:"Brain Ischemia")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+a(CHEBI:estrogen) decreases p(HGNC:DKK1)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+a(CHEBI:estrogen) decreases path(MESHD:"Brain Ischemia")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"DKK1 subgraph", "Wnt signaling subgraph"}
+a(CHEBI:estrogen) increases bp(GOBP:"Wnt signaling pathway")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Intriguingly, while expression of Dkk1 is required for proper neural development, overexpression of Dkk1 is characteristic of many neurodegenerative diseases, such as stroke, Alzheimer's disease, Parkinson's disease, and temporal lobe epilepsy."
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) positiveCorrelation bp(GOBP:"neuron development")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) positiveCorrelation path(MESHD:"Neurodegenerative Diseases")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) association path(MESHD:Stroke)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) association path(MESHD:"Parkinson Disease")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) association path(MESHD:"Epilepsy, Temporal Lobe")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:DKK1)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+path(MESHD:"Parkinson Disease") association p(HGNC:DKK1)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+path(MESHD:"Neurodegenerative Diseases") positiveCorrelation p(HGNC:DKK1)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+bp(GOBP:"neuron development") positiveCorrelation p(HGNC:DKK1)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+path(MESHD:Stroke) association p(HGNC:DKK1)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "DKK1 subgraph"
+path(MESHD:"Epilepsy, Temporal Lobe") association p(HGNC:DKK1)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24270208"}
+
+SET SupportingText = "Here, we report that the Wnt antagonist Dkk-1 selectively increases tau phosphorylation in the hippocampus of aged rats at Ser199/202, Ser396/404, and Ser214 sites"
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Species = "10116"
+SET Subgraph = "DKK1 subgraph"
+bp(GOBP:"Wnt signaling pathway") negativeCorrelation p(RGD:Dkk1)
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Species = "10116"
+SET Subgraph = "DKK1 subgraph"
+p(RGD:Dkk1) negativeCorrelation bp(GOBP:"Wnt signaling pathway")
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Species = "10116"
+SET Subgraph = {"DKK1 subgraph", "Tau protein subgraph"}
+p(RGD:Dkk1) increases p(RGD:Mapt, pmod(Ph, Ser, 199))
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Species = "10116"
+SET Subgraph = {"DKK1 subgraph", "Tau protein subgraph"}
+p(RGD:Dkk1) increases p(RGD:Mapt, pmod(Ph, Ser, 202))
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Species = "10116"
+SET Subgraph = {"DKK1 subgraph", "Tau protein subgraph"}
+p(RGD:Dkk1) increases p(RGD:Mapt, pmod(Ph, Ser, 214))
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Species = "10116"
+SET Subgraph = {"DKK1 subgraph", "Tau protein subgraph"}
+p(RGD:Dkk1) increases p(RGD:Mapt, pmod(Ph, Ser, 396))
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Species = "10116"
+SET Subgraph = {"DKK1 subgraph", "Tau protein subgraph"}
+p(RGD:Dkk1) increases p(RGD:Mapt, pmod(Ph, Ser, 404))
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24883305"}
+
+SET SupportingText = "More importantly, persistent activation of Wnt signaling through Wnt ligands, or inhibition of negative regulators of Wnt signaling, such as Dickkopf-1 (DKK-1) and glycogen synthase kinase-3 beta (GSK-3 beta ) that are hyperactive in the disease state, is able to protect against Abeta toxicity and ameliorate cognitive performance in AD."
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) decreases bp(GOBP:"Wnt signaling pathway")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) increases act(p(HGNC:APP, frag("672_713")))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+path(MESHD:"Alzheimer Disease") positiveCorrelation p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "25384422"}
+
+SET SupportingText = "In this study, activation of the Wnt pathway by overexpression of the agonist Wnt3a or beta-catenin or by inhibition of glycogen kinase synthase-3 in N2a cells resulted in a reduction in Abeta levels and in the activity and expression of BACE1 (beta-APP cleaving enzyme). Conversely, inhibition of the pathway by transfection of the antagonists secreted frizzled receptor protein-1 or dickkopf-1 produced the opposite effects."
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:DKK1) increases a(CHEBI:"amyloid-beta")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Beta secretase subgraph", "DKK1 subgraph"}
+p(HGNC:DKK1) increases p(HGNC:BACE1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Beta secretase subgraph", "DKK1 subgraph"}
+p(HGNC:DKK1) increases act(p(HGNC:BACE1))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "26420483"}
+
+SET SupportingText = "In silico molecular target prediction docking studies suggest that ETH interacts with Akt, Dkk-1, and GSK-3beta."
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) association a(CHEBI:"(R)-ethosuximide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:GSK3B) association a(CHEBI:"(R)-ethosuximide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+a(CHEBI:"(R)-ethosuximide") association p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+a(CHEBI:"(R)-ethosuximide") association p(HGNC:AKT1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+a(CHEBI:"(R)-ethosuximide") association p(HGNC:GSK3B)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:AKT1) association a(CHEBI:"(R)-ethosuximide")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "26809093"}
+
+SET SupportingText = "As a result, the Polymerization of and MAP-2 and NF-H induced by Abeta25-35 could be significantly inhibited by Wnt3a(40 ng/ml), however enhanced by Dkk1(100 ng/ml)."
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) increases act(p(HGNC:MAP2), ma(GOBP:"protein polymerization"))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) increases act(p(HGNC:NEFH), ma(GOBP:"protein polymerization"))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:APP, frag("25_35")) increases p(HGNC:NEFH)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "DKK1 subgraph"}
+p(HGNC:APP, frag("25_35")) increases p(HGNC:MAP2)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:WNT3A) decreases act(p(HGNC:NEFH), ma(GOBP:"protein polymerization"))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:WNT3A) decreases act(p(HGNC:MAP2), ma(GOBP:"protein polymerization"))
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Meanwhile, the protein abundance of phosphorylated tau in several sites is decreased by Wnt3a, but increased by Dkk1 significantly compared with the control group."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"DKK1 subgraph", "Tau protein subgraph"}
+p(HGNC:DKK1) increases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"DKK1 subgraph", "Tau protein subgraph"}
+p(HGNC:WNT3A) decreases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "26880631"}
+
+SET SupportingText = "Dickkopf-related protein 1 (Dkk1), a vital antagonist of the Wnt signaling, was reported to be closely associated with bone homeostasis and osteoporosis."
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) association path(MESHD:Osteoporosis)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+path(MESHD:Osteoporosis) association p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Therefore, we hypothesize that Dkk1 may play a role in both osteoporosis and AD."
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) association path(MESHD:Osteoporosis)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+path(MESHD:Osteoporosis) association p(HGNC:DKK1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "26973255"}
+
+SET SupportingText = "We identify possible links with Dickkopf-1, a negative regulator of the wnt pathway, and propose that the abnormal expression of Keratin 9 in AD blood and cerebrospinal fluid may be a result of blood brain barrier dysregulation and disruption of the ubiquitin proteasome system."
+SET Confidence = "High"
+SET Subgraph = "DKK1 subgraph"
+p(HGNC:DKK1) decreases bp(GOBP:"Wnt signaling pathway")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################

@@ -1,0 +1,3 @@
+[console_scripts]
+neurommsig-knowledge = neurommsig_knowledge:main
+

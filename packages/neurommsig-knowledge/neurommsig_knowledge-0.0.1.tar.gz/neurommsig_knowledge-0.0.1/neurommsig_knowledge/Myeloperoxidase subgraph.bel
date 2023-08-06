@@ -1,0 +1,248 @@
+# This document was created by PyBEL v0.13.1-dev and bel-resources v0.0.2-dev on Tue Jan  8 14:53:24 2019
+
+################################################################################
+#| Metadata
+################################################################################
+
+SET DOCUMENT Name = "Myeloperoxidase subgraph"
+SET DOCUMENT Version = "5.1.2"
+SET DOCUMENT ContactInfo = "daniel.domingo.fernandez@scai.fraunhofer.de"
+SET DOCUMENT Licenses = "CC BY 4.0"
+SET DOCUMENT Copyright = "Copyright © 2019 Fraunhofer SCAI, All rights reserved."
+
+################################################################################
+#| Namespaces
+################################################################################
+
+# Enumerated Namespaces
+# ---------------------
+DEFINE NAMESPACE ADO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns"
+DEFINE NAMESPACE BRCO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns"
+DEFINE NAMESPACE CHEBI AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/chebi-names.belns"
+DEFINE NAMESPACE CTO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE ECCODE AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+DEFINE NAMESPACE FPLX AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+DEFINE NAMESPACE GFAM AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3f89d31906739fce9678d868b6a599a851aa7c00/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/go.belns"
+DEFINE NAMESPACE GOBP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20170725.belns"
+DEFINE NAMESPACE GOCC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170725.belns"
+DEFINE NAMESPACE HBP AS URL "https://raw.githubusercontent.com/pharmacome/terminology/570376e4c233483b667eab12a1f964950368282a/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/hgnc-symbols.belns"
+DEFINE NAMESPACE HP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE INTERPRO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-20170731.belns"
+DEFINE NAMESPACE MESH AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/mesh.belns"
+DEFINE NAMESPACE MESHC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170725.belns"
+DEFINE NAMESPACE MESHCS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20170511.belns"
+DEFINE NAMESPACE MESHD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20170725.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20170725.belns"
+DEFINE NAMESPACE MGI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20170725.belns"
+DEFINE NAMESPACE NIFT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/imaging-ontology/imaging-ontology-1.0.6.belns"
+DEFINE NAMESPACE PTS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/neurodegeneration-pathways/neurodegeneration-pathways-1.0.0.belns"
+DEFINE NAMESPACE RGD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20170725.belns"
+DEFINE NAMESPACE SCOMP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Regular Expression Namespaces
+# -----------------------------
+DEFINE NAMESPACE DBSNP AS PATTERN "^rs\d+$"
+DEFINE NAMESPACE TAXONOMY AS PATTERN "^\d+$"
+
+################################################################################
+#| Annotations
+################################################################################
+
+# Enumerated Annotations
+# ----------------------
+DEFINE ANNOTATION Anatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION Cell AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION CellLine AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Confidence AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+# Regular Expression Annotations
+# ------------------------------
+DEFINE ANNOTATION Species AS PATTERN "\d+"
+
+# Locally Defined Annotations
+# ---------------------------
+DEFINE ANNOTATION Condition AS LIST {"Normal Healthy State"}
+DEFINE ANNOTATION Developmental_Phase__of_patient AS LIST {"Developmental stage", "Old"}
+DEFINE ANNOTATION DiseaseState AS LIST {"Early-onset AD", "Familial Alzheimers Disease", "Late-onset AD", "Mild AD", "Moderate AD", "Sporadic Alzheimers Disease"}
+DEFINE ANNOTATION Duration_of_Chemical_Exposure AS LIST {"Chronic", "Subchronic"}
+DEFINE ANNOTATION Encode_Feature_Types AS LIST {"Promoter"}
+DEFINE ANNOTATION Experimental_Group AS LIST {"Physical exercised group", "Sedentary group"}
+DEFINE ANNOTATION FDASTATUS AS LIST {"Phase 2", "Phase 3"}
+DEFINE ANNOTATION KnockoutMice AS LIST {"App transgenic"}
+DEFINE ANNOTATION NIFT AS LIST {"Positron Emission Tomography", "Volumetric MRI"}
+DEFINE ANNOTATION Patient AS LIST {"AD T2DM +ve", "AD T2DM -ve", "APOE e4 +ve", "APOE e4 -ve"}
+DEFINE ANNOTATION Published AS LIST {"CDR story", "Epilepsy comorbidity paper"}
+DEFINE ANNOTATION Race AS LIST {"Caucasian", "Chinese", "Colombian", "Italian", "Swedish", "Taiwanese"}
+DEFINE ANNOTATION Transcriptionally_active_region AS LIST {"3 prime UTR", "5 prime UTR"}
+DEFINE ANNOTATION UserdefinedCellLine AS LIST {"293APPwt", "App transgenic", "CHOAPPsw", "INS-1 cells", "N2a695 cell", "NT2N cells", "Neuroblastoma cell", "primary cortical neuron", "primary neuron"}
+
+################################################################################
+#| Statements
+################################################################################
+SET Citation = {"PubMed", "12946561"}
+
+SET SupportingText = "In females, we found a significant association between MPO genotype and AD (P=0.034),"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Myeloperoxidase subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:MPO)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Myeloperoxidase subgraph"
+p(HGNC:MPO) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15255951"}
+
+SET SupportingText = "Myeloperoxidase, a heme protein expressed by professional phagocytic cells, generates an array of oxidants which are proposed to contribute to tissue damage during inflammation."
+SET Cell = "phagocyte"
+SET Confidence = "High"
+SET MeSHDisease = "Inflammation"
+SET Subgraph = {"Inflammatory response subgraph", "Myeloperoxidase subgraph"}
+p(HGNC:MPO) association path(MESHD:Inflammation)
+UNSET {Cell, Confidence, MeSHDisease, Subgraph}
+SET Cell = "phagocyte"
+SET Confidence = "High"
+SET MeSHDisease = "Inflammation"
+SET Subgraph = {"Inflammatory response subgraph", "Myeloperoxidase subgraph"}
+path(MESHD:Inflammation) association p(HGNC:MPO)
+UNSET {Cell, Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Neuronal expression of myeloperoxidase is increased in Alzheimer's disease."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Myeloperoxidase subgraph"
+path(MESHD:"Alzheimer Disease") increases p(HGNC:MPO)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Myeloperoxidase subgraph"
+path(MESHD:"Alzheimer Disease") positiveCorrelation p(HGNC:MPO)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Myeloperoxidase subgraph"
+p(HGNC:MPO) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The increase in neuronal myeloperoxidase expression we observed in Alzheimer disease brains raises the possibility that the enzyme contributes to the oxidative stress implicated in the pathogenesis of the neurodegenerative disorder."
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "neurodegenerative disease"}
+SET MeSHAnatomy = "Brain"
+SET Subgraph = "Myeloperoxidase subgraph"
+p(HGNC:MPO) association bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "neurodegenerative disease"}
+SET MeSHAnatomy = {"Brain", "Neurons"}
+SET Subgraph = "Myeloperoxidase subgraph"
+p(HGNC:MPO) increases bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "neurodegenerative disease"}
+SET MeSHAnatomy = {"Brain", "Neurons"}
+SET Subgraph = "Myeloperoxidase subgraph"
+path(MESHD:"Neurodegenerative Diseases") association bp(MESHPP:"Oxidative Stress")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "neurodegenerative disease"}
+SET MeSHAnatomy = {"Brain", "Neurons"}
+SET Subgraph = "Myeloperoxidase subgraph"
+bp(MESHPP:"Oxidative Stress") association path(MESHD:"Neurodegenerative Diseases")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "neurodegenerative disease"}
+SET MeSHAnatomy = "Brain"
+SET Subgraph = "Myeloperoxidase subgraph"
+bp(MESHPP:"Oxidative Stress") association p(HGNC:MPO)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18554520"}
+
+SET SupportingText = "However, the possible role of MPO and enzymatically inactive MPO (iMPO) as the choreographers of the destruction done by TNF-alpha and ROS is not generally recognized."
+SET Confidence = "High"
+SET Subgraph = {"Myeloperoxidase subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:MPO) association a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Myeloperoxidase subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:MPO) association p(HGNC:TNF)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Myeloperoxidase subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+a(CHEBI:"reactive oxygen species") association p(HGNC:MPO)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Myeloperoxidase subgraph", "Reactive oxygen species subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:TNF) association p(HGNC:MPO)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19059911"}
+
+SET SupportingText = "Aberrant expression of myeloperoxidase in astrocytes promotes phospholipid oxidation and memory deficits in a mouse model of Alzheimer disease."
+SET Confidence = "High"
+SET MeSHAnatomy = "Astrocytes"
+SET MeSHDisease = {"Alzheimer Disease", "Memory Disorders"}
+SET Species = "10090"
+SET Subgraph = "Myeloperoxidase subgraph"
+p(HGNC:MPO) increases path(MESHD:"Memory Disorders")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "MPO is similarly expressed in astrocytes in human AD tissue."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Astrocytes"
+SET Species = "9606"
+SET Subgraph = "Myeloperoxidase subgraph"
+path(MESHD:"Alzheimer Disease") increases p(HGNC:MPO)
+UNSET {Confidence, Disease, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23469045"}
+
+SET SupportingText = "Rivastigmine (1 mg/kg) also reduced myeloperoxidase activity and IL-6 by >60%, and the infiltration of CD11b expressing cells by 80%. These effects were accompanied by significantly greater ChE inhibition in cortex, brain stem, plasma and colon than that after 0.5 mg/kg."
+SET Confidence = "Medium"
+SET Subgraph = "Myeloperoxidase subgraph"
+a(CHEBI:rivastigmine) decreases act(p(HGNC:MPO))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24217274"}
+
+SET SupportingText = "Increased myeloperoxidase plasma levels in patients with Alzheimer's disease."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Plasma"
+SET Species = "9606"
+SET Subgraph = "Myeloperoxidase subgraph"
+path(MESHD:"Alzheimer Disease") increases p(HGNC:MPO)
+UNSET {Confidence, Disease, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################

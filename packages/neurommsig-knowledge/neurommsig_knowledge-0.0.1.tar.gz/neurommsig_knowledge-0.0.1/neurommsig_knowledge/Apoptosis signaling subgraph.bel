@@ -1,0 +1,1784 @@
+# This document was created by PyBEL v0.13.1-dev and bel-resources v0.0.2-dev on Tue Jan  8 14:53:24 2019
+
+################################################################################
+#| Metadata
+################################################################################
+
+SET DOCUMENT Name = "Apoptosis signaling subgraph"
+SET DOCUMENT Version = "5.1.2"
+SET DOCUMENT ContactInfo = "daniel.domingo.fernandez@scai.fraunhofer.de"
+SET DOCUMENT Licenses = "CC BY 4.0"
+SET DOCUMENT Copyright = "Copyright © 2019 Fraunhofer SCAI, All rights reserved."
+
+################################################################################
+#| Namespaces
+################################################################################
+
+# Enumerated Namespaces
+# ---------------------
+DEFINE NAMESPACE ADO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns"
+DEFINE NAMESPACE BRCO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns"
+DEFINE NAMESPACE CHEBI AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/chebi-names.belns"
+DEFINE NAMESPACE CTO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE ECCODE AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+DEFINE NAMESPACE FPLX AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+DEFINE NAMESPACE GFAM AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3f89d31906739fce9678d868b6a599a851aa7c00/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/go.belns"
+DEFINE NAMESPACE GOBP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20170725.belns"
+DEFINE NAMESPACE GOCC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170725.belns"
+DEFINE NAMESPACE HBP AS URL "https://raw.githubusercontent.com/pharmacome/terminology/570376e4c233483b667eab12a1f964950368282a/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/hgnc-symbols.belns"
+DEFINE NAMESPACE HP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE INTERPRO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-20170731.belns"
+DEFINE NAMESPACE MESH AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/mesh.belns"
+DEFINE NAMESPACE MESHC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170725.belns"
+DEFINE NAMESPACE MESHCS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20170511.belns"
+DEFINE NAMESPACE MESHD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20170725.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20170725.belns"
+DEFINE NAMESPACE MGI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20170725.belns"
+DEFINE NAMESPACE NIFT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/imaging-ontology/imaging-ontology-1.0.6.belns"
+DEFINE NAMESPACE PTS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/neurodegeneration-pathways/neurodegeneration-pathways-1.0.0.belns"
+DEFINE NAMESPACE RGD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20170725.belns"
+DEFINE NAMESPACE SCOMP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Regular Expression Namespaces
+# -----------------------------
+DEFINE NAMESPACE DBSNP AS PATTERN "^rs\d+$"
+DEFINE NAMESPACE TAXONOMY AS PATTERN "^\d+$"
+
+################################################################################
+#| Annotations
+################################################################################
+
+# Enumerated Annotations
+# ----------------------
+DEFINE ANNOTATION Anatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION Cell AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION CellLine AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Confidence AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+# Regular Expression Annotations
+# ------------------------------
+DEFINE ANNOTATION Species AS PATTERN "\d+"
+
+# Locally Defined Annotations
+# ---------------------------
+DEFINE ANNOTATION Condition AS LIST {"Normal Healthy State"}
+DEFINE ANNOTATION Developmental_Phase__of_patient AS LIST {"Developmental stage", "Old"}
+DEFINE ANNOTATION DiseaseState AS LIST {"Early-onset AD", "Familial Alzheimers Disease", "Late-onset AD", "Mild AD", "Moderate AD", "Sporadic Alzheimers Disease"}
+DEFINE ANNOTATION Duration_of_Chemical_Exposure AS LIST {"Chronic", "Subchronic"}
+DEFINE ANNOTATION Encode_Feature_Types AS LIST {"Promoter"}
+DEFINE ANNOTATION Experimental_Group AS LIST {"Physical exercised group", "Sedentary group"}
+DEFINE ANNOTATION FDASTATUS AS LIST {"Phase 2", "Phase 3"}
+DEFINE ANNOTATION KnockoutMice AS LIST {"App transgenic"}
+DEFINE ANNOTATION NIFT AS LIST {"Positron Emission Tomography", "Volumetric MRI"}
+DEFINE ANNOTATION Patient AS LIST {"AD T2DM +ve", "AD T2DM -ve", "APOE e4 +ve", "APOE e4 -ve"}
+DEFINE ANNOTATION Published AS LIST {"CDR story", "Epilepsy comorbidity paper"}
+DEFINE ANNOTATION Race AS LIST {"Caucasian", "Chinese", "Colombian", "Italian", "Swedish", "Taiwanese"}
+DEFINE ANNOTATION Transcriptionally_active_region AS LIST {"3 prime UTR", "5 prime UTR"}
+DEFINE ANNOTATION UserdefinedCellLine AS LIST {"293APPwt", "App transgenic", "CHOAPPsw", "INS-1 cells", "N2a695 cell", "NT2N cells", "Neuroblastoma cell", "primary cortical neuron", "primary neuron"}
+
+################################################################################
+#| Statements
+################################################################################
+SET Citation = {"PubMed", "10067977"}
+
+SET SupportingText = "Riluzole also prevented or attenuated ischemia-induced retinal cell death (necrosis and apoptotic process) and reduced the activation of p-JNK, c-jun phosphorylation, and the increase of cytoskeletal proteins induced by ischemic injury. The present study provides the first demonstration that retinal ischemia evokes a lasting activation of p-JNK and phosphorylation of c-jun at serine 73- Riluzole totally blocked the ischemia-induced increase in p-JNK expression during postischemia reperfusion."
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:Riluzole) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "10371197"}
+
+SET SupportingText = "The intracellular amyloid beta-peptide (A beta) binding protein, ERAB, a member of the short-chain dehydrogenase/reductase (SDR) family, is known to mediate apoptosis in different cell lines and to be a class II hydroxyacyl-CoA dehydrogenase."
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+bp(GOBP:"apoptotic process") association p(HGNC:HSD17B10)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:HSD17B10) association bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "10662829"}
+
+SET SupportingText = "Caspase-2 mediates neuronal cell death induced by beta-amyloid"
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph", "Caspase subgraph"}
+a(CHEBI:"amyloid-beta") increases act(p(HGNC:CASP2), ma(pep))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph", "Caspase subgraph"}
+act(p(HGNC:CASP2), ma(pep)) increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11226677"}
+
+SET SupportingText = "We conclude that up-regulation of Bcl-xL expression in response to subtoxic concentrations of beta-amyloid is a stress response that increases the resistance of neurons to beta-amyloid neurotoxicity primarily by inhibiting apoptotic processes."
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET MeSHDisease = "Wounds and Injuries"
+SET Subgraph = {"Apoptosis signaling subgraph", "Bcl-2 subgraph"}
+p(HGNC:BCL2L1) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11400916"}
+
+SET SupportingText = "Complex I 24-kDa subunit was significantly reduced in occipital cortex and thalamus in patients with DS and temporal and occipital cortices in patients with AD. Complex I 75-kDa subunit was significantly reduced in brain regions from patients with DS (temporal, occipital and caudate nucleus) and AD (parietal cortex). Reductions of two subunits of complex I may lead to the impairment of energy metabolism and result in neuronal cell death (apoptotic process), a hallmark of both neurodegenerative disorders."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Electron transport chain"}
+p(HGNC:NDUFV2) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Electron transport chain"}
+p(HGNC:NDUFS1) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11432833"}
+
+SET SupportingText = "Inhibition of Pin1 induces apoptosis and may also contribute to neuronal death in Alzheimer's disease."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:PIN1) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:PIN1) decreases bp(GOBP:"neuron death")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11577002"}
+
+SET SupportingText = "BCL2 protein inhibits the reaction [resveratrol results in decreased expression of BIRC2 protein]"
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:BCL2) increases p(HGNC:BIRC2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:resveratrol) decreases p(HGNC:BIRC2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11592846"}
+
+SET SupportingText = "Furthermore, treatment with GDNF dramatically inhibits apoptotic process, as assessed by the TUNEL technique for detecting DNA damage."
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:GDNF) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "GDNF protects against aluminum-induced apoptosis in rabbits by upregulating Bcl-2 and Bcl-XL and inhibiting mitochondrial Bax translocation."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Bcl-2 subgraph"}
+p(HGNC:BCL2) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Bcl-2 subgraph"}
+p(HGNC:GDNF) increases p(HGNC:BCL2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Bcl-2 subgraph"}
+p(HGNC:GDNF) increases p(HGNC:BCL2L1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Bcl-2 subgraph"}
+p(HGNC:GDNF) decreases tloc(p(HGNC:BAX), fromLoc(MESHCS:Cytosol), toLoc(MESH:D008928))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Bcl-2 subgraph"}
+p(HGNC:BCL2L1) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "11744168"}
+
+SET SupportingText = " It may be inferred from these data that beta-secretase cleavage of FAD mutants of APP allows the appropriate caspase access to its site of action to produce C31, which directly causes neuronal apoptotic process."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Beta secretase subgraph"}
+act(p(HGNC:BACE1), ma(pep)) directlyIncreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Expression of familial Alzheimer's disease (FAD) mutants of APP in primary neurons causes both intracellular accumulation of the C-terminal beta-secretase cleavage product of APP and increased secretion of Abeta, and eventually results in apoptotic death of the cells."
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:APP) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12065618"}
+
+SET SupportingText = "However, PPARgamma agonists not only induced apoptosis but also caused redifferentiation as indicated by outgrowth of long processes and expression of the redifferentiation marker N-cadherin in response to PPARgamma agonists."
+SET Confidence = "High"
+SET MeSHDisease = "Glioma"
+SET Subgraph = {"Apoptosis signaling subgraph", "Peroxisome proliferator activated receptor subgraph"}
+p(MGI:Pparg) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = "Glioma"
+SET Subgraph = {"Apoptosis signaling subgraph", "Peroxisome proliferator activated receptor subgraph"}
+p(MGI:Pparg) increases p(MGI:Cdh2)
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12548636"}
+
+SET SupportingText = "We have examined this by using oxidative stress to induce apoptosis in a mouse hippocampal neuronal cell line (HT-22). Oxidatively modified proteins were measured by high-resolution two-dimensional gel electrophoresis coupled with oxidation-specific immunostains.Under these conditions the oxidatively stressed cells undergo apoptotic process, and specific proteins are oxidized. The three proteins that appeared to be most susceptible to oxidation were identified by mass spectrometry. Those oxidized proteins are heat shock protein 60 and vimentin, both believed to function as antiapoptotic proteins, and a third protein with sequence homology to hemoglobin alpha-chain. When the cells were pretreated with vitamin E, these proteins were not oxidized and the cells did not undergo apoptotic process."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") increases p(MGI:Hspd1, pmod(GO:"GO:0018158"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+bp(MESHPP:"Oxidative Stress") increases p(MGI:Vim, pmod(GO:"GO:0018158"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+p(MGI:Vim, pmod(GO:"GO:0018158")) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"vitamin E") decreases p(MGI:Hspd1, pmod(GO:"GO:0018158"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"vitamin E") decreases p(MGI:Vim, pmod(GO:"GO:0018158"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"vitamin E") decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+p(MGI:Hspd1) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+p(MGI:Vim) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12890786"}
+
+SET SupportingText = "Apoptosis pathways and DNA synthesis are activated in neurons in the brains of individuals with Alzheimer disease (AD). However, the signaling mechanisms that mediate these events have not been defined. We show that expression of familial AD (FAD) mutants of the amyloid precursor protein (APP) in primary neurons in culture causes apoptosis and DNA synthesis. Both the apoptosis and the DNA synthesis are mediated by the p21 activated kinase PAK3, a serine-threonine kinase that interacts with APP. A dominant-negative kinase mutant of PAK3 inhibits the neuronal apoptosis and DNA synthesis; this effect is abolished by deletion of the PAK3 APP-binding domain or by coexpression of a peptide representing this binding domain. The involvement of PAK3 specifically in FAD APP-mediated apoptosis rather than in general apoptotic pathways is suggested by the facts that a dominant-positive mutant of PAK3 does not alone cause neuronal apoptosis and that the dominant-negative mutant of PAK3 does not inhibit chemically induced apoptotic process."
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+bp(GOBP:"apoptotic process") positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+path(MESHD:"Alzheimer Disease") positiveCorrelation bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12930891"}
+
+SET SupportingText = "Minocycline inhibits the reaction [Kainic Acid results in increased localization of AIFM1 protein]"
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:minocycline) decreases p(HGNC:AIFM1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "14557245"}
+
+SET SupportingText = "We have shown that APP-BP1 drives the S- to M-phase transition in dividing cells, and causes apoptosis in neurons."
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph", "Ubiquitin degradation subgraph"}
+p(HGNC:NAE1) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "14580317"}
+
+SET SupportingText = "PKCdelta may also amplify apoptotic signaling via positive feedback activation of the caspase cascade."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Interferon signaling subgraph", "Response to oxidative stress", "Vascular endothelial growth factor subgraph"}
+p(HGNC:PRKCD) increases bp(GOBP:"apoptotic signaling pathway")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "14744432"}
+
+SET SupportingText = "Activation of the mitochondrial pathway of apoptosis is one attractive explanation for the transcription-independent portion of p53-influenced apoptosis (Chen et al., 1996b; Haupt et al., 1995). Mitochondrial translocation of p53 following DNA damage (Mihara et al., 2003) and its ability to engage BCL-2 family proteins to regulate cytochrome c release have been noted (Chipuk et al., 2004)."
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Caspase subgraph", "Electron transport chain", "p53 stabilization subgraph"}
+p(HGNC:TP53) association p(HGNC:CYCS)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Caspase subgraph", "Electron transport chain", "p53 stabilization subgraph"}
+p(HGNC:TP53) association p(HGNC:BAX)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Caspase subgraph", "Electron transport chain", "p53 stabilization subgraph"}
+p(HGNC:TP53) association p(HGNC:BAD)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Caspase subgraph", "Electron transport chain", "p53 stabilization subgraph"}
+p(HGNC:BAD) association p(HGNC:TP53)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Caspase subgraph", "Electron transport chain", "p53 stabilization subgraph"}
+p(HGNC:CYCS) association p(HGNC:TP53)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Caspase subgraph", "Electron transport chain", "p53 stabilization subgraph"}
+p(HGNC:BAX) association p(HGNC:TP53)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15126337"}
+
+SET SupportingText = "Nitric Oxide affects the localization of AIFM1 protein"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:AIFM1) association a(CHEBI:"nitric oxide")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:"nitric oxide") association p(HGNC:AIFM1)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15211800"}
+
+SET SupportingText = "Folic Acid results in increased expression of BIRC2 mRNA"
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:"folic acid") increases r(HGNC:BIRC2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15314261"}
+
+SET SupportingText = "Thus, we addressed this paradoxical condition of AD in rat neurons treated with okadaic acid (OA) which inhibits protein phosphatase-2A (PP2A) and induces tau hyperphosphorylation and cell death. Interestingly, OA also induces phosphorylation of GSK3beta at serine-9 and other substrates including tau, beta-catenin and CRMP2 like in AD brains. In this context, we observed that GSK3beta inhibitors such as lithium chloride and 6-bromoindirubin-3'-monoxime (6-BIO) reversed those phosphorylation events and protected neurons. These data suggest that GSK3beta may still have its kinase activity despite increase of its phosphorylation at serine-9 in AD brains at least in PP2A-compromised conditions and that GSK3beta inhibitors could be a valuable drug candidate in AD."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Species = "10116"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:"lithium chloride") decreases bp(GOBP:"neuron death")
+UNSET {Confidence, Disease, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15566391"}
+
+SET SupportingText = "Vitamin E inhibits the reaction [cinnamic aldehyde results in decreased expression of BIRC2 protein]"
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:"vitamin E") increases r(HGNC:BIRC2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(MESHC:"cinnamic aldehyde") decreases r(HGNC:BIRC2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15671026"}
+
+SET SupportingText = "PAR-4 (prostate apoptosis response-4) is a leucine zipper protein that was initially identified to be associated with neuronal degeneration and aberrant Abeta production in pmodels of AD."
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:PAWR) increases a(CHEBI:"amyloid-beta")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15709485"}
+
+SET SupportingText = "The neurotoxicity induced by AChE-Abeta complexes indicated that they trigger more neurodegeneration than those of the Abeta peptide alone.The fact that AChE is able to accelerate amyloid formation"
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "Apoptosis signaling subgraph"}
+complex(p(HGNC:ACHE), p(HGNC:APP, frag("672_713"))) increases bp(GOBP:"neuron death")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16014719"}
+
+SET SupportingText = "In vitro, Abl phosphorylated tau directly."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Cell cycle subgraph", "Tau protein subgraph"}
+act(p(HGNC:ABL1), ma(kin)) directlyIncreases p(HGNC:MAPT, pmod(Ph))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16153637"}
+
+SET SupportingText = "Albumin prevents mitochondrial depolarization and apoptosis elicited by endoplasmic reticulum calcium depletion of neuroblastoma cells."
+SET CellStructure = "Endoplasmic Reticulum"
+SET Confidence = "Medium"
+SET Subgraph = {"Albumin subgraph", "Apoptosis signaling subgraph"}
+bp(GOBP:"endoplasmic reticulum calcium ion homeostasis") decreases bp(GOBP:"mitochondrial depolarization")
+UNSET {CellStructure, Confidence, Subgraph}
+SET CellStructure = "Endoplasmic Reticulum"
+SET Confidence = "Medium"
+SET Subgraph = {"Albumin subgraph", "Apoptosis signaling subgraph"}
+bp(GOBP:"endoplasmic reticulum calcium ion homeostasis") decreases bp(GOBP:"apoptotic process")
+UNSET {CellStructure, Confidence, Subgraph}
+SET CellStructure = "Endoplasmic Reticulum"
+SET Confidence = "High"
+SET Subgraph = {"Albumin subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:ALB) decreases bp(GOBP:"mitochondrial depolarization")
+UNSET {CellStructure, Confidence, Subgraph}
+SET CellStructure = "Endoplasmic Reticulum"
+SET Confidence = "High"
+SET Subgraph = {"Albumin subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:ALB) decreases bp(GOBP:"apoptotic process")
+UNSET {CellStructure, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In serum-free medium, albumin (29 or 49 mg/ml) fully prevented the apoptotic effects of dotarizine, flunarizine and cyclopiazonic acid."
+SET Confidence = "High"
+SET Subgraph = {"Albumin subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:ALB) decreases a(CHEBI:"cyclopiazonic acid")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Albumin subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:ALB) decreases a(CHEBI:dotarizine)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Albumin subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:ALB) decreases a(CHEBI:"Flunarizine hydrochloride")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Albumin subgraph", "Apoptosis signaling subgraph"}
+a(CHEBI:"cyclopiazonic acid") increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Albumin subgraph", "Apoptosis signaling subgraph"}
+a(CHEBI:dotarizine) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Albumin subgraph", "Apoptosis signaling subgraph"}
+a(CHEBI:"Flunarizine hydrochloride") increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16219905"}
+
+SET SupportingText = "Curcumin analog results in decreased expression of BIRC2 mRNA"
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:curcumin) decreases r(HGNC:BIRC2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16243823"}
+
+SET SupportingText = "[Curcumin co-treated with Doxorubicin] affects the expression of BIRC3 mRNA"
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+complex(a(CHEBI:curcumin), a(CHEBI:doxorubicin)) association r(HGNC:BIRC3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+r(HGNC:BIRC3) association complex(a(CHEBI:curcumin), a(CHEBI:doxorubicin))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16303979"}
+
+SET SupportingText = "Of the signaling molecules downstream of VEGF receptors, PKC has been demonstrated to be critical in mediating endothelial cell proliferation.17 18 19 Although inhibition of PKC may seem a reasonable approach to curtail endothelial cell proliferation in proliferative retinopathies,20 21 PKC serves diverse essential normal roles in intracellular signaling, indicating broad-spectrum inhibition of all PKCs may have harmful side effects, including cell apoptotic process. Riluzole inhibited PKC activity in cortical cell cultures, and also inhibited the activity of purified PKC in vitro."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Phosphatidylinositol 3 subgraph"}
+p(HGNC:PRKCA) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Phosphatidylinositol 3 subgraph"}
+a(CHEBI:Riluzole) decreases act(p(HGNC:PRKCA))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16469440"}
+
+SET SupportingText = "Kainic Acid results in increased localization of AIFM1 protein"
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:"kainic acid") increases p(MGI:Aifm1)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16507903"}
+
+SET SupportingText = "Cytoplasmic p21Cip1 has been reported to interact with stress-activated protein kinases and ASK1 kinase and to inhibit their catalytic activities, thus preventing apoptotic process.59,60 p21Cip1 has also been shown to inhibit activation of caspase 3 and to resist Fas-mediated cell death.61 In the human P301S tau mice, nerve cell death occurs through a nonapoptotic mechanism,41 suggesting a possible link with the cytoplasmic expression of p21Cip1."
+SET CellStructure = "Cytoplasm"
+SET Confidence = "High"
+SET MeSHAnatomy = {"Nerve Tissue", "Neurons"}
+SET Subgraph = {"Apoptosis signaling subgraph", "Cyclin-CDK subgraph"}
+bp(GOBP:"cell death") association p(HGNC:CDKN1A)
+UNSET {CellStructure, Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Cyclin-CDK subgraph"}
+p(HGNC:CDKN1A) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET CellStructure = "Cytoplasm"
+SET Confidence = "High"
+SET MeSHAnatomy = {"Nerve Tissue", "Neurons"}
+SET Subgraph = {"Apoptosis signaling subgraph", "Cyclin-CDK subgraph"}
+p(HGNC:CDKN1A) association bp(GOBP:"cell death")
+UNSET {CellStructure, Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16617056"}
+
+SET SupportingText = "BAK1 protein promotes the reaction [resveratrol results in increased secretion of AIFM1 protein]"
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:BAK1) increases p(HGNC:AIFM1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:resveratrol) increases p(HGNC:AIFM1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17213958"}
+
+SET SupportingText = "Acetylcholinesterase (AChE) is thought to play an important role during apoptotic process. Our results showed that H2O2 induced AChE activity, a functional marker in apoptotic process, increases in neuronal-like PC12 cells. Glutathione, which is involved in cellular redox homeostasis, inhibited the increase of AChE activity, suggesting that reactive oxygen species (ROS) play a key role in this process. Further investigation showed that the elevation of AChE was observed after the degradation of Akt, release of cytochrome c from mitochondria into the cytosol, and activation of caspase family members. When nerve growth factor (NGF) was present, with the maintenance of Akt level, the elevation of AChE, the cytochrome c diffusion, as well as apoptotic process were markedly attenuated in H2O2-treated PC12 cells"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Acetylcholine signaling subgraph", "Apoptosis signaling subgraph"}
+act(p(HGNC:ACHE), ma(pep)) regulates bp(GOBP:"neuron apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17308104"}
+
+SET SupportingText = "We report here that after binding to copper, '5-chloro-7-iodoquinolin-8-ol' can inhibit the proteasomal chymotrypsin-like activity, repress androgen receptor (AR) protein expression, and induce apoptotic cell death in human prostate cancer LNCaP and C4-2B cells."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Prostate"
+SET MeSHDisease = "Prostatic Neoplasms"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+complex(a(CHEBI:"5-chloro-7-iodoquinolin-8-ol"), a(CHEBI:"copper(2+)")) decreases p(HGNC:AR)
+UNSET {Confidence, Disease, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Prostate"
+SET MeSHDisease = "Prostatic Neoplasms"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+complex(a(CHEBI:"5-chloro-7-iodoquinolin-8-ol"), a(CHEBI:"copper(2+)")) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, MeSHAnatomy, MeSHDisease, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17316167"}
+
+SET SupportingText = "OPN is involved in a number of physiologic and pathologic events including angiogenesis, apoptotic process, inflammation, oxidative stress, remyelination, wound healing, bone remodeling, cell migration and tumorigenesis."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Chemokine signaling subgraph"}
+bp(GOBP:"apoptotic process") association p(HGNC:SPP1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Chemokine signaling subgraph"}
+p(HGNC:SPP1) association bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Since these functions of OPN, and the events that it regulates, are involved with neurodegeneration, we examined whether OPN was differentially expressed in the hippocampus of the Alzheimer's disease (AD) compared with age-matched (59-93 years) control brain."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = {"Brain", "Hippocampus"}
+SET Subgraph = "Apoptosis signaling subgraph"
+bp(GOBP:"apoptotic process") association path(MESHD:"Neurodegenerative Diseases")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = {"Brain", "Hippocampus"}
+SET Subgraph = "Apoptosis signaling subgraph"
+path(MESHD:"Neurodegenerative Diseases") association bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17869087"}
+
+SET SupportingText = "Piceatannol attenuates hydrogen-peroxide- and peroxynitrite-induced apoptosis of PC12 cells by blocking down-regulation of Bcl-XL and activation of JNK."
+SET CellLine = "PC-12 cell"
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Hydrogen peroxide subgraph"}
+a(CHEBI:"hydrogen peroxide") increases bp(GOBP:"apoptotic process")
+UNSET {CellLine, Confidence, Subgraph}
+SET CellLine = "PC-12 cell"
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Hydrogen peroxide subgraph"}
+a(CHEBI:peroxynitrite) increases bp(GOBP:"apoptotic process")
+UNSET {CellLine, Confidence, Subgraph}
+SET CellLine = "PC-12 cell"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Hydrogen peroxide subgraph"}
+a(CHEBI:piceatannol) decreases a(CHEBI:"hydrogen peroxide")
+UNSET {CellLine, Confidence, Subgraph}
+SET CellLine = "PC-12 cell"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Hydrogen peroxide subgraph"}
+a(CHEBI:piceatannol) decreases a(CHEBI:peroxynitrite)
+UNSET {CellLine, Confidence, Subgraph}
+SET CellLine = "PC-12 cell"
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Hydrogen peroxide subgraph"}
+a(CHEBI:piceatannol) increases p(HGNC:BCL2L1)
+UNSET {CellLine, Confidence, Subgraph}
+SET CellLine = "PC-12 cell"
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Hydrogen peroxide subgraph"}
+a(CHEBI:piceatannol) decreases act(p(HGNC:MAPK8))
+UNSET {CellLine, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18480271"}
+
+SET SupportingText = "Previous experiments indicate that RAGE mediates A beta-induced oxidative stress and nuclear factor-kB activation (Yan et al., 1996) as well as neuronal expression of macrophage colony-stimulating factor (Du Yan et al., 1997), mitogen-activated protein (MAP) kinases signaling defects (Arancio et al., 2004), or cell death (Hadding et al., 2004)."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Immunoglobulin subgraph"}
+p(HGNC:AGER) increases bp(GOBP:"cell death")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18624760"}
+
+SET SupportingText = "Acitretin results in increased activity of PARP1 protein"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:acitretin) increases p(HGNC:PARP1)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18692909"}
+
+SET SupportingText = "Attenuation of CNS inflammation, demyelination and neuronal damage by rivastigmine treatment. In the rivastigmine-treated group only minimal inflammation was found. A comparison of the number of inflammatory infiltrates showed a 75% reduction in the treated group (from 42.4 Â± 3.4 to 10.6 Â± 7, p = 0.002, for the control and rivastigmine groups, respectively). Demyelination, the degree of activation and the number of microglia (from 8â€“15/10 high power fields in representative control untreated mice to 1â€“3 cells/10 high power fields in representative treated mice) were also reduced ( Fig. 2D, E). Cumulatively, these reduced parameters of inflammation culminated in decreased axonal loss and damage as manifested by neurofilament staining."
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:rivastigmine) decreases bp(GOBP:"neuron death")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18718604"}
+
+SET SupportingText = "In our study, following CLP plasma TNF-Î± levels were significantly increased, while these increases were partially depressed by riluzole treatment. Recently, 2 studies have shown that glutamate induces TNF-Î± release from neuronal cells in pathological conditions, and this process may be involved in apoptotic neuronal cell death. Moreover, they confirmed that NMDA antagonists do not affect TNF-Î± level under basal conditions [38]."
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Apoptosis signaling subgraph", "Glutamatergic subgraph", "Tumor necrosis factor subgraph"}
+a(CHEBI:"glutamate(2-)") increases p(RGD:Tnf)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = {"Apoptosis signaling subgraph", "Glutamatergic subgraph", "Tumor necrosis factor subgraph"}
+p(RGD:Tnf) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18782350"}
+
+SET SupportingText = "Our results show that oligomeric Abeta specifically induces CaN activity and promotes CaN-dependent CREB and Bcl-2 Asociated death Protein (BAD) dephosphorylation and cell death"
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph", "Bcl-2 subgraph", "Calcium-dependent signal transduction", "Interleukin signaling subgraph"}
+act(complex(SCOMP:"Calcineurin Complex")) decreases p(HGNC:BAD, pmod(Ph))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Apoptosis signaling subgraph", "CREB subgraph", "Interleukin signaling subgraph"}
+act(complex(SCOMP:"Calcineurin Complex")) increases bp(GOBP:"cell death")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Apoptosis signaling subgraph", "CREB subgraph", "Interleukin signaling subgraph"}
+act(complex(SCOMP:"Calcineurin Complex")) decreases p(SFAM:"CREB Family", pmod(Ph))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Apoptosis signaling subgraph", "CREB subgraph", "Interleukin signaling subgraph"}
+p(SFAM:"CREB Family", pmod(Ph)) decreases bp(GOBP:"cell death")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "18997293"}
+
+SET SupportingText = "The present investigation reports that clinically relevant concentrations of tarenflurbil (i.e., 1-5 microM) protect both cultured human neuroblastoma cell lines and primary neurons from cytotoxicity associated with exposure to Abeta_{42} or H_{2}O_{2}. In concert with this protection, there is an upregulation of neurotrophins [i.e., nerve growth factor (NGF) and brain-derived neurotrophic factor (BDNF)]. Furthermore, blocking exogenous NGF or BDNF by binding it to antibody prevents tarenflurbil from protecting human neuronal cells from Abeta_{42} and H_{2}O_{2} cytotoxicity. These findings suggest that up-regulation of neurotrophins might represent an underlying mechanism contributing to the beneficial effects seen with tarenflurbil in AD."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Hydrogen peroxide subgraph", "Inflammatory response subgraph"}
+p(HGNC:APP, frag("672_713")) increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Hydrogen peroxide subgraph", "Inflammatory response subgraph"}
+a(CHEBI:"hydrogen peroxide") increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Hydrogen peroxide subgraph", "Inflammatory response subgraph"}
+a(CHEBI:"(R)-flurbiprofen") decreases a(CHEBI:"hydrogen peroxide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Hydrogen peroxide subgraph", "Inflammatory response subgraph"}
+a(CHEBI:"(R)-flurbiprofen") decreases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19343037"}
+
+SET SupportingText = "Simvastatin inhibits the reaction [Homocysteine results in decreased expression of BIRC2 mRNA]"
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:homocysteine) decreases r(HGNC:BIRC2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:simvastatin) increases r(HGNC:BIRC2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19372569"}
+
+SET SupportingText = "[Curcumin co-treated with Thalidomide] results in increased cleavage of PARP1 protein"
+SET Confidence = "Medium"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+complex(a(CHEBI:curcumin), a(CHEBI:thalidomide)) increases p(HGNC:PARP1)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19499146"}
+
+SET SupportingText = "Apoptosis is the most common form of physiological cell death in multicellular organisms. Apoptosis signaling is classically composed of two principle pathways. One is a direct pathway from death receptor (CD95, TNF-R1, and TRAIL-R1/TRAIL-R2 [9]) ligation to caspase cascade activation and cell death. Death receptor ligation triggers recruitment of the precursor form of caspase-8 to a death-inducing complex, through the adaptor protein FADD, which leads to caspase-8 activation. The other pathway triggered by stimuli such as drugs, radiation, infectious agents, and reactive oxygen species is initiated in mitochondria. After cytochrome c is released into the cytosol from the mitochondria, it binds to Apaf1 and ATP, which then activate caspase-9."
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Caspase subgraph", "Toll like receptor subgraph", "Tumor necrosis factor subgraph"}
+act(p(HGNC:CASP8)) increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Caspase subgraph", "Toll like receptor subgraph", "Tumor necrosis factor subgraph"}
+complex(p(HGNC:CASP8), p(HGNC:FADD), p(HGNC:PTPN13)) increases act(p(HGNC:CASP8))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Caspase subgraph", "Toll like receptor subgraph", "Tumor necrosis factor subgraph"}
+complex(p(HGNC:CASP8), p(HGNC:FADD), p(HGNC:TRADD)) increases act(p(HGNC:CASP8))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Caspase subgraph", "Electron transport chain"}
+act(p(HGNC:CASP9)) increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "It is known that lysosome is involved not only in apoptosis but also in other types of cell death. The permeabilization of the lysosome has been shown to initiate a cell death pathway in specific circumstances. Lysosomal membrane permeabilization (LMP) causes the release of cathepsins and other hydrolases from the lysosomal lumen to the cytosol. LMP is a potentially lethal event because the ectopic presence of lysosomal proteases in the cytosol causes digestion of vital proteins and the activation of additional hydrolases including caspases. This latter process is usually mediated indirectly, through a cascade in which LMP causes the proteolytic activation of Bid (which is cleaved by the two lysosomal cathepsins B and D). The Bid activation then induces mitochondrial outer membrane permeabilization, resulting in cytochrome c release and apoptosome-dependent caspase activation [19]. However, massive LMP often results in cell death without caspase activation, which may adopt a subapoptotic or necrotic appearance. Moreover, the pro-apoptotic Bcl-2 family member Bax can translocate from the cytosol to lysosomal membranes and induce LMP"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Endosomal lysosomal subgraph"}
+bp(GOBP:"apoptotic process") association a(MESHCS:Lysosomes)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Endosomal lysosomal subgraph"}
+a(MESHCS:Lysosomes) association bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Endosomal lysosomal subgraph"}
+bp(GOBP:"positive regulation of lysosomal membrane permeability") increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Endosomal lysosomal subgraph"}
+bp(GOBP:"positive regulation of lysosomal membrane permeability") increases tloc(p(GFAM:Cathepsins), fromLoc(MESHCS:Lysosomes), toLoc(MESHCS:Cytosol))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Endosomal lysosomal subgraph"}
+bp(GOBP:"positive regulation of lysosomal membrane permeability") increases act(p(HGNC:BID))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Results show that p53 has two binding sites located at the cathepsin D promoter gene and that cathepsin D participates in p53-dependent apoptotic process. Cathepsin D showed augmented activity soon after it was released and that was accompanied by increased levels of p53 protein, a cathepsin D transcription factor [16]. Therefore, the mechanism responsible for increase in cathepsin D activity might be an effect of increased synthesis regulated by p53. Cathepsin B has also been implicated in the activation of the pro-inflammatory caspases-1 and -11, and the cleavage of Bcl-2 family member Bid which may lead to cytochrome c release from the mitochondria and subsequent caspase activation"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph", "p53 stabilization subgraph"}
+act(p(HGNC:TP53), ma(tscript)) increases act(p(HGNC:CTSD))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph", "p53 stabilization subgraph"}
+complex(p(HGNC:CTSD), p(HGNC:TP53)) increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Under either physiological or pathological conditions, apoptosis is mostly driven by interactions among several families of proteins, i.e. caspases, Bcl-2 family proteins, and inhibitor of apoptosis proteins [10]. Besides the caspases, lysosomal proteases such as cathepsins D, B, and L have been shown to act as mediators of apoptosis in a number of cell systems [11â€“14]. Increased expression or activity of cathepsin D has been observed in apoptotic cells after activation of Fas/APO-12 and after exposure to oxidative stress or adriamycin "
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:CTSD) increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:CTSB) increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:CTSL) increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19519303"}
+
+SET SupportingText = "Another major physiological role of insulin and IGF-1 is the regulation of gene transcription via the MAP kinase casÂ­ cade. Following insulin and IGF-1 stimulation, IRS prote ins and GAB(GRB-2 associated binder)- I bind to the Sl-12 doÂ­ mains of several small adaptor proteins such as GRB-2. These proteins then interact with the GDP/GTP exchanoe factor SOS (son of sevenless) leading to activation of the small G-protein RAS and subsequently to the recruitment of CRAF to the membrane. Activated CRAF activates MEK which then activates extracellular signal-regulated kinase (ERK)-11-2 (37]. ERK-1/-2 mediated signals are involved in I?n -lasting neuronal plasticity, including long-term potenÂ­ tiatiOn and memory consolidation (review in [38]). In conÂ­ trast, (over-)activation of ERK-1 /-2 also leads to apoptotic eeldeath i.n cae of oxidative stress or growth factor depriÂ­ vation (review m [39]). However, ERKs seems to be an esÂ­ sential gene since animals lacking ERK-2 die in early emÂ­ bryonic development (40]."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "MAPK-ERK subgraph", "Response to oxidative stress"}
+bp(GOBP:"ERK1 and ERK2 cascade") increases bp(GOBP:"intrinsic apoptotic signaling pathway in response to oxidative stress")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19549813"}
+
+SET SupportingText = "Copper Sulfate results in decreased expression of AIFM1 mRNA"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:"copper(II) sulfate pentahydrate") decreases r(HGNC:AIFM1)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19596284"}
+
+SET SupportingText = "2-(4-morpholinyl)-8-phenyl-4H-1-benzopyran-4-one inhibits the reaction [Acrolein results in increased expression of BIRC2 protein]"
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:acrolein) increases p(HGNC:BIRC2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:LY294002) decreases p(HGNC:BIRC2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "2-(4-morpholinyl)-8-phenyl-4H-1-benzopyran-4-one inhibits the reaction [Acrolein results in increased expression of BIRC3 protein]"
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:acrolein) increases p(HGNC:BIRC3)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:LY294002) decreases p(HGNC:BIRC3)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Acrolein affects the localization of AIFM1 protein"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:AIFM1) association a(CHEBI:acrolein)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:acrolein) association p(HGNC:AIFM1)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19634143"}
+
+SET SupportingText = "Streptozocin results in increased expression of AIFM1 protein"
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:streptozocin) increases p(RGD:Aifm1)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19918364"}
+
+SET SupportingText = "Accumulation of p-WOX1, p-JNK1, p-CREB, p-c-Jun, NF-kappaB and ATF3 in the nuclei of injured neurons took place within hours or the first week of injury."
+SET Confidence = "High"
+SET MeSHAnatomy = "Neurons"
+SET MeSHDisease = "Wounds and Injuries"
+SET Subgraph = "Apoptosis signaling subgraph"
+path(MESHD:"Wounds and Injuries") increases p(HGNC:WWOX)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Evidently, WOX1 is the potential target for drug intervention in mitigating symptoms associated with neuronal injury."
+SET Confidence = "High"
+SET MeSHDisease = "Wounds and Injuries"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:WWOX) association path(MESHD:"Wounds and Injuries")
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = "Wounds and Injuries"
+SET Subgraph = "Apoptosis signaling subgraph"
+path(MESHD:"Wounds and Injuries") association p(HGNC:WWOX)
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In the chronic phase, concurrent activation of WOX1, CREB, and NF-kappaB occurs in small neurons just prior to apoptotic process."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Nuclear factor Kappa beta subgraph"}
+bp(GOBP:"cell death") association p(GFAM:"NF-kappa B complex subunits")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Nuclear factor Kappa beta subgraph"}
+bp(GOBP:"cell death") association p(HGNC:WWOX)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Nuclear factor Kappa beta subgraph"}
+p(GFAM:"NF-kappa B complex subunits") association bp(GOBP:"cell death")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Nuclear factor Kappa beta subgraph"}
+p(HGNC:WWOX) association bp(GOBP:"cell death")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Likely in vivo interactions are: 1) WOX1 inhibits the neuroprotective CREB, which leads to eventual neuronal death, and 2) WOX1 enhances NF-kappaB promoter activation (which turns to be proapoptotic)."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "CREB subgraph"}
+p(HGNC:WWOX) decreases p(SFAM:"CREB Family")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "CREB subgraph"}
+p(HGNC:WWOX) increases bp(GOBP:"cell death")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "WOX1 physically interacted with CREB most strongly in the nuclei as determined by FRET analysis."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "CREB subgraph"}
+p(HGNC:WWOX) association p(SFAM:"CREB Family")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "CREB subgraph"}
+p(SFAM:"CREB Family") association p(HGNC:WWOX)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20100581"}
+
+SET SupportingText = "In the present study, we report that administration of double-stranded RNA, a classical inducer of interferon-gamma (IFN-gamma), causes rapid and persistent activation of microglia and astrocytes, as well as induction of interleukin-1beta (IL-beta) and nitric oxide synthase. In close temporal succession to glial activation, there is neurodegeneration, with neuron loss involving apoptosis in selected brain regions including the septal nucleus, hippocampus, cortex and thalamus, along with hippocampal atrophy. This neuronal loss is accompanied by punctate deposits of material that are immunoreactive for amyloid precursor protein, beta-amyloid peptide (Abeta), and apolipoprotein E."
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:APP) association bp(HP:Neurodegeneration)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+bp(GOBP:"apoptotic process") association bp(GOBP:"microglial cell activation")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+bp(GOBP:"apoptotic process") association a(NIFT:"Hippocampal atrophy")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+bp(HP:Neurodegeneration) association p(HGNC:APP)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+bp(GOBP:"microglial cell activation") association bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(NIFT:"Hippocampal atrophy") association bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20436886"}
+
+SET SupportingText = "Isotretinoin results in decreased expression of AIFM1 mRNA"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:isotretinoin) decreases r(HGNC:AIFM1)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20847424"}
+
+SET SupportingText = "Akt substrates such as mammalian target of rapamycin (mTOR; Ser2448) and decreased levels of cell-cycle inhibitors (p27kip1) are found in AD temporal cortex when compared to controls. GSK-3a has been implicated in the production of Abeta peptide while increased GSK-3beta activity has been implicated in tau hyperphosphorylation and neuronal cell death"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"Apoptosis signaling subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B), ma(kin)) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Calcium signaling: Synaptic activity is required for neurons to survive[145] by entry of appropriate amounts of Ca2+ through synaptic NMDA receptors and other Ca2+ channels [146]. The process implicates key protein effectors, such as CaMKs, MAPK/ERKs, and CREB. Properly controlled homeostasis of calcium signaling not only supports normal brain physiology but also maintains neuronal integrity and long-term cell survival. Ca2+ signaling pathways can suppress apoptosis and promote survival through two mechanistically distinct processes. One process involves the PI3K/AKT signaling pathway which promotes survival [147]. The other pathway requires the generation of calcium transients in the cell nucleus which offers long-lasting neuroprotection [146, 148]. Malfunctioning of calcium signaling to the cell nucleus may lead to neurodegeneration and neuronal cell death ."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Calcium-dependent signal transduction"}
+bp(GOBP:"calcium-mediated signaling") decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Calcium-dependent signal transduction"}
+bp(GOBP:"calcium-mediated signaling") increases bp(GOBP:"negative regulation of neuron apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Mitochondrial Abeta-binding alcohol dehydrogenase (ABAD): ABAD is a member of the short chain dehydrogenase reductase family in mitochondria that binds Abeta. Binding of Abeta to ABAD distorts the enzymebetas structure, rendering it inactive. In neurons, ABAD is predominately localized to mitochondria. Upon binding ABAD, Abeta triggers events leading to neuronal apoptosis through a mitochondrial pathway.Interestingly, mitochondrial ABAD is upregulated in neurons from AD patients. The ABAD-Abeta complex has been hypothesized to induce oxidant stress and mitochondrial dysfunction. Increased expression of ABAD exacerbates Abeta-mediated mitochondrial and neuronal stress. Abeta binding to ABAD causes free radical production and neuronal apoptotic process"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"reactive oxygen species") increases bp(GOBP:"neuron apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20885006"}
+
+SET SupportingText = "Furthermore, the results demonstrated that the administration of riluzole can attenuate the morphine-induced elevation of glutamate in the lumbar spinal cord. In conclusion, i.c.v. administration of riluzole attenuated morphine-induced tolerance to analgesia and apoptosis in addition to preventing the morphine-induced increase of glutamate in the lumbar spinal cord of rats. In addition to being an anti-glutamatergic agent, riluzole also has antioxidant effects and can protect dopaminergic neurons against oxidative stress by reducing lipid peroxidation and ATP consumption [19, 27, 35, 36]. On the other hand, our results show that 80 Âµg/10 Âµl of riluzole increases the level of Bcl-2 in the lumbar spinal cord when administered with morphine"
+SET Confidence = "High"
+SET Species = "10116"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:Riluzole) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21179406"}
+
+SET SupportingText = "Hydrogen Peroxide affects the expression of AIFM1 protein"
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:"hydrogen peroxide") association p(HGNC:AIFM1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:AIFM1) association a(CHEBI:"hydrogen peroxide")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21246057"}
+
+SET SupportingText = "We also show that NPD1 downregulates Abeta42-triggered expression of the pro-inflammatory enzyme cyclooxygenase-2 (COX-2) and of B-94 (a TNF-alpha-inducible pro-inflammatory element) and apoptosis in HNG cells. Moreover, NPD1 suppresses Abeta42 peptide shedding by down-regulating beta-secretase-1 (BACE1) while activating the beta-secretase ADAM10 and up-regulating sAPPalpha, thus shifting the cleavage of betaAPP holoenzyme from an amyloidogenic into the non-amyloidogenic pathway."
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Neuroprotection subgraph"}
+a(CHEBI:"protectin D1") decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21396986"}
+
+SET SupportingText = "Seladin-1 was considered a novel neuroprotective factor, because of its anti-apoptotic activity. Subsequently, it was demonstrated that seladin-1 has also enzymatic activity [3-beta-hydroxysterol delta-24-reductase, (DHCR24)], which catalyzes the synthesis of cholesterol from desmosterol. The amount of membrane cholesterol may play an important role both in protecting neuronal cells against toxic insults and in inhibiting the production of beta-amyloid. We demonstrated that seladin-1 overexpression increases the amount of membrane cholesterol and induces resistance against beta-amyloid aggregates in neuroblastoma cells, whereas a specific inhibitor of DHCR24 increased cell vulnerability. We also hypothesized that seladin-1 might be a mediator of the neuroprotective effects of estrogens. We first demonstrated that, in human fetal neuroepithelial cells (FNC), 17beta-estradiol, raloxifene, and tamoxifen exert protective effects against beta-amyloid toxicity and oxidative stress. In addition, these molecules significantly increased the expression of seladin-1 and the amount of cell cholesterol. Then, we showed that, upon seladin-1 silencing, the protective effects of estrogens were abolished, thus indicating this factor as a fundamental mediator of estrogen-mediated neuroprotection, at least in FNC cells. Furthermore, we detected the presence of functionally active half-palindromic estrogen responsive elements upstream the coding region of the seladin-1 gene. Overall, our results indicate that seladin-1 may be viewed as a multi-faceted protein, which conjugates both the neuroprotective properties of estrogens and the important functions of cholesterol in maintaining brain homeostasis"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Cholesterol metabolism subgraph"}
+act(p(HGNC:DHCR24)) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21400612"}
+
+SET SupportingText = "GW0742 promotes the reaction [sulindac sulfide results in increased cleavage of PARP1 protein]"
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:"sulindac sulfide") increases p(HGNC:PARP1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+complex(a(CHEBI:"GW 0742"), a(CHEBI:"sulindac sulfide")) increases p(HGNC:PARP1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21490080"}
+
+SET SupportingText = "Compared with the control group, acidic buffer or plus cyclosporine A post-conditioning significantly improved myocardial performance, decreased cytochrome C release into the cytosol, increased Bcl-2 expression and decreased Bax expression, decreased sensitivity of mPTP-opening to [Ca2+] and the rate of apoptosis after reperfusion. These findings suggested that acidic buffer or plus cyclosporine A post- conditioning prevented apoptotic process-related mitochondrial permeabilization and provided the myocardial protection after cardioplegic arrest."
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Apoptosis signaling subgraph", "Bcl-2 subgraph"}
+a(CHEBI:"cyclosporin A") decreases p(MGI:Cycs)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Apoptosis signaling subgraph", "Bcl-2 subgraph"}
+a(CHEBI:"cyclosporin A") increases p(MGI:Bcl2)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Apoptosis signaling subgraph", "Bcl-2 subgraph"}
+a(CHEBI:"cyclosporin A") decreases p(MGI:Bax)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Apoptosis signaling subgraph", "Bcl-2 subgraph"}
+a(CHEBI:"cyclosporin A") decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21699726"}
+
+SET SupportingText = "PKR inhibition prevented Abeta42-induced activation of IÎºB and NF-ÎºB, strongly decreased production and release/ of tumor necrosis factor (TNFÎ±) and interleukin (IL)-1beta, and limited apoptotic process."
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(MGI:Eif2ak2) increases bp(GOBP:"neuron death")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21826169"}
+
+SET SupportingText = "Estradiol affects the expression of AIFM1 mRNA"
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:estradiol) association r(HGNC:AIFM1)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "9606"
+SET Subgraph = "Apoptosis signaling subgraph"
+r(HGNC:AIFM1) association a(CHEBI:estradiol)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21857080"}
+
+SET SupportingText = "The levels of the anti-apoptotic proteins Bcl-2 and HSP70 were higher in the riluzole groups than in the control. Furthermore, co-administration of riluzole with morphine significantly decreased caspase-3 protein levels and glutamate content of the cerebral cortex compared with the control. In conclusion, we found that icv administration of riluzole attenuates morphine-induced apoptosis in the cerebral cortex after the development of morphine tolerance."
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:Riluzole) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21893081"}
+
+SET SupportingText = "Recently, we have reported that intracerebroventricular (ICV) administration of okadaic acid (OKA) in rats induces memory impairment that was associated with increased oxidative stress. Besides memory deficit, OKA caused impairment in mitochondrial function as revealed by alterations in calcium ion, reactive oxygen species (ROS) generation, mitochondrial membrane potential (MMP), SDH activity and ATP level in the brain regions. Further, in histopathological study it was observed that donepezil and memantine reduced the cell loss and neurodegeneration in hippocampus and periventricular cortex regions in OKA treated rats."
+SET Confidence = "High"
+SET MeSHAnatomy = {"Cerebral Cortex", "Hippocampus"}
+SET Species = "10116"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:donepezil) decreases bp(GOBP:"neuron death")
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Cerebral Cortex", "Hippocampus"}
+SET Species = "10116"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:memantine) decreases bp(GOBP:"neuron death")
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21945540"}
+
+SET SupportingText = "Abeta-Amyloid (Abeta) plaques in Alzheimer (AD) brains are surrounded by severe dendritic and axonal changes, including local spine loss, axonal swellings and distorted neurite trajectories. Whether and how plaques induce these neuropil abnormalities remains unknown. We tested the hypothesis that oligomeric assemblies of Abeta, seen in the periphery of plaques, mediate the neurodegenerative phenotype of AD by triggering activation of the enzyme GSK-3beta, which in turn appears to inhibit a transcriptional program mediated by CREB. We detect increased activity of GSK-3beta after exposure to oligomeric Abeta in neurons in culture, in the brain of double transgenic APP/tau mice and in AD brains. Activation of GSK-3beta, even in the absence of Abeta, is sufficient to produce a phenocopy of Abeta-induced dendritic spine loss in neurons in culture, while pharmacological inhibition of GSK-3beta prevents spine loss and increases expression of CREB-target genes like BDNF. Of note, in transgenic mice GSK-3beta inhibition ameliorated plaque-related neuritic changes and increased CREB-mediated gene expression. Moreover, GSK-3beta inhibition robustly decreased the oligomeric Abeta load in the mouse brain. All these findings support the idea that GSK3beta is aberrantly activated by the presence of Abeta, and contributes, at least in part, to the neuronal anatomical derangement associated with Abeta plaques in AD brains and to Abeta pathology itself."
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:APP, frag("672_713")) increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21978835"}
+
+SET SupportingText = "Further study indicated that hyperoside can activate the PI3K/Akt signaling pathway, resulting in inhibition of the interaction between Bad and Bcl(XL), without effects on the interaction between Bad and Bcl-2."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Bcl-2 subgraph"}
+a(CHEBI:"quercetin 3-O-beta-D-galactopyranoside") decreases complex(p(HGNC:BAD), p(HGNC:BCL2L1))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22046282"}
+
+SET SupportingText = "Activated gadd153 can generate oxidative damage and reactive oxygen species (ROS), increase beta-amyloid (Abeta) levels, disturb iron homeostasis and induce inflammation as well as cell death, which are all pathological hallmarks of AD."
+SET Confidence = "High"
+SET MeSHDisease = {"Alzheimer Disease", "Inflammation"}
+SET Subgraph = {"Apoptosis signaling subgraph", "Response DNA damage"}
+p(HGNC:DDIT3) increases bp(GOBP:"cell death")
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22058016"}
+
+SET SupportingText = "CTNNB1 mutant form inhibits the reaction [Simvastatin results in increased expression of BGLAP protein]"
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:CTNNB1) decreases p(HGNC:BGLAP)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:simvastatin) increases p(HGNC:BGLAP)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22110360"}
+
+SET SupportingText = "Dyrk1A activity is involved in cell proliferation and differentiation (Dierssen and de Lagran, 2006). For example, while Ras-dependent signaling is required for promoting or maintaining neuronal differentiation, Dyrk1A modulates ERK activation by interacting with Ras, B-Raf, and MEK1 and by facilitating the formation of a Ras/B-Raf/MEK1 multi-protein complex (Kelly and Rahmani, 2005). Recently, many studies implicated a potential role of Dyrk1A during cell death. For example, Dyrk1A caused the formation of abnormal protein aggregates through the phosphorylation of a-synuclein, APP, and tau. Furthermore, these cells show a marked increase of apoptotic cell death (Park et al., 2007), indicating that the overexpression of Dyrk1A induces cell death"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "DYRK1A subgraph"}
+act(p(HGNC:DYRK1A)) increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22122372"}
+
+SET SupportingText = "APP-binding protein 1 reportedly interacts with AICD and activates the neddylation pathway, further down-regulating the level of b-catenin and potentially resulting in apoptotic process. In addition, cellular Ca2+ homeostasis appears to be modulated by AICD"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site") association p(HGNC:APBB2)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site") association bp(GOBP:"calcium ion homeostasis")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:APBB2) association p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+bp(GOBP:"calcium ion homeostasis") association p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+complex(p(HGNC:APBB2), p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site")) increases bp(GOBP:"positive regulation of protein neddylation")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+complex(p(HGNC:APBB2), p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site")) decreases p(HGNC:CTNNB1)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+complex(p(HGNC:APBB2), p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site")) increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In addition, AICD-induced cytotoxicity may be mediated by its regulation targets. For example, P53 expression, as well as p53-mediated apoptotic process, can be enhanced by AICD. Another AICD target gene, GSK3-beta, may also contribute to AICD-related cytotoxicity by upregulating tau hyperphosphorylation. GSK-3beta activation and CRMP-2 phosphorylation, along with downstream tau hyper-phosphorylation/aggregation, neurodegeneration and memory loss, are observed in an AICD C59 transgenic mouse line in which Fe65 is co-expressed"
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Apoptosis signaling subgraph", "Tau protein subgraph"}
+p(HGNC:MAPT, pmod(Ph)) increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = {"Apoptosis signaling subgraph", "GSK3 subgraph"}
+act(p(HGNC:GSK3B)) increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "High"
+SET Species = "10090"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:DPYSL2, pmod(Ph)) increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In addition, AICD-induced cytotoxicity may be mediated by its regulation targets. For example, P53\ expression, as well as p53-mediated apoptotic process, can be enhanced by AICD. Another AICD target gene, GSK3-b, may also\ contribute to AICD-related cytotoxicity by up-regulating tau hyperphosphorylation. GSK-3b activation and collapsin\ response mediator protein 2 (CRMP2) phosphorylation, along with downstream tau hyper-phosphorylation/aggregation,\ neurodegeneration and memory loss"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "p53 stabilization subgraph"}
+p(INTERPRO:"Amyloidogenic glycoprotein, intracellular domain, conserved site") increases act(p(HGNC:TP53))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "p53 stabilization subgraph"}
+act(p(HGNC:TP53)) increases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22223749"}
+
+SET SupportingText = "The ability of integrins to bind the extracellular matrix and provide linkage to the actin cytoskeleton via talin and vinculin is critical for fundamental biological processes, including cell adhesion, cell survival and death, cell migration, and neurite outgrowth"
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+bp(GOBP:"focal adhesion assembly") regulates bp(GOBP:"cell death")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22235318"}
+
+SET SupportingText = "In vitro studies revealed that (1) exposure of neural stem cells (NSCs) from the hippocampus to STZ strikingly increased intracellular reactive oxygen species (ROS) levels, induced cell death and perturbed cell proliferation and differentiation, (2) hydrogen peroxide induced similar cellular activities as STZ, (3) pre-incubation of STZ-treated NSCs with catalase, an antioxidant, suppressed all these cellular activities induced by STZ, and (4) likewise, pre-incubation of STZ-treated NSCs with salidroside, also an antioxidant, suppressed all these activities as catalase: reduction of ROS levels and NSC death with simultaneous increases in proliferation and differentiation."
+SET Cell = "neuronal stem cell"
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:streptozocin) increases a(CHEBI:"reactive oxygen species")
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "neuronal stem cell"
+SET Confidence = "High"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = "Apoptosis signaling subgraph"
+a(CHEBI:streptozocin) increases bp(GOBP:"cell death")
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "neuronal stem cell"
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(MESHC:Catalase) decreases a(CHEBI:"reactive oxygen species")
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "neuronal stem cell"
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(MESHC:Catalase) decreases bp(GOBP:"cell death")
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "neuronal stem cell"
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:Salidroside) decreases a(CHEBI:"reactive oxygen species")
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "neuronal stem cell"
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Hippocampus"
+SET Subgraph = {"Apoptosis signaling subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:Salidroside) decreases bp(GOBP:"cell death")
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22236693"}
+
+SET SupportingText = "Cholinergic hypothesis [3,4] has been used to elucidate the role of NGFR in AD pathogenesis because of selective loss of BFCN observed in AD patients. That is, elevated expression of NGFR and decreased TrkA may activate neuron apoptosis of NGFR on BFCN and thus reduce the interaction of NGFR with Abeta and proNGF, which lower the neurotoxicity and apoptosis of BFCN. All together, these mechanisms may explain the protective effect of NGFR rs734194 on the risk of AD observed in this study."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"Apoptosis signaling subgraph", "Nerve growth factor subgraph"}
+bp(GOBP:"apoptotic process") negativeCorrelation p(HGNC:NTRK1)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"Apoptosis signaling subgraph", "Nerve growth factor subgraph"}
+p(HGNC:NTRK1) negativeCorrelation bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"Apoptosis signaling subgraph", "Nerve growth factor subgraph"}
+g(HGNC:NGFR) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"Apoptosis signaling subgraph", "Nerve growth factor subgraph"}
+complex(p(HGNC:APP, frag("672_713")), p(HGNC:NGFR)) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22249458"}
+
+SET SupportingText = "oxidative stress-mediated ERK activation contributes to increases in beta-secretase and, thus, an increase of Abeta generation in neuronal cells expressing mutant PS2"
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph", "Beta secretase subgraph", "Response to oxidative stress"}
+p(HGNC:BACE1) increases a(CHEBI:"amyloid-beta")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph", "Beta secretase subgraph", "Response to oxidative stress"}
+bp(GOBP:"intrinsic apoptotic signaling pathway in response to oxidative stress") directlyIncreases p(HGNC:BACE1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22433871"}
+
+SET SupportingText = "Truncated phospholipids were essential elements of TNFalpha-induced apoptosis because overexpression of PAFAH2 (a phospholipase A(2) that selectively hydrolyzes truncated phospholipids) blocked TNFalpha-induced Az-PC accumulation without affecting phospholipid peroxidation. PAFAH2 also abolished apoptotic process. Thus, phospholipid oxidation and truncation to apoptotic phospholipids comprise an essential element connecting TNFalpha receptor signaling to mitochondrial damage and apoptotic death"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Lipid peroxidation subgraph", "Tumor necrosis factor subgraph"}
+r(HGNC:PAFAH2) increases p(HGNC:PAFAH2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Lipid peroxidation subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:PAFAH2) increases deg(a(CHEBI:phospholipid))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Lipid peroxidation subgraph", "Tumor necrosis factor subgraph"}
+p(HGNC:PAFAH2) decreases p(HGNC:TNF)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22496686"}
+
+SET SupportingText = "Another relevant role for PSs is Notch processing. Notch signaling is involved in cell fate regulation, cell differentiation, proliferation, and apoptosis as well as neurodegeneration. Notch is a membrane receptor whose C-terminal domain (NICD), upon interaction with appropriate ligands, translocates into the nucleus where it activates the CSL family of transcription factors. NICD formation depends on gamma-secretase complex as the AICD fragment of AbetaPP. PSs play a role in apoptotic process, since FAD mutants cause cell death or induce secondary events that may lead to apoptotic process .Animals, in which PS1 and PS2 genes are deleted, show deficit in learning, memory, synaptic function and neuronal death. The processes beneath these effects are unknown, but the findings that PS1 interacts with antiapoptotic member of Bcl-2 family might indicate a possible mechanism."
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+bp(GOBP:"apoptotic process") association bp(GOBP:"Notch signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+bp(GOBP:"Notch signaling pathway") association bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+bp(GOBP:"Notch signaling pathway") association bp(GOBP:"neuron death")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+bp(GOBP:"neuron death") association bp(GOBP:"Notch signaling pathway")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+tloc(p(SFAM:"NOTCH Family"), fromLoc(MESHCS:Cytoplasm), toLoc(MESHCS:"Cell Nucleus")) increases act(p(HGNC:RBPJL))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Notch signaling subgraph"}
+p(HGNC:BCL2) decreases bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In this context, it was reported that other two adaptor proteins, which have been involved in the regulation of the amyloidogenic pathway, ShcA and growth factor receptor-bound protein 2 (Grb2) are able to interact with the cytodomain of AbetaPP in the presence of specific tyrosine 682 phosphorylation in the YENPTY motif of AbetaPP cytodomain. ShcA (or ShcC) adaptors connect growth factor receptors to specific signaling pathways (typically Ras/ERK1/2 pathway but also PI3K/Akt signalling) and are involved in cell proliferation differentiation and apoptotic process and neuronal development. Also the role of Grb2 in Ras-signaling pathway is well known as well as its involvement in the activation of the mitogen-activated protein kinase (MAPK) pathways cascade. It is worth noting that ERK1/2 activity is increased in AD brains and that activated MAPKs have been involved in the abnormal hyperphosphorylation of Tau in AD"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "MAPK-ERK subgraph"}
+act(p(SFAM:"MAPK Erk1/2 Family")) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "PS1 also modulates basal level of ERK1/2 activity through a ras-Raf-MEK-dependent pathway activated by a direct binding with the SH2 domain of Grb2. ERK family is one of the most ubiquitous cellular signaling mechanisms, whose activation links extracellular stimuli to cell proliferation, survival, and differentiation, but also cell death and apoptotic process. In this respect, it is worth of note to observe, as mentioned above, that ERK1/2 pathway is also modulated by AbetaPP"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "MAPK-ERK subgraph"}
+bp(GOBP:"apoptotic process") association act(p(SFAM:"MAPK Erk1/2 Family"))
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "MAPK-ERK subgraph"}
+act(p(SFAM:"MAPK Erk1/2 Family")) association bp(GOBP:"apoptotic process")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Recent data have demonstrated that AbetaPP may signal to the nucleus also using a Abeta-secretase-independent mechanism that involves membrane sequestration and phosphorylation of Tip60.More recently, Stante et al. have suggested that the presence of Fe65 into the nucleus may have a protective role, and that its translocation depends on AbetaPP. They propose that DNA repair defects could significantly contribute to the neurodysfunction and neurodegeneration observed in AD, and that an involvement of the Fe65-APP complex in the response of the cells to DNA damage and in the DNA repair machinery could represent a possible mechanism contributing to neuronal degeneration observed in AD pathology"
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Apoptosis signaling subgraph", "Response DNA damage"}
+p(HGNC:APP) increases p(HGNC:KAT5, pmod(Ph))
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Apoptosis signaling subgraph", "Response DNA damage"}
+complex(p(HGNC:APBB1), p(HGNC:APP)) association bp(GOBP:"cellular response to DNA damage stimulus")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+complex(p(HGNC:APBB1), p(HGNC:APP)) increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Apoptosis signaling subgraph", "Response DNA damage"}
+bp(GOBP:"cellular response to DNA damage stimulus") association complex(p(HGNC:APBB1), p(HGNC:APP))
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22523685"}
+
+SET SupportingText = "APP and amyloid-beta may block mitochondrial translocation of nuclear-encoded proteins, such as components of the electron transport chain, impairing mitochondrial function. Intramitochondrial amyloid-beta is able to perturb mitochondrial function in several ways by directly influencing extracellular transport chain complex activities, impairing mitochondrial dynamics, or disturbing calcium storage, thus increasing apoptotic pathways. Moreover, amyloid-beta interacts with mitochondrial matrix components inducing an improper mitochondrial complex function leads to a decreased mitochondrial membrane potential of the organelle and impairing ATP formation."
+SET CellStructure = "Mitochondria"
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+p(HGNC:APP) increases bp(GOBP:"apoptotic process")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+SET CellStructure = "Mitochondria"
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+a(CHEBI:"amyloid-beta") increases bp(GOBP:"apoptotic process")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In support of the hypothesis that APP and amyloid-beta enter mitochondria, several studies have found APP and its derivatives (monomeric and oligomeric forms of amyloid-beta) in mitochondrial membranes. Amyloid-beta normally interact with the mitochondrial matrix protein, amyloid-beta-binding alcohol dehydrogenase (ABAD), leading to mitochondrial dysfunction"
+SET CellStructure = "Mitochondria"
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Apoptosis signaling subgraph"}
+complex(a(CHEBI:"amyloid-beta"), p(HGNC:HSD17B10)) decreases bp(GOBP:"mitochondrion organization")
+UNSET {CellStructure, Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22874667"}
+
+SET SupportingText = "We recently reported that S-nitrosylation of Cdk5 (forming SNO-Cdk5) at specific cysteine residues results in excessive activation of Cdk5, contributing to mitochondrial dysfunction, synaptic damage, and neuronal cell death in models of AD."
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Apoptosis signaling subgraph", "Cyclin-CDK subgraph"}
+act(p(HGNC:CDK5)) increases bp(HP:"Abnormality of mitochondrial metabolism")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Apoptosis signaling subgraph", "Cyclin-CDK subgraph"}
+act(p(HGNC:CDK5)) increases bp(GOBP:"cell death")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23092889"}
+
+SET SupportingText = "Double-stranded RNA-dependent protein kinase (PKR) is implicated in inflammation and immune dysfunction/ through its regulation of mitogen-activated protein kinases, interferon regulatory factor 3, nuclear factor ÎºB,/ apoptotic process, and autophagy pathways. A study shows that PKR is also required for the activation of inflammasomes and/ the subsequent release of high-mobility group box 1 (HMGB1) protein, a proinflammatory cytokine. Thus, the cell stress/ kinase PKR has multifaceted roles in the regulation of inflammatory immune responses, and PKR and HMGB1 are attractive/ targets for inflammasome-associated diseases."
+SET Confidence = "Very High"
+SET Subgraph = {"Apoptosis signaling subgraph", "MAPK-JNK subgraph"}
+p(HGNC:EIF2AK2) regulates bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23153928"}
+
+SET SupportingText = "Previously, we reported a Ca(2+)/calmodulin (CaM)-dependent impairment of apoptosis induced by serum deprivation in Alzheimer's disease (AD) lymphoblasts."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Apoptosis signaling subgraph", "Calcium-dependent signal transduction"}
+p(SFAM:"CALM Family") decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23791873"}
+
+SET SupportingText = "These results collectively suggest that CopA3-mediated protein degradation of p27Kip1 may be the main mechanism through which CopA3 exerts neuroprotective and neurotropic effects."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Cyclin-CDK subgraph", "Neuroprotection subgraph"}
+bp(MESH:D000066829) association deg(p(HGNC:CDKN1B))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Cyclin-CDK subgraph", "Neuroprotection subgraph"}
+deg(p(HGNC:CDKN1B)) association bp(MESH:D000066829)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24454492"}
+
+SET SupportingText = "A scavenger of extracellular calcium and an antagonist of transient receptor potential vanilloid-1 (TRPV-1) decreased the percentage of autophagy accompanied by an increase in apoptotic process, suggesting that Evo may induce calcium-mediated protective autophagy resulting from an influx of extracellular calcium."
+SET Confidence = "High"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:TRPV1) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24821282"}
+
+SET SupportingText = "Knockdown of phosphotyrosyl phosphatase activator induces apoptosis via mitochondrial pathway and the attenuation by simultaneous tau hyperphosphorylation. Phosphotyrosyl phosphatase activator (PTPA) is decreased in the brains of Alzheimer's disease (AD) and the AD transgenic mouse models."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Brain"
+SET Species = "10090"
+SET Subgraph = "Apoptosis signaling subgraph"
+path(MESHD:"Alzheimer Disease") negativeCorrelation p(HGNC:PTPA)
+UNSET {Confidence, Disease, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Brain"
+SET Species = "10090"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:PTPA) decreases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Brain"
+SET Species = "10090"
+SET Subgraph = "Apoptosis signaling subgraph"
+p(HGNC:PTPA) negativeCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "25570489"}
+
+SET SupportingText = "After false discovery rate correction, we observed 53 significant associations between SNPs and our imaging features, including associations of ventricular enlargement with SNPs on estrogen receptor 1 (ESR1) and sortilin-related VPS10 domain containing receptor 1 (SORCS1), hippocampal atrophy with SNPs on ESR1, and cerebral atrophy with SNPs on transferrin (TF) and amyloid beta precursor protein (APP)."
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Estrogen subgraph"}
+a(NIFT:"Hippocampal atrophy") association p(HGNC:ESR1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Estrogen subgraph"}
+p(HGNC:ESR1) association a(NIFT:"Ventricular expansion")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Estrogen subgraph"}
+p(HGNC:ESR1) association a(NIFT:"Hippocampal atrophy")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Apoptosis signaling subgraph", "Estrogen subgraph"}
+a(NIFT:"Ventricular expansion") association p(HGNC:ESR1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "25698445"}
+
+SET SupportingText = "Specifically, conditional loss of beta1-integrin prevented Abeta42O-induced Cofilin activation, and allosteric modulation or activation of beta1-integrin significantly reduced Abeta42O binding to neurons while blocking Abeta42O-induced reactive oxygen species (ROS) production, mitochondrial dysfunction, depletion of F-actin/focal Vinculin, and apoptotic process."
+SET Confidence = "Medium"
+SET Subgraph = {"Apoptosis signaling subgraph", "Regulation of actin cytoskeleton subgraph"}
+a(CHEBI:"amyloid-beta polypeptide 42") increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "26808775"}
+
+SET SupportingText = "The tumor necrosis factor like weak inducer of apoptosis (TWEAK) and its receptor, fibroblast growth factor-inducible 14 (Fn14), mediate inflammation and neuronal apoptosis in cerebral edema, ischemic stroke and multiple sclerosis."
+SET Confidence = "High"
+SET Disease = "multiple sclerosis"
+SET MeSHAnatomy = "Neurons"
+SET Subgraph = {"Apoptosis signaling subgraph", "Tumor necrosis factor subgraph"}
+complex(p(HGNC:TNFRSF12A), p(HGNC:TNFRSF25)) increases bp(GOBP:"apoptotic process")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################

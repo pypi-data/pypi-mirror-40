@@ -1,0 +1,1419 @@
+# This document was created by PyBEL v0.13.1-dev and bel-resources v0.0.2-dev on Tue Jan  8 14:53:23 2019
+
+################################################################################
+#| Metadata
+################################################################################
+
+SET DOCUMENT Name = "Nitric oxide subgraph"
+SET DOCUMENT Version = "5.1.2"
+SET DOCUMENT ContactInfo = "daniel.domingo.fernandez@scai.fraunhofer.de"
+SET DOCUMENT Licenses = "CC BY 4.0"
+SET DOCUMENT Copyright = "Copyright © 2019 Fraunhofer SCAI, All rights reserved."
+
+################################################################################
+#| Namespaces
+################################################################################
+
+# Enumerated Namespaces
+# ---------------------
+DEFINE NAMESPACE ADO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns"
+DEFINE NAMESPACE BRCO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns"
+DEFINE NAMESPACE CHEBI AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/chebi-names.belns"
+DEFINE NAMESPACE CTO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE ECCODE AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+DEFINE NAMESPACE FPLX AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+DEFINE NAMESPACE GFAM AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3f89d31906739fce9678d868b6a599a851aa7c00/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/go.belns"
+DEFINE NAMESPACE GOBP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20170725.belns"
+DEFINE NAMESPACE GOCC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170725.belns"
+DEFINE NAMESPACE HBP AS URL "https://raw.githubusercontent.com/pharmacome/terminology/570376e4c233483b667eab12a1f964950368282a/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/hgnc-symbols.belns"
+DEFINE NAMESPACE HP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE INTERPRO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-20170731.belns"
+DEFINE NAMESPACE MESH AS URL "https://raw.githubusercontent.com/pharmacome/terminology/1b20f0637c395f8aa89c2e2e342d7b704062c242/external/mesh.belns"
+DEFINE NAMESPACE MESHC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170725.belns"
+DEFINE NAMESPACE MESHCS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20170511.belns"
+DEFINE NAMESPACE MESHD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20170725.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20170725.belns"
+DEFINE NAMESPACE MGI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20170725.belns"
+DEFINE NAMESPACE NIFT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/imaging-ontology/imaging-ontology-1.0.6.belns"
+DEFINE NAMESPACE PTS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/neurodegeneration-pathways/neurodegeneration-pathways-1.0.0.belns"
+DEFINE NAMESPACE RGD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20170725.belns"
+DEFINE NAMESPACE SCOMP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Regular Expression Namespaces
+# -----------------------------
+DEFINE NAMESPACE DBSNP AS PATTERN "^rs\d+$"
+DEFINE NAMESPACE TAXONOMY AS PATTERN "^\d+$"
+
+################################################################################
+#| Annotations
+################################################################################
+
+# Enumerated Annotations
+# ----------------------
+DEFINE ANNOTATION Anatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION Cell AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION CellLine AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Confidence AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+# Regular Expression Annotations
+# ------------------------------
+DEFINE ANNOTATION Species AS PATTERN "\d+"
+
+# Locally Defined Annotations
+# ---------------------------
+DEFINE ANNOTATION Condition AS LIST {"Normal Healthy State"}
+DEFINE ANNOTATION Developmental_Phase__of_patient AS LIST {"Developmental stage", "Old"}
+DEFINE ANNOTATION DiseaseState AS LIST {"Early-onset AD", "Familial Alzheimers Disease", "Late-onset AD", "Mild AD", "Moderate AD", "Sporadic Alzheimers Disease"}
+DEFINE ANNOTATION Duration_of_Chemical_Exposure AS LIST {"Chronic", "Subchronic"}
+DEFINE ANNOTATION Encode_Feature_Types AS LIST {"Promoter"}
+DEFINE ANNOTATION Experimental_Group AS LIST {"Physical exercised group", "Sedentary group"}
+DEFINE ANNOTATION FDASTATUS AS LIST {"Phase 2", "Phase 3"}
+DEFINE ANNOTATION KnockoutMice AS LIST {"App transgenic"}
+DEFINE ANNOTATION NIFT AS LIST {"Positron Emission Tomography", "Volumetric MRI"}
+DEFINE ANNOTATION Patient AS LIST {"AD T2DM +ve", "AD T2DM -ve", "APOE e4 +ve", "APOE e4 -ve"}
+DEFINE ANNOTATION Published AS LIST {"CDR story", "Epilepsy comorbidity paper"}
+DEFINE ANNOTATION Race AS LIST {"Caucasian", "Chinese", "Colombian", "Italian", "Swedish", "Taiwanese"}
+DEFINE ANNOTATION Transcriptionally_active_region AS LIST {"3 prime UTR", "5 prime UTR"}
+DEFINE ANNOTATION UserdefinedCellLine AS LIST {"293APPwt", "App transgenic", "CHOAPPsw", "INS-1 cells", "N2a695 cell", "NT2N cells", "Neuroblastoma cell", "primary cortical neuron", "primary neuron"}
+
+################################################################################
+#| Statements
+################################################################################
+SET Citation = {"PubMed", "11556547"}
+
+SET SupportingText = "Because an adequate supply of L-arginine is indispensable for prolonged NO generation, coinduction of ASS enables cells to sustain NO generation during AD by replenishing necessary supply of L-arginine."
+SET Confidence = "High"
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:ASS1) increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "GFAP-positive astrocytes expressing ASS were not increased in AD brains versus controls, whereas the number of iNOS expressing GFAP-positive astrocytes was significantly higher in AD brains."
+SET Confidence = "High"
+SET MeSHAnatomy = {"Astrocytes", "Brain"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") positiveCorrelation g(HGNC:NOS2)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "Low"
+SET MeSHAnatomy = {"Astrocytes", "Brain"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") positiveCorrelation g(HGNC:GFAP)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Astrocytes", "Brain"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+g(HGNC:NOS2) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "Low"
+SET MeSHAnatomy = {"Astrocytes", "Brain"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+g(HGNC:GFAP) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "In 3 areas examined (hippocampus, frontal, and entorhinal cortex), a marked increase in neuronal ASS and iNOS expression was observed in AD brains."
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Brain", "Entorhinal Cortex", "Hippocampus"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") positiveCorrelation g(HGNC:ASS1)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Brain", "Entorhinal Cortex", "Hippocampus"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") positiveCorrelation g(HGNC:NOS2)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Brain", "Entorhinal Cortex", "Hippocampus"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+g(HGNC:ASS1) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Brain", "Entorhinal Cortex", "Hippocampus"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+g(HGNC:NOS2) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Occasionally, both ASS-and iNOS expression was detectable in CD 68-positive activated microglia cells in close proximity to senile plaques."
+SET Confidence = "High"
+SET MeSHAnatomy = {"Astrocytes", "Brain"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+g(HGNC:ASS1) association bp(GOBP:"microglial cell activation")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Astrocytes", "Brain"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+g(HGNC:NOS2) association bp(GOBP:"microglial cell activation")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Astrocytes", "Brain"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+bp(GOBP:"microglial cell activation") association g(HGNC:ASS1)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Astrocytes", "Brain"}
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+bp(GOBP:"microglial cell activation") association g(HGNC:NOS2)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The enzyme argininosuccinate synthetase (ASS) is the rate limiting enzyme in the metabolic pathway leading from L-citrulline to L-arginine, the physiological substrate of all isoforms of nitric oxide synthases (NOS)."
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+act(p(HGNC:ASS1), ma(cat)) increases rxn(reactants(a(CHEBI:"L-citrulline")), products(a(CHEBI:"L-arginine")))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "These results suggest that neurons and astrocytes express ASS in human brain constitutively, whereas neuronal and glial ASS expression increases parallel to iNOS expression in AD."
+SET Confidence = "High"
+SET MeSHAnatomy = "Microglia"
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+g(HGNC:ASS1) positiveCorrelation g(HGNC:NOS2)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Microglia"
+SET MeSHDisease = "Plaque, Amyloid"
+SET Subgraph = "Nitric oxide subgraph"
+g(HGNC:NOS2) positiveCorrelation g(HGNC:ASS1)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12218642"}
+
+SET SupportingText = "In animal models of ischemic stroke, statins have proven to reduce infarct size through up-regulation of endothelial nitric oxide synthases."
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS3) association path(MESHD:Stroke)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:statin) increases p(HGNC:NOS3)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:Stroke) association p(HGNC:NOS3)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Vascular risk factors such as hypertension and hypercholesterolemia during midlife increase the risk for Alzheimer's disease (AD)."
+SET Confidence = "High"
+SET MeSHDisease = {"Alzheimer Disease", "Hypercholesterolemia", "Hypertension"}
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:Hypertension) increases path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = {"Alzheimer Disease", "Hypercholesterolemia", "Hypertension"}
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:Hypercholesterolemia) increases path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "12675915"}
+
+SET SupportingText = "Inflammatory responses were achieved by injection of aggregated Abeta1-42 peptide and IL-1beta into frontal cortex, which induced neuronal inducible nitric oxide synthase (iNOS) and microglial IL-1beta expression."
+SET Confidence = "High"
+SET Subgraph = {"Inflammatory response subgraph", "Nitric oxide subgraph"}
+bp(GOBP:"inflammatory response") increases r(MGI:Il1b)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Inflammatory response subgraph", "Nitric oxide subgraph"}
+bp(GOBP:"inflammatory response") increases r(MGI:Nos2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15016421"}
+
+SET SupportingText = "The endothelial nitric oxide synthase (NOS3) gene encodes endothelial NOS, an enzyme that regulates the production of the vasodilatory nitric oxide associated with the cerebral small vessel pathology observed in early AD."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = {"Cerebrum", "Endothelium"}
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = {"Cerebrum", "Endothelium"}
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") association a(CHEBI:"nitric oxide")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = {"Cerebrum", "Endothelium"}
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS3) regulates a(CHEBI:"nitric oxide")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15181248"}
+
+SET SupportingText = "Apolipoprotein E3 (apoE3) and apoE4 suppressed oligomeric Abeta-induced production of inducible nitric oxide synthase and cyclo-oxygenase-2, supporting an anti- inflammatory role for apoE."
+SET Confidence = "Medium"
+SET Subgraph = {"APOE subgraph", "Nitric oxide subgraph"}
+p(HGNC:APOE) decreases a(MESHC:"Nitric Oxide Synthase")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "15232608"}
+
+SET SupportingText = "The extracellular amyloid deposits in senile plaques also trigger reactive glial changes and neuroinflammation that can also contribute to neuronal loss through production of reactive oxygen species (ROS), NO, and proinflammatory cytokines such as TNF-a and IL-1Abeta."
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"amyloid-beta") increases path(MESHD:"Neurogenic Inflammation")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"amyloid-beta") increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"nitric oxide") increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+p(HGNC:APP, frag("672_713")) increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+a(CHEBI:"reactive oxygen species") increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph", "Reactive oxygen species subgraph"}
+bp(GOBP:"reactive oxygen species metabolic process") increases bp(GOBP:"neuron apoptotic process")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16054114"}
+
+SET SupportingText = "It has been shown that apoE increased the production of nitric oxide (NO) from human monocyte-derived macrophages (MDM); this effect could represent an important link between tissue redox balance and inflammation, since inflammation and oxidative stress are involved in chronic neurodegenerative disorders. Moreover, it has been evidenced that an overproduction of NO in the central nervous system (CNS) may play a key role in aging and that the glial cells (microglials cells and probably astrocytes) are able to form consistent amounts of NO through the induction of a nitric oxide synthase (iNOS) isoform so-called inducible or inflammatory.We observed a decreased NO production after incubation with both LDL and HDL and an increased peroxynitrite production. As it concerns NOS expression, densitometric analysis of bands indicated that iNOS protein levels were significantly higher in the cells incubated with both AD lipoproteins and offspring lipoproteins compared to cells incubated with control lipoproteins. These findings suggest the possibility to identify in NO pathway a precocious marker of AD."
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") increases path(GOBP:aging)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS2) increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"APOE subgraph", "Nitric oxide subgraph"}
+p(HGNC:APOE) increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+complex(GOCC:"low-density lipoprotein particle") decreases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+complex(GOCC:"low-density lipoprotein particle") decreases a(ADO:peroxynitrite)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+complex(GOCC:"high-density lipoprotein particle") decreases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+complex(GOCC:"high-density lipoprotein particle") decreases a(ADO:peroxynitrite)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16472958"}
+
+SET SupportingText = "Recently, it was proposed that some NSAIDs might activate the peroxisome proliferator-activated / receptor-gamma (PPAR-gamma). PPAR-gamma belongs to a family of nuclear receptors that are able to regulate the / transcription of pro-inflammatory molecules, such as iNOS. "
+SET Confidence = "Low"
+SET Subgraph = {"Nitric oxide subgraph", "Peroxisome proliferator activated receptor subgraph"}
+p(HGNC:NOS2) increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Nitric oxide subgraph", "Peroxisome proliferator activated receptor subgraph"}
+p(HGNC:PPARG) regulates p(HGNC:NOS2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "16813604"}
+
+SET SupportingText = "Finally, we compiled results of previous studies of Glu298Asp using meta-analysis, to determine whether the aggregate studies support an association between Glu298Asp and AD. None of the additional SNPs were associated with AD in the Caucasians, whereas two showed evidence for association in the African Americans.The meta-analysis showed a small effect of the Glu298Asp GG genotype on AD risk across all studies (summary odds ratio = 1.15, 95% confidence interval: 0.97-1.35)"
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:NOS3, var("p.Glu298Asp"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS3, var("p.Glu298Asp")) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Genetic association between endothelial nitric oxide synthase and Alzheimer disease."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:NOS3)
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS3) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The Glu/Glu genotype at the Glu298Asp variant of the endothelial nitric oxide synthase (NOS3) gene has been tested for association with AD in several Caucasian and Asian populations, with conflicting results."
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Species = "9606"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") association p(HGNC:NOS3, var("p.Glu298Asp"))
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Species = "9606"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS3, var("p.Glu298Asp")) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17385278"}
+
+SET SupportingText = " Indeed, we have found that a combination of three major pro-inflammatory cytokines, IL-1beta+IFN-gamma+TNF-alpha, causes normal adult human astrocytes (NAHA) to express nitric oxide synthase-2 (NOS-2) and make dangerously large amounts of NO via mitogen-activated protein kinases (MAPKs). "
+SET Confidence = "High"
+SET Subgraph = {"Inflammatory response subgraph", "Interferon signaling subgraph", "Interleukin signaling subgraph", "Nitric oxide subgraph", "Tumor necrosis factor subgraph"}
+composite(p(HGNC:IFNG), p(HGNC:IL1B), p(HGNC:TNF)) increases p(HGNC:NOS2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Soluble Abeta40, the major amyloid precursor protein cleavage product, by itself stimulates astrocytes to express NOS-2 and make NO, possibly by activating p75(NTR) receptors, which they share with neurons, and can considerably amplify NOS-2 expression by the pro-inflammatory cytokine trio. "
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Nerve growth factor subgraph", "Nitric oxide subgraph"}
+p(HGNC:APP, frag("672_711")) increases act(p(HGNC:NGFR))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Nerve growth factor subgraph", "Nitric oxide subgraph"}
+act(p(HGNC:NGFR)) increases p(HGNC:NOS2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "17553629"}
+
+SET SupportingText = "Plasma levels of C-reactive protein (CRP), interleukin-6 (IL-6), tumor necrosis factor-alpha (TNF-alpha), and lipid peroxides are elevated and concentrations of endothelial nitric oxide (eNO) decreased in type 2 diabetes mellitus and Alzheimer's disease."
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") negativeCorrelation path(MESHD:"Diabetes Mellitus, Type 2")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") negativeCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") negativeCorrelation a(CHEBI:"nitric oxide")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Diabetes Mellitus, Type 2") negativeCorrelation a(CHEBI:"nitric oxide")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19419557"}
+
+SET SupportingText = "Excessive activation of glutamate receptors can result in neuronal dysfunction and cell death, a process called excitotoxicity. Uncontrolled activation of ionotropic receptors leads to an excessive influx of calcium through the plasma membrane, which along with impairments of synaptic activation and neuronal plasticity, activate a number of calcium-dependent enzymes involved in the catabolism of proteins, phospholipids, and nucleic acids, as well as in the synthesis of nitric oxide (NO).These alterations can potentially lead to cell death through different pathways, such as membrane break-down, cytoskeletal alterations, and NO-derived free radical production."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Glutamatergic subgraph", "Nitric oxide subgraph"}
+p(MESH:D058468) increases a(CHEBI:"nitric oxide")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Glutamatergic subgraph", "Nitric oxide subgraph"}
+p(MESH:D058468) increases bp(GOBP:"regulation of calcium-mediated signaling")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Low"
+SET Subgraph = {"Glutamatergic subgraph", "Nitric oxide subgraph"}
+act(p(HGNC:GRIN1)) increases a(CHEBI:"nitric oxide")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Low"
+SET Subgraph = {"Glutamatergic subgraph", "Nitric oxide subgraph"}
+act(p(HGNC:GRIN1)) increases bp(GOBP:"negative regulation of calcium-mediated signaling")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Low"
+SET Subgraph = {"Glutamatergic subgraph", "Nitric oxide subgraph"}
+act(p(SFAM:"GRIA Family")) increases a(CHEBI:"nitric oxide")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Low"
+SET Subgraph = {"Glutamatergic subgraph", "Nitric oxide subgraph"}
+act(p(SFAM:"GRIA Family")) increases bp(GOBP:"negative regulation of calcium-mediated signaling")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "19885299"}
+
+SET SupportingText = "In the first stage of this study a total of 152 SNPs were screened (Table S6). All SNPs did not significantly deviate from Hardyâ€“Weinberg equilibrium proportions in controls, 10 SNPs deviated in cases. 39 SNPs dropped out prior to analysis due to monomorphism (nâ€‰=â€‰8), genotyping failure (nâ€‰=â€‰21), not biallelic (nâ€‰=â€‰2) and a MAFâ€‰<â€‰0.05 (nâ€‰=â€‰8). A total of 113 SNPs were analyzed for association with disease status in the overall sample, and 6 SNPs in 5 different genes showed significant association with disease status under at least one genetic model (Table I). Both SNPs within SOS2 were significantly associated with disease status, with the remaining positive SNPs located within RPS6KA2 (Gene ID 6196), HNF4A (Gene ID 3172), PPP1CC (Gene ID 5501), and PCK1. Additional analysis of the data stratified by APOE genotype provided evidence of association for 15 SNPs in either the APOE ε4 positive or APOE ε4 negative sample sets (Table I). Two of these SNPs were associated in the overall Stage 1 sample; SNP 139 (HNF4A) and SNP 150 (PCK1), and it was observed that these SNPs had a greater effect when stratified by APOE genotype: OR 0.5 versus 0.63; OR 2.11 versus 1.54, respectively. Two further PCK1 SNPs (SNP 144 and SNP 149) showed marginal association in the APOE ε4 positive samples (Pâ€‰=â€‰0.07, 0.09). In addition, there was evidence of positive association for both PPARgamma polymorphisms (SNP 65 and SNP 66) in the APOE ε4 positive sample set. Allele 2 of both of these SNPs (G and T, respectively) appeared to protect against disease (ORâ€‰=â€‰0.5, ORâ€‰=â€‰0.45). The result obtained with the major allele of SNP 52 within INSR (Gene ID 3643), allele A, was also suggestive of a protective factor (ORâ€‰=â€‰0.5; APOE ε4 negative samples). A further SNP from INSR, SNP 48, showed a trend toward association, but this result was observed in the APOE ε4 positive samples (Pâ€‰=â€‰0.06). SNP 20 from the ENPP1 gene (Gene ID 5167) showed evidence for association in both the APOE ε4 positive and ε4 negative samples. A final 7 SNPs showed evidence of association in the APOE ε4 positive samples, SNP 34 (INPPL1 Gene ID 3636), SNP 62 (HK2 Gene ID 3099), SNP 93 (NOS3 Gene ID 4846), and in the APOE ε4 negative samples, SNP 72 (GC Gene ID 2638), SNP 94 (ADRB3 Gene ID 155), SNP 130 (CETP Gene ID 1071), and SNP 136 (PPP2R1A Gene ID 5518). Following correction using the False Discovery Rate Procedure (FDR) at a variety of levels, however, the majority of these results could be rejected as false discoveries (Table S8)."
+SET Confidence = "High"
+SET Patient = "APOE e4 +ve"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") association g(HGNC:NOS3)
+UNSET {Confidence, Patient, Subgraph}
+SET Confidence = "High"
+SET Patient = "APOE e4 +ve"
+SET Subgraph = "Nitric oxide subgraph"
+g(HGNC:NOS3) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Patient, Subgraph}
+SET Confidence = "Low"
+SET Subgraph = "Nitric oxide subgraph"
+g(HGNC:NOS3) association bp(MESHPP:"Polymorphism, Single Nucleotide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Low"
+SET Subgraph = "Nitric oxide subgraph"
+bp(MESHPP:"Polymorphism, Single Nucleotide") association g(HGNC:NOS3)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20100581"}
+
+SET SupportingText = "In the present study, we report that administration of double-stranded RNA, a classical inducer of interferon-gamma (IFN-gamma), causes rapid and persistent activation of microglia and astrocytes, as well as induction of interleukin-1beta (IL-beta) and nitric oxide synthase. In close temporal succession to glial activation, there is neurodegeneration, with neuron loss involving apoptosis in selected brain regions including the septal nucleus, hippocampus, cortex and thalamus, along with hippocampal atrophy. This neuronal loss is accompanied by punctate deposits of material that are immunoreactive for amyloid precursor protein, beta-amyloid peptide (Abeta), and apolipoprotein E."
+SET Confidence = "High"
+SET Subgraph = {"Interferon signaling subgraph", "Nitric oxide subgraph"}
+p(HGNC:NOS1) association p(HGNC:IFNG)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Interferon signaling subgraph", "Nitric oxide subgraph"}
+p(HGNC:IFNG) association p(HGNC:NOS1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "20670888"}
+
+SET SupportingText = "Here, we report that nitric oxide (NO) reacts with XIAP by S-nitrosylating its RING domain (forming SNO-XIAP), thereby inhibiting E3 ligase and antiapoptotic activity."
+SET Confidence = "Very High"
+SET Subgraph = {"Nitric oxide subgraph", "Ubiquitin degradation subgraph", "XIAP subgraph"}
+complex(a(CHEBI:"nitric oxide"), p(HGNC:XIAP)) decreases bp(GOBP:"regulation of ubiquitin protein ligase activity")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Very High"
+SET Subgraph = {"Nitric oxide subgraph", "Ubiquitin degradation subgraph", "XIAP subgraph"}
+complex(a(CHEBI:"nitric oxide"), p(HGNC:XIAP)) increases bp(GOBP:"apoptotic signaling pathway")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21443265"}
+
+SET SupportingText = "Herein, we present evidence that all ApoE isoforms bind to nitric oxide synthase 1 (NOS1) and that such protein-protein interaction results in S-nitrosylation of ApoE2 and ApoE3 but not ApoE4."
+SET Confidence = "Medium"
+SET Subgraph = {"APOE subgraph", "Nitric oxide subgraph"}
+complex(p(HGNC:APOE), p(HGNC:NOS1)) increases bp(GOBP:"peptidyl-cysteine S-nitrosylation")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "21903077"}
+
+SET SupportingText = "NO contributes to cell signaling by inducing posttranslational protein modifications. Under pathological conditions there is a shift from the signal transducing actions to the formation of protein tyrosine nitration by secondary products like peroxynitrite and nitrogen dioxide. We identified amyloid Abeta (Abeta) as an NO target, which is nitrated at tyrosine 10 (3NTyr(10)-Abeta). Nitration of Abeta accelerated its aggregation and was detected in the core of Abeta plaques of APP/PS1 mice and AD brains."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+a(CHEBI:"nitric oxide") association bp(GOBP:"neuronal signal transduction")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+bp(GOBP:"neuronal signal transduction") association a(CHEBI:"nitric oxide")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+a(CHEBI:"nitrogen dioxide") increases p(HGNC:APP, var("p.Asn10Tyr"))
+UNSET {Condition, Confidence, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Species = "10090"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+p(HGNC:APP, var("p.Asn10Tyr")) increases p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, Disease, Species, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Species = "10090"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+p(HGNC:APP, var("p.Asn10Tyr")) increases path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, Species, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Low"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+a(CHEBI:peroxynitrite) increases p(HGNC:APP, var("p.Asn10Tyr"))
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Part of the inflammatory response in Alzheimer's disease (AD) is the upregulation of the inducible nitric oxide synthase (NOS2) resulting in increased NO production."
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS2) positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS2) increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") positiveCorrelation p(HGNC:NOS2)
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = {"Alzheimer Disease", "Amyloidosis"}
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") increases p(HGNC:NOS2)
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "Very High"
+SET Disease = "Alzheimer's disease"
+SET Subgraph = "Nitric oxide subgraph"
+bp(GOBP:"inflammatory response") increases p(HGNC:NOS2)
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22079549"}
+
+SET SupportingText = "Although minimizing these detrimental factors is the best course of action, nonetheless chronological age steadily impairs endothelial function through reduced endothelial nitric oxide synthase (eNOS) expression/action, accelerated nitric oxide (NO) degradation, increased phosphodiesterase activity, inhibition of NOS activity by endogenous NOS inhibitors, increased production of reactive oxygen species, inflammatory reactions, decreased endothelial progenitor cell number and function, and impaired telomerase activity or telomere shortening."
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+bp(GOBP:aging) decreases p(HGNC:NOS3)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+bp(GOBP:aging) increases deg(a(CHEBI:"nitric oxide"))
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+bp(GOBP:aging) decreases bp(GOBP:"regulation of nitric-oxide synthase activity")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+bp(GOBP:aging) increases a(CHEBI:"reactive oxygen species")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = "Nitric oxide subgraph"
+bp(GOBP:aging) decreases bp(GOBP:"regulation of telomerase activity")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22227962"}
+
+SET SupportingText = "These data suggest that NOS2 upregulation impairs amyloid beta degradation through negative regulation of IDE activity and thus loss of NOS2 activity will positively influence amyloid beta clearance."
+SET Confidence = "Medium"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+a(CHEBI:"amyloid-beta") positiveCorrelation p(HGNC:NOS2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+deg(a(CHEBI:"amyloid-beta")) negativeCorrelation p(HGNC:NOS2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+p(HGNC:NOS2) negativeCorrelation act(p(HGNC:IDE))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Very High"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS2) decreases p(HGNC:IDE)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+p(HGNC:NOS2) positiveCorrelation a(CHEBI:"amyloid-beta")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+p(HGNC:NOS2) negativeCorrelation deg(a(CHEBI:"amyloid-beta"))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Very High"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS2) increases deg(p(HGNC:APP, frag("672_713")))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS2) negativeCorrelation deg(p(HGNC:APP, frag("672_713")))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+deg(p(HGNC:APP, frag("672_713"))) negativeCorrelation p(HGNC:NOS2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+act(p(HGNC:IDE)) increases deg(p(HGNC:APP, frag("672_713")))
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+act(p(HGNC:IDE)) negativeCorrelation p(HGNC:NOS2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22237943"}
+
+SET SupportingText = "However, co-stimulation with Ab and fucoidan induced a statistically significant increase on JNK activation"
+SET Condition = "Normal Healthy State"
+SET Confidence = "High"
+SET Subgraph = {"Binding and Uptake of Ligands by Scavenger Receptors", "Nitric oxide subgraph"}
+complex(a(CHEBI:fucoidan), p(HGNC:APP)) increases bp(GOBP:"positive regulation of JNK cascade")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Our results suggest that SRs play a role on inflammatory activation, inducing production of NO and IL1Abeta, and show potentiation by Abeta. Potentiation of the inflammatory response of Abeta could be meaningful for the activation of glia observed in AD.We propose that scavenger receptors (SR) participate in the activation of glia by Abeta."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Very High"
+SET Subgraph = {"Binding and Uptake of Ligands by Scavenger Receptors", "Nitric oxide subgraph"}
+act(p(HGNC:MSR1)) increases a(CHEBI:"nitric oxide")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Thus, Ab, SR ligands and LI were all able to induce production of pro-IL1b and IL1b by astrocytes"
+SET Condition = "Normal Healthy State"
+SET Confidence = "Low"
+SET Subgraph = {"Binding and Uptake of Ligands by Scavenger Receptors", "Nitric oxide subgraph"}
+p(HGNC:SCARF1) increases a(CHEBI:"nitric oxide")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Low"
+SET Subgraph = {"Binding and Uptake of Ligands by Scavenger Receptors", "Nitric oxide subgraph"}
+p(HGNC:SCARB1) increases a(CHEBI:"nitric oxide")
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Low"
+SET Subgraph = {"Binding and Uptake of Ligands by Scavenger Receptors", "Nitric oxide subgraph"}
+p(HGNC:SCARA5) increases a(CHEBI:"nitric oxide")
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22431227"}
+
+SET SupportingText = "Concurrently, Abeta alters erythrocyte cell morphology, decreases nitrites and nitrates levels, and affects membrane acetylcholinesterase activity."
+SET Cell = "erythrocyte"
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:APP, frag("672_713")) decreases a(CHEBI:nitrite)
+UNSET {Cell, Confidence, Subgraph}
+SET Cell = "erythrocyte"
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:APP, frag("672_713")) decreases a(CHEBI:nitrate)
+UNSET {Cell, Confidence, Subgraph}
+SET Cell = "erythrocyte"
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:APP, frag("672_713")) association act(p(HGNC:ACHE))
+UNSET {Cell, Confidence, Subgraph}
+SET Cell = "erythrocyte"
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+act(p(HGNC:ACHE)) association p(HGNC:APP, frag("672_713"))
+UNSET {Cell, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "beta-amyloid decreases detectable endothelial nitric oxide synthase in human erythrocytes: a role for membrane acetylcholinesterase."
+SET Cell = "erythrocyte"
+SET Confidence = "High"
+SET MeSHAnatomy = "Endothelium"
+SET Species = "9606"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:APP, frag("672_713")) decreases p(HGNC:NOS3)
+UNSET {Cell, Confidence, MeSHAnatomy, Species, Subgraph}
+SET Cell = "erythrocyte"
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Endothelium"
+SET Species = "9606"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS3) association act(a(MESHC:Acetylcholinesterase))
+UNSET {Cell, Confidence, MeSHAnatomy, Species, Subgraph}
+SET Cell = "erythrocyte"
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Endothelium"
+SET Species = "9606"
+SET Subgraph = "Nitric oxide subgraph"
+act(a(MESHC:Acetylcholinesterase)) association p(HGNC:NOS3)
+UNSET {Cell, Confidence, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22512552"}
+
+SET SupportingText = "Nitric oxide (NO), which is produced by oxidation of L-arginine to L-citrulline in a process catalyzed by different isoforms of nitric oxide synthase (NOS), exhibits diverse roles in several physiological processes, including neurotransmission, blood pressure regulation and immunological defense mechanisms."
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") association bp(MESHPP:"Synaptic Transmission")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") association bp(GOBP:"regulation of blood pressure")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+bp(MESHPP:"Synaptic Transmission") association a(CHEBI:"nitric oxide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+bp(GOBP:"regulation of blood pressure") association a(CHEBI:"nitric oxide")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "On the other hand, an overproduction of NO is related with several disorders as Alzheimer's disease, Huntington's disease and the amyotrophic lateral sclerosis."
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "Huntington's disease", "amyotrophic lateral sclerosis"}
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") positiveCorrelation path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "Huntington's disease", "amyotrophic lateral sclerosis"}
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") positiveCorrelation path(MESHD:"Huntington Disease")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "Huntington's disease", "amyotrophic lateral sclerosis"}
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") positiveCorrelation path(MESHD:"Amyotrophic Lateral Sclerosis")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "Huntington's disease", "amyotrophic lateral sclerosis"}
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Alzheimer Disease") positiveCorrelation a(CHEBI:"nitric oxide")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "Huntington's disease", "amyotrophic lateral sclerosis"}
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Huntington Disease") positiveCorrelation a(CHEBI:"nitric oxide")
+UNSET {Confidence, Disease, Subgraph}
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "Huntington's disease", "amyotrophic lateral sclerosis"}
+SET Subgraph = "Nitric oxide subgraph"
+path(MESHD:"Amyotrophic Lateral Sclerosis") positiveCorrelation a(CHEBI:"nitric oxide")
+UNSET {Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Structural comparison between the three most representative families of compounds (kynurenines, kynurenamines and 4,5-dihydro-1H-pyrazole derivatives) allows the establishment of structure-activity relationships for the inhibition of nNOS, and a pharmacophore model that fulfills all of the observed SARs were developed."
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:kynurenamines) decreases p(HGNC:NOS1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"1H-pyrazole") decreases p(HGNC:NOS1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22550546"}
+
+SET SupportingText = "NGF increases APP levels through enhanced translation rate and that NO, which modulates the NGF-induced increase in APP protein, also regulates APP mRNA levels and could play a role in APP processing Interestingly, we also found that this inhibition of NOS only partially attenuated the increase in APP promoter activation mediated by NGF [7] suggesting that NGF- signal transduction pathways and NO may be influencing the rate of APP mRNA or protein synthesis or degradation in addition to altering gene transcription."
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+a(CHEBI:"nitric oxide") regulates p(HGNC:APP)
+UNSET {Condition, Confidence, Subgraph}
+SET Condition = "Normal Healthy State"
+SET Confidence = "Medium"
+SET Subgraph = {"Nerve growth factor subgraph", "Nitric oxide subgraph"}
+p(HGNC:NGF) increases p(HGNC:APP)
+UNSET {Condition, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "22874667"}
+
+SET SupportingText = "Here, we demonstrate that neuronal nitric oxide synthase (NOS1) interacts with Cdk5 and that the close proximity of the two proteins facilitates the formation of SNO-Cdk5."
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "Nitric oxide subgraph"}
+p(HGNC:CDK5) association bp(GOBP:"peptidyl-cysteine S-trans-nitrosylation")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "Nitric oxide subgraph"}
+bp(GOBP:"peptidyl-cysteine S-trans-nitrosylation") association p(HGNC:CDK5)
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "Nitric oxide subgraph"}
+complex(p(HGNC:CDK5), p(HGNC:NOS1)) increases bp(GOBP:"peptidyl-cysteine S-trans-nitrosylation")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Interestingly, as a negative feedback mechanism, Cdk5 phosphorylates and suppresses NOS1 activity."
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "Nitric oxide subgraph"}
+p(HGNC:CDK5) increases p(HGNC:NOS1, pmod(Ph))
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Cyclin-CDK subgraph", "Nitric oxide subgraph"}
+p(HGNC:CDK5) decreases act(p(HGNC:NOS1))
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "23254638"}
+
+SET SupportingText = "Further, in in vitro cell culture studies, GSNO treatment also decreased the cytokine-induced proinflammatory responses, such as activations of NFÎºB and STAT3 and expression of ICAM-1 and VCAM-1 in endothelial cells."
+SET Cell = "endothelial cell"
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = {"Nitric oxide subgraph", "Tumor necrosis factor subgraph"}
+a(CHEBI:"S-nitrosoglutathione") decreases act(complex(SCOMP:"Nfkb Complex"))
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "endothelial cell"
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"S-nitrosoglutathione") decreases act(p(HGNC:STAT3))
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "endothelial cell"
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = {"Cell adhesion subgraph", "Nitric oxide subgraph"}
+a(CHEBI:"S-nitrosoglutathione") decreases p(HGNC:VCAM1)
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+SET Cell = "endothelial cell"
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = {"Cell adhesion subgraph", "Nitric oxide subgraph"}
+a(CHEBI:"S-nitrosoglutathione") decreases p(HGNC:ICAM1)
+UNSET {Cell, Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "GSNO treatment (50 Î¼g/kg/day for 2 months) significantly improved learning and memory performance of BCCAO rats and reduced the Abeta levels and ICAM-1/VCAM-1 expression in the brain."
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Species = "10116"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"S-nitrosoglutathione") increases bp(GOBP:memory)
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Species = "10116"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"S-nitrosoglutathione") increases bp(GOBP:learning)
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Species = "10116"
+SET Subgraph = {"Cell adhesion subgraph", "Lipid metabolism subgraph", "Nitric oxide subgraph"}
+a(CHEBI:"S-nitrosoglutathione") decreases p(RGD:Vcam1)
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Species = "10116"
+SET Subgraph = {"Low density lipoprotein subgraph", "Nitric oxide subgraph"}
+a(CHEBI:"S-nitrosoglutathione") decreases p(RGD:Icam1)
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Brain"
+SET Species = "10116"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+a(CHEBI:"S-nitrosoglutathione") decreases p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+SET SupportingText = "S-nitrosoglutathione (GSNO) is an endogenous nitric oxide carrier modulating endothelial function, inflammation, and neurotransmission."
+SET Confidence = "High"
+SET MeSHDisease = "Inflammation"
+SET Subgraph = {"Inflammatory response subgraph", "Nitric oxide subgraph"}
+path(MESHD:Inflammation) association a(CHEBI:"S-nitrosoglutathione")
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "High"
+SET MeSHDisease = "Inflammation"
+SET Subgraph = {"Inflammatory response subgraph", "Nitric oxide subgraph"}
+a(CHEBI:"S-nitrosoglutathione") association path(MESHD:Inflammation)
+UNSET {Confidence, MeSHDisease, Subgraph}
+SET Confidence = "Medium"
+SET MeSHDisease = "Inflammation"
+SET Subgraph = {"Inflammatory response subgraph", "Nitric oxide subgraph"}
+a(CHEBI:"S-nitrosoglutathione") regulates path(MESHD:Inflammation)
+UNSET {Confidence, MeSHDisease, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24090820"}
+
+SET SupportingText = "Consistent with these results, Î±-iso-cubebene inhibited the expression of inducible nitric oxide synthase (iNOS), cyclooxygenase 2 (COX-2) and MMP-9 in amyloid beta-stimulated microglia."
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+a(MESHC:"alpha-iso-cubebene") decreases p(HGNC:NOS2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24293250"}
+
+SET SupportingText = "Nanomedicine: action of metal nanoparticles on neuronal nitric oxide synthase-fluorimetric analysis on the mechanism for fibrillogenesis."
+SET Confidence = "Low"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS1) association a(CHEBI:nanoparticle)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Low"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:nanoparticle) association p(HGNC:NOS1)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "The incubation of neuronal nitric oxide synthase with the five amyloid peptide fragments [Abeta17-21; Abeta25-29; Abeta29-33; Abeta33-37; Abeta25-37] catalyzed the formation of fibrils."
+SET Confidence = "Medium"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+complex(a(CHEBI:"amyloid-beta"), p(HGNC:NOS1)) increases bp(GOBP:"amyloid fibril formation")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24332564"}
+
+SET SupportingText = "First, Pin1 inhibits the production of Abeta, and enhances the activity of eNOS. Second, Abeta and eNOS form a mutual inhibition system. Third, the well-balanced feedback signaling loop avoids the development of AD, HTN, and CAA by inhibiting the frequent pathological characteristics of these diseases, including Abeta deposition in cerebral microvessels and cerebral microbleeds."
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "Medium"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+p(HGNC:APP, frag("672_713")) increases a(CHEBI:"amyloid-beta")
+UNSET {Anatomy, Confidence, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "Low"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+p(HGNC:APP, frag("672_713")) increases path(MESHD:"Alzheimer Disease")
+UNSET {Anatomy, Confidence, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "High"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+p(HGNC:APP, frag("672_713")) decreases p(HGNC:NOS3)
+UNSET {Anatomy, Confidence, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "High"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+p(HGNC:NOS3) decreases p(HGNC:APP, frag("672_713"))
+UNSET {Anatomy, Confidence, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "Medium"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+p(HGNC:PIN1) decreases a(CHEBI:"amyloid-beta")
+UNSET {Anatomy, Confidence, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "High"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+p(HGNC:PIN1) increases act(p(HGNC:NOS3))
+UNSET {Anatomy, Confidence, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "Low"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+composite(p(HGNC:NOS3), p(HGNC:PIN1)) decreases p(HGNC:APP, frag("672_713"))
+UNSET {Anatomy, Confidence, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Herein, we hypothesize that a feedback signaling loop, consisted of Pin1, endothelial nitric oxide synthase (eNOS), and amyloid-beta (Abeta), may contribute to the interesting pathological phenomenon."
+SET Confidence = "Low"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+p(HGNC:APP, frag("672_713")) association p(HGNC:NOS3)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "Low"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+p(HGNC:APP, frag("672_713")) association p(HGNC:PIN1)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "Low"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+p(HGNC:NOS3) association p(HGNC:PIN1)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "Low"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+p(HGNC:NOS3) association p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "Low"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+p(HGNC:PIN1) association p(HGNC:NOS3)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "Low"
+SET MeSHAnatomy = "Endothelium"
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+p(HGNC:PIN1) association p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "On one hand, Pin1 and eNOS not only inhibit Abeta production but also accelerate Abeta clearance, preventing Abeta deposition in cerebral microvessels. On the other hand, Pin1 and eNOS promote vasodilatation and prevent the elevation of blood pressure in brain, alleviating the pathology of cerebral microbleeds. However, once the precise balance is disturbed, it may result in Abeta deposition, microbleeds, and elevated blood pressure, possibly leading to the synchronous occurrence of AD, HTN, and CAA."
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "Medium"
+SET Disease = {"Alzheimer's disease", "cerebral amyloid angiopathy", "hypertension"}
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+composite(p(HGNC:NOS3), p(HGNC:PIN1)) decreases a(CHEBI:"amyloid-beta")
+UNSET {Anatomy, Confidence, Disease, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "High"
+SET Disease = {"Alzheimer's disease", "cerebral amyloid angiopathy", "hypertension"}
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+composite(p(HGNC:NOS3), p(HGNC:PIN1)) increases bp(GOBP:vasodilation)
+UNSET {Anatomy, Confidence, Disease, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "Medium"
+SET Disease = {"Alzheimer's disease", "cerebral amyloid angiopathy", "hypertension"}
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+composite(p(HGNC:NOS3), p(HGNC:PIN1)) increases bp(GOBP:"regulation of blood pressure")
+UNSET {Anatomy, Confidence, Disease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Pin1, endothelial nitric oxide synthase, and amyloid-beta form a feedback signaling loop involved in the pathogenesis of Alzheimer's disease, hypertension, and cerebral amyloid angiopathy."
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Cerebrum", "Endothelium"}
+SET MeSHDisease = {"Alzheimer Disease", "Cerebral Amyloid Angiopathy", "Hypertension"}
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+path(MESHD:"Alzheimer Disease") association composite(a(CHEBI:"amyloid-beta"), p(HGNC:NOS3), p(HGNC:PIN1))
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Cerebrum", "Endothelium"}
+SET MeSHDisease = {"Alzheimer Disease", "Cerebral Amyloid Angiopathy", "Hypertension"}
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+composite(a(CHEBI:"amyloid-beta"), p(HGNC:NOS3), p(HGNC:PIN1)) association path(MESHD:"Alzheimer Disease")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Cerebrum", "Endothelium"}
+SET MeSHDisease = {"Alzheimer Disease", "Cerebral Amyloid Angiopathy", "Hypertension"}
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+composite(a(CHEBI:"amyloid-beta"), p(HGNC:NOS3), p(HGNC:PIN1)) association path(MESHD:Hypertension)
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Cerebrum", "Endothelium"}
+SET MeSHDisease = {"Alzheimer Disease", "Cerebral Amyloid Angiopathy", "Hypertension"}
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+composite(a(CHEBI:"amyloid-beta"), p(HGNC:NOS3), p(HGNC:PIN1)) association path(MESHD:"Cerebral Amyloid Angiopathy")
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Cerebrum", "Endothelium"}
+SET MeSHDisease = {"Alzheimer Disease", "Cerebral Amyloid Angiopathy", "Hypertension"}
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+path(MESHD:Hypertension) association composite(a(CHEBI:"amyloid-beta"), p(HGNC:NOS3), p(HGNC:PIN1))
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = {"Cerebrum", "Endothelium"}
+SET MeSHDisease = {"Alzheimer Disease", "Cerebral Amyloid Angiopathy", "Hypertension"}
+SET Subgraph = {"Amyloidogenic subgraph", "Nitric oxide subgraph"}
+path(MESHD:"Cerebral Amyloid Angiopathy") association composite(a(CHEBI:"amyloid-beta"), p(HGNC:NOS3), p(HGNC:PIN1))
+UNSET {Confidence, MeSHAnatomy, MeSHDisease, Subgraph}
+UNSET SupportingText
+SET SupportingText = "To explore the molecular mechanism underlying AD, HTN, and CAA, we hypothesize a feedback signaling loop consisted of Pin1, eNOS, and Abeta. Pin1 and eNOS mainly inhibit Abeta deposition in cerebral vessels, cerebral microbleeds, and elevation of blood pressure, preventing the development of AD, HTN, and CAA, however, Abeta plays an opposite role and aggravates these diseases."
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "High"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+p(HGNC:NOS3) decreases p(HGNC:APP, frag("672_713"))
+UNSET {Anatomy, Confidence, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "High"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+p(HGNC:PIN1) decreases p(HGNC:APP, frag("672_713"))
+UNSET {Anatomy, Confidence, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "High"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+composite(p(HGNC:NOS3), p(HGNC:PIN1)) decreases a(CHEBI:"amyloid-beta")
+UNSET {Anatomy, Confidence, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "High"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+composite(p(HGNC:NOS3), p(HGNC:PIN1)) decreases path(MESHD:"Alzheimer Disease")
+UNSET {Anatomy, Confidence, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "High"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+composite(p(HGNC:NOS3), p(HGNC:PIN1)) decreases path(MESHD:Hypertension)
+UNSET {Anatomy, Confidence, Subgraph}
+SET Anatomy = "cerebral blood vessel"
+SET Confidence = "High"
+SET Subgraph = {"Nitric oxide subgraph", "Non-amyloidogenic subgraph"}
+composite(p(HGNC:NOS3), p(HGNC:PIN1)) decreases path(MESHD:"Cerebral Amyloid Angiopathy")
+UNSET {Anatomy, Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24512768"}
+
+SET SupportingText = "We have previously reported a polyphenol compound rutin that could inhibit Abeta aggregation and cytotoxicity, attenuate oxidative stress, and decrease the production of nitric oxide and proinflammatory cytokines in vitro."
+SET Confidence = "High"
+SET Disease = "Alzheimer's disease"
+SET MeSHAnatomy = "Brain"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:rutin) decreases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Disease, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24586690"}
+
+SET SupportingText = "Runx1t1 (Runt-related transcription factor 1, translocated to 1) has been implicated in recruiting histone deacetylases (HDACs) for transcriptional repression, thereby regulating cell proliferation."
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = "Nitric oxide subgraph"
+bp(GOBP:"regulation of histone deacetylase activity") association p(MGI:Runx1)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = "Nitric oxide subgraph"
+p(MGI:Runx1) association bp(GOBP:"regulation of histone deacetylase activity")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = "Nitric oxide subgraph"
+p(MGI:Runx1) regulates bp(MESHPP:"Cell Proliferation")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+SET SupportingText = "Runx1t1 (Runt-related transcription factor 1; translocated to, 1) epigenetically regulates the proliferation and nitric oxide production of microglia."
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = "Nitric oxide subgraph"
+p(MGI:Runx1) regulates a(CHEBI:"nitric oxide")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = "Nitric oxide subgraph"
+p(MGI:Runx1) regulates a(MESH:D017628)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24587007"}
+
+SET SupportingText = "Results of this study indicate that ethanol extracts of SF (SF-E) suppress NMDA-induced reactive oxygen species (ROS) production in neurons, and LPS- and IFNgamma-induced ROS and nitric oxide (NO) production in microglial cells."
+SET Confidence = "High"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:lipopolysaccharide) increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "Low"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = {"Interferon signaling subgraph", "Nitric oxide subgraph"}
+a(CHEBI:ethanol) decreases p(MGI:Ifna13)
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = "Microglia"
+SET Subgraph = {"Interferon signaling subgraph", "Nitric oxide subgraph"}
+p(MGI:Ifna13) increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, MeSHAnatomy, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24621589"}
+
+SET SupportingText = "Nicardipine also significantly inhibited LPS plus IFN-gamma-induced release of nitric oxide (NO), and the expression of inducible nitric oxide synthase (iNOS) and cyclooxygenase-2 (COX-2)."
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+p(MGI:Ifna13) increases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:Nicardipine) decreases p(MGI:Nos2)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:Nicardipine) decreases p(MGI:Ptgs2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24817841"}
+
+SET SupportingText = "NO is produced from L-arginine by different isoforms of NOS and takes part in many normal physiological functions, such as promoting vasodilation of blood vessels and mediating cell communication within the brain. In addition to its physiological actions, the free radical activity of NO may cause cellular damage through a phenomenon known as nitrosative stress"
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") increases bp(GOBP:"regulation of vasodilation")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") increases bp(GOBP:"cell communication")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") increases bp(GOBP:"cellular response to nitrosative stress")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24854197"}
+
+SET SupportingText = "Reactive oxygen species generation and lipid peroxidation as well as expression of inducible nitric oxide and cyclooxygenase-2 were also reduced in the IL-32Î± mice brain."
+SET Confidence = "Medium"
+SET MeSHAnatomy = "Brain"
+SET Species = "10090"
+SET Subgraph = {"Interleukin signaling subgraph", "Nitric oxide subgraph"}
+p(MGI:Nos2) decreases p(HGNC:IL32)
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24923557"}
+
+SET SupportingText = "In support of this mechanism, in vitro, rapamycin significantly inhibits the production of NO, TNF-Î± in BV2 microglials by modulating NF-ÎºB signaling."
+SET Confidence = "High"
+SET Subgraph = {"Nitric oxide subgraph", "mTOR signaling subgraph"}
+a(CHEBI:sirolimus) decreases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24948534"}
+
+SET SupportingText = "We have shown with cultured cerebral cortical normal (i.e., untransformed) adult human astrocytes (NAHAs) that exogenous amyloid-beta peptides (Abetas) stimulate the astrocytes to make and secrete large amounts of Abetas and nitric oxide by a mechanism mediated through the calcium-sensing receptor (CaSR)."
+SET Confidence = "High"
+SET MeSHAnatomy = {"Astrocytes", "Cerebral Cortex"}
+SET Species = "9606"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:"nitric oxide") association p(HGNC:CASR)
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Astrocytes", "Cerebral Cortex"}
+SET Species = "9606"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:APP, frag("672_713")) increases tloc(a(CHEBI:"nitric oxide"), fromLoc(GOCC:intracellular), toLoc(GOCC:"extracellular space"))
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Astrocytes", "Cerebral Cortex"}
+SET Species = "9606"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:APP, frag("672_713")) association tloc(p(HGNC:CASR), fromLoc(GOCC:intracellular), toLoc(GOCC:"extracellular space"))
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Astrocytes", "Cerebral Cortex"}
+SET Species = "9606"
+SET Subgraph = "Nitric oxide subgraph"
+tloc(p(HGNC:CASR), fromLoc(GOCC:intracellular), toLoc(GOCC:"extracellular space")) association p(HGNC:APP, frag("672_713"))
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET MeSHAnatomy = {"Astrocytes", "Cerebral Cortex"}
+SET Species = "9606"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:CASR) association a(CHEBI:"nitric oxide")
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "24984171"}
+
+SET SupportingText = "Moreover, IRN (20 or 40mg/kg) significantly inhibited the production of prostaglandin E 2 (PGE2) and nitric oxide (NO), and the mRNA expression of cyclooxygenase-2 (COX-2) and inducible nitric oxide synthase (iNOS), as well as the activation of nuclear factor kappa B (NF-ÎºB) in the brain tissues of D-gal-treated mice."
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:Isorhynchophylline) decreases a(CHEBI:"nitric oxide")
+UNSET {Confidence, Subgraph}
+SET Confidence = "High"
+SET Subgraph = "Nitric oxide subgraph"
+a(CHEBI:Isorhynchophylline) decreases p(HGNC:NOS2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "8879214"}
+
+SET SupportingText = "In Alzheimer's disease (AD), affected neurons accumulate beta amyloid protein, components of which can induce mouse microglia to express the high-output isoform of nitric oxide synthase (NOS2) in vitro. Products of NOS2 can be neurotoxic. In mice, NOS2 is normally suppressed by transforming growth factor beta 1 (TGF-beta 1). Expression of TGF-beta 1 is decreased in brains from AD patients, a situation that might be permissive for accumulation of NOS2."
+SET Confidence = "High"
+SET MeSHAnatomy = "Microglia"
+SET Species = "10116"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:APP, frag("672_713")) increases p(MGI:Nos2)
+UNSET {Confidence, MeSHAnatomy, Species, Subgraph}
+SET Confidence = "High"
+SET Subgraph = {"Nitric oxide subgraph", "TGF-Beta subgraph"}
+path(MESHD:"Alzheimer Disease") decreases p(HGNC:TGFB1)
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Species = "10116"
+SET Subgraph = {"Nitric oxide subgraph", "TGF-Beta subgraph"}
+p(MGI:Nos2) negativeCorrelation p(MGI:Tgfb1)
+UNSET {Confidence, Species, Subgraph}
+SET Confidence = "Medium"
+SET Species = "10116"
+SET Subgraph = {"Nitric oxide subgraph", "TGF-Beta subgraph"}
+p(MGI:Tgfb1) negativeCorrelation p(MGI:Nos2)
+UNSET {Confidence, Species, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
+SET Citation = {"PubMed", "9782132"}
+
+SET SupportingText = "Viral infection often activates the interferon (IFN)-gamma-inducible gene, nitric oxide synthase 2 (NOS2). Expression of NOS2 can limit viral growth but may also suppress the immune system and damage tissue."
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS2) decreases bp(GOBP:"regulation of viral process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+p(HGNC:NOS2) decreases bp(GOBP:"immune system process")
+UNSET {Confidence, Subgraph}
+SET Confidence = "Medium"
+SET Subgraph = "Nitric oxide subgraph"
+bp(GOBP:"viral process") increases p(HGNC:NOS2)
+UNSET {Confidence, Subgraph}
+UNSET SupportingText
+UNSET Citation
+
+################################################################################
