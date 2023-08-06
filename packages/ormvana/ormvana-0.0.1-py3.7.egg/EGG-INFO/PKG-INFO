@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: ormvana
+Version: 0.0.1
+Summary: A minimalist ORM for the power user — Releases you from the sufferings of the traditional ORM world. 
+Home-page: https://github.com/SkullTech/ormvana
+Author: Sumit Ghosh
+Author-email: sumit@sumit-ghosh.com
+License: MIT
+Description: # ormvana
+        A minimalist ORM for the power user — Releases you from the sufferings of the traditional ORM world.
+        # Usage
+        
+        I'm going to demonstrate the usage of this module using a blog application, containing two tables users and posts. You 
+        can find the complete example [here](https://github.com/SkullTech/ormvana/tree/master/examples/blog).
+        
+        ## Defining the models
+        
+        To get started, all you need to do is —
+        - Create class(es) describing the `Model` // `Table`(s).
+        - Provide a function which 
+        returns a connection to a database. 
+        
+        For example
+        ```sql
+        CREATE TABLE `user` (
+          `id` int(11) NOT NULL AUTO_INCREMENT,
+          `email` varchar(191) NOT NULL,
+          `password` varchar(255) NOT NULL,
+          `first_name` varchar(255) NOT NULL,
+          `last_name` varchar(255) NOT NULL,
+          `active` int(11) NOT NULL DEFAULT '0',
+          PRIMARY KEY (`id`),
+          UNIQUE KEY `email` (`email`)
+        );
+        ```
+        
+        For the above database `Table` definition, you should create a `Model` class like the following —
+        
+        ```python
+        from ormvana import Model
+        
+        class User(Model):
+            name = 'user'
+            fields = {
+                'active': {
+                    'type': int,
+                    'value': 0
+                }
+            }
+            for field in ['username', 'password', 'email', 'first_name', 'last_name']:
+                fields[field] = {'type': str}
+        ```
+        
+        Notice that all we're really doing is:
+        - Specifying the name of the `Table` using the `name` class variable.
+        - Specifying the columns // `Field`s of the database using the `fields` class variable. `fields` is a dict, where the 
+        keys are the _field names_ and the values are dicts. These dicts necessarily contain a key named `type` which can either take 
+        `str` or `int` as values, and optionally contain another key named `value`, which can be used to provide a default 
+        value of the given field.
+        
+        You also would need to provide a `connection` function to `ormvana`, which would return a connection to the database, 
+        along with a bool that indicates whether to `close` the connection after every query.
+        
+        Check the following example:
+        ```python
+        import sqlite3
+        import ormvana
+        
+        ormvana.connection = lambda : True, sqlite3.connect('blog.db')
+        ```
+        
+        For retrieving records // objects, _ormvana_ provides you with three built-in class functions — 
+        1. `get`: For retrieving record by `id`. 
+        2. `get_by`: For retrieving records(s) having given value for given field.
+        3. `get_all`: For retrieving all the records of the table.
+        
+        For everything else, you have to write a method for your class that returns a valid SQL query, and decorate that with 
+        either the `fetch_single` or `fetch_multiple` decorator accordingly. For example, look at the following:
+        
+        ```sql
+        DROP TABLE IF EXISTS `post`;
+        CREATE TABLE `post` (
+          `id` int(11) NOT NULL AUTO_INCREMENT,
+          `title` varchar(255) NOT NULL,
+          `body` text NOT NULL,
+          `author` int(11) NOT NULL,
+          PRIMARY KEY (`id`),
+        );
+        ```
+        
+        ```python
+        from ormvana import Model
+        
+        class Post(Model):
+            name = 'post'
+            fields = {
+                'author': {'type': int}
+            }
+            for field in ['title', 'body']:
+                fields[field] = {'type': str}
+        
+            @classmethod
+            @Model.fetch_multiple
+            def users_posts(cls, username):
+                return '''SELECT * FROM `{0}` WHERE `author`=(SELECT id from `user` WHERE username={1})'''.format(cls.name,                                                                                                          username)
+        ```
+        
+        Now that we have defined our models, let's look at how we could use them in our application.
+        
+        # Creating a record
+        
+        ```pycon
+        
+        ```
+Keywords: database orm
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
