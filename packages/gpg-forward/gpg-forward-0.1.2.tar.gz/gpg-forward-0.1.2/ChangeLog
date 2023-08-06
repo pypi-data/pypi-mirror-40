@@ -1,0 +1,34 @@
+CHANGES
+=======
+
+v0.1.2
+------
+
+* Improve help message
+* Upgrade PBR
+* Fix typo in README
+
+v0.1.1
+------
+
+* Fix Python requirements
+* Add badges
+* Add installation instructions
+* Go back to markdown-formatted README
+* Tell pbr where to look for description file
+* Update pbr
+* Convert README to reStructuredText
+
+v0.1.0
+------
+
+* Add ability to print own version
+* Tell Travis to use correct Python version
+* Another attempt to make Travis happy
+* Add language information to Travis config
+* Set up automatic PyPI deployments
+
+v0.0.0
+------
+
+* First working prototype
