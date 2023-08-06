@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ssh-menu
+Version: 1.0
+Summary: ssh-menu
+Home-page: https://github.com/antonjah/ssh-menu
+Author: Anton Andersson
+Author-email: contact@antonandersson.se
+License: UNKNOWN
+Download-URL: https://github.com/antonjah/ssh-menu
+Platform: UNKNOWN
+Requires-Dist: console-menu
+Requires-Dist: sshconf
+
+UNKNOWN
+
+
