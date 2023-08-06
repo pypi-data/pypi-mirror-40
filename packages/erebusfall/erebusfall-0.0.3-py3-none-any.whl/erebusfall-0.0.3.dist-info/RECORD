@@ -1,0 +1,11 @@
+erebusfall/__init__.py,sha256=1QtOFmZ73KdGS69nCUqu_nULdJbRWHurVjDh86P1a3s,35
+erebusfall/core.py,sha256=XISp3sVt-7e9vt9dmgjlMIVwD3V3o7qkzei4wl94bjU,3491
+erebusfall/benthic_stacks/__init__.py,sha256=mmScFpPixanE-_QG8WiXe8psGo1x-BtVneJNpFlL_yM,133
+erebusfall/benthic_stacks/lr04.csv,sha256=-D88yHgB9ba9FeaC0E3pHoXfWjJrKcCpOjLhIUqp5SU,67920
+erebusfall/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+erebusfall/tests/test_core.py,sha256=XDq4KVoHHbR4avYkt43Jr_R8h7_NixSpubj7LaNgkz4,1571
+erebusfall-0.0.3.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+erebusfall-0.0.3.dist-info/METADATA,sha256=pUnFidAYbOPB3B5tOILoC21zUTyrnJGR3_IMrTLNqTs,3089
+erebusfall-0.0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+erebusfall-0.0.3.dist-info/top_level.txt,sha256=CDmKbQYkIS_n7zkUaE_nGasQEgVmFYfrnpFpuCjKcb0,11
+erebusfall-0.0.3.dist-info/RECORD,,
