@@ -1,0 +1,9 @@
+configstore/__init__.py,sha256=UGYyYsRpxqUVab7i8r4gxqJlJ0jKWMERcM-5tU-c0Ns,703
+configstore/util.py,sha256=Lh5rtzQiR9NQeCCRRaCG97Uj1PpyvEX_-LOCShtC19w,897
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/config_manager.py,sha256=WQb3lKQZ1xNK70NwL23FeZX1xG1eNxPLweC_pjFqi-8,316
+config_store-0.0.4.dist-info/LICENSE,sha256=rs_cCPpWlaxJrnEcgOMbzmYAwnUOMiObc3oeHB6jNcQ,1070
+config_store-0.0.4.dist-info/METADATA,sha256=3jMMgxn7pPDeSiFRflwbyA7r6pBF6c_fKgvrcQszRXM,1192
+config_store-0.0.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+config_store-0.0.4.dist-info/top_level.txt,sha256=sfB3porSPrXMKqmY3R5d7Lsi6hmpyNff7QA6K-ZYMtE,20
+config_store-0.0.4.dist-info/RECORD,,
