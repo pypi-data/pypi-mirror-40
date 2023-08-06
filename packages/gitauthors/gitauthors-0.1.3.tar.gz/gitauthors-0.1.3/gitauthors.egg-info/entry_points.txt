@@ -1,0 +1,3 @@
+[console_scripts]
+gitauthors = gitauthors.cli:main
+

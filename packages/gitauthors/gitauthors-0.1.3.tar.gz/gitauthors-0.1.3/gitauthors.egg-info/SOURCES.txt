@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+gitauthors/__init__.py
+gitauthors/__version__.py
+gitauthors/cli.py
+gitauthors/gitauthors.py
+gitauthors.egg-info/PKG-INFO
+gitauthors.egg-info/SOURCES.txt
+gitauthors.egg-info/dependency_links.txt
+gitauthors.egg-info/entry_points.txt
+gitauthors.egg-info/requires.txt
+gitauthors.egg-info/top_level.txt
