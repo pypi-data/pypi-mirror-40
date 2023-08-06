@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: nzmetservice
+Version: 1.0.2
+Summary: functions to download and process metservice data
+Home-page: https://github.com/mullenkamp/nzmetservice
+Author: Mike Kittridge
+Author-email: mullenkamp1@gmail.com
+License: UNKNOWN
+Description: nzmetservice - A Python package for handling  New Zealand MetService forecast data
+        ==================================================================================
+        
+        The nzmetservice package contains various functions for downloading, processing, and handling of New Zealand MetService forecast data.
+        This package is not associated with the MetService.
+        
+        .. Documentation
+        .. --------------
+        .. The primary documentation for the package can be found `here <http://eto.readthedocs.io>`_.
+        
+        Installation
+        ------------
+        nzmetservice can be installed via pip or conda::
+        
+          pip install nzmetservice
+        
+        or::
+        
+          conda install -c mullenkamp nzmetservice
+        
+        The core dependencies are `Pandas <http://pandas.pydata.org/pandas-docs/stable/>`_ and `xarray <http://xarray.pydata.org>`_.
+        
+Keywords: rainfall forecast
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
