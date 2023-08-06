@@ -1,0 +1,17 @@
+from setuptools import setup, find_packages
+
+setup(name = 'ditto-lib',
+version = "0.2.0.dev",
+description = 'Data analysis tools',
+url = 'https://github.com/hgromer/ditto',
+author = 'Hernan Gelaf-Romer',
+author_email = 'nanug33@gmail.com',
+license = 'GNU',
+packages = find_packages(),
+install_requires = [
+    "colorlogging", 
+    "pympler", 
+    "matplotlib",
+    "sklearn"
+    ],
+zip_safe = False)
