@@ -1,0 +1,12 @@
+README.md
+setup.py
+funkpy/Collection.py
+funkpy/Monads.py
+funkpy/Object.py
+funkpy/__init__.py
+funkpy/parCollection.py
+funkpy/utils.py
+funkpy.egg-info/PKG-INFO
+funkpy.egg-info/SOURCES.txt
+funkpy.egg-info/dependency_links.txt
+funkpy.egg-info/top_level.txt
