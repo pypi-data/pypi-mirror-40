@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+py_structures.egg-info/PKG-INFO
+py_structures.egg-info/SOURCES.txt
+py_structures.egg-info/dependency_links.txt
+py_structures.egg-info/top_level.txt
+structures/__init__.py
+structures/structures.py
+tests/__init__.py
+tests/unit/__init__.py
+tests/unit/tests_structures.py
