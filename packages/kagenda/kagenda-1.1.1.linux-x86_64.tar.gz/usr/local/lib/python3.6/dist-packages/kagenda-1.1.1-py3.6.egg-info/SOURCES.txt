@@ -1,0 +1,16 @@
+README.md
+setup.py
+bin/agenda
+kagenda/__init__.py
+kagenda/__main__.py
+kagenda/agenda.py
+kagenda/cal.py
+kagenda/config.py
+kagenda/printer.py
+kagenda/speech.py
+kagenda/wx.py
+kagenda.egg-info/PKG-INFO
+kagenda.egg-info/SOURCES.txt
+kagenda.egg-info/dependency_links.txt
+kagenda.egg-info/requires.txt
+kagenda.egg-info/top_level.txt
