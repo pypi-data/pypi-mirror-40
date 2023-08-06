@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+furystoolbox/__init__.py
+furystoolbox/client.py
+furystoolbox/const.py
+furystoolbox.egg-info/PKG-INFO
+furystoolbox.egg-info/SOURCES.txt
+furystoolbox.egg-info/dependency_links.txt
+furystoolbox.egg-info/top_level.txt
