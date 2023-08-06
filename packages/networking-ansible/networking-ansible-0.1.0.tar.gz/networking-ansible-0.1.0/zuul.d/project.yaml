@@ -1,0 +1,15 @@
+- project-template:
+    name: networking-ansible-tempest-jobs
+    check:
+      jobs:
+        - networking-ansible-tempest-ovs
+        - openstack-tox-cover:
+            required-projects:
+              - openstack/neutron
+    gate:
+      jobs:
+        - networking-ansible-tempest-ovs
+
+- project:
+    templates:
+      - networking-ansible-tempest-jobs
