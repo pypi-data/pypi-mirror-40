@@ -1,0 +1,28 @@
+[console_scripts]
+inveniomigrator = invenio_migrator.legacy.cli:cli
+
+[invenio_base.apps]
+invenio_migrator = invenio_migrator.ext:InvenioMigrator
+
+[invenio_celery.tasks]
+communities = invenio_migrator.tasks.communities
+deposit = invenio_migrator.tasks.deposit
+oauth2server = invenio_migrator.tasks.oauth2server
+oauthclient = invenio_migrator.tasks.oauthclient
+records = invenio_migrator.tasks.records
+users = invenio_migrator.tasks.users
+
+[invenio_migrator.things]
+access = invenio_migrator.legacy.access
+clients = invenio_migrator.legacy.clients
+communities = invenio_migrator.legacy.communities
+deposit = invenio_migrator.legacy.deposit
+featured = invenio_migrator.legacy.featured_communities
+files = invenio_migrator.legacy.bibdocfile
+records = invenio_migrator.legacy.records
+remoteaccounts = invenio_migrator.legacy.remoteaccounts
+remotetokens = invenio_migrator.legacy.remotetokens
+tokens = invenio_migrator.legacy.tokens
+userexts = invenio_migrator.legacy.userexts
+users = invenio_migrator.legacy.users
+
