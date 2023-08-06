@@ -1,0 +1,15 @@
+alfredo/__init__.py,sha256=BsCpzfdHVDJvS3Bb2CK-D4BiYD-1H7FDucpTXkn_y7k,933
+alfredo/cli.py,sha256=DW4lcoQydrQcWwnhJ-jR_uCYeVmXxbD8VKAaNJFmXIA,11052
+alfredo/descriptions.py,sha256=cN_Lgfud7TX4qMGG2-PzGKt3mDdPeZE5svzPP-g-4Qc,874
+alfredo/http.py,sha256=S6Tr-puBuXNk60aEYcziSeM_x74h18trqGFnv-VVz0c,1642
+alfredo/resource.py,sha256=zMXcOEohhILuDmpqJDKUVWPGBCUsPLgVQS2-lSVy_9c,8408
+alfredo/stream.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alfredo/mixins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alfredo/mixins/lazy.py,sha256=5iRUWlvTovUnDzD5nCi3F3PMfwujnI5zl_vOMaNUlso,796
+alfredo/mixins/nested.py,sha256=VvMOrmHdNLCVnsWNWDx-uyA1KQqSXORouFgWUQjXTCM,701
+alfredo_python-0.0.4.dist-info/LICENSE,sha256=m4cqigcLitMpxL04D7G_AAD1ZMdQI-yOHmgD8VNkuek,26461
+alfredo_python-0.0.4.dist-info/METADATA,sha256=4X0878NFUwFHEB0nfN30bMFE5X8EXipgwTBO0mjn-pE,4768
+alfredo_python-0.0.4.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+alfredo_python-0.0.4.dist-info/entry_points.txt,sha256=nNX46dZp7YGPKNR-vGD9VlFaB946FgS4no6SzDnMi3Q,46
+alfredo_python-0.0.4.dist-info/top_level.txt,sha256=rWtpHkpJc6E3Ychg960d-ggZR56RePIDeEcSmFYhlx4,8
+alfredo_python-0.0.4.dist-info/RECORD,,
