@@ -1,0 +1,9 @@
+SRITPOT
+d3m
+networkx
+numpy
+pandas>=0.20.1
+pathos
+psutil
+sklearn
+sripipeline
