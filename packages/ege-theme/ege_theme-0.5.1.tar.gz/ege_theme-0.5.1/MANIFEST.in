@@ -1,0 +1,6 @@
+include LICENSE
+include MANIFEST.in
+include README.md
+recursive-include ege_theme/templates *
+recursive-include ege_theme/static *
+recursive-include ege_theme/migrations *

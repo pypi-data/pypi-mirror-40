@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ege_theme
+Version: 0.5.1
+Summary: EGE Theme
+Home-page: https://github.com/CoticEaDIFRN/ege_theme
+Author: Luiz Antonio Freitas de Assis
+Author-email: luizvpc@gmail.com
+License: MIT
+Download-URL: https://github.com/CoticEaDIFRN/ege_theme/releases/tag/0.5.1
+Description: EGE Theme
+Keywords: EGE,JWT,Django,Auth,SSO,client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,171 @@
+{% extends "admin/base.html" %}
+{% load i18n static %}
+{% load i18n admin_urls static admin_list %}
+{% load common_utils %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block branding %}
+    {% block top_bar %}
+        <!--Top bar-->
+        <div id="topbar" class="page-container">
+            <div class="md-app" name="reveal">
+              <div id="vuejs_menu" class="md-app-toolbar md-primary menu w-100 text-white" :style="top_menu_style">
+                  <button id="btn-menu" class="md-button md-icon-button f-left d-md-none" @click="l_menu_toogle">
+                      <span class="md-icon text-white">menu</span>
+                  </button>
+                  <div class="d-none d-md-flex flex-row justify-content-left logo" @click="emitNotificationAlert">
+                      <img class="w-50 ml-4" src="{% static 'img/ege branco.svg' %}" alt="Ecossistema de Gestão em Educação">
+                  </div>
+                  <div class="d-flex flex-row justify-content-between align-items-center w-100 h-100">
+                      {% block page-title %}
+                        <h2 class="text-white ml-4"><a href="{% url 'admin:index' %}">Ecossistema de Gestão em Educação</a></h2>
+                      {% endblock %}
+                      <div id="icons-top" class="icons-top pr-md-5 h-100">
+                          <div class="d-flex flex-row justify-between align-items-center h-100">
+                              <div class="md-avatar md-avatar-icon d-flex flex-row justify-content-end mr-lg-3" style="border-radius: 0">
+                                  <span class="md-icon"><a href="#" class="text-white">notifications</a></span>
+                                  <span class="position-absolute" v-if="countNotificationSeen" style="top: 5px"><a href="#" class="text-white d-flex justify-content-center align-items-center" style="font-size: 12px; background: red; border-radius: 50%; width: 12px; height: 12px;">${countNotification}</a></span>
+                              </div>
+                              <div class="md-avatar md-avatar-icon d-flex flex-row justify-content-end ml-lg-3" style="border-radius: 0">
+                                  <span class="md-icon" style="left: 12px;"><a href="#" class="text-white">chat</a></span>
+                                  <span class="position-absolute" v-if="countChatSeen" style="top: 5px"><a href="#" class="text-white d-flex justify-content-center align-items-center" style="font-size: 12px; background: red; border-radius: 50%; width: 12px; height: 12px;">${countChat}</a></span>
+                              </div>
+                              <div id="top-user" class="top-perfil ml-3 ml-md-0" @click="r_menu_toogle" :style="top_perfil_style">
+                                  <span><a href="#" class="text-white">{% firstof user.get_full_name|cut:"a"|cut:"b"|cut:"c"|cut:"d"|cut:"e"|cut:"f"|cut:"g"|cut:"h"|cut:"i"|cut:"j"|cut:"k"|cut:"l"|cut:"m"|cut:"n"|cut:"o"|cut:"p"|cut:"q"|cut:"r"|cut:"s"|cut:"t"|cut:"u"|cut:"v"|cut:"w"|cut:"x"|cut:"y"|cut:"z" user.get_username %}</a></span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <!--End Top bar-->
+    {% endblock %}
+    <div class="d-flex w-100 h-100">
+        {% block left_menu %}
+            <!--Left Menu-->
+            <div id="leftmenu" class="left-menu pt-5 shadow d-none d-md-block" :style="left_menu_style" v-show="l_menu_seen" @click="emitChatAlert">
+                <ul class="pt-lg-3">
+                    {% get_app_list as all_app_list %}
+                    {% if all_app_list %}
+                        {% for app in all_app_list %}
+                            <li class="title-menu d-flex flex-column justify-content-center" style="min-height: 4em">
+                                <h5 class="text-left m-0 mb-2" @click="submenu_toogle">
+                                    <a href="#" class="section d-flex align-items-center justify-content-between" title="{% blocktrans with name=app.name %}Models in the {{ name }} application{% endblocktrans %}">
+                                        {% if app.models %}
+                                            <i class="material-icons arrow-right col-1 p-0" v-show="arrow_right_seen">
+                                            arrow_right
+                                            </i>
+                                            <i class="material-icons arrow-down col-1 p-0" v-show="arrow_down_seen">
+                                                arrow_drop_down
+                                            </i>
+                                        {% endif %}
+                                        <span class="col-1 p-0 m-2 mr-3"><i class="material-icons">cast_for_education</i></span>
+                                        <span class="col-10 p-0 ml-3 font-weight-bold">{{ app.name }}</span>
+                                    </a>
+                                </h5>
+                                <ul class="" v-show="sub_menu_seen">
+                                    {% for model in app.models %}
+                                        <div class="menuLeftModel col-11">
+                                            {% if model.admin_url %}
+                                                <a href="{{ model.admin_url }}" class="text-left">
+                                                    <li style="margin-left: 20%"><h5 class="mt-2 mb-2">{{ model.name }}</h5></li>
+                                                </a>
+                                            {% else %}
+                                                <li>
+                                                    <h5 class="text-left ml-4">{{ model.name }}</h5>
+                                                </li>
+                                            {% endif %}
+                                        </div>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% endfor %}
+                    {% else %}
+
+                    {% endif %}
+
+                </ul>
+            </div>
+            <!--End Left Menu-->
+        {% endblock %}
+        <!--Content-->
+            <div id="content-main" class="d-flex w-100">
+                {% block chat %}
+                    <!--Chat-->
+
+                    <!--End Chat-->
+                {% endblock %}
+
+                <!--Modal-->
+                <div id="modal" class="modal-back" v-if="modal_seen"></div>
+                <!--End Modal-->
+
+                <!--Content Page-->
+                <div id="content-adm" class="w-100 text-center" :style="content_style">
+                    {% block breadcrumbs %}{% endblock %}
+                    <!-- Content -->
+                    <div class="d-flex flex-column align-items-center">
+                        <div id="content" class="col-12 col-md-11 mt-3">
+                            {% block pretitle %}{% endblock %}
+                            {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
+                            {% block content %}
+                                {% block object-tools %}{% endblock %}
+                                    {{ content }}
+                            {% endblock %}
+                            {% block sidebar %}{% endblock %}
+                            <br class="clear">
+                        </div>
+                    </div>
+                    <!-- END Content -->
+
+                </div>
+                <!--End Content Page-->
+            </div>
+        <!--End Content-->
+        <!--Right-Menu-->
+            <transition :duration="{ enter: 500, leave: 100 }">
+                <div id="rightmenu" class="right-menu text-white triangle" v-show="r_menu_seen" :style="rightmenu_style">
+                    {% if has_permission %}
+                        <div id="user-tools" class="d-flex flex-column align-items-center mb-3">
+                            <div class="text-center mt-4">
+                                <span class="md-icon"><a href="#" class="text-white">account_circle</a></span>
+                            </div>
+                            <h5 class="p-4 text-center">
+                                {% trans 'Welcome, ' %}<span class="text-bold">{% firstof user.get_short_name user.get_username %}!</span>
+                            </h5>
+
+                            <select id="select" v-model="selected" class="custom-select select-theme mb-4 w-75" @change="change_color">
+                                <option value="0">${ select_option_default }</option>
+                                <option value="1">Green</option>
+                                <option value="2">Purple</option>
+                            </select>
+
+                            {% if user.is_active and user.is_staff %}
+                                {% url 'django-admindocs-docroot' as docsroot %}
+                                {% if docsroot %}
+                                    <a href="{{ docsroot }}" class="text-white">{% trans 'Documentation' %}</a>
+                                {% endif %}
+                            {% endif %}
+                            {% if site_url %}
+                                <a href="{{ site_url }}" class="text-center p-2 text-white">{% trans 'View site' %}</a></h5>
+                            {% endif %}
+                            {% if user.has_usable_password %}
+                                <a href="{% url 'admin:password_change' %}" class="text-center p-2 text-white">{% trans 'Change password' %}</a>
+                            {% endif %}
+                            <a href="{% url 'admin:logout' %}" class="text-right p-4 text-white"><span class="md-icon">highlight_off</span>{% trans 'Log out' %}</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </transition>
+
+        <!--End Right-Menu-->
+    </div>
+{% endblock %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block bodyclass %}{{ block.super }} dashboard{% endblock %}
