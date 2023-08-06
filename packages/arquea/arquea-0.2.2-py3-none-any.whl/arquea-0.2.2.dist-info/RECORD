@@ -1,0 +1,14 @@
+arquea/__init__.py,sha256=pVXNbhAygE1m1e3GCOvY9Zr-K6Ew85azlThIoABzYqs,33
+arquea/__main__.py,sha256=-wl46SIMP0SfNTcRz1F6a9nl5XROjWTYCUnObG4gYyc,1784
+arquea/arquea.py,sha256=9avd-yqGlK2LfsyKoFW0g66HIOfZ_lwcIkbdbny5wlg,6916
+arquea/checksum.py,sha256=NrwE0UagM0XUYVVTU3NJ_ZhQj0vabhOhxND7D7uEIf0,619
+arquea/data.py,sha256=10B3k2v1B-YBzTXtiZqgxpndRgdtjLAQ-v4F8dkFBGQ,5967
+arquea/error.py,sha256=fV_GMN3dBsdDOqX_1IyY2dg1dQdDcd4w-GJf_n94uGU,1575
+arquea/files.py,sha256=AJP6iASYnq5t7UdDika94Mb-ybBVj6Pv10988dTF_A8,2434
+arquea/info.py,sha256=Lh74-Ps0ZGpCG8EwItrA8oxetr3sVfr0gMXrZfU7G8w,883
+arquea/tools.py,sha256=qrzMoubC7X722aoa83DKfzEAofqNrOR4K2lYM9K6U64,167
+arquea-0.2.2.dist-info/LICENSE,sha256=pVrk78tJWnY_z5ePR2f3uHT7tS1ggHQtBTpRAC_g7QI,1076
+arquea-0.2.2.dist-info/METADATA,sha256=mO-23e-BPSiAPJsH-u_KIJ5tpaYLqJ3G_7vShKU-uUk,5401
+arquea-0.2.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+arquea-0.2.2.dist-info/top_level.txt,sha256=Pk-vMcO86sjnSHgsdWy00H9aaacdnsclq-0_dbTpiY0,7
+arquea-0.2.2.dist-info/RECORD,,
