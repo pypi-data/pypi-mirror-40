@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+senscritique/__init__.py
+senscritique/takeout.py
+senscritique.egg-info/PKG-INFO
+senscritique.egg-info/SOURCES.txt
+senscritique.egg-info/dependency_links.txt
+senscritique.egg-info/requires.txt
+senscritique.egg-info/top_level.txt
