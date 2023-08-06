@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+cmdline_vsc.egg-info/PKG-INFO
+cmdline_vsc.egg-info/SOURCES.txt
+cmdline_vsc.egg-info/dependency_links.txt
+cmdline_vsc.egg-info/entry_points.txt
+cmdline_vsc.egg-info/top_level.txt
+vsc/__init__.py
+vsc/__main__.py
+vsc/stuff.py
+vsc/vsc.py
