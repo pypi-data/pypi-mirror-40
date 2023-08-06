@@ -1,0 +1,23 @@
+matplotlib>=1.3
+numpy>=1.8
+scipy
+future
+urllib3
+numexpr
+cython>=0.18
+
+[:python_version < "3.0"]
+numpy>=1.9
+functools32
+
+[Pillow to read other image files]
+pillow
+
+[PyPNG read png files]
+pypng
+
+[h5 reader for openPMD support]
+h5py
+
+[sdf support for EPOCH reader]
+sdf
