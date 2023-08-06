@@ -1,0 +1,17 @@
+alexa_browser_client/__init__.py,sha256=qXgIeXMinic63s3gKXmN_nIo1NfxVbiHfPe-YXrIAvI,274
+alexa_browser_client/constants.py,sha256=LI2J4nkQMymz_blYtOfnVCWhezVYSBo-XWxp4gpJWco,268
+alexa_browser_client/consumers.py,sha256=IWLi-sErN15kG0wwPwm83v6CJ7FO4HZZmm32nDhljuY,3647
+alexa_browser_client/forms.py,sha256=xFWsVQTzX-QxRyI-NxMVnMEfcCqlEjaBOkfx8s0rENo,159
+alexa_browser_client/helpers.py,sha256=nOoURzK7z6xOc-S87zl2UGvGd-VJfWKzn-4L2P36Di0,869
+alexa_browser_client/views.py,sha256=l0J5WjuWqxyl2j4rHQ3o5hzAdP8uGjqqepQCYNWINP8,3177
+demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demo/manage.py,sha256=LasrAURpIoZRfPuNlvjawGGDsP8To8fh8bFJSSCifdM,250
+demo/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demo/config/asgi.py,sha256=-tcqevD2ETLZKBo6g5JGh1uapaFh4z093V7Ufvs3eg0,224
+demo/config/settings.py,sha256=3faTIqosEe4kBfCEs_HTJtNF4eZtlQ8jUHIY7gRegH0,2298
+demo/config/wsgi.py,sha256=xIEFJFhdQD2CWgCEj0mwnz7YbmbwlB72zOoJXSsTm1U,394
+alexa_browser_client-3.2.0.dist-info/LICENSE,sha256=kUGLud6sQpuJU-3K48nu-cJ1-nkumToSfHnmfX27_rA,1069
+alexa_browser_client-3.2.0.dist-info/METADATA,sha256=aPRnZTyvpjouwp6Jhcz_XN8BE-qLlmS4QOqnwoltk-E,7832
+alexa_browser_client-3.2.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+alexa_browser_client-3.2.0.dist-info/top_level.txt,sha256=9K4AAk02JMqU24LXQJ2owbUfGzDJQxEqc_iC3sEOBBY,26
+alexa_browser_client-3.2.0.dist-info/RECORD,,
