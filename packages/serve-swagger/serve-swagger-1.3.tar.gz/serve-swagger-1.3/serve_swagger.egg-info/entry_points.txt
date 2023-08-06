@@ -1,0 +1,3 @@
+[console_scripts]
+serve-swagger = serve_swagger.app:serve
+
