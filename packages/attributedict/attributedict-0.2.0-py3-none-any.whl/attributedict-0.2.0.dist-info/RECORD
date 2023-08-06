@@ -1,0 +1,12 @@
+attributedict/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+attributedict/collections.py,sha256=6NQcQkroW55TqoeLh7xAStUVRW4BhHr0B-rO5N0sreg,8768
+attributedict/compat.py,sha256=lg5j89f69ODnlamkwCu1qPI-OTcZ1njz3VItb7I2TuY,816
+attributedict/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+attributedict/tests/__main__.py,sha256=Y2yxO13ZnuWJU_E1H3uEOPN9mbpI0-bjY_wraRENBUY,373
+attributedict/tests/helper.py,sha256=7-18NmOuaJ8K58-mDSCS299BwL8_gDl19__ACS_9w7w,8162
+attributedict/tests/test_collections.py,sha256=36guOheecZpllLeUSFJcMb9Wf0UpGW5SXpmKMUNL4K4,41789
+attributedict-0.2.0.dist-info/METADATA,sha256=S7z7jS-j1z4XJBVMDgC0fMVrwXauwDjqj2fv66PGycE,2930
+attributedict-0.2.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+attributedict-0.2.0.dist-info/top_level.txt,sha256=C09u3v5Y_TqLhJea-nCEbGn9eKCRnweoqicBavFbKMQ,14
+attributedict-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+attributedict-0.2.0.dist-info/RECORD,,
