@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2018-12-21 17:43 and 2019-01-19 20:53.
 
-The repo is 55% (22000/40000) complete.
+The repo is 59% (23999/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-40/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| iduoliao-ml | 248 |
-| catboost-dev | 240 |
-| lalsuite | 225 |
-| OpenVisus | 161 |
-| rust-pypi | 150 |
-| aiohttp | 148 |
-| pikepdf | 117 |
-| ruamel.yaml | 110 |
-| iduoliao-ml-dev | 104 |
-| Pillow | 103 |
-| bohrium-api | 91 |
-| pipz | 90 |
-| lgblkb-tools | 88 |
-| tfds-nightly | 87 |
-| dimod | 84 |
-| hypothesis | 66 |
-| RESTEasyCLI | 64 |
-| pymoose | 62 |
-| pyramid-oereb | 60 |
-| grpcio-tools | 60 |
-| go-ml-core | 58 |
-| gluoncv | 58 |
-| lxml | 56 |
-| opencv-python-headless | 54 |
-| opencv-python | 54 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-40).
 
 
