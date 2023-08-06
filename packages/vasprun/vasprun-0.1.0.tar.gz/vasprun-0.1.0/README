@@ -1,0 +1,8 @@
+VASPRUN -- reading/post-processing vasprun.xml
+*************************************************************************
+
+This package contains a command line utility and a python library
+to facilitate analysis of data output by VASP based solely on the
+vasprun.xml file.
+
+Documentation: https://vasprun.readthedocs.io/en/latest/index.html

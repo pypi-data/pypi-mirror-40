@@ -1,0 +1,35 @@
+ vasp.5.3.3 18Dez12 (build Dec 08 2018 16:16:50) complex                        
+  
+ POSCAR found type information on POSCAR  Ge
+ POSCAR found :  1 types and       2 ions
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You enforced a specific xc-type in the INCAR file,                     |
+|      a different type was found on the POTCAR file                          |
+|          I HOPE YOU KNOW, WHAT YOU ARE  DOING                               |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: small aliasing (wrap around) errors must be expected
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.119287927058E+02    0.11929E+02   -0.20340E+03 13728   0.372E+02
+DAV:   2    -0.898846528183E+01   -0.20917E+02   -0.19541E+02 18224   0.812E+01
+DAV:   3    -0.992337307807E+01   -0.93491E+00   -0.92422E+00 17768   0.153E+01
+DAV:   4    -0.992679258045E+01   -0.34195E-02   -0.34192E-02 15120   0.104E+00
+DAV:   5    -0.992679843850E+01   -0.58580E-05   -0.58581E-05 17256   0.462E-02    0.302E+00
+RMM:   6    -0.984420556820E+01    0.82593E-01   -0.18743E-02 13730   0.611E-01    0.183E+00
+RMM:   7    -0.980320605490E+01    0.41000E-01   -0.41533E-02 13893   0.957E-01    0.211E-01
+RMM:   8    -0.980345470082E+01   -0.24865E-03   -0.26373E-04 15705   0.933E-02    0.107E-01
+RMM:   9    -0.980371604953E+01   -0.26135E-03   -0.22795E-04 14187   0.762E-02    0.192E-02
+RMM:  10    -0.980374094990E+01   -0.24900E-04   -0.16552E-05 14924   0.224E-02    0.119E-02
+RMM:  11    -0.980374216008E+01   -0.12102E-05   -0.35424E-06 11964   0.102E-02
+   1 F= -.98037422E+01 E0= -.98036354E+01  d E =-.213613E-03  mag=    -0.0000    -0.0000     0.0000
+ writing wavefunctions

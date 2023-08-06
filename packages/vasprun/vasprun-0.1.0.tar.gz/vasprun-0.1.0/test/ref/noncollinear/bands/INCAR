@@ -1,0 +1,33 @@
+# Header
+SYSTEM = Germanium Diamond w/ SOC
+
+# General
+ISTART = 1  ! read WAVECAR
+ICHARG = 11 ! read charge from CHGCAR and keep fixed
+PREC   = Accurate         ! precision
+ALGO   = Fast             ! blocked Davidson followed by RMM-DIIS
+GGA = PS                  ! PBESol w/ potpaw_PBE
+
+# Electronic Relaxation:
+ISPIN  = 1                ! non spin polarized calculations
+# these are same as in Si because here we use Ge potpaw, not Ge(d)
+# ----------------------------------------------------------------
+ENCUT  = 320              ! (eV) plane wave cut-off
+ENAUG  = 640              ! (eV) KE cut-off
+NBANDS = 24               ! double for noncollinear; default is ne/2+ni/2 = 5 for unpolarised
+# ----------------------------------------------------------------
+EDIFF  = 1.0E-5           ! SCF tolerance (default is 1.e-4)
+ISYM   = 2                ! memory conserving symmetrisation of the ch. den.
+ISMEAR = 0                ! Gaussian
+SIGMA  = 0.1              ! broadening in eV
+
+# Spin-orbit coupling
+LNONCOLLINEAR = .TRUE.
+LSORBIT       = .TRUE.
+SAXIS = 0 0 1
+MAGMOM = 0 0 0 0 0 0 
+
+
+# Geometry optimisation:
+IBRION =  -1              ! no ion motion nor cell change
+NSW    =   0              ! no outer loop iteration

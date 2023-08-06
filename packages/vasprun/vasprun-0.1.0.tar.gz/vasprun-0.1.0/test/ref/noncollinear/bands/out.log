@@ -1,0 +1,35 @@
+ vasp.5.3.3 18Dez12 (build Dec 08 2018 16:16:50) complex                        
+  
+ POSCAR found type information on POSCAR  Ge
+ POSCAR found :  1 types and       2 ions
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You enforced a specific xc-type in the INCAR file,                     |
+|      a different type was found on the POTCAR file                          |
+|          I HOPE YOU KNOW, WHAT YOU ARE  DOING                               |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ WARNING: stress and forces are not correct
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ charge-density read from file: Germanium                               
+ magnetization density read from file 1
+ magnetization density read from file 2
+ magnetization density read from file 3
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.173983812028E+02    0.17398E+02   -0.20808E+03  3936   0.358E+02
+DAV:   2    -0.328055429132E+01   -0.20679E+02   -0.18751E+02  5128   0.770E+01
+DAV:   3    -0.432283333862E+01   -0.10423E+01   -0.10062E+01  5088   0.154E+01
+DAV:   4    -0.432669240595E+01   -0.38591E-02   -0.38573E-02  4224   0.106E+00
+DAV:   5    -0.432669912621E+01   -0.67203E-05   -0.67201E-05  5088   0.470E-02
+RMM:   6    -0.432669914632E+01   -0.20107E-07   -0.19892E-07  1802   0.268E-03
+   1 F= -.43266991E+01 E0= -.43215251E+01  d E =-.103482E-01  mag=    -0.0000    -0.0000     0.0000
+ writing wavefunctions

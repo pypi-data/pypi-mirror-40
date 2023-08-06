@@ -1,0 +1,21 @@
+SYSTEM = Si0.5Ge0.5 zincblende primitive PBESol
+
+# General
+ICHARG = 11               ! read charge from CHGCAR and keep fixed
+PREC   = Accurate         ! precision
+ALGO   = Fast             ! blocked Davidson followed by RMM-DIIS
+ISMEAR = 0                ! Gaussian, as Ge turns out to be a metal.
+SIGMA  = 0.1              ! broadening in eV; predominant value in examples
+GGA    = PS               ! PBEsol
+
+# Electronic
+ISPIN  = 1                ! non spin polarized calculations
+ENCUT  = 320              ! (eV) the bigger value b/w
+ENAUG  = 640              ! Si and Ge (both in SP basis!)
+NBANDS = 24               ! more than the default ne/2+ni/2
+EDIFF  = 1.0E-5           ! SCF tolerance (default is 1.e-4)
+ISYM   = 2                ! memory conserving symmetrisation of the ch. den.
+
+# Geometry optimisation:
+IBRION =  -1              ! no ion motion nor cell change
+NSW    =   0              ! no outer loop iteration

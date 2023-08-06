@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: vasprun
+Version: 0.1.0
+Summary: Utility/library to process vasprun.xml, possibly more.
+Home-page: https://github.com/smarkov/vasprun/
+Author: Stanislav Markov
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: 
+        Processing and converting data in vasprun.xml
+        -----------------------------------------------------------
+        A few routines and an executable to convert the XML file output by
+        the The Vienna Ab initio simulation package (VASP) to a json dictionary
+        with specific entries permitting analysis and plotting of density of
+        states (DoS) and band-structure.
+        
+Platform: platform independent
+Classifier: Programming Language :: Python
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering

@@ -1,0 +1,108 @@
+#!/usr/bin/env python3
+import os
+import sys
+import argparse
+from pprint import pprint
+from vasprun.plot import plot_bands
+from vasprun.io import parse_vasprun, update_bands_xplotinfo
+from json_tricks import dump
+
+# keep the '.' for direct comparison against splitext()
+FIGFILEEXT = '.pdf'
+
+def main():
+    """Handle arguments and call main routines."""
+
+    # argument parsing at start
+    # -------------------------------------------------------------------
+    parser = argparse.ArgumentParser(
+        description="Translate select items from vasprun.xml to jason"
+    )
+    parser.add_argument(
+        '-x', "--xml-file", type=str, dest='xmlfile', default="vasprun.xml",
+        action="store", help="XML output from VASP, in ./ by default."
+    )
+    parser.add_argument(
+        '-j', "--json-file", type=str, dest='jsonfile', default="vasprun.json",
+        action="store",
+        help="JSON output from this script, in the directory of the xml-file."
+    )
+    parser.add_argument(
+        '-v', '--verbose', dest='verbose', default=False, action='store_true',
+        help="Verbose console output"
+    )
+    parser.add_argument(
+        '-k', '--kpath', type=str, dest='kpath', default=None, action='store',
+        help="a quoted string, e.g. 'LGXK,UG'; comma-separated k-path segments"
+    )
+    parser.add_argument(
+        '-pb', '--plot-bands', dest='plot_bands', default=False,
+        action='store_true', help="Plot band-structure"
+    )
+    parser.add_argument(
+        "--plotname-bands", type=str, dest='plotname_bands', default="bands.pdf",
+        action="store",
+        help="Filename of the band-structure figure."
+    )
+    parser.add_argument(
+        '-y', "--ylimit", dest="ylim", nargs=2, default=None, action="store",
+        type=float, help="A tuple: Y axis limits if -pb is specified"
+    )
+    args = parser.parse_args()
+
+    # Sort out input and output files;
+    # It seems reasonable to put the destination json file where the source
+    # vasprun.xml is.
+    xmlfile = os.path.abspath(args.xmlfile)
+    xmldir = os.path.dirname(xmlfile)
+
+    if not os.path.isfile(xmlfile):
+        msg = 'The file "{}" does not exist'.format(xmlfile)
+        parser.error(msg)
+
+    if os.path.dirname(args.jsonfile) == '':
+        jsonfile = os.path.join(xmldir, args.jsonfile)
+    else:
+        jsonfile = args.jsonfile
+
+    print('Reading {}'.format(xmlfile))
+    print('Output will be in {}'.format(jsonfile))
+
+    # Put the path the source inside the data, for reference!
+    data = {'vasprun.xml': xmlfile}
+
+    # Get the data
+    data.update(parse_vasprun(xmlfile))
+
+    # atoms and kpoints must be obtained prior to getting info for the bands plot
+    if args.kpath is not None:
+        update_bands_xplotinfo(data, args.kpath)
+    if args.verbose:
+        print('Parsed data:')
+        pprint(data)
+
+    # write output
+    with open(jsonfile, 'w') as fp:
+        # Below, we avoid using the indent option because it increases file
+        # size by more than 3 times.
+        # There is instead an easy way to do this externally, if needed.
+        # python -mjson.tool < vasprun.json > vasprun.indented.json
+        #dump(data, fp, indent='    ',)
+        dump(data, fp)
+
+    # plot bands if requested
+    if args.plot_bands:
+        fig, ax = plot_bands(data['eigenvalues'].T, data['bands.plot_xval'],\
+            data['bands.plot_xticks'], data['bands.plot_xlabels'],\
+            data['efermi'], data['efermi'],\
+            ylim=args.ylim, outprefix='')
+        # plot in the same directory as the vasprun.xml
+        filename = args.plotname_bands
+        if os.path.splitext(filename)[1] != FIGFILEEXT:
+            filename = filename + FIGFILEEXT
+        filename = os.path.join(xmldir, filename)
+        fig.savefig(os.path.join(xmldir, filename))
+
+
+if __name__ == "__main__":
+    main()

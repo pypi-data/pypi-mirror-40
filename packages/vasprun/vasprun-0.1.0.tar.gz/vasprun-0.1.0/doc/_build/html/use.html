@@ -1,0 +1,149 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Useage &#8212; vasprun 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="License" href="license.html" />
+    <link rel="prev" title="Install" href="install.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="useage">
+<span id="use"></span><span id="index-0"></span><h1>Useage<a class="headerlink" href="#useage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="command-line">
+<h2>Command line<a class="headerlink" href="#command-line" title="Permalink to this headline">¶</a></h2>
+<p>One can use the <code class="docutils literal notranslate"><span class="pre">vasprun</span></code> command from the prompt to create read the
+<code class="docutils literal notranslate"><span class="pre">vasprun.xml</span></code> and create <code class="docutils literal notranslate"><span class="pre">vasprun.json</span></code> file in the directory where the
+<code class="docutils literal notranslate"><span class="pre">xml</span></code> file is, and potentially plot a bandstructure.</p>
+<p>Check options by</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vasprun</span> <span class="o">-</span><span class="n">h</span>
+</pre></div>
+</div>
+<p>Plot bandstructure</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vasprun</span> <span class="o">-</span><span class="n">x</span> <span class="o">./</span><span class="n">test</span><span class="o">/</span><span class="n">ref</span><span class="o">/</span><span class="n">noncollinear</span><span class="o">/</span><span class="n">bands</span><span class="o">/</span><span class="n">vasprun</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="n">pb</span> <span class="o">-</span><span class="n">k</span> <span class="s1">&#39;LGXU,KG&#39;</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">vasprun.json</span></code> file has a very compact representation. If you
+want to have a peak inside, make it human-readable (tab-formatting):</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">mjson</span><span class="o">.</span><span class="n">tool</span> <span class="n">path_to</span><span class="o">/</span><span class="n">vasprun</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="library">
+<h2>Library<a class="headerlink" href="#library" title="Permalink to this headline">¶</a></h2>
+<p>One can import the library and read <code class="docutils literal notranslate"><span class="pre">vasprun.xml</span></code>
+into a dictionary within a Python3 script or a program.</p>
+<p>For example, to see all the keys that are currently parsed:</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vapsrun.io</span> <span class="k">import</span> <span class="n">parse_vasprun</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">parse_vasprun</span><span class="p">(</span><span class="s1">&#39;path_to/vasprun.xml&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>The above snipped would output:</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dict_keys</span><span class="p">([</span><span class="s1">&#39;SYSTEM&#39;</span><span class="p">,</span> <span class="s1">&#39;atoms&#39;</span><span class="p">,</span> <span class="s1">&#39;atoms.basis&#39;</span><span class="p">,</span> <span class="s1">&#39;atoms.positions&#39;</span><span class="p">,</span>
+<span class="s1">&#39;atoms.scaled_positions&#39;</span><span class="p">,</span> <span class="s1">&#39;atoms.ASE&#39;</span><span class="p">,</span> <span class="s1">&#39;atoms.reciprocal_basis&#39;</span><span class="p">,</span>
+<span class="s1">&#39;atoms.cell_volume&#39;</span><span class="p">,</span> <span class="s1">&#39;ENMAX&#39;</span><span class="p">,</span> <span class="s1">&#39;ENAUG&#39;</span><span class="p">,</span> <span class="s1">&#39;EDIFF&#39;</span><span class="p">,</span> <span class="s1">&#39;EREF&#39;</span><span class="p">,</span> <span class="s1">&#39;NELECT&#39;</span><span class="p">,</span> <span class="s1">&#39;NBANDS&#39;</span><span class="p">,</span>
+<span class="s1">&#39;ISPIN&#39;</span><span class="p">,</span> <span class="s1">&#39;LSORBIT&#39;</span><span class="p">,</span> <span class="s1">&#39;LNONCOLLINEAR&#39;</span><span class="p">,</span> <span class="s1">&#39;SAXIS&#39;</span><span class="p">,</span> <span class="s1">&#39;MAGMOM&#39;</span><span class="p">,</span> <span class="s1">&#39;IBRION&#39;</span><span class="p">,</span> <span class="s1">&#39;ISIF&#39;</span><span class="p">,</span>
+<span class="s1">&#39;EDIFFG&#39;</span><span class="p">,</span> <span class="s1">&#39;GGA&#39;</span><span class="p">,</span> <span class="s1">&#39;e_fr_energy&#39;</span><span class="p">,</span> <span class="s1">&#39;e_wo_entrp&#39;</span><span class="p">,</span> <span class="s1">&#39;e_0_energy&#39;</span><span class="p">,</span> <span class="s1">&#39;efermi&#39;</span><span class="p">,</span>
+<span class="s1">&#39;kmesh_division&#39;</span><span class="p">,</span> <span class="s1">&#39;kmesh_type&#39;</span><span class="p">,</span> <span class="s1">&#39;kpoints&#39;</span><span class="p">,</span> <span class="s1">&#39;eigenvalues&#39;</span><span class="p">,</span> <span class="s1">&#39;occupations&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-keys">
+<h2>Adding keys<a class="headerlink" href="#adding-keys" title="Permalink to this headline">¶</a></h2>
+<p>Additional keys may be parsed but these have to be added in
+<code class="docutils literal notranslate"><span class="pre">VASPPARAMETERS</span></code> dictionary in <code class="docutils literal notranslate"><span class="pre">src/vasprun/io.py</span></code>.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">vasprun</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Useage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="install.html" title="previous chapter">Install</a></li>
+      <li>Next: <a href="license.html" title="next chapter">License</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Stanislav Markov.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="_sources/use.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
