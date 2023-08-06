@@ -1,0 +1,77 @@
+import time
+
+if not config:
+    configfile: os.path.join(os.getcwd(), 'config-singlecell.yaml')
+
+RUN_ID = str(config['run_id'])
+TEMPLATES = config['templates']
+
+
+orig_base = os.path.join(TEMPLATES, 'snakefile_base', 'snakefile_base_singlecell.py')
+target_base_dir = os.path.join(os.getcwd(), 'snakefile_base_' + RUN_ID)
+target_base = os.path.join(target_base_dir, 'snakefile_base_singlecell.py')
+if not os.path.isdir(target_base_dir):
+    os.system(
+        "mkdir -p {target_base_dir}; cp {orig_base} {target_base_dir}; touch __init__.py".format(
+            target_base_dir=target_base_dir, orig_base=orig_base))
+    time.sleep(10)
+
+include: target_base
+
+
+"""
+Rules:
+=======
+"""
+
+rule rule_all:
+    input:
+        os.path.join(ROOT_OUT_DIR, 'Done.txt')
+
+
+rule rule_1_count:
+    input:
+        os.path.join(FASTQ_DIR, 'outs', 'fastq_path', '{sample}') # folder name of the fastq files
+    output:
+        os.path.join(ROOT_OUT_DIR, '1_count', '{sample}', 'outs', 'molecule_info.h5')
+    params:
+        output_dir = os.path.join(ROOT_OUT_DIR, '1_count'),
+        sample = '{sample}'
+    threads: 48
+    resources:
+        mem_mb_per_job=3000,
+        mem_total_gb=int((3000*48)/1024)
+    log:
+        os.path.join(ROOT_OUT_DIR, LOG_DIR_NAME, '1_count.{sample}.txt')
+    shell:
+        '''
+        #The output will be in ROOT_OUT_DIR. There is no parameter to specify output directory and "cd" command don't work. The folders of samples are created in 1_count folder (maybe by snakemake ?), so need to delete them.
+        {CELLRANGER_EXE} count --fastqs={input} --id={params.sample} --transcriptome={CELLRANGER_TRANSCRIPTOME} --localmem={resources.mem_total_gb} &> {log}
+        # For debuging, run toy-example-singlecell with "--chemistry threeprime" parameter
+        #{CELLRANGER_EXE} count --chemistry threeprime --fastqs={input} --id={params.sample} --transcriptome={CELLRANGER_TRANSCRIPTOME} --localmem=140 &> {log}
+        rm -rf {params.output_dir}/{params.sample}
+        mv {params.sample} {params.output_dir}
+        '''
+
+rule rule_2_aggregation:
+    input:
+        expand(os.path.join(ROOT_OUT_DIR, '1_count', '{sample}', 'outs', 'molecule_info.h5'), sample=SAMPLES)
+    output:
+        os.path.join(ROOT_OUT_DIR, 'Done.txt')
+    params:
+        output_dir = os.path.join(ROOT_OUT_DIR, '2_aggregation')
+    threads: 48
+    resources:
+        mem_mb_per_job=3000
+    log:
+        csvfile = os.path.join(ROOT_OUT_DIR, LOG_DIR_NAME, '2_aggregation_csvfile.txt'),
+        aggr = os.path.join(ROOT_OUT_DIR, LOG_DIR_NAME, '2_aggregation_aggregation.txt')
+    shell:'''
+        #Create list.csv file
+        cd {params.output_dir}
+        {PYTHON} {SCRIPTS}/SinglecellUtils.py --pipeline-dir {ROOT_OUT_DIR} --samples {SAMPLES} --step 2_aggregation --logFile {log.csvfile}
+        agg_id=`echo agg {SAMPLES} | sed "s/ /_/g"`
+        {CELLRANGER_EXE} aggr --id=$agg_id --csv=list.csv  &> {log.aggr}
+        cd {ROOT_OUT_DIR}
+        touch {ROOT_OUT_DIR}/Done.txt
+    '''
