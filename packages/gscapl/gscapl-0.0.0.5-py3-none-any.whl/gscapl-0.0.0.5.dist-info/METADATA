@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gscapl
+Version: 0.0.0.5
+Summary: A package for geospatial context analysis
+Home-page: https://github.com/lukeWaninger/GSCAP
+Author: Luke Waninger
+Author-email: luke.waninger@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: googlemaps (==3.0.2)
+Requires-Dist: numpy (==1.15.2)
+Requires-Dist: pandas (==0.23.4)
+Requires-Dist: requests (==2.19.1)
+Requires-Dist: scikit-learn (==0.19.2)
+Requires-Dist: scipy (==1.1.0)
+Requires-Dist: SQLAlchemy (==1.2.12)
+Requires-Dist: urllib3 (==1.23)
+Requires-Dist: synapseclient (>=1.9.0)
+
+[![Build Status](https://travis-ci.com/lukeWaninger/GSCAP.svg?token=jrdsuo8zKWc9VxHgCViY&branch=master)](https://travis-ci.com/lukeWaninger/GSCAP)
+
+# Geospatial Context Analysis Pipeline (GSCAP)
+
+
