@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: svgnest
+Version: 0.1
+Summary: SVG nesting
+Home-page: UNKNOWN
+Author: Matthieu Berthomé
+Author-email: matthieu.berthome@gmail.com
+License: MIT
+Download-URL: http://github.com/rienafairefr/pysvgnest/
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7

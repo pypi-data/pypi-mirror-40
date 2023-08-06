@@ -1,0 +1,8 @@
+setup.py
+svgnest/__init__.py
+svgnest/nest.py
+svgnest.egg-info/PKG-INFO
+svgnest.egg-info/SOURCES.txt
+svgnest.egg-info/dependency_links.txt
+svgnest.egg-info/requires.txt
+svgnest.egg-info/top_level.txt
