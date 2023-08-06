@@ -1,0 +1,17 @@
+
+[DF]
+pandas
+
+[TDA]
+numpy
+
+[Unimod]
+lxml
+sqlalchemy
+
+[XML]
+lxml
+numpy
+
+[graphics]
+matplotlib
