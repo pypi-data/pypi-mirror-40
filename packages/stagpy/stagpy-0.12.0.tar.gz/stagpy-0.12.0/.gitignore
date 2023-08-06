@@ -1,0 +1,12 @@
+*.pdf
+*.swp
+*/__pycache__/
+.cache
+.pytest_cache
+.coverage
+.tox
+stagpy.egg-info/
+bld/
+docs/_build/
+docs/_static/
+docs/_templates/
