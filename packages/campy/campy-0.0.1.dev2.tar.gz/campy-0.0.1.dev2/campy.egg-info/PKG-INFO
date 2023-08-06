@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: campy
+Version: 0.0.1.dev2
+Summary: Python Client for Stanford Libraries, including Stanford's Portable Graphics Library
+Home-page: https://campy.sredmond.io
+Author: Sam Redmond
+Author-email: sredmond@stanford.edu
+License: MIT
+Description: UNKNOWN
+Keywords: graphics intro teaching stanford cs106a cs106b cs106x karel gobject
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: test
+Provides-Extra: dev
