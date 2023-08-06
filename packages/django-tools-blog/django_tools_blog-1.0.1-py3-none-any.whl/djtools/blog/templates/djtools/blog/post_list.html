@@ -1,0 +1,20 @@
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                {% for post in post_list %}
+                    <div class="post-preview">
+                        <a href="{% url 'blog:detail' post.slug %}">
+                            <h2 class="post-title">{{ post.title }}</h2>
+                            {% if post.subtitle %}
+                                <p class="post-subtitle">{{ post.subtitle }}</p>
+                            {% endif %}
+                        </a>
+                        <p class="post-meta">Posted {{ post.created }}</p>
+                    </div>
+                    <hr>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock content %}

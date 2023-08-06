@@ -1,0 +1,17 @@
+djtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djtools/blog/__init__.py,sha256=g8Z2uA_Nnb4wk3SHyjq7eyTXGQJ7aGiipIoKVQh9-Fs,52
+djtools/blog/admin.py,sha256=ARMDHwVcpbMJxQnTIF0Oy7EqnWu__azp6XCUGOLy9bw,600
+djtools/blog/apps.py,sha256=WFxu1LHOSEYe-HqE_blWfPZwMhVzSas4-I3JtUk58co,144
+djtools/blog/models.py,sha256=mO1kt8hwz85lS1JfrLCutcusHxH6JEJM3fvI7bG64HI,1740
+djtools/blog/urls.py,sha256=klCGgnDUVl_R3f_B6AW5T0DTfVoeBrtEtq9G8pind1Q,217
+djtools/blog/utils.py,sha256=nIu_fpnqBhhtkQzE2VRukN_sjQhThVwmmdY56DW5KZU,263
+djtools/blog/views.py,sha256=mqGIVLBqWpAIE5DOmS_5wpHLgeof-CgvazYGES__BI0,328
+djtools/blog/migrations/0001_initial.py,sha256=MQOze89GswwHl3ypG7mtiYKivPuUS4XQUKCaNqElZHY,2177
+djtools/blog/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djtools/blog/templates/djtools/blog/post_detail.html,sha256=OyrswXDTArjjQWziKCptk-nE7Fo-BwtLids1444NAKw,291
+djtools/blog/templates/djtools/blog/post_list.html,sha256=uKbH-ylSaYtRILnYTx7pmoU7qJxcyLmI6po89dsc8c4,785
+django_tools_blog-1.0.1.dist-info/LICENSE,sha256=PlrPmQZbiOtpyeMgk_jwpjt59wPLykO2jyxGLaV-AZI,1066
+django_tools_blog-1.0.1.dist-info/METADATA,sha256=W8XGXMbIpxiXy4rCRWHYomJzeVzLv89O5O2gUWA0umQ,969
+django_tools_blog-1.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+django_tools_blog-1.0.1.dist-info/top_level.txt,sha256=gD0LB3HJiv4CodvDdyh0ep8HzujNO3MM8RtvANynakU,8
+django_tools_blog-1.0.1.dist-info/RECORD,,

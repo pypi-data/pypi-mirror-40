@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: django-tools-blog
+Version: 1.0.1
+Summary: Django app to add blog to your website
+Home-page: https://github.com/semicolom/django-tools-blog
+Author: Toni Colom
+Author-email: toni@semicolom.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+
+# Django Tools Blog
+
+Django app to add blog to your website
+
+## Installation
+
+1. Install with pip install `django-tools-blog`.
+
+2. Add `djtools.blog` to your INSTALLED_APPS setting like this:
+```
+INSTALLED_APPS = [
+    ...
+    'djtools.blog',
+]
+```
+
+
