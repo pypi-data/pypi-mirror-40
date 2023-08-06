@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: zretry
+Version: 0.1.1
+Summary: 一个轻量的重试包
+Home-page: https://pypi.org/
+Author: zlyuan
+Author-email: 1277260932@qq.com
+License: GNU GENERAL PUBLIC LICENSE
+Platform: all
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# 一个轻量的重试包
+
+
+###  实例代码
+```python
+from zretry import retry
+@retry
+def fun():
+    a = 1 / 0
+fun() # 此时会不停的尝试调用直到成功, 每次尝试间隔一秒
+```
+
+###  限制尝试次数
+```python
+from zretry import retry
+@retry(max_attempt_count=5) # 最多尝试调用5次, 超出5次后报错
+def fun():
+    a = 1 / 0
+fun()
+```
+
+### 参数说明
+参数名|数据类型|默认值|描述
+--|:--:|:--:|---
+interval | float | 1 | 每次尝试间隔时间
+max_attempt_count | int | None | 最大尝试次数
+result_retry_flag | any | None | 如果调用的函数不报错, 它的返回值和result_retry_flag的id是同一个id, 则重试
+error_callback | function | None | 每次尝试错误都会回调这个函数, 它接收一个参数, 该参数表示尝试的是哪个函数
+
+### 更新日志
+发布时间|发布版本|发布说明
+--|:--:|---
+19-01-13 | 0.1.1 | 修复对类函数使用装饰器会导致调用时报错的bug
+19-01-08 | 0.1.0 | 发布第一版
+
+- - -
+##### 本项目仅供所有人学习交流使用, 禁止用于商业用途
+
+
