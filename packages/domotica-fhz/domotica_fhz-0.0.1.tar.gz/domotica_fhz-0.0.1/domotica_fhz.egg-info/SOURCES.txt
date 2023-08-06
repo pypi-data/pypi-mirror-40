@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+domotica_fhz/__init__.py
+domotica_fhz/fhz.py
+domotica_fhz.egg-info/PKG-INFO
+domotica_fhz.egg-info/SOURCES.txt
+domotica_fhz.egg-info/dependency_links.txt
+domotica_fhz.egg-info/top_level.txt
+domotica_fhz/domotica_fhz_tests/__init__.py
+domotica_fhz/domotica_fhz_tests/test_fhz.py

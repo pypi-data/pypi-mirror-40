@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: domotica_fhz
+Version: 0.0.1
+Summary: Package for using the FHZ 1000/FHZ 1300/FS20
+    components in python
+Home-page: https://gitlab.com/JohanKunnen/domotica_fhz
+Author: Johan Kunnen
+Author-email: domotica@kunnen.frl
+License: UNKNOWN
+Description: # Domotica FHZ
+        
+        This is a python package that can be used for FHZ 1000/FHZ 1300 and FS20 devices.  
+        
+        More information about these devices can be found [here](http://fhz4linux.info/tiki-index.php).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
