@@ -1,0 +1,16 @@
+tabulate
+scipy
+pandas
+setuptools
+numpy
+PyVISA
+oyaml
+sphinx_rtd_theme
+databroker
+colorama
+matplotlib
+bluesky
+ophyd
+pyserial
+wrapt
+PyYAML
