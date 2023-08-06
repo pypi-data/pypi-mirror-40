@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: alosi
+Version: 2.1.1
+Summary: Utilities for the ALOSI adaptive learning system
+Home-page: https://github.com/harvard-vpal/alosi
+Author: Andrew Ang
+Author-email: andrew_ang@harvard.edu
+License: Apache-2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: data
