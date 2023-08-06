@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: randovania
+Version: 0.19.0
+Summary: A randomizer validator for the Metroid Prime series.
+Home-page: https://github.com/henriquegemignani/randovania
+Author: Henrique Gemignani
+License: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Description: # Randovania
+        With Randovania, each Metroid Prime 2: Echoes playthrough shuffles the location of all items in the game.
+        You could find the Light Beam right off the start, or the Bombs deep inside Sanctuary Fortress.  
+        
+        ## Installation
+        
+        ### Windows
+        
+        In the [releases page](https://github.com/henriquegemignani/randovania/releases) we have zip files
+        with everything ready to use. Just extract and run!
+        
+        ## Usage
+        
+        1. Press 'Load Game' and then select a Metroid Prime 2: Echoes ISO file.
+        Use a Nintendo GameCube version, either USA or PAL.
+        ![Randovania Main GUI](randovania-readme/gui-1.png)
+           - Give it a few minutes to finish. This operation needs roughly 2 GiB of free
+           storage in your system. (more precisely, local AppData)
+        
+        2. Configure the settings you wish to use in the 'Logic Settings' tab.
+        ![Logic Settings Tab](randovania-readme/gui-2.png)
+          
+        3. Input a seed number. You can press 'New Seed' for one to be generated for you.
+        ![New Seed](randovania-readme/gui-3.png)
+        
+            a. Alternatively, you can import a Permalink someone shared with you!
+            ![Permalink](randovania-readme/gui-4.png) 
+        
+        4. When finished, press 'Randomize' to create an ISO ready to be played. The ISO will be created
+        in the folder you selected in 'Output Folder'
+        ![Output Folder](randovania-readme/gui-5.png)
+           - The entire operation may take over 5 minutes to finish, depending on your computer.
+           - An operation may also fail with an error similar to this. In this case, choose another Seed
+           Number and try again.
+           ![Generation Failure](randovania-readme/gui-6.png)
+           
+           
+        ## FAQ
+        
+        **I can't use this spider track, even though I have Spider Ball!**
+        
+        The following rooms have surprising vanilla behaviour about their spider tracks:
+        
+        * Main Reactor (Agon Wastes)
+        
+            The spider tracks only works after you beat Dark Samus 1 *and reloads the room*.
+            When playing with no tricks, this means you need Dark Beam to escape the room.
+        
+        * Dynamo Works (Sanctuary Fortress)
+        
+            The spider tracks only works after you beat Spider Guardian. When playing with no tricks,
+            you can't leave this way until you do that.
+        
+        **I can't open this Translator Gate, even though I have the correct translator!**
+        
+        * GFMC Compound (Temple Grounds)
+            
+            This is actually a Violet gate.
+            
+        * Meeting Grounds (Temple Grounds)
+        
+            This is actually a Violet gate.
+            
+        * Torvus Temple (Torvus Bog)
+        
+            In order to open the elevator, you also need to pick the item in Torvus Energy Controller.
+            
+        **Where is the Flying Ing Cache inside Dark Oasis?**
+        
+        The Flying Ing Cache in this room appears only after you beat the Power Bomb Guardian.
+               
+        ## Community
+        
+        Join the Metroid Prime Randomizer Discord: https://discord.gg/gymstUz
+         
+        ## Credits
+        
+        Many thanks to [Claris](https://www.twitch.tv/claris) for
+        making the Echoes Randomizer and both collecting and providing this
+        incredible set of data which powers Randovania.
+        
+        Claris also made the included [Menu Mod](https://www.dropbox.com/s/yhqqafaxfo3l4vn/Echoes%20Menu.7z),
+        a tool for practicing Echoes. For more information, see the
+        [Menu Mod README](https://www.dropbox.com/s/yhqqafaxfo3l4vn/Echoes%20Menu.7z?file_subpath=%2FEchoes+Menu%2Freadme.txt).
+        
+        Also thanks to [Dyceron](https://www.twitch.tv/dyceron) for motivation and testing.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
