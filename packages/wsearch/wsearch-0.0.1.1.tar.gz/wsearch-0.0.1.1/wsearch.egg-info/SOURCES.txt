@@ -1,0 +1,9 @@
+README.md
+setup.py
+wsearch/__init__.py
+wsearch/wsearch.py
+wsearch.egg-info/PKG-INFO
+wsearch.egg-info/SOURCES.txt
+wsearch.egg-info/dependency_links.txt
+wsearch.egg-info/requires.txt
+wsearch.egg-info/top_level.txt
