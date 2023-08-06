@@ -1,0 +1,2 @@
+include caddy/view/icons/*.png
+include caddy/view/files/*
