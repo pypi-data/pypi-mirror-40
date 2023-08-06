@@ -1,0 +1,18 @@
+sudo: false
+language: python
+before_cache:
+  - rm -f $HOME/.cache/pip/log/debug.log
+cache:
+  directories:
+    - $HOME/.cache/pip
+python:
+    - "3.6"
+install: 
+    - "pip install pipenv"
+    - "pipenv install --dev"
+    - "python setup.py develop"
+script: 
+    - "flake8 version/"
+    - "py.test --cov-report term --cov version version_tests/"
+after_success:
+  coveralls
