@@ -1,0 +1,52 @@
+Py2Play
+
+WARNING !!!
+DUE TO SECURITY PROBLEM, NETWORK SUPPORT HAS BEEN DISABLED.
+
+
+
+Py2Play  is a peer-to-peer network game engine -- It means that no
+server is needed to play. Only (identical) clients are used !
+
+A small demo is included.
+
+To play on a single local computer, launch ./startdemo_local1 for the
+first player, THEN ./startdemo_local2 and ./startdemo_local3 for the
+following.
+
+To play on a real network, use the ./startdemo script as following:
+ - ./startdemo --name your_name
+       to create a new game
+
+ - ./startdemo --name your_name --parrain host
+       to join a game played by someone at "host" (IP address or host
+name). "host" can be the host of any player; not necessarily the first
+one (the one which as initiated the game).
+
+There is also options for changing the default port's address.
+
+In the demo, character are represented by letter (the first letter of
+your name), and the "#" is a NPC (a "monster") played by the
+computer.
+You can use the cursor keys to move around, and the space key to
+create a block at your position. To go to another level, just move out
+of the screen.
+
+There is currently no real goal in this demo game; it is just here for
+testing purpose.
+
+
+Distribution uses the Python distutils tools.
+Install it with (as root):
+
+  cd Py2Play-XXX
+  python ./setup.py install
+
+
+Py2Play is Free Software and is available under the GNU GPL.
+
+Enjoy the peer 2 peer gaming !
+
+
+Jiba -- Jean-Baptiste LAMY -- jiba@tuxfamily.org
+                              http://oomadness.tuxfamily.org

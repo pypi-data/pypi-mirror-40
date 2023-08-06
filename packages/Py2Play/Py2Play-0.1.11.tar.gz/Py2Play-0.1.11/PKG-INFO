@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: Py2Play
+Version: 0.1.11
+Summary: DEPRECATED A peer-to-peer network game engine in Python.
+Home-page: http://home.gna.org/oomadness/fr/slune/index.html
+Author: Lamy Jean-Baptiste (Jiba)
+Author-email: jiba@tuxfamily.org
+License: GPL
+Description: DEPRECATED A peer-to-peer network game engine in Python.
+        It does not require any server to run.
+        A small demo is included in the source.
+Platform: UNKNOWN

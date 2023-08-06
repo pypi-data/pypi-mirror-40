@@ -1,0 +1,81 @@
+#! /usr/bin/env python
+# -*- python -*-
+
+# Py2Play
+# Copyright (C) 2001 Jean-Baptiste LAMY
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+import sys
+import py2play.level as level, py2play.player as player, py2play.action as action, py2play.character as character, py2play.idler as idler
+
+from demo import *
+
+level_0_0 = create_level((0, 0))
+
+if len(sys.argv) < 3:
+  print "startdemo.py -- start the Py2Play demo !"
+  print "Usage :"
+  print "  To start a new game :"
+  print "    startdemo.py --name <name> [--port <port>]"
+  print "  To join an already existant game :"
+  print "    startdemo.py --name <name> [--port <port>] --parrain <host> [<port>]"
+  sys.exit(0)
+
+player_args  = {}
+parrain_args = {}
+
+i = 1
+while i < len(sys.argv):
+  arg = sys.argv[i]
+  i = i + 1
+  
+  if   arg == "--name":
+    player_args["name"] = sys.argv[i]
+    i = i + 1
+    
+  elif arg == "--port":
+    player_args["port"] = sys.argv[i]
+    i = i + 1
+    
+  elif arg == "--parrain":
+    parrain_args["host"] = sys.argv[i]
+    i = i + 1
+    if i < len(sys.argv):
+      parrain_args["port"] = sys.argv[i]
+      i = i + 1
+      
+
+if parrain_args.get("host"):
+  player = ActivePlayer(None, **player_args)
+  player.parrained_by(**parrain_args)
+  character = PlayerCharacter(player)
+  
+else:
+  player = ActivePlayer(level_0_0, **player_args)
+  character = PlayerCharacter(player, 5, 5)
+
+character.set_level(player.level)
+
+game = Game(character)
+game.start()
+
+
+try:
+  game.mainloop()
+  
+finally:
+  print "* P2Play * exiting..."
+  player.end_game()

@@ -1,0 +1,92 @@
+#! /usr/bin/env python
+# -*- python -*-
+
+# Py2Play
+# Copyright (C) 2001-2002 Jean-Baptiste LAMY
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+import sys, socket
+import py2play.player as player
+
+
+def help():
+  print "usage :"
+  print "  asker [--host <IP>] [port <port>] [-1] [-2] <question>"
+  print "where <question> can be :"
+  print "  name, version, address, round, players, listen, actions <startround> <endround>, level <levelname>, levels"
+  sys.exit()
+
+if len(sys.argv) == 1: help()
+
+args = {"host" : socket.gethostbyname("localhost")}
+
+i = 1
+while i < len(sys.argv):
+  arg = sys.argv[i]
+  i = i + 1
+  
+  if   arg == "--host":
+    args["host"] = sys.argv[i]
+    i = i + 1
+    
+  elif arg == "--port":
+    args["port"] = int(sys.argv[i])
+    i = i + 1
+    
+  elif arg == "-1":
+    args["port"] = 36079
+    
+  elif arg == "-2":
+    args["port"] = 36179
+    
+  elif arg == "-3":
+    args["port"] = 36279
+    
+  elif arg == "name"   : print player.PhantomPlayer(**args).name
+  elif arg == "version": print player.PhantomPlayer(**args).question_version()
+  elif arg == "address": print player.PhantomPlayer(**args).question_address()
+  elif arg == "round"  : print player.PhantomPlayer(**args).question_round()
+  elif arg == "players": print player.PhantomPlayer(**args).question_players()
+  elif arg == "levels" : print player.PhantomPlayer(**args).question_listlevels()
+  elif arg == "level"  :
+    phantom = player.PhantomPlayer(**args)
+    if i < len(sys.argv): level = phantom.question_searchlevel(eval(sys.argv[i]))
+    else:                 level = phantom.question_currentlevel()
+    print `level`
+    i = i + 1
+    
+  elif arg == "actions":
+    phantom = player.PhantomPlayer(**args)
+    actions = phantom.question_actions(int(sys.argv[i]), int(sys.argv[i + 1]))
+    if len(actions) == 0: print "(no reply)"
+    else:
+      for action in actions: print `action`
+    i = i + 2
+    
+  elif arg == "listen":
+    phantom = player.PhantomPlayer(**args)
+    phantom.listen_actions()
+    try:
+      while 1:
+        phantom.queue.fill()
+        print phantom.queue.pop()
+    finally: phantom.stop_listen_actions()
+    
+  else:
+    print "Unknown question %s" % arg
+    help()
+    
+
