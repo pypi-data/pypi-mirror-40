@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+navigation/__init__.py
+navigation/units.py
+pynavigation.egg-info/PKG-INFO
+pynavigation.egg-info/SOURCES.txt
+pynavigation.egg-info/dependency_links.txt
+pynavigation.egg-info/top_level.txt
