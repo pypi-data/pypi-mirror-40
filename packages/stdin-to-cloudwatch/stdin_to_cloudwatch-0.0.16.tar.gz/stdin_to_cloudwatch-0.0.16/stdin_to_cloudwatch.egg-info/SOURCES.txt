@@ -1,0 +1,14 @@
+README.md
+setup.py
+stdin_to_cloudwatch/__init__.py
+stdin_to_cloudwatch/__main__.py
+stdin_to_cloudwatch/input_adapters.py
+stdin_to_cloudwatch/output_adapters.py
+stdin_to_cloudwatch/publish_json_metrics.py
+stdin_to_cloudwatch/stream_consumer.py
+stdin_to_cloudwatch.egg-info/PKG-INFO
+stdin_to_cloudwatch.egg-info/SOURCES.txt
+stdin_to_cloudwatch.egg-info/dependency_links.txt
+stdin_to_cloudwatch.egg-info/entry_points.txt
+stdin_to_cloudwatch.egg-info/requires.txt
+stdin_to_cloudwatch.egg-info/top_level.txt
