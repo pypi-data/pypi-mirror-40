@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include wagtailcloudinary/static *
+recursive-include wagtailcloudinary/templates *
