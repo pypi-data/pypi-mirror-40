@@ -1,0 +1,16 @@
+jass_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jass_bot/cfr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jass_bot/mcts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jass_bot/mcts/ismcts.py,sha256=4HC1v4yVBCF05dKC1dcjRrEr4TptbzmJxhKXDlIlNEs,8822
+jass_bot/mcts/knockout_whist.py,sha256=tUFZo3DA9C_Gl1OYmtnZudNHGt5daLlmQ5YpU5Xp-8I,8768
+jass_bot/mcts/president.py,sha256=o25phv4Cud6ZT43Vkf83HPngQoTpDrozmmfEP422VPI,17051
+jass_bot/rl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jass_bot/rl/experiment.py,sha256=JmB-CIkrucUK50h4lKZ802PavIrPc8PXZC18YOkeJDw,5819
+jass_bot/rl/hyper_parameters.py,sha256=StjRW0qRuuNdgCJkh8xU99ibDD-HZQOYGlebIU7SBK8,874
+jass_bot/rl/jass_policy.py,sha256=9-rrxJ1jsTlJJ8Vv25wIz4GP67DzLYmAXDyKacPGklc,510
+jass_bot/rl/util.py,sha256=Qj9Ll_1okQzOMWCBlvwgmxkZt8gsMCErDqSD3zNg4Zo,2794
+jass_bot-0.0.5.dist-info/LICENSE,sha256=tYMbr4gOBvK1nt8SSB-BYQkK-hL1YfA6l5l2IZRT5uY,1069
+jass_bot-0.0.5.dist-info/METADATA,sha256=46tbzeH4tJbTvVMnI7V2JmA6i2ICz-LWHu9sGmQfMqE,1920
+jass_bot-0.0.5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+jass_bot-0.0.5.dist-info/top_level.txt,sha256=FUqaz_laT-_rzK6Ib5tHsKwtUl63iMw4Ty8rEMcT4Vg,9
+jass_bot-0.0.5.dist-info/RECORD,,
