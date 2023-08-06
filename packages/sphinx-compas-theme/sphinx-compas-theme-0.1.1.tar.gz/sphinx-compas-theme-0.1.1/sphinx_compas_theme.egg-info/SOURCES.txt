@@ -1,0 +1,13 @@
+AUTHORS.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+sphinx_compas_theme/__init__.py
+sphinx_compas_theme.egg-info/PKG-INFO
+sphinx_compas_theme.egg-info/SOURCES.txt
+sphinx_compas_theme.egg-info/dependency_links.txt
+sphinx_compas_theme.egg-info/entry_points.txt
+sphinx_compas_theme.egg-info/requires.txt
+sphinx_compas_theme.egg-info/top_level.txt
