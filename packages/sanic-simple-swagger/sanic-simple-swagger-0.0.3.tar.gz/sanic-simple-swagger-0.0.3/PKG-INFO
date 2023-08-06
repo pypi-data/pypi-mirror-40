@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sanic-simple-swagger
+Version: 0.0.3
+Summary: Swagger UI for Python web framework Sanic.
+Home-page: https://github.com/FerdinaKusumah/sanic_simple_swagger
+Author: Ferdina kusumah
+Author-email: ferdina.kusumah@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: sanic swagger,python sanic swagger,sanic openapi,sanic simple swagger
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
