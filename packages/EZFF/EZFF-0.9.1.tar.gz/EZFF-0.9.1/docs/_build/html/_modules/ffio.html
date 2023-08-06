@@ -1,0 +1,171 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ffio &#8212; EZFF 0.9 Beta documentation</title>
+    <link rel="stylesheet" href="../_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="../_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">EZFF 0.9 Beta documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for ffio</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;This module provide methods to handle reading and writing forcefields&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<div class="viewcode-block" id="read_variable_bounds"><a class="viewcode-back" href="../ffio.html#ffio.read_variable_bounds">[docs]</a><span class="k">def</span> <span class="nf">read_variable_bounds</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read permissible lower and upper bounds for decision variables used in forcefields optimization</span>
+
+<span class="sd">    :param filename: Name of text file listing bounds for each decision variable that must be optimized</span>
+<span class="sd">    :type filename: str</span>
+
+<span class="sd">    :param verbose: Print all variables read-in</span>
+<span class="sd">    :type verbose: bool</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">variable_bounds</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span> <span class="c1"># Force-read the parameter bounds file. This will loop until something is read-in. This is required if multiple ranks access the same file at the same time</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">())</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">variable_bounds_file</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">variable_bounds_file</span><span class="p">:</span>
+                <span class="n">items</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                <span class="n">key</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+                <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;_&#39;</span><span class="p">:</span>
+                    <span class="n">variable_bounds</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">values</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">variable_bounds</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">values</span><span class="p">))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">variable_bounds</span> <span class="o">==</span> <span class="p">{}:</span>
+            <span class="k">break</span>
+
+    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+        <span class="n">allkeys</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">variable_bounds</span><span class="p">:</span>
+            <span class="n">allkeys</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Keys: &#39;</span> <span class="o">+</span> <span class="n">allkeys</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39; read from &#39;</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">variable_bounds</span></div>
+
+
+
+<div class="viewcode-block" id="read_forcefield_template"><a class="viewcode-back" href="../ffio.html#ffio.read_forcefield_template">[docs]</a><span class="k">def</span> <span class="nf">read_forcefield_template</span><span class="p">(</span><span class="n">template_filename</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read-in the forcefield template. The template is constructed from a functional forcefield file by replacing all optimizable numerical values with variable names enclosed within dual angled brackets &lt;&lt; and &gt;&gt;.</span>
+
+<span class="sd">    :param template_filename: Name of the forcefield template file to be read-in</span>
+<span class="sd">    :type template_filename: str</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span> <span class="c1"># Force-read the template forcefield. This will loop until something is read-in. This is required if multiple ranks read the same file at the same time</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">())</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">template_filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">forcefield_template_file</span><span class="p">:</span>
+            <span class="n">template_string</span> <span class="o">=</span> <span class="n">forcefield_template_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">template_string</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">break</span>
+
+    <span class="k">return</span> <span class="n">template_string</span></div>
+
+
+
+<div class="viewcode-block" id="write_forcefield_file"><a class="viewcode-back" href="../ffio.html#ffio.write_forcefield_file">[docs]</a><span class="k">def</span> <span class="nf">write_forcefield_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">template_string</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Generate a new forcefield from the template by replacing variables with numerical values</span>
+
+<span class="sd">    :param filename: Name of the forcefield file to be written</span>
+<span class="sd">    :type filename: str</span>
+
+<span class="sd">    :param template_string: Text of the forcefield template</span>
+<span class="sd">    :type template_string: str</span>
+
+<span class="sd">    :param parameters: Numerical value of all decision variables in the form of variable:value pairs</span>
+<span class="sd">    :type parameters: dict</span>
+
+<span class="sd">    :param verbose: Print one line confirming forcefield write-out</span>
+<span class="sd">    :type verbose: bool</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">replaced_keys</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">ranges</span> <span class="ow">in</span> <span class="n">parameters</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">pattern</span> <span class="o">=</span> <span class="s1">&#39;&lt;&lt;&#39;</span> <span class="o">+</span> <span class="n">key</span> <span class="o">+</span> <span class="s1">&#39;&gt;&gt;&#39;</span>
+        <span class="k">while</span> <span class="n">pattern</span> <span class="ow">in</span> <span class="n">template_string</span><span class="p">:</span>
+            <span class="n">template_string</span> <span class="o">=</span> <span class="n">template_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%12.6f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">ranges</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+                <span class="n">replaced_keys</span> <span class="o">+=</span> <span class="n">key</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">new_forcefield</span><span class="p">:</span>
+        <span class="n">new_forcefield</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">template_string</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Forcefield, &#39;</span> <span class="o">+</span> <span class="n">filename</span> <span class="o">+</span> <span class="s1">&#39;, generated with new values for &#39;</span> <span class="o">+</span> <span class="n">replaced_keys</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">EZFF 0.9 Beta documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Aravind Krishnamoorthy.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.3.
+    </div>
+  </body>
+</html>
