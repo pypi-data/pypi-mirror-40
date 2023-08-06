@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: todero
+Version: 0.0.2
+Summary: Function mesh and service discovery utility
+Home-page: https://github.com/salosh/todero.git
+Author: Salo Shp
+Author-email: support@salosh.org
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python
+Classifier: Topic :: System :: Distributed Computing
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: psutil (>=5.4.8)
+
+Todero
+======
+
+Goals
+-----
+
+Features
+--------
+
+ - 
+
+Quick Start
+--------------------
+
+ * Install Todero:
+```sh
+# Install package
+pip install todero
+```
+
+* * *
+Visit our website at https://salosh.org
+
+
