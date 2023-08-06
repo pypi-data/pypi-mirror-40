@@ -1,0 +1,13 @@
+README.md
+setup.py
+cocof/__init__.py
+cocof/cocof.py
+cocof/filehandling.py
+cocof.egg-info/PKG-INFO
+cocof.egg-info/SOURCES.txt
+cocof.egg-info/dependency_links.txt
+cocof.egg-info/entry_points.txt
+cocof.egg-info/requires.txt
+cocof.egg-info/top_level.txt
+tests/__init__.py
+tests/test_filehandling.py
