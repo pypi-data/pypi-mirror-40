@@ -1,0 +1,19 @@
+#!python
+"""
+Starts the ES Data Exporter
+"""
+
+import argparse
+import yaml
+from es_data_exporter.http import start_http_server
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--port', type=int, default=9145, help='Port number for the HTTP server')
+    parser.add_argument('--config', type=argparse.FileType('r'), default='config/es_search.yaml')
+    parser.add_argument('--kerberos', action='store_true', dest='kerberos', help='Enable Kerberos authentication')
+    parser.add_argument('--tls', action='store_true', dest='tls', help='Use HTTPS for all requests')
+    parser.set_defaults(kerberos=False, tls=False)
+    args = parser.parse_args()
+    conf= yaml.safe_load(args.config)
+    start_http_server(conf, args.port, args.kerberos, args.tls)
