@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mongodbshell
+Version: 0.1a2
+Summary: Python tools for using MongoDB with the Python Shell (3.7)
+Home-page: https://github.com/jdrumgoole/mongodbshell
+Author: Joe Drumgoole
+Author-email: joe@joedrumgoole.com
+License: MIT
+Description: 
+        # mongodb_utils
+        
+        A Collection of Python Classes designed for Working with MongoDB
+        
+        # agg.py
+        
+        # mongodb.py
+        
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
