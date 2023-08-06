@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jrti-game
+Version: 1.0.3
+Summary: Just Read the Instructions, the game
+Home-page: https://pyweek.org/e/instructions/
+Author: Petr Viktorin
+Author-email: encukou@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pyglet (==1.2.4)
+Requires-Dist: pypng (==0.0.18)
+Requires-Dist: attrs (==17.2.0)
+
+UNKNOWN
+
+

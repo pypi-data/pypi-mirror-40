@@ -1,0 +1,3 @@
+[console_scripts]
+jrti-game = jrti_game:main
+
