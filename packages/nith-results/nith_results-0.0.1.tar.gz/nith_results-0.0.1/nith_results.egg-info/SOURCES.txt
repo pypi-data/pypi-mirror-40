@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+nith_results/__init__.py
+nith_results/constants.py
+nith_results/main.py
+nith_results/output.py
+nith_results/student.py
+nith_results.egg-info/PKG-INFO
+nith_results.egg-info/SOURCES.txt
+nith_results.egg-info/dependency_links.txt
+nith_results.egg-info/entry_points.txt
+nith_results.egg-info/requires.txt
+nith_results.egg-info/top_level.txt
+test/test_output.py

@@ -1,0 +1,3 @@
+[console_scripts]
+nith_results = nith_results.main:main
+
