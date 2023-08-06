@@ -1,0 +1,10 @@
+README.md
+setup.py
+irrpro/__init__.py
+irrpro/script.py
+irrpro.egg-info/PKG-INFO
+irrpro.egg-info/SOURCES.txt
+irrpro.egg-info/dependency_links.txt
+irrpro.egg-info/not-zip-safe
+irrpro.egg-info/requires.txt
+irrpro.egg-info/top_level.txt
