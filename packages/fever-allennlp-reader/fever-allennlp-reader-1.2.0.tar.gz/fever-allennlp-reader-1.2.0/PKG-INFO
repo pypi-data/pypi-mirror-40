@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: fever-allennlp-reader
+Version: 1.2.0
+Summary: Fact Extraction and VERification dataset reader for AllenNLP
+Home-page: UNKNOWN
+License: Type license() to see the full license text
+Description: readme
+Platform: UNKNOWN
+Requires-Python: >=3.6
