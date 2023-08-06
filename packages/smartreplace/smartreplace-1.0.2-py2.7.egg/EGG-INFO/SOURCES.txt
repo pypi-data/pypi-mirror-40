@@ -1,0 +1,9 @@
+setup.py
+smartreplace/__init__.py
+smartreplace/bin.py
+smartreplace/colors.py
+smartreplace.egg-info/PKG-INFO
+smartreplace.egg-info/SOURCES.txt
+smartreplace.egg-info/dependency_links.txt
+smartreplace.egg-info/entry_points.txt
+smartreplace.egg-info/top_level.txt
