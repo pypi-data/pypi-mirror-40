@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: elib-django
+Version: 0.0.1
+Summary: elib_django
+Home-page: https://github.com/east301/elib_django.git
+Author: east301
+Author-email: me@east301.net
+License: Apache-2.0
+Keywords: django
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+
+elib_django
+
+
