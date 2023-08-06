@@ -1,0 +1,10 @@
+README.md
+setup.py
+Flask_Philo_PynamoDB.egg-info/PKG-INFO
+Flask_Philo_PynamoDB.egg-info/SOURCES.txt
+Flask_Philo_PynamoDB.egg-info/dependency_links.txt
+Flask_Philo_PynamoDB.egg-info/requires.txt
+Flask_Philo_PynamoDB.egg-info/top_level.txt
+flask_philo_pynamodb/__init__.py
+flask_philo_pynamodb/attributes.py
+flask_philo_pynamodb/models.py
