@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Outputs of qsiprep &mdash; qsiprep version documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Reconstructing qsiprep output" href="reconstruction.html" />
+    <link rel="prev" title="Processing pipeline details" href="workflows.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> qsiprep
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging.html">Merging multiple scans from a session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows.html">Processing pipeline details</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Outputs of qsiprep</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#visual-reports">Visual Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preprocessed-data-qsiprep-derivatives">Preprocessed data (qsiprep <em>derivatives</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#confounds">Confounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#confounds-and-carpet-plot-on-the-visual-reports">Confounds and “carpet”-plot on the visual reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reconstruction.html">Reconstructing qsiprep output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributing to qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">qsiprep</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Outputs of qsiprep</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/outputs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="outputs-of-qsiprep">
+<span id="outputs"></span><h1>Outputs of qsiprep<a class="headerlink" href="#outputs-of-qsiprep" title="Permalink to this headline">¶</a></h1>
+<p>qsiprep generates three broad classes of outcomes:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><strong>Visual QA (quality assessment) reports</strong>:
+one <abbr title="hypertext markup language">HTML</abbr> per subject,
+depicting images that provide a sanity check for each step of the pipeline.</li>
+<li><strong>Pre-processed imaging data</strong> such as anatomical segmentations, realigned and resampled
+diffusion weighted images and the corresponding corrected gradient files in FSL and MRTrix
+format.</li>
+<li><strong>Additional data for subsequent analysis</strong>, for instance the transformations
+between different spaces or the estimated head motion and model fit quality calculated
+during model-based head motion correction.</li>
+</ol>
+</div></blockquote>
+<div class="section" id="visual-reports">
+<h2>Visual Reports<a class="headerlink" href="#visual-reports" title="Permalink to this headline">¶</a></h2>
+<p>qsiprep outputs summary reports, written to <code class="docutils literal notranslate"><span class="pre">&lt;output</span> <span class="pre">dir&gt;/qsiprep/sub-&lt;subject_label&gt;.html</span></code>.
+These reports provide a quick way to make visual inspection of the results easy.  One useful
+graphic is the animation of the q-space sampling scheme before and after the pipeline. Here is
+a sampling scheme from a DSI scan:</p>
+<div class="figure" id="id2">
+<a class="reference internal image-reference" href="_images/sampling_scheme.gif"><img alt="_images/sampling_scheme.gif" src="_images/sampling_scheme.gif" style="width: 750.0px; height: 375.0px;" /></a>
+<p class="caption"><span class="caption-text">A Q5 DSI sampling scheme before (left) and after (right) preprocessing. This is useful to
+confirm that the gradients have indeed been rotated and that head motion correction has not
+disrupted the scheme extensively.</span></p>
+</div>
+</div>
+<div class="section" id="preprocessed-data-qsiprep-derivatives">
+<h2>Preprocessed data (qsiprep <em>derivatives</em>)<a class="headerlink" href="#preprocessed-data-qsiprep-derivatives" title="Permalink to this headline">¶</a></h2>
+<p>There are additional files, called “Derivatives”, written to
+<code class="docutils literal notranslate"><span class="pre">&lt;output</span> <span class="pre">dir&gt;/qsiprep/sub-&lt;subject_label&gt;/</span></code>.</p>
+<p>Derivatives related to T1w files are nearly identical to those produced by FMRIPREP and
+can be found in the <code class="docutils literal notranslate"><span class="pre">anat</span></code> subfolder:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_brainmask.nii.gz</span></code> Brain mask derived using ANTs’ <code class="docutils literal notranslate"><span class="pre">antsBrainExtraction.sh</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_class-CSF_probtissue.nii.gz</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_class-GM_probtissue.nii.gz</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_class-WM_probtissue.nii.gz</span></code> tissue-probability maps.</li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_dtissue.nii.gz</span></code> Tissue class map derived using FAST.</li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_preproc.nii.gz</span></code> Bias field corrected T1w file, using ANTS’ N4BiasFieldCorrection</li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_space-MNI152NLin2009cAsym_brainmask.nii.gz</span></code> Same as <code class="docutils literal notranslate"><span class="pre">_brainmask</span></code> above, but in MNI space.</li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_space-MNI152NLin2009cAsym_class-CSF_probtissue.nii.gz</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_space-MNI152NLin2009cAsym_class-GM_probtissue.nii.gz</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_space-MNI152NLin2009cAsym_class-WM_probtissue.nii.gz</span></code> Probability tissue maps, transformed into MNI space</li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_space-MNI152NLin2009cAsym_dtissue.nii.gz</span></code> Same as <code class="docutils literal notranslate"><span class="pre">_dtissue</span></code> above, but in MNI space</li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_space-MNI152NLin2009cAsym_preproc.nii.gz</span></code> Same as <code class="docutils literal notranslate"><span class="pre">_preproc</span></code> above, but in MNI space</li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_space-MNI152NLin2009cAsym_target-T1w_warp.h5</span></code> Composite (warp and affine) transform to map from MNI to T1 space</li>
+<li><code class="docutils literal notranslate"><span class="pre">*T1w_target-MNI152NLin2009cAsym_warp.h5</span></code> Composite (warp and affine) transform to transform T1w into MNI space</li>
+</ul>
+<p>Derivatives related to diffusion images are in the <code class="docutils literal notranslate"><span class="pre">dwi</span></code> subfolder.</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">*_confounds.tsv</span></code> A tab-separated value file with one column per calculated confound and one row per timepoint/volume</li>
+</ul>
+<p>Volumetric output spaces include <code class="docutils literal notranslate"><span class="pre">T1w</span></code> and <code class="docutils literal notranslate"><span class="pre">MNI152NLin2009cAsym</span></code> (default).</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">*dwiref.nii.gz</span></code> The b0 template</li>
+<li><code class="docutils literal notranslate"><span class="pre">*desc-brain_mask.nii.gz</span></code> The generous brain mask that should be reduced probably</li>
+<li><code class="docutils literal notranslate"><span class="pre">*desc-preproc_dwi.nii.gz</span></code> Resampled DWI series including all b0 images.</li>
+<li><code class="docutils literal notranslate"><span class="pre">*desc-preproc_dwi.bval</span></code>, <code class="docutils literal notranslate"><span class="pre">*desc-preproc_dwi.bvec</span></code> FSL-style bvals and bvecs files.
+<em>These will be incorrectly interpreted by MRTrix, but will work with DSI Studio.</em> Use the
+<code class="docutils literal notranslate"><span class="pre">.b</span></code> file for MRTrix.</li>
+<li><code class="docutils literal notranslate"><span class="pre">desc-preproc_dwi.b</span></code> The gradient table to import data into MRTrix. This and the
+<code class="docutils literal notranslate"><span class="pre">_dwi.nii.gz</span></code> can be converted directly to a <code class="docutils literal notranslate"><span class="pre">.mif</span></code> file using the <code class="docutils literal notranslate"><span class="pre">mrconvert</span> <span class="pre">-grad</span> <span class="pre">_dwi.b</span></code>
+command.</li>
+<li><code class="docutils literal notranslate"><span class="pre">*b0series.nii.gz</span></code> The b0 images from the series in a 4d image. Useful to see how much the
+images are impacted by Eddy currents.</li>
+<li><code class="docutils literal notranslate"><span class="pre">*bvecs.nii.gz</span></code> Each voxel contains a gradient table that has been adjusted for local
+rotations introduced by spatial warping.</li>
+</ul>
+</div>
+<div class="section" id="confounds">
+<h2>Confounds<a class="headerlink" href="#confounds" title="Permalink to this headline">¶</a></h2>
+<p>See implementation on <code class="xref py py-mod docutils literal notranslate"><span class="pre">init_dwi_confs_wf</span></code>.</p>
+<p>For each DWI processed by qsiprep, a
+<code class="docutils literal notranslate"><span class="pre">&lt;output_folder&gt;/qsiprep/sub-&lt;sub_id&gt;/func/sub-&lt;sub_id&gt;_task-&lt;task_id&gt;_run-&lt;run_id&gt;_confounds.tsv</span></code>
+file will be generated.
+These are <abbr title="tab-separated values">TSV</abbr> tables, which look like the example below:</p>
+<p>framewise_displacement  trans_x trans_y trans_z rot_x   rot_y   rot_z   hmc_r2  hmc_xcorr       original_file   grad_x  grad_y  grad_z  bval</p>
+<p>n/a     -0.705  -0.002  0.133   0.119   0.350   0.711   0.941   0.943   sub-abcd_dwi.nii.gz     0.000   0.000   0.000   0.000
+16.343  -0.711  -0.075  0.220   0.067   0.405   0.495   0.945   0.946   sub-abcd_dwi.nii.gz     0.000   0.000   0.000   0.000
+35.173  -0.672  -0.415  0.725   0.004   0.468   1.055   0.756   0.766   sub-abcd_dwi.nii.gz     -0.356  0.656   0.665   3000.000
+45.131  0.021   -0.498  1.046   0.403   0.331   1.400   0.771   0.778   sub-abcd_dwi.nii.gz     -0.935  0.272   0.229   3000.000
+37.506  -0.184  0.117   0.723   0.305   0.138   0.964   0.895   0.896   sub-abcd_dwi.nii.gz     -0.187  -0.957  -0.223  2000.000
+16.388  -0.447  0.020   0.847   0.217   0.129   0.743   0.792   0.800   sub-abcd_dwi.nii.gz     -0.111  -0.119  0.987   3000.000</p>
+<p>The motion parameters come from the model-based head motion estimation workflow. The <code class="docutils literal notranslate"><span class="pre">hmc_r2</span></code> and
+<code class="docutils literal notranslate"><span class="pre">hmc_xcorr</span></code> are whole-brain r^2 values and cross correlation scores (using the ANTs definition)
+between the model-generated target image and the motion-corrected empirical image. The final
+columns are not really confounds, but book-keeping information that reminds us which 4d DWI series
+the image originally came from and what gradient direction (<code class="docutils literal notranslate"><span class="pre">grad_x</span></code>, <code class="docutils literal notranslate"><span class="pre">grad_y</span></code>, <code class="docutils literal notranslate"><span class="pre">grad_z</span></code>)
+and gradient strength <code class="docutils literal notranslate"><span class="pre">bval</span></code> the image came from. This can be useful for tracking down
+mostly-corrupted scans and can indicate if the head motion model isn’t working on specific
+gradient strengths or directions.</p>
+</div>
+<div class="section" id="confounds-and-carpet-plot-on-the-visual-reports">
+<h2>Confounds and “carpet”-plot on the visual reports<a class="headerlink" href="#confounds-and-carpet-plot-on-the-visual-reports" title="Permalink to this headline">¶</a></h2>
+<p>fMRI has been using a “carpet” visualization of the
+<abbr title="blood-oxygen level-dependant">BOLD</abbr> time-series (see <a class="reference internal" href="#power2016" id="id1">[Power2016]</a>),
+but this type of plot does not make sense for DWI data. Instead, we plot
+the cross-correlation value between each raw slice and the HMC model signal
+resampled into that slice.
+This plot is included for each run within the corresponding visual report.
+An example of these plots follows:</p>
+<div class="figure" id="id3">
+<a class="reference internal image-reference" href="_images/sub-abcd_carpetplot.svg"><img alt="_images/sub-abcd_carpetplot.svg" src="_images/sub-abcd_carpetplot.svg" /></a>
+<p class="caption"><span class="caption-text">Higher scores appear more yellow, while lower scores
+are more blue. Not all slices contain the same number of voxels,
+so the number of voxels in the slice is represented in the color bar
+to the left of the image plot. The more yellow the pixel, the more
+voxels are present in the slice. Purple pixels reflect slices with fewer
+brain voxels.</span></p>
+</div>
+<div class="topic">
+<p class="topic-title first">References</p>
+<table class="docutils citation" frame="void" id="power2016" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[Power2016]</a></td><td>Power JD, A simple but useful way to assess fMRI scan qualities.
+NeuroImage. 2016. doi: <a class="reference external" href="http://doi.org/10.1016/j.neuroimage.2016.08.009">10.1016/j.neuroimage.2016.08.009</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="reconstruction.html" class="btn btn-neutral float-right" title="Reconstructing qsiprep output" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="workflows.html" class="btn btn-neutral" title="Processing pipeline details" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2019, The qsiprep developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/chrisfilo/zenodo.js/v0.1/zenodo.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

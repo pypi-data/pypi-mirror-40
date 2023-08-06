@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>QSIprep: Preprocessing and analysis of q-space images &mdash; qsiprep version documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> qsiprep
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging.html">Merging multiple scans from a session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows.html">Processing pipeline details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outputs.html">Outputs of qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reconstruction.html">Reconstruction pipeline details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributing to qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">qsiprep</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>QSIprep: Preprocessing and analysis of q-space images</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="qsiprep-preprocessing-and-analysis-of-q-space-images">
+<h1>QSIprep: Preprocessing and analysis of q-space images<a class="headerlink" href="#qsiprep-preprocessing-and-analysis-of-q-space-images" title="Permalink to this headline">¶</a></h1>
+<p>This pipeline was developed at UCSB and UPenn for processing q-space
+images.</p>
+<a class="reference external image-reference" href="http://qsiprep.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/qsiprep/badge/?version=latest" /></a>
+<div class="section" id="about">
+<h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> is designed to perform preprocessing and reconstruction of
+non-DTI q-space images. Non-DTI means that the imaging sequence used
+either:</p>
+<blockquote>
+<div><ul class="simple">
+<li>A multi-shell HARDI sampling scheme</li>
+<li>A Cartesian grid (aka DSI) sampling scheme</li>
+<li>A random q-space sampling scheme (eg for compressed sensing)</li>
+</ul>
+</div></blockquote>
+<p>DTI is not supported here because there are already excellent preprocessing
+tools in FSL, MRTrix, Tortoise and others, and because the head motion correction algorithm
+relies on voxelwise estimates of ensemble average propagators (EAPs), which
+require angular and radial variability in the sampling scheme.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> pipeline uses much of the code from <code class="docutils literal notranslate"><span class="pre">FMRIPREP</span></code>, but has
+deviated in a few noteworthy ways.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>All images are conformed to LPS+ instead of RAS+. This greatly simplified
+spatial operations on vectors / vector images within ANTs and working with
+DSI Studio’s internal data model.</li>
+<li>Co-registration is performed with ANTs instead of FSL or FreeSurfer. We have
+removed FSL and FreeSurfer as much as possible from the pipeline in an effort
+to keep the licensing of bundled software as permissive as possible. Our testing
+also showed that ANTs was more robust for co-registering b0 images to T1w images.</li>
+<li>It is common to scan multiple separate DWI sequences that are ultimately supposed
+to be combined for analysis. Whether scans are combined or not will alter when
+denoising is applied.</li>
+</ol>
+</div></blockquote>
+<p>The <code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> pipeline heavily uses <a class="reference external" href="https://stnava.github.io/ANTs/">ANTs</a>, <a class="reference external" href="http://nipy.org/dipy/">Dipy</a> and <a class="reference external" href="http://www.mrtrix.org/">MRTrix</a> for preprocessing and
+supports <a class="reference external" href="http://dsi-studio.labsolver.org/">DSI Studio</a>, <a class="reference external" href="http://www.mrtrix.org/">MRTrix</a> and <a class="reference external" href="http://nipy.org/dipy/">Dipy</a> for reconstruction/analysis. It can also convert
+across the file formats of these software packages so one can, for example, reconstruct
+using GQI in DSI Studio and then do fixel-based analysis in MRTrix.</p>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#docker-container">Docker Container</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#singularity-container">Singularity Container</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#manually-prepared-environment-python-3-5">Manually Prepared Environment (Python 3.5+)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#external-dependencies">External Dependencies</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#execution-and-the-bids-format">Execution and the BIDS format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#command-line-arguments">Command-Line Arguments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Named Arguments">Named Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Options for filtering BIDS queries">Options for filtering BIDS queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Options for reconstructing qsiprep outputs">Options for reconstructing qsiprep outputs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Options to handle performance">Options to handle performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Workflow configuration">Workflow configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Specific options for motion correction and coregistration">Specific options for motion correction and coregistration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Specific options for ANTs registrations">Specific options for ANTs registrations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Specific options for FreeSurfer preprocessing">Specific options for FreeSurfer preprocessing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Specific options for handling fieldmaps">Specific options for handling fieldmaps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Specific options for SyN distortion correction">Specific options for SyN distortion correction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Other options">Other options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#the-docker-wrapper-cli">The docker wrapper CLI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Named Arguments">Named Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Wrapper options">Wrapper options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#Developer options">Developer options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#debugging">Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#support-and-communication">Support and communication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="merging.html">Merging multiple scans from a session</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="merging.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merging.html#correction-methods">Correction methods</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workflows.html">Processing pipeline details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#t1w-t2w-preprocessing">T1w/T2w preprocessing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#brain-extraction-brain-tissue-segmentation-and-spatial-normalization">Brain extraction, brain tissue segmentation and spatial normalization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#longitudinal-processing">Longitudinal processing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#dwi-preprocessing">DWI preprocessing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#head-motion-estimation">Head-motion estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#dwi-reference-image-estimation">DWI reference image estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#susceptibility-distortion-correction-sdc">Susceptibility Distortion Correction (SDC)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#pre-processed-dwis-in-a-different-space">Pre-processed DWIs in a different space</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#b0-to-t1w-registration">b0 to T1w registration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="outputs.html">Outputs of qsiprep</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#visual-reports">Visual Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#preprocessed-data-qsiprep-derivatives">Preprocessed data (qsiprep <em>derivatives</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#confounds">Confounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outputs.html#confounds-and-carpet-plot-on-the-visual-reports">Confounds and “carpet”-plot on the visual reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reconstruction.html">Reconstruction pipeline details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reconstruction.html#simple-dsi-studio-example">Simple DSI Studio example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reconstruction.html#other-example-reconstruction-specs">Other example reconstruction specs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributing to qsiprep</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributors.html#patching-working-repositories">Patching working repositories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributors.html#adding-dependencies">Adding dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributors.html#rebuilding-docker-image">Rebuilding Docker image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributors.html#adding-new-features-to-the-citation-boilerplate">Adding new features to the citation boilerplate</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html#id1">Workflows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/index.html#qsiprep-base-processing-workflows">qsiprep base processing workflows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api/index.html#anatomical-reference-preprocessing-workflows">Anatomical reference preprocessing workflows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api/index.html#module-qsiprep.workflows.fieldmap.base">Fieldmap estimation and unwarping workflows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2019, The qsiprep developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/chrisfilo/zenodo.js/v0.1/zenodo.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

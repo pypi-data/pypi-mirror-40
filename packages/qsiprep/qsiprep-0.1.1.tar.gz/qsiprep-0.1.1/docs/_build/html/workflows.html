@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Processing pipeline details &mdash; qsiprep version documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Outputs of qsiprep" href="outputs.html" />
+    <link rel="prev" title="Merging multiple scans from a session" href="merging.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> qsiprep
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging.html">Merging multiple scans from a session</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Processing pipeline details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#t1w-t2w-preprocessing">T1w/T2w preprocessing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#brain-extraction-brain-tissue-segmentation-and-spatial-normalization">Brain extraction, brain tissue segmentation and spatial normalization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#longitudinal-processing">Longitudinal processing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dwi-preprocessing">DWI preprocessing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#head-motion-estimation">Head-motion estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dwi-reference-image-estimation">DWI reference image estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#susceptibility-distortion-correction-sdc">Susceptibility Distortion Correction (SDC)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pre-processed-dwis-in-a-different-space">Pre-processed DWIs in a different space</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b0-to-t1w-registration">b0 to T1w registration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="outputs.html">Outputs of qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reconstruction.html">Reconstruction pipeline details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributing to qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">qsiprep</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Processing pipeline details</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/workflows.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="processing-pipeline-details">
+<h1>Processing pipeline details<a class="headerlink" href="#processing-pipeline-details" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> adapts its pipeline depending on what data and metadata are
+available and are used as the input.</p>
+<p>A (very) high-level view of the simplest pipeline (for a dataset with only
+one DWI series and no reverse PE b0 acquisitions)
+is presented below:</p>
+<p>(<a class="reference external" href=".//workflows-1.py">Source code</a>)</p>
+<div class="section" id="t1w-t2w-preprocessing">
+<h2>T1w/T2w preprocessing<a class="headerlink" href="#t1w-t2w-preprocessing" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="api/index.html#qsiprep.workflows.anatomical.init_anat_preproc_wf" title="qsiprep.workflows.anatomical.init_anat_preproc_wf"><code class="xref py py-mod docutils literal notranslate"><span class="pre">qsiprep.workflows.anatomical.init_anat_preproc_wf</span></code></a></p>
+<p>(<a class="reference external" href=".//workflows-2.py">Source code</a>)</p>
+<p>The anatomical sub-workflow begins by constructing an average image by
+<a class="reference internal" href="anat/base.html#conformation"><span class="std std-ref">conforming</span></a> all found T1w images to LPS orientation and
+a common voxel size, and, in the case of multiple images, averages them into a
+single reference template (see <a class="reference internal" href="#longitudinal-processing">Longitudinal processing</a>).</p>
+<div class="section" id="brain-extraction-brain-tissue-segmentation-and-spatial-normalization">
+<span id="t1preproc-steps"></span><h3>Brain extraction, brain tissue segmentation and spatial normalization<a class="headerlink" href="#brain-extraction-brain-tissue-segmentation-and-spatial-normalization" title="Permalink to this headline">¶</a></h3>
+<p>Then, the T1w image/average is skull-stripped using ANTs’ <code class="docutils literal notranslate"><span class="pre">antsBrainExtraction.sh</span></code>,
+which is an atlas-based brain extraction workflow.</p>
+<div class="figure" id="id3">
+<a class="reference internal image-reference" href="_static/brainextraction_t1.svg"><img alt="_static/brainextraction_t1.svg" src="_static/brainextraction_t1.svg" /></a>
+<p class="caption"><span class="caption-text">Brain extraction</span></p>
+</div>
+<p>Once the brain mask is computed, FSL <code class="docutils literal notranslate"><span class="pre">fast</span></code> is utilized for brain tissue segmentation.</p>
+<div class="figure" id="id4">
+<a class="reference internal image-reference" href="_static/segmentation.svg"><img alt="_static/segmentation.svg" src="_static/segmentation.svg" /></a>
+<p class="caption"><span class="caption-text">Brain tissue segmentation.</span></p>
+</div>
+<p>Finally, spatial normalization to MNI-space is performed using ANTs’ <code class="docutils literal notranslate"><span class="pre">antsRegistration</span></code>
+in a multiscale, mutual-information based, nonlinear registration scheme.
+In particular, spatial normalization is done using the <a class="reference external" href="http://nist.mni.mcgill.ca/?p=904">ICBM 2009c Nonlinear
+Asymmetric template (1×1×1mm)</a> [Fonov2011].</p>
+<p>When processing images from patients with focal brain lesions (e.g. stroke, tumor
+resection), it is possible to provide a lesion mask to be used during spatial
+normalization to MNI-space [Brett2001].
+ANTs will use this mask to minimize warping of healthy tissue into damaged
+areas (or vice-versa).
+Lesion masks should be binary NIfTI images (damaged areas = 1, everywhere else = 0)
+in the same space and resolution as the T1 image, and follow the naming convention specified in
+<a class="reference external" href="https://docs.google.com/document/d/1Wwc4A6Mow4ZPPszDIWfCUCRNstn7d_zzaWPcfcHmgI4/edit#heading=h.9146wuepclkt">BIDS Extension Proposal 3: Common Derivatives</a>
+(e.g. <code class="docutils literal notranslate"><span class="pre">sub-001_T1w_label-lesion_roi.nii.gz</span></code>).
+This file should be placed in the <code class="docutils literal notranslate"><span class="pre">sub-*/anat</span></code> directory of the BIDS dataset
+to be run through <code class="docutils literal notranslate"><span class="pre">qsiprep</span></code>.</p>
+<div class="figure" id="id5">
+<a class="reference internal image-reference" href="_images/T1MNINormalization.svg"><img alt="_images/T1MNINormalization.svg" src="_images/T1MNINormalization.svg" /></a>
+<p class="caption"><span class="caption-text">Animation showing T1w to MNI normalization</span></p>
+</div>
+</div>
+<div class="section" id="longitudinal-processing">
+<h3>Longitudinal processing<a class="headerlink" href="#longitudinal-processing" title="Permalink to this headline">¶</a></h3>
+<p>In the case of multiple T1w images (across sessions and/or runs), T1w images are
+merged into a single template image using FreeSurfer’s <a href="#id7"><span class="problematic" id="id8">`mri_robust_template`_</span></a>.
+This template may be <em>unbiased</em>, or equidistant from all source images, or
+aligned to the first image (determined lexicographically by session label).
+For two images, the additional cost of estimating an unbiased template is
+trivial and is the default behavior, but, for greater than two images, the cost
+can be a slowdown of an order of magnitude.
+Therefore, in the case of three or more images, <code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> constructs
+templates aligned to the first image, unless passed the <code class="docutils literal notranslate"><span class="pre">--longitudinal</span></code>
+flag, which forces the estimation of an unbiased template.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The preprocessed T1w image defines the <code class="docutils literal notranslate"><span class="pre">T1w</span></code> space.
+In the case of multiple T1w images, this space may not be precisely aligned
+with any of the original images.
+Reconstructed surfaces and functional datasets will be registered to the
+<code class="docutils literal notranslate"><span class="pre">T1w</span></code> space, and not to the input images.</p>
+</div>
+</div>
+</div>
+<div class="section" id="dwi-preprocessing">
+<h2>DWI preprocessing<a class="headerlink" href="#dwi-preprocessing" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal notranslate"><span class="pre">qsiprep.workflows.dwi.base.init_dwi_preproc_wf</span></code></p>
+<p>(<a class="reference external" href=".//workflows-3.py">Source code</a>)</p>
+<p>Preprocessing of <abbr title="Diffusion Weighted Image">DWI</abbr> files is
+split into multiple sub-workflows described below.</p>
+<div class="section" id="head-motion-estimation">
+<span id="dwi-hmc"></span><h3>Head-motion estimation<a class="headerlink" href="#head-motion-estimation" title="Permalink to this headline">¶</a></h3>
+<p><code class="xref py py-mod docutils literal notranslate"><span class="pre">qsiprep.workflows.dwi.hmc.init_dwi_hmc_wf</span></code></p>
+<div class="figure">
+<img alt="_images/workflows-4.png" src="_images/workflows-4.png" />
+</div>
+<p>(<a class="reference external" href=".//workflows-4.py">Source code</a>, <a class="reference external" href=".//workflows-4.png">png</a>, <a class="reference external" href=".//workflows-4.svg">svg</a>, <a class="reference external" href=".//workflows-4.pdf">pdf</a>)</p>
+<p>A long-standing issue for q-space imaging techniques, particularly DSI, has
+been the lack of motion correction methods. DTI and multi-shell HARDI have
+had <code class="docutils literal notranslate"><span class="pre">eddy_correct</span></code> and <code class="docutils literal notranslate"><span class="pre">eddy</span></code> in FSL, but DSI has relied on aligning the
+interleaved b0 images and applying the transforms to nearby non-b0 images.</p>
+<p><code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> introduces a method for head motion correction that iteratively
+creates target images based on <code class="docutils literal notranslate"><span class="pre">3dSHORE</span></code> or <code class="docutils literal notranslate"><span class="pre">MAPMRI</span></code> fits.
+First, all b0 images are aligned to a midpoint b0 image (or the first b0 image
+if <code class="docutils literal notranslate"><span class="pre">hmc_align_to=&quot;first&quot;</span></code>) and each non-b0 image is transformed along with
+its nearest b0 image.</p>
+<p>Then, for each non-b0 image, a <code class="docutils literal notranslate"><span class="pre">3dSHORE</span></code> or <code class="docutils literal notranslate"><span class="pre">MAPMRI</span></code>
+model is fit to all the other images with that image left out. The model is then
+used to generate a target signal image for the gradient direction and magnitude
+(i.e. q-space coordinate) of the left-out image. The left-out image is registered
+to the generated target
+signal image and its vector is rotated accordingly. A new model is fit on the
+transformed images and their rotated vectors. The leave-one-out procedure is
+then repeated on this updated DWI and gradient set.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">&quot;none&quot;</span></code> is specified as the hmc_model, then only the b0 images are used
+and the non-b0 images are transformed based on their nearest b0 image. This
+is not a great idea.</p>
+<p>Ultimately a list of 6 (or 12)-parameters per time-step is written and
+fed to the <span class="xref std std-ref">confounds workflow</span>. These are used to
+estimate framewise displacement.  Additionally, measures of model fits
+are saved for each slice for display in a carpet plot-like thing.</p>
+</div>
+<div class="section" id="dwi-reference-image-estimation">
+<span id="dwi-ref"></span><h3>DWI reference image estimation<a class="headerlink" href="#dwi-reference-image-estimation" title="Permalink to this headline">¶</a></h3>
+<p><code class="xref py py-mod docutils literal notranslate"><span class="pre">qsiprep.workflows.dwi.util.init_dwi_reference_wf</span></code></p>
+<div class="figure">
+<img alt="_images/workflows-5.png" src="_images/workflows-5.png" />
+</div>
+<p>(<a class="reference external" href=".//workflows-5.py">Source code</a>, <a class="reference external" href=".//workflows-5.png">png</a>, <a class="reference external" href=".//workflows-5.svg">svg</a>, <a class="reference external" href=".//workflows-5.pdf">pdf</a>)</p>
+<p>This workflow estimates a reference image for a DWI series. This
+procedure is different from the BOLD reference image workflow in the
+sense that true brain masking isn’t usually done until later in the
+pipeline for DWIs. It performs a generous automasking and uses
+Dipy’s histogram equalization on the b0 template generated during
+motion correction.</p>
+</div>
+<div class="section" id="susceptibility-distortion-correction-sdc">
+<h3>Susceptibility Distortion Correction (SDC)<a class="headerlink" href="#susceptibility-distortion-correction-sdc" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="api/index.html#qsiprep.workflows.fieldmap.base.init_sdc_wf" title="qsiprep.workflows.fieldmap.base.init_sdc_wf"><code class="xref py py-mod docutils literal notranslate"><span class="pre">qsiprep.workflows.fieldmap.base.init_sdc_wf</span></code></a></p>
+<div class="figure" id="id6">
+<a class="reference internal image-reference" href="_images/unwarping.svg"><img alt="_images/unwarping.svg" src="_images/unwarping.svg" /></a>
+<p class="caption"><span class="caption-text">Applying susceptibility-derived distortion correction, based on
+fieldmap estimation.</span></p>
+</div>
+<p>The PEPOLAR and SyN-SDC workflows from FMRIPREP are copied here.
+They operate on the output of reference estimation, after head
+motion correction.</p>
+</div>
+<div class="section" id="pre-processed-dwis-in-a-different-space">
+<span id="resampling"></span><h3>Pre-processed DWIs in a different space<a class="headerlink" href="#pre-processed-dwis-in-a-different-space" title="Permalink to this headline">¶</a></h3>
+<p><code class="xref py py-mod docutils literal notranslate"><span class="pre">qsiprep.workflows.dwi.resampling.init_dwi_trans_wf</span></code></p>
+<div class="figure">
+<img alt="_images/workflows-6.png" src="_images/workflows-6.png" />
+</div>
+<p>(<a class="reference external" href=".//workflows-6.py">Source code</a>, <a class="reference external" href=".//workflows-6.png">png</a>, <a class="reference external" href=".//workflows-6.svg">svg</a>, <a class="reference external" href=".//workflows-6.pdf">pdf</a>)</p>
+<p>A DWI series is resampled to an output space. The <code class="docutils literal notranslate"><span class="pre">output_resolution</span></code> is
+specified on the commandline call. All transformations, including head motion
+correction, susceptibility distortion correction, coregistration and optionally
+normalization to the template is performed in a single shot using a Lanczos kernel.</p>
+<p>There are two ways that the gradient vectors can be saved. This workflow always
+produces a FSL-style bval/bvec pair for the image and a MRTrix .b gradient table
+with the rotations from the linear transforms applied. You can also write out
+a <code class="docutils literal notranslate"><span class="pre">local_bvecs</span></code> file that contains a 3d vector that has been rotated to account
+for nonlinear transforms in each voxel. I’m not aware of any software that can
+use these yet, but it’s an interesting idea.</p>
+</div>
+<div class="section" id="b0-to-t1w-registration">
+<span id="b0-reg"></span><h3>b0 to T1w registration<a class="headerlink" href="#b0-to-t1w-registration" title="Permalink to this headline">¶</a></h3>
+<p><code class="xref py py-mod docutils literal notranslate"><span class="pre">qsiprep.workflows.dwi.registration.init_b0_to_anat_registration_wf</span></code></p>
+<div class="figure">
+<img alt="_images/workflows-7.png" src="_images/workflows-7.png" />
+</div>
+<p>(<a class="reference external" href=".//workflows-7.py">Source code</a>, <a class="reference external" href=".//workflows-7.png">png</a>, <a class="reference external" href=".//workflows-7.svg">svg</a>, <a class="reference external" href=".//workflows-7.pdf">pdf</a>)</p>
+<p>This just uses <cite>antsRegistration</cite>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="outputs.html" class="btn btn-neutral float-right" title="Outputs of qsiprep" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="merging.html" class="btn btn-neutral" title="Merging multiple scans from a session" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2019, The qsiprep developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/chrisfilo/zenodo.js/v0.1/zenodo.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

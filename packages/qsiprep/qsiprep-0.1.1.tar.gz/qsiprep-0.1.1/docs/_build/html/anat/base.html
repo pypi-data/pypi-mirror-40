@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>T1-weighted Conformation &mdash; qsiprep version documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> qsiprep
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../merging.html">Merging multiple scans from a session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows.html">Processing pipeline details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outputs.html">Outputs of qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reconstruction.html">Reconstructing qsiprep output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors.html">Contributing to qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../citing.html">Citing qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">qsiprep</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>T1-weighted Conformation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/anat/base.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="t1-weighted-conformation">
+<span id="conformation"></span><h1>T1-weighted Conformation<a class="headerlink" href="#t1-weighted-conformation" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="qsiprep.interfaces.images.Conform">
+<em class="property">class </em><code class="descclassname">qsiprep.interfaces.images.</code><code class="descname">Conform</code><span class="sig-paren">(</span><em>from_file=None</em>, <em>resource_monitor=None</em>, <em>**inputs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/interfaces/images.py#L300"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.interfaces.images.Conform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">nipype.interfaces.base.core.SimpleInterface</span></code></p>
+<p>Conform a series of T1w images to enable merging.</p>
+<p>Performs two basic functions:</p>
+<ol class="arabic simple">
+<li>Orient to LPS (right-left, anterior-posterior, inferior-superior)</li>
+<li>Resample to target zooms (voxel sizes) and shape (number of voxels)</li>
+</ol>
+<dl class="attribute">
+<dt id="qsiprep.interfaces.images.Conform.input_spec">
+<code class="descname">input_spec</code><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/interfaces/images.py#L286"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.interfaces.images.Conform.input_spec" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">ConformInputSpec</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="qsiprep.interfaces.images.Conform.output_spec">
+<code class="descname">output_spec</code><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/interfaces/images.py#L294"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.interfaces.images.Conform.output_spec" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">ConformOutputSpec</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2019, The qsiprep developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/chrisfilo/zenodo.js/v0.1/zenodo.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

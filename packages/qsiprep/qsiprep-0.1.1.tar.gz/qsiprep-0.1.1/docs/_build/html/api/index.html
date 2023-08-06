@@ -1,0 +1,1008 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API &mdash; qsiprep version documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Citing qsiprep" href="../citing.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> qsiprep
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../merging.html">Merging multiple scans from a session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows.html">Processing pipeline details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outputs.html">Outputs of qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reconstruction.html">Reconstruction pipeline details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors.html">Contributing to qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../citing.html">Citing qsiprep</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Workflows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#qsiprep-base-processing-workflows">qsiprep base processing workflows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anatomical-reference-preprocessing-workflows">Anatomical reference preprocessing workflows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-qsiprep.workflows.fieldmap.base">Fieldmap estimation and unwarping workflows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#automatic-selection-of-the-appropriate-sdc-method">Automatic selection of the appropriate SDC method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#phase-encoding-polarity-pepolar-techniques">Phase Encoding POLARity (<em>PEPOLAR</em>) techniques</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fieldmap-less-estimation-experimental">Fieldmap-less estimation (experimental)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unwarping">Unwarping</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">qsiprep</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="api">
+<h1>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Workflows<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-qsiprep.workflows.base"></span><div class="section" id="qsiprep-base-processing-workflows">
+<h3>qsiprep base processing workflows<a class="headerlink" href="#qsiprep-base-processing-workflows" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="qsiprep.workflows.base.init_qsiprep_wf">
+<code class="descclassname">qsiprep.workflows.base.</code><code class="descname">init_qsiprep_wf</code><span class="sig-paren">(</span><em>subject_list</em>, <em>run_uuid</em>, <em>work_dir</em>, <em>output_dir</em>, <em>bids_dir</em>, <em>ignore</em>, <em>debug</em>, <em>low_mem</em>, <em>anat_only</em>, <em>longitudinal</em>, <em>hires</em>, <em>denoise_before_combining</em>, <em>dwi_denoise_window</em>, <em>output_resolution</em>, <em>combine_all_dwis</em>, <em>omp_nthreads</em>, <em>skull_strip_template</em>, <em>skull_strip_fixed_seed</em>, <em>freesurfer</em>, <em>hmc_model</em>, <em>impute_slice_threshold</em>, <em>hmc_transform</em>, <em>write_local_bvecs</em>, <em>output_spaces</em>, <em>template</em>, <em>motion_corr_to</em>, <em>b0_to_t1w_transform</em>, <em>prefer_dedicated_fmaps</em>, <em>fmap_bspline</em>, <em>fmap_demean</em>, <em>use_syn</em>, <em>force_syn</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/workflows/base.py#L40"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.workflows.base.init_qsiprep_wf" title="Permalink to this definition">¶</a></dt>
+<dd><p>This workflow organizes the execution of qsiprep, with a sub-workflow for
+each subject.</p>
+<p>(<a class="reference external" href="../api/index-1.py">Source code</a>)</p>
+<p>Parameters</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>subject_list <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>List of subject labels</dd>
+<dt>run_uuid <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Unique identifier for execution instance</dd>
+<dt>work_dir <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Directory in which to store workflow execution state and temporary
+files</dd>
+<dt>output_dir <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Directory in which to save derivatives</dd>
+<dt>bids_dir <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Root directory of BIDS dataset</dd>
+<dt>ignore <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>Preprocessing steps to skip (may include “slicetiming”,
+“fieldmaps”)</dd>
+<dt>low_mem <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Write uncompressed .nii files in some cases to reduce memory usage</dd>
+<dt>anat_only <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Disable diffusion workflows</dd>
+<dt>longitudinal <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Treat multiple sessions as longitudinal (may increase runtime)
+See sub-workflows for specific differences</dd>
+<dt>dwi_denoise_window <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>window size in voxels for <code class="docutils literal notranslate"><span class="pre">dwidenoise</span></code>. Must be odd. If 0, ‘
+‘<code class="docutils literal notranslate"><span class="pre">dwidwenoise</span></code> will not be run’</dd>
+<dt>denoise_before_combining <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>‘run <code class="docutils literal notranslate"><span class="pre">dwidenoise</span></code> before combining dwis. Requires <code class="docutils literal notranslate"><span class="pre">combine_all_dwis</span></code>’</dd>
+<dt>combine_all_dwis <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Combine all dwi sequences within a session into a single data set</dd>
+<dt>omp_nthreads <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Maximum number of threads an individual process may use</dd>
+<dt>skull_strip_template <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name of ANTs skull-stripping template (‘OASIS’ or ‘NKI’)</dd>
+<dt>skull_strip_fixed_seed <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Do not use a random seed for skull-stripping - will ensure
+run-to-run replicability when used with –omp-nthreads 1</dd>
+<dt>freesurfer <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Enable FreeSurfer surface reconstruction (may increase runtime)</dd>
+<dt>hires <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Enable sub-millimeter preprocessing in FreeSurfer</dd>
+<dt>output_spaces <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd><p class="first">List of output spaces functional images are to be resampled to.
+Some parts of pipeline will only be instantiated for some output
+spaces.</p>
+<p>Valid spaces:</p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>T1w</li>
+<li>template</li>
+</ul>
+</div></blockquote>
+</dd>
+<dt>template <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name of template targeted by <code class="docutils literal notranslate"><span class="pre">template</span></code> output space</dd>
+<dt>motion_corr_to <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Motion correct using the ‘first’ b0 image or use an ‘iterative’
+method to motion correct to the midpoint of the b0 images</dd>
+<dt>b0_to_t1w_transform <span class="classifier-delimiter">:</span> <span class="classifier">“Rigid” or “Affine”</span></dt>
+<dd>Use a rigid or full affine transform for b0-T1w registration</dd>
+<dt>hmc_model <span class="classifier-delimiter">:</span> <span class="classifier">‘none’, ‘3dSHORE’ or ‘MAPMRI’</span></dt>
+<dd>Model used to generate target images for head motion correction. If ‘none’
+the transform from the nearest b0 will be used.</dd>
+<dt>hmc_transform <span class="classifier-delimiter">:</span> <span class="classifier">“Rigid” or “Affine”</span></dt>
+<dd>Type of transform used for head motion correction</dd>
+<dt>impute_slice_threshold <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd>Impute data in slices that are this many SDs from expected. If 0, no slices
+will be imputed.</dd>
+<dt>prefer_dedicated_fmaps: bool</dt>
+<dd>If a reverse PE fieldmap is available in fmap, use that even if a reverse PE
+DWI series is available</dd>
+<dt>write_local_bvecs <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Write out a series of voxelwise bvecs</dd>
+<dt>fmap_bspline <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><strong>Experimental</strong>: Fit B-Spline field using least-squares</dd>
+<dt>fmap_demean <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Demean voxel-shift map during unwarp</dd>
+<dt>use_syn <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><strong>Experimental</strong>: Enable ANTs SyN-based susceptibility distortion
+correction (SDC). If fieldmaps are present and enabled, this is not
+run, by default.</dd>
+<dt>force_syn <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><strong>Temporary</strong>: Always run SyN-based SDC</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="qsiprep.workflows.base.init_single_subject_wf">
+<code class="descclassname">qsiprep.workflows.base.</code><code class="descname">init_single_subject_wf</code><span class="sig-paren">(</span><em>subject_id</em>, <em>name</em>, <em>reportlets_dir</em>, <em>output_dir</em>, <em>bids_dir</em>, <em>ignore</em>, <em>debug</em>, <em>write_local_bvecs</em>, <em>low_mem</em>, <em>anat_only</em>, <em>longitudinal</em>, <em>denoise_before_combining</em>, <em>dwi_denoise_window</em>, <em>combine_all_dwis</em>, <em>omp_nthreads</em>, <em>skull_strip_template</em>, <em>skull_strip_fixed_seed</em>, <em>freesurfer</em>, <em>hires</em>, <em>output_spaces</em>, <em>template</em>, <em>output_resolution</em>, <em>prefer_dedicated_fmaps</em>, <em>motion_corr_to</em>, <em>b0_to_t1w_transform</em>, <em>hmc_model</em>, <em>hmc_transform</em>, <em>impute_slice_threshold</em>, <em>fmap_bspline</em>, <em>fmap_demean</em>, <em>use_syn</em>, <em>force_syn</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/workflows/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.workflows.base.init_single_subject_wf" title="Permalink to this definition">¶</a></dt>
+<dd><p>This workflow organizes the preprocessing pipeline for a single subject.
+It collects and reports information about the subject, and prepares
+sub-workflows to perform anatomical and diffusion preprocessing.</p>
+<p>Anatomical preprocessing is performed in a single workflow, regardless of
+the number of sessions.
+Diffusion preprocessing is performed using a separate workflow for each
+session’s dwi series.</p>
+<p>(<a class="reference external" href="../api/index-2.py">Source code</a>)</p>
+<p>Parameters</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>subject_id <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>List of subject labels</dd>
+<dt>task_id <span class="classifier-delimiter">:</span> <span class="classifier">str or None</span></dt>
+<dd>Task ID of BOLD series to preprocess, or <code class="docutils literal notranslate"><span class="pre">None</span></code> to preprocess all</dd>
+<dt>name <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name of workflow</dd>
+<dt>ignore <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>Preprocessing steps to skip (may include “sbref”, “fieldmaps”)</dd>
+<dt>debug <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Do inaccurate but fast normalization</dd>
+<dt>low_mem <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Write uncompressed .nii files in some cases to reduce memory usage</dd>
+<dt>anat_only <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Disable functional workflows</dd>
+<dt>longitudinal <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Treat multiple sessions as longitudinal (may increase runtime)
+See sub-workflows for specific differences</dd>
+<dt>dwi_denoise_window <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>window size in voxels for <code class="docutils literal notranslate"><span class="pre">dwidenoise</span></code>. Must be odd. If 0, ‘
+‘<code class="docutils literal notranslate"><span class="pre">dwidwenoise</span></code> will not be run’</dd>
+<dt>denoise_before_combining <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>‘run <code class="docutils literal notranslate"><span class="pre">dwidenoise</span></code> before combining dwis. Requires <code class="docutils literal notranslate"><span class="pre">combine_all_dwis</span></code>’</dd>
+<dt>combine_all_dwis <span class="classifier-delimiter">:</span> <span class="classifier">Bool</span></dt>
+<dd>Combine all dwi sequences within a session into a single data set</dd>
+<dt>omp_nthreads <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Maximum number of threads an individual process may use</dd>
+<dt>skull_strip_template <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name of ANTs skull-stripping template (‘OASIS’ or ‘NKI’)</dd>
+<dt>skull_strip_fixed_seed <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Do not use a random seed for skull-stripping - will ensure
+run-to-run replicability when used with –omp-nthreads 1</dd>
+<dt>freesurfer <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Enable FreeSurfer surface reconstruction (may increase runtime)</dd>
+<dt>hires <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Enable sub-millimeter preprocessing in FreeSurfer</dd>
+<dt>reportlets_dir <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Directory in which to save reportlets</dd>
+<dt>output_dir <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Directory in which to save derivatives</dd>
+<dt>bids_dir <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Root directory of BIDS dataset</dd>
+<dt>output_spaces <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd><p class="first">List of output spaces functional images are to be resampled to.
+Some parts of pipeline will only be instantiated for some output
+spaces.</p>
+<p>Valid spaces:</p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>T1w</li>
+<li>template</li>
+</ul>
+</div></blockquote>
+</dd>
+<dt>template <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name of template targeted by <code class="docutils literal notranslate"><span class="pre">template</span></code> output space</dd>
+<dt>motion_corr_to <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Motion correct using the ‘first’ b0 image or use an ‘iterative’
+method to motion correct to the midpoint of the b0 images</dd>
+<dt>b0_to_t1w_dof <span class="classifier-delimiter">:</span> <span class="classifier">6, 9 or 12</span></dt>
+<dd>Degrees-of-freedom for b0-T1w registration</dd>
+<dt>fmap_bspline <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><strong>Experimental</strong>: Fit B-Spline field using least-squares</dd>
+<dt>fmap_demean <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Demean voxel-shift map during unwarp</dd>
+<dt>use_syn <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><strong>Experimental</strong>: Enable ANTs SyN-based susceptibility distortion
+correction (SDC). If fieldmaps are present and enabled, this is not
+run, by default.</dd>
+<dt>force_syn <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><strong>Temporary</strong>: Always run SyN-based SDC</dd>
+</dl>
+</div></blockquote>
+<p>Inputs</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>subjects_dir</dt>
+<dd>FreeSurfer SUBJECTS_DIR</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<span class="target" id="module-qsiprep.workflows.anatomical"></span><div class="section" id="anatomical-reference-preprocessing-workflows">
+<h3>Anatomical reference preprocessing workflows<a class="headerlink" href="#anatomical-reference-preprocessing-workflows" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="qsiprep.workflows.anatomical.init_anat_preproc_wf">
+<code class="descclassname">qsiprep.workflows.anatomical.</code><code class="descname">init_anat_preproc_wf</code><span class="sig-paren">(</span><em>skull_strip_template</em>, <em>output_spaces</em>, <em>template</em>, <em>debug</em>, <em>freesurfer</em>, <em>longitudinal</em>, <em>omp_nthreads</em>, <em>hires</em>, <em>reportlets_dir</em>, <em>output_dir</em>, <em>num_t1w</em>, <em>output_resolution</em>, <em>skull_strip_fixed_seed=False</em>, <em>name='anat_preproc_wf'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/workflows/anatomical.py#L62"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.workflows.anatomical.init_anat_preproc_wf" title="Permalink to this definition">¶</a></dt>
+<dd><p>This workflow controls the anatomical preprocessing stages of qsiprep. It differs from
+the FMRIPREP preprocessing in that a rigid alignment to MNI is performed before declaring
+the skull-stripped brain as the official preprocessed T1. This is done so that all brains
+are canonically oriented. This aids in comparing model coefficients later on.</p>
+<p>This includes:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Creation of a structural template (AC-PC aligned)</li>
+<li>Skull-stripping and bias correction</li>
+<li>Tissue segmentation</li>
+<li>Normalization</li>
+<li>Surface reconstruction with FreeSurfer</li>
+</ul>
+</div></blockquote>
+<p>(<a class="reference external" href="../api/index-3.py">Source code</a>)</p>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt>skull_strip_template <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name of ANTs skull-stripping template (‘OASIS’ or ‘NKI’)</dd>
+<dt>output_spaces <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd><p class="first">List of output spaces functional images are to be resampled to.</p>
+<p>Some pipeline components will only be instantiated for some output spaces.</p>
+<p>Valid spaces:</p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>T1w</li>
+<li>template</li>
+<li>fsnative</li>
+<li>fsaverage (or other pre-existing FreeSurfer templates)</li>
+</ul>
+</div></blockquote>
+</dd>
+<dt>output_resolution <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd>A float describing the isotropic voxel size of the output data.
+Sometimes it can be nice to upsample DWIs. If you choose to upsample, be
+sure to choose a robust option for <code class="docutils literal notranslate"><span class="pre">interpolation</span></code> to avoid ringing
+artifacts. One option is ‘BSpline’, which matches mrtrix.</dd>
+<dt>template <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name of template targeted by <code class="docutils literal notranslate"><span class="pre">template</span></code> output space</dd>
+<dt>debug <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Enable debugging outputs</dd>
+<dt>freesurfer <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Enable FreeSurfer surface reconstruction (may increase runtime)</dd>
+<dt>longitudinal <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Create unbiased structural template, regardless of number of inputs
+(may increase runtime)</dd>
+<dt>omp_nthreads <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Maximum number of threads an individual process may use</dd>
+<dt>hires <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Enable sub-millimeter preprocessing in FreeSurfer</dd>
+<dt>reportlets_dir <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Directory in which to save reportlets</dd>
+<dt>output_dir <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Directory in which to save derivatives</dd>
+<dt>name <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd>Workflow name (default: anat_preproc_wf)</dd>
+<dt>skull_strip_fixed_seed <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Do not use a random seed for skull-stripping - will ensure
+run-to-run replicability when used with –omp-nthreads 1 (default: <code class="docutils literal notranslate"><span class="pre">False</span></code>)</dd>
+</dl>
+</div></blockquote>
+<p><strong>Inputs</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt>t1w</dt>
+<dd>List of T1-weighted structural images</dd>
+<dt>t2w</dt>
+<dd>List of T2-weighted structural images</dd>
+<dt>flair</dt>
+<dd>List of FLAIR images</dd>
+<dt>subjects_dir</dt>
+<dd>FreeSurfer SUBJECTS_DIR</dd>
+</dl>
+</div></blockquote>
+<p><strong>Outputs</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt>t1_preproc</dt>
+<dd>Bias-corrected structural template, defining T1w space</dd>
+<dt>t1_brain</dt>
+<dd>Skull-stripped <code class="docutils literal notranslate"><span class="pre">t1_preproc</span></code></dd>
+<dt>t1_mask</dt>
+<dd>Mask of the skull-stripped template image</dd>
+<dt>t1_seg</dt>
+<dd>Segmentation of preprocessed structural image, including
+gray-matter (GM), white-matter (WM) and cerebrospinal fluid (CSF)</dd>
+<dt>t1_tpms</dt>
+<dd>List of tissue probability maps in T1w space</dd>
+<dt>t1_2_mni</dt>
+<dd>T1w template, normalized to MNI space</dd>
+<dt>t1_2_mni_forward_transform</dt>
+<dd>ANTs-compatible affine-and-warp transform file</dd>
+<dt>t1_2_mni_reverse_transform</dt>
+<dd>ANTs-compatible affine-and-warp transform file (inverse)</dd>
+<dt>mni_mask</dt>
+<dd>Mask of skull-stripped template, in MNI space</dd>
+<dt>mni_seg</dt>
+<dd>Segmentation, resampled into MNI space</dd>
+<dt>mni_tpms</dt>
+<dd>List of tissue probability maps in MNI space</dd>
+<dt>subjects_dir</dt>
+<dd>FreeSurfer SUBJECTS_DIR</dd>
+<dt>subject_id</dt>
+<dd>FreeSurfer subject ID</dd>
+<dt>t1_2_fsnative_forward_transform</dt>
+<dd>LTA-style affine matrix translating from T1w to FreeSurfer-conformed subject space</dd>
+<dt>t1_2_fsnative_reverse_transform</dt>
+<dd>LTA-style affine matrix translating from FreeSurfer-conformed subject space to T1w</dd>
+<dt>surfaces</dt>
+<dd>GIFTI surfaces (gray/white boundary, midthickness, pial, inflated)</dd>
+<dt>t1_resampling_grid</dt>
+<dd>Image of the preprocessed t1 to be used as the reference output for dwis</dd>
+<dt>t1_mni_resampling_grid</dt>
+<dd>Image of the preprocessed t1 to be used as the reference output for dwis</dd>
+</dl>
+</div></blockquote>
+<p><strong>Subworkflows</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#qsiprep.workflows.anatomical.init_skullstrip_ants_wf" title="qsiprep.workflows.anatomical.init_skullstrip_ants_wf"><code class="xref py py-func docutils literal notranslate"><span class="pre">init_skullstrip_ants_wf()</span></code></a></li>
+<li><code class="xref py py-func docutils literal notranslate"><span class="pre">init_surface_recon_wf()</span></code></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="qsiprep.workflows.anatomical.init_skullstrip_ants_wf">
+<code class="descclassname">qsiprep.workflows.anatomical.</code><code class="descname">init_skullstrip_ants_wf</code><span class="sig-paren">(</span><em>skull_strip_template</em>, <em>debug</em>, <em>omp_nthreads</em>, <em>acpc_template</em>, <em>skull_strip_fixed_seed=False</em>, <em>name='skullstrip_ants_wf'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/workflows/anatomical.py#L614"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.workflows.anatomical.init_skullstrip_ants_wf" title="Permalink to this definition">¶</a></dt>
+<dd><p>This workflow performs skull-stripping using ANTs’ <code class="docutils literal notranslate"><span class="pre">BrainExtraction.sh</span></code>
+.. workflow:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">graph2use</span><span class="p">:</span> <span class="n">orig</span>
+<span class="p">:</span><span class="n">simple_form</span><span class="p">:</span> <span class="n">yes</span>
+<span class="kn">from</span> <span class="nn">fmriprep.workflows.anatomical</span> <span class="k">import</span> <span class="n">init_skullstrip_ants_wf</span>
+<span class="n">wf</span> <span class="o">=</span> <span class="n">init_skullstrip_ants_wf</span><span class="p">(</span><span class="n">skull_strip_template</span><span class="o">=</span><span class="s1">&#39;OASIS&#39;</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">omp_nthreads</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><dl class="first last docutils">
+<dt>skull_strip_template <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name of ANTs skull-stripping template (‘OASIS’ or ‘NKI’)</dd>
+<dt>debug <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Enable debugging outputs</dd>
+<dt>omp_nthreads <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Maximum number of threads an individual process may use</dd>
+<dt>acpc_template: str</dt>
+<dd>Path to an image that will be used for Rigid ACPC alignment</dd>
+<dt>skull_strip_fixed_seed <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Do not use a random seed for skull-stripping - will ensure
+run-to-run replicability when used with –omp-nthreads 1 (default: <code class="docutils literal notranslate"><span class="pre">False</span></code>)</dd>
+</dl>
+</dd>
+<dt><strong>Inputs</strong></dt>
+<dd><dl class="first last docutils">
+<dt>in_file</dt>
+<dd>T1-weighted structural image to skull-strip</dd>
+</dl>
+</dd>
+<dt><strong>Outputs</strong></dt>
+<dd><dl class="first last docutils">
+<dt>bias_corrected</dt>
+<dd>Bias-corrected <code class="docutils literal notranslate"><span class="pre">in_file</span></code>, before skull-stripping</dd>
+<dt>out_file</dt>
+<dd>Skull-stripped <code class="docutils literal notranslate"><span class="pre">in_file</span></code></dd>
+<dt>out_mask</dt>
+<dd>Binary mask of the skull-stripped <code class="docutils literal notranslate"><span class="pre">in_file</span></code></dd>
+<dt>out_report</dt>
+<dd>Reportlet visualizing quality of skull-stripping</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<span class="target" id="module-qsiprep.workflows.fieldmap"></span><div class="section" id="module-qsiprep.workflows.fieldmap.base">
+<span id="fieldmap-estimation-and-unwarping-workflows"></span><span id="sdc-estimation"></span><h3>Fieldmap estimation and unwarping workflows<a class="headerlink" href="#module-qsiprep.workflows.fieldmap.base" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="automatic-selection-of-the-appropriate-sdc-method">
+<span id="sdc-base"></span><h4>Automatic selection of the appropriate SDC method<a class="headerlink" href="#automatic-selection-of-the-appropriate-sdc-method" title="Permalink to this headline">¶</a></h4>
+<p>If the dataset metadata indicate tha more than one field map acquisition is
+<code class="docutils literal notranslate"><span class="pre">IntendedFor</span></code> (see BIDS Specification section 8.9) the following priority
+will be used:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><a class="reference internal" href="#sdc-pepolar"><span class="std std-ref">Phase Encoding POLARity (PEPOLAR) techniques</span></a> (or <strong>blip-up/blip-down</strong>)</li>
+<li><a class="reference internal" href="#sdc-fieldmapless"><span class="std std-ref">Fieldmap-less estimation (experimental)</span></a></li>
+</ol>
+</div></blockquote>
+<p>Table of behavior (fieldmap use-cases):</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="28%" />
+<col width="20%" />
+<col width="24%" />
+<col width="28%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Fieldmaps found</th>
+<th class="head"><code class="docutils literal notranslate"><span class="pre">use_syn</span></code></th>
+<th class="head"><code class="docutils literal notranslate"><span class="pre">force_syn</span></code></th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>True</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>True</td>
+<td>Fieldmaps + SyN</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>False</td>
+<td>Fieldmaps</td>
+</tr>
+<tr class="row-even"><td>False</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>True</td>
+<td>SyN</td>
+</tr>
+<tr class="row-odd"><td>False</td>
+<td>True</td>
+<td>False</td>
+<td>SyN</td>
+</tr>
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+<td>HMC only</td>
+</tr>
+</tbody>
+</table>
+<dl class="function">
+<dt id="qsiprep.workflows.fieldmap.base.init_sdc_wf">
+<code class="descclassname">qsiprep.workflows.fieldmap.base.</code><code class="descname">init_sdc_wf</code><span class="sig-paren">(</span><em>fmaps</em>, <em>dwi_meta</em>, <em>omp_nthreads=1</em>, <em>debug=False</em>, <em>fmap_bspline=False</em>, <em>fmap_demean=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/workflows/fieldmap/base.py#L53"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.workflows.fieldmap.base.init_sdc_wf" title="Permalink to this definition">¶</a></dt>
+<dd><p>This workflow implements the heuristics to choose a
+<abbr title="susceptibility distortion correction">SDC</abbr> strategy.
+When no field map information is present within the BIDS inputs,
+the EXPERIMENTAL “fieldmap-less SyN” can be performed, using
+the <code class="docutils literal notranslate"><span class="pre">--use-syn</span></code> argument. When <code class="docutils literal notranslate"><span class="pre">--force-syn</span></code> is specified,
+then the “fieldmap-less SyN” is always executed and reported
+despite of other fieldmaps available with higher priority.
+In the latter case (some sort of fieldmap(s) is available and
+<code class="docutils literal notranslate"><span class="pre">--force-syn</span></code> is requested), then the <abbr title="susceptibility distortion correction">SDC</abbr> method applied is that with the
+highest priority.</p>
+<p>(<a class="reference external" href="../api/index-4.py">Source code</a>)</p>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt>fmaps <span class="classifier-delimiter">:</span> <span class="classifier">list of pybids dicts</span></dt>
+<dd>A list of dictionaries with the available fieldmaps
+(and their metadata using the key <code class="docutils literal notranslate"><span class="pre">'metadata'</span></code> for the
+case of <em>epi</em> fieldmaps)</dd>
+<dt>dwi_meta <span class="classifier-delimiter">:</span> <span class="classifier">dict</span></dt>
+<dd>BIDS metadata dictionary corresponding to the DWI run</dd>
+<dt>omp_nthreads <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Maximum number of threads an individual process may use</dd>
+<dt>fmap_bspline <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><strong>Experimental</strong>: Fit B-Spline field using least-squares</dd>
+<dt>fmap_demean <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Demean voxel-shift map during unwarp</dd>
+<dt>debug <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Enable debugging outputs</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt><strong>Inputs</strong></dt>
+<dd><dl class="first last docutils">
+<dt>b0_ref</dt>
+<dd>A b0 reference calculated at a previous stage</dd>
+<dt>b0_ref_brain</dt>
+<dd>Same as above, but brain-masked</dd>
+<dt>b0_mask</dt>
+<dd>Brain mask for the DWI run</dd>
+<dt>t1_brain</dt>
+<dd>T1w image, brain-masked, for the fieldmap-less SyN method</dd>
+<dt>t1_2_mni_reverse_transform</dt>
+<dd>MNI-to-T1w transform to map prior knowledge to the T1w
+fo the fieldmap-less SyN method</dd>
+<dt>template <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name of template targeted by <code class="docutils literal notranslate"><span class="pre">template</span></code> output space</dd>
+</dl>
+</dd>
+<dt><strong>Outputs</strong></dt>
+<dd><dl class="first last docutils">
+<dt>b0_ref</dt>
+<dd>An unwarped b0 reference</dd>
+<dt>b0_mask</dt>
+<dd>The corresponding new mask after unwarping</dd>
+<dt>b0_ref_brain</dt>
+<dd>Brain-extracted, unwarped b0 reference</dd>
+<dt>out_warp</dt>
+<dd>The deformation field to unwarp the susceptibility distortions</dd>
+<dt>syn_b0_ref</dt>
+<dd>If <code class="docutils literal notranslate"><span class="pre">--force-syn</span></code>, an unwarped b0 reference with this
+method (for reporting purposes)</dd>
+<dt>method</dt>
+<dd>Name of the method used for SDC</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<span class="target" id="module-qsiprep.workflows.fieldmap.pepolar"></span><div class="section" id="phase-encoding-polarity-pepolar-techniques">
+<span id="sdc-pepolar"></span><h4>Phase Encoding POLARity (<em>PEPOLAR</em>) techniques<a class="headerlink" href="#phase-encoding-polarity-pepolar-techniques" title="Permalink to this headline">¶</a></h4>
+<dl class="function">
+<dt id="qsiprep.workflows.fieldmap.pepolar.init_pepolar_unwarp_wf">
+<code class="descclassname">qsiprep.workflows.fieldmap.pepolar.</code><code class="descname">init_pepolar_unwarp_wf</code><span class="sig-paren">(</span><em>dwi_meta</em>, <em>epi_fmaps</em>, <em>omp_nthreads=1</em>, <em>name='pepolar_unwarp_wf'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/workflows/fieldmap/pepolar.py#L25"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.workflows.fieldmap.pepolar.init_pepolar_unwarp_wf" title="Permalink to this definition">¶</a></dt>
+<dd><p>This workflow takes in a set of EPI files with opposite phase encoding
+direction than the target file and calculates a displacements field
+(in other words, an ANTs-compatible warp file).</p>
+<p>This procedure works if there is only one ‘_epi’ file is present
+(as long as it has the opposite phase encoding direction to the target
+file). The target file will be used to estimate the field distortion.
+However, if there is another ‘_epi’ file present with a matching
+phase encoding direction to the target it will be used instead.</p>
+<p>Currently, different phase encoding dimension in the target file and the
+‘_epi’ file(s) (for example ‘i’ and ‘j’) is not supported.</p>
+<p>The warp field correcting for the distortions is estimated using AFNI’s
+3dQwarp, with displacement estimation limited to the target file phase
+encoding direction.</p>
+<p>It also calculates a new mask for the input dataset that takes into
+account the distortions.</p>
+<div class="figure">
+<img alt="../_images/index-5.png" src="../_images/index-5.png" />
+</div>
+<p>(<a class="reference external" href="../api/index-5.py">Source code</a>, <a class="reference external" href="../api/index-5.png">png</a>, <a class="reference external" href="../api/index-5.svg">svg</a>, <a class="reference external" href="../api/index-5.pdf">pdf</a>)</p>
+<p>Inputs</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>in_reference</dt>
+<dd>the reference image</dd>
+<dt>in_reference_brain</dt>
+<dd>the reference image skullstripped</dd>
+<dt>in_mask</dt>
+<dd>a brain mask corresponding to <code class="docutils literal notranslate"><span class="pre">in_reference</span></code></dd>
+</dl>
+</div></blockquote>
+<p>Outputs</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>out_reference</dt>
+<dd>the <code class="docutils literal notranslate"><span class="pre">in_reference</span></code> after unwarping</dd>
+<dt>out_reference_brain</dt>
+<dd>the <code class="docutils literal notranslate"><span class="pre">in_reference</span></code> after unwarping and skullstripping</dd>
+<dt>out_warp</dt>
+<dd>the corresponding <abbr title="displacements field map">DFM</abbr> compatible with
+ANTs</dd>
+<dt>out_mask</dt>
+<dd>mask of the unwarped input file</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="qsiprep.workflows.fieldmap.pepolar.init_prepare_epi_wf">
+<code class="descclassname">qsiprep.workflows.fieldmap.pepolar.</code><code class="descname">init_prepare_epi_wf</code><span class="sig-paren">(</span><em>omp_nthreads</em>, <em>name='prepare_epi_wf'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/workflows/fieldmap/pepolar.py#L179"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.workflows.fieldmap.pepolar.init_prepare_epi_wf" title="Permalink to this definition">¶</a></dt>
+<dd><p>This workflow takes in a set of EPI files with with the same phase
+encoding direction and returns a single 3D volume ready to be used in
+field distortion estimation.</p>
+<p>The procedure involves: estimating a robust template using FreeSurfer’s
+‘mri_robust_template’, bias field correction using ANTs N4BiasFieldCorrection
+and AFNI 3dUnifize, skullstripping using FSL BET and AFNI 3dAutomask,
+and rigid coregistration to the reference using ANTs.</p>
+<div class="figure">
+<img alt="../_images/index-6.png" src="../_images/index-6.png" />
+</div>
+<p>(<a class="reference external" href="../api/index-6.py">Source code</a>, <a class="reference external" href="../api/index-6.png">png</a>, <a class="reference external" href="../api/index-6.svg">svg</a>, <a class="reference external" href="../api/index-6.pdf">pdf</a>)</p>
+<p>Inputs</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>fmaps</dt>
+<dd>list of 3D or 4D NIfTI images</dd>
+<dt>ref_brain</dt>
+<dd>coregistration reference (skullstripped and bias field corrected)</dd>
+</dl>
+</div></blockquote>
+<p>Outputs</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>out_file</dt>
+<dd>single 3D NIfTI file</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<span class="target" id="module-qsiprep.workflows.fieldmap.syn"></span><div class="section" id="fieldmap-less-estimation-experimental">
+<span id="sdc-fieldmapless"></span><h4>Fieldmap-less estimation (experimental)<a class="headerlink" href="#fieldmap-less-estimation-experimental" title="Permalink to this headline">¶</a></h4>
+<p>In the absence of direct measurements of fieldmap data, we provide an (experimental)
+option to estimate the susceptibility distortion based on the ANTs symmetric
+normalization (SyN) technique.
+This feature may be enabled, using the <code class="docutils literal notranslate"><span class="pre">--use-syn-sdc</span></code> flag, and will only be
+applied if fieldmaps are unavailable.</p>
+<p>During the evaluation phase, the <code class="docutils literal notranslate"><span class="pre">--force-syn</span></code> flag will cause this estimation to
+be performed <em>in addition to</em> fieldmap-based estimation, to permit the direct
+comparison of the results of each technique.
+Note that, even if <code class="docutils literal notranslate"><span class="pre">--force-syn</span></code> is given, the functional outputs of qsiprep will
+be corrected using the fieldmap-based estimates.</p>
+<p>Feedback will be enthusiastically received.</p>
+<dl class="function">
+<dt id="qsiprep.workflows.fieldmap.syn.init_syn_sdc_wf">
+<code class="descclassname">qsiprep.workflows.fieldmap.syn.</code><code class="descname">init_syn_sdc_wf</code><span class="sig-paren">(</span><em>omp_nthreads</em>, <em>bold_pe=None</em>, <em>atlas_threshold=2</em>, <em>name='syn_sdc_wf'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/workflows/fieldmap/syn.py#L40"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.workflows.fieldmap.syn.init_syn_sdc_wf" title="Permalink to this definition">¶</a></dt>
+<dd><p>This workflow takes a skull-stripped T1w image and reference b0 image and
+estimates a susceptibility distortion correction warp, using ANTs symmetric
+normalization (SyN) and the average fieldmap atlas described in
+[Treiber2016].</p>
+<p>SyN deformation is restricted to the phase-encoding (PE) direction.
+If no PE direction is specified, anterior-posterior PE is assumed.</p>
+<p>SyN deformation is also restricted to regions that are expected to have a
+&gt;2mm (approximately 1 voxel) warp, based on the fieldmap atlas.</p>
+<p>This technique is a variation on those developed in [Huntenburg2014] and
+[Wang2017].</p>
+<p>(<a class="reference external" href="../api/index-7.py">Source code</a>)</p>
+<p><strong>Inputs</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt>b0_ref</dt>
+<dd>reference image</dd>
+<dt>b0_ref_brain</dt>
+<dd>skull-stripped reference image</dd>
+<dt>template <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name of template targeted by <code class="docutils literal notranslate"><span class="pre">template</span></code> output space</dd>
+<dt>t1_brain</dt>
+<dd>skull-stripped, bias-corrected structural image</dd>
+<dt>t1_2_mni_reverse_transform</dt>
+<dd>inverse registration transform of T1w image to MNI template</dd>
+</dl>
+</div></blockquote>
+<p><strong>Outputs</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt>out_reference</dt>
+<dd>the <code class="docutils literal notranslate"><span class="pre">bold_ref</span></code> image after unwarping</dd>
+<dt>out_reference_brain</dt>
+<dd>the <code class="docutils literal notranslate"><span class="pre">bold_ref_brain</span></code> image after unwarping</dd>
+<dt>out_warp</dt>
+<dd>the corresponding <abbr title="displacements field map">DFM</abbr> compatible with
+ANTs</dd>
+<dt>out_mask</dt>
+<dd>mask of the unwarped input file</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<span class="target" id="module-qsiprep.workflows.fieldmap.unwarp"></span><div class="section" id="unwarping">
+<span id="sdc-unwarp"></span><h4>Unwarping<a class="headerlink" href="#unwarping" title="Permalink to this headline">¶</a></h4>
+<div class="topic">
+<p class="topic-title first">Abbreviations</p>
+<dl class="docutils">
+<dt>fmap</dt>
+<dd>fieldmap</dd>
+<dt>VSM</dt>
+<dd>voxel-shift map – a 3D nifti where displacements are in pixels (not mm)</dd>
+<dt>DFM</dt>
+<dd>displacements field map – a nifti warp file compatible with ANTs (mm)</dd>
+</dl>
+</div>
+<dl class="function">
+<dt id="qsiprep.workflows.fieldmap.unwarp.init_fmap_unwarp_report_wf">
+<code class="descclassname">qsiprep.workflows.fieldmap.unwarp.</code><code class="descname">init_fmap_unwarp_report_wf</code><span class="sig-paren">(</span><em>name='fmap_unwarp_report_wf'</em>, <em>suffix='variant-hmcsdc_preproc'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/workflows/fieldmap/unwarp.py#L214"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.workflows.fieldmap.unwarp.init_fmap_unwarp_report_wf" title="Permalink to this definition">¶</a></dt>
+<dd><p>This workflow generates and saves a reportlet showing the effect of fieldmap
+unwarping a BOLD image.</p>
+<div class="figure">
+<img alt="../_images/index-8.png" src="../_images/index-8.png" />
+</div>
+<p>(<a class="reference external" href="../api/index-8.py">Source code</a>, <a class="reference external" href="../api/index-8.png">png</a>, <a class="reference external" href="../api/index-8.svg">svg</a>, <a class="reference external" href="../api/index-8.pdf">pdf</a>)</p>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt>name <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd>Workflow name (default: fmap_unwarp_report_wf)</dd>
+<dt>suffix <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd>Suffix to be appended to this reportlet</dd>
+</dl>
+</div></blockquote>
+<p><strong>Inputs</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt>in_pre</dt>
+<dd>Reference image, before unwarping</dd>
+<dt>in_post</dt>
+<dd>Reference image, after unwarping</dd>
+<dt>in_seg</dt>
+<dd>Segmentation of preprocessed structural image, including
+gray-matter (GM), white-matter (WM) and cerebrospinal fluid (CSF)</dd>
+<dt>in_xfm</dt>
+<dd>Affine transform from T1 space to b0 space (ITK format)</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="qsiprep.workflows.fieldmap.unwarp.init_sdc_unwarp_wf">
+<code class="descclassname">qsiprep.workflows.fieldmap.unwarp.</code><code class="descname">init_sdc_unwarp_wf</code><span class="sig-paren">(</span><em>omp_nthreads</em>, <em>fmap_demean</em>, <em>debug</em>, <em>name='sdc_unwarp_wf'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/7e1f3b30/qsiprep/workflows/fieldmap/unwarp.py#L36"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qsiprep.workflows.fieldmap.unwarp.init_sdc_unwarp_wf" title="Permalink to this definition">¶</a></dt>
+<dd><p>This workflow takes in a displacements fieldmap and calculates the corresponding
+displacements field (in other words, an ANTs-compatible warp file).</p>
+<p>It also calculates a new mask for the input dataset that takes into account the distortions.
+The mask is restricted to the field of view of the fieldmap since outside of it corrections
+could not be performed.</p>
+<div class="figure">
+<img alt="../_images/index-9.png" src="../_images/index-9.png" />
+</div>
+<p>(<a class="reference external" href="../api/index-9.py">Source code</a>, <a class="reference external" href="../api/index-9.png">png</a>, <a class="reference external" href="../api/index-9.svg">svg</a>, <a class="reference external" href="../api/index-9.pdf">pdf</a>)</p>
+<p>Inputs</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>in_reference</dt>
+<dd>the reference image</dd>
+<dt>in_reference_brain</dt>
+<dd>the reference image (skull-stripped)</dd>
+<dt>in_mask</dt>
+<dd>a brain mask corresponding to <code class="docutils literal notranslate"><span class="pre">in_reference</span></code></dd>
+<dt>metadata</dt>
+<dd>metadata associated to the <code class="docutils literal notranslate"><span class="pre">in_reference</span></code> EPI input</dd>
+<dt>fmap</dt>
+<dd>the fieldmap in Hz</dd>
+<dt>fmap_ref</dt>
+<dd>the reference (anatomical) image corresponding to <code class="docutils literal notranslate"><span class="pre">fmap</span></code></dd>
+<dt>fmap_mask</dt>
+<dd>a brain mask corresponding to <code class="docutils literal notranslate"><span class="pre">fmap</span></code></dd>
+</dl>
+</div></blockquote>
+<p>Outputs</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>out_reference</dt>
+<dd>the <code class="docutils literal notranslate"><span class="pre">in_reference</span></code> after unwarping</dd>
+<dt>out_reference_brain</dt>
+<dd>the <code class="docutils literal notranslate"><span class="pre">in_reference</span></code> after unwarping and skullstripping</dd>
+<dt>out_warp</dt>
+<dd>the corresponding <abbr title="displacements field map">DFM</abbr> compatible with
+ANTs</dd>
+<dt>out_jacobian</dt>
+<dd>the jacobian of the field (for drop-out alleviation)</dd>
+<dt>out_mask</dt>
+<dd>mask of the unwarped input file</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../citing.html" class="btn btn-neutral" title="Citing qsiprep" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2019, The qsiprep developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/chrisfilo/zenodo.js/v0.1/zenodo.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

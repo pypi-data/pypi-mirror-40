@@ -1,0 +1,735 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Usage &mdash; qsiprep version documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Merging multiple scans from a session" href="merging.html" />
+    <link rel="prev" title="What’s new" href="changes.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> qsiprep
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">What’s new</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#execution-and-the-bids-format">Execution and the BIDS format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#command-line-arguments">Command-Line Arguments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Named Arguments">Named Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Options for filtering BIDS queries">Options for filtering BIDS queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Options for reconstructing qsiprep outputs">Options for reconstructing qsiprep outputs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Options to handle performance">Options to handle performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Workflow configuration">Workflow configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Specific options for motion correction and coregistration">Specific options for motion correction and coregistration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Specific options for ANTs registrations">Specific options for ANTs registrations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Specific options for FreeSurfer preprocessing">Specific options for FreeSurfer preprocessing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Specific options for handling fieldmaps">Specific options for handling fieldmaps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Specific options for SyN distortion correction">Specific options for SyN distortion correction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Other options">Other options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#the-docker-wrapper-cli">The docker wrapper CLI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Named Arguments">Named Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Wrapper options">Wrapper options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Developer options">Developer options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#debugging">Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#support-and-communication">Support and communication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="merging.html">Merging multiple scans from a session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows.html">Processing pipeline details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outputs.html">Outputs of qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reconstruction.html">Reconstructing qsiprep output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributing to qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">qsiprep</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="id1">
+<h1>Usage<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="execution-and-the-bids-format">
+<h2>Execution and the BIDS format<a class="headerlink" href="#execution-and-the-bids-format" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> workflow takes as principal input the path of the dataset
+that is to be processed.
+The input dataset is required to be in valid <abbr title="Brain Imaging Data Structure">BIDS</abbr> format, and it must include at least one T1w structural image and
+(unless disabled with a flag) a diffusion MRI series.
+We highly recommend that you validate your dataset with the free, online
+<a class="reference external" href="http://bids-standard.github.io/bids-validator/">BIDS Validator</a>.</p>
+<p>The exact command to run <code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> depends on the <a class="reference external" href="installation.html">Installation</a> method.
+The common parts of the command are similar to the <a class="reference external" href="https://github.com/BIDS-Apps">BIDS-Apps</a> definition.
+Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">qsiprep</span> <span class="o">--</span><span class="n">bids_dir</span> <span class="n">data</span><span class="o">/</span><span class="n">bids_root</span><span class="o">/</span> <span class="o">--</span><span class="n">output_dir</span> <span class="n">out</span><span class="o">/</span> <span class="o">--</span><span class="n">analysis_level</span> <span class="n">participant</span> <span class="o">-</span><span class="n">w</span> <span class="n">work</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="command-line-arguments">
+<h2>Command-Line Arguments<a class="headerlink" href="#command-line-arguments" title="Permalink to this headline">¶</a></h2>
+<p>qsiprep: q-Space Image PREProcessing workflows</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">qsiprep</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="o">--</span><span class="n">bids_dir</span> <span class="n">BIDS_DIR</span> <span class="o">--</span><span class="n">output_dir</span> <span class="n">OUTPUT_DIR</span>
+               <span class="o">--</span><span class="n">analysis_level</span> <span class="p">{</span><span class="n">participant</span><span class="p">}</span> <span class="p">[</span><span class="o">--</span><span class="n">version</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">participant_label</span> <span class="n">PARTICIPANT_LABEL</span> <span class="p">[</span><span class="n">PARTICIPANT_LABEL</span> <span class="o">...</span><span class="p">]]</span>
+               <span class="p">[</span><span class="o">-</span><span class="n">t</span> <span class="n">TASK_ID</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">recon</span><span class="o">-</span><span class="n">spec</span> <span class="n">RECON_SPEC</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">recon</span><span class="o">-</span><span class="nb">input</span> <span class="n">RECON_INPUT</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">nthreads</span> <span class="n">NTHREADS</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">omp</span><span class="o">-</span><span class="n">nthreads</span> <span class="n">OMP_NTHREADS</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">mem_mb</span> <span class="n">MEM_MB</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">low</span><span class="o">-</span><span class="n">mem</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">use</span><span class="o">-</span><span class="n">plugin</span> <span class="n">USE_PLUGIN</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">anat</span><span class="o">-</span><span class="n">only</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">boilerplate</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">v</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">ignore</span> <span class="p">{</span><span class="n">fieldmaps</span><span class="p">,</span><span class="n">sbref</span><span class="p">}</span> <span class="p">[{</span><span class="n">fieldmaps</span><span class="p">,</span><span class="n">sbref</span><span class="p">}</span> <span class="o">...</span><span class="p">]]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">longitudinal</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">dwi_denoise_window</span> <span class="n">DWI_DENOISE_WINDOW</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">denoise</span><span class="o">-</span><span class="n">before</span><span class="o">-</span><span class="n">combining</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">combine_all_dwis</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">discard</span><span class="o">-</span><span class="n">repeated</span><span class="o">-</span><span class="n">samples</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">write</span><span class="o">-</span><span class="n">local</span><span class="o">-</span><span class="n">bvecs</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">b0</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">t1w</span><span class="o">-</span><span class="n">transform</span> <span class="p">{</span><span class="n">Rigid</span><span class="p">,</span><span class="n">Affine</span><span class="p">}]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">output</span><span class="o">-</span><span class="n">space</span> <span class="p">{</span><span class="n">T1w</span><span class="p">,</span><span class="n">template</span><span class="p">}</span> <span class="p">[{</span><span class="n">T1w</span><span class="p">,</span><span class="n">template</span><span class="p">}</span> <span class="o">...</span><span class="p">]]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">template</span> <span class="p">{</span><span class="n">MNI152NLin2009cAsym</span><span class="p">}]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">output</span><span class="o">-</span><span class="n">resolution</span> <span class="n">OUTPUT_RESOLUTION</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">b0</span><span class="o">-</span><span class="n">motion</span><span class="o">-</span><span class="n">corr</span><span class="o">-</span><span class="n">to</span> <span class="p">{</span><span class="n">iterative</span><span class="p">,</span><span class="n">first</span><span class="p">}]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">hmc</span><span class="o">-</span><span class="n">transform</span> <span class="p">{</span><span class="n">Affine</span><span class="p">,</span><span class="n">Rigid</span><span class="p">}]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">hmc_model</span> <span class="p">{</span><span class="n">none</span><span class="p">,</span><span class="mi">3</span><span class="n">dSHORE</span><span class="p">,</span><span class="n">MAPMRI</span><span class="p">}]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">impute</span><span class="o">-</span><span class="nb">slice</span><span class="o">-</span><span class="n">threshold</span> <span class="n">IMPUTE_SLICE_THRESHOLD</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">skull</span><span class="o">-</span><span class="n">strip</span><span class="o">-</span><span class="n">template</span> <span class="p">{</span><span class="n">OASIS</span><span class="p">,</span><span class="n">NKI</span><span class="p">}]</span> <span class="p">[</span><span class="o">--</span><span class="n">skull</span><span class="o">-</span><span class="n">strip</span><span class="o">-</span><span class="n">fixed</span><span class="o">-</span><span class="n">seed</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">fs</span><span class="o">-</span><span class="n">license</span><span class="o">-</span><span class="n">file</span> <span class="n">PATH</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">prefer_dedicated_fmaps</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">fmap</span><span class="o">-</span><span class="n">bspline</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">fmap</span><span class="o">-</span><span class="n">no</span><span class="o">-</span><span class="n">demean</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">use</span><span class="o">-</span><span class="n">syn</span><span class="o">-</span><span class="n">sdc</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">force</span><span class="o">-</span><span class="n">syn</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">w</span> <span class="n">WORK_DIR</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">resource</span><span class="o">-</span><span class="n">monitor</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">reports</span><span class="o">-</span><span class="n">only</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">run</span><span class="o">-</span><span class="n">uuid</span> <span class="n">RUN_UUID</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">write</span><span class="o">-</span><span class="n">graph</span><span class="p">]</span>
+               <span class="p">[</span><span class="o">--</span><span class="n">stop</span><span class="o">-</span><span class="n">on</span><span class="o">-</span><span class="n">first</span><span class="o">-</span><span class="n">crash</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">notrack</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">sloppy</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="Named Arguments">
+<h3>Named Arguments<a class="headerlink" href="#Named Arguments" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd>--bids_dir, --bids-dir</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>the root folder of a BIDS valid dataset (sub-XXXXX folders should be found at the top level in this folder).</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--output_dir, --output-dir</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>the output path for the outcomes of preprocessing and visual reports</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--analysis_level, --analysis-level</kbd></td>
+</tr>
+<tr><td>&#160;</td><td><p class="first">Possible choices: participant</p>
+<p class="last">processing stage to be run, only “participant” in the case of qsiprep (see BIDS-Apps specification).</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd>--version</kbd></td>
+<td>show program’s version number and exit</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Options for filtering BIDS queries">
+<h3>Options for filtering BIDS queries<a class="headerlink" href="#Options for filtering BIDS queries" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd>--participant_label, --participant-label</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>a space delimited list of participant identifiers or a single identifier (the sub- prefix can be removed)</td></tr>
+<tr><td class="option-group">
+<kbd>-t, --task-id</kbd></td>
+<td>select a specific task to be processed</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Options for reconstructing qsiprep outputs">
+<h3>Options for reconstructing qsiprep outputs<a class="headerlink" href="#Options for reconstructing qsiprep outputs" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd>--recon-spec, --recon_spec</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>json file specifying a reconstruction pipeline to be run after preprocessing</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--recon-input, --recon_input</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>use this directory as inputs to qsirecon. This option skips qsiprep.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Options to handle performance">
+<h3>Options to handle performance<a class="headerlink" href="#Options to handle performance" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd>--nthreads, --n_cpus, -n-cpus</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>maximum number of threads across all processes</td></tr>
+<tr><td class="option-group">
+<kbd>--omp-nthreads</kbd></td>
+<td>maximum number of threads per-process</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--mem_mb, --mem-mb</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>upper bound memory limit for qsiprep processes</td></tr>
+<tr><td class="option-group">
+<kbd>--low-mem</kbd></td>
+<td>attempt to reduce memory usage (will increase disk usage in working directory)</td></tr>
+<tr><td class="option-group">
+<kbd>--use-plugin</kbd></td>
+<td>nipype plugin configuration file</td></tr>
+<tr><td class="option-group">
+<kbd>--anat-only</kbd></td>
+<td>run anatomical workflows only</td></tr>
+<tr><td class="option-group">
+<kbd>--boilerplate</kbd></td>
+<td>generate boilerplate only</td></tr>
+<tr><td class="option-group">
+<kbd>-v, --verbose</kbd></td>
+<td>increases log verbosity for each occurence, debug level is -vvv</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Workflow configuration">
+<h3>Workflow configuration<a class="headerlink" href="#Workflow configuration" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd>--ignore</kbd></td>
+<td><p class="first">Possible choices: fieldmaps, sbref</p>
+<p class="last">ignore selected aspects of the input dataset to disable corresponding parts of the workflow (a space delimited list)</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd>--longitudinal</kbd></td>
+<td>treat dataset as longitudinal - may increase runtime</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--dwi_denoise_window, --dwi-denoise-window</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>window size in voxels for <code class="docutils literal notranslate"><span class="pre">dwidenoise</span></code>. Must be odd. If 0, <code class="docutils literal notranslate"><span class="pre">dwidwenoise</span></code> will not be run</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--denoise-before-combining, --denoise_before_combining</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>run <code class="docutils literal notranslate"><span class="pre">dwidenoise</span></code> before combining dwis. Requires <code class="docutils literal notranslate"><span class="pre">--combine-all-dwis</span></code></td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--combine_all_dwis, --combine-all-dwis</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>combine dwis from across multiple runs for motion correction and reconstruction.</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--discard-repeated-samples</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>discard repeats of q-space samples. Useful if using a regularized reconstruction method</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--write-local-bvecs</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>write a series of voxelwise bvecs</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--b0-to-t1w-transform</kbd></td>
+</tr>
+<tr><td>&#160;</td><td><p class="first">Possible choices: Rigid, Affine</p>
+<p class="last">Degrees of freedom when registering b0 to T1w images. 6 degrees (rotation and translation) are used by default.</p>
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--output-space, --output_space</kbd></td>
+</tr>
+<tr><td>&#160;</td><td><p class="first">Possible choices: T1w, template</p>
+<dl class="docutils">
+<dt>volume and surface spaces to resample functional series into</dt>
+<dd><ul class="first last simple">
+<li>T1w: subject anatomical volume</li>
+<li>template: normalization target specified by –template</li>
+</ul>
+</dd>
+</dl>
+<p class="last">this argument can be single value or a space delimited list,
+for example: –output-space T1w template</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd>--template</kbd></td>
+<td><p class="first">Possible choices: MNI152NLin2009cAsym</p>
+<p class="last">volume template space (default: MNI152NLin2009cAsym)</p>
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--output-resolution, --output_resolution</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>the isotropic voxel size in mm the data will be resampled to after preprocessing. If set to a lower value than the original voxel size, your data will be upsampled.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Specific options for motion correction and coregistration">
+<h3>Specific options for motion correction and coregistration<a class="headerlink" href="#Specific options for motion correction and coregistration" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd>--b0-motion-corr-to</kbd></td>
+</tr>
+<tr><td>&#160;</td><td><p class="first">Possible choices: iterative, first</p>
+<p class="last">align to the “first” b0 volume or do an “iterative” registration of all b0 image to their midpoint image (default: iterative)</p>
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--hmc-transform</kbd></td>
+</tr>
+<tr><td>&#160;</td><td><p class="first">Possible choices: Affine, Rigid</p>
+<p class="last">transformation to be optimized during head motion correction</p>
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--hmc_model, --hmc-model</kbd></td>
+</tr>
+<tr><td>&#160;</td><td><p class="first">Possible choices: none, 3dSHORE, MAPMRI</p>
+<p class="last">model used to generate target images for hmc. If “none” the non-b0 images will be warped using the same transform as their nearest b0 image</p>
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--impute-slice-threshold</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>impute data in slices that are this many SDs from expected. If 0, no slices will be imputed</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Specific options for ANTs registrations">
+<h3>Specific options for ANTs registrations<a class="headerlink" href="#Specific options for ANTs registrations" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd>--skull-strip-template</kbd></td>
+</tr>
+<tr><td>&#160;</td><td><p class="first">Possible choices: OASIS, NKI</p>
+<p class="last">select ANTs skull-stripping template (default: OASIS))</p>
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--skull-strip-fixed-seed</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>do not use a random seed for skull-stripping - will ensure run-to-run replicability when used with –omp-nthreads 1</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Specific options for FreeSurfer preprocessing">
+<h3>Specific options for FreeSurfer preprocessing<a class="headerlink" href="#Specific options for FreeSurfer preprocessing" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd>--fs-license-file</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>Path to FreeSurfer license key file. Get it (for free) by registering at <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/registration.html">https://surfer.nmr.mgh.harvard.edu/registration.html</a></td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Specific options for handling fieldmaps">
+<h3>Specific options for handling fieldmaps<a class="headerlink" href="#Specific options for handling fieldmaps" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd>--prefer_dedicated_fmaps</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>forces unwarping to use files from the fmap directory instead of using an RPEdir scan from the same session.</td></tr>
+<tr><td class="option-group">
+<kbd>--fmap-bspline</kbd></td>
+<td>fit a B-Spline field using least-squares (experimental)</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--fmap-no-demean</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>do not remove median (within mask) from fieldmap</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Specific options for SyN distortion correction">
+<h3>Specific options for SyN distortion correction<a class="headerlink" href="#Specific options for SyN distortion correction" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd>--use-syn-sdc</kbd></td>
+<td>EXPERIMENTAL: Use fieldmap-free distortion correction</td></tr>
+<tr><td class="option-group">
+<kbd>--force-syn</kbd></td>
+<td>EXPERIMENTAL/TEMPORARY: Use SyN correction in addition to fieldmap correction, if available</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Other options">
+<h3>Other options<a class="headerlink" href="#Other options" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd>-w, --work-dir</kbd></td>
+<td>path where intermediate results should be stored</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--resource-monitor</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>enable Nipype’s resource monitoring to keep track of memory and CPU usage</td></tr>
+<tr><td class="option-group">
+<kbd>--reports-only</kbd></td>
+<td>only generate reports, don’t run workflows. This will only rerun report aggregation, not reportlet generation for specific nodes.</td></tr>
+<tr><td class="option-group">
+<kbd>--run-uuid</kbd></td>
+<td>Specify UUID of previous run, to include error logs in report. No effect without –reports-only.</td></tr>
+<tr><td class="option-group">
+<kbd>--write-graph</kbd></td>
+<td>Write workflow graph.</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--stop-on-first-crash</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>Force stopping on first crash, even if a work directory was specified.</td></tr>
+<tr><td class="option-group">
+<kbd>--notrack</kbd></td>
+<td>Opt-out of sending tracking information of this run to the qsiprep developers. This information helps to improve qsiprep and provides an indicator of real world usage crucial for obtaining funding.</td></tr>
+<tr><td class="option-group">
+<kbd>--sloppy</kbd></td>
+<td>Use low-quality tools for speed - TESTING ONLY</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="the-docker-wrapper-cli">
+<h2>The docker wrapper CLI<a class="headerlink" href="#the-docker-wrapper-cli" title="Permalink to this headline">¶</a></h2>
+<p><p>The qsiprep on Docker wrapper</p>
+<p>This is a lightweight Python wrapper to run qsiprep.
+Docker must be installed and running. This can be checked
+running</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">info</span>
+</pre></div>
+</div>
+<p>Please report any feedback to our GitHub repository
+(<a class="reference external" href="https://github.com/pennbbl/qsiprep">https://github.com/pennbbl/qsiprep</a>) and do not
+forget to credit all the authors of software that qsiprep
+uses (<a class="reference external" href="https://qsiprep.readthedocs.io/en/latest/citing.html">https://qsiprep.readthedocs.io/en/latest/citing.html</a>).</p>
+</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">qsiprep</span><span class="o">-</span><span class="n">docker</span> <span class="o">--</span><span class="n">bids_dir</span> <span class="n">BIDS_DIR</span> <span class="o">--</span><span class="n">output_dir</span> <span class="n">OUTPUT_DIR</span>
+                      <span class="o">--</span><span class="n">analysis_level</span> <span class="p">{</span><span class="n">participant</span><span class="p">}</span>
+                      <span class="p">[</span><span class="o">--</span><span class="n">recon</span><span class="o">-</span><span class="nb">input</span> <span class="n">RECON_INPUT</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">version</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">i</span> <span class="n">IMG</span><span class="p">]</span>
+                      <span class="p">[</span><span class="o">-</span><span class="n">w</span> <span class="n">WORK_DIR</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">fs</span><span class="o">-</span><span class="n">license</span><span class="o">-</span><span class="n">file</span> <span class="n">PATH</span><span class="p">]</span>
+                      <span class="p">[</span><span class="o">--</span><span class="n">recon</span><span class="o">-</span><span class="n">spec</span> <span class="n">RECON_SPEC</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">f</span> <span class="n">PATH</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">n</span> <span class="n">PATH</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">p</span> <span class="n">PATH</span><span class="p">]</span>
+                      <span class="p">[</span><span class="o">--</span><span class="n">shell</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">config</span> <span class="n">PATH</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">e</span> <span class="n">ENV_VAR</span> <span class="n">value</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">u</span> <span class="n">USER</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="Named Arguments">
+<h3>Named Arguments<a class="headerlink" href="#Named Arguments" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd>--bids_dir, --bids-dir</kbd></td>
+</tr>
+<tr><td>&#160;</td><td></td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--output_dir, --output-dir</kbd></td>
+</tr>
+<tr><td>&#160;</td><td></td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--analysis_level, --analysis-level</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>Possible choices: participant</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--recon-input, --recon_input</kbd></td>
+</tr>
+<tr><td>&#160;</td><td></td></tr>
+<tr><td class="option-group">
+<kbd>-h, --help</kbd></td>
+<td>show this help message and exit</td></tr>
+<tr><td class="option-group">
+<kbd>--version</kbd></td>
+<td>show program’s version number and exit</td></tr>
+<tr><td class="option-group">
+<kbd>-i, --image</kbd></td>
+<td>image name</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Wrapper options">
+<h3>Wrapper options<a class="headerlink" href="#Wrapper options" title="Permalink to this headline">¶</a></h3>
+<p>Standard options that require mapping files into the container</p>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd>-w, --work-dir</kbd></td>
+<td>path where intermediate results should be stored</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--fs-license-file</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>Path to FreeSurfer license key file. Get it (for free) by registering at <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/registration.html">https://surfer.nmr.mgh.harvard.edu/registration.html</a></td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--recon-spec, --recon_spec</kbd></td>
+</tr>
+<tr><td>&#160;</td><td></td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Developer options">
+<h3>Developer options<a class="headerlink" href="#Developer options" title="Permalink to this headline">¶</a></h3>
+<p>Tools for testing and debugging qsiprep</p>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd>-f, --patch-qsiprep</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>working qsiprep repository</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>-n, --patch-niworkflows</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>working niworkflows repository</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>-p, --patch-nipype</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>working nipype repository</td></tr>
+<tr><td class="option-group">
+<kbd>--shell</kbd></td>
+<td>open shell in image instead of running qsiprep</td></tr>
+<tr><td class="option-group">
+<kbd>--config</kbd></td>
+<td>Use custom nipype.cfg file</td></tr>
+<tr><td class="option-group">
+<kbd>-e, --env</kbd></td>
+<td>Set custom environment variable within container</td></tr>
+<tr><td class="option-group">
+<kbd>-u, --user</kbd></td>
+<td>Run container as a given user/uid</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="debugging">
+<h2>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<p>Logs and crashfiles are outputted into the
+<code class="docutils literal notranslate"><span class="pre">&lt;output</span> <span class="pre">dir&gt;/qsiprep/sub-&lt;participant_label&gt;/log</span></code> directory.
+Information on how to customize and understand these files can be found on the
+<a class="reference external" href="http://nipype.readthedocs.io/en/latest/users/debug.html">nipype debugging</a>
+page.</p>
+</div>
+<div class="section" id="support-and-communication">
+<h2>Support and communication<a class="headerlink" href="#support-and-communication" title="Permalink to this headline">¶</a></h2>
+<p>The documentation of this project is found here: <a class="reference external" href="http://qsiprep.readthedocs.org/en/latest/">http://qsiprep.readthedocs.org/en/latest/</a>.</p>
+<p>All bugs, concerns and enhancement requests for this software can be submitted here:
+<a class="reference external" href="https://github.com/pennbbl/qsiprep/issues">https://github.com/pennbbl/qsiprep/issues</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="merging.html" class="btn btn-neutral float-right" title="Merging multiple scans from a session" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="changes.html" class="btn btn-neutral" title="What’s new" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2019, The qsiprep developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/chrisfilo/zenodo.js/v0.1/zenodo.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

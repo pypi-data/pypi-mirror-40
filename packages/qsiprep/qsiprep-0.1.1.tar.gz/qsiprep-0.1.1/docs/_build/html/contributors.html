@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contributing to qsiprep &mdash; qsiprep version documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Citing qsiprep" href="citing.html" />
+    <link rel="prev" title="Reconstructing qsiprep output" href="reconstruction.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> qsiprep
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging.html">Merging multiple scans from a session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows.html">Processing pipeline details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outputs.html">Outputs of qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reconstruction.html">Reconstructing qsiprep output</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing to qsiprep</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#patching-working-repositories">Patching working repositories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-dependencies">Adding dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rebuilding-docker-image">Rebuilding Docker image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-new-features-to-the-citation-boilerplate">Adding new features to the citation boilerplate</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">qsiprep</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Contributing to qsiprep</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/contributors.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="contributing-to-qsiprep">
+<h1>Contributing to qsiprep<a class="headerlink" href="#contributing-to-qsiprep" title="Permalink to this headline">¶</a></h1>
+<p>This document explains how to prepare a new development environment and
+update an existing environment, as necessary.</p>
+<p>Development in Docker is encouraged, for the sake of consistency and
+portability.
+By default, work should be built off of <a class="reference external" href="https://hub.docker.com/r/pennbbl/qsiprep/">pennbbl/qsiprep:latest</a> (see the
+<a class="reference external" href="installation.html">installation</a> guide for the basic procedure for running).</p>
+<p>It will be assumed the developer has a working repository in
+<code class="docutils literal notranslate"><span class="pre">$HOME/projects/qsiprep</span></code>, and examples are also given for
+<a class="reference external" href="https://github.com/pennbbl/niworkflows">niworkflows</a> and
+<a class="reference external" href="http://nipype.readthedocs.io/en/latest/">nipype</a>.</p>
+<div class="section" id="patching-working-repositories">
+<h2>Patching working repositories<a class="headerlink" href="#patching-working-repositories" title="Permalink to this headline">¶</a></h2>
+<p>In order to test new code without rebuilding the Docker image, it is
+possible to mount working repositories as source directories within the
+container.
+The <a href="#id1"><span class="problematic" id="id2">`qsiprep-docker`_</span></a> script simplifies this for the most common repositories:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">f</span> <span class="n">PATH</span><span class="p">,</span> <span class="o">--</span><span class="n">patch</span><span class="o">-</span><span class="n">qsiprep</span> <span class="n">PATH</span>
+                      <span class="n">working</span> <span class="n">qsiprep</span> <span class="n">repository</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="kc">None</span><span class="p">)</span>
+<span class="o">-</span><span class="n">n</span> <span class="n">PATH</span><span class="p">,</span> <span class="o">--</span><span class="n">patch</span><span class="o">-</span><span class="n">niworkflows</span> <span class="n">PATH</span>
+                      <span class="n">working</span> <span class="n">niworkflows</span> <span class="n">repository</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="kc">None</span><span class="p">)</span>
+<span class="o">-</span><span class="n">p</span> <span class="n">PATH</span><span class="p">,</span> <span class="o">--</span><span class="n">patch</span><span class="o">-</span><span class="n">nipype</span> <span class="n">PATH</span>
+                      <span class="n">working</span> <span class="n">nipype</span> <span class="n">repository</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For instance, if your repositories are contained in <code class="docutils literal notranslate"><span class="pre">$HOME/projects</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ qsiprep-docker -f $HOME/projects/qsiprep/qsiprep \
+                  -n $HOME/projects/niworkflows/niworkflows \
+                  -p $HOME/projects/nipype/nipype \
+                  -i pennbbl/qsiprep:latest \
+                  $HOME/fullds005 $HOME/dockerout participant
+</pre></div>
+</div>
+<p>Note the <code class="docutils literal notranslate"><span class="pre">-i</span></code> flag allows you to specify an image.</p>
+<p>When invoking <code class="docutils literal notranslate"><span class="pre">docker</span></code> directly, the mount options must be specified
+with the <code class="docutils literal notranslate"><span class="pre">-v</span></code> flag:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>-v $HOME/projects/qsiprep/qsiprep:/usr/local/miniconda/lib/python3.6/site-packages/qsiprep:ro
+-v $HOME/projects/niworkflows/niworkflows:/usr/local/miniconda/lib/python3.6/site-packages/niworkflows:ro
+-v $HOME/projects/nipype/nipype:/usr/local/miniconda/lib/python3.6/site-packages/nipype:ro
+</pre></div>
+</div>
+<p>For example,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker run --rm -v $HOME/fullds005:/data:ro -v $HOME/dockerout:/out \
+    -v $HOME/projects/qsiprep/qsiprep:/usr/local/miniconda/lib/python3.6/site-packages/qsiprep:ro \
+    pennbbl/qsiprep:latest /data /out/out participant \
+    -w /out/work/
+</pre></div>
+</div>
+<p>In order to work directly in the container, pass the <code class="docutils literal notranslate"><span class="pre">--shell</span></code> flag to
+<code class="docutils literal notranslate"><span class="pre">qsiprep-docker</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ qsiprep-docker --shell $HOME/fullds005 $HOME/dockerout participant
+</pre></div>
+</div>
+<p>This is the equivalent of using <code class="docutils literal notranslate"><span class="pre">--entrypoint=bash</span></code> and omitting the qsiprep
+arguments in a <code class="docutils literal notranslate"><span class="pre">docker</span></code> command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker run --rm -v $HOME/fullds005:/data:ro -v $HOME/dockerout:/out \
+    -v $HOME/projects/qsiprep/qsiprep:/usr/local/miniconda/lib/python3.6/site-packages/qsiprep:ro --entrypoint=bash \
+    pennbbl/qsiprep:latest
+</pre></div>
+</div>
+<p>Patching containers can be achieved in Singularity analogous to <code class="docutils literal notranslate"><span class="pre">docker</span></code>
+using the <code class="docutils literal notranslate"><span class="pre">--bind</span></code> (<code class="docutils literal notranslate"><span class="pre">-B</span></code>) option:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ singularity run \
+    -B $HOME/projects/qsiprep/qsiprep:/usr/local/miniconda/lib/python3.6/site-packages/qsiprep \
+    qsiprep.img \
+    /scratch/dataset /scratch/out participant -w /out/work/
+</pre></div>
+</div>
+<p>Or you can patch Singularity containers using the PYTHONPATH variable:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ PYTHONPATH=&quot;$HOME/projects/qsiprep&quot; singularity run qsiprep.img \
+     /scratch/dataset /scratch/out participant -w /out/work/
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-dependencies">
+<h2>Adding dependencies<a class="headerlink" href="#adding-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>New dependencies to be inserted into the Docker image will either be
+Python or non-Python dependencies.
+Python dependencies may be added in three places, depending on whether
+the package is large or non-release versions are required.
+The image <a class="reference external" href="#rebuilding-docker-image">must be rebuilt</a> after any
+dependency changes.</p>
+<p>Python dependencies should generally be included in the <code class="docutils literal notranslate"><span class="pre">REQUIRES</span></code>
+list in <a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/29133e5e9f92aae4b23dd897f9733885a60be311/qsiprep/info.py#L46-L61">qsiprep/info.py</a>.
+If the latest version in <a class="reference external" href="https://pypi.org/">PyPI</a> is sufficient,
+then no further action is required.</p>
+<p>For large Python dependencies where there will be a benefit to
+pre-compiled binaries, <a class="reference external" href="https://github.com/conda/conda">conda</a> packages
+may also be added to the <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span></code> line in the <a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/29133e5e9f92aae4b23dd897f9733885a60be311/Dockerfile#L46">Dockerfile</a>.</p>
+<p>Finally, if a specific version of a repository needs to be pinned, edit
+the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file.
+See the <a class="reference external" href="https://github.com/pennbbl/qsiprep/blob/master/requirements.txt">current</a>
+file for examples.</p>
+<p>Non-Python dependencies must also be installed in the Dockerfile, via a
+<code class="docutils literal notranslate"><span class="pre">RUN</span></code> command.
+For example, installing an <code class="docutils literal notranslate"><span class="pre">apt</span></code> package may be done as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">RUN</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> \
+    <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="o">&lt;</span><span class="n">PACKAGE</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="rebuilding-docker-image">
+<h2>Rebuilding Docker image<a class="headerlink" href="#rebuilding-docker-image" title="Permalink to this headline">¶</a></h2>
+<p>If it is necessary to rebuild the Docker image, a local image named
+<code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> may be built from within the working qsiprep
+repository, located in <code class="docutils literal notranslate"><span class="pre">~/projects/qsiprep</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>~/projects/qsiprep$ docker build -t qsiprep .
+</pre></div>
+</div>
+<p>To work in this image, replace <code class="docutils literal notranslate"><span class="pre">pennbbl/qsiprep:latest</span></code> with
+<code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> in any of the above commands.
+This image may be accessed by the <a href="#id3"><span class="problematic" id="id4">`qsiprep-docker`_</span></a> wrapper via the
+<code class="docutils literal notranslate"><span class="pre">-i</span></code> flag, e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ qsiprep-docker -i qsiprep --shell
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-new-features-to-the-citation-boilerplate">
+<h2>Adding new features to the citation boilerplate<a class="headerlink" href="#adding-new-features-to-the-citation-boilerplate" title="Permalink to this headline">¶</a></h2>
+<p>The citation boilerplate is built by adding two dunder attributes
+of workflow objects: <code class="docutils literal notranslate"><span class="pre">__desc__</span></code> and <code class="docutils literal notranslate"><span class="pre">__postdesc__</span></code>.
+Once the full <em>qsiprep</em> workflow is built, starting from the
+outer workflow and visiting all sub-workflows in topological
+order, all defined <code class="docutils literal notranslate"><span class="pre">__desc__</span></code> are appended to the citation
+boilerplate before descending into sub-workflows.
+Once all the sub-workflows of a given workflow have
+been visited, then the <code class="docutils literal notranslate"><span class="pre">__postdesc__</span></code> attribute is appended
+and the execution pops out to higher level workflows.
+The dunder attributes are written in Markdown language, and may contain
+references.
+To add a reference, just add a new Bibtex entry to the references
+database (<code class="docutils literal notranslate"><span class="pre">/qsiprep/data/boilerplate.bib</span></code>).
+You can then use the Bibtex handle within the Markdown text.
+For example, if the Bibtex handle is <code class="docutils literal notranslate"><span class="pre">myreference</span></code>, a citation
+will be generated in Markdown language with <code class="docutils literal notranslate"><span class="pre">&#64;myreference</span></code>.
+To generate citations with parenthesis and/or additional content,
+brackets should be used: e.g. <code class="docutils literal notranslate"><span class="pre">[see</span> <span class="pre">&#64;myreference]</span></code> will produce
+a citation like <em>(see Doe J. et al 2018)</em>.</p>
+<p>An example of how this works is shown here:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">workflow</span> <span class="o">=</span> <span class="n">Workflow</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+<span class="n">workflow</span><span class="o">.</span><span class="n">__desc__</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="s2">Head-motion parameters with respect to the BOLD reference</span>
+<span class="s2">(transformation matrices, and six corresponding rotation and translation</span>
+<span class="s2">parameters) are estimated before any spatiotemporal filtering using</span>
+<span class="s2">`mcflirt` [FSL </span><span class="si">{fsl_ver}</span><span class="s2">, @mcflirt].</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fsl_ver</span><span class="o">=</span><span class="n">fsl</span><span class="o">.</span><span class="n">Info</span><span class="p">()</span><span class="o">.</span><span class="n">version</span><span class="p">()</span> <span class="ow">or</span> <span class="s1">&#39;&lt;ver&gt;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="citing.html" class="btn btn-neutral float-right" title="Citing qsiprep" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="reconstruction.html" class="btn btn-neutral" title="Reconstructing qsiprep output" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2019, The qsiprep developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/chrisfilo/zenodo.js/v0.1/zenodo.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

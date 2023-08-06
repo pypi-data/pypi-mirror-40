@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Reconstruction pipeline details &mdash; qsiprep version documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing to qsiprep" href="contributors.html" />
+    <link rel="prev" title="Outputs of qsiprep" href="outputs.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> qsiprep
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                version
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging.html">Merging multiple scans from a session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows.html">Processing pipeline details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outputs.html">Outputs of qsiprep</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reconstruction pipeline details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#simple-dsi-studio-example">Simple DSI Studio example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#other-example-reconstruction-specs">Other example reconstruction specs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributing to qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing qsiprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">qsiprep</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Reconstruction pipeline details</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/reconstruction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="reconstruction-pipeline-details">
+<span id="reconstruction"></span><h1>Reconstruction pipeline details<a class="headerlink" href="#reconstruction-pipeline-details" title="Permalink to this headline">¶</a></h1>
+<p>You can send the outputs from <code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> to other software packages
+by specifying a JSON file with the <code class="docutils literal notranslate"><span class="pre">--recon-spec</span></code> option. Here we use
+“reconstruction” to mean reconstructing ODFs/FODs/EAPs from the preprocessed
+diffusion data.</p>
+<div class="section" id="simple-dsi-studio-example">
+<h2>Simple DSI Studio example<a class="headerlink" href="#simple-dsi-studio-example" title="Permalink to this headline">¶</a></h2>
+<p>The reconstruction pipeline is created by the user and specified in a JSON
+file similar to the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;dsistudio_pipeline&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;space&quot;</span><span class="p">:</span> <span class="s2">&quot;T1w&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;nodes&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;dsistudio_gqi&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;software&quot;</span><span class="p">:</span> <span class="s2">&quot;DSI Studio&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;reconstruction&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;qsiprep&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;output_suffix&quot;</span><span class="p">:</span> <span class="s2">&quot;gqi&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;gqi&quot;</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;scalar_export&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;software&quot;</span><span class="p">:</span> <span class="s2">&quot;DSI Studio&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;export&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;dsistudio_gqi&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;output_suffix&quot;</span><span class="p">:</span> <span class="s2">&quot;gqiscalar&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This will send the preprocessed data from <code class="docutils literal notranslate"><span class="pre">qsiprep</span></code>, only the data in <code class="docutils literal notranslate"><span class="pre">&quot;T1w&quot;</span></code>
+space (<code class="docutils literal notranslate"><span class="pre">&quot;space&quot;:</span> <span class="pre">&quot;T1w&quot;</span></code>), to DSI Studio (<code class="docutils literal notranslate"><span class="pre">&quot;software&quot;:</span> <span class="pre">&quot;DSI</span> <span class="pre">Studio&quot;</span></code>),
+which will perform reconstruction (<code class="docutils literal notranslate"><span class="pre">&quot;action&quot;:</span> <span class="pre">&quot;reconstruction&quot;</span></code>) and will save
+its outputs with the suffix “_gqi” (<code class="docutils literal notranslate"><span class="pre">&quot;output_suffix&quot;:</span> <span class="pre">&quot;gqi&quot;</span></code>). Additional
+parameters can be sent to specify how the reconstruction should take place in
+the <code class="docutils literal notranslate"><span class="pre">&quot;parameters&quot;</span></code> item. In this case it will produce a file
+<code class="docutils literal notranslate"><span class="pre">something_space-T1w_gqi.fib.gz</span></code>.  This fib file is then used to get out
+scalars (gfa, qa, etc) that will also be saved in the output directory.</p>
+<p>Assuming this file is called <code class="docutils literal notranslate"><span class="pre">qgi_scalar_export.json</span></code> you can execute this
+pipeline with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ qsiprep-docker \
+    --bids_dir /path/to/bids \
+    --recon_input /output/from/qsiprep \
+    --recon_spec gqi_scalar_export.json \
+    --output_dir /where/my/reconstructed/data/goes \
+    --analysis_level participant \
+    --fs-license-file /path/to/license.txt
+</pre></div>
+</div>
+<div class="section" id="other-example-reconstruction-specs">
+<h3>Other example reconstruction specs<a class="headerlink" href="#other-example-reconstruction-specs" title="Permalink to this headline">¶</a></h3>
+<p>Here are some other potentially useful JSON files for reconstructing <code class="docutils literal notranslate"><span class="pre">qsiprep</span></code> output
+and a description of what they do</p>
+<p>Reconstruct</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contributors.html" class="btn btn-neutral float-right" title="Contributing to qsiprep" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="outputs.html" class="btn btn-neutral" title="Outputs of qsiprep" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2019, The qsiprep developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/chrisfilo/zenodo.js/v0.1/zenodo.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
