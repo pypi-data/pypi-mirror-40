@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: qibullet
+Version: 0.0.1
+Summary: Bullet simulation for SBR robots
+Home-page: https://github.com/ProtolabSBRE/qibullet
+Author: Maxime Busy, Maxime Caniot
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pybullet
+
+# Qibullet
+
+__BULLET__ python simulation interface for __SoftBank Robotics'__ robots.
+
+## Installation
+
+To be specified
+
+## Usage
+
+To be specified
+
+<!-- ![version](https://img.shields.io/badge/status-dev-orange.svg) -->
+
+
