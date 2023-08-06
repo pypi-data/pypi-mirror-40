@@ -1,0 +1,1 @@
+name = 'gcp-functions-emulator'
