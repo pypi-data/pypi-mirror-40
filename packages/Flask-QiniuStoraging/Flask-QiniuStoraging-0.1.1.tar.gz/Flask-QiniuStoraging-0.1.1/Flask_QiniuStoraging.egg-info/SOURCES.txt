@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+flask_qiniustoraging.py
+setup.cfg
+setup.py
+test.txt
+tests.py
+Flask_QiniuStoraging.egg-info/PKG-INFO
+Flask_QiniuStoraging.egg-info/SOURCES.txt
+Flask_QiniuStoraging.egg-info/dependency_links.txt
+Flask_QiniuStoraging.egg-info/not-zip-safe
+Flask_QiniuStoraging.egg-info/requires.txt
+Flask_QiniuStoraging.egg-info/top_level.txt
