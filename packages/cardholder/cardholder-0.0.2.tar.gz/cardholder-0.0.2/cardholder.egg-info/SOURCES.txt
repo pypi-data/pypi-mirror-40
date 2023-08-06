@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.py
+cardholder/__init__.py
+cardholder/cardholder.py
+cardholder.egg-info/PKG-INFO
+cardholder.egg-info/SOURCES.txt
+cardholder.egg-info/dependency_links.txt
+cardholder.egg-info/not-zip-safe
+cardholder.egg-info/requires.txt
+cardholder.egg-info/top_level.txt
+cardholder/img/spinner.gif
+cardholder/img/spinner.png
+cardholder/setup/__init__.py
+cardholder/setup/setup.ini
+cardholder/setup/setup.py

@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: cardholder
+Version: 0.0.2
+Summary: Rotary Card Holder GUI
+Home-page: http://github.com/dallaszkorben/cardholder
+Author: dallaszkorben
+Author-email: dallaszkorben@gmail.com
+License: MIT
+Description: Shows the constructed Cards overlapped like a Rotary Card Holder
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
