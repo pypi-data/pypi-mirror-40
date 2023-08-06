@@ -1,0 +1,10 @@
+README.md
+setup.py
+PyQtPlot/BarWidget.py
+PyQtPlot/HistogramWidget.py
+PyQtPlot/__init__.py
+PyQtPlot.egg-info/PKG-INFO
+PyQtPlot.egg-info/SOURCES.txt
+PyQtPlot.egg-info/dependency_links.txt
+PyQtPlot.egg-info/requires.txt
+PyQtPlot.egg-info/top_level.txt
