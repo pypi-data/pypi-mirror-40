@@ -1,0 +1,8 @@
+setup.py
+pyowlet/PyOwlet.py
+pyowlet/__init__.py
+pyowlet.egg-info/PKG-INFO
+pyowlet.egg-info/SOURCES.txt
+pyowlet.egg-info/dependency_links.txt
+pyowlet.egg-info/requires.txt
+pyowlet.egg-info/top_level.txt
