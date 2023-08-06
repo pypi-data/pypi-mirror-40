@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+description.md
+requirements.txt
+setup.py
+kalman_estimation/__init__.py
+kalman_estimation/estimator.py
+kalman_estimation/regression.py
+kalman_estimation/selector.py
+kalman_estimation/tools.py
+kalman_estimation/utils.py
+kalman_estimation.egg-info/PKG-INFO
+kalman_estimation.egg-info/SOURCES.txt
+kalman_estimation.egg-info/dependency_links.txt
+kalman_estimation.egg-info/requires.txt
+kalman_estimation.egg-info/top_level.txt
