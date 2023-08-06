@@ -1,0 +1,10 @@
+[console_scripts]
+polt = polt.cli.commands.main:cli
+
+[polt.animator]
+lines = polt.animator.lines:LinesAnimator
+
+[polt.parser]
+csv = polt.parser.csvparser:CsvParser
+numbers = polt.parser.numberparser:NumberParser
+
