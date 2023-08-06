@@ -1,0 +1,4 @@
+[console_scripts]
+clang-api-check=clang_api_doc:clang_api_doc.check
+clang-api-doc=clang_api_doc:clang_api_doc.main
+
