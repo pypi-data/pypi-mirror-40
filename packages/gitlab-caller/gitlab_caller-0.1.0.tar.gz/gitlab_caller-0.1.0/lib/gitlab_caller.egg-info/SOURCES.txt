@@ -1,0 +1,13 @@
+README.rst
+setup.py
+lib/gitlab_caller/__init__.py
+lib/gitlab_caller/client.py
+lib/gitlab_caller/http.py
+lib/gitlab_caller/session.py
+lib/gitlab_caller/utils.py
+lib/gitlab_caller.egg-info/PKG-INFO
+lib/gitlab_caller.egg-info/SOURCES.txt
+lib/gitlab_caller.egg-info/dependency_links.txt
+lib/gitlab_caller.egg-info/not-zip-safe
+lib/gitlab_caller.egg-info/requires.txt
+lib/gitlab_caller.egg-info/top_level.txt
