@@ -1,0 +1,14 @@
+MANIFEST.in
+README.txt
+setup.py
+test.txt
+test1.txt
+codeFiles/drag-and-drop.py
+codeFiles/mouse-hovering.py
+codeFiles/sliders.py
+packagingTestPython.egg-info/PKG-INFO
+packagingTestPython.egg-info/SOURCES.txt
+packagingTestPython.egg-info/dependency_links.txt
+packagingTestPython.egg-info/not-zip-safe
+packagingTestPython.egg-info/requires.txt
+packagingTestPython.egg-info/top_level.txt
