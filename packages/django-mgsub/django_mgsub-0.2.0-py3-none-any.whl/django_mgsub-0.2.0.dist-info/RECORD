@@ -1,0 +1,17 @@
+mgsub/__init__.py,sha256=JOl41NviMN-qDV0Z8ZPmhNIxvgyauGGJHdB4A-8MhqM,93
+mgsub/_version.py,sha256=7NfAlUpM4g_IIHW38XWhd0Dz_OsRJHjqFlG43aKJtzA,15761
+mgsub/admin.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mgsub/forms.py,sha256=Nmip5wCNY6nbCeC46gT7qaM3GlvXY7vmcZ_petgXj-s,2627
+mgsub/mailgun.py,sha256=xByDiNjhLPHPScy1_6RLvkPrbZfJtJbac0qdg1CpMwU,3849
+mgsub/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mgsub/tests.py,sha256=k8c_rMJw8xXzCHHyIBTow6wus5YZod4FchuhXm9nM5I,5634
+mgsub/urls.py,sha256=v_t_M66tYiKTlDrKoRDrUJj3NheYW4HsYmrwN1f2-os,219
+mgsub/views.py,sha256=OFL8QBn0zmINNpwycwn-NyH0XqozuJK-NOccfTkD6z8,398
+mgsub/templates/mgsub/signup.html,sha256=c7tRZf2dZatOnUW1-K7VTOlJIdSDGpm26R_vwNwGudw,134
+mgsub/templates/mgsub/thanks.html,sha256=F6AHYcTk-lqYWjm3P5j6KUnaT9Axo4HNvQclIW1U4m0,11
+mgsub/templates/mgsub/welcome.txt,sha256=bkLfbK9Yo73tdwEXXV8LwGXYwDkBoFZv6ImNGKhwl2w,29
+django_mgsub-0.2.0.dist-info/LICENSE,sha256=qoA-oJnx9wBx8xFKqZz6lyS2d_HAMsgTy8__VszivsM,1078
+django_mgsub-0.2.0.dist-info/METADATA,sha256=-CAVtHQPcXS9LcLExTT9Ad9SCk69duLdX5NWMowfLZI,2348
+django_mgsub-0.2.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+django_mgsub-0.2.0.dist-info/top_level.txt,sha256=klaGPAok-lv8nnuAgys7F05CmWQ60L8FHmDnWOY-8no,6
+django_mgsub-0.2.0.dist-info/RECORD,,
