@@ -1,0 +1,138 @@
+#!/usr/bin/python3
+# Simple HTTP web server that forwards prometheus alerts over XMPP.
+#
+# To use, configure a web hook in alertmanager. E.g.:
+#
+# receivers:
+# - name: 'jelmer-pager'
+#   webhook_configs:
+#   - url: 'http://192.168.2.1:9199/alert'
+#
+# Edit xmpp-alerts.yml.example, then run:
+# $ python3 prometheus-xmpp-alerts --config=xmpp-alerts.yml.example
+
+import aiowsgi
+import argparse
+import asyncio
+import logging
+import json
+import slixmpp
+import shlex
+import sys
+import yaml
+
+from prometheus_xmpp import (
+    create_message,
+    run_amtool,
+    )
+
+
+DEFAULT_CONF_PATH = '/etc/prometheus/xmpp-alerts.yml'
+
+
+class XmppApp(slixmpp.ClientXMPP):
+
+    def __init__(self, jid, password, amtool_allowed=None):
+        slixmpp.ClientXMPP.__init__(self, jid, password)
+        self._amtool_allowed = amtool_allowed or []
+        self.auto_authorize = True
+        self.add_event_handler("session_start", self.start)
+        self.add_event_handler("message", self.message)
+        self.add_event_handler("disconnected", self.lost)
+        self.register_plugin('xep_0030')  # Service Discovery
+        self.register_plugin('xep_0004')  # Data Forms
+        self.register_plugin('xep_0060')  # PubSub
+        self.register_plugin('xep_0199')  # XMPP Ping
+
+    def start(self, event):
+        """Process the session_start event.
+
+        Args:
+          event: Event data (empty)
+        """
+        self.send_presence(ptype='available', pstatus='Active')
+        self.get_roster()
+
+    def lost(self, event):
+        logging.info("Connection lost, exiting.")
+        sys.exit(1)
+
+    def message(self, msg):
+        """Handle an incoming message.
+
+        Args:
+            msg: The received message stanza.
+        """
+        if msg['type'] in ('chat', 'normal'):
+            args = shlex.split(msg['body'])
+            if args == []:
+                response = "No command specified"
+            elif args[0] in ('alert', 'silence'):
+                if msg['from'].bare in self._amtool_allowed:
+                    response = run_amtool(args)
+                else:
+                    response = "Unauthorized JID."
+            elif args[0] == 'help':
+                response = "Supported commands: help, alert, silence."
+            else:
+                response = "Unknown command: %s" % args[0]
+            msg.reply(response).send()
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--config', dest='config_path',
+                    type=str, default=DEFAULT_CONF_PATH,
+                    help='Path to configuration file.')
+parser.add_argument("-q", "--quiet", help="set logging to ERROR",
+                    action="store_const", dest="loglevel",
+                    const=logging.ERROR, default=logging.INFO)
+parser.add_argument("-d", "--debug", help="set logging to DEBUG",
+                    action="store_const", dest="loglevel",
+                    const=logging.DEBUG, default=logging.INFO)
+
+args = parser.parse_args()
+
+# Setup logging.
+logging.basicConfig(level=args.loglevel, format='%(levelname)-8s %(message)s')
+
+with open(args.config_path) as f:
+    config = yaml.load(f)
+
+app = XmppApp(config['jid'], config.get('password'),
+              config.get('amtool_allowed', [config['to_jid']]))
+app.connect()
+loop = asyncio.get_event_loop()
+
+
+@asyncio.coroutine
+def wsgi_application(environ, start_response):
+    if environ['PATH_INFO'] == '/test':
+        text = 'Test message.'
+    elif environ['PATH_INFO'] == '/alert':
+        try:
+            try:
+                content_length = int(environ['CONTENT_LENGTH'])
+            except KeyError:
+                alert = json.load(environ['wsgi.input'])
+            else:
+                alert = json.loads(environ['wsgi.input'].read(
+                    content_length).decode('utf-8'))
+        except json.decoder.JSONDecodeError as e:
+            start_response('422 Unprocessable Entity', [])
+            return [str(e).encode('utf-8')]
+        text = '\n'.join(create_message(alert))
+    else:
+        start_response('404 Not Found', [])
+        return [b'Please access /test or /alert']
+    id_ = app.send_message(
+            mto=config['to_jid'],
+            mbody=text,
+            mtype='chat')
+    start_response('200 OK', [])
+    return [('Sent message with id %s' % id_).encode('utf-8')]
+
+
+srv = aiowsgi.create_server(
+        wsgi_application, loop=loop,
+        port=config['listen_port'], host=config['listen_address'])
+loop.run_forever()
