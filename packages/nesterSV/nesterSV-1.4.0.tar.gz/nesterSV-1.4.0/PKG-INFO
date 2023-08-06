@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: nesterSV
+Version: 1.4.0
+Summary: A simple printer of nested lists using 4 parameters (the_list, indent=False  , level=0, f_out=sys.stdout )
+Home-page: http://www.headfirstlabs.com
+Author: SanderVos2401
+Author-email: sandervos2401@hotmail.nl
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
