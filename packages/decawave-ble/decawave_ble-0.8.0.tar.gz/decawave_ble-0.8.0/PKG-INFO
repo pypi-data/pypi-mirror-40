@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: decawave_ble
+Version: 0.8.0
+Summary: Python toolset for working with and configuring the Decawave DWM1000 devices
+Home-page: https://github.com/WildflowerSchools/decawave_ble
+Author: tcquinn
+Author-email: tcquinn@wildflowerschools.org
+License: UNKNOWN
+Description: # decawave_ble
+        
+        Utilities for working with the DWM1001 board via BLE
+        
+        
+Keywords: bluetooth
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+decawave_ble/__init__.py
+decawave_ble/configure_devices.py
+decawave_ble.egg-info/PKG-INFO
+decawave_ble.egg-info/SOURCES.txt
+decawave_ble.egg-info/dependency_links.txt
+decawave_ble.egg-info/requires.txt
+decawave_ble.egg-info/top_level.txt
