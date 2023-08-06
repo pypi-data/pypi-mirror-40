@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: quick-gr
+Version: 0.1.8
+Summary: tool-gr
+Home-page: http://sealbaby.cn
+Author: partner
+Author-email: partnerhanxiao_i@didiglobal.com
+License: MIT Licence
+Keywords: pip,tool-gr,partner,quick-gr
+Platform: any
+Requires-Dist: requests
+
+make api doc quickly by python script
+
+
