@@ -1,0 +1,3 @@
+[console_scripts]
+alfred-rfc = alfred_rfc.search:main
+

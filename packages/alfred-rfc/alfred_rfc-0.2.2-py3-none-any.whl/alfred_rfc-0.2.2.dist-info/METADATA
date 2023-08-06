@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: alfred-rfc
+Version: 0.2.2
+Summary: Search RFCs using alfred
+Home-page: https://github.com/weaming/alfred-rfc
+Author: weaming
+Author-email: garden.yuen@gmail.com
+License: UNKNOWN
+Keywords: rfc alfred efficiency
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: Alfred-Workflow
+
+UNKNOWN
+
+
