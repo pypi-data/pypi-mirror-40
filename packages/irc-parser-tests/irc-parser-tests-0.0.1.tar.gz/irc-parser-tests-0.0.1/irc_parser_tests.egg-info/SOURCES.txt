@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+irc_parser_tests.egg-info/PKG-INFO
+irc_parser_tests.egg-info/SOURCES.txt
+irc_parser_tests.egg-info/dependency_links.txt
+irc_parser_tests.egg-info/requires.txt
+irc_parser_tests.egg-info/top_level.txt
+parser_tests/__init__.py
+parser_tests/data.py
+parser_tests/data/mask-match.yaml
+parser_tests/data/msg-join.yaml
+parser_tests/data/msg-split.yaml
+parser_tests/data/userhost-split.yaml
+parser_tests/data/validate-hostname.yaml
