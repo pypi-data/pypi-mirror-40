@@ -1,0 +1,4 @@
+[console_scripts]
+bumpemu-controller = bumpemu.main:main
+powerlab-tester = bumpemu.charger.tester:main
+
