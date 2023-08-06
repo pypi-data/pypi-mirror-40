@@ -1,0 +1,4 @@
+robotframework>=3.1
+robotframework-seleniumlibrary>=3.3
+pillow
+six
