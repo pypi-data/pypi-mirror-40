@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: essex
+Version: 0.2.1
+Summary: A command line interface for managing s6 services, using the s6 toolset
+Home-page: https://github.com/AndydeCleyre/essex
+Author: Andy Kluger
+Author-email: AndyKluger@gmail.com
