@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: galsim_hub
+Version: 0.0.1rc2
+Summary: Support for Tensorflow Hub modules in GalSim
+Home-page: https://github.com/McWilliamsCenter/galsim_hub
+Author: Francois Lanusse
+License: UNKNOWN
+Description: # GalSim Hub
+        
+        GalSim Hub provides a collection of TensorFlow modules for GalSim.
+        
+        ## Installation
+        
+        To install:
+        ```sh
+         $ pip install --user galsim-hub
+        ```
+        
+        ## Usage
+        
+        This module can be used directly under the GalSim Yaml driver:
+        ```sh
+         $ galsim examples/demo14.yaml
+        ```
+        
+        or from Python:
+        ```py
+        import galsim
+        import galsim_hub
+        from astropy.table import Table
+        
+        model = galsim_hub.GenerativeGalaxyModel('hub:cosmos_size_mag')
+        
+        # Defines the input conditions, for this model flux_radius and mag_auto
+        cat = Table([[5., 10. ,20.], [24., 24., 24.] ],
+                     names=['flux_radius', 'mag_auto'])
+        
+        # Sample light profiles for these parameters
+        ims = model.sample(cat)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

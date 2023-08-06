@@ -1,0 +1,10 @@
+README.md
+setup.py
+galsim_hub/__init__.py
+galsim_hub/generative_model.py
+galsim_hub/input_generative.py
+galsim_hub.egg-info/PKG-INFO
+galsim_hub.egg-info/SOURCES.txt
+galsim_hub.egg-info/dependency_links.txt
+galsim_hub.egg-info/requires.txt
+galsim_hub.egg-info/top_level.txt
