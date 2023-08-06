@@ -1,0 +1,17 @@
+README.md
+setup.py
+soupstars/__init__.py
+soupstars/bases.py
+soupstars/caches.py
+soupstars/flask.py
+soupstars.egg-info/PKG-INFO
+soupstars.egg-info/SOURCES.txt
+soupstars.egg-info/dependency_links.txt
+soupstars.egg-info/requires.txt
+soupstars.egg-info/top_level.txt
+soupstars/parsers/__init__.py
+soupstars/parsers/nytimes/__init__.py
+soupstars/parsers/nytimes/article.py
+tests/test_bases/__init__.py
+tests/test_bases/test_base.py
+tests/test_bases/test_http_base.py
