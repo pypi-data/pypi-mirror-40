@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: altunityrun
+Version: 1.2.2
+Summary: Python Binding to allow Appium tests to be run against Unity games and apps using AltUnityTester
+Home-page: https://gitlab.com/Vingithub93/unityautomation
+Author: Unity Testing
+Author-email: vinayakpatil.sw@gmail.com
+License: GNU General Public License v3.0
+Description: This package includes the Python bindings needed for tests to be run against Unity games and apps using AltUnityTester. 
+        
+        For more information, visit https://gitlab.com/altom/altunitytester
+Platform: UNKNOWN
