@@ -1,0 +1,10 @@
+README.rst
+setup.py
+jupyter_theia_proxy/__init__.py
+jupyter_theia_proxy.egg-info/PKG-INFO
+jupyter_theia_proxy.egg-info/SOURCES.txt
+jupyter_theia_proxy.egg-info/dependency_links.txt
+jupyter_theia_proxy.egg-info/entry_points.txt
+jupyter_theia_proxy.egg-info/requires.txt
+jupyter_theia_proxy.egg-info/top_level.txt
+jupyter_theia_proxy/icons/theia.svg

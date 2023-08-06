@@ -1,0 +1,3 @@
+[jupyter_serverproxy_servers]
+theia = jupyter_theia_proxy:setup_theia
+

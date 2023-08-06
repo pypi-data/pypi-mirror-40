@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: jupyter-theia-proxy
+Version: 1.0b1
+Summary: projectjupyter@gmail.com
+Home-page: https://github.com/jupyterhub/jupyter-server-proxy/tree/master/contrib/theia
+Author: Project Jupyter Contributors
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Jupyter
+Platform: UNKNOWN
+Classifier: Framework :: Jupyter
