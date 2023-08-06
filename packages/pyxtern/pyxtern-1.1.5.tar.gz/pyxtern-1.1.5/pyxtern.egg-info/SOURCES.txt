@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pyxtern/__init__.py
+pyxtern/utils.py
+pyxtern/xtern.py
+pyxtern.egg-info/PKG-INFO
+pyxtern.egg-info/SOURCES.txt
+pyxtern.egg-info/dependency_links.txt
+pyxtern.egg-info/top_level.txt
