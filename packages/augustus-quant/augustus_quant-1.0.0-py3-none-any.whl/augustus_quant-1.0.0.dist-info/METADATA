@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: augustus-quant
+Version: 1.0.0
+Summary: Quantitative trading framework in Python
+Home-page: https://github.com/jialuechen/augustus
+Author: Jialue Chen
+Author-email: jialuechen@outlook.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pymongo
+Requires-Dist: retry
+Requires-Dist: TA-Lib
+Requires-Dist: arrow
+Requires-Dist: funcy
+Requires-Dist: plotly
+
+UNKNOWN
+
+
