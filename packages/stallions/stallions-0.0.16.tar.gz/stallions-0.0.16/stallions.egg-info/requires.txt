@@ -1,0 +1,3 @@
+readability-lxml>=0.7
+lxml
+requests
