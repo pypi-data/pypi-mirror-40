@@ -1,0 +1,12 @@
+tinycal/__init__.py,sha256=tHA40NUGuNo3MMsQWIwyg-BPZrOiHi4kSwwq0XJ9H5k,134
+tinycal/__main__.py,sha256=SlvRBxhPTom14kfFZ1GnTVjYgnF9udGK-z7qjMxOeOk,32
+tinycal/arguments.py,sha256=QWY_7fuZphjIbKFoDsjE0tjvH2pkA6TQDdMJjK2g8M0,3914
+tinycal/config.py,sha256=7rR0v8G3O1hyPitHEgFbZI00mW2Rkkgj7g27DPu8S20,7790
+tinycal/declarative_config.py,sha256=VX4M3BdHEQpG7KKAvMs65rfE25kUmLZnBXsyAil-r-c,3538
+tinycal/render.py,sha256=2FlvkjELqbrfwxKTSKfdqo7xT3pA_EiFqTvup5DyPag,6272
+tinycal/tcal.py,sha256=BFzVPOrvZziQSa-pxgVIT6k8oaSdtmV5v_43lDr1b4A,322
+tinycal-0.2.0.dist-info/METADATA,sha256=2mUT_GE5DdGf-tAbInWU0-IEs03I9-GliPiBKDB6ecs,670
+tinycal-0.2.0.dist-info/RECORD,,
+tinycal-0.2.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+tinycal-0.2.0.dist-info/entry_points.txt,sha256=ciTRfLsSeKJlSYDYCFM1cGqPbgYGiFUNx43xXzSz_HU,44
+tinycal-0.2.0.dist-info/top_level.txt,sha256=dFbHt0k-0d66ejVTPxpWYuEPx2tnxCxB7S3UWu1IWMs,8
