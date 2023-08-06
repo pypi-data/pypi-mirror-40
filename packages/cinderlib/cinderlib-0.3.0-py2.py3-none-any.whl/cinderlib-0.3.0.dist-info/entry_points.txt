@@ -1,0 +1,5 @@
+[cinderlib.persistence.storage]
+db = cinderlib.persistence.dbms:DBPersistence
+memory = cinderlib.persistence.memory:MemoryPersistence
+memory_db = cinderlib.persistence.dbms:MemoryDBPersistence
+
