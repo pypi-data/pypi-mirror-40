@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: blizzard_api
+Version: 0.1.0
+Summary: Interact with the battle.net API.
+Home-page: https://github.com/vkottler/blizzard-api-cli
+Author: Vaughn Kottler
+Author-email: vaughnkottler@gmail.com
+License: UNKNOWN
+Description: # blizzard-api-cli
+        
+        [![Build Status](https://travis-ci.org/vkottler/blizzard-api-cli.svg?branch=master)](https://travis-ci.org/vkottler/blizzard-api-cli)
+        [![Coverage Status](https://coveralls.io/repos/github/vkottler/blizzard-api-cli/badge.svg?branch=master)](https://coveralls.io/github/vkottler/blizzard-api-cli?branch=master)
+        
+        Under construction.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
