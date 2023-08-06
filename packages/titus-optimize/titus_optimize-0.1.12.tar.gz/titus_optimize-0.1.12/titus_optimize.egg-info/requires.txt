@@ -1,0 +1,6 @@
+numpy
+cvxopt
+cvxpy
+
+[test]
+tox
