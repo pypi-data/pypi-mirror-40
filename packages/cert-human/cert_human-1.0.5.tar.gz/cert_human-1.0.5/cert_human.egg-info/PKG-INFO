@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: cert-human
+Version: 1.0.5
+Summary: SSL Certificates for Humans.
+Home-page: https://github.com/lifehackjim/cert_human
+Author: Jim Olsen
+Author-email: jim@lifehack.com
+License: MIT
+Description: [![Maintenance yes](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/lifehackjim/cert_human/graphs/commit-activity) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/lifehackjim/cert_human) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+        [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+        [![Known Vulnerabilities](https://snyk.io/test/github/lifehackjim/cert_human/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/lifehackjim/cert_human?targetFile=requirements.txt)
+        
+        Cert Human: SSL Certificates for Humans
+        =======================================
+        
+        Description
+        -----------
+        
+        Somebody said something about over-engineering. So I obviously had to chime in.
+        
+        No, but seriously, I was in the midst of rewriting [another project of mine](https://github.com/tanium/pytan), and I wanted to incorporate a method to get an SSL certificate from a server, show the user the same kind of information as you'd see in a browser, prompt them for validity, then write it to disk for use in all [requests](http://docs.python-requests.org/en/master/) to a server.
+        
+        I was unable to find any great / easy ways that incorporated all of these concepts into one neat thing. So I made a thing.
+        
+        Originally this was based off of yet another lovely over-engineered solution in [get-ca-py](https://github.com/neozenith/get-ca-py) by [Josh Peak](https://github.com/neozenith).
+        
+        
+        Installation
+        ------------
+        
+        To install Cert Human, use pip / pipenv:
+        
+        ``` {.sourceCode .bash}
+        $ pip install cert_human
+        ```
+        
+        
+        Documentation
+        -------------
+        
+        Available [here](https://cert-human.readthedocs.io/en/latest/)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown
