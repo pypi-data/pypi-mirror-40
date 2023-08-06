@@ -1,0 +1,8 @@
+setup.py
+subdo/__init__.py
+subdo/subd.py
+subdo.egg-info/PKG-INFO
+subdo.egg-info/SOURCES.txt
+subdo.egg-info/dependency_links.txt
+subdo.egg-info/not-zip-safe
+subdo.egg-info/top_level.txt
