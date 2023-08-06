@@ -1,0 +1,11 @@
+.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+big_pkg/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+big_pkg/__init__.py,sha256=5VcdZz20MLut7F8DEWLdnhi_snEnBpINNQdR-yO4Wn8,212
+big_pkg/mysub.py,sha256=Z1G73GJEDGoU-qETaaH8CGZ0xqVpMBVfb2svMI9Ucvs,112
+big_pkg/sources/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+big_pkg/sources/mysub.py,sha256=G9y81vM2Wp9f9aMxNR_bU4dauvEr-qSFjBvVxo6JOOU,111
+big_pkg-0.0.19.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+big_pkg-0.0.19.dist-info/METADATA,sha256=QtMGwsf-V-4vpKrYId_9Myny3RbYWwuaaxpgxVvmN38,598
+big_pkg-0.0.19.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+big_pkg-0.0.19.dist-info/top_level.txt,sha256=rqpBZz6drj0NIjCi1LEi49DOarz7uh4uUlVgnmndh7c,8
+big_pkg-0.0.19.dist-info/RECORD,,
