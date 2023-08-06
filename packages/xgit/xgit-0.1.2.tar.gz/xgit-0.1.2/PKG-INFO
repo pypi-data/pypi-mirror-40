@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xgit
+Version: 0.1.2
+Summary: An opinionated command line tools to make your life easier with Git and Gitignore
+Home-page: https://github.com/patarapolw/xgit
+Author: Pacharapol Withayasakpunt
+Author-email: patarapolw@gmail.com
+Keywords: git
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests (>=2.21,<3.0)
+Project-URL: Repository, https://github.com/patarapolw/xgit
