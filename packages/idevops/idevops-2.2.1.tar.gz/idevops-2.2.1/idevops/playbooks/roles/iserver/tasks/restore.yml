@@ -1,0 +1,22 @@
+- name: Create restore dir
+  file:
+    path: "{{ data.restore_dir }}"
+    state: directory
+
+- name: Copy {{ data.archive }} remote-to-remote
+  synchronize:
+    src: "{{ data.backup_dir }}/{{ data.archive }}"
+    dest: "{{ data.restore_dir }}/{{ data.archive }}"
+  delegate_to: "{{ from_node }}"
+
+# stop docker
+- import_tasks: stop_docker.yml
+
+- name: Unarchive storage of node
+  unarchive:
+    src: "{{ data.restore_dir }}/{{ data.archive }}"
+    dest: "{{ iserver.prefix }}"
+    remote_src: yes
+
+# start docker
+- import_tasks: start_docker.yml

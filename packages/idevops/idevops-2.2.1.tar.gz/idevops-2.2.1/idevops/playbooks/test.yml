@@ -1,0 +1,12 @@
+- hosts:
+    - master
+    - slave
+  tasks:
+    - include_role:
+        name: iserver
+        tasks_from: "{{ task }}"
+      with_items:
+        - test
+      loop_control:
+        loop_var: task
+
