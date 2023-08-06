@@ -1,0 +1,17 @@
+from lair import blueprints
+{% if with_db %}from {{module_name}}.database import db
+from {{module_name}}.models.example import Example{% endif %}
+
+main = blueprints.Json('main', __name__)
+
+
+@main.route('/')
+def index():
+    """Home view.
+    This view will return an simple JSON mapping.
+    """
+{% if with_db %}
+    return [str(e) for e in db.session.query(Example)]
+{% else %}
+    return {'valid_endpoint': True}
+{% endif %}
