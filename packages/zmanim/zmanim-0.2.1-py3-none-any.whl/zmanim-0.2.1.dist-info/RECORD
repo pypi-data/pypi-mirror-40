@@ -1,0 +1,17 @@
+zmanim/__init__.py,sha256=HUC7ywZWx7rb_r3QdwuLKPjYODOQySXf6FtqsGasQw8,16
+zmanim/astronomical_calendar.py,sha256=JKdgOej5SUdLaQKCg3kogYJxmxvVXsQ5zFLXm0lZcfw,5200
+zmanim/zmanim_calendar.py,sha256=hzsdAgIGCOuV31pYt067QpHgWjh5xyeHRSYb_pDOLD4,7041
+zmanim/hebrew_calendar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zmanim/hebrew_calendar/jewish_calendar.py,sha256=8CR-1kDHHrH6e0uGoombMTDzSai13LfefAS1lddPCKw,11884
+zmanim/hebrew_calendar/jewish_date.py,sha256=4lgcTrnQvaHjyvYoD_hA1Xr25waMcNDcAwCgsxRuZs8,19113
+zmanim/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zmanim/util/astronomical_calculations.py,sha256=BXy06NaekgrvWlv8pZki9y43wus4CvibdMvmSqB54Mo,623
+zmanim/util/geo_location.py,sha256=U2zv6GIbFwryFv0wvwyLvuofO2RowfKtdbWPrR8Q6hQ,4366
+zmanim/util/math_helper.py,sha256=NHNeoV2104tB1iIyGE-lbsS2NeO-MqEy-WHGvLHizYI,84
+zmanim/util/noaa_calculator.py,sha256=jQD3t_xcy5nVLai9unQR93Lzs-SuWjzWHFkG8SzMFMY,8290
+zmanim/util/sun_times_calculator.py,sha256=Z2LPPKq28pzNy4o9HKDQon0ZUyWlRs9lRAvt4MUi9eE,4777
+zmanim-0.2.1.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+zmanim-0.2.1.dist-info/METADATA,sha256=gra_nXY_a9cKG_HeDXgmDefehHzz3vS027e07e4nKFg,4362
+zmanim-0.2.1.dist-info/WHEEL,sha256=-ZFxwj8mZJPIVcZGLrsQ8UGRcxVAOExzPLVBGR7u7bE,92
+zmanim-0.2.1.dist-info/top_level.txt,sha256=7RJaTtqm7r-mpyT8VLPH02YsJVnFW3Hzf87LRaElg1c,7
+zmanim-0.2.1.dist-info/RECORD,,
