@@ -1,0 +1,4 @@
+[console_scripts]
+pkce-login = auth0_login.pkce.__main__:cli
+saml-login = auth0_login.saml.__main__:cli
+
