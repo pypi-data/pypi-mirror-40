@@ -1,0 +1,7 @@
+matplotlib
+numpy<1.16
+Pillow
+
+[all]
+scikit-image
+scikit-learn
