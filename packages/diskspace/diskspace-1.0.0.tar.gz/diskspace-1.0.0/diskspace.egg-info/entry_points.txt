@@ -1,0 +1,4 @@
+[console_scripts]
+diskspace = diskspace.diskspace:main
+ds = diskspace.diskspace:main
+
