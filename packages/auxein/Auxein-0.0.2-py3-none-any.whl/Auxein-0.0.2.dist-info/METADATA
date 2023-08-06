@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Auxein
+Version: 0.0.2
+Summary: Evolutionary algorithms for everyone.
+Home-page: https://github.com/auxein/auxein
+Author: Davide Palmisano
+Author-email: dpalmisano@gmail.com
+License: Apache 2
+Download-URL: https://github.com/auxein/auxein/releases
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.15.4)
+
+
+Auxein is a Python framework for evolutionary algorithms.
+
+
