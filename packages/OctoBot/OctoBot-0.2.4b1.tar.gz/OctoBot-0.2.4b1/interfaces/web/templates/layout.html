@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>OctoBot</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+        {% block additional_meta %}
+        {% endblock additional_meta %}
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+        <!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome_all.css') }}">
+
+        <!-- toaster -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/toastr.min.css') }}">
+
+        <!-- mdb CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/mdb.min.css') }}">
+
+        <!-- Datatables -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/dataTables.min.css') }}">
+
+        <!-- Select -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-select.min.css') }}">
+
+        <!-- Editable -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-editable.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/select2.min.css') }}">
+
+        <!-- Own -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+
+        {% block additional_style %}
+        {% endblock additional_style %}
+    </head>
+    <body class="bg-dark" style="{% block body_style %}{% endblock body_style %}">
+        <!-- Scripts -->
+        <!-- At the beginning of the page : be available for template scripts -->
+        <script src="{{ url_for('static', filename='js/lib/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lib/popper.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lib/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lib/toastr.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lib/mdb.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lib/plotly.min.js') }}"></script>
+
+        <script src="{{ url_for('static', filename='js/lib/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lib/dataTables.min.js') }}"></script>
+
+        <script src="{{ url_for('static', filename='js/lib/bootstrap-select.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lib/bootstrap-editable.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lib/select2.full.min.js') }}"></script>
+
+        <script src="{{ url_for('static', filename='js/common/cst.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/common/util.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/common/bot_connection.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/common/dom_updater.js') }}"></script>
+
+        <nav class="navbar navbar-default navbar-expand-md navbar-dark sticky-top danger-color">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('trading') }}">Trading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('portfolio') }}">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('backtesting') }}">Backtesting</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="{{ url_for('commands') }}">OctoBot <i id="navbar-bot-status" class="fa fa-spinner fa-spin"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('tentacles') }}">Tentacles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('config') }}">Configuration</a>
+                    </li>
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="#">Tutorial</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="#">About</a>-->
+                    <!--</li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('logs') }}"><i class="fa fa-bell" data-toggle="tooltip" data-placement="top" title="Event logs">
+                            <span id="errors-count-badge" class="badge badge-warning"></span>
+                        </i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('advanced.home') }}"><i class="fa fa-cogs" data-toggle="tooltip" data-placement="top" title="Advanced OctoBot"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('commands') }}"><i id="navbar-bot-reboot" class="fa fa-sync" data-toggle="tooltip" data-placement="top" title="Commands"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        {% for message in get_flashed_messages() %}
+            <div class=flash>{{ message }}</div>
+        {% endfor %}
+
+        <div class="container-fluid">
+            {% block body %}{% endblock %}
+        </div>
+
+        {% include "footer.html" %}
+
+        {% block additional_scripts %}
+        {% endblock additional_scripts %}
+    </body>
+</html>
