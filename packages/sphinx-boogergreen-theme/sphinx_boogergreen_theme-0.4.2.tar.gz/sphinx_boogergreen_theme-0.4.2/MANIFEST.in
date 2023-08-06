@@ -1,0 +1,11 @@
+include *.txt
+include LICENSE
+recursive-include sphinx_boogergreen_theme *.conf
+recursive-include sphinx_boogergreen_theme *.css
+recursive-include sphinx_boogergreen_theme *.eot
+recursive-include sphinx_boogergreen_theme *.html
+recursive-include sphinx_boogergreen_theme *.js
+recursive-include sphinx_boogergreen_theme *.svg
+recursive-include sphinx_boogergreen_theme *.ttf
+recursive-include sphinx_boogergreen_theme *.woff
+recursive-include sphinx_boogergreen_theme *.woff2
