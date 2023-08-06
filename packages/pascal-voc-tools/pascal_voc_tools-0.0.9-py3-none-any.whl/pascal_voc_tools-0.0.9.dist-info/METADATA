@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pascal-voc-tools
+Version: 0.0.9
+Summary: some tools about pascal voc format dataset
+Home-page: https://github.com/wang-tf/pascal_voc_tools
+Author: ternence wang
+Author-email: ternencewang2015@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: jinja2
+Requires-Dist: opencv-python
+Requires-Dist: tqdm
+
+# Pascal VOC Tools
+
+This package includes some tools about pascal voc format dataset like read xml, write xml, resize image.
+
+version 0.0.1:
+xml_writer: fork from https://github.com/AndrewCarterUK/pascal-voc-writer
+
+
