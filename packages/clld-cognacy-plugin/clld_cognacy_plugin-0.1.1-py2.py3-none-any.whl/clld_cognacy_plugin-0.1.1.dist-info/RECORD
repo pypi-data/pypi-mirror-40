@@ -1,0 +1,15 @@
+clld_cognacy_plugin/__init__.py,sha256=oKC3q7rJtUx3rePOYQ-uJGIrOSRHnaYDu6naL86qna0,874
+clld_cognacy_plugin/adapters.py,sha256=qjbSw08i5fJj0Y5vxcRTOJ7MII9TM-RH-4NuveCKYeA,1078
+clld_cognacy_plugin/datatables.py,sha256=YO4xZ_M_cpBEyuNc9_cOKK5_TZRlrcKUyrfBKcMoEBw,898
+clld_cognacy_plugin/interfaces.py,sha256=aP13hwQQAzfmkI1UahHbIPsXePC4QR2TIDLCRxC2PzI,173
+clld_cognacy_plugin/maps.py,sha256=hCBeJNUmEfJoFPVYWo0bWiplimILb0jTGyETul00U2Q,472
+clld_cognacy_plugin/models.py,sha256=BNGyo2KS06P2TsrT5YyBZokY6TTjW1qLF5leNblaJmw,1824
+clld_cognacy_plugin/util.py,sha256=A9lCvdYGQcykQXZuUtwyP-RTxZEzWcfQPJmj8c_O_Ws,463
+clld_cognacy_plugin/static/concepticon_logo.png,sha256=YpXs9vn3jk4FlJ_3MrztwgfkzrR1cbP9xyHPO3U85qo,60529
+clld_cognacy_plugin/templates/cognateset/detail_html.mako,sha256=qZ4wxotPASioaYVnsvV4nPVcxzOy2anO0eqyqPvIi54,508
+clld_cognacy_plugin/templates/cognateset/index_html.mako,sha256=7Aibl5qdmbKzmWr7EqQFBp1Cl6GKtexGKmAjF62KM3o,294
+clld_cognacy_plugin-0.1.1.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+clld_cognacy_plugin-0.1.1.dist-info/METADATA,sha256=QIwQBNXONIcu1xjCqHe0Prc5MkJw-B-bElCc34qhTIw,1150
+clld_cognacy_plugin-0.1.1.dist-info/RECORD,,
+clld_cognacy_plugin-0.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+clld_cognacy_plugin-0.1.1.dist-info/top_level.txt,sha256=bfeVjJNSKVU__88HZURDOKdtnI27HFF6unoeLvcSHLs,20
