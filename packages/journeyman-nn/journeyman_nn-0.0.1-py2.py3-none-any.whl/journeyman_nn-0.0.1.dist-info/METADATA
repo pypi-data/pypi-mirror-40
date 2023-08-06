@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: journeyman-nn
+Version: 0.0.1
+Summary: Character-level bidirectional recurrent neural network for short sentences categorization
+Home-page: https://github.com/bureaucratic-labs/journeyman
+Author: Bureaucratic Labs
+Author-email: hello@b-labs.pro
+License: MIT
+Keywords: natural language processing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: keras (==2.2.4)
+Requires-Dist: tensorflow (==1.12.0)
+Requires-Dist: scikit-learn (==0.20.2)
+
+UNKNOWN
+
+
