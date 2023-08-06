@@ -1,0 +1,14 @@
+paverlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paverlib/doctools.py,sha256=krsrZPfh_zrwVgGqaTWeBzhQwt2ZODdq7mq1qalaChs,2501
+pygritia/__init__.py,sha256=SN6xmUk0QV2YQ-5OF-EQRV6InbSMUaz7M9_kUWIXJ9Y,279
+pygritia/_actions.py,sha256=LN4TdT7unsI9y9bjAMfFxeIFX7YG-M5JG8-ywIf02mg,661
+pygritia/_lazy.py,sha256=3GL0akgQxNgnvTB3wx9TuUxwzZQkSsoYbG1IE8oj-Go,992
+pygritia/actions.py,sha256=In8Vgus4uzdQpV0FLynEqYmlvtppS6ZPMT5fpIYmOy0,2578
+pygritia/lazy.py,sha256=-IMWN7VO8Bmn82D4Fh_Bto7nx6-yPkB1GwO8k3YrpRM,4222
+pygritia/lazyop.py,sha256=hi_XkLlwfs4x8Q-ObGYDUJhL9_Hb6ZSs8FueQhwOojM,2524
+pygritia/util.py,sha256=EFebRYKZxT5TOM4gDSfGR8htQKiSd5qd1hV4lSE1ikg,3074
+pygritia-0.1.0.dist-info/LICENSE,sha256=z9ecq12kAJPg4Mb-2n63RjN4tn0wcVIi7RHAr-fXy44,1053
+pygritia-0.1.0.dist-info/METADATA,sha256=SH_92SJ0Isc0l2N4kHBbsOjGinrBRQPdUkEGo-1Jz-c,1120
+pygritia-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pygritia-0.1.0.dist-info/top_level.txt,sha256=_6ft3A3FgxwunVz7key6_rqcknLzmrtg_qAgowXnalI,18
+pygritia-0.1.0.dist-info/RECORD,,
