@@ -1,0 +1,17 @@
+pp_highlighting/__init__.py,sha256=U1z_F_sW4Sh0EtCVu-bXmLzYi0Y5sRiqoZdQedgow3E,247
+pp_highlighting/pp_highlighter.py,sha256=W4bIrKBMP2M0j-wqe2qUOCG3FnCB1iQbg1L8DJSV7Mo,10102
+pp_highlighting/pp_validator.py,sha256=ZvbjCP0Y1uGGhTqR4IeF9p0kZDE-AX9Rmmk8UDRdoN4,1685
+pp_highlighting/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pp_highlighting/examples/calc.py,sha256=skZx_Fvt6DNgDhfTCVpJaNAqPRXc7d08xqj4HOMboDs,2489
+pp_highlighting/examples/repl.py,sha256=anf6mCJMUiJjFGsdjHQsb5_bIx0Y7K3lR17D8bImw2k,1651
+pp_highlighting/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pp_highlighting/tests/test_pp_highlighter.py,sha256=OIrvlQ406rlqQg0d7eEvqJnnuVaORK8LKeYElxwA0AM,7055
+pp_highlighting/tests/test_pp_validator.py,sha256=lwVio5dU3ElNY65xtGPI6oeWJfPSttnYCQZ5WHS45Kk,2298
+pyparsing_highlighting-0.1.0.data/data/LICENSE,sha256=_hh7B2mSWinOsr0gBhe9_OscVhZ2otVL8QS18qrjt3o,1061
+pyparsing_highlighting-0.1.0.data/data/README.rst,sha256=k4yHKyiqX_YNN5ewIkhn2tdkUMs2InEGvgRAQnE01k8,1997
+pyparsing_highlighting-0.1.0.data/data/requirements.txt,sha256=06Ebfu-YmHdr0Phl-ZwT_TYkXgTUBYDJz7pyNvgQQO0,55
+pyparsing_highlighting-0.1.0.dist-info/LICENSE,sha256=_hh7B2mSWinOsr0gBhe9_OscVhZ2otVL8QS18qrjt3o,1061
+pyparsing_highlighting-0.1.0.dist-info/METADATA,sha256=NSFmkvZQl90QmgADMEVLXQcARdNAyu_P3GY1FCR8tkw,3105
+pyparsing_highlighting-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pyparsing_highlighting-0.1.0.dist-info/top_level.txt,sha256=8L6J05nKjayopJnx13iLdqRNjZlCISLOTX8lZy7palQ,16
+pyparsing_highlighting-0.1.0.dist-info/RECORD,,
