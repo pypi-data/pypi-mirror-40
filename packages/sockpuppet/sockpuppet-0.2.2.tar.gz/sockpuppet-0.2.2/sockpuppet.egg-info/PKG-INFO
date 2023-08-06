@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sockpuppet
+Version: 0.2.2
+Summary: Tools for integration tests involving real ports
+Home-page: http://sockpuppet.readthedocs.org
+Author: Chris Withers
+Author-email: chris@withers.org
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Provides-Extra: build
+Provides-Extra: test

@@ -1,0 +1,16 @@
+.gitignore
+.travis.yml
+setup.py
+sockpuppet/__init__.py
+sockpuppet/cli.py
+sockpuppet/ports.py
+sockpuppet.egg-info/PKG-INFO
+sockpuppet.egg-info/SOURCES.txt
+sockpuppet.egg-info/dependency_links.txt
+sockpuppet.egg-info/entry_points.txt
+sockpuppet.egg-info/requires.txt
+sockpuppet.egg-info/top_level.txt
+tests/__init__.py
+tests/helpers.py
+tests/test_cli.py
+tests/test_ports.py
