@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pyNuklear
+Version: 0.0.6
+Summary: Bindings to the nuklear immediate mode GUI library
+Home-page: https://github.com/billsix/pyNuklear
+Author: William Emerison Six
+Author-email: billsix@gmail.com
+License: MIT
+Description: 
+        Bindings to the nuklear immediate mode GUI library.  The only way to GUI.
+        
+Keywords: nuklear imgui
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
