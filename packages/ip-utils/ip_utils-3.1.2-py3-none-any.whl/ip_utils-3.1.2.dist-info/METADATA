@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ip-utils
+Version: 3.1.2
+Summary: IP Utils
+Home-page: https://github.com/neoctobers/py_ip_utils
+Author: @neoctobers
+Author-email: neoctobers@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests[socks]
+Requires-Dist: common-patterns
+Requires-Dist: profig
+Requires-Dist: geoip2
+Requires-Dist: xprint
+
+# IP Utils
+
+[![PyPi Version](http://img.shields.io/pypi/v/ip-utils.svg)](https://pypi.python.org/pypi/ip-utils/)
+
+[>> Read the docs <<](https://neoctobers.readthedocs.io/en/latest/repo/py_ip_utils.html)
+
+
+
