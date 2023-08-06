@@ -1,0 +1,14 @@
+setuptools
+robotframework>=3.0.2
+robotframework-seleniumlibrary>=3.2.0
+
+[docs]
+sphinx
+pillow
+sphinxcontrib-robotframework
+
+[pil]
+PIL
+
+[pillow]
+pillow
