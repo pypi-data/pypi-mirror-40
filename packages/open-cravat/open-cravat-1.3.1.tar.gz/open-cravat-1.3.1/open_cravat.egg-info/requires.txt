@@ -1,0 +1,8 @@
+pyyaml
+requests
+requests_toolbelt
+pyliftover
+websockets
+markdown
+aiohttp
+chardet
