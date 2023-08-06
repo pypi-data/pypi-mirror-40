@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pipz
+Version: 0.9.194
+Summary: Add a short description here!
+Home-page: http://...
+Author: Julian Mulla
+Author-email: jmulla@gmail.com
+License: mit
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: bs4
+
+README.rst
+
+
