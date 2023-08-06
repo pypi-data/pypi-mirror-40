@@ -1,0 +1,143 @@
+Metadata-Version: 1.1
+Name: buildout.environ
+Version: 1.0
+Summary: Expose system environment into buildout section
+Home-page: https://pypi.python.org/pypi/buildout.environ
+Author: Jens W. Klein
+Author-email: jk@kleinundpartner.at
+License: GNU General Public License v2 (GPLv2)
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           This text does not appear on pypi or github. It is a comment.
+        
+        ================
+        buildout.environ
+        ================
+        
+        Expose system envionment variables into `zc.buildout <https://pypi.org/project/zc.buildout/>`_ section.
+        
+        It is an extension for buildout.
+        All variables seen by Pythons ``os.environ`` are available in buildout.
+        
+        
+        Installation
+        ------------
+        
+        Install ``buildout.environ`` by adding it to your buildout extensions::
+        
+            [buildout]
+            extensions = buildout.environment
+        
+        Usage
+        -----
+        
+        Use ``${__environ__:VARIABLENAME}`` to address any environment variable.
+        
+        Example::
+        
+            [buildout]
+            extensions = buildout.environ
+            parts = print
+        
+            [print]
+            recipe = mr.scripty
+            install =
+                print("Found in environ: PATH=${__environ__:PATH}")
+        
+        
+        Source Code
+        -----------
+        
+        The sources are in a GIT DVCS with its main branches at `github <http://github.com/collective/buildout.environ>`_.
+        There you can report issue too.
+        
+        We'd be happy to see many forks and pull-requests to make this addon even better.
+        
+        Maintainers are `Jens Klein <mailto:jk@kleinundpartner.at>`_ and the BlueDynamics Alliance developer team.
+        We appreciate any contribution and if a release is needed to be done on pypi, please just contact one of us.
+        We also offer commercial support if any training, coaching, integration or adaptions are needed.
+        
+        
+        Contributions
+        -------------
+        
+        Initial implementation by Jens W. Klein.
+        
+        Further Authors:
+        
+        - no others so far
+        
+        
+        License
+        -------
+        
+        The project is licensed under Zope Public License (ZPL) Version 2.1
+        
+        Changelog
+        =========
+        
+        1.0 (2019-01-15)
+        ----------------
+        
+        - Initial release. Make it work.
+          [jensens]
+        
+        Zope Public License (ZPL) Version 2.1
+        -------------------------------------
+        
+        A copyright notice accompanies this license document that identifies the
+        copyright holders.
+        
+        This license has been certified as open source. It has also been designated as
+        GPL compatible by the Free Software Foundation (FSF).
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions in source code must retain the accompanying copyright
+        notice, this list of conditions, and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the accompanying copyright
+        notice, this list of conditions, and the following disclaimer in the
+        documentation and/or other materials provided with the distribution.
+        
+        3. Names of the copyright holders must not be used to endorse or promote
+        products derived from this software without prior written permission from the
+        copyright holders.
+        
+        4. The right to distribute this software or to use it for any purpose does not
+        give you the right to use Servicemarks (sm) or Trademarks (tm) of the
+        copyright
+        holders. Use of them is covered by separate agreement with the copyright
+        holders.
+        
+        5. If any files are modified, you must cause the modified files to carry
+        prominent notices stating that you changed the files and the date of any
+        change.
+        
+        Disclaimer
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESSED
+        OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+        OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+        EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT,
+        INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+        LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+        PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+        LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+        EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        Copyright Holder
+        ----------------
+        
+        Klein & Partner KG, Innsbruck, Austria
+        
+Keywords: Python Buildout Extension
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Build Tools
