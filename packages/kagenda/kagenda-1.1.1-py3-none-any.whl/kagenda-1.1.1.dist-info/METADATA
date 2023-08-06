@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kagenda
+Version: 1.1.1
+Summary: Every morning, I like to get my daily agenda.
+Home-page: https://github.com/kisom/kagenda
+Author: kyle
+Author-email: coder@kyleisom.net
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: darkskylib
+Requires-Dist: google-api-python-client
+Requires-Dist: natural
+Requires-Dist: oauth2client
+Requires-Dist: pyserial
+Requires-Dist: pyttsx3
+Requires-Dist: pytz
+
+UNKNOWN
+
+
