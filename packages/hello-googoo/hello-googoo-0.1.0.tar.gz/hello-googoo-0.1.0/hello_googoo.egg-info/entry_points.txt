@@ -1,0 +1,4 @@
+[console_scripts]
+googoo = hello_googoo.googoo:main
+hello-googoo = hello_googoo.googoo:main
+

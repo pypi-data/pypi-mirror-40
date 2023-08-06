@@ -1,0 +1,10 @@
+README.md
+setup.py
+hello_googoo/__init__.py
+hello_googoo/googoo.py
+hello_googoo.egg-info/PKG-INFO
+hello_googoo.egg-info/SOURCES.txt
+hello_googoo.egg-info/dependency_links.txt
+hello_googoo.egg-info/entry_points.txt
+hello_googoo.egg-info/requires.txt
+hello_googoo.egg-info/top_level.txt
