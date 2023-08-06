@@ -1,0 +1,164 @@
+#!/usr/bin/env python3
+import os, sys
+import yaml
+import subprocess
+
+SLM_VERSION='0.0.4'
+
+
+class semver:
+    @staticmethod
+    def valid(version_string):
+        if type(version_string) != str:
+            return None
+        try:
+            major = semver._get_major(version_string)
+            minor = semver._get_minor(version_string)
+            patch = semver._get_patch(version_string)
+        except ValueError:
+            return None
+        return '{}.{}.{}'.format(major, minor, patch)
+
+    @staticmethod
+    def _get_major(version_string):
+        major = version_string.split('.')[0]
+        if not major.isnumeric():
+            raise ValueError
+        if len(major) > 1 and major.startswith('0'):
+            raise ValueError
+        return int(major)
+
+    @staticmethod
+    def _get_minor(version_string):
+        minor = version_string.split('.')[1]
+        if not minor.isnumeric():
+            raise ValueError
+        if len(minor) > 1 and minor.startswith('0'):
+            raise ValueError
+        return int(minor)
+
+    @staticmethod
+    def _get_patch(version_string):
+        patch = version_string.split('.')[2]
+        patch = patch.split('-')[0].split('+')[0]
+        if not patch.isnumeric():
+            raise ValueError
+        if len(patch) > 1 and patch.startswith('0'):
+            raise ValueError
+        return int(patch)
+
+
+def load_library_yml():
+    library_yml = open('library.yml', 'r')
+    library = yaml.load(library_yml)
+    library_yml.close()
+    return library
+
+def slm_init():
+    if os.path.isfile('library.yml'):
+        print('library.yml file is already exists.', file=sys.stderr)
+        exit(1)
+    # name
+    recommended_name = os.path.basename(os.path.realpath('.'))
+    name = input('library name: ({}) '.format(recommended_name))
+    if name == '':
+        name = recommended_name
+    # version
+    version = input('version: (0.0.1) ')
+    if version == '':
+        version = '0.0.1'
+    while semver.valid(version) == None:
+        print('Not a valid SemVer.')
+        version = input('version: (0.0.1) ')
+        if version == '':
+            version = '0.0.1'
+    # description
+    description = input('description: ')
+    # license
+    license = input('license: (ISC) ')
+    if license == '':
+        license = 'ISC'
+
+    library_yml = yaml.dump({
+        'name': name,
+        'version': version,
+        'description': description,
+        'license': license,
+        'scripts': {
+            'configure': 'echo "Error: no configure specified" && exit 1',
+            'make': 'make',
+        },
+    }, default_flow_style=False)
+    print('About to write to {}/library.yml:'.format(os.path.realpath('.')))
+    print()
+    print(library_yml)
+    print()
+    ok = input('Is this ok? (yes) ')
+    if ok == '':
+        ok = 'yes'
+    if ok.lower() != 'yes':
+        print('Aborted')
+        exit(1)
+    with open('library.yml', 'w') as f:
+        f.write(library_yml)
+    exit(0)
+
+def slm_configure():
+    library = load_library_yml()
+    print()
+    print('> {}@{} configure'.format(library['name'], library['version']))
+    print('> {}'.format(library['scripts']['configure']))
+    print()
+
+    args = library['scripts']['configure'].split()
+
+    # Append slm variables.
+    args.extend([
+        'LIBRARY_NAME=' + library['name'],
+        'LIBRARY_VERSION=' + library['version'],
+        'SONAME=' + 'lib' + library['name'] + '.so.' + library['version'].split('.')[0]
+    ])
+    result = subprocess.run(args)
+
+def slm_make():
+    library = load_library_yml()
+    print()
+    print('> {}@{} make'.format(library['name'], library['version']))
+    print('> {}'.format(library['scripts']['make']))
+    print()
+
+    args = library['scripts']['make'].split()
+
+    # Append slm variables.
+    args.extend([
+        'LIBRARY_NAME=' + library['name'],
+        'LIBRARY_VERSION=' + library['version'],
+        'SONAME=' + 'lib' + library['name'] + '.so.' + library['version'].split('.')[0]
+    ])
+    result = subprocess.run(args)
+
+def slm_version():
+    print(SLM_VERSION)
+    exit(0)
+
+if __name__ == '__main__':
+    # slm --version
+    if '--version' in sys.argv:
+        slm_version()
+
+    # slm init
+    if sys.argv[1] == 'init':
+        slm_init()
+
+    # slm configure
+    if sys.argv[1] == 'configure':
+        slm_configure()
+        exit(0)
+
+    # slm make
+    if sys.argv[1] == 'make':
+        slm_make()
+        exit(0)
+
+    exit(1)
+
