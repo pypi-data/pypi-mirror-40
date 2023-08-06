@@ -1,0 +1,14 @@
+README.md
+setup.py
+pyblueiris/BlueIris.py
+pyblueiris/__init__.py
+pyblueiris/__version__.py
+pyblueiris/blueiris.py
+pyblueiris/camera.py
+pyblueiris/client.py
+pyblueiris/const.py
+pyblueiris.egg-info/PKG-INFO
+pyblueiris.egg-info/SOURCES.txt
+pyblueiris.egg-info/dependency_links.txt
+pyblueiris.egg-info/requires.txt
+pyblueiris.egg-info/top_level.txt
