@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: flask-ezmail
+Version: 0.6.2
+Summary: Flask extension for sending email
+Home-page: https://github.com/JeffVandrewJr/flask-ezmail
+Author: Jeff Vandrew Jr
+Author-email: jeffvandrew@protonmail.ch
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: blinker
+
+UNKNOWN
+
+
