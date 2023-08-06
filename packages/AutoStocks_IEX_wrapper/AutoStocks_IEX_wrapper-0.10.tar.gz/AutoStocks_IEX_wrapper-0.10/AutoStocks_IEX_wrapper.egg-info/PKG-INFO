@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: AutoStocks-IEX-wrapper
+Version: 0.10
+Summary: Python wrapper for IEX API and AutoStocks web app
+Home-page: https://github.com/hqadeer/AutoStocks.git
+Author: Hamza Qadeer
+Author-email: hamza.qadeer@berkeley.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
