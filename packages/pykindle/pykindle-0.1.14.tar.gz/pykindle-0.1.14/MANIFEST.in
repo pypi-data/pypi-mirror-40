@@ -1,0 +1,3 @@
+include pykindle/templates/article.html
+include pykindle/templates/magazine.ncx
+include pykindle/templates/magazine.opf
