@@ -1,0 +1,9 @@
+attribute_dict/__init__.py,sha256=Az5fxBkRwRKNaXdFFekNDSVAaX_U0tZc9uizbN0Byls,4845
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_attribute_dict.py,sha256=ayfUPu6kq5l6LbIR39CUjd6hGftvZMX3FY2E37GL0Co,5002
+tests/utils.py,sha256=xqOl4mx9ZnxDWXg2Aa7r6dG2Qr4Y8Y0qUUN_d4XjeoA,5274
+attribute_dict-1.0.0.dist-info/LICENSE,sha256=N-acNpO7PKPR4RHw7lH-nxAC0s4RbqFlIBg2JPOOKpw,1063
+attribute_dict-1.0.0.dist-info/METADATA,sha256=paDBknSN2YIPA3ExCQUQV0QaDjxvha1u200pJitgDHs,2304
+attribute_dict-1.0.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+attribute_dict-1.0.0.dist-info/top_level.txt,sha256=rWKyGIYgEirMfKyoH5lnQW-nB8XRZ1PmqXekKREqJv4,21
+attribute_dict-1.0.0.dist-info/RECORD,,
