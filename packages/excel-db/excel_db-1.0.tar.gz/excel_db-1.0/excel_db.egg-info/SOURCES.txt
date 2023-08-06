@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+excel_db/__init__.py
+excel_db/run.py
+excel_db/sql.py
+excel_db.egg-info/PKG-INFO
+excel_db.egg-info/SOURCES.txt
+excel_db.egg-info/dependency_links.txt
+excel_db.egg-info/requires.txt
+excel_db.egg-info/top_level.txt
