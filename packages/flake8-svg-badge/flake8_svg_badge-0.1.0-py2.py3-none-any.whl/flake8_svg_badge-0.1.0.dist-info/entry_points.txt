@@ -1,0 +1,3 @@
+[flake8.report]
+svg = flake8_svg_badge.reporter:ReportSVGBadge
+
