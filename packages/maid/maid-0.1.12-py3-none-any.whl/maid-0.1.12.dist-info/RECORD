@@ -1,0 +1,14 @@
+maid/__init__.py,sha256=u096GxPxTWU-tGsJG-mc0lakYCS7Yyb12ZSmt9BuGx8,63
+maid/__main__.py,sha256=i_im7o5X-1_dsDs17DBDwSWtW0p_sPQlWSiwkO7rf-U,60
+maid/config.py,sha256=OfaU6l0Vpqx4BQpOxvo96rOJRcVIFNSePHxiNkH5IqM,4240
+maid/core.py,sha256=ND0851mfQAbshlLbzuoSDEHT-mMOp8iUQUeg98Z1tZ8,7383
+maid/error.py,sha256=3rizhA7gbFsUGLXMkJQx1G5JarChrllwiph4qpMAfbQ,149
+maid/maid.py,sha256=UaMsYZItHeq5iQ--Cs87EbuC1pRvb8gSiL3fHUr_P3w,2367
+maid/pkgman.py,sha256=OSXlgiqoXGEiilNHKxIZl1TKrqQ5DpaN9l45Mu3ORPw,1696
+maid/run.py,sha256=Xh8wC0179WiFZCYwAqmpFz91CwQTMtSLXkiHRdWytXM,1924
+maid/version.py,sha256=f_GqfOEJqECrlRebWdfTsWCSUio-hp4MCNqcYHhNffk,24
+maid-0.1.12.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+maid-0.1.12.dist-info/METADATA,sha256=gDuhHm9m1q9SX7V9J7NKjxO430DL6A1a7ZHO7C_14_8,1715
+maid-0.1.12.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+maid-0.1.12.dist-info/top_level.txt,sha256=NVzYIp1tZ6n9gv8xp31WNoMaL9j8AH5GSHSI5SE-XXo,5
+maid-0.1.12.dist-info/RECORD,,
