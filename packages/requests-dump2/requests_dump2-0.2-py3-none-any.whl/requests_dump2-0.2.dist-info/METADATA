@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: requests-dump2
+Version: 0.2
+Summary: dump requests' requests http message content to stderr or your custom file
+Home-page: https://github.com/weaming/requests-dump
+Author: weaming
+Author-email: garden.yuen@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/weaming/requests-dump
+Project-URL: Bug Reports, https://github.com/weaming/requests-dump
+Keywords: math
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Requests Dump
+
+Dump `requests`' http requests message content to stderr or your custom file.
+
+**You may consider use https://toolbelt.readthedocs.io/en/latest/dumputils.html instead**
+
+## Usage
+
+See `test.py`.
+
+### Custom pretty
+
+```
+import requests
+from requests_dump import pretty_request, pretty_response
+
+req = requests.Request('POST', 'http://ip-api.com/json')
+print(pretty_request(req))
+
+res = requests.Session().send(req.prepare())
+print(pretty_response(res))
+```
+
+## Inspired by
+
+* https://github.com/requests/requests/issues/3013
+
+
