@@ -1,0 +1,14 @@
+paicli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paicli/api.py,sha256=4MSWJ-n9exhitbObbHgNvvo4ZlTX9wEeH0LxekrJplY,3846
+paicli/cmd.py,sha256=roS0xhAhse8RbKbdCKn06HmlEtNLu6WHxmKfF-a6qyE,436
+paicli/config.py,sha256=lbnrzxI3FrR4uinVX1wC6tBDGtf6gC_xkKtxtdCGo6Q,3584
+paicli/intereactive.py,sha256=uSkF39upUcUI42mn_WT9qH28CKRzxmS6JAqEgTYZ6_Q,4586
+paicli/jobs.py,sha256=-XiIQnhZ9QQxvaxhKWmKgwjqrWX_LCpjnj5yxTZJRrU,2081
+paicli/main.py,sha256=3yd2ItF_O7LXS5rpDa-f2B7ait7xiGXEHNi6dxUYedc,10809
+paicli/ssh.py,sha256=oKQOMi4LYkPKc_lzu22thMcvI0tzXutCmD6LPRDTk8Y,2874
+paicli/utils.py,sha256=rNhno71vnkZs-cmEVBlTyABtuVvRRu5k8nfQDnRAHEs,389
+paicli-0.5.1.dist-info/METADATA,sha256=AkDYPWbMCSPcxGrHA_23EjhZ0Vpckbiw-SQ-cGmTrsI,489
+paicli-0.5.1.dist-info/RECORD,,
+paicli-0.5.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+paicli-0.5.1.dist-info/entry_points.txt,sha256=p2mvPURXiaVa7vINf_2UqpPJxMm_kmfYJqifujxdum8,42
+paicli-0.5.1.dist-info/top_level.txt,sha256=_yvphHkoEOloPDKGcHfN8q85TKBKjKvNoAgCjxuhyKk,7
