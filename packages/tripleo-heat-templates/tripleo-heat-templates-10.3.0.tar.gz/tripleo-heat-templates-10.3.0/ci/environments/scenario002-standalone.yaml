@@ -1,0 +1,58 @@
+resource_registry:
+  OS::TripleO::Services::AodhApi: ../../deployment/aodh/aodh-api-container-puppet.yaml
+  OS::TripleO::Services::AodhEvaluator: ../../deployment/aodh/aodh-evaluator-container-puppet.yaml
+  OS::TripleO::Services::AodhListener: ../../deployment/aodh/aodh-listener-container-puppet.yaml
+  OS::TripleO::Services::AodhNotifier: ../../deployment/aodh/aodh-notifier-container-puppet.yaml
+  OS::TripleO::Services::CeilometerAgentCentral: ../../docker/services/ceilometer-agent-central.yaml
+  OS::TripleO::Services::CeilometerAgentNotification: ../../docker/services/ceilometer-agent-notification.yaml
+  OS::TripleO::Services::ComputeCeilometerAgent: ../../docker/services/ceilometer-agent-compute.yaml
+  OS::TripleO::Services::GnocchiApi: ../../docker/services/gnocchi-api.yaml
+  OS::TripleO::Services::GnocchiMetricd: ../../docker/services/gnocchi-metricd.yaml
+  OS::TripleO::Services::GnocchiStatsd: ../../docker/services/gnocchi-statsd.yaml
+  OS::TripleO::Services::HeatApi: ../../docker/services/heat-api.yaml
+  OS::TripleO::Services::HeatApiCfn: ../../docker/services/heat-api-cfn.yaml
+  OS::TripleO::Services::HeatApiCloudwatch: ../../puppet/services/disabled/heat-api-cloudwatch-disabled.yaml
+  OS::TripleO::Services::HeatEngine: ../../docker/services/heat-engine.yaml
+  OS::TripleO::Services::BarbicanApi: ../../docker/services/barbican-api.yaml
+  OS::TripleO::Services::Zaqar: ../../deployment/zaqar/zaqar-container-puppet.yaml
+  OS::TripleO::Services::Ec2Api: ../../docker/services/ec2-api.yaml
+  OS::TripleO::Services::PankoApi: ../../docker/services/panko-api.yaml
+  OS::TripleO::Services::OsloMessagingRpc: ../../docker/services/pacemaker/rpc-rabbitmq.yaml
+  OS::TripleO::Services::OsloMessagingNotify: ../../docker/services/messaging/notify-rabbitmq-shared.yaml
+  OS::TripleO::Services::Redis: ../../docker/services/pacemaker/database/redis.yaml
+  OS::TripleO::Services::HAproxy: ../../docker/services/pacemaker/haproxy.yaml
+  OS::TripleO::Services::Pacemaker: ../../puppet/services/pacemaker.yaml
+  OS::TripleO::Services::PacemakerRemote: ../../puppet/services/pacemaker_remote.yaml
+  OS::TripleO::Services::Clustercheck: ../../docker/services/pacemaker/clustercheck.yaml
+  OS::TripleO::Services::MySQL: ../../docker/services/pacemaker/database/mysql.yaml
+  OS::TripleO::Services::CinderBackup: ../../docker/services/pacemaker/cinder-backup.yaml
+  OS::TripleO::Services::CinderVolume: ../../docker/services/pacemaker/cinder-volume.yaml
+  OS::TripleO::Services::BarbicanBackendSimpleCrypto: ../../puppet/services/barbican-backend-simple-crypto.yaml
+  # Some infra instances don't pass the ping test but are otherwise working.
+  # Since the OVB jobs also test this functionality we can shut it off here.
+  OS::TripleO::AllNodes::Validation: ../common/all-nodes-validation-disabled.yaml
+  OS::TripleO::Services::Fluentd: ../../docker/services/fluentd.yaml
+  OS::TripleO::Services::Horizon: OS::Heat::None
+
+parameter_defaults:
+  StandaloneExtraConfig:
+    # NOTE(sileht): To decrease the time test_telemetry_integration takes We
+    # configure Ceilometer to poll more, We configure the 'high' Gnocchi
+    # archive policy to keep 1 point every 60s. The test will take 2 minutes
+    # instead of 10 minutes. Note that tempest telemetry.alarm_granularity must
+    # in sync with the archive policy, 60s too.
+    ceilometer::agent::polling::polling_interval: 15
+  ManagePolling: true
+  ManagePipeline: true
+  PipelinePublishers:
+    - gnocchi://?archive_policy=ceilometer-high-rate
+  EventPipelinePublishers:
+    - gnocchi://?archive_policy=ceilometer-high-rate
+    - panko://
+  GnocchiArchivePolicy: 'ceilometer-high-rate'
+  Debug: true
+  DockerPuppetDebug: true
+  ZaqarMessageStore: 'swift'
+  ZaqarManagementStore: 'sqlalchemy'
+  SwiftCeilometerPipelineEnabled: false
+  BarbicanSimpleCryptoGlobalDefault: true
