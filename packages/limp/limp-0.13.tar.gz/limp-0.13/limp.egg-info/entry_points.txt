@@ -1,0 +1,3 @@
+[console_scripts]
+limp = limp:main
+
