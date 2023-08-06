@@ -1,0 +1,10 @@
+numpy
+pandas
+requests
+openpyxl
+beautifulsoup4
+lxml
+pyexcel
+pyexcel-xls
+pyexcel-xlsx
+ukcensusapi
