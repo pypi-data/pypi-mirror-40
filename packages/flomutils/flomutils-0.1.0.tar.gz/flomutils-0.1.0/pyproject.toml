@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "flomutils"
+version = "0.1.0"
+description = "plot, analyze, and modify your flom motion"
+authors = ["coord.e <me@coord-e.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flom = "^0.3.1"
+matplotlib = "^3.0"
+numpy = "^1.16"
+fire = "^0.1.3"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.6"
+autopep8 = "^1.4"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+flomutils = 'flomutils.__main__:main'
