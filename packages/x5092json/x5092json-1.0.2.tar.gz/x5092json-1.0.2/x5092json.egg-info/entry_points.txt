@@ -1,0 +1,3 @@
+[console_scripts]
+x5092json = x5092json.x509parser:main
+
