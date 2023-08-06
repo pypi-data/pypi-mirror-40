@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: easytello
+Version: 0.0.3
+Summary: An easy framework to support DJI Tello scripting in Python 3
+Home-page: https://github.com/Virodroid/easyTello
+Author: Ezra Fielding
+Author-email: ezra.fielding@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# easyTello
+An easy frame work to support DJI Tello scripting in Python 3
+
+
