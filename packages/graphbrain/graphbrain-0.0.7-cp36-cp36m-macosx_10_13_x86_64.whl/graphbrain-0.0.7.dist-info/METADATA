@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: graphbrain
+Version: 0.0.7
+Summary: Knowledge System + Natural Language Understanding
+Home-page: https://github.com/ai4socialscience/graphbrain
+Author: Telmo Menezes et al.
+Author-email: telmo@telmomenezes.net
+License: MIT
+Keywords: NLP,AI,Knowledge Representation,Natural Language Understanding,Text Analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Sociology
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: termcolor
+Requires-Dist: python-igraph
+Requires-Dist: spacy (==2.0.18)
+Requires-Dist: asciitree
+Requires-Dist: plyvel
+Requires-Dist: ipython
+Requires-Dist: keras
+Requires-Dist: progressbar2
+Requires-Dist: unidecode
+Provides-Extra: dev
+Requires-Dist: cython ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+
+GraphBrain is a set of research tools aimed at text understanding and the exploration of knowledge. Its purpose is to
+facilitate experiments with novel ways to extract and analyze the knowledge contained in human-produced text.
+
+GraphBrain is experimental in nature, but with a unifying concept: the *semantic hypergraph*.
+
+GraphBrain is an open scientific project, open to all that are interested in collaborating.
+
+For installation instructions and more information: http://graphbrain.org.
+
