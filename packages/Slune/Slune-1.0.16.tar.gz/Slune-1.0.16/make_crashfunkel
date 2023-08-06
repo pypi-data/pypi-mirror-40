@@ -1,0 +1,103 @@
+#! /usr/bin/python -O
+# -*- python -*-
+
+# Slune
+# Copyright (C) 2002-2003 Jean-Baptiste LAMY
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+# launch this script to generate the level (world crashfunkel_level)
+# from the crashfunkel world (ie build tree...)
+
+import math
+import copy
+
+import soya
+import soya.model  as model
+import soya.soya3d as soya3d
+import soya.editor.main
+from soya.math3d import *
+
+import slune.level
+
+w = soya3d.World.get("crashfunkel")
+w.scale(1.5, 1.5, 1.5)
+#w.set_xyz(4.0, -10.0, 4.0)
+#w.filename = "crashfunkel_shape"
+w.filename = None
+#w.save()
+
+for l in w.children[1:]:
+  if isinstance(l, soya3d.Light):
+    l.diffuse   = (1.0, 0.7, 0.2, 1.0)
+    l.constant  = 0.0
+    l.linear    = 0.0
+    l.quadratic = 0.05
+    #l.parent.remove(l)
+
+l = soya3d.Light(w)
+l.directional = 1
+#l.look_at(Vector(w, 0.0, -1.0, 0.0))
+#l.diffuse = (0.05, 0.0, 0.2, 1.0)
+l.diffuse = (0.1, 0.1, 0.1, 1.0)
+l.static = 1
+
+from soya.facecutter import *
+print check_quads(w), "non coplanar quads splitted !"
+print cut(w, 1000), "new faces!"
+
+w2 = soya3d.World()
+w2.set_shape(w.shapify())
+#w2.shape.subdivide(50, 30.0)
+#w2.shape.build_tree()
+
+w1 = soya3d.World.get("crashfunkel_level")
+w1.set_shape(w2.shape)
+
+
+#atm = w1.atmosphere
+#atm.ambient = (0.4, 0.4, 0.4, 1.0)
+#atm.bg_color = atm.fog_color = (0.2, 0.1, 0.4, 1.0)
+
+# Brouillard :
+#atm.bg_color  = (0.4, 0.4, 1.0, 1.0)
+#atm.fog_color = (0.4, 0.4, 1.0, 1.0)
+
+
+
+w1.save()
+
+w1 = soya3d.World.get("crashfunkel_level_night")
+w1.set_shape(w2.shape)
+w1.save()
+
+# w1 = soya3d.World()
+# w1.filename = "crashfunkel_level"
+# w1.set_shape(w2.shape)
+
+# atm = soya3d.Atmosphere()
+# atm.ambient   = (0.3, 0.3, 0.3, 1.0)
+# atm.bg_color  = (0.1, 0.0, 0.3, 1.0)
+# atm.fog_color = (0.1, 0.0, 0.3, 1.0)
+# atm.fog_type    = 0
+# atm.fog_start   = 10.0
+# atm.fog_end     = 50.0
+# atm.fog         = 1
+# atm.fog_density = 0.0
+# w1.atmosphere   = atm
+
+# w1.save()
+
+print "level saved [ OK ]"

@@ -1,0 +1,139 @@
+                               +-----------+
+                               | S L U N E |
+                               +-----------+
+
+
+ATTENTION !!! A CAUSE DE PROBLEME DE SECURITE, LE MODE RESEAU A ETE DESACTIVE.
+
+
+
+*** Qu'est-ce que Slune ???
+
+Slune est un jeu 3D ! C'est un jeu d'action avec des courses, des
+combats et beaucoup d'adrénaline ! En plus un mode multijoueur est
+dispo pour s'éclater à plusieurs (voir plus bas).
+
+Slune a été réalisé dans un but de RECHERCHE personnel. Les objectifs
+de recherche étaient de répondre aux questions suivantes :
+
+ * Est-il possible de réaliser un jeu 3D aux graphismes "décents" dans
+ un langage de script de haut niveau (comme Python) ?
+
+ * Est-il possible de réaliser un jeu qui, sans être pour autant un
+   jeu éducatif, soit un "jeu civique documentaire" qui permette de
+   faire passer un message plus intelligent que ceux de la majorité
+   des jeux existants.
+
+La réponse a ces deux questions est donc "oui" ;-)
+
+Il y a maintenant un manuel utilisateur pour Slune en français (et
+seulement en français ;-) : voyez manual.fr.pdf
+
+
+
+*** On recherche...
+
+... des traducteurs et des graphistes.
+
+... ainsi que des portages pour d'autres systèmes et des mainteneurs
+pour la version windows.
+
+
+
+*** Pré-requis
+
+ * Python 2.2.x (testé sur 2.3.4)
+   Y COMPRIS les fichiers pour compiler des modules en C,
+   c'est à dire que par exemple, sur Linux Mandrake, il faudra
+   installer le paquet 'libpython2.3-devel-2.3.3-2mdk'
+   (attention les numéros de version peuvent changer)
+
+ * Linux (toute architecture; pour windows voir le répertoire windows)
+
+ * OpenGL (testé avec le DRI pour Radeon et les pilotes NVidia; une
+   carte accélératrice 3D est fortement conseillée bien que non exigée)
+
+ * GLEW (http://sourceforge.net/projects/glew)
+
+ * SDL (http://libsdl.org/)
+
+ * OpenAL (www.openal.org), PyOgg et PyVorbis (www.xiph.org) pour le
+   support du son
+   
+ * Cal3D (cal3d.sourceforge.net)
+   
+Le paquetage Slune inclue les autres dépendances (dont Soya3D).
+
+
+
+*** Installation
+
+tar -xvzf Slune-XXX.tar.gz
+cd Slune-XXX
+
+ * Taper :
+
+python ./setup.py build
+
+ * Taper, EN ROOT:
+
+su
+python ./setup.py install
+
+
+Le warning suivant peut être ignoré:
+
+  warning: install: modules installed to '/usr/share/',
+  which is not in Python's module search path (sys.path)
+  -- you'll have to change the search path yourself
+
+Pour jouer sans installer Slune, exécuter ./run_without_install;
+l'étape de compilation (build) reste nécessaire !!!
+
+
+
+*** Comment lancer Slune ?
+
+Taper "slune" dans une console !
+
+Pour l'interface en ligne de commande, voir "slune --help".
+
+
+
+*** Comment jouer ?
+
+Position de la souris / Curseur : gauche / droite pour tourner; en haut pour
+aller plus vite, en bas pour ralentir
+
+Bouton gauche / Contrôle : saut en longueur
+Bouton du milieu / Shift : saut en hauteur
+Bouton droit / Alt       : nitro
+
+En l'air: Molette / Shift et contrôle : incliner le véhicule (pour
+faire des looping, des "S"...)
+
+q, échap: quitter
+
+
+
+*** Bogues connus
+
+ * Sound problems : OpenAL may not support your sound card (e.g.
+   sound quality is poor, and you get some error printed on the
+   console, about "native_blitbuffer: Assertion `0' failed" or "fcntl:
+   Invalid argument"). Some people has obtained good result by forcing
+   the use of esd. For that, edit ~/.openalrc, and write in it :
+   
+     (define devices '(esd))
+
+ * ImportError: libGL.so.1: cannot handle TLS data
+   This problem occurs typically on Debian with NVidia cards.
+   Just install the "nvidia-glx" Debian package.
+
+
+
+*** Contacts et site Oueb
+
+jibalamy@free.fr
+
+http://slune.nekeme.net

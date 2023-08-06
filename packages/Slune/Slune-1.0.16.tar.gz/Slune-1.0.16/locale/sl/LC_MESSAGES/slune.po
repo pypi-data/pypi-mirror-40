@@ -1,0 +1,802 @@
+# Slune
+# Copyright (C) 2002-2003 Jean-Baptiste LAMY, Matija ©UKLJE
+#
+
+
+
+# Not yet translated
+
+
+
+msgid  "%s fragged %s!"
+msgstr "%s fragged %s!"
+
+msgid  "__scenar11-intro-1__"
+msgstr "-The plane is about to take off... It's too late!"
+
+msgid  "__scenar11-intro-2__"
+msgstr "-No, we still have another chance! No time to board, hurry up, \
+catch up with the plane and land on top of it!"
+
+msgid  "__scenar11-intro-3__"
+msgstr "-So that we will avoid custom. I don't need to remind you \
+that our importation of medicine is... forbiden, even tough \
+it may save lives!"
+
+msgid  "__scenar11-intro-4__"
+msgstr "-OK... meet me by the next flight. I have to go now!"
+
+msgid  "__scenar11-1__"
+msgstr "-Tux, the plane is gone and the custom officers are on their way... \
+it's too late, we failed!"
+
+msgid  "__scenar12-intro-1__"
+msgstr "-On behalf of the Captain and your crew we welcome you aboard \
+our flight to Africa!"
+
+msgid  "__scenar12-intro-2__"
+msgstr "-Herr... I must have been dreaming, but I think I just saw one of \
+Shark's assassin!"
+
+msgid  "__scenar13-intro-0__"
+msgstr "Africa, June 18th 2003, 13:15"
+
+msgid  "__scenar13-intro-1__"
+msgstr "-Hi, I'm your guide, Gnu sent me to help you cross the desert. \
+Follow me!"
+
+msgid  "__scenar13-intro-2__"
+msgstr "-He ran away... It was a trap ! Here am I, lost in the middle of \
+the desert."
+
+msgid  "__scenar13-intro-3__"
+msgstr "-If I did stunts, perhaps someone would notice me?"
+
+msgid  "__scenar13-intro-4__"
+msgstr "-By jumping and using my turbo, I can go really high \
+and do amazing loopings."
+
+msgid  "__scenar13-1__"
+msgstr "-A storm is coming, everything is over!"
+
+msgid  "__scenar13-outro-1__"
+msgstr "-I'm back... I, hummm, I... I noticed your stunts..."
+
+msgid  "__scenar13-outro-2__"
+msgstr "-Shark paid me a lot of money to loose you in the desert, \
+and I'm not rich"
+
+msgid  "__scenar13-outro-3__"
+msgstr "-But I just found out that my daughter has Aids..."
+
+msgid  "__scenar13-outro-4__"
+msgstr "-I'll give you medicine for your daughter, if you guide me to \
+Botswana, one of the countries most affected by Aids."
+
+msgid  "__scenar14-intro-1__"
+msgstr "-Tux ! You managed to escape from Shark's men!"
+
+msgid  "__scenar14-intro-2__"
+msgstr "-Let's distribute the medicine; go around the huts of the \
+village."
+
+msgid  "__scenar14-intro-3__"
+msgstr "-I will to crush you with this plane!!!"
+
+msgid  "__scenar14-outro-1__"
+msgstr "-So, you managed to defeat my assassins until the very end..."
+
+msgid  "__scenar14-outro-2__"
+msgstr "-Shark ! Why do you keep on trying to stop us ? Are you selling \
+that much medicine in Africa ?"
+
+msgid  "__scenar14-outro-3__"
+msgstr "-No... Actually, we're not even selling them there."
+
+msgid  "__scenar14-outro-4__"
+msgstr "-But our leadership would be threatened... \
+First Africa, then South America, Asia, Europe..."
+
+msgid  "__scenar14-outro-5__"
+msgstr "-I can't believe it! You're not human or what!?"
+
+msgid  "__scenar14-outro-6__"
+msgstr "-No, indeed."
+
+msgid  "__scenar14-outro-7__"
+msgstr "-I've got to stop him!"
+
+msgid  "__scenar15-intro-1__"
+msgstr "-Well, you followed me here... You're so naive, do you really \
+think you still have enough time to save humanity ?"
+
+msgid  "__scenar15-intro-2__"
+msgstr "-I'd like to eat him with bolognese..."
+
+msgid  "__scenar15-intro-3__"
+msgstr "-...or spit-roasted!"
+
+msgid  "__scenar15-intro-4__"
+msgstr "-I have to get rid of... this thing!"
+
+msgid  "__scenar15-intro-5__"
+msgstr "-Prepare to die..."
+
+msgid  "__scenar15-outro-1__"
+msgstr "-Haaa... you got me... it's impossible...?"
+
+msgid  "__scenar15-outro-2__"
+msgstr "-Don't ever come Back to Earth, bande d'aliens \
+dégénérés !"
+
+msgid  "__scenar15-outro-3__"
+msgstr "-Now that this slimy alien is gone, I hope it will be easier to \
+get medicine."
+
+msgid  "__scenar15-outro-4__"
+msgstr "-Don't hope too much Gnu, humans are not always more trustworthy \
+than aliens..."
+
+msgid  "__scenar15-outro-5__"
+msgstr "-I used to be a human myself, long time ago... and look at what \
+I've become..."
+
+msgid  "__scenar15-outro-6__"
+msgstr "-That's the moral of this story, shark : often mankind is an \
+alien to mankind."
+
+
+
+
+
+
+
+
+
+
+
+
+
+msgid  "__banner_text__"
+msgstr "Version: %s  . . .  Slune je igra, ki so jo naredili Nekeme Prod. (http://www.nekeme.net)  . . .  Internetna stran: http://slune.nekeme.net  . . .  Licenca: GPL  . . .  Poganja jo Python  . . .  Skupina Slune: - Python koda/Scenarij: Jiba <jiba@tuxfamily.org> - C koda/Grafika/Muzika: Blam <blam@tuxfamily.org>  . . .  "
+
+msgid  "Back"
+msgstr "Nazaj"
+
+msgid  "Name"
+msgstr "Ime"
+
+msgid  "on"
+msgstr "vkluèeno"
+
+msgid  "off"
+msgstr "izkljuèeno"
+
+msgid  "Play campain"
+msgstr "Igraj celo kampanjo"
+
+msgid  "Play level"
+msgstr "Igraj doloèen nivo"
+
+msgid  "Join multiplayer game"
+msgstr "Pridru¾i se skupni mno¾ièni igri"
+
+msgid  "Player options"
+msgstr "Nastavitve igralca"
+
+msgid  "Hardware options"
+msgstr "Nastavitve strojne opreme"
+
+msgid  "Graphic quality"
+msgstr "Kvaliteta grafike"
+
+msgid  "Low"
+msgstr "Nizka"
+
+msgid  "Medium"
+msgstr "Srednja"
+
+msgid  "High"
+msgstr "Visoka"
+
+msgid  "Max vision distance"
+msgstr "Najveèja razdalja vidnega polja"
+
+msgid  "Start"
+msgstr "Zaèni"
+
+msgid  "Use port"
+msgstr "Uporabi vrata"
+
+msgid  "Distant (host or IP)"
+msgstr "Oddaljen gostitelj (ime gostitelja ali IP)"
+
+msgid  "Connect to port"
+msgstr "Pove¾i se prek vrat (port)"
+
+msgid  "Local: "
+msgstr "Lokalen raèunalnik: "
+
+msgid  "Lap number"
+msgstr "©tevilo krogov"
+
+msgid  "Opponents"
+msgstr "©tevilo nasprotnikov"
+
+msgid  "Select level"
+msgstr "Izberi nivo"
+
+msgid  "Difficulty"
+msgstr "Te¾avnostna stopnja"
+
+msgid  "Sounds"
+msgstr "Zvok"
+
+msgid  "__racelapsformat__"
+msgstr "%s krogov"
+
+msgid  "__scoreformat1__"
+msgstr "Èas : %.2f s"
+
+msgid  "__scoreformat2__"
+msgstr " : %s"
+
+msgid  "__figure_looping__"
+msgstr "Luping"
+
+msgid  "__figure_doublelooping__"
+msgstr "Dvojni luping"
+
+msgid  "__figure_retrolooping__"
+msgstr "Vzvratni luping"
+
+msgid  "__figure_doubleretrolooping__"
+msgstr "Dvojni vzvratni luping"
+
+msgid  "__figure_jump__"
+msgstr "Skok"
+
+msgid  "__figure_longjump__"
+msgstr "Dolg skok"
+
+msgid  "__figure_verylongjump__"
+msgstr "Zelo dolg skok"
+
+msgid  "__figure_climbing__"
+msgstr "Plezanje"
+
+msgid  "__figure_highjump__"
+msgstr "Visok skok"
+
+msgid  "__figure_rotup__"
+msgstr "Vzvratno"
+
+msgid  "__figure_180__"
+msgstr "180"
+
+msgid  "__figure_360__"
+msgstr "360"
+
+msgid  "__figure_720__"
+msgstr "720"
+
+msgid  "__figure_rotup180__"
+msgstr "Vzvratno 180"
+
+msgid  "__figure_rotup360__"
+msgstr "Vzvratno 360"
+
+msgid  "__figure_rotup720__"
+msgstr "Vzvratno 720"
+
+msgid  "__figure_spinfall__"
+msgstr "Vijak"
+
+msgid  "__figure_bigspinfall__"
+msgstr "Velik vijak"
+
+msgid  "__figure_flamingtorch__"
+msgstr "'Goreèa bakla'"
+
+msgid  "__figure_bigflamingtorch__"
+msgstr "Velika 'Goreèa bakla'"
+
+msgid  "__figure_s__"
+msgstr "'S'"
+
+msgid  "__figure_doubles__"
+msgstr "Dvojni 'S'"
+
+msgid  "__ready__"
+msgstr "Pripravljen. Prosim poèakaj, da se pridru¾ijo ¹e ostali igralci in nato \
+pritisni katerokoli tipko ali klikni mi¹kin gumb."
+
+msgid  "Starting game..."
+msgstr "Zaèenjam igro..."
+
+msgid  "__connection__"
+msgstr "Igralec %s z %s se je pridru¾il."
+
+msgid  "Start new game"
+msgstr "Zaèni novo igro"
+
+msgid  "Join network game"
+msgstr "Pridru¾i se nalinijski igri"
+
+msgid  "Options"
+msgstr "Nastavitve"
+
+msgid  "References"
+msgstr "V zvezi z"
+
+msgid  "Credits"
+msgstr "'Credits'"
+
+msgid  "Quit"
+msgstr "Konèaj"
+
+msgid  "Choose level"
+msgstr "Izberi nivo"
+
+msgid  "You are"
+msgstr "Ti si"
+
+msgid  "Join at (host or IP:port)"
+msgstr "Pridru¾i se preko (gostitelj ali IP:vrata(port))"
+
+msgid  "Slune version %s"
+msgstr "Slune razlièica %s"
+
+msgid  "Difficulty level"
+msgstr "Stopnja te¾avnosti"
+
+msgid  "Speed"
+msgstr "Hitrost"
+
+msgid  "Character"
+msgstr "Lik"
+
+msgid  "Vehicle"
+msgstr "Vozilo"
+
+msgid  "Newbie"
+msgstr "Novinèek"
+
+msgid  "Hacker"
+msgstr "Heker"
+
+msgid  "Guru"
+msgstr "Guru"
+
+msgid  "Car"
+msgstr "Avto"
+
+msgid  "Truck"
+msgstr "Kamion"
+
+msgid  "Scooter"
+msgstr "Skuter"
+
+msgid  "Biplane"
+msgstr "Dvokrilec"
+
+msgid  "Slune options"
+msgstr "Slune nastavitve"
+
+msgid  "Fullscreen"
+msgstr "Celoten zaslon"
+
+msgid  "Resolution"
+msgstr "Loèljivost"
+
+msgid  "Music"
+msgstr "Muzika"
+
+msgid  "Sound"
+msgstr "Zvok"
+
+msgid  "Race laps number"
+msgstr "©tevilo krogov"
+
+msgid  "Async load music"
+msgstr "Asinhrono nalaganje muzike"
+
+msgid  "Ok"
+msgstr "Ok"
+
+msgid  "Cancel"
+msgstr "Preklièi"
+
+msgid  "__warning_need_restart__"
+msgstr "Pozor! Mogoèe bo¹ moral ponovno zagnati igro, da se bodo spremembe poznale."
+
+msgid  "Cannot join multiplayer game at %s:%s %s!"
+msgstr "Ne morem se pridru¾iti mno¾ièni igri z %s:%s %s!"
+
+msgid  "Network error!"
+msgstr "Napaka z omre¾jem!"
+
+msgid  "__networkbadconfig__"
+msgstr "Mre¾a ni nastavljena! Ni mogoèe se povezati na lokalen raèunalnik preko istih vrat, na katerih teèe¹ server!"
+
+msgid  "__gameover__"
+msgstr "Igre je konec."
+
+msgid  "__no_time_left__"
+msgstr "Zmanjkalo ti je èasa! Igre je konec."
+
+msgid  "Level completed!"
+msgstr "Konèal si nivo!"
+
+msgid  "You have won!"
+msgstr "Juhu! Zmagal si!"
+
+msgid  "__race_winner__"
+msgstr "Bravo! Zmagal si tekmo!"
+
+msgid  "__race_looser__"
+msgstr "Izgubil si... bil si na mestu %s."
+
+msgid  "__race_arrival__"
+msgstr "%s je bil na mestu %s."
+
+msgid  "__hunt_failed__"
+msgstr "Predaleè je... Nikoli ga ne bom ujel!"
+
+msgid  "Slune info sources"
+msgstr "Slune viri informacij"
+
+msgid  "__info__"
+msgstr "Niè omenjenega v Slune ni ¹ala!\n|\
+(veèina povezav je v franco¹èini ali angle¹èini, prosim po¹lji e-mail na:\n|\
+jiba@tuxfamily.org èe ima¹ povezave v slovenskem ali drugem jeziku.)\n|\
+\n|\
+ActUp\n|\
+http://www.actupp.org/1er_decembre/decembre2000/doss_press_1er_decembre.pdf\n|\
+\n|\
+Pfizer : Hard on up North, death down South\n|\
+http://www.essentialdrugs.org/emed/hma/e-med.200005/msg00019.php\n|\
+\n|\
+A solution ? Traditionnal medicine !\n|\
+http://allafrica.com/stories/200207110016.html\n|\
+\n|\
+Informations about AIDS in Africa\n|\
+http://allafrica.com/aids/\n|\
+\n|\
+\n|\
+Slune somaèa stran (v angle¹èini)\n|\
+http://slune.nekeme.net\n|\
+\n|\
+Nekeme Prod. (v angle¹èini)\n|\
+http://nekeme.net/en\n|\
+\n|"
+
+msgid  "__indusmeeting-shoot-1-1__"
+msgstr "Spravi ¾ogo dol z metanjem debel !"
+
+msgid  "__scenar1-intro-0__"
+msgstr "Europa, 8. januar 2003, 17:30 "
+
+msgid  "__scenar1-intro-1__"
+msgstr "Tutu tutu...!"
+
+msgid  "__scenar1-intro-2__"
+msgstr "-Torej, Tux! Uspel sem preprièati nek farmacijski laboratorij, \
+da nam podarijo zdravila za Afriko... Lahko pride¹ z velikim tovornjakom ?"
+
+msgid  "__scenar1-intro-3__"
+msgstr "-OK ! Kam naj pridem ?"
+
+msgid  "__scenar1-intro-4__"
+msgstr "-V redu, vodil te bom. Premakni mi¹kin kurzor na dno ekrana, \
+èe hoèe¹ peljati poèasi. èe hoèe¹ iti hitreje, ga premakni vi¹je. \
+èe hoèe¹ zaviti, premakni kurzor levo ali desno."
+
+msgid  "__scenar1-1__"
+msgstr "-Zavij levo."
+
+msgid  "__scenar1-2__"
+msgstr "-Pelji naravnostt."
+
+msgid  "__scenar1-3__"
+msgstr "-Pelji do konca vrta in zavij skrajno desno."
+
+msgid  "__scenar1-4__"
+msgstr "-Ne, ne sem ! Rekel sem na SKRAJNO desno !"
+
+msgid  "__scenar1-5__"
+msgstr "-Dobro ...sledi cesti."
+
+msgid  "__scenar1-6__"
+msgstr "-Zapelji v atrij na tvoji desni."
+
+msgid  "__scenar1-7__"
+msgstr "-Pojdi ven in zavij levo."
+
+msgid  "__scenar1-8__"
+msgstr "-Tu se glavna cesta odcepi na dvoje; zavij levo..."
+
+msgid  "__scenar1-9__"
+msgstr "-...hmm, zmotil sem se ...moral bi reèi desno. Obrni nazaj !"
+
+msgid  "__scenar1-10__"
+msgstr "-Tukaj je. Pelji naprej..."
+
+msgid  "__scenar1-outro-1__"
+msgstr "-Dobro. Vidim, da si precej dober voznik."
+
+msgid  "__scenar1-outro-2__"
+msgstr "-Zapelji tovornjak na rampo, da nalo¾imo zdravila."
+
+msgid  "__scenar1-outro-3__"
+msgstr "-Ampak... to izgleda kot vzorci."
+
+msgid  "__scenar1-outro-4__"
+msgstr "-Saj so. Zato jih pa delimo zastonj. Upamo, da dobimo nove redne kupce..."
+
+msgid  "__scenar1-outro-5__"
+msgstr "-No ja, daleè ¾e ne bomo pri¹li s *tem*..."
+
+msgid  "__scenar2-intro-1__"
+msgstr "-AIDS je ¾e pre¾ivet... slava hipertenziji in diabetisu !"
+
+msgid  "__scenar2-intro-2__"
+msgstr "-©e vedno je veè kot 30% ¾rtev AIDS-a v nekaterih afri¹kih de¾elah..."
+
+msgid  "__scenar2-intro-3__"
+msgstr "-Na¹ laboratorij se osredotoèa na evropski in severno-ameri¹ki trg, gospod Gnu. \
+Dobra strategija, a ne ?"
+
+msgid  "__scenar2-intro-4__"
+msgstr "-Ne bom postal ravno va¹ obæudovalec. !!!!"
+
+msgid  "__scenar2-intro-5__"
+msgstr "-Hmm.. Moram iti. Imam pomemben sestanek."
+
+msgid  "__scenar2-intro-6__"
+msgstr "-Neopazno mu sledi... Jaz bom pa odpeljal kamion nazaj. Se sreèava kasneej\
+Èe bo potrebno, uporabi levi mi¹kin gumb, za skakanje"
+
+msgid  "__scenar2-1__"
+msgstr "-Mislim, da me je videl... Si pripravljen za ogled celotnega mesta ?"
+
+msgid  "__scenar2-2__"
+msgstr "-Izrecno sem ti naroèil, da bodi *ne*opa¾en..."
+
+msgid  "__scenar3-intro-1__"
+msgstr "-Tu je ¹el not in zaprl vrata..."
+
+msgid  "__scenar3-intro-2__"
+msgstr "-Kaj pa èaka¹! Skoèi, naredi nekaj lupingov in figur, da te opazijo !"
+
+msgid  "__scenar3-intro-3__"
+msgstr "-Èe klikne¹ srednji mi¹kin gumb, ali Shift tipko, lahko skoèi¹ zelo visoko. Ko si v zraku, lahko nagne¹ vozilo z mi¹kinim kole¹èkom ali z obema gumboma za skok."
+
+msgid  "__scenar3-1__"
+msgstr "-...Ej! Lej tega modela !"
+
+msgid  "__scenar3-2__"
+msgstr "-Uau... dobr stajl !"
+
+msgid  "__scenar3-3__"
+msgstr "-Pomojm je profesjonalc..."
+
+msgid  "__scenar3-4__"
+msgstr "-Ej, èe opdreva vrata, go bova loh bol¹ vidla..."
+
+msgid  "__scenar3-5__"
+msgstr "-Pa, sej ve¹, da ne smeva !"
+
+msgid  "__scenar3-6__"
+msgstr "-Ma ja ...sam itak nau nben vedu ...dej, pejva jih odpret !"
+
+msgid  "__scenar3-7__"
+msgstr "-Pejt greva nazaj delat. \n_Ma¹ prou...\n Igre je konec !"
+
+msgid  "__scenar4-outro-1__"
+msgstr "-Kaj pa je s tistim projektom, da bi vkljuèili antiretroviralna zdravila v spisek SZO \
+(Svetovne Zdravstvene Organizacije) nujnih zdravil ?"
+
+msgid  "__scenar4-outro-2__"
+msgstr "-Moja vlada (ZDA) se s tem ne strinja: To bi Afriki omogoèalo \
+da bi si sama proizvajala zdravila. AIDS nekatere ljudi sicer pobija, ampak \
+nekatere ljudi pa tudi ¾ivi. Na? dohodek na teh proizvodih ne presega 90%..."
+
+msgid  "__scenar4-outro-3__"
+msgstr "-Vendar niti va¹ laboratorij, niti ZDA ne sedijo na sede¾u SZO..."
+
+msgid  "__scenar4-outro-4__"
+msgstr "-Ne, in zato potrebujem vas. Danes zjutraj je bilo prenesenih \
+100.000 evrov na va¹ tekoèi raèun..."
+
+msgid  "__scenar4-outro-5__"
+msgstr "-Storil bom vse v moji moèi, da bo ta projekt propadel.."
+
+msgid  "__scenar5-intro-1__"
+msgstr "-Sram naj vaju bo ! To je korupcija, kar se greasta ! In va¹emu laboratoriju sploh ni  \
+primanjkovalo denarja èe lahko kar tako iz rokava stresete 100.000 evrov..."
+
+msgid  "__scenar5-intro-2__"
+msgstr "-Preveè si naiven... Bolje bi bilo èe mi ne bi sledil.  \
+Moji najeti morilci te bodo ubili."
+
+msgid  "__scenar5-intro-3__"
+msgstr "-Mrtev si, mali pingvin !"
+
+msgid  "__scenar5-intro-4__"
+msgstr "-Be¾iva ! Pojdiva nazaj proti mestu. \
+Gnu me verjetno ¾e èaka !"
+
+msgid  "__scenar5-outro-1__"
+msgstr "-Pozdravljen, Morski Pes... moja kamera je povezana v Internet. \
+Vaju lahko malo posnamem ?"
+
+msgid  "__scenar5-outro-2__"
+msgstr "-©e se bova sreèala, Gnu..."
+
+msgid  "__scenar6-intro-0__"
+msgstr "Europa, 20. Marec 2003, 18:30"
+
+msgid  "__scenar6-intro-1__"
+msgstr "-Nobena farmacijska dru¾ba nam ni pripravljena dati dovolj zdravil."
+
+msgid  "__scenar6-intro-2__"
+msgstr "-Zgleda, da bomo morali pozabiti na na¹o humanitarno ekspedicijo..."
+
+msgid  "__scenar6-intro-3__"
+msgstr "Tutu tutu...!"
+
+msgid  "__scenar6-intro-4__"
+msgstr "-Halo ? Potrebujete medikamente ? Poèakajte me drevi, v koèi na gori."
+
+msgid  "__scenar6-intro-5__"
+msgstr "-Kdo pa ste? Kaj..."
+
+msgid  "__scenar6-intro-6__"
+msgstr "Tuuu tuuu tuuu..."
+
+msgid  "__scenar6-intro-7__"
+msgstr "-Tux, zveèer se odpravi tja..."
+
+msgid  "__scenar6-intro-8__"
+msgstr "-Zdi se mi, da naju opazujejo! Pojdi po strehi, da te ne opazijo. \
+In uporabi tisti skrivni prehod na koncu vrta v gradu. Saj se ga spomne¹."
+
+msgid  "__scenar6-1__"
+msgstr "-Hej! Videl me je. Zbe¾iva !"
+
+msgid  "__scenar6-2__"
+msgstr "-Pa sem ti lepo rekel, da se ne ka¾i ! \
+Zdaj ne more¹ iti to koèe, ne da bi tvegal ¾ivljenje najne zveze."
+
+msgid  "__scenar7-intro-1__"
+msgstr "-Hmm, èe sledim, kar mi ka¾ejo debla, bi moral priti do logarjeve koèe."
+
+msgid  "__scenar7-1__"
+msgstr "-Banzai !!!!"
+
+msgid  "__scenar7-2__"
+msgstr "-Motor ! Z njim bi lahko ¹el prek vseh ovir \
+...tudi navpiènih !"
+
+msgid  "__scenar7-3__"
+msgstr "-Koèa je tam. Ampak kako naj pridem do nje ?"
+
+msgid  "__scenar7-4__"
+msgstr "-Pojdi po potki, na¹el bo¹ motor... Potem pridi nazaj sem."
+
+msgid  "__scenar7-outro-1__"
+msgstr "-Pozdravljen, Tux. Ime mi je Piton. Imam farmacijski laboratorij v Indiji."
+
+msgid  "__scenar7-outro-2__"
+msgstr "-Na ¾alost ne morem zastonj dajati zdravil, ki jih potrebujete. \
+Vendar, vam jih lahko dam po tretjini cene, ki jo raèunajo moji tekmeci iz Amerike."
+
+msgid  "__scenar7-outro-3__"
+msgstr "-Èe dam moje prihranke in doda Gnu svoje. Pa ¹e vse subvencije, ki pridejo v po¹tev. \
+In donacije... To bi ¹lo, ja !"
+
+msgid  "__scenar7-outro-4__"
+msgstr "-Naslednji mesec pridi v Indijo. Ampak, ne govori tega naokrog ! \
+Kar poèneva *ni* legalno."
+
+msgid  "__scenar7-outro-5__"
+msgstr "-Juuuuuhuuu...!"
+
+msgid  "__scenar8-intro-0__"
+msgstr "Indija, 4. April 2003, 9:30"
+
+msgid  "__scenar8-intro-1__"
+msgstr "-Ok, tukaj sva, ampak ¹e vedno morava najti laboratorij..."
+
+msgid  "__scenar8-intro-2__"
+msgstr "-Lahko gresta za mojimi morilci... Sluèajno greste v isto smer."
+
+msgid  "__scenar8-intro-3__"
+msgstr "-Morski Pes !"
+
+msgid  "__scenar8-intro-4__"
+msgstr "-Pohiti ! Zaustaviti moramo morilce ! Poberi zeleni bonus \
+in streljaj plazmo z desnim mi¹kinim gumbom ali Alt tipko."
+
+msgid  "__scenar8-1__"
+msgstr "-Prepozno... 3... 2... 1... 0 !"
+
+msgid  "__scenar8-outro-1__"
+msgstr "-Pozdravljen v Indiji, Tux. Tu je patentno pravo precej drugaèno. \
+Zato, sicer smemo proizvajati zdravila za AIDS, navkljub patentom."
+
+msgid  "__scenar8-outro-2__"
+msgstr "-Vendar jih ne smemo izva¾ati... Vsaj ne uradno. \
+Ne morem pa odgovarjati za uporabo mojih produktov, na ¾alost. \
+Ampak, so zato moje cene zelo ugodne."
+
+msgid  "__scenar8-outro-3__"
+msgstr "-Èeprav je ilegalno ...nimamo druge mo¾nosti. \
+Vsekakor pa bi moralo biti kaznivo ne pomagati tem ljudem !"
+
+msgid  "__scenar8-outro-4__"
+msgstr "-Bi se mi pridru¾il pri partiji bowlinga, medtem ko se tovor nalaga ?"
+
+msgid  "__scenar9-intro-1__"
+msgstr "-Tu je najbolj¹i bowling v celem Bombaju. \
+Si za kratko igro ?"
+
+msgid  "__scenar9-intro-2__"
+msgstr "-..."
+
+msgid  "__scenar9-intro-3__"
+msgstr "-Roke kvi¹ku ! Ko pre¹tejem do pet, postrelim vse !!"
+
+msgid  "__scenar9-intro-4__"
+msgstr "-Hmm, Èe ga porinem med keglje in podrem vse, bo ujet v avtomatu..."
+
+msgid  "__scenar9-outro-1__"
+msgstr "-Tux, Pojdi k vragu ! ... Bum! Bum!"
+
+msgid  "__scenar9-outro-2__"
+msgstr "-Juhu, vseh 10 !"
+
+msgid  "__scenar9-outro-3__"
+msgstr "-©e se bova sreèala, Tux... Spusti me,ti neumna ma¹ina !"
+
+msgid  "__scenar10-intro-1__"
+msgstr "-Imam zdravila... Zdaj ne more iti niè veè naro..."
+
+msgid  "__scenar10-intro-2__"
+msgstr "-Joj, tako mi je ¾al ! Sem vas porinil ? Ampak tebe pa poznam. \
+Kak¹na sreèa !"
+
+msgid  "__scenar10-intro-3__"
+msgstr "-Mudi se mi, oprosti..."
+
+msgid  "__scenar10-intro-4__"
+msgstr "-Morava dobiti vse nazaj... In to dovolj hitro, èe hoèeva ujeti letalo ! \
+Najprej pa mora¹ najti motor, da lahko z njim pleza¹ po stavbah."
+
+msgid  "__scenar10-1__"
+msgstr "-Tux ! Letalo ¾e vzleta ! Prepozna sva ...!"
+
+msgid  "__medoc_winner__"
+msgstr "-Imam jih !"
+
+msgid  "__bowlingformat__"
+msgstr "%s krogel in %s kegljev je ostalo"
+
+msgid  "__bowling_looser__"
+msgstr "Izgubil si !"
+
+msgid  "__bowling_winner_strike__"
+msgstr "Juhu, vseh 10 !"
+
+
+msgid  ""
+msgstr ""
+
+"Project-Id-Version: Slune 0.6.1\n"
+"Last-Translator: Matija Uklje (Hook) <matija.suklje@rutka.net>\n"
+"Language-Team: Slovenian <matija.suklje@rutka.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+
+

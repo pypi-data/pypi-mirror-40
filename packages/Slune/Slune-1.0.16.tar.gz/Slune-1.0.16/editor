@@ -1,0 +1,82 @@
+#! /usr/bin/python -O
+# -*- python -*-
+
+# Slune
+# Copyright (C) 2002-2003 Jean-Baptiste LAMY
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+# To add static light in the editor :
+#obj.shape.compute_static_light([obj.children[0]])
+
+import soya
+
+soya.init()
+
+import sys, soya.editor, soya.editor.main, Tkinter, editobj, cPickle as pickle
+
+from slune.level import Level
+
+import init_editobj
+
+def Race():
+  level = Level()
+  level.init_script = """import slune.race as race
+race.init_race_game(self)"""
+  level.start_script = """import slune.race as race
+race.start_race_game(self)"""
+  level.end_script = """import slune.race as race
+race.end_race_game(self)"""
+  return level
+
+def Fight():
+  level = Level()
+  level.init_script = """import slune.fight as fight
+fight.init_fight_game(self)"""
+  level.start_script = """import slune.fight as fight
+fight.start_fight_game(self)"""
+  level.end_script = """import slune.fight as fight
+fight.end_fight_game(self)"""
+  return level
+
+def FreeStyle():
+  level = Level()
+  level.init_script = """import slune.freestyle as freestyle
+freestyle.init_freestyle_game(self)"""
+  level.start_script = """import slune.freestyle as freestyle
+freestyle.start_freestyle_game(self)"""
+  level.end_script = """import slune.freestyle as freestyle
+freestyle.end_freestyle_game(self)"""
+  return level
+
+def Arena():
+  level = Level()
+  level.init_script = """import slune.arena as arena
+arena.init_arena_game(self)"""
+  level.init_character_script = """import slune.arena as arena
+arena.init_arena_opponent(self, character)"""
+  level.start_script = """import slune.arena as arena
+arena.start_arena_game(self)"""
+  level.end_script = """import slune.arena as arena
+arena.end_arena_game(self)"""
+  return level
+
+soya.editor.main.App(extra_classes = (Level, Race, Fight, FreeStyle, Arena))
+
+for file in sys.argv[1:]:
+  obj = pickle.load(open(file))
+  editobj.edit(obj)
+
+Tkinter.mainloop()

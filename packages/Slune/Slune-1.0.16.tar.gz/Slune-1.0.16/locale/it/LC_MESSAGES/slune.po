@@ -1,0 +1,615 @@
+# Slune
+# Copyright (C) 2002-2003 Jean-Baptiste LAMY
+#
+
+msgid  "__banner_text__"
+msgstr "Versione : %s  . . .  Slune è un gioco Nekeme Prod. (http://www.nekeme.net)  . . .  Sito web : http://oomadness.tuxfamily.org/fr/slune  . . .  Licenza : GPL  . . .  Scritto in Python  . . .  Programmazione in Python/Scenario: Jiba <jiba@tuxfamily.org> - Programmazione in C/Grafica/Musica: Blam <blam@tuxfamily.org> . . . "
+
+msgid  "Back"
+msgstr "Indietro"
+msgid  "Name"
+msgstr "Nome"
+msgid  "on"
+msgstr "sì"
+msgid  "off"
+msgstr "no"
+msgid  "Play campain"
+msgstr "Iniziare una partita"
+msgid  "Play level"
+msgstr "Livello di gioco"
+msgid  "Join multiplayer game"
+msgstr "Iniziare una partita multigiocatore"
+msgid  "Player options"
+msgstr "Opzioni del giocatore"
+msgid  "Hardware options"
+msgstr "Opzioni hardware"
+msgid  "Graphic quality"
+msgstr "Qualità grafica"
+msgid  "Low"
+msgstr "Bassa"
+msgid  "Medium"
+msgstr "Media"
+msgid  "High"
+msgstr "Alta"
+msgid  "Max vision distance"
+msgstr "Massima distanza di visione"
+msgid  "Start"
+msgstr "Comincia"
+msgid  "Use port"
+msgstr "Utilizzare la porta"
+msgid  "Distant (host or IP)"
+msgstr "Macchina remota (host o IP)"
+msgid  "Connect to port"
+msgstr "Connettersi alla porta"
+msgid  "Local: "
+msgstr "Macchina locale : "
+msgid  "Lap number"
+msgstr "Numero di giri"
+msgid  "Opponents"
+msgstr "Numero di partecipanti"
+msgid  "Select level"
+msgstr "Selezionare il livello"
+msgid  "Difficulty"
+msgstr "Livello di difficoltà"
+msgid  "Sounds"
+msgstr "Suoni"
+
+msgid  "__racelapsformat__"
+msgstr "%s giri"
+#msgstr "%s giri\nMiglior giro : %.2f s\nGiro Corrente      : %.2f s"
+msgid  "__scoreformat1__"
+msgstr "Tempi : %.2f s"
+msgid  "__scoreformat2__"
+msgstr " : %s"
+
+msgid  "__figure_looping__"
+msgstr "Looping"
+msgid  "__figure_doublelooping__"
+msgstr "Double looping"
+msgid  "__figure_retrolooping__"
+msgstr "Looping inverse"
+msgid  "__figure_doubleretrolooping__"
+msgstr "Double looping inverse"
+msgid  "__figure_jump__"
+msgstr "Salto"
+msgid  "__figure_longjump__"
+msgstr "Grande salto"
+msgid  "__figure_verylongjump__"
+msgstr "Volo planato"
+msgid  "__figure_climbing__"
+msgstr "Arrampicata"
+msgid  "__figure_highjump__"
+msgstr "Salto in alto"
+msgid  "__figure_rotup__"
+msgstr "Inversione"
+msgid  "__figure_180__"
+msgstr "180"
+msgid  "__figure_360__"
+msgstr "360"
+msgid  "__figure_720__"
+msgstr "720"
+msgid  "__figure_rotup180__"
+msgstr "inversione a 180"
+msgid  "__figure_rotup360__"
+msgstr "inversione a 360"
+msgid  "__figure_rotup720__"
+msgstr "inversione a 720"
+msgid  "__figure_spinfall__"
+msgstr "Piroetta"
+msgid  "__figure_bigspinfall__"
+msgstr "Grande piroetta"
+msgid  "__figure_flamingtorch__"
+msgstr "Torcia"
+msgid  "__figure_bigflamingtorch__"
+msgstr "Grande torcia"
+msgid  "__figure_s__"
+msgstr "'S'"
+msgid  "__figure_doubles__"
+msgstr "Doppia 'S'"
+
+msgid  "__ready__"
+msgstr "Pronto. Attendere la connessione degli altri giocatori e poi schiacciare un tasto qualsiasi o fare click con il mouse per continuare !"
+
+msgid  "Starting game..."
+msgstr "Il gioco comincia..."
+
+msgid  "__connection__"
+msgstr "Giocatore %s connesso da %s."
+
+msgid  "Start new game"
+msgstr "Nuova partita"
+msgid  "Join network game"
+msgstr "Fare una partita in rete"
+msgid  "Options"
+msgstr "Opzioni"
+msgid  "References"
+msgstr "Riferimenti"
+msgid  "Credits"
+msgstr "Crediti"
+msgid  "Quit"
+msgstr "Uscire"
+
+msgid  "Choose level"
+msgstr "Scegliere il livello"
+msgid  "You are"
+msgstr "Tu sei"
+msgid  "Join at (host or IP:port)"
+msgstr "Connettessione a (macchina o IP:porta)"
+msgid  "Slune version %s"
+msgstr "Slune versione %s"
+msgid  "Difficulty level"
+msgstr "Livelli di difficoltà"
+msgid  "Speed"
+msgstr "Velocità"
+msgid  "Character"
+msgstr "Personaggio"
+msgid  "Vehicle"
+msgstr "Veicolo"
+
+msgid  "Newbie"
+msgstr "Novellino"
+msgid  "Hacker"
+msgstr "Hacker"
+msgid  "Guru"
+msgstr "Guru"
+
+msgid  "Car"
+msgstr "Automobile"
+msgid  "Truck"
+msgstr "Camion"
+msgid  "Scooter"
+msgstr "Scooter"
+
+msgid  "Slune options"
+msgstr "Le opzioni di Slune"
+msgid  "Fullscreen"
+msgstr "Schermo intero"
+msgid  "Resolution"
+msgstr "Risoluzione"
+msgid  "Music"
+msgstr "Musica"
+msgid  "Sound"
+msgstr "Suono"
+msgid  "Race laps number"
+msgstr "Numero di giri"
+msgid  "Async load music"
+msgstr "Caricamento asincrono della musica"
+msgid  "Ok"
+msgstr "Ok"
+msgid  "Cancel"
+msgstr "Annullare"
+msgid  "__warning_need_restart__"
+msgstr "Attenzione, bisognerà riavviare il gioco affinché i cambiamenti siano effettivi."
+
+msgid  "Cannot join multiplayer game at %s:%s %s!"
+msgstr "Impossibile cominciare una partita multigiocatore su %s:%s %s !"
+msgid  "Network error!"
+msgstr "Errore di rete!"
+msgid  "__networkbadconfig__"
+msgstr "Opzioni di rete mal configurate! Non è possibile connettersi sulla stessa macchina e sulla stessa porta !"
+
+msgid  "__gameover__"
+msgstr "Game Over !"
+msgid  "__no_time_left__"
+msgstr "Tempo terminato ! Game over."
+msgid  "Level completed!"
+msgstr "Livello completato !"
+msgid  "You have won!"
+msgstr "Hai vinto !"
+msgid  "__race_winner__"
+msgstr "Bravo hai vinto la corsa !"
+msgid  "__race_looser__"
+msgstr "Hai perso! Sei arrivato(a) in posizione %s."
+msgid  "__race_arrival__"
+msgstr "%s è arrivato(a) in posizione %s."
+msgid  "__hunt_failed__"
+msgstr "Lui è troppo lontano... non lo raggiungerò mai."
+
+msgid  "Slune info sources"
+msgstr "Sorgenti di informazione di Slune"
+msgid  "__info__"
+msgstr "Niente di quello che è raccontato in Slune è inventato !\n|\
+\n|\
+La rassegna stampa di ActUp\n|\
+http://www.actupp.org/1er_decembre/decembre2000/doss_press_1er_decembre.pdf\n|\
+\n|\
+Pfizer : la trique au Nord, la mort au Sud\n|\
+http://www.essentialdrugs.org/emed/hma/e-med.200005/msg00019.php\n|\
+\n|\
+Una soluzione ? La medicina tradizionale !\n|\
+http://fr.allafrica.com/stories/200207150307.html\n|\
+\n|\
+Informazioni sull'AIDS in Africa\n|\
+http://fr.allafrica.com/aids/\n|\
+\n|\
+Avete altri riferimenti ? Inviateli a jiba@tuxfamily.org, grazie !\n|\
+\n|\
+\n|\
+Site Web di Slune\n|\
+http://oomadness.tuxfamily.org/fr/slune\n|\
+\n|\
+Site Web di Nekeme Prod.\n|\
+http://nekeme.net\n|\
+\n|"
+
+msgid  "__indusmeeting-shoot-1-1__"
+msgstr "Fai cadere la palla lanciando i tronchi !"
+
+msgid  "__scenar1-intro-0__"
+msgstr "Europa, 8 Gennaio 2003, 17:30"
+msgid  "__scenar1-intro-1__"
+msgstr "Drin drin...!"
+msgid  "__scenar1-intro-2__"
+msgstr "Eccoti Tux ! Ho convinto un laboratorio a regalarci delle medicine per l'Africa ... puoi venire con il camion grande ?"
+msgid  "__scenar1-intro-3__"
+msgstr "Arrivo ! Dov'è ?"
+msgid  "__scenar1-intro-4__"
+msgstr "Ti guiderò io. Per avanzare lentamente, posizionare il cursore del mouse nella parte bassa dello schermo, e per andare più veloce, posizionarlo in alto. Per curvare, posizionare il cursore a destra o a sinistra."
+
+msgid  "__scenar1-1__"
+msgstr "Gira a sinistra."
+msgid  "__scenar1-2__"
+msgstr "Continua dritto."
+msgid  "__scenar1-3__"
+msgstr "Continua verso i giardini e gira a destra alla fine."
+msgid  "__scenar1-4__"
+msgstr "No, non di là ! Ho detto in fondo a destra !"
+msgid  "__scenar1-5__"
+msgstr "Va bene... segui questa strada."
+msgid  "__scenar1-6__"
+msgstr "Entra nel cortile alla tua destra."
+msgid  "__scenar1-7__"
+msgstr "Esci diritto e poi gira a sinistra."
+msgid  "__scenar1-8__"
+msgstr "La strada principale si divide in due ; gira a sinistra..."
+msgid  "__scenar1-9__"
+msgstr "...beh, no, volevo dire a destra ! Inversione !"
+msgid  "__scenar1-10__"
+msgstr "Ecco, è qui. Continua..."
+
+msgid  "__scenar1-outro-1__"
+msgstr "Bene, vedo che sei un buon guidatore."
+msgid  "__scenar1-outro-2__"
+msgstr "Portate il vostro camion sulla piattaforma di carico, siamo pronti a caricare."
+msgid  "__scenar1-outro-3__"
+msgstr "Ma... sembrano campionari."
+msgid  "__scenar1-outro-4__"
+msgstr "Si. E' per questo che li regaliamo. Sperando di farci qualche nuovo cliente..."
+msgid  "__scenar1-outro-5__"
+msgstr "Non andremo lontano con *quello*..."
+
+
+msgid  "__scenar2-intro-1__"
+msgstr "L'AIDS è finita... viva l'ipertensione e il diabete !"
+msgid  "__scenar2-intro-2__"
+msgstr "In alcuni paesi africani ci sono più del 30% di malati di AIDS..."
+msgid  "__scenar2-intro-3__"
+msgstr "Il nostro laboratorio si concentra su Europa ed USA, signor Gnu. E' una buona strategia, vero ?"
+msgid  "__scenar2-intro-4__"
+msgstr "Non mi iscrivo al fan club."
+msgid  "__scenar2-intro-5__"
+msgstr "Ehm... devo lasciarla adesso, ho una riunione importante."
+msgid  "__scenar2-intro-6__"
+msgstr "Seguilo con discrezione... porterò il camion indietro e ti incontrerò. Se necessario, utilizzare il bottone sinistro del mouse per saltare."
+
+msgid  "__scenar2-1__"
+msgstr "Credo che mi abbia visto... pronto a visitare l'intera città ?"
+msgid  "__scenar2-2__"
+msgstr "Ti avevo detto di non farti vedere... "
+
+
+msgid  "__scenar3-intro-1__"
+msgstr "E' entrato qui e ha chiuso la porta..."
+msgid  "__scenar3-intro-2__"
+msgstr "-Che cosa aspetti ? Salta, fai dei giri e dei gesti per attirare l'attenzione!"
+msgid  "__scenar3-intro-3__"
+msgstr "-E' possibile saltare molto in alto con il bottone centrale del mouse o il tasto shift. In volo è possibile inclinare il veicolo con la rotella del mouse o con i due bottoni di salto."
+
+msgid  "__scenar3-1__"
+msgstr "-...ehi ! hai visto quel tizio ?"
+msgid  "__scenar3-2__"
+msgstr "-Wow... che stile !"
+msgid  "__scenar3-3__"
+msgstr "-Mi sa che è un professionista..."
+msgid  "__scenar3-4__"
+msgstr "-Lo vedremmo meglio se aprissimo la porta..."
+msgid  "__scenar3-5__"
+msgstr "-E tu sai che possiamo farlo!"
+msgid  "__scenar3-6__"
+msgstr "-Sì ma nessuno lo saprà mai... io apro !"
+msgid  "__scenar3-7__"
+msgstr "-Forza, torniamo al lavoro\n_Si hai ragione...\nGame over !"
+
+
+msgid  "__scenar4-outro-1__"
+msgstr "-Che cosa pensate di questo progetto di includere i farmaci antiretrovirali che producete nella lista dei medicinali essenziali dell'OMS ?"
+msgid  "__scenar4-outro-2__"
+msgstr "-Il nostro governo (gli USA) è contrario : permetterà all'Africa di produrre una sua medicina. C'è gente che muore a causa dell'AIDS, ma c'è anche gente che vive grazie ad essa. Il nostro guadagno è solo del 90% su quei prodotti..."
+msgid  "__scenar4-outro-3__"
+msgstr "-Comunque, né il vostro laboratorio né gli USA siedono all'OMS..."
+msgid  "__scenar4-outro-4__"
+msgstr "-No, ed ecco perché ho bisogno di te. 100.000E sono stati versati sul tuo conto stamattina..."
+msgid  "__scenar4-outro-5__"
+msgstr "-Bene, farò di tutto per fare fallire questo progetto."
+
+
+msgid  "__scenar5-intro-1__"
+msgstr "-Ehi, è corruzione ! Vergogna ! E al tuo laboratorio non mancavano i soldi se avevi 100.000E..."
+msgid  "__scenar5-intro-2__"
+msgstr "-Piccolo ingenuo... non avresti dovuto seguirmi. I miei sicari si prenderanno cura di te."
+msgid  "__scenar5-intro-3__"
+msgstr "-Sei morto, piccolo piguino !"
+msgid  "__scenar5-intro-4__"
+msgstr "-Via ! Verso la citta, Gnu dovrebbe essere là ad aspettarmi !"
+
+msgid  "__scenar5-outro-1__"
+msgstr "-Ciao Squalo, questa webcam è collegata ad Internet. Sei d'accordo se filmo ciò che fanno i tuoi compari ?"
+msgid  "__scenar5-outro-2__"
+msgstr "-Ci incontreremo ancora, Gnu..."
+
+
+msgid  "__scenar6-intro-0__"
+msgstr "Europa, 20 Marzo 2003, 18:30"
+msgid  "__scenar6-intro-1__"
+msgstr "-Nessuna casa farmaceutica ha accettato di donarci medicinali sufficienti."
+msgid  "__scenar6-intro-2__"
+msgstr "-Temo che ci dovremo dimenticare della nostra spedizione umanitaria..."
+msgid  "__scenar6-intro-3__"
+msgstr "Drin drin...!"
+msgid  "__scenar6-intro-4__"
+msgstr "-Pronto ? State cercando delle medicine ? Venite stasera sulla montagna, in un luogo chiamato la capanna del boscaiolo."
+msgid  "__scenar6-intro-5__"
+msgstr "-Chi sei tu ? Cosa..."
+msgid  "__scenar6-intro-6__"
+msgstr "Tuuu tuuu tuuu..."
+msgid  "__scenar6-intro-7__"
+msgstr "-Andrai là stasera, Tux..."
+msgid  "__scenar6-intro-8__"
+msgstr "-Ho l'impressione che siamo osservati ! Cammina sul tetto per evitare di essere visto, e ricorda di usare il passaggio segreto, in fondo al giardino del castello."
+
+msgid  "__scenar6-1__"
+msgstr "-Ehi ! Mi ha visto ! Scappiamo !"
+msgid  "__scenar6-2__"
+msgstr "-Avevo detto di non farti vedere ! Ora non puoi andare alla capanna senza rischiare la vita del nostro contatto !"
+
+
+msgid  "__scenar7-intro-1__"
+msgstr "-Seguendo la direzione indicata dai tronchi d'albero, dovremmo trovare la capanna del boscaiolo."
+
+msgid  "__scenar7-1__"
+msgstr "-Banzaï !!!!"
+msgid  "__scenar7-2__"
+msgstr "-Una moto ! Con una moto potrei superare qualsiasi ostacolo, anche in verticale !"
+msgid  "__scenar7-3__"
+msgstr "-La capanna è lassù ! Ma come raggiungerla ?"
+msgid  "__scenar7-4__"
+msgstr "-Segui la strada, troverai una moto... poi, torna da me."
+
+msgid  "__scenar7-outro-1__"
+msgstr "-Benvenuto, Tux. Io sono Python, il direttore di un laboratorio farmaceutico in India."
+msgid  "__scenar7-outro-2__"
+msgstr "-Io non posso regalarvi i medicinali che cercate. Però, i miei prezzi sono 3 volte inferiori a quelli dei miei concorrenti statunitensi."
+msgid  "__scenar7-outro-3__"
+msgstr "-Con i miei risparmi, quelli di Gnu e vari aiuti... è possibile !"
+msgid  "__scenar7-outro-4__"
+msgstr "-Ci rivediamo in India tra un mese. Sii discreto poiché quello che facciamo è... illegale."
+msgid  "__scenar7-outro-5__"
+msgstr "-Heuaaaah...!"
+
+msgid  "__scenar8-intro-0__"
+msgstr "India, 4 Aprile 2003, 9:30"
+msgid  "__scenar8-intro-1__"
+msgstr "-Siamo qui. Dobbiamo ancora trovare il laboratorio..."
+msgid  "__scenar8-intro-2__"
+msgstr "-Non dovete che seguire i miei sicari... credo che anche loro stiano andando là."
+msgid  "__scenar8-intro-3__"
+msgstr "-Shark !"
+msgid  "__scenar8-intro-4__"
+msgstr "-Presto, bisogna fermare questi assassini ! Prendere il bonus verde ed utilizzare il plasma con il bottone destro del mouse o il tasto Alt."
+
+msgid  "__scenar8-1__"
+msgstr "-E' troppo tardi... 3... 2... 1... 0 !"
+
+msgid  "__scenar8-outro-1__"
+msgstr "-Benvenuto in India, Tux. Le leggi sui brevetti sono abbastanza diverse nel mio paese, e quindi possiamo ancora produrre le medicine anti-AIDS nonostante i brevetti."
+msgid  "__scenar8-outro-2__"
+msgstr "-Però, non ci è permesso esportarle... almeno non ufficialmente. Ad ogni modo, non sono responsabile per come verranno utilizzate le mie medicine... ed i miei prezzi sono molto vantaggiosi."
+msgid  "__scenar8-outro-3__"
+msgstr "-E' illegale ma... non abbiamo altra scelta. Comunque non dovrebbe essere legale lasciare morire la gente in questo modo !"
+msgid  "__scenar8-outro-4__"
+msgstr "-Intanto che aspettiamo il carico, che ne dici di un piccolo bowling ?"
+
+msgid  "__scenar9-intro-1__"
+msgstr "-Ecco il miglior bowling di Bombay. Una piccola partita in attesa che il carico sia pronto ?"
+msgid  "__scenar9-intro-2__"
+msgstr "-..."
+msgid  "__scenar9-intro-3__"
+msgstr "-Mani in alto ! Conto fino a cinque e poi sparo !"
+msgid  "__scenar9-intro-4__"
+msgstr "-Se lo spingo tra i birilli e poi faccio strike, sarà intrappolato nella macchina..."
+
+msgid  "__scenar9-outro-1__"
+msgstr "-L'inferno ti toglierà dalla banchisa, Tux... Bang ! Bang !"
+
+msgid  "__scenar9-outro-2__"
+msgstr "-Strike !"
+msgid  "__scenar9-outro-3__"
+msgstr "-Ci rivedremo ancora Tux... lasciami andare stupida macchina !"
+
+msgid  "__scenar10-intro-1__"
+msgstr "-Ho le medicine... D'ora in avanti non vedo cosa potrebbe andare storto..."
+msgid  "__scenar10-intro-2__"
+msgstr "-O scusa ! Ti ho spinto ? Ma ho l'impressione che ci conosciamo, che colpo di fortuna !"
+msgid  "__scenar10-intro-3__"
+msgstr "-Spiacente, ho fretta."
+msgid  "__scenar10-intro-4__"
+msgstr "-Dobbiamo riportare tutto indietro... e abbastanza in fretta se non vogliamo perdere l'aereo ! Innanzitutto devo trovare una moto per salire in cima ai palazzi."
+
+msgid  "__scenar10-1__"
+msgstr "-Tux ! L'aereo sta decollando ! E' troppo tardi, non ce l'abbiamo fatta...!"
+
+
+
+
+msgid  "__scenar11-intro-1__"
+msgstr "-L'aereo sta per decollare... è troppo tardi!"
+
+msgid  "__scenar11-intro-2__"
+msgstr "-No, abbiamo ancora un'altra possibilità! Non c'è tempo per salire, \
+presto, raggiungi l'aereo ed atterraci sopra!"
+
+msgid  "__scenar11-intro-3__"
+msgstr "-Così eviteremo la dogana. Non c'è bisogno di ricordarti \
+che la nostra importazione di farmaci è... vietata, anche se ciò \
+può salvare delle vite!"
+
+msgid  "__scenar11-intro-4__"
+msgstr "-OK... ci vediamo col prossimo volo. Ora devo andare!"
+
+msgid  "__scenar11-1__"
+msgstr "-Tux, l'aereo è partito ed i doganieri stanno arrivando ... \
+è troppo tardi, non ce l'abbiamo fatta!"
+
+msgid  "__scenar12-intro-1__"
+msgstr "-A nome del capitano e del suo equipaggio vi diamo il benvenuto \
+a bordo del nostro volo per l'Africa!"
+
+msgid  "__scenar12-intro-2__"
+msgstr "-Herr... devo aver sognato, ma penso di avere appena visto uno \
+dei sicari di Shark!"
+
+msgid  "__scenar13-intro-0__"
+msgstr "-Africa, 18 Giugno 2003, 13:15"
+
+msgid  "__scenar13-intro-1__"
+msgstr "-Ciao, sono la tua guida, Gnu mi ha mandato per aiutarti ad \
+attraversare il deserto. Seguimi !"
+
+msgid  "__scenar13-intro-2__"
+msgstr "-E' scappato... era una trappola ! Ed ora sono qui, perso in \
+mezzo al deserto."
+
+msgid  "__scenar13-intro-3__"
+msgstr "-Se facessi delle acrobazie, forse qualcuno si accorgerebbe \
+di me ?"
+
+msgid  "__scenar13-intro-4__"
+msgstr "-Saltando ed usando il turbo, posso salire veramente in alto \
+e fare delle divertenti giravolte."
+
+msgid  "__scenar13-1__"
+msgstr "-Sta arrivando una tempesta, è tutto perduto!"
+
+msgid  "__scenar13-outro-1__"
+msgstr "-Sono tornato... io, hummm, io... io ho visto le tue \
+acrobazie..."
+
+msgid  "__scenar13-outro-2__"
+msgstr "-Shark mi ha dato un sacco di soldi per farti perdere \
+nel deserto, ed io non sono ricco"
+
+msgid  "__scenar13-outro-3__"
+msgstr "-Ma ho appena scoperto che mia figlia ha l'AIDS..."
+
+msgid  "__scenar13-outro-4__"
+msgstr "-Ti darò le medicine per tua figlia, se tu mi guidi in\
+Botswana, uno dei paesi maggiormente colpiti dall'AIDS."
+
+msgid  "__scenar14-intro-1__"
+msgstr "-Tux ! Sei riuscito a scappare dagli uomini di Shark!"
+
+msgid  "__scenar14-intro-2__"
+msgstr "-Distribuiamo le medicine; andiamo per le capanne del \
+villaggio."
+
+msgid  "__scenar14-intro-3__"
+msgstr "-Ti voglio abbattere con questo aereo!!!"
+
+msgid  "__scenar14-outro-1__"
+msgstr "-E così, sei riuscito a sconfiggere i miei sicari alla fine..."
+
+msgid  "__scenar14-outro-2__"
+msgstr "-Shark ! Perchè continui a cercare di fermarci ? Stai vendendo \
+così tante medicine in africa ?"
+
+msgid  "__scenar14-outro-3__"
+msgstr "-No... Effettivamente, non commercializziamo nulla laggiù."
+
+msgid  "__scenar14-outro-4__"
+msgstr "-Ma la nostra leadership verrebbe messa in discussione... \
+prima in Africa, oi in Sud America, Asia, Europa..."
+
+msgid  "__scenar14-outro-5__"
+msgstr "-Non posso crederti! Sei un essere unamo o cosa !?"
+
+msgid  "__scenar14-outro-6__"
+msgstr "-No, infatti."
+
+msgid  "__scenar14-outro-7__"
+msgstr "-Sono riuscito a fermarlo!"
+
+msgid  "__scenar15-intro-1__"
+msgstr "-Bene, mi hai seguito fin qui... Sei così ingenuo, pensi \
+veramente di avere ancora abbastanza tempo per salvare l'umanità ?"
+
+msgid  "__scenar15-intro-2__"
+msgstr "-Mi piacerebbe mangiarmelo col ragù alla bolognese..."
+
+msgid  "__scenar15-intro-3__"
+msgstr "-...o arrostito alla griglia!"
+
+msgid  "__scenar15-intro-4__"
+msgstr "-Devo liberarmi... di questa cosa!"
+
+msgid  "__scenar15-intro-5__"
+msgstr "-Preparati a morire..."
+
+msgid  "__scenar15-outro-1__"
+msgstr "-Haaa... mi hai preso... non è possibile...?"
+
+msgid  "__scenar15-outro-2__"
+msgstr "-Non tornate mai più sulla Terra, banda di alieni \
+d=E9g=E9n=E9r=E9s !"
+
+msgid  "__scenar15-outro-3__"
+msgstr "-Adesso che questo alieno sottile se ne è andato, spero che \
+sarà più facile ottenere i farmaci"
+
+msgid  "__scenar15-outro-4__"
+msgstr "-Non ci sperare troppo Gnu, gli umani non sono sempre più \
+affidabili degli alieni"
+
+msgid  "__scenar15-outro-5__"
+msgstr "-Anch'io ero un essere umano, tanto tempo fa, e guardate \
+che cosa sono diventato..."
+
+msgid  "__scenar15-outro-6__"
+msgstr "-Quello è il morale di questa storia, Shark: spesso il genere \
+umano è come un alieno per l'umanità stessa."
+
+
+
+
+
+
+msgid  "__medoc_winner__"
+msgstr "-Li ho presi tutti !"
+
+
+msgid  "__bowlingformat__"
+msgstr "Rimangono %s bocce e %s birilli"
+msgid  "__bowling_looser__"
+msgstr "Hai perso !"
+msgid  "__bowling_winner_strike__"
+msgstr "Strike !"
+
+msgid  ""
+msgstr ""
+
+"Project-Id-Version: Slune 0.6\n"
+"Last-Translator: Andrea Tasso <andrea@tasso.info>\n"
+"Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+
+

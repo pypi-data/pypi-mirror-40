@@ -1,0 +1,127 @@
+***************
+*** 6,22 ****
+  # 
+  # 
+  msgid ""
+- msgstr ""
+- "Project-Id-Version: Slune 1.0.4\n"
+- "Report-Msgid-Bugs-To: \n"
+- "POT-Creation-Date: (null)\n"
+- "PO-Revision-Date: 2004-11-17 23:48+0100\n"
+- "Last-Translator: Manuel Urbano Santos <mu01@fedro.ugr.es>\n"
+- "Language-Team: Spanish/Spain <Project-Id-Version: es>\n"
+- "Report-Msgid-Bugs-To: "
+- "MIME-Version: 1.0\n"
+- "Content-Type: text/plain; charset=iso-8859-15\n"
+- "Content-Transfer-Encoding: 8bit"
+  
+  msgid "Back"
+  msgstr "Volver"
+--- 6,27 ----
+  # 
+  # 
+  msgid ""
++ msgstr ""
++ "Project-Id-Version: Slune 1.0.4\n"
++ "Report-Msgid-Bugs-To: \n"
++ "POT-Creation-Date: (null)\n"
++ "PO-Revision-Date: 2004-11-17 23:48+0100\n"
++ "Last-Translator: Manuel Urbano Santos <mu01@fedro.ugr.es>\n"
++ "Language-Team: Spanish/Spain <Project-Id-Version: es>\n"
++ "Report-Msgid-Bugs-To: MIME-Version: 1.0\n"
++ "Content-Type: text/plain; charset=iso-8859-15\n"
++ "Content-Transfer-Encoding: 8bitX-POFile-SpellExtra: Sígueme\n"
++ "X-POFile-SpellExtra: OMS www Sud Humm estilazo Yuju emed farmaceúticas\n"
++ "X-POFile-SpellExtra: súbete partidilla Banzai slune Hacker Strike\n"
++ "X-POFile-SpellExtra: Prepárate Tux EEUU php on Síguele errr fans Tuuu\n"
++ "X-POFile-SpellExtra: bonus html Sudamérica GPL http Gnu farmaceútica org\n"
++ "X-POFile-SpellExtra: Juanker tí acércate webcam Shark multijugador ehhh\n"
++ "X-POFile-SpellExtra: Bombay Slune Blam localhost pdf tuuu\n"
+  
+  msgid "Back"
+  msgstr "Volver"
+***************
+*** 319,325 ****
+  msgstr "-¡No! ¡Todavía tenemos una oportunidad! No hay tiempo, ¡date prisa! ¡alcanza el avión y súbete encima!"
+  
+  msgid "__scenar11-intro-3__"
+- msgstr "-Así evitaremos la aduana. No tengo que recordate que nuestra medicina de importación está... prohibida, ¡aún cuando puede salvar vidas!"
+  
+  msgid "__scenar11-intro-4__"
+  msgstr "-De acuerdo... nos veremos en el próximo vuelo. ¡Tengo que irme!"
+--- 324,330 ----
+  msgstr "-¡No! ¡Todavía tenemos una oportunidad! No hay tiempo, ¡date prisa! ¡alcanza el avión y súbete encima!"
+  
+  msgid "__scenar11-intro-3__"
++ msgstr "-Así evitaremos la aduana. No tengo que recordarte que nuestra medicina de importación está... prohibida, ¡aún cuando puede salvar vidas!"
+  
+  msgid "__scenar11-intro-4__"
+  msgstr "-De acuerdo... nos veremos en el próximo vuelo. ¡Tengo que irme!"
+***************
+*** 337,343 ****
+  msgstr "África, 18 de Junio del 2003, 13:15"
+  
+  msgid "__scenar13-intro-1__"
+- msgstr "-Hola, soy el guía. Gnu me ha envíado para que te ayude a cruzar el desierto. ¡Sígueme!"
+  
+  msgid "__scenar13-intro-2__"
+  msgstr "-Ha huído... ¡Era una trampa! Y ahora estoy aquí, perdido en mitad del desierto."
+--- 342,348 ----
+  msgstr "África, 18 de Junio del 2003, 13:15"
+  
+  msgid "__scenar13-intro-1__"
++ msgstr "-Hola, soy el guía. Gnu me ha enviado para que te ayude a cruzar el desierto. ¡Sígueme!"
+  
+  msgid "__scenar13-intro-2__"
+  msgstr "-Ha huído... ¡Era una trampa! Y ahora estoy aquí, perdido en mitad del desierto."
+***************
+*** 376,382 ****
+  msgstr "-¡Shark! ¿Por qué te empeñas en detenernos! ¿Tanta medicina vendes en África?"
+  
+  msgid "__scenar14-outro-3__"
+- msgstr "-En realidad no... ni siquera vendemos medicina aquí."
+  
+  msgid "__scenar14-outro-4__"
+  msgstr "-Pero nuestro liderazgo puede verse amenazado... Primero África, después Sudamérica, Asia, Europa..."
+--- 381,387 ----
+  msgstr "-¡Shark! ¿Por qué te empeñas en detenernos! ¿Tanta medicina vendes en África?"
+  
+  msgid "__scenar14-outro-3__"
++ msgstr "-En realidad no... ni siquiera vendemos medicina aquí."
+  
+  msgid "__scenar14-outro-4__"
+  msgstr "-Pero nuestro liderazgo puede verse amenazado... Primero África, después Sudamérica, Asia, Europa..."
+***************
+*** 445,451 ****
+  msgstr "-Bueno... yo... errr... tengo que irme... ahora... tengo una cita importante..."
+  
+  msgid "__scenar2-intro-6__"
+- msgstr "-Síguele discretamente... Yo devolveré el camión y me veré contigo más tarde. Usa el botón izquierdo del ratón par saltar si es necesario."
+  
+  msgid "__scenar3-1__"
+  msgstr "-¡Eh! ¡Mira ese tío!"
+--- 450,456 ----
+  msgstr "-Bueno... yo... errr... tengo que irme... ahora... tengo una cita importante..."
+  
+  msgid "__scenar2-intro-6__"
++ msgstr "-Síguele discretamente... Yo devolveré el camión y me veré contigo más tarde. Usa el botón izquierdo del ratón para saltar si es necesario."
+  
+  msgid "__scenar3-1__"
+  msgstr "-¡Eh! ¡Mira ese tío!"
+***************
+*** 582,588 ****
+  msgstr "India, 4 de Abril del 2003, 9:30 de la mañana."
+  
+  msgid "__scenar8-intro-1__"
+- msgstr "-Aquí estamos. Pero todavía tenemos que encontar el laboratorio..."
+  
+  msgid "__scenar8-intro-2__"
+  msgstr "-¿Por qué no sigues a mis Asesinos? Creo que van para allá."
+--- 587,593 ----
+  msgstr "India, 4 de Abril del 2003, 9:30 de la mañana."
+  
+  msgid "__scenar8-intro-1__"
++ msgstr "-Aquí estamos. Pero todavía tenemos que encontrar el laboratorio..."
+  
+  msgid "__scenar8-intro-2__"
+  msgstr "-¿Por qué no sigues a mis Asesinos? Creo que van para allá."

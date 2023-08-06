@@ -1,0 +1,80 @@
+.TH "slune" "6" "0.4.0" "Jiba (Lamy Jean-Baptiste)" "Games"
+.SH "NAME"
+.LP 
+slune \- a fun 3D racing game
+.SH "SYNTAX"
+.LP 
+slune [\fIoptions...\fP]
+.SH "DESCRIPTION"
+.LP 
+Slune is a 3D fun racing game in which Tux and Gnu must provide AIDS medicine to Africa. A peer2peer based multiplayer mode is available. The game can be played either with keyboard or with a mouse (a third button mouse with roll is adviced).
+.br 
+Slune is a Nekeme game <http://nekeme.net>. It is written in Python and available as free software, under the GPL.
+.br 
+The command\-line options are usually useless, just start the game with 'slune'. About all options (such as fullscreen,...) can be set in the game.
+.SH "OPTIONS"
+.LP 
+.TP 
+\fB\-\-help\fR
+Output help information and exit.
+.TP 
+\fB\-\-version\fR
+Output version information and exit.
+.TP 
+\fB\-\-tk\fR
+(Old) TK interface.
+.TP 
+\fB\-\-fullscreen\fR
+Fullscreen mode.
+.TP 
+\fB\-\-windowed\fR
+Windowed mode (default).
+.TP 
+\fB\-\-screensize <\fIwidth\fP> <\fIheight\fP>\fR
+Sets the screen size (in pixel, default is 640 480).
+.TP 
+\fB\-\-no\-fps\-limit\fR
+Disable FPS limit, for benchmarking (default is to limit FPS to 40).
+.TP 
+\fB\-\-level <\fIlevelname\fP>\fR
+Immediately starts the game in level <\fIlevelname\fP> (e.g. "mission\-1").
+.TP 
+\fB\-\-name <\fIname\fP>\fR
+Sets the player's <\fIname\fP> (default is your username).
+.TP 
+\fB\-\-port <\fIport\fP>\fR
+Sets the socket's TCP <\fIport\fP> number (default 36079).
+.TP 
+\fB\-\-parrain\-host <\fIhost\fP>\fR
+Join an already existant multiplayer game that someone (the "parrain") is playing at <\fIhost\fP>.
+.TP 
+\fB\-\-parrain\-port <\fIport\fP>\fR
+Sets the parrain's socket's TCP <\fIport\fP> number (default 36079).
+.TP 
+\fB\-2\fR
+Join an already existant multiplayer game on the *same* computer (e.g. for testing). Equivalent to "\-\-port 36179 \-\-parrain\-host 127.0.0.1 \-\-parrain\-port 36079".
+.SH "CONTROLS"
+Slune can be played either with a keyboard or a mouse. The cursor keys
+or the mouse can be used to turn the car (left or right) or make it go faster (up)
+or slower (down). Additionally, the following actions are possible:
+.LP 
+.TP 
+\fBShift\fR or \fBMouse middle button\fR
+Makes your racing car take a long jump.
+.TP 
+\fBControl\fR or \fBMouse right button\fR
+Makes your racing car take a hight jump.
+.TP 
+\fBAlt\fR or \fBMouse left button\fR
+Enables nitro mode, which makes the car go faster but consumes your energy.
+.br
+When jumping you can roll with up or down and use the control or shift
+keys to look up or down.
+.br
+The \fBq\fR or \fBescape\fR keys can be used to exit at any time.
+.SH "FILES"
+.LP 
+\fI~/.slune\fP 
+.SH "AUTHORS"
+.LP 
+Jiba (Lamy Jean\-Baptiste) <jiba@tuxfamily.org>

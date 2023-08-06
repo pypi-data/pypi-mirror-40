@@ -1,0 +1,99 @@
+#! /usr/bin/python -O
+# -*- python -*-
+
+# Slune
+# Copyright (C) 2002-2003 Jean-Baptiste LAMY
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+# A verification server for Slune -- for debugging.
+
+import sys, socket, thread, cPickle as pickle
+
+
+POSITIONS = {}
+
+def check_pos(player, round, pos, info):
+  other = POSITIONS.get((player, round))
+  if other:
+    if not pos == other:
+      print "Player %s, round %s:" % (player, round)
+      print pos
+      print other
+      print info
+      print "\a"
+  else:
+    POSITIONS[(player, round)] = pos
+    
+def treat_pos_client(client):
+  first = 1
+  try:
+    while 1:
+      player, round, pos, info = pickle.load(client)
+      if first:
+        print "(Client %s connected, at round %s)" % (player, round)
+        first = 0
+        
+      check_pos(player, round, pos, info)
+  except:
+    sys.excepthook(*sys.exc_info())
+    print "(client disconnected)"
+    
+
+FIRST_PLAYER = ""
+ROUNDS       = {}
+
+def check_round(players_rounds, info):
+  key = players_rounds[FIRST_PLAYER]
+  other = ROUNDS.get(key)
+  if other:
+    if not players_rounds == other:
+      print "Round:"
+      print players_rounds
+      print other
+      print info
+      print "\a"
+  else:
+    ROUNDS[key] = players_rounds
+    
+def treat_round_client(client):
+  global FIRST_PLAYER
+  
+  first = 1
+  try:
+    while 1:
+      players_rounds, info = pickle.load(client)
+      if first:
+        if not FIRST_PLAYER: FIRST_PLAYER = players_rounds.keys()[0]
+        first = 0
+        
+      check_round(players_rounds, info)
+  except:
+    sys.excepthook(*sys.exc_info())
+    print "(client disconnected)"
+
+
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+server.bind(("", 36081))
+server.listen(3)
+
+while 1:
+  client, addr = server.accept()
+  
+  client = client.makefile("r", 0)
+  check_type = client.read(1)
+  if   check_type == "P": thread.start_new_thread(treat_pos_client  , (client,))
+  elif check_type == "R": thread.start_new_thread(treat_round_client, (client,))

@@ -1,0 +1,121 @@
+
+* Jan 2003: Slune 0.1
+  * First release
+
+* Feb 2003: Slune 0.2
+  * Lots of changes!
+  * Mission 1 is complete! Mission 2 is well advanced too.
+  * Graphical interface in Tk(inter)
+  * Better IA
+  * 2 characters
+  * 2 vehicles
+  * Bugfixes:
+    * French accentuated characters are OK
+    * Wall collisions are much cleaner
+
+* March 2003: Slune 0.3
+  * Lots of changes!
+  * Mission up to 5 are complete!
+  * Sound and music!
+  * Minimap in racing level
+  * Keyboard mode
+  * 3 characters
+  * 3 vehicles
+  * Slune can be played without machine-wide install
+  * This version has won the first price at the French research
+  ministry's free software game contest !!!
+
+* March 2003: Slune 0.3.1
+  * Bugfixes and optimizations
+
+* April 2003: Slune 0.4
+  * Lots of changes!
+  * New OpenGL interface
+  * Mission 6
+  * "Mode grip" for the scooter
+  * RPM for Manfrake Linux 9.1
+  * Bugfixes:
+    * Network game 'desynchronization' bug fixed
+
+* May 2003: Slune 0.4.1
+  * Characters can rebound on walls
+  * Debian package by Duck
+
+* July 2003: Slune 0.5
+  * Nitro (right click) !
+  * You can move back
+  * Mission 7
+  * New character: Python
+  * Use the new faster version of Soya 3D
+
+* December 2003 : Slune 0.6
+  * 3 new levels (including bowling)
+  * plasma bonus
+  * cell-shading
+
+* December 2003 : Slune 0.6.1
+  * Bugfixes
+
+* December 2003 : Slune 0.6.2
+  * Bugfixes:
+    * Remove "home_page" keyword in setup.py, which cause troubles
+      with old python
+
+* July 2004 : Slune 0.7
+  * New Pyrex-based Soya 0.7
+  * New arena levels
+  * New 'tanker' vehicule
+  * GUI improved for joystick
+
+* August 2004 : Slune 0.8
+  * Cell-shading is back !!!
+  * Shadows !!!
+  * Difficulty reviewed (easier newbie mode)
+  * New levels (lots):
+    * mission-11
+    * mission-12
+    * mission-13
+    * mission-14
+    * mission-15
+    * airport-race-1
+    * deserticsorry-race-1
+    * chapakalake-race-1
+  * Bugfixes (lots, including several segfaults)
+
+* October 2004 : Slune 1.0.4
+  * Final release !!!
+
+* December 2004 : Slune 1.0.5
+  * Spanish translation (thanks Manuel)
+  * Updated English and Swedish translation (thanks Robin)
+  * Use (and require) Soya 0.9
+
+* January 2005 : Slune 1.0.6
+  * Updated German and Norwegian Bokmål translation
+  * Use Psyco if available (Psyco give a 5-10% speed-up for x86)
+  * Bugfixes:
+    * NAME is now predefined in globdef.py
+
+* January 2005 : Slune 1.0.7
+  * run_without_install is back
+  * always select the Tux character while playing the campaign
+  * Bugfixes:
+    * bugfix in networking mode
+
+* April 2005 : Slune 1.0.8
+  * support analogic joypad (thanks Tharibo)
+  * fix French texts (thanks Gourgou)
+
+* August 2005 : Slune 1.0.9
+  * Added SDL_mixer sound support
+  * Fix a sound problem (at least on my computer :-))
+
+* September 2005 : Slune 1.0.10
+  * Disable network support due to security problem
+
+* July 2006 : Slune 1.0.12
+  * Update for new Soya sound API
+  * No longer using the deprecated soya.particle module
+
+* January 2007 : Slune 1.0.14
+  * Update for new soya

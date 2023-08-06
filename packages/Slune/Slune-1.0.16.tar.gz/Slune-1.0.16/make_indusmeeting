@@ -1,0 +1,78 @@
+#! /usr/bin/python -O
+# -*- python -*-
+
+# Slune
+# Copyright (C) 2002-2003 Jean-Baptiste LAMY
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+# launch this script to generate the level
+
+import math, os, os.path
+import copy
+
+import soya
+import soya.model  as model
+import soya.soya3d as soya3d
+import soya.editor.main
+import soya.land
+from soya.math3d import *
+
+import slune.level
+
+
+root = soya3d.World.get("indusmeeting-level")
+# w = soya3d.World(root)
+# w.set_xyz(-20.0, -20.0, -20.0)
+# w.y = -35.0
+# atm = soya3d.Atmosphere()
+# atm.skyplane = 1
+# atm.fog_type    = 0
+# atm.fog_start   = 15.0
+# atm.fog_end     = 50.0
+# atm.fog         = 1
+# atm.fog_density = 0.0
+# atm.cloud = model.Material.get("clouds1")
+# atm.ambient = (0.3, 0.3, 0.6, 1.0)
+# atm.sky_color = (1.0, 0.8, 0.1, 1.0)
+# atm.fog_color = atm.bg_color = (0.2, 0.0, 0.4, 1.0)
+# w.atmosphere = atm
+# light = soya3d.Light(w)
+# light.set_xyz(20.0, 30.0, 20.0)
+# light.diffuse = light.specular = (1.0, 0.7, 0.1, 1.0)
+# light.look_at(Vector(None, 1.0, -0.5, -0.6))
+# light.directional = 1
+
+w = root["land"]
+
+print "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+land = soya.land.Land()
+land.from_image(model.Image("indusmeeting.png"))
+land.map_size = 8
+land.scale_factor = 1.5
+land.texture_factor = 0.5
+land.multiply_height(50.0)
+land.set_texture_layer(model.Material.get("grass1"),  0.0,  20.0)
+land.set_texture_layer(model.Material.get("rocks1"), 20.0,  30.0)
+land.set_texture_layer(model.Material.get("glace1"), 30.0,  32.0)
+land.set_texture_layer(model.Material.get("snow1"),  32.0,  50.0)
+old_land = w.shape
+w.set_shape(land)
+
+root.filename = "indusmeeting-level"
+root.save()
+
+print "Done."

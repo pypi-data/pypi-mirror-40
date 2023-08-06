@@ -1,0 +1,772 @@
+
+# Slune
+# Copyright (C) 2002-2003 Jean-Baptiste LAMY
+#
+msgid  "__networkbadconfig__"
+msgstr "Nettverk er ikke konfigurert! Du kan ikke koble koble til localhost med samme port!"
+
+msgid  "__racelapsformat__"
+msgstr "%s runder"
+#msgstr "%s laps\nBest    lap: %.2f s\nCurrent lap: %.2f s"
+
+msgid  "__ready__"
+msgstr "Klar. Vent på at andre spillere kobler til og trykk på en tast eller museknapp !"
+
+msgid  "__connection__"
+msgstr "Spiller %s fra %s koblet til."
+
+msgid  "__warning_need_restart__"
+msgstr "Advarsel, du må kanskje restarte spillet for at forandringer skal tre i effekt."
+
+msgid  "__gameover__"
+msgstr "Spillet er over."
+msgid  "__no_time_left__"
+msgstr "Ingen tid igjen ! Spillet er over."
+msgid  "__race_winner__"
+msgstr "Du har vunnet !"
+msgid  "__race_looser__"
+msgstr "Du tapte... du fullførte som #%s."
+msgid  "__race_arrival__"
+msgstr "%s ankom som #%s."
+msgid  "__hunt_failed__"
+msgstr "Han er for langt unna... Jeg tar ham aldri igjen!"
+
+msgid  "__info__"
+msgstr "Ikke alt som er sagt i Sluna er en spøk !\n|\
+(flesteparten av referansene er på fransk, vennligst send meg en epost\n|\
+på jiba@tuxfamily.org) hvis du har norske referanser)\n|\
+\n|\
+ActUp\n|\
+http://www.actupp.org/1er_decembre/decembre2000/doss_press_1er_decembre.pdf\n|\
+\n|\
+Pfizer : la trique au Nord, la mort au Sud\n|\
+http://www.essentialdrugs.org/emed/hma/e-med.200005/msg00019.php\n|\
+\n|\
+Une solution ? la médecine traditionnelle !\n|\
+http://fr.allafrica.com/stories/200207150307.html\n|\
+\n|\
+Info sur le Sida en Afrique\n|\
+http://fr.allafrica.com/aids/\n|\
+\n|\
+\n|\
+Slune hjemmeside\n|\
+http://oomadness.tuxfamily.org/en/slune\n|\
+\n|\
+Nekeme Prod.\n|\
+http://nekeme.net/en\n|\
+\n|"
+
+
+msgid  "__scenar1-intro-0__"
+msgstr "Europa, 8. januar 2003, 18:30"
+msgid  "__scenar1-intro-1__"
+msgstr "Tut tut...!"
+msgid  "__scenar1-intro-2__"
+msgstr "-Ålreit, Tux ! Jeg har overbevist farmasøytiske industrier til å gi oss noen medisiner til Afrika... kan du komme med den store trucken ?"
+msgid  "__scenar1-intro-3__"
+msgstr "-OK ! Hvor er den ?"
+msgid  "__scenar1-intro-4__"
+msgstr "-Jeg skal veilede deg. For å avansere sakte, plasser musepekeren i bunnen av skjermen, for å gå fortere så plasser den på toppen. For å snu så beveg musepekeren til venstre eller høyre."
+
+msgid  "__scenar1-1__"
+msgstr "-Snu til venstre."
+msgid  "__scenar1-2__"
+msgstr "-Gå foran."
+msgid  "__scenar1-3__"
+msgstr "-Gå inn i hagene og snu til høyre ved slutten."
+msgid  "__scenar1-4__"
+msgstr "-Nei, ikke her ! Jeg har sagt LANGT til høyre !"
+msgid  "__scenar1-5__"
+msgstr "-Bra... følg denne gaten."
+msgid  "__scenar1-6__"
+msgstr "-Gå inn på plassen på din høyre side."
+msgid  "__scenar1-7__"
+msgstr "-går ut foran og snur til venstre."
+msgid  "__scenar1-8__"
+msgstr "-Hovedgaten splittes i to; ta til venstre..."
+msgid  "__scenar1-9__"
+msgstr "-...hum, nei, jeg mente høyre !"
+msgid  "__scenar1-10__"
+msgstr "-Her er det. Fortsett..."
+msgid  "__scenar1-11__"
+msgstr "-Hei! Du fulgte ikke akkurat min vei..."
+
+msgid  "__scenar1-outro-1__"
+msgstr "-Vel, jeg ser at du er bra sjåfør."
+msgid  "__scenar1-outro-2__"
+msgstr "-Ta med deg trucken til lasteplattformen, vi er klare til å laste på den."
+msgid  "__scenar1-outro-3__"
+msgstr "-Hei... det ser ut som prøver."
+msgid  "__scenar1-outro-4__"
+msgstr "-Ja. Det er derfor vi gir deg dem. Håper på nye stamkunder..."
+msgid  "__scenar1-outro-5__"
+msgstr "-Vi vil ikke gå langt med *det*..."
+
+msgid  "__scenar2-intro-1__"
+msgstr "-AIDS er over... lenge leve overstress og diabetes!"
+msgid  "__scenar2-intro-2__"
+msgstr "-Det er mer enn 30% AIDS-ofre i enkelte Afrikanske land..."
+msgid  "__scenar2-intro-3__"
+msgstr "-Vårt laboratorie fokuserer på Europa og USA, herr GNU. Det er en god strategi, ikke sant?"
+msgid  "__scenar2-intro-4__"
+msgstr "-Jeg abonnerer ikke på fanklubben."
+msgid  "__scenar2-intro-5__"
+msgstr "-Hem... Jeg må gå, jeg har et viktig møte."
+msgid  "__scenar2-intro-6__"
+msgstr "-Følg ham med diskresjon... Jeg tar med trucken tilbake og blir med deg."
+
+msgid  "__scenar2-1__"
+msgstr "-Jeg tror han har sett meg... Klar for å besøke hele byen?"
+msgid  "__scenar2-2__"
+msgstr "-Jeg sa *med diskresjon*..."
+
+
+msgid  "__scenar3-intro-1__"
+msgstr "-Han gikk inn her og døren har blitt lukket..."
+msgid  "__scenar3-intro-2__"
+msgstr "-Hva venter du på? Hopp, gjør noen looper og figurer for å tiltrekke deg oppmerksomhet!"
+msgid  "__scenar3-intro-3__"
+msgstr "-Du kan hoppe veldig høyt med den midterste museknappen eller Shift-knappen. Når du flyr kan du bøye ditt kjøretøy ved å rulle med musa eller de to hoppeknappene."
+
+msgid  "__scenar3-1__"
+msgstr "-...Hei! Se på den karen!"
+msgid  "__scenar3-2__"
+msgstr "-Wæv!... god stil!"
+msgid  "__scenar3-3__"
+msgstr "-Han er profesjonell vil jeg tro..."
+msgid  "__scenar3-4__"
+msgstr "-Vi kan se ham bedre om vi åpner døra..."
+msgid  "__scenar3-5__"
+msgstr "-Du veit at vi ikke har rett til det!"
+msgid  "__scenar3-6__"
+msgstr "-Jammen... ingen vil vite om det. Jeg åpner !"
+msgid  "__scenar3-7__"
+msgstr "-Vi må gå tilbake til jobb\n_Du har rett...\nSpillet er over !"
+
+
+msgid  "__scenar5-intro-1__"
+msgstr "-Hei! Det er korrupsjon ! Og labbet ditt mangler ikke penger om du har 100.000E..."
+msgid  "__scenar5-intro-2__"
+msgstr "-Du er naiv... Du burde ikke ha fulgt meg. Mine mordere tar hånd om det."
+msgid  "__scenar5-intro-3__"
+msgstr "-Du er død, lille pingvin !"
+msgid  "__scenar5-intro-4__"
+msgstr "-La oss flykte ! Gå tilbake mot byen, kanskje Gnu venter på meg!"
+
+
+msgid  "__scenar5-outro-1__"
+msgstr "-Hei, Shark... mitt webcam er koblet til internett. Kan jeg filme dere kamerater?"
+msgid  "__scenar5-outro-2__"
+msgstr "-Vi vil møtes igjen, Gnu..."
+
+
+msgid  "__banner_text__"
+msgstr "Versjon: %s  . . .  Slune er fra Nekeme Prod. game (http://www.nekeme.net)  . . .  Hjemmeside: http://oomadness.tuxfamily.org/en/slune/  . . .  Lisens: GPL  . . .  Python powered  . . .  Slune-team: - Python-kode/Scenario: Jiba <jiba@tuxfamily.org> - C-kode/Grafikk/Musikk: Blam <blam@tuxfamily.org>  . . .  "
+
+msgid  "on"
+msgstr "på"
+
+msgid  "off"
+msgstr "av"
+
+msgid  "Play campain"
+msgstr "Spill kampagne"
+
+msgid  "Play level"
+msgstr "Spill brett"
+
+msgid  "Join multiplayer game"
+msgstr "Delta i flerspillerspill"
+
+msgid  "Player options"
+msgstr "Spillervalg"
+
+msgid  "Hardware options"
+msgstr "Maskinvarevalg"
+
+msgid  "Graphic quality"
+msgstr "Grafikkvalitet"
+
+msgid  "Low"
+msgstr "Lav"
+
+msgid  "Medium"
+msgstr "Medium"
+
+msgid  "High"
+msgstr "Høy"
+
+msgid  "Start"
+msgstr "Start"
+
+msgid  "Use port"
+msgstr "Bruk port"
+
+msgid  "Distant (host or IP)"
+msgstr "Distanse (vert eller IP)"
+
+msgid  "Connect to port"
+msgstr "Koble til port"
+
+msgid  "Local: "
+msgstr "Lokal: "
+
+msgid  "Lap number"
+msgstr "Løp-nummer"
+
+msgid  "Opponents"
+msgstr "Konkurrenter"
+
+msgid  "Select level"
+msgstr "Velg brett"
+
+msgid  "Difficulty"
+msgstr "Vanskelighetsgrad"
+
+msgid  "Sounds"
+msgstr "Lyder"
+
+msgid  "__scoreformat1__"
+msgstr "Tim : %.2f s"
+
+msgid  "__scoreformat2__"
+msgstr " : %s"
+
+msgid  "__figure_looping__"
+msgstr "Looping"
+
+msgid  "__figure_doublelooping__"
+msgstr "Double looping"
+
+msgid  "__figure_retrolooping__"
+msgstr "Reverse looping"
+
+msgid  "__figure_doubleretrolooping__"
+msgstr "Double reverse looping"
+
+msgid  "__figure_jump__"
+msgstr "Hopp"
+
+msgid  "__figure_longjump__"
+msgstr "Langt hopp"
+
+msgid  "__figure_verylongjump__"
+msgstr "Veldig langt hopp"
+
+msgid  "__figure_climbing__"
+msgstr "Klatrer"
+
+msgid  "__figure_highjump__"
+msgstr "Høyt hoppp"
+
+msgid  "__figure_rotup__"
+msgstr "Reversing"
+
+msgid  "__figure_180__"
+msgstr "180"
+
+msgid  "__figure_360__"
+msgstr "360"
+
+msgid  "__figure_720__"
+msgstr "720"
+
+msgid  "__figure_rotup180__"
+msgstr "reversed 180"
+
+msgid  "__figure_rotup360__"
+msgstr "reversed 360"
+
+msgid  "__figure_rotup720__"
+msgstr "reversed 720"
+
+msgid  "__figure_spinfall__"
+msgstr "Spinfall"
+
+msgid  "__figure_bigspinfall__"
+msgstr "Big spinfall"
+
+msgid  "__figure_flamingtorch__"
+msgstr "'Flaming torch'"
+
+msgid  "__figure_bigflamingtorch__"
+msgstr "Big 'flaming torch'"
+
+msgid  "__figure_s__"
+msgstr "'S'"
+
+msgid  "__figure_doubles__"
+msgstr "Double 'S'"
+
+msgid  "Starting game..."
+msgstr "Starter spill..."
+
+msgid  "Start new game"
+msgstr "Start nytt spill"
+
+msgid  "Quit"
+msgstr "Avslutt"
+
+msgid  "Choose level"
+msgstr "Velg brett"
+
+msgid  "You are"
+msgstr "Du er"
+
+msgid  "Difficulty level"
+msgstr "Vanskelighetsgrad"
+
+msgid  "Character"
+msgstr "Karakter"
+
+msgid  "Vehicle"
+msgstr "Kjøretøy"
+
+msgid  "Newbie"
+msgstr "Nybegynner"
+
+msgid  "Car"
+msgstr "Bil"
+
+msgid  "Fullscreen"
+msgstr "Fullskjerm"
+
+msgid  "Resolution"
+msgstr "Oppløsning"
+
+msgid  "Music"
+msgstr "Musikk"
+
+msgid  "Sound"
+msgstr "Lyd"
+
+msgid  "Cancel"
+msgstr "Avbryt"
+
+msgid  "Network error!"
+msgstr "Networksfeil!"
+
+msgid  "Level completed!"
+msgstr "Brett fullført!"
+
+msgid  "You have won!"
+msgstr "Du har vunnet!"
+
+msgid  "__scenar7-1__"
+msgstr "-Banzaï!!!!"
+
+
+
+
+
+
+
+msgid  "Back"
+msgstr "Tilbake"
+
+msgid  "Name"
+msgstr "Navn"
+
+msgid  "Speed"
+msgstr "Hastighet"
+
+
+msgid  "__scenar10-1__"
+msgstr "-Tux! Flyet tar av! Det er for sent, vi feilet...!"
+
+msgid  "__medoc_winner__"
+msgstr "-Jeg har dem alle!"
+
+msgid  "__bowlingformat__"
+msgstr "%s baller og %s kjegler igjen"
+
+msgid  "__bowling_looser__"
+msgstr "Du tapte!"
+
+msgid  "__bowling_winner_strike__"
+msgstr "Strike!"
+
+
+msgid  "Max vision distance"
+msgstr "Maks visuell distanse"
+
+msgid  "Join network game"
+msgstr "Bli med i nettverksspill"
+
+msgid  "Options"
+msgstr "Valg"
+
+msgid  "References"
+msgstr "Referanser"
+
+msgid  "Credits"
+msgstr "Bidragsytere"
+
+msgid  "Join at (host or IP:port)"
+msgstr "Bli med på (vert eller IP:port)"
+
+msgid  "Slune version %s"
+msgstr "Slune-versjon %s"
+
+msgid  "Hacker"
+msgstr "Hacker"
+
+msgid  "Guru"
+msgstr "Guru"
+
+msgid  "Truck"
+msgstr "Truck"
+
+msgid  "Scooter"
+msgstr "Scooter"
+
+msgid  "Biplane"
+msgstr "Biplane"
+
+msgid  "Slune options"
+msgstr "Slune-valg"
+
+msgid  "Race laps number"
+msgstr "Løp-rundenummer"
+
+msgid  "Async load music"
+msgstr "Last inn musikk asynkront"
+
+msgid  "Ok"
+msgstr "Ok"
+
+msgid  "Cannot join multiplayer game at %s:%s %s!"
+msgstr "Kan ikke bli med i flerspillerspill på %s:%s %s!"
+
+msgid  "%s fragged %s!"
+msgstr "%s fragga %s!"
+
+msgid  "Slune info sources"
+msgstr "Slune-infokilder"
+
+msgid  "__indusmeeting-shoot-1-1__"
+msgstr "Få ned ballen ved å kaste kofferter !"
+
+msgid  "__scenar4-outro-1__"
+msgstr "-What about this project to include antiretroviral medicines in \
+the WHO essential drug list?"
+
+msgid  "__scenar4-outro-2__"
+msgstr "-My government (USA) does not agree: it would allow Africa to \
+produce its own medicine. There are people dying of AIDS, but there are \
+also people living on it. Our benefice does not exceed 90% on these \
+products..."
+
+msgid  "__scenar4-outro-3__"
+msgstr "-However, neither your laboratory nor the USA sit at the WHO..."
+
+msgid  "__scenar4-outro-4__"
+msgstr "-No, and so I need you. 100.000E have been transferred to your \
+account this morning..."
+
+msgid  "__scenar4-outro-5__"
+msgstr "-Vel, jeg gjør hva som helst for å sørge for at dette prosjektet mislykkes."
+
+msgid  "__scenar6-intro-0__"
+msgstr "Europa, 20. Mars 2003, 18:30"
+
+msgid  "__scenar6-intro-1__"
+msgstr "-Inget farmasøytisk selskap har akseptert å gi oss nok dråger."
+
+msgid  "__scenar6-intro-2__"
+msgstr "-Jeg antar at vi må glemme vår humanitære ekspedisjon..."
+
+msgid  "__scenar6-intro-3__"
+msgstr "Tuu tuu...!"
+
+msgid  "__scenar6-intro-4__"
+msgstr "-Hallo? Leiter du etter medisiner? Møt meg denne aftenen i\
+fjellet, i skogsmannens hytte."
+
+msgid  "__scenar6-intro-5__"
+msgstr "-Hvem er du? Hva..."
+
+msgid  "__scenar6-intro-6__"
+msgstr "Tuuu tuuu tuuu..."
+
+msgid  "__scenar6-intro-7__"
+msgstr "-Du går der denne aftenen, Tux..."
+
+msgid  "__scenar6-intro-8__"
+msgstr "-Jeg føler at vi blir overvåket! Gå på taket for å unngå \
+å bli sett, og bruk den hemmelige passasjen, husk, i enden av \
+slottsgården."
+
+msgid  "__scenar6-1__"
+msgstr "-Hei! Han så meg. La oss stikke av!"
+
+msgid  "__scenar6-2__"
+msgstr "-Jeg sa at du ikke skulle avsløre deg selv! Nå kan vi ikke gjøre noe uten å risikere vår kontakts liv !"
+
+msgid  "__scenar7-intro-1__"
+msgstr "-Ved å følge veien indikert av de tre koffertene, så burde jeg ende opp med å finne skogsmannens hytte."
+
+msgid  "__scenar7-2__"
+msgstr "-En motorsykkel ! Med dette kjøretøyet så burde jeg komme over \
+hvilket som helst hinder, selv vertikale!"
+
+msgid  "__scenar7-3__"
+msgstr "-Hytta er over der! Men hvordan skal jeg nå den ?"
+
+msgid  "__scenar7-4__"
+msgstr "-Følg veien, du vil finne en motorsykkel, så kom tilbake til \
+meg."
+
+msgid  "__scenar7-outro-1__"
+msgstr "-Welcome, Tux. I'm Python, I'm managing a pharmaceutical \
+laboratory in India."
+
+msgid  "__scenar7-outro-2__"
+msgstr "-I cannot give away for free the drugs you're looking for. \
+Nonetheless my prices are 3 times lower than my american rivals'."
+
+msgid  "__scenar7-outro-3__"
+msgstr "-With my savings,  Gnu's and various subventions... This should be ok!"
+
+msgid  "__scenar7-outro-4__"
+msgstr "-Let's meet in India next month. Be quiet, what we are doing is \
+*not* legal."
+
+msgid  "__scenar7-outro-5__"
+msgstr "-Woohoo...!"
+
+msgid  "__scenar8-intro-0__"
+msgstr "India, April 4th 2003, 9:30am"
+
+msgid  "__scenar8-intro-1__"
+msgstr "-Her er vi. Vi må fortsatt finne laboratoriet..."
+
+msgid  "__scenar8-intro-2__"
+msgstr "-Du kan følge leiemordera mine... Jeg tror de skal dit allikevel."
+
+msgid  "__scenar8-intro-3__"
+msgstr "-Shark !"
+
+msgid  "__scenar8-intro-4__"
+msgstr "-Kjapp deg! Vi må stoppe disse leiemordera ! Ta den grønne \
+bonusen og bruk plasma med den høyre museknappen eller Alt-tasten."
+
+msgid  "__scenar8-1__"
+msgstr "-Det er for seint... 3... 2... 1... 0 !"
+
+msgid  "__scenar8-outro-1__"
+msgstr "-Welcome to India Tux. Patent laws are quite different in my \
+country, thus we are still allowed to produce the cure for AIDS despite \
+the patents."
+
+msgid  "__scenar8-outro-2__"
+msgstr "-However, we are not allowed to export them... At least not \
+officialy. I cannot be held responsible for the use of my products \
+though... And my prices are quite reasonable."
+
+msgid  "__scenar8-outro-3__"
+msgstr "-It's illegal... but we do not have any choice. Anyway \
+it should not be legal to let people die like that !"
+
+msgid  "__scenar8-outro-4__"
+msgstr "-While waiting for the cargo, do you fancy bowling ?"
+
+msgid  "__scenar9-intro-1__"
+msgstr "-Here's Bombay best bowling. What about a little game while \
+waiting for your cargo to be ready ?"
+
+msgid  "__scenar9-intro-2__"
+msgstr "-..."
+
+msgid  "__scenar9-intro-3__"
+msgstr "-Opp med henda! Jeg teller til fem, og så vil jeg skyte ned \
+alle!"
+
+msgid  "__scenar9-intro-4__"
+msgstr "-If I push him in the pins and if I strike, he'll be traped in \
+the machine..."
+
+msgid  "__scenar9-outro-1__"
+msgstr "-Hell will change you from your ice floe, Tux... Bang! Bang!"
+
+msgid  "__scenar9-outro-2__"
+msgstr "-Strike !"
+
+msgid  "__scenar9-outro-3__"
+msgstr "-We'll meet again Tux... Let go of me, stupid machine !"
+
+msgid  "__scenar10-intro-1__"
+msgstr "-I've got the medicine... From now on I don't see what could \
+go wron..."
+
+msgid  "__scenar10-intro-2__"
+msgstr "-I'm so sorry ! Did I jostle you ? But I think I know you, \
+what a stroke of luck !"
+
+msgid  "__scenar10-intro-3__"
+msgstr "-Sorry, I'm in a hurry."
+
+msgid  "__scenar10-intro-4__"
+msgstr "-We have to get everything back... and quickly enough if we \
+don't want to miss the plane! First, I must find a motorbike to climb \
+over the buildings."
+
+msgid  "__scenar11-intro-1__"
+msgstr "-The plane is about to take off... It's too late!"
+
+msgid  "__scenar11-intro-2__"
+msgstr "-No, we still have another chance! No time to board, hurry up, \
+catch up with the plane and land on top of it!"
+
+msgid  "__scenar11-intro-3__"
+msgstr "-So that we will avoid custom. I don't need to remind you \
+that our importation of medicine is... forbiden, even tough \
+it may save lives!"
+
+msgid  "__scenar11-intro-4__"
+msgstr "-OK... meet me by the next flight. I have to go now!"
+
+msgid  "__scenar11-1__"
+msgstr "-Tux, the plane is gone and the custom officers are on their way... \
+it's too late, we failed!"
+
+msgid  "__scenar12-intro-1__"
+msgstr "-On behalf of the Captain and your crew we welcome you aboard \
+our flight to Africa!"
+
+msgid  "__scenar12-intro-2__"
+msgstr "-Herr... I must have been dreaming, but I think I just saw one of \
+Shark's assassin!"
+
+msgid  "__scenar13-intro-0__"
+msgstr "Africa, 18. Juni 2003, 13:15"
+
+msgid  "__scenar13-intro-1__"
+msgstr "-Hei, jeg er guiden din, Gnu sendte meg for å hjelpe deg med å krysse ørkenen. \
+Følg meg!"
+
+msgid  "__scenar13-intro-2__"
+msgstr "-He ran away... It was a trap ! Here am I, lost in the middle of \
+the desert."
+
+msgid  "__scenar13-intro-3__"
+msgstr "-If I did stunts, perhaps someone would notice me?"
+
+msgid  "__scenar13-intro-4__"
+msgstr "-By jumping and using my turbo, I can go really high \
+and do amazing loopings."
+
+msgid  "__scenar13-1__"
+msgstr "-A storm is coming, everything is over!"
+
+msgid  "__scenar13-outro-1__"
+msgstr "-I'm back... I, hummm, I... I noticed your stunts..."
+
+msgid  "__scenar13-outro-2__"
+msgstr "-Shark paid me a lot of money to loose you in the desert, \
+and I'm not rich"
+
+msgid  "__scenar13-outro-3__"
+msgstr "-But I just found out that my daughter has Aids..."
+
+msgid  "__scenar13-outro-4__"
+msgstr "-I'll give you medicine for your daughter, if you guide me to \
+Botswana, one of the countries most affected by Aids."
+
+msgid  "__scenar14-intro-1__"
+msgstr "-Tux ! You managed to escape from Shark's men!"
+
+msgid  "__scenar14-intro-2__"
+msgstr "-Let's distribute the medicine; go around the huts of the \
+village."
+
+msgid  "__scenar14-intro-3__"
+msgstr "-I will to crush you with this plane!!!"
+
+msgid  "__scenar14-outro-1__"
+msgstr "-So, you managed to defeat my assassins until the very end..."
+
+msgid  "__scenar14-outro-2__"
+msgstr "-Shark ! Why do you keep on trying to stop us ? Are you selling \
+that much medicine in Africa ?"
+
+msgid  "__scenar14-outro-3__"
+msgstr "-No... Actually, we're not even selling them there."
+
+msgid  "__scenar14-outro-4__"
+msgstr "-But our leadership would be threatened... \
+First Africa, then South America, Asia, Europe..."
+
+msgid  "__scenar14-outro-5__"
+msgstr "-I can't believe it! You're not human or what!?"
+
+msgid  "__scenar14-outro-6__"
+msgstr "-No, indeed."
+
+msgid  "__scenar14-outro-7__"
+msgstr "-I've got to stop him!"
+
+msgid  "__scenar15-intro-1__"
+msgstr "-Well, you followed me here... You're so naive, do you really \
+think you still have enough time to save humanity ?"
+
+msgid  "__scenar15-intro-2__"
+msgstr "-I'd like to eat him with bolognese..."
+
+msgid  "__scenar15-intro-3__"
+msgstr "-...or spit-roasted!"
+
+msgid  "__scenar15-intro-4__"
+msgstr "-I have to get rid of... this thing!"
+
+msgid  "__scenar15-intro-5__"
+msgstr "-Prepare to die..."
+
+msgid  "__scenar15-outro-1__"
+msgstr "-Haaa... you got me... it's impossible...?"
+
+msgid  "__scenar15-outro-2__"
+msgstr "-Don't ever come Back to Earth, bande d'aliens \
+dégénérés !"
+
+msgid  "__scenar15-outro-3__"
+msgstr "-Now that this slimy alien is gone, I hope it will be easier to \
+get medicine."
+
+msgid  "__scenar15-outro-4__"
+msgstr "-Don't hope too much Gnu, humans are not always more trustworthy \
+than aliens..."
+
+msgid  "__scenar15-outro-5__"
+msgstr "-I used to be a human myself, long time ago... and look at what \
+I've become..."
+
+msgid  "__scenar15-outro-6__"
+msgstr "-That's the moral of this story, shark : often mankind is an \
+alien to mankind."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+msgid  ""
+msgstr ""
+
+"Project-Id-Version: Slune 0.2\n"
+"Last-Translator: Per Øyvind Karlsen <peroyvind@sintrax.net>\n"
+"Language-Team: Norsk Bokmål <cooker-i18n@linux-mandrake.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+
+
