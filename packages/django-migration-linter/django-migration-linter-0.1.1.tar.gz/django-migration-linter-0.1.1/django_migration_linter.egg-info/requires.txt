@@ -1,0 +1,7 @@
+django>=1.11
+appdirs==1.4.3
+
+[test]
+pytest
+tox
+django-fake-database-backends
