@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PyDSWS-tr
+Version: 0.9
+Summary: Python package for Thomson Reuters Datastream Webservices (DSWS)
+Home-page: https://github.com/hoenie-ams/PyDSWS
+Author: Vidya Dinesh
+Author-email: vidya.dinesh@thomsonreuters.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: pandas
+Requires-Dist: requests
+
+Python package for Thomson Reuters Datastream Webservices (DSWS)
+
+
