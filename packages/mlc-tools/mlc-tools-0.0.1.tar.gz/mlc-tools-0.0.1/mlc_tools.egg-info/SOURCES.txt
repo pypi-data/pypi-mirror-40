@@ -1,0 +1,7 @@
+MANIFEST.in
+setup.py
+mlc_tools.egg-info/PKG-INFO
+mlc_tools.egg-info/SOURCES.txt
+mlc_tools.egg-info/dependency_links.txt
+mlc_tools.egg-info/requires.txt
+mlc_tools.egg-info/top_level.txt
