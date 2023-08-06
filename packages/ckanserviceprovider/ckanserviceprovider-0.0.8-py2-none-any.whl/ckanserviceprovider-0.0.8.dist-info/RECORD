@@ -1,0 +1,14 @@
+ckanserviceprovider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanserviceprovider/db.py,sha256=T41dZ_-ivDmsVkhZADMEglm3Gpx3QB7skmh69JqXjDA,17322
+ckanserviceprovider/default_settings.py,sha256=zWS6D3z8PUJN4XU9VYT02B9GSEE_R1FDzNoXl5NyKa4,413
+ckanserviceprovider/job.py,sha256=OoJPS4FJgJhsZgfcCYoW5Jvr_TL52wYRg_on2Oid1IA,163
+ckanserviceprovider/util.py,sha256=Op1lsENKP_P7tcSxh1afUPF0C5vBY-SOMnq6ZuGbWMs,1918
+ckanserviceprovider/web.py,sha256=NVDG7YfkGd-WspbxRw4vNGRVFjf0P89bFZm00ezMcDo,23626
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/jobs.py,sha256=0gCcip1tko3NN1kmzk1IQNpsMg6rHhHqFwUWvKfPXzQ,809
+example/main.py,sha256=4vZ2JCbRRyRXuf6APb_pDDAE1yLMhcPHEna_wMkzFw8,822
+ckanserviceprovider-0.0.8.dist-info/LICENSE,sha256=566LXaF3CUdLolMWRBvAZBSIQc8QHn7vMYw8PuWggns,34499
+ckanserviceprovider-0.0.8.dist-info/METADATA,sha256=vpde9Ywj8AKHsDsqKZj4If9IAN_OHdjuJu5zmJsNuPY,3697
+ckanserviceprovider-0.0.8.dist-info/WHEEL,sha256=MlnUWFZCxbgBkC_PfU2CprVf8-ZZlVOAfry_BsXUBxw,92
+ckanserviceprovider-0.0.8.dist-info/top_level.txt,sha256=j49VHOTjfCKw6Sx277mr9aI5ETxE3PbOR7A4WiSrFeU,28
+ckanserviceprovider-0.0.8.dist-info/RECORD,,
