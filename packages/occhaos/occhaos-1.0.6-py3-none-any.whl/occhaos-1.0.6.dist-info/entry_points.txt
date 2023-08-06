@@ -1,0 +1,3 @@
+[console_scripts]
+occhaos = OCChaos.Chaos:start_action
+
