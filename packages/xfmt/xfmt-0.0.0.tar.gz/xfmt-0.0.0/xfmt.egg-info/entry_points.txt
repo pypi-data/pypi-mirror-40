@@ -1,0 +1,9 @@
+[console_scripts]
+xfmt = xfmt.main:main
+
+[xfmt.checkers]
+*.json = xfmt.json:_check_json
+
+[xfmt.fixers]
+*.json = xfmt.json:_fix_json
+

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xfmt
+Version: 0.0.0
+Summary: Universal formatter
+Home-page: https://github.com/apljungquist/xfmt
+Author: AP Ljungquist
+Author-email: ap@ljungquist.eu
+License: UNKNOWN
+Description: # xfmt
+        
+        *Format all the things*
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
