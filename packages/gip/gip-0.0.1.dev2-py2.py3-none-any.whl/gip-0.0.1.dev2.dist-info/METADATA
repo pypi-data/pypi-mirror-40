@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: gip
+Version: 0.0.1.dev2
+Summary: Gip is a language agnostic dependency manager which uses API calls to pull repositories.
+Home-page: UNKNOWN
+Maintainer: Intermax Cloudsourcing
+Maintainer-email: wilmaro@intermax.nl
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Intermax-Cloudsourcing/gip/issues
+Project-URL: Source Code, https://github.com/Intermax-Cloudsourcing/gip
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Dist: click (==7.0)
+Requires-Dist: click-completion (==0.5.0)
+Requires-Dist: colorama (==0.4.1)
+Requires-Dist: github3.py (==1.2.0)
+Requires-Dist: pbr (==5.1.1)
+Requires-Dist: python-gitlab (==1.7.0)
+Requires-Dist: pyyaml (==3.13)
+Provides-Extra: docs
+Requires-Dist: Sphinx ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: twine ; extra == 'test'
+Requires-Dist: wheel (==0.32.3) ; extra == 'test'
+
+# Gip
+
+## Usage
+```bash
+gip --gitlab-token=<token> --github-token=<token> requirements.yml
+```
+
+## Requirements.yml
+
+```yaml
+- name: ansible-role-plex  # directory name in destination directory
+  repo: https://github.com/wilmardo/ansible-role-plex  # repository url
+  type: github  # type: gitlab or github allowed
+  version: 2.1.0  # version: tag, branch name or commit sha
+  dest: lib/  # destination directory
+```
+
+## Visual Studio Code Setup
+```json
+///.vscode/launch.json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File (Integrated Terminal)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/venv/bin/gip",
+            "args" : ["--gitlab-token=<token>",
+                "--github-token=<token>",
+                "install", "-r", "tests/requirements.yml"],
+            "console": "integratedTerminal"
+        }
+    ]
+}
+```
+
+
+## Draft release
+```bash
+python setup.py sdist
+```
+
+
+

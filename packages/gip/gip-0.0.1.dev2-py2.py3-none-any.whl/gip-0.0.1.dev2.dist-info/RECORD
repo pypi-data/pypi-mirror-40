@@ -1,0 +1,17 @@
+gip/__init__.py,sha256=jxhaaK81aQY8YOl1H4yHgefeIEOtWt9eZp8M2eaj_HQ,110
+gip/logger.py,sha256=1mv9VynWPiTgnq4PKj0ThCNCFwBm-qMZOY4t6yHJ0Fo,5176
+gip/parser.py,sha256=6ZnX__ueKdaCXpoKlqjSEgU42cMQicTfr29SzFVt9j8,532
+gip/shell.py,sha256=co9NYT6qjXsFPLsw4ab45vcyAJwWIbvn0bMfrEJmclQ,1092
+gip/command/__init__.py,sha256=ljcQYERJXpF-U4Ibljbwk4nyF_bGUQI7rnSvhE9qSh4,190
+gip/command/install.py,sha256=vUEb9AAgC4cLSWFYYc6UyA9JC2qJvJKVcKmwuuX2CrQ,2580
+gip/sources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gip/sources/base.py,sha256=1-6us1ehRF6QT3pg2dzwKaOvrzYHXMDrkYmT8Tp6dVI,918
+gip/sources/github.py,sha256=MUZgBrNAJIGyV1caausuANbQ-o_dFZr4WPwwkh0zT-0,1075
+gip/sources/gitlab.py,sha256=5V3F_7lUWZ9NCB0WhGrQaRYxlpQcPNreUAoW1-p9dL8,1160
+gip-0.0.1.dev2.dist-info/AUTHORS,sha256=s8ex2rSBmZGJVstXxpgsoRljLnXDYDAe-DMs-ZU6yiU,42
+gip-0.0.1.dev2.dist-info/METADATA,sha256=4vzgBgnrCelTPBF5pcpRdTz6yIl4x-kSofYapj0qPkc,2340
+gip-0.0.1.dev2.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+gip-0.0.1.dev2.dist-info/entry_points.txt,sha256=TLlj9KI38IOT3-deTVic39ZZvOtIPnIM_UtU0I0vAt0,40
+gip-0.0.1.dev2.dist-info/pbr.json,sha256=y-9Z1zGMNDrwUXi7yL6MfyR5rZGmvByiayb2kNUxLfc,47
+gip-0.0.1.dev2.dist-info/top_level.txt,sha256=gkKoP8kARqxI9YUMHqx2as5CrLrH5qPASPlMUX-ysaM,4
+gip-0.0.1.dev2.dist-info/RECORD,,
