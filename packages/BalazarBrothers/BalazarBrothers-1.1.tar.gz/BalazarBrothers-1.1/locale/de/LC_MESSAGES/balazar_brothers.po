@@ -1,0 +1,269 @@
+
+# BalazarBrother
+# Copyright (C) 2006 Jean-Baptiste Lamy
+# Copyright (C) 2006 Ralf Jung
+#
+
+# Not yet translated
+
+msgid  "hopeless_castle"
+msgstr "Hopeless\ncastle"
+
+msgid  "__ransom_None__"
+msgstr "Hello, do you have the ransom?"
+
+msgid  "__ransom_None_blue__"
+msgstr "Yes, I have the 100 chests!"
+
+msgid  "__ransom_None_blue_None__"
+msgstr "Good... Enter, and be welcome at the hopeless castle. And please excuse me if I haven't got the time for cleaning up the traps of the castle... ha ha ha!"
+
+msgid  "__ransom_None_blue_None_red__"
+msgstr "It is YOU we are going to clean up, Grey Balazar!"
+
+msgid  "__ransom_None_red__"
+msgstr "Not yet..."
+
+msgid  "__ransom_None_red_None__"
+msgstr "You don't have the ransom. Come back when you have the 100 chests!"
+
+msgid  "__ransom_None_red_None_blue__"
+msgstr "We'll be back with the chests, Grey Balazar!"
+
+msgid  "__ransom_None_red_None_red__"
+msgstr "We can negotiate... 50% of the chests, 50% of the princesses? no? No. Well, so we need to get the chests..."
+
+msgid  "__end_BalazarGris__"
+msgstr "You? Here? It's impossible... you have succeeded!"
+
+msgid  "__end_BalazarGris_blue__"
+msgstr "Balazarette Violet!"
+
+msgid  "__end_BalazarGris_blue_BalazarGris__"
+msgstr "My traps were infallible..."
+
+msgid  "__end_BalazarGris_blue_BalazarGris_red__"
+msgstr "Balazarine Mandarin!"
+
+msgid  "__end_BalazarGris_blue_BalazarGris_red_BalazarGris__"
+msgstr "So the game is ended..."
+
+msgid  "__end_BalazarGris_blue_BalazarGris_red_BalazarGris_blue__"
+msgstr "...and we have won!"
+
+
+
+# Translation
+
+
+msgid  "__game_name__"
+msgstr "Balazar Brothers"
+
+msgid  "Play"
+msgstr "Starten"
+msgid  "Play multiplayer game"
+msgstr "Mehrspieler-Spiel starten"
+msgid  "Hardware options"
+msgstr "Hardware-Optionen"
+msgid  "Keyboard options"
+msgstr "Tastatur-Optionen"
+msgid  "Quit"
+msgstr "Beenden"
+msgid  "off"
+msgstr "aus"
+msgid  "on"
+msgstr "ein"
+
+msgid  "Player name"
+msgstr "Spielername"
+msgid  "Password"
+msgstr "Passwort"
+msgid  "Remote host or IP"
+msgstr "Hostname oder IP-Adresse"
+msgid  "Connect to port"
+msgstr "Port"
+msgid  "__have_you_forget_the_server_?__"
+msgstr "Vielleicht hast du vergessen, den Server zu starten?\nGib dafür 'balazar_brothers --server' auf einer Konsole ein."
+
+msgid  "Fullscreen"
+msgstr "Vollbild"
+msgid  "Graphic quality"
+msgstr "Grafikqualität"
+msgid  "Max vision distance"
+msgstr "Sichtweite"
+msgid  "Sounds"
+msgstr "Sounds"
+msgid  "Sound volume"
+msgstr "Lautstärke"
+msgid  "Music"
+msgstr "Musik"
+msgid  "Async load music"
+msgstr "Musik asynchron laden"
+msgid  "Sound system"
+msgstr "Soundsystem"
+msgid  "Saved game directory"
+msgstr "Speicherpfad"
+msgid  "Back"
+msgstr "Zurück"
+
+msgid  "(loading...)"
+msgstr "(lade...)"
+
+msgid  "Chat: "
+msgstr "Chat: "
+
+msgid  "Jump"
+msgstr "Springe"
+
+msgid  "Start"
+msgstr "Los!"
+
+msgid  "Paused"
+msgstr "Pause"
+
+msgid  "Towards %s"
+msgstr "Zu %s"
+
+msgid  "Resolution"
+msgstr "Auflösung"
+
+msgid  "Low"
+msgstr "Niedrig"
+
+msgid  "Medium"
+msgstr "Mittel"
+
+msgid  "High"
+msgstr "Hoch"
+
+msgid  "New level..."
+msgstr "Neues Level..."
+
+
+msgid  "fountain_river"
+msgstr "Fluss der\nFontänen"
+
+msgid  "coqueliform_field"
+msgstr "Felder von\nCoqueliform"
+
+msgid  "pompon_forest"
+msgstr "Wälder von\nPompon"
+
+msgid  "__unavailable_level__"
+msgstr "Noch nicht\nverfügbar!"
+
+
+msgid  "__press_left_shift__"
+msgstr "(drücke SHIFT LINKS)"
+
+msgid  "__press_right_shift__"
+msgstr "(drücke SHIFT RECHTS)"
+
+msgid  "__quit_None__"
+msgstr "Was willst du tun?"
+
+msgid  "__quit_None_red__"
+msgstr "Ich will Selbstmord begehen und diese Welt neu starten..."
+
+msgid  "__quit_None_blue__"
+msgstr "Ich will dieses wunderbare Spiel beenden und speichern, um später wieder in dieses Level zu kommen!"
+
+
+msgid  "__help1_None__"
+msgstr "Willkommen zu Balazar Brother! Hilf den Brüdern Balazar, ihre Freundinnen zu befreien. Um den blauen Balazar springen zu lassen, drücke SHIFT RECHTS (oder STRG RECHTS oder JOYSTICK BUTTON 2)"
+
+msgid  "__help2_None__"
+msgstr "Drücke erneut SHIFT RECHTS..."
+
+msgid  "__help3_None__"
+msgstr "Um den roten Balazar springen zu lassen, drücke SHIFT LINKS (oder STRG LINKS oder JOYSTICK BUTTON 1). Es kann nur ein Bruder zugleich auf einer Plattform stehen. Daher muss der rote Balazar darauf warten, dass der blaue weiterspringt."
+
+msgid  "__help_portail_None__"
+msgstr "Das Portal vor dir teleportiert BEIDE Brüder in das nächste Level. Achtung, diese Portale funktionieren in beide Richtungen!"
+
+msgid  "__help4_None__"
+msgstr "Drücke SHIFT RECHTS bis der blaue Balazar auf dem blauen Pilz steht."
+
+msgid  "__help5_None__"
+msgstr "Die blauen Pilze drehen sich, wodurch die Brüder den Pfad wählen können. Versuche, in Richtung der Truhe zu gehen, indem du wartest, bis der blaue Pfeil auf den linken Pfad zeigt."
+
+msgid  "__help6_None__"
+msgstr "Die Schatztruhen bringen Punkte! Der blaue Balazar ist in einer Sackgasse, daher muss der rote Bruder zum Portal springen, indem er die andere Abzweigung am blauen Pilz nimmt."
+
+msgid  "__help7_None__"
+msgstr "Schauen wir uns jetzt die akrobatischen Fähigkeiten der Brüder Balazar an! Bringe dazu zuerst den blauen Balazar zur Truhe."
+
+msgid  "__help8_None__"
+msgstr "Sehr gut!"
+
+msgid  "__help8_None_blue__"
+msgstr "Bewege jetzt den roten Balazar, bis er auf auf meinen Kopf springt. Drücke anschließend SHIFT RECHTS um zu erfahren, wie's weitergeht."
+
+msgid  "__help8_None_blue_None__"
+msgstr "Super!"
+
+msgid  "__help8_None_blue_None_red__"
+msgstr "Bewege nun den blauen Bruder zwei mal und drücke anschließend SHIFT LINKS."
+
+msgid  "__help8_None_blue_None_red_None__"
+msgstr "Jetzt musst du nur noch den roten Balazar zum Portal bringen!"
+
+msgid  "__help9_None__"
+msgstr "Einige Truhen sind hoch über den Pilzen... finde heraus, wie man sie bekommt!"
+
+msgid  "__help10_None__"
+msgstr "Blaue Pilze können auch verwendet werden um zu wenden!"
+
+msgid  "__help11_None__"
+msgstr "Es ist Zeit, ein weiteres akrobatisches Kunststück zu lernen: BRUDER-SURFEN! Gehe zuerst mit dem blauen Balazar zur Truhe."
+
+msgid  "__help12_None__"
+msgstr "Bringe jetzt den roten Balazar auf den blauen."
+
+msgid  "__help12_None_blue__"
+msgstr "Drücke SHIFT RECHTS, wenn du fertig bist."
+
+msgid  "__help12_None_blue_None__"
+msgstr "Um das Bruder-Surfen durchzuführen, bringe den blauen Balazar zum Fliegen, indem du SHIFT RECHTS länger drückst. Sobald der Pfeil erscheint, bringe den roten Balazar auf den nächsten Pilz. Du musst dabei schnell sein: Der rote Balazar muss im Portal sein bevor der blaue zu Tode stürzt!"
+
+msgid  "__help13_None__"
+msgstr "Du benötigst 7 SCHLÜSSEL, um die Tür zu öffnen. Versuche, sie zu bekommen!"
+
+msgid  "__help14_None__"
+msgstr "Wenn ein Balazar blockiert ist, kannst du ihn Selbstmord begehen lassen, indem du die dazugehörige SHIFT-Taste lange drückst. Das Spiel wird beendet und du kannst das Level neu starten. Tue das jedoch nicht zu oft, denn du verlierst jedes mal eine Truhe!"
+
+msgid  "__help15_None__"
+msgstr "Super! Beachte, dass die 7 Schlüssel im Spiel über mehere Level verteilt sein können."
+
+msgid  "__help16_None__"
+msgstr "Du kannst die Kamera mit den Pfeiltasten LINKS, RECHTS, HOCH und RUNTER und dem Joystick kontrollieren. Um die Kamera zurückzusetzen, drücke eine der Tasten mehrmals schnell hintereinander."
+
+msgid  "__help17_None__"
+msgstr "Um das Spiel zu beenden, drücke 'Escape' oder 'Q'. Du kannst dann entweder die aktuelle Welt mit dem ersten Level neu starten oder den Spielstand speichern und beim selben Level wieder anfangen."
+
+msgid  "__helpend_None__"
+msgstr "Das Tutorial ist zu Ende!"
+
+msgid  "__helpend_None_red__"
+msgstr "Endlich! Mit war schon langweilig..."
+
+msgid  "__helpend_None_blue__"
+msgstr "Jetzt ist es an der Zeit, unsere Freundinnen zu befreien!"
+
+
+msgid  "__striking_fruit_blue__"
+msgstr "Achtung, AUSTRETENDE PFLANZEN ! Warum die wohl so aggressiv sind?"
+
+msgid  "__striking_fruit_blue_red__"
+msgstr "Ooch, nichts... Sie sind sauer auf mich seit ich zwei von ihnen jeden Morgen zum Frühstück auspresse. Sie wollen sich rächen!"
+
+
+
+msgid  ""
+msgstr ""
+
+"Project-Id-Version: BalazarBrother\n"
+"Last-Translator: Ralf Jung <ralfjung-e@gmx.de>\n"
+"Language-Team: deutsch <jiba@tuxfamily.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"

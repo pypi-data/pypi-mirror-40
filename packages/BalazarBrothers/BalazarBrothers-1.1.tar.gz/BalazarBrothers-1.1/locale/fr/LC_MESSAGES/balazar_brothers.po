@@ -1,0 +1,261 @@
+# BalazarBrother
+# Copyright (C) 2006 Jean-Baptiste LAMY
+#
+
+msgid  "__game_name__"
+msgstr "Balazar Brothers"
+
+msgid  "Play"
+msgstr "Jouer"
+msgid  "Play multiplayer game"
+msgstr "Jouer en multijoueur"
+msgid  "Hardware options"
+msgstr "Options matériel"
+msgid  "Keyboard options"
+msgstr "Options clavier"
+msgid  "Quit"
+msgstr "Quitter"
+msgid  "off"
+msgstr "non"
+msgid  "on"
+msgstr "oui"
+
+msgid  "Player name"
+msgstr "Nom du joueur"
+msgid  "Password"
+msgstr "Mot de passe"
+msgid  "Remote host or IP"
+msgstr "Hôte ou adresse IP distant"
+msgid  "Connect to port"
+msgstr "Connexion au port"
+msgid  "__have_you_forget_the_server_?__"
+msgstr "Peut-être avez-vous oublié de lancer le serveur ?\nPour lancer le serveur, tapez 'balazar_brothers --server' dans une console."
+
+msgid  "Fullscreen"
+msgstr "Plein écran"
+msgid  "Graphic quality"
+msgstr "Qualité graphique"
+msgid  "Max vision distance"
+msgstr "Distance maximale de vision"
+msgid  "Sounds"
+msgstr "Sons"
+msgid  "Sound volume"
+msgstr "Volume sonore"
+msgid  "Music"
+msgstr "Musique"
+msgid  "Async load music"
+msgstr "Chargement asynchrone de la musique"
+msgid  "Sound system"
+msgstr "Système de son"
+msgid  "Saved game directory"
+msgstr "Répertoire des sauvegardes"
+msgid  "Back"
+msgstr "Retour"
+
+msgid  "(loading...)"
+msgstr "(chargement...)"
+
+msgid  "Chat: "
+msgstr "Chat : "
+
+msgid  "Jump"
+msgstr "Sauter"
+
+msgid  "Start"
+msgstr "Démarrer"
+
+msgid  "Paused"
+msgstr "Pause"
+
+msgid  "Towards %s"
+msgstr "Vers %s"
+
+msgid  "Resolution"
+msgstr "Résolution"
+
+msgid  "Low"
+msgstr "Faible"
+
+msgid  "Medium"
+msgstr "Moyenne"
+
+msgid  "High"
+msgstr "Élevé"
+
+msgid  "New level..."
+msgstr "Nouveau niveau..."
+
+
+msgid  "fountain_river"
+msgstr "Riviere des\nfontaines"
+
+msgid  "coqueliform_field"
+msgstr "Champs de\nCoqueliformes"
+
+msgid  "pompon_forest"
+msgstr "Foret de\nPompon"
+
+msgid  "hopeless_castle"
+msgstr "Château de la\ndésespérance"
+
+msgid  "__unavailable_level__"
+msgstr "Pas\nencore\ndisponible !"
+
+
+msgid  "__press_left_shift__"
+msgstr "(appuyez sur SHIFT GAUCHE)"
+
+msgid  "__press_right_shift__"
+msgstr "(appuyez sur SHIFT DROIT)"
+
+msgid  "__quit_None__"
+msgstr "Que voulez-vous faire ?"
+
+msgid  "__quit_None_red__"
+msgstr "J'ai envie de me suicider et de recommencer ce monde..."
+
+msgid  "__quit_None_blue__"
+msgstr "Je veux quitter le jeu et sauvegarder pour revenir plus tard !"
+
+
+msgid  "__help1_None__"
+msgstr "Bienvenue dans Balazar Brother ! Aide les frères Balazar à délivrer leurs amies. Pour faire sauter Balazar Bleu, appuie sur SHIFT DROIT (ou CTRL DROIT, ou le BOUTON 2 du joypad)."
+
+msgid  "__help2_None__"
+msgstr "Appuie encore sur SHIFT DROIT..."
+
+msgid  "__help3_None__"
+msgstr "Pour faire sauter Balazar Rouge, appuie sur SHIFT GAUCHE (ou CTRL GAUCHE, ou le BOUTON 1 du joypad). Il ne peut y avoir qu'un seul personnage sur chaque plateforme ! Donc Balazar Rouge ne peut plus avancer."
+
+msgid  "__help_portail_None__"
+msgstr "Le portail devant toi téléportera les DEUX Balazar dans le niveau suivant. Attention, ces portails fonctionnent dans les deux sens !"
+
+msgid  "__help4_None__"
+msgstr "Appuie sur SHIFT DROIT pour faire avancer Balazar Bleu jusqu'au champignon bleu."
+
+msgid  "__help5_None__"
+msgstr "Les plateformes bleues tournent sur elles-mêmes ! Elles servent d'aiguilleurs. Essaie d'aller en direction du coffre, en t'aidant de la flèche bleue au pied de Balazar pour savoir vers quelle plateforme il va sauter."
+
+msgid  "__help6_None__"
+msgstr "Les coffres donnent des points ! Balazar Bleu est maintenant bloqué. Il faut faire avancer Balazar Rouge jusqu'au portail, en allant tout droit au niveau du champignon bleu."
+
+msgid  "__help7_None__"
+msgstr "Nous allons voir les talents d'acrobates des frères Balazar ! Pour commencer, fais avancer Balazar Bleu jusqu'au coffre."
+
+msgid  "__help8_None__"
+msgstr "Bien !"
+
+msgid  "__help8_None_blue__"
+msgstr "Maintenant, fais avancer Balazar Rouge jusque sur ma tête ! Ensuite, appuie sur SHIFT DROIT pour avoir la suite des instructions."
+
+msgid  "__help8_None_blue_None__"
+msgstr "Bravo, tu viens de réaliser un PORTAGE !"
+
+msgid  "__help8_None_blue_None_red__"
+msgstr "À présent, fais avancer Balazar Bleu puis appuie sur SHIFT GAUCHE quand ce sera fait."
+
+msgid  "__help8_None_blue_None_red_None__"
+msgstr "Tu n'as plus qu'à faire avancer Balazar Rouge et franchir le portail !"
+
+msgid  "__help9_None__"
+msgstr "Certains coffres sont placés en hauteur... à toi de deviner comment les attrapper !"
+
+msgid  "__help10_None__"
+msgstr "Les plateformes bleues peuvent aussi servir faire demi-tour !"
+
+msgid  "__help11_None__"
+msgstr "Il est temps d'apprendre une acrobatie plus complexe : le FRERE-SURF ! Pour commencer, fais avancer Balazar Bleu jusqu'au coffre."
+
+msgid  "__help12_None__"
+msgstr "Maintenant fais avancer Balazar Rouge et réalise un portage."
+
+msgid  "__help12_None_blue__"
+msgstr "Une fois ceci fait, appuie sur SHIFT DROIT."
+
+msgid  "__help12_None_blue_None__"
+msgstr "Pour terminer le frère-surf, laisse appuyé sur SHIFT DROIT jusqu'à faire tomber Balazar Bleu, puis fais sauter Balazar Rouge dès que possible, et passe à travers le portail. Attention, il faut faire vite : Balazar Rouge doit franchir le portail AVANT que Balazar Bleu ne meure !"
+
+msgid  "__help13_None__"
+msgstr "Pour ouvrir la PORTE, tu as besoin de 7 CLEFS. Essaie de les récupérer !"
+
+msgid  "__help14_None__"
+msgstr "Lorsqu'un Balazar est bloqué, tu peux le faire tomber en laissant appuyer longtemps sur sa touche SHIFT. Dans ce cas, tu recommences au début du niveau et tu perds un coffre, donc il ne faut pas en abuser ! Pour reprendre le tutoriel après être mort, relance simplement le jeu."
+
+msgid  "__help15_None__"
+msgstr "Bravo !\nAttention, dans le jeu les 7 clefs peuvent être dispersées dans plusieurs niveaux."
+
+msgid  "__help16_None__"
+msgstr "Tu peux contrôler la caméra en utilisant les touches HAUT, BAS, GAUCHE, DROITE, ou la MANETTE du joypad. Pour réinitialiser la caméra, appuie très vite sur les touches de direction."
+
+msgid  "__help17_None__"
+msgstr "Pour quitter le jeu, appuie sur 'Échap' ou sur la lettre 'q'. Tu peux ensuite choisir entre recommencer le monde à zéro ou sauvegarder."
+
+msgid  "__helpend_None__"
+msgstr "Le tutoriel est terminé !"
+
+msgid  "__helpend_None_red__"
+msgstr "Enfin ! J'en avais marre moi !"
+
+msgid  "__helpend_None_blue__"
+msgstr "Maintenant, il est temps d'aller libérer nos copines!"
+
+
+msgid  "__striking_fruit_blue__"
+msgstr "Attention aux FRUITS-FRAPPEURS ! Je me demande pourquoi ils sont aussi agités ?"
+
+msgid  "__striking_fruit_blue_red__"
+msgstr "C'est rien... c'est depuis que je m'en presse deux tous les matins au p'tit déj. Ils veulent se venger !"
+
+
+msgid  "__ransom_None__"
+msgstr "Bonjour, avez-vous la rançon ?"
+
+msgid  "__ransom_None_blue__"
+msgstr "Oui, j'ai les 100 coffres !"
+
+msgid  "__ransom_None_blue_None__"
+msgstr "C'est bien... Entrez, et soyez les bienvenus au château de la désespérance. Excusez-moi, je n'ai pas eu le temps de faire le ménage parmi les pièges du château... ha ha ha !"
+
+msgid  "__ransom_None_blue_None_red__"
+msgstr "C'est TOI qu'on va nettoyer, Balazar Gris !"
+
+msgid  "__ransom_None_red__"
+msgstr "Pas encore..."
+
+msgid  "__ransom_None_red_None__"
+msgstr "Vous n'avez pas la rançon. Revenez quand vous aurez les 100 coffres !"
+
+msgid  "__ransom_None_red_None_blue__"
+msgstr "On reviendra avec les coffres, Balazar Gris !"
+
+msgid  "__ransom_None_red_None_red__"
+msgstr "On peut négocier... 50% des coffres, 50% des princesses ? non ? Non. Bon, ben faut trouver les coffres..."
+
+
+msgid  "__end_BalazarGris__"
+msgstr "Vous ? Ici ? C'est impossible... vous avez réussi !"
+
+msgid  "__end_BalazarGris_blue__"
+msgstr "Balazarette Violette !"
+
+msgid  "__end_BalazarGris_blue_BalazarGris__"
+msgstr "Mes pièges étaient pourtant infaillibles..."
+
+msgid  "__end_BalazarGris_blue_BalazarGris_red__"
+msgstr "Balazarine Mandarine !"
+
+msgid  "__end_BalazarGris_blue_BalazarGris_red_BalazarGris__"
+msgstr "Le jeu est fini..."
+
+msgid  "__end_BalazarGris_blue_BalazarGris_red_BalazarGris_blue__"
+msgstr "...et nous avons gagné !"
+
+
+msgid  ""
+msgstr ""
+
+"Project-Id-Version: BalazarBrother\n"
+"Last-Translator: Jean-Baptiste LAMY <jiba@tuxfamily.org>\n"
+"Language-Team: français <jiba@tuxfamily.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"

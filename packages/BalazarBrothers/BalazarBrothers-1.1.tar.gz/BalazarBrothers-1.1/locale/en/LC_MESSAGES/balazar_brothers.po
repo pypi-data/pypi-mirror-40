@@ -1,0 +1,257 @@
+# BalazarBrother
+# Copyright (C) 2006 Jean-Baptiste LAMY
+#
+
+msgid  "__game_name__"
+msgstr "Balazar Brother"
+
+msgid  "Play solo game"
+msgstr "Play Solo game"
+msgid  "Play multiplayer game"
+msgstr "Play Multiplayer game"
+msgid  "Hardware options"
+msgstr "Hardware options"
+msgid  "Keyboard options"
+msgstr "Keyboard options"
+msgid  "Quit"
+msgstr "Quit"
+msgid  "off"
+msgstr "no"
+msgid  "on"
+msgstr "yes"
+
+msgid  "Player name (new name => new game)"
+msgstr "Player name (new name => new game)"
+msgid  "Password"
+msgstr "Password"
+msgid  "Remote host or IP"
+msgstr "Remote host or IP"
+msgid  "Connect to port"
+msgstr "Connect to port"
+msgid  "__have_you_forget_the_server_?__"
+msgstr "Maybe have you forgotten to launch the server?\nTo launch the server, type 'balazar_brothers --server' in a console."
+
+msgid  "Fullscreen"
+msgstr "Fullscreen"
+msgid  "Graphic quality"
+msgstr "Graphic quality"
+msgid  "Max vision distance"
+msgstr "Max vision distance"
+msgid  "Sounds"
+msgstr "Sounds"
+msgid  "Music"
+msgstr "Music"
+msgid  "Async load music"
+msgstr "Asynchronous music loading"
+msgid  "Sound system"
+msgstr "Sound system"
+msgid  "Saved game directory"
+msgstr "Saved game directory"
+msgid  "Back"
+msgstr "Back"
+
+msgid  "Jump"
+msgstr "Jump"
+
+msgid  "Start"
+msgstr "Start"
+
+msgid  "Paused"
+msgstr "Paused"
+
+
+msgid  "Towards %s"
+msgstr "Towards %s"
+
+msgid  "Resolution"
+msgstr "Resolution"
+
+msgid  "Low"
+msgstr "Low"
+
+msgid  "Medium"
+msgstr "Medium"
+
+msgid  "High"
+msgstr "High"
+
+msgid  "Player name"
+msgstr "Player name"
+
+msgid  "New level..."
+msgstr "New level..."
+
+
+msgid  "fountain_river"
+msgstr "Fountain\nriver"
+
+msgid  "coqueliform_field"
+msgstr "Coqueliform\nfield"
+
+msgid  "pompon_forest"
+msgstr "Pompon\nforest"
+
+msgid  "hopeless_castle"
+msgstr "Hopeless\ncastle"
+
+msgid  "__unavailable_level__"
+msgstr "Not\nyet\navailable!"
+
+
+msgid  "__press_left_shift__"
+msgstr " \n\n  (Press LEFT SHIFT to select)"
+
+msgid  "__press_right_shift__"
+msgstr " \n\n  (Press RIGHT SHIFT to select)"
+
+msgid  "__quit_None__"
+msgstr "What do you want to do?"
+
+msgid  "__quit_None_red__"
+msgstr "I want the brothers to commit suicide and restart the current world..."
+
+msgid  "__quit_None_blue__"
+msgstr "I want to quit this wonderful game and save it in order to come back later!"
+
+
+msgid  "__help1_None__"
+msgstr "Welcome to Balazar Brother! Help the Balazar Brothers to free their girlfriends. To make Blue Balazar jump, press RIGHT SHIFT (or RIGHT CTRL, or joypad BUTTON 2)."
+
+msgid  "__help2_None__"
+msgstr "Press RIGHT SHIFT again..."
+
+msgid  "__help3_None__"
+msgstr "To make Red Balazar jump, press LEFT SHIFT (or LEFT CTRL, or joypad BUTTON 1). Only one brother can fit on a mushroom at once! Thus, Red Balazar must wait for Blue Balazar to move."
+
+msgid  "__help_portail_None__"
+msgstr "The portal in front of you will teleport both Balazars to the next level. Beware, these portals can be used in both directions..."
+
+msgid  "__help4_None__"
+msgstr "Keep pressing RIGHT SHIFT until Blue Balazar reaches the blue mushroom."
+
+msgid  "__help5_None__"
+msgstr "Blue mushrooms rotate allowing a brother to choose his path. Move Blue Balazar to the chest by waiting until the arrow allows him to take the left path."
+
+msgid  "__help6_None__"
+msgstr "Chests give points! Blue Balazar cannot move any further. You must move Red Balazar to the portal by taking the correct path from the Blue Mushroom."
+
+msgid  "__help7_None__"
+msgstr "Now to see the Balazar Brothers acrobatic skills! First, move Blue Balazar to the chest."
+
+msgid  "__help8_None__"
+msgstr "Well done!"
+
+msgid  "__help8_None_blue__"
+msgstr "Now, move Red Balazar until he lands on Blue Balazar's head! Then press RIGHT SHIFT for further instructions."
+
+msgid  "__help8_None_blue_None__"
+msgstr "Congratulations!"
+
+msgid  "__help8_None_blue_None_red__"
+msgstr "Now, move Blue Balazar two times and then press LEFT SHIFT for further instructions."
+
+msgid  "__help8_None_blue_None_red_None__"
+msgstr "Red Balazar can reach the next platform and go through the portal!"
+
+msgid  "__help9_None__"
+msgstr "Some chests are above the mushrooms... guess how to get them!"
+
+msgid  "__help10_None__"
+msgstr "Blue mushrooms can also be used to make a U-turn!"
+
+msgid  "__help11_None__"
+msgstr "It's time to learn advanced acrobatics: the BROTHER-SURF! First, move Blue Balazar onto the chest."
+
+msgid  "__help12_None__"
+msgstr "Now, move Red Balazar on to Blue Balazar."
+
+msgid  "__help12_None_blue__"
+msgstr "When done, press RIGHT SHIFT."
+
+msgid  "__help12_None_blue_None__"
+msgstr "To perform a brother-surf, cause Blue Balazar to fall by holding RIGHT-SHIFT. When the arrow appears move Red-Balazar onto the next mushroom. Be fast: Red Balazar must pass through the portal BEFORE Blue Balazar falls to his death!"
+
+msgid  "__help13_None__"
+msgstr "To open the DOOR, you need 7 KEYS. Try to get them!"
+
+msgid  "__help14_None__"
+msgstr "When a Balazar cannot move, you can make him jump to his death by holding down the corresponding SHIFT key. The game will end but you can restart at the start of this level. However, don't die too often, since you lose a chest each time!"
+
+msgid  "__help15_None__"
+msgstr "Congratulations!\nIn the game, the 7 keys may be spread across several levels."
+
+msgid  "__help16_None__"
+msgstr "You can control the camera with the UP, DOWN, LEFT and RIGHT keys, or the PADDLE of the joypad. To reset the camera, rapidly press these keys."
+
+msgid  "__help17_None__"
+msgstr "To quit the game, press 'Escape' or the letter 'q'. You can then choose between restarting the current world from the first level, or saving the current position."
+
+msgid  "__helpend_None__"
+msgstr "The tutorial is completed!"
+
+msgid  "__helpend_None_red__"
+msgstr "At last! I was bored!"
+
+msgid  "__helpend_None_blue__"
+msgstr "Now, it's time to free our girlfriends!"
+
+
+msgid  "__striking_fruit_blue__"
+msgstr "Beware of the STRIKING-FRUITS! I really wonder why they are so angry?"
+
+msgid  "__striking_fruit_blue_red__"
+msgstr "It's nothing... they are angry since I squeeze two of them each morning for breakfast. They want revenge!"
+
+
+msgid  "__ransom_None__"
+msgstr "Hello, do you have the ransom?"
+
+msgid  "__ransom_None_blue__"
+msgstr "Yes, I have the 100 chests!"
+
+msgid  "__ransom_None_blue_None__"
+msgstr "Good... Enter, and be welcome at the hopeless castle. And please excuse me if I haven't got the time for cleaning up the traps of the castle... ha ha ha!"
+
+msgid  "__ransom_None_blue_None_red__"
+msgstr "It is YOU we are going to clean up, Grey Balazar!"
+
+msgid  "__ransom_None_red__"
+msgstr "Not yet..."
+
+msgid  "__ransom_None_red_None__"
+msgstr "You don't have the ransom. Come back when you have the 100 chests!"
+
+msgid  "__ransom_None_red_None_blue__"
+msgstr "We'll be back with the chests, Grey Balazar!"
+
+msgid  "__ransom_None_red_None_red__"
+msgstr "We can negotiate... 50% of the chests, 50% of the princesses? no? No. Well, so we need to get the chests..."
+
+
+msgid  "__end_BalazarGris__"
+msgstr "You? Here? It's impossible... you have succeeded!"
+
+msgid  "__end_BalazarGris_blue__"
+msgstr "Balazarette Violet!"
+
+msgid  "__end_BalazarGris_blue_BalazarGris__"
+msgstr "My traps were infallible..."
+
+msgid  "__end_BalazarGris_blue_BalazarGris_red__"
+msgstr "Balazarine Mandarin!"
+
+msgid  "__end_BalazarGris_blue_BalazarGris_red_BalazarGris__"
+msgstr "So the game is ended..."
+
+msgid  "__end_BalazarGris_blue_BalazarGris_red_BalazarGris_blue__"
+msgstr "...and we have won!"
+
+
+msgid  ""
+msgstr ""
+
+"Project-Id-Version: BalazarBrother\n"
+"Last-Translator: Robert Ancell <bob27@users.sourceforge.net>\n"
+"Language-Team: english <jiba@tuxfamily.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"

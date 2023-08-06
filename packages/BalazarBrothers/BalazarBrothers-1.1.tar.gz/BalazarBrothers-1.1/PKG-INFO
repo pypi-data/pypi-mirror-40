@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: BalazarBrothers
+Version: 1.1
+Summary: A 3D action/puzzle game.
+Home-page: http://home.gna.org/oomadness/en/balazar_brother/index.html
+Author: Jiba (LAMY Jean-Baptiste)
+Author-email: jibalamy@free.fr
+License: GPL
+Description: A 3D puzzle game featuring the Balazar Brothers.
+Platform: UNKNOWN
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Classifier: Topic :: Games/Entertainment :: Arcade
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Classifier: Natural Language :: French
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 2.7

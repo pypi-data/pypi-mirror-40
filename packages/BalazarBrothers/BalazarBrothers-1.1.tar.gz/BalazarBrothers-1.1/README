@@ -1,0 +1,117 @@
+                 +----------------------------------+
+                 | B A L A Z A R    B R O T H E R S |
+                 +----------------------------------+
+
+*** What is Balazar Brother???
+
+Balazar Brothers is a libre software 3D puzzle game!
+
+
+
+*** Warning!
+
+Between two releases of Balazarn Brothers, don't expect that you can
+re-use your saved games! If you want to play a new level without
+restarting at the beginning of the game, use the --start-level option
+and create a new game (by choosing a new player name), e.g.:
+
+    balazar_brothers --start-level pompon_forest
+
+
+
+*** Help needed!
+
+We espescially search for graphists, network coders, level
+designer,...
+
+We also search people for porting Balazar to other OS.
+
+
+
+*** Requirement
+
+ * Python 2.4.x (the latest is the best; tested on 2.4.1)
+   INCLUDING the files for compiling python modules in C,
+   e.g. , on Linux Mandrake, you need to install the package :
+   'libpython2.4-devel-2.4.1-2mdk' (version numbers may change)
+
+ * PIL (Python Imaging Library, http://www.pythonware.com/products/pil/)
+
+ * OpenGL (tested with ATI Radeon drivers; hardware acceleration is
+   heavily advised, though not strictly required)
+
+ * SDL (http://libsdl.org/)
+
+ * Glew (http://glew.sf.net)
+
+ * OpenAL (www.openal.org), PyOgg and PyVorbis (www.xiph.org) for
+   sound support.
+
+ * Cal3D >= 0.10 (cal3d.sourceforge.net)
+   
+ * Twisted (http://twistedmatrix.com)
+
+ * FreeType (http://freetype.org)
+
+The Balazar Brothers tarball comes with all other dependencies
+(including Soya 3D and Tofu).
+
+
+
+*** Installation
+
+tar -xvzf BalazarBrothers-XXX.tar.gz
+cd BalazarBrothers-XXX
+
+ * Do:
+
+python ./setup.py build
+
+ * Do AS ROOT:
+
+su
+python ./setup.py install
+
+You may get the following warning:
+
+  warning: install: modules installed to '/usr/share/',
+  which is not in Python's module search path (sys.path)
+  -- you'll have to change the search path yourself
+
+You can safely ignore the warning !
+
+
+
+*** How to launch Balazar ?
+
+Just type "balazar_brothers" on a console !
+
+There's also a command line interface, see "balazar_brothers --help"
+for more information.
+
+While playing, use left and right shift keys.
+
+
+*** Common troubles
+
+ * Sound problems : OpenAL may not support your sound card (e.g.
+   sound quality is poor, and you get some error printed on the
+   console, about "native_blitbuffer: Assertion `0' failed" or "fcntl:
+   Invalid argument"). Some people has obtained good result by forcing
+   the use of esd. For that, edit ~/.openalrc, and write in it :
+   
+     (define devices '(esd))
+
+ * ImportError: libGL.so.1: cannot handle TLS data
+   This problem occurs typically on Debian with NVidia cards.
+   Just install the "nvidia-glx" Debian package.
+
+
+   
+*** Contacts and website
+
+jibalamy@free.fr
+
+Much more info are available on the web site:
+
+http://home.gna.org/oomadness/en/balazar_brother/index.html

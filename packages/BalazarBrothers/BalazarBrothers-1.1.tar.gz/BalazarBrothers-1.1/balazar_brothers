@@ -1,0 +1,160 @@
+#! /usr/bin/python2 -O
+# -*- python -*-
+
+# Balazar Brothers
+# Copyright (C) 2006-2007 Jean-Baptiste LAMY
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+import os, os.path, sys
+# If installed in /usr, /usr/local, ... add /usr/share (or ...) to the module path.
+
+HERE = os.path.dirname(sys.argv[0])
+
+if   HERE.endswith("games"): # /usr/{local/}games
+  APPDIR = os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), "..", "share", "games"))
+elif HERE.endswith("bin"): # /usr/{local/}bin
+  APPDIR = os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), "..", "share"))
+else: # Raw source not installed
+  APPDIR = os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), ".."))
+
+print "* Balazar Brothers * Balazar Brothers lives in %s" % APPDIR
+sys.path.insert(0, APPDIR)
+
+import soya, soya.tofu as tofu
+import balazar_brothers, balazar_brothers.globdef as globdef
+
+
+mode = ""
+i = 1
+while i < len(sys.argv):
+  arg = sys.argv[i]
+  i = i + 1
+  
+  if   arg == "--single": mode = "single"; tofu.LOGIN = sys.argv[i]; tofu.PASSWORD = sys.argv[i + 1]; i += 2
+  elif arg == "--server": mode = "server"
+  elif arg == "--client": mode = "client"; tofu.LOGIN = sys.argv[i]; tofu.PASSWORD = sys.argv[i + 1]; tofu.HOST = ((len(sys.argv) > i + 2) and sys.argv[i + 2]) or ""; i += 3
+  elif arg == "--fullscreen": globdef.FULLSCREEN = 1
+  elif arg == "--windowed"  : globdef.FULLSCREEN = 0
+  
+  elif arg == "--saved-game-dir":
+    tofu.SAVED_GAME_DIR = sys.argv[i]
+    i += 1
+    
+  elif arg == "--start-level":
+    globdef.START_LEVEL = sys.argv[i]
+    i += 1
+    
+  elif arg == "--screensize":
+    globdef.SCREEN_WIDTH  = int(sys.argv[i])
+    globdef.SCREEN_HEIGHT = int(sys.argv[i + 1])
+    i += 2
+    
+  elif arg == "--no-sound":
+    def SoundPlayer(parent = None, sound = None, loop = 0, play_in_3D = 1, gain = 1.0, auto_remove = 1):
+      pass
+    soya.SoundPlayer = SoundPlayer
+    globdef.SOUND = globdef.MUSIC = 0
+    
+  elif arg == "--debug": globdef.DEBUG = 1
+    
+  elif arg == "--no-fps-limit": globdef.MIN_FRAME_DURATION = 0.0
+    
+  elif arg == "--version":
+    print "Balazar version", globdef.VERSION
+    sys.exit()
+    
+  elif arg == "--level-editor": mode = "level-editor"
+  
+  elif arg == "--help":
+    print """Balazar Brothers: A fun 3D game
+Usages :
+
+  balazar_brothers [options...] --single <login> <password>
+Starts a single player game
+
+  balazar_brothers [options...] --server
+Starts the server
+
+  balazar_brothers [options...] --client <login> <password> <host>
+Starts a client and connect to server <host> with login <login>
+and password <password>. If login doesn't exist, a new player is
+created. If needed, <host> can be <host>:<port>
+
+  balazar_brothers [options...] --level-editor
+Starts the level editor
+
+where options are:
+--help                     This help
+--version                  Shows version number
+--fullscreen               Fullscreen mode
+--windowed                 Windowed mode
+--screensize WIDTH HEIGHT  Sets the screen size (in pixel)
+--no-sound                 Disable sounds and music
+--debug                    Enable debug output
+--no-fps-limit             Disable FPS limit, for benchmarking (default is to limit the FPS to 30)
+--saved-game-dir PATH      Set the directory where games are saved and loaded to PATH
+--start-level              Set at which level new games start (e.g. --start-level pompon_forest)
+"""
+    sys.exit()
+    
+  else:
+    print "Unknown command line arg : '%s' !" % arg
+    sys.exit(2)
+    
+
+try:
+  import psyco
+  psyco.full()
+except:
+  print "* Balazar Brothers * (Psyco not found ; if you are using an x86 processor, installing psyco can speed up Balazar a little)"
+
+
+if   mode == "server": globdef.SOUND = globdef.MUSIC = 0
+import balazar_brothers, balazar_brothers.globdef as globdef, balazar_brothers.main_loop, balazar_brothers.character, balazar_brothers.player, balazar_brothers.level
+
+
+
+#import random; random.seed(12282)
+
+
+if  (mode == "single") or (mode == "client"):
+  balazar_brothers.main_loop.init()
+  tofu.set_side(mode)
+  balazar_brothers.main_loop.MainLoop().main_loop()
+  
+elif mode == "server":
+  tofu.set_side(mode)
+  balazar_brothers.main_loop.MainLoop().main_loop()
+  
+elif mode == "level-editor":
+  tofu.set_side("level_editor", "single")
+  soya.init(title = "Balazar Brothers -- Level Editor", width = 800, height = 600, fullscreen = 0, sound = 1)
+  soya.set_quality(globdef.QUALITY)
+  
+  import balazar_brothers.level_editor, Tkinter
+  
+  balazar_brothers.level_editor.LevelEditor()
+  Tkinter.mainloop()
+  
+else:
+  import balazar_brothers.gui
+  
+  balazar_brothers.main_loop.init()
+  
+  mainmenu = balazar_brothers.gui.MainMenu ()
+  mainmenu.run()
+  
+sys.exit()
