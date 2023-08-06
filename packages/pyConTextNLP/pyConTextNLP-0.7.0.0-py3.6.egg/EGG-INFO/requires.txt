@@ -1,0 +1,8 @@
+networkx
+pyyaml
+
+[dev]
+check-manifest
+
+[test]
+coverage
