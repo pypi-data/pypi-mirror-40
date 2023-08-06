@@ -1,0 +1,4 @@
+sqlalchemy>=1.2.15
+sqlalchemy-utils>=0.33.9
+sqlalchemy-json>=0.2.1
+attrs>=18.2.0
