@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mcmodmgr
+Version: 0.1.0
+Summary: Minecraft mod downloader
+Home-page: https://github.com/Kjwon15/mcmodmgr
+Author: Kjwon15
+Author-email: kjwonmail@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/Kjwon15/mcmodmgr/releases
+Platform: UNKNOWN
+Requires-Dist: PyYaml (>=3.13)
+Requires-Dist: cssselect (>=1.0.3)
+Requires-Dist: lxml (>=4.3.0)
+Requires-Dist: requests (>=2.21.0)
+
+UNKNOWN
+
+
