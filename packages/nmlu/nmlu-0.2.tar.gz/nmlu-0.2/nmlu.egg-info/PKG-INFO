@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: nmlu
+Version: 0.2
+Summary: nANO Machine Learning utilities toolkit
+Home-page: https://github.com/NeuronQ/nmlu
+Author: Andrei Anton
+Author-email: io@neuronq.ro
+License: MIT
+Description: nMLU is a set of ultra-lightweight utility functions for miscellaneous data-science and machine-learning work
+Platform: UNKNOWN
