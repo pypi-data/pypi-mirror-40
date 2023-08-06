@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyhep
+Version: 0.0.1
+Summary: Python package for high-energy physics.
+Home-page: https://github.com/riga/pyhep
+Author: Marcel Rieger
+Author-email: python-pyhep@googlegroups.com
+License: BSD-3-Clause
+Description: # Python Package for High-Energy Physics
+        
+        Todo.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
