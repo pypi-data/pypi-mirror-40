@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+topicnetwork/__init__.py
+topicnetwork.egg-info/PKG-INFO
+topicnetwork.egg-info/SOURCES.txt
+topicnetwork.egg-info/dependency_links.txt
+topicnetwork.egg-info/not-zip-safe
+topicnetwork.egg-info/requires.txt
+topicnetwork.egg-info/top_level.txt
