@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: geodataExtent
+Version: 0.0.1
+Summary: Package for extracting the time and spatial extent of Geodata
+Home-page: https://github.com/HenFo/Geosoftware-II-AALLH/tree/master/CLI%20Tools
+Author: A^sHL^2
+Author-email: h_fock01@uni-muenster.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: gdal (>=2.3.0)
+Requires-Dist: click (>=7.0)
+Requires-Dist: netCDF4 (>=1.4.2)
+Requires-Dist: pandas (>=0.23.4)
+Requires-Dist: pygeoj (>=1.0.0)
+Requires-Dist: pyshp (>=2.0.0)
+Requires-Dist: xarray (>=0.11.0)
+Requires-Dist: DateTime (>=4.3)
+Requires-Dist: tabulate (>=0.8.2)
+
+# Test Package
+
+This is a simple test package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+

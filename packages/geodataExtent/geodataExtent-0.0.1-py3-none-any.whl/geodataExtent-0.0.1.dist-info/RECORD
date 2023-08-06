@@ -1,0 +1,10 @@
+geodataExtent/__init__.py,sha256=m54LYDwrjkGyF76nQjJPmv_YblI4Q4CGq-3IWBVfJR0,26
+geodataExtent/extractGeoDataFromFolder.py,sha256=dlzwOb3c7rIDxwd6FEYCsu0YATgbxppD1P5Oerx2A_4,3275
+geodataExtent/getBoundingBox.py,sha256=cPg4PmEOE5aUAUpV2RhB5i5s0vZMkvGe5oUhdLs7I2M,12042
+geodataExtent/getTimeExtent.py,sha256=wqAA2Ixclu8CP7j1DwmdsW4Om5OoKTCWZ9tFlaJv4sg,8910
+geodataExtent/masterExtract.py,sha256=J_icpVGD3f10Zd7zC16VpNCOz9mmxgqrQYa8R70n7_c,1296
+geodataExtent-0.0.1.dist-info/LICENCE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+geodataExtent-0.0.1.dist-info/METADATA,sha256=tEnj_cGlOPuFPmjt5iDuyd4ewi5cqgqpinyXrzzvvTo,934
+geodataExtent-0.0.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+geodataExtent-0.0.1.dist-info/top_level.txt,sha256=0DVnOCEW-Lc1Pl097nl5Pfc1FEcDCTmqTHLczNjUse8,14
+geodataExtent-0.0.1.dist-info/RECORD,,
