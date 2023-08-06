@@ -1,0 +1,10 @@
+vcf_annotation_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vcf_annotation_tools/vcf_expression_annotator.py,sha256=1i1UQiB8O5Xk8Xj08U2wzQpeObOzu19e4JJUdT0vmZw,10247
+vcf_annotation_tools/vcf_info_annotator.py,sha256=Bn89Dj9WNMBPq1Djdn3GRZ67cE6TDTr4PmLaMi9A6mk,4452
+vcf_annotation_tools/vcf_readcount_annotator.py,sha256=3oOt_tN6Uji59rsndX5KauNjwbXC_L9Y6UTdtzVgYJY,14008
+vcf_annotation_tools/vep_annotation_reporter.py,sha256=75rofYyHsnK5ObZSfgycCy8Rt-S2X7JgsFK7RsNq1-0,7232
+vcf_annotation_tools-3.0.0.dist-info/METADATA,sha256=xF2zFniDM3FHYvUNmSpP8_-7qUkTqRnGFOMMY2bU_r8,812
+vcf_annotation_tools-3.0.0.dist-info/RECORD,,
+vcf_annotation_tools-3.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+vcf_annotation_tools-3.0.0.dist-info/entry_points.txt,sha256=NBHMvYk3wrnAAOaSP6oHD13VMVEPiaiWk5tNpY2zAII,315
+vcf_annotation_tools-3.0.0.dist-info/top_level.txt,sha256=sbcK56msd7nYXWY82CFhxwjtfjlDRqRL-LmAZiDiFaI,21
