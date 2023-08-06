@@ -1,0 +1,5 @@
+[console_scripts]
+coil_correction = jem.cli:coil_correction
+contrast_normalization = jem.cli:contrast_normalization
+riff = jem.cli:compute_riff
+
