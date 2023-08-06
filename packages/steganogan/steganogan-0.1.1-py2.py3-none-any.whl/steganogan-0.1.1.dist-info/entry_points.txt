@@ -1,0 +1,3 @@
+[console_scripts]
+steganogan = steganogan:cli.main
+
