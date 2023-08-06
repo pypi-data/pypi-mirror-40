@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: ytopt
+Version: 0.0.1
+Summary: Model-based search software for autotuning.
+Home-page: https://xgitlab.cels.anl.gov/pbalapra/ytopt
+Author: Prasanna Balaprakash
+Author-email: pbalapra@anl.gov
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scikit-optimize
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+Requires-Dist: tensorflow (>=1.11.0)
+Requires-Dist: keras
+Requires-Dist: gym
+Requires-Dist: joblib
+Requires-Dist: mpi4py (>=3.0.0)
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-bootstrap-theme ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+
+<p align="center">
+<img src="docs/_static/logo/medium.png">
+</p>
+
+[![Documentation Status](https://readthedocs.org/projects/ytopt/badge/?version=latest)](https://ytopt.readthedocs.io/en/latest/?badge=latest)
+
+# What is Ytopt?
+
+TODO
+
+# Documentation
+
+Ytopt documentation is on : [ReadTheDocs](https://ytopt.readthedocs.io)
+
+# Directory structure
+
+```
+search/
+    directory for search applications
+```
+
+# Install instructions
+
+```
+git clone https://github.com/ytopt-team/ytopt.git
+cd ytopt/
+pip install -e .
+```
+# How do I learn more?
+
+* Documentation: https://ytopt.readthedocs.io
+
+* GitHub repository: https://github.com/ytopt-team/ytopt
+
+# Who is responsible?
+
+The core Ytopt team is at Argonne National Laboratory:
+
+TODO
+
+# How can I participate?
+
+TODO
+
+# Acknowledgements
+
+TODO
+
+# Copyright and license
+
+TBD
+
