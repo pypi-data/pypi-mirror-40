@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: spacy_conll
+Version: 0.1.0
+Summary: Parses a given input text into CoNLL-U format by transforming spaCy output.
+Home-page: https://github.com/BramVanroy/spacy_conll
+Author: Bram Vanroy, Raquel G. Alhama
+Author-email: bramvanroy@hotmail.com, rgalhama@gmail.com
+License: BSD 2
+Project-URL: Bug Reports, https://github.com/BramVanroy/spacy_conll/issues
+Project-URL: Source, https://github.com/BramVanroy/spacy_conll
+Description: UNKNOWN
+Keywords: nlp spacy conll conllu tagging
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Text Processing
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
