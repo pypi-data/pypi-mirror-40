@@ -1,0 +1,42 @@
+CHANGES
+=======
+
+* remove build artifacts
+* add home page
+* add tests and coverage check
+* do not look for tests in poc folders
+* adding dependencies
+* install the library itself with its dependencies
+* update gitlab CI instructions
+* add requirements and update package structure
+* update structure for publishing
+* Add LICENSE
+* Removed entrypoint in module & added requirements.txt
+* Additional testing
+* Helpermethods and fixtures moved
+* Closing the stream connection at end of execution
+* Ignore unused config sections
+* Ignored redis dump
+* Added missing type
+* Sets logging handler to custom handler and emits a msg
+* Initial tests added for redis\_log\_handler
+* Stringified incoming LogRecord
+* Setup added for packaging
+* Initial stream to redis working
+* Deleted .idea/vcs.xml
+* Changed type checking to a more flexible form
+* Updated README and added CLI for creation of Superuser
+* Added and README.md and Packaged into web---Plz take this one into merge
+* Added and README.md and Packaged into web
+* Tests added
+* Restructured PoC to be properly testable
+* PEP8 and mypy compliant. Added newlines where necessary Added mypy configuration file and more static typing
+* Restructured as packaging
+* Updated admin interface with models and implemented logins with flask-security
+* Simpler check for module names
+* #2: Plugin detection - 2 workers added
+* Removed BIN file .DS\_Store and added to gitignore
+* #2: Detector added. Can be packaged to be run as
+* Don't track .pyc files
+* Created flask admin interface with Users Model
+* Initial commit
