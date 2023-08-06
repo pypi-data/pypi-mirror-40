@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: inside-out-proxy
+Version: 190120
+Summary: HTTP Proxy
+Home-page: UNKNOWN
+Author: Axiros GmbH
+Author-email: gk@axiros.com
+License: UNKNOWN
+Keywords: http,proxy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Internet :: Proxy Servers
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Requires-Dist: attrs
+Requires-Dist: structlog
+Requires-Dist: attrs
+Requires-Dist: colorama
+Requires-Dist: pygments
+Requires-Dist: absl-py
+Requires-Dist: appdirs
+Requires-Dist: rx
+Requires-Dist: gevent
+Provides-Extra: tests
+Requires-Dist: coverage; extra == 'tests'
+Requires-Dist: pytest-to-md; extra == 'tests'
+Requires-Dist: pytest (>=3.3.0); extra == 'tests'
+
+# Inside Out HTTP Job Proxy
+
+> "Don't call us, we call you!"
+
+(https://en.wiktionary.org/wiki/Hollywood_principle)
+
+Allows to stream jobs from a long polling server to the proxy, which turns them into outgoing HTTP Requests.
+
+
+# Proxy
+
+All options:
+
+    inside_out_proxy --helpfull
+
+## Example:
+
+    inside_out_proxy --user=foo --password="$PW" --jobserver="https://..."
+
+
+# Testserver
+
+Included is a test server which allows to check the correct working of the
+client.
+
+    ./testserver.py --help
+
+shows its options.
+
+
+## Testrun
+
+This will start the testserver on localhost port 8089, returning jobs from
+playbook "prod":
+
+```bash
+./testserver.py --playbook prod --loops=1000 --debug
+```
+
+Now we connect the proxy with default settings:
+
+```bash
+inside_out_proxy --debug
+
+```
+
+
+
+
+
+DVCS URL: /scm/hg/AX/inside_out_proxy
+
+
+

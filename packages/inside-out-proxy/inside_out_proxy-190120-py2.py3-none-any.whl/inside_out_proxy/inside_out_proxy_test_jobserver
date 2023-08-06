@@ -1,0 +1,205 @@
+#!/usr/bin/env python
+import gevent
+from gevent import monkey, select, os as gevent_os
+
+monkey.patch_all()
+from bottle import response, request, Bottle, abort
+from geventwebsocket import WebSocketError
+from geventwebsocket.handler import WebSocketHandler
+import json, requests, os, time, rx, attr, sys, structlog
+from inside_out_proxy import axlog
+import base64
+from absl import app as abslapp
+from absl import flags
+from ast import literal_eval
+import appdirs
+
+log = structlog.get_logger('cnr_server')
+here = os.path.dirname(os.path.abspath(__file__))
+
+FLAGS = flags.FLAGS
+flags.DEFINE_string(
+    'bind_ip',
+    '127.0.0.1',
+    'Bind IP. "0.0.0.0" or "::" binds to all external interfaces for IPv4 or IPv6',
+)
+flags.DEFINE_boolean('debug', False, 'Debug mode. Extended Logging.')
+flags.DEFINE_integer('bind_port', 8089, 'Bind Port')
+flags.DEFINE_string(
+    'pidfile', appdirs.user_state_dir() + '/server.pid', 'PidFile'
+)
+flags.DEFINE_string(
+    'playbook',
+    'testserver',
+    'Playbook in assets dir (defining jobs to deliver when testuser connects)',
+)
+flags.DEFINE_string(
+    'speed_user_password',
+    '',
+    (
+        'When a user connects with username "speed" and this password, the server '
+        'will send jobs at full speed. Total job count defined by loops parameter.'
+    ),
+)
+
+flags.DEFINE_float(
+    'playbook_speed', 1.0, 'Factor to divide sleep as set in playbooks with'
+)
+flags.DEFINE_integer('loops', 1, 'Playbook loops')
+# defined in __init__
+# flags.DEFINE_boolean('debug', False, 'Debug Mode')
+
+O = rx.Observable
+app = Bottle()
+GS = rx.concurrency.GEventScheduler()
+
+pass_ = lambda ev: 0
+dbg = lambda: FLAGS.debug
+
+
+def err(exc):
+    print('Exc!!', exc)
+    breakpoint()
+
+
+def get_basic_auth_creds():
+    try:
+        auth = request.headers['Authorization'].split(' ', 1)[1]
+        return base64.b64decode(auth).decode('utf-8').split(':', 1)
+    except:
+        return '', ''
+
+
+@app.route('/fake_cnr/<cpeid>/<user>/<password>')
+def fake_cpe_cnr(cpeid, user, password):
+    """ just a test fake cpe cnr url (back to the server)"""
+    log.debug('Fake CNR', **locals())
+    sleep = request.query.get('sleep', 0)
+    if sleep:
+        log.debug('Sleeping', dt=sleep)
+        time.sleep(float(sleep) / 1000.0)
+    u, p = get_basic_auth_creds()
+    if u == user and p == password:
+        return cpeid
+    response.status = 401
+    return 'Unauthorized'
+
+
+@app.route('/results', method='POST')
+def results():
+    r = request.body.read()
+    res = json.loads(r)
+    log.info('got results', results=res)
+    return 'ok'
+
+
+@app.route('/poll', method=('POST', 'GET'))
+def longpoll():
+    log.info('Long poll session start')
+    u, p = get_basic_auth_creds()
+    if users.get(u) != p:
+        log.info('Unauthorized', user=u)
+        response.status = 401
+        return 'Unauthorized'
+    log.info('Connected', user=u)
+    speedtest = u == 'speed'
+    plays = playbook
+    if speedtest:
+        log.warn('Initiating speed test')
+        plays = ['speed']
+
+    i = 0
+    for loop in range(FLAGS.loops):
+        log.debug('Running playbook', loops=loop + 1)
+        for play in plays:
+            i += 1
+            if play == 'speed':
+                m = {
+                    'cpeid': 'speed%s' % i,
+                    'url': 'SELF/speed_%s/speeduser/speedpw' % i,
+                    'user': 'speeduser',
+                    'password': 'speedpw',
+                }
+            else:
+                if isinstance(play, (float, int)):
+                    time.sleep(play / FLAGS.playbook_speed)
+                    continue
+
+                m = dict(play)
+            m['nr'] = i
+            j = json.dumps(m)
+            yield j + '\r\n\r\n'
+
+    if speedtest:
+        log.info('Ending speed test')
+        return
+    log.warn(
+        'Done, disconnecting this client connection in 10.', looped=FLAGS.loops
+    )
+    time.sleep(10)  # client reconnects when we return
+
+
+playbook = []
+
+users = {}
+
+
+def load_accounts():
+    fn = appdirs.user_data_dir() + '/accounts.json'
+    if not os.path.exists(fn):
+        log.warn('Missing accounts file', fn=fn)
+        log.info('Using default for testuser')
+        users.update({'testuser': 'testpassword'})
+        return
+    with open(fn) as fd:
+        users.update(json.loads(fd.read()))
+
+
+def setup():
+    global log
+    axlog.setup_logging()
+    log = axlog.get_logger('test_server')
+    load_accounts()
+    sp = FLAGS.speed_user_password
+    if sp:
+        log.info('Adding speed test user', password=sp)
+        users['speed'] = sp
+    if FLAGS.debug:
+        FLAGS.log_level = 10
+
+
+def main(argv):
+    del argv
+    setup()
+    fn = here + '/assets/testserver_playbooks/%s.py' % FLAGS.playbook
+    log.info('Reading playbook', file=fn)
+    with open(fn) as fd:
+        # we wanted a python format for autoformatting and comments, so:
+        s = literal_eval('[' + fd.read().split(' = [', 1)[1].strip())
+    playbook.extend(s)
+    log.info('Have urls', count=len(s))
+    d = os.path.dirname(os.path.abspath(FLAGS.pidfile))
+    d = d.replace('&', '').replace(';', '')
+    if not os.path.exists(d):
+        log.warn('Creating pidfile dir', dirname=d)
+        os.system('mkdir -p "%s"' % d)
+
+    with open(FLAGS.pidfile, 'w') as fd:
+        fd.write(str(os.getpid()))
+
+    h = (FLAGS.bind_ip, FLAGS.bind_port)
+    server = gevent.pywsgi.WSGIServer(
+        h, app
+    )  # , handler_class=WebSocketHandler)
+    server.logger = log
+    server.quiet = True
+    log.info('CNR testserver is serving ', host=h[0], port=h[1])
+    server.serve_forever()
+
+
+def run():
+    abslapp.run(main)
+
+
+if __name__ == '__main__':
+    run()
