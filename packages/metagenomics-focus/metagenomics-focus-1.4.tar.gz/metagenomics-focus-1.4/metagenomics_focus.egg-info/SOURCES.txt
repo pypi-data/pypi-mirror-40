@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+focus_app/db.zip
+focus_app/focus.py
+metagenomics_focus.egg-info/PKG-INFO
+metagenomics_focus.egg-info/SOURCES.txt
+metagenomics_focus.egg-info/dependency_links.txt
+metagenomics_focus.egg-info/entry_points.txt
+metagenomics_focus.egg-info/not-zip-safe
+metagenomics_focus.egg-info/requires.txt
+metagenomics_focus.egg-info/top_level.txt
