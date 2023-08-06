@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: buzzword
+Version: 1.0.1
+Summary: Sophisticated corpus linguistics
+Home-page: http://github.com/interrogator/buzzword
+Author: Daniel McDonald
+Author-email: mcddjx@gmail.com
+License: MIT
+Keywords: corpus,linguistics,nlp
+Platform: UNKNOWN
+Requires-Dist: buzz
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: rumps
+Requires-Dist: flask
+Requires-Dist: Flask-Bootstrap
+Requires-Dist: flask-nav
+Requires-Dist: Flask-WTF
+Requires-Dist: Werkzeug
+Requires-Dist: WTForms
+
+UNKNOWN
+
+
