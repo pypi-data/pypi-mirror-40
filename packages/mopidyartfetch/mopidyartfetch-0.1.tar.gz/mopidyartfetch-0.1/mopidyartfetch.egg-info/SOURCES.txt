@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+mopidyartfetch/__init__.py
+mopidyartfetch/blank.png
+mopidyartfetch/mopidyartfetch.py
+mopidyartfetch.egg-info/PKG-INFO
+mopidyartfetch.egg-info/SOURCES.txt
+mopidyartfetch.egg-info/dependency_links.txt
+mopidyartfetch.egg-info/requires.txt
+mopidyartfetch.egg-info/top_level.txt
