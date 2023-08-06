@@ -1,0 +1,10 @@
+identify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+identify/cli.py,sha256=Ku3RbquovSa_14GM-1G0kkxuypovCO-_OYpCnSqzBaw,727
+identify/extensions.py,sha256=gmUXiC3chYkNll0onEbuOAYez30LEx7rHmhd9_zVvtE,6134
+identify/identify.py,sha256=C7zwLa2sb1xtNn3A65Hc2dN1xi3ZtOazkKN6myMk-zM,4790
+identify/interpreters.py,sha256=oU3NWMWM9CIpge1IfVY-_IM7FLyDUASPgfiXzLHAaYU,476
+identify-1.2.0.dist-info/METADATA,sha256=mriCiUykeqzhKYxBslkbBLZBFm9IV6TmiQmeONTouCg,692
+identify-1.2.0.dist-info/RECORD,,
+identify-1.2.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+identify-1.2.0.dist-info/entry_points.txt,sha256=r4kj3kHUeFIRM1eWxt75VpJAH8_3YjZOdFR_X36VSzI,52
+identify-1.2.0.dist-info/top_level.txt,sha256=Rlt8stwsb21b0aSlWbp_2EuNfX8sdPOvAEF0-FxGGVs,9
