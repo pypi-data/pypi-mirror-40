@@ -1,0 +1,4 @@
+requests!=2.9.0
+wcc>=1.6.7
+tqdm
+lxml
