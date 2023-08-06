@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: scanpydoc
+Version: 0.2
+Summary: A series of Sphinx extensions to get easy to maintain, numpydoc style documentation.
+Home-page: https://icb-scanpydoc.readthedocs-hosted.com/en/latest/
+License: UNKNOWN
+Author: Philipp Angerer
+Author-email: phil.angerer@gmail.com
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Sphinx :: Extension
+Requires-Dist: sphinx>=1.8
+Requires-Dist: get_version
+Requires-Dist: future-fstrings
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-black; extra == "test" and ( python_version != "3.5")
+Requires-Dist: sphinx-autodoc-typehints; extra == "doc"
+Provides-Extra: .none
+Provides-Extra: doc
+Provides-Extra: test
+
+scanpydoc |docs| |travis| |codecov|
+===================================
+
+A collection of Sphinx extensions similar to (but more flexible than) numpydoc.
+
+Check the self-documenting documentation at https://icb-scanpydoc.readthedocs-hosted.com
+
+.. |docs| image:: https://readthedocs.com/projects/icb-scanpydoc/badge/?version=latest
+   :target: https://icb-scanpydoc.readthedocs-hosted.com/en/latest/?badge=latest
+.. |travis| image:: https://travis-ci.com/theislab/scanpydoc.svg?token=nmMvXBaamkdzxsi8X8Rw&branch=master
+   :target: https://travis-ci.com/theislab/scanpydoc
+.. |codecov| image:: https://codecov.io/gh/theislab/scanpydoc/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/theislab/scanpydoc
+
