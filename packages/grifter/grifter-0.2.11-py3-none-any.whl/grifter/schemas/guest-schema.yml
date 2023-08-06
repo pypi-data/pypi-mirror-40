@@ -1,0 +1,159 @@
+---
+vagrant_box:
+  type: "dict"
+  required: True
+  schema:
+    name:
+      type: "string"
+      required: True
+      empty: False
+    version:
+      type: "string"
+    url:
+      type: "string"
+    provider:
+      type: "string"
+      allowed:
+        - "libvirt"
+    guest_type:
+      type: "string"
+    boot_timeout:
+      type: "integer"
+      min: 0
+      max: 300
+      forbidden:
+       - 1
+    throttle_cpu:
+      type: "integer"
+      min: 0
+      max: 99
+      forbidden:
+       - 1
+ssh:
+  type: "dict"
+  schema:
+    username:
+      type: "string"
+    password:
+      type: "string"
+    insert_key:
+      type: "boolean"
+
+synced_folder:
+  type: "dict"
+  schema:
+    enabled:
+      type: "boolean"
+    id:
+      type: "string"
+    src:
+      type: "string"
+    dst:
+      type: "string"
+
+provider_config:
+  type: "dict"
+  schema:
+    random_hostname:
+      type: "boolean"
+    nic_adapter_count:
+      type: "integer"
+      min: 0
+      max: 96
+    disk_bus:
+      type: "string"
+      allowed:
+        - "virtio"
+        - "ide"
+        - "sata"
+    cpus:
+      type: "integer"
+      min: 1
+      max: 16
+    memory:
+      type: "integer"
+      min: 256
+      max: 32768
+    huge_pages:
+      type: "boolean"
+    storage_pool:
+      type: "string"
+    additional_storage_volumes:
+      type: "list"
+      schema:
+        type: "dict"
+        schema:
+          location:
+            type: "string"
+            required: True
+          type:
+            type: "string"
+            required: True
+            allowed:
+              - "qcow2"
+              - "raw"
+          bus:
+            type: "string"
+            required: True
+            allowed:
+              - "ide"
+          device:
+            type: "string"
+            required: True
+
+    nic_model_type:
+      type: "string"
+      empty: True
+      allowed:
+        - "virtio"
+        - "e1000"
+    management_network_mac:
+      type: "string"
+
+internal_interfaces:
+  type: "list"
+  schema:
+    type: "dict"
+    schema:
+      local_port:
+        type: "integer"
+        min: 0
+        max: 2
+      remote_guest:
+        type: "string"
+      remote_port:
+        type: "integer"
+        min: 0
+        max: 2
+
+reserved_interfaces:
+  type: "list"
+  schema:
+    type: "dict"
+    schema:
+      local_port:
+        type: "integer"
+        min: 0
+        max: 5
+      remote_guest:
+        type: "string"
+      remote_port:
+        type: "integer"
+        min: 0
+        max: 5
+
+data_interfaces:
+  type: "list"
+  schema:
+    type: "dict"
+    schema:
+      local_port:
+        type: "integer"
+        min: 0
+        max: 96
+      remote_guest:
+        type: "string"
+      remote_port:
+        type: "integer"
+        min: 0
+        max: 96

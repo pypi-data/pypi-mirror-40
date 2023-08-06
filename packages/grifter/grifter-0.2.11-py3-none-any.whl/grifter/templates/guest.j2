@@ -1,0 +1,58 @@
+{% extends 'base.j2' %}
+
+{% block guest_config %}
+  {% for guest, data in guests.items() %}
+  config.vm.define "{{ guest }}" do |node|
+    guest_name = "{{ guest }}"
+    node.vm.box = "{{ data.vagrant_box.name }}"
+    {% if data.vagrant_box.version %}
+    node.vm.box_version = "{{ data.vagrant_box.version }}"
+    {% endif %}
+    {% if data.vagrant_box.url %}
+    node.vm.box_url = "{{ data.vagrant_box.url }}"
+    {% endif %}
+    {% if data.vagrant_box.guest_type %}
+    node.vm.guest = :{{ data.vagrant_box.guest_type }}
+    {% endif %}
+    {% if data.vagrant_box.boot_timeout %}
+    node.vm.boot_timeout = {{ data.vagrant_box.boot_timeout }}
+    {% endif %}
+    {% if data.synced_folder.enabled %}
+    node.vm.synced_folder "{{ data.synced_folder.src }}", "{{ data.synced_folder.dst }}", id: "{{ data.synced_folder.id }}"
+    {% else %}
+    node.vm.synced_folder ".", "/vagrant", id: "vagrant-root", disabled: true
+    {% endif %}
+
+    {% if not data.insert_ssh_key %}
+    node.ssh.insert_key = false
+    {% endif %}
+    {% if data.ssh.username %}
+    node.ssh.username = "{{ data.ssh.username }}"
+    {% endif %}
+    {% if data.ssh.password %}
+    node.ssh.password = "{{ data.ssh.password }}"
+    {% endif %}
+
+    {% include 'libvirt-config.j2' %}
+    {% if data.vagrant_box.throttle_cpu %}
+    {% include 'throttle-cpu-trigger.j2' %}
+    {% endif %}
+    {% if data.provider_config.additional_storage_volumes %}
+    {% include 'additional-data-storage-trigger.j2' %}
+    {% endif %}
+    {% if blackhole_interfaces.get(guest) %}
+    {% include 'blackhole-interfaces-trigger.j2' %}
+    {% endif %}
+
+    {% for interface in data.internal_interfaces %}
+    {% include 'libvirt-internal-interface-config.j2' %}
+    {% endfor %}
+    {% for interface in data.reserved_interfaces %}
+    {% include 'libvirt-reserved-interface-config.j2' %}
+    {% endfor %}
+    {% for interface in data.data_interfaces %}
+    {% include 'libvirt-data-interface-config.j2' %}
+    {% endfor %}
+  end
+  {% endfor %}
+{% endblock guest_config %}

@@ -1,0 +1,26 @@
+arista/veos:
+  vagrant_box:
+    version: "4.20.1F"
+  ssh:
+    insert_key: False
+  synced_folder:
+    enabled: False
+  provider_config:
+    nic_adapter_count: 8
+    disk_bus: "ide"
+    cpus: 2
+    memory: 2048
+
+juniper/vsrx:
+  vagrant_box:
+    version: "18.1R1.9-packetmode"
+    url: "http://some-server/some-dir/srx.box"
+  ssh:
+    insert_key: False
+  synced_folder:
+    enabled: False
+  provider_config:
+    nic_adapter_count: 8
+    disk_bus: "ide"
+    cpus: 2
+    memory: 4096
