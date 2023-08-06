@@ -1,0 +1,3 @@
+[console_scripts]
+cert-uploader = cert_uploader.cli:main
+
