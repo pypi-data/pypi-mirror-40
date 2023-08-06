@@ -1,0 +1,45 @@
+Metadata-Version: 2.0
+Name: skil
+Version: 0.2.8
+Summary: Train, deploy and manage your Python models with SKIL
+Home-page: https://github.com/SkymindIO/skil-python
+Author: Max Pumperla
+Author-email: max@skymind.io
+License: Apache
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: gce
+Provides-Extra: aws
+Provides-Extra: tests
+Provides-Extra: azure
+Requires-Dist: argcomplete
+Requires-Dist: click
+Requires-Dist: keras
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: requests
+Requires-Dist: six
+Requires-Dist: skil-client (>=1.2.1)
+Requires-Dist: tensorflow
+Provides-Extra: aws
+Requires-Dist: aws; extra == 'aws'
+Provides-Extra: azure
+Requires-Dist: azure; extra == 'azure'
+Provides-Extra: gce
+Requires-Dist: google-api-python-client; extra == 'gce'
+Provides-Extra: tests
+Requires-Dist: mock; extra == 'tests'
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: pytest-cov; extra == 'tests'
+Requires-Dist: pytest-pep8; extra == 'tests'
+
+Train, deploy and manage your Python models with SKIL
+
+
