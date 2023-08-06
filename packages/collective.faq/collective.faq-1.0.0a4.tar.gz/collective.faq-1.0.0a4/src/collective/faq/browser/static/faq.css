@@ -1,0 +1,34 @@
+.plonetoolbar-contenttype .contenttype-faq::before,
+.plonetoolbar-contenttype .contenttype-faq-item::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    opacity: .85;
+}
+.plonetoolbar-contenttype .contenttype-faq::before {
+    background-image: url('++resource++collective.faq/faq.svg');
+}
+.plonetoolbar-contenttype .contenttype-faq-item::before {
+    background-image: url('++resource++collective.faq/faq-item.svg');
+}
+.faq {
+    padding: 0;
+}
+.faq,
+.faq-nested {
+    list-style: none;
+}
+.faq .faq-detailed-question,
+.faq .faq-nested-description {
+    font-weight: normal;
+}
+.faq .glyphicon-plus + .faq-question + .faq-answer,
+.faq .glyphicon-plus + .faq-question + .faq-detailed-question + .faq-answer {
+    display: none;
+}
+.faq .faq-answer {
+    margin: 1em;
+    padding: 0.5em;
+    border: thin dotted;
+    background-color: #EFF7FF;
+}
