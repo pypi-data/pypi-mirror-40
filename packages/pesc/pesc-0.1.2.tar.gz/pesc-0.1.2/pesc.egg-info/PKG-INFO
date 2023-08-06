@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pesc
+Version: 0.1.2
+Summary: API wrapper for ikus.pesc.ru
+Home-page: http://github.com/we1tkind/pesc
+Author: Alexander Erdyakov
+Author-email: sa@prg.re
+License: MIT
+Description: UNKNOWN
+Keywords: pesc api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
