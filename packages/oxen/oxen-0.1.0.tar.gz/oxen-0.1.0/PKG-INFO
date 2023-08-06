@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: oxen
+Version: 0.1.0
+Summary: Task runner with a web-based frontend
+Home-page: https://github.com/ethereon/oxen
+Author: Saumitro Dasgupta
+Author-email: sd@cs.stanford.edu
+License: BSD
+Description: # Oxen
+        
+        A Python-based job runner with a web-based frontend.
+        
+        ## Requirements
+        
+        - Python 3.6+
+        
+        ## Installation
+        
+        ```
+        pip install oxen
+        ```
+        
+        ## Reference
+        
+        This is a work-in-progress. See `sample.py`.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Description-Content-Type: text/markdown
