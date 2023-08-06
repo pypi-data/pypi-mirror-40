@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: django-test-utils3
+Version: 1.1.4
+Summary: A package to help testing in Django
+Home-page: https://github.com/phroiland/django-test-utils
+Author: Johan Michaelson Phroiland
+Author-email: jon@crowdkeep.com
+License: UNKNOWN
+Download-URL: https://github.com/phroiland/django-test-utils
+Description: Testing and Crawling a Django Project.Compatible with Django 1.11 and Python 3.6.Version references <version>.<month>.<change>. Version updated annually
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
