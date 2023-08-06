@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: shbus
+Version: 1.0.2
+Summary: Python implementation of Shanghai Bus App.
+Home-page: https://github.com/hebingchang/shanghai-realtime-bus
+Author: hebingchang
+Author-email: hebingchang1@live.com
+License: MIT Licence
+Description: 「上海公交」APP 的 Python 实现。基本实现了 APP 中所有功能，如查询线路、实时公交等。
+Keywords: pip,shanghai,realtime,bus
+Platform: any
