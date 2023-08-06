@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dreamnet
+Version: 0.1
+Summary: An adventure game of sorts powered by ConceptNet
+Home-page: http://github.com/EHilly/dreamnet
+Author: Emmet Hilly
+Author-email: emmet.hilly@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pattern
+
+UNKNOWN
+
+
