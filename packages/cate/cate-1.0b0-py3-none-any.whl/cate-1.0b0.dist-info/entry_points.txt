@@ -1,0 +1,3 @@
+[console_scripts]
+cate = cate.cli:cli
+
