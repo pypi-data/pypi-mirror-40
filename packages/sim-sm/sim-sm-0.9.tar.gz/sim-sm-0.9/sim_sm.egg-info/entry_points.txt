@@ -1,0 +1,3 @@
+[console_scripts]
+simsm = simsm.__main__:main
+
