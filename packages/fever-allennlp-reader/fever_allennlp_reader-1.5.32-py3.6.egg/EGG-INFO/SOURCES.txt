@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+fever_allennlp_reader.egg-info/PKG-INFO
+fever_allennlp_reader.egg-info/SOURCES.txt
+fever_allennlp_reader.egg-info/dependency_links.txt
+fever_allennlp_reader.egg-info/requires.txt
+fever_allennlp_reader.egg-info/top_level.txt
+src/fever/__init__.py
+src/fever/reader/__init__.py
+src/fever/reader/document_database.py
+src/fever/reader/fever_reader.py
+src/fever/reader/preprocessing.py
+src/fever/reader/simple_random.py
