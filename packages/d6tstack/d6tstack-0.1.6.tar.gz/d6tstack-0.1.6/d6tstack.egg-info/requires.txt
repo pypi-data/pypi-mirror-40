@@ -1,0 +1,12 @@
+numpy
+pandas>=0.22.0
+sqlalchemy
+scipy
+d6tcollect
+
+[parquet]
+pyarrow
+
+[xls]
+openpyxl
+xlrd
