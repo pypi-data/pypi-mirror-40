@@ -1,0 +1,10 @@
+README.md
+setup.py
+cfripper/__init__.py
+cfripper/main.py
+cfripper/s3_adapter.py
+cfripper.egg-info/PKG-INFO
+cfripper.egg-info/SOURCES.txt
+cfripper.egg-info/dependency_links.txt
+cfripper.egg-info/requires.txt
+cfripper.egg-info/top_level.txt
