@@ -1,0 +1,3 @@
+[console_scripts]
+nest-reset = nest_reset.__main__:main
+
