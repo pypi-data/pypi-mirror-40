@@ -1,0 +1,15 @@
+gradedb/__init__.py,sha256=GWTYZTNot_ZzgTy33cr60D9h4kLU92ibyB7O2Odj5us,18
+gradedb/__version__.py,sha256=_tmoL3Cjio0s2BcZsEgVqXuzmpCMvlPk6TT5SYVXnzk,65
+gradedb/gpa.py,sha256=wjNoZ5JD5ci4PIxNq1ucZe5Quh7DjdWW8slqAv_NtSk,15075
+gradedb-1.0.2.dist-info/METADATA,sha256=JAhyX0Q9NOGJj1HbXtfvBvZES5jxCI3mFOC3T5cWmq4,1920
+gradedb-1.0.2.dist-info/RECORD,,
+gradedb-1.0.2.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+gradedb-1.0.2.dist-info/entry_points.txt,sha256=uHYToNBQYIZ8hFElOs-qvNtI0ccNfZ_nEqxHcXU6N1M,42
+gradedb-1.0.2.dist-info/top_level.txt,sha256=0QBKZ11VrnrkJ8_JDr4eDJHd1gyllS4aJ-ViPQKokWw,8
+mypackage/__init__.py,sha256=K0kNy26Vm6A-1V5lST3ily6yVsNLUbiqk6AZDFm2nJI,20
+mypackage/__version__.py,sha256=ArbTBI3SeuAodPcaLGKWD8s5_rdXO7lR_XpU3k2P54U,65
+mypackage/core.py,sha256=Ad4VfrMyVEhE2Qn2Lxmjn9gj_qD9zOQm-eMyG_qpqB8,26
+nblogic/__init__.py,sha256=HeNQbNFd_nZ8d5HccpCCXSvIY7EUUkaqiThiNNRgiqs,52
+nblogic/__version__.py,sha256=_tmoL3Cjio0s2BcZsEgVqXuzmpCMvlPk6TT5SYVXnzk,65
+nblogic/icit_grade.py,sha256=GNnN_U7f79gQBkC_Q3roqZEBL1fFAkUP8Vu7o_uuKVE,4102
+nblogic/klogic_gpa.py,sha256=F0U_4vX_mDQVP4FaKPEsO7ZtxX62Mvxjplg73nc2V9Y,14225
