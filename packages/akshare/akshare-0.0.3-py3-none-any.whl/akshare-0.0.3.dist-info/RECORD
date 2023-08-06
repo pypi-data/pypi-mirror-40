@@ -1,0 +1,15 @@
+akshare/__init__.py,sha256=vMSZyLLQ7-dbSAbXP98a7fc6ELKH2ZPLlaEWEBKd-ZM,3929
+akshare/basis.py,sha256=kYurUEQAUf76hp68Vw13LullQWk0VNEqkk0yKhgt-yE,7759
+akshare/calendar.json,sha256=9yJ9Rytg58FlCJ4EV2Z5qQgVAUc3T4tQpHa3iIDgK_0,55284
+akshare/cons.py,sha256=OYzPQLRyyuwHcVg7YtEJmlkpwCK8v0Lq4wrejdjIZUQ,7608
+akshare/cot.py,sha256=px9VWB-yYs-7Gr2PlGwRv8VlQ61-eV_nPVnyUd83qIk,27612
+akshare/dailyBar.py,sha256=sWK9BUgR13FAKsL5bUOrTu3JcfWLIvgxKxLSt8wNzFo,22747
+akshare/receipt.py,sha256=4NCiEcNrMs2iGBSluWuezk60RtlpHlw-Uu4MLBAUM4s,17828
+akshare/requests_fun.py,sha256=5QwSsLiobNokBNCXDgEUuV_TCXub4ynEz9Oi4X8FWbw,2365
+akshare/rollYield.py,sha256=oUWe3nI-W9qun8MwFA94WdptMNz-S3PAcA84wERbES0,5260
+akshare/sendEmail.py,sha256=toQ4YSIiIqzMmTZuTYXIwYJ6W2bVX3SFOjp_fUYZk3Q,1919
+akshare/symbolVar.py,sha256=b2hQGSv4x_8lxX6UJ6rT5VwbGYF_QSBbwonhc74_Rws,2418
+akshare-0.0.3.dist-info/METADATA,sha256=0IpFHnJdDc8dOoKzJqvOpwQJ5mQcLOfTULtSKrqtneo,578
+akshare-0.0.3.dist-info/RECORD,,
+akshare-0.0.3.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+akshare-0.0.3.dist-info/top_level.txt,sha256=IqbV2ffZP5qIrLBa8TqOSfh4lN2HGToow-uSjXGsm_A,8
