@@ -1,0 +1,17 @@
+bleach
+cbox
+certifi
+chardet
+colorama
+docutils
+idna
+pkginfo
+psutil
+Pygments
+readme-renderer
+requests
+requests-toolbelt
+six
+tqdm
+urllib3
+webencodings
