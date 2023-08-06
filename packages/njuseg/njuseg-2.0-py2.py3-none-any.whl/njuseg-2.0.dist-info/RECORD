@@ -1,0 +1,16 @@
+njuseg/__init__.py,sha256=BxKGRuYkTE6gbOw2RNUVf5EpK_TV4JK7Z96BrdWKck8,76
+njuseg/run.py,sha256=jcpae14bR-zD-kGYjExVFB91t3D17dj9RYM21gLSEs0,1150
+njuseg/segmenter.py,sha256=-M5irQrYtMuEc-RnwBsaahwFu0rolyvjbGLfLEvcQn0,10099
+njuseg/model/BaseSegmenter.py,sha256=vMT7VlcSZ7HVlWGudxLAkjFELKxh-9jPhUGJMk2Tylo,2196
+njuseg/model/SequenceTagger.py,sha256=-D9nYLAa4TBY6-xi1AqU-8nfiGQNIehLtpP1Z2EpJ1U,4309
+njuseg/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+njuseg/model/evaluation.py,sha256=Qmwn0d4MoQBwz7WurFn8zOTnnMD5-ArbjljZJx91OuY,3711
+njuseg/model/init.py,sha256=rvBFL1XVvojwJRUjOelJcVKddGYNSAi65ztM4rgFXlQ,1731
+njuseg/model/module.py,sha256=bpeAmjj_RNJ9f0faufdfScX4uXf4dQKVVI3sYN2ucIE,3836
+njuseg/model/yaml_config.py,sha256=H1LhTeAOXTCOpRsknDgaLUAydPRxqBUVnieTUAMIEUo,905
+njuseg-2.0.dist-info/DESCRIPTION.rst,sha256=ZH7E8C_hV79c30K3d-zS5XuIxIBEjuheAYpnMDBVwnE,1186
+njuseg-2.0.dist-info/METADATA,sha256=fZKqFmEA0uVQB491G888RZyT9vEbkPnQzLpKyzAXuTc,1625
+njuseg-2.0.dist-info/RECORD,,
+njuseg-2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+njuseg-2.0.dist-info/metadata.json,sha256=_SlAP2_NP4DNOono51mWalp7ryQfNeq9vXtE_1MDGsE,614
+njuseg-2.0.dist-info/top_level.txt,sha256=ysEDUhqJoUgW8orT9J3M2HaozMI86anjaaJa6TYH-P4,7
