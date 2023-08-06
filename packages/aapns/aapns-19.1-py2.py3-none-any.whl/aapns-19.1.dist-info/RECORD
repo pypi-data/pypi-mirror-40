@@ -1,0 +1,13 @@
+aapns/__init__.py,sha256=xryKO_QNqIz_B8RH6Wiur8Jww2dwK-L81ggyrn-3AFI,194
+aapns/api.py,sha256=6WdkwU1CJA6eflY5ZH5fF5ptcI36OBVVDcsGv2fV5Eg,5393
+aapns/cli.py,sha256=V3YbtV8RRKUkLLyH7UlPeKcC3MjV9Tt6PPuaGwpE_ZY,3148
+aapns/config.py,sha256=j2yxynDPodAe-G_lXLNypOtSt0KSIgd3PsG5beiy7D4,382
+aapns/connection.py,sha256=M_UJ1tHQOzLcJ2RnD_075HRsENyVv-MAUY8v8AUQt6Y,5347
+aapns/errors.py,sha256=bhPR5-eJgc22dP0Dnj5aK7R65liOKTqS_QYFYgyzc6U,1978
+aapns/models.py,sha256=a3RJWfewdKvJIl-92uqUArIUhZdTo0V1eY3qSBhD35o,3528
+aapns-19.1.dist-info/LICENSE,sha256=yY6FkXCATlnaFNAEVkSRBmw2UWnP_cxEMEtMIuyseGk,548
+aapns-19.1.dist-info/METADATA,sha256=qMLVBsT_gaAYSraEVZnKUhm0viAhERt285oxhdWU_yA,1905
+aapns-19.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+aapns-19.1.dist-info/entry_points.txt,sha256=eEsT4jipaBtM29-T6peCQE2Y9CafWyht5uLeudn2lgY,42
+aapns-19.1.dist-info/top_level.txt,sha256=KoffGOiQ1UsEt6AHhgROoXWb4uOiLh9PU4fOwz3Pwrk,6
+aapns-19.1.dist-info/RECORD,,
