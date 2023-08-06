@@ -1,0 +1,12 @@
+opentargets_ontologyutils/__init__.py,sha256=d1fDQBLvzhObh8k4OPTfcg-Vx1oyS4r8wapRIdexvPE,3598
+opentargets_ontologyutils/eco_so.py,sha256=ApfOIbVgCJ-u98EslVhcYsd-FDzvBFFj5vi_uImbka8,4301
+opentargets_ontologyutils/efo.py,sha256=6ukDybSZZkPorxFq7sBz1Mif1CgX-dY0G9IVHNSW_nM,5148
+opentargets_ontologyutils/hpo.py,sha256=u9WuoSR_cpvoUdBhsyvk6FA7j4ba5z7xg2-Y_8xRv_4,2798
+opentargets_ontologyutils/mp.py,sha256=0dCHP0feRgkYQfF6QbLdMTj2wZWF-HanUE5V_ooMAf4,1203
+opentargets_ontologyutils/rdf_utils.py,sha256=dnAljo34YSWrtFf0ACiRnio2VO0o9Q75gyWuUzqictg,13091
+opentargets_ontologyutils/version.py,sha256=blE-2f7SBbWvBBqsRhm9WfWlyCblFyOcD88GU1QI5_o,392
+opentargets_ontologyutils-1.1.0.dist-info/LICENSE,sha256=gJ-h7SFFD1mCfR6a7HILvEtodDT6Iig8bLXdgqR6ucA,10175
+opentargets_ontologyutils-1.1.0.dist-info/METADATA,sha256=VXBdpb3S48c-fwxL8k9akEPvYKmSL93UAFs59zVY49g,1770
+opentargets_ontologyutils-1.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+opentargets_ontologyutils-1.1.0.dist-info/top_level.txt,sha256=lBKMS0f_zZfxc4q-1rqyBsFIfj5Qcxin90EDcNkgOd0,26
+opentargets_ontologyutils-1.1.0.dist-info/RECORD,,
