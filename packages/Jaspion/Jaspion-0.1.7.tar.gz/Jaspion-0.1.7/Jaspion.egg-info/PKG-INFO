@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: Jaspion
+Version: 0.1.7
+Summary: FreeSwitch Event Handler based in Flask.
+Home-page: https://github.com/Otoru/Jaspion
+Author: Vitor Hugo de Oliveira Vargas
+Author-email: vitor.hugo@sippulse.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/Otoru/Jaspion/issues
+Project-URL: Source, https://github.com/Otoru/Jaspion
+Description: # Jaspion
+        
+        Python module developed to work with ESL (FreeSwitch).
+        
+        ## Example
+        This is a simple example:
+        
+        ```python 
+        from jaspion import Jaspion
+        
+        
+        app = Jaspion(__name__)
+        
+        @app.handle('heartbeat')
+        def heartbeat(message):
+            data = getattr(message, 'headers')
+            print(data)
+        
+        
+        if __name__ == "__main__":
+            app.run('127.0.0.1', 8021, 'ClueCon')
+        ```
+Keywords: ESL,FreeSwitch
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: System :: Networking
+Description-Content-Type: text/markdown
+Provides-Extra: dev
