@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+lib/salt_napalm/__init__.py
+lib/salt_napalm/__version__.py
+lib/salt_napalm/cli.py
+lib/salt_napalm/parsers.py
+lib/salt_napalm/scripts.py
+lib/salt_napalm.egg-info/PKG-INFO
+lib/salt_napalm.egg-info/SOURCES.txt
+lib/salt_napalm.egg-info/dependency_links.txt
+lib/salt_napalm.egg-info/entry_points.txt
+lib/salt_napalm.egg-info/namespace_packages.txt
+lib/salt_napalm.egg-info/requires.txt
+lib/salt_napalm.egg-info/top_level.txt

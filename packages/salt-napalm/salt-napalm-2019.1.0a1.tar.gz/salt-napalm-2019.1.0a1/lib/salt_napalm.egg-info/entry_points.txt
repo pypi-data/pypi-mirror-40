@@ -1,0 +1,3 @@
+[console_scripts]
+salt-napalm = salt_napalm.scripts:salt_napalm
+
