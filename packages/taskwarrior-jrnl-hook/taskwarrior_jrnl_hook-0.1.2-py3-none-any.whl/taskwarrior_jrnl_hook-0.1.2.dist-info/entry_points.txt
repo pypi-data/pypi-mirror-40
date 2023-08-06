@@ -1,0 +1,3 @@
+[console_scripts]
+taskwarrior_jrnl_hook = taskwarrior_jrnl_hook:cmdline
+
