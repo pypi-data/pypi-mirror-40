@@ -1,0 +1,8 @@
+setup.py
+beatrice/__init__.py
+beatrice/main.py
+beatrice.egg-info/PKG-INFO
+beatrice.egg-info/SOURCES.txt
+beatrice.egg-info/dependency_links.txt
+beatrice.egg-info/requires.txt
+beatrice.egg-info/top_level.txt
