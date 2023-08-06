@@ -1,0 +1,4 @@
+boto3
+
+[licensing]
+rsa>=3.4.2
