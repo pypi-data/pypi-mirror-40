@@ -1,0 +1,22 @@
+Metadata-Version: 1.0
+Name: cat-fact
+Version: 0.1.1
+Summary: A cat fact cli
+Home-page: UNKNOWN
+Author: The great me
+Author-email: author@me.com
+License: UNKNOWN
+Description: 
+        cat_fact
+        -------
+        
+        The client interface for cat fact
+        
+        Install
+        ~~~~~~~
+        
+        ..code:: bash
+        
+            python setyp.py install
+        
+Platform: UNKNOWN
