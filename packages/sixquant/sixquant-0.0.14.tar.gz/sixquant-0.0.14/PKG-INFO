@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: sixquant
+Version: 0.0.14
+Summary: A quick and stable data source for finance data.
+Home-page: https://github.com/sixquant/sixquant
+Author: caviler
+Author-email: caviler@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: finance data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
