@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: podcast-log
+Version: 0.2.0
+Summary: A simple Django application for following and keeping a podcast listen log.
+Home-page: https://bitbucket.org/mattkram/podcast-log
+Author: Matt Kramer
+Author-email: matthew.robert.kramer@gmail.com
+License: MIT
+Description: # podcast-log
+        
+        A simple Django application for following and keeping a podcast listen log.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
