@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: itree
+Version: 0.0.1
+Summary: An interval tree data structure
+Home-page: UNKNOWN
+Author: Bob Zimmermann
+Author-email: robert.zimmermann@univie.ac.at
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+
+UNKNOWN
+
+
