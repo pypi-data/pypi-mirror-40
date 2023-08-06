@@ -1,0 +1,11 @@
+flask_ezmail/__init__.py,sha256=A8He3PC3UQAjpZGHaPVUv5qEPNzjHlPuOePz5QOhx1w,115
+flask_ezmail/connection.py,sha256=-SOShxAnJzEpoUcVFSpnUqf1DZYsuW8lELpqq0ISY5Y,2853
+flask_ezmail/flask_mail.py,sha256=0HnbmpEo8PT39WVfD2IO-sjPJ83vgJlfLM1cG1T1fd4,18415
+flask_ezmail/mail.py,sha256=bjH1dTkdZyQWtMs74sjX2oGdYAIMbS88HTy4lpYoeOA,2075
+flask_ezmail/message.py,sha256=wVBE-LXAFIUv_pT59QK-6QTFohBdK8A_YG8ClyZkBWE,8947
+flask_ezmail/utils.py,sha256=SjkUXq9b1IwsJIWTjfEb6rtVHbTSpOc_ycpwNPNZ8bQ,3099
+flask_ezmail-0.6.3.dist-info/LICENSE,sha256=NoYM8Jpj3mRCECq9gqtU1BYO1kB_3BdYSL3kEa1WjS4,1071
+flask_ezmail-0.6.3.dist-info/METADATA,sha256=IoHNvVbsglNfA5s0Wa2PsEX4Ou-OI6lpY3Yw1aW7JbQ,4564
+flask_ezmail-0.6.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+flask_ezmail-0.6.3.dist-info/top_level.txt,sha256=VCu1sO1eVr22lyRY39LjNgKCbekLo1ZjrRHmzS_RGEM,13
+flask_ezmail-0.6.3.dist-info/RECORD,,
