@@ -1,0 +1,9 @@
+README.md
+setup.py
+mozi_cli.egg-info/PKG-INFO
+mozi_cli.egg-info/SOURCES.txt
+mozi_cli.egg-info/dependency_links.txt
+mozi_cli.egg-info/entry_points.txt
+mozi_cli.egg-info/top_level.txt
+mozi_service_cli/__init__.py
+mozi_service_cli/mozi_cli.py
