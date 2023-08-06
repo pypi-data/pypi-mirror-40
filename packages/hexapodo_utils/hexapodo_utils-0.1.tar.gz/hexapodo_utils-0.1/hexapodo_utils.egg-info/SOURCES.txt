@@ -1,0 +1,16 @@
+README.md
+setup.py
+hexapodo_utils/__init__.py
+hexapodo_utils/f1.py
+hexapodo_utils/f1_p.py
+hexapodo_utils/text.py
+hexapodo_utils.egg-info/PKG-INFO
+hexapodo_utils.egg-info/SOURCES.txt
+hexapodo_utils.egg-info/dependency_links.txt
+hexapodo_utils.egg-info/requires.txt
+hexapodo_utils.egg-info/top_level.txt
+hexapodo_utils.egg-info/zip-safe
+text_utils/__init__.py
+text_utils/f1.py
+text_utils/f1_p.py
+text_utils/helllo.py

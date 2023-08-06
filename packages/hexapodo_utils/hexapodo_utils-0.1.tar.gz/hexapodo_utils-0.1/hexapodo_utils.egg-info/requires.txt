@@ -1,0 +1,9 @@
+smart_open
+stringdist
+numpy
+pandas
+networkx
+dask
+jellyfish
+toolz
+cloudpickle
