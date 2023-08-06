@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: gtranslate_speech
+Version: 0.1
+Summary: Save google translate speech based a given text
+Home-page: https://github.com/netoolii
+Author: Wilson Neto
+Author-email: netow@myself.com
+License: MIT
+Download-URL: https://github.com/netoolii/gtranslate_speech/archive/v0.1-alpha.tar.gz
+Description: UNKNOWN
+Keywords: Google Speeech,Text to Speech,Speech to file
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
