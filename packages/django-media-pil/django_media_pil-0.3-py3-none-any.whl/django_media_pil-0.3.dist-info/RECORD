@@ -1,0 +1,14 @@
+djangomediapil/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangomediapil/config.py,sha256=y0suCICfY4vTKq4kc52gu2cHOFPy6tGkmkuqzd15toE,201
+djangomediapil/fields.py,sha256=DDydqoWAhz61AZEjIbqeRhnq7qtQZ9mZTf_Ivotp1jU,2055
+djangomediapil/imagePIL.py,sha256=MPWKQbAgge0XR_VHBCGrnhTbRddjdRxF8kKaZxeMU-M,3819
+djangomediapil/mediaPIL.py,sha256=8VC4tTg4TWh5ffqEHCT8JvVQAV6t8oQQCEzg5PuL5eo,3073
+djangomediapil/mixins.py,sha256=gBLIBC0UpGMvk7nyxjwQt1HBrRHIJiF6sJHmH7kE0xY,1701
+djangomediapil/widgets.py,sha256=6J9tHZ21Nadgf7vS_MPUv84OdXAfRSiIqrVqR8EtKVw,1118
+djangomediapil/static/djangomediapil/widget.css,sha256=TTKKAttQNg9s3t-gIf7Q97iKdfD6fh7yvOErajQ76Cw,1306
+djangomediapil/static/djangomediapil/widget.js,sha256=AD2hnqgRoDDIwD3lTTJrAi-uyHhmGIqLB4j3n9LSIIE,2633
+djangomediapil/templates/djangomediapil/image_widget.html,sha256=ZhjRInNbH5wYAyDdGQ4iFM6GQN1bhSOP2Ivs0ys3Q5s,3173
+django_media_pil-0.3.dist-info/METADATA,sha256=BU6yEtjz-ulJtZ5o3im9xhownuRdvTgqEM4slBV4klw,622
+django_media_pil-0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+django_media_pil-0.3.dist-info/top_level.txt,sha256=sFQXEB4S8jKF1OIni0XMjtbrolwU3zN5l5J5fJTRc5w,15
+django_media_pil-0.3.dist-info/RECORD,,
