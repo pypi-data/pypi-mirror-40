@@ -1,0 +1,16 @@
+dressing/__init__.py,sha256=J2ouJDItJUwYtyXb3vRwbqdl9bYBntSDQBCxcZjeHZg,642
+dressing/__main__.py,sha256=LmsqSCSp2zZ0Hu61S-JIppcNtllfKNrKemDYX9kbJJM,259
+dressing/_compat.py,sha256=ZfAKsZOciih5mrruFoc5UHFWUyqYRhgShYColPKuHf0,520
+dressing/cli.py,sha256=P73Rb5QAXHNYIFKAgbk4ForLTAphv_QN-66efVt4yBg,4128
+dressing/core.py,sha256=jAf71LDf0eIxc9hkNS4jpnGcm9Eq0RphXhp-fwdUEMA,1491
+dressing/errors.py,sha256=VmOF9wWxsDbgEK374oMguq_xHVNkklFVnYPaCazhz7g,570
+dressing/posix.py,sha256=1HGcD7nqJmRd_EQlQn6w6rZuq7IGcfRn_yqsMghx3wQ,3369
+dressing/utils.py,sha256=UKGriXZ-74p3xu47nI_5kshj5AsDY93VB3ZWfn-Vkk4,838
+dressing/version.py,sha256=Jy5oRzC2SlL-DWOTF0QqH-Ua6o7-PgPP-O6DCg2rFnA,138
+dressing/win.py,sha256=_volkDtwKVgIN6eevNbILsRFWv7j9NAIPUiBaKJQw-s,2767
+dressing-0.0.3.dist-info/LICENSE.txt,sha256=qYZNyYoapPew2XXfy8QQpfHgvNmD2_WOuHlrqBNofk8,1098
+dressing-0.0.3.dist-info/METADATA,sha256=pslSjkvl18oYmd6kqonfB-v73LA-U1lqRsoKmTHGRMo,786
+dressing-0.0.3.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+dressing-0.0.3.dist-info/entry_points.txt,sha256=vblSg63hcZeWSQe8Rq690Rpqexm6yqT03UOBTxyWbcY,53
+dressing-0.0.3.dist-info/top_level.txt,sha256=ZOkBmXGfKvrDbkRygVN6HHVIl7ZaFHnKQExqIi70Ht4,9
+dressing-0.0.3.dist-info/RECORD,,
