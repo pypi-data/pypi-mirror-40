@@ -1,0 +1,14 @@
+ela/__init__.py,sha256=qPOjpmNTlBBJJCLLW7c9GMIzKWQAGnCtLSnfJH2qJWY,23
+ela/_version.py,sha256=xh22tu9NiLVIqsMetV_rfd18h45ey7y9y0xOioykkjY,156
+ela/classification.py,sha256=eLmSrOTALjwFIb71rR7z4p1d7HVtB-yK562wz6HIMh0,12150
+ela/io.py,sha256=mhz5jYsdJwmjx_ePBnDWcaoj7SROqDH9K33z4vumvAQ,3447
+ela/spatial.py,sha256=-ZQU3wII-874gSR8dvHpft1sqZzmz91OvmKzaylfLkg,10327
+ela/textproc.py,sha256=8UkYuzjgG71DflA-o2Mmkq4AGZNdPcYCABmXdpCC7L8,9825
+ela/utils.py,sha256=fPRRR4gtKUMscave9hm5TqtzKH2CncEG3k4x6giGrPk,468
+ela/visual.py,sha256=8H7oJu_3MgyOOubVSUCwyZCiUq7cx4lCPu7zsRviG_g,13205
+ela/visual3d.py,sha256=XFJYbmhU6vRidH9yqxUrxboADrHDVt771fljGbsBASU,9581
+ela-0.6.0.dist-info/LICENSE.txt,sha256=tAotf9sGdLVFCV0agKGmOBtBB9tsZlCyydL9sSrqyAo,3369
+ela-0.6.0.dist-info/METADATA,sha256=9XuHms_AcUGZ-y-LRz5nu1l5uPLrzo6OoM-CdseAIGA,6158
+ela-0.6.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+ela-0.6.0.dist-info/top_level.txt,sha256=6P8eLMULyTn0I6RKx96rpYBS0nLL5w8x-txmK_B-X_8,4
+ela-0.6.0.dist-info/RECORD,,
