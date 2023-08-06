@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nameko_mongo_util/__init__.py
+nameko_mongo_util.egg-info/PKG-INFO
+nameko_mongo_util.egg-info/SOURCES.txt
+nameko_mongo_util.egg-info/dependency_links.txt
+nameko_mongo_util.egg-info/requires.txt
+nameko_mongo_util.egg-info/top_level.txt
