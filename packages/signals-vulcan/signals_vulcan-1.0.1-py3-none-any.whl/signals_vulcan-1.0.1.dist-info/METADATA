@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: signals-vulcan
+Version: 1.0.1
+Summary: A interface for uniform data sourcing
+Home-page: http://github.com/warrendev3190/vulcan
+Author: Warren Sadler
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+
+# Vulcan
+
+An application for sourcing extraneous data-sources
+
+
