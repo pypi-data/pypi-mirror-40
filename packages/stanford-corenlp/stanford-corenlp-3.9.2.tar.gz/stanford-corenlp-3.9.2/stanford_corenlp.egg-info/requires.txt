@@ -1,0 +1,9 @@
+corenlp-protobuf>=3.8.0
+requests>=2.10.0
+six>=1.9
+
+[dev]
+check-manifest
+
+[test]
+coverage
