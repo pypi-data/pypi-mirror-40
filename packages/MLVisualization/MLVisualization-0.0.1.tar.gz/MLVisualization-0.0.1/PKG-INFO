@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: MLVisualization
+Version: 0.0.1
+Summary: Basic Visualizations for Machine Learning
+Home-page: https://git-int.aisec.fraunhofer.de/kao/visulization
+Author: Armin Mesic
+Author-email: armin.mesic@aisec.fraunhofer.de
+License: UNKNOWN
+Description: # Create Interactive Visualization for ML
+        
+        * loss, error, cross-entropy curve
+        * data samples in 2D fig. (PCA, manifold..etc)
+        * confusion matrix
+        * roc, auc curve
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
