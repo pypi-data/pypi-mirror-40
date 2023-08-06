@@ -1,0 +1,11 @@
+README.md
+setup.py
+pippkg_api.egg-info/PKG-INFO
+pippkg_api.egg-info/SOURCES.txt
+pippkg_api.egg-info/dependency_links.txt
+pippkg_api.egg-info/requires.txt
+pippkg_api.egg-info/top_level.txt
+pippkg_api.egg-info/zip-safe
+pippkgapi/__init__.py
+pippkgapi/packages.py
+pippkgapi/releases.py
