@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+scipy = "*"
+scikit-learn = "*"
+pandas = "*"
+matplotlib = "*"
+opencv-contrib-python = "*"
+spacy = "*"
+
+[dev-packages]
+pylint = "*"
+"autopep8" = "*"
+sphinx-rtd-theme = "*"
+recommonmark = "*"
+"m2r" = "*"
+sphinx = "*"
+pytest = "*"
+pytest-cov = "*"
+pycodestyle = "*"
+jupyter = "*"
+
+[requires]
+python_version = "3.6"

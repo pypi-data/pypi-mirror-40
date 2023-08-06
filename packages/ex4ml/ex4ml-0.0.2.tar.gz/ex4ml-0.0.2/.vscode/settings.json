@@ -1,0 +1,10 @@
+{
+  "python.linting.enabled": true,
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "python.linting.lintOnSave": true,
+  "autoDocstring.docstringFormat": "google",
+  "python.pythonPath": "/Users/sbeleidy/.local/share/virtualenvs/ex4ml-ssBYbwnW/bin/python",
+  "editor.formatOnSave": true
+}
