@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: PyGEL3D
+Version: 0.0.7
+Summary: PyGEL 3D (Python Bindings for GEL) contains tools for polygonal mesh based geomtry processing
+Home-page: http://www2.compute.dtu.dk/projects/GEL/PyGEL/
+Author: Andreas Bærentzen
+Author-email: janba@dtu.dk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: plotly
+
+# PyGEL
+
+GEL is a library for geometry processing, and PyGEL provides Python bindings to a large subset of GEL.
+
+Probably, the pivotal feature of GEL and PyGEL is the halfedge based mesh representation. Quite a few
+algorithms are implemented on top of the mesh representation: simplification, triangulation of polygons,
+optimization through edge flipping, subdivision, distance to mesh computation, etc. PyGEL also provides 
+an efficient kd tree and a mesh viewer which supports annotation points.
+
