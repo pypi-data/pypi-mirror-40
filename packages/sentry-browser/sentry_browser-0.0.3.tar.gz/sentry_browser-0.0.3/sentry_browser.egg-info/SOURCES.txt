@@ -1,0 +1,13 @@
+README.md
+setup.py
+bin/sentry
+sentry_browser.egg-info/PKG-INFO
+sentry_browser.egg-info/SOURCES.txt
+sentry_browser.egg-info/dependency_links.txt
+sentry_browser.egg-info/top_level.txt
+sentrybrowser/Event.py
+sentrybrowser/Issue.py
+sentrybrowser/LogEntry.py
+sentrybrowser/Sentry.py
+sentrybrowser/__init__.py
+sentrybrowser/dateutils.py

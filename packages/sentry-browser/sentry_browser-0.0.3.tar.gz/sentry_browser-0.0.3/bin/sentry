@@ -1,0 +1,175 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+import sentrybrowser
+from sentrybrowser.Sentry import Sentry
+import getopt, sys, os, ConfigParser
+
+
+def usage(err=None, rich=False):
+  if err: print "Argument error: %s\n" % err
+
+  p = os.path.basename(sys.argv[0])
+  print "Usage:"
+  print "  %s help"                             % p
+  print "  %s info"                             % p
+  print "  %s issues"                           % p
+  print "  %s issue <issueID>"                  % p
+  print "  %s events <issueID>"                 % p
+  print "  %s event <eventID>"                  % p
+  print "  %s log [-l loglevel] <eventID>"      % p
+
+  if rich:
+    print
+    print "Common flags and options:"
+    print "  --organization <name>"
+    print "  --project <name>"
+    print "  --auth-token <token>"
+    print
+    print "Note:"
+    print "Run the external comman 'sentry-cli login' get an auth token."
+    print "See sentry-cli documentation for configuration details."
+
+  if err:
+    exit(-1)
+  else:
+    exit(0)
+
+
+def show_version():
+  p = os.path.basename(sys.argv[0])
+  version = sentrybrowser.__version__
+  author = sentrybrowser.__author__
+  print "%s version %s by %s" % (p, version, author)
+  exit(0)
+
+
+def get_config_value(config, path):
+  try:
+    (section, field) = path.split('.', 1)
+    return config.get(section, field)
+  except:
+    return None
+
+
+def main():
+
+  organization = None
+  project      = None
+  auth_token   = None
+  loglevel     = None
+
+  # Default to entries from config file for sentry-cli or environment variable.
+  # Environment variable has presedence over config file.
+  config = ConfigParser.ConfigParser()
+  config.read(os.path.expanduser("~/.sentryclirc"))
+  loglevel     = os.getenv('SENTRY_LOG_LEVEL')  or get_config_value(config, 'log.level')        or loglevel
+  organization = os.getenv('SENTRY_ORG')        or get_config_value(config, 'defaults.org')     or organization
+  project      = os.getenv('SENTRY_PROJECT')    or get_config_value(config, 'defaults.project') or  project
+  auth_token   = os.getenv('SENTRY_AUTH_TOKEN') or get_config_value(config, 'auth.token')       or auth_token
+
+  if len(sys.argv) == 1: usage()
+  try:
+    optlist, args = getopt.gnu_getopt(
+      sys.argv[1:],
+      ':i:l:o:p:a:t:h',
+      [
+        "help",
+        "version",
+        "loglevel=", "level=",
+        "organization=", "org=",
+        "project=", "proj=",
+        "auth-token=", "auth=", "token="
+      ]
+    )
+  except:
+    usage()
+
+  for (o, a) in optlist:
+    # Common options
+    if   o in ('-h', '--help')                   : usage(rich=True)
+    elif o in ('--version')                      : show_version()
+    elif o in ('-l', '--loglevel', '--level')    : loglevel = a
+    elif o in ('-o', '--organization', '--org')  : organization = a
+    elif o in ('-p', '--project', '--proj')      : project = a
+    elif o in ('-o', '-a', '-t', '--auth-token', '--auth', '--token') : auth_token = a
+
+  if len(args) < 1: usage("missing command")
+  cmd = args[0]
+  args = args[1:]
+
+  if cmd == 'help':
+    usage(rich=True)
+
+  if not organization : print 'Organization not specified.'; exit(-1)
+  if not project      : print 'Project not specified.'; exit(-1)
+  if not auth_token   : print 'Auth token not specified.'; exit(-1)
+
+  sentry = Sentry(organization, project, auth_token)
+  sentry.loglevel = loglevel
+
+  if cmd == 'info':
+
+    sentry.print_info()
+
+  elif cmd == 'issues':
+
+    issues = sentry.get_issues()
+    for issue in issues:
+      issue.print_line()
+
+  elif cmd == 'issue':
+
+    if len(args) < 1: usage('missing argument <issueID>')
+    issueID = args[0]
+
+    issues = sentry.get_issues()
+    found = False
+    for issue in issues:
+      if issue.id == issueID:
+        issue.print_info()
+        found = True
+    if not found:
+      print "Issue '%s' not found." % issueID
+
+  elif cmd == 'events':
+
+    if len(args) < 1: usage('missing argument <issueID>')
+    issueID = args[0]
+
+    events = sentry.get_events(issueID)
+    for event in events:
+      event.print_line()
+
+  elif cmd == 'event':
+
+    if len(args) < 1: usage('missing argument <eventID>')
+    eventID = args[0]
+
+    event = sentry.get_event(eventID)
+    if event:
+      event.print_info()
+    else:
+      print "Event '%s' not found." % eventID
+
+
+  elif cmd == 'log' or cmd == 'logs':
+
+    if len(args) < 1: usage('missing argument <eventID>')
+    eventID = args[0]
+
+    event = sentry.get_event(eventID)
+    if event:
+      event.print_log(loglevel)
+    else:
+      print "Event '%s' not found." % eventID
+
+  else:
+
+    usage("unknown command '%s'" % cmd)
+
+
+if __name__ == '__main__':
+  main()
+  sys.exit(0)  # All ok
