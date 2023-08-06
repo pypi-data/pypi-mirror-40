@@ -1,0 +1,10 @@
+README.rst
+setup.py
+nwscan/__init__.py
+nwscan/nwscan.py
+nwscan.egg-info/PKG-INFO
+nwscan.egg-info/SOURCES.txt
+nwscan.egg-info/dependency_links.txt
+nwscan.egg-info/entry_points.txt
+nwscan.egg-info/requires.txt
+nwscan.egg-info/top_level.txt
