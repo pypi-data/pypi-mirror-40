@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: auto-build
+Version: 1.0.0
+Summary: from git pull code and package
+Home-page: https://github.com
+Author: jianzhong.zhou
+Author-email: 1329870572@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+
+from git pull code and package
+
+
